@@ -1,0 +1,71 @@
+[{
+    "id": 1,
+    "first_name": "Nevile",
+    "last_name": "Runacres",
+    "email": "nrunacres0@instagram.com",
+    "gender": "Male",
+    "role": "Structural Analysis Engineer"
+  }, {
+    "id": 2,
+    "first_name": "Nat",
+    "last_name": "Keough",
+    "email": "nkeough1@jigsy.com",
+    "gender": "Male",
+    "role": "Recruiter"
+  }, {
+    "id": 3,
+    "first_name": "Quillan",
+    "last_name": "Godart",
+    "email": "qgodart2@archive.org",
+    "gender": "Male",
+    "role": "Clinical Specialist"
+  }, {
+    "id": 4,
+    "first_name": "Luciana",
+    "last_name": "Vogl",
+    "email": "lvogl3@seesaa.net",
+    "gender": "Female",
+    "role": "Assistant Manager"
+  }, {
+    "id": 5,
+    "first_name": "Samson",
+    "last_name": "Gethouse",
+    "email": "sgethouse4@fda.gov",
+    "gender": "Male",
+    "role": "Software Engineer III"
+  }, {
+    "id": 6,
+    "first_name": "Laurie",
+    "last_name": "Doyland",
+    "email": "ldoyland5@technorati.com",
+    "gender": "Male",
+    "role": "Media Manager I"
+  }, {
+    "id": 7,
+    "first_name": "Chiquia",
+    "last_name": "Scarre",
+    "email": "cscarre6@imgur.com",
+    "gender": "Female",
+    "role": "Tax Accountant"
+  }, {
+    "id": 8,
+    "first_name": "Darcey",
+    "last_name": "Burg",
+    "email": "dburg7@mayoclinic.com",
+    "gender": "Female",
+    "role": "Analog Circuit Design manager"
+  }, {
+    "id": 9,
+    "first_name": "Allina",
+    "last_name": "Codman",
+    "email": "acodman8@istockphoto.com",
+    "gender": "Female",
+    "role": "Financial Advisor"
+  }, {
+    "id": 10,
+    "first_name": "Oswald",
+    "last_name": "Found",
+    "email": "ofound9@rediff.com",
+    "gender": "Male",
+    "role": "Product Engineer"
+  }]
