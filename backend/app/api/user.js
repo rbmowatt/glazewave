@@ -29,7 +29,7 @@ router.get('/', function (req, res) {
         if (err) {
             console.error("Unable to scan the table. Error JSON:", JSON.stringify(err, null, 2));
         } else {
-            res.send(data)
+            res.json(data.Items)
             if (typeof data.LastEvaluatedKey != "undefined") {
                 console.log("Scanning for more...");
                 params.ExclusiveStartKey = data.LastEvaluatedKey;
@@ -83,5 +83,29 @@ router.post('/', function (req, res) {
         });
 
 });
+
+router.put('/:id', function (req, res) {
+    const params = {
+        TableName: "users",
+        Item: {
+            "id": parseInt(req.params.id),
+            "email": req.body.email || null,
+            "first_name": req.body.first_name || null,
+            "last_name": req.body.last_name || null,
+            "role": req.body.role || null,
+            "gender": req.body.gender || null
+        }
+    };
+    docClient.put(params, function (err, data) {
+        if (err) {
+            console.error("Unable to add User", req.body, ". Error JSON:", JSON.stringify(err, null, 2));
+        } else {
+            res.send(data);
+            console.log("PutItem succeeded:", data.Items);
+        }
+    });
+
+});
+
 
 module.exports = router;
