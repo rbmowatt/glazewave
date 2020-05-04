@@ -6,13 +6,14 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const app = express();
 const userRouter = require('./api/user');
-app.use('/user', userRouter);
-app.get('/', function (req, res) {
-    res.send({ title: "Users API Entry Point" })
-  })
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+app.use('/user', userRouter);
+app.get('/', function (req, res) {
+    res.send({ title: "Users API Entry Point" })
+  })
 
 module.exports = app;
