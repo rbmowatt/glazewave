@@ -1,9 +1,15 @@
 const { Router }=require('express');
 
-app.get('/', function (req, res) {
-    res.send({ title: "Users API Entry Point" })
-  })
-  app.get('/users', function (req, res) {
+var AWS = require("aws-sdk");
+AWS.config.update({
+    region: "eu-west-2",
+    endpoint: "http://localhost:8000"
+  });
+const docClient = new AWS.DynamoDB.DocumentClient();
+
+const router = new Router();
+
+  router .get('/', function (req, res) {
   var params = {
       TableName: "users",
       ProjectionExpression: "#id, #email, #first_name, #last_name, #role",
@@ -36,7 +42,7 @@ app.get('/', function (req, res) {
     }
   })
   
-  app.get('/users/:id', function (req, res) {
+  router .get('/:id', function (req, res) {
       var userId = parseInt(req.params.id);
         console.log(req.url)
         console.log(userId)
@@ -62,3 +68,5 @@ app.get('/', function (req, res) {
           }
       });
       });
+
+module.exports = router;
