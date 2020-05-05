@@ -7,7 +7,7 @@ interface IState {
     customers: any[];
 }
 
-export default class Home extends React.Component<RouteComponentProps, IState> {
+export default class UserIndex extends React.Component<RouteComponentProps, IState> {
     constructor(props: RouteComponentProps) {
         super(props);
         this.state = { customers: [] }

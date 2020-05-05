@@ -1,0 +1,14 @@
+{
+    "region": "eu-west-2",
+    "userPool": "eu-west-2_z1Go5XdrZ",
+    "userPoolBaseUri": "https://umanage.auth.us-east-1.amazoncognito.com",
+    "clientId": "2713nporsvnkj6mg9v3fngpsh6",
+    "callbackUri": "http://localhost:3000/login",
+    "signoutUri": "http://localhost:3000/logout",
+    "tokenScopes": [
+    "openid",
+    "email",
+    "profile"
+    ],
+    "apiUri": "http://localhost:3000"
+}
