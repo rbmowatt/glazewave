@@ -45,8 +45,15 @@ class Cognito {
         const params = {
             UserPoolId: appConfig.userPool
         }
+        return new Promise((resolve, reject) => {
         console.log('params', params);
-        cognitoidentityserviceprovider.listUsers(params, this.resHan)
+        cognitoidentityserviceprovider.listUsers(params, function (error, response)
+        {
+            if (error) return reject(error);
+      
+            resolve(response);
+        })
+    });
     }
 }
 
