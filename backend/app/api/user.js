@@ -15,8 +15,20 @@ const docClient = new AWS.DynamoDB.DocumentClient();
 const router = new Router();
 
 router.get('/', function (req, res) {
-    res.json(cognito.listUsers());
- 
+    cognito.listUsers().then( (data)=>{
+        const users = [];
+        data.Users.forEach(user=>{
+            user.Attributes.forEach(att=>
+                {
+                    user[att.Name] = att.Value;
+                    console.log('att', att);
+                })
+                users.push(user);
+        })
+        console.log('user', users)
+        res.json(users);
+    })
+    .catch(error=>HTMLFormControlsCollection.log('errr', error)); 
 })
 
 router.get('/:id', function (req, res) {

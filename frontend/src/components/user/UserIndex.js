@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Link, RouteComponentProps } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import apiConfig from '../../config/api.json';
-import appConfig from '../../config/cognito.json'
-
 
 const mapStateToProps = state => {
     return { session: state.session }
@@ -19,7 +17,7 @@ class UserIndex extends Component {
     componentDidMount(){
 
         if (this.props.session.isLoggedIn) {
-            console.log('token', this.props.session.credentials.accessToken);
+            //console.log('token', this.props.session.credentials.accessToken);
             // Call the API server GET /users endpoint with our JWT access token
             const options = {
               headers: {
@@ -27,7 +25,7 @@ class UserIndex extends Component {
               }
             };
             axios.get( apiConfig.host + ':' + apiConfig.port + `/user`, options).then(data => {
-                console.log(data);
+                console.log('cognito response', data.Users);
                 this.setState({ users: data.data })
             });
         }
@@ -50,30 +48,25 @@ class UserIndex extends Component {
                         <h2>No user found at the moment</h2>
                     </div>
                 )}
-
                 <div className="container">
                     <div className="row">
                         <table className="table table-bordered">
                             <thead className="thead-light">
                                 <tr>
-                                    <th scope="col">Firstname</th>
-                                    <th scope="col">Lastname</th>
+                                    <th scope="col">Username</th>
+                                    <th scope="col">first_name</th>
                                     <th scope="col">Email</th>
                                     <th scope="col">Phone</th>
-                                    <th scope="col">Address</th>
-                                    <th scope="col">Description</th>
                                     <th scope="col">Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {users && users.map(user =>
-                                    <tr key={user.id}>
-                                        <td>{user.first_name}</td>
-                                        <td>{user.last_name}</td>
+                                    <tr key={user.email}>
+                                        <td>{user.Username}</td>
+                                        <td>{user.name}</td>
                                         <td>{user.email}</td>
-                                        <td>{user.phone}</td>
-                                        <td>{user.address}</td>
-                                        <td>{user.description}</td>
+                                        <td>{user.phone_number}</td>
                                         <td>
                                             <div className="d-flex justify-content-between align-items-center">
                                                 <div className="btn-group" style={{ marginBottom: "20px" }}>
@@ -93,5 +86,4 @@ class UserIndex extends Component {
         )
     }
 }
-
 export default connect(mapStateToProps)(UserIndex)
