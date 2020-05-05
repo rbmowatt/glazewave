@@ -1,34 +1,36 @@
-import * as React from 'react';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import { Link, RouteComponentProps } from 'react-router-dom';
 import axios from 'axios';
+import apiConfig from '../../config/api.json';
 
 
-interface IState {
-    customers: any[];
-}
+const mapStateToProps = state => {
+    return { session: state.session }
+  }
 
-export default class UserIndex extends React.Component<RouteComponentProps, IState> {
-    constructor(props: RouteComponentProps) {
+class UserIndex extends Component {
+    constructor(props) {
         super(props);
         this.state = { customers: [] }
     }
 
-    public componentDidMount(): void {
-        axios.get(`http://localhost:3001/user`).then(data => {
+    componentDidMount(){
+        axios.get( apiConfig.host + ':' + apiConfig.port + `/user`).then(data => {
             console.log(data);
             this.setState({ customers: data.data })
         })
     }
 
-    public deleteCustomer(id: number) {
-        axios.delete(`http://localhost:5000/customers/${id}`).then(data => {
+    deleteCustomer(id ) {
+        axios.delete(apiConfig.host + ':' + apiConfig.port + `/customers/${id}`).then(data => {
             const index = this.state.customers.findIndex(customer => customer.id === id);
             this.state.customers.splice(index, 1);
             this.props.history.push('/');
         })
     }
 
-    public render() {
+    render() {
         const customers = this.state.customers;
         return (
             <div>
@@ -80,3 +82,5 @@ export default class UserIndex extends React.Component<RouteComponentProps, ISta
         )
     }
 }
+
+export default connect(mapStateToProps)(UserIndex)
