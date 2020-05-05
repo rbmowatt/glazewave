@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
 import axios from 'axios';
+import apiConfig from '../../config/api.json';
 
 export interface IValues {
     first_name: string,
@@ -46,7 +47,7 @@ class Create extends React.Component<RouteComponentProps, IFormState> {
 
         this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
 
-        axios.post(`http://localhost:5000/customers`, formData).then(data => [
+        axios.post(apiConfig.host + ':' + apiConfig.port + `customers`, formData).then(data => [
             setTimeout(() => {
                 this.props.history.push('/');
             }, 1500)

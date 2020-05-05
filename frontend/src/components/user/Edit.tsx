@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
 import axios from 'axios';
+import apiConfig from '../../config/api.json';
 
 export interface IValues {
     [key: string]: any;
@@ -27,7 +28,7 @@ class Edituser extends React.Component<RouteComponentProps<any>, IFormState> {
     }
 
     public componentDidMount(): void {
-        axios.get(`http://localhost:3001/user/${this.state.id}`).then(data => {
+        axios.get(apiConfig.host + ':' + apiConfig.port + `/user/${this.state.id}`).then(data => {
             console.log(data.data[0]);
             this.setState({ user: data.data[0] });
         })
@@ -36,7 +37,7 @@ class Edituser extends React.Component<RouteComponentProps<any>, IFormState> {
     private processFormSubmission = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
         e.preventDefault();
         this.setState({ loading: true });
-        axios.put(`http://localhost:3001/user/${this.state.id}`, this.state.values).then(data => {
+        axios.put(apiConfig.host + ':' + apiConfig.port + `/user/${this.state.id}`, this.state.values).then(data => {
             this.setState({ submitSuccess: true, loading: false })
             setTimeout(() => {
                 this.props.history.push('/');
