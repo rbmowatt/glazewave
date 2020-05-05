@@ -1,6 +1,8 @@
 const { Router } = require('express');
+const Cognito = require('../services/aws/cognito');
 const uuid = require('uuid');
 const shortid = require('shortid');
+const cognito = new Cognito();;
 //shortid.characters('0123456789');
  
 const AWS = require("aws-sdk");
@@ -13,30 +15,8 @@ const docClient = new AWS.DynamoDB.DocumentClient();
 const router = new Router();
 
 router.get('/', function (req, res) {
-    const params = {
-        TableName: "users",
-        ProjectionExpression: "#id, #email, #first_name, #last_name, #role",
-        ExpressionAttributeNames: {
-            "#id": "id",
-            "#first_name": "first_name",
-            "#last_name": "last_name",
-            "#email": "email",
-            "#role": "role"
-        }
-    };
-    docClient.scan(params, onScan);
-    function onScan(err, data) {
-        if (err) {
-            console.error("Unable to scan the table. Error JSON:", JSON.stringify(err, null, 2));
-        } else {
-            res.json(data.Items)
-            if (typeof data.LastEvaluatedKey != "undefined") {
-                console.log("Scanning for more...");
-                params.ExclusiveStartKey = data.LastEvaluatedKey;
-                docClient.scan(params, onScan);
-            }
-        }
-    }
+    res.json(cognito.listUsers());
+ 
 })
 
 router.get('/:id', function (req, res) {
