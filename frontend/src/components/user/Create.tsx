@@ -47,7 +47,7 @@ class Create extends React.Component<RouteComponentProps, IFormState> {
 
         this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
 
-        axios.post(apiConfig.host + ':' + apiConfig.port + `customers`, formData).then(data => [
+        axios.post(apiConfig.host + ':' + apiConfig.port + `/user`, formData).then(data => [
             setTimeout(() => {
                 this.props.history.push('/');
             }, 1500)

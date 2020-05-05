@@ -41,12 +41,13 @@ const createCognitoUserPool = () => new CognitoUserPool({
 
 // Get the URI of the hosted sign in screen
 const getCognitoSignInUri = () => {
-  const signinUri = `${appConfig.userPoolBaseUri}/login?response_type=token&client_id=${appConfig.clientId}&redirect_uri=${appConfig.callbackUri}`
+  const signinUri = `${appConfig.userPoolBaseUri}/login?response_type=code&client_id=${appConfig.clientId}&redirect_uri=${appConfig.callbackUri}`
   return signinUri
 }
 
 // Parse the response from a Cognito callback URI (assumed a token or code is in the supplied href). Returns a promise.
 const parseCognitoWebResponse = (href) => {
+  console.log('href', href);
   return new Promise((resolve, reject) => {
     const auth = createCognitoAuth()
 
@@ -56,6 +57,7 @@ const parseCognitoWebResponse = (href) => {
         resolve(result)
       },
       onFailure: function (err) {
+        console.log('auth', auth);
         reject(new Error('Failure parsing Cognito web response: ' + err))
       }
     }
