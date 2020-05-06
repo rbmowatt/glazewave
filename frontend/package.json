@@ -16,6 +16,7 @@
     "amazon-cognito-identity-js": "^3.0.14",
     "aws-sdk": "^2.498.0",
     "axios": "^0.19.2",
+    "js-cookie": "^2.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.1.0",

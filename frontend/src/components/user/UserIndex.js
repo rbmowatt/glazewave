@@ -32,10 +32,15 @@ class UserIndex extends Component {
     }
 
     deleteCustomer(id ) {
-        axios.delete(apiConfig.host + ':' + apiConfig.port + `/users/${id}`).then(data => {
+        const options = {
+            headers: {
+              Authorization: `Bearer ${this.props.session.credentials.accessToken}`
+            }
+          };
+        axios.delete(apiConfig.host + ':' + apiConfig.port + `/user/${id}`, options).then(data => {
             const index = this.state.users.findIndex(user => user.id === id);
             this.state.users.splice(index, 1);
-            this.props.history.push('/');
+            this.props.history.push('/user');
         })
     }
 
@@ -62,7 +67,7 @@ class UserIndex extends Component {
                             </thead>
                             <tbody>
                                 {users && users.map(user =>
-                                    <tr key={user.email}>
+                                    <tr key={user.Username}>
                                         <td>{user.Username}</td>
                                         <td>{user.name}</td>
                                         <td>{user.email}</td>
@@ -70,8 +75,8 @@ class UserIndex extends Component {
                                         <td>
                                             <div className="d-flex justify-content-between align-items-center">
                                                 <div className="btn-group" style={{ marginBottom: "20px" }}>
-                                                    <Link to={`edit/${user.id}`} className="btn btn-sm btn-outline-secondary">Edit Customer </Link>
-                                                    <button className="btn btn-sm btn-outline-secondary" onClick={() => this.deleteCustomer(user.id)}>Delete Customer</button>
+                                                    <Link to={`edit/${user.Username}`} className="btn btn-sm btn-outline-secondary">Edit Customer </Link>
+                                                    <button className="btn btn-sm btn-outline-secondary" onClick={() => this.deleteCustomer(user.Username)}>Delete Customer</button>
                                                 </div>
                                             </div>
                                         </td>

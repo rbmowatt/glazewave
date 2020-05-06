@@ -9,17 +9,11 @@ class Cognito {
     this.ClientId = appConfig.clientId;
     };
 
-   resHan ( err, data) {
-        console.log('handler hit');
-        if (err){ console.log(err, err.stack); }
-        else{ console.log(data)}
-    }
-
-    signup({name, email, phone, password}){
+    signup({Username, name, email, phone_number, password}){
         const params = {
             ClientId: this.ClientId,
             Password: password,
-            Username: name,
+            Username: Username,
             UserAttributes:[ 
                 {
                     Name: 'name', 
@@ -32,12 +26,20 @@ class Cognito {
                 ,
                 {
                     Name: 'phone_number', 
-                    Value: phone
+                    Value: phone_number
                 }
             ],
         };
         console.log('signup');
-        cognitoidentityserviceprovider.signUp(params, this.resHan)
+        return new Promise((resolve, reject) => {
+            console.log('params', params);
+            cognitoidentityserviceprovider.signUp(params, function (error, response)
+            {
+                if (error) return reject(error);
+          
+                resolve(response);
+            })
+        });
     };
 
     listUsers()
@@ -54,6 +56,64 @@ class Cognito {
             resolve(response);
         })
     });
+    }
+
+    deleteUser( {userName} )
+    {
+        const params = {
+            UserPoolId: appConfig.userPool,
+            Username: userName
+        }
+        return new Promise((resolve, reject) => {
+        console.log('params', params);
+        cognitoidentityserviceprovider.adminDeleteUser(params, function (error, response)
+        {
+            if (error) return reject(error);
+      
+            resolve(response);
+        })
+    });
+    }
+
+    getUser({ userName })
+    {
+        const params = {
+            UserPoolId: appConfig.userPool,
+            Username: userName
+        }
+        return new Promise((resolve, reject) => {
+        console.log('params', params);
+        cognitoidentityserviceprovider.adminGetUser(params, function (error, response)
+        {
+            if (error) return reject(error);
+      
+            resolve(response);
+        })
+    });
+    }
+
+    updateUser({username, atts}){
+        console.log('atts in ', atts);
+        const params = {
+            UserPoolId: appConfig.userPool,
+            Username: username,
+            UserAttributes:[ 
+            ],
+        };
+        for (const [key, value] of Object.entries(atts)) {
+            params.UserAttributes.push({ Name : key, Value : value});
+            console.log(key, value);
+          }
+
+        return new Promise((resolve, reject) => {
+            console.log('params', params);
+            cognitoidentityserviceprovider.adminUpdateUserAttributes(params, function (error, response)
+            {
+                if (error) return reject(error);
+          
+                resolve(response);
+            })
+        });
     }
 }
 

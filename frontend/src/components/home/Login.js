@@ -20,7 +20,7 @@ class Login extends Component {
   // If a Cognito auth code is in the URL (could be a hash or query component), init the new session
   componentDidMount () {
     if (this.props.location.hash || this.props.location.search) {
-      alert(window.location.href);
+      //alert(window.location.href);
       this.props.initSessionFromCallbackURI(window.location.href)
     }
   }

@@ -1,15 +1,10 @@
 const { Router } = require('express');
 const Cognito = require('../services/aws/cognito');
-const uuid = require('uuid');
-const shortid = require('shortid');
-const cognito = new Cognito();;
-//shortid.characters('0123456789');
+const generator = require('generate-password');
+const cognito = new Cognito();
  
 const AWS = require("aws-sdk");
-AWS.config.update({
-    region: "eu-west-2",
-    endpoint: "http://localhost:8000"
-});
+
 const docClient = new AWS.DynamoDB.DocumentClient();
 
 const router = new Router();
@@ -21,83 +16,90 @@ router.get('/', function (req, res) {
             user.Attributes.forEach(att=>
                 {
                     user[att.Name] = att.Value;
-                    console.log('att', att);
+                    //console.log('att', att);
                 })
                 users.push(user);
         })
-        console.log('user', users)
+        //console.log('user', users)
         res.json(users);
     })
     .catch(error=>HTMLFormControlsCollection.log('errr', error)); 
 })
 
-router.get('/:id', function (req, res) {
-    const userId = parseInt(req.params.id);
-    const params = {
-        TableName: "users",
-        KeyConditionExpression: "#id = :id",
-        ExpressionAttributeNames: {
-            "#id": "id"
-        },
-        ExpressionAttributeValues: {
-            ":id": userId
-        }
-    };
-    docClient.query(params, function (err, data) {
-        if (err) {
-            console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
-        } else {
-            console.log("Query succeeded.");
-            res.send(data.Items)
-        }
-    });
+router.get('/:uname', function (req, res) {
+    console.log('uname', req.params)
+    cognito.getUser( { userName :req.params.uname } ).then( (data)=>{
+        console.log('data', data);
+        const users = [];
+            data.UserAttributes.forEach(att=>
+                {
+                    data[att.Name] = att.Value;
+                    console.log('att', att);
+                })
+        console.log('user', data)
+        res.json(data);
+    })
+    .catch(error=>
+        {
+            console.log('errr', error);
+            return res.status(400).json(error);
+        }); 
 });
 
 router.post('/', function (req, res) {
-        const params = {
-            TableName: "users",
-            Item: {
-                "id": Date.now(),
-                "email": req.body.email || null,
-                "first_name": req.body.first_name || null,
-                "last_name": req.body.last_name || null,
-                "role": req.body.role || null,
-                "gender": req.body.gender || null
-            }
-        };
-        docClient.put(params, function (err, data) {
-            if (err) {
-                console.error("Unable to add User", req.body, ". Error JSON:", JSON.stringify(err, null, 2));
-            } else {
-                res.send(data);
-                console.log("PutItem succeeded:", data.Items);
-            }
+
+        const password = generator.generate({
+            length: 10,
+            numbers: true,
+            uppercase: true,
+            lowercase: true,
+            symbols: true,
+            strict: true
         });
+        const params = {
+                Username: req.body.userName ,
+                email: req.body.email,
+                name: req.body.name,
+                phone_number : req.body.phone_number|| null,
+                password:  password
+        };
+
+        cognito.signup(params).then( (data)=>{
+            console.log(data);
+            res.json(data);
+        })
+        .catch(error=>{
+            console.log('errr', error);
+            return res.status(400).json(error);
+        }); 
+
 
 });
 
-router.put('/:id', function (req, res) {
-    const params = {
-        TableName: "users",
-        Item: {
-            "id": parseInt(req.params.id),
-            "email": req.body.email || null,
-            "first_name": req.body.first_name || null,
-            "last_name": req.body.last_name || null,
-            "role": req.body.role || null,
-            "gender": req.body.gender || null
-        }
-    };
-    docClient.put(params, function (err, data) {
-        if (err) {
-            console.error("Unable to add User", req.body, ". Error JSON:", JSON.stringify(err, null, 2));
-        } else {
-            res.send(data);
-            console.log("PutItem succeeded:", data.Items);
-        }
+router.put('/:uname', function (req, res) {
+    console.log('params', req.params);
+    console.log('body', req.body);
+    cognito.updateUser({username :req.params.uname, atts: req.body} ).then( (data)=>{
+        console.log(data);
+        res.json(data);
+    })
+    .catch(error=>{
+        console.log('errr', error);
+        return res.status(400).json(error);
+    });
+});
+
+router.delete('/:uname', function (req, res) {
+    console.log('delete');
+    cognito.deleteUser({userName :req.params.uname} ).then( (data)=>{
+        console.log(data);
+        res.json(data);
+    })
+    .catch(error=>{
+        console.log('errr', error);
+        return res.status(400).json(error);
     });
 
 });
-
 
 module.exports = router;

@@ -11,14 +11,15 @@ class Create extends React.Component{
     constructor(props ) {
         super(props);
         this.state = {
-            first_name: '',
-            last_name: '',
+            userName: '',
+            name: '',
             email: '',
-            phone: '',
-            address: '',
+            phone_number: '',
             values: [],
             loading: false,
             submitSuccess: false,
+            submitFail: false,
+            errorMessage : null
         }
     }
 
@@ -27,11 +28,10 @@ class Create extends React.Component{
         this.setState({ loading: true });
 
         const formData = {
-            first_name: this.state.first_name,
-            last_name: this.state.last_name,
+            userName : this.state.userName,
+            name: this.state.name,
             email: this.state.email,
-            phone: this.state.phone,
-            address: this.state.address
+            phone_number: this.state.phone_number,
         }
 
         this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
@@ -50,7 +50,12 @@ class Create extends React.Component{
                 this.props.history.push('/user');
             }, 1500)
         ])
-        .catch(error=>console.log(error));
+        .catch(
+            error=>{
+                this.setState({ submitSuccess: false, submitFail: true, errorMessage : error.response.data.message });
+                console.log(error);
+            }
+        );
     }
 }
 
@@ -62,11 +67,11 @@ class Create extends React.Component{
     }
 
     render() {
-        const { submitSuccess, loading } = this.state;
+        const { submitSuccess, submitFail, loading, errorMessage } = this.state;
         return (
             <div>
                 <div className={"col-md-12 form-wrapper"}>
-                    <h2> Create Post </h2>
+                    <h2> Create User </h2>
                     {!submitSuccess && (
                         <div className="alert alert-info" role="alert">
                             Fill the form below to create a new post
@@ -79,37 +84,33 @@ class Create extends React.Component{
                             </div>
                     )}
 
+                    {submitFail && (
+                        <div className="alert alert-info" role="alert">
+                            { errorMessage }
+                            </div>
+                    )}
+
                     <form id={"create-post-form"} onSubmit={this.processFormSubmission} noValidate={true}>
                         <div className="form-group col-md-12">
-                            <label htmlFor="first_name"> First Name </label>
-                            <input type="text" id="first_name" onChange={(e) => this.handleInputChanges(e)} name="first_name" className="form-control" placeholder="Enter customer's first name" />
+                            <label htmlFor="first_name"> User Name </label>
+                            <input type="text" id="userName" onChange={(e) => this.handleInputChanges(e)} name="userName" className="form-control" placeholder="Enter full name" />
                         </div>
-
-                        <div className="form-group col-md-12">
-                            <label htmlFor="last_name"> Last Name </label>
-                            <input type="text" id="last_name" onChange={(e) => this.handleInputChanges(e)} name="last_name" className="form-control" placeholder="Enter customer's last name" />
+                         <div className="form-group col-md-12">
+                            <label htmlFor="first_name"> Name </label>
+                            <input type="text" id="name" onChange={(e) => this.handleInputChanges(e)} name="name" className="form-control" placeholder="Enter full name" />
                         </div>
-
                         <div className="form-group col-md-12">
                             <label htmlFor="email"> Email </label>
                             <input type="email" id="email" onChange={(e) => this.handleInputChanges(e)} name="email" className="form-control" placeholder="Enter customer's email address" />
                         </div>
-
                         <div className="form-group col-md-12">
-                            <label htmlFor="phone"> Phone </label>
-                            <input type="text" id="phone" onChange={(e) => this.handleInputChanges(e)} name="phone" className="form-control" placeholder="Enter customer's phone number" />
+                            <label htmlFor="phone_number"> Phone Number </label>
+                            <input type="text" id="phone_number" onChange={(e) => this.handleInputChanges(e)} name="phone_number" className="form-control" placeholder="Enter customer's phone_number number" />
                         </div>
-
-                        <div className="form-group col-md-12">
-                            <label htmlFor="address"> Address </label>
-                            <input type="text" id="address" onChange={(e) => this.handleInputChanges(e)} name="address" className="form-control" placeholder="Enter customer's address" />
-                        </div>
-
-
                         <div className="form-group col-md-4 pull-right">
                             <button className="btn btn-success" type="submit">
-                                Create Customer
-              </button>
+                                Create User
+                            </button>
                             {loading &&
                                 <span className="fa fa-circle-o-notch fa-spin" />
                             }
