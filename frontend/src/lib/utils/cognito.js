@@ -16,14 +16,6 @@ const createCognitoAuth = () => {
     RedirectUriSignIn: appConfig.callbackUri,
     RedirectUriSignOut: appConfig.signoutUri
   })
-  console.log({
-    UserPoolId: appConfig.userPool,
-    ClientId: appConfig.clientId,
-    AppWebDomain: appWebDomain,
-    TokenScopesArray: appConfig.tokenScopes,
-    RedirectUriSignIn: appConfig.callbackUri,
-    RedirectUriSignOut: appConfig.signoutUri
-  })
   return auth
 }
 
@@ -76,7 +68,7 @@ const getCognitoSession = () => {
       }
 
       // Resolve the promise with the session credentials
-      console.debug('Successfully got session: ' + JSON.stringify(result))
+      //console.log('Successfully got session: ' + JSON.stringify(result))
       const session = {
         credentials: {
           accessToken: result.accessToken.jwtToken,
@@ -86,7 +78,8 @@ const getCognitoSession = () => {
         user: {
           userName: result.idToken.payload['cognito:username'],
           email: result.idToken.payload.email
-        }
+        },
+        expiration : result.accessToken.payload.exp
       }
       resolve(session)
     })

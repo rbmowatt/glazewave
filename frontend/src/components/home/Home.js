@@ -5,9 +5,16 @@ import { connect } from 'react-redux'
 import cognitoUtils from '../../lib/utils/cognito'
 import request from 'request'
 import appConfig from '../../config/cognito.json'
+import { initSession } from '../../actions/session';
 
 const mapStateToProps = state => {
   return { session: state.session }
+}
+
+function mapDispatchToProps (dispatch) {
+  return {
+    initSession: () => dispatch(initSession())
+  }
 }
 
 class Home extends Component {
@@ -17,6 +24,8 @@ class Home extends Component {
   }
 
   componentDidMount () {
+    
+    this.props.initSession();
     if (this.props.session.isLoggedIn) {
       //console.log('token', this.props.session.credentials.accessToken);
       // Call the API server GET /users endpoint with our JWT access token
@@ -26,27 +35,6 @@ class Home extends Component {
           Authorization: `Bearer ${this.props.session.credentials.accessToken}`
         }
       }
-      this.setState({ apiStatus: 'Loading...' })
-
-      request.get(options, (err, resp, body) => {
-        let apiStatus, apiResponse
-        if (err) {
-          // is API server started and reachable?
-          apiStatus = 'Unable to reach API'
-          console.error(apiStatus + ': ' + err)
-        } else if (resp.statusCode !== 200) {
-          // API returned an error
-          apiStatus = 'Error response received'
-          apiResponse = body
-          console.error(apiStatus + ': ' + JSON.stringify(resp))
-        } else {
-          apiStatus = 'Successful response received.'
-          apiResponse = body
-        }
-        this.setState({ apiStatus, apiResponse })
-      });
-    
-    
     }
   }
 
@@ -78,4 +66,4 @@ class Home extends Component {
   }
 }
 
-export default connect(mapStateToProps)(Home)
+export default connect(mapStateToProps, mapDispatchToProps)(Home)
