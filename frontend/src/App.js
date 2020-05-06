@@ -8,9 +8,21 @@ import Create from './components/user/Create';
 import EditCustomer from './components/user/Edit';
 import Home from './components/home/Home';
 import Login from './components/home/Login';
+import { connect } from 'react-redux';
 
-class App extends React.Component<RouteComponentProps<any>> {
-  public render() {
+const mapStateToProps = state => {
+    return { session: state.session }
+  }
+  
+  function mapDispatchToProps (dispatch) {
+    return {
+      //initSession: () => dispatch(initSession())
+    }
+  }
+
+class App extends React.Component{
+
+  render() {
     return (
       <div>
         <nav>
@@ -42,4 +54,6 @@ class App extends React.Component<RouteComponentProps<any>> {
     );
   }
 }
-export default withRouter(App);
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)
+//export default withRouter(App);
