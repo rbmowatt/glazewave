@@ -1,9 +1,6 @@
 const { Router } = require('express');
-const uuid = require('uuid');
-const shortid = require('shortid');
-//shortid.characters('0123456789');
- 
-const AWS = require("aws-sdk");
+
+ const AWS = require("aws-sdk");
 AWS.config.update({
     region: "eu-west-2",
     endpoint: "http://localhost:8000"
@@ -14,14 +11,16 @@ const router = new Router();
 
 router.get('/', function (req, res) {
     const params = {
-        TableName: "users",
-        ProjectionExpression: "#id, #email, #first_name, #last_name, #role",
+        TableName: "recipes",
+        ProjectionExpression: "#id, #name, #picture, #submitted_by, #recipe, #isPublic, #rating",
         ExpressionAttributeNames: {
             "#id": "id",
-            "#first_name": "first_name",
-            "#last_name": "last_name",
-            "#email": "email",
-            "#role": "role"
+            "#picture": "picture",
+            "#submitted_by": "submitted_by",
+            "#name": "name",
+            "#recipe": "recipe",
+            "#isPublic": "isPublic",
+            "#rating": "rating"
         }
     };
     docClient.scan(params, onScan);
@@ -40,15 +39,15 @@ router.get('/', function (req, res) {
 })
 
 router.get('/:id', function (req, res) {
-    const userId = parseInt(req.params.id);
+    const recipeId = parseInt(req.params.id);
     const params = {
-        TableName: "users",
+        TableName: "recipes",
         KeyConditionExpression: "#id = :id",
         ExpressionAttributeNames: {
             "#id": "id"
         },
         ExpressionAttributeValues: {
-            ":id": userId
+            ":id": recipeId
         }
     };
     docClient.query(params, function (err, data) {
@@ -63,14 +62,15 @@ router.get('/:id', function (req, res) {
 
 router.post('/', function (req, res) {
         const params = {
-            TableName: "users",
+            TableName: "recipes",
             Item: {
                 "id": Date.now(),
-                "email": req.body.email || null,
-                "first_name": req.body.first_name || null,
-                "last_name": req.body.last_name || null,
-                "role": req.body.role || null,
-                "gender": req.body.gender || null
+                "name": req.body.name || null,
+                "picture": req.body.picture || null,
+                "submitted_by": req.body.submitted_by || null,
+                "recipe": req.body.recipe || null,
+                "isPublic": "isPublic" || null,
+                "rating": "rating" || null,
             }
         };
         docClient.put(params, function (err, data) {
@@ -86,13 +86,13 @@ router.post('/', function (req, res) {
 
 router.put('/:id', function (req, res) {
     const params = {
-        TableName: "users",
+        TableName: "recipes",
         Item: {
             "id": parseInt(req.params.id),
-            "email": req.body.email || null,
-            "first_name": req.body.first_name || null,
-            "last_name": req.body.last_name || null,
-            "role": req.body.role || null,
+            "name": req.body.name || null,
+            "picture": req.body.picture || null,
+            "submitted_by": req.body.submitted_by || null,
+            "recipe": req.body.recipe || null,
             "gender": req.body.gender || null
         }
     };

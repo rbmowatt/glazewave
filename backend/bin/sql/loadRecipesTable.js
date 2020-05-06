@@ -1,4 +1,8 @@
 const AWS = require("aws-sdk");
+AWS.config.update({
+    region: "eu-east-1",
+    endpoint: "http://localhost:8000"
+  });
 const fs = require('fs');
 const docClient = new AWS.DynamoDB.DocumentClient();
 console.log("Importing Users into DynamoDB. Please wait.");

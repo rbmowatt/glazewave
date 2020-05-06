@@ -5,9 +5,9 @@ AWS.config.update({
 });
 var dynamodb = new AWS.DynamoDB();
 var params = {
-    TableName : "users",
+    TableName : "Cars",
     KeySchema: [
-        { AttributeName: "id", KeyType: "HASH"},  
+        { AttributeName: "id", KeyType: "HASH"},  //Partition key
 ],
     AttributeDefinitions: [
         { AttributeName: "id", AttributeType: "N" },
