@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
 const userRouter = require('./api/user');
+const recipeRouter = require('./api/recipe');
 const appConfig = require('./config');
 const cognitoAuth = require('./lib/cognitoAuth');
 const cognitoAuthMiddleware = cognitoAuth.getVerifyMiddleware()
@@ -18,6 +19,7 @@ app.use(cookieParser());
 app.use(cors({'origin': [appConfig.signoutUri, 'http://localhost:3000']}));
 
 app.use('/user', cognitoAuthMiddleware, userRouter);
+app.use('/recipe', recipeRouter);
 app.get('/', function (req, res) {
     res.send({ title: "Users API Entry Point" })
   })
