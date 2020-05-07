@@ -1,12 +1,12 @@
 var AWS = require('aws-sdk');
-const appConfig = require('./../../config');
-var cognitoidentityserviceprovider = new AWS.CognitoIdentityServiceProvider({region: appConfig.region});
+const cognitoConfig = require('./../../config/cognito');
+var cognitoidentityserviceprovider = new AWS.CognitoIdentityServiceProvider({region: cognitoConfig.region});
 
 // ^ Hard to find that this is the way to import the library, but it was obvious in docs
 
 class Cognito {
     constructor() {
-    this.ClientId = appConfig.clientId;
+    this.ClientId = cognitoConfig.clientId;
     };
 
     signup({Username, name, email, phone_number, password}){
@@ -45,7 +45,7 @@ class Cognito {
     listUsers()
     {
         const params = {
-            UserPoolId: appConfig.userPool
+            UserPoolId: cognitoConfig.userPool
         }
         return new Promise((resolve, reject) => {
         console.log('params', params);
@@ -61,7 +61,7 @@ class Cognito {
     deleteUser( {userName} )
     {
         const params = {
-            UserPoolId: appConfig.userPool,
+            UserPoolId: cognitoConfig.userPool,
             Username: userName
         }
         return new Promise((resolve, reject) => {
@@ -78,7 +78,7 @@ class Cognito {
     getUser({ userName })
     {
         const params = {
-            UserPoolId: appConfig.userPool,
+            UserPoolId: cognitoConfig.userPool,
             Username: userName
         }
         return new Promise((resolve, reject) => {
@@ -95,7 +95,7 @@ class Cognito {
     updateUser({username, atts}){
         console.log('atts in ', atts);
         const params = {
-            UserPoolId: appConfig.userPool,
+            UserPoolId: cognitoConfig.userPool,
             Username: username,
             UserAttributes:[ 
             ],
