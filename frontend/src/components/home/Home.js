@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 import './Home.css'
 import { connect } from 'react-redux'
 import cognitoUtils from '../../lib/utils/cognito'
-import request from 'request'
 import appConfig from '../../config/cognito.json'
 import { initSession } from '../../actions/session';
 
@@ -13,7 +12,7 @@ const mapStateToProps = state => {
 
 function mapDispatchToProps (dispatch) {
   return {
-    initSession: () => dispatch(initSession())
+   // initSession: () => dispatch(initSession())
   }
 }
 
@@ -24,8 +23,7 @@ class Home extends Component {
   }
 
   componentDidMount () {
-    
-    this.props.initSession();
+    //this.props.initSession();
     if (this.props.session.isLoggedIn) {
       //console.log('token', this.props.session.credentials.accessToken);
       // Call the API server GET /users endpoint with our JWT access token

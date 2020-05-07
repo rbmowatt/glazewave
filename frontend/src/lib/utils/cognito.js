@@ -79,6 +79,7 @@ const getCognitoSession = () => {
           userName: result.idToken.payload['cognito:username'],
           email: result.idToken.payload.email
         },
+        groups : result.idToken.payload['cognito:groups'],
         expiration : result.accessToken.payload.exp
       }
       resolve(session)
