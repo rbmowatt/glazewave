@@ -104,8 +104,24 @@ router.put('/:id', function (req, res) {
             console.log("PutItem succeeded:", data.Items);
         }
     });
-
 });
 
+router.delete('/:id', function (req, res) {
+    const recipeId = parseInt(req.params.id);
+    const params = {
+        TableName: "recipes",
+        Key: {
+            id: parseInt(req.params.id)
+          }
+    };
+    docClient.delete(params, function (err, data) {
+        if (err) {
+            console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
+        } else {
+            console.log("Query succeeded.");
+            res.send(data.Items)
+        }
+    });
+});
 
 module.exports = router;

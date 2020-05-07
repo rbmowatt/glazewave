@@ -7,29 +7,28 @@ const mapStateToProps = state => {
     return { session: state.session }
   }
 
-class EditUser extends React.Component{
+class EditRecipe extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
             id: this.props.match.params.id,
-            user: {},
+            recipe: {},
             values: [],
             loading: false,
             submitSuccess: false,
             submitFail: false,
-            errorMessage : null
+            errorMessage : null,
+            headers : {}
         }
     }
 
     componentDidMount() {
         if (this.props.session.isLoggedIn) {
-            const options = {
-              headers: {
-                Authorization: `Bearer ${this.props.session.credentials.accessToken}`
-              }
-            };
-            axios.get(apiConfig.host + ':' + apiConfig.port + `/user/${this.state.id}`, options).then(data => {
-                this.setState({ user: data.data });
+            const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
+            this.setState({headers});
+            axios.get(apiConfig.host + ':' + apiConfig.port + `/recipe/${this.state.id}`, headers).then(data => {
+                const recipe = data.data[0];
+                this.setState({ recipe});
             })
             .catch(error=>console.log(error));
         }
@@ -38,15 +37,11 @@ class EditUser extends React.Component{
     processFormSubmission = async (e) => {
         e.preventDefault();
         this.setState({ loading: true });
-        const options = {
-            headers: {
-              Authorization: `Bearer ${this.props.session.credentials.accessToken}`
-            }
-          };
-        axios.put(apiConfig.host + ':' + apiConfig.port + `/user/${this.state.id}`, this.state.values, options).then(data => {
+       
+        axios.put(apiConfig.host + ':' + apiConfig.port + `/recipe/${this.state.id}`, this.state.values, this.state.headers).then(data => {
             this.setState({ submitSuccess: true, loading: false })
             setTimeout(() => {
-                this.props.history.push('/');
+                this.props.history.push('/recipe');
             }, 1500)
         })
         .catch(
@@ -56,7 +51,6 @@ class EditUser extends React.Component{
             }
         );
     }
-
 
     setValues = (values) => {
         this.setState({ values: { ...this.state.values, ...values } });
@@ -71,19 +65,16 @@ class EditUser extends React.Component{
         const { submitSuccess, loading, submitFail, errorMessage  } = this.state;
         return (
             <div className="App">
-                {this.state.user &&
+                {this.state.recipe &&
                     <div>
-                        < h1 > user List Management App</h1>
-                        <p> Built with React.js and TypeScript </p>
-
-
+                        < h1 > Recipe List Management App</h1>
                         <div>
                             <div className={"col-md-12 form-wrapper"}>
-                                <h2> Edit user </h2>
+                                <h2> Edit recipe </h2>
 
                                 {submitSuccess && (
                                     <div className="alert alert-info" role="alert">
-                                        user's details has been edited successfully </div>
+                                        recipe's details has been edited successfully </div>
                                 )}
 
                                 {submitFail && (
@@ -92,33 +83,48 @@ class EditUser extends React.Component{
                                     </div>
                                     )}
 
-                                <form id={"create-post-form"} onSubmit={this.processFormSubmission} noValidate={true}>
+                            <form id={"create-post-form"} onSubmit={this.processFormSubmission} noValidate={true}>
                                 <div className="form-group col-md-12">
-                                        <label htmlFor="Username"> User Name </label>
-                                        <input type="text" id="Username" defaultValue={this.state.user.Username} onChange={(e) => this.handleInputChanges(e)} name="Username" className="form-control" placeholder="Enter user's first name" />
-                                    </div>
-                                    <div className="form-group col-md-12">
-                                        <label htmlFor="name"> Name </label>
-                                        <input type="text" id="name" defaultValue={this.state.user.name} onChange={(e) => this.handleInputChanges(e)} name="name" className="form-control" placeholder="Enter user's first name" />
-                                    </div>
-                                    <div className="form-group col-md-12">
-                                        <label htmlFor="email"> Email </label>
-                                        <input type="email" id="email" defaultValue={this.state.user.email} onChange={(e) => this.handleInputChanges(e)} name="email" className="form-control" placeholder="Enter user's email address" />
-                                    </div>
-
-                                    <div className="form-group col-md-12">
-                                        <label htmlFor="phone"> Phone </label>
-                                        <input type="text" id="phone_number" defaultValue={this.state.user.phone} onChange={(e) => this.handleInputChanges(e)} name="phone_number" className="form-control" placeholder="Enter user's phone number" />
-                                    </div>
-
-                                    <div className="form-group col-md-4 pull-right">
-                                        <button className="btn btn-success" type="submit">
-                                            Edit user </button>
-                                        {loading &&
-                                            <span className="fa fa-circle-o-notch fa-spin" />
-                                        }
-                                    </div>
-                                </form>
+                                    <label htmlFor="rating"> What would you rate this Recipe on a scale of 1-10?
+                                    <select defaultValue={this.state.recipe.rating} onChange={(e) => this.handleInputChanges(e)} id="rating" name="rating" className="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    </select>
+                                    </label>
+                                </div>
+                                <div className="form-group col-md-12">
+                                <label htmlFor="is_public"> Should this Recipe be Public to ALL logged-in Users?
+                                    <select defaultValue={this.state.recipe.is_public} onChange={(e) => this.handleInputChanges(e)} id="is_public" name="is_public" className="form-control">
+                                    <option value="0">Private</option>
+                                    <option value="1">Public</option>
+                                    </select>
+                                    </label>
+                                </div>
+                                <div className="form-group col-md-12">
+                                    <label htmlFor="first_name"> Name/Title </label>
+                                    <input type="text" id="name" defaultValue={this.state.recipe.name} onChange={(e) => this.handleInputChanges(e)} name="name" className="form-control" placeholder="Recipe Title" />
+                                </div>
+                                <div className="form-group col-md-12">
+                                    <label htmlFor="recipe"> Recipe </label>
+                                    <textarea id="recipe" defaultValue={this.state.recipe.recipe} onChange={(e) => this.handleInputChanges(e)} name="recipe" className="form-control" placeholder="Enter the Recipe Here!!" />
+                                </div>
+                                <div className="form-group col-md-4 pull-right">
+                                    <button className="btn btn-success" type="submit">
+                                        Update Recipe
+                                    </button>
+                                    {loading &&
+                                        <span className="fa fa-circle-o-notch fa-spin" />
+                                    }
+                                </div>
+                            </form>
                             </div>
                         </div>
                     </div>
@@ -128,4 +134,4 @@ class EditUser extends React.Component{
     }
 }
 
-export default connect(mapStateToProps)(EditUser)
+export default connect(mapStateToProps)(EditRecipe)
