@@ -1,14 +1,14 @@
 const jwkToPem = require('jwk-to-pem')
 const request = require('request')
 const jwt = require('jsonwebtoken')
-const appConfig = require('./../config');
+const cognitoConfig = require('./../config/cognito');
 
 const TOKEN_USE_ACCESS = 'access'
 const TOKEN_USE_ID = 'id'
 
 const MAX_TOKEN_AGE = 60 * 60 // 3600 seconds
 const ALLOWED_TOKEN_USES = [TOKEN_USE_ACCESS, TOKEN_USE_ID]
-const ISSUER = `https://cognito-idp.${appConfig.region}.amazonaws.com/${appConfig.userPool}`
+const ISSUER = `https://cognito-idp.${cognitoConfig.region}.amazonaws.com/${cognitoConfig.userPool}`
 
 class AuthError extends Error {}
 
@@ -144,8 +144,8 @@ function _verifyProm (pems, auth) {
 
       // Verify the client id matches what we expect. Will be in either the aud or the client_id claim depending on whether it's an id or access token.
       const clientId = (decodedAndVerified.aud || decodedAndVerified.client_id)
-      if (clientId !== appConfig.clientId) {
-        console.debug(`Invalid JWT token. Expected client id to be ${appConfig.clientId} but found ${clientId}.`)
+      if (clientId !== cognitoConfig.clientId) {
+        console.debug(`Invalid JWT token. Expected client id to be ${cognitoConfig.clientId} but found ${clientId}.`)
         reject(new AuthError('Authorization header contains an invalid JWT token.')) // don't return detailed info to the caller
         return
       }

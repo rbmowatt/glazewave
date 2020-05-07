@@ -2,12 +2,7 @@ const { Router } = require('express');
 const Cognito = require('../services/aws/cognito');
 const generator = require('generate-password');
 const cognito = new Cognito();
- 
-const AWS = require("aws-sdk");
-
-const docClient = new AWS.DynamoDB.DocumentClient();
-
-const router = new Router();
+ const router = new Router();
 
 router.get('/', function (req, res) {
     cognito.listUsers().then( (data)=>{
@@ -16,27 +11,22 @@ router.get('/', function (req, res) {
             user.Attributes.forEach(att=>
                 {
                     user[att.Name] = att.Value;
-                    //console.log('att', att);
                 })
                 users.push(user);
         })
-        //console.log('user', users)
         res.json(users);
     })
-    .catch(error=>HTMLFormControlsCollection.log('errr', error)); 
+    .catch(error=>console.log('errr', error)); 
 })
 
 router.get('/:uname', function (req, res) {
     console.log('uname', req.params)
     cognito.getUser( { userName :req.params.uname } ).then( (data)=>{
         console.log('data', data);
-        const users = [];
             data.UserAttributes.forEach(att=>
-                {
-                    data[att.Name] = att.Value;
-                    console.log('att', att);
-                })
-        console.log('user', data)
+            {
+                data[att.Name] = att.Value;
+            })
         res.json(data);
     })
     .catch(error=>
