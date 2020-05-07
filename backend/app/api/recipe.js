@@ -27,6 +27,7 @@ router.get('/', function (req, res) {
     function onScan(err, data) {
         if (err) {
             console.error("Unable to scan the table. Error JSON:", JSON.stringify(err, null, 2));
+            return res.status(400).json(error);
         } else {
             res.json(data.Items)
             if (typeof data.LastEvaluatedKey != "undefined") {
@@ -53,6 +54,7 @@ router.get('/:id', function (req, res) {
     docClient.query(params, function (err, data) {
         if (err) {
             console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
+            return res.status(400).json(error);
         } else {
             console.log("Query succeeded.");
             res.send(data.Items)
@@ -76,6 +78,7 @@ router.post('/', function (req, res) {
         docClient.put(params, function (err, data) {
             if (err) {
                 console.error("Unable to add User", req.body, ". Error JSON:", JSON.stringify(err, null, 2));
+                return res.status(400).json(error);
             } else {
                 res.send(data);
                 console.log("PutItem succeeded:", data.Item);
@@ -85,20 +88,30 @@ router.post('/', function (req, res) {
 });
 
 router.put('/:id', function (req, res) {
+
+    let expression = "SET ";
+    let values = {};
+    let attributes = {};
+    for (const [key, value] of Object.entries(req.body)) {
+        expression += "#" + key + "=:" +key + ",";
+        attributes["#"+key] = key;
+        values[":"+key] = value;
+      }
+      expression = expression.substring(0, expression.length - 1);
+      console.log(expression, values);
     const params = {
         TableName: "recipes",
-        Item: {
-            "id": parseInt(req.params.id),
-            "name": req.body.name || null,
-            "picture": req.body.picture || null,
-            "submitted_by": req.body.submitted_by || null,
-            "recipe": req.body.recipe || null,
-            "gender": req.body.gender || null
-        }
+        Key: {
+            id: parseInt(req.params.id)
+          },
+          UpdateExpression: expression,
+          ExpressionAttributeNames: attributes,
+          ExpressionAttributeValues: values
     };
-    docClient.put(params, function (err, data) {
+    docClient.update(params, function (err, data) {
         if (err) {
             console.error("Unable to add User", req.body, ". Error JSON:", JSON.stringify(err, null, 2));
+            res.status(400).json(err);
         } else {
             res.send(data);
             console.log("PutItem succeeded:", data.Items);
@@ -117,6 +130,7 @@ router.delete('/:id', function (req, res) {
     docClient.delete(params, function (err, data) {
         if (err) {
             console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
+            return res.status(400).json(error);
         } else {
             console.log("Query succeeded.");
             res.send(data.Items)
