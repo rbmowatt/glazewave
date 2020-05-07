@@ -1,9 +1,10 @@
 const { Router } = require('express');
+const dynamoConfig = require('../config/dynamo');
 
 const AWS = require("aws-sdk");
 AWS.config.update({
-    region: "eu-west-2",
-    endpoint: "http://localhost:8000"
+    region: dynamoConfig.region,
+    endpoint: dynamoConfig.endpoint
 });
 const docClient = new AWS.DynamoDB.DocumentClient();
 

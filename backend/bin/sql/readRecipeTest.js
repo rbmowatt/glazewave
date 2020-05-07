@@ -1,8 +1,10 @@
-var AWS = require("aws-sdk");
+const dynamoConfig = require('./../../app/config/dynamo');
+
+const AWS = require("aws-sdk");
 AWS.config.update({
-    region: "eu-east-1",
-    endpoint: "http://localhost:8000"
-  });
+    region: dynamoConfig.region,
+    endpoint: dynamoConfig.endpoint
+});
 var docClient = new AWS.DynamoDB.DocumentClient()
 var table = "recipes";
 var id = 1000;

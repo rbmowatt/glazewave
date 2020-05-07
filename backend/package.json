@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/server.js",
-    "create-db": "cd bin/sql && node createUsersTable.js && cd ..",
+    "scaffold" : "npm run create-db && npm run load-data",
+    "create-db": "cd bin/sql && node createRecipesTable.js && cd ..",
     "delete-db": "cd bin/sql  && node deleteUsersTable.js && cd ..",
-    "load-data": "cd bin/sql  && node loadUsersTable.js && cd ..",
-    "read-data": "cd bin/sql  && node readDataTest.js && cd .."
+    "load-data": "cd bin/sql  && node loadRecipesTable.js && cd .."
   },
   "dependencies": {
     "aws-sdk": "^2.668.0",
