@@ -62,14 +62,16 @@ class RecipeIndex extends Component {
                                 {recipes && recipes.map(recipe =>
                                     <tr key={recipe.id}>
                                         <td>{recipe.name}</td>
-                                        <td>{ recipe.recipe.substring(0, 35) }...</td>
+                                        <td>...</td>
                                         <td>{recipe.submitted_by}</td>
                                         <td>{recipe.isPublic ? '1' : '0'}</td>
                                         <td>{recipe.rating}</td>
                                         <td>
                                             <div className="d-flex justify-content-between align-items-center">
                                                 <div className="btn-group" style={{ marginBottom: "20px" }}>
-                                                    <Link to={`recipe/${recipe.id}`} className="btn btn-sm btn-outline-secondary">Edit Recipe </Link>
+                                                    <Link to={`recipe/${recipe.id}`} className="btn btn-sm btn-outline-secondary">View Recipe </Link>
+                                                    <Link to={`recipe/edit/${recipe.id}`} className="btn btn-sm btn-outline-secondary">Edit Recipe </Link>
+                                                    <button className="btn btn-sm btn-outline-secondary" onClick={() => this.deleteRecipe(recipe.id)}>Delete Recipe</button>
                                                 </div>
                                             </div>
                                         </td>
