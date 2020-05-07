@@ -1,8 +1,10 @@
+const dynamoConfig = require('./../../app/config/dynamo');
+
 const AWS = require("aws-sdk");
 AWS.config.update({
-    region: "eu-east-1",
-    endpoint: "http://localhost:8000"
-  });
+    region: dynamoConfig.region,
+    endpoint: dynamoConfig.endpoint
+});
 const dynamodb = new AWS.DynamoDB();
 const params = {
     TableName : "recipes",
