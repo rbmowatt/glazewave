@@ -25,7 +25,6 @@ class RecipeIndex extends Component {
               }
             };
             axios.get( apiConfig.host + ':' + apiConfig.port + `/recipe`, options).then(data => {
-                console.log('dynamoresponse', data.data);
                 this.setState({ recipes: data.data })
             });
         }
