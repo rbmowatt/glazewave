@@ -1,13 +1,6 @@
 import React, { Component } from 'react'
-//import logo from './logo.svg'
 import './Home.css'
 import { connect } from 'react-redux'
-
-const mapStateToProps = state => {
-}
-
-function mapDispatchToProps (dispatch) {
-}
 
 class Page404 extends Component {
   componentDidMount () {
@@ -24,4 +17,4 @@ class Page404 extends Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Page404)
+export default connect()(Page404)

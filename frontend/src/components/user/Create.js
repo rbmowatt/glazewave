@@ -19,7 +19,15 @@ class Create extends React.Component{
             loading: false,
             submitSuccess: false,
             submitFail: false,
-            errorMessage : null
+            errorMessage : null,
+            headers : {}
+        }
+    }
+
+    componentDidMount(){
+        if (this.props.session.isLoggedIn) {
+            const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
+            this.setState({headers});
         }
     }
 
@@ -37,15 +45,7 @@ class Create extends React.Component{
         this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
 
         if (this.props.session.isLoggedIn) {
-            console.log('token', this.props.session.credentials.accessToken);
-            // Call the API server GET /users endpoint with our JWT access token
-            const options = {
-              headers: {
-                Authorization: `Bearer ${this.props.session.credentials.accessToken}`
-              }
-            };
-            console.log('opptions', options);
-            axios.post(apiConfig.host + ':' + apiConfig.port + `/user`, formData, options).then(data => [
+            axios.post(apiConfig.host + ':' + apiConfig.port + `/user`, formData, this.state.headers).then(data => [
             setTimeout(() => {
                 this.props.history.push('/user');
             }, 1500)

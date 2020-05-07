@@ -11,20 +11,17 @@ const mapStateToProps = state => {
 class UserIndex extends Component {
     constructor(props) {
         super(props);
-        this.state = { users: [] }
+        this.state = { users: [], headers : {} }
     }
 
     componentDidMount(){
 
         if (this.props.session.isLoggedIn) {
-            //console.log('token', this.props.session.credentials.accessToken);
-            // Call the API server GET /users endpoint with our JWT access token
-            const options = {
-              headers: {
-                Authorization: `Bearer ${this.props.session.credentials.accessToken}`
-              }
-            };
-            axios.get( apiConfig.host + ':' + apiConfig.port + `/user`, options).then(data => {
+            const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
+            this.setState({ headers});
+            
+            //get our init data here
+            axios.get( apiConfig.host + ':' + apiConfig.port + `/user`, headers).then(data => {
                 console.log('cognito response', data.Users);
                 this.setState({ users: data.data })
             });
@@ -32,12 +29,7 @@ class UserIndex extends Component {
     }
 
     deleteCustomer(id ) {
-        const options = {
-            headers: {
-              Authorization: `Bearer ${this.props.session.credentials.accessToken}`
-            }
-          };
-        axios.delete(apiConfig.host + ':' + apiConfig.port + `/user/${id}`, options).then(data => {
+        axios.delete(apiConfig.host + ':' + apiConfig.port + `/user/${id}`, this.state.headers).then(data => {
             const index = this.state.users.findIndex(user => user.id === id);
             this.state.users.splice(index, 1);
             this.props.history.push('/user');
@@ -54,6 +46,9 @@ class UserIndex extends Component {
                     </div>
                 )}
                 <div className="container">
+                <div className="row">
+                    <Link to={'user/create'}> Create New User</Link>
+                </div>
                     <div className="row">
                         <table className="table table-bordered">
                             <thead className="thead-light">
@@ -75,7 +70,7 @@ class UserIndex extends Component {
                                         <td>
                                             <div className="d-flex justify-content-between align-items-center">
                                                 <div className="btn-group" style={{ marginBottom: "20px" }}>
-                                                    <Link to={`edit/${user.Username}`} className="btn btn-sm btn-outline-secondary">Edit Customer </Link>
+                                                    <Link to={`user/edit/${user.Username}`} className="btn btn-sm btn-outline-secondary">Edit Customer </Link>
                                                     <button className="btn btn-sm btn-outline-secondary" onClick={() => this.deleteCustomer(user.Username)}>Delete Customer</button>
                                                 </div>
                                             </div>

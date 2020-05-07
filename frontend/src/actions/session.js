@@ -11,11 +11,9 @@ export const clearSession = () => ({
 export function initSession()
 {
   return function (dispatch) {
-    console.log('called init session');
     let session = hasSession();
     if(session)
     {
-      console.log('has session');
       cognitoUtils.getCognitoSession();
       dispatch({ type: SET_SESSION, session })
     }

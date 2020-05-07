@@ -11,10 +11,11 @@ class Create extends React.Component{
     constructor(props ) {
         super(props);
         this.state = {
-            userName: '',
+            rating: 5,
+            is_public : 0,
             name: '',
-            email: '',
-            phone_number: '',
+            submitted_by: '',
+            recipe: '',
             values: [],
             loading: false,
             submitSuccess: false,
@@ -28,10 +29,11 @@ class Create extends React.Component{
         this.setState({ loading: true });
 
         const formData = {
-            userName : this.state.userName,
+            is_public: this.state.is_public,
+            rating : this.state.rating,
             name: this.state.name,
-            email: this.state.email,
-            phone_number: this.state.phone_number,
+            recipe: this.state.recipe,
+            submitted_by : this.props.session.user.userName
         }
 
         this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
@@ -44,12 +46,12 @@ class Create extends React.Component{
                 Authorization: `Bearer ${this.props.session.credentials.accessToken}`
               }
             };
-            console.log('opptions', options);
-            axios.post(apiConfig.host + ':' + apiConfig.port + `/user`, formData, options).then(data => [
-            setTimeout(() => {
-                this.props.history.push('/user');
+            console.log('opptions', formData);
+            axios.post(apiConfig.host + ':' + apiConfig.port + `/recipe`, formData, options).then(data => [
+           setTimeout(() => {
+               this.props.history.push('/recipe');
             }, 1500)
-        ])
+            ])
         .catch(
             error=>{
                 this.setState({ submitSuccess: false, submitFail: true, errorMessage : error.response.data.message });
@@ -71,7 +73,7 @@ class Create extends React.Component{
         return (
             <div>
                 <div className={"col-md-12 form-wrapper"}>
-                    <h2> Create User </h2>
+                    <h2> Create Recipe </h2>
                     {!submitSuccess && (
                         <div className="alert alert-info" role="alert">
                             Fill the form below to create a new post
@@ -90,26 +92,47 @@ class Create extends React.Component{
                             </div>
                     )}
 
-                    <form id={"create-post-form"} onSubmit={this.processFormSubmission} noValidate={true}>
+                    <form id={"create-post-form"} onSubmit={this.processFormSubmission} noValidate={false}>
                         <div className="form-group col-md-12">
-                            <label htmlFor="first_name"> User Name </label>
-                            <input type="text" id="userName" onChange={(e) => this.handleInputChanges(e)} name="userName" className="form-control" placeholder="Enter full name" />
+                            <label htmlFor="rating"> What would you rate this Recipe on a scale of 1-10?
+                            <select value={this.state.rating} onChange={(e) => this.handleInputChanges(e)} id="rating" name="rating" className="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            </select>
+                            </label>
                         </div>
+                        
+                        <div className="form-group col-md-12">
+                        <label htmlFor="is_public"> Should this Recipe be Public to ALL logged-in Users?
+                            <select value={this.state.is_public} onChange={(e) => this.handleInputChanges(e)} id="is_public" name="is_public" className="form-control">
+                            <option value="0">Private</option>
+                            <option value="1">Public</option>
+                            </select>
+                            </label>
+                        </div>
+
+
+
+
                          <div className="form-group col-md-12">
-                            <label htmlFor="first_name"> Name </label>
-                            <input type="text" id="name" onChange={(e) => this.handleInputChanges(e)} name="name" className="form-control" placeholder="Enter full name" />
+                            <label htmlFor="first_name"> Name/Title </label>
+                            <input type="text" id="name" onChange={(e) => this.handleInputChanges(e)} name="name" className="form-control" placeholder="Recipe Title" />
                         </div>
                         <div className="form-group col-md-12">
-                            <label htmlFor="email"> Email </label>
-                            <input type="email" id="email" onChange={(e) => this.handleInputChanges(e)} name="email" className="form-control" placeholder="Enter customer's email address" />
-                        </div>
-                        <div className="form-group col-md-12">
-                            <label htmlFor="phone_number"> Phone Number </label>
-                            <input type="text" id="phone_number" onChange={(e) => this.handleInputChanges(e)} name="phone_number" className="form-control" placeholder="Enter customer's phone_number number" />
+                            <label htmlFor="recipe"> Recipe </label>
+                            <textarea value={this.state.recipe} onChange={(e) => this.handleInputChanges(e)} name="recipe" className="form-control" placeholder="Enter the Recipe Here!!" />
                         </div>
                         <div className="form-group col-md-4 pull-right">
                             <button className="btn btn-success" type="submit">
-                                Create User
+                                Create Recipe
                             </button>
                             {loading &&
                                 <span className="fa fa-circle-o-notch fa-spin" />

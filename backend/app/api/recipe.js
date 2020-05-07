@@ -1,6 +1,6 @@
 const { Router } = require('express');
 
- const AWS = require("aws-sdk");
+const AWS = require("aws-sdk");
 AWS.config.update({
     region: "eu-west-2",
     endpoint: "http://localhost:8000"
@@ -69,8 +69,8 @@ router.post('/', function (req, res) {
                 "picture": req.body.picture || null,
                 "submitted_by": req.body.submitted_by || null,
                 "recipe": req.body.recipe || null,
-                "isPublic": "isPublic" || null,
-                "rating": "rating" || null,
+                "isPublic": req.body.is_public || null,
+                "rating": req.body.rating || null,
             }
         };
         docClient.put(params, function (err, data) {
@@ -78,7 +78,7 @@ router.post('/', function (req, res) {
                 console.error("Unable to add User", req.body, ". Error JSON:", JSON.stringify(err, null, 2));
             } else {
                 res.send(data);
-                console.log("PutItem succeeded:", data.Items);
+                console.log("PutItem succeeded:", data.Item);
             }
         });
 
