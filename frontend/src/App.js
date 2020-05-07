@@ -1,10 +1,11 @@
 import * as React from 'react';
 import './App.css';
-import { Switch, Route, withRouter, RouteComponentProps, Link } from 'react-router-dom';
+import { Switch, Route, Link } from 'react-router-dom';
 import UserIndex from './components/user/UserIndex';
 import RecipeIndex from './components/recipe/RecipeIndex';
 import RecipeView from './components/recipe/View';
 import Create from './components/user/Create';
+import CreateRecipe  from './components/recipe/Create';
 import EditCustomer from './components/user/Edit';
 import Home from './components/home/Home';
 import Page404 from './components/home/Page404';
@@ -45,9 +46,6 @@ class App extends React.Component{
               <Link to={'/user'}> Users</Link>
             </li>
             <li>
-              <Link to={'/create'}> Create</Link>
-            </li>
-            <li>
               <Link to={'/recipe'}> Recipes</Link>
             </li>
           </ul>
@@ -56,10 +54,12 @@ class App extends React.Component{
           <Route path={'/'} exact component={Home} />
           <Route path={'/login'} exact component={Login} />
           <Route path={'/user'} exact component={UserIndex} />
-          <Route path={'/create'} exact component={Create} />
-          <Route path={'/edit/:id'} exact component={EditCustomer} />
+          <Route path={'/user/create'} exact component={Create} />
+          <Route path={'/user/edit/:id'} exact component={EditCustomer} />
           <PrivateRoute path={'/recipe'} exact component={RecipeIndex}  session={this.props.session} />
+          <Route path={'/recipe/create'} exact component={ CreateRecipe } />
           <Route path={'/recipe/:id'} exact component={RecipeView } />
+
           <Route component={Page404} />
         </Switch>
       </div>

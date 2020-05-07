@@ -17,18 +17,16 @@ class EditUser extends React.Component{
             loading: false,
             submitSuccess: false,
             submitFail: false,
-            errorMessage : null
+            errorMessage : null,
+            headers : {}
         }
     }
 
     componentDidMount() {
         if (this.props.session.isLoggedIn) {
-            const options = {
-              headers: {
-                Authorization: `Bearer ${this.props.session.credentials.accessToken}`
-              }
-            };
-            axios.get(apiConfig.host + ':' + apiConfig.port + `/user/${this.state.id}`, options).then(data => {
+            const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
+            this.setState({headers});
+            axios.get(apiConfig.host + ':' + apiConfig.port + `/user/${this.state.id}`, headers).then(data => {
                 this.setState({ user: data.data });
             })
             .catch(error=>console.log(error));
@@ -38,15 +36,10 @@ class EditUser extends React.Component{
     processFormSubmission = async (e) => {
         e.preventDefault();
         this.setState({ loading: true });
-        const options = {
-            headers: {
-              Authorization: `Bearer ${this.props.session.credentials.accessToken}`
-            }
-          };
-        axios.put(apiConfig.host + ':' + apiConfig.port + `/user/${this.state.id}`, this.state.values, options).then(data => {
+        axios.put(apiConfig.host + ':' + apiConfig.port + `/user/${this.state.id}`, this.state.values, this.state.headers).then(data => {
             this.setState({ submitSuccess: true, loading: false })
             setTimeout(() => {
-                this.props.history.push('/');
+                this.props.history.push('/user');
             }, 1500)
         })
         .catch(

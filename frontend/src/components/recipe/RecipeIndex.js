@@ -11,32 +11,22 @@ const mapStateToProps = state => {
 class RecipeIndex extends Component {
     constructor(props) {
         super(props);
-        this.state = { recipes: [] }
+        this.state = { recipes: [], headers : {} }
     }
 
     componentDidMount(){
 
         if (this.props.session.isLoggedIn) {
-            //console.log('token', this.props.session.credentials.accessToken);
-            // Call the API server GET /recipes endpoint with our JWT access token
-            const options = {
-              headers: {
-                Authorization: `Bearer ${this.props.session.credentials.accessToken}`
-              }
-            };
-            axios.get( apiConfig.host + ':' + apiConfig.port + `/recipe`, options).then(data => {
+            const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
+            this.setState({headers});
+            axios.get( apiConfig.host + ':' + apiConfig.port + `/recipe`, headers).then(data => {
                 this.setState({ recipes: data.data })
             });
         }
     }
 
     deleteRecipe(id ) {
-        const options = {
-            headers: {
-              Authorization: `Bearer ${this.props.session.credentials.accessToken}`
-            }
-          };
-        axios.delete(apiConfig.host + ':' + apiConfig.port + `/recipe/${id}`, options).then(data => {
+        axios.delete(apiConfig.host + ':' + apiConfig.port + `/recipe/${id}`, this.state.headers).then(data => {
             const index = this.state.recipes.findIndex(recipe => recipe.id === id);
             this.state.recipes.splice(index, 1);
             this.props.history.push('/recipe');
@@ -53,6 +43,9 @@ class RecipeIndex extends Component {
                     </div>
                 )}
                 <div className="container">
+                <div className="row">
+                    <Link to={'recipe/create'}> Create New Recipe</Link>
+                </div>
                     <div className="row">
                         <table className="table table-bordered">
                             <thead className="thead-light">

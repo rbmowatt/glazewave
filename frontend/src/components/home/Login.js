@@ -12,15 +12,10 @@ function mapDispatchToProps (dispatch) {
   }
 }
 
-/**
-  Callback route used after a successful Cognito sign-in. The window URL will contain the code we can
-  use to get a Cognito session, which includes JWT tokens etc
- */
 class Login extends Component {
   // If a Cognito auth code is in the URL (could be a hash or query component), init the new session
   componentDidMount () {
     if (this.props.location.hash || this.props.location.search) {
-      //alert(window.location.href);
       this.props.initSessionFromCallbackURI(window.location.href)
     }
   }

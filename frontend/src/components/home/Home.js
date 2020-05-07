@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
-//import logo from './logo.svg'
 import './Home.css'
 import { connect } from 'react-redux'
 import cognitoUtils from '../../lib/utils/cognito'
-import appConfig from '../../config/cognito.json'
-import { initSession } from '../../actions/session';
+//import { initSession } from '../../actions/session';
 
 const mapStateToProps = state => {
   return { session: state.session }
@@ -25,14 +23,6 @@ class Home extends Component {
   componentDidMount () {
     //this.props.initSession();
     if (this.props.session.isLoggedIn) {
-      //console.log('token', this.props.session.credentials.accessToken);
-      // Call the API server GET /users endpoint with our JWT access token
-      const options = {
-        url: `${appConfig.apiUri}/user`,
-        headers: {
-          Authorization: `Bearer ${this.props.session.credentials.accessToken}`
-        }
-      }
     }
   }
 

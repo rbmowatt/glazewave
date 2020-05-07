@@ -11,21 +11,17 @@ const mapStateToProps = state => {
 class RecipeView extends Component {
     constructor(props) {
         super(props);
-        this.state = { recipe: [] }
+        this.state = { recipe: [], headers : {} }
     }
 
     componentDidMount(){
 
         if (this.props.session.isLoggedIn) {
-            //console.log('token', this.props.session.credentials.accessToken);
-            // Call the API server GET /recipe endpoint with our JWT access token
-            const options = {
-              headers: {
-                Authorization: `Bearer ${this.props.session.credentials.accessToken}`
-              }
-            };
-            axios.get( apiConfig.host + ':' + apiConfig.port + `/recipe/` + this.props.match.params.id, options).then(data => {
-                console.log('dynamo   response', data.data);
+            const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
+            this.setState({headers});
+            
+            // now lets load our data
+            axios.get( apiConfig.host + ':' + apiConfig.port + `/recipe/` + this.props.match.params.id, this.state.headers).then(data => {
                 this.setState({ recipe: data.data[0] })
             })
             .catch(error=>console.log(error));
@@ -51,7 +47,7 @@ class RecipeView extends Component {
             <div>
                 {recipe.length === 0 && (
                     <div className="text-center">
-                        <h2>No recipe found at the moment</h2>
+                        <h2>No Recipes found at the moment</h2>
                     </div>
                 )}
                 <div className="container">
