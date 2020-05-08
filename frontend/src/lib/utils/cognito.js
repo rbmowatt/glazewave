@@ -1,7 +1,7 @@
 import { CognitoAuth } from 'amazon-cognito-auth-js/dist/amazon-cognito-auth'
 import { CognitoUserPool } from 'amazon-cognito-identity-js'
 import { config as AWSConfig } from 'aws-sdk'
-import appConfig from '../../config/cognito.json'
+import appConfig from '../../config/cognito.js'
 
 AWSConfig.region = appConfig.region
 

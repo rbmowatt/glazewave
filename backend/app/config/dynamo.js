@@ -1,4 +1,5 @@
+require('dotenv').config()
 module.exports = {
-    region: "eu-east-1", 
-    endpoint: "http://localhost:8000"
+    region: process.env.AWS_DEFAULT_REGION, 
+    endpoint: process.env.AWS_DYNAMO_HOST
 }

@@ -1,7 +1,9 @@
+
+require('dotenv').config()
 module.exports = { 
-    apiUrl : 'http://localhost:3001',
-    signoutUri : 'http://localhost:3001',
-    region : 'us-east-1',
-    userPool:'us-east-1_7dmZzXWTs',
-    clientId : "52oejcm5onsau8s1rk7ugpqidk"
+    apiUrl : process.env.API_HOST,
+    signoutUri : process.env.API_HOST,
+    region : process.env.AWS_DEFAULT_REGION,
+    userPool: process.env.AWS_COGNITO_USER_POOL,
+    clientId : process.env.AWS_COGNITO_CLIENT_ID
 };
