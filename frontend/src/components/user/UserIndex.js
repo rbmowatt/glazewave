@@ -20,9 +20,7 @@ class UserIndex extends Component {
             const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
             this.setState({ headers});
             
-            //get our init data here
             axios.get( apiConfig.host + ':' + apiConfig.port + `/user`, headers).then(data => {
-                console.log('cognito response', data.Users);
                 this.setState({ users: data.data })
             });
         }
@@ -42,7 +40,7 @@ class UserIndex extends Component {
             <div>
                 {users.length === 0 && (
                     <div className="text-center">
-                        <h2>No user found at the moment</h2>
+                        <h2>No Users found at the moment</h2>
                     </div>
                 )}
                 <div className="container">
@@ -70,8 +68,8 @@ class UserIndex extends Component {
                                         <td>
                                             <div className="d-flex justify-content-between align-items-center">
                                                 <div className="btn-group" style={{ marginBottom: "20px" }}>
-                                                    <Link to={`user/edit/${user.Username}`} className="btn btn-sm btn-outline-secondary">Edit Customer </Link>
-                                                    <button className="btn btn-sm btn-outline-secondary" onClick={() => this.deleteCustomer(user.Username)}>Delete Customer</button>
+                                                    <Link to={`user/edit/${user.Username}`} className="btn btn-sm btn-outline-secondary">Edit User</Link>
+                                                    <button className="btn btn-sm btn-outline-secondary" onClick={() => this.deleteCustomer(user.Username)}>Delete User</button>
                                                 </div>
                                             </div>
                                         </td>

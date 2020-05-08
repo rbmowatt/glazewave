@@ -66,10 +66,7 @@ class EditUser extends React.Component{
             <div className="App">
                 {this.state.user &&
                     <div>
-                        < h1 > user List Management App</h1>
-                        <p> Built with React.js and TypeScript </p>
-
-
+                        < h1 > User List Management App</h1>
                         <div>
                             <div className={"col-md-12 form-wrapper"}>
                                 <h2> Edit user </h2>
