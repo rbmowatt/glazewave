@@ -33,9 +33,7 @@ class App extends React.Component{
   }
 
   render() {
-    if (!this.props.session.isLoggedIn) {
-          return <div />
-    }
+
     return (
       <div>
         <nav>

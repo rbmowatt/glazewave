@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom';
+import './Recipe.css'
 import axios from 'axios';
 import apiConfig from '../../config/api.json';
 
@@ -19,8 +19,6 @@ class RecipeView extends Component {
         if (this.props.session.isLoggedIn) {
             const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
             this.setState({headers});
-            
-            // now lets load our data
             axios.get( apiConfig.host + ':' + apiConfig.port + `/recipe/` + this.props.match.params.id, this.state.headers).then(data => {
                 this.setState({ recipe: data.data[0] })
             })
@@ -50,40 +48,33 @@ class RecipeView extends Component {
                         <h2>No Recipes found at the moment</h2>
                     </div>
                 )}
-                <div className="container">
-                    <div className="row">
-                        <table className="table table-bordered">
-                            <thead className="thead-light">
-                                <tr>
-                                    <th scope="col">name</th>
-                                    <th scope="col">preview</th>
-                                    <th scope="col">submitted_by</th>
-                                    <th scope="col">Is Public</th>
-                                    <th scope="col">Rating</th>
-                                    <th scope="col">Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                    <tr key={recipe.id}>
-                                        <td>{recipe.name}</td>
-                                        <td>{ recipe.recipe }...</td>
-                                        <td>{recipe.submitted_by}</td>
-                                        <td>{recipe.isPublic ? '1' : '0'}</td>
-                                        <td>{recipe.rating}</td>
-                                        <td>
-                                            <div className="d-flex justify-content-between align-items-center">
-                                                <div className="btn-group" style={{ marginBottom: "20px" }}>
-                                                    <Link to={`recipe/${recipe.id}`} className="btn btn-sm btn-outline-secondary">Edit Recipe </Link>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                            </tbody>
-                        </table>
+        <div className="card recipe">
+			<div className="container">
+				<div className="wrapper row">
+					<div className="preview col-md-6">
+						<div className="preview-pic tab-content">
+						  <div className="tab-pane active" id="pic-1"><img src={"https://umanage-mowatr.s3.amazonaws.com/" + recipe.picture } alt="recipe" /></div>
+						</div>
+					</div>
+					<div className="details col-md-6">
+						<h3 className="product-title">{recipe.name}</h3>
+						<div className="rating">
+                            <div className="stars">
+                                <span className="fa fa-star checked"></span>
+                                <span className="fa fa-star checked"></span>
+                                <span className="fa fa-star checked"></span>
+                                <span className="fa fa-star"></span>
+                                <span className="fa fa-star"></span>
+                            </div>
+						<span className="review-no">{recipe.rating}</span>
+					    </div>
+						<p className="product-description">{ recipe.recipe }</p>
+						<h4 className="price">submitted by: <span>{recipe.submitted_by}</span></h4>
+                        </div>
                     </div>
                 </div>
-
             </div>
+        </div>
         )
     }
 }

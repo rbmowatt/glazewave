@@ -93,19 +93,19 @@ class Create extends React.Component{
                     <form id={"create-post-form"} onSubmit={this.processFormSubmission} noValidate={true}>
                         <div className="form-group col-md-12">
                             <label htmlFor="first_name"> User Name </label>
-                            <input type="text" id="userName" onChange={(e) => this.handleInputChanges(e)} name="userName" className="form-control" placeholder="Enter full name" />
+                            <input type="text" id="userName" onChange={(e) => this.handleInputChanges(e)} name="userName" className="form-control" placeholder="Enter unique user name" required />
                         </div>
                          <div className="form-group col-md-12">
                             <label htmlFor="first_name"> Name </label>
-                            <input type="text" id="name" onChange={(e) => this.handleInputChanges(e)} name="name" className="form-control" placeholder="Enter full name" />
+                            <input type="text" id="name" onChange={(e) => this.handleInputChanges(e)} name="name" className="form-control" placeholder="Enter full name" required />
                         </div>
                         <div className="form-group col-md-12">
                             <label htmlFor="email"> Email </label>
-                            <input type="email" id="email" onChange={(e) => this.handleInputChanges(e)} name="email" className="form-control" placeholder="Enter customer's email address" />
+                            <input type="email" id="email" onChange={(e) => this.handleInputChanges(e)} name="email" className="form-control" placeholder="Enter customer's email address" required />
                         </div>
                         <div className="form-group col-md-12">
                             <label htmlFor="phone_number"> Phone Number </label>
-                            <input type="text" id="phone_number" onChange={(e) => this.handleInputChanges(e)} name="phone_number" className="form-control" placeholder="Enter customer's phone_number number" />
+                            <input type="text" id="phone_number" onChange={(e) => this.handleInputChanges(e)} name="phone_number" className="form-control" placeholder="format = +1[phone]" required  />
                         </div>
                         <div className="form-group col-md-4 pull-right">
                             <button className="btn btn-success" type="submit">
