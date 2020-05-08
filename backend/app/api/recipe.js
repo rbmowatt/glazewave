@@ -1,24 +1,17 @@
 const { Router } = require('express');
 const dynamoConfig = require('../config/dynamo');
-var aws = require('aws-sdk');
-aws.config.update({region : 'us-east-1'});
-require('dotenv').config()
+const aws = require('aws-sdk');
+const multer  = require('multer');
+const multerS3 = require('multer-s3');
+const s3Config = require('./../config/s3');
+const s3 = new aws.S3(s3Config);
+aws.config.update({region : 'us-east-1', endpoint: dynamoConfig.endpoint});
 
-var multer  = require('multer');
-var multerS3 = require('multer-s3');
-var s3 = new aws.S3({
-    apiVersion: '2006-03-01', 
-    endpoint: "https://s3.amazonaws.com",
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-    Bucket: 'umanage-mowatr'
-});
-
-var upload = multer({
+const upload = multer({
     storage: multerS3({
       s3: s3,
       acl: 'public-read',
-      bucket: 'umanage-mowatr',
+      bucket: s3Config.Bucket,
       contentType: multerS3.AUTO_CONTENT_TYPE,
       metadata: function (req, file, cb) {
         cb(null, {fieldName: file.fieldname});
@@ -29,12 +22,8 @@ var upload = multer({
     })
   })
 
-const AWS = require("aws-sdk");
-AWS.config.update({
-    region: dynamoConfig.region,
-    endpoint: dynamoConfig.endpoint
-});
-const docClient = new AWS.DynamoDB.DocumentClient();
+
+const docClient = new aws.DynamoDB.DocumentClient();
 
 const router = new Router();
 
