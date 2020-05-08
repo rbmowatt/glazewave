@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
 import axios from 'axios';
-import apiConfig from '../../config/api.json';
+import apiConfig from '../../config/api.js';
 
 export interface IValues {
     first_name: string,

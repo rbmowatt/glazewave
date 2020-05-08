@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux'
 import axios from 'axios';
-import apiConfig from '../../config/api.json';
+import apiConfig from '../../config/api.js';
 import Spinner from './../helpers/image/Spinner'
 import Images from './../helpers/image/Images'
 import Buttons from './../helpers/image/Buttons'

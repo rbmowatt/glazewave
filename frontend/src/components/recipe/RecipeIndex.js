@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import apiConfig from '../../config/api.json';
+import apiConfig from '../../config/api.js';
 import './Recipe.css'
 
 const mapStateToProps = state => {
