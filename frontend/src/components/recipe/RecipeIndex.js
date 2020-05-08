@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import apiConfig from '../../config/api.json';
+import './Recipe.css'
 
 const mapStateToProps = state => {
     return { session: state.session }
@@ -43,10 +44,11 @@ class RecipeIndex extends Component {
                     </div>
                 )}
                 <div className="container">
-                <div className="row">
-                    <Link to={'recipe/create'}> Create New Recipe</Link>
-                </div>
+                
                     <div className="row">
+                    <div className="row newEntity">
+                    <Link to={'recipe/create'} className="btn btn-sm btn-outline-secondary"> Create New Recipe</Link>
+                    </div>
                         <table className="table table-bordered">
                             <thead className="thead-light">
                                 <tr>

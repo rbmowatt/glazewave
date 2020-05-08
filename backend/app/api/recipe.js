@@ -1,5 +1,33 @@
 const { Router } = require('express');
 const dynamoConfig = require('../config/dynamo');
+var aws = require('aws-sdk');
+aws.config.update({region : 'us-east-1'});
+require('dotenv').config()
+
+var multer  = require('multer');
+var multerS3 = require('multer-s3');
+var s3 = new aws.S3({
+    apiVersion: '2006-03-01', 
+    endpoint: "https://s3.amazonaws.com",
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+    Bucket: 'umanage-mowatr'
+});
+
+var upload = multer({
+    storage: multerS3({
+      s3: s3,
+      acl: 'public-read',
+      bucket: 'umanage-mowatr',
+      contentType: multerS3.AUTO_CONTENT_TYPE,
+      metadata: function (req, file, cb) {
+        cb(null, {fieldName: file.fieldname});
+      },
+      key: function (req, file, cb) {
+        cb(null, Date.now().toString() + file.originalname)
+      }
+    })
+  })
 
 const AWS = require("aws-sdk");
 AWS.config.update({
@@ -41,6 +69,7 @@ router.get('/', function (req, res) {
 })
 
 router.get('/:id', function (req, res) {
+    console.log('dbhost', process.env.DB_HOST);
     const recipeId = parseInt(req.params.id);
     const params = {
         TableName: "recipes",
@@ -63,13 +92,15 @@ router.get('/:id', function (req, res) {
     });
 });
 
-router.post('/', function (req, res) {
+router.post('/',  upload.single('photo'), function (req, res) {
+
+        console.log('file', req.file);
         const params = {
             TableName: "recipes",
             Item: {
                 "id": Date.now(),
                 "name": req.body.name || null,
-                "picture": req.body.picture || null,
+                "picture": req.file.key || null,
                 "submitted_by": req.body.submitted_by || null,
                 "recipe": req.body.recipe || null,
                 "isPublic": req.body.is_public || null,
