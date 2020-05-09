@@ -2,6 +2,7 @@ import { CognitoAuth } from 'amazon-cognito-auth-js/dist/amazon-cognito-auth'
 import { CognitoUserPool } from 'amazon-cognito-identity-js'
 import { config as AWSConfig } from 'aws-sdk'
 import { cognitoConfig } from '../../config/cognito.js'
+import { clearSession } from './session';
 
 AWSConfig.region = cognitoConfig.region
 
@@ -89,6 +90,7 @@ const getCognitoSession = () => {
 
 // Sign out of the current session (will redirect to signout URI)
 const signOutCognitoSession = () => {
+  clearSession();
   const auth = createCognitoAuth()
   auth.signOut()
 }

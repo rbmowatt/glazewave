@@ -12,3 +12,11 @@ export function hasSession() {
     }
   return false;
 }
+
+export function clearSession() {
+  if(Cookie.get("x-token"))
+  {
+    Cookie.remove("x-token")
+  }
+return false;
+}
