@@ -27,15 +27,19 @@ const mapStateToProps = state => {
 
 class App extends React.Component{
 
+  constructor(props ) {
+    const k = props.initSession();
+    super(props);
+    
+
+}
+
   componentDidMount () {
-      this.props.initSession();
       console.log('app.props', this.props);
   }
 
   render() {
-    if (!this.props.session.isLoggedIn) {
-          return <div />
-    }
+ 
     return (
       <div>
         <nav>
@@ -53,14 +57,15 @@ class App extends React.Component{
         </nav>
         <Switch>
           <Route path={'/'} exact component={Home} />
+          <Route path={'/logout'} exact component={Home} />
           <Route path={'/login'} exact component={Login} />
-          <Route path={'/user'} exact component={UserIndex} />
-          <Route path={'/user/create'} exact component={Create} />
-          <Route path={'/user/edit/:id'} exact component={EditCustomer} />
+          <PrivateRoute path={'/user'} exact component={UserIndex} session={this.props.session} />
+          <PrivateRoute path={'/user/create'} exact component={Create} session={this.props.session} />
+          <PrivateRoute path={'/user/edit/:id'} exact component={EditCustomer} session={this.props.session}  />
           <PrivateRoute path={'/recipe'} exact component={RecipeIndex}  session={this.props.session} />
-          <Route path={'/recipe/edit/:id'} exact component={EditRecipe} />
-          <Route path={'/recipe/create'} exact component={ CreateRecipe } />
-          <Route path={'/recipe/:id'} exact component={RecipeView } />
+          <PrivateRoute  path={'/recipe/edit/:id'} exact component={EditRecipe} session={this.props.session} />
+          <PrivateRoute  path={'/recipe/create'} exact component={ CreateRecipe } session={this.props.session} />
+          <PrivateRoute  path={'/recipe/:id'} exact component={RecipeView } />
 
           <Route component={Page404} />
         </Switch>
