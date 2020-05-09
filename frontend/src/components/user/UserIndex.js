@@ -37,17 +37,19 @@ class UserIndex extends Component {
     render() {
         const users = this.state.users;
         return (
-            <div>
-                {users.length === 0 && (
-                    <div className="text-center">
-                        <h2>No Users found at the moment</h2>
-                    </div>
-                )}
+            <div className="main-container">
                 <div className="container">
-                <div className="row">
-                    <Link to={'user/create'}> Create New User</Link>
-                </div>
-                    <div className="row">
+                    <div className="row mx-auto">
+                    <div className="card um-main-body mx-auto">
+
+                        <div className="card-block">
+                        <div className="card-title"><strong>Users</strong> <Link to={'user/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New User</Link></div>
+                        <div className="card-text">
+                        {users.length === 0 ?(
+                            <div className="text-center">
+                                <h2>No users found at the moment</h2>
+                            </div>
+                        ) :(
                         <table className="table table-bordered">
                             <thead className="thead-light">
                                 <tr>
@@ -76,10 +78,14 @@ class UserIndex extends Component {
                                     </tr>
                                 )}
                             </tbody>
-                        </table>
+                        </table>)}
+                        </div>
+                        </div>
                     </div>
-                </div>
+                 </div>
+     
 
+            </div>
             </div>
         )
     }

@@ -63,12 +63,13 @@ class EditUser extends React.Component{
     render() {
         const { submitSuccess, loading, submitFail, errorMessage  } = this.state;
         return (
-            <div className="App">
-                {this.state.user &&
-                    <div>
-                        < h1 > User List Management App</h1>
-                        <div>
-                            <div className={"col-md-12 form-wrapper"}>
+            <div className="main-container">
+            {this.state.user &&
+                <div className="row">
+                <div className="card mx-auto">
+                    <div className="card-text">
+                        <div className="row">
+                            <div className="col-md-12 ">
                                 <h2> Edit user </h2>
 
                                 {submitSuccess && (
@@ -109,6 +110,10 @@ class EditUser extends React.Component{
                                         }
                                     </div>
                                 </form>
+                                </div>
+                            </div>
+                       
+
                             </div>
                         </div>
                     </div>

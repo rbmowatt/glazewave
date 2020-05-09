@@ -3,7 +3,8 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import apiConfig from '../../config/api.js';
-import './Recipe.css'
+import './Recipe.css';
+
 
 const mapStateToProps = state => {
     return { session: state.session }
@@ -37,19 +38,21 @@ class RecipeIndex extends Component {
     render() {
         const recipes = this.state.recipes;
         return (
-            <div>
-                {recipes.length === 0 && (
-                    <div className="text-center">
-                        <h2>No recipe found at the moment</h2>
-                    </div>
-                )}
+           
+            <div className="main-container">
                 <div className="container">
                 
                     <div className="row">
-                    <div className="row newEntity">
-                    <Link to={'recipe/create'} className="btn btn-sm btn-outline-secondary"> Create New Recipe</Link>
+                    <div className="card um-main-body mx-auto">
+                        <div className="card-block">
+                        <div className="card-title"><strong>Recipes</strong><Link to={'recipe/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New Recipe</Link></div>
+                        <div className="card-text">
+                {recipes.length === 0 ?(
+                    <div className="text-center">
+                        <h2>No recipe found at the moment</h2>
                     </div>
-                        <table className="table table-bordered">
+                ) :(
+                        <table className="table table-bordered table-striped">
                             <thead className="thead-light">
                                 <tr>
                                     <th scope="col">name</th>
@@ -71,20 +74,24 @@ class RecipeIndex extends Component {
                                         <td>
                                             <div className="d-flex justify-content-between align-items-center">
                                                 <div className="btn-group" style={{ marginBottom: "20px" }}>
-                                                    <Link to={`recipe/${recipe.id}`} className="btn btn-sm btn-outline-secondary">View Recipe </Link>
-                                                    <Link to={`recipe/edit/${recipe.id}`} className="btn btn-sm btn-outline-secondary">Edit Recipe </Link>
-                                                    <button className="btn btn-sm btn-outline-secondary" onClick={() => this.deleteRecipe(recipe.id)}>Delete Recipe</button>
+                                                    <Link to={`recipe/${recipe.id}`} className="btn btn-sm btn-success btn-outline-secondary">View Recipe </Link>
+                                                    <Link to={`recipe/edit/${recipe.id}`} className="btn btn-warning btn-sm btn-outline-secondary">Edit Recipe </Link>
+                                                    <button type="button" className="btn btn-danger btn-sm btn-outline-secondary" onClick={() => this.deleteRecipe(recipe.id)}>Delete Recipe</button>
                                                 </div>
                                             </div>
                                         </td>
                                     </tr>
                                 )}
                             </tbody>
-                        </table>
+                        </table> )}
+                        </div>
+                        </div>
                     </div>
-                </div>
+                 </div>
+            </div>
 
             </div>
+          
         )
     }
 }

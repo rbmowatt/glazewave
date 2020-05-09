@@ -69,8 +69,13 @@ class Create extends React.Component{
     render() {
         const { submitSuccess, submitFail, loading, errorMessage } = this.state;
         return (
-            <div>
-                <div className={"col-md-12 form-wrapper"}>
+               <div className="main-container">
+            <div className="container">
+                <div className="row">
+                    <div className="card mx-auto">
+                        <div className="card-text">
+                            <div className="row">
+                                <div className="col-md-12 ">
                     <h2> Create User </h2>
                     {!submitSuccess && (
                         <div className="alert alert-info" role="alert">
@@ -117,6 +122,12 @@ class Create extends React.Component{
                         </div>
                     </form>
                 </div>
+            </div>
+            </div>
+                    
+                    </div>
+                </div>
+            </div>
             </div>
         )
     }
