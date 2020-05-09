@@ -64,25 +64,28 @@ class EditRecipe extends React.Component{
     render() {
         const { submitSuccess, loading, submitFail, errorMessage  } = this.state;
         return (
-            <div className="App">
+            <div className="main-container">
                 {this.state.recipe &&
-                    <div>
-                        < h1 > Recipe List Management App</h1>
-                        <div>
-                            <div className={"col-md-12 form-wrapper"}>
-                                <h2> Edit recipe </h2>
-
+                    <div className="row">
+                    <div className="card mx-auto">
+                        <div className="card-text">
+                            <div className="row">
+                                <div className="col-md-12 ">
+                                    <h2> Edit Recipe </h2>
+                                        {!submitSuccess && (
+                                            <div className="alert alert-info" role="alert">
+                                            Fill the form below to edit A Recipe
+                                            </div>
+                                        )}
                                 {submitSuccess && (
                                     <div className="alert alert-info" role="alert">
-                                        recipe's details has been edited successfully </div>
+                                        Recipe details have been edited successfully </div>
                                 )}
-
                                 {submitFail && (
                                     <div className="alert alert-info" role="alert">
                                         { errorMessage }
                                     </div>
                                     )}
-
                             <form id={"create-post-form"} onSubmit={this.processFormSubmission} noValidate={true}>
                                 <div className="form-group col-md-12">
                                     <label htmlFor="rating"> What would you rate this Recipe on a scale of 1-10?
@@ -128,8 +131,10 @@ class EditRecipe extends React.Component{
                             </div>
                         </div>
                     </div>
-                }
+                </div>
             </div>
+                }
+        </div>
         )
     }
 }

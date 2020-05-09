@@ -34,20 +34,11 @@ class Home extends Component {
   render () {
     return (
       <div className="Home">
-        <header className="Home-header">
-          <img  className="Home-logo" alt="logo" />
-          { this.props.session.isLoggedIn ? (
-            <div>
-              <p>You are logged in as user {this.props.session.user.userName} ({this.props.session.user.email}).</p>
-              <p></p>
-              <a className="Home-link" href="#" onClick={this.onSignOut}>Sign out</a>
-            </div>
-          ) : (
-            <div>
-              <p>You are not logged in.</p>
-              <a className="Home-link" href={cognitoUtils.getCognitoSignInUri()}>Sign in</a>
-            </div>
-          )}
+        <header className="Home-header rgba-black-strong">
+        <div className="intro container-fluid">
+        Welcome to Bake n' Flake!
+          </div>
+          <img  className="Home-logo " alt="logo" src="https://umanage-mowatr.s3.amazonaws.com/bake_n_flake_logo_250_250.png" />
         </header>
       </div>
     )

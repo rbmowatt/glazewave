@@ -14,6 +14,8 @@ import Login from './components/home/Login';
 import { connect } from 'react-redux';
 import { initSession } from './actions/session';
 import { PrivateRoute } from './components/auth/PrivateRoute';
+import cognitoUtils from './lib/utils/cognito'
+import 'react-dropdown/style.css';
 
 const mapStateToProps = state => {
     return { session: state.session }
@@ -27,34 +29,68 @@ const mapStateToProps = state => {
 
 class App extends React.Component{
 
-  constructor(props ) {
-    const k = props.initSession();
-    super(props);
-    
-
-}
-
   componentDidMount () {
-      console.log('app.props', this.props);
+    this.props.initSession();
+    console.log('app.props', this.props);
+  }
+
+  onSignOut = (e) => {
+    e.preventDefault()
+    cognitoUtils.signOutCognitoSession()
   }
 
   render() {
- 
+    const options = [
+      'one', 'two', 'three'
+    ];
+    const defaultOption = options[0];
     return (
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to={'/'}> Home </Link>
-            </li>
-            <li>
-              <Link to={'/user'}> Users</Link>
-            </li>
-            <li>
-              <Link to={'/recipe'}> Recipes</Link>
-            </li>
-          </ul>
+        <nav className="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+          <div className="container-fluid">
+            <a className="navbar-brand" href="/"><img src="https://umanage-mowatr.s3.amazonaws.com/bake_n_flake_logo_75_75.png" alt="bake n flake bakery"/></a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+              aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="basicExampleNav">
+              <ul className="navbar-nav mr-auto smooth-scroll">
+              {this.props.session.isLoggedIn &&
+                <li className="nav-item">
+                  <Link className="nav-link" to={'/user'}>
+                  Users</Link>
+                </li>
+              }
+               {(this.props.session.isLoggedIn && this.props.session.groups.indexOf('Admin') !== -1) &&
+                <li className="nav-item">
+                  <Link className="nav-link" to={'/recipe'}>
+                  Recipes</Link>
+                </li>
+              }
+              </ul>
+              <ul className="navbar-nav nav-flex-icons">
+                <li className="nav-item">
+                  <a className="nav-link"><i className="fab fa-facebook"></i></a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link"><i className="fab fa-twitter"></i></a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link"><i className="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+              <div id="nav_user" className="inline nav-link">
+                  {this.props.session.isLoggedIn ? ( <span>Hello {this.props.session.user.userName} </span>) : (<a className="Home-link" href={cognitoUtils.getCognitoSignInUri()}>Sign in</a>)}
+             </div>
+             {this.props.session.isLoggedIn && 
+             <div className="inline nav-link">
+                   <a className="Home-link" href="#" onClick={this.onSignOut}>Sign out</a> 
+             </div>
+             }
+            </div>
+          </div>
         </nav>
+
         <Switch>
           <Route path={'/'} exact component={Home} />
           <Route path={'/logout'} exact component={Home} />
@@ -65,7 +101,7 @@ class App extends React.Component{
           <PrivateRoute path={'/recipe'} exact component={RecipeIndex}  session={this.props.session} />
           <PrivateRoute  path={'/recipe/edit/:id'} exact component={EditRecipe} session={this.props.session} />
           <PrivateRoute  path={'/recipe/create'} exact component={ CreateRecipe } session={this.props.session} />
-          <PrivateRoute  path={'/recipe/:id'} exact component={RecipeView } />
+          <PrivateRoute  path={'/recipe/:id'} exact component={RecipeView } session={this.props.session} />
 
           <Route component={Page404} />
         </Switch>
