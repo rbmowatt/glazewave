@@ -1,20 +1,20 @@
 import { CognitoAuth } from 'amazon-cognito-auth-js/dist/amazon-cognito-auth'
 import { CognitoUserPool } from 'amazon-cognito-identity-js'
 import { config as AWSConfig } from 'aws-sdk'
-import appConfig from '../../config/cognito.js'
+import { cognitoConfig } from '../../config/cognito.js'
 
-AWSConfig.region = appConfig.region
+AWSConfig.region = cognitoConfig.region
 
 // Creates a CognitoAuth instance
 const createCognitoAuth = () => {
-  const appWebDomain = appConfig.userPoolBaseUri.replace('https://', '').replace('http://', '')
+  const appWebDomain = cognitoConfig.userPoolBaseUri.replace('https://', '').replace('http://', '')
   const auth = new CognitoAuth({
-    UserPoolId: appConfig.userPool,
-    ClientId: appConfig.clientId,
+    UserPoolId: cognitoConfig.userPool,
+    ClientId: cognitoConfig.clientId,
     AppWebDomain: appWebDomain,
-    TokenScopesArray: appConfig.tokenScopes,
-    RedirectUriSignIn: appConfig.callbackUri,
-    RedirectUriSignOut: appConfig.signoutUri
+    TokenScopesArray: cognitoConfig.tokenScopes,
+    RedirectUriSignIn: cognitoConfig.callbackUri,
+    RedirectUriSignOut: cognitoConfig.signoutUri
   })
   return auth
 }
@@ -27,13 +27,13 @@ const createCognitoUser = () => {
 
 // Creates a CognitoUserPool instance
 const createCognitoUserPool = () => new CognitoUserPool({
-  UserPoolId: appConfig.userPool,
-  ClientId: appConfig.clientId
+  UserPoolId: cognitoConfig.userPool,
+  ClientId: cognitoConfig.clientId
 })
 
 // Get the URI of the hosted sign in screen
 const getCognitoSignInUri = () => {
-  const signinUri = `${appConfig.userPoolBaseUri}/login?response_type=code&client_id=${appConfig.clientId}&redirect_uri=${appConfig.callbackUri}`
+  const signinUri = `${cognitoConfig.userPoolBaseUri}/login?response_type=code&client_id=${cognitoConfig.clientId}&redirect_uri=${cognitoConfig.callbackUri}`
   return signinUri
 }
 

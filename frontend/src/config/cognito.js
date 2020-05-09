@@ -1,6 +1,6 @@
 
 require('dotenv').config()
-module.exports = { 
+export const cognitoConfig = { 
     apiUrl : process.env.REACT_APP_API_HOST,
     signoutUri : process.env.API_HOST,
     region : process.env.REACT_APP_AWS_DEFAULT_REGION,
