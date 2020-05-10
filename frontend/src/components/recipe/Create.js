@@ -113,7 +113,7 @@ class Create extends React.Component{
                     <div className="row">
                         <div className="card mx-auto">
                             <div className="card-text">
-                                <div className="row">
+                               
                                     <div className="col-md-12 ">
                                         <h2> Create Recipe </h2>
                                             {!submitSuccess && (
@@ -131,7 +131,7 @@ class Create extends React.Component{
                                                     { errorMessage }
                                                 </div>
                                             )}
-                                            <form id={"create-post-form"} onSubmit={this.processFormSubmission} noValidate={false} enctype="multipart/form-data" >
+                                            <form className="row" id={"create-post-form"} onSubmit={this.processFormSubmission} noValidate={false} >
                                                 <div className="form-group col-md-12">
                                                     <label htmlFor="rating"> What would you rate this Recipe on a scale of 1-10?
                                                     <select value={this.state.rating} onChange={(e) => this.handleInputChanges(e)} id="rating" name="rating" className="form-control">
@@ -180,7 +180,7 @@ class Create extends React.Component{
                                             </form>
                                     </div>
                                 
-                                </div>
+                                
                             </div>
                          </div>
                     

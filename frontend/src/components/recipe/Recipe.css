@@ -1,6 +1,3 @@
-
-/*****************globals*************/
-  
   img {
     max-width: 100%; }
 
@@ -17,11 +14,7 @@
       -webkit-animation-duration: .3s;
               animation-duration: .3s; }
   
-  .card {
-    margin-top: 50px;
-    background: #eee;
-    padding: 3em;
-    line-height: 1.5em; }
+
   
   @media screen and (min-width: 997px) {
     .wrapper {
@@ -41,53 +34,12 @@
         -ms-flex-direction: column;
             flex-direction: column; }
   
-  .colors {
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1; }
   
-  .product-title, .rating, .product-description, .price, .vote, .sizes {
+  .recipe-title, .rating, .recipe-description, .submitted-by {
     margin-bottom: 15px; }
   
-  .product-title {
+  .recipe-title {
     margin-top: 0; }
-    
-  .orange {
-    background: #ff9f1a; }
-  
-  .green {
-    background: #85ad00; }
-  
-  .blue {
-    background: #0076ad; }
-  
-  .tooltip-inner {
-    padding: 1.3em; }
-  
-  @-webkit-keyframes opacity {
-    0% {
-      opacity: 0;
-      -webkit-transform: scale(3);
-              transform: scale(3); }
-    100% {
-      opacity: 1;
-      -webkit-transform: scale(1);
-              transform: scale(1); } }
-  
-  @keyframes opacity {
-    0% {
-      opacity: 0;
-      -webkit-transform: scale(3);
-              transform: scale(3); }
-    100% {
-      opacity: 1;
-      -webkit-transform: scale(1);
-              transform: scale(1); } }
 
-  .btn-outline-secondary
-  {
-    background-color: clear;
-  }
   
   /*# sourceMappingURL=style.css.map */

@@ -95,7 +95,7 @@ class Create extends React.Component{
                             </div>
                     )}
 
-                    <form id={"create-post-form"} onSubmit={this.processFormSubmission} noValidate={true}>
+                    <form className="row" id={"create-post-form"} onSubmit={this.processFormSubmission} noValidate={true}>
                         <div className="form-group col-md-12">
                             <label htmlFor="first_name"> User Name </label>
                             <input type="text" id="userName" onChange={(e) => this.handleInputChanges(e)} name="userName" className="form-control" placeholder="Enter unique user name" required />
