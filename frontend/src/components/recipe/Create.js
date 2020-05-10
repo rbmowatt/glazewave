@@ -60,7 +60,7 @@ class Create extends React.Component{
 
         if (this.props.session.isLoggedIn) {
             console.log(formData);
-            axios.post(apiConfig.host + ':' + apiConfig.port + `/api/recipe`, formData, this.state.headers)
+            axios.post(apiConfig.host + apiConfig.port + `/api/recipe`, formData, this.state.headers)
             .then(data => [
                 setTimeout(() => {
                     this.props.history.push('/recipe');
