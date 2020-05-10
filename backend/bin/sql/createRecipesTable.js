@@ -1,5 +1,5 @@
 const dynamoConfig = require('./../../app/config/dynamo');
-
+console.log('dynamo confog rec', dynamoConfig);
 const AWS = require("aws-sdk");
 AWS.config.update({
     region: dynamoConfig.region,
