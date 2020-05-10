@@ -18,7 +18,7 @@ class RecipeView extends Component {
         if (this.props.session.isLoggedIn) {
             const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
             this.setState({headers});
-            axios.get( apiConfig.host + ':' + apiConfig.port + `/api/recipe/` + this.props.match.params.id, this.state.headers).then(data => {
+            axios.get( apiConfig.host + apiConfig.port + `/api/recipe/` + this.props.match.params.id, this.state.headers).then(data => {
                 ((!this.props.session.isAdmin && !data.data[0].isPublic) || data.data.length === 0) ? this.props.history.push('/recipe') : this.setState({ recipe: data.data[0] });
             })
             .catch(error=>this.props.history.push('/recipe'));
