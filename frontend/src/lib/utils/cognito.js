@@ -81,6 +81,7 @@ const getCognitoSession = () => {
           email: result.idToken.payload.email
         },
         groups : result.idToken.payload['cognito:groups'],
+        isAdmin : result.idToken.payload['cognito:groups'].indexOf('Admin') !== -1,
         expiration : result.accessToken.payload.exp
       }
       resolve(session)

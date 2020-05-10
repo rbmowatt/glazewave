@@ -13,12 +13,14 @@ const mapStateToProps = state => {
 class RecipeIndex extends Component {
     constructor(props) {
         super(props);
-        this.state = { recipes: [], headers : {} }
+        this.state = { recipes: [], headers : {}, isAdmin : false }
     }
 
     componentDidMount(){
 
         if (this.props.session.isLoggedIn) {
+            const isAdmin = (this.props.session.groups.indexOf('Admin') !== -1);
+            this.setState({ isAdmin : isAdmin });
             const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
             this.setState({headers});
             axios.get( apiConfig.host + ':' + apiConfig.port + `/recipe`, headers).then(data => {
@@ -65,6 +67,7 @@ class RecipeIndex extends Component {
                             </thead>
                             <tbody>
                                 {recipes && recipes.map(recipe =>
+                                    (this.state.isAdmin || recipe.isPublic) &&
                                     <tr key={recipe.id}>
                                         <td>{recipe.name}</td>
                                         <td>...</td>

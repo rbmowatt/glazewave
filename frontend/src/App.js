@@ -54,7 +54,7 @@ class App extends React.Component{
             <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="basicExampleNav">
-              <ul className="navbar-nav mr-auto smooth-scroll">
+              <ul className="navbar-nav mr-auto">
               {this.props.session.isLoggedIn &&
                 <li className="nav-item">
                   <Link className="nav-link" to={'/user'}>
@@ -67,17 +67,6 @@ class App extends React.Component{
                   Recipes</Link>
                 </li>
               }
-              </ul>
-              <ul className="navbar-nav nav-flex-icons">
-                <li className="nav-item">
-                  <a className="nav-link"><i className="fab fa-facebook"></i></a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link"><i className="fab fa-twitter"></i></a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link"><i className="fab fa-instagram"></i></a>
-                </li>
               </ul>
               <div id="nav_user" className="inline nav-link">
                   {this.props.session.isLoggedIn ? ( <span>Hello {this.props.session.user.userName} </span>) : (<a className="Home-link" href={cognitoUtils.getCognitoSignInUri()}>Sign in</a>)}

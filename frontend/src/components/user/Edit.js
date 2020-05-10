@@ -83,7 +83,7 @@ class EditUser extends React.Component{
                                     </div>
                                     )}
 
-                                <form id={"create-post-form"} onSubmit={this.processFormSubmission} noValidate={true}>
+                                <form className="row" id={"create-post-form"} onSubmit={this.processFormSubmission} noValidate={true}>
                                 <div className="form-group col-md-12">
                                         <label htmlFor="Username"> User Name </label>
                                         <input type="text" id="Username" defaultValue={this.state.user.Username} onChange={(e) => this.handleInputChanges(e)} name="Username" className="form-control" placeholder="Enter user's first name" />

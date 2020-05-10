@@ -72,11 +72,7 @@ class EditRecipe extends React.Component{
                             <div className="row">
                                 <div className="col-md-12 ">
                                     <h2> Edit Recipe </h2>
-                                        {!submitSuccess && (
-                                            <div className="alert alert-info" role="alert">
-                                            Fill the form below to edit A Recipe
-                                            </div>
-                                        )}
+      
                                 {submitSuccess && (
                                     <div className="alert alert-info" role="alert">
                                         Recipe details have been edited successfully </div>
@@ -86,7 +82,7 @@ class EditRecipe extends React.Component{
                                         { errorMessage }
                                     </div>
                                     )}
-                            <form id={"create-post-form"} onSubmit={this.processFormSubmission} noValidate={true}>
+                            <form className="row" id="create-post-form" onSubmit={this.processFormSubmission} noValidate={true}>
                                 <div className="form-group col-md-12">
                                     <label htmlFor="rating"> What would you rate this Recipe on a scale of 1-10?
                                     <select defaultValue={this.state.recipe.rating} onChange={(e) => this.handleInputChanges(e)} id="rating" name="rating" className="form-control">

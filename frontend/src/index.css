@@ -5,7 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgba(0, 0, 0, 0.5) !important;
+  background: url("https://i1.wp.com/supperinthesuburbs.com/wp-content/uploads/2014/09/Banana-Bread-4.jpg?fit=1800%2C1200")no-repeat center center fixed !important;
+  background-color: rgba(255, 255, 255, 0.4)!important;
+  background-blend-mode: lighten;
 }
 
 code {
@@ -47,5 +49,11 @@ header,
   }
 
   .main-container {
+    display: block;
     margin-top:50px;
+    min-height: 100vh;
+  }
+
+  .card {
+    min-height: 90vh;
   }
