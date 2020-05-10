@@ -19,8 +19,7 @@ class RecipeIndex extends Component {
     componentDidMount(){
 
         if (this.props.session.isLoggedIn) {
-            const isAdmin = (this.props.session.groups.indexOf('Admin') !== -1);
-            this.setState({ isAdmin : isAdmin });
+            this.setState({ isAdmin : this.props.session.isAdmin });
             const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
             this.setState({headers});
             axios.get( apiConfig.host + apiConfig.port + `/api/recipe`, headers).then(data => {
