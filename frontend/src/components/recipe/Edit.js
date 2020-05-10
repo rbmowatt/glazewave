@@ -38,7 +38,7 @@ class EditRecipe extends React.Component{
         e.preventDefault();
         this.setState({ loading: true });
        
-        axios.put(apiConfig.host + apiConfig.port + `/recipe/${this.state.id}`, this.state.values, this.state.headers).then(data => {
+        axios.put(apiConfig.host + apiConfig.port + `/api/recipe/${this.state.id}`, this.state.values, this.state.headers).then(data => {
             this.setState({ submitSuccess: true, loading: false })
             setTimeout(() => {
                 this.props.history.push('/api/recipe');

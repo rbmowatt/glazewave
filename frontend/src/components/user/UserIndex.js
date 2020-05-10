@@ -27,7 +27,7 @@ class UserIndex extends Component {
     }
 
     deleteCustomer(id ) {
-        axios.delete(apiConfig.host + apiConfig.port + `/user/${id}`, this.state.headers).then(data => {
+        axios.delete(apiConfig.host + apiConfig.port + `/api/user/${id}`, this.state.headers).then(data => {
             const index = this.state.users.findIndex(user => user.id === id);
             this.state.users.splice(index, 1);
             this.props.history.push('/api/user');
