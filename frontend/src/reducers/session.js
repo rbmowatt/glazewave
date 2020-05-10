@@ -1,7 +1,8 @@
 import { CLEAR_SESSION, SET_SESSION } from '../actions/types';
 
 const initialState = {
-  isLoggedIn: false
+  isLoggedIn: false,
+  isAdmin: false
 }
 
 const session = (state = initialState, action) => {

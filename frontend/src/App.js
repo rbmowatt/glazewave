@@ -61,7 +61,7 @@ class App extends React.Component{
                   Users</Link>
                 </li>
               }
-               {(this.props.session.isLoggedIn && this.props.session.groups.indexOf('Admin') !== -1) &&
+               {(this.props.session.isLoggedIn && this.props.session.isAdmin) &&
                 <li className="nav-item">
                   <Link className="nav-link" to={'/recipe'}>
                   Recipes</Link>

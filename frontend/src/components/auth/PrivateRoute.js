@@ -9,7 +9,7 @@ export const PrivateRoute = ({ component: Component, roles, session, ...rest }) 
         }
 
         // check if route is restricted by role
-        if (session.groups.indexOf('Admin') === -1){
+        if (!session.isAdmin){
             // role not authorised so redirect to home page
             return <Redirect to={{ pathname: '/'}} />
         }
