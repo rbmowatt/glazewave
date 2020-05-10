@@ -5,9 +5,9 @@
   "scripts": {
     "start": "nodemon ./bin/server.js",
     "scaffold": "npm run create-db && npm run load-data",
-    "create-db": "cd bin/sql && node createRecipesTable.js && cd ..",
-    "delete-db": "cd bin/sql  && node deleteUsersTable.js && cd ..",
-    "load-data": "cd bin/sql  && node loadRecipesTable.js && cd .."
+    "create-db": "node bin/sql/createRecipesTable.js",
+    "delete-db": "node bin/sql/deleteUsersTable.js",
+    "load-data": "node bin/sql/loadRecipesTable.js"
   },
   "dependencies": {
     "aws-sdk": "^2.668.0",

@@ -5,7 +5,7 @@ const multer  = require('multer');
 const multerS3 = require('multer-s3');
 const s3Config = require('./../config/s3');
 const s3 = new aws.S3(s3Config);
-aws.config.update({region : 'us-east-1', endpoint: dynamoConfig.endpoint});
+aws.config.update({region : dynamoConfig.region, endpoint: dynamoConfig.endpoint});
 
 const upload = multer({
     storage: multerS3({

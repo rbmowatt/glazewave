@@ -5,10 +5,11 @@ AWS.config.update({
     region: dynamoConfig.region,
     endpoint: dynamoConfig.endpoint
 });
+console.log('dynamo confog', dynamoConfig);
 const fs = require('fs');
 const docClient = new AWS.DynamoDB.DocumentClient();
 console.log("Importing Users into DynamoDB. Please wait.");
-const recipes = JSON.parse(fs.readFileSync('../../data/recipes.json', 'utf8'));
+const recipes = JSON.parse(fs.readFileSync('./data/recipes.json', 'utf8'));
 recipes.forEach(function(recipe) {
   console.log(recipe)
 const params = {
