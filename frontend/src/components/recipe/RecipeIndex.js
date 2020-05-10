@@ -30,7 +30,7 @@ class RecipeIndex extends Component {
     }
 
     deleteRecipe(id ) {
-        axios.delete(apiConfig.host + apiConfig.port + `/a[i/recipe/${id}`, this.state.headers).then(data => {
+        axios.delete(apiConfig.host + apiConfig.port + `/api/recipe/${id}`, this.state.headers).then(data => {
             const index = this.state.recipes.findIndex(recipe => recipe.id === id);
             this.state.recipes.splice(index, 1);
             this.props.history.push('/recipe');
