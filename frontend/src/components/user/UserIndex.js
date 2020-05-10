@@ -20,7 +20,7 @@ class UserIndex extends Component {
             const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
             this.setState({ headers});
             
-            axios.get( apiConfig.host + ':' + apiConfig.port + `/user`, headers).then(data => {
+            axios.get( apiConfig.host + ':' + apiConfig.port + `/api/user`, headers).then(data => {
                 this.setState({ users: data.data })
             });
         }
@@ -30,7 +30,7 @@ class UserIndex extends Component {
         axios.delete(apiConfig.host + ':' + apiConfig.port + `/user/${id}`, this.state.headers).then(data => {
             const index = this.state.users.findIndex(user => user.id === id);
             this.state.users.splice(index, 1);
-            this.props.history.push('/user');
+            this.props.history.push('/api/user');
         })
     }
 

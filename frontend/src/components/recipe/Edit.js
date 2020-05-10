@@ -26,7 +26,7 @@ class EditRecipe extends React.Component{
         if (this.props.session.isLoggedIn) {
             const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
             this.setState({headers});
-            axios.get(apiConfig.host + ':' + apiConfig.port + `/recipe/${this.state.id}`, headers).then(data => {
+            axios.get(apiConfig.host + ':' + apiConfig.port + `/api/recipe/${this.state.id}`, headers).then(data => {
                 const recipe = data.data[0];
                 this.setState({ recipe});
             })
@@ -41,7 +41,7 @@ class EditRecipe extends React.Component{
         axios.put(apiConfig.host + ':' + apiConfig.port + `/recipe/${this.state.id}`, this.state.values, this.state.headers).then(data => {
             this.setState({ submitSuccess: true, loading: false })
             setTimeout(() => {
-                this.props.history.push('/recipe');
+                this.props.history.push('/api/recipe');
             }, 1500)
         })
         .catch(

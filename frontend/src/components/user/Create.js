@@ -45,7 +45,7 @@ class Create extends React.Component{
         this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
 
         if (this.props.session.isLoggedIn) {
-            axios.post(apiConfig.host + ':' + apiConfig.port + `/user`, formData, this.state.headers).then(data => [
+            axios.post(apiConfig.host + ':' + apiConfig.port + `/api//user`, formData, this.state.headers).then(data => [
             setTimeout(() => {
                 this.props.history.push('/user');
             }, 1500)

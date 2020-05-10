@@ -23,14 +23,14 @@ class RecipeIndex extends Component {
             this.setState({ isAdmin : isAdmin });
             const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
             this.setState({headers});
-            axios.get( apiConfig.host + ':' + apiConfig.port + `/recipe`, headers).then(data => {
+            axios.get( apiConfig.host + ':' + apiConfig.port + `/api/recipe`, headers).then(data => {
                 this.setState({ recipes: data.data })
             });
         }
     }
 
     deleteRecipe(id ) {
-        axios.delete(apiConfig.host + ':' + apiConfig.port + `/recipe/${id}`, this.state.headers).then(data => {
+        axios.delete(apiConfig.host + ':' + apiConfig.port + `/a[i/recipe/${id}`, this.state.headers).then(data => {
             const index = this.state.recipes.findIndex(recipe => recipe.id === id);
             this.state.recipes.splice(index, 1);
             this.props.history.push('/recipe');

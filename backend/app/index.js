@@ -18,8 +18,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors({'origin': [cognitoConfig.signoutUri, appConfig.clientUrl ]}));
 
-app.use('/user', cognitoAuthMiddleware, userRouter);
-app.use('/recipe', recipeRouter);
+app.use('/api/user', cognitoAuthMiddleware, userRouter);
+app.use('/api/recipe', recipeRouter);
 app.get('/', function (req, res) {
     res.send({ title: "Users API Entry Point" })
   })
