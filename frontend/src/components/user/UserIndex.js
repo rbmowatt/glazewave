@@ -52,7 +52,7 @@ class UserIndex extends Component {
                             </div>
                         ) :(
                             <div className="container">
-                        <table className="table table-bordered">
+                        <table className="table table-bordered table-striped table-responsive">
                             <thead className="thead-light">
                                 <tr>
                                     <th scope="col">Username</th>

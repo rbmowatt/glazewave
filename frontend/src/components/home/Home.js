@@ -34,7 +34,7 @@ class Home extends Component {
   render () {
     return (
       <div className="Home">
-        <header className="Home-header rgba-black-strong">
+        <header className="background">
         <div className="intro container-fluid">
         Welcome to Bake n' Flake!
           </div>

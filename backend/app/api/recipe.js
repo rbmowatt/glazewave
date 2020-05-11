@@ -73,7 +73,7 @@ router.get('/:id', function (req, res) {
     docClient.query(params, function (err, data) {
         if (err) {
             console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
-            return res.status(400).json(error);
+            res.status(400).json(error);
         } else {
             console.log("Query succeeded.");
             res.send(data.Items)
@@ -83,17 +83,17 @@ router.get('/:id', function (req, res) {
 
 router.post('/',  upload.single('photo'), function (req, res) {
 
-        console.log('file', req.file);
-        const params = {
-            TableName: "recipes",
-            Item: {
-                "id": Date.now(),
-                "name": req.body.name || null,
-                "picture": req.file.key || null,
-                "submitted_by": req.body.submitted_by || null,
-                "recipe": req.body.recipe || null,
-                "isPublic": req.body.is_public || null,
-                "rating": req.body.rating || null,
+    console.log('file', req.file);
+    const params = {
+        TableName: "recipes",
+        Item: {
+            "id": Date.now(),
+            "name": req.body.name || null,
+            "picture": req.file.key || null,
+            "submitted_by": req.body.submitted_by || null,
+            "recipe": req.body.recipe || null,
+            "isPublic": req.body.is_public || null,
+            "rating": req.body.rating || null,
             }
         };
         docClient.put(params, function (err, data) {
