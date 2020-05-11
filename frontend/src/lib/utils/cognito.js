@@ -2,7 +2,38 @@ import { CognitoAuth } from 'amazon-cognito-auth-js/dist/amazon-cognito-auth'
 import { CognitoUserPool } from 'amazon-cognito-identity-js'
 import { config as AWSConfig } from 'aws-sdk'
 import { cognitoConfig } from '../../config/cognito.js'
-import { clearSession } from './session';
+import { hasSession, clearSession, setSessionCookie } from './session';
+import Cookie from "js-cookie"
+import { CLEAR_SESSION, SET_SESSION } from './../../actions/types';
+
+
+export function initSession()
+{
+  return function (dispatch) {
+    let session = hasSession();
+    if(session)
+    {
+      getCognitoSession() // get a new session
+      .then((session) => {
+        setSessionCookie(session);
+        dispatch({ type: SET_SESSION, session })
+      })
+    }
+  return false;
+  }
+}
+
+// Initialise the Cognito sesson from a callback href
+export function initSessionFromCallbackURI (callbackHref) {
+  return function (dispatch) {
+    return parseCognitoWebResponse(callbackHref) // parse the callback URL
+      .then(() => getCognitoSession()) // get a new session
+      .then((session) => {
+        setSessionCookie(session);
+        dispatch({ type: SET_SESSION, session })
+      })
+  }
+}
 
 AWSConfig.region = cognitoConfig.region
 
@@ -67,7 +98,7 @@ const getCognitoSession = () => {
         reject(new Error('Failure getting Cognito session: ' + err))
         return
       }
-
+      console.log('token', result.accessToken.jwtToken)
       // Resolve the promise with the session credentials
       //console.log('Successfully got session: ' + JSON.stringify(result))
       const session = {
@@ -103,5 +134,7 @@ export default {
   getCognitoSession,
   getCognitoSignInUri,
   parseCognitoWebResponse,
-  signOutCognitoSession
+  signOutCognitoSession,
+  initSessionFromCallbackURI,
+  initSession
 }

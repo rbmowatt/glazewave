@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { initSessionFromCallbackURI } from '../../actions/session';
+import { initSessionFromCallbackURI } from '../../lib/utils/cognito';
 
 function mapStateToProps (state) {
   return { session: state.session }

@@ -1,5 +1,9 @@
 import Cookie from "js-cookie"
 
+export function setSessionCookie(session)
+{
+  Cookie.set("x-token", session, { secure: true });
+}
 // Initialise the Cognito sesson from a callback href
 export function hasSession() {
     if(Cookie.get("x-token"))

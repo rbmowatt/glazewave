@@ -23,11 +23,16 @@ class RecipeView extends Component {
             })
             .catch(error=>this.props.history.push('/recipe'));
         }
+        if(this.state.recipe === [])
+        {
+            this.props.history.push('/recipe');
+        }
     }
 
     render() {
         const recipe = this.state.recipe;
         return (
+            <header className="background rgba-black-strong">
             <div className="main-container">
                 <div className="container">
                     <div className="row">
@@ -61,6 +66,7 @@ class RecipeView extends Component {
                     </div>
                 </div>
             </div>
+            </header>
         )
     }
 }
