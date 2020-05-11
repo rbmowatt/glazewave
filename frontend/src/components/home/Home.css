@@ -5,6 +5,8 @@
   .intro {
     padding:10px;
     background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+    margin-top:-2em;
   }
 
   .Home-logo {
@@ -15,28 +17,7 @@
     pointer-events: none;
     border-radius: 40px;  
   }
-  
-  .Home-header {
-    background: url("https://expertwebinarseries.com/wp-content/uploads/2019/11/woman-in-restaurant-wearing-apron-1739748-1800x1200.jpg")no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-    background-color: rgba(255, 255, 255, 0.4)!important;
-    background-blend-mode: lighten;
-  }
-  
-  .Home-link {
-    color: #61dafb;
-  }
-  
+    
   @keyframes Home-logo-spin {
     from {
       transform: rotate(0deg);
@@ -46,23 +27,6 @@
     }
   }
   
-  .Home-details {
-    margin-top: 2em;
-    font-size: 14px;
-    max-width: 33%;
-  }
-  .Home-details a {
-    color: #61dafb;
-  }
-  .Home-details-links {
-    text-align: left;
-    display: inline-block;
-  }
-  
-  .card {
-    margin-top: 50px;
-    background: #eee;
-    padding: 3em;
-    line-height: 1.5em; }
+
   
   

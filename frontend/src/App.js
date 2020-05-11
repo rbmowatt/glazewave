@@ -46,41 +46,31 @@ class App extends React.Component{
     return (
      
       <div>
- 
-        <nav className="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-          <div className="container-fluid">
-            <a className="navbar-brand" href="/"><img src="https://umanage-mowatr.s3.amazonaws.com/bake_n_flake_logo_75_75.png" alt="bake n flake bakery"/></a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-              aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="basicExampleNav">
-              <ul className="navbar-nav mr-auto">
-              {this.props.session.isLoggedIn && this.props.session.isAdmin && 
-                <li className="nav-item">
-                  <Link className="nav-link" to={'/user'}>
-                  Users</Link>
-                </li>
-              }
-               {(this.props.session.isLoggedIn ) &&
-                <li className="nav-item">
-                  <Link className="nav-link" to={'/recipe'}>
-                  Recipes</Link>
-                </li>
-              }
-              </ul>
-              <div id="nav_user" className="inline nav-link">
-                  {this.props.session.isLoggedIn ? ( <span>Hello {this.props.session.user.userName} </span>) : (<a className="Home-link" href={cognitoUtils.getCognitoSignInUri()}>Sign in</a>)}
-             </div>
-             {this.props.session.isLoggedIn && 
-             <div className="inline nav-link">
-                   <a className="Home-link" href="#" onClick={this.onSignOut}>Sign out</a> 
-             </div>
-             }
-            </div>
+        <nav class="navbar navbar-expand-md navbar-dark">
+          <a className="navbar-brand" href="/"><img src="https://umanage-mowatr.s3.amazonaws.com/bake_n_flake_logo_75_75.png" alt="bake n flake bakery" height="75" width="75"/></a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav">
+                {this.props.session.isLoggedIn && this.props.session.isAdmin && 
+                          <Link className="nav-link" to={'/user'}>
+                          Users</Link>
+                      }
+                {(this.props.session.isLoggedIn ) &&
+                          <Link className="nav-link" to={'/recipe'}>
+                          Recipes</Link>
+                      }
+              </div>
+              <div class="navbar-nav ml-auto">
+              {this.props.session.isLoggedIn ? ( <span><span className="white-txt">Hello {this.props.session.user.userName}&nbsp;&nbsp;</span><span><a className="Home-link" href="#" onClick={this.onSignOut}>Sign out</a> </span></span> ) : (<a className="Home-link" href={cognitoUtils.getCognitoSignInUri()}>Sign in</a>)}
+              </div>
           </div>
         </nav>
-        { (this.props.session) &&
+
+
+
+
         <Switch>
           <Route path={'/'} exact component={Home} />
           <Route path={'/logout'} exact component={Home} />
@@ -92,10 +82,8 @@ class App extends React.Component{
           <PrivateRoute  path={'/recipe/edit/:id'} exact component={EditRecipe} session={this.props.session} />
           <PrivateRoute  path={'/recipe/create'} exact component={ CreateRecipe } session={this.props.session} />
           <Route  path={'/recipe/:id'} exact component={RecipeView } />
-
           <Route component={Page404} />
         </Switch>
-        }
       </div>
             
     );

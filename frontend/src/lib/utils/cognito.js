@@ -3,8 +3,7 @@ import { CognitoUserPool } from 'amazon-cognito-identity-js'
 import { config as AWSConfig } from 'aws-sdk'
 import { cognitoConfig } from '../../config/cognito.js'
 import { hasSession, clearSession, setSessionCookie } from './session';
-import Cookie from "js-cookie"
-import { CLEAR_SESSION, SET_SESSION } from './../../actions/types';
+import { SET_SESSION } from './../../actions/types';
 
 
 export function initSession()

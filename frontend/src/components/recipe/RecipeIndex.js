@@ -42,7 +42,6 @@ class RecipeIndex extends Component {
             <header className="background rgba-black-strong">
             <div className="main-container">
                 <div className="container">
-                
                     <div className="row">
                     <div className="card um-main-body mx-auto">
                         <div className="card-block">
@@ -50,19 +49,18 @@ class RecipeIndex extends Component {
                         { this.state.isAdmin &&  <Link to={'recipe/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New Recipe</Link>}
                         </div> 
                         <div className="card-text">
-                {recipes.length === 0 ?(
-                    <div className="text-center">
-                        <h2>No recipe found at the moment</h2>
-                    </div>
-                ) :(
-                        <table className="table table-bordered table-striped">
+                        {recipes.length === 0 ?(
+                            <div className="text-center">
+                                <h2>No recipe found at the moment</h2>
+                            </div>
+                        ) :(
+                        <table className="table table-bordered table-striped table-responsive">
                             <thead className="thead-light">
                                 <tr>
-                                    <th scope="col">name</th>
-                                    <th scope="col">preview</th>
-                                    <th scope="col">submitted_by</th>
-                                    <th scope="col">Is Public</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Submitted_by</th>
                                     <th scope="col">Rating</th>
+                                    <th scope="col">Private?</th>
                                     <th scope="col">Actions</th>
                                 </tr>
                             </thead>
@@ -71,10 +69,9 @@ class RecipeIndex extends Component {
                                     (this.state.isAdmin || recipe.isPublic) &&
                                     <tr key={recipe.id}>
                                         <td>{recipe.name}</td>
-                                        <td>...</td>
                                         <td>{recipe.submitted_by}</td>
-                                        <td>{recipe.isPublic ? '1' : '0'}</td>
                                         <td>{recipe.rating}</td>
+                                        <td>{!recipe.isPublic ? 'Yes' : 'No'}</td>
                                         <td>
                                             <div className="d-flex justify-content-between align-items-center">
                                                 <div className="btn-group" style={{ marginBottom: "20px" }}>
