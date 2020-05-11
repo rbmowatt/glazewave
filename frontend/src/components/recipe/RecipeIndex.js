@@ -39,14 +39,16 @@ class RecipeIndex extends Component {
     render() {
         const recipes = this.state.recipes;
         return (
-           
+            <header className="background rgba-black-strong">
             <div className="main-container">
                 <div className="container">
                 
                     <div className="row">
                     <div className="card um-main-body mx-auto">
                         <div className="card-block">
-                        <div className="card-title"><strong>Recipes</strong><Link to={'recipe/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New Recipe</Link></div>
+                        <div className="card-title"><strong>Recipes</strong>
+                        { this.state.isAdmin &&  <Link to={'recipe/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New Recipe</Link>}
+                        </div> 
                         <div className="card-text">
                 {recipes.length === 0 ?(
                     <div className="text-center">
@@ -76,9 +78,9 @@ class RecipeIndex extends Component {
                                         <td>
                                             <div className="d-flex justify-content-between align-items-center">
                                                 <div className="btn-group" style={{ marginBottom: "20px" }}>
-                                                    <Link to={`recipe/${recipe.id}`} className="btn btn-sm btn-success btn-outline-secondary">View Recipe </Link>
-                                                    <Link to={`recipe/edit/${recipe.id}`} className="btn btn-warning btn-sm btn-outline-secondary">Edit Recipe </Link>
-                                                    <button type="button" className="btn btn-danger btn-sm btn-outline-secondary" onClick={() => this.deleteRecipe(recipe.id)}>Delete Recipe</button>
+                                                    <Link to={`recipe/${recipe.id}`} className="btn btn-sm btn-success btn-outline-secondary">View Recipe </Link> 
+                                                    { this.state.isAdmin &&  <Link to={`recipe/edit/${recipe.id}`} className="btn btn-warning btn-sm btn-outline-secondary">Edit Recipe </Link> }
+                                                    { this.state.isAdmin && <button type="button" className="btn btn-danger btn-sm btn-outline-secondary" onClick={() => this.deleteRecipe(recipe.id)}>Delete Recipe</button> }
                                                 </div>
                                             </div>
                                         </td>
@@ -93,6 +95,7 @@ class RecipeIndex extends Component {
             </div>
 
             </div>
+            </header>
           
         )
     }

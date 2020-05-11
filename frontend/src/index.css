@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url("https://i1.wp.com/supperinthesuburbs.com/wp-content/uploads/2014/09/Banana-Bread-4.jpg?fit=1800%2C1200")no-repeat center center fixed !important;
   background-color: rgba(255, 255, 255, 0.4)!important;
   background-blend-mode: lighten;
 }
@@ -13,21 +12,6 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-html,
-body,
-header,
-#intro {
-    height: 100%;
-}
-
-#intro {
-    background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg")no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 #nav_user {
@@ -49,11 +33,29 @@ header,
   }
 
   .main-container {
-    display: block;
     margin-top:50px;
     min-height: 100vh;
+    min-width: 90vw;
   }
 
-  .card {
+  .main-container  .card {
     min-height: 90vh;
+    min-width: 100%;
   }
+
+
+  .background {
+    background: url("https://expertwebinarseries.com/wp-content/uploads/2019/11/woman-in-restaurant-wearing-apron-1739748-1800x1200.jpg")no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.4)!important;
+      background-blend-mode: lighten;
+  }
+  

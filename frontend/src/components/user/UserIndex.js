@@ -37,6 +37,7 @@ class UserIndex extends Component {
     render() {
         const users = this.state.users;
         return (
+            <header className="background rgba-black-strong">
             <div className="main-container">
                 <div className="container">
                     <div className="row mx-auto">
@@ -50,6 +51,7 @@ class UserIndex extends Component {
                                 <h2>No users found at the moment</h2>
                             </div>
                         ) :(
+                            <div className="container">
                         <table className="table table-bordered">
                             <thead className="thead-light">
                                 <tr>
@@ -78,7 +80,8 @@ class UserIndex extends Component {
                                     </tr>
                                 )}
                             </tbody>
-                        </table>)}
+                        </table>
+                        </div>)}
                         </div>
                         </div>
                     </div>
@@ -87,6 +90,7 @@ class UserIndex extends Component {
 
             </div>
             </div>
+            </header>
         )
     }
 }

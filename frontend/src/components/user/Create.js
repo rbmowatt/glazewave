@@ -45,7 +45,7 @@ class Create extends React.Component{
         this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
 
         if (this.props.session.isLoggedIn) {
-            axios.post(apiConfig.host + apiConfig.port + `/api//user`, formData, this.state.headers).then(data => [
+            axios.post(apiConfig.host + apiConfig.port + `/api/user`, formData, this.state.headers).then(data => [
             setTimeout(() => {
                 this.props.history.push('/user');
             }, 1500)
@@ -69,6 +69,7 @@ class Create extends React.Component{
     render() {
         const { submitSuccess, submitFail, loading, errorMessage } = this.state;
         return (
+            <header className="background rgba-black-strong">
                <div className="main-container">
             <div className="container">
                 <div className="row">
@@ -129,6 +130,7 @@ class Create extends React.Component{
                 </div>
             </div>
             </div>
+            </header>
         )
     }
 }

@@ -36,8 +36,11 @@ class Create extends React.Component{
                 'content-type': 'multipart/form-data'
             }};
             this.setState({headers});
+        } else {
+                this.props.history.push('/');
         }
-    }
+        }
+    
 
     processFormSubmission = (e)=> {
         e.preventDefault();
@@ -58,8 +61,7 @@ class Create extends React.Component{
 
         this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
 
-        if (this.props.session.isLoggedIn) {
-            console.log(formData);
+        if (this.props.session.isLoggedIn && this.props.session.isAdmin) {
             axios.post(apiConfig.host + apiConfig.port + `/api/recipe`, formData, this.state.headers)
             .then(data => [
                 setTimeout(() => {
@@ -69,19 +71,17 @@ class Create extends React.Component{
             .catch(
                 error=>{
                     this.setState({ submitSuccess: false, submitFail: true, errorMessage : error.response.data.message });
-                    console.log(error);
                 }
             );
         }
+        this.props.history.push('/recipe');
     }
 
     handleInputChanges = e => {
-        console.log(this.state);
         e.preventDefault();
         this.setState({
             [e.currentTarget.name]: e.currentTarget.value,
         })
-        console.log(this.state);
     }
 
     onChange = e => {
@@ -108,6 +108,7 @@ class Create extends React.Component{
             }
           }
         return (
+            <header className="background rgba-black-strong">
             <div className="main-container">
                 <div className="container">
                     <div className="row">
@@ -187,6 +188,7 @@ class Create extends React.Component{
                     </div>
                 </div>
             </div>
+            </header>
         )
     }
 }

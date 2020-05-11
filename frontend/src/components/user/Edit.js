@@ -63,6 +63,7 @@ class EditUser extends React.Component{
     render() {
         const { submitSuccess, loading, submitFail, errorMessage  } = this.state;
         return (
+            <header className="background rgba-black-strong">
             <div className="main-container">
             {this.state.user &&
                 <div className="row">
@@ -119,6 +120,7 @@ class EditUser extends React.Component{
                     </div>
                 }
             </div>
+            </header>
         )
     }
 }
