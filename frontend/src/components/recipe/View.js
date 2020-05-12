@@ -4,6 +4,8 @@ import './Recipe.css'
 import axios from 'axios';
 import apiConfig from '../../config/api.js';
 import { MainContainer } from './../layout/MainContainer';
+import {FormCard} from './../layout/FormCard';
+import StarBar from './../layout/StarBar';
 
 const mapStateToProps = state => {
     return { session: state.session }
@@ -30,39 +32,36 @@ class RecipeView extends Component {
         }
     }
 
+    returnToIndex = e =>
+    {
+      this.props.history.push('/recipe');
+    }
+
     render() {
         const recipe = this.state.recipe;
         return (
             <MainContainer>
-                    <div className="row">
-                        <div className="card recipe">
-			                <div className="container">
-				                <div className="wrapper row">
-                                    <div className="preview col-md-6">
-                                        <div className="preview-pic tab-content">
-                                        <div className="tab-pane active" id="pic-1"><img src={"https://umanage-mowatr.s3.amazonaws.com/" + recipe.picture } alt="recipe" /></div>
-                                        </div>
-                                    </div>
-                                    <div className="details col-md-6">
-                                        <h3 className="recipe-title">{recipe.name}</h3>
-                                        <h5 className="submitted-by">By <span>{recipe.submitted_by}</span></h5>
-                                        <h5 className="review-no">Rated: {recipe.rating}/10</h5>
-                                        <div className="rating">
-                                            <div className="stars">
-                                                <span className="fa fa-star checked"></span>
-                                                <span className="fa fa-star checked"></span>
-                                                <span className="fa fa-star checked"></span>
-                                                <span className="fa fa-star"></span>
-                                                <span className="fa fa-star"></span>
-                                            </div>
-                                        </div>
-                                        <h5 className="review-no">Recipe:</h5>
-                                        <p className="recipe-description">{ recipe.recipe }</p>
-                                    </div>
+                <FormCard returnToIndex={this.returnToIndex}>
+                    <div className="container">
+				        <div className="wrapper row">
+                            <div className="preview col-md-6">
+                                <div className="preview-pic tab-content">
+                                    <div className="tab-pane active" id="pic-1"><img src={"https://umanage-mowatr.s3.amazonaws.com/" + recipe.picture } alt="recipe" /></div>
                                 </div>
                             </div>
-                        </div>          
+                            <div className="details col-md-6">
+                                <h3 className="recipe-title">{recipe.name}</h3>
+                                <h5 className="submitted-by">By <span>{recipe.submitted_by}</span></h5>
+                                <h5 className="review-no">Rated: {recipe.rating}/10 </h5>
+                                <div className="rating">
+                                    <StarBar stars={recipe.rating} />
+                                </div>
+                                <h5 className="review-no">Recipe:</h5>
+                                <p className="recipe-description">{ recipe.recipe }</p>
+                            </div>
+                        </div>
                     </div>
+                </FormCard>
             </MainContainer>
         )
     }

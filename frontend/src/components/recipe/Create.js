@@ -73,7 +73,6 @@ class Create extends React.Component{
                 }
             );
         }
-        this.props.history.push('/recipe');
     }
 
     handleInputChanges = e => {
