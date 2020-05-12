@@ -89,7 +89,7 @@ router.post('/',  upload.single('photo'), function (req, res) {
         Item: {
             "id": Date.now(),
             "name": req.body.name || null,
-            "picture": req.file.key || null,
+            "picture": req.file && req.file.key || null,
             "submitted_by": req.body.submitted_by || null,
             "recipe": req.body.recipe || null,
             "isPublic": req.body.is_public || null,
