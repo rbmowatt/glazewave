@@ -2,7 +2,11 @@ import * as React from 'react';
 import { connect } from 'react-redux'
 import axios from 'axios';
 import apiConfig from '../../config/api.js';
+import { MainContainer } from './../layout/MainContainer';
+import {FormCard} from './../layout/FormCard';
+import {UserForm} from './UserForm';
 
+const TITLE = 'Edit User';
 const mapStateToProps = state => {
     return { session: state.session }
   }
@@ -29,7 +33,7 @@ class EditUser extends React.Component{
             axios.get(apiConfig.host + apiConfig.port + `/api/user/${this.state.id}`, headers).then(data => {
                 this.setState({ user: data.data });
             })
-            .catch(error=>console.log(error));
+            .catch(error=>this.props.history.push('/user'));
         }
     }
 
@@ -45,11 +49,9 @@ class EditUser extends React.Component{
         .catch(
             error=>{
                 this.setState({ submitSuccess: false, submitFail: true, errorMessage : error.response.data.message });
-                console.log(error);
             }
         );
     }
-
 
     setValues = (values) => {
         this.setState({ values: { ...this.state.values, ...values } });
@@ -60,67 +62,34 @@ class EditUser extends React.Component{
         this.setValues({ [e.currentTarget.id]: e.currentTarget.value })
     }
 
+    returnToIndex = e =>
+    {
+      this.props.history.push('/recipe');
+    }
+
     render() {
-        const { submitSuccess, loading, submitFail, errorMessage  } = this.state;
+        const { submitSuccess, loading, submitFail, errorMessage} = this.state;
         return (
-            <header className="background rgba-black-strong">
-            <div className="main-container">
-            {this.state.user &&
-                <div className="row">
-                <div className="card mx-auto">
-                    <div className="card-text">
-                        <div className="row">
-                            <div className="col-md-12 ">
-                                <h2> Edit user </h2>
-
-                                {submitSuccess && (
-                                    <div className="alert alert-info" role="alert">
-                                        user's details has been edited successfully </div>
-                                )}
-
-                                {submitFail && (
-                                    <div className="alert alert-info" role="alert">
-                                        { errorMessage }
-                                    </div>
-                                    )}
-
-                                <form className="row" id={"create-post-form"} onSubmit={this.processFormSubmission} noValidate={true}>
-                                <div className="form-group col-md-12">
-                                        <label htmlFor="Username"> User Name </label>
-                                        <input type="text" id="Username" defaultValue={this.state.user.Username} onChange={(e) => this.handleInputChanges(e)} name="Username" className="form-control" placeholder="Enter user's first name" />
-                                    </div>
-                                    <div className="form-group col-md-12">
-                                        <label htmlFor="name"> Name </label>
-                                        <input type="text" id="name" defaultValue={this.state.user.name} onChange={(e) => this.handleInputChanges(e)} name="name" className="form-control" placeholder="Enter user's first name" />
-                                    </div>
-                                    <div className="form-group col-md-12">
-                                        <label htmlFor="email"> Email </label>
-                                        <input type="email" id="email" defaultValue={this.state.user.email} onChange={(e) => this.handleInputChanges(e)} name="email" className="form-control" placeholder="Enter user's email address" />
-                                    </div>
-
-                                    <div className="form-group col-md-12">
-                                        <label htmlFor="phone"> Phone </label>
-                                        <input type="text" id="phone_number" defaultValue={this.state.user.phone} onChange={(e) => this.handleInputChanges(e)} name="phone_number" className="form-control" placeholder="Enter user's phone number" />
-                                    </div>
-
-                                    <div className="form-group col-md-4 pull-right">
-                                        <button className="btn btn-success" type="submit">
-                                            Edit user </button>
-                                        {loading &&
-                                            <span className="fa fa-circle-o-notch fa-spin" />
-                                        }
-                                    </div>
-                                </form>
-                                </div>
+           <MainContainer>
+                {this.state.user &&
+                <FormCard returnToIndex={this.returnToIndex}>
+                    <div className="col-md-12 ">
+                        <h2>{TITLE}</h2>
+                        {submitSuccess && (
+                            <div className="alert alert-info" role="alert">
+                                            user's details has been edited successfully 
                             </div>
-                       
-
+                        )}
+                        {submitFail && (
+                            <div className="alert alert-info" role="alert">
+                                { errorMessage }
                             </div>
-                        </div>
+                        )}
+                    <UserForm user={this.state.user} handleInputChanges={this.handleInputChanges} loading={loading} processFormSubmission={this.processFormSubmission} edit="true"/>
                     </div>
+                </FormCard>
                 }
-            </div>
-            </header>
+            </MainContainer>
         )
     }
 }

@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import apiConfig from '../../config/api.js';
+import { MainContainer } from './../layout/MainContainer';
 
 const mapStateToProps = state => {
     return { session: state.session }
@@ -15,18 +16,18 @@ class UserIndex extends Component {
     }
 
     componentDidMount(){
-
         if (this.props.session.isLoggedIn) {
             const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
             this.setState({ headers});
             
             axios.get( apiConfig.host + apiConfig.port + `/api/user`, headers).then(data => {
+                data.data.sort((a,b) => (a.Username > b.Username) ? 1 : ((b.Username > a.Username) ? -1 : 0));
                 this.setState({ users: data.data })
             });
         }
     }
 
-    deleteCustomer(id ) {
+    deleteUser(id ) {
         axios.delete(apiConfig.host + apiConfig.port + `/api/user/${id}`, this.state.headers).then(data => {
             const index = this.state.users.findIndex(user => user.id === id);
             this.state.users.splice(index, 1);
@@ -37,12 +38,9 @@ class UserIndex extends Component {
     render() {
         const users = this.state.users;
         return (
-            <header className="background rgba-black-strong">
-            <div className="main-container">
-                <div className="container">
+           <MainContainer>
                     <div className="row mx-auto">
                     <div className="card um-main-body mx-auto">
-
                         <div className="card-block">
                         <div className="card-title"><strong>Users</strong> <Link to={'user/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New User</Link></div>
                         <div className="card-text">
@@ -56,7 +54,7 @@ class UserIndex extends Component {
                             <thead className="thead-light">
                                 <tr>
                                     <th scope="col">Username</th>
-                                    <th scope="col">first_name</th>
+                                    <th scope="col">Full Name</th>
                                     <th scope="col">Email</th>
                                     <th scope="col">Phone</th>
                                     <th scope="col">Actions</th>
@@ -73,7 +71,7 @@ class UserIndex extends Component {
                                             <div className="d-flex justify-content-between align-items-center">
                                                 <div className="btn-group" style={{ marginBottom: "20px" }}>
                                                     <Link to={`user/edit/${user.Username}`} className="btn btn-sm btn-outline-secondary">Edit User</Link>
-                                                    <button className="btn btn-sm btn-outline-secondary" onClick={() => this.deleteCustomer(user.Username)}>Delete User</button>
+                                                    <button className="btn btn-sm btn-outline-secondary" onClick={() => this.deleteUser(user.Username)}>Delete User</button>
                                                 </div>
                                             </div>
                                         </td>
@@ -82,15 +80,11 @@ class UserIndex extends Component {
                             </tbody>
                         </table>
                         </div>)}
-                        </div>
-                        </div>
                     </div>
-                 </div>
-     
-
+                </div>
             </div>
             </div>
-            </header>
+            </MainContainer>
         )
     }
 }

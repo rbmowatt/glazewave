@@ -70,7 +70,6 @@ const getCognitoSignInUri = () => {
 
 // Parse the response from a Cognito callback URI (assumed a token or code is in the supplied href). Returns a promise.
 const parseCognitoWebResponse = (href) => {
-  console.log('href', href);
   return new Promise((resolve, reject) => {
     const auth = createCognitoAuth()
 
@@ -80,7 +79,6 @@ const parseCognitoWebResponse = (href) => {
         resolve(result)
       },
       onFailure: function (err) {
-        console.log('auth', auth);
         reject(new Error('Failure parsing Cognito web response: ' + err))
       }
     }
@@ -97,9 +95,7 @@ const getCognitoSession = () => {
         reject(new Error('Failure getting Cognito session: ' + err))
         return
       }
-      console.log('token', result.accessToken.jwtToken)
       // Resolve the promise with the session credentials
-      //console.log('Successfully got session: ' + JSON.stringify(result))
       const session = {
         credentials: {
           accessToken: result.accessToken.jwtToken,

@@ -30,7 +30,7 @@ code {
   }
 **/
   .main-container  .card {
-    min-height: 90vh;
+    min-height: 80vh;
     min-width: 100%;
   }
 
@@ -49,6 +49,11 @@ code {
     padding-left:15px;
     z-index: 999;
   }
+  .card {
+    margin-top: 20px;
+    background: #eee;
+    padding: 3em;
+    line-height: 1.5em; }
 }
 
 .navbar.collapsing,
@@ -78,8 +83,14 @@ code {
   }
 
   .card {
-    margin-top: 50px;
+    margin-top: 5px;
     background: #eee;
-    padding: 3em;
-    line-height: 1.5em; }
+    padding: 2em;
+    line-height: 1.5em; 
+  }
+
+  .card-close
+  {
+    cursor: pointer;
+  }
   
