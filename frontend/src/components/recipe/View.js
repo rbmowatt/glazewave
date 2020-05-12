@@ -39,6 +39,7 @@ class RecipeView extends Component {
 
     render() {
         const recipe = this.state.recipe;
+        const pic = (recipe.picture  == null) ? 'no_photo.jpg' : recipe.picture;
         return (
             <MainContainer>
                 <FormCard returnToIndex={this.returnToIndex}>
@@ -46,7 +47,7 @@ class RecipeView extends Component {
 				        <div className="wrapper row">
                             <div className="preview col-md-6">
                                 <div className="preview-pic tab-content">
-                                    <div className="tab-pane active" id="pic-1"><img src={"https://umanage-mowatr.s3.amazonaws.com/" + recipe.picture } alt="recipe" /></div>
+                                    <div className="tab-pane active" id="pic-1"><img src={"https://umanage-mowatr.s3.amazonaws.com/" + pic } alt="recipe" /></div>
                                 </div>
                             </div>
                             <div className="details col-md-6">
