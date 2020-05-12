@@ -2,7 +2,11 @@ import * as React from 'react';
 import { connect } from 'react-redux'
 import axios from 'axios';
 import apiConfig from '../../config/api.js';
+import { MainContainer } from './../layout/MainContainer';
+import {FormCard} from './../layout/FormCard';
+import { RecipeForm } from './RecipeForm';
 
+const TITLE = "Edit Recipe";
 const mapStateToProps = state => {
     return { session: state.session }
   }
@@ -30,7 +34,7 @@ class EditRecipe extends React.Component{
                 const recipe = data.data[0];
                 this.setState({ recipe});
             })
-            .catch(error=>console.log(error));
+            .catch(error=>this.props.history.push('/recipe'));
         }
     }
 
@@ -41,13 +45,12 @@ class EditRecipe extends React.Component{
         axios.put(apiConfig.host + apiConfig.port + `/api/recipe/${this.state.id}`, this.state.values, this.state.headers).then(data => {
             this.setState({ submitSuccess: true, loading: false })
             setTimeout(() => {
-                this.props.history.push('/api/recipe');
+                this.props.history.push('/recipe');
             }, 1500)
         })
         .catch(
             error=>{
                 this.setState({ submitSuccess: false, submitFail: true, errorMessage : error.response.data.message });
-                console.log(error);
             }
         );
     }
@@ -61,78 +64,33 @@ class EditRecipe extends React.Component{
         this.setValues({ [e.currentTarget.id]: e.currentTarget.value })
     }
 
+    returnToIndex = e =>
+    {
+      this.props.history.push('/recipe');
+    }
+
+
     render() {
         const { submitSuccess, loading, submitFail, errorMessage  } = this.state;
         return (
-            <header className="background rgba-black-strong">
-            <div className="main-container">
-                {this.state.recipe &&
-                    <div className="row">
-                    <div className="card mx-auto">
-                        <div className="card-text">
-                            <div className="row">
-                                <div className="col-md-12 ">
-                                    <h2> Edit Recipe </h2>
-      
-                                {submitSuccess && (
-                                    <div className="alert alert-info" role="alert">
-                                        Recipe details have been edited successfully </div>
-                                )}
-                                {submitFail && (
-                                    <div className="alert alert-info" role="alert">
-                                        { errorMessage }
-                                    </div>
-                                    )}
-                            <form className="row" id="create-post-form" onSubmit={this.processFormSubmission} noValidate={true}>
-                                <div className="form-group col-md-12">
-                                    <label htmlFor="rating"> What would you rate this Recipe on a scale of 1-10?
-                                    <select defaultValue={this.state.recipe.rating} onChange={(e) => this.handleInputChanges(e)} id="rating" name="rating" className="form-control">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    </select>
-                                    </label>
-                                </div>
-                                <div className="form-group col-md-12">
-                                <label htmlFor="is_public"> Should this Recipe be Public to ALL logged-in Users?
-                                    <select defaultValue={this.state.recipe.is_public} onChange={(e) => this.handleInputChanges(e)} id="is_public" name="is_public" className="form-control">
-                                    <option value="0">Private</option>
-                                    <option value="1">Public</option>
-                                    </select>
-                                    </label>
-                                </div>
-                                <div className="form-group col-md-12">
-                                    <label htmlFor="first_name"> Name/Title </label>
-                                    <input type="text" id="name" defaultValue={this.state.recipe.name} onChange={(e) => this.handleInputChanges(e)} name="name" className="form-control" placeholder="Recipe Title" />
-                                </div>
-                                <div className="form-group col-md-12">
-                                    <label htmlFor="recipe"> Recipe </label>
-                                    <textarea id="recipe" defaultValue={this.state.recipe.recipe} onChange={(e) => this.handleInputChanges(e)} name="recipe" className="form-control" placeholder="Enter the Recipe Here!!" />
-                                </div>
-                                <div className="form-group col-md-4 pull-right">
-                                    <button className="btn btn-success" type="submit">
-                                        Update Recipe
-                                    </button>
-                                    {loading &&
-                                        <span className="fa fa-circle-o-notch fa-spin" />
-                                    }
-                                </div>
-                            </form>
+            <MainContainer>
+                <FormCard returnToIndex={this.returnToIndex}>
+                    <div className="col-md-12 ">
+                        <h2>{ TITLE }</h2>
+                        {submitSuccess && (
+                            <div className="alert alert-info" role="alert">
+                                    Recipe details have been edited successfully </div>
+                        )}
+                        {submitFail && (
+                            <div className="alert alert-info" role="alert">
+                                    { errorMessage }
                             </div>
-                        </div>
+                        )} 
                     </div>
-                </div>
-            </div>
+                    <RecipeForm recipe={this.state.recipe} loading={loading}  handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} />
+                </FormCard>
                 }
-        </div>
-        </header>
+            </MainContainer>
         )
     }
 }

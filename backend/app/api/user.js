@@ -47,7 +47,7 @@ router.post('/', function (req, res) {
             strict: true
         });
         const params = {
-                Username: req.body.userName ,
+                Username: req.body.Username ,
                 email: req.body.email,
                 name: req.body.name,
                 phone_number : req.body.phone_number|| null,

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 
-export const PrivateRoute = ({ component: Component, roles, session, ...rest }) => (
+const PrivateRoute = ({ component: Component, roles, session, ...rest }) => (
     <Route {...rest} render={props => {
         if (!session.isLoggedIn) {
             // not logged in so redirect to login page with the return url
@@ -18,3 +18,5 @@ export const PrivateRoute = ({ component: Component, roles, session, ...rest }) 
         return <Component {...props} />
     }} />
 )
+
+export default PrivateRoute;

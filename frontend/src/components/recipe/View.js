@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import './Recipe.css'
 import axios from 'axios';
 import apiConfig from '../../config/api.js';
+import { MainContainer } from './../layout/MainContainer';
 
 const mapStateToProps = state => {
     return { session: state.session }
@@ -32,9 +33,7 @@ class RecipeView extends Component {
     render() {
         const recipe = this.state.recipe;
         return (
-            <header className="background rgba-black-strong">
-            <div className="main-container">
-                <div className="container">
+            <MainContainer>
                     <div className="row">
                         <div className="card recipe">
 			                <div className="container">
@@ -64,9 +63,7 @@ class RecipeView extends Component {
                             </div>
                         </div>          
                     </div>
-                </div>
-            </div>
-            </header>
+            </MainContainer>
         )
     }
 }

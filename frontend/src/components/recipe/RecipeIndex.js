@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import apiConfig from '../../config/api.js';
-import './Recipe.css';
+import { MainContainer } from './../layout/MainContainer';
 
 
 const mapStateToProps = state => {
@@ -17,12 +17,12 @@ class RecipeIndex extends Component {
     }
 
     componentDidMount(){
-
         if (this.props.session.isLoggedIn) {
             this.setState({ isAdmin : this.props.session.isAdmin });
             const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
             this.setState({headers});
             axios.get( apiConfig.host + apiConfig.port + `/api/recipe`, headers).then(data => {
+                data.data.sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0));
                 this.setState({ recipes: data.data })
             });
         }
@@ -39,9 +39,7 @@ class RecipeIndex extends Component {
     render() {
         const recipes = this.state.recipes;
         return (
-            <header className="background rgba-black-strong">
-            <div className="main-container">
-                <div className="container">
+            <MainContainer>
                     <div className="row">
                     <div className="card um-main-body mx-auto">
                         <div className="card-block">
@@ -89,10 +87,7 @@ class RecipeIndex extends Component {
                         </div>
                     </div>
                  </div>
-            </div>
-
-            </div>
-            </header>
+            </MainContainer>
           
         )
     }
