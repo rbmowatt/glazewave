@@ -9,13 +9,13 @@ const onSignOut = (e) => {
 
 const Navbar = props =>{
     return (
-        <nav class="navbar navbar-expand-md navbar-dark">
+        <nav className="navbar navbar-expand-md navbar-dark">
           <a className="navbar-brand" href="/"><img src="https://umanage-mowatr.s3.amazonaws.com/bake_n_flake_logo_75_75.png" alt="bake n flake bakery" height="75" width="75"/></a>
-          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-              <span class="navbar-toggler-icon"></span>
+          <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+              <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-              <div class="navbar-nav">
+          <div className="collapse navbar-collapse" id="navbarCollapse">
+              <div className="navbar-nav">
                 {props.session.isLoggedIn && props.session.isAdmin && 
                           <Link className="nav-link" to={'/user'}>
                           Users</Link>
@@ -25,7 +25,7 @@ const Navbar = props =>{
                           Recipes</Link>
                       }
               </div>
-              <div class="navbar-nav ml-auto">
+              <div className="navbar-nav ml-auto">
               {props.session.isLoggedIn ? ( <span><span className="white-txt">Hello {props.session.user.userName}&nbsp;&nbsp;</span><span><a className="Home-link" href="#" onClick={onSignOut}>Sign out</a> </span></span> ) 
               : (<a className="Home-link" href={cognitoUtils.getCognitoSignInUri()}>Sign in</a>)}
               </div>

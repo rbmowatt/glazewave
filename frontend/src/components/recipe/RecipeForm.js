@@ -1,11 +1,12 @@
 import React from 'react';
 
 export const RecipeForm = props =>{
+    const isPublic = (props.recipe.isPublic === true ) ? 1 : 0;
     return (
         <form className="row" id="create-post-form" onSubmit={props.processFormSubmission} noValidate={true}>
         <div className="form-group col-md-12">
             <label htmlFor="rating"> What would you rate this Recipe on a scale of 1-10?
-            <select defaultValue={props.recipe.rating} onChange={(e) => props.handleInputChanges(e)} id="rating" name="rating" className="form-control">
+            <select value={props.recipe.rating} onChange={(e) => props.handleInputChanges(e)} id="rating" name="rating" className="form-control">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -21,7 +22,7 @@ export const RecipeForm = props =>{
         </div>
         <div className="form-group col-md-12">
         <label htmlFor="is_public"> Should this Recipe be Public to ALL logged-in Users?
-            <select defaultValue={props.recipe.is_public} onChange={(e) => props.handleInputChanges(e)} id="is_public" name="is_public" className="form-control">
+            <select value={isPublic} onChange={(e) => props.handleInputChanges(e)} id="is_public" name="is_public" className="form-control">
             <option value="0">Private</option>
             <option value="1">Public</option>
             </select>

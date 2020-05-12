@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import apiConfig from '../../config/api.js';
 import { MainContainer } from './../layout/MainContainer';
+import RecipeRow from './RecipeRow';
 
 
 const mapStateToProps = state => {
@@ -14,6 +15,7 @@ class RecipeIndex extends Component {
     constructor(props) {
         super(props);
         this.state = { recipes: [], headers : {}, isAdmin : false }
+        this.deleteRecipe = this.deleteRecipe.bind(this);
     }
 
     componentDidMount(){
@@ -36,6 +38,7 @@ class RecipeIndex extends Component {
         })
     }
 
+
     render() {
         const recipes = this.state.recipes;
         return (
@@ -52,7 +55,8 @@ class RecipeIndex extends Component {
                                 <h2>No recipe found at the moment</h2>
                             </div>
                         ) :(
-                        <table className="table table-bordered table-striped table-responsive">
+                        <div className="table-responsive-md">
+                        <table className="table table-bordered table-striped">
                             <thead className="thead-light">
                                 <tr>
                                     <th scope="col">Name</th>
@@ -65,24 +69,11 @@ class RecipeIndex extends Component {
                             <tbody>
                                 {recipes && recipes.map(recipe =>
                                     (this.state.isAdmin || recipe.isPublic) &&
-                                    <tr key={recipe.id}>
-                                        <td>{recipe.name}</td>
-                                        <td>{recipe.submitted_by}</td>
-                                        <td>{recipe.rating}</td>
-                                        <td>{!recipe.isPublic ? 'Yes' : 'No'}</td>
-                                        <td>
-                                            <div className="d-flex justify-content-between align-items-center">
-                                                <div className="btn-group" style={{ marginBottom: "20px" }}>
-                                                    <Link to={`recipe/${recipe.id}`} className="btn btn-sm btn-success btn-outline-secondary">View Recipe </Link> 
-                                                    { this.state.isAdmin &&  <Link to={`recipe/edit/${recipe.id}`} className="btn btn-warning btn-sm btn-outline-secondary">Edit Recipe </Link> }
-                                                    { this.state.isAdmin && <button type="button" className="btn btn-danger btn-sm btn-outline-secondary" onClick={() => this.deleteRecipe(recipe.id)}>Delete Recipe</button> }
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                    <RecipeRow recipe={recipe} deleteRecipe={this.deleteRecipe} isAdmin={this.state.isAdmin} key={ recipe.id }/>
                                 )}
                             </tbody>
-                        </table> )}
+                        </table>
+                        </div> )}
                         </div>
                         </div>
                     </div>

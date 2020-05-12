@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import apiConfig from '../../config/api.js';
 import { MainContainer } from './../layout/MainContainer';
+import UserRow from './UserRow';
 
 const mapStateToProps = state => {
     return { session: state.session }
@@ -13,6 +14,7 @@ class UserIndex extends Component {
     constructor(props) {
         super(props);
         this.state = { users: [], headers : {} }
+        this.deleteUser = this.deleteUser.bind(this);
     }
 
     componentDidMount(){
@@ -39,51 +41,42 @@ class UserIndex extends Component {
         const users = this.state.users;
         return (
            <MainContainer>
-                    <div className="row mx-auto">
+                <div className="row mx-auto">
                     <div className="card um-main-body mx-auto">
                         <div className="card-block">
-                        <div className="card-title"><strong>Users</strong> <Link to={'user/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New User</Link></div>
-                        <div className="card-text">
-                        {users.length === 0 ?(
-                            <div className="text-center">
-                                <h2>No users found at the moment</h2>
+                            <div className="card-title">
+                                <strong>Users</strong> <Link to={'user/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New User</Link>
                             </div>
-                        ) :(
-                            <div className="container">
-                        <table className="table table-bordered table-striped table-responsive">
-                            <thead className="thead-light">
-                                <tr>
-                                    <th scope="col">Username</th>
-                                    <th scope="col">Full Name</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">Phone</th>
-                                    <th scope="col">Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {users && users.map(user =>
-                                    <tr key={user.Username}>
-                                        <td>{user.Username}</td>
-                                        <td>{user.name}</td>
-                                        <td>{user.email}</td>
-                                        <td>{user.phone_number}</td>
-                                        <td>
-                                            <div className="d-flex justify-content-between align-items-center">
-                                                <div className="btn-group" style={{ marginBottom: "20px" }}>
-                                                    <Link to={`user/edit/${user.Username}`} className="btn btn-sm btn-outline-secondary">Edit User</Link>
-                                                    <button className="btn btn-sm btn-outline-secondary" onClick={() => this.deleteUser(user.Username)}>Delete User</button>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                )}
-                            </tbody>
-                        </table>
-                        </div>)}
+                            <div className="card-text">
+                                {users.length === 0 ?(
+                                <div className="text-center">
+                                    <h2>No users found at the moment</h2>
+                                </div>
+                                ) :(
+                                <div className="container">
+                                    <div className="table-responsive-md">
+                                        <table className="table table-bordered table-striped table-responsive">
+                                            <thead className="thead-light">
+                                                <tr>
+                                                    <th scope="col">Username</th>
+                                                    <th scope="col">Full Name</th>
+                                                    <th scope="col">Email</th>
+                                                    <th scope="col">Phone</th>
+                                                    <th scope="col">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {users && users.map(user =>
+                                                <UserRow user={user} deleteUser={this.deleteUser} key={user.Username}></UserRow>
+                                                )}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>)}
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            </div>
             </MainContainer>
         )
     }
