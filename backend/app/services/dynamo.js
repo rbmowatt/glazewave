@@ -66,6 +66,23 @@ class Dynamo {
                 }
             });
 		})
+    }
+    
+    static create({TableName, item}) {
+        const params = {
+            TableName: TableName,
+            Item: item
+        };
+		return new Promise((resolve, reject) => {
+            docClient.put(params, function (err, data) {
+                if (err) {
+                    console.error("Unable to add User. Error JSON:", JSON.stringify(err, null, 2));
+                    reject(err);
+                } else {
+                    resolve(data);
+                }
+            });
+		})
 	}
 }
 

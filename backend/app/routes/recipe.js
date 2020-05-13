@@ -55,30 +55,24 @@ router.get('/:id', function (req, res) {
 });
 
 router.post('/',  upload.single('photo'), function (req, res) {
-
-    console.log('file', req.file);
-    const params = {
-        TableName: "recipes",
-        Item: {
+    const item = {
             "id": Date.now(),
             "name": req.body.name || null,
             "picture": req.file && req.file.key || null,
             "submitted_by": req.body.submitted_by || null,
             "recipe": req.body.recipe || null,
             "isPublic": req.body.is_public || null,
-            "rating": req.body.rating || null,
-            }
+            "rating": req.body.rating || null
         };
-        docClient.put(params, function (err, data) {
-            if (err) {
-                console.error("Unable to add User", req.body, ". Error JSON:", JSON.stringify(err, null, 2));
-                return res.status(400).json(error);
-            } else {
-                res.send(data);
-                console.log("PutItem succeeded:", data.Item);
-            }
+        Dynamo.create({TableName : "recipes", item : item})
+        .then( (data)=>{
+            console.log(data);
+            res.json(data);
+        })
+        .catch(error=>{
+            console.log('errr', error);
+            return res.status(400).json(error);
         });
-
 });
 
 router.put('/:id', function (req, res) {
