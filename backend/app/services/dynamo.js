@@ -38,7 +38,7 @@ class Dynamo {
 		})
     }
     
-    static getItem({TableName,args}) {
+    static getItem({TableName, args }) {
         console.log('args',args);
         const params = {
             TableName: TableName,
@@ -50,18 +50,12 @@ class Dynamo {
                // ":id": itemId
             }
         };
-        
-
-        console.log('params' , params);
 		return new Promise((resolve, reject) => {
-
             for (const [key, value] of Object.entries(args)) {
                 params.ExpressionAttributeNames["#"+key] = key;
                 params.ExpressionAttributeValues[":"+key] = value;
                 params.KeyConditionExpression += "#"+key + " = :" + key;
               }
-
-              console.log('params', params);
             docClient.query(params, function (err, data) {
                 if (err) {
                     console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
