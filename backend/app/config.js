@@ -1,1 +1,0 @@
-module.exports = { uiHost : 'http://localhost:3000' } 
