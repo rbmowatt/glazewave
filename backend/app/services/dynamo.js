@@ -104,6 +104,44 @@ class Dynamo {
     
 		})
     }
+
+    static update({TableName, id, args })
+    {
+
+
+        let expression = "SET ";
+        let values = {};
+        let attributes = {};
+        for (const [key, value] of Object.entries(args)) {
+            expression += "#" + key + "=:" +key + ",";
+            attributes["#"+key] = key;
+            values[":"+key] = value;
+          }
+        expression = expression.substring(0, expression.length - 1);
+        console.log(expression, values);
+        const params = {
+            TableName: TableName,
+            Key: {
+                id: id
+              },
+              UpdateExpression: expression,
+              ExpressionAttributeNames: attributes,
+              ExpressionAttributeValues: values
+        };
+
+		return new Promise((resolve, reject) => {
+            docClient.update(params, function (err, data) {
+                if (err) {
+                    console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
+                    reject(err);
+                } else {
+                    console.log("Query succeeded.");
+                    resolve(data);
+                }
+            });
+    
+		})
+    }
 }
 
 module.exports = Dynamo;
