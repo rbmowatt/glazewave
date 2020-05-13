@@ -130,7 +130,7 @@ class Create extends React.Component{
                             { errorMessage }
                         </div>
                         )}               
-                        <RecipeForm recipe={this.state.recipe} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading}>
+                        <RecipeForm recipe={this.state.recipe} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading} >
                             <div>
                                 <div className='buttons form-group col-md-12'>
                                     {content()}

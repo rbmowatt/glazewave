@@ -39,7 +39,7 @@ export const RecipeForm = props =>{
         { props.children }
         <div className="form-group col-md-4 pull-right">
             <button className="btn btn-success" type="submit">
-                Update Recipe
+            {(props.edit) ? ("Edit Recipe") : ( "Add Recipe") }
             </button>
            
         </div>

@@ -87,7 +87,7 @@ class EditRecipe extends React.Component{
                             </div>
                         )} 
                     </div>
-                    <RecipeForm recipe={this.state.recipe} loading={loading}  handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} />
+                    <RecipeForm recipe={this.state.recipe} loading={loading}  handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} edit="true" />
                 </FormCard>
                 }
             </MainContainer>
