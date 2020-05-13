@@ -83,7 +83,27 @@ class Dynamo {
                 }
             });
 		})
-	}
+    }
+    
+    static delete({TableName, args })
+    {
+        const params = {
+            TableName: TableName,
+            Key: args
+        };
+		return new Promise((resolve, reject) => {
+            docClient.delete(params, function (err, data) {
+                if (err) {
+                    console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
+                    reject(err);
+                } else {
+                    console.log("Query succeeded.");
+                    resolve(data);
+                }
+            });
+    
+		})
+    }
 }
 
 module.exports = Dynamo;
