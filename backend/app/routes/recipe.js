@@ -108,22 +108,16 @@ router.put('/:id', function (req, res) {
 });
 
 router.delete('/:id', function (req, res) {
-    const recipeId = parseInt(req.params.id);
-    const params = {
-        TableName: "recipes",
-        Key: {
-            id: parseInt(req.params.id)
-          }
-    };
-    docClient.delete(params, function (err, data) {
-        if (err) {
-            console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
-            return res.status(400).json(error);
-        } else {
-            console.log("Query succeeded.");
-            res.send(data.Items)
-        }
+    const id = parseInt(req.params.id);
+    Dynamo.delete({TableName : "recipes", args: {id : id }})
+    .then( (data)=>{
+        console.log(data);
+        res.json(data);
+    })
+    .catch(error=>{
+        console.log('errr', error);
+        return res.status(400).json(error);
     });
-});
+}); 
 
 module.exports = router;
