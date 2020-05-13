@@ -65,8 +65,6 @@ code {
   background-color: #A9B7C0 !important;
 }
 
-
-
   .background {
     background: url("https://expertwebinarseries.com/wp-content/uploads/2019/11/woman-in-restaurant-wearing-apron-1739748-1800x1200.jpg")no-repeat center center fixed;
       -webkit-background-size: cover;
@@ -94,3 +92,7 @@ code {
     cursor: pointer;
   }
   
+  img.preview {
+    max-width: 250px;
+    max-height: 250px;
+  }
