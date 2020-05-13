@@ -6,7 +6,7 @@
     "name": "Shaking Beef",
     "rating": 9,
     "recipe": "Incididunt laboris elit elit minim ea culpa mollit esse aute deserunt ut tempor incididunt nisi. Sit exercitation minim nisi est in. Veniam velit veniam tempor quis anim sint laborum sunt nostrud duis pariatur velit Lorem ipsum. Dolor sit occaecat ullamco ea adipisicing proident. Minim voluptate laboris dolore minim proident est magna aliqua ex commodo veniam consectetur ipsum. Esse ullamco amet laborum irure. Sit ipsum irure tempor laboris non irure occaecat adipisicing sunt.\r\n",
-    "isPublic": true
+    "isPublic": 1
   },
   {
     "id": 1001,
@@ -15,7 +15,7 @@
     "name": "Spiny Lobster In Crazy Water",
     "rating": 5,
     "recipe": "Dolore ullamco fugiat cillum eiusmod Lorem anim do in proident. Consectetur labore pariatur ipsum proident cillum nisi. Enim sint mollit non dolore proident nulla reprehenderit commodo adipisicing cupidatat. Nostrud ipsum voluptate nulla id labore reprehenderit nulla do incididunt laboris pariatur consequat sunt minim. In duis officia commodo eu et id enim esse sunt minim.\r\n",
-    "isPublic": false
+    "isPublic": 0
   },
   {
     "id": 1002,
@@ -24,7 +24,7 @@
     "name": "Super 'Shrooms",
     "rating": 7,
     "recipe": "Adipisicing minim ea ullamco anim laboris. Aliqua reprehenderit reprehenderit quis labore quis proident. Consectetur do consequat aute qui aute. Voluptate Lorem sunt laborum minim. In ea tempor aute proident sit voluptate laborum esse reprehenderit enim dolor duis sit sint. Sint nulla amet deserunt ad magna duis nostrud enim in veniam nulla. Consequat aliquip dolore nostrud mollit velit commodo nostrud quis deserunt officia esse eiusmod ex.\r\n",
-    "isPublic": false
+    "isPublic": 0
   },
   {
     "id": 1003,
@@ -33,7 +33,7 @@
     "name": "Spam Sushi",
     "rating": 10,
     "recipe": "Aliqua aute ex dolor ea excepteur commodo veniam adipisicing culpa ea ullamco adipisicing officia. Occaecat id id non id id ullamco duis fugiat magna minim et minim. Ut aute id ut amet labore pariatur laboris. Ipsum aliquip velit deserunt cupidatat sint. Adipisicing sit esse mollit Lorem adipisicing culpa officia adipisicing.\r\n",
-    "isPublic": true
+    "isPublic": 1
   },
   {
     "id": 1004,
@@ -42,7 +42,7 @@
     "name": "Broiled Double-Thick Lamb Rib Chops With Slicked-Up Store-Bought Mint Jelly Sauce",
     "rating": 7,
     "recipe": "Magna ea esse nulla deserunt eiusmod consequat non proident proident aute fugiat. Elit adipisicing amet occaecat excepteur quis ad deserunt pariatur quis consequat veniam et dolore nulla. Ex incididunt irure quis in ad dolore magna deserunt laboris Lorem ipsum aute. Labore sit magna pariatur velit magna ad consectetur ex consectetur.\r\n",
-    "isPublic": true
+    "isPublic": 1
   },
   {
     "id": 1005,
@@ -51,7 +51,7 @@
     "name": "Festive Nuts",
     "rating": 6,
     "recipe": "Irure quis aute exercitation dolor tempor proident ut labore consequat magna consequat nostrud consequat irure. Duis cupidatat non labore occaecat reprehenderit consectetur irure esse id qui ea ipsum proident sit. Nisi occaecat in exercitation ex sit. Elit ea consequat sint proident cillum et Lorem ullamco veniam. Ea do quis amet velit laboris nisi nisi eiusmod incididunt minim sunt velit. Ad reprehenderit non et officia ut fugiat aliqua anim anim exercitation irure. Sit ex qui consequat irure eiusmod anim tempor.\r\n",
-    "isPublic": true
+    "isPublic": 1
   },
   {
     "id": 1006,
@@ -60,7 +60,7 @@
     "name": "Mowho Special",
     "rating": 4,
     "recipe": "Ad mollit voluptate qui aute do ad. Tempor deserunt cupidatat id dolore cillum. Proident aute incididunt esse amet esse do exercitation proident adipisicing labore. Incididunt consectetur mollit mollit culpa pariatur voluptate sint sit. Minim elit veniam excepteur veniam exercitation sunt et. Anim culpa occaecat officia mollit amet id proident cillum sit cillum. Dolore adipisicing sit pariatur et et occaecat enim enim est voluptate excepteur ut voluptate.\r\n",
-    "isPublic": false
+    "isPublic": 1
   },
   {
     "id": 1007,
@@ -69,7 +69,7 @@
     "name": "Grilled coconut wings with Thai peanut dipping sauce",
     "rating": 2,
     "recipe": "Proident adipisicing incididunt sint tempor sit. Et sunt quis exercitation do. Fugiat in velit ipsum ut Lorem qui sunt. Nulla fugiat excepteur culpa deserunt laboris dolor sit occaecat esse dolore mollit deserunt. Irure incididunt nulla do Lorem consequat est deserunt consequat proident officia in ut.\r\n",
-    "isPublic": false
+    "isPublic": 0
   },
   {
     "id": 1008,
@@ -78,7 +78,7 @@
     "name": "Curried Lamb Balls",
     "rating": 9,
     "recipe": "Ex eu adipisicing occaecat nulla officia aliqua. Adipisicing proident labore incididunt mollit consectetur nisi reprehenderit dolor ex esse cillum ex dolore. Officia veniam quis eu deserunt consequat occaecat minim proident ut veniam. Incididunt officia sunt ullamco magna enim elit duis occaecat voluptate ullamco ex dolore exercitation eu.\r\n",
-    "isPublic": true
+    "isPublic": 1
   },
   {
     "id": 1009,
@@ -87,6 +87,6 @@
     "name": "Crocked Ox",
     "rating": 7,
     "recipe": "Amet magna dolor aliqua qui enim ad fugiat. Non commodo tempor commodo deserunt voluptate in mollit. Consequat ex irure do aute voluptate laborum voluptate tempor. Lorem voluptate pariatur proident exercitation sunt incididunt mollit id duis aute deserunt nulla. Cupidatat laborum irure in qui consequat reprehenderit esse irure veniam et proident magna proident sint. Enim cupidatat est non duis veniam deserunt et veniam qui est.\r\n",
-    "isPublic": true
+    "isPublic": 1
   }
 ]
