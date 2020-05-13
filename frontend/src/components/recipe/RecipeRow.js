@@ -8,7 +8,7 @@ class RecipeRow extends React.Component {
                 <td>{this.props.recipe.name}</td>
                 <td>{this.props.recipe.submitted_by}</td>
                 <td>{this.props.recipe.rating}</td>
-                <td>{!this.props.recipe.isPublic ? 'Yes' : 'No'}</td>
+                <td>{!this.props.recipe.isPublic || this.props.recipe.isPublic === "0" ? 'Yes' : 'No'}</td>
                 <td>
                     <div className="d-flex justify-content-between align-items-center">
                         <div className="btn-group" style={{ marginBottom: "20px" }}>

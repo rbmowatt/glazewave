@@ -1,7 +1,6 @@
 import React from 'react';
 
 export const RecipeForm = props =>{
-    const isPublic = (props.recipe.isPublic === true ) ? 1 : 0;
     return (
         <form className="row" id="create-post-form" onSubmit={props.processFormSubmission} noValidate={true}>
         <div className="form-group col-md-12">
@@ -21,8 +20,8 @@ export const RecipeForm = props =>{
             </label>
         </div>
         <div className="form-group col-md-12">
-        <label htmlFor="is_public"> Should this Recipe be Public to ALL logged-in Users?
-            <select value={isPublic} onChange={(e) => props.handleInputChanges(e)} id="is_public" name="is_public" className="form-control">
+        <label htmlFor="isPublic"> Should this Recipe be Public to ALL logged-in Users?
+            <select value={props.recipe.isPublic} onChange={(e) => props.handleInputChanges(e)} id="isPublic" name="isPublic" className="form-control">
             <option value="0">Private</option>
             <option value="1">Public</option>
             </select>
@@ -44,7 +43,6 @@ export const RecipeForm = props =>{
             <button className="btn btn-success" type="submit">
             {(props.edit) ? ("Edit Recipe") : ( "Add Recipe") }
             </button>
-           
         </div>
     </form>
     )

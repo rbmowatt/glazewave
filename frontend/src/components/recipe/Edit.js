@@ -61,7 +61,10 @@ class EditRecipe extends React.Component{
 
     handleInputChanges = (e) => {
         e.preventDefault();
-        this.setValues({ [e.currentTarget.id]: e.currentTarget.value })
+        this.setValues({ [e.currentTarget.id]: e.currentTarget.value });
+        const recipe = this.state.recipe;
+        recipe[e.currentTarget.id] = e.currentTarget.value;
+        this.setState({recipe});
     }
 
     returnToIndex = e =>
