@@ -11,6 +11,6 @@ export default props =>
       >
         <FontAwesomeIcon icon={faTimesCircle} size='2x' />
       </div>
-      <img src={window.URL.createObjectURL(image)}  alt='' />
+      <img className="preview" src={window.URL.createObjectURL(image)}  alt='' />
     </div>
   )
