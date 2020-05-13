@@ -1,8 +1,6 @@
-var AWS = require('aws-sdk');
+const AWS = require('aws-sdk');
 const cognitoConfig = require('./../../config/cognito.js');
-var cognitoidentityserviceprovider = new AWS.CognitoIdentityServiceProvider({region: cognitoConfig.region});
-
-// ^ Hard to find that this is the way to import the library, but it was obvious in docs
+const cognitoidentityserviceprovider = new AWS.CognitoIdentityServiceProvider({region: cognitoConfig.region});
 
 class Cognito {
     constructor() {

@@ -3,9 +3,10 @@ const dynamoConfig = require('../config/dynamo');
 const aws = require('aws-sdk');
 const multer  = require('multer');
 const multerS3 = require('multer-s3');
-const s3Config = require('./../config/s3');
+const s3Config = require('../config/s3');
 const s3 = new aws.S3(s3Config);
 aws.config.update({region : dynamoConfig.region, endpoint: dynamoConfig.endpoint});
+const Dynamo = require('./../services/dynamo');
 
 const upload = multer({
     storage: multerS3({
@@ -27,57 +28,29 @@ const docClient = new aws.DynamoDB.DocumentClient();
 
 const router = new Router();
 
+
 router.get('/', function (req, res) {
-    const params = {
-        TableName: "recipes",
-        ProjectionExpression: "#id, #name, #picture, #submitted_by, #recipe, #isPublic, #rating",
-        ExpressionAttributeNames: {
-            "#id": "id",
-            "#picture": "picture",
-            "#submitted_by": "submitted_by",
-            "#name": "name",
-            "#recipe": "recipe",
-            "#isPublic": "isPublic",
-            "#rating": "rating"
-        }
-    };
-    docClient.scan(params, onScan);
-    function onScan(err, data) {
-        if (err) {
-            console.error("Unable to scan the table. Error JSON:", JSON.stringify(err, null, 2));
-            return res.status(400).json(error);
-        } else {
-            res.json(data.Items)
-            if (typeof data.LastEvaluatedKey != "undefined") {
-                console.log("Scanning for more...");
-                params.ExclusiveStartKey = data.LastEvaluatedKey;
-                docClient.scan(params, onScan);
-            }
-        }
-    }
+    Dynamo.get({TableName : "recipes", expression : "#id, #name, #picture, #submitted_by, #recipe, #isPublic, #rating"})
+    .then( (data)=>{
+        console.log(data);
+        res.json(data);
+    })
+    .catch(error=>{
+        console.log('errr', error);
+        return res.status(400).json(error);
+    });
 })
 
 router.get('/:id', function (req, res) {
-    console.log('dbhost', process.env.DB_HOST);
-    const recipeId = parseInt(req.params.id);
-    const params = {
-        TableName: "recipes",
-        KeyConditionExpression: "#id = :id",
-        ExpressionAttributeNames: {
-            "#id": "id"
-        },
-        ExpressionAttributeValues: {
-            ":id": recipeId
-        }
-    };
-    docClient.query(params, function (err, data) {
-        if (err) {
-            console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
-            res.status(400).json(error);
-        } else {
-            console.log("Query succeeded.");
-            res.send(data.Items)
-        }
+    const id = parseInt(req.params.id);
+    Dynamo.getItem({TableName : "recipes", args: {id : id }})
+    .then( (data)=>{
+        console.log(data);
+        res.json(data);
+    })
+    .catch(error=>{
+        console.log('errr', error);
+        return res.status(400).json(error);
     });
 });
 
