@@ -5,7 +5,7 @@ export const UserForm = props =>{
         <form className="row" id={"create-post-form"} onSubmit={props.processFormSubmission} noValidate={true}>
         <div className="form-group col-md-12">
                 <label htmlFor="Username"> User Name </label>
-                <input disabled={props.edit ? "disabled" : false} type="text" id="Username" defaultValue={ (props.edit && props.user.Username) || ''} onChange={(e) => props.handleInputChanges(e)} name="Username" className="form-control" placeholder="Enter user's first name" />
+                <input disabled={props.edit ? "disabled" : false} type="text" id="Username" defaultValue={ (props.edit && props.user.Username) || ''} onChange={(e) => props.handleInputChanges(e)} name="Username" className="form-control" placeholder="Enter a Username for the user" />
             </div>
             <div className="form-group col-md-12">
                 <label htmlFor="name"> Name </label>
@@ -18,7 +18,7 @@ export const UserForm = props =>{
 
             <div className="form-group col-md-12">
                 <label htmlFor="phone"> Phone </label>
-                <input type="text" id="phone_number" defaultValue={(props.edit && props.user.phone_number) || ''} onChange={(e) => props.handleInputChanges(e)} name="phone_number" className="form-control" placeholder="Enter user's phone number" />
+                <input type="text" id="phone_number" defaultValue={(props.edit && props.user.phone_number) || ''} onChange={(e) => props.handleInputChanges(e)} name="phone_number" className="form-control" placeholder="+[d]1234567890" />
             </div>
 
             <div className="form-group col-md-4 pull-right">

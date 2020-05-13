@@ -50,8 +50,7 @@ router.post('/', function (req, res) {
                 Username: req.body.Username ,
                 email: req.body.email,
                 name: req.body.name,
-                phone_number : req.body.phone_number|| null,
-                password:  password
+                phone_number : req.body.phone_number|| null
         };
 
         cognito.signup(params).then( (data)=>{

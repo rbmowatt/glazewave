@@ -7,13 +7,16 @@ var cognitoidentityserviceprovider = new AWS.CognitoIdentityServiceProvider({reg
 class Cognito {
     constructor() {
     this.ClientId = cognitoConfig.clientId;
+    this.userPool = cognitoConfig.userPool;
     };
 
     signup({Username, name, email, phone_number, password}){
         const params = {
-            ClientId: this.ClientId,
-            Password: password,
+            UserPoolId: this.userPool,
             Username: Username,
+            DesiredDeliveryMediums: [
+                'EMAIL'
+              ],
             UserAttributes:[ 
                 {
                     Name: 'name', 
@@ -33,7 +36,7 @@ class Cognito {
         console.log('signup');
         return new Promise((resolve, reject) => {
             console.log('params', params);
-            cognitoidentityserviceprovider.signUp(params, function (error, response)
+            cognitoidentityserviceprovider.adminCreateUser(params, function (error, response)
             {
                 if (error) return reject(error);
           
