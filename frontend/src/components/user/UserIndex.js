@@ -73,11 +73,7 @@ class UserIndex extends Component {
                            <h2> <strong>Users</strong> <Link to={'user/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New User</Link></h2>
                         </div>
                         <div className="card-text">
-                            {users.length === 0 ?(
-                            <div className="text-center">
-                                <h2>No users found at the moment</h2>
-                            </div>
-                            ) :(
+                           
                             <div className="table">
                                 <table className="table table-bordered table-striped">
                                     <thead className="thead-light">
@@ -92,11 +88,14 @@ class UserIndex extends Component {
                                     <tbody>
                                         {users && users.map(user =>
                                         <UserRow user={user} deleteUser={this.deleteUser} editUser={this.editUser} key={user.Username}></UserRow>
-                                        )}
+                                        )} 
+                                        {
+                                            (!users || users.length === 0) && <td colspan="5"><h3>No users found at the moment</h3></td>
+                                        } 
                                     </tbody>
                                 </table>
                             </div>
-                                )}
+                             
                         </div>
                     </div>
                 </div>
