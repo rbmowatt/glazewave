@@ -55,8 +55,8 @@ class RecipeIndex extends Component {
                                 <h2>No recipe found at the moment</h2>
                             </div>
                         ) :(
-                        <div className="table-responsive-md">
-                        <table className="table table-bordered table-striped">
+                        <div className="table-responsive-lg">
+                        <table className="table table-bordered table-striped w-auto">
                             <thead className="thead-light">
                                 <tr>
                                     <th scope="col">Name</th>

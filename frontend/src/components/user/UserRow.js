@@ -10,7 +10,7 @@ class UserRow extends React.Component {
                 <td>{this.props.user.email}</td>
                 <td>{this.props.user.phone_number}</td>
                 <td>
-                    <div className="d-flex justify-content-between align-items-center">
+                    <div className="">
                         <div className="btn-group" style={{ marginBottom: "20px" }}>
                             <Link to={`user/edit/${this.props.user.Username}`} className="btn btn-sm btn-outline-secondary">Edit User</Link>
                             <button className="btn btn-sm btn-outline-secondary" onClick={() => this.props.deleteUser(this.props.user.Username)}>Delete User</button>

@@ -96,3 +96,15 @@ code {
     max-width: 250px;
     max-height: 250px;
   }
+
+  .table{table-layout:fixed}
+
+  table th {
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+table td {
+  font-size: .9rem;
+  font-weight: 300;
+}
