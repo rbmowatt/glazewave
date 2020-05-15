@@ -1,21 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faEdit } from '@fortawesome/free-solid-svg-icons';
 
 class UserRow extends React.Component {
     render(){
         return (
             <tr key={this.props.user.Username}>
-                <td>{this.props.user.Username}</td>
-                <td>{this.props.user.name}</td>
-                <td>{this.props.user.email}</td>
-                <td>{this.props.user.phone_number}</td>
-                <td>
-                    <div className="">
-                        <div className="btn-group" style={{ marginBottom: "20px" }}>
-                            <Link to={`user/edit/${this.props.user.Username}`} className="btn btn-sm btn-outline-secondary">Edit User</Link>
-                            <button className="btn btn-sm btn-outline-secondary" onClick={() => this.props.deleteUser(this.props.user.Username)}>Delete User</button>
-                        </div>
+                <td className="w-25">{this.props.user.Username}</td>
+                <td className="w-20">{this.props.user.name}</td>
+                <td className="w-25">{this.props.user.email}</td>
+                <td className="w-20">{this.props.user.phone_number}</td>
+                <td className="w-10">
+                <div className="d-flex justify-content-between align-items-center">
+                <div className="btn-group" style={{ marginBottom: "20px" }}>
+                        <span><FontAwesomeIcon alt="edit user" style={{ marginLeft:'.1em' , cursor:'pointer'}} size="2x" icon={faEdit} onClick={() => this.props.editUser(this.props.user.Username)} /></span>
+                        <span><FontAwesomeIcon  alt="delete user" style={{ marginLeft:'.5em', cursor:'pointer', color : 'red'}} size="2x" icon={faTrash} onClick={() => this.props.deleteUser(this.props.user.Username)}  /></span>
                     </div>
+                </div>
                 </td>
             </tr>
         )
