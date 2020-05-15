@@ -9,9 +9,19 @@ body {
   background-blend-mode: lighten;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.background {
+  background: url("https://expertwebinarseries.com/wp-content/uploads/2019/11/woman-in-restaurant-wearing-apron-1739748-1800x1200.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.4)!important;
+    background-blend-mode: lighten;
 }
 
 #nav_user {
@@ -22,13 +32,6 @@ code {
     background-color: #24355C;
   }
 
-/**
-  .main-container {
-    margin-top:50px;
-    min-height: 100vh;
-    min-width: 90vw;
-  }
-**/
   .main-container  .card {
     min-height: 80vh;
     min-width: 100%;
@@ -39,51 +42,10 @@ code {
     display: inline;
   }
 
-  /* change navbar background on collapse */
-@media (max-width: 768px) {
-  .white-txt{
-    display: none;
-  }
-  .collapse{
-    background: black;
-    padding-left:15px;
-    z-index: 999;
-  }
-  .card {
-    margin-top: 20px;
-    background: #eee;
-    padding: 3em;
-    line-height: 1.5em; }
-}
-
-.navbar.collapsing,
-.navbar.show {
-    background:red !important;
-}
-
-.navbar-inverse {
-  background-color: #A9B7C0 !important;
-}
-
-  .background {
-    background: url("https://expertwebinarseries.com/wp-content/uploads/2019/11/woman-in-restaurant-wearing-apron-1739748-1800x1200.jpg")no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-color: rgba(255, 255, 255, 0.4)!important;
-      background-blend-mode: lighten;
-  }
-
   .card {
     margin-top: 5px;
     background: #eee;
-    padding: 2em;
+    padding: 1em;
     line-height: 1.5em; 
   }
 
@@ -97,14 +59,46 @@ code {
     max-height: 250px;
   }
 
-  .table{table-layout:fixed}
+  .table{
+    table-layout:fixed;
+    overflow: scroll;
+    width: 100%;
+  }
 
-  table th {
+  .table th {
     font-size: .9rem;
     font-weight: 400;
 }
 
-table td {
-  font-size: .9rem;
-  font-weight: 300;
+  .table td {
+    font-size: .9rem;
+    font-weight: 300;
+  }
+
+
+/* change navbar background on collapse */
+@media (max-width: 768px) {
+  .white-txt{
+    display: none;
+  }
+  .collapse{
+    background: black;
+    padding-left:15px;
+    z-index: 999;
+  }
+  .card {
+    margin-top: 20px;
+    background: #eee;
+    line-height: 1.5em; }
+
+  .table th, .table .btn {
+      font-size: .3rem;
+  }
+  
+  .table td {
+    font-size: .3rem;
+
+  }
 }
+
+

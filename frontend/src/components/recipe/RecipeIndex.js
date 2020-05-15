@@ -5,6 +5,8 @@ import axios from 'axios';
 import apiConfig from '../../config/api.js';
 import { MainContainer } from './../layout/MainContainer';
 import RecipeRow from './RecipeRow';
+import { confirmAlert } from 'react-confirm-alert'; // Import
+import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
 
 
 const mapStateToProps = state => {
@@ -16,6 +18,8 @@ class RecipeIndex extends Component {
         super(props);
         this.state = { recipes: [], headers : {}, isAdmin : false }
         this.deleteRecipe = this.deleteRecipe.bind(this);
+        this.editRecipe = this.editRecipe.bind(this);
+        this.viewRecipe = this.viewRecipe.bind(this);
     }
 
     componentDidMount(){
@@ -31,53 +35,73 @@ class RecipeIndex extends Component {
     }
 
     deleteRecipe(id ) {
-        axios.delete(apiConfig.host + apiConfig.port + `/api/recipe/${id}`, this.state.headers).then(data => {
-            const index = this.state.recipes.findIndex(recipe => recipe.id === id);
-            this.state.recipes.splice(index, 1);
-            this.props.history.push('/recipe');
-        })
+        confirmAlert({
+            title: 'Confirm To Delete',
+            message: 'Are you sure you want to delete this recipe?',
+            buttons: [
+              {
+                label: 'Yes',
+                onClick: () => {
+                    axios.delete(apiConfig.host + apiConfig.port + `/api/recipe/${id}`, this.state.headers).then(data => {
+                        const index = this.state.recipes.findIndex(recipe => recipe.id === id);
+                        this.state.recipes.splice(index, 1);
+                        this.props.history.push('/recipe');
+                    })
+                }
+              },
+              {
+                label: 'No',
+                onClick: () => {}
+              }
+            ]
+          });
     }
 
+    editRecipe(recipeId) {
+        this.props.history.push('/recipe/edit/' + recipeId);
+    }
+
+    viewRecipe(recipeId) {
+        this.props.history.push('/recipe/' + recipeId);
+    }
 
     render() {
         const recipes = this.state.recipes;
         return (
             <MainContainer>
-                    <div className="row">
-                    <div className="card um-main-body mx-auto">
-                        <div className="card-block">
+                <div className="row">
+                    <div className="card mx-auto">
                         <div className="card-title"><strong>Recipes</strong>
                         { this.state.isAdmin &&  <Link to={'recipe/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New Recipe</Link>}
                         </div> 
                         <div className="card-text">
-                        {recipes.length === 0 ?(
-                            <div className="text-center">
-                                <h2>No recipe found at the moment</h2>
-                            </div>
-                        ) :(
-                        <div className="table-responsive-lg">
-                        <table className="table table-bordered table-striped w-auto">
-                            <thead className="thead-light">
-                                <tr>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Submitted_by</th>
-                                    <th scope="col">Rating</th>
-                                    <th scope="col">Private?</th>
-                                    <th scope="col">Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {recipes && recipes.map(recipe =>
-                                    (this.state.isAdmin || recipe.isPublic) &&
-                                    <RecipeRow recipe={recipe} deleteRecipe={this.deleteRecipe} isAdmin={this.state.isAdmin} key={ recipe.id }/>
-                                )}
-                            </tbody>
-                        </table>
-                        </div> )}
-                        </div>
+                            {recipes.length === 0 ?(
+                                <div className="text-center">
+                                    <h2>No recipe found at the moment</h2>
+                                </div>
+                            ) :(
+                            <div className="table-responsive-lg">
+                            <table className="table table-bordered table-striped w-auto">
+                                <thead className="thead-light">
+                                    <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Submitted_by</th>
+                                        <th scope="col">Rating</th>
+                                        <th scope="col">Private?</th>
+                                        <th scope="col">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {recipes && recipes.map(recipe =>
+                                        (this.state.isAdmin || recipe.isPublic) &&
+                                        <RecipeRow recipe={recipe} deleteRecipe={this.deleteRecipe} viewRecipe={this.viewRecipe} editRecipe={this.editRecipe} isAdmin={this.state.isAdmin} key={ recipe.id }/>
+                                    )}
+                                </tbody>
+                            </table>
+                            </div> )}
                         </div>
                     </div>
-                 </div>
+                </div>
             </MainContainer>
           
         )

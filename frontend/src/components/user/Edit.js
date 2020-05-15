@@ -64,7 +64,7 @@ class EditUser extends React.Component{
 
     returnToIndex = e =>
     {
-      this.props.history.push('/recipe');
+      this.props.history.push('/user');
     }
 
     render() {

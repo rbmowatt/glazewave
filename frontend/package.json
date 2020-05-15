@@ -25,6 +25,7 @@
     "js-cookie": "^2.2.1",
     "react": "^16.13.1",
     "react-amazing-proxy": "^1.0.63",
+    "react-confirm-alert": "^2.6.1",
     "react-dom": "^16.13.1",
     "react-dropdown": "^1.7.0",
     "react-popper": "^2.2.3",
