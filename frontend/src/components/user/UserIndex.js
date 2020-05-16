@@ -73,28 +73,31 @@ class UserIndex extends Component {
                            <h2> <strong>Users</strong> <Link to={'user/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New User</Link></h2>
                         </div>
                         <div className="card-text">
-                           
-                            <div className="table">
-                                <table className="table table-bordered table-striped">
-                                    <thead className="thead-light">
-                                        <tr>
-                                            <th colspan="3" scope="col">Username</th>
-                                            <th colspan="3" scope="col">Full Name</th>
-                                            <th colspan="3" scope="col">Email</th>
-                                            <th colspan="2" scope="col">Phone</th>
-                                            <th colspan="1" scope="col"></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {users && users.map(user =>
+                        <div class="table-container" >
+                                <div class="row table-header">
+                                    <div class="col-2">
+                                         Login
+                                    </div>
+                                    <div class="col-3">
+                                        Full Name
+                                    </div>
+                                    <div class="col-3">
+                                        Email
+                                    </div>
+                                    <div class="col-3">
+                                        Phone
+                                    </div>
+                                    <div class="col-1">
+                                        &nbsp;
+                                    </div>
+                                </div>
+                                {users && users.map(user =>
                                         <UserRow user={user} deleteUser={this.deleteUser} editUser={this.editUser} key={user.Username}></UserRow>
                                         )} 
                                         {
                                             (!users || users.length === 0) && <td colspan="5"><h3>No users found at the moment</h3></td>
                                         } 
-                                    </tbody>
-                                </table>
-                            </div>   
+                             </div>
                         </div>
                     </div>
                 </div>
