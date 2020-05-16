@@ -82,7 +82,7 @@ class UserIndex extends Component {
                                             <th colspan="3" scope="col">Full Name</th>
                                             <th colspan="3" scope="col">Email</th>
                                             <th colspan="2" scope="col">Phone</th>
-                                            <th scope="col">Actions</th>
+                                            <th colspan="1" scope="col"></th>
                                         </tr>
                                     </thead>
                                     <tbody>

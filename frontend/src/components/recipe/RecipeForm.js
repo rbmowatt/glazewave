@@ -35,9 +35,10 @@ export const RecipeForm = props =>{
             <label htmlFor="recipe"> Recipe </label>
             <textarea id="recipe" defaultValue={props.recipe.recipe} onChange={(e) => props.handleInputChanges(e)} name="recipe" className="form-control" placeholder="Enter the Recipe Here!!" />
         </div>
-        { props.children && <div className="form-group col-md-12">
-            { props.children }
-        </div>
+        { props.children && 
+            <div className="form-group col-md-12">
+                { props.children }
+            </div>
         }
         <div className="form-group col-md-4 pull-right">
             <button className="btn btn-success" type="submit">
