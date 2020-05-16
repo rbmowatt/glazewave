@@ -78,10 +78,10 @@ class UserIndex extends Component {
                                 <table className="table table-bordered table-striped">
                                     <thead className="thead-light">
                                         <tr>
-                                            <th scope="col">Username</th>
-                                            <th scope="col">Full Name</th>
-                                            <th scope="col">Email</th>
-                                            <th scope="col">Phone</th>
+                                            <th colspan="3" scope="col">Username</th>
+                                            <th colspan="3" scope="col">Full Name</th>
+                                            <th colspan="3" scope="col">Email</th>
+                                            <th colspan="2" scope="col">Phone</th>
                                             <th scope="col">Actions</th>
                                         </tr>
                                     </thead>
@@ -94,8 +94,7 @@ class UserIndex extends Component {
                                         } 
                                     </tbody>
                                 </table>
-                            </div>
-                             
+                            </div>   
                         </div>
                     </div>
                 </div>

@@ -7,8 +7,8 @@ class RecipeRow extends React.Component {
     render(){
         return (
             <tr key={this.props.recipe.id}>
-                <td><a href="#" onClick={() => this.props.viewRecipe(this.props.recipe.id)}>{this.props.recipe.name}</a></td>
-                <td>{this.props.recipe.submitted_by}</td>
+                <td colspan="6"><a href="#" onClick={() => this.props.viewRecipe(this.props.recipe.id)}>{this.props.recipe.name}</a></td>
+                <td colspan="2">{this.props.recipe.submitted_by}</td>
                 <td>{this.props.recipe.rating}</td>
                 <td>{!this.props.recipe.isPublic || this.props.recipe.isPublic === "0" ? 'Yes' : 'No'}</td>
                 <td>

@@ -7,11 +7,11 @@ class UserRow extends React.Component {
     render(){
         return (
             <tr key={this.props.user.Username}>
-                <td className="w-25">{this.props.user.Username}</td>
-                <td className="w-20">{this.props.user.name}</td>
-                <td className="w-25">{this.props.user.email}</td>
-                <td className="w-20">{this.props.user.phone_number}</td>
-                <td className="w-10">
+                <td colspan="3" >{this.props.user.Username}</td>
+                <td colspan="3" >{this.props.user.name}</td>
+                <td colspan="3" >{this.props.user.email}</td>
+                <td colspan="2" >{this.props.user.phone_number}</td>
+                <td>
                 <div className="d-flex justify-content-between align-items-center">
                 <div className="btn-group" style={{ marginBottom: "20px" }}>
                         <span><FontAwesomeIcon alt="edit user" style={{ marginLeft:'.1em' , cursor:'pointer'}} size="2x" icon={faEdit} onClick={() => this.props.editUser(this.props.user.Username)} /></span>
