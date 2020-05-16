@@ -87,7 +87,7 @@ class Create extends React.Component{
         this.setState({ uploading: false , images : files});
     }
     
-      removeImage = id => {
+    removeImage = id => {
         this.setState({
           images: this.state.images.filter(image => image.public_id !== id)
         })
@@ -131,11 +131,9 @@ class Create extends React.Component{
                         </div>
                         )}               
                         <RecipeForm recipe={this.state.recipe} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading} >
-                            <div>
-                                <div className='buttons form-group col-md-12'>
-                                    {content()}
-                                </div>
-                            </div>
+                    
+                                {content()}
+                            
                         </RecipeForm>
                     </div>
                 </FormCard>

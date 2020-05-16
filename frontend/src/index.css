@@ -1,116 +1,182 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: rgba(255, 255, 255, 0.4)!important;
-  background-blend-mode: lighten;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: rgba(255, 255, 255, 0.4)!important;
+	background-blend-mode: lighten;
 }
 
 .background {
-  background: url("https://expertwebinarseries.com/wp-content/uploads/2019/11/woman-in-restaurant-wearing-apron-1739748-1800x1200.jpg")no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-height: 100vh;
-    display: flex;
-
-    background-color: rgba(255, 255, 255, 0.4)!important;
-    background-blend-mode: lighten;
-
-    flex-direction: column;
-    align-items: center;
-   
+	background: url("https://expertwebinarseries.com/wp-content/uploads/2019/11/woman-in-restaurant-wearing-apron-1739748-1800x1200.jpg")no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 100vh;
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.4)!important;
+	background-blend-mode: lighten;
+	flex-direction: column;
+	align-items: center;
 }
 
 #nav_user {
-  color:white;
+	color: white;
 }
 
 .top-nav-collapse {
-    background-color: #24355C;
-  }
-
-  .main-container{
-   padding:2%;
-  }
-  .main-container  .card {
-    min-height: 80vh;
-    min-width: 90vw;
-  }
-
-  .main-container  .row {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-
-  .white-txt {
-    color:white;
-    display: inline;
-  }
-
-  .card {
-    margin-top: 5px;
-    background: #eee;
-    padding: 1em;
-    line-height: 1.5em; 
-    min-width:100%;
-  }
-
-  .card-close
-  {
-    cursor: pointer;
-  }
-  
-  img.preview {
-    max-width: 250px;
-    max-height: 250px;
-  }
-
-  .table{
-    table-layout:fixed;
-    overflow: scroll;
-    width: 100%;
-  }
-
-  .table th {
-    font-size: .9rem;
-    font-weight: 400;
+	background-color: #24355C;
 }
 
-  .table td {
-    font-size: .9rem;
-    font-weight: 300;
-  }
+.main-container {
+	padding: 2%;
+}
+
+.main-container .card {
+	min-height: 80vh;
+	min-width: 90vw;
+}
+
+.main-container .row {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.white-txt {
+	color: white;
+	display: inline;
+}
+
+.card {
+	margin-top: 5px;
+	background: #eee;
+	padding: 1em;
+	min-width: 100%;
+	overflow: scroll;
+}
+
+.card-close {
+	cursor: pointer;
+}
+
+img.preview {
+	max-width: 250px;
+	max-height: 250px;
+}
+
+.table {
+	table-layout: fixed;
+	overflow: scroll;
+	width: 100%;
+}
+
+.table th {
+	font-size: .9rem;
+	font-weight: 400;
+}
+
+.table td {
+	font-size: .9rem;
+	font-weight: 300;
+}
+
+.table-container .row {
+	min-width: 100%;
+}
+
+.table-container .row div {
+	font-size: .9rem;
+	margin: 0px;
+	padding: 1%;
+}
 
 
 /* change navbar background on collapse */
+
 @media (max-width: 768px) {
-  .white-txt{
-    display: none;
-  }
-  .collapse{
-    background: black;
-    padding-left:15px;
-    z-index: 999;
-  }
-  .card {
-    margin-top: 20px;
-    background: #eee;
-    line-height: 1.5em; }
-
-  .table th, .table .btn {
-      font-size: .5rem;
-  }
-  
-  .table td {
-    font-size: .4rem;
-
-  }
+	.white-txt {
+		display: none;
+	}
+	.collapse {
+		background: rgba(0, 0, 0, 0.8);
+		padding-left: 15px;
+		z-index: 999;
+	}
+	.card {
+		margin-top: 20px;
+		background: #eee;
+	}
+	.table th,
+	.table .btn {
+		font-size: .5rem;
+	}
+	.table td {
+		font-size: .4rem;
+	}
+	.table-container .row div {
+		font-size: .3rem;
+	}
 }
 
+.table-container {
+	overflow: scroll;
+	margin: 0px;
+  padding: 0px;
+  border-radius: .2em ;
+}
 
+.table-header div {
+	text-align: left;
+	font-weight: bold;
+	background-color: rgb(233, 236, 239);
+	border: 1px solid rgb(222, 226, 230);
+	color: rgb(94, 100, 107);
+}
+
+.table-row div {
+	text-align: left;
+	border: 1px solid rgb(222, 226, 230);
+	color: rgb(94, 100, 107);
+}
+
+.recipe-details div {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	text-align: right;
+	padding-right: 2%;
+}
+
+.fileContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.fileContainer [type=file] {
+  cursor: inherit;
+  display: block;
+  font-size: 999px;
+  filter: alpha(opacity=0);
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+}
+
+.fileContainer {
+  background: rgb(60, 89, 148);
+  border-radius: .5em;
+  float: left;
+  padding: .5em;
+  margin:.3em;
+  margin-left:0px;
+  color :white;
+}
+
+.fileContainer [type=file] {
+  cursor: pointer;
+}

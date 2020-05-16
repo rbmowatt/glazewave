@@ -10,12 +10,13 @@ const onSignOut = (e) => {
 const Navbar = props =>{
     return (
         <nav className="navbar navbar-expand-md navbar-dark">
-          <a className="navbar-brand" href="/"><img src="https://umanage-mowatr.s3.amazonaws.com/bake_n_flake_logo_75_75.png" alt="bake n flake bakery" height="75" width="75"/></a>
           <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
               <span className="navbar-toggler-icon"></span>
           </button>
+          
           <div className="collapse navbar-collapse" id="navbarCollapse">
               <div className="navbar-nav">
+              <a className="navbar-brand" href="/"><img src="https://umanage-mowatr.s3.amazonaws.com/bake_n_flake_logo.png" alt="bake n flake bakery" height="50" width="50"/></a>
                 {props.session.isLoggedIn && props.session.isAdmin && 
                           <Link className="nav-link" to={'/user'}>
                           Users</Link>

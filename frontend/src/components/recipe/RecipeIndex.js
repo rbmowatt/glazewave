@@ -76,28 +76,28 @@ class RecipeIndex extends Component {
                         </h2>
                         </div> 
                         <div className="card-text">
-                            <div className="table-responsive-lg">
-                            <table className="table table-bordered table-striped w-auto">
-                                <thead className="thead-light">
-                                    <tr>
-                                        <th scope="col" colspan="6">Name</th>
-                                        <th scope="col" colspan="2">Author</th>
-                                        <th scope="col">Rating</th>
-                                        <th scope="col">Private?</th>
-                                        <th scope="col">Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {recipes && recipes.map(recipe =>
-                                        (this.state.isAdmin || recipe.isPublic) &&
-                                        <RecipeRow recipe={recipe} deleteRecipe={this.deleteRecipe} viewRecipe={this.viewRecipe} editRecipe={this.editRecipe} isAdmin={this.state.isAdmin} key={ recipe.id }/>
-                                    )}
-                                     {
-                                    (!recipes  || recipes .length === 0) && <td colspan="11"><h3>No recipes found at the moment</h3></td>
-                                    } 
-                                </tbody>
-                            </table>
-                            </div> 
+                            <div class="table-container" >
+                                <div class="row table-header">
+                                    <div class="col-6">
+                                         Title
+                                    </div>
+                                    <div class="col-3">
+                                        Author
+                                    </div>
+                                    <div class="col-3">
+                                        Info
+                                    </div>
+                                </div>
+                           
+                            {recipes && recipes.map(recipe =>
+                                (this.state.isAdmin || recipe.isPublic) &&
+                                    <RecipeRow recipe={recipe} deleteRecipe={this.deleteRecipe} viewRecipe={this.viewRecipe} editRecipe={this.editRecipe} isAdmin={this.state.isAdmin} key={ recipe.id }/>
+                                )
+                            }
+                            {
+                                (!recipes  || recipes .length === 0) && <td colspan="11"><h3>No recipes found at the moment</h3></td>
+                            } 
+                             </div>
                         </div>
                     </div>
                 </div>
