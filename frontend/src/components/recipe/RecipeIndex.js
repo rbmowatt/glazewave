@@ -80,8 +80,8 @@ class RecipeIndex extends Component {
                             <table className="table table-bordered table-striped w-auto">
                                 <thead className="thead-light">
                                     <tr>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Author</th>
+                                        <th scope="col" colspan="6">Name</th>
+                                        <th scope="col" colspan="2">Author</th>
                                         <th scope="col">Rating</th>
                                         <th scope="col">Private?</th>
                                         <th scope="col">Actions</th>
@@ -93,7 +93,7 @@ class RecipeIndex extends Component {
                                         <RecipeRow recipe={recipe} deleteRecipe={this.deleteRecipe} viewRecipe={this.viewRecipe} editRecipe={this.editRecipe} isAdmin={this.state.isAdmin} key={ recipe.id }/>
                                     )}
                                      {
-                                    (!recipes  || recipes .length === 0) && <td colspan="5"><h3>No recipes found at the moment</h3></td>
+                                    (!recipes  || recipes .length === 0) && <td colspan="11"><h3>No recipes found at the moment</h3></td>
                                     } 
                                 </tbody>
                             </table>
