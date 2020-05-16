@@ -42,6 +42,12 @@ body {
     min-width: 90vw;
   }
 
+  .main-container  .row {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
   .white-txt {
     color:white;
     display: inline;
