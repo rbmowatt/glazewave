@@ -22,7 +22,6 @@ nav .dropdown
   margin:0px;
   display:block;
 }
-
 nav ul li {
   display: inline;
   list-style-type: none;
@@ -38,9 +37,6 @@ nav ul li a {
 nav ul li a:hover {
   color: white;
   text-decoration: none;
-}
-table {
- 
 }
 .App-link {
   color: #61dafb;
