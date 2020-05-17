@@ -4,7 +4,7 @@ import { faImage } from '@fortawesome/free-solid-svg-icons'
 
 export default props => 
     <div className=''>
-      <label class="fileContainer">
+      <label className="fileContainer">
         Upload An Image!
           <input type='file'  id='single' onChange={props.onChange} accept=".jpg,.jpeg,.gif,.png" /> 
       </label>

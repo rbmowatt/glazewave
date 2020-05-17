@@ -76,27 +76,26 @@ class RecipeIndex extends Component {
                         </h2>
                         </div> 
                         <div className="card-text">
-                            <div class="table-container" >
-                                <div class="row table-header">
-                                    <div class="col-6">
+                            <div className="table-container" >
+                                <div className="row table-header">
+                                    <div className="col-6">
                                          Title
                                     </div>
-                                    <div class="col-3">
+                                    <div className="col-3">
                                         Author
                                     </div>
-                                    <div class="col-3">
+                                    <div className="col-3">
                                         Info
                                     </div>
                                 </div>
-                           
-                            {recipes && recipes.map(recipe =>
+                                {recipes && recipes.map(recipe =>
                                 (this.state.isAdmin || recipe.isPublic) &&
                                     <RecipeRow recipe={recipe} deleteRecipe={this.deleteRecipe} viewRecipe={this.viewRecipe} editRecipe={this.editRecipe} isAdmin={this.state.isAdmin} key={ recipe.id }/>
                                 )
-                            }
-                            {
-                                (!recipes  || recipes .length === 0) && <td colspan="11"><h3>No recipes found at the moment</h3></td>
-                            } 
+                                }
+                                {
+                                    (!recipes  || recipes.length === 0) &&  <div className="col-12"><h3>No recipes found at the moment</h3></div>
+                                } 
                              </div>
                         </div>
                     </div>

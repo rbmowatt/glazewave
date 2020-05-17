@@ -7,22 +7,22 @@ import StarBar from './../layout/StarBar';
 class RecipeRow extends React.Component {
     render(){
         return (
-            <div class="row table-row" key={this.props.recipe.id}>
-                <div class="col-6">
+            <div className="row table-row" key={this.props.recipe.id}>
+                <div className="col-6">
                 <a href="#" onClick={() => this.props.viewRecipe(this.props.recipe.id)}>{this.props.recipe.name}</a>
                 </div>
-                <div class="col-3">
+                <div className="col-3">
                 {this.props.recipe.submitted_by}
                 </div>
-                <div class="col-3 recipe-details">
+                <div className="col-3 recipe-details">
                     <div>{!this.props.recipe.isPublic || this.props.recipe.isPublic === "0" ? 'Private' : 'Public'}</div>    
                     <div><StarBar stars={this.props.recipe.rating} /></div>
-                    <div>
+                    <div className="edit-delete"> 
                     { this.props.isAdmin && 
-                        <FontAwesomeIcon alt="edit user" style={{ marginLeft:'.1em' , cursor:'pointer'}} size="1.5x" icon={faEdit} onClick={() => this.props.editRecipe(this.props.recipe.id)} />
+                        <FontAwesomeIcon size="lg" alt="edit user" style={{ marginLeft:'.1em' , cursor:'pointer'}}  icon={faEdit} onClick={() => this.props.editRecipe(this.props.recipe.id)} />
                     }
                     { this.props.isAdmin && 
-                        <FontAwesomeIcon  alt="delete user" style={{ marginLeft:'.5em', cursor:'pointer', color : 'red'}}  icon={faTrash} onClick={() => this.props.deleteRecipe(this.props.recipe.id)} />
+                        <FontAwesomeIcon  size="lg"  alt="delete user" style={{ marginLeft:'.5em', cursor:'pointer', color : 'red'}}  icon={faTrash} onClick={() => this.props.deleteRecipe(this.props.recipe.id)} />
                     }
                     </div>
                 </div>

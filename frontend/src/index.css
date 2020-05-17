@@ -144,7 +144,7 @@ img.preview {
 	border: 0px;
 	margin: 0px;
 	padding: 0px;
-	text-align: right;
+	text-align: center;
 	padding-right: 2%;
 }
 
@@ -179,4 +179,8 @@ img.preview {
 
 .fileContainer [type=file] {
   cursor: pointer;
+}
+
+.fas {
+	font-size: 15em;
 }
