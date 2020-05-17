@@ -19,9 +19,7 @@ class UserIndex extends Component {
         super(props);
         this.state = { users: [], headers : {} }
         this.deleteUser = this.deleteUser.bind(this);
-        this.editUser = this.editUser.bind(this);
-
-        
+        this.editUser = this.editUser.bind(this);  
     }
 
     componentDidMount(){
