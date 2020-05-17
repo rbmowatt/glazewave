@@ -27,6 +27,13 @@ function mapDispatchToProps (dispatch) {
   }
 class App extends React.Component{
 
+  constructor(props) {
+    super(props);
+    this.state = {
+        data: null //This is what our data will eventually be loaded into
+    };
+  }
+
   componentDidMount () {
     this.props.initSession();
   }

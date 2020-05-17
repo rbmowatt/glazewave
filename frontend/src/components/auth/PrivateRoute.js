@@ -13,7 +13,6 @@ const PrivateRoute = ({ component: Component, roles, session, ...rest }) => (
             // role not authorised so redirect to home page
             return <Redirect to={{ pathname: '/'}} />
         }
-
         // authorised so return component
         return <Component {...props} />
     }} />

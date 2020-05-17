@@ -14,7 +14,7 @@ export const UserForm = props =>{
         let target = e.currentTarget;
         let key = e.key;
         setTimeout(function () {
-            if(target.value != '' && currentValue.indexOf('+1') !== 0) {
+            if(target.value !== '' && currentValue.indexOf('+1') !== 0) {
                 target.value = '+1' + key;
             } 
         }, 1);
