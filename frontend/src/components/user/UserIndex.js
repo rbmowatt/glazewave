@@ -43,7 +43,7 @@ class UserIndex extends Component {
                 label: 'Yes',
                 onClick: () => {
                     axios.delete(apiConfig.host + apiConfig.port + `/api/user/${id}`, this.state.headers).then(data => {
-                        const index = this.state.users.findIndex(user => user.id === id);
+                        const index = this.state.users.findIndex(user => user.Username === id);
                         this.state.users.splice(index, 1);
                         this.props.history.push('/user');
                     })

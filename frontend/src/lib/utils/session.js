@@ -13,6 +13,7 @@ export function hasSession() {
       if ( session.expiration > current_time) {
         return session;
       }
+      clearSession();
     }
   return false;
 }
