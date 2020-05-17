@@ -1,6 +1,5 @@
 import { connect } from 'react-redux';
 import { Switch, Route } from 'react-router-dom';
-import { initSession } from './lib/utils/cognito';
 import './App.css';
 import * as React from 'react';
 import CreateUser from './components/user/Create';
@@ -19,26 +18,9 @@ import UserIndex from './components/user/UserIndex';
 
 const mapStateToProps = state => {
     return { session: state.session }
-  }  
-function mapDispatchToProps (dispatch) {
-    return {
-      initSession: () => dispatch(initSession())
-    }
-  }
+}  
+
 class App extends React.Component{
-
-  constructor(props) {
-    super(props);
-    this.state = {
-        data: null //This is what our data will eventually be loaded into
-    };
-  }
-
-  componentDidMount () {
-    this.props.initSession();
-  }
-
-  
   render() {
     return (
       <div>
@@ -61,5 +43,5 @@ class App extends React.Component{
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App)
+export default connect(mapStateToProps)(App)
 //export default withRouter(App);

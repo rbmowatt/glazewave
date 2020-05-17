@@ -1,9 +1,13 @@
 import { CLEAR_SESSION, SET_SESSION } from '../actions/types';
+import { hasSession } from './../lib/utils/session';
 
-const initialState = {
+const DEFAULT_SESSION = {
   isLoggedIn: false,
   isAdmin: false
 }
+
+const existingSession = hasSession();
+const initialState = (existingSession) ? existingSession : DEFAULT_SESSION;
 
 const session = (state = initialState, action) => {
   switch (action.type) {
