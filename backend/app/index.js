@@ -9,7 +9,9 @@ const recipeRouter = require('./routes/recipe');
 const appConfig = require('./config/app');
 const cognitoConfig = require('./config/cognito');
 const cognitoAuth = require('./lib/cognitoAuth');
-const cognitoAuthMiddleware = cognitoAuth.getVerifyMiddleware()
+const cognitoAuthMiddleware = cognitoAuth.getVerifyMiddleware();
+const db = require("./models");
+db.sequelize.sync();
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
