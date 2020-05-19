@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('Locations', {
+    return queryInterface.createTable('locations', {
       id: {
         type: Sequelize.INTEGER(11).UNSIGNED,
         allowNull: false,
@@ -11,10 +11,10 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
-      isPublic: {
+      is_public: {
         type: Sequelize.BOOLEAN
       },
-      cityId :
+      city_id :
       {
         type: Sequelize.INTEGER(11).UNSIGNED,
         references: {
@@ -24,20 +24,22 @@ module.exports = {
         onUpdate: 'CASCADE',
         onDelete: 'SET NULL',
       },
-      createdBy: {
+      created_by: {
         type: Sequelize.INTEGER(11).UNSIGNED,
       },
-      createdAt: {
+      created_at: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: new Date()
       },
-      updatedAt: {
+      updated_at: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: new Date()
       }
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Locations');
+    return queryInterface.dropTable('locations');
   }
 };

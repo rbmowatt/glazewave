@@ -1,0 +1,23 @@
+[
+    {
+        "manufacturer": "John Stow",
+        "model": "The stowinator",
+        "is_public" : 1
+    },
+    {
+        "manufacturer": "John E Surfer",
+        "model": "The Radicool",
+        "is_public" : 1
+    },
+    {
+        "manufacturer": "John E Surfer",
+        "model": "The Smoocher",
+        "is_public" : 1
+    },
+    {
+        "manufacturer": "Al Merick",
+        "model": "Thruster",
+        "is_public" : 1
+    }
+
+]

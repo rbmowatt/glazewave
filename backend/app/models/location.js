@@ -1,14 +1,20 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Location = sequelize.define('Location', {
-    id: DataTypes.INTEGER,
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      defaultValue: DataTypes.UUIDV4,
+      allowNull: false,
+      autoIncrement: true,
+    },
     name: DataTypes.STRING,
-    : DataTypes.STRING,
     isPublic: DataTypes.BOOLEAN,
-    createdBy: DataTypes.INTEGER
-  }, {});
+    cityId: DataTypes.INTEGER,
+    created_by: DataTypes.INTEGER
+  }, {underscored: true});
   Location.associate = function(models) {
-    // associations can be defined here
+    Location.belongsTo(models.City);
   };
   return Location;
 };

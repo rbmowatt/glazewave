@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     model: DataTypes.STRING,
     isPublic: DataTypes.BOOLEAN,
     createdBy: DataTypes.INTEGER
-  }, {});
+  }, {underscored: true});
   Board.associate = function(models) {
     // associations can be defined here
   };

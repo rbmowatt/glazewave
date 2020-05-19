@@ -1,0 +1,23 @@
+[
+    {
+        "title": "My First Session",
+        "rating": 10,
+        "location_id" : 1,
+        "board_id" : 1,
+        "is_public" : 1
+    },
+    {
+        "title": "My Second Session",
+        "rating": 7,
+        "location_id" : 2,
+        "board_id" : 2,
+        "is_public" : 1
+    },
+    {
+        "title": "My Thisrd Session",
+        "rating": 5,
+        "location_id" : 3,
+        "board_id" : 3,
+        "is_public" : 1
+    }
+]

@@ -1,5 +1,5 @@
 const db = require("../models");
-const Session = db.Session;
+const City = db.City;
 const Op = db.Sequelize.Op;
 const { Router } = require('express');
 
@@ -9,14 +9,14 @@ router.get('/', function (req, res) {
   const title = req.query.title;
   var condition = title ? { title: { [Op.like]: `%${title}%` } } : null;
 
-  Session.findAll({ where: condition })
+  City.findAll({ where: condition })
     .then(data => {
       res.send(data);
     })
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while retrieving sessions."
+          err.message || "Some error occurred while retrieving citys."
       });
     });
 });
@@ -24,13 +24,14 @@ router.get('/', function (req, res) {
 
 router.get('/:id', function (req, res) {
   const id = req.params.id;
-  Session.findByPk(id, {include: 'Board'})
+
+  City.findByPk(id)
     .then(data => {
       res.send(data);
     })
     .catch(err => {
       res.status(500).send({
-        message: "Error retrieving Session with id=" + id
+        message: "Error retrieving City with id=" + id
       });
     });
 });
@@ -45,45 +46,45 @@ router.post('/', function (req, res) {
     return;
   }
 
-  // Create a Session
-  const session = {
+  // Create a City
+  const city = {
     title: req.body.title,
     description: req.body.description,
     published: req.body.published ? req.body.published : false
   };
 
-  // Save Session in the database
-  Session.create(session)
+  // Save City in the database
+  City.create(city)
     .then(data => {
       res.send(data);
     })
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while creating the Session."
+          err.message || "Some error occurred while creating the City."
       });
     });
 });
 
 router.put('/:id', function (req, res) {
   const id = req.params.id;
-  Session.update(req.body, {
+  City.update(req.body, {
     where: { id: id }
   })
     .then(num => {
       if (num == 1) {
         res.send({
-          message: "Session was updated successfully."
+          message: "City was updated successfully."
         });
       } else {
         res.send({
-          message: `Cannot update Session with id=${id}. Maybe Session was not found or req.body is empty!`
+          message: `Cannot update City with id=${id}. Maybe City was not found or req.body is empty!`
         });
       }
     })
     .catch(err => {
       res.status(500).send({
-        message: "Error updating Session with id=" + id
+        message: "Error updating City with id=" + id
       });
     });
 });
@@ -91,23 +92,23 @@ router.put('/:id', function (req, res) {
 router.delete('/:id', function (req, res) {
   const id = req.params.id;
 
-  Session.destroy({
+  City.destroy({
     where: { id: id }
   })
     .then(num => {
       if (num == 1) {
         res.send({
-          message: "Session was deleted successfully!"
+          message: "City was deleted successfully!"
         });
       } else {
         res.send({
-          message: `Cannot delete Session with id=${id}. Maybe Session was not found!`
+          message: `Cannot delete City with id=${id}. Maybe City was not found!`
         });
       }
     })
     .catch(err => {
       res.status(500).send({
-        message: "Could not delete Session with id=" + id
+        message: "Could not delete City with id=" + id
       });
     });
 }); 
