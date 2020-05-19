@@ -5,7 +5,7 @@ module.exports = {
       id: {
         type: Sequelize.INTEGER(11).UNSIGNED,
         primaryKey: true,
-        defaultValue: DataTypes.UUIDV4,
+        defaultValue: Sequelize.UUIDV4,
         allowNull: false,
         autoIncrement: true,
       },
@@ -18,9 +18,8 @@ module.exports = {
       locationId :
       {
         type: Sequelize.INTEGER(11).UNSIGNED,
-        allowNull: false,
         references: {
-          model: 'Location', 
+          model: 'Locations', 
           key: 'id', 
         },
         onUpdate: 'CASCADE',
@@ -29,9 +28,8 @@ module.exports = {
       boardId :
       {
         type: Sequelize.INTEGER(11).UNSIGNED,
-        allowNull: false,
         references: {
-          model: 'Board', 
+          model: 'Boards', 
           key: 'id', 
         },
         onUpdate: 'CASCADE',

@@ -7,7 +7,6 @@ module.exports = {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
       },
       name: {
         type: Sequelize.STRING
@@ -18,9 +17,8 @@ module.exports = {
       cityId :
       {
         type: Sequelize.INTEGER(11).UNSIGNED,
-        allowNull: false,
         references: {
-          model: 'City', 
+          model: 'Cities', 
           key: 'id', 
         },
         onUpdate: 'CASCADE',
