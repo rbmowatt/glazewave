@@ -1,0 +1,29 @@
+[
+    {
+        "name": "17th Street",
+        "is_public": "1",
+        "city_id" : 1,
+        "created_by" : 1
+    },
+    {
+        "name": "29th Street",
+        "is_public": "1",
+        "city_id" : 1,
+        "created_by" : 1
+    }, {
+        "name": "44th Street",
+        "is_public": "1",
+        "city_id" : 2,
+        "created_by" : 1
+    }, {
+        "name": "7-11",
+        "is_public": "1",
+        "city_id" : 4,
+        "created_by" : 1
+    }, {
+        "name": "Woodern Jetty",
+        "is_public": "1",
+        "city_id" : 5,
+        "created_by" : 1
+    }
+]

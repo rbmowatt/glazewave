@@ -1,5 +1,5 @@
 const db = require("../models");
-const Session = db.Session;
+const Board = db.Board;
 const Op = db.Sequelize.Op;
 const { Router } = require('express');
 
@@ -9,14 +9,14 @@ router.get('/', function (req, res) {
   const title = req.query.title;
   var condition = title ? { title: { [Op.like]: `%${title}%` } } : null;
 
-  Session.findAll({ where: condition })
+  Board.findAll({ where: condition })
     .then(data => {
       res.send(data);
     })
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while retrieving sessions."
+          err.message || "Some error occurred while retrieving boards."
       });
     });
 });
@@ -24,13 +24,14 @@ router.get('/', function (req, res) {
 
 router.get('/:id', function (req, res) {
   const id = req.params.id;
-  Session.findByPk(id, {include: 'Board'})
+
+  Board.findByPk(id)
     .then(data => {
       res.send(data);
     })
     .catch(err => {
       res.status(500).send({
-        message: "Error retrieving Session with id=" + id
+        message: "Error retrieving Board with id=" + id
       });
     });
 });
@@ -45,45 +46,45 @@ router.post('/', function (req, res) {
     return;
   }
 
-  // Create a Session
-  const session = {
+  // Create a Board
+  const board = {
     title: req.body.title,
     description: req.body.description,
     published: req.body.published ? req.body.published : false
   };
 
-  // Save Session in the database
-  Session.create(session)
+  // Save Board in the database
+  Board.create(board)
     .then(data => {
       res.send(data);
     })
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while creating the Session."
+          err.message || "Some error occurred while creating the Board."
       });
     });
 });
 
 router.put('/:id', function (req, res) {
   const id = req.params.id;
-  Session.update(req.body, {
+  Board.update(req.body, {
     where: { id: id }
   })
     .then(num => {
       if (num == 1) {
         res.send({
-          message: "Session was updated successfully."
+          message: "Board was updated successfully."
         });
       } else {
         res.send({
-          message: `Cannot update Session with id=${id}. Maybe Session was not found or req.body is empty!`
+          message: `Cannot update Board with id=${id}. Maybe Board was not found or req.body is empty!`
         });
       }
     })
     .catch(err => {
       res.status(500).send({
-        message: "Error updating Session with id=" + id
+        message: "Error updating Board with id=" + id
       });
     });
 });
@@ -91,23 +92,23 @@ router.put('/:id', function (req, res) {
 router.delete('/:id', function (req, res) {
   const id = req.params.id;
 
-  Session.destroy({
+  Board.destroy({
     where: { id: id }
   })
     .then(num => {
       if (num == 1) {
         res.send({
-          message: "Session was deleted successfully!"
+          message: "Board was deleted successfully!"
         });
       } else {
         res.send({
-          message: `Cannot delete Session with id=${id}. Maybe Session was not found!`
+          message: `Cannot delete Board with id=${id}. Maybe Board was not found!`
         });
       }
     })
     .catch(err => {
       res.status(500).send({
-        message: "Could not delete Session with id=" + id
+        message: "Could not delete Board with id=" + id
       });
     });
 }); 

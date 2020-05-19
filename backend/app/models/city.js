@@ -1,11 +1,18 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const City = sequelize.define('City', {
-    id: DataTypes.INTEGER,
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      defaultValue: DataTypes.UUIDV4,
+      allowNull: false,
+      autoIncrement: true,
+    },
     name: DataTypes.STRING,
-  }, {});
+    stateId: DataTypes.INTEGER,
+  }, {underscored: true});
   City.associate = function(models) {
-    // associations can be defined here
+    City.hasOne(models.State);
   };
   return City;
 };

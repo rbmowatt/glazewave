@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('Sessions', {
+    return queryInterface.createTable('sessions', {
       id: {
         type: Sequelize.INTEGER(11).UNSIGNED,
         primaryKey: true,
@@ -15,7 +15,7 @@ module.exports = {
       rating: {
         type: Sequelize.INTEGER(3).UNSIGNED,
       },
-      locationId :
+      location_id :
       {
         type: Sequelize.INTEGER(11).UNSIGNED,
         references: {
@@ -25,7 +25,7 @@ module.exports = {
         onUpdate: 'CASCADE',
         onDelete: 'SET NULL',
       },
-      boardId :
+      board_id :
       {
         type: Sequelize.INTEGER(11).UNSIGNED,
         references: {
@@ -35,23 +35,25 @@ module.exports = {
         onUpdate: 'CASCADE',
         onDelete: 'SET NULL',
       },
-      isPublic: {
+      is_public: {
         type: Sequelize.BOOLEAN
       },
-      createdBy: {
+      created_by: {
         type: Sequelize.INTEGER(11).UNSIGNED,
       },
-      createdAt: {
+      created_at: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: new Date()
       },
-      updatedAt: {
+      updated_at: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: new Date()
       }
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Sessions');
+    return queryInterface.dropTable('sessions');
   }
 };

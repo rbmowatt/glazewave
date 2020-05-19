@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('Boards', {
+    return queryInterface.createTable('boards', {
       id: {
         type: Sequelize.INTEGER(11).UNSIGNED,
         primaryKey: true,
@@ -15,23 +15,25 @@ module.exports = {
       model: {
         type: Sequelize.STRING
       },
-      isPublic: {
+      is_public: {
         type: Sequelize.BOOLEAN
       },
-      createdBy: {
+      created_by: {
         type: Sequelize.INTEGER(11).UNSIGNED,
       },
-      createdAt: {
+      created_at: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: new Date()
       },
-      updatedAt: {
+      updated_at: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: new Date()
       }
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Boards');
+    return queryInterface.dropTable('boards');
   }
 };

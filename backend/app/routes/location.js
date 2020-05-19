@@ -1,5 +1,5 @@
 const db = require("../models");
-const Session = db.Session;
+const Location = db.Location;
 const Op = db.Sequelize.Op;
 const { Router } = require('express');
 
@@ -9,14 +9,14 @@ router.get('/', function (req, res) {
   const title = req.query.title;
   var condition = title ? { title: { [Op.like]: `%${title}%` } } : null;
 
-  Session.findAll({ where: condition })
+  Location.findAll({ where: condition })
     .then(data => {
       res.send(data);
     })
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while retrieving sessions."
+          err.message || "Some error occurred while retrieving locations."
       });
     });
 });
@@ -24,13 +24,13 @@ router.get('/', function (req, res) {
 
 router.get('/:id', function (req, res) {
   const id = req.params.id;
-  Session.findByPk(id, {include: 'Board'})
+  Location.findByPk(id)
     .then(data => {
       res.send(data);
     })
     .catch(err => {
       res.status(500).send({
-        message: "Error retrieving Session with id=" + id
+        message: "Error retrieving Location with id=" + id
       });
     });
 });
@@ -45,45 +45,45 @@ router.post('/', function (req, res) {
     return;
   }
 
-  // Create a Session
-  const session = {
+  // Create a Location
+  const location = {
     title: req.body.title,
     description: req.body.description,
     published: req.body.published ? req.body.published : false
   };
 
-  // Save Session in the database
-  Session.create(session)
+  // Save Location in the database
+  Location.create(location)
     .then(data => {
       res.send(data);
     })
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while creating the Session."
+          err.message || "Some error occurred while creating the Location."
       });
     });
 });
 
 router.put('/:id', function (req, res) {
   const id = req.params.id;
-  Session.update(req.body, {
+  Location.update(req.body, {
     where: { id: id }
   })
     .then(num => {
       if (num == 1) {
         res.send({
-          message: "Session was updated successfully."
+          message: "Location was updated successfully."
         });
       } else {
         res.send({
-          message: `Cannot update Session with id=${id}. Maybe Session was not found or req.body is empty!`
+          message: `Cannot update Location with id=${id}. Maybe Location was not found or req.body is empty!`
         });
       }
     })
     .catch(err => {
       res.status(500).send({
-        message: "Error updating Session with id=" + id
+        message: "Error updating Location with id=" + id
       });
     });
 });
@@ -91,23 +91,23 @@ router.put('/:id', function (req, res) {
 router.delete('/:id', function (req, res) {
   const id = req.params.id;
 
-  Session.destroy({
+  Location.destroy({
     where: { id: id }
   })
     .then(num => {
       if (num == 1) {
         res.send({
-          message: "Session was deleted successfully!"
+          message: "Location was deleted successfully!"
         });
       } else {
         res.send({
-          message: `Cannot delete Session with id=${id}. Maybe Session was not found!`
+          message: `Cannot delete Location with id=${id}. Maybe Location was not found!`
         });
       }
     })
     .catch(err => {
       res.status(500).send({
-        message: "Could not delete Session with id=" + id
+        message: "Could not delete Location with id=" + id
       });
     });
 }); 

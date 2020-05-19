@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Barnegat Light",
+        "zip": "08008",
+        "state_id" : 15
+    },
+    {
+        "name": "Loveladies",
+        "zip": "08008",
+        "state_id" : 15
+    },
+    {
+        "name": "Harvey Cedars",
+        "zip": "08008",
+        "state_id" : 15
+    },
+    {
+        "name": "North Beach",
+        "zip": "08008",
+        "state_id" : 15
+    },
+    {
+        "name": "Ship Bottom",
+        "zip": "08008",
+        "state_id" : 15
+    },
+
+    {
+        "name": "Brant Beach",
+        "zip": "08008",
+        "state_id" : 15
+    },
+    {
+        "name": "Beach Haven",
+        "zip": "08008",
+        "state_id" : 15
+    },
+    {
+        "name": "Holgate",
+        "zip": "08008",
+        "state_id" : 15
+    }
+]
