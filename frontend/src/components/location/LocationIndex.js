@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import apiConfig from '../../config/api.js';
 import { MainContainer } from './../layout/MainContainer';
-import RecipeRow from './RecipeRow';
+import LocationRow from './LocationRow';
 import { confirmAlert } from 'react-confirm-alert'; // Import
 import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
 
@@ -13,13 +13,13 @@ const mapStateToProps = state => {
     return { session: state.session }
   }
 
-class RecipeIndex extends Component {
+class LocationIndex extends Component {
     constructor(props) {
         super(props);
-        this.state = { recipes: [], headers : {}, isAdmin : false }
-        this.deleteRecipe = this.deleteRecipe.bind(this);
-        this.editRecipe = this.editRecipe.bind(this);
-        this.viewRecipe = this.viewRecipe.bind(this);
+        this.state = { locations: [], headers : {}, isAdmin : false }
+        this.deleteLocation = this.deleteLocation.bind(this);
+        this.editLocation = this.editLocation.bind(this);
+        this.viewLocation = this.viewLocation.bind(this);
     }
 
     componentDidMount(){
@@ -27,25 +27,25 @@ class RecipeIndex extends Component {
             this.setState({ isAdmin : this.props.session.isAdmin });
             const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
             this.setState({headers});
-            axios.get( apiConfig.host + apiConfig.port + `/api/recipe`, headers).then(data => {
+            axios.get( apiConfig.host + apiConfig.port + `/api/location?with=City`, headers).then(data => {
                 data.data.sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0));
-                this.setState({ recipes: data.data })
+                this.setState({ locations: data.data })
             });
         }
     }
 
-    deleteRecipe(id ) {
+    deleteLocation(id ) {
         confirmAlert({
             title: 'Confirm To Delete',
-            message: 'Are you sure you want to delete this recipe?',
+            message: 'Are you sure you want to delete this session?',
             buttons: [
               {
                 label: 'Yes',
                 onClick: () => {
-                    axios.delete(apiConfig.host + apiConfig.port + `/api/recipe/${id}`, this.state.headers).then(data => {
-                        const index = this.state.recipes.findIndex(recipe => recipe.id === id);
-                        this.state.recipes.splice(index, 1);
-                        this.props.history.push('/recipe');
+                    axios.delete(apiConfig.host + apiConfig.port + `/api/location/${id}`, this.state.headers).then(data => {
+                        const index = this.state.locations.findIndex(location => location.id === id);
+                        this.state.locations.splice(index, 1);
+                        this.props.history.push('/location');
                     })
                 }
               },
@@ -57,44 +57,44 @@ class RecipeIndex extends Component {
           });
     }
 
-    editRecipe(recipeId) {
-        this.props.history.push('/recipe/edit/' + recipeId);
+    editLocation(locationId) {
+        this.props.history.push('/location/edit/' + locationId);
     }
 
-    viewRecipe(recipeId) {
-        this.props.history.push('/recipe/' + recipeId);
+    viewLocation(locationId) {
+        this.props.history.push('/location/' + locationId);
     }
 
     render() {
-        const recipes = this.state.recipes;
+        const locations = this.state.locations;
         return (
             <MainContainer>
                 <div className="row">
                     <div className="card mx-auto">
-                        <div className="card-title"><h2>Recipes
-                        { this.state.isAdmin &&  <Link to={'recipe/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New Recipe</Link>}
+                        <div className="card-title"><h2>Locations
+                        { this.state.isAdmin &&  <Link to={'location/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New Location</Link>}
                         </h2>
                         </div> 
                         <div className="card-text">
                             <div className="table-container" >
                                 <div className="row table-header">
                                     <div className="col-6">
-                                         Title
+                                         Name
                                     </div>
                                     <div className="col-3">
-                                        Author
+                                        Date
                                     </div>
                                     <div className="col-3">
-                                        Info
+                                        Location
                                     </div>
                                 </div>
-                                {recipes && recipes.map(recipe =>
-                                (this.state.isAdmin || recipe.isPublic) &&
-                                    <RecipeRow recipe={recipe} deleteRecipe={this.deleteRecipe} viewRecipe={this.viewRecipe} editRecipe={this.editRecipe} isAdmin={this.state.isAdmin} key={ recipe.id }/>
+                                {locations && locations.map(location =>
+                                (this.state.isAdmin || location.isPublic) &&
+                                    <LocationRow location={location} deleteLocation={this.deleteLocation} viewLocation={this.viewLocation} editLocation={this.editLocation} isAdmin={this.state.isAdmin} key={ location.id }/>
                                 )
                                 }
                                 {
-                                    (!recipes  || recipes.length === 0) &&  <div className="col-12"><h3>No recipes found at the moment</h3></div>
+                                    (!locations  || locations.length === 0) &&  <div className="col-12"><h3>No locations found at the moment</h3></div>
                                 } 
                              </div>
                         </div>
@@ -105,4 +105,4 @@ class RecipeIndex extends Component {
         )
     }
 }
-export default connect(mapStateToProps)(RecipeIndex)
+export default connect(mapStateToProps)(LocationIndex)

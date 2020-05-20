@@ -1,11 +1,11 @@
 import React from 'react';
 
-export const RecipeForm = props =>{
+export const LocationForm = props =>{
     return (
         <form className="row" id="create-post-form" onSubmit={props.processFormSubmission} noValidate={true}>
         <div className="form-group col-md-12">
-            <label htmlFor="rating"> What would you rate this Recipe on a scale of 1-10?
-            <select value={props.recipe.rating} onChange={(e) => props.handleInputChanges(e)} id="rating" name="rating" className="form-control">
+            <label htmlFor="rating"> What would you rate this Location on a scale of 1-10?
+            <select value={props.location.rating} onChange={(e) => props.handleInputChanges(e)} id="rating" name="rating" className="form-control">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -20,20 +20,16 @@ export const RecipeForm = props =>{
             </label>
         </div>
         <div className="form-group col-md-12">
-        <label htmlFor="isPublic"> Should this Recipe be Public to ALL logged-in Users?
-            <select value={props.recipe.isPublic} onChange={(e) => props.handleInputChanges(e)} id="isPublic" name="isPublic" className="form-control">
+        <label htmlFor="isPublic"> Should this Location be Public to ALL logged-in Users?
+            <select value={props.location.is_public} onChange={(e) => props.handleInputChanges(e)} id="is_public" name="is_public" className="form-control">
             <option value="0">Private</option>
             <option value="1">Public</option>
             </select>
             </label>
         </div>
         <div className="form-group col-md-12">
-            <label htmlFor="first_name"> Name/Title </label>
-            <input type="text" id="name" defaultValue={props.recipe.name} onChange={(e) => props.handleInputChanges(e)} name="name" className="form-control" placeholder="Recipe Title" />
-        </div>
-        <div className="form-group col-md-12">
-            <label htmlFor="recipe"> Recipe </label>
-            <textarea id="recipe" defaultValue={props.recipe.recipe} onChange={(e) => props.handleInputChanges(e)} name="recipe" className="form-control" placeholder="Enter the Recipe Here!!" />
+            <label htmlFor="model"> Model </label>
+            <input type="text" id="model" defaultValue={props.location.model} onChange={(e) => props.handleInputChanges(e)} name="model" className="form-control" placeholder="Location Model" />
         </div>
         { props.children && 
             <div className="form-group col-md-12">
@@ -42,7 +38,7 @@ export const RecipeForm = props =>{
         }
         <div className="form-group col-md-4 pull-right">
             <button className="btn btn-success" type="submit">
-            {(props.edit) ? ("Edit Recipe") : ( "Add Recipe") }
+            {(props.edit) ? ("Edit Location") : ( "Add Location") }
             </button>
         </div>
     </form>

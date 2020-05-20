@@ -4,19 +4,19 @@ import axios from 'axios';
 import apiConfig from '../../config/api.js';
 import { MainContainer } from './../layout/MainContainer';
 import {FormCard} from './../layout/FormCard';
-import { RecipeForm } from './RecipeForm';
+import { SessionForm } from './SessionForm';
 
-const TITLE = "Edit Recipe";
+const TITLE = "Edit Session";
 const mapStateToProps = state => {
     return { session: state.session }
   }
 
-class EditRecipe extends React.Component{
+class EditSession extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
             id: this.props.match.params.id,
-            recipe: {},
+            session: {},
             values: [],
             loading: false,
             submitSuccess: false,
@@ -30,11 +30,11 @@ class EditRecipe extends React.Component{
         if (this.props.session.isLoggedIn) {
             const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
             this.setState({headers});
-            axios.get(apiConfig.host + apiConfig.port + `/api/recipe/${this.state.id}`, headers).then(data => {
-                const recipe = data.data[0];
-                this.setState({ recipe});
+            axios.get(apiConfig.host + apiConfig.port + `/api/session/${this.state.id}`, headers).then(data => {
+                const session = data.data;
+                this.setState({ session});
             })
-            .catch(error=>this.props.history.push('/recipe'));
+            .catch(error=>this.props.history.push('/session'));
         }
     }
 
@@ -42,10 +42,10 @@ class EditRecipe extends React.Component{
         e.preventDefault();
         this.setState({ loading: true });
        
-        axios.put(apiConfig.host + apiConfig.port + `/api/recipe/${this.state.id}`, this.state.values, this.state.headers).then(data => {
+        axios.put(apiConfig.host + apiConfig.port + `/api/session/${this.state.id}`, this.state.values, this.state.headers).then(data => {
             this.setState({ submitSuccess: true, loading: false })
             setTimeout(() => {
-                this.props.history.push('/recipe');
+                this.props.history.push('/session');
             }, 1500)
         })
         .catch(
@@ -62,14 +62,14 @@ class EditRecipe extends React.Component{
     handleInputChanges = (e) => {
         e.preventDefault();
         this.setValues({ [e.currentTarget.id]: e.currentTarget.value });
-        const recipe = this.state.recipe;
-        recipe[e.currentTarget.id] = e.currentTarget.value;
-        this.setState({recipe});
+        const session = this.state.session;
+        session[e.currentTarget.id] = e.currentTarget.value;
+        this.setState({session});
     }
 
     returnToIndex = e =>
     {
-      this.props.history.push('/recipe');
+      this.props.history.push('/session');
     }
 
 
@@ -82,7 +82,7 @@ class EditRecipe extends React.Component{
                         <h2>{ TITLE }</h2>
                         {submitSuccess && (
                             <div className="alert alert-info" role="alert">
-                                    Recipe details have been edited successfully </div>
+                                    Session details have been edited successfully </div>
                         )}
                         {submitFail && (
                             <div className="alert alert-info" role="alert">
@@ -90,7 +90,7 @@ class EditRecipe extends React.Component{
                             </div>
                         )} 
                     </div>
-                    <RecipeForm recipe={this.state.recipe} loading={loading}  handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} edit="true" />
+                    <SessionForm session={this.state.session} loading={loading}  handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} edit="true" />
                 </FormCard>
                 }
             </MainContainer>
@@ -98,4 +98,4 @@ class EditRecipe extends React.Component{
     }
 }
 
-export default connect(mapStateToProps)(EditRecipe)
+export default connect(mapStateToProps)(EditSession)

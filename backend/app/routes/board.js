@@ -1,6 +1,8 @@
 const { Router } = require('express');
 const BaseService = require('./../services/BoardService');
 const EntityType = 'Board';
+const multer  = require('multer');
+let upload = multer();
 
 const router = new Router();
 
@@ -33,9 +35,9 @@ router.get('/:id', function (req, res) {
 });
 
 
-router.post('/', function (req, res) {
+router.post('/', upload.fields([]), function (req, res) {
   // Validate request
-  if (!req.body.title) {
+  if (!req.body.model) {
     res.status(400).send({
       message: "Content can not be empty!"
     });

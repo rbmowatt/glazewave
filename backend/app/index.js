@@ -8,7 +8,6 @@ const appConfig = require('./config/app');
 const cognitoConfig = require('./config/cognito');
 const cognitoAuth = require('./lib/cognitoAuth');
 const cognitoAuthMiddleware = cognitoAuth.getVerifyMiddleware();
-const db = require("./models");
 const boardRouter = require('./routes/board');
 const cityRouter = require('./routes/city');
 const locationRouter = require('./routes/location');
@@ -17,21 +16,18 @@ const recipeRouter = require('./routes/recipe');
 const sessionRouter = require('./routes/session');
 const userRouter = require('./routes/user');
 
-//db.sequelize.sync();
-var myLogger = function (req, res, next) {
+const queryParser = function (req, res, next) {
   const reservedKeys = ['with', 'page', 'limit'];
-  console.log('query', req.query);
   let parser = {
     with : req.query.with || [],
     limit : parseInt(req.query.limit) || 20,
   };
   parser.page = (parseInt(req.query.page) || 0) * parser.limit
   req.parser = parser;
-
-
   next()
 }
-app.use(myLogger);
+
+app.use(queryParser);
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
