@@ -1,18 +1,19 @@
 const { Router } = require('express');
-const SessionService = require('./../services/SessionService');
+const BaseService = require('./../services/SessionService');
+const EntityType = 'Session';
 
 const router = new Router();
 
 router.get('/', function (req, res) {
   console.log('with', req.parser.with);
-  SessionService.make().where([],req.parser.with, [], [], req.parser.limit, req.parser.page)
+  BaseService.make().where([],req.parser.with, [], [], req.parser.limit, req.parser.page)
     .then(data => {
       res.send(data);
     })
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while retrieving sessions."
+          err.message || "Some error occurred while retrieving " + EntityType + "."
       });
     });
 });
@@ -20,13 +21,13 @@ router.get('/', function (req, res) {
 
 router.get('/:id', function (req, res) {
   const id = req.params.id;
-  SessionService.make().find(id,req.parser.with)
+  BaseService.make().find(id,req.parser.with)
     .then(data => {
       res.send(data);
     })
     .catch(err => {
       res.status(500).send({
-        message: "Error retrieving Session with id=" + id
+        message: "Error retrieving " + EntityType + " with id=" + id
       });
     });
 });
@@ -40,20 +41,20 @@ router.post('/', function (req, res) {
     });
     return;
   }
-  SessionService.make().create(req.body)
+  BaseService.make().create(req.body)
     .then(data => {
       res.send(data);
     })
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while creating the Session."
+          err.message || "Some error occurred while creating the " + EntityType + "."
       });
     });
 });
 
 router.put('/:id', function (req, res) {
-  SessionService.make().update(req.params.id, req.body)
+  BaseService.make().update(req.params.id, req.body)
     .then(num => {
       if (num == 1) {
         res.send({
@@ -61,13 +62,13 @@ router.put('/:id', function (req, res) {
         });
       } else {
         res.send({
-          message: `Cannot update Session with id=${id}. Maybe Session was not found or req.body is empty!`
+          message: `Cannot update ${EntityType} with id=${id}. Maybe ${EntityType} was not found or req.body is empty!`
         });
       }
     })
     .catch(err => {
       res.status(500).send({
-        message: "Error updating Session with id=" + id
+        message: "Error updating " + EntityType + "  with id=" + id
       });
     });
 });
@@ -75,21 +76,21 @@ router.put('/:id', function (req, res) {
 router.delete('/:id', function (req, res) {
   const id = req.params.id;
 
-  SessionService.make().delete(id)
+  BaseService.make().delete(id)
     .then(num => {
       if (num == 1) {
         res.send({
-          message: "Session was deleted successfully!"
+          message: EntityType + "  was deleted successfully!"
         });
       } else {
         res.send({
-          message: `Cannot delete Session with id=${id}. Maybe Session was not found!`
+          message: `Cannot delete ${EntityType} with id=${id}. Maybe ${EntityType} was not found!`
         });
       }
     })
     .catch(err => {
       res.status(500).send({
-        message: "Could not delete Session with id=" + id
+        message: "Could not delete " + EntityType + "  with id=" + id
       });
     });
 }); 

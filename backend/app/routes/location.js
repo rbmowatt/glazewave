@@ -1,22 +1,19 @@
-const db = require("../models");
-const Location = db.Location;
-const Op = db.Sequelize.Op;
 const { Router } = require('express');
+const BaseService = require('./../services/LocationService');
+const EntityType = 'Location';
 
 const router = new Router();
 
 router.get('/', function (req, res) {
-  const title = req.query.title;
-  var condition = title ? { title: { [Op.like]: `%${title}%` } } : null;
-
-  Location.findAll({ where: condition })
+  console.log('with', req.parser.with);
+  BaseService.make().where([],req.parser.with, [], [], req.parser.limit, req.parser.page)
     .then(data => {
       res.send(data);
     })
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while retrieving locations."
+          err.message || "Some error occurred while retrieving " + EntityType + "."
       });
     });
 });
@@ -24,13 +21,13 @@ router.get('/', function (req, res) {
 
 router.get('/:id', function (req, res) {
   const id = req.params.id;
-  Location.findByPk(id)
+  BaseService.make().find(id,req.parser.with)
     .then(data => {
       res.send(data);
     })
     .catch(err => {
       res.status(500).send({
-        message: "Error retrieving Location with id=" + id
+        message: "Error retrieving " + EntityType + " with id=" + id
       });
     });
 });
@@ -44,46 +41,34 @@ router.post('/', function (req, res) {
     });
     return;
   }
-
-  // Create a Location
-  const location = {
-    title: req.body.title,
-    description: req.body.description,
-    published: req.body.published ? req.body.published : false
-  };
-
-  // Save Location in the database
-  Location.create(location)
+  BaseService.make().create(req.body)
     .then(data => {
       res.send(data);
     })
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while creating the Location."
+          err.message || "Some error occurred while creating the " + EntityType + "."
       });
     });
 });
 
 router.put('/:id', function (req, res) {
-  const id = req.params.id;
-  Location.update(req.body, {
-    where: { id: id }
-  })
+  BaseService.make().update(req.params.id, req.body)
     .then(num => {
       if (num == 1) {
         res.send({
-          message: "Location was updated successfully."
+          message: "Session was updated successfully."
         });
       } else {
         res.send({
-          message: `Cannot update Location with id=${id}. Maybe Location was not found or req.body is empty!`
+          message: `Cannot update ${EntityType} with id=${id}. Maybe ${EntityType} was not found or req.body is empty!`
         });
       }
     })
     .catch(err => {
       res.status(500).send({
-        message: "Error updating Location with id=" + id
+        message: "Error updating " + EntityType + "  with id=" + id
       });
     });
 });
@@ -91,23 +76,21 @@ router.put('/:id', function (req, res) {
 router.delete('/:id', function (req, res) {
   const id = req.params.id;
 
-  Location.destroy({
-    where: { id: id }
-  })
+  BaseService.make().delete(id)
     .then(num => {
       if (num == 1) {
         res.send({
-          message: "Location was deleted successfully!"
+          message: EntityType + "  was deleted successfully!"
         });
       } else {
         res.send({
-          message: `Cannot delete Location with id=${id}. Maybe Location was not found!`
+          message: `Cannot delete ${EntityType} with id=${id}. Maybe ${EntityType} was not found!`
         });
       }
     })
     .catch(err => {
       res.status(500).send({
-        message: "Could not delete Location with id=" + id
+        message: "Could not delete " + EntityType + "  with id=" + id
       });
     });
 }); 
