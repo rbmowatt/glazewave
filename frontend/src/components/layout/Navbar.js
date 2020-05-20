@@ -22,9 +22,18 @@ const Navbar = props =>{
                           Users</Link>
                       }
                 {(props.session.isLoggedIn ) &&
-                          <Link className="nav-link" to={'/recipe'}>
-                          Recipes</Link>
+                          <Link className="nav-link" to={'/session'}>
+                          Sessions</Link>
                       }
+                {(props.session.isLoggedIn ) &&
+                          <Link className="nav-link" to={'/board'}>
+                          Boards</Link>
+                      }
+                {(props.session.isLoggedIn ) &&
+                          <Link className="nav-link" to={'/location'}>
+                          Spots</Link>
+                      }
+
               </div>
               <div className="navbar-nav ml-auto">
               {props.session.isLoggedIn ? ( <span><span className="white-txt">Hello {props.session.user.userName}&nbsp;&nbsp;</span><span><a className="Home-link" href="#" onClick={onSignOut}>Sign out</a> </span></span> ) 

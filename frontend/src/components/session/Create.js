@@ -7,10 +7,10 @@ import Images from './../helpers/image/Images'
 import Buttons from './../helpers/image/Buttons'
 import { MainContainer } from './../layout/MainContainer';
 import {FormCard} from './../layout/FormCard';
-import { RecipeForm } from './RecipeForm';
+import { SessionForm } from './SessionForm';
 
 
-const TITLE="Create Recipe";
+const TITLE="Create Session";
 
 const mapStateToProps = state => {
     return { session: state.session }
@@ -24,7 +24,7 @@ class Create extends React.Component{
             is_public : 0,
             name: '',
             submitted_by: '',
-            recipe: '',
+            session: '',
             values: [],
             loading: false,
             submitSuccess: false,
@@ -53,18 +53,18 @@ class Create extends React.Component{
         const formData = new FormData();
         formData.append('is_public', this.state.is_public);
         formData.append('rating' , this.state.rating);
-        formData.append('name' , this.state.name);
-        formData.append( 'recipe', this.state.recipe);
+        formData.append('title' , this.state.name);
+        //formData.append( 'session', this.state.session);
         formData.append('submitted_by' , this.props.session.user.userName);
         this.state.images.forEach((file, i) => {
             formData.append('photo', file)
           })
         this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
         if (this.props.session.isLoggedIn && this.props.session.isAdmin) {
-            axios.post(apiConfig.host + apiConfig.port + `/api/recipe`, formData, this.state.headers)
+            axios.post(apiConfig.host + apiConfig.port + `/api/session`, formData, this.state.headers)
             .then(data => [
                 setTimeout(() => {
-                    this.props.history.push('/recipe');
+                    this.props.history.push('/session');
                 }, 1500)
             ])
             .catch(
@@ -95,7 +95,7 @@ class Create extends React.Component{
 
       returnToIndex = e =>
       {
-        this.props.history.push('/recipe');
+        this.props.history.push('/session');
       }
 
     render() {
@@ -130,11 +130,11 @@ class Create extends React.Component{
                             { errorMessage }
                         </div>
                         )}               
-                        <RecipeForm recipe={this.state.recipe} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading} >
+                        <SessionForm session={this.state.session} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading} >
                     
                                 {content()}
                             
-                        </RecipeForm>
+                        </SessionForm>
                     </div>
                 </FormCard>
             </MainContainer>

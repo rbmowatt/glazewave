@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import './Recipe.css'
+import './Board.css'
 import axios from 'axios';
 import apiConfig from '../../config/api.js';
 import { MainContainer } from './../layout/MainContainer';
@@ -11,35 +11,35 @@ const mapStateToProps = state => {
     return { session: state.session }
   }
 
-class RecipeView extends Component {
+class BoardView extends Component {
     constructor(props) {
         super(props);
-        this.state = { recipe: [], headers : {} }
+        this.state = { session: [], headers : {} }
     }
 
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
             const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
             this.setState({headers});
-            axios.get( apiConfig.host + apiConfig.port + `/api/recipe/` + this.props.match.params.id, this.state.headers).then(data => {
-                ((!this.props.session.isAdmin && !data.data[0].isPublic) || data.data.length === 0) ? this.props.history.push('/recipe') : this.setState({ recipe: data.data[0] });
+            axios.get( apiConfig.host + apiConfig.port + `/api/board/` + this.props.match.params.id, this.state.headers).then(data => {
+                ((!this.props.session.isAdmin && !data.data[0].isPublic) || data.data.length === 0) ? this.props.history.push('/board') : this.setState({ session: data.data });
             })
-            .catch(error=>this.props.history.push('/recipe'));
+            .catch(error=>this.props.history.push('/board'));
         }
-        if(this.state.recipe === [])
+        if(this.state.session === [])
         {
-            this.props.history.push('/recipe');
+            this.props.history.push('/board');
         }
     }
 
     returnToIndex = e =>
     {
-      this.props.history.push('/recipe');
+      this.props.history.push('/board');
     }
 
     render() {
-        const recipe = this.state.recipe;
-        const pic = (recipe.picture  == null) ? 'no_photo.jpg' : recipe.picture;
+        const session = this.state.session;
+        const pic = (session.picture  == null) ? 'no_photo.jpg' : session.picture;
         return (
             <MainContainer>
                 <FormCard returnToIndex={this.returnToIndex}>
@@ -47,18 +47,18 @@ class RecipeView extends Component {
 				        <div className="wrapper row">
                             <div className="preview col-md-6">
                                 <div className="preview-pic tab-content">
-                                    <div className="tab-pane active" id="pic-1"><img src={"https://umanage-mowatr.s3.amazonaws.com/" + pic } alt="recipe" /></div>
+                                    <div className="tab-pane active" id="pic-1"><img src={"https://umanage-mowatr.s3.amazonaws.com/" + pic } alt="session" /></div>
                                 </div>
                             </div>
                             <div className="details col-md-6">
-                                <h3 className="recipe-title">{recipe.name}</h3>
-                                <h5 className="submitted-by">By <span>{recipe.submitted_by}</span></h5>
-                                <h5 className="review-no">Rated: {recipe.rating}/10 </h5>
+                                <h3 className="session-title">{session.title}</h3>
+                                <h5 className="submitted-by">By <span>{session.createdAt}</span></h5>
+                                <h5 className="review-no">Rated: {session.rating}/10 </h5>
                                 <div className="rating">
-                                    <StarBar stars={recipe.rating} />
+                                    <StarBar stars={session.rating} />
                                 </div>
-                                <h5 className="review-no">Recipe:</h5>
-                                <p className="recipe-description">{ recipe.recipe }</p>
+                                <h5 className="review-no">Board:</h5>
+                                <p className="session-description">{ session.title }</p>
                             </div>
                         </div>
                     </div>
@@ -67,4 +67,4 @@ class RecipeView extends Component {
         )
     }
 }
-export default connect(mapStateToProps)(RecipeView)
+export default connect(mapStateToProps)(BoardView)

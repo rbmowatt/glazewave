@@ -1,4 +1,6 @@
 const { Router } = require('express');
+const multer  = require('multer');
+let upload = multer();
 const BaseService = require('./../services/SessionService');
 const EntityType = 'Session';
 
@@ -33,8 +35,9 @@ router.get('/:id', function (req, res) {
 });
 
 
-router.post('/', function (req, res) {
+router.post('/', upload.fields([]), function (req, res) {
   // Validate request
+  console.log('req.body', req.body);
   if (!req.body.title) {
     res.status(400).send({
       message: "Content can not be empty!"
