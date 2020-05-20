@@ -1,15 +1,11 @@
-const db = require("../models");
-const Session = db.Session;
-const Op = db.Sequelize.Op;
 const { Router } = require('express');
+const SessionService = require('./../services/SessionService');
 
 const router = new Router();
 
 router.get('/', function (req, res) {
-  const title = req.query.title;
-  var condition = title ? { title: { [Op.like]: `%${title}%` } } : null;
-
-  Session.findAll({ where: condition })
+  console.log('with', req.parser.with);
+  SessionService.make().where([],req.parser.with, [], [], req.parser.limit, req.parser.page)
     .then(data => {
       res.send(data);
     })
@@ -24,7 +20,7 @@ router.get('/', function (req, res) {
 
 router.get('/:id', function (req, res) {
   const id = req.params.id;
-  Session.findByPk(id, {include: 'Board'})
+  SessionService.make().find(id,req.parser.with)
     .then(data => {
       res.send(data);
     })
@@ -44,16 +40,7 @@ router.post('/', function (req, res) {
     });
     return;
   }
-
-  // Create a Session
-  const session = {
-    title: req.body.title,
-    description: req.body.description,
-    published: req.body.published ? req.body.published : false
-  };
-
-  // Save Session in the database
-  Session.create(session)
+  SessionService.make().create(req.body)
     .then(data => {
       res.send(data);
     })
@@ -66,10 +53,7 @@ router.post('/', function (req, res) {
 });
 
 router.put('/:id', function (req, res) {
-  const id = req.params.id;
-  Session.update(req.body, {
-    where: { id: id }
-  })
+  SessionService.make().update(req.params.id, req.body)
     .then(num => {
       if (num == 1) {
         res.send({
@@ -91,9 +75,7 @@ router.put('/:id', function (req, res) {
 router.delete('/:id', function (req, res) {
   const id = req.params.id;
 
-  Session.destroy({
-    where: { id: id }
-  })
+  SessionService.make().delete(id)
     .then(num => {
       if (num == 1) {
         res.send({

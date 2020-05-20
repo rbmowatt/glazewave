@@ -1,139 +1,65 @@
 const db = require("../models");
-const Session = db.sessions;
+let BaseModel = '';
 const Op = db.Sequelize.Op;
 
 class BaseService {
-    // Create and Save a new Session
-    create = (req, res) => {
-        // Create a Session
-        const session = {
-        title: req.body.title,
-        description: req.body.description,
-        published: req.body.published ? req.body.published : false
-        };
-        // Save Session in the database
-        Session.create(session)
-        .then(data => {
-            res.send(data);
-        })
-        .catch(err => {
-            res.status(500).send({
-            message:
-                err.message || "Some error occurred while creating the Session."
-            });
-        });
-  };
-  
-  // Retrieve all Sessions from the database.
-  findAll = (req, res) => {
-    const title = req.query.title;
-    var condition = title ? { title: { [Op.like]: `%${title}%` } } : null;
-  
-    Session.findAll({ where: condition })
-      .then(data => {
-        res.send(data);
-      })
-      .catch(err => {
-        res.status(500).send({
-          message:
-            err.message || "Some error occurred while retrieving sessions."
-        });
-      });
-  };
-  
-  // Find a single Session with an id
-  findOne = (req, res) => {
-    const id = req.params.id;
-  
-    Session.findByPk(id)
-      .then(data => {
-        res.send(data);
-      })
-      .catch(err => {
-        res.status(500).send({
-          message: "Error retrieving Session with id=" + id
-        });
-      });
-  };
-  
-  // Update a Session by the id in the request
-  update = (req, res) => {
-    const id = req.params.id;
-  
-    Session.update(req.body, {
+
+  constructor(BaseModel)
+  {
+    super.constructor();
+    console.log(this.BaseModel)
+    this.BaseModel = BaseModel;
+  }
+
+  async where( wheres, withs , sorts , selects , limit = 20, page = 0)
+  {    
+    return this.BaseModel.findAll({ where: wheres, include: withs, offset: page, limit: limit });
+  }
+
+  async find(id, withs, selects = [])
+  {
+    const options = {include: withs};
+    if(selects.length) options.attributes = selects;
+    return this.BaseModel.findByPk( id, options);
+  }
+
+  async create(params, callback = null)
+  {
+    return await this.validatePost(params).then(data=>{return this.BaseModel.create(data)});
+  }
+
+  async update(id, params, callback = null)
+  {
+    return await this.validatePost(params).then(data=>{return this.BaseModel.update(params, {
+      where: { id: id }
+    })});
+  }
+
+  async delete( id )
+  {    
+    return this.BaseModel.destroy({
       where: { id: id }
     })
-      .then(num => {
-        if (num == 1) {
-          res.send({
-            message: "Session was updated successfully."
-          });
-        } else {
-          res.send({
-            message: `Cannot update Session with id=${id}. Maybe Session was not found or req.body is empty!`
-          });
+  }
+
+  /** This will make sure that any keys that do not exust in the table but do exist in the reqest are stripped out
+   */
+  async validatePost(params)
+  {
+    let data = {};
+    Object.keys(params).forEach(param =>{
+        if(Object.keys(this.BaseModel.rawAttributes).indexOf(param) !== -1)
+        {
+            data[param] = params[param];
         }
-      })
-      .catch(err => {
-        res.status(500).send({
-          message: "Error updating Session with id=" + id
-        });
-      });
-  };
-  
-  // Delete a Session with the specified id in the request
-  delete = (req, res) => {
-    const id = req.params.id;
-  
-    Session.destroy({
-      where: { id: id }
     })
-      .then(num => {
-        if (num == 1) {
-          res.send({
-            message: "Session was deleted successfully!"
-          });
-        } else {
-          res.send({
-            message: `Cannot delete Session with id=${id}. Maybe Session was not found!`
-          });
-        }
-      })
-      .catch(err => {
-        res.status(500).send({
-          message: "Could not delete Session with id=" + id
-        });
-      });
-  };
-  
-  // Delete all Sessions from the database.
-  deleteAll = (req, res) => {
-    Session.destroy({
-      where: {},
-      truncate: false
-    })
-      .then(nums => {
-        res.send({ message: `${nums} Sessions were deleted successfully!` });
-      })
-      .catch(err => {
-        res.status(500).send({
-          message:
-            err.message || "Some error occurred while removing all sessions."
-        });
-      });
-  };
-  
-  // find all published Session
-  findAllPublished = (req, res) => {
-    Session.findAll({ where: { published: true } })
-      .then(data => {
-        res.send(data);
-      })
-      .catch(err => {
-        res.status(500).send({
-          message:
-            err.message || "Some error occurred while retrieving sessions."
-        });
-      });
-  };
+    return data;
+  }
+
+  static make()
+  {
+    return new this;
+  }
 }
+
+module.exports = BaseService;

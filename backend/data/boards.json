@@ -1,21 +1,21 @@
 [
     {
-        "manufacturer": "John Stow",
+        "manufacturer_id": 1,
         "model": "The stowinator",
         "is_public" : 1
     },
     {
-        "manufacturer": "John E Surfer",
+        "manufacturer_id": 2,
         "model": "The Radicool",
         "is_public" : 1
     },
     {
-        "manufacturer": "John E Surfer",
+        "manufacturer_id": 3,
         "model": "The Smoocher",
         "is_public" : 1
     },
     {
-        "manufacturer": "Al Merick",
+        "manufacturer_id": 4,
         "model": "Thruster",
         "is_public" : 1
     }
