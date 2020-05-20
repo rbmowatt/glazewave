@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  const Board = sequelize.define('Board', {
+  const Manufacturer = sequelize.define('Manufacturer', {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -8,14 +8,10 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       autoIncrement: true,
     },
-    manufacturer_id: DataTypes.INTEGER,
-    model: DataTypes.STRING,
-    isPublic: DataTypes.BOOLEAN,
-    createdBy: DataTypes.INTEGER
+    name: DataTypes.STRING,
   }, {underscored: true});
-  Board.associate = function(models) {
+  Manufacturer.associate = function(models) {
     // associations can be defined here
-    Board.belongsTo(models.Manufacturer);
   };
-  return Board;
+  return Manufacturer;
 };

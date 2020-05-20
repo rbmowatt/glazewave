@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('boards', {
+    return queryInterface.createTable('manufacturers', {
       id: {
         type: Sequelize.INTEGER(11).UNSIGNED,
         primaryKey: true,
@@ -9,24 +9,8 @@ module.exports = {
         allowNull: false,
         autoIncrement: true,
       },
-      manufacturer_id :
-      {
-        type: Sequelize.INTEGER(11).UNSIGNED,
-        references: {
-          model: 'Manufacturers', 
-          key: 'id', 
-        },
-        onUpdate: 'CASCADE',
-        onDelete: 'SET NULL',
-      },
-      model: {
+      name: {
         type: Sequelize.STRING
-      },
-      is_public: {
-        type: Sequelize.BOOLEAN
-      },
-      created_by: {
-        type: Sequelize.INTEGER(11).UNSIGNED,
       },
       created_at: {
         allowNull: false,
@@ -41,6 +25,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('boards');
+    return queryInterface.dropTable('manufacturers');
   }
 };

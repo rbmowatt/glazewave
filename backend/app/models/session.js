@@ -4,16 +4,15 @@ module.exports = (sequelize, DataTypes) => {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
-      defaultValue: DataTypes.UUIDV4,
       allowNull: false,
       autoIncrement: true,
     },
     title: DataTypes.STRING,
     rating: DataTypes.INTEGER,
-    isPublic: DataTypes.BOOLEAN,
-    boardId: DataTypes.INTEGER,
-    locationId: DataTypes.INTEGER,
-    createdBy: DataTypes.INTEGER,
+    is_public: DataTypes.BOOLEAN,
+    board_id: DataTypes.INTEGER,
+    location_id: DataTypes.INTEGER,
+    created_by: DataTypes.INTEGER
   }, {underscored: true});
   Session.associate = function(models) {
     Session.belongsTo(models.Board);
