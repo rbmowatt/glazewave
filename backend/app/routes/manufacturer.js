@@ -1,6 +1,6 @@
 const { Router } = require('express');
-const BaseService = require('./../services/CityService');
-const EntityType = 'City';
+const BaseService = require('./../services/ManufacturerService');
+const EntityType = 'Manufacturer';
 
 const router = new Router();
 
