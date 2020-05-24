@@ -29,9 +29,9 @@ class EditBoard extends React.Component{
 
     componentDidMount() {
         if (this.props.session.isLoggedIn) {
-            const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
-            this.setState({headers});
-            axios.get(apiConfig.host + apiConfig.port + `/api/board/${this.state.id}`, headers).then(data => {
+            
+            
+            axios.get(apiConfig.host + apiConfig.port + `/api/board/${this.state.id}`, this.props.session.headers).then(data => {
                 const board = data.data;
                 this.setState({ board });
             })
@@ -43,7 +43,7 @@ class EditBoard extends React.Component{
         e.preventDefault();
         this.setState({ loading: true });
        
-        axios.put(apiConfig.host + apiConfig.port + `/api/board/${this.state.id}`, this.state.values, this.state.headers).then(data => {
+        axios.put(apiConfig.host + apiConfig.port + `/api/board/${this.state.id}`, this.state.values, this.props.session.headers).then(data => {
             this.setState({ submitSuccess: true, loading: false })
             setTimeout(() => {
                 this.props.history.push('/board');

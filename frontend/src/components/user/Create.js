@@ -30,8 +30,8 @@ class CreateUser extends React.Component{
 
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
-            const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
-            this.setState({headers});
+            
+            
         }
     }
 
@@ -49,7 +49,7 @@ class CreateUser extends React.Component{
         this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
 
         if (this.props.session.isLoggedIn) {
-            axios.post(apiConfig.host + apiConfig.port + `/api/user`, formData, this.state.headers).then(data => [
+            axios.post(apiConfig.host + apiConfig.port + `/api/user`, formData, this.props.session.headers).then(data => [
             setTimeout(() => {
                 this.props.history.push('/user');
             }, 1500)

@@ -25,9 +25,9 @@ class LocationIndex extends Component {
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
             this.setState({ isAdmin : this.props.session.isAdmin });
-            const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
-            this.setState({headers});
-            axios.get( apiConfig.host + apiConfig.port + `/api/location?with=City`, headers).then(data => {
+            
+            
+            axios.get( apiConfig.host + apiConfig.port + `/api/location?with=City`, this.props.session.headers).then(data => {
                 data.data.sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0));
                 this.setState({ locations: data.data })
             });
@@ -42,7 +42,7 @@ class LocationIndex extends Component {
               {
                 label: 'Yes',
                 onClick: () => {
-                    axios.delete(apiConfig.host + apiConfig.port + `/api/location/${id}`, this.state.headers).then(data => {
+                    axios.delete(apiConfig.host + apiConfig.port + `/api/location/${id}`, this.props.session.headers).then(data => {
                         const index = this.state.locations.findIndex(location => location.id === id);
                         this.state.locations.splice(index, 1);
                         this.props.history.push('/location');
@@ -70,7 +70,7 @@ class LocationIndex extends Component {
         return (
             <MainContainer>
                 <div className="row">
-                    <div className="card mx-auto">
+                    <div className="card card-lg  mx-auto">
                         <div className="card-title"><h2>Locations
                         { this.state.isAdmin &&  <Link to={'location/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New Location</Link>}
                         </h2>

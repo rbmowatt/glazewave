@@ -5,7 +5,6 @@ module.exports = {
       id: {
         type: Sequelize.INTEGER(11).UNSIGNED,
         primaryKey: true,
-        defaultValue: Sequelize.UUIDV4,
         allowNull: false,
         autoIncrement: true,
       },
@@ -38,7 +37,7 @@ module.exports = {
       is_public: {
         type: Sequelize.BOOLEAN
       },
-      created_by: {
+      user_id: {
         type: Sequelize.INTEGER(11).UNSIGNED,
       },
       created_at: {

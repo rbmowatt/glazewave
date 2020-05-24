@@ -25,6 +25,7 @@ class Create extends React.Component{
             name: '',
             submitted_by: '',
             session: '',
+            manufacturers : [],
             values: [],
             loading: false,
             submitSuccess: false,
@@ -42,7 +43,13 @@ class Create extends React.Component{
                 Authorization: `Bearer ${this.props.session.credentials.accessToken}`,
                 'content-type': 'multipart/form-data'
             }};
-            this.setState({headers});
+            
+            axios.get(apiConfig.host + apiConfig.port + `/api/manufacturer`, this.props.session.headers)
+                .then(data => this.setState({manufacturers : data.data}))
+                .catch(error=>this.setState({ submitSuccess: false, submitFail: true, errorMessage : error.response.data.message }));
+            axios.get(apiConfig.host + apiConfig.port + `/api/board`, this.props.session.headers)
+                .then(data => this.setState({models : data.data}))
+                .catch(error=>this.setState({ submitSuccess: false, submitFail: true, errorMessage : error.response.data.message }));
         } else {
                 this.props.history.push('/');
         }
@@ -59,7 +66,7 @@ class Create extends React.Component{
           })
         this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
         if (this.props.session.isLoggedIn && this.props.session.isAdmin) {
-            axios.post(apiConfig.host + apiConfig.port + `/api/board`, formData, this.state.headers)
+            axios.post(apiConfig.host + apiConfig.port + `/api/board`, formData, this.props.session.headers)
             .then(data => [
                 setTimeout(() => {
                     this.props.history.push('/board');
@@ -128,10 +135,8 @@ class Create extends React.Component{
                             { errorMessage }
                         </div>
                         )}               
-                        <BoardForm board={this.state.board} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading} >
-                    
+                        <BoardForm board={this.state.board} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading} manufacturers={this.state.manufacturers} models = {this.state.models} >
                                 {content()}
-                            
                         </BoardForm>
                     </div>
                 </FormCard>

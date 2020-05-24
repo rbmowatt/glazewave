@@ -1,14 +1,13 @@
 const { Router } = require('express');
-const multer  = require('multer');
-let upload = multer();
+let upload = require('./../services/images/upload');
 const BaseService = require('./../services/SessionService');
+const SessionImageService  = require('./../services/SessionImageService');
 const EntityType = 'Session';
 
 const router = new Router();
 
 router.get('/', function (req, res) {
-  console.log('with', req.parser.with);
-  BaseService.make().where([],req.parser.with, [], [], req.parser.limit, req.parser.page)
+  BaseService.make().where( req.query ,req.parser.with, [], [], req.parser.limit, req.parser.page)
     .then(data => {
       res.send(data);
     })
@@ -35,7 +34,7 @@ router.get('/:id', function (req, res) {
 });
 
 
-router.post('/', upload.fields([]), function (req, res) {
+router.post('/', upload.single('photo'), function (req, res) {
   // Validate request
   console.log('req.body', req.body);
   if (!req.body.title) {
@@ -46,6 +45,10 @@ router.post('/', upload.fields([]), function (req, res) {
   }
   BaseService.make().create(req.body)
     .then(data => {
+      if(req.file && req.file.key){
+        const imgObj = { user_id : req.body.user_id, session_id : data.id, name : req.file.key, is_public : 0, is_default : 1};
+        SessionImageService.make().create(imgObj)
+      }
       res.send(data);
     })
     .catch(err => {
@@ -56,7 +59,7 @@ router.post('/', upload.fields([]), function (req, res) {
     });
 });
 
-router.put('/:id', function (req, res) {
+router.put('/:id', upload.single('photo'),function (req, res) {
   BaseService.make().update(req.params.id, req.body)
     .then(num => {
       if (num == 1) {

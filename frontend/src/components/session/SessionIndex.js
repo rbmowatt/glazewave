@@ -1,13 +1,11 @@
+import 'react-confirm-alert/src/react-confirm-alert.css'; 
 import React, { Component } from 'react'
+import { confirmAlert } from 'react-confirm-alert';
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom';
-import axios from 'axios';
-import apiConfig from '../../config/api.js';
 import { MainContainer } from './../layout/MainContainer';
+import SessionRequests from './../../requests/SessionRequests';
 import SessionRow from './SessionRow';
-import { confirmAlert } from 'react-confirm-alert'; // Import
-import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
-
 
 const mapStateToProps = state => {
     return { session: state.session }
@@ -20,14 +18,13 @@ class SessionIndex extends Component {
         this.deleteSession = this.deleteSession.bind(this);
         this.editSession = this.editSession.bind(this);
         this.viewSession = this.viewSession.bind(this);
+        this.sessionRequest = new SessionRequests(this.props.session);
     }
 
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
             this.setState({ isAdmin : this.props.session.isAdmin });
-            const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
-            this.setState({headers});
-            axios.get( apiConfig.host + apiConfig.port + `/api/session`, headers).then(data => {
+            this.sessionRequest.get([], ['SessionImage']).then(data => {
                 data.data.sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0));
                 this.setState({ sessions: data.data })
             });
@@ -42,7 +39,7 @@ class SessionIndex extends Component {
               {
                 label: 'Yes',
                 onClick: () => {
-                    axios.delete(apiConfig.host + apiConfig.port + `/api/session/${id}`, this.state.headers).then(data => {
+                    this.sessionRequest.deleteSession(id).then(data => {
                         const index = this.state.sessions.findIndex(session => session.id === id);
                         this.state.sessions.splice(index, 1);
                         this.props.history.push('/session');
@@ -70,7 +67,7 @@ class SessionIndex extends Component {
         return (
             <MainContainer>
                 <div className="row">
-                    <div className="card mx-auto">
+                    <div className="card card-lg mx-auto">
                         <div className="card-title"><h2>Sessions
                         { this.state.isAdmin &&  <Link to={'session/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New Session</Link>}
                         </h2>

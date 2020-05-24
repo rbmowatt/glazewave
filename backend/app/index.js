@@ -1,31 +1,24 @@
 const express = require('express');
+const app = express();
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const app = express();
 const appConfig = require('./config/app');
 const cognitoConfig = require('./config/cognito');
 const cognitoAuth = require('./lib/cognitoAuth');
-const cognitoAuthMiddleware = cognitoAuth.getVerifyMiddleware();
 const boardRouter = require('./routes/board');
 const cityRouter = require('./routes/city');
+const cognitoRouter = require('./routes/cognito');
 const locationRouter = require('./routes/location');
 const manufacturerRouter = require('./routes/manufacturer');
 const recipeRouter = require('./routes/recipe');
 const sessionRouter = require('./routes/session');
 const userRouter = require('./routes/user');
+const userBoardRouter = require('./routes/user_boards');
+const cognitoAuthMiddleware = cognitoAuth.getVerifyMiddleware();
+const queryParser = require('./middleware/QueryParser');
 
-const queryParser = function (req, res, next) {
-  const reservedKeys = ['with', 'page', 'limit'];
-  let parser = {
-    with : req.query.with || [],
-    limit : parseInt(req.query.limit) || 20,
-  };
-  parser.page = (parseInt(req.query.page) || 0) * parser.limit
-  req.parser = parser;
-  next()
-}
 
 app.use(queryParser);
 app.use(logger('dev'));
@@ -33,13 +26,16 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors({'origin': [cognitoConfig.signoutUri, appConfig.clientUrl ]}));
+app.use('/api/user', userRouter);
 app.use('/api/board', boardRouter);
 app.use('/api/city', cityRouter);
+app.use('/api/cognito', cognitoAuthMiddleware, cognitoRouter);
 app.use('/api/location', locationRouter);
 app.use('/api/manufacturer', manufacturerRouter);
 app.use('/api/recipe', recipeRouter);
 app.use('/api/session', sessionRouter);
-app.use('/api/user', cognitoAuthMiddleware, userRouter);
+app.use('/api/user_board', userBoardRouter);
+
 
 app.get('/', function (req, res) {
     res.send({ title: "Users API Entry Point" })

@@ -1,0 +1,142 @@
+[
+    {
+      "name": "the kangaroo",
+      "rating": 4,
+      "user_id": 1,
+      "location_id": 17,
+      "notes": "Nostrud deserunt anim tempor minim magna cillum voluptate dolor esse id magna consectetur mollit nisi."
+    },
+    {
+      "name": "hot potato",
+      "rating": 9,
+      "user_id": 2,
+      "location_id": 2,
+      "notes": "Nostrud dolore nisi pariatur elit non."
+    },
+    {
+      "name": "the kangaroo",
+      "rating": 2,
+      "user_id": 1,
+      "location_id": 32,
+      "notes": "Est Lorem aliquip aliqua non veniam do laborum sint do officia incididunt mollit nostrud irure."
+    },
+    {
+      "name": "my favorite",
+      "rating": 3,
+      "user_id": 3,
+      "location_id": 26,
+      "notes": "Reprehenderit amet voluptate do cupidatat qui."
+    },
+    {
+      "name": "joey",
+      "rating": 7,
+      "user_id": 2,
+      "location_id": 31,
+      "notes": "Reprehenderit cupidatat tempor proident aliqua occaecat."
+    },
+    {
+      "name": "the wavinator",
+      "rating": 9,
+      "user_id": 5,
+      "location_id": 30,
+      "notes": "Lorem duis culpa Lorem ad et ea velit est."
+    },
+    {
+      "name": "wavemaster 3000",
+      "rating": 9,
+      "user_id": 2,
+      "location_id": 19,
+      "notes": "Magna aliqua et exercitation incididunt ut anim et labore do elit culpa."
+    },
+    {
+      "name": "the kangaroo",
+      "rating": 4,
+      "user_id": 4,
+      "location_id": 10,
+      "notes": "Sint commodo id eiusmod incididunt labore qui."
+    },
+    {
+      "name": "the kangaroo",
+      "rating": 7,
+      "user_id": 3,
+      "location_id": 23,
+      "notes": "Do ut pariatur excepteur commodo officia."
+    },
+    {
+      "name": "my favorite",
+      "rating": 6,
+      "user_id": 2,
+      "location_id": 18,
+      "notes": "Eiusmod ipsum consectetur esse duis."
+    },
+    {
+      "name": "wavemaster 3000",
+      "rating": 4,
+      "user_id": 2,
+      "location_id": 31,
+      "notes": "Aliqua qui laboris labore occaecat ex adipisicing excepteur quis officia consectetur."
+    },
+    {
+      "name": "hot potato",
+      "rating": 6,
+      "user_id": 1,
+      "location_id": 13,
+      "notes": "Aliqua ut qui consequat non elit occaecat pariatur quis."
+    },
+    {
+      "name": "the kangaroo",
+      "rating": 6,
+      "user_id": 4,
+      "location_id": 15,
+      "notes": "Deserunt voluptate duis nostrud excepteur adipisicing anim ad ex nisi mollit est pariatur magna nulla."
+    },
+    {
+      "name": "the kangaroo",
+      "rating": 9,
+      "user_id": 4,
+      "location_id": 15,
+      "notes": "Lorem quis sint occaecat reprehenderit fugiat consequat."
+    },
+    {
+      "name": "wavemaster 3000",
+      "rating": 4,
+      "user_id": 2,
+      "location_id": 6,
+      "notes": "Ad exercitation tempor aliqua est velit pariatur excepteur laboris eu eu consectetur consectetur."
+    },
+    {
+      "name": "bailer",
+      "rating": 8,
+      "user_id": 4,
+      "location_id": 18,
+      "notes": "Nostrud proident eiusmod ut deserunt elit ea laboris cupidatat excepteur occaecat ut tempor id incididunt."
+    },
+    {
+      "name": "bailer",
+      "rating": 1,
+      "user_id": 3,
+      "location_id": 13,
+      "notes": "Enim magna laboris excepteur elit ex fugiat officia ipsum in et ea sint proident."
+    },
+    {
+      "name": "best for summer",
+      "rating": 9,
+      "user_id": 4,
+      "location_id": 24,
+      "notes": "Adipisicing minim eu minim officia laborum commodo nisi irure sint ipsum amet elit."
+    },
+    {
+      "name": "bailer",
+      "rating": 8,
+      "user_id": 2,
+      "location_id": 35,
+      "notes": "Adipisicing nisi laborum do excepteur nostrud irure sint laborum."
+    },
+    {
+      "name": "joey",
+      "rating": 6,
+      "user_id": 1,
+      "location_id": 1,
+      "notes": "Quis aute non sint non ea Lorem nisi nisi est commodo laboris mollit exercitation aute."
+    }
+  ]
