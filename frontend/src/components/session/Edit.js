@@ -5,6 +5,7 @@ import apiConfig from '../../config/api.js';
 import { MainContainer } from './../layout/MainContainer';
 import {FormCard} from './../layout/FormCard';
 import { SessionForm } from './SessionForm';
+import SessionRequests from './../../requests/SessionRequests';
 
 const TITLE = "Edit Session";
 const mapStateToProps = state => {
@@ -24,13 +25,12 @@ class EditSession extends React.Component{
             errorMessage : null,
             headers : {}
         }
+        this.sessionRequest = new SessionRequests(this.props.session);
     }
 
     componentDidMount() {
         if (this.props.session.isLoggedIn) {
-            const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
-            this.setState({headers});
-            axios.get(apiConfig.host + apiConfig.port + `/api/session/${this.state.id}`, headers).then(data => {
+            axios.get(apiConfig.host + apiConfig.port + `/api/session/${this.state.id}`, this.props.session.headers).then(data => {
                 const session = data.data;
                 this.setState({ session});
             })
@@ -41,8 +41,7 @@ class EditSession extends React.Component{
     processFormSubmission = async (e) => {
         e.preventDefault();
         this.setState({ loading: true });
-       
-        axios.put(apiConfig.host + apiConfig.port + `/api/session/${this.state.id}`, this.state.values, this.state.headers).then(data => {
+        this.sessionRequest.update(this.state.id, this.state.values).then(data => {
             this.setState({ submitSuccess: true, loading: false })
             setTimeout(() => {
                 this.props.history.push('/session');
@@ -69,7 +68,7 @@ class EditSession extends React.Component{
 
     returnToIndex = e =>
     {
-      this.props.history.push('/session');
+        this.props.history.push('/user/dashboard');
     }
 
 

@@ -42,7 +42,7 @@ class Create extends React.Component{
                 Authorization: `Bearer ${this.props.session.credentials.accessToken}`,
                 'content-type': 'multipart/form-data'
             }};
-            this.setState({headers});
+            
         } else {
                 this.props.history.push('/');
         }
@@ -59,7 +59,7 @@ class Create extends React.Component{
           })
         this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
         if (this.props.session.isLoggedIn && this.props.session.isAdmin) {
-            axios.post(apiConfig.host + apiConfig.port + `/api/location`, formData, this.state.headers)
+            axios.post(apiConfig.host + apiConfig.port + `/api/location`, formData, this.props.session.headers)
             .then(data => [
                 setTimeout(() => {
                     this.props.history.push('/location');

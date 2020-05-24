@@ -25,9 +25,9 @@ class BoardIndex extends Component {
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
             this.setState({ isAdmin : this.props.session.isAdmin });
-            const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
-            this.setState({headers});
-            axios.get( apiConfig.host + apiConfig.port + `/api/board`, headers).then(data => {
+            
+            
+            axios.get( apiConfig.host + apiConfig.port + `/api/board`, this.props.session.headers).then(data => {
                 data.data.sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0));
                 this.setState({ boards: data.data })
             });
@@ -42,7 +42,7 @@ class BoardIndex extends Component {
               {
                 label: 'Yes',
                 onClick: () => {
-                    axios.delete(apiConfig.host + apiConfig.port + `/api/board/${id}`, this.state.headers).then(data => {
+                    axios.delete(apiConfig.host + apiConfig.port + `/api/board/${id}`, this.props.session.headers).then(data => {
                         const index = this.state.boards.findIndex(board => board.id === id);
                         this.state.boards.splice(index, 1);
                         this.props.history.push('/board');
@@ -70,7 +70,7 @@ class BoardIndex extends Component {
         return (
             <MainContainer>
                 <div className="row">
-                    <div className="card mx-auto">
+                    <div className="card card-lg mx-auto">
                         <div className="card-title"><h2>Boards
                         { this.state.isAdmin &&  <Link to={'board/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New Board</Link>}
                         </h2>

@@ -4,6 +4,9 @@ import { config as AWSConfig } from 'aws-sdk'
 import { cognitoConfig } from '../../config/cognito.js'
 import { clearSession, setSessionCookie } from './session';
 import { SET_SESSION } from './../../actions/types';
+import apiConfig from '../../config/api.js';
+const axios = require('axios');
+
 
 
 // Initialise the Cognito sesson from a callback href
@@ -79,23 +82,36 @@ const getCognitoSession = () => {
         reject(new Error('Failure getting Cognito session: ' + err))
         return
       }
+
+     
+
       // Resolve the promise with the session credentials
-      const session = {
-        credentials: {
-          accessToken: result.accessToken.jwtToken,
-          idToken: result.idToken.jwtToken,
-          refreshToken: result.refreshToken.token
-        },
-        user: {
-          userName: result.idToken.payload['cognito:username'],
-          email: result.idToken.payload.email
-        },
-        groups : result.idToken.payload['cognito:groups'],
-        isAdmin : result.idToken.payload['cognito:groups'] instanceof Array && result.idToken.payload['cognito:groups'].indexOf('Admin') !== -1,
-        expiration : result.accessToken.payload.exp,
-        isLoggedIn : true
-      }
-      resolve(session)
+    
+
+      axios.get( apiConfig.host + apiConfig.port + `/api/user?username=` + result.idToken.payload['cognito:username']).then(data => {
+        console.log('getting new session', data.data[0]);
+        const session = {
+          credentials: {
+            //accessToken: result.accessToken.jwtToken,
+            //idToken: result.idToken.jwtToken,
+            refreshToken: result.refreshToken.token
+          },
+          user: {
+            //id : data.data[0].id,
+            userName: result.idToken.payload['cognito:username'],
+            email: result.idToken.payload.email
+          },
+          headers: `Authorization: Bearer ${result.accessToken.jwtToken}`,
+          groups : result.idToken.payload['cognito:groups'],
+          isAdmin : result.idToken.payload['cognito:groups'] instanceof Array && result.idToken.payload['cognito:groups'].indexOf('Admin') !== -1,
+          expiration : result.accessToken.payload.exp,
+          isLoggedIn : true
+        }
+        session.user = {...session.user, ...data.data[0]};
+        resolve(session);
+      });     
+
+     
     })
   })
 }

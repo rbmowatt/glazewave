@@ -1,29 +1,24 @@
 import * as React from 'react';
-import { connect } from 'react-redux'
-import axios from 'axios';
-import apiConfig from '../../config/api.js';
-import Spinner from './../helpers/image/Spinner'
-import Images from './../helpers/image/Images'
-import Buttons from './../helpers/image/Buttons'
-import { MainContainer } from './../layout/MainContainer';
+import { connect } from 'react-redux';
 import {FormCard} from './../layout/FormCard';
+import { MainContainer } from './../layout/MainContainer';
 import { SessionForm } from './SessionForm';
-
-
-const TITLE="Create Session";
+import Buttons from './../helpers/image/Buttons'
+import Images from './../helpers/image/Images'
+import SessionRequests from './../../requests/SessionRequests';
+import UserBoardRequests from './../../requests/UserBoardRequests';
+import Spinner from './../helpers/image/Spinner'
 
 const mapStateToProps = state => {
     return { session: state.session }
   }
+  const TITLE = 'Create A Session';
 
 class Create extends React.Component{
     constructor(props ) {
         super(props);
         this.state = {
-            rating: 5,
-            is_public : 0,
-            name: '',
-            submitted_by: '',
+            rating: 5, is_public : 0, name: '', 
             session: '',
             values: [],
             loading: false,
@@ -31,20 +26,20 @@ class Create extends React.Component{
             submitFail: false,
             errorMessage : null,
             images : [],
-            headers : {}
+            headers : {},
+            boards : []
         }
+        this.sessionRequest = new SessionRequests(this.props.session);
+        this.userBoardRequest = new UserBoardRequests(this.props.session);
     }
 
     componentDidMount(){
-        if (this.props.session.isLoggedIn) {
-            const headers = { headers: { 
-                Authorization: `Bearer ${this.props.session.credentials.accessToken}`,
-                'content-type': 'multipart/form-data'
-            }};
-            this.setState({headers});
-        } else {
-                this.props.history.push('/');
+        if (!this.props.session.isLoggedIn) {
+            this.props.history.push('/');
         }
+        this.userBoardRequest.get({ user_id : this.props.session.user.id}).then(data=>{
+            this.setState({ boards : data.data }); 
+        })
     }
     
     processFormSubmission = (e)=> {
@@ -54,14 +49,14 @@ class Create extends React.Component{
         formData.append('is_public', this.state.is_public);
         formData.append('rating' , this.state.rating);
         formData.append('title' , this.state.name);
-        //formData.append( 'session', this.state.session);
-        formData.append('submitted_by' , this.props.session.user.userName);
+        formData.append( 'session', this.state.notes);
+        formData.append('user_id' , this.props.session.user.id);
         this.state.images.forEach((file, i) => {
             formData.append('photo', file)
           })
         this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
         if (this.props.session.isLoggedIn && this.props.session.isAdmin) {
-            axios.post(apiConfig.host + apiConfig.port + `/api/session`, formData, this.state.headers)
+            this.sessionRequest.create(formData)
             .then(data => [
                 setTimeout(() => {
                     this.props.history.push('/session');
@@ -95,11 +90,11 @@ class Create extends React.Component{
 
       returnToIndex = e =>
       {
-        this.props.history.push('/session');
+        this.props.history.push('/user/dashboard');
       }
 
     render() {
-        const { submitSuccess, submitFail, loading, errorMessage, uploading, images } = this.state;
+        const { submitSuccess, submitFail, loading, errorMessage, uploading, images, boards } = this.state;
         const content = () => {
             switch(true) {
               case uploading:
@@ -117,7 +112,7 @@ class Create extends React.Component{
                         <h2>{TITLE}</h2>
                         {!submitSuccess && (
                         <div className="alert alert-info" role="alert">
-                            Fill the form below to create a new post
+                            Fill the form below to create a new session
                         </div>
                         )}
                         {submitSuccess && (
@@ -130,7 +125,7 @@ class Create extends React.Component{
                             { errorMessage }
                         </div>
                         )}               
-                        <SessionForm session={this.state.session} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading} >
+                        <SessionForm session={this.state.session} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading}  boards={boards}>
                     
                                 {content()}
                             

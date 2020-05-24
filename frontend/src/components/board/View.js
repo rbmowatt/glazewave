@@ -19,9 +19,9 @@ class BoardView extends Component {
 
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
-            const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
-            this.setState({headers});
-            axios.get( apiConfig.host + apiConfig.port + `/api/board/` + this.props.match.params.id, this.state.headers).then(data => {
+            
+            
+            axios.get( apiConfig.host + apiConfig.port + `/api/board/` + this.props.match.params.id, this.props.session.headers).then(data => {
                 ((!this.props.session.isAdmin && !data.data[0].isPublic) || data.data.length === 0) ? this.props.history.push('/board') : this.setState({ session: data.data });
             })
             .catch(error=>this.props.history.push('/board'));

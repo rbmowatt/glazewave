@@ -49,7 +49,7 @@ class Cognito {
             UserPoolId: cognitoConfig.userPool
         }
         return new Promise((resolve, reject) => {
-        console.log('params', params);
+        console.log('config', cognitoidentityserviceprovider );
         cognitoidentityserviceprovider.listUsers(params, function (error, response)
         {
             if (error) return reject(error);

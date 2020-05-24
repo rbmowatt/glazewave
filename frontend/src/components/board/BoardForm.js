@@ -1,8 +1,31 @@
 import React from 'react';
 
 export const BoardForm = props =>{
+    console.log('mfg', props.manufacturers);
     return (
         <form className="row" id="create-post-form" onSubmit={props.processFormSubmission} noValidate={true}>
+        <div className="form-group col-md-12">
+            <label htmlFor="model">Name</label>
+            <input type="text" id="model" defaultValue={props.board.model} onChange={(e) => props.handleInputChanges(e)} name="model" className="form-control" placeholder="Give your Board a Nickname" />
+        </div>
+        <div className="form-group col-md-12">
+            <label htmlFor="rating"> Manufacturer/Shaper
+            <select  onChange={(e) => props.handleInputChanges(e)} id="manufacturer_id" name="manufacturer_id" className="form-control">
+                {props.manufacturers.map((obj) => {
+                     return <option prop={obj.name} value={obj.id}>{obj.name}</option>
+                 })}
+            </select>
+            </label>
+        </div>
+        <div className="form-group col-md-12">
+            <label htmlFor="rating"> Model
+            <select  onChange={(e) => props.handleInputChanges(e)} id="manufacturer_id" name="manufacturer_id" className="form-control">
+                {props.models.map((obj) => {
+                     return <option prop={obj.model} value={obj.id}>{obj.model}</option>
+                 })}
+            </select>
+            </label>
+        </div>
         <div className="form-group col-md-12">
             <label htmlFor="rating"> What would you rate this Board on a scale of 1-10?
             <select value={props.board.rating} onChange={(e) => props.handleInputChanges(e)} id="rating" name="rating" className="form-control">
@@ -26,10 +49,6 @@ export const BoardForm = props =>{
             <option value="1">Public</option>
             </select>
             </label>
-        </div>
-        <div className="form-group col-md-12">
-            <label htmlFor="model"> Model </label>
-            <input type="text" id="model" defaultValue={props.board.model} onChange={(e) => props.handleInputChanges(e)} name="model" className="form-control" placeholder="Board Model" />
         </div>
         { props.children && 
             <div className="form-group col-md-12">

@@ -5,7 +5,6 @@ module.exports = {
       id: {
         type: Sequelize.INTEGER(11).UNSIGNED,
         primaryKey: true,
-        defaultValue: Sequelize.UUIDV4,
         allowNull: false,
         autoIncrement: true,
       },

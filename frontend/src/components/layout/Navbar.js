@@ -17,6 +17,11 @@ const Navbar = props =>{
           <div className="collapse navbar-collapse" id="navbarCollapse">
               <div className="navbar-nav">
               <a className="navbar-brand" href="/"><img src="https://umanage-mowatr.s3.amazonaws.com/bake_n_flake_logo.png" alt="bake n flake bakery" height="50" width="50"/></a>
+              {(props.session.isLoggedIn ) &&
+                          <Link className="nav-link" to={'/user/dashboard'}>
+                          My Memo</Link>
+                      }
+ 
                 {props.session.isLoggedIn && props.session.isAdmin && 
                           <Link className="nav-link" to={'/user'}>
                           Users</Link>
@@ -32,6 +37,10 @@ const Navbar = props =>{
                 {(props.session.isLoggedIn ) &&
                           <Link className="nav-link" to={'/location'}>
                           Spots</Link>
+                      }
+                {(props.session.isLoggedIn ) &&
+                          <Link className="nav-link" to={'/manufacturer'}>
+                          Brands</Link>
                       }
 
               </div>

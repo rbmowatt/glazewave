@@ -35,6 +35,11 @@ class BaseService {
     })});
   }
 
+  async upsert(params, callback = null)
+  {
+    return await this.validatePost(params).then(data=>{return this.BaseModel.upsert(params)});
+  }
+
   async delete( id )
   {    
     return this.BaseModel.destroy({

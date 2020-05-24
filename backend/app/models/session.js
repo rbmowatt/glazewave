@@ -12,11 +12,12 @@ module.exports = (sequelize, DataTypes) => {
     is_public: DataTypes.BOOLEAN,
     board_id: DataTypes.INTEGER,
     location_id: DataTypes.INTEGER,
-    created_by: DataTypes.INTEGER
+    user_id: DataTypes.INTEGER
   }, {underscored: true});
   Session.associate = function(models) {
     Session.belongsTo(models.Board);
     Session.belongsTo(models.Location);
+    Session.hasMany(models.SessionImage);
   };
   return Session;
 };

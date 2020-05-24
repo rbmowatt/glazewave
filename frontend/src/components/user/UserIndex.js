@@ -24,10 +24,7 @@ class UserIndex extends Component {
 
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
-            const headers = { headers: { Authorization: `Bearer ${this.props.session.credentials.accessToken}`}};
-            this.setState({ headers});
-            
-            axios.get( apiConfig.host + apiConfig.port + `/api/user`, headers).then(data => {
+            axios.get( apiConfig.host + apiConfig.port + `/api/user`, this.props.session.headers).then(data => {
                 data.data.sort((a,b) => (a.Username > b.Username) ? 1 : ((b.Username > a.Username) ? -1 : 0));
                 this.setState({ users: data.data })
             });
@@ -42,7 +39,7 @@ class UserIndex extends Component {
               {
                 label: 'Yes',
                 onClick: () => {
-                    axios.delete(apiConfig.host + apiConfig.port + `/api/user/${id}`, this.state.headers).then(data => {
+                    axios.delete(apiConfig.host + apiConfig.port + `/api/user/${id}`, this.props.session.headers).then(data => {
                         const index = this.state.users.findIndex(user => user.Username === id);
                         this.state.users.splice(index, 1);
                         this.props.history.push('/user');
@@ -66,7 +63,7 @@ class UserIndex extends Component {
         return (
            <MainContainer>
                <div className="row">
-                    <div className="card mx-auto">
+                    <div className="card card-lg mx-auto">
                         <div className="card-title">
                            <h2> <strong>Users</strong> <Link to={'user/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New User</Link></h2>
                         </div>
