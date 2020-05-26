@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { connect } from 'react-redux'
-import axios from 'axios';
-import apiConfig from '../../config/api.js';
 import Spinner from './../helpers/image/Spinner'
 import Images from './../helpers/image/Images'
 import Buttons from './../helpers/image/Buttons'
-import { MainContainer } from './../layout/MainContainer';
 import {FormCard} from './../layout/FormCard';
-import { UserBoardForm } from './UserBoardForm';
-import BoardRequests from './../../requests/BoardRequests';
+import  UserBoardForm  from './UserBoardForm';
+import { withRouter} from 'react-router-dom';
+
+import UserBoardRequests from './../../requests/UserBoardRequests';
+import ImageUpload from './../layout/ImageUpload';
 
 
 const TITLE="Create Board";
@@ -21,26 +21,20 @@ class CreateUserBoard extends React.Component{
     constructor(props ) {
         super(props);
         this.state = {
-            name : '', size : '', rating: 1,
             values: [],
-            loading: false,
             submitSuccess: false,
             submitFail: false,
             errorMessage : null,
             images : [],
-            board : {}, boards : []
+            board : {}
         }
-        this.boardRequest = new BoardRequests(this.props.session);
+        this.userBoardRequest = new UserBoardRequests(this.props.session);
     }
 
     componentDidMount(){
-        if (this.props.session.isLoggedIn) {
-            this.boardRequest.get()
-                .then(data => this.setState({boards : data.data}))
-                .catch(error=>this.setState({ submitSuccess: false, submitFail: true, errorMessage : error.response.data.message }));
-        } else {
-                this.props.history.push('/');
-        }
+        if (!this.props.session.isLoggedIn) {
+            this.props.history.push('/');
+        } 
     }
     
     processFormSubmission = (e)=> {
@@ -52,13 +46,14 @@ class CreateUserBoard extends React.Component{
         formData.append('user_id' , this.props.session.user.id);
         this.state.images.forEach((file, i) => {
             formData.append('photo', file)
-          })
+        })
+
         this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
-        if (this.props.session.isLoggedIn && this.props.session.isAdmin) {
-            axios.post(apiConfig.host + apiConfig.port + `/api/user/board`, formData, {...this.state.headers, ...{'content-type': 'multipart/form-data'}})
+        if (this.props.session.isLoggedIn) {
+            this.userBoardRequest.create(formData, {'content-type': 'multipart/form-data'})
             .then(data => [
-                setTimeout(() => {
-                    this.props.history.push('/board');
+                setTimeout((e) => {
+                    this.props.onSuccess();
                 }, 1500)
             ])
             .catch(
@@ -76,9 +71,9 @@ class CreateUserBoard extends React.Component{
         })
     }
 
-    onChange = e => {
+    onImageUploaded = e => {
         const files = Array.from(e.target.files)
-        this.setState({ uploading: false , images : files});
+        this.setState({ images : files});
     }
     
     removeImage = id => {
@@ -103,9 +98,8 @@ class CreateUserBoard extends React.Component{
               default:
                 return <Buttons onChange={this.onChange} />
             }
-          }
+        }
         return (
-            <MainContainer>
                 <FormCard returnToIndex={this.returnToIndex}>
                     <div className="col-md-12 ">
                         <h2>{TITLE}</h2>
@@ -124,14 +118,13 @@ class CreateUserBoard extends React.Component{
                             { errorMessage }
                         </div>
                         )}               
-                        <UserBoardForm boards={this.state.boards}  board={this.state.board} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading} manufacturers={this.state.manufacturers} models = {this.state.models} >
-                                {content()}
+                        <UserBoardForm board={this.state.board} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading} >
+                                <ImageUpload onImageUploaded={this.onImageUploaded} />
                         </UserBoardForm>
                     </div>
                 </FormCard>
-            </MainContainer>
         )
     }
 }
 
-export default connect(mapStateToProps)(CreateUserBoard);
+export default connect(mapStateToProps)(withRouter(CreateUserBoard));

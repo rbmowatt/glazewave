@@ -16,8 +16,9 @@ class BaseRequest {
         return axios.get( this.getEndpoint() + `/` + entityId + `?` + this.getWithString(withs), this.session.headers);
     }
 
-    create = (data) => {
-        return axios.post(this.getEndpoint() , data , this.session.headers)
+    create = (data, hdrs = {}) => {
+        const headers = {...this.session.headers, ...hdrs};
+        return axios.post(this.getEndpoint() , data , headers)
     }
 
     delete  = (entityId) =>

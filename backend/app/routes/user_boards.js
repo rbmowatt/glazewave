@@ -37,12 +37,6 @@ router.get('/:id', function (req, res) {
 router.post('/', upload.single('photo'), function (req, res) {
   // Validate request
   console.log('req.body', req.body);
-  if (!req.body.title) {
-    res.status(400).send({
-      message: "Content can not be empty!"
-    });
-    return;
-  }
   BaseService.make().create(req.body)
     .then(data => {
       if(req.file && req.file.key){
