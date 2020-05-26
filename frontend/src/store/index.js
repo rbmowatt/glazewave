@@ -1,6 +1,7 @@
 import { createStore, applyMiddleware, compose } from 'redux'
 import rootReducer from '../reducers'
 import thunk from 'redux-thunk'
+import api from './../middleware/api';
 require('dotenv').config()
 
 const storeEnhancers =
@@ -10,7 +11,7 @@ const storeEnhancers =
   compose;
 
 const store = createStore(rootReducer,
-  storeEnhancers(applyMiddleware(thunk))
+  storeEnhancers(applyMiddleware(thunk, api))
 )
 
 export default store

@@ -8,12 +8,22 @@ class BaseRequest {
         this.session = session;
     }
 
-    get = (wheres = {} , withs = []) => {
-        return axios.get( this.getEndpoint() + `?` + this.getWhereString(wheres) + `&` + this.getWithString(withs), this.session.headers);
+    get = ({ wheres = [], withs = [], limit = 20, page = 0, label = '', onSuccess = ()=>{}, onFailure = (e)=>this.onFailure(e) }) => {
+        return this.apiAction({
+            url :this.getEndpoint() + `?` + this.getWhereString(wheres) + `&` + this.getWithString(withs),
+            onSuccess : onSuccess,
+            onFailure : onFailure,
+            label : label
+        });
     }
 
-    getOne = (entityId, withs = []) => {
-        return axios.get( this.getEndpoint() + `/` + entityId + `?` + this.getWithString(withs), this.session.headers);
+    getOne = ({ id = null, withs = [], label = '', onSuccess = ()=>{}, onFailure = (e)=>this.onFailure(e) }) => {
+        return this.apiAction({
+            url :this.getEndpoint() + `/` + id+ `?` + this.getWithString(withs),
+            onSuccess : onSuccess,
+            onFailure : onFailure,
+            label : label
+        });
     }
 
     create = (data, hdrs = {}) => {
@@ -35,7 +45,7 @@ class BaseRequest {
     }
 
     getEndpoint = () => {
-        return this.getHost() + this.endpoint;
+        return this.endpoint;
     }
 
     getWithString = ( withs ) => {
@@ -50,6 +60,35 @@ class BaseRequest {
     {
         return querystring.stringify(wheres);
     }
+
+    onFailure = (error) =>{
+        console.log('error', error);
+    }
+
+    apiAction = ({
+        url = "",
+        method = "GET",
+        data = null,
+        accessToken = null,
+        onSuccess = () => {},
+        onFailure = () => {},
+        label = "",
+        headersOverride = null
+      }) => {
+        return {
+          type: "API",
+          payload: {
+            url,
+            method,
+            data,
+            accessToken,
+            onSuccess,
+            onFailure,
+            label,
+            headersOverride
+          }
+        };
+      }
 }
 
 export default BaseRequest;

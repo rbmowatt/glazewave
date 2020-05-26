@@ -2,16 +2,30 @@ import React from 'react';
 import Modal from './../layout/Modal';
 import { connect } from 'react-redux';
 import CreateUserBoard from  './../board/CreateUserBoard';
+import UserBoardRequests from './../../requests/UserBoardRequests';
 
 const mapStateToProps = state => {
-    return { session: state.session }
+    return { session: state.session, boards : state.user_boards }
   }
+
+  const mapDispachToProps = dispatch => {
+    return {
+        loadBoards: (request, session) => dispatch( request.get({label : 'LOAD_USER_BAORDS',  wheres : {user_id : session.user.id }, withs : ['Board'], onSuccess : (data)=>{ return {type: "SET_USER_BOARDS", payload: data}}})),
+        };
+  };
 
 class SessionForm extends React.Component{
     constructor(props)
     {
         super(props);
         this.state = {show:false}
+    }
+
+    componentDidMount() {
+        if (this.props.session.isLoggedIn) {
+            if(!this.props.boards.length)
+            this.props.loadBoards(new UserBoardRequests(this.props.session), this.props.session );
+        }
     }
 
     showModal = () => {
@@ -85,4 +99,4 @@ class SessionForm extends React.Component{
     }
 }
 
-export default connect(mapStateToProps)(SessionForm);
+export default connect(mapStateToProps, mapDispachToProps)(SessionForm);
