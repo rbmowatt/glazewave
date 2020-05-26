@@ -7,27 +7,24 @@ import StarBar from './../layout/StarBar';
 import SessionRequests from './../../requests/SessionRequests';
 
 const mapStateToProps = state => {
-    return { session: state.session }
+    return { session: state.session, current_session : state.user_session }
   }
 
+  const mapDispachToProps = dispatch => {
+    return {
+      loadSession: (request, session) => dispatch( request.getOne({label : 'LOAD_USER_SESSION', id : session.user.id ,  withs : ['SessionImage'], onSuccess : (data)=>{ return { type: "SET_USER_SESSION", payload: data}}})),
+    };
+  };
+
 class SessionView extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { session: { SessionImages : [] } , headers : {} }
-        this.sessionRequest = new SessionRequests(this.props.session);
-    }
 
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
-            this.sessionRequest.getOne(this.props.match.params.id, ['SessionImage']).then(data => {
-                ((!this.props.session.isAdmin && !data.data[0].isPublic) || data.data.length === 0) ? this.props.history.push('/session') : this.setState({ session: data.data });
-            })
-            .catch(error=>this.props.history.push('/session'));
+            this.props.loadSession(new SessionRequests(this.props.session), this.props.session );
         }
-        if(this.state.session === [])
-        {
+       else{
             this.props.history.push('/session');
-        }
+       }
     }
 
     returnToIndex = e =>
@@ -36,7 +33,7 @@ class SessionView extends Component {
     }
 
     render() {
-        const session = this.state.session;
+        const session = this.props.current_session;
         const pic = (!session.SessionImages || session.SessionImages.length === 0 || session.SessionImages[0].name == null) ? 'no_photo.jpg' : session.SessionImages[0].name;
         return (
             <MainContainer>
@@ -65,4 +62,4 @@ class SessionView extends Component {
         )
     }
 }
-export default connect(mapStateToProps)(SessionView)
+export default connect(mapStateToProps, mapDispachToProps )(SessionView)

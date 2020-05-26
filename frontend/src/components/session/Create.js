@@ -12,7 +12,7 @@ import Spinner from './../helpers/image/Spinner';
 import Modal from './../layout/Modal';
 
 const mapStateToProps = state => {
-    return { session: state.session }
+    return { session: state.session, boards:state.user_boards }
   }
   const TITLE = 'Create A Session';
 
@@ -48,9 +48,9 @@ class Create extends React.Component{
         if (!this.props.session.isLoggedIn) {
             this.props.history.push('/');
         }
-        this.userBoardRequest.get({ user_id : this.props.session.user.id}).then(data=>{
-            this.setState({ boards : data.data }); 
-        })
+       // this.userBoardRequest.get({ user_id : this.props.session.user.id}).then(data=>{
+         //   this.setState({ boards : data.data }); 
+        //})
     }
     
     processFormSubmission = (e)=> {
@@ -136,7 +136,7 @@ class Create extends React.Component{
                             { errorMessage }
                         </div>
                         )}               
-                        <SessionForm session={this.state.session} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading}  boards={boards}>
+                        <SessionForm session={this.state.session} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading}  boards={this.props.boards}>
                             {content()}
                         </SessionForm>
                     </div>

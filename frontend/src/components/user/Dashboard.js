@@ -10,53 +10,34 @@ import UserBoardRequests from './../../requests/UserBoardRequests';
 import UserSessionRequests from './../../requests/SessionRequests';
 
 const mapStateToProps = state => {
-    return { session: state.session, boards : state.user_boards, user_sessions : state.user_sessions }
+    return { session: state.session, boards : state.user_boards, user_sessions : state.user_sessions, locations : state.user.UserLocations }
   }
 
   const mapDispachToProps = dispatch => {
     return {
-      onUserBoardLoad: (data) => dispatch({ type: "SET_USER_BOARDS", payload: data}),
-      onUserSessionLoad: (data) => dispatch({ type: "SET_USER_SESSIONS", payload: data})
+        loadUser : (request, session) => dispatch( request.getOne({label : 'LOAD_USER', id :session.user.id , withs : ['UserBoard', 'Session.SessionImage','UserLocation'], onSuccess : (data)=>{ return {type: "SET_USER", payload: data}}})),
+        loadBoards: (request, session) => dispatch( request.get({label : 'LOAD_USER_BAORDS',  wheres : {user_id : session.user.id }, withs : ['Board'], onSuccess : (data)=>{ return {type: "SET_USER_BOARDS", payload: data}}})),
+        loadSessions: (request, session) => dispatch( request.get({label : 'LOAD_USER_SESSIONS', wheres : {user_id : session.user.id }, withs : ['Board', 'Location'], onSuccess : (data)=>{ return { type: "SET_USER_SESSIONS", payload: data}}})),
     };
   };
 
 class UserDashboard extends React.Component{
     constructor(props) {
         super(props);
-        this.state = {
-            user: {},
-            locations: []
-        }
         this.userRequest = new UserRequests(this.props.session);
-        this.userBoardRequest = new UserBoardRequests(this.props.session);
-        this.userSessionRequest = new UserSessionRequests(this.props.session);
     }
 
     componentDidMount() {
         if (this.props.session.isLoggedIn) {
-            this.userRequest.getOne(this.props.session.user.id , ['UserBoard', 'Session.SessionImage','UserLocation'])
-            .then(data => {
-                this.setState({ user: data.data, locations: data.data.UserLocations, sessions: data.data.Sessions });
-            })
-            .catch(error=>console.log(error));
-
-            this.userBoardRequest.get({user_id : this.props.session.user.id }, ['Board']).then(data=>{
-                //this.setState( { boards : data.data } )
-                this.props.onUserBoardLoad(data.data);
-            })
-
-            this.userSessionRequest.get({user_id : this.props.session.user.id }, ['Board', 'Location']).then(data=>{
-                //this.setState( { boards : data.data } )
-                this.props.onUserSessionLoad(data.data);
-            })
+            this.props.loadUser(new UserRequests(this.props.session), this.props.session );
+            this.props.loadBoards(new UserBoardRequests(this.props.session), this.props.session );
+            this.props.loadSessions(new UserSessionRequests(this.props.session), this.props.session );
         }
     }
 
 
     render() {
-        console.log('sessions', this.state.sessions);
-        const {locations } = this.state;
-        const { user_sessions, boards } = this.props;
+        const { user_sessions, boards, locations } = this.props;
         return (
            <MainContainer>
                 <div className="row">

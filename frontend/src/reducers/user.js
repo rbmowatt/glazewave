@@ -1,12 +1,12 @@
 import UserBoardRequests from './../requests/UserBoardRequests';
 
 const initialState = [];
-const user_boards = (state = initialState, action) => {
+const user = (state = initialState, action) => {
   switch (action.type) {
-    case 'SET_USER_BOARDS':
+    case 'SET_USER':
       return action.payload;
     default:
       return state
   }
 }
-export default user_boards
+export default user
