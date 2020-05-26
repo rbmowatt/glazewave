@@ -1,43 +1,62 @@
 import * as React from 'react';
 import { connect } from 'react-redux'
-import axios from 'axios';
-import apiConfig from '../../config/api.js';
 import { MainContainer } from './../layout/MainContainer';
 import { Link } from 'react-router-dom';
 import SessionCard from './SessionCard';
 import BoardCard from './BoardCard';
 import LocationCard from './LocationCard';
 import UserRequests from './../../requests/UserRequests';
+import UserBoardRequests from './../../requests/UserBoardRequests';
+import UserSessionRequests from './../../requests/SessionRequests';
 
 const mapStateToProps = state => {
-    return { session: state.session }
+    return { session: state.session, boards : state.user_boards, user_sessions : state.user_sessions }
   }
 
-class UserDashnoard extends React.Component{
+  const mapDispachToProps = dispatch => {
+    return {
+      onUserBoardLoad: (data) => dispatch({ type: "SET_USER_BOARDS", payload: data}),
+      onUserSessionLoad: (data) => dispatch({ type: "SET_USER_SESSIONS", payload: data})
+    };
+  };
+
+class UserDashboard extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
             user: {},
-            boards : [],
-            sessions : [],
             locations: []
         }
         this.userRequest = new UserRequests(this.props.session);
+        this.userBoardRequest = new UserBoardRequests(this.props.session);
+        this.userSessionRequest = new UserSessionRequests(this.props.session);
     }
 
     componentDidMount() {
         if (this.props.session.isLoggedIn) {
             this.userRequest.getOne(this.props.session.user.id , ['UserBoard', 'Session.SessionImage','UserLocation'])
             .then(data => {
-                this.setState({ user: data.data, boards: data.data.UserBoards, locations: data.data.UserLocations, sessions: data.data.Sessions });
+                this.setState({ user: data.data, locations: data.data.UserLocations, sessions: data.data.Sessions });
             })
             .catch(error=>console.log(error));
+
+            this.userBoardRequest.get({user_id : this.props.session.user.id }, ['Board']).then(data=>{
+                //this.setState( { boards : data.data } )
+                this.props.onUserBoardLoad(data.data);
+            })
+
+            this.userSessionRequest.get({user_id : this.props.session.user.id }, ['Board', 'Location']).then(data=>{
+                //this.setState( { boards : data.data } )
+                this.props.onUserSessionLoad(data.data);
+            })
         }
     }
 
+
     render() {
         console.log('sessions', this.state.sessions);
-        const {boards, sessions, locations } = this.state;
+        const {locations } = this.state;
+        const { user_sessions, boards } = this.props;
         return (
            <MainContainer>
                 <div className="row">
@@ -56,37 +75,32 @@ class UserDashnoard extends React.Component{
                                         </div>
                                     </div>
                                     <div className="col-md-11 row">
-                                            <div className="col-md-4">
-                                                    Sessions
-                                                    {sessions && sessions.map(session =>
-                                                    <div className="card row">
-                                                        <SessionCard session={session} key={session.id} />
-                                                        </div>
-                                                    )}
+                                        <div className="col-md-4">
+                                                Sessions
+                                                {user_sessions && user_sessions.map(session =>
+                                                <div className="card row">
+                                                    <SessionCard session={session} key={session.id} />
+                                                    </div>
+                                                )}
+                                        </div>
+                                        <div className="col-md-4">
+                                                Boards
+                                                {boards && boards.map(board =>
+                                                <div className="card row">
+                                                    <BoardCard board={board} key={board.id} />
+                                                    </div>
+                                                )}                                 
+                                        </div>
+                                        <div className="col-md-4">
+                                            Locations
+                                            {locations && locations.map(location =>
+                                            <div className="card row">
+                                                <LocationCard location={location} key={location.id} />
                                             </div>
-                                            <div className="col-md-4">
-                                         
-                                                    Boards
-                                                    {boards && boards.map(board =>
-                                                    <div className="card row">
-                                                        <BoardCard board={board} key={board.id} />
-                                                        </div>
-                                                    )}
-                                            
-                                            </div>
-                                            <div className="col-md-4">
-                                         
-                                                Locations
-                                         {locations && locations.map(location =>
-                                         <div className="card row">
-                                             <LocationCard location={location} key={location.id} />
-                                             </div>
-                                         )}
-                                 
-                                 </div>
+                                     )}
                                     </div>
                                 </div>
-                            
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -95,4 +109,4 @@ class UserDashnoard extends React.Component{
     }
 }
 
-export default connect(mapStateToProps)(UserDashnoard)
+export default connect(mapStateToProps, mapDispachToProps )(UserDashboard)

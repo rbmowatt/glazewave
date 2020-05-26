@@ -2,12 +2,14 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import {FormCard} from './../layout/FormCard';
 import { MainContainer } from './../layout/MainContainer';
-import { SessionForm } from './SessionForm';
+import SessionForm  from './SessionForm';
 import Buttons from './../helpers/image/Buttons'
 import Images from './../helpers/image/Images'
 import SessionRequests from './../../requests/SessionRequests';
 import UserBoardRequests from './../../requests/UserBoardRequests';
-import Spinner from './../helpers/image/Spinner'
+import Spinner from './../helpers/image/Spinner';
+//import ReactDOM from "react-dom";
+import Modal from './../layout/Modal';
 
 const mapStateToProps = state => {
     return { session: state.session }
@@ -27,12 +29,21 @@ class Create extends React.Component{
             errorMessage : null,
             images : [],
             headers : {},
-            boards : []
+            boards : [],
+            show : false
         }
         this.sessionRequest = new SessionRequests(this.props.session);
         this.userBoardRequest = new UserBoardRequests(this.props.session);
     }
 
+    showModal = () => {
+      this.setState({ show: true });
+    };
+  
+    hideModal = () => {
+      this.setState({ show: false });
+    };
+  
     componentDidMount(){
         if (!this.props.session.isLoggedIn) {
             this.props.history.push('/');
@@ -94,7 +105,7 @@ class Create extends React.Component{
       }
 
     render() {
-        const { submitSuccess, submitFail, loading, errorMessage, uploading, images, boards } = this.state;
+        const { submitSuccess, submitFail, loading, errorMessage, uploading, images, boards, show } = this.state;
         const content = () => {
             switch(true) {
               case uploading:
@@ -126,9 +137,7 @@ class Create extends React.Component{
                         </div>
                         )}               
                         <SessionForm session={this.state.session} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading}  boards={boards}>
-                    
-                                {content()}
-                            
+                            {content()}
                         </SessionForm>
                     </div>
                 </FormCard>

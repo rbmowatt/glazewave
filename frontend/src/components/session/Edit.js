@@ -4,7 +4,7 @@ import axios from 'axios';
 import apiConfig from '../../config/api.js';
 import { MainContainer } from './../layout/MainContainer';
 import {FormCard} from './../layout/FormCard';
-import { SessionForm } from './SessionForm';
+import SessionForm from './SessionForm';
 import SessionRequests from './../../requests/SessionRequests';
 
 const TITLE = "Edit Session";
