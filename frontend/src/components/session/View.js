@@ -12,7 +12,7 @@ const mapStateToProps = state => {
 
   const mapDispachToProps = dispatch => {
     return {
-      loadSession: (request, session) => dispatch( request.getOne({label : 'LOAD_USER_SESSION', id : session.user.id ,  withs : ['SessionImage'], onSuccess : (data)=>{ return { type: "SET_USER_SESSION", payload: data}}})),
+      loadSession: (request, props) => dispatch( request.getOne({label : 'LOAD_USER_SESSION', id : props.match.params.id,  withs : ['SessionImage'], onSuccess : (data)=>{ return { type: "SET_USER_SESSION", payload: data}}})),
     };
   };
 
@@ -20,7 +20,7 @@ class SessionView extends Component {
 
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
-            this.props.loadSession(new SessionRequests(this.props.session), this.props.session );
+            this.props.loadSession(new SessionRequests(this.props.session), this.props );
         }
        else{
             this.props.history.push('/session');

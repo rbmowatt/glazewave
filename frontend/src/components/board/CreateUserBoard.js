@@ -17,10 +17,16 @@ const mapStateToProps = state => {
     return { session: state.session }
   }
 
+  const mapDispachToProps = dispatch => {
+    return {
+        createUserBoard : (request, data) => dispatch( request.create({label : 'CREATE_USER_BOARD', data: data , onSuccess : (data)=>{ return {type: "USER_BOARD_CREATED", payload: data}}}))};
+  };
+
 class CreateUserBoard extends React.Component{
     constructor(props ) {
         super(props);
         this.state = {
+            rating: 5, is_public : 0, name: '',
             values: [],
             submitSuccess: false,
             submitFail: false,
@@ -28,7 +34,6 @@ class CreateUserBoard extends React.Component{
             images : [],
             board : {}
         }
-        this.userBoardRequest = new UserBoardRequests(this.props.session);
     }
 
     componentDidMount(){
@@ -40,27 +45,18 @@ class CreateUserBoard extends React.Component{
     processFormSubmission = (e)=> {
         e.preventDefault();
         this.setState({ loading: true });
-        const formData = new FormData();
-        formData.append('name' , this.state.name);
-        formData.append('rating' , this.state.rating);
-        formData.append('user_id' , this.props.session.user.id);
+
+        const formData = UserBoardRequests.createFormRequest({
+            'rating' : this.state.rating,
+            'name' : this.state.name,
+            'user_id' : this.props.session.user.id
+        });
         this.state.images.forEach((file, i) => {
             formData.append('photo', file)
-        })
-
+          })
         this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
         if (this.props.session.isLoggedIn) {
-            this.userBoardRequest.create(formData, {'content-type': 'multipart/form-data'})
-            .then(data => [
-                setTimeout((e) => {
-                    this.props.onSuccess();
-                }, 1500)
-            ])
-            .catch(
-                error=>{
-                    this.setState({ submitSuccess: false, submitFail: true, errorMessage : error.response.data.message });
-                }
-            );
+            this.props.createUserBoard(new UserBoardRequests(this.props.session), formData);
         }
     }
 
@@ -127,4 +123,4 @@ class CreateUserBoard extends React.Component{
     }
 }
 
-export default connect(mapStateToProps)(withRouter(CreateUserBoard));
+export default connect(mapStateToProps, mapDispachToProps)(withRouter(CreateUserBoard));

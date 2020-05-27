@@ -33,7 +33,7 @@ class UserBoardForm extends React.Component{
                 <label htmlFor="rating"> Model
                 <select  onChange={(e) => this.props.handleInputChanges(e)} id="board_id" name="board_id" className="form-control">
                     {this.props.boards.map((obj) => {
-                        return <option prop={obj.model} value={obj.id}>{obj.model}</option>
+                        return <option key={obj.id} prop={obj.model} value={obj.id}>{obj.model}</option>
                     })}
                 </select>
                 </label>
@@ -43,7 +43,7 @@ class UserBoardForm extends React.Component{
                 <select value={this.props.board.rating} onChange={(e) => this.props.handleInputChanges(e)} id="rating" name="rating" className="form-control">
                     {[...Array(11).keys()].map((value, index) => {
                         if(value === 0) return;
-                        return  <option value={value}>{value}</option>
+                        return  <option key={index} value={value}>{value}</option>
                     })} 
                 </select>
                 </label>

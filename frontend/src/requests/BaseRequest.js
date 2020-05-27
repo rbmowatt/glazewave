@@ -26,9 +26,22 @@ class BaseRequest {
         });
     }
 
-    create = (data, hdrs = {}) => {
+    create_bk = (data, hdrs = {}) => {
         const headers = {...this.session.headers, ...hdrs};
         return axios.post(this.getEndpoint() , data , headers)
+    }
+
+    create = ({ data = {}, hdrs = {}, label = '' , onSuccess = ()=>{}, onFailure = (e)=>this.onFailure(e) } ) => {
+        const headers = {...this.session.headers, ...hdrs};
+        return this.apiAction({
+            data : data,
+            url :this.getEndpoint(),
+            method : "POST",
+            onSuccess : onSuccess,
+            onFailure : onFailure,
+            label : label,
+            //headersOverride : headers
+        });
     }
 
     delete  = (entityId) =>
@@ -63,6 +76,17 @@ class BaseRequest {
 
     onFailure = (error) =>{
         console.log('error', error);
+        return { type : 'API_FAILED'}
+       
+    }
+
+    static createFormRequest = (data = {} ) =>
+    {
+        const formData = new FormData();
+        for (let [key, value] of Object.entries(data)) {
+            formData.append(key, value);
+        }
+        return formData;
     }
 
     apiAction = ({
