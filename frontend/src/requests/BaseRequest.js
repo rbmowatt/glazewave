@@ -44,9 +44,16 @@ class BaseRequest {
         });
     }
 
-    delete  = (entityId) =>
+    delete  = ({ id = null, label = '', onSuccess = ()=>{}, onFailure = (e)=>this.onFailure(e) }) =>
     {
-        return axios.delete(this.getEndpoint() + `/` + entityId , this.session.headers);
+        //const headers = {...this.session.headers, ...hdrs};
+        return this.apiAction({
+            url : this.getEndpoint() + `/` + id,
+            method : "DELETE",
+            onSuccess : onSuccess,
+            onFailure : onFailure,
+            label : label,
+        });
     }
 
     update = ( entityId, data) => {

@@ -24,7 +24,6 @@ const mapStateToProps = state => {
 class UserDashboard extends React.Component{
     constructor(props) {
         super(props);
-        this.userRequest = new UserRequests(this.props.session);
     }
 
     componentDidMount() {
@@ -58,27 +57,48 @@ class UserDashboard extends React.Component{
                                     <div className="col-md-11 row">
                                         <div className="col-md-4">
                                                 Sessions
-                                                {user_sessions && user_sessions.map(session =>
-                                                <div key={session.id} className="card row">
-                                                    <SessionCard session={session} key={session.id} />
-                                                    </div>
-                                                )}
+                                            {
+                                                user_sessions && user_sessions.reduce((mappedArray, session, index) => {                           
+                                                        if (index < 5) { 
+                                                            mappedArray.push(
+                                                                <div key={session.id} className="card row">
+                                                                <SessionCard session={session} key={session.id} className="row col-md-12" />
+                                                                </div>
+                                                            );
+                                                        }                                                  
+                                                        return mappedArray;
+                                                    }, [])
+                                            }
                                         </div>
                                         <div className="col-md-4">
                                                 Boards
-                                                {boards && boards.map(board =>
-                                                <div key={board.id} className="card row">
-                                                    <BoardCard board={board} key={board.id} />
-                                                    </div>
-                                                )}                                 
+                                            {
+                                                boards && boards.reduce((mappedArray, board, index) => {                           
+                                                        if (index < 5) { 
+                                                            mappedArray.push(
+                                                                <div key={board.id} className="card row">
+                                                                    <BoardCard board={board} key={board.id} />
+                                                                </div>
+                                                            );
+                                                        }                                                  
+                                                        return mappedArray;
+                                                    }, [])
+                                            }                              
                                         </div>
                                         <div className="col-md-4">
                                             Locations
-                                            {locations && locations.map(location =>
-                                            <div key={location.id} className="card row">
-                                                <LocationCard location={location} key={location.id} />
-                                            </div>
-                                     )}
+                                            {
+                                                locations && locations.reduce((mappedArray, location, index) => {                           
+                                                        if (index < 5) { 
+                                                            mappedArray.push(
+                                                                <div key={location.id} className="card row">
+                                                                    <LocationCard location={location} key={location.id} />
+                                                                </div>
+                                                            );
+                                                        }                                                  
+                                                        return mappedArray;
+                                                    }, [])
+                                            }  
                                     </div>
                                 </div>
                             </div>

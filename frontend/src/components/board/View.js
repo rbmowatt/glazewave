@@ -6,10 +6,17 @@ import apiConfig from '../../config/api.js';
 import { MainContainer } from './../layout/MainContainer';
 import {FormCard} from './../layout/FormCard';
 import StarBar from './../layout/StarBar';
+import UserBoardRequests from './../../requests/UserBoardRequests';
 
 const mapStateToProps = state => {
-    return { session: state.session }
+    return { session: state.session, board : state.user_board }
   }
+
+  const mapDispachToProps = dispatch => {
+    return {
+      loadBoard: (request, props) => dispatch( request.getOne({label : 'LOAD_USER_BOARD', id : props.match.params.id,  withs : ['Board.Manufacturer'], onSuccess : (data)=>{ return { type: "SET_USER_BOARD", payload: data}}})),
+    };
+  };
 
 class BoardView extends Component {
     constructor(props) {
@@ -19,7 +26,7 @@ class BoardView extends Component {
 
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
-            
+            this.props.loadBoard(new UserBoardRequests(this.props.session), this.props );
             
             axios.get( apiConfig.host + apiConfig.port + `/api/board/` + this.props.match.params.id, this.props.session.headers).then(data => {
                 ((!this.props.session.isAdmin && !data.data[0].isPublic) || data.data.length === 0) ? this.props.history.push('/board') : this.setState({ session: data.data });
@@ -38,8 +45,8 @@ class BoardView extends Component {
     }
 
     render() {
-        const session = this.state.session;
-        const pic = (session.picture  == null) ? 'no_photo.jpg' : session.picture;
+        const { board } = this.props;
+        const pic = (board.picture  == null) ? 'no_photo.jpg' : board.picture;
         return (
             <MainContainer>
                 <FormCard returnToIndex={this.returnToIndex}>
@@ -51,14 +58,14 @@ class BoardView extends Component {
                                 </div>
                             </div>
                             <div className="details col-md-6">
-                                <h3 className="session-title">{session.title}</h3>
-                                <h5 className="submitted-by">By <span>{session.createdAt}</span></h5>
-                                <h5 className="review-no">Rated: {session.rating}/10 </h5>
+                                <h3 className="session-title">{board.name}</h3>
+                                <h5 className="submitted-by">By <span>{board.size}</span></h5>
+                                <h5 className="review-no">Rated: {board.rating}/10 </h5>
                                 <div className="rating">
-                                    <StarBar stars={session.rating} />
+                                    <StarBar stars={board.rating} />
                                 </div>
                                 <h5 className="review-no">Board:</h5>
-                                <p className="session-description">{ session.title }</p>
+                                <p className="session-description">{ board.notes}</p>
                             </div>
                         </div>
                     </div>
@@ -67,4 +74,4 @@ class BoardView extends Component {
         )
     }
 }
-export default connect(mapStateToProps)(BoardView)
+export default connect(mapStateToProps, mapDispachToProps)(BoardView)
