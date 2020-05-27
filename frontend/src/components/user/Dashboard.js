@@ -59,7 +59,7 @@ class UserDashboard extends React.Component{
                                         <div className="col-md-4">
                                                 Sessions
                                                 {user_sessions && user_sessions.map(session =>
-                                                <div className="card row">
+                                                <div key={session.id} className="card row">
                                                     <SessionCard session={session} key={session.id} />
                                                     </div>
                                                 )}
@@ -67,7 +67,7 @@ class UserDashboard extends React.Component{
                                         <div className="col-md-4">
                                                 Boards
                                                 {boards && boards.map(board =>
-                                                <div className="card row">
+                                                <div key={board.id} className="card row">
                                                     <BoardCard board={board} key={board.id} />
                                                     </div>
                                                 )}                                 
@@ -75,7 +75,7 @@ class UserDashboard extends React.Component{
                                         <div className="col-md-4">
                                             Locations
                                             {locations && locations.map(location =>
-                                            <div className="card row">
+                                            <div key={location.id} className="card row">
                                                 <LocationCard location={location} key={location.id} />
                                             </div>
                                      )}

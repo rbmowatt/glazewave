@@ -5,7 +5,7 @@ import CreateUserBoard from  './../board/CreateUserBoard';
 import UserBoardRequests from './../../requests/UserBoardRequests';
 
 const mapStateToProps = state => {
-    return { session: state.session, boards : state.user_boards }
+    return { session: state.session, boards : state.user_boards, user_sessions : state.user_sessions }
   }
 
   const mapDispachToProps = dispatch => {
@@ -37,6 +37,15 @@ class SessionForm extends React.Component{
         this.setState({ show: false });
     };
 
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if ((prevProps.boards.length !== this.props.boards.length)) {
+            setTimeout(() => {
+                this.hideModal();
+            }, 1500)
+        }
+    }
+
     render(){ 
         return (
             <div>
@@ -49,7 +58,7 @@ class SessionForm extends React.Component{
                 <label htmlFor="rating"> What Board Did You Use?
                 <select  onChange={(e) => this.props.handleInputChanges(e)} id="board_id" name="board_id" className="form-control">
                     {this.props.boards.map((obj) => {
-                        return <option prop={obj.name} value={obj.id}>{obj.name}</option>
+                        return <option key={obj.id} prop={obj.name} value={obj.id}>{obj.name}</option>
                     })}
                 </select>
                 </label>
@@ -62,7 +71,7 @@ class SessionForm extends React.Component{
                     <select value={this.props.session.rating} onChange={(e) => this.props.handleInputChanges(e)} id="rating" name="rating" className="form-control">
                             {[...Array(11).keys()].map((value, index) => {
                                 if(value === 0) return;
-                                return  <option value={value}>{value}</option>
+                                return  <option key={index} value={value}>{value}</option>
                             })}
                     </select>
                 </label>

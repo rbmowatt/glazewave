@@ -3,32 +3,31 @@ import { connect } from 'react-redux';
 import {FormCard} from './../layout/FormCard';
 import { MainContainer } from './../layout/MainContainer';
 import SessionForm  from './SessionForm';
-import Buttons from './../helpers/image/Buttons'
-import Images from './../helpers/image/Images'
 import SessionRequests from './../../requests/SessionRequests';
 import UserBoardRequests from './../../requests/UserBoardRequests';
-import Spinner from './../helpers/image/Spinner';
-//import ReactDOM from "react-dom";
-import Modal from './../layout/Modal';
+import ImageUpload from './../layout/ImageUpload';
 
 const mapStateToProps = state => {
-    return { session: state.session, boards:state.user_boards }
+    return { session: state.session, boards:state.user_boards, user_sessions : state.user_sessions }
   }
+
+  const mapDispachToProps = dispatch => {
+    return {
+        createSession : (request, data) => dispatch( request.create({label : 'LOAD_USER', data: data , onSuccess : (data)=>{ return {type: "SESSION_CREATED", payload: data}}}))};
+  };
   const TITLE = 'Create A Session';
 
 class Create extends React.Component{
     constructor(props ) {
         super(props);
         this.state = {
-            rating: 5, is_public : 0, name: '', 
-            session: '',
+            rating: 5, is_public : 0, name: '',
             values: [],
             loading: false,
             submitSuccess: false,
             submitFail: false,
             errorMessage : null,
             images : [],
-            headers : {},
             boards : [],
             show : false
         }
@@ -48,36 +47,32 @@ class Create extends React.Component{
         if (!this.props.session.isLoggedIn) {
             this.props.history.push('/');
         }
-       // this.userBoardRequest.get({ user_id : this.props.session.user.id}).then(data=>{
-         //   this.setState({ boards : data.data }); 
-        //})
     }
-    
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (prevProps.user_sessions.length !== this.props.user_sessions.length) {
+            this.setState({ submitSuccess : true })
+            setTimeout(() => {
+                this.props.history.push('/user/dashboard');
+            }, 1500)
+        }
+    }
+
     processFormSubmission = (e)=> {
         e.preventDefault();
-        this.setState({ loading: true });
-        const formData = new FormData();
-        formData.append('is_public', this.state.is_public);
-        formData.append('rating' , this.state.rating);
-        formData.append('title' , this.state.name);
-        formData.append( 'session', this.state.notes);
-        formData.append('user_id' , this.props.session.user.id);
+        const formData = SessionRequests.createFormRequest({
+            'is_public': this.state.is_public,
+            'rating' : this.state.rating,
+            'title' : this.state.name,
+            'session': this.state.notes, 
+            'user_id' : this.props.session.user.id
+        });
         this.state.images.forEach((file, i) => {
             formData.append('photo', file)
           })
         this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
-        if (this.props.session.isLoggedIn && this.props.session.isAdmin) {
-            this.sessionRequest.create(formData)
-            .then(data => [
-                setTimeout(() => {
-                    this.props.history.push('/session');
-                }, 1500)
-            ])
-            .catch(
-                error=>{
-                    this.setState({ submitSuccess: false, submitFail: true, errorMessage : error.response.data.message });
-                }
-            );
+        if (this.props.session.isLoggedIn ) {
+            this.props.createSession(new SessionRequests(this.props.session), formData);
         }
     }
 
@@ -88,9 +83,9 @@ class Create extends React.Component{
         })
     }
 
-    onChange = e => {
+    onImageUploaded = e => {
         const files = Array.from(e.target.files)
-        this.setState({ uploading: false , images : files});
+        this.setState({ images : files});
     }
     
     removeImage = id => {
@@ -105,17 +100,7 @@ class Create extends React.Component{
       }
 
     render() {
-        const { submitSuccess, submitFail, loading, errorMessage, uploading, images, boards, show } = this.state;
-        const content = () => {
-            switch(true) {
-              case uploading:
-                return <Spinner />
-              case images.length > 0:
-                return <Images images={images} removeImage={this.removeImage} />
-              default:
-                return <Buttons onChange={this.onChange} />
-            }
-          }
+        const { submitSuccess, submitFail, loading, errorMessage} = this.state;
         return (
             <MainContainer>
                 <FormCard returnToIndex={this.returnToIndex}>
@@ -137,7 +122,7 @@ class Create extends React.Component{
                         </div>
                         )}               
                         <SessionForm session={this.state.session} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading}  boards={this.props.boards}>
-                            {content()}
+                            <ImageUpload onImageUploaded={this.onImageUploaded} />
                         </SessionForm>
                     </div>
                 </FormCard>
@@ -146,4 +131,4 @@ class Create extends React.Component{
     }
 }
 
-export default connect(mapStateToProps)(Create)
+export default connect(mapStateToProps, mapDispachToProps)(Create)
