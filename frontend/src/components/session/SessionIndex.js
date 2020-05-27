@@ -6,10 +6,18 @@ import { Link } from 'react-router-dom';
 import { MainContainer } from './../layout/MainContainer';
 import SessionRequests from './../../requests/SessionRequests';
 import SessionRow from './SessionRow';
+import SessionCard from './../user/SessionCard';
 
 const mapStateToProps = state => {
-    return { session: state.session }
+    return { session: state.session, sessions : state.user_sessions }
   }
+
+  const mapDispachToProps = dispatch => {
+    return {
+        loadSessions: (request, session) => dispatch( request.get({label : 'LOAD_USER_SESSIONS', wheres : {user_id : session.user.id }, withs : ['Board', 'Location'], onSuccess : (data)=>{ return { type: "SET_USER_SESSIONS", payload: data}}})),
+        deleteSession: (request, id) => dispatch( request.delete({label : 'DELETE_USER_SESSION', id:id , onSuccess : (data)=>{ return { type: "DELETE_USER_SESSION", payload: id }}}))
+    };
+  };
 
 class SessionIndex extends Component {
     constructor(props) {
@@ -18,16 +26,13 @@ class SessionIndex extends Component {
         this.deleteSession = this.deleteSession.bind(this);
         this.editSession = this.editSession.bind(this);
         this.viewSession = this.viewSession.bind(this);
-        this.sessionRequest = new SessionRequests(this.props.session);
+       // this.sessionRequest = new SessionRequests(this.props.session);
     }
 
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
             this.setState({ isAdmin : this.props.session.isAdmin });
-            this.sessionRequest.get([], ['SessionImage']).then(data => {
-                data.data.sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0));
-                this.setState({ sessions: data.data })
-            });
+            this.props.loadSessions(new SessionRequests(this.props.session), this.props.session );
         }
     }
 
@@ -39,11 +44,7 @@ class SessionIndex extends Component {
               {
                 label: 'Yes',
                 onClick: () => {
-                    this.sessionRequest.deleteSession(id).then(data => {
-                        const index = this.state.sessions.findIndex(session => session.id === id);
-                        this.state.sessions.splice(index, 1);
-                        this.props.history.push('/session');
-                    })
+                    this.props.deleteSession(new SessionRequests(this.props.session), id);
                 }
               },
               {
@@ -63,7 +64,7 @@ class SessionIndex extends Component {
     }
 
     render() {
-        const sessions = this.state.sessions;
+        const {sessions} = this.props;
         return (
             <MainContainer>
                 <div className="row">
@@ -85,11 +86,15 @@ class SessionIndex extends Component {
                                         Location
                                     </div>
                                 </div>
-                                {sessions && sessions.map(session =>
+                                <div className="row col-md-12">
+                                {sessions && sessions.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0)).map(session =>
                                 (this.state.isAdmin || session.isPublic) &&
-                                    <SessionRow session={session} deleteSession={this.deleteSession} viewSession={this.viewSession} editSession={this.editSession} isAdmin={this.state.isAdmin} key={ session.id }/>
+                               
+                                    <SessionCard session={session} key={session.id}  className="col-md-3" deleteSession={this.deleteSession} viewSession={this.viewSession} editSession={this.editSession}  />
+                               
                                 )
                                 }
+                                 </div>
                                 {
                                     (!sessions  || sessions.length === 0) &&  <div className="col-12"><h3>No sessions found at the moment</h3></div>
                                 } 
@@ -102,4 +107,4 @@ class SessionIndex extends Component {
         )
     }
 }
-export default connect(mapStateToProps)(SessionIndex)
+export default connect(mapStateToProps, mapDispachToProps)(SessionIndex)
