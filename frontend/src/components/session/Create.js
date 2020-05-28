@@ -6,6 +6,7 @@ import SessionForm  from './SessionForm';
 import SessionRequests from './../../requests/SessionRequests';
 import UserBoardRequests from './../../requests/UserBoardRequests';
 import ImageUpload from './../layout/ImageUpload';
+import { Resolver } from 'dns';
 
 const mapStateToProps = state => {
     return { session: state.session, boards:state.user_boards, user_sessions : state.user_sessions }
@@ -58,23 +59,25 @@ class Create extends React.Component{
         }
     }
 
-    processFormSubmission = (e)=> {
-        console.log('hit proccessFormSbmission')
-        e.preventDefault();
-        const formData = SessionRequests.createFormRequest({
-            'is_public': this.state.is_public,
-            'rating' : this.state.rating,
-            'title' : this.state.name,
-            'session': this.state.notes, 
-            'user_id' : this.props.session.user.id
+    processFormSubmission = ({ serialized, fields, form})=> {
+        const {session, createSession} = this.props;
+        const { images } = this.state;
+        return new Promise(function(resolve, reject){
+            console.log('calojng promise')
+            if (session.isLoggedIn ) {
+                console.log('clogged in ', serialized)
+                const formData = SessionRequests.createFormRequest(serialized);
+                images.forEach((file, i) => {
+                    formData.append('photo', file)
+                })
+                console.log('got past images')
+                //this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
+                createSession(new SessionRequests(session), formData);
+                resolve(formData);
+            }else{
+                reject('user not logged in ');
+            }
         });
-        this.state.images.forEach((file, i) => {
-            formData.append('photo', file)
-          })
-        this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
-        if (this.props.session.isLoggedIn ) {
-            this.props.createSession(new SessionRequests(this.props.session), formData);
-        }
     }
 
     handleInputChanges = e => {
@@ -91,6 +94,7 @@ class Create extends React.Component{
     }
     
     removeImage = id => {
+        console.log(this.state.images);
         this.setState({
           images: this.state.images.filter(image => image.public_id !== id)
         })
@@ -106,6 +110,7 @@ class Create extends React.Component{
         return (
             <MainContainer>
                 <FormCard returnToIndex={this.returnToIndex}>
+                <div className="col-md-12 row ">
                     <div className="col-md-12 ">
                         <h2>{TITLE}</h2>
                         {!submitSuccess && (
@@ -122,10 +127,16 @@ class Create extends React.Component{
                         <div className="alert alert-info" role="alert">
                             { errorMessage }
                         </div>
-                        )}               
+                        )}    
+                        </div>
+                         <div className="col-md-6 ">           
                         <SessionForm session={this.state.session} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading}  boards={this.props.boards}>
-                            <ImageUpload onImageUploaded={this.onImageUploaded} />
+                            
                         </SessionForm>
+                    </div>
+                    <div className="col-md-6 ">
+                    <ImageUpload onImageUploaded={this.onImageUploaded} />
+                    </div>
                     </div>
                 </FormCard>
             </MainContainer>

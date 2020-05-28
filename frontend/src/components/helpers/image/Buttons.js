@@ -6,7 +6,7 @@ export default props =>
     <div className=''>
       <label className="fileContainer">
         Upload An Image!
-          <input type='file'  id='single' onChange={props.onChange} accept=".jpg,.jpeg,.gif,.png" /> 
+          <input type='file' multiple id='multi' onChange={props.onChange} accept=".jpg,.jpeg,.gif,.png" /> 
       </label>
       <FontAwesomeIcon icon={faImage} color='#3B5998' size='3x' />
     </div>

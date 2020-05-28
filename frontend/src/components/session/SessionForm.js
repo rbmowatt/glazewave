@@ -4,8 +4,9 @@ import { connect } from 'react-redux';
 import CreateUserBoard from  './../board/CreateUserBoard';
 import UserBoardRequests from './../../requests/UserBoardRequests';
 import { Form } from 'react-advanced-form';
-import Input from './../form/Input';
-import { Select, Textarea, Button } from 'react-advanced-form-addons';
+import { Input, Select, Textarea, Button } from 'react-advanced-form-addons';
+import rules from './validation-rules'
+import messages from './validation-messages'
 
 const mapStateToProps = state => {
     return { session: state.session, boards : state.user_boards, user_sessions : state.user_sessions }
@@ -40,7 +41,6 @@ class SessionForm extends React.Component{
         this.setState({ show: false });
     };
 
-
     componentDidUpdate(prevProps, prevState, snapshot) {
         if ((prevProps.boards.length !== this.props.boards.length)) {
             setTimeout(() => {
@@ -52,25 +52,26 @@ class SessionForm extends React.Component{
     render(){ 
         return (
             <div>
-            <Form onSubmit={this.props.processFormSubmission} >
-            <Input name="name" label="Session Name" required />
-            <Select name="board_id" label="Which Board Did You Use?" required>
+            <Form action={({ serialized, fields, form}) => this.props.processFormSubmission({session : this.props.session, serialized, fields, form})} rules={rules} messages={messages}>
+            <Input type="hidden" name="user_id" value={this.props.session.user.id} />
+            <Input name="title" label="Session Name" required />
+            <Select name="board_id" label="Which Board Did You Use?" >
                   {this.props.boards.map((obj) => {
                         return <option key={obj.id} prop={obj.name} value={obj.id}>{obj.name}</option>
                     })}
             </Select>
             <Button type='button' onClick={this.showModal}>Add A Board</Button>
-            <Select name="rating" label="What would you rate this Session on a scale of 1-10?" required>
+            <Select name="rating" label="What would you rate this Session on a scale of 1-10?" >
                 {[...Array(11).keys()].map((value, index) => {
                     if(value === 0) return;
                         return  <option key={index} value={value}>{value}</option>
                 })}
             </Select>
-            <Select name="is_public" label="Should this Session be Public to ALL logged-in Users?" required>
+            <Select name="is_public" label="Should this Session be Public to ALL logged-in Users?" >
                 <option value="0">Private</option>
                 <option value="1">Public</option>
             </Select>
-            <Textarea name="notes" label="Notes" required />
+            <Textarea name="notes" label="Notes"  />
             {
                 this.props.children 
             }

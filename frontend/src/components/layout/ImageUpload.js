@@ -26,6 +26,7 @@ class ImageUpload extends React.Component{
     }
     
     removeImage = id => {
+      console.log(this.state.images)
         this.setState({
           images: this.state.images.filter(image => image.public_id !== id)
         })
