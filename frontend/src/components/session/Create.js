@@ -59,6 +59,7 @@ class Create extends React.Component{
     }
 
     processFormSubmission = (e)=> {
+        console.log('hit proccessFormSbmission')
         e.preventDefault();
         const formData = SessionRequests.createFormRequest({
             'is_public': this.state.is_public,
@@ -77,6 +78,7 @@ class Create extends React.Component{
     }
 
     handleInputChanges = e => {
+        console.log('handleInputChanges')
         e.preventDefault();
         this.setState({
             [e.currentTarget.name]: e.currentTarget.value,

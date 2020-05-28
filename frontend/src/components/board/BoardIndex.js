@@ -6,7 +6,6 @@ import { MainContainer } from './../layout/MainContainer';
 import { confirmAlert } from 'react-confirm-alert';
 import BoardCard from './../user/BoardCard';
 import UserBoardRequests from './../../requests/UserBoardRequests';
-import { Input } from '...'
 
 
 const mapStateToProps = state => {
