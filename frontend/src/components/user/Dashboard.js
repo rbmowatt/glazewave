@@ -77,7 +77,7 @@ class UserDashboard extends React.Component{
                                                         if (index < 5) { 
                                                             mappedArray.push(
                                                                 <div key={board.id} className="card row">
-                                                                    <BoardCard board={board} key={board.id} />
+                                                                    <BoardCard board={board} key={board.id} className="row col-md-12" />
                                                                 </div>
                                                             );
                                                         }                                                  

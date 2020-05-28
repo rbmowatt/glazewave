@@ -16,9 +16,9 @@ module.exports = (sequelize, DataTypes) => {
     is_public: DataTypes.BOOLEAN
   }, {underscored: true, tableName: 'user_boards'});
   UserBoard.associate = function(models) {
-    // associations can be defined here
     UserBoard.belongsTo(models.Board);
     UserBoard.belongsTo(models.User);
+    UserBoard.hasMany(models.UserBoardImage);
   };
   return UserBoard;
 };

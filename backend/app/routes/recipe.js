@@ -4,7 +4,7 @@ const multer  = require('multer');
 const multerS3 = require('multer-s3');
 const s3Config = require('../config/s3');
 const s3 = new aws.S3(s3Config);
-const Dynamo = require('./../services/dynamo');
+
 
 const upload = multer({
     storage: multerS3({

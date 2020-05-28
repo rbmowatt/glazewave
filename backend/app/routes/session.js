@@ -1,7 +1,7 @@
 const { Router } = require('express');
 let upload = require('./../services/images/upload');
 const BaseService = require('./../services/SessionService');
-const SessionImageService  = require('./../services/SessionImageService');
+const ImageService  = require('./../services/ImageService');
 const EntityType = 'Session';
 
 const router = new Router();
@@ -47,7 +47,7 @@ router.post('/', upload.single('photo'), function (req, res) {
     .then(data => {
       if(req.file && req.file.key){
         const imgObj = { user_id : req.body.user_id, session_id : data.id, name : req.file.key, is_public : 0, is_default : 1};
-        SessionImageService.make().create(imgObj)
+        ImageService.make('SessionImage').create(imgObj)
       }
       res.send(data);
     })
