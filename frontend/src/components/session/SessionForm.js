@@ -3,6 +3,9 @@ import Modal from './../layout/Modal';
 import { connect } from 'react-redux';
 import CreateUserBoard from  './../board/CreateUserBoard';
 import UserBoardRequests from './../../requests/UserBoardRequests';
+import { Form } from 'react-advanced-form';
+import Input from './../form/Input';
+import { Select, Textarea, Button } from 'react-advanced-form-addons';
 
 const mapStateToProps = state => {
     return { session: state.session, boards : state.user_boards, user_sessions : state.user_sessions }
@@ -49,61 +52,34 @@ class SessionForm extends React.Component{
     render(){ 
         return (
             <div>
-            <form className="row" id="create-post-form" onSubmit={this.props.processFormSubmission} noValidate={true}>
-            <div className="form-group col-md-12">
-                    <label htmlFor="first_name"> Name/Title </label>
-                    <input type="text" id="name" defaultValue={this.props.session.title} onChange={(e) => this.props.handleInputChanges(e)} name="name" className="form-control" placeholder="Session Title" />
-            </div>
-            <div className="form-group col-md-12">
-                <label htmlFor="rating"> What Board Did You Use?
-                <select  onChange={(e) => this.props.handleInputChanges(e)} id="board_id" name="board_id" className="form-control">
-                    {this.props.boards.map((obj) => {
+            <Form onSubmit={this.props.processFormSubmission} >
+            <Input name="name" label="Session Name" required />
+            <Select name="board_id" label="Which Board Did You Use?" required>
+                  {this.props.boards.map((obj) => {
                         return <option key={obj.id} prop={obj.name} value={obj.id}>{obj.name}</option>
                     })}
-                </select>
-                </label>
-                <div> 
-                <button type='button' onClick={this.showModal}>Add A Board</button>
-                </div>
-            </div>
-            <div className="form-group col-md-12">
-                <label htmlFor="rating"> What would you rate this Session on a scale of 1-10?
-                    <select value={this.props.session.rating} onChange={(e) => this.props.handleInputChanges(e)} id="rating" name="rating" className="form-control">
-                            {[...Array(11).keys()].map((value, index) => {
-                                if(value === 0) return;
-                                return  <option key={index} value={value}>{value}</option>
-                            })}
-                    </select>
-                </label>
-            </div>
-            <div className="form-group col-md-12">
-            <label htmlFor="isPublic"> Should this Session be Public to ALL logged-in Users?
-                <select value={this.props.session.is_public} onChange={(e) => this.props.handleInputChanges(e)} id="is_public" name="is_public" className="form-control">
+            </Select>
+            <Button type='button' onClick={this.showModal}>Add A Board</Button>
+            <Select name="rating" label="What would you rate this Session on a scale of 1-10?" required>
+                {[...Array(11).keys()].map((value, index) => {
+                    if(value === 0) return;
+                        return  <option key={index} value={value}>{value}</option>
+                })}
+            </Select>
+            <Select name="is_public" label="Should this Session be Public to ALL logged-in Users?" required>
                 <option value="0">Private</option>
                 <option value="1">Public</option>
-                </select>
-                </label>
-            </div>
-            <div className="form-group col-md-12">
-                    <label htmlFor="first_name"> Notes </label>
-                    <textarea id="notes" name="notes" className="form-control" onChange={(e) => this.props.handleInputChanges(e)} />
-            </div>
-            
-            { this.props.children && 
-                <div className="form-group col-md-12">
-                    { this.props.children }
-                </div>
+            </Select>
+            <Textarea name="notes" label="Notes" required />
+            {
+                this.props.children 
             }
-            <div className="form-group col-md-4 pull-right">
-                <button className="btn btn-success" type="submit">
-                {(this.props.edit) ? ("Edit Session") : ( "Add Session") }
-                </button>
+            <Button type='submit'>  {(this.props.edit) ? ("Edit Session") : ( "Add Session") }</Button>
+            </Form>
+            <Modal show={this.state.show} handleClose={(e) =>this.hideModal(e)}>
+                <CreateUserBoard onSuccess={(e) =>this.hideModal(e)} />
+            </Modal>
             </div>
-        </form>
-        <Modal show={this.state.show} handleClose={(e) =>this.hideModal(e)}>
-            <CreateUserBoard onSuccess={(e) =>this.hideModal(e)} />
-        </Modal>
-        </div>
         )
     }
 }
