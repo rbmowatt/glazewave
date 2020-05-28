@@ -75,29 +75,14 @@ class SessionIndex extends Component {
                         </div> 
                         <div className="card-text">
                             <div className="table-container" >
-                                <div className="row table-header">
-                                    <div className="col-6">
-                                         Title
-                                    </div>
-                                    <div className="col-3">
-                                        Date
-                                    </div>
-                                    <div className="col-3">
-                                        Location
-                                    </div>
-                                </div>
                                 <div className="row col-md-12">
-                                {sessions && sessions.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0)).map(session =>
-                                (this.state.isAdmin || session.isPublic) &&
-                               
-                                    <SessionCard session={session} key={session.id}  className="col-md-3" deleteSession={this.deleteSession} viewSession={this.viewSession} editSession={this.editSession}  />
-                               
-                                )
-                                }
-                                 </div>
+                                {sessions && sessions.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0)).map(session =>                        
+                                    <SessionCard session={session} key={session.id}  className="col-md-3" deleteSession={this.deleteSession} viewSession={this.viewSession} editSession={this.editSession}  />                              
+                                )}
                                 {
-                                    (!sessions  || sessions.length === 0) &&  <div className="col-12"><h3>No sessions found at the moment</h3></div>
+                                    (!sessions  || sessions.length === 0) &&  <div className="col-12"><h3>No sessionS found at the moment</h3></div>
                                 } 
+                                </div>
                              </div>
                         </div>
                     </div>

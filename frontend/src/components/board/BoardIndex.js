@@ -1,22 +1,29 @@
+import 'react-confirm-alert/src/react-confirm-alert.css'; 
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom';
-import axios from 'axios';
-import apiConfig from '../../config/api.js';
 import { MainContainer } from './../layout/MainContainer';
-import BoardRow from './BoardRow';
-import { confirmAlert } from 'react-confirm-alert'; // Import
-import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
+import { confirmAlert } from 'react-confirm-alert';
+import BoardCard from './../user/BoardCard';
+import UserBoardRequests from './../../requests/UserBoardRequests';
+import { Input } from '...'
 
 
 const mapStateToProps = state => {
-    return { session: state.session }
+    return { session: state.session, boards : state.user_boards }
   }
+
+  const mapDispachToProps = dispatch => {
+    return {
+        loadBoards: (request, session) => dispatch( request.get({label : 'LOAD_USER_BOARDS', wheres : {user_id : session.user.id }, withs : ['Board.Manufacturer', 'UserBoardImage'], onSuccess : (data)=>{ return { type: "SET_USER_BOARDS", payload: data}}})),
+        deleteBoard: (request, id) => dispatch( request.delete({label : 'DELETE_USER_BOARD', id:id , onSuccess : (data)=>{ return { type: "DELETE_USER_BOARD", payload: id }}}))
+    };
+  };
 
 class BoardIndex extends Component {
     constructor(props) {
         super(props);
-        this.state = { boards: [], headers : {}, isAdmin : false }
+        this.state = {isAdmin : false }
         this.deleteBoard = this.deleteBoard.bind(this);
         this.editBoard = this.editBoard.bind(this);
         this.viewBoard = this.viewBoard.bind(this);
@@ -25,12 +32,7 @@ class BoardIndex extends Component {
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
             this.setState({ isAdmin : this.props.session.isAdmin });
-            
-            
-            axios.get( apiConfig.host + apiConfig.port + `/api/board`, this.props.session.headers).then(data => {
-                data.data.sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0));
-                this.setState({ boards: data.data })
-            });
+            this.props.loadBoards(new UserBoardRequests(this.props.session), this.props.session );
         }
     }
 
@@ -42,11 +44,7 @@ class BoardIndex extends Component {
               {
                 label: 'Yes',
                 onClick: () => {
-                    axios.delete(apiConfig.host + apiConfig.port + `/api/board/${id}`, this.props.session.headers).then(data => {
-                        const index = this.state.boards.findIndex(board => board.id === id);
-                        this.state.boards.splice(index, 1);
-                        this.props.history.push('/board');
-                    })
+                    this.props.deleteSession(new UserBoardRequests(this.props.session), id);
                 }
               },
               {
@@ -66,7 +64,7 @@ class BoardIndex extends Component {
     }
 
     render() {
-        const boards = this.state.boards;
+        const { boards } = this.props;
         return (
             <MainContainer>
                 <div className="row">
@@ -77,32 +75,18 @@ class BoardIndex extends Component {
                         </div> 
                         <div className="card-text">
                             <div className="table-container" >
-                                <div className="row table-header">
-                                    <div className="col-6">
-                                         Name
-                                    </div>
-                                    <div className="col-3">
-                                        Date
-                                    </div>
-                                    <div className="col-3">
-                                        Location
-                                    </div>
+                                <div className="row col-md-12">
+                                    {boards && boards.sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0)).map(board =>  
+                                        <BoardCard board={board} key={board.id}  className="col-md-3" deleteBoard={this.deleteBoard} viewBoard={this.viewBoard} editBoard={this.editBoard}  />                              
+                                        )
+                                    }
                                 </div>
-                                {boards && boards.map(board =>
-                                (this.state.isAdmin || board.isPublic) &&
-                                    <BoardRow board={board} deleteBoard={this.deleteBoard} viewBoard={this.viewBoard} editBoard={this.editBoard} isAdmin={this.state.isAdmin} key={ board.id }/>
-                                )
-                                }
-                                {
-                                    (!boards  || boards.length === 0) &&  <div className="col-12"><h3>No boards found at the moment</h3></div>
-                                } 
                              </div>
                         </div>
                     </div>
                 </div>
             </MainContainer>
-          
         )
     }
 }
-export default connect(mapStateToProps)(BoardIndex)
+export default connect(mapStateToProps, mapDispachToProps)(BoardIndex)

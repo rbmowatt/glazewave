@@ -61,9 +61,9 @@ class BaseService {
     return data;
   }
 
-  static make()
+  static make( model = null )
   {
-    return new this;
+    return (model ) ? new this(model) : new this;
   }
 }
 

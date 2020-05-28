@@ -53,7 +53,7 @@ body {
 	background: #eee;
 	padding: 1em;
 	min-width: 100%;
-	overflow: scroll;
+/**	overflow: scroll; **/
 }
 
 .card-close {
@@ -67,7 +67,7 @@ img.preview {
 
 .table {
 	table-layout: fixed;
-	overflow: scroll;
+/**	overflow: scroll; **/
 	width: 100%;
 }
 
@@ -120,7 +120,7 @@ img.preview {
 }
 
 .table-container {
-	overflow: scroll;
+	/** overflow: scroll; **/
 	margin: 0px;
   padding: 0px;
   border-radius: .2em ;
