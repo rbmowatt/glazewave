@@ -19,6 +19,20 @@ router.get('/', function (req, res) {
     });
 });
 
+router.get('/images', function (req, res) {
+  ImageService.make('SessionImage').where( req.query ,req.parser.with, [], [], req.parser.limit, req.parser.page)
+    .then(data => {
+      res.send(data);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while retrieving " + EntityType + "."
+      });
+    });
+});
+
+
 
 router.get('/:id', function (req, res) {
   const id = req.params.id;
@@ -34,7 +48,7 @@ router.get('/:id', function (req, res) {
 });
 
 
-router.post('/', upload.single('photo'), function (req, res) {
+router.post('/', upload.array('photo'), function (req, res) {
   // Validate request
   console.log('req.body', req.body);
   if (!req.body.title) {
@@ -45,9 +59,12 @@ router.post('/', upload.single('photo'), function (req, res) {
   }
   BaseService.make().create(req.body)
     .then(data => {
-      if(req.file && req.file.key){
-        const imgObj = { user_id : req.body.user_id, session_id : data.id, name : req.file.key, is_public : 0, is_default : 1};
-        ImageService.make('SessionImage').create(imgObj)
+      if(req.files && req.files.length){
+        req.files.forEach(file=>{
+          let imgObj = { user_id : req.body.user_id, session_id : data.id, name : file.key, is_public : 0, is_default : 1};
+          ImageService.make('SessionImage').create(imgObj)
+        })
+        
       }
       res.send(data);
     })

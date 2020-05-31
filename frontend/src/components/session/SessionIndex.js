@@ -5,8 +5,7 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom';
 import { MainContainer } from './../layout/MainContainer';
 import SessionRequests from './../../requests/SessionRequests';
-import SessionRow from './SessionRow';
-import SessionCard from './../user/SessionCard';
+import SessionCard from './SessionCard';
 
 const mapStateToProps = state => {
     return { session: state.session, sessions : state.user_sessions }
@@ -14,7 +13,7 @@ const mapStateToProps = state => {
 
   const mapDispachToProps = dispatch => {
     return {
-        loadSessions: (request, session) => dispatch( request.get({label : 'LOAD_USER_SESSIONS', wheres : {user_id : session.user.id }, withs : ['Board', 'Location'], onSuccess : (data)=>{ return { type: "SET_USER_SESSIONS", payload: data}}})),
+        loadSessions: (request, session) => dispatch( request.get({label : 'LOAD_USER_SESSIONS', wheres : {user_id : session.user.id }, withs : ['Board', 'Location', 'SessionImage'], onSuccess : (data)=>{ return { type: "SET_USER_SESSIONS", payload: data}}})),
         deleteSession: (request, id) => dispatch( request.delete({label : 'DELETE_USER_SESSION', id:id , onSuccess : (data)=>{ return { type: "DELETE_USER_SESSION", payload: id }}}))
     };
   };
@@ -26,13 +25,13 @@ class SessionIndex extends Component {
         this.deleteSession = this.deleteSession.bind(this);
         this.editSession = this.editSession.bind(this);
         this.viewSession = this.viewSession.bind(this);
-       // this.sessionRequest = new SessionRequests(this.props.session);
+       this.sessionRequest = new SessionRequests(this.props.session);
     }
 
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
             this.setState({ isAdmin : this.props.session.isAdmin });
-            this.props.loadSessions(new SessionRequests(this.props.session), this.props.session );
+            this.props.loadSessions(this.sessionRequest , this.props.session );
         }
     }
 
@@ -44,7 +43,7 @@ class SessionIndex extends Component {
               {
                 label: 'Yes',
                 onClick: () => {
-                    this.props.deleteSession(new SessionRequests(this.props.session), id);
+                    this.props.deleteSession(this.sessionRequest, id);
                 }
               },
               {
@@ -70,7 +69,7 @@ class SessionIndex extends Component {
                 <div className="row">
                     <div className="card card-lg mx-auto">
                         <div className="card-title"><h2>Sessions
-                        { this.state.isAdmin &&  <Link to={'session/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New Session</Link>}
+                        { <Link to={'session/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New Session</Link>}
                         </h2>
                         </div> 
                         <div className="card-text">

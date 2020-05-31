@@ -2,7 +2,7 @@ import * as React from 'react';
 import { connect } from 'react-redux'
 import { MainContainer } from './../layout/MainContainer';
 import { Link } from 'react-router-dom';
-import SessionCard from './SessionCard';
+import SessionCard from './../session/SessionCard';
 import BoardCard from './BoardCard';
 import LocationCard from './LocationCard';
 import UserRequests from './../../requests/UserRequests';
@@ -17,7 +17,7 @@ const mapStateToProps = state => {
     return {
         loadUser : (request, session) => dispatch( request.getOne({label : 'LOAD_USER', id :session.user.id , withs : ['UserBoard', 'Session.SessionImage','UserLocation'], onSuccess : (data)=>{ return {type: "SET_USER", payload: data}}})),
         loadBoards: (request, session) => dispatch( request.get({label : 'LOAD_USER_BAORDS',  wheres : {user_id : session.user.id }, withs : ['Board'], onSuccess : (data)=>{ return {type: "SET_USER_BOARDS", payload: data}}})),
-        loadSessions: (request, session) => dispatch( request.get({label : 'LOAD_USER_SESSIONS', wheres : {user_id : session.user.id }, withs : ['Board', 'Location'], onSuccess : (data)=>{ return { type: "SET_USER_SESSIONS", payload: data}}})),
+        loadSessions: (request, session) => dispatch( request.get({label : 'LOAD_USER_SESSIONS', wheres : {user_id : session.user.id }, withs : ['Board', 'SessionImage', 'Location'], onSuccess : (data)=>{ return { type: "SET_USER_SESSIONS", payload: data}}})),
     };
   };
 

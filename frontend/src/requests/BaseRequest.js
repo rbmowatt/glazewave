@@ -10,7 +10,7 @@ class BaseRequest {
 
     get = ({ wheres = [], withs = [], limit = 20, page = 0, label = '', onSuccess = ()=>{}, onFailure = (e)=>this.onFailure(e) }) => {
         return this.apiAction({
-            url :this.getEndpoint() + `?` + this.getWhereString(wheres) + `&` + this.getWithString(withs),
+            url :this.getEndpoint() + `?` + this.getWhereString(wheres) + `&` + this.getWithString(withs) + `&limit=` + limit,
             onSuccess : onSuccess,
             onFailure : onFailure,
             label : label

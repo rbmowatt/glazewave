@@ -1,12 +1,10 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import {FormCard} from './../layout/FormCard';
 import { MainContainer } from './../layout/MainContainer';
-import SessionForm  from './SessionForm';
+import SessionForm  from './forms/SessionForm';
 import SessionRequests from './../../requests/SessionRequests';
 import UserBoardRequests from './../../requests/UserBoardRequests';
-import ImageUpload from './../layout/ImageUpload';
-import { Resolver } from 'dns';
 
 const mapStateToProps = state => {
     return { session: state.session, boards:state.user_boards, user_sessions : state.user_sessions }
@@ -19,30 +17,26 @@ const mapStateToProps = state => {
   const TITLE = 'Create A Session';
 
 class Create extends React.Component{
+
     constructor(props ) {
         super(props);
         this.state = {
-            rating: 5, is_public : 0, name: '',
             values: [],
             loading: false,
             submitSuccess: false,
             submitFail: false,
             errorMessage : null,
             images : [],
-            boards : [],
-            show : false
+            show : false,
         }
-        this.sessionRequest = new SessionRequests(this.props.session);
-        this.userBoardRequest = new UserBoardRequests(this.props.session);
+        this.onDrop = this.onDrop.bind(this);
     }
 
-    showModal = () => {
-      this.setState({ show: true });
-    };
-  
-    hideModal = () => {
-      this.setState({ show: false });
-    };
+    onDrop(pictureFiles, pictureDataURLs) {
+        this.setState({
+            images : this.state.images.concat(pictureFiles)
+          });
+    }
   
     componentDidMount(){
         if (!this.props.session.isLoggedIn) {
@@ -63,15 +57,11 @@ class Create extends React.Component{
         const {session, createSession} = this.props;
         const { images } = this.state;
         return new Promise(function(resolve, reject){
-            console.log('calojng promise')
             if (session.isLoggedIn ) {
-                console.log('clogged in ', serialized)
                 const formData = SessionRequests.createFormRequest(serialized);
                 images.forEach((file, i) => {
                     formData.append('photo', file)
                 })
-                console.log('got past images')
-                //this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
                 createSession(new SessionRequests(session), formData);
                 resolve(formData);
             }else{
@@ -88,25 +78,13 @@ class Create extends React.Component{
         })
     }
 
-    onImageUploaded = e => {
-        const files = Array.from(e.target.files)
-        this.setState({ images : files});
-    }
-    
-    removeImage = id => {
-        console.log(this.state.images);
-        this.setState({
-          images: this.state.images.filter(image => image.public_id !== id)
-        })
-      }
-
-      returnToIndex = e =>
-      {
+    returnToIndex = e => {
         this.props.history.push('/user/dashboard');
-      }
+    }
 
     render() {
-        const { submitSuccess, submitFail, loading, errorMessage} = this.state;
+        const { submitSuccess, submitFail, loading, errorMessage, images} = this.state;
+        console.log('initial images = ', images)
         return (
             <MainContainer>
                 <FormCard returnToIndex={this.returnToIndex}>
@@ -129,14 +107,11 @@ class Create extends React.Component{
                         </div>
                         )}    
                         </div>
-                         <div className="col-md-6 ">           
-                        <SessionForm session={this.state.session} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading}  boards={this.props.boards}>
-                            
+                         <div className="col-md-12">           
+                        <SessionForm session={this.state.session} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading}  boards={this.props.boards} onDrop={this.onDrop}>
+                   
                         </SessionForm>
-                    </div>
-                    <div className="col-md-6 ">
-                    <ImageUpload onImageUploaded={this.onImageUploaded} />
-                    </div>
+                        </div>
                     </div>
                 </FormCard>
             </MainContainer>
