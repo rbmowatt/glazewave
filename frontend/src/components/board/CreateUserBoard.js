@@ -1,38 +1,52 @@
 import * as React from 'react';
 import { connect } from 'react-redux'
-import Spinner from './../helpers/image/Spinner'
-import Images from './../helpers/image/Images'
-import Buttons from './../helpers/image/Buttons'
 import {FormCard} from './../layout/FormCard';
-import  UserBoardForm  from './UserBoardForm';
+import  UserBoardForm  from './forms/UserBoardForm';
 import { withRouter} from 'react-router-dom';
-
 import UserBoardRequests from './../../requests/UserBoardRequests';
-import ImageUpload from './../layout/ImageUpload';
+
 
 
 const TITLE="Create Board";
 
 const mapStateToProps = state => {
-    return { session: state.session }
+    return { session: state.session, user_boards : state.user_boards }
   }
 
   const mapDispachToProps = dispatch => {
     return {
-        createUserBoard : (request, data) => dispatch( request.create({label : 'CREATE_USER_BOARD', data: data , onSuccess : (data)=>{ return {type: "USER_BOARD_CREATED", payload: data}}}))};
+        createUserBoard : (request, data) => dispatch( request.create({label : 'CREATE_USER_BOARD', data: data , onSuccess : (data)=>{ return {type: "USER_BOARD_CREATED", payload: data}}})),
+        loadBoards: (request, session) => dispatch( request.get({label : 'LOAD_USER_BOARDS', wheres : {user_id : session.user.id }, withs : ['Board.Manufacturer', 'UserBoardImage'], onSuccess : (data)=>{ return { type: "SET_USER_BOARDS", payload: data}}})),
+       
+    };
   };
 
 class CreateUserBoard extends React.Component{
     constructor(props ) {
         super(props);
         this.state = {
-            rating: 5, is_public : 0, name: '',
-            values: [],
             submitSuccess: false,
             submitFail: false,
             errorMessage : null,
-            images : [],
-            board : {}
+            images : []
+        }
+        this.onDrop = this.onDrop.bind(this);
+    }
+
+    onDrop(pictureFiles, pictureDataURLs) {
+        this.setState({
+            images : this.state.images.concat(pictureFiles)
+          });
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if(this.props.noUpdate) return;
+        if (prevProps.user_boards.length !== this.props.user_boards.length) {
+            this.setState({ submitSuccess : true })
+            this.props.loadBoards(new UserBoardRequests(this.props.session), this.props.session );
+            setTimeout(() => {
+                this.props.history.push('/board');
+            }, 1500)
         }
     }
 
@@ -42,22 +56,21 @@ class CreateUserBoard extends React.Component{
         } 
     }
     
-    processFormSubmission = (e)=> {
-        e.preventDefault();
-        this.setState({ loading: true });
-
-        const formData = UserBoardRequests.createFormRequest({
-            'rating' : this.state.rating,
-            'name' : this.state.name,
-            'user_id' : this.props.session.user.id
+    processFormSubmission = ({ serialized, fields, form})=> {
+        const {session, createUserBoard} = this.props;
+        const { images } = this.state;
+        return new Promise(function(resolve, reject){
+            if (session.isLoggedIn ) {
+                const formData = UserBoardRequests.createFormRequest(serialized);
+                images.forEach((file, i) => {
+                    formData.append('photo', file)
+                })
+                createUserBoard(new UserBoardRequests(session), formData);
+                resolve(formData);
+            }else{
+                reject('user not logged in ');
+            }
         });
-        this.state.images.forEach((file, i) => {
-            formData.append('photo', file)
-          })
-        this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
-        if (this.props.session.isLoggedIn) {
-            this.props.createUserBoard(new UserBoardRequests(this.props.session), formData);
-        }
     }
 
     handleInputChanges = e => {
@@ -67,34 +80,13 @@ class CreateUserBoard extends React.Component{
         })
     }
 
-    onImageUploaded = e => {
-        const files = Array.from(e.target.files)
-        this.setState({ images : files});
-    }
-    
-    removeImage = id => {
-        this.setState({
-          images: this.state.images.filter(image => image.public_id !== id)
-        })
-      }
-
-      returnToIndex = e =>
-      {
+    returnToIndex = e =>
+    {
         this.props.history.push('/board');
-      }
+    }
 
     render() {
         const { submitSuccess, submitFail, loading, errorMessage, uploading, images } = this.state;
-        const content = () => {
-            switch(true) {
-              case uploading:
-                return <Spinner />
-              case images.length > 0:
-                return <Images images={images} removeImage={this.removeImage} />
-              default:
-                return <Buttons onChange={this.onChange} />
-            }
-        }
         return (
                 <FormCard returnToIndex={this.returnToIndex}>
                     <div className="col-md-12 ">
@@ -114,9 +106,7 @@ class CreateUserBoard extends React.Component{
                             { errorMessage }
                         </div>
                         )}               
-                        <UserBoardForm board={this.state.board} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading} >
-                                <ImageUpload onImageUploaded={this.onImageUploaded} />
-                        </UserBoardForm>
+                        <UserBoardForm board={this.state.board} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading}  onDrop={this.onDrop} />
                     </div>
                 </FormCard>
         )

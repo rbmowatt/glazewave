@@ -1,12 +1,13 @@
 import React from 'react';
-import Modal from './../layout/Modal';
+import Modal from './../../layout/Modal';
 import { connect } from 'react-redux';
-import CreateUserBoard from  './../board/CreateUserBoard';
-import UserBoardRequests from './../../requests/UserBoardRequests';
+import CreateUserBoard from  './../../board/CreateUserBoard';
+import UserBoardRequests from './../../../requests/UserBoardRequests';
 import { Form } from 'react-advanced-form';
 import { Input, Select, Textarea, Button } from 'react-advanced-form-addons';
 import rules from './validation-rules'
 import messages from './validation-messages'
+import ImageUploader from 'react-images-upload';
 
 const mapStateToProps = state => {
     return { session: state.session, boards : state.user_boards, user_sessions : state.user_sessions }
@@ -22,7 +23,7 @@ class SessionForm extends React.Component{
     constructor(props)
     {
         super(props);
-        this.state = {show:false}
+        this.state = {show:false, pictures : props.pictures}
     }
 
     componentDidMount() {
@@ -51,10 +52,11 @@ class SessionForm extends React.Component{
 
     render(){ 
         return (
-            <div>
-            <Form action={({ serialized, fields, form}) => this.props.processFormSubmission({session : this.props.session, serialized, fields, form})} rules={rules} messages={messages}>
-            <Input type="hidden" name="user_id" value={this.props.session.user.id} />
-            <Input name="title" label="Session Name" required />
+            <div className="col-md-12">
+            <Form action={({ serialized, fields, form}) => this.props.processFormSubmission({session : this.props.session, serialized, fields, form})} rules={rules} messages={messages} className="col-md-12 row">
+            <div className="col-md-8 ">
+           
+            <Input name="title" label="Session Name" className="form-control" required />
             <Select name="board_id" label="Which Board Did You Use?" >
                   {this.props.boards.map((obj) => {
                         return <option key={obj.id} prop={obj.name} value={obj.id}>{obj.name}</option>
@@ -75,12 +77,27 @@ class SessionForm extends React.Component{
             {
                 this.props.children 
             }
+            </div>
+            <div className="col-md-4">
+            <ImageUploader
+                withIcon={false}
+                buttonText='Choose images'
+                onChange={this.props.onDrop}
+                imgExtension={['.jpg', '.gif', '.png', '.gif']}
+                maxFileSize={5242880}
+                withPreview={true}
+            />
+            </div>
+            <div className="col-md-12">
+            <Input type="hidden" name="user_id" value={this.props.session.user.id} />
             <Button type='submit'>  {(this.props.edit) ? ("Edit Session") : ( "Add Session") }</Button>
+            </div>
             </Form>
             <Modal show={this.state.show} handleClose={(e) =>this.hideModal(e)}>
-                <CreateUserBoard onSuccess={(e) =>this.hideModal(e)} />
+                <CreateUserBoard onSuccess={(e) =>this.hideModal(e)} noUpdate={true} />
             </Modal>
             </div>
+          
         )
     }
 }

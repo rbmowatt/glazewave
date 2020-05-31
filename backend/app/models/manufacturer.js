@@ -4,14 +4,13 @@ module.exports = (sequelize, DataTypes) => {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
-      defaultValue: DataTypes.UUIDV4,
       allowNull: false,
       autoIncrement: true,
     },
     name: DataTypes.STRING,
   }, {underscored: true});
   Manufacturer.associate = function(models) {
-    // associations can be defined here
+    Manufacturer.hasMany(models.Board)
   };
   return Manufacturer;
 };

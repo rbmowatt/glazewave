@@ -2,12 +2,9 @@ import * as React from 'react';
 import { connect } from 'react-redux'
 import axios from 'axios';
 import apiConfig from '../../config/api.js';
-import Spinner from './../helpers/image/Spinner'
-import Images from './../helpers/image/Images'
-import Buttons from './../helpers/image/Buttons'
 import { MainContainer } from './../layout/MainContainer';
 import {FormCard} from './../layout/FormCard';
-import { BoardForm } from './BoardForm';
+import { BoardForm } from './forms/BoardForm';
 
 
 const TITLE="Create Board";
@@ -80,6 +77,12 @@ class Create extends React.Component{
         }
     }
 
+
+ß
+
+
+
+
     handleInputChanges = e => {
         e.preventDefault();
         this.setState({
@@ -92,29 +95,13 @@ class Create extends React.Component{
         this.setState({ uploading: false , images : files});
     }
     
-    removeImage = id => {
-        this.setState({
-          images: this.state.images.filter(image => image.public_id !== id)
-        })
-      }
-
-      returnToIndex = e =>
+    returnToIndex = e =>
       {
         this.props.history.push('/board');
       }
 
     render() {
-        const { submitSuccess, submitFail, loading, errorMessage, uploading, images } = this.state;
-        const content = () => {
-            switch(true) {
-              case uploading:
-                return <Spinner />
-              case images.length > 0:
-                return <Images images={images} removeImage={this.removeImage} />
-              default:
-                return <Buttons onChange={this.onChange} />
-            }
-          }
+        const { submitSuccess, submitFail, loading, errorMessage} = this.state;
         return (
             <MainContainer>
                 <FormCard returnToIndex={this.returnToIndex}>
@@ -135,8 +122,13 @@ class Create extends React.Component{
                             { errorMessage }
                         </div>
                         )}               
-                        <BoardForm board={this.state.board} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading} manufacturers={this.state.manufacturers} models = {this.state.models} >
-                                {content()}
+                        <BoardForm 
+                        board={this.state.board} 
+                        handleInputChanges={this.handleInputChanges} 
+                        processFormSubmission={this.processFormSubmission} 
+                        loading={loading} 
+ 
+ >
                         </BoardForm>
                     </div>
                 </FormCard>

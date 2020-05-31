@@ -4,7 +4,7 @@ import axios from 'axios';
 import apiConfig from '../../config/api.js';
 import { MainContainer } from './../layout/MainContainer';
 import {FormCard} from './../layout/FormCard';
-import { BoardForm } from './BoardForm';
+import { BoardForm } from './forms/BoardForm';
 
 const TITLE = "Edit Board";
 const mapStateToProps = state => {

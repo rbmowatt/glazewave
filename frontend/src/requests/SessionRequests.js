@@ -5,5 +5,11 @@ class SessionRequests extends BaseRequest{
         super(session);
         this.endpoint = '/api/session';
     }
+
+    getImages = (args) => {
+        this.endpoint = '/api/session/images';
+        return this.get(args);
+
+    }
 }
 export default SessionRequests;

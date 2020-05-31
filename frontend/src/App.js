@@ -39,7 +39,6 @@ const mapStateToProps = state => {
 
 class App extends React.Component{
   render() {
-    console.log('im hit');
     return (
       <div>
         <Navbar session={this.props.session}  />
