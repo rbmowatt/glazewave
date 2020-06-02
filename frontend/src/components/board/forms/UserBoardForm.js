@@ -23,10 +23,7 @@ const mapStateToProps = state => {
     };
   };
 
-  
-
 class UserBoardForm extends React.Component{
-
 
     constructor()
     {

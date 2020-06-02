@@ -4,6 +4,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 const StarBar = props =>{
     let content = [];
+    if(!props.stars || props.stars === 0) return "No Rating";
     for (let i = 0; i < props.stars; i++) {
        content.push(<FontAwesomeIcon  className="star" icon={faStar} size='1x' key={i+1} />);
     }

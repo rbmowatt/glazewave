@@ -6,15 +6,21 @@ import { MainContainer } from './../layout/MainContainer';
 import StarBar from './../layout/StarBar';
 import SessionRequests from './../../requests/SessionRequests';
 import ImageGallery from 'react-image-gallery';
+import moment from 'moment'
 
 const mapStateToProps = state => {
-    return { session: state.session, current_session : state.user_session, session_images : state.session_images }
+    return { session: state.session, current_session : state.user_sessions.selected, session_images : state.session_images }
+  }
+
+  const withs = {
+    session : ['Location', 'UserBoard']
   }
 
   const mapDispachToProps = dispatch => {
     return {
-      loadSession: (request, props) => dispatch( request.getOne({label : 'LOAD_USER_SESSION', id : props.match.params.id,  withs : ['SessionImage'], onSuccess : (data)=>{ return { type: "SET_USER_SESSION", payload: data}}})),
+      loadSession: (request, props) => dispatch( request.getOne({label : 'LOAD_USER_SESSION', id : props.match.params.id,  withs : withs.session , onSuccess : (data)=>{ return { type: "SET_USER_SESSION", payload: data}}})),
       loadSessionImages: (request, props) => dispatch( request.getImages({label : 'LOAD_SESSION_IMAGES', wheres : {session_id : props.match.params.id }, onSuccess : (data)=>{ return { type: "SET_SESSION_IMAGES", payload: data}}})),
+      clearSession : ()=>dispatch({ type: "CLEAR_USER_SESSION"})
    
     };
   };
@@ -29,6 +35,10 @@ class SessionView extends Component {
        else{
             this.props.history.push('/session');
        }
+    }
+
+    componentWillUnmount(){
+        this.props.clearSession();
     }
 
     returnToIndex = e =>
@@ -54,11 +64,14 @@ class SessionView extends Component {
                             <div className="rating">
                                     <StarBar stars={session.rating} />
                                 </div>
-                                <h5 className="submitted-by">Date: <span>{session.createdAt}</span></h5>
-                                <h5 className="submitted-by">Board: <span>{session.createdAt}</span></h5>
-                                <h5 className="submitted-by">Location: <span>{session.createdAt}</span></h5>
-                                <h5 className="review-no">Notes:</h5>
+                                <h5 className="submitted-by">Date: <span>{moment(session.createdAt).format('MMMM D YYYY')}</span></h5>
+                                <h5 className="submitted-by">Time: <span>{moment(session.createdAt).format('h:mm a')}</span></h5>
+                                <h5 className="submitted-by">Board: <span>{session.UserBoard && session.UserBoard.name}</span></h5>
+                                <h5 className="submitted-by">Location: <span>{session.Location && session.Location.name}</span></h5>
+                                <h5 className="review-no">Notes:
                                 <p className="session-description">{ session.notes}</p>
+                                </h5>
+                               
                             </div>
                         </div>
                     </div>

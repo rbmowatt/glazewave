@@ -9,12 +9,14 @@ module.exports = (sequelize, DataTypes) => {
       autoIncrement: true,
     },
     name: DataTypes.STRING,
-    isPublic: DataTypes.BOOLEAN,
-    cityId: DataTypes.INTEGER,
-    created_by: DataTypes.INTEGER
+    formatted_address: DataTypes.STRING,
+    lat: DataTypes.STRING,
+    lng: DataTypes.STRING,
+    vicinity : DataTypes.STRING,
+    url : DataTypes.STRING
   }, {underscored: true});
   Location.associate = function(models) {
-    Location.belongsTo(models.City);
+    //Location.belongsTo(models.City);
   };
   return Location;
 };

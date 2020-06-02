@@ -8,12 +8,12 @@ import SessionRequests from './../../requests/SessionRequests';
 import SessionCard from './SessionCard';
 
 const mapStateToProps = state => {
-    return { session: state.session, sessions : state.user_sessions }
+    return { session: state.session, sessions : state.user_sessions.data }
   }
 
   const mapDispachToProps = dispatch => {
     return {
-        loadSessions: (request, session) => dispatch( request.get({label : 'LOAD_USER_SESSIONS', wheres : {user_id : session.user.id }, withs : ['Board', 'Location', 'SessionImage'], onSuccess : (data)=>{ return { type: "SET_USER_SESSIONS", payload: data}}})),
+        loadSessions: (request, session) => dispatch( request.get({label : 'LOAD_USER_SESSIONS', wheres : {user_id : session.user.id }, withs : ['UserBoard', 'Location', 'SessionImage'], onSuccess : (data)=>{ return { type: "SET_USER_SESSIONS", payload: data}}})),
         deleteSession: (request, id) => dispatch( request.delete({label : 'DELETE_USER_SESSION', id:id , onSuccess : (data)=>{ return { type: "DELETE_USER_SESSION", payload: id }}}))
     };
   };
@@ -25,7 +25,7 @@ class SessionIndex extends Component {
         this.deleteSession = this.deleteSession.bind(this);
         this.editSession = this.editSession.bind(this);
         this.viewSession = this.viewSession.bind(this);
-       this.sessionRequest = new SessionRequests(this.props.session);
+        this.sessionRequest = new SessionRequests(this.props.session);
     }
 
     componentDidMount(){

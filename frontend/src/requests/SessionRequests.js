@@ -1,6 +1,9 @@
 import BaseRequest from './BaseRequest';
 
 class SessionRequests extends BaseRequest{
+
+    REQUEST_TYPE = 'SESSION';
+
     constructor( session ){
         super(session);
         this.endpoint = '/api/session';
