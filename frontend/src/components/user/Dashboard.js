@@ -8,23 +8,31 @@ import LocationCard from './LocationCard';
 import UserRequests from './../../requests/UserRequests';
 import UserBoardRequests from './../../requests/UserBoardRequests';
 import UserSessionRequests from './../../requests/SessionRequests';
+import {UserSessionsLoaded} from './../../actions/user_session';
+import {UserBoardsLoaded} from './../../actions/user_board';
+import {UserLoaded} from './../../actions/user';
 
+const DASHBOARD_LIST_LIMIT = 3; 
 const mapStateToProps = state => {
-    return { session: state.session, boards : state.user_boards, user_sessions : state.user_sessions, locations : state.user.UserLocations }
+    return { session: state.session, boards : state.user_boards, user_sessions : state.user_sessions.data, locations : state.user.UserLocations }
+  }
+
+  const withs = 
+  {
+    user : ['UserLocation'],
+    boards : ['Board'],
+    sessions : ['Board', 'SessionImage', 'Location']
   }
 
   const mapDispachToProps = dispatch => {
     return {
-        loadUser : (request, session) => dispatch( request.getOne({label : 'LOAD_USER', id :session.user.id , withs : ['UserBoard', 'Session.SessionImage','UserLocation'], onSuccess : (data)=>{ return {type: "SET_USER", payload: data}}})),
-        loadBoards: (request, session) => dispatch( request.get({label : 'LOAD_USER_BAORDS',  wheres : {user_id : session.user.id }, withs : ['Board'], onSuccess : (data)=>{ return {type: "SET_USER_BOARDS", payload: data}}})),
-        loadSessions: (request, session) => dispatch( request.get({label : 'LOAD_USER_SESSIONS', wheres : {user_id : session.user.id }, withs : ['Board', 'SessionImage', 'Location'], onSuccess : (data)=>{ return { type: "SET_USER_SESSIONS", payload: data}}})),
+        loadUser : (request, session) => dispatch( request.getOne({id :session.user.id , withs : withs.user, onSuccess : (data)=>{ return UserLoaded(data)}})),
+        loadBoards: (request, session) => dispatch( request.get({wheres : {user_id : session.user.id }, withs : withs.boards, onSuccess : (data)=>{ return UserBoardsLoaded(data)}})),
+        loadSessions: (request, session) => dispatch( request.get({wheres : {user_id : session.user.id }, withs : withs.sessions, onSuccess : (data)=>{return UserSessionsLoaded(data)}})),
     };
   };
 
 class UserDashboard extends React.Component{
-    constructor(props) {
-        super(props);
-    }
 
     componentDidMount() {
         if (this.props.session.isLoggedIn) {
@@ -33,8 +41,7 @@ class UserDashboard extends React.Component{
             this.props.loadSessions(new UserSessionRequests(this.props.session), this.props.session );
         }
     }
-
-
+    
     render() {
         const { user_sessions, boards, locations } = this.props;
         return (
@@ -59,7 +66,7 @@ class UserDashboard extends React.Component{
                                                 Sessions
                                             {
                                                 user_sessions && user_sessions.reduce((mappedArray, session, index) => {                           
-                                                        if (index < 5) { 
+                                                        if (index < DASHBOARD_LIST_LIMIT) { 
                                                             mappedArray.push(
                                                                 <div key={session.id} className="card row">
                                                                 <SessionCard session={session} key={session.id} className="row col-md-12" />
@@ -74,7 +81,7 @@ class UserDashboard extends React.Component{
                                                 Boards
                                             {
                                                 boards && boards.reduce((mappedArray, board, index) => {                           
-                                                        if (index < 5) { 
+                                                        if (index < DASHBOARD_LIST_LIMIT) { 
                                                             mappedArray.push(
                                                                 <div key={board.id} className="card row">
                                                                     <BoardCard board={board} key={board.id} className="row col-md-12" />
@@ -89,7 +96,7 @@ class UserDashboard extends React.Component{
                                             Locations
                                             {
                                                 locations && locations.reduce((mappedArray, location, index) => {                           
-                                                        if (index < 5) { 
+                                                        if (index < DASHBOARD_LIST_LIMIT) { 
                                                             mappedArray.push(
                                                                 <div key={location.id} className="card row">
                                                                     <LocationCard location={location} key={location.id} />

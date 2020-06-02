@@ -35,7 +35,7 @@ body {
 
 .main-container .card-lg {
 	min-height: 80vh;
-	min-width: 90vw;
+	/*min-width: 90vw;*/
 }
 
 .main-container .row {

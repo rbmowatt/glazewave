@@ -4,8 +4,15 @@ const querystring = require('querystring');
 
 class BaseRequest {
 
+    REQUEST_TYPE = 'BASE';
+
     constructor( session ){
         this.session = session;
+    }
+
+    getlabel(label, method)
+    {
+        if(label === '') return method + '_' + this.REQUEST_TYPE;
     }
 
     get = ({ wheres = [], withs = [], limit = 20, page = 0, label = '', onSuccess = ()=>{}, onFailure = (e)=>this.onFailure(e) }) => {
@@ -13,7 +20,7 @@ class BaseRequest {
             url :this.getEndpoint() + `?` + this.getWhereString(wheres) + `&` + this.getWithString(withs) + `&limit=` + limit,
             onSuccess : onSuccess,
             onFailure : onFailure,
-            label : label
+            label : this.getlabel(label, 'GET')
         });
     }
 

@@ -1,7 +1,6 @@
 import React from 'react';
 
 export const BoardForm = props =>{
-    console.log('mfg', props.manufacturers);
     return (
         <form className="row" id="create-post-form" onSubmit={props.processFormSubmission} noValidate={true}>
         <div className="form-group col-md-12">

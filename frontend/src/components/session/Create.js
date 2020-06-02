@@ -4,10 +4,9 @@ import {FormCard} from './../layout/FormCard';
 import { MainContainer } from './../layout/MainContainer';
 import SessionForm  from './forms/SessionForm';
 import SessionRequests from './../../requests/SessionRequests';
-import UserBoardRequests from './../../requests/UserBoardRequests';
 
 const mapStateToProps = state => {
-    return { session: state.session, boards:state.user_boards, user_sessions : state.user_sessions }
+    return { session: state.session, boards:state.user_boards, user_sessions : state.user_sessions.data }
   }
 
   const mapDispachToProps = dispatch => {
@@ -54,6 +53,7 @@ class Create extends React.Component{
     }
 
     processFormSubmission = ({ serialized, fields, form})=> {
+        console.log(serialized, fields, form)
         const {session, createSession} = this.props;
         const { images } = this.state;
         return new Promise(function(resolve, reject){
@@ -68,14 +68,6 @@ class Create extends React.Component{
                 reject('user not logged in ');
             }
         });
-    }
-
-    handleInputChanges = e => {
-        console.log('handleInputChanges')
-        e.preventDefault();
-        this.setState({
-            [e.currentTarget.name]: e.currentTarget.value,
-        })
     }
 
     returnToIndex = e => {
@@ -108,7 +100,7 @@ class Create extends React.Component{
                         )}    
                         </div>
                          <div className="col-md-12">           
-                        <SessionForm session={this.state.session} handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} loading={loading}  boards={this.props.boards} onDrop={this.onDrop}>
+                        <SessionForm session={this.state.session} processFormSubmission={this.processFormSubmission} loading={loading}  boards={this.props.boards} onDrop={this.onDrop}>
                    
                         </SessionForm>
                         </div>

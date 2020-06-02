@@ -12,7 +12,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       location_id: {
-        type: Sequelize.INTEGER(11).UNSIGNED,
+        type: Sequelize.STRING,
         references: {
           model: 'Locations', 
           key: 'id', 
