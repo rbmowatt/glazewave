@@ -81,3 +81,12 @@ nav ul li a:hover {
   .display-none {
 	display: none;
   }
+
+
+  .google-locations-input{
+    border: none;
+  }
+
+  .google-locations-input::-webkit-input-placeholder  {
+    color: black;
+  }

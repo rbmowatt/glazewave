@@ -13,8 +13,8 @@ const mapStateToProps = state => {
 
   const mapDispachToProps = dispatch => {
     return {
-        loadSessions: (request, session) => dispatch( request.get({label : 'LOAD_USER_SESSIONS', wheres : {user_id : session.user.id }, withs : ['UserBoard', 'Location', 'SessionImage'], onSuccess : (data)=>{ return { type: "SET_USER_SESSIONS", payload: data}}})),
-        deleteSession: (request, id) => dispatch( request.delete({label : 'DELETE_USER_SESSION', id:id , onSuccess : (data)=>{ return { type: "DELETE_USER_SESSION", payload: id }}}))
+        loadSessions: (request, session) => dispatch( request.get({ orderBy : 'created_at_DESC',  wheres : {user_id : session.user.id }, withs : ['UserBoard', 'Location', 'SessionImage'], onSuccess : (data)=>{ return { type: "SET_USER_SESSIONS", payload: data}}})),
+        deleteSession: (request, id) => dispatch( request.delete({id:id , onSuccess : (data)=>{ return { type: "DELETE_USER_SESSION", payload: id }}}))
     };
   };
 
@@ -75,7 +75,7 @@ class SessionIndex extends Component {
                         <div className="card-text">
                             <div className="table-container" >
                                 <div className="row col-md-12">
-                                {sessions && sessions.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0)).map(session =>                        
+                                {sessions && sessions.map(session =>                        
                                     <SessionCard session={session} key={session.id}  className="col-md-3" deleteSession={this.deleteSession} viewSession={this.viewSession} editSession={this.editSession}  />                              
                                 )}
                                 {

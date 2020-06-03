@@ -7,7 +7,7 @@ const EntityType = 'Session';
 const router = new Router();
 
 router.get('/', function (req, res) {
-  BaseService.make().where( req.query ,req.parser.with, [], [], req.parser.limit, req.parser.page)
+  BaseService.make().where( req.parser )
     .then(data => {
       res.send(data);
     })
@@ -20,7 +20,7 @@ router.get('/', function (req, res) {
 });
 
 router.get('/images', function (req, res) {
-  ImageService.make('SessionImage').where( req.query ,req.parser.with, [], [], req.parser.limit, req.parser.page)
+  ImageService.make('SessionImage').where( req.parser )
     .then(data => {
       res.send(data);
     })
@@ -32,17 +32,17 @@ router.get('/images', function (req, res) {
     });
 });
 
-
-
 router.get('/:id', function (req, res) {
-  const id = req.params.id;
-  BaseService.make().find(id,req.parser.with)
+  req.parser.id = req.params.id;
+  BaseService.make().find(req.parser)
     .then(data => {
       res.send(data);
     })
     .catch(err => {
+      console.log(err)
       res.status(500).send({
-        message: "Error retrieving " + EntityType + " with id=" + id
+       
+        message: "Error retrieving " + EntityType + " with id=" + req.query.id
       });
     });
 });
@@ -77,6 +77,7 @@ router.post('/', upload.array('photo'), function (req, res) {
 });
 
 router.put('/:id', upload.single('photo'),function (req, res) {
+  console.log('body', req.body)
   BaseService.make().update(req.params.id, req.body)
     .then(num => {
       if (num == 1) {

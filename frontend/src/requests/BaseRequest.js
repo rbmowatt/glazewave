@@ -15,9 +15,9 @@ class BaseRequest {
         if(label === '') return method + '_' + this.REQUEST_TYPE;
     }
 
-    get = ({ wheres = [], withs = [], limit = 20, page = 0, label = '', onSuccess = ()=>{}, onFailure = (e)=>this.onFailure(e) }) => {
+    get = ({ wheres = [], withs = [], limit = 20, page = 0, label = '', orderBy='', onSuccess = ()=>{}, onFailure = (e)=>this.onFailure(e) }) => {
         return this.apiAction({
-            url :this.getEndpoint() + `?` + this.getWhereString(wheres) + `&` + this.getWithString(withs) + `&limit=` + limit,
+            url :this.getEndpoint() + `?` + this.getWhereString(wheres) + `&` + this.getWithString(withs) + `&limit=` + limit + `&order_by=` + orderBy,
             onSuccess : onSuccess,
             onFailure : onFailure,
             label : this.getlabel(label, 'GET')
@@ -63,8 +63,18 @@ class BaseRequest {
         });
     }
 
-    update = ( entityId, data) => {
-        return axios.put(this.getEndpoint() + `/` + entityId , data,  this.session.headers);
+    update = ( { id = null, label = '', data = {}, onSuccess = ()=>{}, onFailure = (e)=>this.onFailure(e) }) => {
+         //const headers = {...this.session.headers, ...hdrs};
+         return this.apiAction({
+            url : this.getEndpoint() + `/` + id,
+            method : "PUT",
+            onSuccess : onSuccess,
+            onFailure : onFailure,
+            label : label,
+            data : data
+        });
+
+       // return axios.put(this.getEndpoint() + `/` + entityId , data,  this.session.headers);
     }
 
     getHost = () =>{

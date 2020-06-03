@@ -21,7 +21,7 @@ const mapStateToProps = state => {
   {
     user : ['UserLocation'],
     boards : ['Board'],
-    sessions : ['Board', 'SessionImage', 'Location']
+    sessions : ['UserBoard', 'SessionImage', 'Location']
   }
 
   const mapDispachToProps = dispatch => {

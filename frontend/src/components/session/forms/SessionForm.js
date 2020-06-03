@@ -30,13 +30,11 @@ class SessionForm extends React.Component{
     }
 
     onChange = (propertyName , newValue ) => {
-        console.log('new val', newValue);
         const data = [];
         data[propertyName] = newValue;
         this.setState({
             ...data
         });
-        console.log('state', this.state)
       };
 
     componentDidMount() {
@@ -82,6 +80,7 @@ class SessionForm extends React.Component{
                 className="form-control" 
                 onChange={this.onChange} 
                 value={this.state.location_id} />
+     
             <Select name="board_id" label="Which Board Did You Use?" >
                   {this.props.boards.map((obj) => {
                         return <option key={obj.id} prop={obj.name} value={obj.id}>{obj.name}</option>

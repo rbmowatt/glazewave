@@ -41,6 +41,37 @@ class SessionService  extends BaseService {
             return super.create(params, callback);
         }
     }
+
+    async update(id, params, callback = null)
+    {
+        console.log('session service called', googleConfig.MAPS_KEY)
+
+        if(params.location_id)
+        {
+           const places = new GooglePlaces(googleConfig.MAPS_KEY);
+            return new Promise( (resolve, reject)=>{ places.details({placeid : params.location_id})
+            .then(data=>{
+                console.log(data.body.result)
+                let loc = {
+                    id : params.location_id,
+                    name : data.body.result.name,
+                    formatted_address : data.body.result.formatted_address,
+                    lat : data.body.result.geometry.location.lat,
+                    lng : data.body.result.geometry.location.lng,
+                    vicinity : data.body.result.vicinity,
+                    url : data.body.result.url 
+                }
+                LocationService.make().upsert(loc)
+                .then( data=>
+                    {
+                    resolve(super.update(id, params, callback));
+                    }
+                )
+            })})
+        } else {
+            return super.update(id, params, callback);
+        }
+    }
 }
 
 module.exports = SessionService;

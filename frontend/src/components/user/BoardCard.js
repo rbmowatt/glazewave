@@ -16,7 +16,7 @@ const BoardCard = props =>{
                 { props.editBoard && <FontAwesomeIcon size="lg" alt="edit user" style={{ marginLeft:'.1em' , cursor:'pointer'}}  icon={faEdit} onClick={() => props.editBoard(props.board.id)} /> }
                 { props.deleteBoard && <FontAwesomeIcon  size="lg"  alt="delete user" style={{ marginLeft:'.5em', cursor:'pointer', color : 'red'}}  icon={faTrash} onClick={() => props.deleteBoard(props.board.id)} /> }
             </div>
-            <   div>{props.board.Board.model}</div>
+            <   div>{props.board.Board && props.board.Board.model}</div>
                 <div>{props.board.size}</div>
                 <div><StarBar stars={props.board.rating} /></div>
             </div>
