@@ -2,17 +2,32 @@ const db = require("./../models");
 
 const QueryParser = function (req, res, next) {
     const reservedKeys = ['with', 'page', 'limit'];
-    console.log(req.query);
+    console.log('pq::incoming query params', req.query);
     let parser = {
-      with : parseWiths(req.query.with) || [],
+      id : req.query.id || null,
+      query : req.query,
+      withs : parseWiths(req.query.with) || [],
       limit : parseInt(req.query.limit) || 20,
+      order_by: parseOrder(req.query.order_by) || [],
     };
     delete req.query.limit;
     delete req.query.with;
-    console.log(req.query);
-    parser.page = (parseInt(req.query.page) || 0) * parser.limit
+    delete req.query.order_by; 
+    parser.page = (parseInt(req.query.page) || 0) * parser.limit;
+    parser.wheres = req.query;
     req.parser = parser;
     next()
+  }
+
+  const parseOrder = ( order ) =>
+  {
+    if(!order) return;
+    
+    const data = order.split('_');
+    const a = [];
+    let ascDesc = data.pop();
+    a.push([data.join('_'), ascDesc]);
+    return a;
   }
 
   const parseWiths = (withs)=>
@@ -40,11 +55,10 @@ const QueryParser = function (req, res, next) {
         }
         else{
             let table = db[w];
-            console.log("table", table.tableName);
             result.push({model : table });
         }
       })
-      console.log('result', JSON.stringify(result) );
+      console.log('final parsed result result', result );
       return result;
   }
 

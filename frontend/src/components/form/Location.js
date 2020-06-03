@@ -64,6 +64,7 @@ class Location extends Component {
           validSync && 'valid-sync',
           validAsync && 'valid-async',
           invalid && 'is-invalid',
+          'google-locations-input',
           'sc-EHOje fVJbnH'
         ]
           .filter(Boolean)
@@ -97,6 +98,7 @@ class Location extends Component {
                             googleMaps={googleMaps}
                             autocompletionRequest={{
                                 input: search,
+                                //types: ['(regions)']
                                 // Optional options
                                 // https://developers.google.com/maps/documentation/javascript/reference?hl=fr#AutocompletionRequest
                             }}
@@ -118,8 +120,9 @@ class Location extends Component {
                                 type="text"
                                 autoComplete="off"
                                 value={value}
-                                placeholder="Search a location"
+                                //placeholder="Search a location"
                                 onChange={this.handleInputChange}
+                                
                             />
                         </ReactGooglePlacesSuggest>
                     )

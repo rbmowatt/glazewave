@@ -3,10 +3,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 const StarBar = props =>{
-    let content = [];
-    if(!props.stars || props.stars === 0) return "No Rating";
+    const content = [];
+    const onClick = (rating) =>
+    {
+        console.log(rating)
+        if(props.onClick)
+        {
+            props.onClick({rating})
+        }
+    }
+    if(!props.stars || props.stars === 0) {
+    for (let i = 0; i < 10; i++) {
+        content.push(<FontAwesomeIcon  className="star-disabled" icon={faStar} onClick={()=>{onClick(i + 1)}} size='1x' key={i+1} />);
+     }
+    }
+    else{ 
     for (let i = 0; i < props.stars; i++) {
-       content.push(<FontAwesomeIcon  className="star" icon={faStar} size='1x' key={i+1} />);
+       content.push(<FontAwesomeIcon  className="star" icon={faStar} size='1x' onClick={()=>{onClick(i + 1)}} key={i+1} />);
+    }
+    for (let i =  props.stars; i < 10 ; i++) {
+        content.push(<FontAwesomeIcon  className="star-disabled" icon={faStar} onClick={()=>{onClick(i + 1)}} size='1x' key={i+1} />);
+     }
     }
     return (
         content 

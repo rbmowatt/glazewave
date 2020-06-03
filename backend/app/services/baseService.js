@@ -11,12 +11,15 @@ class BaseService {
     this.BaseModel = BaseModel;
   }
 
-  async where( wheres, withs , sorts , selects , limit = 20, page = 0)
+  async where( {wheres, withs , limit = 20, page = 0, order_by} )
   {    
-    return this.BaseModel.findAll({ where: wheres, include: withs, offset: page, limit: limit });
+    const options = { where: wheres, include: withs, offset: page, limit: limit };
+    if(order_by) options.order = order_by;
+    console.log('select options', options);
+    return this.BaseModel.findAll(options);
   }
 
-  async find(id, withs, selects = [])
+  async find({id, withs, selects = []})
   {
     const options = {include: withs};
     if(selects.length) options.attributes = selects;

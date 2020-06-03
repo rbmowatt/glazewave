@@ -6,7 +6,7 @@ const router = new Router();
 
 router.get('/', function (req, res) {
   console.log('with', req.parser.with);
-  BaseService.make().where([],req.parser.with, [], [], req.parser.limit, req.parser.page)
+  BaseService.make().where(req.parser)
     .then(data => {
       res.send(data);
     })
@@ -21,7 +21,7 @@ router.get('/', function (req, res) {
 
 router.get('/:id', function (req, res) {
   const id = req.params.id;
-  BaseService.make().find(id,req.parser.with)
+  BaseService.make().find(req.parser)
     .then(data => {
       res.send(data);
     })
