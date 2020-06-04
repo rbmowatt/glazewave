@@ -9,18 +9,19 @@ import UserBoardRequests from './../../requests/UserBoardRequests'
 import ImageGallery from 'react-image-gallery';
 import moment from 'moment'
 import { Form } from 'react-advanced-form';
-import { RIEToggle, RIEInput, RIETextArea, RIENumber, RIETags, RIESelect } from '@attently/riek'
+import { RIEInput, RIETextArea} from '@attently/riek'
 import _ from 'lodash'
 import {UserBoardsLoaded} from './../../actions/user_board';
 import Location from './../form/Location';
-import InlineEdit, { InputType } from 'riec'
+import InlineEdit, { InputType } from 'riec';
+import ImageUploader from 'react-images-upload';
 
 const mapStateToProps = state => {
     return { session: state.session, current_session : state.user_sessions.selected, boards : state.user_boards, session_images : state.session_images }
   }
 
   const withs = {
-    session : ['Location', 'UserBoard']
+    session : ['Location', 'UserBoard.UserBoardImage']
   }
 
   const mapDispachToProps = dispatch => {
@@ -30,6 +31,8 @@ const mapStateToProps = state => {
       clearSession : ()=>dispatch({ type: "CLEAR_USER_SESSION"}),
       editSession : (request, props, data)=>dispatch( request.update({ id : props.match.params.id, data: data, onSuccess : (data)=>{ return { type: "USER_SESSION_UPDATED", payload: data}}})),
       loadBoards: (request, session) => dispatch( request.get({wheres : {user_id : session.user.id },  onSuccess : (data)=>{ return UserBoardsLoaded(data)}})),
+      addImages : (request, data) => dispatch( request.createImages({data: data , onSuccess : (data)=>{ return {type: "SESSION_IMAGES_ADDED", payload: data}}})),
+      deleteImage : (request, data) => dispatch( request.deleteImage({id : data.id, onSuccess : (data)=>{ return {type: "SESSION_IMAGE_DELETED", payload: data}}}))
     };
   };
 
@@ -39,20 +42,37 @@ class SessionView extends Component {
     constructor(props)
     {
         super(props)
-        this.props.loadBoards(new UserBoardRequests(props.session), props.session );
+        this.UserSessionRequest = new SessionRequests(props.session);
+        
         this.state = { 
-            title : '', notes : '', board_id : 0, boards : [], location_id : '', rating : 0,
+            notes : '', 
+            boards : [], 
             select: {id : 0, name : 'No Board Selected'},
-            selectOptions: [
-            ]
+            selectedImage : {},
+            selectOptions: [],
+            uploaderInstance : 1
         };
+        this.onDrop = this.onDrop.bind(this);
+    }
+
+
+    onDrop(pictureFiles, pictureDataURLs) {
+        const formData = SessionRequests.createFormRequest({session_id : this.props.current_session.id, user_id : this.props.session.user.id});
+        pictureFiles.forEach((file, i) => {
+            formData.append('photo', file)
+        })
+        this.props.addImages(new SessionRequests(this.props.session), formData);
+        this.props.loadSessionImages(new SessionRequests(this.props.session), this.props );
+        const ul = this.state.uploaderInstance + 1;
+        this.setState({uploaderInstance : ul })
+      
     }
 
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
-            this.props.loadSession(new SessionRequests(this.props.session), this.props);
+            this.props.loadBoards(new UserBoardRequests(this.props.session), this.props.session );
+            this.props.loadSession(this.UserSessionRequest , this.props);
             this.props.loadSessionImages(new SessionRequests(this.props.session), this.props );
-           
         }
        else{
             this.props.history.push('/session');
@@ -61,18 +81,20 @@ class SessionView extends Component {
 
     componentWillUpdate()
     {
-        if(this.props.boards.length && !this.state.selectOptions.length)
-        {
-            console.log('cwu');
-            const b = [];
-            let select = this.state.select
-            this.props.boards.map((obj) => {
-                if(obj.id === this.props.current_session.board_id) select = { id : obj.id , name : obj.name}
-                return b.push({ id : obj.id , name : obj.name}) 
-            })
-    
-            this.setState({selectOptions: b, select : select})
-        }
+        (this.props.boards.length && !this.state.selectOptions.length) && this.setSelectedBoard();
+        this.props.current_session.rating === 0 && this.setState({rating : this.props.current_session.rating})
+    }
+
+    setSelectedBoard = () =>
+    {
+        const boardOptions = [];
+        let select = this.state.select
+        this.props.boards.map((obj) => {
+            let board = { id : obj.id , name : obj.name};
+            if(obj.id === this.props.current_session.board_id) select = board;
+            return boardOptions.push(board) 
+        })
+        this.setState({selectOptions: boardOptions, select : select})
     }
 
     componentWillUnmount(){
@@ -86,16 +108,13 @@ class SessionView extends Component {
 
     submitUpdate = ( data ) =>
     {
-        this.props.editSession(new SessionRequests(this.props.session), this.props , data);
+        this.props.editSession(this.UserSessionRequest, this.props , data);
         this.setState( data );
     }
 
-    onChange = (e) =>
-    {
-        this.submitUpdate(e);
-    }
-
+    
     onLocationChange = (propertyName , newValue ) => {
+        if(!newValue) return;
         const data = [];
         data[propertyName] = newValue;
         this.submitUpdate({ ...data});
@@ -115,6 +134,19 @@ class SessionView extends Component {
         })
     }
 
+    onImageUpdated = (e) =>
+    {
+        console.log('img updated', this.props.session_images[e]);
+        this.setState({selectedImage : this.props.session_images[e]})
+    }
+
+    deleteImage= (e) =>
+    {
+        console.log('img delete', this.state.selectedImage);
+        this.props.deleteImage(new SessionRequests(this.props.session), {id : this.state.selectedImage.id})
+    }
+
+
 
     render() {
         const session = this.props.current_session;
@@ -128,18 +160,31 @@ class SessionView extends Component {
                                     <h3 className="session-title"> 
                                     <RIEInput
                                         required={false}
-                                        value={this.state.title}
+                                        value={session.title || ''}
                                         defaultValue={session.title}
-                                        change={this.onChange}
+                                        change={this.submitUpdate}
                                         propName='title'
-                                    
                                         /></h3>
                                     </div>
                                 <div className="preview col-md-7">
-                                    <ImageGallery items={this.props.session_images} />
+                                    <button onClick={this.deleteImage}>Delete Image</button>
+                                    <ImageGallery 
+                                        items={this.props.session_images} 
+                                        showBullets={true} 
+                                        showIndex={true}
+                                        onSlide={this.onImageUpdated} />
+                                    <ImageUploader
+                                        key={this.state.uploaderInstance}
+                                        withIcon={false}
+                                        buttonText='Add Images!'
+                                        onChange={this.onDrop}
+                                        imgExtension={['.jpg', '.gif', '.png', '.gif']}
+                                        maxFileSize={5242880}
+                                        withPreview={false}
+                                    />
                                 </div>
                                 <div className="details col-md-5">
-                                <h5 className="submitted-by">
+                               
                                     <Location 
                                         id="location_id" 
                                         name="location_id" 
@@ -149,13 +194,12 @@ class SessionView extends Component {
                                         value={session.location_id} 
                                         placeholder={(session.Location) ? session.Location.formatted_address : 'No Location Specified'} 
                                     />
-                                </h5>
+                                
                                 <div className="rating">
-                                    <StarBar stars={this.state.rating} onClick={this.onChange} />
+                                    <StarBar stars={session.rating} onClick={this.submitUpdate } />
                                 </div>
-                                <h5 className="submitted-by">Date: <span>{moment(session.createdAt).format('MMMM D YYYY')}</span></h5>
-                                <h5 className="submitted-by">Time: <span>{moment(session.createdAt).format('h:mm a')}</span></h5>
-                                <h5 className="submitted-by">Board: <span>
+                                <h6 className="submitted-by"><span>{moment(session.createdAt).format('MMMM D YYYY h:mm a')}</span></h6>
+                                <h6 className="submitted-by">Board: <span>
                                     <InlineEdit
                                         type={InputType.Select}
                                         value={this.state.select.name}
@@ -165,17 +209,16 @@ class SessionView extends Component {
                                         labelKey="name"
                                         />                            
                                     </span>
-                                </h5>
-                                <h5 className="review-no">Notes:
+                                </h6>
+                                <h6 className="review-no">Notes: </h6>
                                     <RIETextArea
-                                        value={this.state.notes}
+                                        value={session.notes || 'You have no notes for this session'}
                                         defaultValue={session.notes}
-                                        change={this.onChange}
+                                        change={this.submitUpdate }
                                         propName='notes'
                                         validate={_.isString} 
                                         />
-                                  
-                                </h5>
+                               
                             </div>
                         </div>
                         </div>

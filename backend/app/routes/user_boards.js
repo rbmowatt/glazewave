@@ -34,7 +34,7 @@ router.get('/:id', function (req, res) {
 });
 
 
-router.post('/', upload.single('photo'), function (req, res) {
+router.post('/', upload().single('photo'), function (req, res) {
   // Validate request
   console.log('req.body', req.body);
   BaseService.make().create(req.body)
@@ -53,7 +53,7 @@ router.post('/', upload.single('photo'), function (req, res) {
     });
 });
 
-router.put('/:id', upload.single('photo'),function (req, res) {
+router.put('/:id', upload().single('photo'),function (req, res) {
   BaseService.make().update(req.params.id, req.body)
     .then(num => {
       if (num == 1) {

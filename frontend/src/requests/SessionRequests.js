@@ -14,5 +14,15 @@ class SessionRequests extends BaseRequest{
         return this.get(args);
 
     }
+
+    createImages = (args) => {
+        this.endpoint = '/api/session/images';
+        return this.create(args);
+    }
+
+    deleteImage = (args) => {
+        this.endpoint = '/api/session/images';
+        return this.delete(args);
+    }
 }
 export default SessionRequests;

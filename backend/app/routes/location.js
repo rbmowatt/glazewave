@@ -5,7 +5,6 @@ const EntityType = 'Location';
 const router = new Router();
 
 router.get('/', function (req, res) {
-  console.log('with', req.parser.with);
   BaseService.make().where(req.parser)
     .then(data => {
       res.send(data);

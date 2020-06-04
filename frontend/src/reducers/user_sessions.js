@@ -15,13 +15,18 @@ const user_sessions = (state = initialState, action) => {
       newState = {...state, ...{data : action.payload}}
       return newState;
     case 'SESSION_CREATED':
-         newState  = state.concat(action.payload);
-        return newState;
+      newState  = state.concat(action.payload);
+      return newState;
     case 'DELETE_USER_SESSION':
-          newState = state.filter((item) => item.id !== action.payload);
-          return newState;
+        newState = state.filter((item) => item.id !== action.payload);
+        return newState;
+    case 'USER_SESSION_UPDATED' :
+        newState = {...state, ...{selected : 
+          {...state.selected, ...action.payload}
+        }}
+        return newState;
     default:
-      return state
+        return state
   }
 }
 export default user_sessions;
