@@ -50,7 +50,8 @@ class SessionView extends Component {
             select: {id : 0, name : 'No Board Selected'},
             selectedImage : {},
             selectOptions: [],
-            uploaderInstance : 1
+            uploaderInstance : 1,
+            imageIndex : 0
         };
         this.onDrop = this.onDrop.bind(this);
     }
@@ -137,13 +138,15 @@ class SessionView extends Component {
     onImageUpdated = (e) =>
     {
         console.log('img updated', this.props.session_images[e]);
-        this.setState({selectedImage : this.props.session_images[e]})
+        this.setState({selectedImage : this.props.session_images[e], imageIndex : e})
     }
 
     deleteImage= (e) =>
     {
-        console.log('img delete', this.state.selectedImage);
+        console.log('img delete', e.target.value);
         this.props.deleteImage(new SessionRequests(this.props.session), {id : this.state.selectedImage.id})
+        const newIndex = this.state.imageIndex === 0 ? 0 : this.state.imageIndex -1;
+        this.setState( {imageIndex : newIndex})
     }
 
 
@@ -167,11 +170,12 @@ class SessionView extends Component {
                                         /></h3>
                                     </div>
                                 <div className="preview col-md-7">
-                                    <button onClick={this.deleteImage}>Delete Image</button>
+                                    <button onClick={this.deleteImage}value={this.state.imageIndex}>Delete Image</button>
                                     <ImageGallery 
                                         items={this.props.session_images} 
                                         showBullets={true} 
                                         showIndex={true}
+                                        startIndex={this.state.imageIndex}
                                         onSlide={this.onImageUpdated} />
                                     <ImageUploader
                                         key={this.state.uploaderInstance}
