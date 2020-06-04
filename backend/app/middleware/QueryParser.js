@@ -51,14 +51,12 @@ const QueryParser = function (req, res, next) {
             const remaining = w.substring(w.indexOf('.')+1)
             cr.include = parseWiths(remaining);
             result.push(cr);
-            console.log('nested', w);
         }
         else{
             let table = db[w];
             result.push({model : table });
         }
       })
-      console.log('final parsed result result', result );
       return result;
   }
 

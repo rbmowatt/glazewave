@@ -13,14 +13,11 @@ class SessionService  extends BaseService {
 
     async create(params, callback = null)
     {
-        console.log('session service called', googleConfig.MAPS_KEY)
-
         if(params.location_id)
         {
            const places = new GooglePlaces(googleConfig.MAPS_KEY);
             return new Promise( (resolve, reject)=>{ places.details({placeid : params.location_id})
             .then(data=>{
-                console.log(data.body.result)
                 let loc = {
                     id : params.location_id,
                     name : data.body.result.name,
@@ -44,14 +41,11 @@ class SessionService  extends BaseService {
 
     async update(id, params, callback = null)
     {
-        console.log('session service called', googleConfig.MAPS_KEY)
-
         if(params.location_id)
         {
            const places = new GooglePlaces(googleConfig.MAPS_KEY);
             return new Promise( (resolve, reject)=>{ places.details({placeid : params.location_id})
             .then(data=>{
-                console.log(data.body.result)
                 let loc = {
                     id : params.location_id,
                     name : data.body.result.name,

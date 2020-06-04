@@ -7,7 +7,6 @@ class BaseService {
   constructor(BaseModel)
   {
     super.constructor();
-    console.log(this.BaseModel)
     this.BaseModel = BaseModel;
   }
 
@@ -15,7 +14,6 @@ class BaseService {
   {    
     const options = { where: wheres, include: withs, offset: page, limit: limit };
     if(order_by) options.order = order_by;
-    console.log('select options', options);
     return this.BaseModel.findAll(options);
   }
 
