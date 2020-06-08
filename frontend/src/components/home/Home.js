@@ -36,7 +36,7 @@ class Home extends Component {
       <div className="Home">
         <header className="background home-background">
         <div className="intro container-fluid">
-        Welcome to Bake n' Flake!
+        Welcome to MySurfSesh
           </div>
           <img  className="Home-logo " alt="logo" src="https://umanage-mowatr.s3.amazonaws.com/bake_n_flake_logo_250_250.png" />
         </header>
