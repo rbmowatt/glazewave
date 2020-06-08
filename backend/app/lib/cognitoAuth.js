@@ -48,6 +48,7 @@ function _init () {
       for (let i = 0; i < body.keys.length; i++) {
         pems[body.keys[i].kid] = jwkToPem(body.keys[i])
       }
+      console.log(cognitoConfig.userPool, 'upool id')
       console.info(`Successfully downloaded ${body.keys.length} JWK key(s)`)
       resolve(pems)
     })
