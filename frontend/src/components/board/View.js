@@ -137,6 +137,7 @@ class BoardView extends Component {
 
 
     onDrop(pictureFiles, pictureDataURLs) {
+        if(!pictureFiles.length) return;
         const formData = UserBoardRequests.createFormRequest({user_board_id : this.props.board.id, user_id : this.props.session.user.id});
         pictureFiles.forEach((file, i) => {
             formData.append('photo', file)

@@ -12,7 +12,7 @@ const initialState = [
 const session_images = (state = initialState, action) => {
   switch (action.type) {
     case 'SET_USER_BOARD_IMAGES':
-      return (action.payload.length > 0) ?  prepImages(action.payload) : state;
+      return (action.payload.length > 0) ?  prepImages(action.payload) : initialState;
     case 'USER_BOARD_IMAGES_ADDED' :
       return setImages(state).concat(prepImages(action.payload))
     case 'USER_BOARD_IMAGE_DELETED' :

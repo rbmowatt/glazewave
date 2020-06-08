@@ -12,7 +12,6 @@ const cityRouter = require('./routes/city');
 const cognitoRouter = require('./routes/cognito');
 const locationRouter = require('./routes/location');
 const manufacturerRouter = require('./routes/manufacturer');
-const recipeRouter = require('./routes/recipe');
 const sessionRouter = require('./routes/session');
 const userRouter = require('./routes/user');
 const userBoardRouter = require('./routes/user_boards');
@@ -32,7 +31,6 @@ app.use('/api/city', cityRouter);
 app.use('/api/cognito', cognitoAuthMiddleware, cognitoRouter);
 app.use('/api/location', locationRouter);
 app.use('/api/manufacturer', manufacturerRouter);
-app.use('/api/recipe', recipeRouter);
 app.use('/api/session', sessionRouter);
 app.use('/api/user_board', userBoardRouter);
 

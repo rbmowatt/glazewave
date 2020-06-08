@@ -77,6 +77,7 @@ class SessionView extends Component {
     }
 
     onDrop(pictureFiles, pictureDataURLs) {
+        if(!pictureFiles.length) return;
         const formData = SessionRequests.createFormRequest({session_id : this.props.current_session.id, user_id : this.props.session.user.id});
         pictureFiles.forEach((file, i) => {
             formData.append('photo', file)
