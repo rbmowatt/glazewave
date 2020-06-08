@@ -46,6 +46,12 @@ router.post('/images', upload("session").array('photo'), function (req, res) {
     }
     Promise.all(imgs).then((values) => {
       res.send(values);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err
+      });
     });
 });
 
