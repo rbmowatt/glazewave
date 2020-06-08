@@ -1,15 +1,11 @@
 const aws = require('aws-sdk');
-const multer  = require('multer');
-const multerS3 = require('multer-s3');
 const s3Config = require('./../../config/s3');
-const s3Storage = require('multer-sharp-s3');
 const s3 = new aws.S3(s3Config);
+const multer  = require('multer');
+const s3Storage = require('multer-sharp-s3');
 const moment = require('moment');
 
-
-
-
- const upload = function upload(destinationPath = '') {
+const upload = function upload(destinationPath = '') {
   return multer({
     fileFilter: (req, file, cb) => {
       console.log('s3 req is', req)

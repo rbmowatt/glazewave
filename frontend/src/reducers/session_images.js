@@ -12,7 +12,7 @@ const initialState = [
 const session_images = (state = initialState, action) => {
   switch (action.type) {
     case 'SET_SESSION_IMAGES':
-      return (action.payload.length > 0) ?  prepImages(action.payload) : state;
+      return (action.payload.length > 0) ?  prepImages(action.payload) : initialState;
     case 'SESSION_IMAGES_ADDED' :
       return setImages(state).concat(prepImages(action.payload))
     case 'SESSION_IMAGE_DELETED' :
