@@ -24,6 +24,32 @@ router.get('/', function (req, res) {
     });
 });
 
+router.get('/firstOrNew', function (req, res) {
+  BaseService.make().where({ wheres : {username : req.query.username}})
+    .then(data => {
+      if(data && data.length){
+        res.send(data[0]);
+      }else{
+        BaseService.make().create(req.parser.wheres)
+        .then(data => {
+          res.send(data);
+        })
+        .catch(err => {
+          res.status(500).send({
+            message:
+              err.message || "Some error occurred while creating the " + EntityType + "."
+          });
+        });
+      }
+      
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while retrieving " + EntityType + "."
+      });
+    });
+});
 
 router.get('/:id', function (req, res) {
   const id = req.params.id;

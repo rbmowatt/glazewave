@@ -9,7 +9,7 @@ const PrivateRoute = ({ component: Component, roles, session, ...rest }) => (
         }
 
         // check if route is restricted by role
-        if (!session.isAdmin){
+        if (false){
             // role not authorised so redirect to home page
             return <Redirect to={{ pathname: '/'}} />
         }

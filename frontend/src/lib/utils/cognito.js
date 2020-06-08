@@ -83,12 +83,14 @@ const getCognitoSession = () => {
         return
       }
 
-     
+     console.log('cognito request', result)
 
       // Resolve the promise with the session credentials
     
 
-      axios.get( apiConfig.host + apiConfig.port + `/api/user?username=` + result.idToken.payload['cognito:username']).then(data => {
+      axios.get( apiConfig.host + apiConfig.port + `/api/user/firstOrNew?username=` + result.idToken.payload['cognito:username'] 
+      + '&email=' + result.idToken.payload.email + '&first_name=' + result.idToken.payload.given_name + '&last_name=' + result.idToken.payload.family_name
+        ).then(data => {
         console.log('getting new session', data.data[0]);
         const session = {
           credentials: {
@@ -97,7 +99,7 @@ const getCognitoSession = () => {
             refreshToken: result.refreshToken.token
           },
           user: {
-            //id : data.data[0].id,
+            id : data.data.id,
             userName: result.idToken.payload['cognito:username'],
             email: result.idToken.payload.email
           },
