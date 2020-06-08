@@ -8,7 +8,6 @@ const moment = require('moment');
 const upload = function upload(destinationPath = '') {
   return multer({
     fileFilter: (req, file, cb) => {
-      console.log('s3 req is', req)
       const isValid = true;
       let error = isValid ? null : new Error("Invalid mime type!");
       cb(error, isValid);

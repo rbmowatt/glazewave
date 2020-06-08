@@ -12,7 +12,6 @@ let upload = require('./../services/images/upload');
 const router = new Router();
 
 router.get('/', function (req, res) {
-  console.log('with', req.parser.with);
   BaseService.make().where(req.parser)
     .then(data => {
       res.send(data);
@@ -74,7 +73,6 @@ router.post('/board', upload("board").single('photo'), function (req, res) {
 });
 
 router.post('/images', upload("user").single('photo'), function (req, res) {
-  console.log( 'req is' , req)
   if(req.file ){
     BaseService.make().update(req.body.user_id,  {profile_img : req.file.key })
     .then(num => {
@@ -90,7 +88,6 @@ router.post('/images', upload("user").single('photo'), function (req, res) {
       }
     })
     .catch(err => {
-      console.log(err)
       res.status(500).send({
         message: "Error updating " + EntityType + "  with id=" + req.body.user_id
       });

@@ -23,7 +23,6 @@ class ImageService  extends BaseService {
                 deletes3Image(image.name)
                 .then(d=>
                 {
-                    console.log('deleted s3 image ', data.name);
                     resolve(1);
                 })
                 .catch(e=>reject(e))
