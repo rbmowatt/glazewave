@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import {FormCard} from './../layout/FormCard';
-import { MainContainer } from './../layout/MainContainer';
+import  MainContainer  from './../layout/MainContainer';
 import SessionForm  from './forms/SessionForm';
 import SessionRequests from './../../requests/SessionRequests';
 

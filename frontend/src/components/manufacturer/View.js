@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import './Manufacturer.css'
 import axios from 'axios';
 import apiConfig from '../../config/api.js';
-import { MainContainer } from './../layout/MainContainer';
+import  MainContainer  from './../layout/MainContainer';
 import {FormCard} from './../layout/FormCard';
 import StarBar from './../layout/StarBar';
 

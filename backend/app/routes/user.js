@@ -3,25 +3,11 @@ const BaseService = require('./../services/UserService');
 const UserBoardService = require('./../services/UserBoardService');
 const EntityType = 'User';
 const aws = require('aws-sdk');
-const multer  = require('multer');
-const multerS3 = require('multer-s3');
-const s3Config = require('../config/s3');
-const s3 = new aws.S3(s3Config);
 
-const upload = multer({
-  storage: multerS3({
-    s3: s3,
-    acl: 'public-read',
-    bucket: s3Config.Bucket,
-    contentType: multerS3.AUTO_CONTENT_TYPE,
-    metadata: function (req, file, cb) {
-      cb(null, {fieldName: file.fieldname});
-    },
-    key: function (req, file, cb) {
-      cb(null, Date.now().toString() + file.originalname)
-    }
-  })
-})
+const s3Config = require('../config/s3');
+
+let upload = require('./../services/images/upload');
+
 
 const router = new Router();
 
@@ -74,7 +60,7 @@ router.post('/', function (req, res) {
     });
 });
 
-router.post('/board', upload.single('photo'), function (req, res) {
+router.post('/board', upload("board").single('photo'), function (req, res) {
   UserBoardService.make().create(req.body)
     .then(data => {
       res.send(data);
@@ -85,6 +71,31 @@ router.post('/board', upload.single('photo'), function (req, res) {
           err.message || "Some error occurred while creating the " + EntityType + "."
       });
     });
+});
+
+router.post('/images', upload("user").single('photo'), function (req, res) {
+  console.log( 'req is' , req)
+  if(req.file ){
+    BaseService.make().update(req.body.user_id,  {profile_img : req.file.key })
+    .then(num => {
+      if (num == 1) {
+        res.send({
+          src : req.file.key, 
+          message: "Session was updated successfully."
+        });
+      } else {
+        res.send({
+          message: `Cannot update ${EntityType} with id=${req.body.user_id}. Maybe ${EntityType} was not found or req.body is empty!`
+        });
+      }
+    })
+    .catch(err => {
+      console.log(err)
+      res.status(500).send({
+        message: "Error updating " + EntityType + "  with id=" + req.body.user_id
+      });
+    });
+    }
 });
 
 router.put('/:id', function (req, res) {

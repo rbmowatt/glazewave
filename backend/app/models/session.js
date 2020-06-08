@@ -14,7 +14,9 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
     },
     location_id: DataTypes.INTEGER,
-    user_id: DataTypes.INTEGER
+    user_id: DataTypes.INTEGER,
+    notes : DataTypes.TEXT,
+    session_date : DataTypes.DATE
   }, {underscored: true});
   Session.associate = function(models) {
     Session.belongsTo(models.UserBoard,  {foreignKey: 'board_id', targetKey: 'id'});

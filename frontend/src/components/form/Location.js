@@ -10,11 +10,12 @@ class Location extends Component {
     state = {
         search: "",
         value: "",
-        location_id : ""
+        location_id : "",
+        is_editing : false
     }
  
     handleInputChange = e => {
-        this.setState({search: e.target.value, value: e.target.value}) 
+        this.setState({search: e.target.value, value: e.target.value, is_editing : true}) 
     }
  
     handleSelectSuggest = (geocodedPrediction, originalPrediction) => {
@@ -25,6 +26,7 @@ class Location extends Component {
             location_id : geocodedPrediction.place_id
         })
         this.props.onChange('location_id', geocodedPrediction.place_id);
+        this.setState({is_editing : false});
     }
  
     handleNoResult = () => {
@@ -32,7 +34,20 @@ class Location extends Component {
     }
  
     handleStatusUpdate = status => {
-        console.log(status)
+     // this.setState({is_editing : true});
+        console.log('key status is', status)
+    }
+
+    onBlur = (e)=>
+    {
+      
+      if(this.state.is_editing){
+        console.log('blur', e)
+        this.setState({
+          value: '',
+          is_editing : false
+        })
+      }
     }
  
     render() {
@@ -86,7 +101,7 @@ class Location extends Component {
                 {required && ' *'}
               </label>
             )}
-            <div className="sc-ifAKCX fatW</div>UN">
+            <div className="sc-ifAKCX">
             <ReactGoogleMapLoader
                 params={{
                     key: MY_API_KEY,
@@ -98,7 +113,7 @@ class Location extends Component {
                             googleMaps={googleMaps}
                             autocompletionRequest={{
                                 input: search,
-                                //types: ['(regions)']
+                                //types: ['(route)']
                                 // Optional options
                                 // https://developers.google.com/maps/documentation/javascript/reference?hl=fr#AutocompletionRequest
                             }}
@@ -109,9 +124,7 @@ class Location extends Component {
                             textNoResults="My custom no results text" // null or "" if you want to disable the no results item
                             customRender={prediction => (
                                 <div className="customWrapper">
-                                    {prediction
-                                        ? prediction.description
-                                        : "My custom no results text"}
+                                    {this.locRender(prediction)}
                                 </div>
                             )}
                         >
@@ -120,9 +133,8 @@ class Location extends Component {
                                 type="text"
                                 autoComplete="off"
                                 value={value}
-                                //placeholder="Search a location"
+                                onBlur={this.onBlur}
                                 onChange={this.handleInputChange}
-                                
                             />
                         </ReactGooglePlacesSuggest>
                     )
@@ -142,6 +154,11 @@ class Location extends Component {
 </div>
 )
 }
+locRender = (prediction)=>{
+  console.log(prediction.types);
+  return prediction.types.indexOf("route") !== -1
+  ? prediction.description
+  : null}
 }
 
 export default createField(fieldPresets.input)(Location)

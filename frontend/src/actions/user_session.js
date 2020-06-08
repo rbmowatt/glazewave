@@ -1,4 +1,4 @@
-import { SET_USER_SESSIONS } from "./types";
+import { SET_USER_SESSION, SET_USER_SESSIONS, USER_SESSION_UPDATED, USER_SESSION_CLEARED  } from "./types";
 
 
 export const UserSessionsLoaded = data => ({
@@ -6,5 +6,20 @@ export const UserSessionsLoaded = data => ({
     payload: data
   });
 
-  
+  export const UserSessionUpdated= data => ({
+    type: USER_SESSION_UPDATED,
+    payload: data
+  });
 
+  export const UserSessionCleared= () => ({
+    type: USER_SESSION_CLEARED,
+    payload: null
+  });
+
+  
+export const UserSessionSet = data => (
+  {
+    type: SET_USER_SESSION,
+    payload: data
+  }
+)

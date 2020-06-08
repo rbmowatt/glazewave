@@ -3,12 +3,13 @@ import React, { Component } from 'react'
 import { confirmAlert } from 'react-confirm-alert';
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom';
-import { MainContainer } from './../layout/MainContainer';
+import  MainContainer  from './../layout/MainContainer';
 import SessionRequests from './../../requests/SessionRequests';
 import SessionCard from './SessionCard';
+import Loader from 'react-loader';
 
 const mapStateToProps = state => {
-    return { session: state.session, sessions : state.user_sessions.data }
+    return { session: state.session, sessions : state.user_sessions.data, api : state.api }
   }
 
   const mapDispachToProps = dispatch => {
@@ -87,7 +88,6 @@ class SessionIndex extends Component {
                     </div>
                 </div>
             </MainContainer>
-          
         )
     }
 }

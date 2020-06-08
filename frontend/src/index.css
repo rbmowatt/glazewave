@@ -29,19 +29,7 @@ body {
 	background-color: #24355C;
 }
 
-.main-container {
-	padding: 2%;
-}
 
-.main-container .card-lg {
-	min-height: 80vh;
-	min-width: 70vw;
-}
-
-.main-container .row {
-	margin-left: auto;
-	margin-right: auto;
-}
 
 .white-txt {
 	color: white;
@@ -65,16 +53,7 @@ img.preview {
 	max-height: 250px;
 }
 
-.table {
-	table-layout: fixed;
-/**	overflow: scroll; **/
-	width: 100%;
-}
 
-.table th {
-	font-size: .9rem;
-	font-weight: 400;
-}
 
 .table td {
 	font-size: .9rem;
@@ -147,13 +126,6 @@ img.preview {
 	text-align: center;
 	padding-right: 2%;
 }
-
-
-
-.fas {
-	font-size: 15em;
-}
-
 
 .dashboard-boxes .row{
 	padding:1%;

@@ -19,6 +19,7 @@ module.exports = (sequelize, DataTypes) => {
     UserBoard.belongsTo(models.Board);
     UserBoard.belongsTo(models.User);
     UserBoard.hasMany(models.UserBoardImage);
+    UserBoard.hasMany(models.Session,  {foreignKey: 'board_id', targetKey: 'id'});
   };
   return UserBoard;
 };

@@ -1,3 +1,4 @@
+import {SET_USER_SESSION, USER_SESSION_CLEARED, SET_USER_SESSIONS, SESSION_CREATED, DELETE_USER_SESSION, USER_SESSION_UPDATED} from './../actions/types';
 const initialState = {
   selected : {},
   data : []
@@ -5,22 +6,22 @@ const initialState = {
 let newState = null;
 const user_sessions = (state = initialState, action) => {
   switch (action.type) {
-    case 'SET_USER_SESSION':
+    case SET_USER_SESSION:
       newState = {...state, ...{selected : action.payload}}
       return newState;
-    case 'CLEAR_USER_SESSION':
+    case USER_SESSION_CLEARED:
       newState = {...state, ...{selected : {}}}
       return newState;
-    case 'SET_USER_SESSIONS':
+    case SET_USER_SESSIONS:
       newState = {...state, ...{data : action.payload}}
       return newState;
-    case 'SESSION_CREATED':
+    case SESSION_CREATED:
       newState  = state.concat(action.payload);
       return newState;
-    case 'DELETE_USER_SESSION':
+    case DELETE_USER_SESSION:
         newState = state.filter((item) => item.id !== action.payload);
         return newState;
-    case 'USER_SESSION_UPDATED' :
+    case USER_SESSION_UPDATED :
         newState = {...state, ...{selected : 
           {...state.selected, ...action.payload}
         }}

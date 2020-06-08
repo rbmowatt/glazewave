@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import apiConfig from '../../config/api.js';
-import { MainContainer } from './../layout/MainContainer';
+import  MainContainer  from './../layout/MainContainer';
 import LocationRow from './LocationRow';
 import { confirmAlert } from 'react-confirm-alert'; // Import
 import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css

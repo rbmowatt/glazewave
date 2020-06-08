@@ -53,3 +53,7 @@ div.recipe {
 .star {
 	color: orange;
 }
+
+.rounded {
+	border: 1px solid black;
+}
