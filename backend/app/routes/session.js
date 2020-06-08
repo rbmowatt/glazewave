@@ -41,6 +41,7 @@ router.post('/images', upload("session").array('photo'), function (req, res) {
       ImageService.make('SessionImage').create(imgObj).then(
         data=> resolve(data)
       )
+      .catch(error=>reject(error))
       }))
     })
     }

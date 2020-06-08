@@ -5,7 +5,6 @@ const EntityType = 'City';
 const router = new Router();
 
 router.get('/', function (req, res) {
-  console.log('with', req.parser.with);
   BaseService.make().where([],req.parser.with, [], [], req.parser.limit, req.parser.page)
     .then(data => {
       res.send(data);

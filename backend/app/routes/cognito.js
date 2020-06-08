@@ -17,7 +17,7 @@ router.get('/', function (req, res) {
         })
         res.json(users);
     })
-    .catch(error=>console.log('errr', error)); 
+    .catch(error=>res.status(400).json(error)); 
 })
 
 router.get('/:uname', function (req, res) {

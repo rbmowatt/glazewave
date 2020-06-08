@@ -2,7 +2,7 @@ const db = require("./../models");
 
 const QueryParser = function (req, res, next) {
     const reservedKeys = ['with', 'page', 'limit'];
-    console.log('pq::incoming query params', req.query);
+    //console.log('pq::incoming query params', req.query);
     let parser = {
       id : req.query.id || null,
       query : req.query,
