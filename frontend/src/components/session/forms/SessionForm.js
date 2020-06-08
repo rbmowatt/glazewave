@@ -12,7 +12,7 @@ import ImageUploader from 'react-images-upload';
 import moment from 'moment'
 
 const mapStateToProps = state => {
-    return { session: state.session, boards : state.user_boards, user_sessions : state.user_sessions.data }
+    return { session: state.session, boards : state.user_boards.data, user_sessions : state.user_sessions.data }
   }
 
   const mapDispachToProps = dispatch => {

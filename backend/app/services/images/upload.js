@@ -21,7 +21,7 @@ const moment = require('moment');
       limits: 500000,
       acl: "public-read",
       s3,
-      Bucket: s3Config.Bucket +  "/" + moment().format('YYMMDD'),
+      Bucket: s3Config.Bucket,
       contentType: s3Storage.AUTO_CONTENT_TYPE,
       resize: {
         fit: 'inside',
@@ -32,13 +32,10 @@ const moment = require('moment');
       metadata: function (req, file, cb) {
         cb(null, { fieldName: file.fieldname });
       },
-      key: function (req, file, cb) {
-        cb(null, destinationPath + "/" + moment().format('MMMMDoYYYY') + "/" + Date.now() + "_" + file.originalname);
+      Key: function (req, file, cb) {
+        cb(null, moment().format('YYMMDD') + "/" + Date.now() + "_" + file.originalname);
       },
     }),
   });
 };
-
-
-
 module.exports = upload;

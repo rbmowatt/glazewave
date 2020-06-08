@@ -1,26 +1,28 @@
 import * as React from 'react';
 import { connect } from 'react-redux'
-import { MainContainer } from './../layout/MainContainer';
+import  MainContainer  from './../layout/MainContainer';
 import { Link } from 'react-router-dom';
 import SessionCard from './../session/SessionCard';
 import BoardCard from './BoardCard';
-import LocationCard from './LocationCard';
 import UserRequests from './../../requests/UserRequests';
 import UserBoardRequests from './../../requests/UserBoardRequests';
 import UserSessionRequests from './../../requests/SessionRequests';
 import {UserSessionsLoaded} from './../../actions/user_session';
 import {UserBoardsLoaded} from './../../actions/user_board';
 import {UserLoaded} from './../../actions/user';
+import './css/Dashboard.css'
+import ProfileCard from './ProfileCard';
+import ImageUploader from 'react-images-upload';
 
 const DASHBOARD_LIST_LIMIT = 3; 
 const mapStateToProps = state => {
-    return { session: state.session, boards : state.user_boards, user_sessions : state.user_sessions.data, locations : state.user.UserLocations }
+    return { session: state.session, boards : state.user_boards.data, user_sessions : state.user_sessions.data, locations : state.user.UserLocations }
   }
 
   const withs = 
   {
     user : ['UserLocation'],
-    boards : ['Board'],
+    boards : ['Board', 'UserBoardImage'],
     sessions : ['UserBoard', 'SessionImage', 'Location']
   }
 
@@ -53,17 +55,15 @@ class UserDashboard extends React.Component{
                         </div>
                         <div className="card-text dashboard-boxes">
                                 <div className="row">
-                                    <div className="col-md-1 row">
-                                        <div className="card">
-                                        <div> <Link to={'/session/create'} className="btn btn-sm btn-outline-secondary float-right"> New Session</Link></div> 
-                                            <div> <Link to={'/board/create'} className="btn btn-sm btn-outline-secondary float-right">New Board</Link></div> 
-                                          
-                                            <div><a href="#">dddddd</a></div> 
-                                        </div>
+                                    <div className="col-md-2">
+                                        <div><Link to={'/session/create'} className="btn btn-sm btn-outline-secondary"> New Session</Link></div> 
+                                        <div><Link to={'/board/create'} className="btn btn-sm btn-outline-secondary">New Board</Link></div> 
+                                        <div><a className="btn btn-sm btn-outline-secondary" href="#">dddddd</a></div> 
                                     </div>
-                                    <div className="col-md-11 row">
-                                        <div className="col-md-4">
-                                                Sessions
+                                    <div className="col-md-10 row">
+                                         <div className="col-md-12"><ProfileCard /></div>
+                                        <div className="col-md-6">
+                                            Sessions
                                             {
                                                 user_sessions && user_sessions.reduce((mappedArray, session, index) => {                           
                                                         if (index < DASHBOARD_LIST_LIMIT) { 
@@ -77,8 +77,8 @@ class UserDashboard extends React.Component{
                                                     }, [])
                                             }
                                         </div>
-                                        <div className="col-md-4">
-                                                Boards
+                                        <div className="col-md-6">
+                                            Boards
                                             {
                                                 boards && boards.reduce((mappedArray, board, index) => {                           
                                                         if (index < DASHBOARD_LIST_LIMIT) { 
@@ -92,21 +92,6 @@ class UserDashboard extends React.Component{
                                                     }, [])
                                             }                              
                                         </div>
-                                        <div className="col-md-4">
-                                            Locations
-                                            {
-                                                locations && locations.reduce((mappedArray, location, index) => {                           
-                                                        if (index < DASHBOARD_LIST_LIMIT) { 
-                                                            mappedArray.push(
-                                                                <div key={location.id} className="card row">
-                                                                    <LocationCard location={location} key={location.id} />
-                                                                </div>
-                                                            );
-                                                        }                                                  
-                                                        return mappedArray;
-                                                    }, [])
-                                            }  
-                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -7,5 +7,10 @@ class UserRequests extends BaseRequest{
         super(session);
         this.endpoint = '/api/user';
     }
+
+    updateProfileImage = (args) => {
+        this.endpoint = '/api/user/images';
+        return this.create(args);
+    }
 }
 export default UserRequests;

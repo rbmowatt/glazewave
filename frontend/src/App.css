@@ -83,10 +83,33 @@ nav ul li a:hover {
   }
 
 
-  .google-locations-input{
+  .date-picker-input, .google-locations-input{
     border: none;
+    padding:0px;
+
   }
 
-  .google-locations-input::-webkit-input-placeholder  {
+  .date-picker-input::-webkit-input-placeholder, .google-locations-input::-webkit-input-placeholder  {
     color: black;
+  }
+  .session-card-title {
+  
+  }
+  .session-card-title:hover,
+  .board-card-title:hover {
+    color: blue;
+    cursor: pointer;
+  }
+
+  .board-select{
+    padding-left : 0px;
+    margin-left : 0px;
+  }
+
+  .detail-line{
+    padding-bottom:1em;
+  }
+
+  .text-area {
+    min-height:150px;
   }

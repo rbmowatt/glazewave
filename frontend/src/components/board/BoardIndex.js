@@ -2,14 +2,14 @@ import 'react-confirm-alert/src/react-confirm-alert.css';
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom';
-import { MainContainer } from './../layout/MainContainer';
+import  MainContainer  from './../layout/MainContainer';
 import { confirmAlert } from 'react-confirm-alert';
 import BoardCard from './../user/BoardCard';
 import UserBoardRequests from './../../requests/UserBoardRequests';
 
 
 const mapStateToProps = state => {
-    return { session: state.session, boards : state.user_boards }
+    return { session: state.session, boards : state.user_boards.data }
   }
 
   const mapDispachToProps = dispatch => {

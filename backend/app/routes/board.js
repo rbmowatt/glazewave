@@ -21,15 +21,14 @@ router.get('/', function (req, res) {
 
 
 router.get('/:id', function (req, res) {
-  const id = req.params.id;
-  const withs = req.parser.with;
-  BaseService.make().find({id, withs})
+  req.parser.id = req.params.id;
+  BaseService.make().find(req.parser)
     .then(data => {
       res.send(data);
     })
     .catch(err => {
       res.status(500).send({
-        message: "Error retrieving " + EntityType + " with id=" + id
+        message: "Error retrieving " + EntityType + " with id=" + req.query.id
       });
     });
 });

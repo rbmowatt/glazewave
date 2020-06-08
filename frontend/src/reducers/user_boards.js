@@ -1,13 +1,24 @@
-import UserBoardRequests from './../requests/UserBoardRequests';
-
-const initialState = [];
+import {SET_USER_BOARD, SET_USER_BOARDS,  USER_BOARD_CREATED, USER_BOARD_UPDATED} from './../actions/types';
+const initialState = {
+  selected : {},
+  data : []
+};
+let newState = null;
 const user_boards = (state = initialState, action) => {
   switch (action.type) {
-    case 'SET_USER_BOARDS':
-      return action.payload;
-    case 'USER_BOARD_CREATED':
-      const s = state.concat(action.payload);
-      return s;
+    case SET_USER_BOARD :
+      newState = {...state, ...{selected : action.payload}}
+      return newState;
+    case SET_USER_BOARDS:
+      newState = {...state, ...{data : action.payload}}
+      return newState;
+    case USER_BOARD_CREATED:
+      newState  = state.concat(action.payload);
+    case USER_BOARD_UPDATED :
+      newState = {...state, ...{selected : 
+        {...state.selected, ...action.payload}
+      }}
+      return newState;
     default:
       return state
   }

@@ -16,7 +16,8 @@ const session_images = (state = initialState, action) => {
     case 'SESSION_IMAGES_ADDED' :
       return setImages(state).concat(prepImages(action.payload))
     case 'SESSION_IMAGE_DELETED' :
-      return state.filter(img => { return img.id !== parseInt(action.payload.id)})
+      const newState =  state.filter(img => { return img.id !== parseInt(action.payload.id)});
+      return (newState.length) ? newState : initialState;
     default:
       return state
   }

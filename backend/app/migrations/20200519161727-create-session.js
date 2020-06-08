@@ -40,6 +40,14 @@ module.exports = {
       user_id: {
         type: Sequelize.INTEGER(11).UNSIGNED,
       },
+      notes: {
+        type: Sequelize.TEXT
+      },
+      session_date: {
+        allowNull: false,
+        type: Sequelize.DATE,
+        defaultValue: new Date()
+      },
       created_at: {
         allowNull: false,
         type: Sequelize.DATE,

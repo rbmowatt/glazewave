@@ -8,8 +8,7 @@ const apiMiddleware = ({ dispatch }) => next => action => {
   next(action);
 
   if (action.type !== API) return;
-console.log('middleware')
-;  const {
+   const {
     url,
     method,
     data,

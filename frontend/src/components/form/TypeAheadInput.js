@@ -43,9 +43,9 @@ class TypeAheadInput extends React.Component {
 
     // Autosuggest will call this function every time you need to update suggestions.
     // You already implemented this logic above, so just use it.
-    onSuggestionsFetchRequested = ({ value }) => {
+    onSuggestionsFetchRequested = ({ value, reason }) => {
       this.setState({
-        suggestions: this.props.getSuggestions(value)
+        suggestions: this.props.getSuggestions(value, reason)
       });
     };
 
@@ -61,6 +61,10 @@ class TypeAheadInput extends React.Component {
       console.log(event.target);
       //let vid = this.props.entity.find(x => x[this.props.keyName] === newValue);
       this.props.setValue(this.props.name, suggestion.id)
+    }
+
+    shouldRenderSuggestions = (value) => {
+      return true
     }
 
   render() {
@@ -102,7 +106,7 @@ class TypeAheadInput extends React.Component {
         value,
         onBlur: this.onBlur,
         onChange: this.onChange,
-        onFocus : this.onSuggestionsFetchRequested,
+        onFocus : ()=>this.onSuggestionsFetchRequested({value : name , reason : 'type_ahead_focused'}),
         id: name,
         name,
         className: inputClassNames,
@@ -130,8 +134,9 @@ class TypeAheadInput extends React.Component {
                 inputProps={inputProps}
                 onSuggestionSelected={this.onSuggestionSelected}
                 onSuggestionsClearRequested={this.onSuggestionsClearRequested}
+                shouldRenderSuggestions={this.shouldRenderSuggestions}
                 //focusInputOnSuggestionClick={false}
-                alwaysRenderSuggestions={true}
+                //alwaysRenderSuggestions={true}
             />
        </div>
 

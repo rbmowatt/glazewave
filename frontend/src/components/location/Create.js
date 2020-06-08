@@ -5,7 +5,7 @@ import apiConfig from '../../config/api.js';
 import Spinner from './../helpers/image/Spinner'
 import Images from './../helpers/image/Images'
 import Buttons from './../helpers/image/Buttons'
-import { MainContainer } from './../layout/MainContainer';
+import  MainContainer  from './../layout/MainContainer';
 import {FormCard} from './../layout/FormCard';
 import { LocationForm } from './LocationForm';
 
