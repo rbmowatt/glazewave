@@ -46,7 +46,6 @@ const mapStateToProps = state => {
   const mapDispachToProps = dispatch => {
     return {
       loadSession: (request, props) => dispatch( request.getOne({id : props.match.params.id,  withs : withs.session , onSuccess : (data)=>{ return UserSessionSet(data)}})),
-      
       clearSession : ()=>dispatch(UserSessionCleared()),
       editSession : (request, props, data)=>dispatch( request.update({ id : props.match.params.id, data: data, onSuccess : (data)=>{ return UserSessionUpdated(data)}})),
       loadBoards: (request, session) => dispatch( request.get({wheres : {user_id : session.user.id },  onSuccess : (data)=>{ return UserBoardsLoaded(data)}})),

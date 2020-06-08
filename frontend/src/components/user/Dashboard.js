@@ -12,7 +12,7 @@ import {UserBoardsLoaded} from './../../actions/user_board';
 import {UserLoaded} from './../../actions/user';
 import './css/Dashboard.css'
 import ProfileCard from './ProfileCard';
-import ImageUploader from 'react-images-upload';
+
 
 const DASHBOARD_LIST_LIMIT = 3; 
 const mapStateToProps = state => {
