@@ -9,7 +9,7 @@ import UserBoardRequests from './../../requests/UserBoardRequests';
 import UserSessionRequests from './../../requests/SessionRequests';
 import {UserSessionsLoaded} from './../../actions/user_session';
 import {UserBoardsLoaded} from './../../actions/user_board';
-import {UserLoaded} from './../../actions/user';
+import {loadUserd} from './../../actions/user';
 import './css/Dashboard.css'
 import ProfileCard from './ProfileCard';
 
@@ -21,14 +21,14 @@ const mapStateToProps = state => {
 
   const withs = 
   {
-    user : ['UserLocation'],
+    user : [],
     boards : ['Board', 'UserBoardImage'],
     sessions : ['UserBoard', 'SessionImage', 'Location']
   }
 
   const mapDispachToProps = dispatch => {
     return {
-        loadUser : (request, session) => dispatch( request.getOne({id :session.user.id , withs : withs.user, onSuccess : (data)=>{ return UserLoaded(data)}})),
+       // loadUser : (request, session) => dispatch( request.getOne({id :session.user.id , withs : withs.user, onSuccess : (data)=>{ return UserLoaded(data)}})),
         loadBoards: (request, session) => dispatch( request.get({wheres : {user_id : session.user.id }, withs : withs.boards, onSuccess : (data)=>{ return UserBoardsLoaded(data)}})),
         loadSessions: (request, session) => dispatch( request.get({wheres : {user_id : session.user.id }, withs : withs.sessions, onSuccess : (data)=>{return UserSessionsLoaded(data)}})),
     };
@@ -38,7 +38,7 @@ class UserDashboard extends React.Component{
 
     componentDidMount() {
         if (this.props.session.isLoggedIn) {
-            this.props.loadUser(new UserRequests(this.props.session), this.props.session );
+            //this.props.loadUser(new UserRequests(this.props.session), this.props.session );
             this.props.loadBoards(new UserBoardRequests(this.props.session), this.props.session );
             this.props.loadSessions(new UserSessionRequests(this.props.session), this.props.session );
         }

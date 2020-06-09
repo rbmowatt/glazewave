@@ -15,16 +15,26 @@ export const UserLoaded = data => ({
 
   
 
-  export const loadUser = ( session, args )=>
+  export const logInUser = ( session, args )=>
   {
-   
     return function(dispatch, getState)
     {
-
       console.log('i should be loading user with ', args);
       const params = {...args, ...{onSuccess : (data)=>{ return UserLoaded(data)} }}
       dispatch(
         new UserRequests(session).get(params)
+      )
+    }
+  }
+
+
+  export const loadUser = ( session, args )=>
+  {
+    return function(dispatch, getState)
+    {
+      const params = {...args, ...{onSuccess : (data)=>{ return UserLoaded(data)} }}
+      dispatch(
+        new UserRequests(session).getOne(params)
       )
     }
   }

@@ -2,10 +2,6 @@ const { Router } = require('express');
 const BaseService = require('./../services/UserService');
 const UserBoardService = require('./../services/UserBoardService');
 const EntityType = 'User';
-const aws = require('aws-sdk');
-
-const s3Config = require('../config/s3');
-
 let upload = require('./../services/images/upload');
 
 
@@ -52,7 +48,7 @@ router.get('/firstOrNew', function (req, res) {
 });
 
 router.get('/:id', function (req, res) {
-  const id = req.params.id;
+  req.parser.id = req.params.id;
   BaseService.make().find(req.parser)
     .then(data => {
       res.send(data);
