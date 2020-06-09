@@ -2,7 +2,6 @@ import React from 'react';
 import Modal from './../../layout/Modal';
 import { connect } from 'react-redux';
 import CreateUserBoard from  './../../board/CreateUserBoard';
-import UserBoardRequests from './../../../requests/UserBoardRequests';
 import { Form } from 'react-advanced-form';
 import { Input, Select, Textarea, Button } from 'react-advanced-form-addons';
 import Location from './../../form/Location';
@@ -10,6 +9,7 @@ import rules from './validation-rules'
 import messages from './validation-messages'
 import ImageUploader from 'react-images-upload';
 import moment from 'moment'
+import {loadUserBoards} from './../../../actions/user_board';
 
 const mapStateToProps = state => {
     return { session: state.session, boards : state.user_boards.data, user_sessions : state.user_sessions.data }
@@ -17,9 +17,13 @@ const mapStateToProps = state => {
 
   const mapDispachToProps = dispatch => {
     return {
-        loadBoards: (request, session) => dispatch( request.get({label : 'LOAD_USER_BAORDS',  wheres : {user_id : session.user.id }, withs : ['Board'], onSuccess : (data)=>{ return {type: "SET_USER_BOARDS", payload: data}}})),
-        };
+        loadBoards: (session, params) => dispatch(loadUserBoards(session, params)),
+      };
   };
+
+  const relations = {
+      user_boards : ['Board']
+  }
 
 class SessionForm extends React.Component{
     constructor(props)
@@ -40,7 +44,7 @@ class SessionForm extends React.Component{
     componentDidMount() {
         if (this.props.session.isLoggedIn) {
             if(!this.props.boards.length)
-            this.props.loadBoards(new UserBoardRequests(this.props.session), this.props.session );
+            this.props.loadBoards(this.props.session, {wheres : {user_id : this.props.session.user.id }} );
         }
     }
 

@@ -38,10 +38,6 @@ class Create extends React.Component{
 
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
-            const headers = { headers: { 
-                Authorization: `Bearer ${this.props.session.credentials.accessToken}`,
-                'content-type': 'multipart/form-data'
-            }};
             
         } else {
                 this.props.history.push('/');

@@ -18,7 +18,6 @@ import EditSession from './components/session/Edit';
 import SessionView from './components/session/View';
 
 import BoardIndex from './components/board/BoardIndex';
-import CreateBoard from './components/board/Create';
 import CreateUserBoard from './components/board/CreateUserBoard';
 import EditBoard from './components/board/Edit';
 import BoardView from './components/board/View';

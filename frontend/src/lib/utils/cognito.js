@@ -5,6 +5,9 @@ import { cognitoConfig } from '../../config/cognito.js'
 import { clearSession, setSessionCookie } from './session';
 import { SET_SESSION } from './../../actions/types';
 import apiConfig from '../../config/api.js';
+import {loadUser } from './../../actions/user';
+
+
 const axios = require('axios');
 
 
@@ -13,7 +16,7 @@ const axios = require('axios');
 export function initSessionFromCallbackURI (callbackHref) {
   return function (dispatch) {
     return parseCognitoWebResponse(callbackHref) // parse the callback URL
-      .then(() => getCognitoSession()) // get a new session
+      .then(() => getCognitoSession(dispatch)) // get a new session
       .then((session) => {
         setSessionCookie(session);
         dispatch({ type: SET_SESSION, session })
@@ -74,7 +77,7 @@ const parseCognitoWebResponse = (href) => {
 }
 
 // Gets a new Cognito session. Returns a promise.
-const getCognitoSession = () => {
+const getCognitoSession = (dispatch) => {
   return new Promise((resolve, reject) => {
     const cognitoUser = createCognitoUser()
     cognitoUser.getSession((err, result) => {
@@ -86,6 +89,7 @@ const getCognitoSession = () => {
      console.log('cognito request', result)
 
       // Resolve the promise with the session credentials
+      dispatch(loadUser())
     
 
       axios.get( apiConfig.host + apiConfig.port + `/api/user/firstOrNew?username=` + result.idToken.payload['cognito:username'] 
@@ -110,6 +114,7 @@ const getCognitoSession = () => {
           isLoggedIn : true
         }
         session.user = {...session.user, ...data.data[0]};
+        dispatch(loadUser(session, {wheres : {email : result.idToken.payload.email}}));
         resolve(session);
       });     
 

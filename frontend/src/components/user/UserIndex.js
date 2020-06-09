@@ -87,7 +87,7 @@ class UserIndex extends Component {
                                     </div>
                                 </div>
                                 {users && users.map(user =>
-                                        <UserRow user={user} deleteUser={this.deleteUser} editUser={this.editUser} key={user.Username}></UserRow>
+                                        <UserRow user={user} deleteUser={this.deleteUser} editUser={this.editUser} key={user.username}></UserRow>
                                         )} 
                                         {
                                             (!users || users.length === 0) && <div className="col-12"><h3>No users found at the moment</h3></div>

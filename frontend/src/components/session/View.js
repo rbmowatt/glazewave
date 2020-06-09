@@ -1,9 +1,7 @@
 import './Session.css';
 import "react-datepicker/dist/react-datepicker.css";
-
 import _ from 'lodash'
 import moment from 'moment'
-
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Form } from 'react-advanced-form';
@@ -11,9 +9,6 @@ import {FormCard} from './../layout/FormCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { RIEInput, RIETextArea} from '@attently/riek';
-import {UserBoardsLoaded} from './../../actions/user_board';
-import {UserSessionsLoaded, UserSessionUpdated, UserSessionCleared, UserSessionSet} from './../../actions/user_session';
-
 import DatePicker from "react-datepicker";
 import ImageUploader from 'react-images-upload';
 import ImageGallery from 'react-image-gallery';
@@ -22,8 +17,8 @@ import Location from './../form/Location';
 import MainContainer from './../layout/MainContainer';
 import StarBar from './../layout/StarBar';
 import SessionRequests from './../../requests/SessionRequests';
-import UserBoardRequests from './../../requests/UserBoardRequests'
-
+import {loadUserBoards} from './../../actions/user_board';
+import {UserSessionCleared,loadUserSession, updateUserSession, loadUserSessionImages, addUserSessionImages, deleteUserSessionImage} from './../../actions/user_session';
 import WWClient from './../../lib/utils/worldweather'
 import noaaForecaster from 'noaa-forecasts';
 import { s3Conf } from './../../config/s3';
@@ -45,13 +40,13 @@ const mapStateToProps = state => {
 
   const mapDispachToProps = dispatch => {
     return {
-      loadSession: (request, props) => dispatch( request.getOne({id : props.match.params.id,  withs : withs.session , onSuccess : (data)=>{ return UserSessionSet(data)}})),
+      loadSession : (session, params)=>dispatch(loadUserSession(session, params)),
+      loadBoards: (session, params) => dispatch(loadUserBoards(session, params)),
       clearSession : ()=>dispatch(UserSessionCleared()),
-      editSession : (request, props, data)=>dispatch( request.update({ id : props.match.params.id, data: data, onSuccess : (data)=>{ return UserSessionUpdated(data)}})),
-      loadBoards: (request, session) => dispatch( request.get({wheres : {user_id : session.user.id },  onSuccess : (data)=>{ return UserBoardsLoaded(data)}})),
-      addImages : (request, data) => dispatch( request.createImages({data: data , onSuccess : (data)=>{ return {type: "SESSION_IMAGES_ADDED", payload: data}}})),
-      loadSessionImages: (request, props) => dispatch( request.getImages({wheres : {session_id : props.match.params.id }, onSuccess : (data)=>{ return { type: "SET_SESSION_IMAGES", payload: data}}})),
-      deleteSessionImage : (request, data) => dispatch( request.deleteImage({id : data.id, onSuccess : (data)=>{ return {type: "SESSION_IMAGE_DELETED", payload: data}}}))
+      editUserSession: (session, params) => dispatch(updateUserSession(session, params)), 
+      loadSessionImages: (session, params) => dispatch(loadUserSessionImages(session, params)), 
+      addImages : (session, params) => dispatch(addUserSessionImages(session, params)), 
+      deleteSessionImage: (session, id) => dispatch( deleteUserSessionImage (session, id))
     };
   };
 
@@ -76,25 +71,27 @@ class SessionView extends Component {
         this.onDrop = this.onDrop.bind(this);
     }
 
+    componentDidMount(){
+        if (this.props.session.isLoggedIn) {
+            this.props.loadBoards(this.props.session, {wheres : {user_id : this.props.session.user.id }} );
+            this.props.loadSession(this.props.session, {id : this.props.match.params.id,  withs : withs.session});
+            this.props.loadSessionImages(this.props.session, {wheres : {session_id : this.props.match.params.id }} );
+        }
+       else{
+            this.props.history.push('/session');
+       }
+    }
+
+
     onDrop(pictureFiles, pictureDataURLs) {
         if(!pictureFiles.length) return;
         const formData = SessionRequests.createFormRequest({session_id : this.props.current_session.id, user_id : this.props.session.user.id});
         pictureFiles.forEach((file, i) => {
             formData.append('photo', file)
         })
-        this.props.addImages(new SessionRequests(this.props.session), formData);
+        this.props.addImages(this.props.session, { data : formData});
         this.setState({uploaderInstance : this.state.uploaderInstance + 1})
       
-    }
-    componentDidMount(){
-        if (this.props.session.isLoggedIn) {
-            this.props.loadBoards(new UserBoardRequests(this.props.session), this.props.session );
-            this.props.loadSession(this.UserSessionRequest , this.props);
-            this.props.loadSessionImages(new SessionRequests(this.props.session), this.props );
-        }
-       else{
-            this.props.history.push('/session');
-       }
     }
 
     componentWillUpdate()
@@ -125,7 +122,7 @@ class SessionView extends Component {
 
     submitUpdate = ( data ) =>
     {
-        this.props.editSession(this.UserSessionRequest, this.props , data);
+        this.props.editUserSession(this.props.session ,{id : this.props.match.params.id, data : data});
         this.setState( data );
     }
 
@@ -166,7 +163,7 @@ class SessionView extends Component {
     deleteImage= (e) =>
     {
         new Promise ((resolve, reject)=>{
-            resolve(this.props.deleteSessionImage(new SessionRequests(this.props.session), {id : this.state.selectedImage.id}))
+            resolve(this.props.deleteSessionImage(this.props.session, this.state.selectedImage.id))
         })
         .then(e=>{
             const newIndex = this.state.imageIndex === 0 ? 0 : this.state.imageIndex -1;

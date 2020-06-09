@@ -2,7 +2,7 @@ import React, {Component} from "react"
 import ReactGoogleMapLoader from "react-google-maps-loader"
 import ReactGooglePlacesSuggest from "react-google-places-suggest"
 import { createField, fieldPresets } from 'react-advanced-form'
-import { Input } from 'react-advanced-form-addons';
+
  
 const MY_API_KEY = "AIzaSyBaaD_720jqJaoIBsQib_N79Q5_iciLRBc" // fake
  
@@ -51,7 +51,7 @@ class Location extends Component {
     }
  
     render() {
-        const {search, value, location_id} = this.state
+        const {search, value} = this.state
         const { fieldProps, fieldState, id, name, label, hint } = this.props
     
         const {

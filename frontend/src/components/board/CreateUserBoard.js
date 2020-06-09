@@ -4,6 +4,7 @@ import {FormCard} from './../layout/FormCard';
 import  UserBoardForm  from './forms/UserBoardForm';
 import { withRouter} from 'react-router-dom';
 import UserBoardRequests from './../../requests/UserBoardRequests';
+import {loadUserBoards} from './../../actions/user_board';
 
 
 
@@ -16,8 +17,7 @@ const mapStateToProps = state => {
   const mapDispachToProps = dispatch => {
     return {
         createUserBoard : (request, data) => dispatch( request.create({label : 'CREATE_USER_BOARD', data: data , onSuccess : (data)=>{ return {type: "USER_BOARD_CREATED", payload: data}}})),
-        loadBoards: (request, session) => dispatch( request.get({label : 'LOAD_USER_BOARDS', wheres : {user_id : session.user.id }, withs : ['Board.Manufacturer', 'UserBoardImage'], onSuccess : (data)=>{ return { type: "SET_USER_BOARDS", payload: data}}})),
-       
+        loadBoards: (session, params) => dispatch(loadUserBoards(session, params)),
     };
   };
 
@@ -43,7 +43,7 @@ class CreateUserBoard extends React.Component{
         if(this.props.noUpdate) return;
         if (prevProps.user_boards.length !== this.props.user_boards.length) {
             this.setState({ submitSuccess : true })
-            this.props.loadBoards(new UserBoardRequests(this.props.session), this.props.session );
+            this.props.loadBoards(this.props.session, {wheres : {user_id : this.props.session.user.id }, withs : ['Board.Manufacturer', 'UserBoardImage']});
             setTimeout(() => {
                 this.props.history.push('/board');
             }, 1500)
@@ -86,7 +86,7 @@ class CreateUserBoard extends React.Component{
     }
 
     render() {
-        const { submitSuccess, submitFail, loading, errorMessage, uploading, images } = this.state;
+        const { submitSuccess, submitFail, loading, errorMessage} = this.state;
         return (
                 <FormCard returnToIndex={this.returnToIndex}>
                     <div className="col-md-12 ">

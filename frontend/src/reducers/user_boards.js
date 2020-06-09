@@ -1,4 +1,4 @@
-import {SET_USER_BOARD, SET_USER_BOARDS,  USER_BOARD_CREATED, USER_BOARD_UPDATED} from './../actions/types';
+import {SET_USER_BOARD, SET_USER_BOARDS,  USER_BOARD_CREATED, USER_BOARD_UPDATED, USER_BOARD_DELETED} from './../actions/types';
 const initialState = {
   selected : {},
   data : []
@@ -14,6 +14,11 @@ const user_boards = (state = initialState, action) => {
       return newState;
     case USER_BOARD_CREATED:
       newState  = state.concat(action.payload);
+      return newState;
+    case USER_BOARD_DELETED :
+      const filteredBoards  =  state.data.filter(board => { return board.id !== parseInt(action.payload)});
+      newState = {...state, ...{data : filteredBoards}}
+      return newState;
     case USER_BOARD_UPDATED :
       newState = {...state, ...{selected : 
         {...state.selected, ...action.payload}

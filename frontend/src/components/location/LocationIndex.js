@@ -27,7 +27,7 @@ class LocationIndex extends Component {
             this.setState({ isAdmin : this.props.session.isAdmin });
             
             
-            axios.get( apiConfig.host + apiConfig.port + `/api/location?with=City`, this.props.session.headers).then(data => {
+            axios.get( apiConfig.host + apiConfig.port + `/api/location`, this.props.session.headers).then(data => {
                 data.data.sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0));
                 this.setState({ locations: data.data })
             });
