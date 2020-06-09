@@ -4,13 +4,15 @@ import ImageUploader from 'react-images-upload';
 import moment from 'moment';
 import UserRequests from './../../requests/UserRequests';
 import { s3Conf } from './../../config/s3';
+import {loadUser} from './../../actions/user';
 
 const mapStateToProps = state => {
-    return { user : state.session.user, session : state.session }
+    return { user : state.user, session : state.session }
   }
   const mapDispachToProps = dispatch => {
     return {
-      addImages : (request, data) => dispatch( request.updateProfileImage({data: data , onSuccess : (data)=>{ return {type: "SESSION_IMAGE_UPDATED", payload: data}}}))
+      addImages : (request, data) => dispatch( request.updateProfileImage({data: data , onSuccess : (data)=>{ return {type: "SESSION_IMAGE_UPDATED", payload: data}}})),
+      loadUser : (session, params)=>dispatch(loadUser(session, params))
     }}
 
 class ProfileCard extends React.Component{
@@ -24,6 +26,12 @@ class ProfileCard extends React.Component{
             uploaderInstance : 1
         };
         this.onDrop = this.onDrop.bind(this);
+    }
+
+    componentDidMount() {
+        if (this.props.session.isLoggedIn) {
+            this.props.loadUser(this.props.session, {id : this.props.session.user.id} );
+        }
     }
 
     onDrop(pictureFiles, pictureDataURLs) {

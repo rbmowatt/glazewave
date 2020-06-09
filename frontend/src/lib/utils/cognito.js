@@ -5,7 +5,7 @@ import { cognitoConfig } from '../../config/cognito.js'
 import { clearSession, setSessionCookie } from './session';
 import { SET_SESSION } from './../../actions/types';
 import apiConfig from '../../config/api.js';
-import {loadUser } from './../../actions/user';
+import {logInUser} from './../../actions/user';
 
 
 const axios = require('axios');
@@ -85,13 +85,6 @@ const getCognitoSession = (dispatch) => {
         reject(new Error('Failure getting Cognito session: ' + err))
         return
       }
-
-     console.log('cognito request', result)
-
-      // Resolve the promise with the session credentials
-      dispatch(loadUser())
-    
-
       axios.get( apiConfig.host + apiConfig.port + `/api/user/firstOrNew?username=` + result.idToken.payload['cognito:username'] 
       + '&email=' + result.idToken.payload.email + '&first_name=' + result.idToken.payload.given_name + '&last_name=' + result.idToken.payload.family_name
         ).then(data => {
@@ -114,7 +107,7 @@ const getCognitoSession = (dispatch) => {
           isLoggedIn : true
         }
         session.user = {...session.user, ...data.data[0]};
-        dispatch(loadUser(session, {wheres : {email : result.idToken.payload.email}}));
+        dispatch(logInUser(session, {wheres : {email : result.idToken.payload.email}}));
         resolve(session);
       });     
 
