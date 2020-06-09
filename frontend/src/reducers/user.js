@@ -1,9 +1,10 @@
-import UserBoardRequests from './../requests/UserBoardRequests';
+import {USER_LOADED} from './../actions/types';
 
-const initialState = [];
+
+const initialState = {};
 const user = (state = initialState, action) => {
   switch (action.type) {
-    case 'SET_USER':
+    case USER_LOADED:
       return action.payload;
     default:
       return state

@@ -1,4 +1,5 @@
 import { s3Conf } from './../config/s3';
+import {USER_BOARD_IMAGES_LOADED, USER_BOARD_IMAGES_CREATED, USER_BOARD_IMAGE_DELETED} from './../actions/types';
 
 const INITIAL_STATE_ID = 1;
 
@@ -11,12 +12,12 @@ const initialState = [
 ];
 const session_images = (state = initialState, action) => {
   switch (action.type) {
-    case 'SET_USER_BOARD_IMAGES':
+    case USER_BOARD_IMAGES_LOADED :
       return (action.payload.length > 0) ?  prepImages(action.payload) : initialState;
-    case 'USER_BOARD_IMAGES_ADDED' :
+    case USER_BOARD_IMAGES_CREATED :
       return setImages(state).concat(prepImages(action.payload))
-    case 'USER_BOARD_IMAGE_DELETED' :
-      const newState =  state.filter(img => { return img.id !== parseInt(action.payload.id)});
+    case USER_BOARD_IMAGE_DELETED :
+      const newState =  state.filter(img => { return img.id !== parseInt(action.payload)});
       return (newState.length) ? newState : initialState;
     default:
       return state

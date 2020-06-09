@@ -1,48 +1,61 @@
 
 import './Board.css'
 
-
+import _ from 'lodash';
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
+
 import {FormCard} from './../layout/FormCard';
 import { Form } from 'react-advanced-form';
 import { RIEInput, RIETextArea} from '@attently/riek';
-import _ from 'lodash';
-import {UserBoardUpdated} from './../../actions/user_board';
-import SessionCard from './../session/SessionCard';
 
+import SessionCard from './../session/SessionCard';
 import  MainContainer  from './../layout/MainContainer';
-import SessionRequests from './../../requests/SessionRequests';
 import StarBar from './../layout/StarBar';
 import UserBoardRequests from './../../requests/UserBoardRequests';
-import BoardRequests from     './../../requests/BoardRequests';
-import ManufacturerRequests from './../../requests/ManufacturerRequests';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrash, faBookReader } from '@fortawesome/free-solid-svg-icons';
+
 import ImageUploader from 'react-images-upload';
 import ImageGallery from 'react-image-gallery';
 import TypeAheadInput  from './../form/TypeAheadInput';
 import { sizes } from './data/board_sizes';
 import InlineEdit, { InputType } from 'riec';
 
+import {loadBoards} from './../../actions/board';
+import {loadShapers} from './../../actions/shaper';
+import {loadUserSessions} from './../../actions/user_session';
+import {loadUserBoard, updateUserBoard, loadUserBoardImages, addUserBoardImages, deleteUserBoardImage  } from './../../actions/user_board';
+
+
+
+
+
 
 const mapStateToProps = state => {
-    return { session: state.session, board : state.user_boards.selected , boards: state.boards, shapers : state.shapers , images : state.user_board_images}
+    return { session: state.session, board : state.user_boards.selected , boards: state.boards.data, shapers : state.shapers.data , images : state.user_board_images}
   }
 
   const mapDispachToProps = dispatch => {
     return {
-      loadBoard: (request, props) => dispatch( request.getOne({ id : props.match.params.id,  withs : ['Board.Manufacturer', 'Session.SessionImage'], onSuccess : (data)=>{ return { type: "SET_USER_BOARD", payload: data}}})),
-      loadSessions: (request, props) => dispatch( request.get({ wheres : {board_id : props.match.params.id,}, withs : [ 'Location', 'SessionImage'], onSuccess : (data)=>{ return { type: "SET_USER_SESSIONS", payload: data}}})),
-      editUserBoard: (request, props, data)=>dispatch( request.update({ id : props.match.params.id, data: data, onSuccess : (data)=>{ return UserBoardUpdated(data)}})),
-      loadShapers: (request, session) => dispatch( request.get({limit : 1000,   withs : ['Board'], onSuccess : (data)=>{ return {type: "SET_SHAPERS", payload: data}}})),
-      loadBoards: (request, session) => dispatch( request.get({ limit : 1000,  withs : ['Manufacturer'], onSuccess : (data)=>{ return {type: "SET_BOARDS", payload: data}}})),
-      loadBoardImages: (request, props) => dispatch( request.getImages({wheres : {user_board_id : props.match.params.id }, onSuccess : (data)=>{ return { type: "SET_USER_BOARD_IMAGES", payload: data}}})),
-      addImages : (request, data) => dispatch( request.createImages({data: data , onSuccess : (data)=>{  return { type: "USER_BOARD_IMAGES_ADDED", payload: data}}})),
-      deleteBoardImage : (request, data) => dispatch( request.deleteImage({id : data.id, onSuccess : (data)=>{ return {type: "USER_BOARD_IMAGE_DELETED", payload: data}}}))
+      loadBoard: (session, params) => dispatch( loadUserBoard(session, params)), 
+      loadSessions: (session, params) => dispatch( loadUserSessions(session, params)), 
+      loadShapers: (session, params) => dispatch( loadShapers(session, params)), 
+      loadBoards: (session, params) => dispatch(loadBoards(session, params)), 
+      editUserBoard: (session, params) => dispatch(updateUserBoard(session, params)), 
+      loadBoardImages: (session, params) => dispatch(loadUserBoardImages(session, params)), 
+      addImages : (session, params) => dispatch(addUserBoardImages(session, params)), 
+      deleteBoardImage: (session, id) => dispatch( deleteUserBoardImage (session, id))
     };
   };
+
+const relations = {
+    user_session : ['Location', 'SessionImage'],
+    selected_board : ['Board.Manufacturer', 'Session.SessionImage'],
+    shapers : ['Board'],
+    boards : ['Manufacturer']
+};
 
 class BoardView extends Component {
     constructor(props) {
@@ -56,6 +69,17 @@ class BoardView extends Component {
             boardSizeOptions : this.prepBoardSizeOptions(sizes)
         }
         this.onDrop = this.onDrop.bind(this);
+    }
+
+    componentDidMount(){
+        if (this.props.session.isLoggedIn) {
+            this.props.loadBoard(this.props.session, { id : this.props.match.params.id,  withs : relations.selected_board} );
+            this.props.loadSessions(this.props.session, { wheres : {board_id : this.props.match.params.id}, withs : relations.user_session} );
+            this.props.loadBoards(this.props.session, { limit:1000, withs : relations.boards} );
+            this.props.loadShapers(this.props.session, {withs : relations.shapers});
+            this.props.loadBoardImages(this.props.session, {wheres : {user_board_id : this.props.match.params.id }} );
+        }
+        else this.props.history.push('/board');
     }
 
     prepBoardSizeOptions = (sizes)=>
@@ -113,20 +137,11 @@ class BoardView extends Component {
         );
       };
 
-    componentDidMount(){
-        if (this.props.session.isLoggedIn) {
-            this.props.loadBoard(new UserBoardRequests(this.props.session), this.props );
-            this.props.loadSessions(new SessionRequests , this.props );
-            this.props.loadBoards(new BoardRequests(this.props.session), this.props.session );
-            this.props.loadShapers(new ManufacturerRequests(this.props.session), this.props.session );
-            this.props.loadBoardImages(new UserBoardRequests(this.props.session), this.props );
-        }
-        else this.props.history.push('/board');
-    }
+
 
     submitUpdate = ( data ) =>
     {
-        this.props.editUserBoard(new UserBoardRequests(this.props.session), this.props , data);
+        this.props.editUserBoard(this.props.session ,{id : this.props.match.params.id, data : data});
         this.setState( data );
     }
 
@@ -142,7 +157,7 @@ class BoardView extends Component {
         pictureFiles.forEach((file, i) => {
             formData.append('photo', file)
         })
-        this.props.addImages(new UserBoardRequests(this.props.session), formData);
+        this.props.addImages(this.props.session, { data : formData});
         this.setState({uploaderInstance : this.state.uploaderInstance + 1})
     }
 
@@ -160,7 +175,7 @@ class BoardView extends Component {
     deleteImage= (e) =>
     {
         new Promise ((resolve, reject)=>{
-            resolve(this.props.deleteBoardImage(new UserBoardRequests(this.props.session), {id : this.state.selectedImage.id}))
+            resolve(this.props.deleteBoardImage(this.props.session, this.state.selectedImage.id))
         })
         .then(e=>{
             const newIndex = this.state.imageIndex === 0 ? 0 : this.state.imageIndex -1;
@@ -178,7 +193,7 @@ class BoardView extends Component {
 
     render() {
         const { board } = this.props;
-        const modelPlaceholder = (this.state.modelPlaceholder) ? this.state.modelPlaceholder : board.Board && board.Board.model || 'Choose A Model';
+        const modelPlaceholder = (this.state.modelPlaceholder) ? this.state.modelPlaceholder : board.Board ? board.Board.model : 'Choose A Model';
         return (
             <MainContainer>
                 <FormCard returnToIndex={this.returnToIndex}>
@@ -242,7 +257,7 @@ class BoardView extends Component {
                                     <TypeAheadInput  entity={this.props.shapers} name="manufacturer_id" 
                                         keyName="name"
                                         className="form-control" 
-                                        placeholder={board.Board && board.Board.Manufacturer && board.Board.Manufacturer.name || 'Choose A Shaper'}
+                                        placeholder={board.Board && board.Board.Manufacturer ? board.Board.Manufacturer.name : 'Choose A Shaper'}
                                         value={this.state.manufacturer_id} 
                                         setValue={this.onTypeAheadSelected} 
                                         getSuggestions={this.getShaperSuggestions} 
@@ -285,7 +300,7 @@ class BoardView extends Component {
                                             board.Sessions.reduce((mappedArray, session, index) => {                           
                                                                     if (index < 3) { 
                                                                         mappedArray.push(
-                                                                            <div className="col-md-4">
+                                                                            <div className="col-md-4" key={index}>
                                                                             <div key={session.id} className="card row">
                                                                             <SessionCard session={session} key={session.id} className="row col-md-12" />
                                                                             </div>

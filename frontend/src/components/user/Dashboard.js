@@ -43,9 +43,9 @@ class UserDashboard extends React.Component{
             this.props.loadSessions(new UserSessionRequests(this.props.session), this.props.session );
         }
     }
-    
+     
     render() {
-        const { user_sessions, boards, locations } = this.props;
+        const { user_sessions, boards } = this.props;
         return (
            <MainContainer>
                 <div className="row">

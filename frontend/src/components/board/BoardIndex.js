@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import  MainContainer  from './../layout/MainContainer';
 import { confirmAlert } from 'react-confirm-alert';
 import BoardCard from './../user/BoardCard';
-import UserBoardRequests from './../../requests/UserBoardRequests';
+import {loadUserBoards, deleteUserBoard} from './../../actions/user_board';
 
 
 const mapStateToProps = state => {
@@ -14,15 +14,18 @@ const mapStateToProps = state => {
 
   const mapDispachToProps = dispatch => {
     return {
-        loadBoards: (request, session) => dispatch( request.get({label : 'LOAD_USER_BOARDS', wheres : {user_id : session.user.id }, withs : ['Board.Manufacturer', 'UserBoardImage'], onSuccess : (data)=>{ return { type: "SET_USER_BOARDS", payload: data}}})),
-        deleteBoard: (request, id) => dispatch( request.delete({label : 'DELETE_USER_BOARD', id:id , onSuccess : (data)=>{ return { type: "DELETE_USER_BOARD", payload: id }}}))
+        loadBoards: (session, params) => dispatch(loadUserBoards(session, params)),
+        deleteBoard: (session, id) => dispatch( deleteUserBoard(session, id) )        
     };
   };
+ 
+const relations = {
+    user_board : ['Board.Manufacturer', 'UserBoardImage']
+};
 
 class BoardIndex extends Component {
     constructor(props) {
         super(props);
-        this.state = {isAdmin : false }
         this.deleteBoard = this.deleteBoard.bind(this);
         this.editBoard = this.editBoard.bind(this);
         this.viewBoard = this.viewBoard.bind(this);
@@ -30,12 +33,11 @@ class BoardIndex extends Component {
 
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
-            this.setState({ isAdmin : this.props.session.isAdmin });
-            this.props.loadBoards(new UserBoardRequests(this.props.session), this.props.session );
+            this.props.loadBoards(this.props.session, { wheres : {user_id : this.props.session.user.id }, withs : relations.user_board} );
         }
     }
 
-    deleteBoard(id ) {
+    deleteBoard(id) {
         confirmAlert({
             title: 'Confirm To Delete',
             message: 'Are you sure you want to delete this session?',
@@ -43,7 +45,7 @@ class BoardIndex extends Component {
               {
                 label: 'Yes',
                 onClick: () => {
-                    this.props.deleteSession(new UserBoardRequests(this.props.session), id);
+                    this.props.deleteBoard(this.props.session, id);
                 }
               },
               {
@@ -69,7 +71,7 @@ class BoardIndex extends Component {
                 <div className="row">
                     <div className="card card-lg mx-auto">
                         <div className="card-title"><h2>Boards
-                        { this.state.isAdmin &&  <Link to={'board/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New Board</Link>}
+                        <Link to={'board/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New Board</Link>
                         </h2>
                         </div> 
                         <div className="card-text">

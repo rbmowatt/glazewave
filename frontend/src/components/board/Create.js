@@ -36,11 +36,6 @@ class Create extends React.Component{
 
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
-            const headers = { headers: { 
-                Authorization: `Bearer ${this.props.session.credentials.accessToken}`,
-                'content-type': 'multipart/form-data'
-            }};
-            
             axios.get(apiConfig.host + apiConfig.port + `/api/manufacturer`, this.props.session.headers)
                 .then(data => this.setState({manufacturers : data.data}))
                 .catch(error=>this.setState({ submitSuccess: false, submitFail: true, errorMessage : error.response.data.message }));
