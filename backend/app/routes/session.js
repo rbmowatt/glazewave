@@ -32,7 +32,7 @@ router.get('/images', function (req, res) {
     });
 });
 
-router.post('/images', upload("session").array('photo'), function (req, res) {
+router.post('/images', upload({destinationPath : 'user_sessions'}).array('photo'), function (req, res) {
   const imgs = [];
   if(req.files && req.files.length){
     req.files.forEach(file=>{
@@ -70,7 +70,7 @@ router.get('/:id', function (req, res) {
 });
 
 
-router.post('/', upload().array('photo'), function (req, res) {
+router.post('/', upload({destinationPath : 'user_sessions'}).array('photo'), function (req, res) {
   if (!req.body.title) {
     res.status(400).send({
       message: "Content can not be empty!"
@@ -96,7 +96,7 @@ router.post('/', upload().array('photo'), function (req, res) {
     });
 });
 
-router.put('/:id', upload().single('photo'),function (req, res) {
+router.put('/:id', upload({destinationPath : 'user_sessions'}).single('photo'),function (req, res) {
   BaseService.make().update(req.params.id, req.body)
     .then(num => {
       if (num == 1) {
