@@ -81,7 +81,7 @@ router.post('/', function (req, res) {
     });
 });
 
-router.post('/board', upload("board").single('photo'), function (req, res) {
+router.post('/board', upload({destinationPath : 'board'}).single('photo'), function (req, res) {
   UserBoardService.make().create(req.body)
     .then(data => {
       res.send(data);
@@ -94,14 +94,14 @@ router.post('/board', upload("board").single('photo'), function (req, res) {
     });
 });
 
-router.post('/images', upload("user").single('photo'), function (req, res) {
+router.post('/images', upload({destinationPath : 'user', width : 400, height : 400}).single('photo'), function (req, res) {
   if(req.file ){
     BaseService.make().update(req.body.user_id,  {profile_img : req.file.key })
     .then(num => {
       if (num == 1) {
         res.send({
-          src : req.file.key, 
-          message: "Session was updated successfully."
+          data : req.file.key, 
+          message: "User Imade was updated successfully."
         });
       } else {
         res.send({

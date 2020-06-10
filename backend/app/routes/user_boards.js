@@ -2,7 +2,7 @@ const { Router } = require('express');
 let upload = require('./../services/images/upload');
 const BaseService = require('./../services/UserBoardService');
 const ImageService  = require('./../services/ImageService');
-const EntityType = 'Session';
+const EntityType = 'UserBoard';
 
 const router = new Router();
 
@@ -33,6 +33,7 @@ router.get('/images', function (req, res) {
 });
 
 router.get('/:id', function (req, res) {
+  console.log('getting uboards')
   req.parser.id = req.params.id;
   BaseService.make().find(req.parser)
     .then(data => {
@@ -46,7 +47,7 @@ router.get('/:id', function (req, res) {
 });
 
 
-router.post('/images', upload("boards").array('photo'), function (req, res) {
+router.post('/images', upload({destinationPath : 'user_boards'}).array('photo'), function (req, res) {
   console.log('__LINE__', req.body);
   const imgs = [];
   if(req.files && req.files.length){
@@ -72,7 +73,7 @@ router.post('/images', upload("boards").array('photo'), function (req, res) {
 });
 
 
-router.post('/', upload().single('photo'), function (req, res) {
+router.post('/', upload({destinationPath : 'user_boards'}).single('photo'), function (req, res) {
   // Validate request
   console.log('__LINE__', req.body);
   BaseService.make().create(req.body)
@@ -91,7 +92,7 @@ router.post('/', upload().single('photo'), function (req, res) {
     });
 });
 
-router.put('/:id', upload().single('photo'),function (req, res) {
+router.put('/:id', upload({destinationPath : 'user_boards'}).single('photo'),function (req, res) {
   BaseService.make().update(req.params.id, req.body)
     .then(num => {
       if (num == 1) {

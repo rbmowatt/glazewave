@@ -23,6 +23,8 @@ import WWClient from './../../lib/utils/worldweather'
 import noaaForecaster from 'noaa-forecasts';
 import { s3Conf } from './../../config/s3';
 
+import BoardPicker from './../board/forms/BoardPicker';
+
 
 const mapStateToProps = state => {
     return { 
@@ -94,14 +96,14 @@ class SessionView extends Component {
       
     }
 
-    componentWillUpdate()
+    componentDidUpdate()
     {
         (this.props.boards.length && !this.state.selectOptions.length && this.props.current_session.id) && this.setSelectedBoard();
     }
 
     setSelectedBoard = () =>
     {
-        const boardOptions = [];
+        const boardOptions = [{id : 0, name : 'select'}];
         let select = this.state.select
         this.props.boards.map((obj) => {
             let board = { id : obj.id , name : obj.name};
@@ -140,13 +142,13 @@ class SessionView extends Component {
 
     onBoardChange = (id) =>
     {
+        if(!id) return;
         this.submitUpdate({ board_id : id});
         const idInt = parseInt(id);
         this.state.selectOptions.map((obj) => {
             if(obj.id === idInt ) this.setState({select : obj});
             return true;
         })
-        
     }
 
     onImageLoad = (e) =>
@@ -173,16 +175,12 @@ class SessionView extends Component {
 
     onDateChange = date => {
         let formattedDate = moment(date).format("YYYY-MM-DD HH:mm:ss");
-        console.log(formattedDate )
         this.submitUpdate({session_date : formattedDate})
         this.setState({date : date})
-       
       };
 
     render() {
         const session = this.props.current_session;
-        const boardImage = this.props.current_session.UserBoard && this.props.current_session.UserBoard.UserBoardImages && this.props.current_session.UserBoard.UserBoardImages.length ? 
-        s3Conf.root + this.props.current_session.UserBoard.UserBoardImages[0].name : this.state.defaultImage;
         return (
             <MainContainer>
                 <FormCard returnToIndex={this.returnToIndex}>
@@ -256,30 +254,14 @@ class SessionView extends Component {
                                             placeholderText={moment(session.session_date).format('MMMM D YYYY h:mm a')}
                                             />
         
-                                    </div>                                    
-                                    <div className="row detail-line"> 
-                                    <div className="col-md-12"><strong>Board:</strong></div>
-                                        <div className="col-md-4">
-                                            <img style={{cursor : 'pointer'}} onClick={()=>this.props.history.push('/board/' + session.board_id)}
-                                            src={boardImage}/>      
-                                        </div>  
-                                        <div className="col-md-8 board-select">
-                                            <div className="row col-md-12">
-                                                <strong>
-                                            <InlineEdit
-                                                type={InputType.Select}
-                                                value={this.state.select.name}
-                                                onChange={this.onBoardChange}
-                                                options={this.state.selectOptions}
-                                                valueKey="id"
-                                                labelKey="name"
-                                                /> 
-                                                { session.UserBoard && <div><strong>Size:</strong> {session.UserBoard.size }</div> }
-                                                </strong>
-                                            </div> 
-                                        </div>
-                                                          
-                                    </div>
+                                    </div>                       
+                                    <BoardPicker 
+                                        onChange= {this.onBoardChange} 
+                                        boards={this.state.selectOptions} 
+                                        name={this.state.select.name} 
+                                        board_id={session.board_id} 
+                                        wrapperClass="row detail-line"
+                                    />    
                                     <div className="detail-line">
                                         <div><strong>Notes:</strong></div>
                                         <RIETextArea
