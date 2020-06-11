@@ -3,6 +3,10 @@ import { connect } from 'react-redux'
 import InlineEdit, { InputType } from 'riec';
 import {loadUserBoard} from './../../../actions/user_board';
 import { s3Conf } from './../../../config/s3';
+import Modal from './../../layout/Modal';
+import CreateUserBoard from  './../CreateUserBoard';
+import {Button } from 'react-advanced-form-addons';
+import StarBar from './../../layout/StarBar';
 
 import { withRouter} from 'react-router-dom';
 
@@ -27,14 +31,25 @@ class BoardPicker extends React.Component{
             selectOptions: [],
             defaultImage : "https://image.shutterstock.com/image-vector/please-no-photo-camera-vector-260nw-473234290.jpg",
             board_id : props.board_id,
-            selectedBoard : {}
+            selectedBoard : {},
+            show:false
         };
     }
+
+    showModal = () => {
+        this.setState({ show: true });
+    };
+
+    hideModal = (e = false) => {
+        if(e) e.preventDefault();
+        this.setState({ show: false });
+    };
+
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
             this.setState({ board_id : this.props.board_id, selectedBoard : this.props.current_session.UserBoard})
-
-            this.props.loadBoard(this.props.session, {id : this.props.current_session.board_id, withs : ['UserBoardImage']} );
+            if(this.props.current_session.board_id) this.props.loadBoard(this.props.session, {id : this.props.current_session.board_id, withs : ['UserBoardImage']} );
+            
         }
     }
 
@@ -53,29 +68,35 @@ class BoardPicker extends React.Component{
         const boardImage = this.props.user_board && this.props.user_board.UserBoardImages && this.props.user_board.UserBoardImages.length ? 
         s3Conf.root + this.props.user_board.UserBoardImages[0].name : this.state.defaultImage;
         return (
-            <div className={this.props.wrapperClass}> 
+            <div className={this.props.wrapperClass + " "}> 
                 <div className="col-md-12"><strong>Board:</strong></div>
+
                     <div className="col-md-4">
                         <img style={{cursor : 'pointer'}} onClick={()=>this.props.history.push('/board/' + session.board_id)}
                         src={boardImage}/>      
                     </div>  
                     <div className="col-md-8 board-select">
                         <div className="row col-md-12">
-            
-                            <strong>
+                        <strong>
                         <InlineEdit
                             type={InputType.Select}
-                            value={this.props.name}
-                            defaultValue={this.props.name}
+                            value={this.props.user_board.name}
+                            defaultValue={this.props.user_board.name}
                             onChange={this.props.onChange}
                             options={this.props.boards}
                             valueKey="id"
                             labelKey="name"
                             /> 
-                            { this.props.user_board  && <div><strong>Size:</strong> {this.props.user_board.size }</div> }
+                            { this.props.user_board  && <div>Size:{this.props.user_board.size }</div> }
+                            <StarBar stars={this.props.user_board.rating} onClick={this.submitUpdate } size="xs" />
+                            <div><button type='button' className="btn btn-outline-primary btn-sm" onClick={this.showModal}>New Board</button></div>
                             </strong>
                         </div> 
-                    </div>               
+                    </div>       
+                    
+                    <Modal show={this.state.show} handleClose={(e) =>this.hideModal(e)}>
+                        <CreateUserBoard onSuccess={(e) =>this.hideModal(e)} noUpdate={true} />
+                    </Modal>        
             </div>
         )
     }

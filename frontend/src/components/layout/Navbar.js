@@ -22,7 +22,7 @@ const Navbar = props =>{
                           My Memo</Link>
                       }
  
-                {props.session.isLoggedIn && props.session.isAdmin && 
+                {false && props.session.isLoggedIn && props.session.isAdmin && 
                           <Link className="nav-link" to={'/user'}>
                           Users</Link>
                       }
@@ -34,11 +34,11 @@ const Navbar = props =>{
                           <Link className="nav-link" to={'/board'}>
                           Boards</Link>
                       }
-                {(props.session.isLoggedIn ) &&
+                {false && (props.session.isLoggedIn ) &&
                           <Link className="nav-link" to={'/location'}>
                           Spots</Link>
                       }
-                {(props.session.isLoggedIn ) &&
+                {false && (props.session.isLoggedIn ) &&
                           <Link className="nav-link" to={'/manufacturer'}>
                           Brands</Link>
                       }

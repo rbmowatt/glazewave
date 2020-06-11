@@ -12,7 +12,6 @@ import { RIEInput, RIETextArea} from '@attently/riek';
 import DatePicker from "react-datepicker";
 import ImageUploader from 'react-images-upload';
 import ImageGallery from 'react-image-gallery';
-import InlineEdit, { InputType } from 'riec';
 import Location from './../form/Location';
 import MainContainer from './../layout/MainContainer';
 import StarBar from './../layout/StarBar';
@@ -21,8 +20,6 @@ import {loadUserBoards} from './../../actions/user_board';
 import {UserSessionCleared,loadUserSession, updateUserSession, loadUserSessionImages, addUserSessionImages, deleteUserSessionImage} from './../../actions/user_session';
 import WWClient from './../../lib/utils/worldweather'
 import noaaForecaster from 'noaa-forecasts';
-import { s3Conf } from './../../config/s3';
-
 import BoardPicker from './../board/forms/BoardPicker';
 
 
@@ -71,6 +68,7 @@ class SessionView extends Component {
             defaultImage : "https://image.shutterstock.com/image-vector/please-no-photo-camera-vector-260nw-473234290.jpg"
         };
         this.onDrop = this.onDrop.bind(this);
+    
     }
 
     componentDidMount(){
@@ -96,9 +94,11 @@ class SessionView extends Component {
       
     }
 
-    componentDidUpdate()
+    componentDidUpdate(prevProps, prevState, snapshot)
     {
-        (this.props.boards.length && !this.state.selectOptions.length && this.props.current_session.id) && this.setSelectedBoard();
+        (
+            (this.props.boards.length && !this.state.selectOptions.length && this.props.current_session.id)
+            || (prevProps.boards.length !== this.props.boards.length)) && this.setSelectedBoard();
     }
 
     setSelectedBoard = () =>
@@ -153,7 +153,6 @@ class SessionView extends Component {
 
     onImageLoad = (e) =>
     {
-        console.log('imger loaded', this.props.session_images.length, e.target)
         this.setState({selectedImage : this.props.session_images[0]})
     }
 
@@ -258,7 +257,7 @@ class SessionView extends Component {
                                     <BoardPicker 
                                         onChange= {this.onBoardChange} 
                                         boards={this.state.selectOptions} 
-                                        name={this.state.select.name} 
+
                                         board_id={session.board_id} 
                                         wrapperClass="row detail-line"
                                     />    

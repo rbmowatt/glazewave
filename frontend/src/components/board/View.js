@@ -163,7 +163,6 @@ class BoardView extends Component {
 
     onImageLoad = (e) =>
     {
-        console.log('imger loaded', this.props.images.length, e.target)
         this.setState({selectedImage : this.props.images[0]})
     }
 

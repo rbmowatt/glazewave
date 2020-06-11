@@ -118,7 +118,7 @@ render(){
                                                 <strong className="margin-10px-left xs-margin-four-left text-pink">Email:</strong>
                                             </div>
                                             <div className="col-md-7 col-7">
-                                                <p><a href="javascript:void(0)">{user.email}</a></p>
+                                                <p>{user.email}</p>
                                             </div>
                                         </div>
                                     </li>
