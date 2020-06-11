@@ -13,7 +13,7 @@ const user_boards = (state = initialState, action) => {
       newState = {...state, ...{data : action.payload}}
       return newState;
     case USER_BOARD_CREATED:
-      newState  = state.concat(action.payload);
+      newState = {...state, ...{data : state.data.concat(action.payload)}}
       return newState;
     case USER_BOARD_DELETED :
       const filteredBoards  =  state.data.filter(board => { return board.id !== parseInt(action.payload)});

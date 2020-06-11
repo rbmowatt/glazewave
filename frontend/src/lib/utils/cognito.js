@@ -6,10 +6,8 @@ import { clearSession, setSessionCookie } from './session';
 import { SET_SESSION } from './../../actions/types';
 import apiConfig from '../../config/api.js';
 import {logInUser} from './../../actions/user';
-
-
+import store from './../../store/index'
 const axios = require('axios');
-
 
 
 // Initialise the Cognito sesson from a callback href
@@ -89,32 +87,57 @@ const getCognitoSession = (dispatch) => {
       + '&email=' + result.idToken.payload.email + '&first_name=' + result.idToken.payload.given_name + '&last_name=' + result.idToken.payload.family_name
         ).then(data => {
         console.log('getting new session', data.data[0]);
-        const session = {
-          credentials: {
-            //accessToken: result.accessToken.jwtToken,
-            //idToken: result.idToken.jwtToken,
-            refreshToken: result.refreshToken.token
-          },
-          user: {
-            id : data.data.id,
-            userName: result.idToken.payload['cognito:username'],
-            email: result.idToken.payload.email
-          },
-          headers: `Authorization: Bearer ${result.accessToken.jwtToken}`,
-          groups : result.idToken.payload['cognito:groups'],
-          isAdmin : result.idToken.payload['cognito:groups'] instanceof Array && result.idToken.payload['cognito:groups'].indexOf('Admin') !== -1,
-          expiration : result.accessToken.payload.exp,
-          isLoggedIn : true
-        }
+        const session = formatSessionObject(data.data.id, result);
         session.user = {...session.user, ...data.data[0]};
         dispatch(logInUser(session, {wheres : {email : result.idToken.payload.email}}));
         resolve(session);
       });     
-
-     
     })
   })
 }
+
+
+const formatSessionObject = (id, result) =>
+{
+  const session = {
+    user: {
+      id : id,
+      userName: result.idToken.payload['cognito:username'],
+      email: result.idToken.payload.email
+    },
+    //headers: `Authorization: Bearer ${result.accessToken.jwtToken}`,
+    jwt : result.accessToken.jwtToken,
+    groups : result.idToken.payload['cognito:groups'],
+    isAdmin : result.idToken.payload['cognito:groups'] instanceof Array && result.idToken.payload['cognito:groups'].indexOf('Admin') !== -1,
+    expiration : result.accessToken.payload.exp,
+    isLoggedIn : true
+  }
+  session.user = {...session.user};
+  return session;
+}
+
+export const refresh = (id = null) =>
+{
+  return new Promise((resolve, reject) => {
+  const auth = createCognitoAuth();
+  auth.userhandler = {
+    onSuccess: function (result) {
+      let session = formatSessionObject(store.getState().session.user.id, result);
+      setSessionCookie(session);
+      store.dispatch({ type: SET_SESSION, session });
+      resolve(session)
+    },
+    onFailure: function (err) {
+      console.log('whateves', err)
+      reject(err)
+    }
+  }
+  auth.getSession()  
+})    
+  //let user = auth.getCachedSession();
+  //auth.refreshSession(user.getSession())
+  //console.log('cached session', user)
+  }
 
 // Sign out of the current session (will redirect to signout URI)
 const signOutCognitoSession = () => {

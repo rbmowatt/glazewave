@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import  MainContainer  from './../layout/MainContainer';
 import SessionCard from './SessionCard';
 import {loadUserSessions, deleteUserSession} from './../../actions/user_session';
+import { FormCard } from './../layout/FormCard'
 
 const mapStateToProps = state => {
     return { session: state.session, sessions : state.user_sessions.data, api : state.api }
@@ -82,10 +83,13 @@ class SessionIndex extends Component {
                                     <SessionCard session={session} key={session.id}  className="col-md-3" deleteSession={this.deleteSession} viewSession={this.viewSession} editSession={this.editSession}  />                              
                                 )}
                                 {
-                                    (!sessions  || sessions.length === 0) &&  <div className="col-12"><h3>No sessionS found at the moment</h3></div>
+                                    (!sessions  || sessions.length === 0) &&  
+                                    <div className="col-md-12">
+                                        <h3>No Sessions found at the moment</h3>
+                                    </div>
                                 } 
                                 </div>
-                             </div>
+                            </div>
                         </div>
                     </div>
                 </div>

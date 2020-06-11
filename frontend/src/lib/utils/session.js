@@ -1,4 +1,6 @@
-import Cookie from "js-cookie"
+import Cookie from "js-cookie";
+import moment from "moment";
+import { refresh } from './cognito'
 
 export function setSessionCookie(session)
 {
@@ -8,12 +10,19 @@ export function setSessionCookie(session)
 export function hasSession() {
     if(Cookie.get("x-token"))
     {
+
       const session = JSON.parse(Cookie.get("x-token"));
-      var current_time = Date.now() / 1000;
-      if ( session.expiration > current_time) {
+      const current_time = moment.unix(session.expiration).valueOf();
+      const expTime = moment.unix(moment.now()).valueOf();
+      //console.log('cookie expues',  current_time, expTime);
+      if ( expTime > current_time) {
         return session;
       }
-      clearSession();
+      else {
+        refresh().then(data=>console.log('session data', data))
+        .catch(e=>clearSession())
+      }
+     // clearSession();
     }
   return false;
 }

@@ -32,7 +32,7 @@ app.use('/api/cognito', cognitoAuthMiddleware, cognitoRouter);
 app.use('/api/location', locationRouter);
 app.use('/api/manufacturer', manufacturerRouter);
 app.use('/api/session', sessionRouter);
-app.use('/api/user_board', userBoardRouter);
+app.use('/api/user_board', cognitoAuthMiddleware, userBoardRouter);
 
 
 app.get('/', function (req, res) {

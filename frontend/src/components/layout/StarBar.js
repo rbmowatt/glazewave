@@ -7,7 +7,6 @@ const StarBar = props =>{
     const size = props.size ? props.size : 'xs';
     const onClick = (rating) =>
     {
-        console.log(rating)
         if(props.onClick)
         {
             props.onClick({rating})

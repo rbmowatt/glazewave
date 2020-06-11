@@ -61,12 +61,12 @@ class App extends React.Component{
           <PrivateRoute path={'/board/edit/:id'} exact component={EditBoard} session={this.props.session}  />
           <Route  path={'/board/:id'} exact component={BoardView }/>
 
-          <Route  path={'/location'} exact component={LocationIndex } />
+      
           <PrivateRoute path={'/location/create'} exact component={CreateLocation} session={this.props.session} />
           <PrivateRoute path={'/location/edit/:id'} exact component={EditLocation} session={this.props.session}  />
           <Route  path={'/location/:id'} exact component={LocationView }/>
 
-          <Route  path={'/manufacturer'} exact component={ManufacturerIndex } />
+   
           <PrivateRoute path={'/manufacturer/create'} exact component={CreateManufacturer} session={this.props.session} />
           <PrivateRoute path={'/manufacturer/edit/:id'} exact component={EditManufacturer} session={this.props.session}  />
           <Route  path={'/manufacturer/:id'} exact component={ManufacturerView }/>

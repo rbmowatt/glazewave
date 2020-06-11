@@ -118,7 +118,7 @@ class BaseRequest {
         url = "",
         method = "GET",
         data = null,
-        accessToken = null,
+        accessToken = this.session.jwt,
         onSuccess = () => {},
         onFailure = () => {},
         label = "",
