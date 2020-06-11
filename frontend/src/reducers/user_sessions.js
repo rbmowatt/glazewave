@@ -1,4 +1,4 @@
-import {USER_SESSION_CLEARED, SET_USER_SESSIONS, SESSION_CREATED, DELETE_USER_SESSION, USER_SESSION_UPDATED, USER_SESSION_DELETED, USER_SESSION_LOADED} from './../actions/types';
+import {USER_SESSION_CLEARED, USER_SESSION_CREATED, SET_USER_SESSIONS, SESSION_CREATED, DELETE_USER_SESSION, USER_SESSION_UPDATED, USER_SESSION_DELETED, USER_SESSION_LOADED} from './../actions/types';
 const initialState = {
   selected : {},
   data : []
@@ -19,7 +19,7 @@ const user_sessions = (state = initialState, action) => {
         const filteredSessions  =  state.data.filter(session => { return session.id !== parseInt(action.payload)});
         newState = {...state, ...{data : filteredSessions}}
         return newState;
-    case SESSION_CREATED:
+    case USER_SESSION_CREATED:
       newState = {...state, ...{data : state.data.concat(action.payload)}}
       return newState;
     case DELETE_USER_SESSION:

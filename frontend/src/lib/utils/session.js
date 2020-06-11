@@ -10,15 +10,17 @@ export function setSessionCookie(session)
 export function hasSession() {
     if(Cookie.get("x-token"))
     {
-
+      console.log('hid')
       const session = JSON.parse(Cookie.get("x-token"));
       const current_time = moment.unix(session.expiration).valueOf();
       const expTime = moment.unix(moment.now()).valueOf();
-      //console.log('cookie expues',  current_time, expTime);
+      console.log('cookie expues',  current_time, expTime);
       if ( expTime > current_time) {
+        console.log('dude')
         return session;
       }
       else {
+        console.log('hi')
         refresh().then(data=>console.log('session data', data))
         .catch(e=>clearSession())
       }

@@ -1,4 +1,4 @@
-import { SET_USER_SESSION, SET_USER_SESSIONS, USER_SESSION_UPDATED, USER_SESSION_CLEARED, USER_SESSION_DELETED, USER_SESSION_LOADED, USER_SESSION_IMAGES_LOADED, USER_SESSION_IMAGES_CREATED, USER_SESSION_IMAGE_DELETED  } from "./types";
+import { USER_SESSION_CREATED, SET_USER_SESSION, SET_USER_SESSIONS, USER_SESSION_UPDATED, USER_SESSION_CLEARED, USER_SESSION_DELETED, USER_SESSION_LOADED, USER_SESSION_IMAGES_LOADED, USER_SESSION_IMAGES_CREATED, USER_SESSION_IMAGE_DELETED  } from "./types";
 import SessionRequests from './../requests/SessionRequests';
 
 
@@ -23,6 +23,12 @@ export const UserSessionsLoaded = data => ({
     type: SET_USER_SESSIONS,
     payload: data
   });
+
+
+export const UserSessionCreated = data => ({
+  type: USER_SESSION_CREATED,
+  payload: data
+});
 
   export const UserSessionLoaded = data => ({
     type: USER_SESSION_LOADED,
@@ -54,6 +60,17 @@ export const UserSessionSet = data => (
     payload: data
   }
 )
+
+export const createUserSession= ( session, args )=>
+{
+  return function(dispatch, getState)
+  {
+    const params = {...args, ...{onSuccess : (data)=>{ return UserSessionCreated(data)} }}
+    dispatch(
+      new SessionRequests(session).create(params)
+    )
+  }
+}
 
 export const loadUserSessions = (session, args) =>
 {
@@ -99,8 +116,6 @@ export const updateUserSession = (session, args) =>
     )
   }
 }
-
-
 
 export const loadUserSessionImages = ( session, args )=>
 {

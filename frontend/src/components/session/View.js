@@ -96,8 +96,7 @@ class SessionView extends Component {
 
     componentDidUpdate(prevProps, prevState, snapshot)
     {
-        (
-            (this.props.boards.length && !this.state.selectOptions.length && this.props.current_session.id)
+            ((this.props.boards.length && !this.state.selectOptions.length && this.props.current_session.id)
             || (prevProps.boards.length !== this.props.boards.length)) && this.setSelectedBoard();
     }
 
