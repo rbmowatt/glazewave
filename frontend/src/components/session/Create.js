@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import {FormCard} from './../layout/FormCard';
-import  MainContainer  from './../layout/MainContainer';
 import SessionForm  from './forms/SessionForm';
 import SessionRequests from './../../requests/SessionRequests';
+import {createUserSession} from './../../actions/user_session';
 
 const mapStateToProps = state => {
     return { session: state.session, boards:state.user_boards, user_sessions : state.user_sessions.data }
@@ -11,7 +11,8 @@ const mapStateToProps = state => {
 
   const mapDispachToProps = dispatch => {
     return {
-        createSession : (request, data) => dispatch( request.create({label : 'LOAD_USER', data: data , onSuccess : (data)=>{ return {type: "SESSION_CREATED", payload: data}}}))};
+        createSession :  (session, params) => dispatch(createUserSession(session, params)) 
+    }
   };
   const TITLE = 'Create A Session';
 
@@ -39,21 +40,27 @@ class Create extends React.Component{
   
     componentDidMount(){
         if (!this.props.session.isLoggedIn) {
-            this.props.history.push('/');
+            this.props.onSubmissionComplete()
         }
     }
 
-    componentDidUpdate(prevProps, prevState, snapshot) {
+    componentWillUpdate(prevProps, prevState, snapshot) {
+
+        if(this.props.noUpdate) return;
         if (prevProps.user_sessions.length !== this.props.user_sessions.length) {
             this.setState({ submitSuccess : true })
             setTimeout(() => {
-                this.props.history.push('/user/dashboard');
+                if(this.props.onSubmissionComplete)
+                {
+                   // this.props.onSubmissionComplete()
+                }else{
+                    this.props.history.push('/board');
+                }
             }, 1500)
         }
     }
 
     processFormSubmission = ({ serialized, fields, form})=> {
-        console.log(serialized, fields, form)
         const {session, createSession} = this.props;
         const { images } = this.state;
         return new Promise(function(resolve, reject){
@@ -62,7 +69,7 @@ class Create extends React.Component{
                 images.forEach((file, i) => {
                     formData.append('photo', file)
                 })
-                createSession(new SessionRequests(session), formData);
+                createSession(session, {data : formData});
                 resolve(formData);
             }else{
                 reject('user not logged in ');
@@ -76,37 +83,33 @@ class Create extends React.Component{
 
     render() {
         const { submitSuccess, submitFail, loading, errorMessage, images} = this.state;
-        console.log('initial images = ', images)
         return (
-            <MainContainer>
-                <FormCard returnToIndex={this.returnToIndex}>
-                <div className="col-md-12 row ">
-                    <div className="col-md-12 ">
-                        <h2>{TITLE}</h2>
-                        {!submitSuccess && (
-                        <div className="alert alert-info" role="alert">
-                            Fill the form below to create a new session
+                <FormCard returnToIndex={this.props.onSubmissionComplete}>
+                    <div className="col-md-12 row ">
+                        <div className="col-md-12 ">
+                            <h2>{TITLE}</h2>
+                            {!submitSuccess && (
+                            <div className="alert alert-info" role="alert">
+                                Fill the form below to create a new session
+                            </div>
+                            )}
+                            {submitSuccess && (
+                            <div className="alert alert-info" role="alert">
+                                The form was successfully submitted!
+                            </div>
+                            )}
+                            {submitFail && (
+                            <div className="alert alert-info" role="alert">
+                                { errorMessage }
+                            </div>
+                            )}    
                         </div>
-                        )}
-                        {submitSuccess && (
-                        <div className="alert alert-info" role="alert">
-                            The form was successfully submitted!
-                        </div>
-                        )}
-                        {submitFail && (
-                        <div className="alert alert-info" role="alert">
-                            { errorMessage }
-                        </div>
-                        )}    
-                        </div>
-                         <div className="col-md-12">           
-                        <SessionForm session={this.state.session} processFormSubmission={this.processFormSubmission} loading={loading}  boards={this.props.boards} onDrop={this.onDrop}>
-                   
-                        </SessionForm>
+                        <div className="col-md-12">           
+                            <SessionForm session={this.state.session} processFormSubmission={this.processFormSubmission} loading={loading}  boards={this.props.boards} onDrop={this.onDrop} />
                         </div>
                     </div>
                 </FormCard>
-            </MainContainer>
+          
         )
     }
 }

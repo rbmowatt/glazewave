@@ -34,6 +34,7 @@ class BoardPicker extends React.Component{
             selectedBoard : {},
             show:false
         };
+        this.hideModal = this.hideModal.bind(this);
     }
 
     showModal = () => {
@@ -95,7 +96,7 @@ class BoardPicker extends React.Component{
                     </div>       
                     
                     <Modal show={this.state.show} handleClose={(e) =>this.hideModal(e)}>
-                        <CreateUserBoard onSuccess={(e) =>this.hideModal(e)} noUpdate={true} />
+                        <CreateUserBoard onSuccess={(e) =>this.hideModal(e)} onSubmissionComplete={this.hideModal} />
                     </Modal>        
             </div>
         )

@@ -6,7 +6,13 @@ import  MainContainer  from './../layout/MainContainer';
 import { confirmAlert } from 'react-confirm-alert';
 import BoardCard from './../user/BoardCard';
 import {loadUserBoards, deleteUserBoard} from './../../actions/user_board';
+import Paginate from './../layout/Paginate';
+import Modal from './../layout/Modal';
+import CreateUserBoard from  './CreateUserBoard';
+import { Select} from 'react-advanced-form-addons';
+import { Form } from 'react-advanced-form';
 
+const DEFAULT_SORT = "created_at_DESC";
 
 const mapStateToProps = state => {
     return { session: state.session, boards : state.user_boards.data }
@@ -29,14 +35,31 @@ class BoardIndex extends Component {
         this.deleteBoard = this.deleteBoard.bind(this);
         this.editBoard = this.editBoard.bind(this);
         this.viewBoard = this.viewBoard.bind(this);
+        this.state = {
+            elements: [],
+            currentPage: 0,
+            show : false,
+            selectedSortOrder : DEFAULT_SORT 
+          };
     }
 
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
-            this.props.loadBoards(this.props.session, { wheres : {user_id : this.props.session.user.id }, withs : relations.user_board} );
+            this.props.loadBoards(this.props.session, { orderBy : DEFAULT_SORT , wheres : {user_id : this.props.session.user.id }, withs : relations.user_board} );
         }
     }
 
+    componentDidUpdate(prevProps, prevState, snapshot)
+    {
+       // ((prevProps.boards.length !== this.props.boards.length) || (this.props.boards.length && !this.state.elements.length)) && this.setElementsForCurrentPage(this.props.boards);
+    }
+
+    updatePaginationElements = (elements, currentPage)=>
+    {
+        this.setState({ elements: elements, currentPage : currentPage});
+    }
+    
+  
     deleteBoard(id) {
         confirmAlert({
             title: 'Confirm To Delete',
@@ -64,28 +87,81 @@ class BoardIndex extends Component {
         this.props.history.push('/board/' + boardId);
     }
 
+    showModal = () => {
+        this.setState({ show: true });
+      
+    };
+
+    hideModal = (e = false) => {
+        if(e) e.preventDefault();
+        this.setState({ show: false });
+    };
+
+    sortBoards = (e) =>{
+        if(e.nextValue)
+        {
+         this.props.loadBoards(this.props.session,  { orderBy : e.nextValue, wheres : {user_id : this.props.session.user.id }, withs : relations.user_board})
+         this.setState({ selectedSortOrder: e.nextValue});
+        }
+     }
+
+
+   
     render() {
         const { boards } = this.props;
+        let pagination =  <Paginate updatePaginationElements={this.updatePaginationElements} data={this.props.boards } currentPage={this.state.currentPage} perPage={8}/>
         return (
             <MainContainer>
                 <div className="row">
                     <div className="card card-lg mx-auto">
                         <div className="card-title"><h2>Boards
-                        <Link to={'board/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New Board</Link>
+                        <Link onClick={this.showModal} className="btn btn-sm btn-outline-secondary float-right"> Create New Board</Link>
                         </h2>
                         </div> 
                         <div className="card-text">
                             <div className="table-container" >
+                            <div className="row col-md-12">
+                            <div className="col-md-6">
+                                <Form>
+                                    <Select name="board_id" value={this.state.selectedSortOrder}  onChange={this.sortBoards}>
+                                        <option value="created_at_DESC"  >Newest</option>
+                                        <option value="created_at_ASC">Oldest</option>
+                                        <option value="name_DESC">Name A-Z</option>
+                                        <option value="name_ASC" >Name Z-A</option>
+                                        <option value="rating_DESC">Rating Best to Worst</option>
+                                        <option value="rating_ASC">Rating Worst To Best</option>
+                                    </Select>
+                                 </Form>
+                                </div>
+                                <div className="col-md-6">
+                                    <span className="float-right">
+                                    {pagination}
+                                    </span>
+                                </div> 
+
+                            </div>
                                 <div className="row col-md-12">
-                                    {boards && boards.sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0)).map(board =>  
+                                    {this.state.elements && this.state.elements.map(board =>  
                                         <BoardCard board={board} key={board.id}  className="col-md-3" deleteBoard={this.deleteBoard} viewBoard={this.viewBoard} editBoard={this.editBoard}  />                              
                                         )
                                     }
                                 </div>
-                             </div>
+                                <div className="row col-md-12">
+                                    <div className="col-md-6">
+                                    </div> 
+                                    <div className="col-md-6">
+                                        <span className="float-right">
+                                        {pagination}
+                                        </span>
+                                    </div> 
+                                </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
+                <Modal show={this.state.show} handleClose={(e) =>this.hideModal(e)}>
+                        <CreateUserBoard onSuccess={(e) =>this.hideModal(e)} onSubmissionComplete={this.hideModal} />
+                </Modal>     
             </MainContainer>
         )
     }

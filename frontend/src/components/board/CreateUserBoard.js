@@ -4,20 +4,20 @@ import {FormCard} from './../layout/FormCard';
 import  UserBoardForm  from './forms/UserBoardForm';
 import { withRouter} from 'react-router-dom';
 import UserBoardRequests from './../../requests/UserBoardRequests';
-import {loadUserBoards} from './../../actions/user_board';
+import {createUserBoard} from './../../actions/user_board';
 
 
 
 const TITLE="Create Board";
 
 const mapStateToProps = state => {
-    return { session: state.session, user_boards : state.user_boards }
+    return { session: state.session, user_boards : state.user_boards.data }
   }
 
   const mapDispachToProps = dispatch => {
     return {
-        createUserBoard : (request, data) => dispatch( request.create({label : 'CREATE_USER_BOARD', data: data , onSuccess : (data)=>{ return {type: "USER_BOARD_CREATED", payload: data}}})),
-        loadBoards: (session, params) => dispatch(loadUserBoards(session, params)),
+        //createUserBoard : (request, data) => dispatch( request.create({data: data , onSuccess : (data)=>{ return {type: "USER_BOARD_CREATED", payload: data}}})),
+        createUserBoard : (session, params) => dispatch(createUserBoard(session, params)), 
     };
   };
 
@@ -40,20 +40,19 @@ class CreateUserBoard extends React.Component{
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
+        
         if(this.props.noUpdate) return;
         if (prevProps.user_boards.length !== this.props.user_boards.length) {
             this.setState({ submitSuccess : true })
-            this.props.loadBoards(this.props.session, {wheres : {user_id : this.props.session.user.id }, withs : ['Board.Manufacturer', 'UserBoardImage']});
             setTimeout(() => {
-                this.props.history.push('/board');
+                if(this.props.onSubmissionComplete)
+                {
+                    this.props.onSubmissionComplete()
+                }else{
+                    this.props.history.push('/board');
+                }
             }, 1500)
         }
-    }
-
-    componentDidMount(){
-        if (!this.props.session.isLoggedIn) {
-            this.props.history.push('/');
-        } 
     }
     
     processFormSubmission = ({ serialized, fields, form})=> {
@@ -65,7 +64,7 @@ class CreateUserBoard extends React.Component{
                 images.forEach((file, i) => {
                     formData.append('photo', file)
                 })
-                createUserBoard(new UserBoardRequests(session), formData);
+                createUserBoard(session, { data : formData});
                 resolve(formData);
             }else{
                 reject('user not logged in ');
@@ -80,15 +79,10 @@ class CreateUserBoard extends React.Component{
         })
     }
 
-    returnToIndex = e =>
-    {
-        this.props.history.push('/board');
-    }
-
     render() {
         const { submitSuccess, submitFail, loading, errorMessage} = this.state;
         return (
-                <FormCard returnToIndex={this.returnToIndex}>
+                <FormCard returnToIndex={this.props.onSubmissionComplete}>
                     <div className="col-md-12 ">
                         <h2>{TITLE}</h2>
                         {!submitSuccess && (
