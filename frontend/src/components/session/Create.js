@@ -44,7 +44,7 @@ class Create extends React.Component{
         }
     }
 
-    componentWillUpdate(prevProps, prevState, snapshot) {
+    UNSAFE_componentWillUpdate(prevProps, prevState, snapshot) {
 
         if(this.props.noUpdate) return;
         if (prevProps.user_sessions.length !== this.props.user_sessions.length) {

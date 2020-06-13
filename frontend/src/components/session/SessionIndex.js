@@ -122,7 +122,7 @@ class SessionIndex extends Component {
                 <div className="row">
                     <div className="card card-lg mx-auto">
                         <div className="card-title"><h2>Sessions
-                        <Link onClick={this.showModal} className="btn btn-sm btn-outline-secondary float-right"> Create New Session</Link>
+                        <Link to="#" onClick={this.showModal} className="btn btn-sm btn-outline-secondary float-right"> Create New Session</Link>
                   
                         </h2>
                         </div> 

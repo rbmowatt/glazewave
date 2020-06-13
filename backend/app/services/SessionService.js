@@ -5,10 +5,13 @@ const BaseService = require('./BaseService');
 const LocationService = require('./LocationService');
 const GooglePlaces = require('node-googleplaces');
 const googleConfig  = require('./../config/google')
+let algolaiIndex = 'user_sessions';
+
 
 class SessionService  extends BaseService {
+
     constructor(){
-        super(BaseModel);
+        super(BaseModel, algolaiIndex);
     }
 
     async create(params, callback = null)

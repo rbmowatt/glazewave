@@ -1,13 +1,15 @@
 const db = require("../models");
 let BaseModel = '';
 const Op = db.Sequelize.Op;
+let algolaiIndex = null;
 
 class BaseService {
 
-  constructor(BaseModel)
+  constructor(BaseModel, algolaiIndex = null)
   {
     super.constructor();
     this.BaseModel = BaseModel;
+    this.algolaiIndex = algolaiIndex;
   }
 
   async all( {limit = 20, page = 0, order_by} )
@@ -33,7 +35,9 @@ class BaseService {
 
   async create(params, callback = null)
   {
-    return await this.validatePost(params).then(data=>{return this.BaseModel.create(data)});
+    return await this.validatePost(params).then(data=>{
+      return this.BaseModel.create(data)}
+      );
   }
 
   async update(id, params, callback = null)
@@ -50,9 +54,18 @@ class BaseService {
 
   async delete( id )
   {    
-    return this.BaseModel.destroy({
-      where: { id: id }
-    })
+    return new Promise((resolve, reject)=>
+      {
+        this.find({id: id})
+        .then(data=>
+          { 
+          data.destroy()
+            .then(result=>resolve(1))
+          }
+      )
+      .catch(e=>reject(e))
+      }
+    )
   }
 
   /** This will make sure that any keys that do not exust in the table but do exist in the reqest are stripped out

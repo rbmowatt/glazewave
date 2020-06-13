@@ -107,7 +107,7 @@ class SessionView extends Component {
         this.props.boards.map((obj) => {
             let board = { id : obj.id , name : obj.name};
             if(obj.id === this.props.current_session.board_id) select = board;
-            boardOptions.push(board) 
+            return boardOptions.push(board) 
         })
         this.setState({selectOptions: boardOptions, select : select})
     }
@@ -228,7 +228,7 @@ class SessionView extends Component {
                                 <div className="details col-md-5">
                                     <div className="container">
                                     <div className="detail-line">
-                                        <StarBar stars={session.rating} onClick={this.submitUpdate } size="md" />
+                                        <StarBar stars={session.rating} onClick={this.submitUpdate } size="1x" />
                                     </div>
                                     <div className="detail-line">
                                         <Location 
@@ -256,7 +256,6 @@ class SessionView extends Component {
                                     <BoardPicker 
                                         onChange= {this.onBoardChange} 
                                         boards={this.state.selectOptions} 
-
                                         board_id={session.board_id} 
                                         wrapperClass="row detail-line"
                                     />    

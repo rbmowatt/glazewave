@@ -125,6 +125,7 @@ router.delete('/:id', function (req, res) {
     .then(num => {
       if (num == 1) {
         res.send({
+          id : id,
           message: EntityType + "  was deleted successfully!"
         });
       } else {

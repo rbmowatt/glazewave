@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import cognitoUtils from './../../lib/utils/cognito'
+import './css/Nav.css'
 
 const onSignOut = (e) => {
     e.preventDefault()

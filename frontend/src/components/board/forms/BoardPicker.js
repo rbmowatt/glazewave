@@ -81,7 +81,7 @@ class BoardPicker extends React.Component{
                         <strong>
                         <InlineEdit
                             type={InputType.Select}
-                            value={this.props.user_board.name}
+                            value={this.props.user_board.name || "Select A Board"}
                             defaultValue={this.props.user_board.name}
                             onChange={this.props.onChange}
                             options={this.props.boards}

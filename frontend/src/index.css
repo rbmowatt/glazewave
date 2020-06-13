@@ -6,7 +6,6 @@ body {
 	background-color: rgba(255, 255, 255, 0.4)!important;
 	background-blend-mode: lighten;
 }
-
 .background {
 	background: url("https://cdn.shopify.com/s/files/1/2101/3083/products/5477.jpg?v=1558639341")no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -21,114 +20,131 @@ body {
 	align-items: center;
 }
 
-#nav_user {
-	color: white;
-}
-
 .top-nav-collapse {
 	background-color: #24355C;
 }
-
-
-
 .white-txt {
 	color: white;
 	display: inline;
 }
-
 .card {
 	margin-top: 5px;
 	background: #eee;
 	padding: 1em;
 	min-width: 100%;
-/**	overflow: scroll; **/
+   /** overflow: scroll;
+	**/
 }
-
 .card-close {
 	cursor: pointer;
 }
-
 img.preview {
 	max-width: 250px;
 	max-height: 250px;
 }
-
-
-
 .table td {
 	font-size: .9rem;
 	font-weight: 300;
 }
-
 .table-container .row {
 	min-width: 100%;
 }
-
 .table-container .row div {
 	font-size: .9rem;
 	margin: 0px;
 	padding: 1%;
 }
-
-
-/* change navbar background on collapse */
-
-@media (max-width: 768px) {
-	.white-txt {
-		display: none;
-	}
-	.collapse {
-		background: rgba(0, 0, 0, 0.8);
-		padding-left: 15px;
-		z-index: 999;
-	}
-	.card {
-		margin-top: 20px;
-		background: #eee;
-	}
-	.table th,
-	.table .btn {
-		font-size: .5rem;
-	}
-	.table td {
-		font-size: .4rem;
-	}
-	.table-container .row div {
-		font-size: .3rem;
-	}
+.date-picker-input, .google-locations-input{
+	border: none;
+	padding:0px;
+}
+.date-picker-input::-webkit-input-placeholder, .google-locations-input::-webkit-input-placeholder {
+	color: black;
+}
+.session-card-title:hover, .board-card-title:hover {
+	color: blue;
+	cursor: pointer;
+}
+.board-select{
+	padding-left : 0px;
+	margin-left : 0px;
+}
+.detail-line{
+	padding-bottom:1em;
+}
+.text-area {
+	min-height:150px;
+}
+.ais-SearchBox-input{
+	border: 5px solid red;
+}
+.ais-Hits {
+	position:relative;
 }
 
 .table-container {
-	/** overflow: scroll; **/
-	margin: 0px;
-  padding: 0px;
-  border-radius: .2em ;
+	 margin: 0px;
+	 padding: 0px;
+	 border-radius: .2em ;
+ }
+
+.table-container .row .ais-Hits-list {
+	list-style:none;
+	position:absolute;
+	z-index:100;
+	font-size: .5rem;
+	background: yellow;
+}
+.table-container .row .hit div{
+	padding:.7rem;
+	font-size: .7rem;
+	cursor: pointer;
+}
+.table-container .row .ais-Hits-list .hitImage{
+	background: wheat;
 }
 
-.table-header div {
-	text-align: left;
-	font-weight: bold;
-	background-color: rgb(233, 236, 239);
-	border: 1px solid rgb(222, 226, 230);
-	color: rgb(94, 100, 107);
+.table-container .row div.card-date {
+	font-size:0.1em;
 }
 
-.table-row div {
-	text-align: left;
-	border: 1px solid rgb(222, 226, 230);
-	color: rgb(94, 100, 107);
-}
-
-.recipe-details div {
-	border: 0px;
-	margin: 0px;
-	padding: 0px;
-	text-align: center;
-	padding-right: 2%;
-}
 
 .dashboard-boxes .row{
 	padding:1%;
 }
 
 
+
+button.card-title {
+	text-align:left;
+	font-size:1em;
+	font-weight: bold;
+	color:black;
+	padding: 0px;
+   ;
+	margin:0px;
+}
+/* change navbar background on collapse */
+@media (max-width: 768px) {
+	.white-txt {
+		display: none;
+   }
+	.collapse {
+		background: rgba(0, 0, 0, 0.8);
+		padding-left: 15px;
+		z-index: 999;
+   }
+	.card {
+		margin-top: 20px;
+		background: #eee;
+   }
+	.table th, .table .btn {
+		font-size: .5rem;
+   }
+	.table td {
+		font-size: .4rem;
+   }
+	.table-container .row div {
+		font-size: .3rem;
+   }
+}
