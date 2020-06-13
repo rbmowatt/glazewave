@@ -19,18 +19,11 @@ module.exports = (sequelize, DataTypes) => {
     is_public: DataTypes.BOOLEAN
   }, {underscored: true, tableName: 'user_boards'});
    //add hooks to algolia
-   UserBoard.addHook('afterCreate',   async (board, options) => {
-     console.log('IM UPDATING!!!')
+   UserBoard.addHook('afterCreate', 'afterUpdate',   async (board, options) => {
     board.dataValues.objectID = ALGOLIA_PREFIX + board.id;
     getAlgoliaClient(ALGOLIA_INDEX ).saveObjects([board.dataValues], {
     }).then(({ objectIDs }) => {console.log(objectIDs);});
   })
-  UserBoard.addHook( 'afterBulkUpdate',  async (board, options) => {
-    console.log('IM UPDATING!!!', board)
-   board.dataValues.objectID = ALGOLIA_PREFIX + board.id;
-   getAlgoliaClient(ALGOLIA_INDEX ).saveObjects([board.dataValues], {
-   }).then(({ objectIDs }) => {console.log(objectIDs);});
- })
   UserBoard.addHook('afterDestroy', async (board, options) => {
     console.log('destrpyrd', board)
     getAlgoliaClient(ALGOLIA_INDEX ).deleteObject(ALGOLIA_PREFIX + board.id)
