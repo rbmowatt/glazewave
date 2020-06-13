@@ -24,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {underscored: true},
   );
   //add hooks to algolia
-  Session.addHook('afterCreate', async (session, options) => {
+  Session.addHook('afterCreate', 'afterUpdate',  async (session, options) => {
     session.dataValues.objectID = ALGOLIA_PREFIX + session.id;
     getAlgoliaClient(ALGOLIA_INDEX).saveObjects([session.dataValues], {
       autoGenerateObjectIDIfNotExist: true
