@@ -244,7 +244,7 @@ class BoardView extends Component {
                                    &nbsp; 
                                    <InlineEdit
                                         type={InputType.Select}
-                                        value={board.size}
+                                        value={board.size || "Select A Size" }
                                         onChange={(data)=>{this.submitUpdate({size : data})}}
                                         options={this.state.boardSizeOptions}
                                         valueKey="id"

@@ -10,6 +10,13 @@ class BaseService {
     this.BaseModel = BaseModel;
   }
 
+  async all( {limit = 20, page = 0, order_by} )
+  {    
+    const options = {offset: page, limit: limit };
+    if(order_by) options.order = order_by;
+    return this.BaseModel.findAll(options);
+  }
+
   async where( {wheres, withs , limit = 20, page = 0, order_by} )
   {    
     const options = { where: wheres, include: withs, offset: page, limit: limit };

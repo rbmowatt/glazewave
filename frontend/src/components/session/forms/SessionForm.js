@@ -9,15 +9,17 @@ import rules from './validation-rules'
 import messages from './validation-messages'
 import ImageUploader from 'react-images-upload';
 import moment from 'moment'
-import {loadUserBoards} from './../../../actions/user_board';
+import {loadUserBoards, clearUserBoards} from './../../../actions/user_board';
+import {refresh} from './../../../lib/utils/cognito'
 
 const mapStateToProps = state => {
-    return { session: state.session, boards : state.user_boards.data, user_sessions : state.user_sessions.data }
+    return { session: state.session, boards : state.user_boards, user_sessions : state.user_sessions.data }
   }
 
   const mapDispachToProps = dispatch => {
     return {
         loadBoards: (session, params) => dispatch(loadUserBoards(session, params)),
+        clearBoards : ()=>dispatch(clearUserBoards())
       };
   };
 
@@ -28,6 +30,7 @@ const mapStateToProps = state => {
 class SessionForm extends React.Component{
     constructor(props)
     {
+        refresh(props.session.user.id)
         super(props);
         this.defaultName = moment().format('MMMM D YYYY, h:mm a');
         this.state = {show:false, pictures : props.pictures, location_id : ''}
@@ -43,9 +46,14 @@ class SessionForm extends React.Component{
 
     componentDidMount() {
         if (this.props.session.isLoggedIn) {
-            if(!this.props.boards.length)
+            if(!this.props.boards.loaded)
             this.props.loadBoards(this.props.session, {wheres : {user_id : this.props.session.user.id }} );
         }
+    }
+
+    componentWillUnmount()
+    {
+        this.props.clearBoards();
     }
 
     showModal = () => {
@@ -58,7 +66,7 @@ class SessionForm extends React.Component{
     };
 
     componentDidUpdate(prevProps, prevState, snapshot) {
-        if ((prevProps.boards.length !== this.props.boards.length)) {
+        if ((prevProps.boards.data.length !== this.props.boards.data.length)) {
             setTimeout(() => {
                 this.hideModal();
             }, 1500)
@@ -86,7 +94,7 @@ class SessionForm extends React.Component{
                 value={this.state.location_id} />
      
             <Select name="board_id" label="Which Board Did You Use?" >
-                  {this.props.boards.map((obj) => {
+                  {this.props.boards.data.map((obj) => {
                         return <option key={obj.id} prop={obj.name} value={obj.id}>{obj.name}</option>
                     })}
             </Select>

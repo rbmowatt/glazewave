@@ -29,8 +29,8 @@ const mapStateToProps = state => {
   const mapDispachToProps = dispatch => {
     return {
        // loadUser : (request, session) => dispatch( request.getOne({id :session.user.id , withs : withs.user, onSuccess : (data)=>{ return UserLoaded(data)}})),
-        loadBoards: (request, session) => dispatch( request.get({wheres : {user_id : session.user.id }, withs : withs.boards, onSuccess : (data)=>{ return UserBoardsLoaded(data)}})),
-        loadSessions: (request, session) => dispatch( request.get({wheres : {user_id : session.user.id }, withs : withs.sessions, onSuccess : (data)=>{return UserSessionsLoaded(data)}})),
+        loadBoards: (request, session) => dispatch( request.get({wheres : {user_id : session.user.id }, orderBy : 'created_at_DESC', withs : withs.boards, onSuccess : (data)=>{ return UserBoardsLoaded(data)}})),
+        loadSessions: (request, session) => dispatch( request.get({wheres : {user_id : session.user.id }, orderBy : 'created_at_DESC', withs : withs.sessions, onSuccess : (data)=>{return UserSessionsLoaded(data)}})),
     };
   };
 
@@ -51,7 +51,6 @@ class UserDashboard extends React.Component{
                 <div className="row">
                     <div className="card card-lg mx-auto">
                         <div className="card-title">
-                           <h2> <strong>Users</strong> <Link to={'user/create'} className="btn btn-sm btn-outline-secondary float-right"> Create New User</Link></h2>
                         </div>
                         <div className="card-text dashboard-boxes">
                                 <div className="row">

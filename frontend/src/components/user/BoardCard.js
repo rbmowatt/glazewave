@@ -9,7 +9,7 @@ import { withRouter } from "react-router";
 const BoardCard = props =>{
     return (
         <div className={props.className}>
-            <div className="col-md-12 board-card-title"><h5><a onClick={()=>props.history.push("/board/" + props.board.id)}>{props.board.name}</a></h5></div>
+            <div className="col-md-12 board-card-title"><h5><button className="btn btn-link" onClick={()=>props.history.push("/board/" + props.board.id)}>{props.board.name}</button></h5></div>
             <div className="col-md-3">
             <img src={props.board.UserBoardImages && props.board.UserBoardImages.length ? s3Conf.root + props.board.UserBoardImages[0].name : "https://image.shutterstock.com/image-vector/please-no-photo-camera-vector-260nw-473234290.jpg" }/>
           

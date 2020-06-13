@@ -11,6 +11,9 @@ import Create from './Create';
 import Modal from './../layout/Modal';
 import { Select} from 'react-advanced-form-addons';
 import { Form } from 'react-advanced-form';
+import { InstantSearch, SearchBox, Hits, RefinementList , ClearRefinements} from 'react-instantsearch-dom';
+import searchClient from './../../lib/utils/algolia'
+
 
 const DEFAULT_SORT = "created_at_DESC";
 
@@ -102,6 +105,15 @@ class SessionIndex extends Component {
        }
     }
 
+
+   hit = ({hit}) => {
+    return <div className = "hit">
+                <div className = "hitImage" onClick={()=>this.viewSession(hit.id)}>
+                    {hit.title}
+                </div>
+            </div> 
+   }
+
     render() {
         const {sessions} = this.props;
         let pagination =  <Paginate updatePaginationElements={this.updatePaginationElements} data={sessions } currentPage={this.state.currentPage} perPage={8}/>
@@ -118,7 +130,7 @@ class SessionIndex extends Component {
                             <div className="table-container" >
                             <div className="row col-md-12">
                             <div className="col-md-6">
-                                <Form>
+                                <Form key="session_index_board_id">
                                     <Select name="board_id" value={this.state.selectedSortOrder}  onChange={this.sortSessions}>
                                         <option value="created_at_DESC"  >Newest</option>
                                         <option value="created_at_ASC">Oldest</option>
@@ -131,7 +143,16 @@ class SessionIndex extends Component {
                                 </div>
                                 <div className="col-md-6">
                                     <span className="float-right">
-                                    {pagination}
+                                        <InstantSearch
+                                        indexName="dev_sessions"
+                                        searchClient={searchClient}
+                                        >
+                                         <RefinementList attribute="rating" />
+                                        <SearchBox  autoFocus={false} showSubmit={false}/>
+                                       
+                                        <Hits hitComponent = {this.hit} />
+                                       
+                                    </InstantSearch>
                                     </span>
                                 </div> 
 
@@ -149,6 +170,7 @@ class SessionIndex extends Component {
                                 </div>
                                 <div className="row col-md-12">
                                     <div className="col-md-6">
+                                   
                                     </div> 
                                     <div className="col-md-6">
                                         <span className="float-right">

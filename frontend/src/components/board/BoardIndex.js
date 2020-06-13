@@ -11,8 +11,18 @@ import Modal from './../layout/Modal';
 import CreateUserBoard from  './CreateUserBoard';
 import { Select} from 'react-advanced-form-addons';
 import { Form } from 'react-advanced-form';
+import { InstantSearch, SearchBox, Hits, RefinementList , ClearRefinements} from 'react-instantsearch-dom';
+import searchClient from './../../lib/utils/algolia'
 
 const DEFAULT_SORT = "created_at_DESC";
+
+const cssClasses =  {
+    root: 'form-control',
+    form: [
+      'form-control'
+    ],
+    input : 'algolia'
+  }
 
 const mapStateToProps = state => {
     return { session: state.session, boards : state.user_boards.data }
@@ -105,7 +115,13 @@ class BoardIndex extends Component {
         }
      }
 
-
+     hit = ({hit}) => {
+        return <div className = "hit">
+                    <div className = "hitImage" onClick={()=>this.viewBoard(hit.id)}>
+                        {hit.name}
+                    </div>
+                </div> 
+       }
    
     render() {
         const { boards } = this.props;
@@ -135,7 +151,18 @@ class BoardIndex extends Component {
                                 </div>
                                 <div className="col-md-6">
                                     <span className="float-right">
-                                    {pagination}
+                                    <span className="float-right">
+                                        <InstantSearch
+                                        indexName="dev_user_boards"
+                                        searchClient={searchClient}
+                                        >
+                                         <RefinementList attribute="rating" />
+                                        <SearchBox  autoFocus={false} showSubmit={false} cssClasses={cssClasses}/>
+                                       
+                                        <Hits hitComponent = {this.hit} />
+                                       
+                                    </InstantSearch>
+                                    </span>
                                     </span>
                                 </div> 
 
