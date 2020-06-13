@@ -9,7 +9,7 @@ class ManufacturerRow extends React.Component {
         return (
             <div className="row table-row" key={this.props.manufacturer.id}>
                 <div className="col-6">
-                <div><a href="#" onClick={() => this.props.viewManufacturer(this.props.manufacturer.id)}>{this.props.manufacturer.name}</a></div>
+                <div><button className="btn btn-link"  onClick={() => this.props.viewManufacturer(this.props.manufacturer.id)}>{this.props.manufacturer.name}</button></div>
                 </div>
                 <div className="col-3">
                 {this.props.manufacturer.createdAt}

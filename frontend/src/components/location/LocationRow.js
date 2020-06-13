@@ -9,7 +9,7 @@ class LocationRow extends React.Component {
         return (
             <div className="row table-row" key={this.props.location.id}>
                 <div className="col-6">
-                <div><a  onClick={() => this.props.viewLocation(this.props.location.id)}>{this.props.location.name}</a></div>
+                <div><button className="btn btn-link"  onClick={() => this.props.viewLocation(this.props.location.id)}>{this.props.location.name}</button></div>
                 <div>{this.props.location.City.name}</div>
                 </div>
                 <div className="col-3">

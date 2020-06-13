@@ -10,21 +10,19 @@ export function setSessionCookie(session)
 export function hasSession() {
     if(Cookie.get("x-token"))
     {
-      console.log('hid')
       const session = JSON.parse(Cookie.get("x-token"));
-      const current_time = moment.unix(session.expiration).valueOf();
-      const expTime = moment.unix(moment.now()).valueOf();
+      const expTime = moment.unix(session.expiration).valueOf();
+      const current_time = moment().valueOf();
+      console.log('token expires @', moment.unix(session.expiration).format('MMMM Do YYYY, h:mm:ss a'))
+      console.log('current time is', moment().format('MMMM Do YYYY, h:mm:ss a'))
       console.log('cookie expues',  current_time, expTime);
       if ( expTime > current_time) {
-        console.log('dude')
         return session;
       }
       else {
-        console.log('hi')
         refresh().then(data=>console.log('session data', data))
         .catch(e=>clearSession())
       }
-     // clearSession();
     }
   return false;
 }
@@ -35,4 +33,13 @@ export function clearSession() {
     Cookie.remove("x-token")
   }
 return false;
+}
+
+export function update()
+{
+  if(!hasSession())
+  {
+    refresh().then(data=>console.log('session data', data))
+        .catch(e=>clearSession())
+  }
 }

@@ -105,7 +105,7 @@ class Create extends React.Component{
                             )}    
                         </div>
                         <div className="col-md-12">           
-                            <SessionForm session={this.state.session} processFormSubmission={this.processFormSubmission} loading={loading}  boards={this.props.boards} onDrop={this.onDrop} />
+                            <SessionForm key="session_form" session={this.state.session} processFormSubmission={this.processFormSubmission} loading={loading}  boards={this.props.boards} onDrop={this.onDrop} />
                         </div>
                     </div>
                 </FormCard>

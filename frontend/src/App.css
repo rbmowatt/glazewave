@@ -1,5 +1,6 @@
 @import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css';
 @import "~react-image-gallery/styles/css/image-gallery.css";
+@import 'https://cdn.jsdelivr.net/npm/instantsearch.js@2.7.4/dist/instantsearch.min.css';
 
 .form-wrapper {
 
@@ -213,3 +214,32 @@ nav ul li a:hover {
     border-bottom-right-radius: 3px;
     border-top-right-radius: 3px;
   }
+
+
+
+  .ais-Hits {
+    position:relative;
+  }
+  .table-container .row .ais-Hits-list {
+    list-style:none;
+    position:absolute;
+    z-index:100;
+    font-size: .5rem;
+    background: yellow;
+  }
+
+  .table-container .row .hit div{
+    padding:.7rem;
+    font-size: .7rem;
+  
+    cursor: pointer;
+
+  }
+  .table-container .row .ais-Hits-list .hitImage{
+
+      background: wheat;
+    }
+
+    .ais-SearchBox-input{
+      border: 5px solid red;
+    }

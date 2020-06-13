@@ -1,7 +1,8 @@
-import {SET_USER_BOARD, SET_USER_BOARDS,  USER_BOARD_CREATED, USER_BOARD_UPDATED, USER_BOARD_DELETED} from './../actions/types';
+import {SET_USER_BOARD, SET_USER_BOARDS,  USER_BOARD_CREATED, USER_BOARD_UPDATED, USER_BOARD_DELETED, USER_BOARDS_CLEARED } from './../actions/types';
 const initialState = {
   selected : {},
-  data : []
+  data : [],
+  loaded : false
 };
 let newState = null;
 const user_boards = (state = initialState, action) => {
@@ -10,7 +11,7 @@ const user_boards = (state = initialState, action) => {
       newState = {...state, ...{selected : action.payload}}
       return newState;
     case SET_USER_BOARDS:
-      newState = {...state, ...{data : action.payload}}
+      newState = {...state, ...{data : action.payload, loaded : true}}
       return newState;
     case USER_BOARD_CREATED:
       newState = {...state, ...{data : state.data.concat(action.payload)}}
@@ -24,6 +25,8 @@ const user_boards = (state = initialState, action) => {
         {...state.selected, ...action.payload}
       }}
       return newState;
+    case USER_BOARDS_CLEARED :
+      return initialState;
     default:
       return state
   }

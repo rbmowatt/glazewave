@@ -4,7 +4,7 @@ import axios from 'axios';
 import apiConfig from '../../config/api.js';
 import  MainContainer  from './../layout/MainContainer';
 import {FormCard} from './../layout/FormCard';
-import SessionForm from './forms/SessionForm';
+//import SessionForm from './forms/SessionForm';
 import SessionRequests from './../../requests/SessionRequests';
 
 const TITLE = "Edit Session";
@@ -89,8 +89,7 @@ class EditSession extends React.Component{
                             </div>
                         )} 
                     </div>
-                    <SessionForm session={this.state.session} loading={loading}  handleInputChanges={this.handleInputChanges} processFormSubmission={this.processFormSubmission} edit="true" />
-                </FormCard>
+                 </FormCard>
                 }
             </MainContainer>
         )
