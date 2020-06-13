@@ -1,4 +1,7 @@
 'use strict';
+const {getAlgoliaClient} = require('./../services/algolia/client');
+const ALGOLIA_INDEX = 'user_boards';
+const ALGOLIA_PREFIX = 'user_board_';
 module.exports = (sequelize, DataTypes) => {
   const UserBoard = sequelize.define('UserBoard', {
     id: {
@@ -15,6 +18,24 @@ module.exports = (sequelize, DataTypes) => {
     notes: DataTypes.TEXT,
     is_public: DataTypes.BOOLEAN
   }, {underscored: true, tableName: 'user_boards'});
+   //add hooks to algolia
+   UserBoard.addHook('afterCreate',   async (board, options) => {
+     console.log('IM UPDATING!!!')
+    board.dataValues.objectID = ALGOLIA_PREFIX + board.id;
+    getAlgoliaClient(ALGOLIA_INDEX ).saveObjects([board.dataValues], {
+    }).then(({ objectIDs }) => {console.log(objectIDs);});
+  })
+  UserBoard.addHook( 'afterBulkUpdate',  async (board, options) => {
+    console.log('IM UPDATING!!!', board)
+   board.dataValues.objectID = ALGOLIA_PREFIX + board.id;
+   getAlgoliaClient(ALGOLIA_INDEX ).saveObjects([board.dataValues], {
+   }).then(({ objectIDs }) => {console.log(objectIDs);});
+ })
+  UserBoard.addHook('afterDestroy', async (board, options) => {
+    console.log('destrpyrd', board)
+    getAlgoliaClient(ALGOLIA_INDEX ).deleteObject(ALGOLIA_PREFIX + board.id)
+  })
+
   UserBoard.associate = function(models) {
     UserBoard.belongsTo(models.Board);
     UserBoard.belongsTo(models.User);

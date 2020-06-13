@@ -1,0 +1,30 @@
+nav {
+    /** width: 300px;
+     **/
+     margin: 0 auto;
+     background: #282c34;
+     height: 70px;
+     line-height: 70px;
+ }
+ nav .dropdown {
+     line-height: normal;
+     border:3px solid red;
+     margin:0px;
+     display:block;
+ }
+ nav ul li {
+     display: inline;
+     list-style-type: none;
+     text-align: center;
+     padding: 30px;
+ }
+ nav ul li a {
+     margin: 50px 0;
+     font-weight: bold;
+     color: white;
+     text-decoration: none;
+ }
+ nav ul li a:hover {
+     color: white;
+     text-decoration: none;
+ }

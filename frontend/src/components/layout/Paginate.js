@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux'
 import ReactPaginate from 'react-paginate';
+import './css/Paginate.css';
 
 
 
