@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import  MainContainer  from './../layout/MainContainer';
 import { confirmAlert } from 'react-confirm-alert';
 import BoardCard from './../user/BoardCard';
-import {loadUserBoards, deleteUserBoard} from './../../actions/user_board';
+import {loadUserBoards, deleteUserBoard, UserBoardsCleared} from './../../actions/user_board';
 import Paginate from './../layout/Paginate';
 import Modal from './../layout/Modal';
 import CreateUserBoard from  './CreateUserBoard';
@@ -31,7 +31,8 @@ const mapStateToProps = state => {
   const mapDispachToProps = dispatch => {
     return {
         loadBoards: (session, params) => dispatch(loadUserBoards(session, params)),
-        deleteBoard: (session, id) => dispatch( deleteUserBoard(session, id) )        
+        deleteBoard: (session, id) => dispatch( deleteUserBoard(session, id) ) ,
+        clearBoards : ()=>dispatch(UserBoardsCleared())       
     };
   };
  
@@ -57,6 +58,10 @@ class BoardIndex extends Component {
         if (this.props.session.isLoggedIn) {
             this.props.loadBoards(this.props.session, { orderBy : DEFAULT_SORT , wheres : {user_id : this.props.session.user.id }, withs : relations.user_board} );
         }
+    }
+
+    componentWillUnmount(){
+        this.props.clearBoards();
     }
 
     componentDidUpdate(prevProps, prevState, snapshot)
@@ -129,7 +134,7 @@ class BoardIndex extends Component {
         return (
             <MainContainer>
                 <div className="row">
-                    <div className="card card-lg mx-auto">
+                    <div className="container card card-lg mx-auto">
                         <div className="card-title"><h2>Boards
                         <Link onClick={this.showModal} className="btn btn-sm btn-outline-secondary float-right"> Create New Board</Link>
                         </h2>
@@ -153,7 +158,7 @@ class BoardIndex extends Component {
                                     <span className="float-right">
                                     <span className="float-right">
                                         <InstantSearch
-                                        indexName="dev_user_boards"
+                                        indexName="user_boards"
                                         searchClient={searchClient}
                                         >
                                          <RefinementList attribute="rating" />
@@ -187,7 +192,7 @@ class BoardIndex extends Component {
                     </div>
                 </div>
                 <Modal show={this.state.show} handleClose={(e) =>this.hideModal(e)}>
-                        <CreateUserBoard onSuccess={(e) =>this.hideModal(e)} onSubmissionComplete={this.hideModal} />
+                        <CreateUserBoard onSuccess={(e) =>this.hideModal(e)} onSubmissionComplete={this.viewBoard} close={this.hideModal} />
                 </Modal>     
             </MainContainer>
         )

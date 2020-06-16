@@ -1,11 +1,4 @@
-body {
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	background-color: rgba(255, 255, 255, 0.4)!important;
-	background-blend-mode: lighten;
-}
+
 .background {
 	background: url("https://cdn.shopify.com/s/files/1/2101/3083/products/5477.jpg?v=1558639341")no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -42,17 +35,22 @@ img.preview {
 	max-width: 250px;
 	max-height: 250px;
 }
+/**
 .table td {
 	font-size: .9rem;
 	font-weight: 300;
 }
+
 .table-container .row {
 	min-width: 100%;
 }
+*/
+
+
 .table-container .row div {
-	font-size: .9rem;
+
 	margin: 0px;
-	padding: 1%;
+	/* padding: 0.2em; */
 }
 .date-picker-input, .google-locations-input{
 	border: none;
@@ -105,7 +103,7 @@ img.preview {
 }
 
 .table-container .row div.card-date {
-	font-size:0.1em;
+	/*font-size:0.1em;*/
 }
 
 
@@ -124,6 +122,7 @@ button.card-title {
    ;
 	margin:0px;
 }
+
 /* change navbar background on collapse */
 @media (max-width: 768px) {
 	.white-txt {
@@ -142,9 +141,7 @@ button.card-title {
 		font-size: .5rem;
    }
 	.table td {
-		font-size: .4rem;
+		
    }
-	.table-container .row div {
-		font-size: .3rem;
-   }
+
 }

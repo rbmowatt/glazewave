@@ -6,11 +6,11 @@ const algoliaClient = algoliasearch(
     
   );
   
-  
 const searchClient = {
       search(requests) {
         const shouldSearch = requests.some(({ params: { query }}) => query !== '');
         if (shouldSearch) {
+          //console.log('searching', requests)
           return algoliaClient.search(requests);
         }
         return Promise.resolve({

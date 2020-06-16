@@ -73,7 +73,7 @@ class BoardPicker extends React.Component{
                 <div className="col-md-12"><strong>Board:</strong></div>
 
                     <div className="col-md-4">
-                        <img style={{cursor : 'pointer'}} onClick={()=>this.props.history.push('/board/' + session.board_id)}
+                        <img className="img-responsive" style={{cursor : 'pointer'}} onClick={()=>this.props.history.push('/board/' + session.board_id)}
                         src={boardImage}/>      
                     </div>  
                     <div className="col-md-8 board-select">
@@ -89,7 +89,7 @@ class BoardPicker extends React.Component{
                             labelKey="name"
                             /> 
                             { this.props.user_board  && <div>Size:{this.props.user_board.size }</div> }
-                            <StarBar stars={this.props.user_board.rating} onClick={this.submitUpdate } size="xs" />
+                             { this.props.user_board  &&<div><StarBar stars={this.props.user_board.rating} onClick={this.submitUpdate } size="xs" /></div> }
                             <div><button type='button' className="btn btn-outline-primary btn-sm" onClick={this.showModal}>New Board</button></div>
                             </strong>
                         </div> 

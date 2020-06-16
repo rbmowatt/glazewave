@@ -3,15 +3,16 @@ import { connect } from 'react-redux';
 import {FormCard} from './../layout/FormCard';
 import SessionForm  from './forms/SessionForm';
 import SessionRequests from './../../requests/SessionRequests';
-import {createUserSession} from './../../actions/user_session';
+import {createUserSession, UserSessionCreatedCleared } from './../../actions/user_session';
 
 const mapStateToProps = state => {
-    return { session: state.session, boards:state.user_boards, user_sessions : state.user_sessions.data }
+    return { session: state.session, boards:state.user_boards, user_sessions : state.user_sessions }
   }
 
   const mapDispachToProps = dispatch => {
     return {
-        createSession :  (session, params) => dispatch(createUserSession(session, params)) 
+        createSession :  (session, params) => dispatch(createUserSession(session, params)),
+        clearCreatedSession : ()=> dispatch( UserSessionCreatedCleared() )
     }
   };
   const TITLE = 'Create A Session';
@@ -44,15 +45,18 @@ class Create extends React.Component{
         }
     }
 
-    UNSAFE_componentWillUpdate(prevProps, prevState, snapshot) {
+    componentDidUpdate(prevProps, prevState, snapshot) {
 
         if(this.props.noUpdate) return;
-        if (prevProps.user_sessions.length !== this.props.user_sessions.length) {
+        if ((prevProps.user_sessions.data.length !== this.props.user_sessions.data.length)
+        && this.props.user_sessions.created) {
             this.setState({ submitSuccess : true })
             setTimeout(() => {
                 if(this.props.onSubmissionComplete)
                 {
-                   // this.props.onSubmissionComplete()
+                    const id = this.props.user_sessions.created.id;
+                    this.props.clearCreatedSession();
+                    this.props.onSubmissionComplete(id)
                 }else{
                     this.props.history.push('/board');
                 }
@@ -84,7 +88,7 @@ class Create extends React.Component{
     render() {
         const { submitSuccess, submitFail, loading, errorMessage, images} = this.state;
         return (
-                <FormCard returnToIndex={this.props.onSubmissionComplete}>
+                <FormCard returnToIndex={this.props.close}>
                     <div className="col-md-12 row ">
                         <div className="col-md-12 ">
                             <h2>{TITLE}</h2>

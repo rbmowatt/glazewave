@@ -1,7 +1,15 @@
 'use strict';
-const {getAlgoliaClient} = require('./../services/algolia/client');
-const ALGOLIA_INDEX = 'sessions';
-const ALGOLIA_PREFIX = 'session_';
+const {getSessionQueue, getClient, ALGOLIA_SESSION_INDEX, ALGOLIA_SESSION_PREFIX} = require('./../services/queue/BetterQueue')
+
+const sessionUpsertCallback = async (session, options) => {
+  console.log(' been hit')
+  getSessionQueue().push(session).on('finish', function (result) {
+    console.log( ' session created ' , result)
+  })
+  .on('failed', function (err) {
+    console.log(err)
+  })
+}
 
 module.exports = (sequelize, DataTypes) => {
   const Session = sequelize.define('Session', {
@@ -24,17 +32,10 @@ module.exports = (sequelize, DataTypes) => {
   }, {underscored: true},
   );
   //add hooks to algolia
-  Session.addHook('afterCreate', 'afterUpdate',  async (session, options) => {
-    session.dataValues.objectID = ALGOLIA_PREFIX + session.id;
-    getAlgoliaClient(ALGOLIA_INDEX).saveObjects([session.dataValues], {
-      autoGenerateObjectIDIfNotExist: true
-    }).then(({ objectIDs }) => {
-      console.log(objectIDs);
-    });
-  })
+  Session.addHook('afterCreate', sessionUpsertCallback)
+  Session.addHook('afterUpdate',sessionUpsertCallback)
   Session.addHook('afterDestroy', async (session, options) => {
-    console.log('destrpyrd', board)
-    getAlgoliaClient(ALGOLIA_INDEX ).deleteObject(ALGOLIA_PREFIX + session.id)
+    getClient(ALGOLIA_SESSION_INDEX ).deleteObject(ALGOLIA_SESSION_PREFIX + session.id)
   })
 
   Session.associate = function(models) {

@@ -9,10 +9,12 @@ const QueryParser = function (req, res, next) {
       withs : parseWiths(req.query.with) || [],
       limit : parseInt(req.query.limit) || 20,
       order_by: parseOrder(req.query.order_by) || [],
+      where_in : parseWhereIn(req.query.in) || []
     };
     delete req.query.limit;
     delete req.query.with;
     delete req.query.order_by; 
+    delete req.query.in; 
     parser.page = (parseInt(req.query.page) || 0) * parser.limit;
     parser.wheres = req.query;
     req.parser = parser;
@@ -28,6 +30,12 @@ const QueryParser = function (req, res, next) {
     let ascDesc = data.pop();
     a.push([data.join('_'), ascDesc]);
     return a;
+  }
+
+  const parseWhereIn = ( whereIn ) =>
+  {
+    if(!whereIn) return[];
+    return whereIn.split(',');
   }
 
   const parseWiths = (withs)=>

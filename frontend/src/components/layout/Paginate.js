@@ -21,7 +21,6 @@ class Paginate extends React.Component{
           };
     }
 
-
     componentDidMount()
     {
         (this.props.data.length && !this.state.elements.length) && this.setElementsForCurrentPage(this.props.data);
@@ -29,7 +28,9 @@ class Paginate extends React.Component{
     
     componentDidUpdate(prevProps, prevState, snapshot)
     {
-        (this.props.data.length && !this.state.elements.length) && this.setElementsForCurrentPage(this.props.data);
+      //console.log('update', prevProps)
+        //((this.props.data.length && !this.state.elements.length)  || (this.props.data.length !== prevProps.data.length))  && this.setElementsForCurrentPage(this.props.data);
+        JSON.stringify(prevProps.data) !== JSON.stringify(this.props.data) && this.setElementsForCurrentPage(this.props.data);
     }
 
     setElementsForCurrentPage(boards) {

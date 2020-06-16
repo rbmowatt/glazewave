@@ -1,7 +1,17 @@
-import {USER_SESSION_CLEARED, USER_SESSION_CREATED, SET_USER_SESSIONS, SESSION_CREATED, DELETE_USER_SESSION, USER_SESSION_UPDATED, USER_SESSION_DELETED, USER_SESSION_LOADED} from './../actions/types';
+import {USER_SESSION_CLEARED,
+  USER_SESSIONS_CLEARED, 
+  USER_SESSION_CREATED_CLEARED,  
+  USER_SESSION_CREATED, 
+  SET_USER_SESSIONS, 
+  SESSION_CREATED, 
+  DELETE_USER_SESSION, 
+  USER_SESSION_UPDATED, 
+  USER_SESSION_DELETED, 
+  USER_SESSION_LOADED} from './../actions/types';
 const initialState = {
   selected : {},
-  data : []
+  data : [],
+  created : false
 };
 let newState = null;
 const user_sessions = (state = initialState, action) => {
@@ -20,7 +30,7 @@ const user_sessions = (state = initialState, action) => {
         newState = {...state, ...{data : filteredSessions}}
         return newState;
     case USER_SESSION_CREATED:
-      newState = {...state, ...{data : state.data.concat(action.payload)}}
+      newState = {...state, ...{data : state.data.concat(action.payload), created : action.payload}}
       return newState;
     case DELETE_USER_SESSION:
         newState = state.filter((item) => item.id !== action.payload);
@@ -30,6 +40,11 @@ const user_sessions = (state = initialState, action) => {
           {...state.selected, ...action.payload}
         }}
         return newState;
+    case USER_SESSION_CREATED_CLEARED :
+      newState = {...state, ...{created : false}}
+      return newState;
+    case USER_SESSIONS_CLEARED :
+      return initialState;
     default:
         return state
   }
