@@ -21,6 +21,7 @@ import {UserSessionCleared,loadUserSession, updateUserSession, loadUserSessionIm
 import WWClient from './../../lib/utils/worldweather'
 import noaaForecaster from 'noaa-forecasts';
 import BoardPicker from './../board/forms/BoardPicker';
+import { Radio} from 'react-advanced-form-addons';
 
 
 const mapStateToProps = state => {
@@ -65,6 +66,7 @@ class SessionView extends Component {
             uploaderInstance : 1,
             imageIndex : 0,
             date: '',
+            is_public : null,
             defaultImage : "https://image.shutterstock.com/image-vector/please-no-photo-camera-vector-260nw-473234290.jpg"
         };
         this.onDrop = this.onDrop.bind(this);
@@ -134,7 +136,18 @@ class SessionView extends Component {
         this.submitUpdate({ ...data});
       };
 
-    onLocationBlur = (e, a, d) =>
+
+    onPrivacyChange = (e)=>
+    {
+        //@totdo this double submits without keeping track of state
+        if(e.nextValue !== this.state.is_public){
+            console.log(e.nextValue)
+            this.setState({is_public : e.nextValue});
+            this.submitUpdate({is_public :e.nextValue })
+        }
+    }
+    
+      onLocationBlur = (e, a, d) =>
     {
         console.log('blur', e, a, d)
     }
@@ -194,6 +207,9 @@ class SessionView extends Component {
                                         change={this.submitUpdate}
                                         propName='title'
                                         /></h3>
+                                        <div>
+                                         <StarBar stars={session.rating} onClick={this.submitUpdate } size="1x" />
+                                         </div>
                                 </div>
                                 <div className="preview col-md-7">
                                     <div className="card" >
@@ -228,9 +244,24 @@ class SessionView extends Component {
                                 <div className="details col-md-5">
                                     <div className="container">
                                     <div className="detail-line">
-                                        <StarBar stars={session.rating} onClick={this.submitUpdate } size="1x" />
-                                    </div>
                                     <div className="detail-line">
+                                    <div><strong>Privacy:</strong></div>
+                                    <Radio
+                                        name="is_public"
+                                        label="Private"
+                                        value="0"
+                                        onChange={this.onPrivacyChange}
+                                        checked={session.id && session.is_public !== true}
+                                         />
+                                    <Radio
+                                        name="is_public"
+                                        label="Public"
+                                        value="1" 
+                                        onChange={this.onPrivacyChange}
+                                        checked={session.is_public && session.is_public === true}
+                                        />
+                                    </div>
+                                        <div><strong>Location:</strong></div>
                                         <Location 
                                             id="location_id" 
                                             name="location_id" 

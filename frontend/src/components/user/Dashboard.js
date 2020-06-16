@@ -49,25 +49,21 @@ class UserDashboard extends React.Component{
         return (
            <MainContainer>
                 <div className="row">
-                    <div className="card card-lg mx-auto">
+                    <div className="container card card-lg mx-auto">
                         <div className="card-title">
                         </div>
-                        <div className="card-text dashboard-boxes">
-                                <div className="row">
-                                    <div className="col-md-2">
-                                        <div><Link to={'/session/create'} className="btn btn-sm btn-outline-secondary"> New Session</Link></div> 
-                                        <div><Link to={'/board/create'} className="btn btn-sm btn-outline-secondary">New Board</Link></div> 
-                                        <div><a className="btn btn-sm btn-outline-secondary" href="#">dddddd</a></div> 
-                                    </div>
+                        <div className="container card-text dashboard-boxes">
+                                <div className="container row">
+                                    
                                     <div className="col-md-10 row">
-                                         <div className="col-md-12"><ProfileCard /></div>
+                                        <div className="col-md-12"><ProfileCard /></div>
                                         <div className="col-md-6">
-                                            Sessions
+                                            <h5>Latest Sessions</h5>
                                             {
                                                 user_sessions && user_sessions.reduce((mappedArray, session, index) => {                           
                                                         if (index < DASHBOARD_LIST_LIMIT) { 
                                                             mappedArray.push(
-                                                                <div key={session.id} className="card row">
+                                                                <div key={session.id} className="container card">
                                                                 <SessionCard session={session} key={session.id} className="row col-md-12" />
                                                                 </div>
                                                             );
@@ -77,12 +73,12 @@ class UserDashboard extends React.Component{
                                             }
                                         </div>
                                         <div className="col-md-6">
-                                            Boards
+                                        <h5>Newest Boards</h5>
                                             {
                                                 boards && boards.reduce((mappedArray, board, index) => {                           
                                                         if (index < DASHBOARD_LIST_LIMIT) { 
                                                             mappedArray.push(
-                                                                <div key={board.id} className="card row">
+                                                                <div key={board.id} className="container card">
                                                                     <BoardCard board={board} key={board.id} className="row col-md-12" />
                                                                 </div>
                                                             );
@@ -92,6 +88,10 @@ class UserDashboard extends React.Component{
                                             }                              
                                         </div>
                                 </div>
+                                <div className="col-md-2">
+                                    
+                                <link href="//www.surf-forecast.com/stylesheets/feed.css" media="screen" rel="stylesheet" type="text/css" /><div id="wf-weatherfeed"><iframe  allowtransparency="true" height="272" width="469" src="//www.surf-forecast.com/breaks/Hollyoake/forecasts/feed/a" scrolling="no" frameborder="0" marginwidth="0" marginheight="0"><p>Your browser does not support iframes.</p></iframe><div id="wf-link"><a href="https://www.surf-forecast.com/"><img alt="Surf Forecast" src="//www.surf-forecast.com/images/feed/surflogo-150.jpg"/></a><p id="cmt">View detailed surf forecast for <a href="//www.surf-forecast.com/breaks/Hollyoake">Hollyoake</a>. Visit <a href="//www.surf-forecast.com/breaks/Hollyoake">surf-forecast.com</a> for more details, long range forecasts, surf reports, swell and weather maps.</p><div></div></div></div>
+                                    </div>
                             </div>
                         </div>
                     </div>

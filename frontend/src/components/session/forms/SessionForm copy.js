@@ -13,7 +13,7 @@ import {loadUserBoards, clearUserBoards} from './../../../actions/user_board';
 import {refresh} from './../../../lib/utils/cognito'
 
 const mapStateToProps = state => {
-    return { session: state.session, boards : state.user_boards, user_sessions : state.user_sessions }
+    return { session: state.session, boards : state.user_boards, user_sessions : state.user_sessions.data }
   }
 
   const mapDispachToProps = dispatch => {
@@ -56,6 +56,23 @@ class SessionForm extends React.Component{
         this.props.clearBoards();
     }
 
+    showModal = () => {
+        this.setState({ show: true });
+    };
+
+    hideModal = (e = false) => {
+        if(e) e.preventDefault();
+        this.setState({ show: false });
+    };
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if ((prevProps.boards.data.length !== this.props.boards.data.length)) {
+            setTimeout(() => {
+                this.hideModal();
+            }, 1500)
+        }
+    }
+
     render(){ 
         return (
             <div className="col-md-12">
@@ -75,13 +92,47 @@ class SessionForm extends React.Component{
                 className="form-control" 
                 onChange={this.onChange} 
                 value={this.state.location_id} />
+     
+            <Select name="board_id" label="Which Board Did You Use?" >
+                  {this.props.boards.data.map((obj) => {
+                        return <option key={obj.id} prop={obj.name} value={obj.id}>{obj.name}</option>
+                    })}
+            </Select>
+            
+            <Button type='button' onClick={this.showModal}>Add A Board</Button>
+            <Select name="rating" label="What would you rate this Session on a scale of 1-10?" >
+                {[...Array(11).keys()].map((value, index) => {
+                    if(value === 0) return;
+                        return  <option key={index} value={value}>{value}</option>
+                })}
+            </Select>
+            <Select name="is_public" label="Should this Session be Public to ALL logged-in Users?" >
+                <option value="0">Private</option>
+                <option value="1">Public</option>
+            </Select>
+            <Textarea name="notes" label="Notes"  />
+            {
+                this.props.children 
+            }
+            </div>
+            <div className="col-md-4">
+            <ImageUploader
+                withIcon={false}
+                buttonText='Choose images'
+                onChange={this.props.onDrop}
+                imgExtension={['.jpg', '.gif', '.png', '.gif']}
+                maxFileSize={5242880}
+                withPreview={true}
+            />
             </div>
             <div className="col-md-12">
             <Input type="hidden" name="user_id" value={this.props.session.user.id} />
             <Button type='submit'>  {(this.props.edit) ? ("Edit Session") : ( "Add Session") }</Button>
             </div>
             </Form>
-
+            <Modal show={this.state.show} handleClose={(e) =>this.hideModal(e)}>
+                <CreateUserBoard onSuccess={(e) =>this.hideModal(e)} noUpdate={true} />
+            </Modal>
             </div>
           
         )

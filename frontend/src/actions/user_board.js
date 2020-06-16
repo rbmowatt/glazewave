@@ -1,4 +1,4 @@
-import { USER_BOARDS_CLEARED, SET_USER_BOARDS, USER_BOARD_UPDATED, USER_BOARD_DELETED, SET_USER_BOARD, USER_BOARD_IMAGES_LOADED, USER_BOARD_IMAGES_CREATED, USER_BOARD_IMAGE_DELETED, USER_BOARD_CREATED } from "./types";
+import { USER_BOARDS_CLEARED,  USER_BOARD_CREATED_CLEARED, SET_USER_BOARDS, USER_BOARD_UPDATED, USER_BOARD_DELETED, SET_USER_BOARD, USER_BOARD_IMAGES_LOADED, USER_BOARD_IMAGES_CREATED, USER_BOARD_IMAGE_DELETED, USER_BOARD_CREATED } from "./types";
 import UserBoardRequests from './../requests/UserBoardRequests';
 
 
@@ -15,6 +15,10 @@ export const UserBoardsLoaded = data => ({
   export const UserBoardsCleared = data => ({
     type: USER_BOARDS_CLEARED,
     payload: data
+  });
+
+  export const UserBoardCreatedCleared = () => ({
+    type: USER_BOARD_CREATED_CLEARED
   });
 
   export const UserBoardImagesCreated = data => ({
@@ -45,6 +49,11 @@ export const UserBoardsLoaded = data => ({
       payload: data
     }
   )
+
+  export const UserBoardreatedCleared = () => ({
+    type: USER_BOARD_CREATED_CLEARED
+  });
+  
 
   const UserBoardImageDeleted = data=> (
     {

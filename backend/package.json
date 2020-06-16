@@ -9,12 +9,14 @@
     "create-db": "node bin/sql/createRecipesTable.js",
     "delete-db": "node bin/sql/deleteUsersTable.js",
     "load-data": "node bin/sql/loadRecipesTable.js",
-    "sync-sessions": "node app/scripts/load_agolia.js",
+    "sync-agolia": "node app/scripts/sync_agolia.js",
+    "test-queue": "node app/services/queue/BetterQueue.js",
     "sequelize": "npx sequelize-cli --options-path=app/config/sequelize.js"
   },
   "dependencies": {
     "algoliasearch": "^4.3.0",
     "aws-sdk": "^2.668.0",
+    "better-queue": "^3.8.10",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
     "debug": "~2.6.9",

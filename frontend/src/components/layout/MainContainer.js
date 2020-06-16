@@ -12,7 +12,7 @@ class MainContainer extends React.Component{
         return (
             <header className="background rgba-black-strong">
                 <div className="container main-container ">
-                <Loader loaded={this.props.api === 0}>
+                <Loader loaded={true}>
                         { this.props.children }
                 </Loader>
                 </div>
@@ -21,4 +21,4 @@ class MainContainer extends React.Component{
     }
 }   
 
-export default connect(mapStateToProps)(MainContainer)
+export default connect(mapStateToProps)(MainContainer) 

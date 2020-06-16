@@ -1,7 +1,15 @@
 'use strict';
-const {getAlgoliaClient} = require('./../services/algolia/client');
-const ALGOLIA_INDEX = 'user_boards';
-const ALGOLIA_PREFIX = 'user_board_';
+const {getUserBoardQueue, getClient, ALGOLIA_USER_BOARD_INDEX, ALGOLIA_USER_BOARD_PREFIX} = require('./../services/queue/BetterQueue')
+
+const userBoardUpsertCallback = async (board, options) => {
+  getUserBoardQueue().push(board).on('finish', function (result) {
+    console.log(result)
+  })
+  .on('failed', function (err) {
+    console.log(err)
+  })
+}
+
 module.exports = (sequelize, DataTypes) => {
   const UserBoard = sequelize.define('UserBoard', {
     id: {
@@ -19,14 +27,11 @@ module.exports = (sequelize, DataTypes) => {
     is_public: DataTypes.BOOLEAN
   }, {underscored: true, tableName: 'user_boards'});
    //add hooks to algolia
-   UserBoard.addHook('afterCreate', 'afterUpdate',   async (board, options) => {
-    board.dataValues.objectID = ALGOLIA_PREFIX + board.id;
-    getAlgoliaClient(ALGOLIA_INDEX ).saveObjects([board.dataValues], {
-    }).then(({ objectIDs }) => {console.log(objectIDs);});
-  })
-  UserBoard.addHook('afterDestroy', async (board, options) => {
+   UserBoard.addHook('afterCreate', userBoardUpsertCallback )
+   UserBoard.addHook('afterUpdate', userBoardUpsertCallback )
+   UserBoard.addHook('afterDestroy', async (board, options) => {
     console.log('destrpyrd', board)
-    getAlgoliaClient(ALGOLIA_INDEX ).deleteObject(ALGOLIA_PREFIX + board.id)
+    getClient(ALGOLIA_USER_BOARD_INDEX ).deleteObject(ALGOLIA_USER_BOARD_PREFIX + board.id)
   })
 
   UserBoard.associate = function(models) {

@@ -12,16 +12,18 @@ class BaseService {
     this.algolaiIndex = algolaiIndex;
   }
 
-  async all( {limit = 20, page = 0, order_by} )
+  async all( {limit = 20, page = 0, with_all_relations = false, order_by} )
   {    
     const options = {offset: page, limit: limit };
     if(order_by) options.order = order_by;
+    if(with_all_relations) options.include = {all:true};
     return this.BaseModel.findAll(options);
   }
 
-  async where( {wheres, withs , limit = 20, page = 0, order_by} )
+  async where( {wheres, withs , limit = 20, page = 0, order_by, where_in = []} )
   {    
     const options = { where: wheres, include: withs, offset: page, limit: limit };
+    if(where_in.length)  wheres.id = {[Op.in] :  where_in};
     if(order_by) options.order = order_by;
     return this.BaseModel.findAll(options);
   }

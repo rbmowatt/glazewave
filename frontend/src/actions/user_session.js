@@ -1,4 +1,15 @@
-import { USER_SESSION_CREATED, SET_USER_SESSION, SET_USER_SESSIONS, USER_SESSION_UPDATED, USER_SESSION_CLEARED, USER_SESSION_DELETED, USER_SESSION_LOADED, USER_SESSION_IMAGES_LOADED, USER_SESSION_IMAGES_CREATED, USER_SESSION_IMAGE_DELETED  } from "./types";
+import { USER_SESSION_CREATED, 
+  SET_USER_SESSION, 
+  SET_USER_SESSIONS, 
+  USER_SESSION_UPDATED, 
+  USER_SESSION_CLEARED, 
+  USER_SESSION_DELETED, 
+  USER_SESSION_LOADED, 
+  USER_SESSION_IMAGES_LOADED, 
+  USER_SESSION_IMAGES_CREATED, 
+  USER_SESSION_IMAGE_DELETED,
+  USER_SESSION_CREATED_CLEARED,
+  USER_SESSIONS_CLEARED  } from "./types";
 import SessionRequests from './../requests/SessionRequests';
 
 
@@ -10,6 +21,14 @@ export const UserSessionImagesLoaded = data => ({
 export const UserSessionImagesCreated = data => ({
   type: USER_SESSION_IMAGES_CREATED,
   payload: data
+});
+
+export const UserSessionCreatedCleared = () => ({
+  type: USER_SESSION_CREATED_CLEARED
+});
+
+export const UserSessionsCleared = () => ({
+  type: USER_SESSIONS_CLEARED
 });
 
 const UserSessionImageDeleted = data=> (

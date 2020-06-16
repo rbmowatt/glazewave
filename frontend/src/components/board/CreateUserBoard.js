@@ -4,20 +4,20 @@ import {FormCard} from './../layout/FormCard';
 import  UserBoardForm  from './forms/UserBoardForm';
 import { withRouter} from 'react-router-dom';
 import UserBoardRequests from './../../requests/UserBoardRequests';
-import {createUserBoard} from './../../actions/user_board';
+import {createUserBoard, UserBoardCreatedCleared} from './../../actions/user_board';
 
 
 
 const TITLE="Create Board";
 
 const mapStateToProps = state => {
-    return { session: state.session, user_boards : state.user_boards.data }
+    return { session: state.session, user_boards : state.user_boards}
   }
 
   const mapDispachToProps = dispatch => {
     return {
-        //createUserBoard : (request, data) => dispatch( request.create({data: data , onSuccess : (data)=>{ return {type: "USER_BOARD_CREATED", payload: data}}})),
         createUserBoard : (session, params) => dispatch(createUserBoard(session, params)), 
+        clearCreatedBoard : ()=>dispatch( UserBoardCreatedCleared())
     };
   };
 
@@ -42,12 +42,15 @@ class CreateUserBoard extends React.Component{
     componentDidUpdate(prevProps, prevState, snapshot) {
         
         if(this.props.noUpdate) return;
-        if (prevProps.user_boards.length !== this.props.user_boards.length) {
+        if ((prevProps.user_boards.data.length !== this.props.user_boards.data.length)
+       && this.props.user_boards.created) {
             this.setState({ submitSuccess : true })
             setTimeout(() => {
                 if(this.props.onSubmissionComplete)
                 {
-                    this.props.onSubmissionComplete()
+                    const id = this.props.user_boards.created.id;
+                   this.props.clearCreatedBoard();
+                    this.props.onSubmissionComplete(id)
                 }else{
                     this.props.history.push('/board');
                 }
@@ -82,7 +85,7 @@ class CreateUserBoard extends React.Component{
     render() {
         const { submitSuccess, submitFail, loading, errorMessage} = this.state;
         return (
-                <FormCard returnToIndex={this.props.onSubmissionComplete}>
+                <FormCard returnToIndex={this.props.close}>
                     <div className="col-md-12 ">
                         <h2>{TITLE}</h2>
                         {!submitSuccess && (
