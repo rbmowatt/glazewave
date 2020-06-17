@@ -1,0 +1,16 @@
+input.ais-RefinementList-checkbox
+{
+    margin-right:0.3em;
+    border:5px solid red;
+}
+
+ul.ais-RefinementList-list
+{
+    padding-left:0.3em;
+    list-style:none;
+}
+
+ul.ais-RefinementList-list
+{
+    line-height: normal;
+}

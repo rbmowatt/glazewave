@@ -13,25 +13,18 @@ import { Select} from 'react-advanced-form-addons';
 import { Form } from 'react-advanced-form';
 import { InstantSearch, SearchBox, Hits, RefinementList , ClearRefinements} from 'react-instantsearch-dom';
 import searchClient from './../../lib/utils/algolia'
+import Facets from './Facets';
 
 const DEFAULT_SORT = "created_at_DESC";
 
-const cssClasses =  {
-    root: 'form-control',
-    form: [
-      'form-control'
-    ],
-    input : 'algolia'
-  }
-
 const mapStateToProps = state => {
-    return { session: state.session, boards : state.user_boards.data }
+    return { userSession: state.session, boards : state.user_boards.data }
   }
 
   const mapDispachToProps = dispatch => {
     return {
-        loadBoards: (session, params) => dispatch(loadUserBoards(session, params)),
-        deleteBoard: (session, id) => dispatch( deleteUserBoard(session, id) ) ,
+        loadBoards: (userSession, params) => dispatch(loadUserBoards(userSession, params)),
+        deleteBoard: (userSession, id) => dispatch( deleteUserBoard(userSession, id) ) ,
         clearBoards : ()=>dispatch(UserBoardsCleared())       
     };
   };
@@ -50,13 +43,14 @@ class BoardIndex extends Component {
             elements: [],
             currentPage: 0,
             show : false,
-            selectedSortOrder : DEFAULT_SORT 
+            selectedSortOrder : DEFAULT_SORT,
+            currentHits : []   
           };
     }
 
     componentDidMount(){
-        if (this.props.session.isLoggedIn) {
-            this.props.loadBoards(this.props.session, { orderBy : DEFAULT_SORT , wheres : {user_id : this.props.session.user.id }, withs : relations.user_board} );
+        if (this.props.userSession.isLoggedIn) {
+            this.props.loadBoards(this.props.userSession, { orderBy : DEFAULT_SORT , wheres : {user_id : this.props.userSession.user.id }, withs : relations.user_board} );
         }
     }
 
@@ -74,16 +68,15 @@ class BoardIndex extends Component {
         this.setState({ elements: elements, currentPage : currentPage});
     }
     
-  
     deleteBoard(id) {
         confirmAlert({
             title: 'Confirm To Delete',
-            message: 'Are you sure you want to delete this session?',
+            message: 'Are you sure you want to delete this userSession?',
             buttons: [
               {
                 label: 'Yes',
                 onClick: () => {
-                    this.props.deleteBoard(this.props.session, id);
+                    this.props.deleteBoard(this.props.userSession, id);
                 }
               },
               {
@@ -115,7 +108,7 @@ class BoardIndex extends Component {
     sortBoards = (e) =>{
         if(e.nextValue)
         {
-         this.props.loadBoards(this.props.session,  { orderBy : e.nextValue, wheres : {user_id : this.props.session.user.id }, withs : relations.user_board})
+         this.props.loadBoards(this.props.userSession,  { orderBy : e.nextValue, wheres : {user_id : this.props.userSession.user.id }, withs : relations.user_board})
          this.setState({ selectedSortOrder: e.nextValue});
         }
      }
@@ -127,12 +120,26 @@ class BoardIndex extends Component {
                     </div>
                 </div> 
        }
+
+       searchResultHandler = (e)=>
+       {
+            var isNew  = JSON.stringify(e) !== JSON.stringify(this.state.currentHits)
+            if(e.length && isNew) 
+            {
+                this.props.loadBoards(this.props.userSession,  { orderBy : e.nextValue, wheres : {in : e.join(',') }, withs : relations.user_board})
+                this.setState({currentHits : e})
+            } 
+       }
    
     render() {
         const { boards } = this.props;
         let pagination =  <Paginate updatePaginationElements={this.updatePaginationElements} data={this.props.boards } currentPage={this.state.currentPage} perPage={8}/>
         return (
             <MainContainer>
+                 <InstantSearch
+                    indexName="user_boards"
+                    searchClient={searchClient}
+            >
                 <div className="row">
                     <div className="container card card-lg mx-auto">
                         <div className="card-title"><h2>Boards
@@ -155,22 +162,12 @@ class BoardIndex extends Component {
                                  </Form>
                                 </div>
                                 <div className="col-md-6">
-                                    <span className="float-right">
-                                    <span className="float-right">
-                                        <InstantSearch
-                                        indexName="user_boards"
-                                        searchClient={searchClient}
-                                        >
-                                         <RefinementList attribute="rating" />
-                                        <SearchBox  autoFocus={false} showSubmit={false} cssClasses={cssClasses}/>
-                                       
-                                        <Hits hitComponent = {this.hit} />
-                                       
-                                    </InstantSearch>
-                                    </span>
+                                    <span className="float-right"> 
+                                        <div className="filter-widgets" id="userSessions">
+                                            <Facets onSelect={this.searchResultHandler} key="sr1" />
+                                        </div>
                                     </span>
                                 </div> 
-
                             </div>
                                 <div className="row col-md-12">
                                     {this.state.elements && this.state.elements.map(board =>  
@@ -191,9 +188,11 @@ class BoardIndex extends Component {
                         </div>
                     </div>
                 </div>
+                </InstantSearch>
                 <Modal show={this.state.show} handleClose={(e) =>this.hideModal(e)}>
                         <CreateUserBoard onSuccess={(e) =>this.hideModal(e)} onSubmissionComplete={this.viewBoard} close={this.hideModal} />
-                </Modal>     
+                </Modal>  
+                   
             </MainContainer>
         )
     }
