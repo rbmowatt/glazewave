@@ -95,14 +95,11 @@ class SessionIndex extends Component {
         this.props.history.push('/session/' + sessionId);
     }
 
-   
     showModal = () => {
         this.setState({ show: true });
-      
     };
 
     hideModal = (e = false) => {
-        //if(e) e.preventDefault();
         this.setState({ show: false });
     };
 
@@ -119,7 +116,6 @@ class SessionIndex extends Component {
         var isNew  = JSON.stringify(e) !== JSON.stringify(this.state.currentHits)
         if(e.length && isNew) 
         {
-            //console.log('session data changed');
             this.props.loadSessions(this.props.session, {  orderBy : this.state.selectedSortOrder, wheres : {in : e.join(',') }, withs : relations.user_session } );
             this.setState({currentHits : e})
         } 
@@ -135,80 +131,71 @@ class SessionIndex extends Component {
         let pagination =  <Paginate updatePaginationElements={this.updatePaginationElements} data={sessions} currentPage={this.state.currentPage} perPage={8}/>
         return (
             <MainContainer>
-            <InstantSearch
-            key="is1"
-            indexName="sessions"
-            searchClient={searchClient}
-            >
-                <div className="row">
-                    <div className="container card card-lg mx-auto">
-                        <div className="card-title"><h2>Sessions
-                        <Link to="#" onClick={this.showModal} className="btn btn-sm btn-outline-secondary float-right"> Create New Session</Link>
-                  
-                        </h2>
-                        </div> 
-                        <div className="card-text">
-                            <div className="container" >
-                            <div className="row col-md-12">
-                            <div className="col-md-2">
-                                <Form key="session_index_board_id">
-                                    <Select name="board_id" value={this.state.selectedSortOrder}  onChange={this.sortSessions}>
-                                        <option value="created_at_DESC"  >Newest</option>
-                                        <option value="created_at_ASC">Oldest</option>
-                                        <option value="title_DESC">Title A-Z</option>
-                                        <option value="title_ASC" >Title Z-A</option>
-                                        <option value="rating_DESC">Rating Best to Worst</option>
-                                        <option value="rating_ASC">Rating Worst To Best</option>
-                                    </Select>
-                                 </Form>
-                                </div>
-                                
-                                <div className="col-md-5">
-                                <CurrentRefinements />
-                                </div>
-
-
-                                <div className="col-md-5">
-                                    <span className="float-right">
-                                    {pagination}
-                                    </span>
-                                </div> 
-                         
-                            </div>
-                            <div className="row col-md-12">
-                                <div className="col-2">
-                                    <div className="filter-widgets" id="sessions">
-                                        <Facets onSelect={this.searchResultHandler} key="sr1" />
+                <InstantSearch
+                    key="is1"
+                    indexName="sessions"
+                    searchClient={searchClient}
+                >
+                    <div className="row">
+                        <div className="container card card-lg mx-auto">
+                            <div className="card-title"><h2>Sessions
+                            <Link to="#" onClick={this.showModal} className="btn btn-sm btn-outline-secondary float-right"> Create New Session</Link>
+                            </h2>
+                            </div> 
+                            <div className="card-text">
+                                <div className="container" >
+                                <div className="row col-md-12">
+                                <div className="col-md-2">
+                                    <Form key="session_index_board_id">
+                                        <Select name="board_id" value={this.state.selectedSortOrder}  onChange={this.sortSessions}>
+                                            <option value="created_at_DESC"  >Newest</option>
+                                            <option value="created_at_ASC">Oldest</option>
+                                            <option value="title_DESC">Title A-Z</option>
+                                            <option value="title_ASC" >Title Z-A</option>
+                                            <option value="rating_DESC">Rating Best to Worst</option>
+                                            <option value="rating_ASC">Rating Worst To Best</option>
+                                        </Select>
+                                    </Form>
+                                    </div> 
+                                    <div className="col-md-5">
+                                    <CurrentRefinements />
                                     </div>
+                                    <div className="col-md-5">
+                                        <span className="float-right">
+                                        {pagination}
+                                        </span>
+                                    </div> 
                                 </div>
-                                <div className="col-8">
-                                    <div className="row col-md-12">
-                                        
-                                        {this.state.paginatedSessions && this.state.paginatedSessions.map(session =>    
-                                          <div key={session.id} className="container card">                    
-                                        <SessionCard session={session} key={session.id}  className="row col-md-12" deleteSession={this.deleteSession} viewSession={this.viewSession} editSession={this.editSession}  />       
-                                        </div>                       
-                                        )}
-                                        {
-                                        (!sessions  || sessions.length === 0) &&  
-                                        <div className="col-md-12">
-                                            <h3>No Sessions found at the moment</h3>
+                                <div className="row col-md-12">
+                                    <div className="col-2">
+                                        <div className="filter-widgets" id="sessions">
+                                            <Facets onSelect={this.searchResultHandler} key="sr1" />
                                         </div>
-                                        } 
+                                    </div>
+                                    <div className="col-8">
+                                        <div className="row col-md-12">
+                                            
+                                            {this.state.paginatedSessions && this.state.paginatedSessions.map(session =>    
+                                                <div key={session.id} className="container card">                    
+                                                <SessionCard session={session} key={session.id}  className="row col-md-12" deleteSession={this.deleteSession} viewSession={this.viewSession} editSession={this.editSession}  />       
+                                                </div>                       
+                                            )}
+                                            {
+                                            (!sessions  || sessions.length === 0) &&  
+                                                <div className="col-md-12">
+                                                    <h3>No Sessions found at the moment</h3>
+                                                </div>
+                                            } 
+                                        </div>
+                                    </div>
+                                    <div className="col-2">
+                                        <div className="col-md-12 filter-widgets" id="sessions">
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="col-2">
-                                    <div className="col-md-12 filter-widgets" id="sessions">
-                                  
-                                    </div>
-                                </div>
-                                
-                            </div>
-
-
                                 <div className="row col-md-12">
                                     <div className="col-md-6">
-                                    
+                                        
                                     </div> 
                                     <div className="col-md-6">
                                         <span className="float-right">
@@ -220,10 +207,10 @@ class SessionIndex extends Component {
                         </div>
                     </div>
                 </div>
+                </InstantSearch>
                 <Modal show={this.state.show} handleClose={(e) =>this.hideModal(e)}>
                         <Create onSuccess={(e) =>this.hideModal(e)} onSubmissionComplete={this.viewSession} close={this.hideModal}  />
-                    </Modal>
-                    </InstantSearch>
+                </Modal>
             </MainContainer>
         )
     }

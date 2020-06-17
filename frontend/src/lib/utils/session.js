@@ -7,7 +7,7 @@ export function setSessionCookie(session)
   Cookie.set("x-token", session);
 }
 // Initialise the Cognito sesson from a callback href
-export function hasSession() {
+export async function hasSession() {
     if(Cookie.get("x-token"))
     {
       const session = JSON.parse(Cookie.get("x-token"));
