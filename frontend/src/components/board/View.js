@@ -96,19 +96,15 @@ class BoardView extends Component {
         if(propertyName === 'manufacturer_id'){
             const boardId = (!Number.isInteger(this.state.board_id)) ? this.props.board.id :this.state.board_id;
             const board = this.props.boards.find(board=> board.id === boardId); 
-            console.log('boards', boardId, board)
             if( board && (board.manufacturer_id !== newValue))
             {
                 data['board_id'] = ''
                 data['modelPlaceholder'] = 'Choose A Board'
-                console.log('board does not match manufactiure', newValue);
             }
         }
-      
         this.setState({
             ...data
         });
-        console.log('state', this.state)
       };
 
       getShaperSuggestions = (value, reason)  => {

@@ -40,13 +40,11 @@ class UserBoardForm extends React.Component{
     }
 
     onChange = (propertyName , newValue ) => {
-        console.log('new val', newValue);
         const data = [];
         data[propertyName] = newValue;
         this.setState({
             ...data
         });
-        console.log('state', this.state)
       };
 
 

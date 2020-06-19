@@ -24,7 +24,6 @@ export const UserLoaded = data => ({
   {
     return function(dispatch, getState)
     {
-      console.log('i should be loading user with ', args);
       const params = {...args, ...{onSuccess : (data)=>{ return UserLoaded(data)} }}
       dispatch(
         new UserRequests(session).get(params)

@@ -12,7 +12,7 @@ import Modal from './../layout/Modal';
 import { Select} from 'react-advanced-form-addons';
 import { Form } from 'react-advanced-form';
 import Facets from './Facets';
-import { InstantSearch ,   CurrentRefinements } from 'react-instantsearch-dom';
+import { InstantSearch ,   CurrentRefinements , ClearRefinements} from 'react-instantsearch-dom';
 import searchClient from './../../lib/utils/algolia'
 
 
@@ -91,7 +91,6 @@ class SessionIndex extends Component {
     }
 
     viewSession(sessionId) {
-        console.log('loading session', sessionId)
         this.props.history.push('/session/' + sessionId);
     }
 
@@ -144,8 +143,8 @@ class SessionIndex extends Component {
                             </div> 
                             <div className="card-text">
                                 <div className="container" >
-                                <div className="row col-md-12">
-                                <div className="col-md-2">
+                                <div className="row col-12">
+                                <div className="col-2">
                                     <Form key="session_index_board_id">
                                         <Select name="board_id" value={this.state.selectedSortOrder}  onChange={this.sortSessions}>
                                             <option value="created_at_DESC"  >Newest</option>
@@ -157,47 +156,56 @@ class SessionIndex extends Component {
                                         </Select>
                                     </Form>
                                     </div> 
-                                    <div className="col-md-5">
-                                    <CurrentRefinements />
-                                    </div>
-                                    <div className="col-md-5">
+                               
+                                    <div className="col-10">
                                         <span className="float-right">
                                         {pagination}
                                         </span>
                                     </div> 
                                 </div>
-                                <div className="row col-md-12">
-                                    <div className="col-2">
+                                <div className="row col-12">
+                                    <div className="col-3">
+                                        <ClearRefinements />
+                                    </div>
+                                    <div className="col-9">
+                                        <CurrentRefinements />
+                                    </div>
+                                </div>
+                                <div className="row col-12">
+                                    <div className="col-3">
                                         <div className="filter-widgets" id="sessions">
                                             <Facets onSelect={this.searchResultHandler} key="sr1" />
                                         </div>
                                     </div>
-                                    <div className="col-8">
-                                        <div className="row col-md-12">
-                                            
+                                    <div className="col-7">
+                                        <div className="row">
                                             {this.state.paginatedSessions && this.state.paginatedSessions.map(session =>    
-                                                <div key={session.id} className="container card">                    
-                                                <SessionCard session={session} key={session.id}  className="row col-md-12" deleteSession={this.deleteSession} viewSession={this.viewSession} editSession={this.editSession}  />       
+                                                <div key={session.id} className="col-12 col-lg-6">                    
+                                                    <SessionCard session={session} key={session.id}  deleteSession={this.deleteSession} viewSession={this.viewSession} editSession={this.editSession}  />       
                                                 </div>                       
                                             )}
                                             {
                                             (!sessions  || sessions.length === 0) &&  
-                                                <div className="col-md-12">
+                                                <div className="col-12">
                                                     <h3>No Sessions found at the moment</h3>
                                                 </div>
                                             } 
                                         </div>
                                     </div>
                                     <div className="col-2">
-                                        <div className="col-md-12 filter-widgets" id="sessions">
+                                        <div className="col-12 filter-widgets" id="sessions">
+
+<div className="slwd_btv"><script type="text/javascript" src="http://www.surfline.com/widgets2/widget_output_forecast.cfm?id=2147&layout=v&wid=64915&ftr=1"></script><div className="slwd_bx"><a href="http://www.surfline.com" className="slwd_lk">Surfline</a> <a href="http://www.surfline.com/surf-forecasts" className="slwd_lk">Surf Forecasts</a></div><div className="slwd_tl"></div><div className="slwd_tr"></div></div>
+
+
                                         </div>
                                     </div>
                                 </div>
-                                <div className="row col-md-12">
-                                    <div className="col-md-6">
+                                <div className="row col-12">
+                                    <div className="col-6">
                                         
                                     </div> 
-                                    <div className="col-md-6">
+                                    <div className="col-6">
                                         <span className="float-right">
                                         {pagination}
                                         </span>
@@ -218,7 +226,7 @@ class SessionIndex extends Component {
 export default connect(mapStateToProps, mapDispachToProps)(SessionIndex)
 
 /**
- *        <div className="row col-md-12 filter-widgets" id="sessions">
+ *        <div className="row col-12 filter-widgets" id="sessions">
                                 <InstantSearch
                                         indexName="dev_sessions"
                                         searchClient={searchClient}

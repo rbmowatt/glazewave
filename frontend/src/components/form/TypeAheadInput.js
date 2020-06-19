@@ -125,7 +125,7 @@ class TypeAheadInput extends React.Component {
         )}
 
 
-        <div className="sc-ifAKCX fatWUN">
+        <div className="sc-ifAKCX fatWUN" style={{'maxHeight':200, overflow:'auto'}}>
         <Autosuggest 
                 suggestions={suggestions}
                 onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}

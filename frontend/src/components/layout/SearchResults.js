@@ -1,7 +1,8 @@
 import React from 'react';
 import { connectStateResults } from 'react-instantsearch-dom';
 
-const StateResults = ({
+class StateResults extends React.Component{
+  constructor({
     searchState,
     searchResults,
     allSearchResults,
@@ -10,18 +11,28 @@ const StateResults = ({
     searchingForFacetValues,
     isSearchStalled,
     onChange
-  }) => {
-      if(!searching && searchResults)
+  })
+  {
+    super();
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot){
+    if(!this.props.searching && this.props.searchResults)
+    {
+      const ids =[];
+      this.props.searchResults.hits.forEach(hit=> ids.push(hit.id))
+      if(this.props.onChange)
       {
-        const ids =[];
-        searchResults.hits.forEach(hit=> ids.push(hit.id))
-        if(onChange)
-        {
-            onChange(ids)
-        }
+          this.props.onChange(ids)
       }
-    return null
-  };
+    }
+  }
+  render(args)
+  {
+    //just push something out here to satisfy render
+    return ''
+  }
+}
 
   const SearchResults = connectStateResults(StateResults);
   export default SearchResults;

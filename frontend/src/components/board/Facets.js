@@ -15,15 +15,6 @@ class Facets extends React.Component{
     {
         return (
         <div>
-            <h6><ClearRefinements /></h6>
-            <h6>Models</h6>
-            <div>
-            <RefinementList 
-            key="rl1"
-            container="#sessions"
-            attribute="model"
-            />
-            </div>
             <h6>Manufacturers</h6>
             <div>
             <RefinementList 
@@ -32,8 +23,20 @@ class Facets extends React.Component{
             attribute="manufacturer"
             />
             </div>
+            <h6>Models</h6>
+            <div>
+            <RefinementList 
+            key="rl1"
+            container="#sessions"
+            attribute="model"
+            showMoreLimit={3}
+            />
+            </div>
+           
             <Configure hitsPerPage={2000} 
                 filters={"user_id:" + this.props.session.user.id } 
+                maxValuesPerFacet={20}
+                maxFacetHits={20}
             />
             <SearchResults onChange={this.props.onSelect} key="sr1" />
            

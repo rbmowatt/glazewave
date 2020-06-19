@@ -7,7 +7,6 @@ const Hits = (data) => {
     {
         const ids =[];
         data.hits.forEach(hit=> ids.push(hit.id))
-        console.log('dataonload')
         data.handle(ids)
     }
    return  (
