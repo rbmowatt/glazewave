@@ -11,9 +11,10 @@ import Modal from './../layout/Modal';
 import CreateUserBoard from  './CreateUserBoard';
 import { Select} from 'react-advanced-form-addons';
 import { Form } from 'react-advanced-form';
-import { InstantSearch, SearchBox, Hits, RefinementList , ClearRefinements} from 'react-instantsearch-dom';
+import { InstantSearch, SearchBox, CurrentRefinements, ClearRefinements} from 'react-instantsearch-dom';
 import searchClient from './../../lib/utils/algolia'
 import Facets from './Facets';
+import { hasSession } from './../../lib/utils/session';
 
 const DEFAULT_SORT = "created_at_DESC";
 
@@ -49,6 +50,7 @@ class BoardIndex extends Component {
     }
 
     componentDidMount(){
+        hasSession();
         if (this.props.userSession.isLoggedIn) {
             this.props.loadBoards(this.props.userSession, { orderBy : DEFAULT_SORT , wheres : {user_id : this.props.userSession.user.id }, withs : relations.user_board} );
         }
@@ -147,53 +149,72 @@ class BoardIndex extends Component {
                         </h2>
                         </div> 
                         <div className="card-text">
-                            <div className="table-container" >
-                            <div className="row col-md-12">
-                            <div className="col-md-6">
-                                <Form>
-                                    <Select name="board_id" value={this.state.selectedSortOrder}  onChange={this.sortBoards}>
-                                        <option value="created_at_DESC"  >Newest</option>
-                                        <option value="created_at_ASC">Oldest</option>
-                                        <option value="name_DESC">Name A-Z</option>
-                                        <option value="name_ASC" >Name Z-A</option>
-                                        <option value="rating_DESC">Rating Best to Worst</option>
-                                        <option value="rating_ASC">Rating Worst To Best</option>
-                                    </Select>
-                                 </Form>
-                                </div>
-                                <div className="col-md-6">
-                                    <span className="float-right"> 
-                                        <div className="filter-widgets" id="userSessions">
-                                            <Facets onSelect={this.searchResultHandler} key="sr1" />
-                                        </div>
-                                    </span>
-                                </div> 
-                            </div>
-                                <div className="row col-md-12">
-                                    {this.state.elements && this.state.elements.map(board =>  
-                                        <BoardCard board={board} key={board.id}  className="col-md-3" deleteBoard={this.deleteBoard} viewBoard={this.viewBoard} editBoard={this.editBoard}  />                              
-                                        )
-                                    }
-                                </div>
-                                <div className="row col-md-12">
-                                    <div className="col-md-6">
-                                    </div> 
-                                    <div className="col-md-6">
-                                        <span className="float-right">
-                                        {pagination}
+                            <div className="container" >
+                                <div className="row col-12">
+                                    <div className="col-2">
+                                        <Form>
+                                            <Select name="board_id" value={this.state.selectedSortOrder}  onChange={this.sortBoards}>
+                                                <option value="created_at_DESC"  >Newest</option>
+                                                <option value="created_at_ASC">Oldest</option>
+                                                <option value="name_DESC">Name A-Z</option>
+                                                <option value="name_ASC" >Name Z-A</option>
+                                                <option value="rating_DESC">Rating Best to Worst</option>
+                                                <option value="rating_ASC">Rating Worst To Best</option>
+                                            </Select>
+                                        </Form>
+                                    </div>
+                                    <div className="col-10">
+                                        <span className="float-right"> 
+                                            {pagination}
                                         </span>
                                     </div> 
+                                </div>
+                                <div className="row col-12">
+                                    <div className="col-3">
+                                        <ClearRefinements />
+                                    </div>
+                                    <div className="col-9">
+                                        <CurrentRefinements />
+                                    </div>
+                                </div>
+                                <div className="row col-12">
+                                    <div className="col-3">
+                                        <div className="filter-widgets" id="sessions">
+                                            <Facets onSelect={this.searchResultHandler} key="sr1" />
+                                        </div>
+                                    </div>
+                                    <div className="col-7">
+                                        <div className="row col-12">
+                                            {this.state.elements && this.state.elements.map(board =>  
+                                            <div  className="col-md-6 col-sm-12"  ><BoardCard board={board} key={board.id} deleteBoard={this.deleteBoard} viewBoard={this.viewBoard} editBoard={this.editBoard}  />   </div>                          
+                                            )
+                                            }
+                                        </div>
+                                    </div>
+                                    <div className="col-2">
+                                        <div className="col-12 filter-widgets" id="sessions">
+                                    </div>
+                                </div>
+                                </div>
+                            <div className="row col-12">
+                                <div className="col-6">
                                 </div> 
-                            </div>
+                                <div className="col-6">
+                                    <span className="float-right">
+                                        {pagination}
+                                    </span>
+                                </div> 
+                            </div> 
+                            
                         </div>
                     </div>
                 </div>
-                </InstantSearch>
-                <Modal show={this.state.show} handleClose={(e) =>this.hideModal(e)}>
-                        <CreateUserBoard onSuccess={(e) =>this.hideModal(e)} onSubmissionComplete={this.viewBoard} close={this.hideModal} />
-                </Modal>  
-                   
-            </MainContainer>
+            </div>
+            </InstantSearch>
+            <Modal show={this.state.show} handleClose={(e) =>this.hideModal(e)}>
+                    <CreateUserBoard onSuccess={(e) =>this.hideModal(e)} onSubmissionComplete={this.viewBoard} close={this.hideModal} />
+            </Modal>  
+        </MainContainer>
         )
     }
 }

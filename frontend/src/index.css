@@ -102,8 +102,13 @@ img.preview {
 	background: wheat;
 }
 
-.table-container .row div.card-date {
-	/*font-size:0.1em;*/
+div.session-card {
+	font-size:0.9em;
+	margin-bottom: 1em;
+	border:1px solid #D3D3D3;
+	border-radius: .3em ;
+	padding:1em;
+
 }
 
 
@@ -144,4 +149,9 @@ button.card-title {
 		
    }
 
+}
+
+.img-card {
+	max-height:7em;
+	width:auto;
 }

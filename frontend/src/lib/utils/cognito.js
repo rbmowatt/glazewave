@@ -86,7 +86,6 @@ const getCognitoSession = (dispatch) => {
       axios.get( apiConfig.host + apiConfig.port + `/api/user/firstOrNew?username=` + result.idToken.payload['cognito:username'] 
       + '&email=' + result.idToken.payload.email + '&first_name=' + result.idToken.payload.given_name + '&last_name=' + result.idToken.payload.family_name
         ).then(data => {
-        console.log('getting new session', data.data[0]);
         const session = formatSessionObject(data.data.id, result);
         session.user = {...session.user, ...data.data[0]};
         dispatch(logInUser(session, {wheres : {email : result.idToken.payload.email}}));
@@ -119,6 +118,22 @@ const formatSessionObject = (id, result) =>
 export const refresh = (id = null) =>
 {
   return new Promise((resolve, reject) => {
+    const auth = createCognitoAuth();
+    auth.userhandler = {
+      onSuccess: function (result) {
+        let session = formatSessionObject(store.getState().session.user.id, result);
+        setSessionCookie(session);
+        store.dispatch({ type: SET_SESSION, session });
+        resolve(session)
+      },
+      onFailure: function (err) {
+        console.log('cognito refresh error', err)
+        reject(err)
+      }
+    }
+    //let user = auth.getCachedSession();
+    auth.refreshSession();
+/** 
   const auth = createCognitoAuth();
   auth.userhandler = {
     onSuccess: function (result) {
@@ -133,6 +148,7 @@ export const refresh = (id = null) =>
     }
   }
   auth.getSession()  
+  */
 })    
   //let user = auth.getCachedSession();
   //auth.refreshSession(user.getSession())

@@ -58,7 +58,6 @@ class BoardPicker extends React.Component{
     {
         if(prevProps.current_session.board_id !== this.props.board_id)
         {
-           // console.log('seetiung');
             this.setState({ board_id : this.props.board_id})
             this.props.loadBoard(this.props.session, {id : this.props.board_id, withs : ['UserBoardImage']} );
         }

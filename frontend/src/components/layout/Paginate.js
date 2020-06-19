@@ -28,9 +28,10 @@ class Paginate extends React.Component{
     
     componentDidUpdate(prevProps, prevState, snapshot)
     {
-      //console.log('update', prevProps)
-        //((this.props.data.length && !this.state.elements.length)  || (this.props.data.length !== prevProps.data.length))  && this.setElementsForCurrentPage(this.props.data);
-        JSON.stringify(prevProps.data) !== JSON.stringify(this.props.data) && this.setElementsForCurrentPage(this.props.data);
+        if(JSON.stringify(prevProps.data) !== JSON.stringify(this.props.data))
+        {
+          this.setState({ currentPage:0}, () =>{this.setElementsForCurrentPage(this.props.data)});
+        }
     }
 
     setElementsForCurrentPage(boards) {

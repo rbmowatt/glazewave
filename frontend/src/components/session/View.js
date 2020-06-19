@@ -141,7 +141,6 @@ class SessionView extends Component {
     {
         //@totdo this double submits without keeping track of state
         if(e.nextValue !== this.state.is_public){
-            console.log(e.nextValue)
             this.setState({is_public : e.nextValue});
             this.submitUpdate({is_public :e.nextValue })
         }
@@ -149,7 +148,7 @@ class SessionView extends Component {
     
       onLocationBlur = (e, a, d) =>
     {
-        console.log('blur', e, a, d)
+
     }
 
     onBoardChange = (id) =>

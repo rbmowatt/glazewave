@@ -16,7 +16,7 @@ class Facets extends React.Component{
     {
         return (
         <div>
-            <h6><ClearRefinements /></h6>
+  
             <h6>Boards</h6>
             <div>
             <RefinementList 

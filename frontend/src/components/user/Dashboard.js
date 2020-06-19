@@ -52,7 +52,7 @@ class UserDashboard extends React.Component{
                     <div className="container card card-lg mx-auto">
                         <div className="card-title">
                         </div>
-                        <div className="container card-text dashboard-boxes">
+                        <div className="card-text dashboard-boxes">
                                 <div className="container row">
                                     
                                     <div className="col-md-10 row">
@@ -63,9 +63,9 @@ class UserDashboard extends React.Component{
                                                 user_sessions && user_sessions.reduce((mappedArray, session, index) => {                           
                                                         if (index < DASHBOARD_LIST_LIMIT) { 
                                                             mappedArray.push(
-                                                                <div key={session.id} className="container card">
-                                                                <SessionCard session={session} key={session.id} className="row col-md-12" />
-                                                                </div>
+                                                       
+                                                                <SessionCard session={session} key={session.id} />
+                                                              
                                                             );
                                                         }                                                  
                                                         return mappedArray;
@@ -78,9 +78,7 @@ class UserDashboard extends React.Component{
                                                 boards && boards.reduce((mappedArray, board, index) => {                           
                                                         if (index < DASHBOARD_LIST_LIMIT) { 
                                                             mappedArray.push(
-                                                                <div key={board.id} className="container card">
-                                                                    <BoardCard board={board} key={board.id} className="row col-md-12" />
-                                                                </div>
+                                                                <BoardCard board={board} key={board.id}/>
                                                             );
                                                         }                                                  
                                                         return mappedArray;

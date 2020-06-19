@@ -38,11 +38,15 @@ class Home extends Component {
         <div className="intro container-fluid">
         Welcome to MySurfSesh
           </div>
-          <img  className="Home-logo " alt="logo" src="https://umanage-mowatr.s3.amazonaws.com/bake_n_flake_logo_250_250.png" />
+          
         </header>
       </div>
     )
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
+
+/*
+<img  className="Home-logo " alt="logo" src="https://umanage-mowatr.s3.amazonaws.com/bake_n_flake_logo_250_250.png" />
+*/
