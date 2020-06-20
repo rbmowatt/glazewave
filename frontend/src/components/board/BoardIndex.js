@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import  MainContainer  from './../layout/MainContainer';
 import { confirmAlert } from 'react-confirm-alert';
 import BoardCard from './../user/BoardCard';
-import {loadUserBoards, deleteUserBoard, UserBoardsCleared} from './../../actions/user_board';
+import {loadUserBoards, deleteUserBoard, UserBoardsCleared, UserBoardCreatedCleared} from './../../actions/user_board';
 import Paginate from './../layout/Paginate';
 import Modal from './../layout/Modal';
 import CreateUserBoard from  './CreateUserBoard';
@@ -26,7 +26,8 @@ const mapStateToProps = state => {
     return {
         loadBoards: (userSession, params) => dispatch(loadUserBoards(userSession, params)),
         deleteBoard: (userSession, id) => dispatch( deleteUserBoard(userSession, id) ) ,
-        clearBoards : ()=>dispatch(UserBoardsCleared())       
+        clearBoards : ()=>dispatch(UserBoardsCleared()),
+        clearCreatedBoard : ()=>dispatch( UserBoardCreatedCleared())       
     };
   };
  
@@ -52,7 +53,7 @@ class BoardIndex extends Component {
     componentDidMount(){
         hasSession();
         if (this.props.userSession.isLoggedIn) {
-            this.props.loadBoards(this.props.userSession, { orderBy : DEFAULT_SORT , wheres : {user_id : this.props.userSession.user.id }, withs : relations.user_board} );
+            //this.props.loadBoards(this.props.userSession, { orderBy : DEFAULT_SORT , wheres : {user_id : this.props.userSession.user.id }, withs : relations.user_board} );
         }
     }
 
@@ -93,6 +94,12 @@ class BoardIndex extends Component {
         this.props.history.push('/board/edit/' + boardId);
     }
 
+    boardCreated = (id)=>
+    {
+        this.props.clearCreatedBoard();
+        this.viewBoard(id);
+    }
+
     viewBoard(boardId) {
         this.props.history.push('/board/' + boardId);
     }
@@ -128,7 +135,8 @@ class BoardIndex extends Component {
             var isNew  = JSON.stringify(e) !== JSON.stringify(this.state.currentHits)
             if(e.length && isNew) 
             {
-                this.props.loadBoards(this.props.userSession,  { orderBy : e.nextValue, wheres : {in : e.join(',') }, withs : relations.user_board})
+                const sort = e.nextValue ? e.nextValue : DEFAULT_SORT;
+                this.props.loadBoards(this.props.userSession,  { orderBy : sort, wheres : {in : e.join(',') }, withs : relations.user_board})
                 this.setState({currentHits : e})
             } 
        }
@@ -145,7 +153,7 @@ class BoardIndex extends Component {
                 <div className="row">
                     <div className="container card card-lg mx-auto">
                         <div className="card-title"><h2>Boards
-                        <Link onClick={this.showModal} className="btn btn-sm btn-outline-secondary float-right"> Create New Board</Link>
+                        <button onClick={this.showModal} className="btn btn-sm btn-outline-secondary float-right"> Create New Board</button>
                         </h2>
                         </div> 
                         <div className="card-text">
@@ -186,7 +194,9 @@ class BoardIndex extends Component {
                                     <div className="col-7">
                                         <div className="row col-12">
                                             {this.state.elements && this.state.elements.map(board =>  
-                                            <div  className="col-md-6 col-sm-12"  ><BoardCard board={board} key={board.id} deleteBoard={this.deleteBoard} viewBoard={this.viewBoard} editBoard={this.editBoard}  />   </div>                          
+                                            <div  key={board.id} className="col-md-6 col-sm-12" >
+                                                <BoardCard board={board}  deleteBoard={this.deleteBoard} viewBoard={this.boardCreated} editBoard={this.editBoard}  />
+                                            </div>                          
                                             )
                                             }
                                         </div>

@@ -42,14 +42,13 @@ class CreateUserBoard extends React.Component{
     componentDidUpdate(prevProps, prevState, snapshot) {
         
         if(this.props.noUpdate) return;
-        if ((prevProps.user_boards.data.length !== this.props.user_boards.data.length)
-       && this.props.user_boards.created) {
+        if ((prevProps.user_boards.data.length !== this.props.user_boards.data.length) && this.props.user_boards.created) {
             this.setState({ submitSuccess : true })
             setTimeout(() => {
                 if(this.props.onSubmissionComplete)
                 {
                     const id = this.props.user_boards.created.id;
-                   this.props.clearCreatedBoard();
+                  
                     this.props.onSubmissionComplete(id)
                 }else{
                     this.props.history.push('/board');

@@ -46,7 +46,7 @@ const Navbar = props =>{
 
               </div>
               <div className="navbar-nav ml-auto">
-              {props.session.isLoggedIn ? ( <span><span className="white-txt">Hello {props.session.user.userName}&nbsp;&nbsp;</span><span><a className="Home-link" href="#" onClick={onSignOut}>Sign out</a> </span></span> ) 
+              {props.session.isLoggedIn ? ( <span><span className="white-txt">Hello {props.username}&nbsp;&nbsp;</span><span><a className="Home-link" href="#" onClick={onSignOut}>Sign out</a> </span></span> ) 
               : (<a className="Home-link" href={cognitoUtils.getCognitoSignInUri()}>Sign in</a>)}
               </div>
           </div>

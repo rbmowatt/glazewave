@@ -88,8 +88,7 @@ class UserDashboard extends React.Component{
                                 </div>
                                 <div className="col-md-2">
                                     
-                                <link href="//www.surf-forecast.com/stylesheets/feed.css" media="screen" rel="stylesheet" type="text/css" /><div id="wf-weatherfeed"><iframe  allowtransparency="true" height="272" width="469" src="//www.surf-forecast.com/breaks/Hollyoake/forecasts/feed/a" scrolling="no" frameborder="0" marginwidth="0" marginheight="0"><p>Your browser does not support iframes.</p></iframe><div id="wf-link"><a href="https://www.surf-forecast.com/"><img alt="Surf Forecast" src="//www.surf-forecast.com/images/feed/surflogo-150.jpg"/></a><p id="cmt">View detailed surf forecast for <a href="//www.surf-forecast.com/breaks/Hollyoake">Hollyoake</a>. Visit <a href="//www.surf-forecast.com/breaks/Hollyoake">surf-forecast.com</a> for more details, long range forecasts, surf reports, swell and weather maps.</p><div></div></div></div>
-                                    </div>
+                                 </div>
                             </div>
                         </div>
                     </div>
@@ -100,3 +99,6 @@ class UserDashboard extends React.Component{
 }
 
 export default connect(mapStateToProps, mapDispachToProps )(UserDashboard)
+
+// <link href="//www.surf-forecast.com/stylesheets/feed.css" media="screen" rel="stylesheet" type="text/css" /><div id="wf-weatherfeed"><iframe  allowtransparency="true" height="272" width="469" src="//www.surf-forecast.com/breaks/Hollyoake/forecasts/feed/a" scrolling="no" frameborder="0" marginwidth="0" marginheight="0"><p>Your browser does not support iframes.</p></iframe><div id="wf-link"><a href="https://www.surf-forecast.com/"><img alt="Surf Forecast" src="//www.surf-forecast.com/images/feed/surflogo-150.jpg"/></a><p id="cmt">View detailed surf forecast for <a href="//www.surf-forecast.com/breaks/Hollyoake">Hollyoake</a>. Visit <a href="//www.surf-forecast.com/breaks/Hollyoake">surf-forecast.com</a> for more details, long range forecasts, surf reports, swell and weather maps.</p><div></div></div></div>
+                                  

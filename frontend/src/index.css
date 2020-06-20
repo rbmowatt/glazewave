@@ -155,3 +155,8 @@ button.card-title {
 	max-height:7em;
 	width:auto;
 }
+
+div.fileContainer{
+	padding:0px;
+	margin:0px;
+}

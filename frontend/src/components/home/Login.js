@@ -23,7 +23,7 @@ class Login extends Component {
   render () {
     // If there's no auth code in the URL or we're now logged into, redirect to the root page
     if ((!this.props.location.hash && !this.props.location.search) || this.props.session.isLoggedIn) {
-      return <Redirect to="/" />
+      return <Redirect to="/user/dashboard" />
     }
 
     return <div />

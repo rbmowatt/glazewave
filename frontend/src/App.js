@@ -33,14 +33,14 @@ import EditManufacturer from './components/manufacturer/Edit';
 import ManufacturerView from './components/manufacturer/View';
 
 const mapStateToProps = state => {
-    return { session: state.session }
+    return { session: state.session, user : state.user }
 }  
 
 class App extends React.Component{
   render() {
     return (
       <div>
-        <Navbar session={this.props.session}  />
+        <Navbar session={this.props.session} username={this.props.user.first_name} />
         <Switch>
           <Route path={'/'} exact component={Home} />
           <Route path={'/login'} exact component={Login} />

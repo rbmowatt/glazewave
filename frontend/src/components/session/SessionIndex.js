@@ -59,7 +59,33 @@ class SessionIndex extends Component {
 
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
-            this.props.loadSessions(this.props.session, { orderBy : DEFAULT_SORT ,  wheres : {user_id : this.props.session.user.id }, withs : relations.user_session } );
+
+            window.geolocator.config({
+                language: "en",
+                google: {
+                    version: "3",
+                    key: "AIzaSyBaaD_720jqJaoIBsQib_N79Q5_iciLRBc"
+                }
+            });
+
+            var options = {
+                enableHighAccuracy: false,
+                timeout: 5000,
+                maximumWait: 10000,     // max wait time for desired accuracy
+                maximumAge: 0,          // disable cache
+                desiredAccuracy: 30,    // meters
+                fallbackToIP: true,     // fallback to IP if Geolocation fails or rejected
+                addressLookup: true,    // requires Google API key if true
+               //timezone: true,         // requires Google API key if true
+              //  map: "map-canvas",      // interactive map element id (or options object)
+              //  staticMap: true         // get a static map image URL (boolean or options object)
+            };
+            window.geolocator.locate(options, function (err, location) {
+                if (err) return console.log('location err', err);
+                console.log('location', location);
+            });
+            //console.log('geo', window.geolocator)
+            //this.props.loadSessions(this.props.session, { orderBy : DEFAULT_SORT ,  wheres : {user_id : this.props.session.user.id }, withs : relations.user_session } );
         }
     }
 
