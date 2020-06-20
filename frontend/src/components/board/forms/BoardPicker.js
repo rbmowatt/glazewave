@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux'
 import InlineEdit, { InputType } from 'riec';
-import {loadUserBoard} from './../../../actions/user_board';
+import {loadUserBoard, UserBoardCreatedCleared} from './../../../actions/user_board';
 import { s3Conf } from './../../../config/s3';
 import Modal from './../../layout/Modal';
 import CreateUserBoard from  './../CreateUserBoard';
@@ -13,6 +13,7 @@ import { withRouter} from 'react-router-dom';
 const mapStateToProps = state => {
     return { session: state.session, 
         current_session : state.user_sessions.selected,
+        board_created : state.user_boards.created,
         user_board : state.user_boards.selected
     }
   }
@@ -20,6 +21,7 @@ const mapStateToProps = state => {
   const mapDispachToProps = dispatch => {
     return {
       loadBoard: (session, params) => dispatch(loadUserBoard(session, params)),
+      clearCreatedBoard : ()=>dispatch( UserBoardCreatedCleared())     
     };
   };
 
@@ -42,7 +44,6 @@ class BoardPicker extends React.Component{
     };
 
     hideModal = (e = false) => {
-        if(e) e.preventDefault();
         this.setState({ show: false });
     };
 
@@ -56,10 +57,13 @@ class BoardPicker extends React.Component{
 
     componentDidUpdate(prevProps, prevState, snapshot)
     {
-        if(prevProps.current_session.board_id !== this.props.board_id)
+        if((prevProps.current_session.board_id !== this.props.board_id)|| this.props.board_created !== false)
         {
-            this.setState({ board_id : this.props.board_id})
-            this.props.loadBoard(this.props.session, {id : this.props.board_id, withs : ['UserBoardImage']} );
+            const board_id = this.props.board_created ? this.props.board_created.id : this.props.board_id;
+            this.props.clearCreatedBoard();
+            //this.setState({ board_id : board_id})
+            this.props.onChange(board_id);
+            this.props.loadBoard(this.props.session, {id : board_id, withs : ['UserBoardImage']} );
         }
     }
 

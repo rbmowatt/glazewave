@@ -97,7 +97,7 @@ render(){
                                                 <strong className="margin-10px-left text-yellow">Member Since:</strong>
                                             </div>
                                             <div className="col-md-7 col-7">
-                                                <p>{moment(user.createdAt).format("YYYY-MM-DD HH:mm:ss")}</p>
+                                                <p>{moment(user.createdAt).format("MM-DD-YYYY")}</p>
                                             </div>
                                         </div>
                                     </li>

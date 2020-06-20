@@ -23,7 +23,21 @@ class UserBoardService  extends BaseService {
                     resolve(super.create(params, callback));
                 })
             })})
-        } else {
+        } 
+        else if(!Number.isInteger(parseInt(params.board_id)))
+        {
+            return new Promise( 
+                (resolve, reject)=>{ 
+                     BoardService.make().create({model : params.board_id, manufacturer_id : params.manufacturer_id})
+                    .then(data=>{
+                        params.board_id  = data.id;
+                        resolve(super.create(params, callback));
+                        }
+                    )
+                }
+            )
+        } else 
+        {
             return super.create(params, callback);
         }
     }

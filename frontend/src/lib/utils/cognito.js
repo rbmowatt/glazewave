@@ -5,7 +5,7 @@ import { cognitoConfig } from '../../config/cognito.js'
 import { clearSession, setSessionCookie } from './session';
 import { SET_SESSION } from './../../actions/types';
 import apiConfig from '../../config/api.js';
-import {logInUser} from './../../actions/user';
+import {logInUser, loadUser} from './../../actions/user';
 import store from './../../store/index'
 const axios = require('axios');
 
@@ -88,7 +88,7 @@ const getCognitoSession = (dispatch) => {
         ).then(data => {
         const session = formatSessionObject(data.data.id, result);
         session.user = {...session.user, ...data.data[0]};
-        dispatch(logInUser(session, {wheres : {email : result.idToken.payload.email}}));
+        dispatch(loadUser(session, {wheres : {email : result.idToken.payload.email}}));
         resolve(session);
       });     
     })
@@ -131,8 +131,10 @@ export const refresh = (id = null) =>
         reject(err)
       }
     }
+    //auth.refreshSession(auth.getSession());
+    auth.getSession();
     //let user = auth.getCachedSession();
-    auth.refreshSession();
+    //auth.refreshSession(auth.getCachedSession());
 /** 
   const auth = createCognitoAuth();
   auth.userhandler = {

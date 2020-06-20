@@ -1,10 +1,10 @@
 import algoliasearch from 'algoliasearch/lite';
+require('dotenv').config();
 
 const algoliaClient = algoliasearch(
-    '6OW1B8K1KD',
-    'b541757295fac3492ed3a1041a5ed003',
-    
-  );
+  process.env.REACT_APP_ALGOLIA_APP_ID,
+  process.env.REACT_APP_ALGOLIA_CLIENT_SECRET
+);
   
 const searchClient = {
       search(requests) {

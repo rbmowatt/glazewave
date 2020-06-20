@@ -22,7 +22,9 @@ import WWClient from './../../lib/utils/worldweather'
 import noaaForecaster from 'noaa-forecasts';
 import BoardPicker from './../board/forms/BoardPicker';
 import { Radio} from 'react-advanced-form-addons';
-
+import { FacebookProvider, Share, Comments, Page } from 'react-facebook';
+import fbConfig from './../../config/fb'
+require('dotenv').config();
 
 const mapStateToProps = state => {
     return { 
@@ -75,7 +77,8 @@ class SessionView extends Component {
 
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
-            this.props.loadBoards(this.props.session, {wheres : {user_id : this.props.session.user.id }} );
+            this.loadWorldWeather();
+            this.props.loadBoards(this.props.session, {orderBy: 'name_ASC', limit:50, wheres : {user_id : this.props.session.user.id }} );
             this.props.loadSession(this.props.session, {id : this.props.match.params.id,  withs : withs.session});
             this.props.loadSessionImages(this.props.session, {wheres : {session_id : this.props.match.params.id }} );
         }
@@ -191,6 +194,7 @@ class SessionView extends Component {
 
     render() {
         const session = this.props.current_session;
+        console.log('api key', process.env)
         return (
             <MainContainer>
                 <FormCard returnToIndex={this.returnToIndex}>
@@ -223,12 +227,13 @@ class SessionView extends Component {
                                         <div className="card-text">
                                             <ImageUploader
                                                 key={this.state.uploaderInstance}
-                                                withIcon={true}
+                                                withIcon={false}
                                                 buttonText='Add Images!'
                                                 onChange={this.onDrop}
-                                                imgExtension={['.jpg', '.gif', '.png', '.gif']}
+                                                imgExtension={['.jpg', '.jpeg', '.gif', '.png', '.gif']}
                                                 maxFileSize={5242880}
                                                 withPreview={false}
+                                                withLabel={false}
                                             />
                                             <FontAwesomeIcon  
                                                 size="lg"  
@@ -236,6 +241,15 @@ class SessionView extends Component {
                                                 style={{ marginLeft:'.5em', cursor:'pointer', color : 'red'}}  
                                                 icon={faTrash} 
                                                 onClick={this.deleteImage} value={this.state.imageIndex}/> 
+                                                    <FacebookProvider appId={ fbConfig.api_key  }>
+                                            <Share href={window.location.href}>
+                                            {({ handleClick, loading }) => (
+                                                <button type="button" disabled={loading} onClick={handleClick}>Share</button>
+                                            )}
+                                            </Share>
+                                            <Page href={window.location.href} tabs="timeline" />
+                                            <Comments  href={window.location.href} />
+                                        </FacebookProvider>
                                             </div>
                                     </div>
                                 </div>

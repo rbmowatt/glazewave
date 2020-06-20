@@ -1,13 +1,10 @@
 import React from 'react';
-import Modal from './../../layout/Modal';
 import { connect } from 'react-redux';
-import CreateUserBoard from  './../../board/CreateUserBoard';
 import { Form } from 'react-advanced-form';
-import { Input, Select, Textarea, Button } from 'react-advanced-form-addons';
+import { Input, Button } from 'react-advanced-form-addons';
 import Location from './../../form/Location';
 import rules from './validation-rules'
 import messages from './validation-messages'
-import ImageUploader from 'react-images-upload';
 import moment from 'moment'
 import {loadUserBoards, clearUserBoards} from './../../../actions/user_board';
 import {refresh} from './../../../lib/utils/cognito'
@@ -22,10 +19,6 @@ const mapStateToProps = state => {
         clearBoards : ()=>dispatch(clearUserBoards())
       };
   };
-
-  const relations = {
-      user_boards : ['Board']
-  }
 
 class SessionForm extends React.Component{
     constructor(props)

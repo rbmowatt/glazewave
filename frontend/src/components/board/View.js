@@ -29,10 +29,6 @@ import {loadUserSessions} from './../../actions/user_session';
 import {loadUserBoard, updateUserBoard, loadUserBoardImages, addUserBoardImages, deleteUserBoardImage  } from './../../actions/user_board';
 
 
-
-
-
-
 const mapStateToProps = state => {
     return { session: state.session, board : state.user_boards.selected , boards: state.boards.data, shapers : state.shapers.data , images : state.user_board_images}
   }
@@ -52,7 +48,7 @@ const mapStateToProps = state => {
 
 const relations = {
     user_session : ['Location', 'SessionImage'],
-    selected_board : ['Board.Manufacturer', 'Session.SessionImage'],
+    selected_board : ['Board.Manufacturer', 'Session.SessionImage', 'Session.UserBoard'],
     shapers : ['Board'],
     boards : ['Manufacturer']
 };
@@ -193,7 +189,7 @@ class BoardView extends Component {
             <MainContainer>
                 <FormCard returnToIndex={this.returnToIndex}>
                     <Form>
-				        <div className="wrapper row col-md-12 container">
+				        <div className="row col-md-12 container">
                             <h2 className="details col-md-12">
                                 <RIEInput
                                     required={false}
@@ -225,8 +221,7 @@ class BoardView extends Component {
                                                 maxFileSize={5242880}
                                                 label=''
                                                 withPreview={false}/>
-                                                <FontAwesomeIcon  size="lg"  alt="delete user" style={{ marginLeft:'.5em', cursor:'pointer', color : 'red'}}  icon={faTrash} 
-                                                onClick={this.deleteImage} value={this.state.imageIndex}/> 
+                                     
                                             </div>
                                     </div>
                                 </div>
@@ -286,32 +281,27 @@ class BoardView extends Component {
                                     </div>
                             </div>
                         </div>
-                        <div className="card">
-                            <div className="row col-md-12 card-title"><h5>Used In Sessions...</h5></div>
-                                <div className="card-text">
-                                    <div className="table-container" >
-                                        <div className="row">
-                                            {board.Sessions && 
-                                            board.Sessions.reduce((mappedArray, session, index) => {                           
-                                                                    if (index < 3) { 
-                                                                        mappedArray.push(
-                                                                            <div className="col-md-4" key={index}>
-                                                                            <div key={session.id} className="card row">
-                                                                            <SessionCard session={session} key={session.id} className="row col-md-12" />
-                                                                            </div>
-                                                                            </div>
-                                                                        );
-                                                                    }                                                  
-                                                                    return mappedArray;
-                                                                }, 
+                        <div className="container">
+                            <div className="row col-12" style={{marginTop : '1em'}}><h5>Used In Sessions...</h5></div>
+                            <div className="row col-12" >
+                                {board.Sessions && 
+                                board.Sessions.reduce((mappedArray, session, index) => {                           
+                                    if (index < 3) { 
+                                             mappedArray.push(
+                                                <div className="col-md-4" key={index}>
+                                                    <SessionCard session={session} key={session.id}  />
+                                                </div>
+                                                );
+                                                }                                                  
+                                                return mappedArray;}, 
                                                             [])
                                             }
                                             {
                                                 (!board.Sessions || board.Sessions.length === 0) &&  <div className="col-12"><h3>No Sessions found at the moment</h3></div>
                                             } 
                                         </div>
-                                     </div>
-                                </div>
+                                    
+                            
                         </div>
                   
                     </Form>

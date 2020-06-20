@@ -1,4 +1,4 @@
 require('dotenv').config();
 module.exports = {
-    key : process.env.REACT_WORLD_WEATHER_KEY
+    key : process.env.REACT_APP_WORLD_WEATHER_KEY
 }
