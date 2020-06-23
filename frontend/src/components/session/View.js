@@ -194,7 +194,6 @@ class SessionView extends Component {
 
     render() {
         const session = this.props.current_session;
-        console.log('api key', process.env)
         return (
             <MainContainer>
               <FacebookProvider appId={fbConfig.api_key}>
