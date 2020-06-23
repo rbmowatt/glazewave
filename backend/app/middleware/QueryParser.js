@@ -16,6 +16,7 @@ const QueryParser = function (req, res, next) {
     delete req.query.order_by; 
     delete req.query.in; 
     parser.page = (parseInt(req.query.page) || 0) * parser.limit;
+    delete req.query.page; 
     parser.wheres = req.query;
     req.parser = parser;
     next()

@@ -6,6 +6,8 @@ const ALGOLIA_SESSION_INDEX = 'sessions';
 const ALGOLIA_SESSION_PREFIX = 'session_';
 const ALGOLIA_USER_BOARD_INDEX = 'user_boards';
 const ALGOLIA_USER_BOARD_PREFIX = 'user_board_';
+const ALGOLIA_SUFLINE_SPOT_INDEX = 'surfline_spots';
+const ALGOLIA_SUFLINE_SPOT_PREFIX = 'sl_spot_';
 
 
 
@@ -57,6 +59,43 @@ const setUserBoardQueue = (boards, cb)=>
     });
 }
 
+
+const setSurflineSpotsQueue = (spots, cb)=>
+{
+    let data = [];
+    spots.forEach((spot)=>
+    {
+        console.log('adding spot', spot.id)
+        spotData = spot.dataValues;
+        spotData.objectID = ALGOLIA_SUFLINE_SPOT_PREFIX + spot.id;
+        spotData._geoloc  = {
+            lat : parseFloat(spot.lat),
+            lon : parseFloat(spot.lon),
+        }
+        delete spotData.geo;
+        delete spotData.lat;
+        delete spotData.lon;
+        delete spotData.createdAt;
+        delete spotData.updatedAt;
+        delete spotData.crumbs;
+        console.log(spotData)
+        data.push(spotData);
+    });
+   
+    getAlgoliaClient(ALGOLIA_SUFLINE_SPOT_INDEX).saveObjects(data, {
+        }).then(({ objectIDs }) => {
+            result = objectIDs;
+            console.log('added record', objectIDs)
+        }).catch(e=>console.log(e));
+        cb(null, data);
+}
+
+
+var getSurflineSpotsQueue= () => {
+    return new Queue(setSurflineSpotsQueue, 
+        {batchSize: 10})
+    }
+
 var getSessionQueue = () => {
     return new Queue(setSessionQueue, 
         {batchSize: 10,
@@ -67,7 +106,7 @@ var getSessionQueue = () => {
  var getUserBoardQueue = () => {
     return new Queue(setUserBoardQueue, 
         {batchSize: 10,
-        batchDelay: 5000,
+        batchDelay: 50000,
         batchDelayTimeout: 1000})
     }   
 
@@ -78,6 +117,7 @@ module.exports = {
     ALGOLIA_USER_BOARD_PREFIX,
     getSessionQueue,
     getUserBoardQueue,
-    getClient
+    getClient,
+    getSurflineSpotsQueue
 };
 
