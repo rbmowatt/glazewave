@@ -10,6 +10,7 @@ import {
   deleteUserSession,
   UserSessionsCleared,
 } from "./../../actions/user_session";
+import Paginate from "./../layout/Paginate";
 import Create from "./Create";
 import Modal from "./../layout/Modal";
 import { Select, Radio } from "react-advanced-form-addons";
@@ -22,15 +23,16 @@ import {
   Index,
   Pagination,
   HitsPerPage,
+ // SortBy,
 } from "react-instantsearch-dom";
 import searchClient from "./../../lib/utils/algolia";
 import SortBy from "./../layout/SortBy"  
-import locator from './../../lib/utils/geolocator'
-import getSpots from './../../lib/utils/geo'
 
 
 const DEFAULT_SORT = "created_at_DESC";
 const DEFAULT_SHOW = 12;
+
+
 
 const mapStateToProps = (state) => {
   return {
@@ -70,24 +72,40 @@ class SessionIndex extends Component {
     this.viewSession = this.viewSession.bind(this);
   }
 
- 
+  updatePaginationElements = (paginatedSessions, currentPage) => {
+    this.setState({
+      paginatedSessions: paginatedSessions,
+      currentPage: currentPage,
+    });
+  };
+
   componentDidMount() {
     if (this.props.session.isLoggedIn) {
-        var options = {
-            enableHighAccuracy: false,
-            timeout: 5000,
-            maximumWait: 10000, // max wait time for desired accuracy
-            maximumAge: 0, // disable cache
-            desiredAccuracy: 30, // meters
-            fallbackToIP: true, // fallback to IP if Geolocation fails or rejected
-            addressLookup: true, // requires Google API key if true
-          };
-        locator.locate(options, function (err, location) {
-        if (err) return console.log("location err", err);
-        console.log("location", location.coords.latitude,location.coords.longitude );
-        getSpots(location.coords.latitude,location.coords.longitude).then(data=>console.log(data)).catch(e=>console.log(e))
-     
+      window.geolocator.config({
+        language: "en",
+        google: {
+          version: "3",
+          key: "AIzaSyBaaD_720jqJaoIBsQib_N79Q5_iciLRBc",
+        },
       });
+
+      var options = {
+        enableHighAccuracy: false,
+        timeout: 5000,
+        maximumWait: 10000, // max wait time for desired accuracy
+        maximumAge: 0, // disable cache
+        desiredAccuracy: 30, // meters
+        fallbackToIP: true, // fallback to IP if Geolocation fails or rejected
+        addressLookup: true, // requires Google API key if true
+        //timezone: true,         // requires Google API key if true
+        //  map: "map-canvas",      // interactive map element id (or options object)
+        //  staticMap: true         // get a static map image URL (boolean or options object)
+      };
+      window.geolocator.locate(options, function (err, location) {
+        if (err) return console.log("location err", err);
+        console.log("location", location);
+      });
+      //console.log('geo', window.geolocator)
       //this.props.loadSessions(this.props.session, { orderBy : DEFAULT_SORT ,  wheres : {user_id : this.props.session.user.id }, withs : relations.user_session } );
     }
   }
@@ -131,6 +149,22 @@ class SessionIndex extends Component {
     this.setState({ show: false });
   };
 
+  sortSessions = (e) => {
+    if (e.nextValue) {
+      this.props.loadSessions(this.props.session, {
+        orderBy: e.nextValue,
+        wheres: {
+          user_id: this.props.session.user.id,
+          in: this.state.currentHits.join(","),
+        },
+        withs: relations.user_session,
+        page: this.setState.currentPage,
+        limit: DEFAULT_SHOW,
+      });
+      this.setState({ selectedSortOrder: e.nextValue });
+    }
+  };
+
   onSortUpdated = (sortOrder)=>{
     let sort = sortOrder.replace('sessions_', '');
     if(sort === 'sessions') sort= 'id_desc';
@@ -163,6 +197,14 @@ class SessionIndex extends Component {
 
   render() {
     const { sessions } = this.props;
+    let pagination = (
+      <Paginate
+        updatePaginationElements={this.updatePaginationElements}
+        data={sessions}
+        currentPage={this.state.currentPage}
+        perPage={DEFAULT_SHOW}
+      />
+    );
     return (
       <MainContainer>
         <InstantSearch
@@ -194,14 +236,14 @@ class SessionIndex extends Component {
                           items={[
                             { value: "sessions", label: "Newest To Oldest" },
                             { value: "sessions_id_asc", label: "Oldest To Newest" },
-                            { value: "sessions_rating_desc", label: "Best To Worst" },
-                            { value: "sessions_rating_asc", label: "Worst To Best" }
+                            { value: "sessions_rating_asc", label: "Rating asc." },
+                            { value: "sessions_rating_desc", label: "Rating desc." },
                           ]}
                           onSortUpdated={this.onSortUpdated}
                         />
                       </div>
                       <div className="col-10">
-                        <span className="float-right"><Pagination /></span>
+                        <span className="float-right">{pagination}</span>
                       </div>
                     </div>
                     <div className="row col-12">
@@ -214,8 +256,8 @@ class SessionIndex extends Component {
                     </div>
                     <div className="row col-12">
                       <div className="col-3">
-                        <div className="detail-line is_public_radio">
-                      
+                        <div className="detail-line">
+                          <h6>Show</h6>
                           <Form>
                             <Radio
                               name="is_public"
@@ -225,7 +267,6 @@ class SessionIndex extends Component {
                               checked={parseInt(this.state.showAll) === 0}
                             />
                             <Radio
-                             className="is_public_radio"
                               name="is_public"
                               label="Mine + Public"
                               value="1"
@@ -233,14 +274,12 @@ class SessionIndex extends Component {
                               checked={parseInt(this.state.showAll) === 1}
                             />
                           </Form>
-                    
                         </div>
                         <div className="filter-widgets" id="sessions">
                           <Facets
                             onSelect={this.searchResultHandler}
                             showAll={this.state.showAll}
                             key="sr1"
-                            hitsPerPage={DEFAULT_SHOW}
                           />
                         </div>
                       </div>
@@ -268,6 +307,26 @@ class SessionIndex extends Component {
                       <div className="col-2">
                         <div className="col-12 filter-widgets" id="sessions">
                           <div className="slwd_btv">
+                            <script
+                              type="text/javascript"
+                              src="http://www.surfline.com/widgets2/widget_output_forecast.cfm?id=2147&layout=v&wid=64915&ftr=1"
+                            ></script>
+                            <div className="slwd_bx">
+                              <a
+                                href="http://www.surfline.com"
+                                className="slwd_lk"
+                              >
+                                Surfline
+                              </a>{" "}
+                              <a
+                                href="http://www.surfline.com/surf-forecasts"
+                                className="slwd_lk"
+                              >
+                                Surf Forecasts
+                              </a>
+                            </div>
+                            <div className="slwd_tl"></div>
+                            <div className="slwd_tr"></div>
                           </div>
                         </div>
                       </div>

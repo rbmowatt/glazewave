@@ -14,9 +14,9 @@ function mapStateToProps(state) {
 class Facets extends React.Component{
     render()
     {
+        const filters = this.props.showAll === '1' ? "user_id=" + this.props.session.user.id + " OR is_public=1"  : "user_id=" + this.props.session.user.id;
         return (
-        <div>
-  
+            <div>
             <h6>Boards</h6>
             <div>
             <RefinementList 
@@ -46,8 +46,8 @@ class Facets extends React.Component{
             //searchableIsAlwaysActive={true} 
             />
             </div>
-            <Configure hitsPerPage={2000} 
-                filters={"user_id:" + this.props.session.user.id } 
+            <Configure hitsPerPage={this.props.hitsPerPage} 
+                filters={filters} 
             />
             <SearchResults onChange={this.props.onSelect} key="sr1" />
            

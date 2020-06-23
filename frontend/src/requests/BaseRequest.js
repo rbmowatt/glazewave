@@ -17,7 +17,7 @@ class BaseRequest {
 
     get = ({ wheres = [], withs = [], limit = 20, page = 0, label = '', orderBy='', onSuccess = ()=>{}, onFailure = (e)=>this.onFailure(e) }) => {
         return this.apiAction({
-            url :this.getEndpoint() + `?` + this.getWhereString(wheres) + `&` + this.getWithString(withs) + `&limit=` + limit + `&order_by=` + orderBy,
+            url :this.getEndpoint() + `?` + this.getWhereString(wheres) + `&` + this.getWithString(withs) + `&limit=` + limit + `&order_by=` + orderBy + `&page=` + page,
             onSuccess : onSuccess,
             onFailure : onFailure,
             label : this.getlabel(label, 'GET')

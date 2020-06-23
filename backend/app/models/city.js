@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
     stateId: DataTypes.INTEGER,
   }, {underscored: true});
   City.associate = function(models) {
-    City.hasOne(models.State);
+    //City.hasOne(models.State);
   };
   return City;
 };

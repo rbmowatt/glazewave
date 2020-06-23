@@ -197,131 +197,164 @@ class SessionView extends Component {
         console.log('api key', process.env)
         return (
             <MainContainer>
+              <FacebookProvider appId={fbConfig.api_key}>
                 <FormCard returnToIndex={this.returnToIndex}>
-                    <Form>
-                        <div className="container">
-                            <div className="wrapper row">
-                                <div className="details col-md-12">
-                                    <h3 className="session-title"> 
-                                    <RIEInput
-                                        required={false}
-                                        value={session.title || ''}
-                                        defaultValue={session.title}
-                                        change={this.submitUpdate}
-                                        propName='title'
-                                        /></h3>
-                                        <div>
-                                         <StarBar stars={session.rating} onClick={this.submitUpdate } size="1x" />
-                                         </div>
-                                </div>
-                                <div className="preview col-md-7">
-                                    <div className="card" >
-                                    <ImageGallery 
-                                            items={this.props.session_images} 
-                                            showBullets={true} 
-                                            showIndex={true}
-                                            startIndex={this.state.imageIndex}
-                                            onSlide={this.onImageSelected} 
-                                            onImageLoad={this.onImageLoad}/>
-                                    <div className="card-body">
-                                        <div className="card-text">
-                                            <ImageUploader
-                                                key={this.state.uploaderInstance}
-                                                withIcon={false}
-                                                buttonText='Add Images!'
-                                                onChange={this.onDrop}
-                                                imgExtension={['.jpg', '.jpeg', '.gif', '.png', '.gif']}
-                                                maxFileSize={5242880}
-                                                withPreview={false}
-                                                withLabel={false}
-                                            />
-                                            <FontAwesomeIcon  
-                                                size="lg"  
-                                                alt="delete user" 
-                                                style={{ marginLeft:'.5em', cursor:'pointer', color : 'red'}}  
-                                                icon={faTrash} 
-                                                onClick={this.deleteImage} value={this.state.imageIndex}/> 
-                                                    <FacebookProvider appId={ fbConfig.api_key  }>
-                                            <Share href={window.location.href}>
-                                            {({ handleClick, loading }) => (
-                                                <button type="button" disabled={loading} onClick={handleClick}>Share</button>
-                                            )}
-                                            </Share>
-                                            <Page href={window.location.href} tabs="timeline" />
-                                            <Comments  href={window.location.href} />
-                                        </FacebookProvider>
-                                            </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div className="details col-md-5">
-                                    <div className="container">
-                                    <div className="detail-line">
-                                    <div className="detail-line">
-                                    <div><strong>Privacy:</strong></div>
-                                    <Radio
-                                        name="is_public"
-                                        label="Private"
-                                        value="0"
-                                        onChange={this.onPrivacyChange}
-                                        checked={session.id && session.is_public !== true}
-                                         />
-                                    <Radio
-                                        name="is_public"
-                                        label="Public"
-                                        value="1" 
-                                        onChange={this.onPrivacyChange}
-                                        checked={session.is_public && session.is_public === true}
-                                        />
-                                    </div>
-                                        <div><strong>Location:</strong></div>
-                                        <Location 
-                                            id="location_id" 
-                                            name="location_id" 
-                                            className="form-control" 
-                                            onChange={this.onLocationChange} 
-                                            onBlur={this.onLocationBlur}
-                                            value={session.location_id} 
-                                            placeholder={(session.Location) ? session.Location.formatted_address : 'No Location Specified'} 
-                                        />
-                                    </div>
-                                    <div className="detail-line">
-                                        <div><strong>Date:</strong></div>
-                                        <DatePicker
-                                            selected={this.state.date}
-                                            className="date-picker-input form-control"
-                                            onChange={this.onDateChange} //only when value has changed
-                                            showTimeSelect
-                                            dateFormat={'MMMM d yyyy h:mm a'}
-                                            placeholderText={moment(session.session_date).format('MMMM D YYYY h:mm a')}
-                                            />
-        
-                                    </div>                       
-                                    <BoardPicker 
-                                        onChange= {this.onBoardChange} 
-                                        boards={this.state.selectOptions} 
-                                        board_id={session.board_id} 
-                                        wrapperClass="row detail-line"
-                                    />    
-                                    <div className="detail-line">
-                                        <div><strong>Notes:</strong></div>
-                                        <RIETextArea
-                                            value={session.notes || 'You have no notes for this session'}
-                                            className="form-control text-area"
-                                            defaultValue={session.notes}
-                                            change={this.submitUpdate }
-                                            propName='notes'
-                                            validate={_.isString} 
-                                        />
-                                    </div>
-                                </div>
+                  <Form>
+                    <div className="container">
+                      <div className="details row">
+                        <h3 className="col-12 session-title">
+                          <RIEInput
+                            required={false}
+                            value={session.title || ""}
+                            defaultValue={session.title}
+                            change={this.submitUpdate}
+                            propName="title"
+                          />
+                        </h3>
+                        <div className="col-12">
+                          <StarBar
+                            stars={session.rating}
+                            onClick={this.submitUpdate}
+                            size="1x"
+                          />
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="preview col-7">
+                          <ImageGallery
+                            items={this.props.session_images}
+                            showBullets={true}
+                            showIndex={true}
+                            startIndex={this.state.imageIndex}
+                            onSlide={this.onImageSelected}
+                            onImageLoad={this.onImageLoad}
+                            thumbnailPosition={"bottom"}
+                          />
+                          <div className="card-body">
+                            <div className="card-text">
+                              <ImageUploader
+                                key={this.state.uploaderInstance}
+                                withIcon={false}
+                                buttonText="Add Images!"
+                                onChange={this.onDrop}
+                                imgExtension={[".jpg", ".jpeg", ".gif", ".png", ".gif"]}
+                                maxFileSize={5242880}
+                                withPreview={false}
+                                withLabel={false}
+                              />
+                              <FontAwesomeIcon
+                                size="lg"
+                                alt="delete user"
+                                style={{
+                                  marginLeft: ".5em",
+                                  cursor: "pointer",
+                                  color: "red",
+                                }}
+                                icon={faTrash}
+                                onClick={this.deleteImage}
+                                value={this.state.imageIndex}
+                              />
+                              <Share href={window.location.href}>
+                                {({ handleClick, loading }) => (
+                                  <button
+                                    type="button"
+                                    disabled={loading}
+                                    onClick={handleClick}
+                                  >
+                                    Share
+                                  </button>
+                                )}
+                              </Share>
+                              <Page href={window.location.href} tabs="timeline" />
+                              <Comments href={window.location.href} />
                             </div>
+                          </div>
                         </div>
+                        <div className="details col-5">
+                          <div className="container">
+                            <div className="detail-line">
+                              <div className="detail-line">
+                                <div>
+                                  <strong>Privacy:</strong>
+                                </div>
+                                <Radio
+                                  name="is_public"
+                                  label="Private"
+                                  value="0"
+                                  onChange={this.onPrivacyChange}
+                                  checked={session.id && session.is_public !== true}
+                                />
+                                <Radio
+                                  name="is_public"
+                                  label="Public"
+                                  value="1"
+                                  onChange={this.onPrivacyChange}
+                                  checked={session.is_public && session.is_public === true}
+                                />
+                              </div>
+                              <div>
+                                <strong>Location:</strong>
+                              </div>
+                              <Location
+                                id="location_id"
+                                name="location_id"
+                                className="form-control"
+                                onChange={this.onLocationChange}
+                                onBlur={this.onLocationBlur}
+                                value={session.location_id}
+                                placeholder={
+                                  session.Location
+                                    ? session.Location.formatted_address
+                                    : "No Location Specified"
+                                }
+                              />
+                            </div>
+                            <div className="detail-line">
+                              <div>
+                                <strong>Date:</strong>
+                              </div>
+                              <DatePicker
+                                selected={this.state.date}
+                                className="date-picker-input form-control"
+                                onChange={this.onDateChange} //only when value has changed
+                                showTimeSelect
+                                dateFormat={"MMMM d yyyy h:mm a"}
+                                placeholderText={moment(session.session_date).format(
+                                  "MMMM D YYYY h:mm a"
+                                )}
+                              />
+                            </div>
+                            <BoardPicker
+                              onChange={this.onBoardChange}
+                              boards={this.state.selectOptions}
+                              board_id={session.board_id}
+                              wrapperClass="row detail-line"
+                            />
+                            <div className="detail-line">
+                              <div>
+                                <strong>Notes:</strong>
+                              </div>
+                              <RIETextArea
+                                value={
+                                  session.notes || "You have no notes for this session"
+                                }
+                                className="form-control text-area"
+                                defaultValue={session.notes}
+                                change={this.submitUpdate}
+                                propName="notes"
+                                validate={_.isString}
+                              />
+                            </div>
+                          </div>
                         </div>
-                    </Form> 
+                      </div>
+                    </div>
+                  </Form>
                 </FormCard>
+              </FacebookProvider>
             </MainContainer>
-        )
+          );
+          
     }
 
     loadNoaa = () =>
@@ -346,7 +379,7 @@ class SessionView extends Component {
     loadWorldWeather = () =>
     {
         WWClient.marineWeatherApi({
-            q: "39.6439329,-74.18136799999999",
+            q: " 39.6655908,-74.23336239999999",
             tide : "yes"
         }, function(err, result) {
             if (!err) {

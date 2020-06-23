@@ -12,19 +12,18 @@ const algoliaClient = algoliasearch(
     requestsCache: createInMemoryCache({ serializable: false }), // or createNullCache()
   },
 );
-  
-const searchClient = {
-      search(requests) {
-        const shouldSearch = requests.some(({ params: { query }}) => query !== '');
-        if (shouldSearch) {
-          return algoliaClient.search(requests);
-        }
-        return Promise.resolve({
-          results: [{ hits: [] }],
-        });
-      },
-      searchForFacetValues: algoliaClient.searchForFacetValues,
-    };
 
-export default searchClient;
+const index = algoliaClient.initIndex('surfline_spots');
+
+
+
+const getSpots = (lat, lon)=>
+{
+    return index.search('', {
+        aroundLatLng: `${lat}, ${lon}`,
+        aroundRadius: 10000 // 1000 km
+      })
+}
+
+export default getSpots;
   
