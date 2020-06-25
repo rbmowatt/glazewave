@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom';
 import  MainContainer  from './../layout/MainContainer';
 import { confirmAlert } from 'react-confirm-alert';
-import BoardCard from './../user/BoardCard';
+import BoardCard from './../board/BoardCard';
 import {loadUserBoards, deleteUserBoard, UserBoardsCleared, UserBoardCreatedCleared} from './../../actions/user_board';
 import Paginate from './../layout/Paginate';
 import Modal from './../layout/Modal';
@@ -61,10 +61,6 @@ class BoardIndex extends Component {
         this.props.clearBoards();
     }
 
-    componentDidUpdate(prevProps, prevState, snapshot)
-    {
-       // ((prevProps.boards.length !== this.props.boards.length) || (this.props.boards.length && !this.state.elements.length)) && this.setElementsForCurrentPage(this.props.boards);
-    }
 
     updatePaginationElements = (elements, currentPage)=>
     {

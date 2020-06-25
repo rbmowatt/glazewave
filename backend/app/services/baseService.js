@@ -43,11 +43,7 @@ class BaseService {
   }
 
   async update(id, params, callback = null)
-  {
-   // return await this.validatePost(params).then(data=>{return this.BaseModel.update(params, {
-      //where: { id: id }
-   // })});
-    
+  {    
     return new Promise((resolve, reject)=>
     {
       this.find({id: id})

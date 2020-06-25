@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import  MainContainer  from './../layout/MainContainer';
 import { Link } from 'react-router-dom';
 import SessionCard from './../session/SessionCard';
-import BoardCard from './BoardCard';
+import BoardCard from './../board/BoardCard';
 import UserRequests from './../../requests/UserRequests';
 import UserBoardRequests from './../../requests/UserBoardRequests';
 import UserSessionRequests from './../../requests/SessionRequests';
