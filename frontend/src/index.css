@@ -127,7 +127,6 @@ button.card-title {
 	font-weight: bold;
 	color:black;
 	padding: 0px;
-   ;
 	margin:0px;
 }
 
@@ -145,13 +144,6 @@ button.card-title {
 		margin-top: 20px;
 		background: #eee;
    }
-	.table th, .table .btn {
-		font-size: .5rem;
-   }
-	.table td {
-		
-   }
-
 }
 
 .img-card {
@@ -167,4 +159,8 @@ div.fileContainer{
 .is_public_radio label{
 	font-size: 0.8em;
 	font-weight: bold;
+}
+
+.index-sidecard {
+	margin-bottom: 1em;
 }

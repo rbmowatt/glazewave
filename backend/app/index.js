@@ -15,6 +15,7 @@ const manufacturerRouter = require('./routes/manufacturer');
 const sessionRouter = require('./routes/session');
 const userRouter = require('./routes/user');
 const userBoardRouter = require('./routes/user_boards');
+const stormcastRouter = require('./routes/stormcast');
 const cognitoAuthMiddleware = cognitoAuth.getVerifyMiddleware();
 const queryParser = require('./middleware/QueryParser');
 
@@ -32,7 +33,9 @@ app.use('/api/cognito', cognitoAuthMiddleware, cognitoRouter);
 app.use('/api/location', locationRouter);
 app.use('/api/manufacturer', manufacturerRouter);
 app.use('/api/session', sessionRouter);
+app.use('/api/sc', stormcastRouter);
 app.use('/api/user_board', cognitoAuthMiddleware, userBoardRouter);
+
 
 
 app.get('/', function (req, res) {
