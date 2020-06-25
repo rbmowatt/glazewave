@@ -12,7 +12,7 @@ const BoardCard = props =>{
             <div className="row">
                 <div className="col-12 board-card-title"><button className="btn btn-link card-title" onClick={()=>props.history.push("/board/" + props.board.id)}>{props.board.name}</button></div>
                 <div className="col-4">
-                <img className="img-responsive img-thumbnail img-card" 
+                <img className="img-responsive img-thumbnail img-card" alt="" 
                     src={props.board.UserBoardImages && props.board.UserBoardImages.length ? s3Conf.root + props.board.UserBoardImages[0].name 
                     : "https://image.shutterstock.com/image-vector/please-no-photo-camera-vector-260nw-473234290.jpg" }/>
                 </div>

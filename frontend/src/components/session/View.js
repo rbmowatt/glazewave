@@ -1,4 +1,4 @@
-import './Session.css';
+import './css/Session.css';
 import "react-datepicker/dist/react-datepicker.css";
 import _ from 'lodash'
 import moment from 'moment'
@@ -69,7 +69,6 @@ class SessionView extends Component {
             imageIndex : 0,
             date: '',
             is_public : null,
-            defaultImage : "https://image.shutterstock.com/image-vector/please-no-photo-camera-vector-260nw-473234290.jpg"
         };
         this.onDrop = this.onDrop.bind(this);
     
@@ -77,7 +76,6 @@ class SessionView extends Component {
 
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
-            this.loadWorldWeather();
             this.props.loadBoards(this.props.session, {orderBy: 'name_ASC', limit:50, wheres : {user_id : this.props.session.user.id }} );
             this.props.loadSession(this.props.session, {id : this.props.match.params.id,  withs : withs.session});
             this.props.loadSessionImages(this.props.session, {wheres : {session_id : this.props.match.params.id }} );
@@ -373,20 +371,6 @@ class SessionView extends Component {
             .then(function(results) {
                 console.log(inspect(results, { colors: true, depth: Infinity }));
             });
-    }
-
-    loadWorldWeather = () =>
-    {
-        WWClient.marineWeatherApi({
-            q: " 39.6655908,-74.23336239999999",
-            tide : "yes"
-        }, function(err, result) {
-            if (!err) {
-                console.log(result);
-            } else {
-                console.log(err);
-            }
-        });
     }
 }
 export default connect(mapStateToProps, mapDispachToProps )(SessionView)

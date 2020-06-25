@@ -14,23 +14,12 @@ import EditUser from './components/user/Edit';
 import UserDashboard from './components/user/Dashboard';
 import SessionIndex from './components/session/SessionIndex';
 import CreateSession from './components/session/Create';
-import EditSession from './components/session/Edit';
-import SessionView from './components/session/View';
 
+import SessionView from './components/session/View';
 import BoardIndex from './components/board/BoardIndex';
 import CreateUserBoard from './components/board/CreateUserBoard';
-import EditBoard from './components/board/Edit';
 import BoardView from './components/board/View';
 
-import LocationIndex from './components/location/LocationIndex';
-import CreateLocation from './components/location/Create';
-import EditLocation from './components/location/Edit';
-import LocationView from './components/location/View';
-
-import ManufacturerIndex from './components/manufacturer/ManufacturerIndex';
-import CreateManufacturer from './components/manufacturer/Create';
-import EditManufacturer from './components/manufacturer/Edit';
-import ManufacturerView from './components/manufacturer/View';
 
 const mapStateToProps = state => {
     return { session: state.session, user : state.user }
@@ -53,23 +42,11 @@ class App extends React.Component{
           
           <Route  path={'/session'} exact component={SessionIndex } />
           <PrivateRoute path={'/session/create'} exact component={CreateSession} session={this.props.session} />
-          <PrivateRoute path={'/session/edit/:id'} exact component={EditSession} session={this.props.session}  />
           <Route  path={'/session/:id'} exact component={SessionView } />
 
           <Route  path={'/board'} exact component={BoardIndex } />
           <PrivateRoute path={'/board/create'} exact component={CreateUserBoard} session={this.props.session} />
-          <PrivateRoute path={'/board/edit/:id'} exact component={EditBoard} session={this.props.session}  />
           <Route  path={'/board/:id'} exact component={BoardView }/>
-
-      
-          <PrivateRoute path={'/location/create'} exact component={CreateLocation} session={this.props.session} />
-          <PrivateRoute path={'/location/edit/:id'} exact component={EditLocation} session={this.props.session}  />
-          <Route  path={'/location/:id'} exact component={LocationView }/>
-
-   
-          <PrivateRoute path={'/manufacturer/create'} exact component={CreateManufacturer} session={this.props.session} />
-          <PrivateRoute path={'/manufacturer/edit/:id'} exact component={EditManufacturer} session={this.props.session}  />
-          <Route  path={'/manufacturer/:id'} exact component={ManufacturerView }/>
 
           <Route component={Page404} />
         </Switch>
