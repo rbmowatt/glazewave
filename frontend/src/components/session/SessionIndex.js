@@ -1,4 +1,5 @@
 import "react-confirm-alert/src/react-confirm-alert.css";
+import axios from "axios";
 import React, { Component } from "react";
 import { confirmAlert } from "react-confirm-alert";
 import { connect } from "react-redux";
@@ -24,9 +25,10 @@ import {
   HitsPerPage,
 } from "react-instantsearch-dom";
 import searchClient from "./../../lib/utils/algolia";
-import SortBy from "./../layout/SortBy"  
-import locator from './../../lib/utils/geolocator'
-import getSpots from './../../lib/utils/geo'
+import SortBy from "./../layout/SortBy";
+import NearestSpots from './../reports/surfline/NearestSpots';
+import Report from './../reports/stormglass/Report';
+
 
 
 const DEFAULT_SORT = "created_at_DESC";
@@ -58,7 +60,6 @@ class SessionIndex extends Component {
     this.state = {
       sessions: [],
       //this will recieve the paginated sessions from the child
-      paginatedSessions: [],
       currentPage: 0,
       show: false,
       selectedSortOrder: DEFAULT_SORT,
@@ -73,21 +74,6 @@ class SessionIndex extends Component {
  
   componentDidMount() {
     if (this.props.session.isLoggedIn) {
-        var options = {
-            enableHighAccuracy: false,
-            timeout: 5000,
-            maximumWait: 10000, // max wait time for desired accuracy
-            maximumAge: 0, // disable cache
-            desiredAccuracy: 30, // meters
-            fallbackToIP: true, // fallback to IP if Geolocation fails or rejected
-            addressLookup: true, // requires Google API key if true
-          };
-        locator.locate(options, function (err, location) {
-        if (err) return console.log("location err", err);
-        console.log("location", location.coords.latitude,location.coords.longitude );
-        getSpots(location.coords.latitude,location.coords.longitude).then(data=>console.log(data)).catch(e=>console.log(e))
-     
-      });
       //this.props.loadSessions(this.props.session, { orderBy : DEFAULT_SORT ,  wheres : {user_id : this.props.session.user.id }, withs : relations.user_session } );
     }
   }
@@ -201,7 +187,9 @@ class SessionIndex extends Component {
                         />
                       </div>
                       <div className="col-10">
-                        <span className="float-right"><Pagination /></span>
+                        <span className="float-right">
+                          <Pagination />
+                        </span>
                       </div>
                     </div>
                     <div className="row col-12">
@@ -215,7 +203,6 @@ class SessionIndex extends Component {
                     <div className="row col-12">
                       <div className="col-3">
                         <div className="detail-line is_public_radio">
-                      
                           <Form>
                             <Radio
                               name="is_public"
@@ -233,7 +220,6 @@ class SessionIndex extends Component {
                               checked={parseInt(this.state.showAll) === 1}
                             />
                           </Form>
-                    
                         </div>
                         <div className="filter-widgets" id="sessions">
                           <Facets
@@ -244,11 +230,11 @@ class SessionIndex extends Component {
                           />
                         </div>
                       </div>
-                      <div className="col-7">
+                      <div className="col-6">
                         <div className="row">
                           {this.props.sessions &&
                             this.props.sessions.map((session) => (
-                              <div key={session.id} className="col-12 col-lg-6">
+                              <div key={session.id} className="col-12">
                                 <SessionCard
                                   session={session}
                                   key={session.id}
@@ -265,11 +251,9 @@ class SessionIndex extends Component {
                           )}
                         </div>
                       </div>
-                      <div className="col-2">
-                        <div className="col-12 filter-widgets" id="sessions">
-                          <div className="slwd_btv">
-                          </div>
-                        </div>
+                      <div className="col-3">
+                            <div className="index-sidecard"><Report/></div>
+                            <div className="index-sidecard"><NearestSpots /></div>
                       </div>
                     </div>
                     <div className="row col-12">

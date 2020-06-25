@@ -21,7 +21,7 @@ const SessionCard = props =>{
                 </div>
                     <div style={{textAlign : 'center', marginTop : '0.3em'}}>
                         { props.editSession && <FontAwesomeIcon size="lg" alt="edit user" style={{ marginLeft:'.1em' , cursor:'pointer'}}  icon={faEdit} onClick={() => props.editSession(props.session.id)} /> }
-                        { props.deleteSession && <FontAwesomeIcon  size="lg"  alt="delete user" style={{ marginLeft:'.5em', cursor:'pointer', color : 'red'}}  icon={faTrash} onClick={() => props.deleteSession(props.session.id)} /> }
+                        { props.deleteSession && <FontAwesomeIcon  size="lg"  alt="delete user" style={{ marginLeft:'.5em', cursor:'pointer'}}  icon={faTrash} onClick={() => props.deleteSession(props.session.id)} /> }
                     </div>
                 </div>
                 <div className="col-8">

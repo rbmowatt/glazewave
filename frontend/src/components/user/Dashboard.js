@@ -12,6 +12,8 @@ import {UserBoardsLoaded} from './../../actions/user_board';
 import {loadUserd} from './../../actions/user';
 import './css/Dashboard.css'
 import ProfileCard from './ProfileCard';
+import NearestSpots from './../reports/surfline/NearestSpots';
+import Report from './../reports/stormglass/Report';
 
 
 const DASHBOARD_LIST_LIMIT = 3; 
@@ -87,7 +89,8 @@ class UserDashboard extends React.Component{
                                         </div>
                                 </div>
                                 <div className="col-md-2">
-                                    
+                                    <div className="index-sidecard"><Report/></div>
+                                    <div className="index-sidecard"><NearestSpots /></div>
                                  </div>
                             </div>
                         </div>
