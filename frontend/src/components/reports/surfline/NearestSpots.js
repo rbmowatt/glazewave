@@ -2,9 +2,12 @@ import './css/NearestSpots.css'
 import React from 'react';
 import { connect } from "react-redux";
 import { locator, defaultOptions } from './../../../lib/utils/geolocator';
-import getSpots from './../../../lib/utils/geo';
+import getSpots from './../../../lib/utils/surfline_alg_geo';
 import ReactTooltip from 'react-tooltip'
 import Iframe from 'react-iframe'
+import  cache from './../../../lib/utils/cache';
+
+const CACHE_KEY = 'nrspt';
 
 const mapStateToProps = (state) => {
     return {
@@ -25,14 +28,23 @@ class NearestSpots extends React.Component{
 
   componentDidMount() {
     const setState = this.setState;
-    if (this.props.session.isLoggedIn) {
+    if (this.props.session.isLoggedIn) 
+    {
+      const cachedHits = cache.getWithExpiry(CACHE_KEY);
+      if (cachedHits) {
+        console.log('we have cached hots');
+        this.setState({ spots: JSON.parse(cachedHits) });
+      }
+      else
+      {
         locator.locate(defaultOptions , function (err, location) {
         if (err) return console.log("location err", err);
-        console.log("location", location.coords.latitude,location.coords.longitude );
         getSpots(location.coords.latitude,location.coords.longitude).then(data=>{
             setState({spots : data.hits})
-        })
-      });
+            cache.setWithExpiry(CACHE_KEY, JSON.stringify(data.hits), 36000);
+          })
+        });
+      }
     }
   }
 

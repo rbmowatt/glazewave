@@ -2,12 +2,19 @@
 import React from 'react';
 import { connect } from "react-redux";
 import { locator, defaultOptions } from './../../../lib/utils/geolocator';
-import getSpots from './../../../lib/utils/geo';
-import WWClient from './../../../lib/utils/worldweather';
+import getSpots from './../../../lib/utils/surfline_alg_geo';
+import {StormGlassLoaded} from './../../../actions/stormglass';
 
 const mapStateToProps = (state) => {
     return {
       session: state.session,
+      stormglass : state.stormglass
+    };
+  };
+
+  const mapDispachToProps = (dispatch) => {
+    return {
+      stormglassLoaded: (data) => dispatch(StormGlassLoaded(data)),
     };
   };
 
@@ -17,35 +24,35 @@ class Report extends React.Component{
     super();
     this.state = {
         data : {},
-        selected : '',
         location : ''
     }
     this.setState = this.setState.bind(this);
   }
 
   componentDidMount() {
-   const  currentTime = new Date();
-//time = currentTime.getTime();
-const hours = currentTime.getHours();
-
-console.log(hours)
-
-    const setState = this.setState;
     if (this.props.session.isLoggedIn) {
+      if(this.props.stormglass.data.wavePeriod)
+      {
+        this.setState({data : this.props.stormglass.data});
+      }
+      else {
+        const  currentTime = new Date();
+        const hours = currentTime.getHours();
+        const setState = this.setState;
+        const sgLoaded = this.props.stormglassLoaded;
         locator.locate(defaultOptions , function (err, location) {
-        if (err) return console.log("location err", err);
-        console.log("location", location.coords.latitude,location.coords.longitude );
-        getSpots(location.coords.latitude,location.coords.longitude).then(data=>{
-          console.log('geo', data)
-          setState({location :data.hits[0].name })
-          const params = 'waveHeight,airTemperature';
-          fetch(`http://localhost:3001/api/sc?lat=${data.hits[0]._geoloc.lat}&lon=${data.hits[0]._geoloc.lon}&name=${data.hits[0].id}`).then((response) => response.json()).then((jsonData) => {
-            console.log(jsonData.hours[currentTime.getHours()])
-            setState({data : jsonData.hours[currentTime.getHours()]})
-          });
-           
-        })
+          if (err) return console.log("location err", err);
+          getSpots(location.coords.latitude,location.coords.longitude).then(data=>{
+            setState({location :data.hits[0].name })
+            const params = 'waveHeight,airTemperature';
+            fetch(`http://localhost:3001/api/sc?lat=${data.hits[0]._geoloc.lat}&lon=${data.hits[0]._geoloc.lon}&name=${data.hits[0].id}`).then((response) => response.json()).then((jsonData) => {
+              sgLoaded(jsonData.hours[currentTime.getHours()]);
+              console.log(jsonData.hours[currentTime.getHours()]);
+              setState({data : jsonData.hours[currentTime.getHours()]});
+            });
+          })
       });
+    }
     }
   }
 
@@ -73,4 +80,4 @@ console.log(hours)
 }
 
 
-export default connect(mapStateToProps)(Report);
+export default connect(mapStateToProps, mapDispachToProps )(Report);

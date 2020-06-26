@@ -10,7 +10,7 @@ import { withRouter } from "react-router";
 
 const SessionCard = props =>{
     return (
-        <div className="container-fluid session-card">
+        <div className="container-fluid session-card" onClick={()=>props.history.push("/session/" + props.session.id)} >
             <div className="row">
                 <div className="col-12 session-card-title"><button className="btn btn-link card-title" onClick={()=>props.history.push("/session/" + props.session.id) }>{props.session.title}</button></div>
                 <div className="col-4">

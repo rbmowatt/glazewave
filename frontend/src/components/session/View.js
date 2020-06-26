@@ -218,17 +218,7 @@ class SessionView extends Component {
                       </div>
                       <div className="row">
                         <div className="preview col-7">
-                          <ImageGallery
-                            items={this.props.session_images}
-                            showBullets={true}
-                            showIndex={true}
-                            startIndex={this.state.imageIndex}
-                            onSlide={this.onImageSelected}
-                            onImageLoad={this.onImageLoad}
-                            thumbnailPosition={"bottom"}
-                          />
-                          <div className="card-body">
-                            <div className="card-text">
+                          <div className="clearfix">
                               <ImageUploader
                                 key={this.state.uploaderInstance}
                                 withIcon={false}
@@ -238,7 +228,22 @@ class SessionView extends Component {
                                 maxFileSize={5242880}
                                 withPreview={false}
                                 withLabel={false}
+                                buttonClassName='btn btn-link'
                               />
+                          </div>
+                          <div>
+                            <ImageGallery
+                              items={this.props.session_images}
+                              showBullets={true}
+                              showIndex={true}
+                              startIndex={this.state.imageIndex}
+                              onSlide={this.onImageSelected}
+                              onImageLoad={this.onImageLoad}
+                              thumbnailPosition={"bottom"}
+                            />
+                          </div>
+                          <div className="card-body">
+                            <div className="card-text">
                               <FontAwesomeIcon
                                 size="lg"
                                 alt="delete user"

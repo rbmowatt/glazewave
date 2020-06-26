@@ -1,5 +1,4 @@
 import "react-confirm-alert/src/react-confirm-alert.css";
-import axios from "axios";
 import React, { Component } from "react";
 import { confirmAlert } from "react-confirm-alert";
 import { connect } from "react-redux";
@@ -13,7 +12,7 @@ import {
 } from "./../../actions/user_session";
 import Create from "./Create";
 import Modal from "./../layout/Modal";
-import { Select, Radio } from "react-advanced-form-addons";
+import {  Radio } from "react-advanced-form-addons";
 import { Form } from "react-advanced-form";
 import Facets from "./Facets";
 import {
@@ -136,7 +135,7 @@ class SessionIndex extends Component {
         orderBy: this.state.selectedSortOrder,
         wheres: { in: e.join(",") },
         withs: relations.user_session,
-        page: this.setState.currentPage,
+        page: this.state.currentPage,
         limit: DEFAULT_SHOW,
       });
       this.setState({ currentHits: e });
@@ -260,10 +259,6 @@ class SessionIndex extends Component {
                       <div className="col-6"></div>
                       <div className="col-6">
                         <span className="float-right">
-                          <HitsPerPage
-                            defaultRefinement={DEFAULT_SHOW}
-                            items={[{value:12}, {value:20}, {value:50}]}
-                          />
                           <Pagination />
                         </span>
                       </div>
