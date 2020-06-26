@@ -25,11 +25,9 @@
 }
 .card {
 	margin-top: 5px;
-	background: #eee;
+	background: #eee !important;
 	padding: 1em;
 	min-width: 100%;
-   /** overflow: scroll;
-	**/
 }
 .card-close {
 	cursor: pointer;
@@ -38,17 +36,6 @@ img.preview {
 	max-width: 250px;
 	max-height: 250px;
 }
-/**
-.table td {
-	font-size: .9rem;
-	font-weight: 300;
-}
-
-.table-container .row {
-	min-width: 100%;
-}
-*/
-
 
 .table-container .row div {
 
