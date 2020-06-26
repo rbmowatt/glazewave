@@ -10,6 +10,7 @@ import boards from './boards';
 import session_images from './session_images';
 import user_board_images from './user_board_images';
 import shapers from './shapers';
+import stormglass from './stormglass';
 
 export default combineReducers({
   api,
@@ -22,5 +23,6 @@ export default combineReducers({
   user_session,
   user_sessions,
   session,
+  stormglass,
   user
 })

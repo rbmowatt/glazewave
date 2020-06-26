@@ -91,7 +91,7 @@ class Location extends Component {
             autoComplete: "off"
           };
     
-        const wrapperClass = !this.props.display ? "sc-bxivhb" : "sc-bxivhb eTopIC d-none";
+        const wrapperClass = !this.props.display ? "sc-bxivhb" : "sc-bxivhb d-none";
     
         return (
           <div className={wrapperClass}>
