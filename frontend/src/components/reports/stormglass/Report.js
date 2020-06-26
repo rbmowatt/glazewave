@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { locator, defaultOptions } from './../../../lib/utils/geolocator';
 import getSpots from './../../../lib/utils/surfline_alg_geo';
 import {StormGlassLoaded} from './../../../actions/stormglass';
+import apiConfig from './../../../config/api';
 
 const mapStateToProps = (state) => {
     return {
@@ -45,7 +46,7 @@ class Report extends React.Component{
           getSpots(location.coords.latitude,location.coords.longitude).then(data=>{
             setState({location :data.hits[0].name })
             const params = 'waveHeight,airTemperature';
-            fetch(`http://localhost:3001/api/sc?lat=${data.hits[0]._geoloc.lat}&lon=${data.hits[0]._geoloc.lon}&name=${data.hits[0].id}`).then((response) => response.json()).then((jsonData) => {
+            fetch(`${apiConfig.host + apiConfig.port }/api/sc?lat=${data.hits[0]._geoloc.lat}&lon=${data.hits[0]._geoloc.lon}&name=${data.hits[0].id}`).then((response) => response.json()).then((jsonData) => {
               sgLoaded(jsonData.hours[currentTime.getHours()]);
               console.log(jsonData.hours[currentTime.getHours()]);
               setState({data : jsonData.hours[currentTime.getHours()]});
