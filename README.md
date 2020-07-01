@@ -1,7 +1,7 @@
-# MySurfSesh
+# Surfbook
 
-MySurfSesh is a project that will allow surfers to track and monitor their surfing and gain analtytics based on location, board and swell type.
- - MySurfSesh Uses
+Surfbook is a project that will allow surfers to track and monitor their surfing and gain analtytics based on location, board and swell type.
+ - Surfbook Uses
 	- node/express
 		- for `api`
 	- react/redux
@@ -17,7 +17,7 @@ MySurfSesh is a project that will allow surfers to track and monitor their surfi
 		- For searching and aggregation
 	- Google places and Stormglass for local wave forecasts
 		
-It's current public example sits at https://mysurfsesh.com and is served using an EC2 instance sitting behind a load balancer sending all 443 traffic to port 80 and using nginx as a server for the frontend build and a proxy for the api.
+It's current dev example sits at https://mysurfsesh.com and is served using an EC2 instance sitting behind a load balancer sending all 443 traffic to port 80 and using nginx as a server for the frontend build and a proxy for the api.
 ## @todos and known issues
  - Clean Up how session is stored and retrieved
 - Responsiveness
@@ -25,7 +25,7 @@ It's current public example sits at https://mysurfsesh.com and is served using a
 - Logging
 ## Frontend /UI
 ### Requests
-- Nearly all requests will be dispatched and handled through a single method `( ./frontend/src/middleware/api.js )` that will
+- Nearly all requests will be dispatched and handled through a single source `( ./frontend/src/middleware/api.js )` which will
 	- Set a loading state in the api reducer
 	- Perform request
 	- dispatch action provided to appropriate reducer
