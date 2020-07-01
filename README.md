@@ -34,6 +34,14 @@ It's current dev example sits at https://mysurfsesh.com and is served using an E
 	- Base request come with a number of methods for basic crud operations
 	- More specific functionality can be placed within the class that inherits from Base
 	- BaseRequest is set up in such a way as to parse and present parameters in a format the backend api expects. It should be used as often as possible.
+		- `import  BaseRequest  from  './BaseRequest';`
+	`class  BoardRequests  extends  BaseRequest{`
+	`REQUEST_TYPE = 'BOARD';`
+	`constructor( session ){`
+	` super(session);`	
+	`this.endpoint = '/api/board';`
+	`}.....`
+`export  default  BoardRequests;`
 ### Data and Search
 - Although Algolia is implemented it is not being used as a full data store from which to receive complete objects.
 	- Algolia is used only for search
@@ -48,6 +56,45 @@ It's current dev example sits at https://mysurfsesh.com and is served using an E
 - The reason for the intermediate step is so that we are always looking at relevant data
 	- Showing someone inland the local wave conditions base on their exact location would result in no bueno.
 ## Backend/API
+### Architecure
+
+As the API contains no views we will use what I will call an **MSC** Pattern.
+
+In this pattern a **Controller** will never communicate directly with a **Model** but instead use an intermediary **Service** to store and retrieve data.
+
+### Services
+The **Service** is the power engine behind every **Request** and **Response**. It accepts communications from an input and works with the **Models** to retrieve the information to be passed back to the client method.
+
+-  **Services Should...**
+	* be used to perform actions and provide/store data.
+	* map and expose additional **Scopes** to the client
+	* Have a single **BaseModel** but be able to work with many other models
+		 *  **BaseModel** represents the **Model** that a **Service** will perform its request upon unless told otherwise and allows us to implement inheritance from a **Base Service**
+	* Optionally take a model and wrap it in a number of methods that can be combined with the parser middleware to create the required queries with ease.
+* Any Service method is welcome to use any Model or Service to gather the information however we should try to minimize using Models to achieve things we could do with other Services.
+
+	* **BaseService.js**
+		* Holds an assortment of reusable methods to retrieve data from an associated **Model**  `<BaseModel>`
+		*  *Ex.*
+			* all
+			* where/whereIn
+			* find
+			* create
+			* update
+			* delete
+
+	* By extending **BaseService** and assigning a **Model** you are automatically creating an interface for a client to call a number of curated methods on said **Model** while avoiding creating dependencies between client and **Model**
+		* `const  db = require("../models");`
+		 `const  BaseModel = db.Board;`
+		`const  BaseService = require('./BaseService');`
+		`class  BoardService  extends  BaseService { constructor(){ super(BaseModel); }`
+		`module.exports = BoardService;`
+		
+	*  *for example the database structure could change without affecting **Controllers** and other clients of the **Service** as long as the **Service** is adjusted to account for the change.*
+### Controllers
+- Should be stupid `only worry about knowing what services to ask for info`
+- Should get all of their data and perform most actions via Services
+- 	For the most part Controllers should have to  do little more than pass `req.parser` into the **Service** associated with the entity in question.
 ### Security 
 - Handled through cognito
 - On each load `middleware` will confirm identity of user and either reject or add user object to request
@@ -55,14 +102,7 @@ It's current dev example sits at https://mysurfsesh.com and is served using an E
 - Custom middleware will interpret request and organize into a number of object properties grouping them by type
 	- `ex. wheres, limit, page,withs`
 - The result of this middleware is added to the request with the property name of `parser`
-### Controllers
-- For the most part Controllers should be stupid
-- Controllers should get all of it's data and perform most actions via Services
-### Services
-- Services should be used to perform actions and provide/store data.
-- Services that revolve around Database Entities and use Sequelize can be created easily by extending the app/services/BaseService object.
-- The BaseService object takes a Sequelize model and wraps it in a number of methods that can be combined with the parser middleware to create the required queries with ease.
-- For the most part Controllers should have to  do little more than pass `req.parser` into the service associated with the entity in question.
+	- `router.get('/', function (req, res) {BaseService.make().where(req.parser).then(data  => {...`
 ### Algolia
 - Using Algolia for search requires us to keep the DB in sync with the Algolia Index
 - This is accomplished by adding hooks to the Sequelize Models
@@ -70,6 +110,8 @@ It's current dev example sits at https://mysurfsesh.com and is served using an E
 	- That being said results may not be instantaneous!
 - To sync or resync the already existing DB you can call command
 	- `npm run sync-agolia` from ./backend
+
+
 ## Setup
 **NOTE :** All configuration variables are stored in the backend and frontends respective `.env/` files.
 Copy `.env.tmp` to `.env` and edit accordingly 
