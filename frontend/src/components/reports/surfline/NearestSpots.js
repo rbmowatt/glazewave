@@ -58,20 +58,17 @@ class NearestSpots extends React.Component{
         <div className="row spot" key={el.url}>
             <div className="col">
 
-            <a data-tip data-event="click" data-for={el.url} href="#" data-tip >{el.name}</a>
-            <ReactTooltip id={el.url}  getContent={() => { 
-                return <Iframe url={this.state.selected} 
+            <div data-tip data-event="click" data-for={el.url} href="#" data-tip="http://localhost:3000/user/dashboard" data-iscapture='true'>{el.name}</div>
+            <ReactTooltip id={el.url}  getContent={(datatip) => { 
+              console.log('datatip', datatip);
+                return <Iframe url={datatip} 
                         width="450px"
                         height="450px"
-                        id="myId"
-                        className="myClassname"
-                        display="initial"
-                        position="relative"
-                        loading="content loading"
-                        allowFullScreen={true}
+
+                       
+                        /> }}
                         isCapture={true}
-                        clickable={true}
-                        /> }}/>             
+                        />             
             </div>
         </div>
         ))}
