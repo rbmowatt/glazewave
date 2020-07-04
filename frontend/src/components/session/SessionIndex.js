@@ -1,4 +1,5 @@
 import "react-confirm-alert/src/react-confirm-alert.css";
+import "./../../css/Elastic.css";
 import React, { Component } from "react";
 import { confirmAlert } from "react-confirm-alert";
 import { connect } from "react-redux";
@@ -12,32 +13,25 @@ import {
 } from "./../../actions/user_session";
 import Create from "./Create";
 import Modal from "./../layout/Modal";
-import {  Radio } from "react-advanced-form-addons";
+import { Radio } from "react-advanced-form-addons";
 import { Form } from "react-advanced-form";
-import Facets from "./Facets";
+import NearestSpots from "./../reports/surfline/NearestSpots";
+import Report from "./../reports/stormglass/Report";
 import {
-  InstantSearch,
-  CurrentRefinements,
-  ClearRefinements,
-  Index,
-  Pagination,
-  HitsPerPage,
-} from "react-instantsearch-dom";
-import searchClient from "./../../lib/utils/algolia";
-import SortBy from "./../layout/SortBy";
-import NearestSpots from './../reports/surfline/NearestSpots';
-import Report from './../reports/stormglass/Report';
+  ReactiveBase,
+  MultiList,
+  SelectedFilters,
+  ReactiveList,
+  StateProvider,
+} from "@appbaseio/reactivesearch";
 
-
-
-const DEFAULT_SORT = "created_at_DESC";
-const DEFAULT_SHOW = 12;
+const DEFAULT_SORT = "id_DESC";
+const DEFAULT_SHOW = 8;
 
 const mapStateToProps = (state) => {
   return {
     session: state.session,
-    sessions: state.user_sessions.data,
-    api: state.api,
+    sessions: state.user_sessions.data
   };
 };
 
@@ -57,24 +51,19 @@ class SessionIndex extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      sessions: [],
-      //this will recieve the paginated sessions from the child
-      currentPage: 0,
-      show: false,
+      show: false,//whether modal is showing or not
       selectedSortOrder: DEFAULT_SORT,
-      currentHits: [],
-      showAll: 0,
+      showAll: 0,//whether or not we are showing user + public sessiions
+      esFilters: []//an array of filters to be added to any ES queries
     };
     this.deleteSession = this.deleteSession.bind(this);
     this.editSession = this.editSession.bind(this);
     this.viewSession = this.viewSession.bind(this);
   }
 
- 
   componentDidMount() {
-    if (this.props.session.isLoggedIn) {
-      //this.props.loadSessions(this.props.session, { orderBy : DEFAULT_SORT ,  wheres : {user_id : this.props.session.user.id }, withs : relations.user_session } );
-    }
+    //set the initial scope to private
+    this.setScope({nextValue : 0});
   }
 
   componentWillUnmount() {
@@ -116,122 +105,205 @@ class SessionIndex extends Component {
     this.setState({ show: false });
   };
 
-  onSortUpdated = (sortOrder)=>{
-    let sort = sortOrder.replace('sessions_', '');
-    if(sort === 'sessions') sort= 'id_desc';
-    this.setState({ selectedSortOrder: sort });
-  }
-
-  setScope = (e) => {
-    if (e.nextValue) {
-      this.setState({ showAll: e.nextValue });
+  onSortUpdated = (prevQuery, nextQuery) => {
+    let sortString = "";
+    for (const [key, value] of Object.entries(nextQuery.sort[0])) {
+      sortString = `${key}_${value.order}`;
     }
+    this.setState({ selectedSortOrder: sortString });
   };
 
-  searchResultHandler = (e) => {
-    var isNew = JSON.stringify(e) !== JSON.stringify(this.state.currentHits);
-    if (e.length && isNew) {
+  elasticResultHandler = (e) => {
+    const ids = [];
+    e.data.forEach((element) => {
+      ids.push(element.id);
+    });
+    if (ids.length) {
       this.props.loadSessions(this.props.session, {
         orderBy: this.state.selectedSortOrder,
-        wheres: { in: e.join(",") },
+        wheres: { in: ids.join(",") },
         withs: relations.user_session,
-        page: this.state.currentPage,
         limit: DEFAULT_SHOW,
       });
-      this.setState({ currentHits: e });
     }
   };
-
-  onSearch = (e) => {
-    console.log("onSearch", e);
+  
+  setScope = (e) => {
+    const scopes = [{ match: { user_id: this.props.session.user.id } }];
+    if (e.nextValue && parseInt(e.nextValue) === 1) {
+      const isPublic = { match: { is_public: 1 } };
+      scopes.push(isPublic);
+    }
+    this.setState({ esFilters: scopes, showAll: parseInt(e.nextValue) });
   };
 
   render() {
     const { sessions } = this.props;
+
     return (
       <MainContainer>
-        <InstantSearch
-          key="is1"
-          indexName="sessions"
-          searchClient={searchClient}
-        >
-          <Index indexName="sessions">
-            <div className="row">
-              <div className="container card card-lg mx-auto">
-                <div className="card-title">
-                  <h2>
-                    Sessions
-                    <Link
-                      to="#"
-                      onClick={this.showModal}
-                      className="btn btn-sm btn-outline-secondary float-right"
-                    >
-                      Create New Session
-                    </Link>
-                  </h2>
-                </div>
-                <div className="card-text">
-                  <div className="container">
-                    <div className="row col-12">
-                      <div className="col-2">
-                        <SortBy
-                          defaultRefinement="sessions"
-                          items={[
-                            { value: "sessions", label: "Newest To Oldest" },
-                            { value: "sessions_id_asc", label: "Oldest To Newest" },
-                            { value: "sessions_rating_desc", label: "Best To Worst" },
-                            { value: "sessions_rating_asc", label: "Worst To Best" }
-                          ]}
-                          onSortUpdated={this.onSortUpdated}
+        <ReactiveBase app="sessions" url="http://192.168.99.101:9200">
+          <div className="row">
+            <div className="container card card-lg mx-auto">
+              <div className="card-title">
+                <h2>
+                  Sessions
+                  <Link
+                    to="#"
+                    onClick={this.showModal}
+                    className="btn btn-sm btn-outline-secondary float-right"
+                  >
+                    Create New Session
+                  </Link>
+                </h2>
+              </div>
+              <div className="card-text">
+                <div className="container">
+                  <div className="row col-12">
+                    <div className="col-2"></div>
+                    <div className="col-10">
+                      <span className="float-right"></span>
+                    </div>
+                  </div>
+
+                  <div className="row col-12">
+                    <div className="col-12">
+                      <div className="col-3"></div>
+                      <div className="col-9">
+                        <SelectedFilters />
+                      </div>
+                    </div>
+                    <div className="col-3">
+                      <div className="detail-line is_public_radio">
+                        <Form>
+                          <Radio
+                            name="is_public"
+                            label="Mine"
+                            value="0"
+                            onChange={this.setScope}
+                            checked={parseInt(this.state.showAll) === 0}
+                          />
+                          <Radio
+                            className="is_public_radio"
+                            name="is_public"
+                            label="Mine + Public"
+                            value="1"
+                            onChange={this.setScope}
+                            checked={parseInt(this.state.showAll) === 1}
+                          />
+                        </Form>
+                      </div>
+                      <div className="filter-widgets" id="sessions">
+                        <MultiList
+                          componentId="board"
+                          dataField="board"
+                          innerClass={{
+                            label: "elastic-facet-label",
+                            input: "form-control",
+                          }}
+                          title="Boards"
+                          react={{
+                            and: ["locations"],
+                          }}
+                          defaultQuery={() => {
+                            return {
+                              query: {
+                                bool: { should: this.state.esFilters },
+                              },
+                            };
+                          }}
+                        />
+                        <MultiList
+                          componentId="locations"
+                          dataField="location"
+                          title="Locations"
+                          innerClass={{
+                            label: "elastic-facet-label",
+                          }}
+                          react={{
+                            and: ["board"],
+                          }}
+                          defaultQuery={() => {
+                            return {
+                              query: {
+                                bool: { should: this.state.esFilters },
+                              },
+                            };
+                          }}
                         />
                       </div>
-                      <div className="col-10">
-                        <span className="float-right">
-                          <Pagination />
-                        </span>
-                      </div>
                     </div>
-                    <div className="row col-12">
-                      <div className="col-3">
-                        <ClearRefinements />
-                      </div>
-                      <div className="col-9">
-                        <CurrentRefinements />
-                      </div>
-                    </div>
-                    <div className="row col-12">
-                      <div className="col-3">
-                        <div className="detail-line is_public_radio">
-                          <Form>
-                            <Radio
-                              name="is_public"
-                              label="Mine"
-                              value="0"
-                              onChange={this.setScope}
-                              checked={parseInt(this.state.showAll) === 0}
-                            />
-                            <Radio
-                             className="is_public_radio"
-                              name="is_public"
-                              label="Mine + Public"
-                              value="1"
-                              onChange={this.setScope}
-                              checked={parseInt(this.state.showAll) === 1}
-                            />
-                          </Form>
-                        </div>
-                        <div className="filter-widgets" id="sessions">
-                          <Facets
-                            onSelect={this.searchResultHandler}
-                            showAll={this.state.showAll}
-                            key="sr1"
-                            hitsPerPage={DEFAULT_SHOW}
-                          />
-                        </div>
-                      </div>
-                      <div className="col-6">
-                        <div className="row">
-                          {this.props.sessions &&
+                    <div className="col-6">
+                      <div className="row">
+                        {(!sessions || sessions.length === 0) && (
+                          <div className="col-12">
+                            <h3>No Sessions found at the moment</h3>
+                          </div>
+                        )}
+                        <ReactiveList
+                          onData={this.elasticResultHandler}
+                          onQueryChange={this.onSortUpdated}
+                          defaultQuery={() => {
+                            return {
+                              query: {
+                                bool: { should: this.state.esFilters },
+                              },
+                            };
+                          }}
+                          renderResultStats={function (stats) {
+                            return (
+                              <div className="elastic-meta">
+                                {stats.numberOfResults + " Results Sorted By"}
+                              </div>
+                            );
+                          }}
+                          className="col-12"
+                          componentId="results"
+                          react={{
+                            and: ["board", "locations"],
+                          }}
+                          pagination
+                          size={DEFAULT_SHOW}
+                          infiniteScroll={true}
+                          innerClass={{
+                            pagination: "elastic-paginate",
+                            sortOptions: "form-control elastic-sort",
+                          }}
+                          sortOptions={[
+                            {
+                              dataField: "id",
+                              sortBy: "desc",
+                              label: "Newest To Oldest",
+                            },
+                            {
+                              dataField: "id",
+                              sortBy: "asc",
+                              label: "Oldest To Newest",
+                            },
+                            {
+                              dataField: "title",
+                              sortBy: "asc",
+                              label: "Title A->Z",
+                            },
+                            {
+                              dataField: "title",
+                              sortBy: "desc",
+                              label: "Title Z->A",
+                            },
+                            {
+                              dataField: "rating",
+                              sortBy: "asc",
+                              label: "Rating 1-10",
+                            },
+                            {
+                              dataField: "rating",
+                              sortBy: "desc",
+                              label: "Rating 10-1",
+                            },
+                          ]}
+                          paginationAt="both"
+                          render={({ data }) =>
+                            this.props.sessions &&
                             this.props.sessions.map((session) => (
                               <div key={session.id} className="col-12">
                                 <SessionCard
@@ -242,34 +314,32 @@ class SessionIndex extends Component {
                                   editSession={this.editSession}
                                 />
                               </div>
-                            ))}
-                          {(!sessions || sessions.length === 0) && (
-                            <div className="col-12">
-                              <h3>No Sessions found at the moment</h3>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-                      <div className="col-3">
-                            <div className="index-sidecard"><Report/></div>
-                            <div className="index-sidecard"><NearestSpots /></div>
+                            ))
+                          }
+                        />
                       </div>
                     </div>
-                    <div className="row col-12">
-                      <div className="col-6"></div>
-                      <div className="col-6">
-                        <span className="float-right">
-                          <Pagination />
-                        </span>
+                    <div className="col-3">
+                      <div className="index-sidecard">
+                        <Report />
                       </div>
+                      <div className="index-sidecard">
+                        <NearestSpots />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="row col-12">
+                    <div className="col-6"></div>
+                    <div className="col-6">
+                      <span className="float-right"></span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </Index>
-        </InstantSearch>
-        <Modal show={this.state.show} handleClose={(e) => this.hideModal(e)}>
+          </div>
+        </ReactiveBase>
+        <Modal show={this.state.show}>
           <Create
             onSuccess={(e) => this.hideModal(e)}
             onSubmissionComplete={this.viewSession}
@@ -282,17 +352,3 @@ class SessionIndex extends Component {
 }
 export default connect(mapStateToProps, mapDispachToProps)(SessionIndex);
 
-/**
- *        <div className="row col-12 filter-widgets" id="sessions">
-                                <InstantSearch
-                                        indexName="dev_sessions"
-                                        searchClient={searchClient}
-                                        >
-                                        <RefinementList 
-                                        container="#sessions"
-                                        attribute="rating"
-                                        searchableIsAlwaysActive={true} />
-                                        <Configure hitsPerPage={8} />
-                                    </InstantSearch>
-                                </div>
- */

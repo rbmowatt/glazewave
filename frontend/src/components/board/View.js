@@ -1,4 +1,4 @@
-import "./Board.css";
+import "./css/Board.css";
 
 import _ from "lodash";
 import React, { Component } from "react";

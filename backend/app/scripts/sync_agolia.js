@@ -13,16 +13,16 @@ SessionService.make().all({limit : 1000, with_all_relations : true}).then(data=>
     })
 }).catch(e=>console.log('error', e));
 
-let queue = getUserBoardQueue();
+let queue2 = getUserBoardQueue();
 UserBoardService.make().all({limit : 1000, with_all_relations : true }).then(data=>{
     data.forEach(board=>
         {
-          queue.push(board).on('finish', function (result) {
+          queue2.push(board).on('finish', function (result) {
             console.log( ' board created ' , result[0].objectID)
           })
         })
 }).catch(e=>console.log('error', e))
-
+/*
 let queue = getSurflineSpotsQueue();
 SurflineSpotService.make().all({limit : 10000, with_all_relations : false}).then(data=>{
   data.forEach(spot=>
@@ -32,3 +32,4 @@ SurflineSpotService.make().all({limit : 10000, with_all_relations : false}).then
         })
       })
 }).catch(e=>console.log('error', e))
+*/

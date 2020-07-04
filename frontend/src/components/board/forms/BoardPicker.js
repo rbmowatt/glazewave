@@ -1,3 +1,4 @@
+import './../css/BoardPicker.css';
 import * as React from "react";
 import { connect } from "react-redux";
 import InlineEdit, { InputType } from "riec";
@@ -9,7 +10,6 @@ import { s3Conf } from "./../../../config/s3";
 import Modal from "./../../layout/Modal";
 import CreateUserBoard from "./../CreateUserBoard";
 import StarBar from "./../../layout/StarBar";
-
 import { withRouter } from "react-router-dom";
 
 const mapStateToProps = (state) => {
@@ -41,6 +41,7 @@ class BoardPicker extends React.Component {
       show: false,
     };
     this.hideModal = this.hideModal.bind(this);
+    this.showModal = this.showModal.bind(this);
   }
 
   showModal = () => {
@@ -85,6 +86,8 @@ class BoardPicker extends React.Component {
 
   render() {
     const session = this.props.current_session;
+    const isOwner =
+      this.props.session.user.id === this.props.user_board.user_id;
     const boardImage =
       this.props.user_board &&
       this.props.user_board.UserBoardImages &&
@@ -109,19 +112,24 @@ class BoardPicker extends React.Component {
               />
             </div>
             <div className="col-7">
-              <div className="board-select board-picker-line row">
-            
-                  <InlineEdit
-                    type={InputType.Select}
-                    value={this.props.user_board.name || "Select A Board"}
-                    defaultValue={this.props.user_board.name}
-                    onChange={this.props.onChange}
-                    options={this.props.boards}
-                    valueKey="id"
-                    labelKey="name"
-                    className="form-control"
-                  />
-              
+              <div
+                className={
+                  isOwner
+                    ? "board-select board-picker-line row"
+                    : "board-select-disabled board-picker-line row"
+                }
+              >
+                <InlineEdit
+                  type={InputType.Select}
+                  value={this.props.user_board.name || "Select A Board"}
+                  defaultValue={this.props.user_board.name}
+                  onChange={this.props.onChange}
+                  options={this.props.boards}
+                  valueKey="id"
+                  labelKey="name"
+                  className="form-control"
+                  isDisabled={isOwner ? false : true}
+                />
               </div>
 
               {this.props.user_board && (
@@ -130,6 +138,7 @@ class BoardPicker extends React.Component {
                     stars={this.props.user_board.rating}
                     onClick={this.submitUpdate}
                     size="xs"
+                    static={true}
                   />
                 </div>
               )}
@@ -139,24 +148,25 @@ class BoardPicker extends React.Component {
                   Size:{this.props.user_board.size}
                 </div>
               )}
-              <div className="board-picker-line">
-                <button
-                  type="button"
-                  className="btn btn-outline-primary btn-sm"
-                  onClick={this.showModal}
-                >
-                  New Board
-                </button>
-              </div>
+              {isOwner && (
+                <div className="board-picker-line">
+                  <button
+                    type="button"
+                    className="btn btn-outline-primary btn-sm"
+                    onClick={this.showModal}
+                  >
+                    New Board
+                  </button>
+                </div>
+              )}
             </div>
-
             <Modal
               show={this.state.show}
-              handleClose={(e) => this.hideModal(e)}
             >
               <CreateUserBoard
                 onSuccess={(e) => this.hideModal(e)}
                 onSubmissionComplete={this.hideModal}
+                close={this.hideModal}
               />
             </Modal>
           </div>

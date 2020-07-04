@@ -18,7 +18,6 @@ import StarBar from './../layout/StarBar';
 import SessionRequests from './../../requests/SessionRequests';
 import {loadUserBoards} from './../../actions/user_board';
 import {UserSessionCleared,loadUserSession, updateUserSession, loadUserSessionImages, addUserSessionImages, deleteUserSessionImage} from './../../actions/user_session';
-import WWClient from './../../lib/utils/worldweather'
 import noaaForecaster from 'noaa-forecasts';
 import BoardPicker from './../board/forms/BoardPicker';
 import { Radio} from 'react-advanced-form-addons';
@@ -54,7 +53,6 @@ const mapStateToProps = state => {
 
 class SessionView extends Component {
 
-    
     constructor(props)
     {
         super(props)
@@ -147,11 +145,6 @@ class SessionView extends Component {
         }
     }
     
-      onLocationBlur = (e, a, d) =>
-    {
-
-    }
-
     onBoardChange = (id) =>
     {
         if(!id) return;
@@ -192,6 +185,7 @@ class SessionView extends Component {
 
     render() {
         const session = this.props.current_session;
+        const isOwner = this.props.session.user.id === session.user_id;
         return (
             <MainContainer>
               <FacebookProvider appId={fbConfig.api_key}>
@@ -206,6 +200,7 @@ class SessionView extends Component {
                             defaultValue={session.title}
                             change={this.submitUpdate}
                             propName="title"
+                            editProps={{ disabled: !isOwner }}
                           />
                         </h3>
                         <div className="col-12">
@@ -213,11 +208,13 @@ class SessionView extends Component {
                             stars={session.rating}
                             onClick={this.submitUpdate}
                             size="1x"
+                            static={!isOwner}
                           />
                         </div>
                       </div>
                       <div className="row">
                         <div className="preview col-7">
+                          { isOwner &&
                           <div className="clearfix">
                               <ImageUploader
                                 key={this.state.uploaderInstance}
@@ -231,6 +228,7 @@ class SessionView extends Component {
                                 buttonClassName='btn btn-link'
                               />
                           </div>
+                          }
                           <div>
                             <ImageGallery
                               items={this.props.session_images}
@@ -256,17 +254,6 @@ class SessionView extends Component {
                                 onClick={this.deleteImage}
                                 value={this.state.imageIndex}
                               />
-                              <Share href={window.location.href}>
-                                {({ handleClick, loading }) => (
-                                  <button
-                                    type="button"
-                                    disabled={loading}
-                                    onClick={handleClick}
-                                  >
-                                    Share
-                                  </button>
-                                )}
-                              </Share>
                               <Page href={window.location.href} tabs="timeline" />
                               <Comments href={window.location.href} />
                             </div>
@@ -275,6 +262,7 @@ class SessionView extends Component {
                         <div className="details col-5">
                           <div className="container">
                             <div className="detail-line">
+                              { isOwner &&
                               <div className="detail-line">
                                 <div>
                                   <strong>Privacy:</strong>
@@ -294,16 +282,19 @@ class SessionView extends Component {
                                   checked={session.is_public && session.is_public === true}
                                 />
                               </div>
+                              }
                               <div>
                                 <strong>Location:</strong>
                               </div>
                               <Location
+                                disabled={!isOwner}
                                 id="location_id"
                                 name="location_id"
                                 className="form-control"
                                 onChange={this.onLocationChange}
                                 onBlur={this.onLocationBlur}
                                 value={session.location_id}
+                                disable={!isOwner}
                                 placeholder={
                                   session.Location
                                     ? session.Location.formatted_address
@@ -316,6 +307,7 @@ class SessionView extends Component {
                                 <strong>Date:</strong>
                               </div>
                               <DatePicker
+                                disabled={!isOwner}
                                 selected={this.state.date}
                                 className="date-picker-input form-control"
                                 onChange={this.onDateChange} //only when value has changed
@@ -345,6 +337,7 @@ class SessionView extends Component {
                                 change={this.submitUpdate}
                                 propName="notes"
                                 validate={_.isString}
+                                editProps={{ disabled: !isOwner }}
                               />
                             </div>
                           </div>

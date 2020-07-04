@@ -54,6 +54,10 @@ div.recipe {
 	cursor: pointer;
 }
 
+.star-disabled-static {
+	color: grey;
+}
+
 .star-selected {
 	color: orange;
 }
