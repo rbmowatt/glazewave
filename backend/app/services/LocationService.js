@@ -1,6 +1,7 @@
 const db = require("../models");
 const BaseModel = db.Location;
 const GooglePlaces = require('node-googleplaces');
+const googleConfig  = require('./../config/google')
 
 const BaseService = require('./BaseService');
 
@@ -11,7 +12,7 @@ class LocationService  extends BaseService {
 
     createFromGoogle (locationId) 
     {
-        const places = new GooglePlaces("AIzaSyBaaD_720jqJaoIBsQib_N79Q5_iciLRBc");
+        const places = new GooglePlaces(googleConfig.MAPS_KEY);
         return new Promise( (resolve, reject)=>{ places.details({placeid : locationId})
             .then(data=>{
                 params.location_id  = data.id;

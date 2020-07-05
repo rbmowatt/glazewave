@@ -1,6 +1,7 @@
 var Queue = require('better-queue');
 const {getAlgoliaClient} = require('./../algolia/client');
-const db = require('./../../services/sequelize')
+const db = require('./../../services/sequelize');
+const elasticConfig = require('./../../config/elastic');
 const { QueryTypes } = require('sequelize');
 const ALGOLIA_SESSION_INDEX = 'sessions';
 const ALGOLIA_SESSION_PREFIX = 'session_';
@@ -12,7 +13,7 @@ const ALGOLIA_SUFLINE_SPOT_PREFIX = 'sl_spot_';
 
 'use strict'
 const { Client } = require('@elastic/elasticsearch')
-const client = new Client({ node: 'http://192.168.99.101:9200' })
+const client = new Client({ node: elasticConfig.host })
 client.on('response', (err, result) => {
     if (err) {
       console.log(err)
@@ -54,7 +55,6 @@ const setSessionQueue = (sessions, cb)=>
         data.forEach(d=>{
             client.update({
                 index: 'sessions',
-                type: 'session',
                 id : d.id,
                 body: {
                     doc: d,
@@ -85,7 +85,6 @@ const setUserBoardQueue = (boards, cb)=>
         data.forEach(d=>{
             client.update({
                 index: 'user_boards',
-                type: 'user_board',
                 id : d.id,
                 body: {
                     doc: d,
