@@ -18,8 +18,6 @@ export const UserLoaded = data => ({
   });
 
 
-  
-
   export const logInUser = ( session, args )=>
   {
     return function(dispatch, getState)

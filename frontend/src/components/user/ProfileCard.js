@@ -101,17 +101,7 @@ render(){
                                             </div>
                                         </div>
                                     </li>
-                                    <li>
-                                        <div className="row">
-                                            <div className="col-md-5 col-5">
-                                                <i className="fas fa-map-marker-alt text-green"></i>
-                                                <strong className="margin-10px-left text-green">Region:</strong>
-                                            </div>
-                                            <div className="col-md-7 col-7">
-                                                <p>Regina ST, London, SK.</p>
-                                            </div>
-                                        </div>
-                                    </li>
+
                                     <li>
                                         <div className="row">
                                             <div className="col-md-5 col-5">
@@ -125,19 +115,7 @@ render(){
                                     </li>
                                 </ul>
                             </div>
-                            <h5 className="font-size24 sm-font-size22 xs-font-size20">Professional Skills</h5>
-                             <div className="sm-no-margin">
-                                <div className="progress-text">
-                                    <div className="row">
-                                        <div className="col-7">Positive Behaviors</div>
-                                        <div className="col-5 text-right">40%</div>
-                                    </div>
-                                </div>
-                                <div className="custom-progress progress">
-                                    <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style={{width : "40%"}} className="animated custom-bar progress-bar slideInLeft bg-sky">
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -155,5 +133,34 @@ export default connect(mapStateToProps, mapDispachToProps)(ProfileCard);
                                     <li><a href="#"><i className="fab fa-twitter"></i></a></li>
                                     <li><a href="#"><i className="fab fa-instagram"></i></a></li>
                                 </ul>
+                            </div>
+
+
+                                                                <li>
+                                        <div className="row">
+                                            <div className="col-md-5 col-5">
+                                                <i className="fas fa-map-marker-alt text-green"></i>
+                                                <strong className="margin-10px-left text-green">Region:</strong>
+                                            </div>
+                                            <div className="col-md-7 col-7">
+                                                <p>Regina ST, London, SK.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+
+                                                        <h5 className="font-size24 sm-font-size22 xs-font-size20">Professional Skills</h5>
+                             <div className="sm-no-margin">
+                                <div className="progress-text">
+                                    <div className="row">
+                                        <div className="col-7">Positive Behaviors</div>
+                                        <div className="col-5 text-right">40%</div>
+                                    </div>
+                                </div>
+                                <div className="custom-progress progress">
+                                    <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style={{width : "40%"}} className="animated custom-bar progress-bar slideInLeft bg-sky">
+                                    </div>
+                                </div>
                             </div>
  */

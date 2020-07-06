@@ -125,3 +125,39 @@ input:disabled,  .form-control:disabled, .form-control[readonly] {
 	border:0px !important;
 	color:black;
 }
+
+div.dashboard-no-entries{
+	text-align:center;
+}
+
+div.dashboard-no-entries button{
+	margin-top: 1em;
+}
+
+.index-empty-resultset {
+	margin-top:1em;
+}
+ .index-empty-resultset div {
+	margin:1em;
+}
+
+img.align-left {
+	text-align: left;
+}
+
+div.index-cta {
+	/* color: rgba(36, 192, 253, 0.8)!important; */
+	background-color: rgba(252, 125, 31, 0.8)!important;
+	color:black;
+	font-size:1.2em;
+}
+
+div.preview {
+	margin-top:1em;
+	position: relative;
+}
+
+.fa-trash{
+	-webkit-text-stroke: 1px #000;
+	-webkit-text-fill-color: transparent;
+}

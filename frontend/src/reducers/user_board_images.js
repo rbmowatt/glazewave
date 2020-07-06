@@ -6,8 +6,8 @@ const INITIAL_STATE_ID = 1;
 const initialState = [
     {
         id : INITIAL_STATE_ID ,
-        original: "https://surfmemo.s3.amazonaws.com/4b371c1dcc76131241ffe613e30ea51f",
-        thumbnail: "https://surfmemo.s3.amazonaws.com/4b371c1dcc76131241ffe613e30ea51f",
+        original: "/img/board_default_lg.png",
+        thumbnail: "/img/board_default_lg.png",
     }
 ];
 const session_images = (state = initialState, action) => {
