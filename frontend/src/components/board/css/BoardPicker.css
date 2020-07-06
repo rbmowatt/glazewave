@@ -1,0 +1,20 @@
+.board-picker-line{
+	margin-bottom:0.3em;
+}
+
+.board-select span,.board-select select{
+	cursor: pointer;
+   
+    border-width: 1px;
+
+
+    border-radius: 3px;
+}
+
+.board-select span,.board-select-disabled span{
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0px 0px 0rem 0.7rem;
+	border:none;
+	cursor: default;
+}

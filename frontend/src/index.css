@@ -1,7 +1,6 @@
 #root {
 	/**min-width:850px;*/
 }
-
 .background {
 	background: url("https://cdn.shopify.com/s/files/1/2101/3083/products/5477.jpg?v=1558639341")no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -25,7 +24,6 @@
 }
 .card {
 	margin-top: 5px;
-
 	padding: 1em;
 	min-width: 100%;
 }
@@ -36,11 +34,8 @@ img.preview {
 	max-width: 250px;
 	max-height: 250px;
 }
-
 .table-container .row div {
-
 	margin: 0px;
-	/* padding: 0.2em; */
 }
 .date-picker-input, .google-locations-input{
 	border: none;
@@ -49,85 +44,29 @@ img.preview {
 .date-picker-input::-webkit-input-placeholder, .google-locations-input::-webkit-input-placeholder {
 	color: black;
 }
-.session-card-title:hover, .board-card-title:hover {
-	color: blue;
-	cursor: pointer;
-}
-
-.board-picker-line{
-	margin-top:0.5em;
-}
-
-.board-select{
-
-	/*border: 3px solid red;*/
-}
-.board-select span,.board-select select{
-	cursor: pointer;
-	color: rgb(34, 34, 34);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    transition-duration: 0.2s;
-    padding: 0.6rem 50px 0.6rem 0.7rem;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(187, 187, 187);
-    border-image: initial;
-    border-radius: 3px;
-}
 .detail-line{
 	padding-bottom:1em;
 }
 .text-area {
 	min-height:150px;
 }
-.ais-SearchBox-input{
-	border: 5px solid red;
-}
-.ais-Hits {
-	position:relative;
-}
-
 .table-container {
 	 margin: 0px;
 	 padding: 0px;
 	 border-radius: .2em ;
  }
-
-.table-container .row .ais-Hits-list {
-	list-style:none;
-	position:absolute;
-	z-index:100;
-	font-size: .5rem;
-	background: yellow;
-}
-.table-container .row .hit div{
-	padding:.7rem;
-	font-size: .7rem;
-	cursor: pointer;
-}
-.table-container .row .ais-Hits-list .hitImage{
-	background: wheat;
-}
-
 div.session-card {
 	font-size:0.9em;
 	margin-bottom: 1em;
 	border:1px solid #D3D3D3;
+	background-color: white;
 	border-radius: .3em ;
 	padding:1em;
 	cursor: pointer;
-
 }
-
-
 .dashboard-boxes .row{
 	padding:1%;
 }
-
-
-
 button.card-title {
 	text-align:left;
 	font-size:1em;
@@ -152,28 +91,119 @@ button.card-title {
 		background: #eee;
    }
 }
-
 .img-card {
 	max-height:7em;
 	width:auto;
 }
-
-
-
 .is_public_radio label{
 	font-size: 0.8em;
 	font-weight: bold;
 }
-
 .index-sidecard {
 	margin-bottom: 1em;
 }
 
-div.fileContainer{
+input:disabled,  .form-control:disabled, .form-control[readonly] {
+    background-color:white !important;
+	opacity: 1;
+	border:0px !important;
+	color:black;
+}
+
+
+img.align-left {
+	text-align: left;
+}
+
+div.index-cta {
+	/* color: rgba(36, 192, 253, 0.8)!important; */
+	background-color: rgba(252, 125, 31, 0.8)!important;
+	color:black;
+	font-size:1.2em;
+}
+
+div.preview {
+	margin-top:1em;
+	position: relative;
+}
+
+.fa-trash{
+	-webkit-text-stroke: 1px #000;
+	-webkit-text-fill-color: transparent;
+}
+
+.index-empty-resultset {
+	margin-top:1em;
+}
+
+.index-empty-resultset {
+	margin-top:1em;
+}
+ .index-empty-resultset div {
+	margin:1em;
+}
+
+div.details .form-control{
+
+	border:2px solid white;
+
+}
+
+div.owner div.details .form-control:hover, div.details input[type=text]:hover, div.owner div.details .board-select:hover {
+	/*border:2px solid rgb(232, 240, 254);*/
+	border:2px solid orange;
+	cursor: pointer;
+
+
+}
+
+div.details .board-select {
+	padding:3px;
+	border-radius: 3px;
+	text-transform: capitalize;
+
+
+}
+
+div.privacy span:hover{
+	border:normal;
+	cursor: pointer;
+	padding:normal;
+}
+
+div.details input[type=radio]{
+	border:2px solid red !important;
+	cursor: pointer;
+	padding:10px;
+	margin-bottom:10px;
+}
+
+::placeholder {
+	color: black !important;
+  }
+
+  .react-datepicker-wrapper{
+	  display:inline !important;
+  }
+
+  .session-title .form-control{
+	  padding-left: 2px;
+	  font-size:1.5em;
+	  font-weight: bolder;
+	  text-transform: capitalize;
+  }
+
+  .session-details{
+	  margin-top:1.5em;
+  }
+
+
+  div.fileContainer{
 	padding:0px;
 	margin:0px;
 	box-shadow: none;
 	display:inherit;
+	background: none;
 }
 
 /* must be marked !important to overide react-images-upload modules styles */
@@ -182,8 +212,49 @@ div.fileContainer{
 	font-size:1em !important;
 	background:none !important;
 	color:blue !important;
-	float:right !important;
+
 	padding:0px !important;
 	padding-bottom:0.3em !important;
 }
 
+/* must be marked !important to overide react-images-upload modules styles */
+.fileContainer .chooseFileButton {
+	margin:auto !important;
+	font-size:1em !important;
+	background:none !important;
+	color:blue !important;
+
+	padding:0px !important;
+	padding-bottom:0.3em !important;
+}
+
+/* must be marked !important to overide react-images-upload modules styles */
+.preview .fileContainer .chooseFileButton {
+	margin:auto !important;
+	background:none !important;
+	padding:0px !important;
+	color:white !important;
+	font-size:2.5em !important;
+	font-weight: bold !important;
+}
+
+.preview .fileContainer .chooseFileButton:hover {
+	color:black!important;
+}
+
+
+  button.upload-btn {
+	background-image: url("https://cdn.iconscout.com/icon/premium/png-256-thumb/plus-sign-4-1150978.png");
+	font-size:3em !important;
+	font-weight: bold !important;
+	color:white !important;
+  }
+
+
+  .fa-trash:hover {
+    color: red !important;
+}
+
+.capitalize {
+	text-transform:capitalize !important;
+}

@@ -1,35 +1,40 @@
 [
     {
       "name": "the kangaroo",
-      "size": "8'0",
+      "size": "5'0",
       "rating": 4,
       "user_id": 1,
       "board_id": 17,
-      "notes": "Nostrud deserunt anim tempor minim magna cillum voluptate dolor esse id magna consectetur mollit nisi."
+      "notes": "Fun little guy to jump around on",
+      "is_public" : 0
     },
+    {
+      "name": "the chachki",
+      "size": "8'11",
+      "rating": 6,
+      "user_id": 1,
+      "board_id": 32,
+      "notes": "Great for catching smalleer waves",
+      "is_public" : 1
+    },
+    {
+      "name": "the bullet",
+      "size": "6'1",
+      "rating": 10,
+      "user_id": 1,
+      "board_id": 32,
+      "notes": "Thing flies on steep waves",
+      "is_public" : 0
+    },
+
     {
       "name": "hot potato",
       "size": "9'1",
       "rating": 9,
       "user_id": 2,
       "board_id": 2,
-      "notes": "Nostrud dolore nisi pariatur elit non."
-    },
-    {
-      "name": "the kangaroo",
-      "size": "8'11",
-      "rating": 2,
-      "user_id": 1,
-      "board_id": 32,
-      "notes": "Est Lorem aliquip aliqua non veniam do laborum sint do officia incididunt mollit nostrud irure."
-    },
-    {
-      "name": "my favorite",
-      "size": "9'11",
-      "rating": 3,
-      "user_id": 3,
-      "board_id": 26,
-      "notes": "Reprehenderit amet voluptate do cupidatat qui."
+      "notes": "More fun than any board I've ever had.",
+      "is_public" : 1
     },
     {
       "name": "joey",
@@ -37,15 +42,8 @@
       "rating": 7,
       "user_id": 2,
       "board_id": 31,
-      "notes": "Reprehenderit cupidatat tempor proident aliqua occaecat."
-    },
-    {
-      "name": "the wavinator",
-      "size": "10'11",
-      "rating": 9,
-      "user_id": 5,
-      "board_id": 30,
-      "notes": "Lorem duis culpa Lorem ad et ea velit est."
+      "notes": "Fun abounds",
+      "is_public" : 0
     },
     {
       "name": "wavemaster 3000",
@@ -53,110 +51,37 @@
       "rating": 9,
       "user_id": 2,
       "board_id": 19,
-      "notes": "Magna aliqua et exercitation incididunt ut anim et labore do elit culpa."
+      "notes": "Magna aliqua et exercitation incididunt ut anim et labore do elit culpa.",
+      "is_public" : 1
     },
+
+    {
+      "name": "my favorite",
+      "size": "9'11",
+      "rating": 3,
+      "user_id": 3,
+      "board_id": 26,
+      "notes": "Reprehenderit amet voluptate do cupidatat qui.",
+      "is_public" : 0
+    },
+
+    {
+      "name": "the wavinator",
+      "size": "10'11",
+      "rating": 9,
+      "user_id": 3,
+      "board_id": 30,
+      "notes": "Lorem duis culpa Lorem ad et ea velit est.",
+      "is_public" : 1
+    },
+
     {
       "name": "the kangaroo",
       "size": "8'11",
       "rating": 4,
-      "user_id": 4,
+      "user_id": 3,
       "board_id": 10,
-      "notes": "Sint commodo id eiusmod incididunt labore qui."
-    },
-    {
-      "name": "the kangaroo",
-      "size": "9'10",
-      "rating": 7,
-      "user_id": 3,
-      "board_id": 23,
-      "notes": "Do ut pariatur excepteur commodo officia."
-    },
-    {
-      "name": "my favorite",
-      "size": "5'10",
-      "rating": 6,
-      "user_id": 2,
-      "board_id": 18,
-      "notes": "Eiusmod ipsum consectetur esse duis."
-    },
-    {
-      "name": "wavemaster 3000",
-      "size": "5'0",
-      "rating": 4,
-      "user_id": 2,
-      "board_id": 31,
-      "notes": "Aliqua qui laboris labore occaecat ex adipisicing excepteur quis officia consectetur."
-    },
-    {
-      "name": "hot potato",
-      "size": "5'2",
-      "rating": 6,
-      "user_id": 1,
-      "board_id": 13,
-      "notes": "Aliqua ut qui consequat non elit occaecat pariatur quis."
-    },
-    {
-      "name": "the kangaroo",
-      "size": "9'7",
-      "rating": 6,
-      "user_id": 4,
-      "board_id": 15,
-      "notes": "Deserunt voluptate duis nostrud excepteur adipisicing anim ad ex nisi mollit est pariatur magna nulla."
-    },
-    {
-      "name": "the kangaroo",
-      "size": "6'5",
-      "rating": 9,
-      "user_id": 4,
-      "board_id": 15,
-      "notes": "Lorem quis sint occaecat reprehenderit fugiat consequat."
-    },
-    {
-      "name": "wavemaster 3000",
-      "size": "7'2",
-      "rating": 4,
-      "user_id": 2,
-      "board_id": 6,
-      "notes": "Ad exercitation tempor aliqua est velit pariatur excepteur laboris eu eu consectetur consectetur."
-    },
-    {
-      "name": "bailer",
-      "size": "6'6",
-      "rating": 8,
-      "user_id": 4,
-      "board_id": 18,
-      "notes": "Nostrud proident eiusmod ut deserunt elit ea laboris cupidatat excepteur occaecat ut tempor id incididunt."
-    },
-    {
-      "name": "bailer",
-      "size": "7'2",
-      "rating": 1,
-      "user_id": 3,
-      "board_id": 13,
-      "notes": "Enim magna laboris excepteur elit ex fugiat officia ipsum in et ea sint proident."
-    },
-    {
-      "name": "best for summer",
-      "size": "4'6",
-      "rating": 9,
-      "user_id": 4,
-      "board_id": 24,
-      "notes": "Adipisicing minim eu minim officia laborum commodo nisi irure sint ipsum amet elit."
-    },
-    {
-      "name": "bailer",
-      "size": "4'6",
-      "rating": 8,
-      "user_id": 2,
-      "board_id": 35,
-      "notes": "Adipisicing nisi laborum do excepteur nostrud irure sint laborum."
-    },
-    {
-      "name": "joey",
-      "size": "10'4",
-      "rating": 6,
-      "user_id": 1,
-      "board_id": 1,
-      "notes": "Quis aute non sint non ea Lorem nisi nisi est commodo laboris mollit exercitation aute."
+      "notes": "Sint commodo id eiusmod incididunt labore qui.",
+      "is_public" : 0
     }
   ]

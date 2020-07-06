@@ -46,7 +46,6 @@ class Report extends React.Component{
             setState({location :data.hits[0].name })
             fetch(`${apiConfig.host + apiConfig.port }/api/sc?lat=${data.hits[0]._geoloc.lat}&lon=${data.hits[0]._geoloc.lon}&name=${data.hits[0].id}`).then((response) => response.json()).then((jsonData) => {
               sgLoaded(jsonData.hours[currentTime.getHours()]);
-              console.log(jsonData.hours[currentTime.getHours()]);
               setState({data : jsonData.hours[currentTime.getHours()]});
             });
           })
@@ -57,8 +56,6 @@ class Report extends React.Component{
 
   render()
   {    
-    const { spots } =  this.state;
-    console.log('spots', spots)
     return <div className="container surfline nearest_spots">
           <h6>Local Report</h6>
           <div className="row spot"><div className="col"> <i>Observations Near {this.state.location}</i></div></div>

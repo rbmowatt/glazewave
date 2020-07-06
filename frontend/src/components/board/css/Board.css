@@ -50,7 +50,7 @@ div.recipe {
 	margin-top: 0;
 }
 
-.star {
+.star, .star-static {
 	color: orange;
 }
 

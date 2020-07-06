@@ -1,3 +1,10 @@
+GET _search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
 PUT sessions
 {
  "settings": {
@@ -62,9 +69,70 @@ PUT sessions
      "type": "integer"
      },
     "is_public": {
-     "type": "boolean"
+     "type": "integer"
     }
    }
   }
  }
 }
+
+PUT sessions/session/1
+{
+  "id": 60,
+  "user_id": 1,
+  "title": "June 26 2020, 11:53 am",
+  "rating": null,
+  "is_public": false,
+  "board": "Baked Potato",
+  "location": "17th Street"
+}
+
+PUT sessions/session/2
+{
+       "id": 59,
+      "user_id": 1,
+      "title": "June 25 2020, 3:35 pm",
+      "rating": null,
+      "is_public": false,
+      "board": null,
+      "location": null
+}
+
+PUT sessions/session/3
+{
+        "id": 58,
+      "user_id": 1,
+      "title": "June 22 2020, 3:19 pm",
+      "rating": null,
+      "is_public": false,
+      "board": null,
+      "location": null
+}
+
+PUT sessions/session/4
+{
+   "id": 57,
+  "user_id": 2,
+  "title": "June 21 2020, 8:03 pm",
+  "rating": null,
+  "is_public": false,
+  "board": "fvdfv",
+  "location": "Holyoke Avenue"
+}
+
+PUT sessions/session/5
+{
+   "user_id": 2,
+    "title": "June 19 2020, 9:11 am",
+    "rating": null,
+    "is_public": true,
+    "board": "my sweet potatoe",
+    "location": null
+}
+
+POST sessions/_analyze
+{
+  "text": ["Elasticsearch is a POWERFUL search engine that makes it easy for us to search"],
+  "analyzer": "sessionNameAnalyzer"
+}
+

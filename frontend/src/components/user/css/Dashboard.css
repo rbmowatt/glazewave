@@ -232,3 +232,15 @@ a.text-lightred:hover {
 .bg-lightred {
     background-color: #ff5722
 }
+
+
+.dashboard .card-newest-resultset {
+	margin-top:1em;
+}
+.dashboard .card-newest-resultset h5 {
+	text-align : left;
+}
+
+.dashboard .card-newest-empty-resultset div {
+	margin:1em;
+}

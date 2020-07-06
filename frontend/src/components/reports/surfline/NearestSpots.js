@@ -32,7 +32,6 @@ class NearestSpots extends React.Component{
     {
       const cachedHits = cache.getWithExpiry(CACHE_KEY);
       if (cachedHits) {
-        console.log('we have cached hots');
         this.setState({ spots: JSON.parse(cachedHits) });
       }
       else
@@ -48,35 +47,47 @@ class NearestSpots extends React.Component{
     }
   }
 
+
   render()
   {    
     const { spots } =  this.state;
-    console.log('spots', spots)
     return <div className="container surfline nearest_spots">
         <h6>Nearest Spots</h6>
         {spots.map(el => (
         <div className="row spot" key={el.url}>
             <div className="col">
-
-            <div data-tip data-event="click" data-for={el.url} href="#" data-tip="http://localhost:3000/user/dashboard" data-iscapture='true'>{el.name}</div>
-            <ReactTooltip id={el.url}  getContent={(datatip) => { 
-              console.log('datatip', datatip);
-                return <Iframe url={datatip} 
-                        width="450px"
-                        height="450px"
-
-                       
-                        /> }}
-                        isCapture={true}
-                        />             
+              <a href={el.url} target="_blank">{el.name}</a>        
             </div>
         </div>
         ))}
-
-
     </div>
     }  
     
 }
 
 export default connect(mapStateToProps)(NearestSpots);
+
+/**
+ * 
+  render()
+  {    
+    const { spots } =  this.state;
+    return <div className="container surfline nearest_spots">
+        <h6>Nearest Spots</h6>
+        {spots.map(el => (
+        <div className="row spot" key={el.url}>
+            <div className="col">
+            <div data-tip data-event="click" data-for={el.url} href="#" data-tip="http://localhost:3000/user/dashboard" data-iscapture='true'>{el.name}</div>
+            <ReactTooltip id={el.url}  getContent={(datatip) => { 
+                return <Iframe url={datatip} 
+                        width="450px"
+                        height="450px"
+                        /> }}
+                        isCapture={true}
+                      />             
+            </div>
+        </div>
+        ))}
+    </div>
+    }  
+ */

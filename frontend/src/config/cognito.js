@@ -9,9 +9,7 @@ export const cognitoConfig = {
     callbackUri: process.env.REACT_APP_AWS_COGNITO_CALLBACK_URI,
     signoutUri : process.env.REACT_APP_AWS_COGNITO_SIGNOUT_URI,
     tokenScopes: [
-
     "email"
-
     ],
     apiUri: process.env.REACT_APP_API_HOST
 };

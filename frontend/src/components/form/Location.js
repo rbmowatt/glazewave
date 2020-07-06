@@ -51,6 +51,9 @@ class Location extends Component {
     }
  
     render() {
+      //if(this.props.disable && this.props.disable === true){
+        //return  <div className="sc-ifAKCX">{this.props.placeholder}</div>
+     // }
         const {search, value} = this.state
         const { fieldProps, fieldState, id, name, label, hint } = this.props
     
