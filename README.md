@@ -1,7 +1,7 @@
-# Surfbook
+# Glazewave
 
-Surfbook is a project that will allow surfers to track and monitor their surfing and gain analtytics based on location, board and swell type.
- - Surfbook Uses
+Glazewave is a project that will allow surfers to track and monitor their surfing and gain analtytics based on location, board and swell type.
+ - Glazewave Uses
 	- node/express
 		- for `api`
 	- react/redux
@@ -13,19 +13,20 @@ Surfbook is a project that will allow surfers to track and monitor their surfing
 		- for user management
 	- Amazon s3
 		- to store  images
-	- Algolia
+	- Elastic Search
 		- For searching and aggregation
 	- Google places and Stormglass for local wave forecasts
 		
 It's current dev example sits at https://mysurfsesh.com and is served using an EC2 instance sitting behind a load balancer sending all 443 traffic to port 80 and using nginx as a server for the frontend build and a proxy for the api.
 ## @todos and known issues
  - Clean Up how session is stored and retrieved
-- Responsiveness
+- Responsiveness/CSS
 	- it's not the worst ever but it's far from the best
 - Logging
+- Backend Acl
 ## Frontend /UI
 ### Requests
-- Nearly all requests will be dispatched and handled through a single source `( ./frontend/src/middleware/api.js )` which will
+- Most requests will be dispatched and handled through a single point `( ./frontend/src/middleware/api.js )` which will
 	- Set a loading state in the api reducer
 	- Perform request
 	- dispatch action provided to appropriate reducer
@@ -35,22 +36,22 @@ It's current dev example sits at https://mysurfsesh.com and is served using an E
 	- More specific functionality can be placed within the class that inherits from Base
 	- BaseRequest is set up in such a way as to parse and present parameters in a format the backend api expects. It should be used as often as possible.
 		- `import  BaseRequest  from  './BaseRequest';`
-	`class  BoardRequests  extends  BaseRequest{`
-	`REQUEST_TYPE = 'BOARD';`
-	`constructor( session ){`
-	` super(session);`	
-	`this.endpoint = '/api/board';`
-	`}.....`
-`export  default  BoardRequests;`
+		- `class  BoardRequests  extends  BaseRequest{`
+		- `REQUEST_TYPE = 'BOARD';`
+		- `constructor( session ){`
+		- `super(session);`	
+		- `this.endpoint = '/api/board';`
+		- `}.....`
+		- `export  default  BoardRequests;`
 ### Data and Search
-- Although Algolia is implemented it is not being used as a full data store from which to receive complete objects.
-	- Algolia is used only for search
-	- When a search is performed it triggers a call to the backend api with the id's returned  from Algolia.
+- Although Elastic Search is implemented it is not being used as a full data store from which to receive complete objects.
+	- Elastic Search is used only for search
+	- When a search is performed it triggers a call to the backend api with the id's returned  from Elastic Search.
 		- This is the hydrated data that will appear in the UI.
 ### Geolocation and Wave Data
 - Gathering wave data is a three step process
 	- Get geocordinates from google paces
-	- Find the nearest beach stored by geolocation via Algolia
+	- Find the nearest beach stored by geolocation via Elastic Search
 		- This data has been complied using Surfline
 	- Ping Stormglass for the wave data based on the nearest beached geoloc
 - The reason for the intermediate step is so that we are always looking at relevant data
@@ -103,20 +104,20 @@ The **Service** is the power engine behind every **Request** and **Response**. I
 	- `ex. wheres, limit, page,withs`
 - The result of this middleware is added to the request with the property name of `parser`
 	- `router.get('/', function (req, res) {BaseService.make().where(req.parser).then(data  => {...`
-### Algolia
-- Using Algolia for search requires us to keep the DB in sync with the Algolia Index
+### Elastic Search
+- Using Elastic Search for search requires us to keep the DB in sync with the Elastic Search Index
 - This is accomplished by adding hooks to the Sequelize Models
-	- After each CRUD operation the result will be sent to a queue that will batch insert into the appropriate Algolia index when the queue either fills or reaches a specified time limit.
+	- After each CRUD operation the result will be sent to a queue that will batch insert into the appropriate Elastic Search index when the queue either fills or reaches a specified time limit.
 	- That being said results may not be instantaneous!
 - To sync or resync the already existing DB you can call command
-	- `npm run sync-agolia` from ./backend
+	- `npm run sync-elastic` from ./backend
 
 
 ## Setup
 **NOTE :** All configuration variables are stored in the backend and frontends respective `.env/` files.
 Copy `.env.tmp` to `.env` and edit accordingly 
 ### Services
-- Create IAM user with full privileges to
+- Create IAM user with privileges to
 	- Cognito
 	- S3
 ### GIT and NPM
@@ -133,9 +134,9 @@ Copy `.env.tmp` to `.env` and edit accordingly
 ### Cognito
 - Create a new Amazon Cognito userpool
 	- under attributes check
-		- `name`
+		- `family_name`
+		- `given_name`
 		- `email`
-		- `phone_number`
 	- Only allow administrators to create users
 	- everything else can be left as default
 - Create a client
@@ -180,7 +181,7 @@ Copy `.env.tmp` to `.env` and edit accordingly
 		- `sudo yum update`
 	- install nginx
 		- `sudo amazon-linux-extras install nginx1`
-		- edit `/etc/nginx/nginx.conf` server section to resemble [this](https://github.com/rbmowatt/umanage/docs/nginx.example.txt)
+		- edit `/etc/nginx/nginx.conf` server section to resemble [this](https://github.com/rbmowatt/surfbook/docs/nginx.example.txt)
 	- install node
 		- `curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -`
 		- `sudo yum install -y nodejs`
