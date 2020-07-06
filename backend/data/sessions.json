@@ -1,49 +1,147 @@
 [
     {
-        "title": "My First Session",
+        "title": "User 1 First Session",
         "rating": 10,
-
         "board_id" : 1,
-        "is_public" : 1,
-        "user_id" : 1
+        "is_public" : 0,
+        "user_id" : 1,
+        "created_at" : "2020-06-02 12:12:12"
     },
     {
-        "title": "My Second Session",
+        "title": "User 1 Second Session",
         "rating": 7,
-
         "board_id" : 2,
-        "is_public" : 1,
-        "user_id" : 1
+        "is_public" : 0,
+        "user_id" : 1,
+        "created_at" : "2020-06-04 11:16:12"
     },
     {
-        "title": "My Third Session",
+        "title": "User 1 Third Session",
         "rating": 5,
-    
         "board_id" : 3,
         "is_public" : 1,
-        "user_id" : 1
+        "user_id" : 1,
+        "created_at" : "2020-06-05 09:12:12"
     },
     {
-        "title": "My First Session",
+        "title": "User 1 Fourth Session",
+        "rating": 9,
+        "board_id" : 1,
+        "is_public" : 0,
+        "user_id" : 1,
+        "created_at" : "2020-06-06 12:49:12"
+    },
+    {
+        "title": "User 1 Fifth Session",
+        "rating": 6,
+        "board_id" : 2,
+        "is_public" : 0,
+        "user_id" : 1,
+        "created_at" : "2020-06-14 10:52:12"
+    },
+    {
+        "title": "User 1 Sith Session",
+        "rating": 4,
+        "board_id" : 3,
+        "is_public" : 1,
+        "user_id" : 1,
+        "created_at" : "2020-06-16 11:12:12"
+    },
+    {
+        "title": "User 1 Seventh Session",
+        "rating": 8,
+        "board_id" : 1,
+        "is_public" : 0,
+        "user_id" : 1,
+        "created_at" : "2020-06-18 12:12:12"
+    },
+    {
+        "title": "User 1 Eigth Session",
+        "rating": 5,
+        "board_id" : 2,
+        "is_public" : 0,
+        "user_id" : 1,
+        "created_at" : "2020-06-24 11:12:12"
+    },
+    {
+        "title": "User 1 Ninth Session",
+        "rating": 3,
+        "board_id" : 3,
+        "is_public" : 1,
+        "user_id" : 1,
+        "created_at" : "2020-07-03 11:12:12"
+    },
+    {
+        "title": "User 1 10th Session",
         "rating": 10,
-     
+        "board_id" : 1,
+        "is_public" : 1,
+        "user_id" : 1,
+        "created_at" : "2020-07-04 12:12:12"
+    },
+    {
+        "title": "User 1 11th Session",
+        "rating": 7,
+        "board_id" : 2,
+        "is_public" : 1,
+        "user_id" : 1,
+        "created_at" : "2020-07-05 11:12:12"
+    },
+    {
+        "title": "User 1 12th Session",
+        "rating": 5,
+        "board_id" : 3,
+        "is_public" : 1,
+        "user_id" : 1,
+        "created_at" : "2020-07-06 11:12:12"
+    },
+    {
+        "title": "User 2 First Session",
+        "rating": 10,
         "board_id" : 4,
         "is_public" : 1,
-        "user_id" : 2
+        "user_id" : 2,
+        "created_at" : "2020-06-24 11:30:12"
     },
     {
-        "title": "My Second Session",
+        "title": "User 2 Second Session",
         "rating": 7,
-
         "board_id" : 5,
         "is_public" : 1,
-        "user_id" : 2
+        "user_id" : 2,
+        "created_at" : "2020-06-25 11:12:12"
     },
     {
-        "title": "My Third Session",
+        "title": "User 2 Third Session",
         "rating": 5,
-             "board_id" : 6,
+        "board_id" : 6,
+        "is_public" : 0,
+        "user_id" : 2,
+        "created_at" : "2020-07-04 10:30:12"
+    }
+,
+    {
+        "title": "User 3 First Session",
+        "rating": 10,
+        "board_id" : 7,
         "is_public" : 1,
-        "user_id" : 3
+        "user_id" : 3,
+        "created_at" : "2020-06-24 05:16:12"
+    },
+    {
+        "title": "User 3 Second Session",
+        "rating": 7,
+        "board_id" : 8,
+        "is_public" : 1,
+        "user_id" : 3,
+        "created_at" : "2020-06-28 11:09:12"
+    },
+    {
+        "title": "User 3 Third Session",
+        "rating": 5,
+        "board_id" : 9,
+        "is_public" : 0,
+        "user_id" : 3,
+        "created_at" : "2020-07-04 06:12:12"
     }
 ]

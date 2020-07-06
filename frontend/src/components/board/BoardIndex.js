@@ -343,6 +343,7 @@ class BoardIndex extends Component {
 																	deleteBoard={this.deleteBoard}
 																	viewBoard={this.boardCreated}
 																	editBoard={this.editBoard}
+																	isOwner={board.user_id === this.props.userSession.user.id}
 																/>
 															</div>
 														))

@@ -8,17 +8,17 @@ import { withRouter } from "react-router";
 
 const BoardCard = (props) => {
 	return (
-		<div className="container-fluid session-card" onClick={()=>props.history.push("/board/" + props.board.id)} >
+		<div className="container-fluid session-card" >
 			<div className="row">
 				<div className="col-12 board-card-title">
 					<button
-						className="btn btn-link card-title"
+						className="btn btn-link card-title capitalize"
 						onClick={() => props.history.push("/board/" + props.board.id)}
 					>
 						{props.board.name}
 					</button>
 				</div>
-				<div className="col-4">
+				<div className="col-4" onClick={()=>props.history.push("/board/" + props.board.id)}>
 					<img
 						className="img-responsive img-thumbnail img-card"
 						alt=""
@@ -30,6 +30,7 @@ const BoardCard = (props) => {
 					/>
 				</div>
 				<div className="col-8">
+				{ props.isOwner && 
 					<div>
 						{props.editBoard && (
 							<FontAwesomeIcon
@@ -50,11 +51,14 @@ const BoardCard = (props) => {
 							/>
 						)}
 					</div>
+					}
+					<div onClick={()=>props.history.push("/board/" + props.board.id)}>
 					<div className="card-rating">
 						<StarBar stars={props.board.rating} />
 					</div>
 					<div className="board-card-model">
 						{props.board.size} {props.board.Board && props.board.Board.model}
+					</div>
 					</div>
 				</div>
 			</div>

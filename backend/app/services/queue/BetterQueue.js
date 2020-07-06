@@ -13,7 +13,11 @@ const ALGOLIA_SUFLINE_SPOT_PREFIX = 'sl_spot_';
 
 'use strict'
 const { Client } = require('@elastic/elasticsearch')
-const client = new Client({ node: elasticConfig.host })
+
+
+const getClient = (index) =>
+{
+    const client = new Client({ node: elasticConfig.host })
 client.on('response', (err, result) => {
     if (err) {
       console.log(err)
@@ -21,22 +25,7 @@ client.on('response', (err, result) => {
         console.log(result)
     }
   })
-
-
-  
-  if (Array.prototype.flatMap === undefined) {
-    const concat = (x, y) => x.concat(y)
-
-    const flatMap = (f, xs) => xs.map(f).reduce(concat, [])
-    Array.prototype.flatMap = function(f) {
-      return flatMap(f, this)
-    }
-  }
-
-
-const getClient = (index) =>
-{
-    return getAlgoliaClient(index);
+  return client;
 }
 
 const setSessionQueue = (sessions, cb)=>
@@ -53,7 +42,7 @@ const setSessionQueue = (sessions, cb)=>
     db.query(query, { type: QueryTypes.SELECT })
     .then(data=>{
         data.forEach(d=>{
-            client.update({
+            getClient().update({
                 index: 'sessions',
                 id : d.id,
                 body: {
@@ -83,7 +72,7 @@ const setUserBoardQueue = (boards, cb)=>
     db.query(query, { type: QueryTypes.SELECT })
     .then(data=>{
         data.forEach(d=>{
-            client.update({
+            getClient().update({
                 index: 'user_boards',
                 id : d.id,
                 body: {

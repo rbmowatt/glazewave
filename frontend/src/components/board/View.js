@@ -1,5 +1,4 @@
 import "./css/Board.css";
-
 import _ from "lodash";
 import React, { Component } from "react";
 import { connect } from "react-redux";
@@ -40,14 +39,21 @@ const mapStateToProps = (state) => {
 
 const mapDispachToProps = (dispatch) => {
 	return {
-		loadBoard: (session, params) => dispatch(loadUserBoard(session, params)),
-		loadSessions: (session, params) =>dispatch(loadUserSessions(session, params)),
-		loadShapers: (session, params) => dispatch(loadShapers(session, params)),
+		loadBoard: (session, params) =>
+			dispatch(loadUserBoard(session, params)),
+		loadSessions: (session, params) =>
+			dispatch(loadUserSessions(session, params)),
+		loadShapers: (session, params) =>
+			dispatch(loadShapers(session, params)),
 		loadBoards: (session, params) => dispatch(loadBoards(session, params)),
-		editUserBoard: (session, params) =>dispatch(updateUserBoard(session, params)),
-		loadBoardImages: (session, params) =>dispatch(loadUserBoardImages(session, params)),
-		addImages: (session, params) =>dispatch(addUserBoardImages(session, params)),
-		deleteBoardImage: (session, id) =>dispatch(deleteUserBoardImage(session, id)),
+		editUserBoard: (session, params) =>
+			dispatch(updateUserBoard(session, params)),
+		loadBoardImages: (session, params) =>
+			dispatch(loadUserBoardImages(session, params)),
+		addImages: (session, params) =>
+			dispatch(addUserBoardImages(session, params)),
+		deleteBoardImage: (session, id) =>
+			dispatch(deleteUserBoardImage(session, id)),
 	};
 };
 
@@ -73,6 +79,7 @@ class BoardView extends Component {
 			imageIndex: 0,
 			modelPlaceholder: null,
 			boardSizeOptions: this.prepBoardSizeOptions(sizes),
+			isDisabled: true,
 		};
 		this.onDrop = this.onDrop.bind(this);
 	}
@@ -91,7 +98,9 @@ class BoardView extends Component {
 				limit: 1000,
 				withs: relations.boards,
 			});
-			this.props.loadShapers(this.props.session, { withs: relations.shapers });
+			this.props.loadShapers(this.props.session, {
+				withs: relations.shapers,
+			});
 			this.props.loadBoardImages(this.props.session, {
 				wheres: { user_board_id: this.props.match.params.id },
 			});
@@ -112,7 +121,9 @@ class BoardView extends Component {
 			const boardId = !Number.isInteger(this.state.board_id)
 				? this.props.board.id
 				: this.state.board_id;
-			const board = this.props.boards.find((board) => board.id === boardId);
+			const board = this.props.boards.find(
+				(board) => board.id === boardId
+			);
 			if (board && board.manufacturer_id !== newValue) {
 				data["board_id"] = "";
 				data["modelPlaceholder"] = "Choose A Board";
@@ -125,7 +136,8 @@ class BoardView extends Component {
 
 	getShaperSuggestions = (value, reason) => {
 		//if its empty or just focused let's show everything
-		if (!value || reason === "type_ahead_focused") return this.props.shapers;
+		if (!value || reason === "type_ahead_focused")
+			return this.props.shapers;
 
 		const inputValue = value.trim().toLowerCase();
 		const inputLength = inputValue.length;
@@ -133,7 +145,8 @@ class BoardView extends Component {
 			? []
 			: this.props.shapers.filter(
 					(entity) =>
-						entity.name.toLowerCase().slice(0, inputLength) === inputValue
+						entity.name.toLowerCase().slice(0, inputLength) ===
+						inputValue
 			  );
 	};
 
@@ -154,7 +167,8 @@ class BoardView extends Component {
 			? []
 			: this.props.boards.filter(
 					(entity) =>
-						entity.model.toLowerCase().slice(0, inputLength) === inputValue &&
+						entity.model.toLowerCase().slice(0, inputLength) ===
+							inputValue &&
 						entity.manufacturer_id === this.state.manufacturer_id
 			  );
 	};
@@ -212,9 +226,10 @@ class BoardView extends Component {
 		});
 	};
 
-
 	render() {
 		const { board } = this.props;
+		let isOwner = this.props.board.user_id === this.props.session.user.id;
+		console.log("isOwner", isOwner);
 		const modelPlaceholder = this.state.modelPlaceholder
 			? this.state.modelPlaceholder
 			: board.Board
@@ -224,151 +239,202 @@ class BoardView extends Component {
 			<MainContainer>
 				<FormCard returnToIndex={this.returnToIndex}>
 					<Form>
-						<div className="row col-md-12 container">
-							<h2 className="details col-md-12">
-								<RIEInput
-									required={false}
-									value={board.name || ""}
-									s
-									defaultValue={board.name}
-									change={this.submitUpdate}
-									propName="name"
-								/>
-							</h2>
-							<div className="preview col-6">
-							<FontAwesomeIcon
-                                size="lg"
-                                alt="delete user"
-                                style={{
-                                  marginLeft: ".5em",
-                                  float : "left",
-                                  cursor: "pointer",
-                                  position : "absolute",
-                                  top : "2em",
-                                  zIndex : "999",
-								  color:"white",
-								  textShadow : "0 0 3px solid red",
-								  className : "icon-delete"
-                                }}
-                                icon={faTrash}
-                                onClick={this.deleteImage}
-                                value={this.state.imageIndex}
-                              />
-								<div className="clearfix">
+						<div className="container">
+							<div className="details row">
+								<div className="col-6 session-title">
+									<RIEInput
+										required={false}
+										value={board.name || ""}
+										defaultValue={board.name}
+										change={this.submitUpdate}
+										propName="name"
+										editProps={{ disabled: !isOwner }}
+										className="form-control"
+									/>
+								</div>
+								<div className="col-6"></div>
+							</div>
+							<div className="row">
+								<div className="preview col-6">
+									<FontAwesomeIcon
+										size="lg"
+										alt="delete user"
+										style={{
+											marginLeft: ".5em",
+											float: "left",
+											cursor: "pointer",
+											position: "absolute",
+											top: "1em",
+											zIndex: "999",
+											color: "white",
+											left: "1em",
+										}}
+										icon={faTrash}
+										onClick={this.deleteImage}
+										value={this.state.imageIndex}
+									/>
 									<ImageUploader
 										key={this.state.uploaderInstance}
 										withIcon={false}
-										buttonText="Add Images!"
+										buttonText="+"
 										onChange={this.onDrop}
-										imgExtension={[".jpg", ".jpeg", ".gif", ".png", ".gif"]}
+										imgExtension={[
+											".jpg",
+											".jpeg",
+											".png",
+										]}
 										maxFileSize={5242880}
 										withPreview={false}
 										withLabel={false}
-										buttonClassName="btn btn-link"
-									/>
-								</div>
-								<div>
-									<ImageGallery
-										items={this.props.images}
-										showBullets={true}
-										showIndex={true}
-										startIndex={this.state.imageIndex}
-										onSlide={this.onImageSelected}
-										showNav={false}
-										onImageLoad={this.onImageLoad}
-									/>
-								</div>
-							</div>
-							<div className="details col-md-6">
-								<div className="detail-line">
-									<StarBar
-										stars={board.rating}
-										onClick={this.submitUpdate}
-										size="1x"
-									/>
-								</div>
-								<div className="detail-line">
-									<strong>Size:</strong>
-									&nbsp;
-									<InlineEdit
-										type={InputType.Select}
-										value={board.size || "Select A Size"}
-										onChange={(data) => {
-											this.submitUpdate({ size: data });
+										buttonClassName="upload-btn"
+										style={{
+											marginLeft: ".5em",
+											float: "left",
+											cursor: "pointer",
+											position: "absolute",
+											top: "0",
+											zIndex: "999",
+											color: "white",
+											left: "3em",
 										}}
-										options={this.state.boardSizeOptions}
-										valueKey="id"
-										labelKey="id"
 									/>
-								</div>
-								<div className="detail-line">
 									<div>
-										<strong>Shaper/Company:</strong>
+										<ImageGallery
+											items={this.props.images}
+											showBullets={true}
+											showIndex={true}
+											startIndex={this.state.imageIndex}
+											onSlide={this.onImageSelected}
+											showNav={false}
+											onImageLoad={this.onImageLoad}
+										/>
 									</div>
-									<TypeAheadInput
-										entity={this.props.shapers}
-										name="manufacturer_id"
-										keyName="name"
-										className="form-control"
-										placeholder={
-											board.Board && board.Board.Manufacturer
-												? board.Board.Manufacturer.name
-												: "Choose A Shaper"
-										}
-										value={this.state.manufacturer_id}
-										setValue={this.onTypeAheadSelected}
-										getSuggestions={this.getShaperSuggestions}
-										display={true}
-									/>
 								</div>
-								<div className="detail-line">
-									<div>
-										<strong>Model:</strong>
+								<div className="details col-md-6">
+									<div className="detail-line">
+										<StarBar
+											stars={board.rating}
+											onClick={this.submitUpdate}
+											size="1x"
+											static={!isOwner}
+										/>
 									</div>
-									<TypeAheadInput
-										entity={this.props.boards}
-										name="board_id"
-										keyName="model"
-										className="form-control"
-										placeholder={modelPlaceholder}
-										value={this.state.board_id}
-										setValue={this.onTypeAheadSelected}
-										getSuggestions={this.getBoardSuggestions}
-										display={true}
-									/>
-								</div>
-								<div className="detail-line">
-									<div>
-										<strong>Notes:</strong>
+									<div className="detail-line">
+										<strong>Size:</strong>
+										&nbsp;
+										<InlineEdit
+											type={InputType.Select}
+											value={
+												board.size || "Select A Size"
+											}
+											onChange={(data) => {
+												this.submitUpdate({
+													size: data,
+												});
+											}}
+											options={
+												this.state.boardSizeOptions
+											}
+											valueKey="id"
+											labelKey="id"
+											editClass="form-control"
+											isDisabled={0}
+										/>
 									</div>
-									<RIETextArea
-										value={board.notes || "You have no notes for this session"}
-										defaultValue={board.notes}
-										className="form-control text-area"
-										change={this.submitUpdate}
-										propName="notes"
-										validate={_.isString}
-									/>
+									<div className="detail-line">
+										<div>
+											<strong>Shaper/Company:</strong>
+										</div>
+										<TypeAheadInput
+											entity={this.props.shapers}
+											name="manufacturer_id"
+											keyName="name"
+											className="form-control"
+											placeholder={
+												board.Board &&
+												board.Board.Manufacturer
+													? board.Board.Manufacturer
+															.name
+													: "Choose A Shaper"
+											}
+											value={this.state.manufacturer_id}
+											setValue={this.onTypeAheadSelected}
+											getSuggestions={
+												this.getShaperSuggestions
+											}
+											display={true}
+											disabled={!isOwner}
+										/>
+									</div>
+									<div className="detail-line">
+										<div>
+											<strong>Model:</strong>
+										</div>
+										<TypeAheadInput
+											entity={this.props.boards}
+											name="board_id"
+											keyName="model"
+											className="form-control"
+											placeholder={modelPlaceholder}
+											value={this.state.board_id}
+											setValue={this.onTypeAheadSelected}
+											getSuggestions={
+												this.getBoardSuggestions
+											}
+											display={true}
+											disabled={!isOwner}
+										/>
+									</div>
+									<div className="detail-line">
+										<div>
+											<strong>Notes:</strong>
+										</div>
+										<RIETextArea
+											value={
+												board.notes ||
+												"You have no notes for this session"
+											}
+											defaultValue={board.notes}
+											className="form-control text-area"
+											change={this.submitUpdate}
+											propName="notes"
+											validate={_.isString}
+											editProps={{ disabled: !isOwner }}
+										/>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div className="container">
-							<div className="row col-12" style={{ marginTop: "1em" }}>
+							<div
+								className="row col-12"
+								style={{ marginTop: "1em" }}
+							>
 								<h5>Used In Sessions...</h5>
 							</div>
 							<div className="row col-12">
 								{board.Sessions &&
-									board.Sessions.reduce((mappedArray, session, index) => {
-										if (index < 3) {
-											mappedArray.push(
-												<div className="col-md-4" key={index}>
-													<SessionCard session={session} key={session.id} />
-												</div>
-											);
-										}
-										return mappedArray;
-									}, [])}
-								{(!board.Sessions || board.Sessions.length === 0) && (
+									board.Sessions.reduce(
+										(mappedArray, session, index) => {
+											if (index < 3) {
+												mappedArray.push(
+													<div
+														className="col-md-4"
+														key={index}
+													>
+														<SessionCard
+															session={session}
+															key={session.id}
+														/>
+													</div>
+												);
+											}
+											return mappedArray;
+										},
+										[]
+									)}
+								{(!board.Sessions ||
+									board.Sessions.length === 0) && (
 									<div className="col-12">
 										<h3>No Sessions found at the moment</h3>
 									</div>

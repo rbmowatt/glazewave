@@ -35,7 +35,7 @@ module.exports = (sequelize, DataTypes) => {
   Session.addHook('afterCreate', sessionUpsertCallback)
   Session.addHook('afterUpdate',sessionUpsertCallback)
   Session.addHook('afterDestroy', async (session, options) => {
-    getClient(ALGOLIA_SESSION_INDEX ).deleteObject(ALGOLIA_SESSION_PREFIX + session.id)
+    getClient().delete({id : session.id, index : 'sessions'})
   })
 
   Session.associate = function(models) {

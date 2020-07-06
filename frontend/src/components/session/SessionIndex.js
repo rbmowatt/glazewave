@@ -313,6 +313,7 @@ class SessionIndex extends Component {
                             this.props.sessions.map((session) => (
                               <div key={session.id} className="col-12">
                                 <SessionCard
+                                  isOwner={session.user_id === this.props.session.user.id}
                                   session={session}
                                   key={session.id}
                                   deleteSession={this.deleteSession}
