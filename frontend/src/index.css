@@ -59,6 +59,7 @@ div.session-card {
 	font-size:0.9em;
 	margin-bottom: 1em;
 	border:1px solid #D3D3D3;
+	background-color: white;
 	border-radius: .3em ;
 	padding:1em;
 	cursor: pointer;
@@ -101,23 +102,6 @@ button.card-title {
 .index-sidecard {
 	margin-bottom: 1em;
 }
-div.fileContainer{
-	padding:0px;
-	margin:0px;
-	box-shadow: none;
-	display:inherit;
-}
-
-/* must be marked !important to overide react-images-upload modules styles */
-.fileContainer .chooseFileButton {
-	margin:auto !important;
-	font-size:1em !important;
-	background:none !important;
-	color:blue !important;
-	float:right !important;
-	padding:0px !important;
-	padding-bottom:0.3em !important;
-}
 
 input:disabled,  .form-control:disabled, .form-control[readonly] {
     background-color:white !important;
@@ -126,20 +110,6 @@ input:disabled,  .form-control:disabled, .form-control[readonly] {
 	color:black;
 }
 
-div.dashboard-no-entries{
-	text-align:center;
-}
-
-div.dashboard-no-entries button{
-	margin-top: 1em;
-}
-
-.index-empty-resultset {
-	margin-top:1em;
-}
- .index-empty-resultset div {
-	margin:1em;
-}
 
 img.align-left {
 	text-align: left;
@@ -160,4 +130,131 @@ div.preview {
 .fa-trash{
 	-webkit-text-stroke: 1px #000;
 	-webkit-text-fill-color: transparent;
+}
+
+.index-empty-resultset {
+	margin-top:1em;
+}
+
+.index-empty-resultset {
+	margin-top:1em;
+}
+ .index-empty-resultset div {
+	margin:1em;
+}
+
+div.details .form-control{
+
+	border:2px solid white;
+
+}
+
+div.owner div.details .form-control:hover, div.details input[type=text]:hover, div.owner div.details .board-select:hover {
+	/*border:2px solid rgb(232, 240, 254);*/
+	border:2px solid orange;
+	cursor: pointer;
+
+
+}
+
+div.details .board-select {
+	padding:3px;
+	border-radius: 3px;
+	text-transform: capitalize;
+
+
+}
+
+div.privacy span:hover{
+	border:normal;
+	cursor: pointer;
+	padding:normal;
+}
+
+div.details input[type=radio]{
+	border:2px solid red !important;
+	cursor: pointer;
+	padding:10px;
+	margin-bottom:10px;
+}
+
+::placeholder {
+	color: black !important;
+  }
+
+  .react-datepicker-wrapper{
+	  display:inline !important;
+  }
+
+  .session-title .form-control{
+	  padding-left: 2px;
+	  font-size:1.5em;
+	  font-weight: bolder;
+	  text-transform: capitalize;
+  }
+
+  .session-details{
+	  margin-top:1.5em;
+  }
+
+
+  div.fileContainer{
+	padding:0px;
+	margin:0px;
+	box-shadow: none;
+	display:inherit;
+	background: none;
+}
+
+/* must be marked !important to overide react-images-upload modules styles */
+.fileContainer .chooseFileButton {
+	margin:auto !important;
+	font-size:1em !important;
+	background:none !important;
+	color:blue !important;
+
+	padding:0px !important;
+	padding-bottom:0.3em !important;
+}
+
+/* must be marked !important to overide react-images-upload modules styles */
+.fileContainer .chooseFileButton {
+	margin:auto !important;
+	font-size:1em !important;
+	background:none !important;
+	color:blue !important;
+
+	padding:0px !important;
+	padding-bottom:0.3em !important;
+}
+
+/* must be marked !important to overide react-images-upload modules styles */
+.preview .fileContainer .chooseFileButton {
+	margin:auto !important;
+	background:none !important;
+	padding:0px !important;
+	color:white !important;
+	font-size:2.5em !important;
+	font-weight: bold !important;
+}
+
+.preview .fileContainer .chooseFileButton:hover {
+	color:black!important;
+}
+
+
+  button.upload-btn {
+	background-image: url("https://cdn.iconscout.com/icon/premium/png-256-thumb/plus-sign-4-1150978.png");
+	font-size:3em !important;
+	font-weight: bold !important;
+	color:white !important;
+  }
+
+
+  .fa-trash:hover {
+    color: red !important;
+}
+
+.capitalize {
+	text-transform:capitalize !important;
 }

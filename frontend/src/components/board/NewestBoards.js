@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export const NewestBoards = (props) => {
   if (!props.boards.length) {
     return (
-    <div className="alert alert-primary text-center index-empty-resultset">
+    <div className="alert alert-primary text-center card-newest-resultset card-newest-empty-resultset">
         <h5>Newest Boards</h5>
         <div>You haven't added any Boards Yet.</div>
         <div>
@@ -15,7 +15,7 @@ export const NewestBoards = (props) => {
     );
   }
   return (
-    <div>
+    <div className="alert alert-primary text-center card-newest-resultset">
       <h5>Newest Boards</h5>
       {
         props.boards.reduce((mappedArray, board, index) => {

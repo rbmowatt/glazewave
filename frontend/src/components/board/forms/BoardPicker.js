@@ -34,8 +34,7 @@ class BoardPicker extends React.Component {
 		this.state = {
 			select: { id: 0, name: "No Board Selected" },
 			selectOptions: [],
-			defaultImage:
-				"/img/board_default_lg.png",
+			defaultImage:"/img/board_default_lg.png",
 			board_id: props.board_id,
 			selectedBoard: {},
 			show: false,
@@ -116,8 +115,8 @@ class BoardPicker extends React.Component {
 							<div
 								className={
 									isOwner
-										? "board-select board-picker-line row"
-										: "board-select-disabled board-picker-line row"
+										? "board-select row"
+										: "board-select-disabled row"
 								}
 							>
 								<InlineEdit
@@ -128,8 +127,8 @@ class BoardPicker extends React.Component {
 									options={this.props.boards}
 									valueKey="id"
 									labelKey="name"
-									className="form-control"
-									isDisabled={isOwner ? false : true}
+									editClass="form-control"
+									
 								/>
 							</div>
 
@@ -153,7 +152,7 @@ class BoardPicker extends React.Component {
 								<div className="board-picker-line">
 									<button
 										type="button"
-										className="btn btn-outline-primary btn-sm"
+										className="btn btn-link"
 										onClick={this.showModal}
 									>
 										New Board

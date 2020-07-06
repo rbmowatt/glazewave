@@ -75,7 +75,7 @@ class UserDashboard extends React.Component {
 		const { user_sessions, boards } = this.props;
 		return (
 			<MainContainer>
-				<div className="container card card-lg mx-auto">
+				<div className="container card card-lg mx-auto dashboard">
 					<div className="row dashboard-boxes">
 						<div className="col-10">
 							<div className="row">
@@ -83,7 +83,10 @@ class UserDashboard extends React.Component {
 									<ProfileCard />
 								</div>
 								<div className="col">
-									<LatestSessions sessions={user_sessions} />
+									<LatestSessions 
+									sessions={user_sessions}
+									limit={DASHBOARD_LIST_LIMIT}
+								 />
 								</div>
 								<div className="col">
 									<NewestBoards
