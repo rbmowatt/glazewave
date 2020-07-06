@@ -8,7 +8,7 @@ import { withRouter } from "react-router";
 
 const BoardCard = (props) => {
 	return (
-		<div className="container-fluid session-card">
+		<div className="container-fluid session-card" onClick={()=>props.history.push("/board/" + props.board.id)} >
 			<div className="row">
 				<div className="col-12 board-card-title">
 					<button
@@ -25,7 +25,7 @@ const BoardCard = (props) => {
 						src={
 							props.board.UserBoardImages && props.board.UserBoardImages.length
 								? s3Conf.root + props.board.UserBoardImages[0].name
-								: "https://image.shutterstock.com/image-vector/please-no-photo-camera-vector-260nw-473234290.jpg"
+								: "/img/board_default_lg.png"
 						}
 					/>
 				</div>

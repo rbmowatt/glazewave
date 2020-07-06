@@ -23,8 +23,7 @@ import {
 	ReactiveBase,
 	MultiList,
 	SelectedFilters,
-	ReactiveList,
-	StateProvider,
+	ReactiveList
 } from "@appbaseio/reactivesearch";
 
 const DEFAULT_SORT = "created_at_DESC";
@@ -161,7 +160,7 @@ class BoardIndex extends Component {
 	};
 
 	render() {
-		const { boards } = this.props;
+		const showModal = this.showModal;
 		return (
 			<MainContainer>
 				<ReactiveBase app="user_boards" url={elasticConfig.host} credentials={elasticConfig.credentials}>
@@ -249,11 +248,6 @@ class BoardIndex extends Component {
 													react={{
 														and: ["manufacturers"],
 													}}
-													onQueryChange={function (prevQuery, nextQuery) {
-														// use the query with other js code
-														console.log("prevQuery", prevQuery);
-														console.log("nextQuery", nextQuery);
-													}}
 													defaultQuery={() => {
 														return {
 															query: {
@@ -267,6 +261,7 @@ class BoardIndex extends Component {
 										<div className="col-7">
 											<div className="row">
 												<ReactiveList
+													dataField="id"
 													onData={this.elasticResultHandler}
 													onQueryChange={this.onSortUpdated}
 													defaultQuery={() => {
@@ -279,7 +274,7 @@ class BoardIndex extends Component {
 													renderResultStats={function (stats) {
 														return (
 															<div className="elastic-meta">
-																{stats.numberOfResults + " results"}
+																{stats.numberOfResults + " Results Sorted By"}
 															</div>
 														);
 													}}
@@ -294,6 +289,14 @@ class BoardIndex extends Component {
 													innerClass={{
 														pagination: "elastic-paginate",
 														sortOptions: "form-control elastic-sort",
+													}}
+													renderNoResults={function () {
+														return (
+														  <div className="alert alert-primary text-center index-empty-resultset">
+															  <div>You Haven't Created Any Boards Yet</div>
+															  <div><button className="btn btn-sm btn-primary"  onClick={showModal} >Get Started!</button></div>
+														  </div>
+														);
 													}}
 													sortOptions={[
 														{
@@ -348,6 +351,13 @@ class BoardIndex extends Component {
 											</div>
 										</div>
 										<div className="col-2">
+											<div className="index-sidecard">
+												<img
+													className="align-left"
+													src="/img/LogoMakr_4GvwRg.png"
+													alt="glazewave"
+												/>
+											</div>
 											<div className="index-sidecard">
 												<Report />
 											</div>

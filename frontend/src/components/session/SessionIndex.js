@@ -60,6 +60,7 @@ class SessionIndex extends Component {
     this.deleteSession = this.deleteSession.bind(this);
     this.editSession = this.editSession.bind(this);
     this.viewSession = this.viewSession.bind(this);
+    this.showModal = this.showModal.bind(this);
   }
 
   componentDidMount() {
@@ -99,6 +100,7 @@ class SessionIndex extends Component {
   }
 
   showModal = () => {
+    console.log('modal launched');
     this.setState({ show: true });
   };
 
@@ -139,7 +141,7 @@ class SessionIndex extends Component {
   };
 
   render() {
-    const { sessions } = this.props;
+    const showModal = this.showModal;
 
     return (
       <MainContainer>
@@ -234,13 +236,8 @@ class SessionIndex extends Component {
                         />
                       </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-7">
                       <div className="row">
-                        {(!sessions || sessions.length === 0) && (
-                          <div className="col-12">
-                            <h3>No Sessions found at the moment</h3>
-                          </div>
-                        )}
                         <ReactiveList
                           onData={this.elasticResultHandler}
                           onQueryChange={this.onSortUpdated}
@@ -255,6 +252,14 @@ class SessionIndex extends Component {
                             return (
                               <div className="elastic-meta">
                                 {stats.numberOfResults + " Results Sorted By"}
+                              </div>
+                            );
+                          }}
+                          renderNoResults={function () {
+                            return (
+                              <div className="alert alert-primary text-center index-empty-resultset">
+                                  <div>You Haven't Created Any Sessions Yet</div>
+                                  <div><button className="btn btn-sm btn-primary"  onClick={showModal} >Get Started!</button></div>
                               </div>
                             );
                           }}
@@ -320,7 +325,14 @@ class SessionIndex extends Component {
                         />
                       </div>
                     </div>
-                    <div className="col-3">
+                    <div className="col-2">
+                    <div className="index-sidecard">
+                      <img
+                        className="align-left"
+                        src="/img/LogoMakr_4GvwRg.png"
+                        alt="glazewave"
+                      />
+							      </div>
                       <div className="index-sidecard">
                         <Report />
                       </div>

@@ -35,7 +35,7 @@ class BoardPicker extends React.Component {
 			select: { id: 0, name: "No Board Selected" },
 			selectOptions: [],
 			defaultImage:
-				"https://image.shutterstock.com/image-vector/please-no-photo-camera-vector-260nw-473234290.jpg",
+				"/img/board_default_lg.png",
 			board_id: props.board_id,
 			selectedBoard: {},
 			show: false,
@@ -109,6 +109,7 @@ class BoardPicker extends React.Component {
 									this.props.history.push("/board/" + session.board_id)
 								}
 								src={boardImage}
+								alt={this.props.user_board.name}
 							/>
 						</div>
 						<div className="col-7">

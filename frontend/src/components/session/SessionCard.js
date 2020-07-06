@@ -15,9 +15,9 @@ const SessionCard = props =>{
                 <div className="col-12 session-card-title"><button className="btn btn-link card-title" onClick={()=>props.history.push("/session/" + props.session.id) }>{props.session.title}</button></div>
                 <div className="col-4">
                 <div>
-                    <img className="img-responsive img-thumbnail img-card" 
+                    <img className="img-responsive img-thumbnail img-card" alt={props.session.title}
                         src={props.session.SessionImages && props.session.SessionImages.length ? s3Conf.root + props.session.SessionImages[0].name 
-                        : "https://surfmemo.s3.amazonaws.com/4b371c1dcc76131241ffe613e30ea51f" }/>
+                        : "/img/session_default_lg.png" }/>
                 </div>
                     <div style={{textAlign : 'center', marginTop : '0.3em'}}>
                         { props.editSession && <FontAwesomeIcon size="lg" alt="edit user" style={{ marginLeft:'.1em' , cursor:'pointer'}}  icon={faEdit} onClick={() => props.editSession(props.session.id)} /> }

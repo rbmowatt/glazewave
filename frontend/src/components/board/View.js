@@ -235,7 +235,25 @@ class BoardView extends Component {
 									propName="name"
 								/>
 							</h2>
-							<div className="preview col-md-6">
+							<div className="preview col-6">
+							<FontAwesomeIcon
+                                size="lg"
+                                alt="delete user"
+                                style={{
+                                  marginLeft: ".5em",
+                                  float : "left",
+                                  cursor: "pointer",
+                                  position : "absolute",
+                                  top : "2em",
+                                  zIndex : "999",
+								  color:"white",
+								  textShadow : "0 0 3px solid red",
+								  className : "icon-delete"
+                                }}
+                                icon={faTrash}
+                                onClick={this.deleteImage}
+                                value={this.state.imageIndex}
+                              />
 								<div className="clearfix">
 									<ImageUploader
 										key={this.state.uploaderInstance}

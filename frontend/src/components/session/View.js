@@ -23,6 +23,7 @@ import BoardPicker from './../board/forms/BoardPicker';
 import { Radio} from 'react-advanced-form-addons';
 import { FacebookProvider, Share, Comments, Page } from 'react-facebook';
 import fbConfig from './../../config/fb'
+import { withRouter } from 'react-router-dom';
 require('dotenv').config();
 
 const mapStateToProps = state => {
@@ -214,8 +215,25 @@ class SessionView extends Component {
                       </div>
                       <div className="row">
                         <div className="preview col-7">
+                        <FontAwesomeIcon
+                                size="lg"
+                                alt="delete user"
+                                style={{
+                                  marginLeft: ".5em",
+                                  float : "left",
+                                  cursor: "pointer",
+                                  position : "absolute",
+                                  top : "2em",
+                                  zIndex : "999",
+                                  color:"white"
+                                }}
+                                icon={faTrash}
+                                onClick={this.deleteImage}
+                                value={this.state.imageIndex}
+                              />
                           { isOwner &&
                           <div className="clearfix">
+
                               <ImageUploader
                                 key={this.state.uploaderInstance}
                                 withIcon={false}
@@ -242,18 +260,6 @@ class SessionView extends Component {
                           </div>
                           <div className="card-body">
                             <div className="card-text">
-                              <FontAwesomeIcon
-                                size="lg"
-                                alt="delete user"
-                                style={{
-                                  marginLeft: ".5em",
-                                  cursor: "pointer",
-                                  color: "red",
-                                }}
-                                icon={faTrash}
-                                onClick={this.deleteImage}
-                                value={this.state.imageIndex}
-                              />
                               <Page href={window.location.href} tabs="timeline" />
                               <Comments href={window.location.href} />
                             </div>
