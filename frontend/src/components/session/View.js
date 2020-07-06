@@ -18,13 +18,12 @@ import StarBar from './../layout/StarBar';
 import SessionRequests from './../../requests/SessionRequests';
 import {loadUserBoards} from './../../actions/user_board';
 import {UserSessionCleared,loadUserSession, updateUserSession, loadUserSessionImages, addUserSessionImages, deleteUserSessionImage} from './../../actions/user_session';
-import WWClient from './../../lib/utils/worldweather'
 import noaaForecaster from 'noaa-forecasts';
 import BoardPicker from './../board/forms/BoardPicker';
 import { Radio} from 'react-advanced-form-addons';
 import { FacebookProvider, Share, Comments, Page } from 'react-facebook';
 import fbConfig from './../../config/fb'
-require('dotenv').config();
+
 
 const mapStateToProps = state => {
     return { 
@@ -54,21 +53,20 @@ const mapStateToProps = state => {
 
 class SessionView extends Component {
 
-    
     constructor(props)
     {
         super(props)
         this.UserSessionRequest = new SessionRequests(props.session);
         
         this.state = { 
-            boards : [], 
-            select: {id : 0, name : 'No Board Selected'},
-            selectedImage : null,
+            boards : [], //array of user boards to pupulate board picker
+            select: {id : 0, name : 'No Board Selected'}, //currently selected board
+            selectedImage : null,//the id of the currently selected image, used foor delete
             selectOptions: [],
-            uploaderInstance : 1,
-            imageIndex : 0,
-            date: '',
-            is_public : null,
+            uploaderInstance : 1,//we need to increment the uploader instance each time to clear
+            imageIndex : 0,//the begining index of images
+            date: '',//initialize date
+            is_public : null,//internal prop to keep track of pribacy desires
         };
         this.onDrop = this.onDrop.bind(this);
     
@@ -94,11 +92,11 @@ class SessionView extends Component {
         })
         this.props.addImages(this.props.session, { data : formData});
         this.setState({uploaderInstance : this.state.uploaderInstance + 1})
-      
     }
 
     componentDidUpdate(prevProps, prevState, snapshot)
     {
+          //were going to use this to see if a new board was created, if so we have to add it to the availableboards and set it as selected
             ((this.props.boards.length && !this.state.selectOptions.length && this.props.current_session.id)
             || (prevProps.boards.length !== this.props.boards.length)) && this.setSelectedBoard();
     }
@@ -147,11 +145,6 @@ class SessionView extends Component {
         }
     }
     
-      onLocationBlur = (e, a, d) =>
-    {
-
-    }
-
     onBoardChange = (id) =>
     {
         if(!id) return;
@@ -192,45 +185,81 @@ class SessionView extends Component {
 
     render() {
         const session = this.props.current_session;
+        const isOwner = this.props.session.user.id === session.user_id;
         return (
             <MainContainer>
               <FacebookProvider appId={fbConfig.api_key}>
                 <FormCard returnToIndex={this.returnToIndex}>
                   <Form>
-                    <div className="container">
+                    <div className={isOwner ? 'container owner' : 'container'}>
                       <div className="details row">
-                        <h3 className="col-12 session-title">
+                        <div className="col-7 session-title">
                           <RIEInput
                             required={false}
                             value={session.title || ""}
                             defaultValue={session.title}
                             change={this.submitUpdate}
                             propName="title"
+                            editProps={{ disabled: !isOwner }}
+                            className="form-control"
                           />
-                        </h3>
+                        </div>
+                        <div className="col-5">
+
+                        </div>
                         <div className="col-12">
                           <StarBar
                             stars={session.rating}
                             onClick={this.submitUpdate}
                             size="1x"
+                            static={!isOwner}
                           />
                         </div>
                       </div>
                       <div className="row">
                         <div className="preview col-7">
-                          <div className="clearfix">
+                          <FontAwesomeIcon
+                                size="lg"
+                                alt="delete user"
+                                style={{
+                                  marginLeft: ".5em",
+                                  float : "left",
+                                  cursor: "pointer",
+                                  position : "absolute",
+                                  top : "1em",
+                                  zIndex : "999",
+                                  color:"white",
+                                  left:"1em"
+                                }}
+                                icon={faTrash}
+                                onClick={this.deleteImage}
+                                value={this.state.imageIndex}
+                                
+                              />
+                          { isOwner &&
                               <ImageUploader
                                 key={this.state.uploaderInstance}
                                 withIcon={false}
-                                buttonText="Add Images!"
+                                buttonText="+"
                                 onChange={this.onDrop}
                                 imgExtension={[".jpg", ".jpeg", ".gif", ".png", ".gif"]}
                                 maxFileSize={5242880}
                                 withPreview={false}
                                 withLabel={false}
-                                buttonClassName='btn btn-link'
+                                buttonClassName='upload-btn'
+                                style={{
+                                  marginLeft: ".5em",
+                                  float : "left",
+                                  cursor: "pointer",
+                                  position : "absolute",
+                                  top : "0",
+                                  zIndex : "999",
+                                  color:"white",
+                                  left:"3em"
+                                }}
                               />
-                          </div>
+                         
+                          }
                           <div>
                             <ImageGallery
                               items={this.props.session_images}
@@ -244,29 +273,6 @@ class SessionView extends Component {
                           </div>
                           <div className="card-body">
                             <div className="card-text">
-                              <FontAwesomeIcon
-                                size="lg"
-                                alt="delete user"
-                                style={{
-                                  marginLeft: ".5em",
-                                  cursor: "pointer",
-                                  color: "red",
-                                }}
-                                icon={faTrash}
-                                onClick={this.deleteImage}
-                                value={this.state.imageIndex}
-                              />
-                              <Share href={window.location.href}>
-                                {({ handleClick, loading }) => (
-                                  <button
-                                    type="button"
-                                    disabled={loading}
-                                    onClick={handleClick}
-                                  >
-                                    Share
-                                  </button>
-                                )}
-                              </Share>
                               <Page href={window.location.href} tabs="timeline" />
                               <Comments href={window.location.href} />
                             </div>
@@ -275,7 +281,8 @@ class SessionView extends Component {
                         <div className="details col-5">
                           <div className="container">
                             <div className="detail-line">
-                              <div className="detail-line">
+                              { isOwner &&
+                              <div className="detail-line privacy">
                                 <div>
                                   <strong>Privacy:</strong>
                                 </div>
@@ -294,16 +301,19 @@ class SessionView extends Component {
                                   checked={session.is_public && session.is_public === true}
                                 />
                               </div>
+                              }
                               <div>
                                 <strong>Location:</strong>
                               </div>
                               <Location
+                                disabled={!isOwner}
                                 id="location_id"
                                 name="location_id"
                                 className="form-control"
                                 onChange={this.onLocationChange}
                                 onBlur={this.onLocationBlur}
                                 value={session.location_id}
+                                disable={!isOwner}
                                 placeholder={
                                   session.Location
                                     ? session.Location.formatted_address
@@ -316,6 +326,7 @@ class SessionView extends Component {
                                 <strong>Date:</strong>
                               </div>
                               <DatePicker
+                                disabled={!isOwner}
                                 selected={this.state.date}
                                 className="date-picker-input form-control"
                                 onChange={this.onDateChange} //only when value has changed
@@ -345,6 +356,7 @@ class SessionView extends Component {
                                 change={this.submitUpdate}
                                 propName="notes"
                                 validate={_.isString}
+                                editProps={{ disabled: !isOwner }}
                               />
                             </div>
                           </div>

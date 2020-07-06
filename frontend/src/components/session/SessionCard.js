@@ -10,25 +10,28 @@ import { withRouter } from "react-router";
 
 const SessionCard = props =>{
     return (
-        <div className="container-fluid session-card" onClick={()=>props.history.push("/session/" + props.session.id)} >
+        <div className="container-fluid session-card" >
             <div className="row">
-                <div className="col-12 session-card-title"><button className="btn btn-link card-title" onClick={()=>props.history.push("/session/" + props.session.id) }>{props.session.title}</button></div>
+                <div className="col-12 session-card-title" onClick={()=>props.history.push("/session/" + props.session.id)} ><button className="btn btn-link card-title" onClick={()=>props.history.push("/session/" + props.session.id) }>{props.session.title}</button></div>
                 <div className="col-4">
-                <div>
-                    <img className="img-responsive img-thumbnail img-card" 
+                <div onClick={()=>props.history.push("/session/" + props.session.id)} >
+                    <img className="img-responsive img-thumbnail img-card" alt={props.session.title}
                         src={props.session.SessionImages && props.session.SessionImages.length ? s3Conf.root + props.session.SessionImages[0].name 
-                        : "https://surfmemo.s3.amazonaws.com/4b371c1dcc76131241ffe613e30ea51f" }/>
+                        : "/img/session_default_lg.png" }/>
                 </div>
+                { props.isOwner && 
                     <div style={{textAlign : 'center', marginTop : '0.3em'}}>
                         { props.editSession && <FontAwesomeIcon size="lg" alt="edit user" style={{ marginLeft:'.1em' , cursor:'pointer'}}  icon={faEdit} onClick={() => props.editSession(props.session.id)} /> }
-                        { props.deleteSession && <FontAwesomeIcon  size="lg"  alt="delete user" style={{ marginLeft:'.5em', cursor:'pointer'}}  icon={faTrash} onClick={() => props.deleteSession(props.session.id)} /> }
+                        { props.deleteSession && <FontAwesomeIcon  size="lg"  alt="delete user" style={{ marginLeft:'.5em', cursor:'pointer'}}  icon={faTrash} 
+                        onClick={(e) => { e.preventDefault();props.deleteSession(props.session.id)}} /> }
                     </div>
+}
                 </div>
-                <div className="col-8">
+                <div className="col-8" onClick={()=>props.history.push("/session/" + props.session.id)} >
                     <div className="card-date" >{moment(props.session.createdAt).calendar()}</div>
                     <div className="card-rating" ><StarBar stars={props.session.rating} /></div>
-                    <div >{props.session.UserBoard && props.session.UserBoard.name ? props.session.UserBoard.name : "No Board Selected"}</div>
-                    <div >{props.session.Location && props.session.Location.name ? props.session.Location.name : "No Location Specified"}</div>
+                    <div className="capitalize">{props.session.UserBoard && props.session.UserBoard.name ? props.session.UserBoard.name : "No Board Selected"}</div>
+                    <div className="capitalize">{props.session.Location && props.session.Location.name ?  props.session.Location.name  + ' ' + props.session.Location.vicinity : "No Location Specified"}</div>
                 </div>
             </div>
         </div>

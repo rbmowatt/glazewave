@@ -52,7 +52,6 @@ class TypeAheadInput extends React.Component {
     event,
     { suggestion, /*suggestionValue, suggestionIndex, sectionIndex, method*/ }
   ) => {
-    console.log(event.target);
     this.props.setValue(this.props.name, suggestion.id);
   };
 

@@ -15,6 +15,7 @@
     "sequelize": "npx sequelize-cli --options-path=app/config/sequelize.js"
   },
   "dependencies": {
+    "@elastic/elasticsearch": "^7.8.0",
     "algoliasearch": "^4.3.0",
     "aws-sdk": "^2.668.0",
     "axios": "^0.19.2",

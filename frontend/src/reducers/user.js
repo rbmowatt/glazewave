@@ -7,9 +7,8 @@ const user = (state = initialState, action) => {
   switch (action.type) {
     case USER_LOADED:
       return action.payload;
-      case USER_IMAGE_UPDATED:
-      newState.profile_img = action.payload.data;
-      return newState;
+    case USER_IMAGE_UPDATED:
+      return {...newState, ...{profile_img : action.payload.data}}
     default:
       return state
   }

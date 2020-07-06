@@ -17,10 +17,10 @@ const Navbar = props =>{
           
           <div className="collapse navbar-collapse" id="navbarCollapse">
               <div className="navbar-nav">
-              <a className="navbar-brand" href="/"><img src="https://umanage-mowatr.s3.amazonaws.com/bake_n_flake_logo.png" alt="bake n flake bakery" height="50" width="50"/></a>
+              <a className="navbar-brand" href="/"><img src="/img/LogoMakr_4GvwRg.png" alt="glazewave" height="150" width="150"/></a>
               {(props.session.isLoggedIn ) &&
                           <Link className="nav-link" to={'/user/dashboard'}>
-                          My Memo</Link>
+                          Dashboard</Link>
                       }
  
                 {false && props.session.isLoggedIn && props.session.isAdmin && 
