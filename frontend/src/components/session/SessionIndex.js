@@ -128,6 +128,9 @@ class SessionIndex extends Component {
         withs: relations.user_session,
         limit: DEFAULT_SHOW,
       });
+    }else
+    {
+      this.props.clearSessions();
     }
   };
   
@@ -145,7 +148,7 @@ class SessionIndex extends Component {
 
     return (
       <MainContainer>
-        <ReactiveBase app="sessions" url={elasticConfig.host} credentials={elasticConfig.credentials}>
+        <ReactiveBase app={elasticConfig.sessions_index} url={elasticConfig.host} credentials={elasticConfig.credentials}>
           <div className="row">
             <div className="container card card-lg mx-auto">
               <div className="card-title">

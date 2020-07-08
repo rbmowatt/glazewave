@@ -5,6 +5,7 @@ module.exports = {
         "password": process.env.MYSQL_PWD,
         "database": process.env.MYSQL_DB,
         "host": process.env.MYSQL_HOST,
+        "port": process.env.MYSQL_PORT,
         "dialect": "mysql",
         "operatorsAliases": false
     },
@@ -13,6 +14,7 @@ module.exports = {
         "password": process.env.MYSQL_PWD,
         "database": process.env.MYSQL_DB,
         "host": process.env.MYSQL_HOST,
+        "port": process.env.MYSQL_PORT,
         "dialect": "mysql",
         "operatorsAliases": false
     },
@@ -21,6 +23,7 @@ module.exports = {
         "password": process.env.MYSQL_PWD,
         "database": process.env.MYSQL_DB,
         "host": process.env.MYSQL_HOST,
+        "port": process.env.MYSQL_PORT,
         "dialect": "mysql",
         "operatorsAliases": false
     }
