@@ -9,6 +9,7 @@ const ALGOLIA_USER_BOARD_INDEX = 'user_boards';
 const ALGOLIA_USER_BOARD_PREFIX = 'user_board_';
 const ALGOLIA_SUFLINE_SPOT_INDEX = 'surfline_spots';
 const ALGOLIA_SUFLINE_SPOT_PREFIX = 'sl_spot_';
+require('dotenv').config();
 
 
 'use strict'
@@ -43,7 +44,7 @@ const setSessionQueue = (sessions, cb)=>
     .then(data=>{
         data.forEach(d=>{
             getClient().update({
-                index: 'sessions',
+                index: process.env.ELASTIC_SESSIONS_INDEX,
                 id : d.id,
                 body: {
                     doc: d,
@@ -73,7 +74,7 @@ const setUserBoardQueue = (boards, cb)=>
     .then(data=>{
         data.forEach(d=>{
             getClient().update({
-                index: 'user_boards',
+                index: process.env.ELASTIC_USER_BOARDS_INDEX,
                 id : d.id,
                 body: {
                     doc: d,

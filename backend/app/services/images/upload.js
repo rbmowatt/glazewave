@@ -22,6 +22,7 @@ const upload = function upload({destinationPath  = defaults.destinationPath, fit
       acl: "public-read",
       s3,
       Bucket: s3Config.Bucket,
+      bucket: s3Config.Bucket,
       contentType: s3Storage.AUTO_CONTENT_TYPE,
       resize: {
         fit: fit,

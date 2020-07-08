@@ -34,9 +34,6 @@ img.preview {
 	max-width: 250px;
 	max-height: 250px;
 }
-.table-container .row div {
-	margin: 0px;
-}
 .date-picker-input, .google-locations-input{
 	border: none;
 	padding:0px;
@@ -50,11 +47,6 @@ img.preview {
 .text-area {
 	min-height:150px;
 }
-.table-container {
-	 margin: 0px;
-	 padding: 0px;
-	 border-radius: .2em ;
- }
 div.session-card {
 	font-size:0.9em;
 	margin-bottom: 1em;
@@ -86,10 +78,7 @@ button.card-title {
 		padding-left: 15px;
 		z-index: 999;
    }
-	.card {
-		margin-top: 20px;
-		background: #eee;
-   }
+
 }
 .img-card {
 	max-height:7em;
@@ -243,7 +232,7 @@ div.details input[type=radio]{
 }
 
 
-  button.upload-btn {
+button.upload-btn {
 	background-image: url("https://cdn.iconscout.com/icon/premium/png-256-thumb/plus-sign-4-1150978.png");
 	font-size:3em !important;
 	font-weight: bold !important;

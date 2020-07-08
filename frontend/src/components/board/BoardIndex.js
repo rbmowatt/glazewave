@@ -53,10 +53,10 @@ class BoardIndex extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			show: false,
+			show: false,//toggle for modal
 			selectedSortOrder: DEFAULT_SORT,
-			showAll: 0,
-			filters: [{ match: { user_id: props.userSession.user.id } }],
+			showAll: 0,//whether we are are showing only user boards or all public boards
+			filters: [{ match: { user_id: props.userSession.user.id } }],//a set of default filters to be sent to elastic
 		};
 		this.deleteBoard = this.deleteBoard.bind(this);
 		this.editBoard = this.editBoard.bind(this);
@@ -71,6 +71,7 @@ class BoardIndex extends Component {
 	}
 
 	componentWillUnmount() {
+		//lets get rid of the boards in Redux
 		this.props.clearBoards();
 	}
 
@@ -98,8 +99,9 @@ class BoardIndex extends Component {
 	}
 
 	boardCreated = (id) => {
+		//new board was created in modal so let's et rid of boards
 		this.props.clearCreatedBoard();
-		//foreard user to new board details page
+		//forward user to new board details page
 		this.viewBoard(id);
 	};
 
@@ -163,7 +165,7 @@ class BoardIndex extends Component {
 		const showModal = this.showModal;
 		return (
 			<MainContainer>
-				<ReactiveBase app="user_boards" url={elasticConfig.host} credentials={elasticConfig.credentials}>
+				<ReactiveBase app={elasticConfig.user_boards_index} url={elasticConfig.host} credentials={elasticConfig.credentials}>
 					<div className="row">
 						<div className="container card card-lg mx-auto">
 							<div className="card-title">

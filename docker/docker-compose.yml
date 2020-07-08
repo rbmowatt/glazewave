@@ -10,10 +10,19 @@ services:
       - http.cors.allow-origin=http://localhost:3000,http://127.0.0.1:1358
       - http.cors.allow-headers=X-Requested-With,X-Auth-Token,Content-Type,Content-Length,Authorization
       - http.cors.allow-credentials=true
-    
   kibana:
     image: docker.elastic.co/kibana/kibana:6.8.10
     container_name: kibana
     ports: 
       - "5601:5601"
     depends_on: ['elasticsearch']
+    # The Database
+  database:
+    image: mysql:8.0.20
+    environment:
+      - "MYSQL_DATABASE=surfbook"
+      - "MYSQL_USER=root"
+      - "MYSQL_PASSWORD="
+      - "MYSQL_ROOT_PASSWORD=secret"
+    ports:
+      - "33062:3306"
