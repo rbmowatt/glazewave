@@ -7,7 +7,7 @@ module.exports = {
       Add altering commands here.
       Return a promise to correctly handle asynchronicity.
 */
-      return queryInterface.bulkInsert('Cities', data, {});
+      return queryInterface.bulkInsert('cities', data, {});
   
   },
 
@@ -19,6 +19,6 @@ module.exports = {
       Example:
       return queryInterface.bulkDelete('People', null, {});
     */
-   return queryInterface.bulkDelete('Cities', null, {});
+   return queryInterface.bulkDelete('cities', null, {});
   }
 };
