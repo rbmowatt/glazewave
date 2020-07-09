@@ -19,6 +19,6 @@ module.exports = {
       Example:
       return queryInterface.bulkDelete('People', null, {});
     */
-   return queryInterface.bulkDelete('UserBoards', null, {});
+   return queryInterface.bulkDelete('user_boards', null, {});
   }
 };
