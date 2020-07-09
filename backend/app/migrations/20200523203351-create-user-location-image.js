@@ -14,7 +14,7 @@ module.exports = {
       user_id: {
         type: Sequelize.INTEGER(11).UNSIGNED,
         references: {
-          model: 'Users', 
+          model: 'users', 
           key: 'id', 
         },
         onUpdate: 'CASCADE',
@@ -23,7 +23,7 @@ module.exports = {
       user_location_id: {
         type: Sequelize.INTEGER(11).UNSIGNED,
         references: {
-          model: 'User_Locations', 
+          model: 'user_locations', 
           key: 'id', 
         },
         onUpdate: 'CASCADE',

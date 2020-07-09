@@ -14,7 +14,7 @@ module.exports = {
       user_id: {
         type: Sequelize.INTEGER(11).UNSIGNED,
         references: {
-          model: 'Users', 
+          model: 'users', 
           key: 'id', 
         },
         onUpdate: 'CASCADE',
@@ -23,7 +23,7 @@ module.exports = {
       session_id: {
         type: Sequelize.INTEGER(11).UNSIGNED,
         references: {
-          model: 'Sessions', 
+          model: 'sessions', 
           key: 'id', 
         },
         onUpdate: 'CASCADE',

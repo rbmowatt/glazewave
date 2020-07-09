@@ -18,7 +18,7 @@ module.exports = {
       {
         type: Sequelize.STRING,
         references: {
-          model: 'Locations', 
+          model: 'locations', 
           key: 'id', 
         },
         onUpdate: 'CASCADE',
@@ -28,7 +28,7 @@ module.exports = {
       {
         type: Sequelize.INTEGER(11).UNSIGNED,
         references: {
-          model: 'Boards', 
+          model: 'boards', 
           key: 'id', 
         },
         onUpdate: 'CASCADE',
