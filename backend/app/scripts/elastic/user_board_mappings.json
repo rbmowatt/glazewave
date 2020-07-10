@@ -1,0 +1,77 @@
+{
+    "settings": {
+     "analysis": {
+      "filter": {
+       "englishStopWords": {
+        "type": "stop",
+        "stopwords": "_english_"
+       }
+      },
+      "analyzer": {
+       "userBoardNameAnalyzer": {
+        "tokenizer": "standard",
+        "filter": [
+         "lowercase",
+         "englishStopWords"
+        ]
+       }
+      }
+     }
+    },
+    "mappings": {
+      "properties": {
+       "name": {
+        "type": "keyword",
+        "fields": {
+         "analyzed": {
+          "type": "text",
+          "analyzer": "userBoardNameAnalyzer",
+          "search_analyzer": "userBoardNameAnalyzer"
+         }
+        }
+       },
+       "model": {
+        "type": "keyword",
+        "fields": {
+         "analyzed": {
+          "type": "text",
+          "analyzer": "userBoardNameAnalyzer",
+          "search_analyzer": "userBoardNameAnalyzer"
+         }
+        }
+       },
+       "manufacturer": {
+        "type": "keyword",
+        "fields": {
+         "analyzed": {
+          "type": "text",
+          "analyzer": "userBoardNameAnalyzer",
+          "search_analyzer": "userBoardNameAnalyzer"
+         }
+        }
+       },
+       "note": {
+        "type": "keyword",
+        "fields": {
+         "analyzed": {
+          "type": "text",
+          "analyzer": "userBoardNameAnalyzer",
+          "search_analyzer": "userBoardNameAnalyzer"
+         }
+        }
+       },
+       "id": {
+        "type": "integer"
+        },
+       "user_id": {
+        "type": "integer"
+        },
+       "rating": {
+        "type": "integer"
+        },
+       "is_public": {
+        "type": "integer"
+       }
+      }
+    }
+   }
