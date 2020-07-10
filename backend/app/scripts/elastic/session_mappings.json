@@ -1,0 +1,68 @@
+{
+    "settings": {
+    "analysis": {
+     "filter": {
+      "englishStopWords": {
+       "type": "stop",
+       "stopwords": "_english_"
+      }
+     },
+     "analyzer": {
+      "sessionNameAnalyzer": {
+       "tokenizer": "standard",
+       "filter": [
+        "lowercase",
+        "englishStopWords"
+       ]
+      }
+     }
+    }
+   },
+   "mappings": {
+
+     "properties": {
+      "title": {
+       "type": "keyword",
+       "fields": {
+        "analyzed": {
+         "type": "text",
+         "analyzer": "sessionNameAnalyzer",
+         "search_analyzer": "sessionNameAnalyzer"
+        }
+       }
+      },
+      "location": {
+       "type": "keyword",
+       "fields": {
+        "analyzed": {
+         "type": "text",
+         "analyzer": "sessionNameAnalyzer",
+         "search_analyzer": "sessionNameAnalyzer"
+        }
+       }
+      },
+      "board": {
+       "type": "keyword",
+       "fields": {
+        "analyzed": {
+         "type": "text",
+         "analyzer": "sessionNameAnalyzer",
+         "search_analyzer": "sessionNameAnalyzer"
+        }
+       }
+      },
+      "id": {
+       "type": "integer"
+       },
+      "user_id": {
+       "type": "integer"
+       },
+      "rating": {
+       "type": "integer"
+       },
+      "is_public": {
+       "type": "integer"
+      }
+     }
+   }
+}
