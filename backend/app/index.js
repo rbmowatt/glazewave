@@ -10,6 +10,7 @@ const cognitoAuth = require('./lib/cognitoAuth');
 const boardRouter = require('./routes/board');
 const cityRouter = require('./routes/city');
 const cognitoRouter = require('./routes/cognito');
+const imageRouter = require('./routes/images');
 const locationRouter = require('./routes/location');
 const manufacturerRouter = require('./routes/manufacturer');
 const sessionRouter = require('./routes/session');
@@ -34,6 +35,7 @@ app.use('/api/location', locationRouter);
 app.use('/api/manufacturer', manufacturerRouter);
 app.use('/api/session', sessionRouter);
 app.use('/api/sc', stormcastRouter);
+app.use('/api/image', imageRouter);
 app.use('/api/user_board', cognitoAuthMiddleware, userBoardRouter);
 
 

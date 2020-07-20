@@ -1,13 +1,13 @@
-const initialState = 0;
+const initialState = { count : 0, authorized : true};
 const api = (state = initialState, action) => {
-let newState = state;
   switch (action.type) {
     case 'API_START':
-        return newState +1;
+        return  {...state, ...{count : state.count + 1}};
     case 'API_END':
-        newState = state-1;
-        return newState;  
+        return  {...state, ...{count : state.count - 1}};
+    case 'API_401':
+        return  {...state, ...{authorized : false}};
     default :
-        return newState;
+        return state;
 }}
 export default api;

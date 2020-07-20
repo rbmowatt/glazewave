@@ -18,5 +18,11 @@ module.exports = (sequelize, DataTypes) => {
     SessionImage.belongsTo(models.User);
     SessionImage.belongsTo(models.Session);
   };
+  SessionImage.addScope('session_public'),
+  {
+    include: [
+      { model: 'sessions' , where: { is_public : true } }
+    ]
+  }
   return SessionImage;
 };

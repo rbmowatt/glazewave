@@ -12,6 +12,7 @@
     "sync-agolia": "node app/scripts/sync_agolia.js",
     "sync-surfline": "node app/scripts/import_surfline.js",
     "test-queue": "node app/services/queue/BetterQueue.js",
+    "test-elastic": "node app/scripts/elastic/test.js",
     "sequelize": "npx sequelize-cli --options-path=app/config/sequelize.js"
   },
   "dependencies": {
@@ -24,6 +25,7 @@
     "cors": "^2.8.5",
     "debug": "~2.6.9",
     "dotenv": "^8.2.0",
+    "elastic-builder": "^2.7.1",
     "express": "~4.16.1",
     "generate-password": "^1.5.1",
     "js-cookie": "^2.2.1",

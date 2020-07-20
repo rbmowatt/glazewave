@@ -42,7 +42,7 @@ img.preview {
 	color: black;
 }
 .detail-line{
-	padding-bottom:1em;
+	padding-bottom:0.1em;
 }
 .text-area {
 	min-height:150px;
@@ -112,7 +112,7 @@ div.index-cta {
 }
 
 div.preview {
-	margin-top:1em;
+	margin-top:0.5em;
 	position: relative;
 }
 
@@ -135,13 +135,26 @@ div.preview {
 div.details .form-control{
 
 	border:2px solid white;
+	
 
 }
 
+.details label, .details strong {
+	font-size:0.9rem !important;
+}
+
+.details input[type=text], .details textarea, .details ::placeholder {
+	font-size:0.8rem !important;
+	margin:0px !important;
+	padding:0.2em !important;
+	font-weight: 500 !important;
+}
+
 div.owner div.details .form-control:hover, div.details input[type=text]:hover, div.owner div.details .board-select:hover {
-	/*border:2px solid rgb(232, 240, 254);*/
-	border:2px solid orange;
+	border:2px solid rgb(36,192,253,0.4);
+	/*border:2px solid orange;*/
 	cursor: pointer;
+	margin-right:1em;
 
 
 }
@@ -169,6 +182,7 @@ div.details input[type=radio]{
 
 ::placeholder {
 	color: black !important;
+	font-size:0.9em !important;
   }
 
   .react-datepicker-wrapper{
@@ -246,4 +260,12 @@ button.upload-btn {
 
 .capitalize {
 	text-transform:capitalize !important;
+}
+
+.conditions {
+	font-size:0.9em;
+}
+
+div.privacy {
+	margin-top: -1.2em;
 }

@@ -1,6 +1,7 @@
 const NodeCache = require( "node-cache" );
 const myCache = new NodeCache( { stdTTL: 60 * 120, checkperiod: 120 } );
 const axios = require("axios");
+const stormglassConfig = require('./../../config/stormglass');
 
 const getReport = ({lat, lon, name})=>
 {
@@ -9,13 +10,31 @@ const getReport = ({lat, lon, name})=>
         {
             value = myCache.get( name );
             if ( value == undefined ){
-                const params = 'waveHeight,airTemperature,pressure,currentDirection,currentSpeed,swellDirection,swellHeight,swellPeriod,secondarySwellPeriod,secondarySwellDirection,secondarySwellHeight,waterTemperature,waveDirection,wavePeriod,windWaveHeight,windWavePeriod';
+                const params = [
+                    'waveHeight',
+                    'airTemperature',
+                    'pressure',
+                    'currentDirection',
+                    'currentSpeed',
+                    'swellDirection',
+                    'swellHeight',
+                    'swellPeriod',
+                    'secondarySwellPeriod',
+                    'secondarySwellDirection',
+                    'secondarySwellHeight',
+                    'waterTemperature',
+                    'waveDirection',
+                    'wavePeriod',
+                    'windWaveHeight',
+                    'windWavePeriod',
+                    'windSpeed'
+                ];
 
                 axios
                 .request(
-                    `https://api.stormglass.io/v2/weather/point?lat=${lat}&lng=${lon}&params=${params}`, {
+                    `${stormglassConfig.endpoint}/v2/weather/point?lat=${lat}&lng=${lon}&params=${params.join(',')}`, {
                 headers: {
-                    'Authorization': 'a27a4ffe-b647-11ea-9fc5-0242ac130002-a27a510c-b647-11ea-9fc5-0242ac130002'
+                    'Authorization': stormglassConfig.key
                 }}
                 ).then((jsonData) => {
                     myCache.set( name, jsonData.data )

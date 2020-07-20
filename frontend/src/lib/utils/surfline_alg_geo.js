@@ -15,8 +15,6 @@ const algoliaClient = algoliasearch(
 
 const index = algoliaClient.initIndex('surfline_spots');
 
-
-
 const getSpots = (lat, lon)=>
 {
     return index.search('', {

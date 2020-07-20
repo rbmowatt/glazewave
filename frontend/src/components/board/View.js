@@ -392,7 +392,7 @@ class BoardView extends Component {
 										<RIETextArea
 											value={
 												board.notes ||
-												"You have no notes for this session"
+												"You have no notes for this board"
 											}
 											defaultValue={board.notes}
 											className="form-control text-area"

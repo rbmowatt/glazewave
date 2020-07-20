@@ -60,8 +60,29 @@
       "rating": {
        "type": "integer"
        },
-      "is_public": {
-       "type": "integer"
+       "is_public": {
+        "type": "integer"
+       },
+       "water_temperature": {
+        "type": "integer"
+       },
+       "swell_height": {
+         "type": "float"
+        },
+      "swell_period": {
+          "type": "float"
+         },
+      "wave_height": {
+          "type": "float"
+         },
+      "wave_period": {
+        "type": "float"
+          },
+      "pressure" : {
+        "type": "float"
+      },
+      "wind_speed" : {
+        "type": "float"
       }
      }
    }

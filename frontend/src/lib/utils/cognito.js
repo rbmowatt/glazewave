@@ -7,6 +7,7 @@ import { SET_SESSION } from './../../actions/types';
 import apiConfig from '../../config/api.js';
 import {logInUser, loadUser} from './../../actions/user';
 import store from './../../store/index'
+import TokenStorage from './../utils/token_storage';
 const axios = require('axios');
 
 
@@ -87,6 +88,7 @@ const getCognitoSession = (dispatch) => {
       + '&email=' + result.idToken.payload.email + '&first_name=' + result.idToken.payload.given_name + '&last_name=' + result.idToken.payload.family_name
         ).then(data => {
         const session = formatSessionObject(data.data.id, result);
+        TokenStorage.setToken({access_token : session.jwt, refresh_token : null});
         session.user = {...session.user, ...data.data[0]};
         dispatch(loadUser(session, {wheres : {email : result.idToken.payload.email}}));
         resolve(session);
@@ -104,7 +106,6 @@ const formatSessionObject = (id, result) =>
       userName: result.idToken.payload['cognito:username'],
       email: result.idToken.payload.email
     },
-    //headers: `Authorization: Bearer ${result.accessToken.jwtToken}`,
     jwt : result.accessToken.jwtToken,
     groups : result.idToken.payload['cognito:groups'],
     isAdmin : result.idToken.payload['cognito:groups'] instanceof Array && result.idToken.payload['cognito:groups'].indexOf('Admin') !== -1,
@@ -122,6 +123,7 @@ export const refresh = (id = null) =>
     auth.userhandler = {
       onSuccess: function (result) {
         let session = formatSessionObject(store.getState().session.user.id, result);
+        TokenStorage.setToken({access_token : session.jwt, refresh_token : null});
         setSessionCookie(session);
         store.dispatch({ type: SET_SESSION, session });
         resolve(session)
@@ -131,31 +133,9 @@ export const refresh = (id = null) =>
         reject(err)
       }
     }
-    //auth.refreshSession(auth.getSession());
     auth.getSession();
-    //let user = auth.getCachedSession();
-    //auth.refreshSession(auth.getCachedSession());
-/** 
-  const auth = createCognitoAuth();
-  auth.userhandler = {
-    onSuccess: function (result) {
-      let session = formatSessionObject(store.getState().session.user.id, result);
-      setSessionCookie(session);
-      store.dispatch({ type: SET_SESSION, session });
-      resolve(session)
-    },
-    onFailure: function (err) {
-      console.log('whateves', err)
-      reject(err)
-    }
-  }
-  auth.getSession()  
-  */
-})    
-  //let user = auth.getCachedSession();
-  //auth.refreshSession(user.getSession())
-  //console.log('cached session', user)
-  }
+  });    
+}
 
 // Sign out of the current session (will redirect to signout URI)
 const signOutCognitoSession = () => {

@@ -2,6 +2,7 @@ import React, {Component} from "react"
 import ReactGoogleMapLoader from "react-google-maps-loader"
 import ReactGooglePlacesSuggest from "react-google-places-suggest"
 import { createField, fieldPresets } from 'react-advanced-form'
+import { getSessionData} from './../reports/stormglass/helpers/session';
 
  
 const MY_API_KEY = "AIzaSyBaaD_720jqJaoIBsQib_N79Q5_iciLRBc" // fake
@@ -27,6 +28,7 @@ class Location extends Component {
         })
         this.props.onChange('location_id', geocodedPrediction.place_id);
         this.setState({is_editing : false});
+        getSessionData(geocodedPrediction.geometry.location.lat(),geocodedPrediction.geometry.location.lng()).then(d=>this.props.onChange('conditions', d)) 
     }
  
     handleNoResult = () => {

@@ -36,7 +36,10 @@ const setSessionQueue = (sessions, cb)=>
     {
        data.push(session.id);
     })
-    let query = `SELECT sessions.id, sessions.user_id, title, sessions.rating, user_boards.name as board, sessions.is_public, locations.name as location FROM surfbook.sessions
+    let query = `SELECT sessions.id, sessions.user_id, title, sessions.rating, user_boards.name as board, sessions.is_public, locations.name as location,
+    session_data.water_temperature, session_data.swell_height, session_data.swell_period, session_data.wave_height, session_data.wave_period, session_data.pressure,
+    session_data.wind_speed FROM surfbook.sessions
+    LEFT JOIN session_data ON sessions.id = session_data.session_id 
     LEFT JOIN user_boards ON user_boards.id = sessions.board_id
     LEFT JOIN locations on locations.id = sessions.location_id where sessions.id IN (` + data.join(',') + `)`;
     console.log('update query', query)
