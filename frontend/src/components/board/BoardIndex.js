@@ -25,6 +25,8 @@ import {
 	SelectedFilters,
 	ReactiveList
 } from "@appbaseio/reactivesearch";
+import { refresh } from './../../lib/utils/cognito';
+
 
 const DEFAULT_SORT = "created_at_DESC";
 const DEFAULT_SHOW = 12;
@@ -57,6 +59,7 @@ class BoardIndex extends Component {
 			selectedSortOrder: DEFAULT_SORT,
 			showAll: 0,//whether we are are showing only user boards or all public boards
 			filters: [{ match: { user_id: props.userSession.user.id } }],//a set of default filters to be sent to elastic
+			mlVal : []
 		};
 		this.deleteBoard = this.deleteBoard.bind(this);
 		this.editBoard = this.editBoard.bind(this);
@@ -64,7 +67,7 @@ class BoardIndex extends Component {
 	}
 
 	componentDidMount() {
-		hasSession();
+		refresh().then(data=>console.log('refresh data', data))
 		if (this.props.userSession.isLoggedIn) {
 			//this.props.loadBoards(this.props.userSession, { orderBy : DEFAULT_SORT , wheres : {user_id : this.props.userSession.user.id }, withs : relations.user_board} );
 		}
@@ -128,7 +131,7 @@ class BoardIndex extends Component {
 			const isPublic = { match: { is_public: 1 } }; //user also wants to see all public boards
 			scopes.push(isPublic);
 		}
-		this.setState({ filters: scopes, showAll: parseInt(e.nextValue) });
+		this.setState({ filters: scopes, showAll: parseInt(e.nextValue), mlVal : [] });
 	};
 	/**
 	 * We need to keep track of sort order so that when we ask API to hydrrate items
@@ -158,7 +161,9 @@ class BoardIndex extends Component {
 				withs: relations.user_board,
 				limit: DEFAULT_SHOW,
 			});
-		}
+		} else{
+			this.props.clearBoards();
+		  }
 	};
 
 	render() {
@@ -221,6 +226,7 @@ class BoardIndex extends Component {
 											</div>
 											<div className="filter-widgets" id="sessions">
 												<MultiList
+										
 													componentId="manufacturers"
 													dataField="manufacturer"
 													title="Manufacturers"
@@ -230,16 +236,18 @@ class BoardIndex extends Component {
 													onError={this.setValues}
 													react={{
 														and: ["models"],
+														or:["board_list"]
 													}}
 													defaultQuery={() => {
 														return {
 															query: {
-																bool: { should: this.state.filters },
+																bool: { should: this.state.filters }
 															},
 														};
 													}}
 												/>
 												<MultiList
+												//value={this.state.mlVal}
 													componentId="models"
 													dataField="model"
 													innerClass={{
@@ -249,11 +257,14 @@ class BoardIndex extends Component {
 													title="Models"
 													react={{
 														and: ["manufacturers"],
+														or: ["board_list"]
 													}}
+													renderNoResults={() => <p>No Results Found!</p>}
+													onChange={console.log('query changed',  this.state.filters)}
 													defaultQuery={() => {
 														return {
 															query: {
-																bool: { should: this.state.filters },
+																bool: { should: this.state.filters }
 															},
 														};
 													}}
@@ -263,13 +274,14 @@ class BoardIndex extends Component {
 										<div className="col-7">
 											<div className="row">
 												<ReactiveList
+													componentId="board_list"
 													dataField="id"
 													onData={this.elasticResultHandler}
 													onQueryChange={this.onSortUpdated}
 													defaultQuery={() => {
 														return {
 															query: {
-																bool: { should: this.state.filters },
+																bool: { should: this.state.filters }
 															},
 														};
 													}}
@@ -281,7 +293,7 @@ class BoardIndex extends Component {
 														);
 													}}
 													className="col-12"
-													componentId="results"
+						
 													react={{
 														and: ["models", "manufacturers"],
 													}}

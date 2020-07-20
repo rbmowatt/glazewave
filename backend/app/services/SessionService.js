@@ -3,6 +3,7 @@ const BaseModel = db.Session;
 const Op = db.Sequelize.Op;
 const BaseService = require('./BaseService');
 const LocationService = require('./LocationService');
+const SessionDataModel = db.SessionData;
 const GooglePlaces = require('node-googleplaces');
 const googleConfig  = require('./../config/google')
 let algolaiIndex = 'user_sessions';
@@ -40,6 +41,11 @@ class SessionService  extends BaseService {
         } else {
             return super.create(params, callback);
         }
+    }
+
+    async addConditons( conditions )
+    {
+        return SessionDataModel.create(conditions);
     }
 
     async update(id, params, callback = null)

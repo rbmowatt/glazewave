@@ -4,16 +4,17 @@ import ImageUploader from 'react-images-upload';
 import moment from 'moment';
 import UserRequests from './../../requests/UserRequests';
 import { s3Conf } from './../../config/s3';
-import {loadUser, updateUserImage} from './../../actions/user';
+import {loadUser, updateUserImage, loadUserAverages} from './../../actions/user';
 
 const mapStateToProps = state => {
-    return { user : state.user, session : state.session }
+    return { user : state.user.data, session : state.session, aggregations : state.user.averages }
   }
   const mapDispachToProps = dispatch => {
     return {
       //updateImage : (request, data) => dispatch( request.updateProfileImage({data: data , onSuccess : (data)=>{ return {type: "SESSION_IMAGE_UPDATED", payload: data}}})),
       updateImage : (session, params)=>dispatch(updateUserImage(session, params)),
-      loadUser : (session, params)=>dispatch(loadUser(session, params))
+      loadUser : (session, params)=>dispatch(loadUser(session, params)),
+      loadUserAverages : (session, params)=>dispatch(loadUserAverages(session, params))
     }}
 
 class ProfileCard extends React.Component{
@@ -32,6 +33,7 @@ class ProfileCard extends React.Component{
     componentDidMount() {
         if (this.props.session.isLoggedIn) {
             this.props.loadUser(this.props.session, {id : this.props.session.user.id} );
+            this.props.loadUserAverages(this.props.session, {id : this.props.session.user.id} );
         }
     }
 
@@ -115,7 +117,24 @@ render(){
                                     </li>
                                 </ul>
                             </div>
-
+                             <div className="sm-no-margin">
+                             <div className="progress-text">
+                                    <div className="row">
+                                        <div className="col-7">Total Sessions</div>
+                                        <div className="col-5 text-right">{Math.round(this.props.aggregations.total_sessions)}</div>
+                                    </div>
+                                </div>
+                                <div className="progress-text">
+                                    <div className="row">
+                                        <div className="col-7">Average Session Rating</div>
+                                        <div className="col-5 text-right">{this.props.aggregations.session_rating} out of 10</div>
+                                    </div>
+                                </div>
+                                <div className="custom-progress progress">
+                                    <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style={{width : `${this.props.aggregations.session_rating * 10}%`}} className="animated custom-bar progress-bar slideInLeft bg-sky">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

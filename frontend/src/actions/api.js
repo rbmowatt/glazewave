@@ -21,3 +21,8 @@ export const apiError = error => ({
   type: API_ERROR,
   error
 });
+
+export const api401 = error => ({
+  type: 'API_401',
+  error
+});

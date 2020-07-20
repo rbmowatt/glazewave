@@ -20,6 +20,21 @@ router.get('/', function (req, res) {
     });
 });
 
+router.get('/:id/average', function (req, res) {
+  req.parser.id = req.params.id;
+  BaseService.make().getUserAverages(req.parser)
+    .then(data => {
+      res.send(data);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while retrieving " + EntityType + "."
+      });
+    });
+});
+
+
 router.get('/firstOrNew', function (req, res) {
   BaseService.make().where({ wheres : {username : req.query.username}})
     .then(data => {

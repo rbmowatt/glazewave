@@ -1,8 +1,10 @@
+import googleConfig from './../../config/google';
+
 window.geolocator.config({
     language: "en",
     google: {
       version: "3",
-      key: "AIzaSyBaaD_720jqJaoIBsQib_N79Q5_iciLRBc",
+      key: googleConfig.api_key,
     },
   });
  

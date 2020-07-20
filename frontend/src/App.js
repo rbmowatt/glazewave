@@ -20,12 +20,21 @@ import BoardIndex from './components/board/BoardIndex';
 import CreateUserBoard from './components/board/CreateUserBoard';
 import BoardView from './components/board/View';
 
+import { withRouter } from "react-router";
+import cognitoUtils from './lib/utils/cognito'
+
 
 const mapStateToProps = state => {
-    return { session: state.session, user : state.user }
+    return { session: state.session, user : state.user, api : state.api }
 }  
 
 class App extends React.Component{
+
+  componentWillUpdate(){
+    //listen for any unautorized api calls, if they happen log user out
+    if(!this.props.api.authorized) cognitoUtils.signOutCognitoSession();
+  }
+
   render() {
     return (
       <div>
@@ -55,5 +64,5 @@ class App extends React.Component{
   }
 }
 
-export default connect(mapStateToProps)(App)
-//export default withRouter(App);
+//export default connect(mapStateToProps)(App)
+export default withRouter(connect(mapStateToProps)(App));

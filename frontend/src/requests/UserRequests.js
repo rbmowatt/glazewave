@@ -12,5 +12,14 @@ class UserRequests extends BaseRequest{
         this.endpoint = '/api/user/images';
         return this.create(args);
     }
+
+    getAverages = ({ id = null, withs = [], label = '', onSuccess = ()=>{}, onFailure = (e)=>this.onFailure(e) }) => {
+        return this.apiAction({
+            url :this.getEndpoint() + `/` + id+ `/average?` + this.getWithString(withs),
+            onSuccess : onSuccess,
+            onFailure : onFailure,
+            label : label
+        });
+    }
 }
 export default UserRequests;

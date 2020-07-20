@@ -29,7 +29,7 @@ class SessionForm extends React.Component {
     refresh(props.session.user.id);
     super(props);
     this.defaultName = moment().format("MMMM D YYYY, h:mm a");
-    this.state = { show: false, pictures: props.pictures, location_id: "" };
+    this.state = { show: false, pictures: props.pictures, location_id: "" , conditions : {}};
   }
 
   onChange = (propertyName, newValue) => {
@@ -60,6 +60,7 @@ class SessionForm extends React.Component {
           action={({ serialized, fields, form }) =>
             this.props.processFormSubmission({
               session: this.props.session,
+              conditions: this.state.conditions,
               serialized,
               fields,
               form,

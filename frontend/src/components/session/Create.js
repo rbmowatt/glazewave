@@ -64,7 +64,8 @@ class Create extends React.Component{
         }
     }
 
-    processFormSubmission = ({ serialized, fields, form})=> {
+    processFormSubmission = ({ conditions, serialized, fields, form})=> {
+        console.log('form cond', conditions)
         const {session, createSession} = this.props;
         const { images } = this.state;
         return new Promise(function(resolve, reject){
@@ -73,6 +74,7 @@ class Create extends React.Component{
                 images.forEach((file, i) => {
                     formData.append('photo', file)
                 })
+                formData.append('conditions', JSON.stringify(conditions));
                 createSession(session, {data : formData});
                 resolve(formData);
             }else{

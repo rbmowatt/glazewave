@@ -45,7 +45,7 @@ const mapDispachToProps = (dispatch) => {
 };
 
 const relations = {
-  user_session: ["UserBoard", "Location", "SessionImage"],
+  user_session: ["UserBoard", "Location", "SessionImage", "SessionData"],
 };
 
 class SessionIndex extends Component {
@@ -128,8 +128,7 @@ class SessionIndex extends Component {
         withs: relations.user_session,
         limit: DEFAULT_SHOW,
       });
-    }else
-    {
+    } else{
       this.props.clearSessions();
     }
   };

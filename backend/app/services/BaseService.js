@@ -22,10 +22,12 @@ class BaseService {
 
   async where( {wheres, withs , limit = 20, page = 0, order_by, where_in = []} )
   {    
-    const options = { where: wheres, include: withs, offset: page, limit: limit };
-    if(where_in.length)  wheres.id = {[Op.in] :  where_in};
-    if(order_by) options.order = order_by;
-    return this.BaseModel.findAll(options);
+    return this.BaseModel.describe().then((atts)=>{
+      const options = { where: wheres, include: withs, offset: page, limit: limit };
+      if(where_in.length)  wheres.id = {[Op.in] :  where_in};
+      if(order_by) options.order = order_by;
+      return this.BaseModel.findAll(options);
+    })
   }
 
   async find({id, withs, selects = []})

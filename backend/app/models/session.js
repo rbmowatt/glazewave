@@ -42,6 +42,7 @@ module.exports = (sequelize, DataTypes) => {
     Session.belongsTo(models.UserBoard,  {foreignKey: 'board_id', targetKey: 'id'});
     Session.belongsTo(models.Location);
     Session.hasMany(models.SessionImage);
+    Session.hasOne(models.SessionData);
   };
   return Session;
 };
