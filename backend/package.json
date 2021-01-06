@@ -19,7 +19,7 @@
     "@elastic/elasticsearch": "^7.8.0",
     "algoliasearch": "^4.3.0",
     "aws-sdk": "^2.668.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "better-queue": "^3.8.10",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
