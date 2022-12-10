@@ -26,7 +26,7 @@
     "debug": "~2.6.9",
     "dotenv": "^8.2.0",
     "elastic-builder": "^2.7.1",
-    "express": "~4.16.1",
+    "express": "~4.17.3",
     "generate-password": "^1.5.1",
     "js-cookie": "^2.2.1",
     "jsonwebtoken": "^8.5.1",
