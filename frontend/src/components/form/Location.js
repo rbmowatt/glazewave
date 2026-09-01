@@ -20,7 +20,6 @@ class Location extends Component {
     }
  
     handleSelectSuggest = (geocodedPrediction, originalPrediction) => {
-       console.log(geocodedPrediction, originalPrediction) // eslint-disable-line
         this.setState({
             search: "",
             value: geocodedPrediction.formatted_address,
@@ -32,19 +31,16 @@ class Location extends Component {
     }
  
     handleNoResult = () => {
-        console.log("No results for ", this.state.search)
     }
  
     handleStatusUpdate = status => {
      // this.setState({is_editing : true});
-        console.log('key status is', status)
     }
 
     onBlur = (e)=>
     {
       
       if(this.state.is_editing){
-        console.log('blur', e)
         this.setState({
           value: '',
           is_editing : false
@@ -160,7 +156,6 @@ class Location extends Component {
 )
 }
 locRender = (prediction)=>{
-  console.log(prediction.types);
   return prediction.types.indexOf("route") !== -1
   ? prediction.description
   : null}

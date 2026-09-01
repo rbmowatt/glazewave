@@ -15,10 +15,6 @@ export function hasSession() {
       const expTime = moment.unix(session.expiration).valueOf();
       const current_time = moment().valueOf();
       const updateTime =  moment.unix(session.expiration).subtract(5, "minutes").valueOf();
-      console.log('token expires @', moment.unix(session.expiration).format('MMMM Do YYYY, h:mm:ss a'))
-      console.log('current time is', moment().format('MMMM Do YYYY, h:mm:ss a'))
-      console.log('update time is', moment.unix(session.expiration).subtract(5, "minutes").format('MMMM Do YYYY, h:mm:ss a'))
-      console.log('cookie expues',  current_time, expTime, updateTime);
       if(current_time > updateTime){
         refresh().then(data=> {return true})
         .catch(e=>clearSession())
@@ -28,7 +24,7 @@ export function hasSession() {
         return session;
       }
       else {
-        refresh().then(data=>console.log('session data', data))
+        refresh().then(data=>/* console.log removed */)
         .catch(e=>clearSession())
       }
     }
@@ -47,7 +43,7 @@ export function update()
 {
   if(!hasSession())
   {
-    refresh().then(data=>console.log('session data', data))
+    refresh().then(data=>/* console.log removed */)
         .catch(e=>clearSession())
   }
 }

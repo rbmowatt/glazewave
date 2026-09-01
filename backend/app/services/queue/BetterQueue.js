@@ -21,9 +21,7 @@ const getClient = (index) =>
     const client = new Client({ node: elasticConfig.host })
 client.on('response', (err, result) => {
     if (err) {
-      console.log(err)
     } else {
-        console.log(result)
     }
   })
   return client;
@@ -42,7 +40,6 @@ const setSessionQueue = (sessions, cb)=>
     LEFT JOIN session_data ON sessions.id = session_data.session_id 
     LEFT JOIN user_boards ON user_boards.id = sessions.board_id
     LEFT JOIN locations on locations.id = sessions.location_id where sessions.id IN (` + data.join(',') + `)`;
-    console.log('update query', query)
     db.query(query, { type: QueryTypes.SELECT })
     .then(data=>{
         data.forEach(d=>{
@@ -54,8 +51,8 @@ const setSessionQueue = (sessions, cb)=>
                     doc_as_upsert: true
                   }
                  })
-                .then(data=>console.log('elastic ok', data))
-                .catch(e=>console.log(e.meta.body.error))        
+                
+                .catch(e=>{})        
                 cb(null, data);
             }
         );
@@ -84,8 +81,8 @@ const setUserBoardQueue = (boards, cb)=>
                     doc_as_upsert: true
                   }
                  })
-                .then(data=>console.log('elastic ok', data))
-                .catch(e=>console.log(e.meta.body.error))        
+                
+                .catch(e=>{})        
                 cb(null, data);
             }
         );
@@ -98,7 +95,6 @@ const setSurflineSpotsQueue = (spots, cb)=>
     let data = [];
     spots.forEach((spot)=>
     {
-        console.log('adding spot', spot.id)
         spotData = spot.dataValues;
         spotData.objectID = ALGOLIA_SUFLINE_SPOT_PREFIX + spot.id;
         spotData._geoloc  = {
@@ -111,15 +107,13 @@ const setSurflineSpotsQueue = (spots, cb)=>
         delete spotData.createdAt;
         delete spotData.updatedAt;
         delete spotData.crumbs;
-        console.log(spotData)
         data.push(spotData);
     });
    
     getAlgoliaClient(ALGOLIA_SUFLINE_SPOT_INDEX).saveObjects(data, {
         }).then(({ objectIDs }) => {
             result = objectIDs;
-            console.log('added record', objectIDs)
-        }).catch(e=>console.log(e));
+        }).catch(e=>{});
         cb(null, data);
 }
 
@@ -169,12 +163,10 @@ const setSessionQueue = (sessions, cb)=>
     let query = `SELECT sessions.id, sessions.user_id, title, sessions.rating, user_boards.name as board, locations.name as location FROM surfbook.sessions
     LEFT JOIN user_boards ON user_boards.id = sessions.board_id
     LEFT JOIN locations on locations.id = sessions.location_id where sessions.id IN (` + data.join(',') + `)`;
-    console.log('update query', query)
     db.query(query, { type: QueryTypes.SELECT })
     .then(data=>{
         data.forEach(d=>
            // {
-            console.log('datatype', typeof data, data);
             const body = data.flatMap(doc => [{ index: { _index: 'sessions' } }, doc])
 
                 client.bulk({
@@ -182,8 +174,8 @@ const setSessionQueue = (sessions, cb)=>
                     body: body,
                     type: 'session'
                   })
-                  .then(data=>console.log('elastic ok', data))
-                  .catch(e=>console.log(e.meta.body.error))
+                  
+                  .catch(e=>{})
         
                   cb(null, data);
           //  })

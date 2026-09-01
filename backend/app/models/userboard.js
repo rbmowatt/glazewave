@@ -3,10 +3,8 @@ const {getUserBoardQueue, getClient, ALGOLIA_USER_BOARD_INDEX, ALGOLIA_USER_BOAR
 
 const userBoardUpsertCallback = async (board, options) => {
   getUserBoardQueue().push(board).on('finish', function (result) {
-    console.log(result)
   })
   .on('failed', function (err) {
-    console.log(err)
   })
 }
 
@@ -30,7 +28,6 @@ module.exports = (sequelize, DataTypes) => {
    UserBoard.addHook('afterCreate', userBoardUpsertCallback )
    UserBoard.addHook('afterUpdate', userBoardUpsertCallback )
    UserBoard.addHook('afterDestroy', async (board, options) => {
-    console.log('destrpyrd', board)
     getClient(ALGOLIA_USER_BOARD_INDEX ).deleteObject(ALGOLIA_USER_BOARD_PREFIX + board.id)
   })
 

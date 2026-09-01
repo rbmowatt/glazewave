@@ -100,7 +100,6 @@ class SessionIndex extends Component {
   }
 
   showModal = () => {
-    console.log('modal launched');
     this.setState({ show: true });
   };
 
