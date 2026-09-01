@@ -65,7 +65,6 @@ class Create extends React.Component{
     }
 
     processFormSubmission = ({ conditions, serialized, fields, form})=> {
-        console.log('form cond', conditions)
         const {session, createSession} = this.props;
         const { images } = this.state;
         return new Promise(function(resolve, reject){

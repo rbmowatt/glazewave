@@ -109,7 +109,6 @@ class BaseRequest {
     on fail lets send a redux action telling the app of error
     */
     onFailure = (error) =>{
-        console.log('error', error);
         return { type : 'API_FAILED'}
     }
     /*

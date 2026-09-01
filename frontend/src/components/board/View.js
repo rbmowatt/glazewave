@@ -229,7 +229,6 @@ class BoardView extends Component {
 	render() {
 		const { board } = this.props;
 		let isOwner = this.props.board.user_id === this.props.session.user.id;
-		console.log("isOwner", isOwner);
 		const modelPlaceholder = this.state.modelPlaceholder
 			? this.state.modelPlaceholder
 			: board.Board

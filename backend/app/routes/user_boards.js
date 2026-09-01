@@ -33,7 +33,6 @@ router.get('/images', function (req, res) {
 });
 
 router.get('/:id', function (req, res) {
-  console.log('getting uboards')
   req.parser.id = req.params.id;
   BaseService.make().find(req.parser)
     .then(data => {
@@ -48,7 +47,6 @@ router.get('/:id', function (req, res) {
 
 
 router.post('/images', upload({destinationPath : 'user_boards'}).array('photo'), function (req, res) {
-  console.log('__LINE__', req.body);
   const imgs = [];
   if(req.files && req.files.length){
     req.files.forEach(file=>{
@@ -75,7 +73,6 @@ router.post('/images', upload({destinationPath : 'user_boards'}).array('photo'),
 
 router.post('/', upload({destinationPath : 'user_boards'}).single('photo'), function (req, res) {
   // Validate request
-  console.log('__LINE__', req.body);
   BaseService.make().create(req.body)
     .then(data => {
       if(req.file && req.file.key){

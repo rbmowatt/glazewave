@@ -2,12 +2,9 @@
 const {getSessionQueue, getClient, ALGOLIA_SESSION_INDEX, ALGOLIA_SESSION_PREFIX} = require('./../services/queue/BetterQueue')
 
 const sessionUpsertCallback = async (session, options) => {
-  console.log(' been hit')
   getSessionQueue().push(session).on('finish', function (result) {
-    console.log( ' session created ' , result)
   })
   .on('failed', function (err) {
-    console.log(err)
   })
 }
 

@@ -15,9 +15,7 @@ const getClient = (index) => {
   const client = new Client({ node: elasticConfig.host });
   client.on("response", (err, result) => {
     if (err) {
-      console.log(err);
     } else {
-      console.log(JSON.stringify(result.body));
     }
   });
   return client;
@@ -44,11 +42,10 @@ client.indices.exists(
           .then((data) => {
             data.forEach((session) => {
               queue.push(session).on("finish", function (result) {
-                console.log(" session created ", result[0].objectID);
               });
             });
           })
-          .catch((e) => console.log("error", e));
+          .catch((e) => {});
       }
     );
   }
@@ -71,11 +68,10 @@ client.indices.exists(
           .then((data) => {
             data.forEach((board) => {
               queue.push(board).on("finish", function (result) {
-                console.log(" board created ", result[0].objectID);
               });
             });
           })
-          .catch((e) => console.log("error", e));
+          .catch((e) => {});
       }
     );
   }
@@ -87,8 +83,7 @@ SurflineSpotService.make().all({limit : 10000, with_all_relations : false}).then
   data.forEach(spot=>
       {
         queue.push(spot).on('finish', function (result) {
-          console.log( ' surfline spot  created ' , result[0].objectID)
         })
       })
-}).catch(e=>console.log('error', e))
+}).catch(e=>{})
 */

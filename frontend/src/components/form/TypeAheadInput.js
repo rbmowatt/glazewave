@@ -12,7 +12,6 @@ class TypeAheadInput extends React.Component {
   }
 
   onChange = (event, { newValue }) => {
-    console.log("key", newValue);
     if (this.state.value !== newValue) {
       this.setState({
         value: newValue,
@@ -21,7 +20,7 @@ class TypeAheadInput extends React.Component {
   };
 
   onBlur = (event) => {
-    if (this.state.value) console.log("blur", event.target.value);
+    if (this.state.value) /* console.log removed */;
     let vid = this.props.entity.find(
       (x) => x[this.props.keyName] === event.target.value
     );
