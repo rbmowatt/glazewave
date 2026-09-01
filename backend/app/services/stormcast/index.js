@@ -38,13 +38,11 @@ const getReport = ({lat, lon, name})=>
                 }}
                 ).then((jsonData) => {
                     myCache.set( name, jsonData.data )
-                    console.log(jsonData.data);
                     resolve(jsonData.data)
                 })
                 .catch(e=>reject(e))
             }
             else{
-                console.log('getting from cache')
                 resolve(value)
             }
         }

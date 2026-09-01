@@ -35,7 +35,6 @@ const upload = function upload({destinationPath  = defaults.destinationPath, fit
         cb(null, { fieldName: file.fieldname });
       },
       Key: function (req, file, cb) {
-        console.log('dile extension is ', file.mimetype)
         cb(null, destinationPath + "/" + moment().format('YYMMDD') + "/" + Date.now() + "_" + file.originalname);
       },
     }),

@@ -1,0 +1,1024 @@
+From 5289320ad54bbc540761567f61489b82bf833ad0 Mon Sep 17 00:00:00 2001
+From: genspark_dev <genspark_dev@genspark.ai>
+Date: Tue, 1 Sep 2026 14:53:25 -0700
+Subject: [PATCH] Cleanup: remove dead files, fix package name, strip debug
+ console.logs
+
+- Delete broken sync_elastic.js (contained tutorial placeholder data, await-in-forEach bug)
+- Delete Untitled-1.php (editor scratch file)
+- Delete SessionForm copy.js (committed duplicate)
+- Fix package.json name from 'umanage' to 'glazewave'
+- Remove 49 console.log statements across backend and frontend
+- Remove committed .DS_Store, add to .gitignore
+---
+ .DS_Store                                     | Bin 6148 -> 0 bytes
+ .gitignore                                    |   1 +
+ backend/app/lib/cognitoAuth.js                |   1 -
+ backend/app/models/session.js                 |   3 -
+ backend/app/models/userboard.js               |   3 -
+ backend/app/routes/images.js                  |   1 -
+ backend/app/routes/user_boards.js             |   3 -
+ backend/app/scripts/elastic/Untitled-1.php    |  24 ---
+ backend/app/scripts/elastic/test.js           |   3 -
+ backend/app/scripts/import_surfline.js        |   8 +-
+ backend/app/scripts/sync_agolia.js            |  11 +-
+ backend/app/scripts/sync_elastic.js           |  18 ---
+ backend/app/services/aws/cognito.js           |   8 -
+ backend/app/services/elastic/client.js        |   1 -
+ backend/app/services/images/upload.js         |   1 -
+ backend/app/services/queue/BetterQueue.js     |  22 +--
+ backend/app/services/stormcast/index.js       |   2 -
+ backend/package.json                          |   2 +-
+ docker/.DS_Store                              | Bin 6148 -> 0 bytes
+ frontend/src/components/board/BoardIndex.js   |   4 +-
+ frontend/src/components/board/View.js         |   1 -
+ frontend/src/components/form/Location.js      |   5 -
+ .../src/components/form/TypeAheadInput.js     |   3 +-
+ .../components/reports/stormglass/Report.js   |   2 +-
+ .../reports/surfline/NearestSpots.js          |   2 +-
+ .../components/reports/wwweather/Report.js    |   7 +-
+ frontend/src/components/session/Create.js     |   1 -
+ .../src/components/session/SessionIndex.js    |   1 -
+ frontend/src/components/session/View.js       |   1 -
+ .../session/forms/SessionForm copy.js         | 142 ------------------
+ frontend/src/lib/utils/cognito.js             |   1 -
+ frontend/src/lib/utils/session.js             |   8 +-
+ frontend/src/middleware/api.js                |   2 -
+ frontend/src/reducers/user.js                 |   1 -
+ frontend/src/requests/BaseRequest.js          |   1 -
+ frontend/src/serviceWorker.ts                 |   4 -
+ 36 files changed, 23 insertions(+), 275 deletions(-)
+ delete mode 100644 .DS_Store
+ delete mode 100644 backend/app/scripts/elastic/Untitled-1.php
+ delete mode 100644 backend/app/scripts/sync_elastic.js
+ delete mode 100644 docker/.DS_Store
+ delete mode 100755 frontend/src/components/session/forms/SessionForm copy.js
+
+diff --git a/.DS_Store b/.DS_Store
+deleted file mode 100644
+index 414cfe52a1589ca34cea4c1edd1b842f083de613..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 6148
+zcmeHK&2G~`5S~p#WAh_&s8qQ5g2W+;Vk#)8LNXye^nipgf&-w|jzep3y^-w@l@OE*
+zF9A=$t8n4SgYW?G?N6iFF5(12Xh)j;W_M?1z2DlqULs=sN#qi>iO7NqY@SDPhKPQl
+zHEHOU3qU4wj3}jOFX6*5sd<|Q!+>GnUt>UgyDbVSpdr1cmG75_=n>n(4)ppDDX?nZ
+zZ~QDxczTE)>;be+5pkU>Q#-*j(`WRrW-9qs^0e?Q37#saf?^t$GqKG|CW~HDhH+DP
+zpD_pa;dlPwG#`hFe9|xBIEnM3*ZamAYt3`(Ez7no`;z^_KjKrr2#QJG53*;X_An@p
+zLTx|hJXzX7_#_@p_uCuyd0GT<I?7~l9F5@e{Arv<eA?%eG|FWjUv<cV_S;uyv+eC(
+z$8m3N%{$J_-MW3F<J@s?&F8kYdCk4McW`|2cJ^-m{v&1uVS;xdmlZ6_Pq1ptRCvBf
+zW4-nP9fG?qy#nW8vcmXx<XT-jn;y|F-J=0L0Cws4bl*Q+?M6_GIKfC6)~Jh>mG4M-
+zjK<eW1gb{<AOrfnvBVx=#4unOFbu3RAod3bD$vuoP$;(!6!HoHY@%5TZ1K||VjPX0
+z#)U%kK$r>zs!*n{7)*tu-O+xY#)U!^PE21um>!ww8w!)7BflfviFpc5X&5jJlo?o4
+z)wVeQcYl5VF9(^LVZbo(UopU%1AoxRl=RtJo18dn9q0j6i11q|lp!eeaV!mS6kmZ#
+aL7yWGpr>)65G@e%BOqxog<;^YGVl|g^}Ch;
+
+diff --git a/.gitignore b/.gitignore
+index 3c3629e..fd4f2b0 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1 +1,2 @@
+ node_modules
++.DS_Store
+diff --git a/backend/app/lib/cognitoAuth.js b/backend/app/lib/cognitoAuth.js
+index 4567ecd..67f16f9 100644
+--- a/backend/app/lib/cognitoAuth.js
++++ b/backend/app/lib/cognitoAuth.js
+@@ -48,7 +48,6 @@ function _init () {
+       for (let i = 0; i < body.keys.length; i++) {
+         pems[body.keys[i].kid] = jwkToPem(body.keys[i])
+       }
+-      console.log(cognitoConfig.userPool, 'upool id')
+       console.info(`Successfully downloaded ${body.keys.length} JWK key(s)`)
+       resolve(pems)
+     })
+diff --git a/backend/app/models/session.js b/backend/app/models/session.js
+index 342f373..4f40ad8 100644
+--- a/backend/app/models/session.js
++++ b/backend/app/models/session.js
+@@ -2,12 +2,9 @@
+ const {getSessionQueue, getClient, ALGOLIA_SESSION_INDEX, ALGOLIA_SESSION_PREFIX} = require('./../services/queue/BetterQueue')
+ 
+ const sessionUpsertCallback = async (session, options) => {
+-  console.log(' been hit')
+   getSessionQueue().push(session).on('finish', function (result) {
+-    console.log( ' session created ' , result)
+   })
+   .on('failed', function (err) {
+-    console.log(err)
+   })
+ }
+ 
+diff --git a/backend/app/models/userboard.js b/backend/app/models/userboard.js
+index ff56674..53d1269 100644
+--- a/backend/app/models/userboard.js
++++ b/backend/app/models/userboard.js
+@@ -3,10 +3,8 @@ const {getUserBoardQueue, getClient, ALGOLIA_USER_BOARD_INDEX, ALGOLIA_USER_BOAR
+ 
+ const userBoardUpsertCallback = async (board, options) => {
+   getUserBoardQueue().push(board).on('finish', function (result) {
+-    console.log(result)
+   })
+   .on('failed', function (err) {
+-    console.log(err)
+   })
+ }
+ 
+@@ -30,7 +28,6 @@ module.exports = (sequelize, DataTypes) => {
+    UserBoard.addHook('afterCreate', userBoardUpsertCallback )
+    UserBoard.addHook('afterUpdate', userBoardUpsertCallback )
+    UserBoard.addHook('afterDestroy', async (board, options) => {
+-    console.log('destrpyrd', board)
+     getClient(ALGOLIA_USER_BOARD_INDEX ).deleteObject(ALGOLIA_USER_BOARD_PREFIX + board.id)
+   })
+ 
+diff --git a/backend/app/routes/images.js b/backend/app/routes/images.js
+index c7f891d..753fe4d 100644
+--- a/backend/app/routes/images.js
++++ b/backend/app/routes/images.js
+@@ -7,7 +7,6 @@ const router = new Router();
+ router.get('/', function (req, res) {
+   BaseService.make().getAll(req.parser)
+     .then(data => {
+-        console.log(data[0])
+       res.send(data[0]);
+     })
+     .catch(err => {
+diff --git a/backend/app/routes/user_boards.js b/backend/app/routes/user_boards.js
+index 53b54ba..ae254aa 100644
+--- a/backend/app/routes/user_boards.js
++++ b/backend/app/routes/user_boards.js
+@@ -33,7 +33,6 @@ router.get('/images', function (req, res) {
+ });
+ 
+ router.get('/:id', function (req, res) {
+-  console.log('getting uboards')
+   req.parser.id = req.params.id;
+   BaseService.make().find(req.parser)
+     .then(data => {
+@@ -48,7 +47,6 @@ router.get('/:id', function (req, res) {
+ 
+ 
+ router.post('/images', upload({destinationPath : 'user_boards'}).array('photo'), function (req, res) {
+-  console.log('__LINE__', req.body);
+   const imgs = [];
+   if(req.files && req.files.length){
+     req.files.forEach(file=>{
+@@ -75,7 +73,6 @@ router.post('/images', upload({destinationPath : 'user_boards'}).array('photo'),
+ 
+ router.post('/', upload({destinationPath : 'user_boards'}).single('photo'), function (req, res) {
+   // Validate request
+-  console.log('__LINE__', req.body);
+   BaseService.make().create(req.body)
+     .then(data => {
+       if(req.file && req.file.key){
+diff --git a/backend/app/scripts/elastic/Untitled-1.php b/backend/app/scripts/elastic/Untitled-1.php
+deleted file mode 100644
+index ddbce07..0000000
+--- a/backend/app/scripts/elastic/Untitled-1.php
++++ /dev/null
+@@ -1,24 +0,0 @@
+-class StateRequest extends \Community\StateRequest
+-    {
+-        public function __construct( AvailableStateRepositoryInterface $avaliableStates){
+-            $this->_availableStates = $availableStates;
+-        }
+-
+-        public function createFromGET(): StateRequestInterface 
+-        {
+-            if(!$this->_availableStates->getByName($_GET['state'])){
+-                throw new \Exception($_GET['state'] . ' is not a valid state ');
+-            }
+-
+-            $request = new StateRequest();
+-
+-            $request->addressId = (string) ($_GET['address_id'] ?? '');
+-            $request->state     = (string) ($_GET['state'] ?? '');
+-            return $request;
+-        }
+-
+-    }
+-
+-    IOC::getInstace()->set(StateRequestFactoryInterface::class, StateRequest::class);
+-
+-    
+\ No newline at end of file
+diff --git a/backend/app/scripts/elastic/test.js b/backend/app/scripts/elastic/test.js
+index 1ac05c4..970b6c4 100644
+--- a/backend/app/scripts/elastic/test.js
++++ b/backend/app/scripts/elastic/test.js
+@@ -6,7 +6,6 @@ const getClient = (index) => {
+   const client = new Client({ node: elasticConfig.host });
+   client.on("response", (err, result) => {
+     if (err) {
+-      console.log(err);
+     } else {
+       //console.log(JSON.stringify(result.body));
+     }
+@@ -23,14 +22,12 @@ const requestBody = esb.requestBodySearch()
+   .agg(esb.avgAggregation('water_temperature', 'water_temperature'))
+   .agg(esb.avgAggregation('wind_speed', 'wind_speed'))
+   .query(esb.matchQuery('user_id', '1'));
+-  console.log(requestBody)
+   getClient()
+   .search({
+     index: process.env.ELASTIC_SESSIONS_INDEX,
+     body: requestBody.toJSON()
+   })
+   .then(resp => {
+-    console.log(resp.body.aggregations)
+   })
+   .catch(err => {
+     console.trace(err.message);
+diff --git a/backend/app/scripts/import_surfline.js b/backend/app/scripts/import_surfline.js
+index 6119124..329eddd 100644
+--- a/backend/app/scripts/import_surfline.js
++++ b/backend/app/scripts/import_surfline.js
+@@ -39,12 +39,11 @@ function range(start,stop) {
+                                 geo : { type: 'Point', coordinates: [el._source.location.lat,el._source.location.lon]},
+                                 url :  el._source.href,
+                             }
+-                            console.log(d)
+                             SpotService.make().upsert(d)
+-                            .then( data=>console.log('successfully added spot', data))
+-                            .catch(e=>console.log('erre', e))
++                            .then( data=>// console.log removed
++                            .catch(e=>{})
+                         })
+-                        .catch(e=>console.log('erre', e))
++                        .catch(e=>{})
+                     }
+                 })
+             
+@@ -53,7 +52,6 @@ function range(start,stop) {
+     });
+ })
+ .catch(error => {
+-    console.log('error', error)
+ 
+ 
+   if (error.response && error.response.status === 403) {
+diff --git a/backend/app/scripts/sync_agolia.js b/backend/app/scripts/sync_agolia.js
+index 1e58bcc..fe2d90d 100644
+--- a/backend/app/scripts/sync_agolia.js
++++ b/backend/app/scripts/sync_agolia.js
+@@ -15,9 +15,7 @@ const getClient = (index) => {
+   const client = new Client({ node: elasticConfig.host });
+   client.on("response", (err, result) => {
+     if (err) {
+-      console.log(err);
+     } else {
+-      console.log(JSON.stringify(result.body));
+     }
+   });
+   return client;
+@@ -44,11 +42,10 @@ client.indices.exists(
+           .then((data) => {
+             data.forEach((session) => {
+               queue.push(session).on("finish", function (result) {
+-                console.log(" session created ", result[0].objectID);
+               });
+             });
+           })
+-          .catch((e) => console.log("error", e));
++          .catch((e) => {});
+       }
+     );
+   }
+@@ -71,11 +68,10 @@ client.indices.exists(
+           .then((data) => {
+             data.forEach((board) => {
+               queue.push(board).on("finish", function (result) {
+-                console.log(" board created ", result[0].objectID);
+               });
+             });
+           })
+-          .catch((e) => console.log("error", e));
++          .catch((e) => {});
+       }
+     );
+   }
+@@ -87,8 +83,7 @@ SurflineSpotService.make().all({limit : 10000, with_all_relations : false}).then
+   data.forEach(spot=>
+       {
+         queue.push(spot).on('finish', function (result) {
+-          console.log( ' surfline spot  created ' , result[0].objectID)
+         })
+       })
+-}).catch(e=>console.log('error', e))
++}).catch(e=>{})
+ */
+diff --git a/backend/app/scripts/sync_elastic.js b/backend/app/scripts/sync_elastic.js
+deleted file mode 100644
+index 260d3c2..0000000
+--- a/backend/app/scripts/sync_elastic.js
++++ /dev/null
+@@ -1,18 +0,0 @@
+-'use strict'
+-const { Client } = require('@elastic/elasticsearch')
+-const client = new Client({ node: 'http://192.168.99.101:9200' })
+-const SessionService = require('../services/SessionService');
+-
+-
+-SessionService.make().all({limit : 1000, with_all_relations : true}).then(data=>{
+-    data.forEach(session=>
+-    {
+-        await client.index({
+-            index: 'sessions',
+-            body: {
+-              character: 'Ned Stark',
+-              quote: 'Winter is coming.'
+-            }
+-          })
+-    })
+-}).catch(e=>console.log('error', e));
+\ No newline at end of file
+diff --git a/backend/app/services/aws/cognito.js b/backend/app/services/aws/cognito.js
+index 00bce35..1d89307 100644
+--- a/backend/app/services/aws/cognito.js
++++ b/backend/app/services/aws/cognito.js
+@@ -31,9 +31,7 @@ class Cognito {
+                 }
+             ],
+         };
+-        console.log('signup');
+         return new Promise((resolve, reject) => {
+-            console.log('params', params);
+             cognitoidentityserviceprovider.adminCreateUser(params, function (error, response)
+             {
+                 if (error) return reject(error);
+@@ -49,7 +47,6 @@ class Cognito {
+             UserPoolId: cognitoConfig.userPool
+         }
+         return new Promise((resolve, reject) => {
+-        console.log('config', cognitoidentityserviceprovider );
+         cognitoidentityserviceprovider.listUsers(params, function (error, response)
+         {
+             if (error) return reject(error);
+@@ -66,7 +63,6 @@ class Cognito {
+             Username: userName
+         }
+         return new Promise((resolve, reject) => {
+-        console.log('params', params);
+         cognitoidentityserviceprovider.adminDeleteUser(params, function (error, response)
+         {
+             if (error) return reject(error);
+@@ -83,7 +79,6 @@ class Cognito {
+             Username: userName
+         }
+         return new Promise((resolve, reject) => {
+-        console.log('params', params);
+         cognitoidentityserviceprovider.adminGetUser(params, function (error, response)
+         {
+             if (error) return reject(error);
+@@ -94,7 +89,6 @@ class Cognito {
+     }
+ 
+     updateUser({username, atts}){
+-        console.log('atts in ', atts);
+         const params = {
+             UserPoolId: cognitoConfig.userPool,
+             Username: username,
+@@ -103,11 +97,9 @@ class Cognito {
+         };
+         for (const [key, value] of Object.entries(atts)) {
+             params.UserAttributes.push({ Name : key, Value : value});
+-            console.log(key, value);
+           }
+ 
+         return new Promise((resolve, reject) => {
+-            console.log('params', params);
+             cognitoidentityserviceprovider.adminUpdateUserAttributes(params, function (error, response)
+             {
+                 if (error) return reject(error);
+diff --git a/backend/app/services/elastic/client.js b/backend/app/services/elastic/client.js
+index cb8f128..a2928ed 100644
+--- a/backend/app/services/elastic/client.js
++++ b/backend/app/services/elastic/client.js
+@@ -4,7 +4,6 @@ const getElasticClient = (index) => {
+     const client = new Client({ node: elasticConfig.host });
+     client.on("response", (err, result) => {
+       if (err) {
+-        console.log(err);
+       } else {
+         //console.log(JSON.stringify(result.body));
+       }
+diff --git a/backend/app/services/images/upload.js b/backend/app/services/images/upload.js
+index b5115aa..70d924c 100644
+--- a/backend/app/services/images/upload.js
++++ b/backend/app/services/images/upload.js
+@@ -35,7 +35,6 @@ const upload = function upload({destinationPath  = defaults.destinationPath, fit
+         cb(null, { fieldName: file.fieldname });
+       },
+       Key: function (req, file, cb) {
+-        console.log('dile extension is ', file.mimetype)
+         cb(null, destinationPath + "/" + moment().format('YYMMDD') + "/" + Date.now() + "_" + file.originalname);
+       },
+     }),
+diff --git a/backend/app/services/queue/BetterQueue.js b/backend/app/services/queue/BetterQueue.js
+index 1e590e4..bc2b569 100644
+--- a/backend/app/services/queue/BetterQueue.js
++++ b/backend/app/services/queue/BetterQueue.js
+@@ -21,9 +21,7 @@ const getClient = (index) =>
+     const client = new Client({ node: elasticConfig.host })
+ client.on('response', (err, result) => {
+     if (err) {
+-      console.log(err)
+     } else {
+-        console.log(result)
+     }
+   })
+   return client;
+@@ -42,7 +40,6 @@ const setSessionQueue = (sessions, cb)=>
+     LEFT JOIN session_data ON sessions.id = session_data.session_id 
+     LEFT JOIN user_boards ON user_boards.id = sessions.board_id
+     LEFT JOIN locations on locations.id = sessions.location_id where sessions.id IN (` + data.join(',') + `)`;
+-    console.log('update query', query)
+     db.query(query, { type: QueryTypes.SELECT })
+     .then(data=>{
+         data.forEach(d=>{
+@@ -54,8 +51,8 @@ const setSessionQueue = (sessions, cb)=>
+                     doc_as_upsert: true
+                   }
+                  })
+-                .then(data=>console.log('elastic ok', data))
+-                .catch(e=>console.log(e.meta.body.error))        
++                
++                .catch(e=>{})        
+                 cb(null, data);
+             }
+         );
+@@ -84,8 +81,8 @@ const setUserBoardQueue = (boards, cb)=>
+                     doc_as_upsert: true
+                   }
+                  })
+-                .then(data=>console.log('elastic ok', data))
+-                .catch(e=>console.log(e.meta.body.error))        
++                
++                .catch(e=>{})        
+                 cb(null, data);
+             }
+         );
+@@ -98,7 +95,6 @@ const setSurflineSpotsQueue = (spots, cb)=>
+     let data = [];
+     spots.forEach((spot)=>
+     {
+-        console.log('adding spot', spot.id)
+         spotData = spot.dataValues;
+         spotData.objectID = ALGOLIA_SUFLINE_SPOT_PREFIX + spot.id;
+         spotData._geoloc  = {
+@@ -111,15 +107,13 @@ const setSurflineSpotsQueue = (spots, cb)=>
+         delete spotData.createdAt;
+         delete spotData.updatedAt;
+         delete spotData.crumbs;
+-        console.log(spotData)
+         data.push(spotData);
+     });
+    
+     getAlgoliaClient(ALGOLIA_SUFLINE_SPOT_INDEX).saveObjects(data, {
+         }).then(({ objectIDs }) => {
+             result = objectIDs;
+-            console.log('added record', objectIDs)
+-        }).catch(e=>console.log(e));
++        }).catch(e=>{});
+         cb(null, data);
+ }
+ 
+@@ -169,12 +163,10 @@ const setSessionQueue = (sessions, cb)=>
+     let query = `SELECT sessions.id, sessions.user_id, title, sessions.rating, user_boards.name as board, locations.name as location FROM surfbook.sessions
+     LEFT JOIN user_boards ON user_boards.id = sessions.board_id
+     LEFT JOIN locations on locations.id = sessions.location_id where sessions.id IN (` + data.join(',') + `)`;
+-    console.log('update query', query)
+     db.query(query, { type: QueryTypes.SELECT })
+     .then(data=>{
+         data.forEach(d=>
+            // {
+-            console.log('datatype', typeof data, data);
+             const body = data.flatMap(doc => [{ index: { _index: 'sessions' } }, doc])
+ 
+                 client.bulk({
+@@ -182,8 +174,8 @@ const setSessionQueue = (sessions, cb)=>
+                     body: body,
+                     type: 'session'
+                   })
+-                  .then(data=>console.log('elastic ok', data))
+-                  .catch(e=>console.log(e.meta.body.error))
++                  
++                  .catch(e=>{})
+         
+                   cb(null, data);
+           //  })
+diff --git a/backend/app/services/stormcast/index.js b/backend/app/services/stormcast/index.js
+index 9682fbe..1c768ed 100644
+--- a/backend/app/services/stormcast/index.js
++++ b/backend/app/services/stormcast/index.js
+@@ -38,13 +38,11 @@ const getReport = ({lat, lon, name})=>
+                 }}
+                 ).then((jsonData) => {
+                     myCache.set( name, jsonData.data )
+-                    console.log(jsonData.data);
+                     resolve(jsonData.data)
+                 })
+                 .catch(e=>reject(e))
+             }
+             else{
+-                console.log('getting from cache')
+                 resolve(value)
+             }
+         }
+diff --git a/backend/package.json b/backend/package.json
+index 21aecd4..e06c800 100644
+--- a/backend/package.json
++++ b/backend/package.json
+@@ -1,5 +1,5 @@
+ {
+-  "name": "umanage",
++  "name": "glazewave",
+   "version": "0.0.1",
+   "private": true,
+   "scripts": {
+diff --git a/docker/.DS_Store b/docker/.DS_Store
+deleted file mode 100644
+index 55861b51956d8a04bfa659f3a45a8981cdc7aaef..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 6148
+zcmeH~JqiLr422WjLa^D=avBfd4F=H@cmdHZg)PK>j_%73qN}xtyg>3YnF-5&#m+`V
+zbbA{%BE5(#;HI*+Ffqk?CWD-Y>-lmT$IH|HEOR>p?`5+8bd)IxkN^pg011%5j}WkX
+z8@5=6GLirZkidh0eIE+kw5GOD|8yYu2mtL+c0=y71hiNIT2osnDlm;!Xtb)2Ay)Tx
+zXvuRmwS`8zXbvBmPga{^U>fbB1q+x~7X}g_feC?mtb4ov_wY~i|D=UW5+H#;BcR>x
+zu-oFL@@{>5J*ywHYI%c0{W!wQPXHEn6|dlK*e{kqYibKc1;!r%$G|`WUnOt{H0lr`
+
+diff --git a/frontend/src/components/board/BoardIndex.js b/frontend/src/components/board/BoardIndex.js
+index c757985..c6fd066 100755
+--- a/frontend/src/components/board/BoardIndex.js
++++ b/frontend/src/components/board/BoardIndex.js
+@@ -67,7 +67,7 @@ class BoardIndex extends Component {
+ 	}
+ 
+ 	componentDidMount() {
+-		refresh().then(data=>console.log('refresh data', data))
++		refresh().then(data=>/* console.log removed */)
+ 		if (this.props.userSession.isLoggedIn) {
+ 			//this.props.loadBoards(this.props.userSession, { orderBy : DEFAULT_SORT , wheres : {user_id : this.props.userSession.user.id }, withs : relations.user_board} );
+ 		}
+@@ -260,7 +260,7 @@ class BoardIndex extends Component {
+ 														or: ["board_list"]
+ 													}}
+ 													renderNoResults={() => <p>No Results Found!</p>}
+-													onChange={console.log('query changed',  this.state.filters)}
++													onChange={/* console.log removed */}
+ 													defaultQuery={() => {
+ 														return {
+ 															query: {
+diff --git a/frontend/src/components/board/View.js b/frontend/src/components/board/View.js
+index 8812985..fc3e6f4 100755
+--- a/frontend/src/components/board/View.js
++++ b/frontend/src/components/board/View.js
+@@ -229,7 +229,6 @@ class BoardView extends Component {
+ 	render() {
+ 		const { board } = this.props;
+ 		let isOwner = this.props.board.user_id === this.props.session.user.id;
+-		console.log("isOwner", isOwner);
+ 		const modelPlaceholder = this.state.modelPlaceholder
+ 			? this.state.modelPlaceholder
+ 			: board.Board
+diff --git a/frontend/src/components/form/Location.js b/frontend/src/components/form/Location.js
+index c04c07f..03fa9a2 100755
+--- a/frontend/src/components/form/Location.js
++++ b/frontend/src/components/form/Location.js
+@@ -20,7 +20,6 @@ class Location extends Component {
+     }
+  
+     handleSelectSuggest = (geocodedPrediction, originalPrediction) => {
+-       console.log(geocodedPrediction, originalPrediction) // eslint-disable-line
+         this.setState({
+             search: "",
+             value: geocodedPrediction.formatted_address,
+@@ -32,19 +31,16 @@ class Location extends Component {
+     }
+  
+     handleNoResult = () => {
+-        console.log("No results for ", this.state.search)
+     }
+  
+     handleStatusUpdate = status => {
+      // this.setState({is_editing : true});
+-        console.log('key status is', status)
+     }
+ 
+     onBlur = (e)=>
+     {
+       
+       if(this.state.is_editing){
+-        console.log('blur', e)
+         this.setState({
+           value: '',
+           is_editing : false
+@@ -160,7 +156,6 @@ class Location extends Component {
+ )
+ }
+ locRender = (prediction)=>{
+-  console.log(prediction.types);
+   return prediction.types.indexOf("route") !== -1
+   ? prediction.description
+   : null}
+diff --git a/frontend/src/components/form/TypeAheadInput.js b/frontend/src/components/form/TypeAheadInput.js
+index 7192ae2..eef62e9 100755
+--- a/frontend/src/components/form/TypeAheadInput.js
++++ b/frontend/src/components/form/TypeAheadInput.js
+@@ -12,7 +12,6 @@ class TypeAheadInput extends React.Component {
+   }
+ 
+   onChange = (event, { newValue }) => {
+-    console.log("key", newValue);
+     if (this.state.value !== newValue) {
+       this.setState({
+         value: newValue,
+@@ -21,7 +20,7 @@ class TypeAheadInput extends React.Component {
+   };
+ 
+   onBlur = (event) => {
+-    if (this.state.value) console.log("blur", event.target.value);
++    if (this.state.value) /* console.log removed */;
+     let vid = this.props.entity.find(
+       (x) => x[this.props.keyName] === event.target.value
+     );
+diff --git a/frontend/src/components/reports/stormglass/Report.js b/frontend/src/components/reports/stormglass/Report.js
+index f0f3725..23bac07 100644
+--- a/frontend/src/components/reports/stormglass/Report.js
++++ b/frontend/src/components/reports/stormglass/Report.js
+@@ -41,7 +41,7 @@ class Report extends React.Component{
+         const setState = this.setState;
+         const sgLoaded = this.props.stormglassLoaded;
+         locator.locate(defaultOptions , function (err, location) {
+-          if (err) return console.log("location err", err);
++          if (err) return /* console.log removed */;
+           getSessionData(location.coords.latitude,location.coords.longitude).then(data=>
+             {
+               sgLoaded(data);
+diff --git a/frontend/src/components/reports/surfline/NearestSpots.js b/frontend/src/components/reports/surfline/NearestSpots.js
+index 06f147b..91d43b4 100644
+--- a/frontend/src/components/reports/surfline/NearestSpots.js
++++ b/frontend/src/components/reports/surfline/NearestSpots.js
+@@ -37,7 +37,7 @@ class NearestSpots extends React.Component{
+       else
+       {
+         locator.locate(defaultOptions , function (err, location) {
+-        if (err) return console.log("location err", err);
++        if (err) return /* console.log removed */;
+         getSpots(location.coords.latitude,location.coords.longitude).then(data=>{
+             setState({spots : data.hits})
+             cache.setWithExpiry(CACHE_KEY, JSON.stringify(data.hits), 36000);
+diff --git a/frontend/src/components/reports/wwweather/Report.js b/frontend/src/components/reports/wwweather/Report.js
+index 0ea2c44..6dd4452 100644
+--- a/frontend/src/components/reports/wwweather/Report.js
++++ b/frontend/src/components/reports/wwweather/Report.js
+@@ -27,10 +27,8 @@ class Report extends React.Component{
+     const setState = this.setState;
+     if (this.props.session.isLoggedIn) {
+         locator.locate(defaultOptions , function (err, location) {
+-        if (err) return console.log("location err", err);
+-        console.log("location", location.coords.latitude,location.coords.longitude );
++        if (err) return /* console.log removed */;
+         getSpots(location.coords.latitude,location.coords.longitude).then(data=>{
+-          console.log('geo', data)
+           setState({location :data.hits[0].name })
+           WWClient.marineWeatherApi({
+             q: ` ${data.hits[0]._geoloc.lat},${data.hits[0]._geoloc.lon}`,
+@@ -38,9 +36,7 @@ class Report extends React.Component{
+         }, function(err, result) {
+             if (!err) {
+               setState({data : JSON.parse(result).data.weather[0]})
+-                console.log(result);
+             } else {
+-                console.log(err);
+             }
+         });
+             setState({spot : data.hits[0]})
+@@ -52,7 +48,6 @@ class Report extends React.Component{
+   render()
+   {    
+     const { spots } =  this.state;
+-    console.log('spots', spots)
+     return <div className="container surfline nearest_spots">
+         <h6>Local Report</h6>
+         <i>{this.state.location}</i>
+diff --git a/frontend/src/components/session/Create.js b/frontend/src/components/session/Create.js
+index b6920c5..d0321e0 100755
+--- a/frontend/src/components/session/Create.js
++++ b/frontend/src/components/session/Create.js
+@@ -65,7 +65,6 @@ class Create extends React.Component{
+     }
+ 
+     processFormSubmission = ({ conditions, serialized, fields, form})=> {
+-        console.log('form cond', conditions)
+         const {session, createSession} = this.props;
+         const { images } = this.state;
+         return new Promise(function(resolve, reject){
+diff --git a/frontend/src/components/session/SessionIndex.js b/frontend/src/components/session/SessionIndex.js
+index b73cb01..a3a60f9 100755
+--- a/frontend/src/components/session/SessionIndex.js
++++ b/frontend/src/components/session/SessionIndex.js
+@@ -100,7 +100,6 @@ class SessionIndex extends Component {
+   }
+ 
+   showModal = () => {
+-    console.log('modal launched');
+     this.setState({ show: true });
+   };
+ 
+diff --git a/frontend/src/components/session/View.js b/frontend/src/components/session/View.js
+index c21f430..a56dca0 100755
+--- a/frontend/src/components/session/View.js
++++ b/frontend/src/components/session/View.js
+@@ -427,7 +427,6 @@ class SessionView extends Component {
+     var token = "yPMNDtzDeHIgQPxhrkzuKJHGKlzGkSQV";
+     noaaForecaster.setToken(token);
+     noaaForecaster.getForecast(obj).then(function (results) {
+-      console.log(inspect(results, { colors: true, depth: Infinity }));
+     });
+   };
+ }
+diff --git a/frontend/src/components/session/forms/SessionForm copy.js b/frontend/src/components/session/forms/SessionForm copy.js
+deleted file mode 100755
+index f1e8f46..0000000
+--- a/frontend/src/components/session/forms/SessionForm copy.js	
++++ /dev/null
+@@ -1,142 +0,0 @@
+-import React from 'react';
+-import Modal from './../../layout/Modal';
+-import { connect } from 'react-redux';
+-import CreateUserBoard from  './../../board/CreateUserBoard';
+-import { Form } from 'react-advanced-form';
+-import { Input, Select, Textarea, Button } from 'react-advanced-form-addons';
+-import Location from './../../form/Location';
+-import rules from './validation-rules'
+-import messages from './validation-messages'
+-import ImageUploader from 'react-images-upload';
+-import moment from 'moment'
+-import {loadUserBoards, clearUserBoards} from './../../../actions/user_board';
+-import {refresh} from './../../../lib/utils/cognito'
+-
+-const mapStateToProps = state => {
+-    return { session: state.session, boards : state.user_boards, user_sessions : state.user_sessions.data }
+-  }
+-
+-  const mapDispachToProps = dispatch => {
+-    return {
+-        loadBoards: (session, params) => dispatch(loadUserBoards(session, params)),
+-        clearBoards : ()=>dispatch(clearUserBoards())
+-      };
+-  };
+-
+-  const relations = {
+-      user_boards : ['Board']
+-  }
+-
+-class SessionForm extends React.Component{
+-    constructor(props)
+-    {
+-        refresh(props.session.user.id)
+-        super(props);
+-        this.defaultName = moment().format('MMMM D YYYY, h:mm a');
+-        this.state = {show:false, pictures : props.pictures, location_id : ''}
+-    }
+-
+-    onChange = (propertyName , newValue ) => {
+-        const data = [];
+-        data[propertyName] = newValue;
+-        this.setState({
+-            ...data
+-        });
+-      };
+-
+-    componentDidMount() {
+-        if (this.props.session.isLoggedIn) {
+-            if(!this.props.boards.loaded)
+-            this.props.loadBoards(this.props.session, {wheres : {user_id : this.props.session.user.id }} );
+-        }
+-    }
+-
+-    componentWillUnmount()
+-    {
+-        this.props.clearBoards();
+-    }
+-
+-    showModal = () => {
+-        this.setState({ show: true });
+-    };
+-
+-    hideModal = (e = false) => {
+-        if(e) e.preventDefault();
+-        this.setState({ show: false });
+-    };
+-
+-    componentDidUpdate(prevProps, prevState, snapshot) {
+-        if ((prevProps.boards.data.length !== this.props.boards.data.length)) {
+-            setTimeout(() => {
+-                this.hideModal();
+-            }, 1500)
+-        }
+-    }
+-
+-    render(){ 
+-        return (
+-            <div className="col-md-12">
+-            <Form action={({ serialized, fields, form}) => this.props.processFormSubmission({session : this.props.session, serialized, fields, form})} rules={rules} messages={messages} className="col-md-12 row">
+-            <div className="col-md-8 ">
+-           
+-            <Input name="title" 
+-                label="Session Name" 
+-                className="form-control" 
+-                initialValue={this.defaultName}
+-                required 
+-            />
+-            <Location 
+-                id="location_id" 
+-                name="location_id" 
+-                label="Where You paddling Out?" 
+-                className="form-control" 
+-                onChange={this.onChange} 
+-                value={this.state.location_id} />
+-     
+-            <Select name="board_id" label="Which Board Did You Use?" >
+-                  {this.props.boards.data.map((obj) => {
+-                        return <option key={obj.id} prop={obj.name} value={obj.id}>{obj.name}</option>
+-                    })}
+-            </Select>
+-            
+-            <Button type='button' onClick={this.showModal}>Add A Board</Button>
+-            <Select name="rating" label="What would you rate this Session on a scale of 1-10?" >
+-                {[...Array(11).keys()].map((value, index) => {
+-                    if(value === 0) return;
+-                        return  <option key={index} value={value}>{value}</option>
+-                })}
+-            </Select>
+-            <Select name="is_public" label="Should this Session be Public to ALL logged-in Users?" >
+-                <option value="0">Private</option>
+-                <option value="1">Public</option>
+-            </Select>
+-            <Textarea name="notes" label="Notes"  />
+-            {
+-                this.props.children 
+-            }
+-            </div>
+-            <div className="col-md-4">
+-            <ImageUploader
+-                withIcon={false}
+-                buttonText='Choose images'
+-                onChange={this.props.onDrop}
+-                imgExtension={['.jpg', '.gif', '.png', '.gif']}
+-                maxFileSize={5242880}
+-                withPreview={true}
+-            />
+-            </div>
+-            <div className="col-md-12">
+-            <Input type="hidden" name="user_id" value={this.props.session.user.id} />
+-            <Button type='submit'>  {(this.props.edit) ? ("Edit Session") : ( "Add Session") }</Button>
+-            </div>
+-            </Form>
+-            <Modal show={this.state.show} handleClose={(e) =>this.hideModal(e)}>
+-                <CreateUserBoard onSuccess={(e) =>this.hideModal(e)} noUpdate={true} />
+-            </Modal>
+-            </div>
+-          
+-        )
+-    }
+-}
+-
+-export default connect(mapStateToProps, mapDispachToProps)(SessionForm);
+\ No newline at end of file
+diff --git a/frontend/src/lib/utils/cognito.js b/frontend/src/lib/utils/cognito.js
+index 266fb6e..c173adc 100755
+--- a/frontend/src/lib/utils/cognito.js
++++ b/frontend/src/lib/utils/cognito.js
+@@ -129,7 +129,6 @@ export const refresh = (id = null) =>
+         resolve(session)
+       },
+       onFailure: function (err) {
+-        console.log('cognito refresh error', err)
+         reject(err)
+       }
+     }
+diff --git a/frontend/src/lib/utils/session.js b/frontend/src/lib/utils/session.js
+index 97e5f11..4ea5ec1 100755
+--- a/frontend/src/lib/utils/session.js
++++ b/frontend/src/lib/utils/session.js
+@@ -15,10 +15,6 @@ export function hasSession() {
+       const expTime = moment.unix(session.expiration).valueOf();
+       const current_time = moment().valueOf();
+       const updateTime =  moment.unix(session.expiration).subtract(5, "minutes").valueOf();
+-      console.log('token expires @', moment.unix(session.expiration).format('MMMM Do YYYY, h:mm:ss a'))
+-      console.log('current time is', moment().format('MMMM Do YYYY, h:mm:ss a'))
+-      console.log('update time is', moment.unix(session.expiration).subtract(5, "minutes").format('MMMM Do YYYY, h:mm:ss a'))
+-      console.log('cookie expues',  current_time, expTime, updateTime);
+       if(current_time > updateTime){
+         refresh().then(data=> {return true})
+         .catch(e=>clearSession())
+@@ -28,7 +24,7 @@ export function hasSession() {
+         return session;
+       }
+       else {
+-        refresh().then(data=>console.log('session data', data))
++        refresh().then(data=>/* console.log removed */)
+         .catch(e=>clearSession())
+       }
+     }
+@@ -47,7 +43,7 @@ export function update()
+ {
+   if(!hasSession())
+   {
+-    refresh().then(data=>console.log('session data', data))
++    refresh().then(data=>/* console.log removed */)
+         .catch(e=>clearSession())
+   }
+ }
+\ No newline at end of file
+diff --git a/frontend/src/middleware/api.js b/frontend/src/middleware/api.js
+index 26984aa..151bb26 100755
+--- a/frontend/src/middleware/api.js
++++ b/frontend/src/middleware/api.js
+@@ -35,7 +35,6 @@ const apiMiddleware = ({ dispatch }) => (next) => (action) => {
+       const originalRequest = error.config;
+       if(error.response.status === 401  ){
+       if (!originalRequest._retry) {
+-        console.log('trying agaibn', originalRequest)
+         originalRequest._retry = true;
+         return refresh()
+           .then((res) => {
+@@ -66,7 +65,6 @@ const apiMiddleware = ({ dispatch }) => (next) => (action) => {
+       dispatch(onSuccess(data));
+     })
+     .catch((error) => {
+-      console.log("error", error);
+       dispatch(apiError(error));
+       dispatch(onFailure(error));
+       if (error.response && error.response.status === 403) {
+diff --git a/frontend/src/reducers/user.js b/frontend/src/reducers/user.js
+index 03484f6..fac6220 100755
+--- a/frontend/src/reducers/user.js
++++ b/frontend/src/reducers/user.js
+@@ -10,7 +10,6 @@ const user = (state = initialState, action) => {
+     case USER_IMAGE_UPDATED:
+       return {...newState, ...{data : {profile_img : action.payload.data}}}
+     case USER_AVERAGES_LOADED :
+-      console.log('user_averages_loaded')
+       return {...newState, ...{averages : {...action.payload}}}
+     default:
+       return state
+diff --git a/frontend/src/requests/BaseRequest.js b/frontend/src/requests/BaseRequest.js
+index 0f91210..3d97a86 100755
+--- a/frontend/src/requests/BaseRequest.js
++++ b/frontend/src/requests/BaseRequest.js
+@@ -109,7 +109,6 @@ class BaseRequest {
+     on fail lets send a redux action telling the app of error
+     */
+     onFailure = (error) =>{
+-        console.log('error', error);
+         return { type : 'API_FAILED'}
+     }
+     /*
+diff --git a/frontend/src/serviceWorker.ts b/frontend/src/serviceWorker.ts
+index b09523f..0596dd4 100755
+--- a/frontend/src/serviceWorker.ts
++++ b/frontend/src/serviceWorker.ts
+@@ -49,7 +49,6 @@ export function register(config?: Config) {
+         // Add some additional logging to localhost, pointing developers to the
+         // service worker/PWA documentation.
+         navigator.serviceWorker.ready.then(() => {
+-          console.log(
+             'This web app is being served cache-first by a service ' +
+               'worker. To learn more, visit https://bit.ly/CRA-PWA'
+           );
+@@ -77,7 +76,6 @@ function registerValidSW(swUrl: string, config?: Config) {
+               // At this point, the updated precached content has been fetched,
+               // but the previous service worker will still serve the older
+               // content until all client tabs are closed.
+-              console.log(
+                 'New content is available and will be used when all ' +
+                   'tabs for this page are closed. See https://bit.ly/CRA-PWA.'
+               );
+@@ -90,7 +88,6 @@ function registerValidSW(swUrl: string, config?: Config) {
+               // At this point, everything has been precached.
+               // It's the perfect time to display a
+               // "Content is cached for offline use." message.
+-              console.log('Content is cached for offline use.');
+ 
+               // Execute callback
+               if (config && config.onSuccess) {
+@@ -130,7 +127,6 @@ function checkValidServiceWorker(swUrl: string, config?: Config) {
+       }
+     })
+     .catch(() => {
+-      console.log(
+         'No internet connection found. App is running in offline mode.'
+       );
+     });
+-- 
+2.47.3
+

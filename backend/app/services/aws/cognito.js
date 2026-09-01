@@ -31,9 +31,7 @@ class Cognito {
                 }
             ],
         };
-        console.log('signup');
         return new Promise((resolve, reject) => {
-            console.log('params', params);
             cognitoidentityserviceprovider.adminCreateUser(params, function (error, response)
             {
                 if (error) return reject(error);
@@ -49,7 +47,6 @@ class Cognito {
             UserPoolId: cognitoConfig.userPool
         }
         return new Promise((resolve, reject) => {
-        console.log('config', cognitoidentityserviceprovider );
         cognitoidentityserviceprovider.listUsers(params, function (error, response)
         {
             if (error) return reject(error);
@@ -66,7 +63,6 @@ class Cognito {
             Username: userName
         }
         return new Promise((resolve, reject) => {
-        console.log('params', params);
         cognitoidentityserviceprovider.adminDeleteUser(params, function (error, response)
         {
             if (error) return reject(error);
@@ -83,7 +79,6 @@ class Cognito {
             Username: userName
         }
         return new Promise((resolve, reject) => {
-        console.log('params', params);
         cognitoidentityserviceprovider.adminGetUser(params, function (error, response)
         {
             if (error) return reject(error);
@@ -94,7 +89,6 @@ class Cognito {
     }
 
     updateUser({username, atts}){
-        console.log('atts in ', atts);
         const params = {
             UserPoolId: cognitoConfig.userPool,
             Username: username,
@@ -103,11 +97,9 @@ class Cognito {
         };
         for (const [key, value] of Object.entries(atts)) {
             params.UserAttributes.push({ Name : key, Value : value});
-            console.log(key, value);
           }
 
         return new Promise((resolve, reject) => {
-            console.log('params', params);
             cognitoidentityserviceprovider.adminUpdateUserAttributes(params, function (error, response)
             {
                 if (error) return reject(error);

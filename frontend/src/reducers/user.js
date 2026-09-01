@@ -10,7 +10,6 @@ const user = (state = initialState, action) => {
     case USER_IMAGE_UPDATED:
       return {...newState, ...{data : {profile_img : action.payload.data}}}
     case USER_AVERAGES_LOADED :
-      console.log('user_averages_loaded')
       return {...newState, ...{averages : {...action.payload}}}
     default:
       return state

@@ -41,7 +41,7 @@ class Report extends React.Component{
         const setState = this.setState;
         const sgLoaded = this.props.stormglassLoaded;
         locator.locate(defaultOptions , function (err, location) {
-          if (err) return console.log("location err", err);
+          if (err) return /* console.log removed */;
           getSessionData(location.coords.latitude,location.coords.longitude).then(data=>
             {
               sgLoaded(data);
