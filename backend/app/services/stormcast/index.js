@@ -8,7 +8,7 @@ const getReport = ({lat, lon, name})=>
     return new Promise(
         (resolve, reject)=>
         {
-            value = myCache.get( name );
+            const value = myCache.get( name );
             if ( value == undefined ){
                 const params = [
                     'waveHeight',
@@ -31,16 +31,16 @@ const getReport = ({lat, lon, name})=>
                 ];
 
                 axios
-                .request(
-                    `${stormglassConfig.endpoint}/v2/weather/point?lat=${lat}&lng=${lon}&params=${params.join(',')}`, {
-                headers: {
-                    'Authorization': stormglassConfig.key
-                }}
-                ).then((jsonData) => {
+                    .request(
+                        `${stormglassConfig.endpoint}/v2/weather/point?lat=${lat}&lng=${lon}&params=${params.join(',')}`, {
+                            headers: {
+                                'Authorization': stormglassConfig.key
+                            }}
+                    ).then((jsonData) => {
                     myCache.set( name, jsonData.data )
                     resolve(jsonData.data)
                 })
-                .catch(e=>reject(e))
+                    .catch(e=>reject(e))
             }
             else{
                 resolve(value)
