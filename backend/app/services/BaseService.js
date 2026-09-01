@@ -1,19 +1,19 @@
 const db = require("../models");
-let BaseModel = '';
 const Op = db.Sequelize.Op;
-let algolaiIndex = null;
+
+// Cache model descriptions so we only hit the DB once per model
+const describeCache = new Map();
 
 class BaseService {
 
-  constructor(BaseModel, algolaiIndex = null)
+  constructor(BaseModel, algoliaIndex = null)
   {
-    super.constructor();
     this.BaseModel = BaseModel;
-    this.algolaiIndex = algolaiIndex;
+    this.algoliaIndex = algoliaIndex;
   }
 
   async all( {limit = 20, page = 0, with_all_relations = false, order_by} )
-  {    
+  {
     const options = {offset: page, limit: limit };
     if(order_by) options.order = order_by;
     if(with_all_relations) options.include = {all:true};
@@ -21,13 +21,16 @@ class BaseService {
   }
 
   async where( {wheres, withs , limit = 20, page = 0, order_by, where_in = []} )
-  {    
-    return this.BaseModel.describe().then((atts)=>{
-      const options = { where: wheres, include: withs, offset: page, limit: limit };
-      if(where_in.length)  wheres.id = {[Op.in] :  where_in};
-      if(order_by) options.order = order_by;
-      return this.BaseModel.findAll(options);
-    })
+  {
+    // Cache the describe() result per model — one DB round-trip per model, not per query
+    if (!describeCache.has(this.BaseModel.name)) {
+      const atts = await this.BaseModel.describe();
+      describeCache.set(this.BaseModel.name, atts);
+    }
+    const options = { where: wheres, include: withs, offset: page, limit: limit };
+    if(where_in.length)  wheres.id = {[Op.in] :  where_in};
+    if(order_by) options.order = order_by;
+    return this.BaseModel.findAll(options);
   }
 
   async find({id, withs, selects = []})
@@ -41,58 +44,57 @@ class BaseService {
   {
     return await this.validatePost(params).then(data=>{
       return this.BaseModel.create(data)}
-      );
+    );
   }
 
   async update(id, params, callback = null)
-  {    
+  {
     return new Promise((resolve, reject)=>
-    {
-      this.find({id: id})
-      .then(data=>
-        { 
-          for (let [key, value] of Object.entries(params)) {
-            data[key] = value;
-          }
-          data.save().then(res=>resolve(1))
+        {
+          this.find({id: id})
+              .then(data=>
+                  {
+                    for (let [key, value] of Object.entries(params)) {
+                      data[key] = value;
+                    }
+                    data.save().then(res=>resolve(data))
+                  }
+              )
+              .catch(e=>reject(e))
         }
     )
-    .catch(e=>reject(e))
-    }
-  )
   }
 
   async upsert(params, callback = null)
   {
-    return await this.validatePost(params).then(data=>{return this.BaseModel.upsert(params)});
+    return await this.validatePost(params).then(data=>{return this.BaseModel.upsert(data)});
   }
 
   async delete( id )
-  {    
+  {
     return new Promise((resolve, reject)=>
-      {
-        this.find({id: id})
-        .then(data=>
-          { 
-          data.destroy()
-            .then(result=>resolve(1))
-          }
-      )
-      .catch(e=>reject(e))
-      }
+        {
+          this.find({id: id})
+              .then(data=>
+                  {
+                    data.destroy()
+                        .then(result=>resolve(1))
+                  }
+              )
+              .catch(e=>reject(e))
+        }
     )
   }
 
-  /** This will make sure that any keys that do not exust in the table but do exist in the reqest are stripped out
-   */
+  /** Strips out any keys that don't exist in the model's raw attributes */
   async validatePost(params)
   {
     let data = {};
     Object.keys(params).forEach(param =>{
-        if(Object.keys(this.BaseModel.rawAttributes).indexOf(param) !== -1)
-        {
-            data[param] = params[param];
-        }
+      if(Object.keys(this.BaseModel.rawAttributes).indexOf(param) !== -1)
+      {
+        data[param] = params[param];
+      }
     })
     return data;
   }
