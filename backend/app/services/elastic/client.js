@@ -4,7 +4,6 @@ const getElasticClient = (index) => {
     const client = new Client({ node: elasticConfig.host });
     client.on("response", (err, result) => {
       if (err) {
-        console.log(err);
       } else {
         //console.log(JSON.stringify(result.body));
       }

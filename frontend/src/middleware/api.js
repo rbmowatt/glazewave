@@ -35,7 +35,6 @@ const apiMiddleware = ({ dispatch }) => (next) => (action) => {
       const originalRequest = error.config;
       if(error.response.status === 401  ){
       if (!originalRequest._retry) {
-        console.log('trying agaibn', originalRequest)
         originalRequest._retry = true;
         return refresh()
           .then((res) => {
@@ -66,7 +65,6 @@ const apiMiddleware = ({ dispatch }) => (next) => (action) => {
       dispatch(onSuccess(data));
     })
     .catch((error) => {
-      console.log("error", error);
       dispatch(apiError(error));
       dispatch(onFailure(error));
       if (error.response && error.response.status === 403) {

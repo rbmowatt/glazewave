@@ -427,7 +427,6 @@ class SessionView extends Component {
     var token = "yPMNDtzDeHIgQPxhrkzuKJHGKlzGkSQV";
     noaaForecaster.setToken(token);
     noaaForecaster.getForecast(obj).then(function (results) {
-      console.log(inspect(results, { colors: true, depth: Infinity }));
     });
   };
 }

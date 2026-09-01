@@ -27,10 +27,8 @@ class Report extends React.Component{
     const setState = this.setState;
     if (this.props.session.isLoggedIn) {
         locator.locate(defaultOptions , function (err, location) {
-        if (err) return console.log("location err", err);
-        console.log("location", location.coords.latitude,location.coords.longitude );
+        if (err) return /* console.log removed */;
         getSpots(location.coords.latitude,location.coords.longitude).then(data=>{
-          console.log('geo', data)
           setState({location :data.hits[0].name })
           WWClient.marineWeatherApi({
             q: ` ${data.hits[0]._geoloc.lat},${data.hits[0]._geoloc.lon}`,
@@ -38,9 +36,7 @@ class Report extends React.Component{
         }, function(err, result) {
             if (!err) {
               setState({data : JSON.parse(result).data.weather[0]})
-                console.log(result);
             } else {
-                console.log(err);
             }
         });
             setState({spot : data.hits[0]})
@@ -52,7 +48,6 @@ class Report extends React.Component{
   render()
   {    
     const { spots } =  this.state;
-    console.log('spots', spots)
     return <div className="container surfline nearest_spots">
         <h6>Local Report</h6>
         <i>{this.state.location}</i>

@@ -39,12 +39,11 @@ function range(start,stop) {
                                 geo : { type: 'Point', coordinates: [el._source.location.lat,el._source.location.lon]},
                                 url :  el._source.href,
                             }
-                            console.log(d)
                             SpotService.make().upsert(d)
-                            .then( data=>console.log('successfully added spot', data))
-                            .catch(e=>console.log('erre', e))
+                            .then( data=>// console.log removed
+                            .catch(e=>{})
                         })
-                        .catch(e=>console.log('erre', e))
+                        .catch(e=>{})
                     }
                 })
             
@@ -53,7 +52,6 @@ function range(start,stop) {
     });
 })
 .catch(error => {
-    console.log('error', error)
 
 
   if (error.response && error.response.status === 403) {

@@ -6,7 +6,6 @@ const getClient = (index) => {
   const client = new Client({ node: elasticConfig.host });
   client.on("response", (err, result) => {
     if (err) {
-      console.log(err);
     } else {
       //console.log(JSON.stringify(result.body));
     }
@@ -23,14 +22,12 @@ const requestBody = esb.requestBodySearch()
   .agg(esb.avgAggregation('water_temperature', 'water_temperature'))
   .agg(esb.avgAggregation('wind_speed', 'wind_speed'))
   .query(esb.matchQuery('user_id', '1'));
-  console.log(requestBody)
   getClient()
   .search({
     index: process.env.ELASTIC_SESSIONS_INDEX,
     body: requestBody.toJSON()
   })
   .then(resp => {
-    console.log(resp.body.aggregations)
   })
   .catch(err => {
     console.trace(err.message);

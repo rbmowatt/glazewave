@@ -7,7 +7,6 @@ const router = new Router();
 router.get('/', function (req, res) {
   BaseService.make().getAll(req.parser)
     .then(data => {
-        console.log(data[0])
       res.send(data[0]);
     })
     .catch(err => {

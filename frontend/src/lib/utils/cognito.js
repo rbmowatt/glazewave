@@ -129,7 +129,6 @@ export const refresh = (id = null) =>
         resolve(session)
       },
       onFailure: function (err) {
-        console.log('cognito refresh error', err)
         reject(err)
       }
     }

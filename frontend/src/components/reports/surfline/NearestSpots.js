@@ -37,7 +37,7 @@ class NearestSpots extends React.Component{
       else
       {
         locator.locate(defaultOptions , function (err, location) {
-        if (err) return console.log("location err", err);
+        if (err) return /* console.log removed */;
         getSpots(location.coords.latitude,location.coords.longitude).then(data=>{
             setState({spots : data.hits})
             cache.setWithExpiry(CACHE_KEY, JSON.stringify(data.hits), 36000);
