@@ -13,8 +13,9 @@ const defaults = {
 const upload = function upload({destinationPath  = defaults.destinationPath, fit = defaults.fit, width = defaults.width, height = defaults.height} ) {
   return multer({
     fileFilter: (req, file, cb) => {
-      const isValid = true;
-      let error = isValid ? null : new Error("Invalid mime type!");
+      const allowedMimes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
+      const isValid = allowedMimes.includes(file.mimetype);
+      let error = isValid ? null : new Error("Invalid file type. Only images are allowed.");
       cb(error, isValid);
     },
     storage: s3Storage({
