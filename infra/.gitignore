@@ -9,3 +9,7 @@ override.tf.json
 *_override.tf
 .terraformrc
 terraform.rc
+tfplan
+tfplan.*
+*.pkg
+*.zip
