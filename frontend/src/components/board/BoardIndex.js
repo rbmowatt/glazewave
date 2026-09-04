@@ -67,7 +67,7 @@ class BoardIndex extends Component {
 	}
 
 	componentDidMount() {
-		refresh().then(data=>/* console.log removed */)
+		refresh().catch(() => {})
 		if (this.props.userSession.isLoggedIn) {
 			//this.props.loadBoards(this.props.userSession, { orderBy : DEFAULT_SORT , wheres : {user_id : this.props.userSession.user.id }, withs : relations.user_board} );
 		}
@@ -260,7 +260,6 @@ class BoardIndex extends Component {
 														or: ["board_list"]
 													}}
 													renderNoResults={() => <p>No Results Found!</p>}
-													onChange={/* console.log removed */}
 													defaultQuery={() => {
 														return {
 															query: {

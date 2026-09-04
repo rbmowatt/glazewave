@@ -24,7 +24,7 @@ export function hasSession() {
         return session;
       }
       else {
-        refresh().then(data=>/* console.log removed */)
+        refresh()
         .catch(e=>clearSession())
       }
     }
@@ -43,7 +43,7 @@ export function update()
 {
   if(!hasSession())
   {
-    refresh().then(data=>/* console.log removed */)
+    refresh()
         .catch(e=>clearSession())
   }
 }
