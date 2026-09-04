@@ -16,11 +16,11 @@ export const locator = window.geolocator;
 // the library raises GeoError outside the locate() callback, which escapes
 // componentDidMount and unmounts the whole React tree.
 export const defaultOptions = {
-  enableHighAccuracy: false,
-  timeout: 5000,
-  maximumWait: 10000,
+  enableHighAccuracy: true,
+  timeout: 10000,
+  maximumWait: 15000,
   maximumAge: 0,
-  desiredAccuracy: 30,
+  desiredAccuracy: 5000,
   fallbackToIP: true,
   addressLookup: hasGoogleKey,
 };
