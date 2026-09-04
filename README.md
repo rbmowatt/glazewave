@@ -2,7 +2,7 @@
 
 > A full-stack surfing analytics platform — track sessions, boards, and locations; gain insights from wave data, swell conditions, and session history.
 
-Built with Node/Express, React/Redux, MySQL/Sequelize, Elasticsearch, AWS Cognito, and S3. Deployed on AWS EC2 behind an ALB with Nginx.
+Built with Node/Express, React/Redux, MySQL/Sequelize, Elasticsearch, AWS Cognito, and S3. Deployed on a single AWS EC2 instance with Nginx, provisioned by Terraform.
 
 ---
 
@@ -18,7 +18,7 @@ Built with Node/Express, React/Redux, MySQL/Sequelize, Elasticsearch, AWS Cognit
 | **Storage** | AWS S3 (image uploads via multer-sharp-s3) |
 | **Queue** | better-queue (batched ES sync) |
 | **External APIs** | Google Places (geolocation), Stormglass (wave forecasts), Surfline (spot data) |
-| **DevOps** | Docker, Nginx, PM2, AWS EC2 + ALB + Certificate Manager |
+| **DevOps** | Terraform, Docker, Nginx, systemd, AWS EC2 + Route 53 + Let's Encrypt |
 
 ---
 
@@ -87,9 +87,9 @@ JWT-based authentication with full JWK verification:
 
 ### Prerequisites
 
-- Node.js (v10+)
+- Node.js (v18+; v22 is what production runs)
 - MySQL
-- Elasticsearch (v7+)
+- Elasticsearch 7.x (7.17 in production)
 - AWS account with Cognito and S3 access
 
 ### Setup
@@ -154,27 +154,47 @@ npm run sync-elastic
 
 ---
 
-## Deployment (AWS EC2)
+## Deployment (AWS)
 
-1. **Domain + SSL** — Register domain, add HTTPS via AWS Certificate Manager
-2. **Load Balancer** — Create ALB, attach certificate, add listener on 443 forwarding to 80
-3. **EC2 Instance** — Amazon Linux, mount volume at `/data`
-4. **Nginx** — Install, configure to serve `frontend/build` and proxy API to backend
-5. **Node** — Install via nodesource, use PM2 to keep the backend running
-6. **Deploy** — Clone repo, install dependencies, add `.env` files, start Nginx + PM2
+Infrastructure is Terraform, under `infra/`. It provisions a VPC with a single
+public subnet, a `t4g.small` running Amazon Linux 2023, an Elastic IP, Route 53
+records, an S3 uploads bucket, and a Cognito user pool.
+
+There is deliberately **no load balancer**. One instance behind an ALB costs more
+in ALB hours than the instance itself, so nginx terminates TLS directly with a
+Let's Encrypt certificate. AWS Certificate Manager is not used, because ACM certs
+can only be attached to an ALB or CloudFront.
 
 ```bash
-sudo yum update
-sudo amazon-linux-extras install nginx1
-curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -
-sudo yum install -y nodejs git
-npm install pm2 -g nodemon -g
-cd /data/var/www && git clone https://github.com/rbmowatt/glazewave.git .
-cd frontend && npm install
-cd ../backend && npm install
-sudo service nginx start
-sudo pm2 run start
+cd infra
+./bootstrap-state-bucket.sh
+terraform init
+terraform apply
+terraform output
 ```
+
+The instance runs MySQL 8, Elasticsearch 7.17, nginx and the Node API together on
+2GB of RAM. That works only with the ES heap capped at 512MB, MySQL's
+`performance_schema` off, and 2GB of swap (provisioned by the instance user_data).
+
+The API runs as a systemd unit rather than under PM2 — systemd is already present,
+handles restart and boot-start, and logs to journald.
+
+**The frontend is built locally, not on the server.** The production build peaks
+around 4.6GB of memory, which the instance cannot supply. `frontend/build` is
+committed and deployed by `git pull`. `react-scripts` 3.4.1 also needs
+`NODE_OPTIONS=--openssl-legacy-provider` on Node 17 or newer:
+
+```bash
+cd frontend
+NODE_OPTIONS=--openssl-legacy-provider npx react-scripts build
+```
+
+Elasticsearch indexes are created by `elastic/create-indexes.sh`, which reads the
+index names from `backend/.env`.
+
+Terraform sets `prevent_destroy` on the instance, Elastic IP, uploads bucket and
+Cognito pool, so `terraform destroy` fails until those lines are removed.
 
 ---
 

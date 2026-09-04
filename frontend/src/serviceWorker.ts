@@ -49,9 +49,6 @@ export function register(config?: Config) {
         // Add some additional logging to localhost, pointing developers to the
         // service worker/PWA documentation.
         navigator.serviceWorker.ready.then(() => {
-            'This web app is being served cache-first by a service ' +
-              'worker. To learn more, visit https://bit.ly/CRA-PWA'
-          );
         });
       } else {
         // Is not localhost. Just register service worker
@@ -76,9 +73,6 @@ function registerValidSW(swUrl: string, config?: Config) {
               // At this point, the updated precached content has been fetched,
               // but the previous service worker will still serve the older
               // content until all client tabs are closed.
-                'New content is available and will be used when all ' +
-                  'tabs for this page are closed. See https://bit.ly/CRA-PWA.'
-              );
 
               // Execute callback
               if (config && config.onUpdate) {
@@ -127,8 +121,6 @@ function checkValidServiceWorker(swUrl: string, config?: Config) {
       }
     })
     .catch(() => {
-        'No internet connection found. App is running in offline mode.'
-      );
     });
 }
 

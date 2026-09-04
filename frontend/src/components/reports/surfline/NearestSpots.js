@@ -1,7 +1,7 @@
 import './css/NearestSpots.css'
 import React from 'react';
 import { connect } from "react-redux";
-import { locator, defaultOptions } from './../../../lib/utils/geolocator';
+import { safeLocate, defaultOptions } from './../../../lib/utils/geolocator';
 import getSpots from './../../../lib/utils/surfline_alg_geo';
 import ReactTooltip from 'react-tooltip'
 import Iframe from 'react-iframe'
@@ -36,7 +36,7 @@ class NearestSpots extends React.Component{
       }
       else
       {
-        locator.locate(defaultOptions , function (err, location) {
+        safeLocate(defaultOptions, function (err, location) {
         if (err) return /* console.log removed */;
         getSpots(location.coords.latitude,location.coords.longitude).then(data=>{
             setState({spots : data.hits})

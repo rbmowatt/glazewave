@@ -1,7 +1,7 @@
 //import './css/Report.css'
 import React from 'react';
 import { connect } from "react-redux";
-import { locator, defaultOptions } from './../../../lib/utils/geolocator';
+import { safeLocate, defaultOptions } from './../../../lib/utils/geolocator';
 import getSpots from './../../../lib/utils/geo';
 import WWClient from './../../../lib/utils/worldweather';
 
@@ -26,7 +26,7 @@ class Report extends React.Component{
   componentDidMount() {
     const setState = this.setState;
     if (this.props.session.isLoggedIn) {
-        locator.locate(defaultOptions , function (err, location) {
+        safeLocate(defaultOptions, function (err, location) {
         if (err) return /* console.log removed */;
         getSpots(location.coords.latitude,location.coords.longitude).then(data=>{
           setState({location :data.hits[0].name })
