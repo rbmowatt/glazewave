@@ -3,9 +3,8 @@ import ReactGoogleMapLoader from "react-google-maps-loader"
 import ReactGooglePlacesSuggest from "react-google-places-suggest"
 import { createField, fieldPresets } from 'react-advanced-form'
 import { getSessionData} from './../reports/stormglass/helpers/session';
+import googleConfig from './../../config/google';
 
- 
-const MY_API_KEY = "AIzaSyBaaD_720jqJaoIBsQib_N79Q5_iciLRBc" // fake
  
 class Location extends Component {
     state = {
@@ -107,7 +106,12 @@ class Location extends Component {
             <div className="sc-ifAKCX">
             <ReactGoogleMapLoader
                 params={{
-                    key: MY_API_KEY,
+                    // Build-time inlined, so a key change is a rebuild. With no
+                    // key the loader never resolves, googleMaps stays null and
+                    // the render callback below emits nothing at all - the
+                    // location field disappears rather than degrading to a
+                    // plain text input.
+                    key: googleConfig.api_key,
                     libraries: "places,geocode",
                 }}
                 render={googleMaps =>
