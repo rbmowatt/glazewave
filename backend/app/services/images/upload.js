@@ -19,6 +19,11 @@ const upload = function upload({destinationPath  = defaults.destinationPath, fit
       cb(error, isValid);
     },
     storage: s3Storage({
+      // The uploads bucket is BucketOwnerEnforced, so S3 answers any x-amz-acl
+      // header with 400 AccessControlListNotSupported. multer-sharp-s3 defaults
+      // ACL to public-read and only an explicit undefined beats that default.
+      // Public read comes from the bucket policy instead.
+      ACL: undefined,
       limits: 500000,
       s3,
       Bucket: s3Config.Bucket,
