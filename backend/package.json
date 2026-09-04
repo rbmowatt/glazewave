@@ -15,7 +15,8 @@
     "sync-surfline": "node app/scripts/import_surfline.js",
     "test-queue": "node app/services/queue/BetterQueue.js",
     "test-elastic": "node app/scripts/elastic/test.js",
-    "sequelize": "npx sequelize-cli --options-path=app/config/sequelize.js"
+    "sequelize": "npx sequelize-cli --options-path=app/config/sequelize.js",
+    "backfill-elastic": "node app/scripts/backfill_elastic.js"
   },
   "dependencies": {
     "@elastic/elasticsearch": "~7.17.0",
