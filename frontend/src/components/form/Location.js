@@ -27,7 +27,9 @@ class Location extends Component {
         })
         this.props.onChange('location_id', geocodedPrediction.place_id);
         this.setState({is_editing : false});
-        getSessionData(geocodedPrediction.geometry.location.lat(),geocodedPrediction.geometry.location.lng()).then(d=>this.props.onChange('conditions', d)) 
+        getSessionData(geocodedPrediction.geometry.location.lat(),geocodedPrediction.geometry.location.lng())
+            .then(d=>{ if (d) this.props.onChange('conditions', d); })
+            .catch(()=>{})
     }
  
     handleNoResult = () => {

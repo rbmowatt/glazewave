@@ -6,7 +6,7 @@ export const getSessionData = (lat, lng) => {
     return new Promise(( resolve, reject )=>{
             const  currentTime = new Date();
             getSpots(lat, lng).then(spots=>{
-                if (!spots.length) return reject(new Error('no spot within range'));
+                if (!spots.length) return resolve(null);
                 const spot = spots[0];
             fetch(`${apiConfig.host + apiConfig.port }/api/sc?lat=${spot.lat}&lon=${spot.lon}&name=${spot.id}`).then((response) => response.json()).then((jsonData) => {
                const data = jsonData.hours[currentTime.getHours()];

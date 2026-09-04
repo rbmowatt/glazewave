@@ -43,9 +43,11 @@ class Report extends React.Component{
           if (err) return /* console.log removed */;
           getSessionData(location.coords.latitude,location.coords.longitude).then(data=>
             {
+              if (!data) return;
               sgLoaded(data);
               setState({data :data});
             })
+            .catch(()=>{})
           });
         }
       }
