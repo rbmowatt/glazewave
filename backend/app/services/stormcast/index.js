@@ -40,7 +40,15 @@ const getReport = ({lat, lon, name})=>
                     myCache.set( name, jsonData.data )
                     resolve(jsonData.data)
                 })
-                    .catch(e=>reject(e))
+                    .catch(e=>{
+                        // Stormglass explains a rejection in the response body.
+                        // Axios only carries the status line, which cannot tell a
+                        // dead key from an expired plan from a blown quota.
+                        const detail = e.response && e.response.data;
+                        reject(detail
+                            ? new Error(`stormglass ${e.response.status}: ${JSON.stringify(detail)}`)
+                            : e);
+                    })
             }
             else{
                 resolve(value)
