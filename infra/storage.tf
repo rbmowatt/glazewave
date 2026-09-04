@@ -1,5 +1,19 @@
 resource "aws_s3_bucket" "uploads" {
   bucket = "glazewave-uploads-${data.aws_caller_identity.current.account_id}"
+
+  lifecycle {
+    prevent_destroy = true
+  }
+}
+
+# Versioning is what makes an overwritten or deleted upload recoverable; the
+# bucket is public-read, so a bad object key is a real possibility.
+resource "aws_s3_bucket_versioning" "uploads" {
+  bucket = aws_s3_bucket.uploads.id
+
+  versioning_configuration {
+    status = "Enabled"
+  }
 }
 
 # BucketOwnerEnforced disables ACLs entirely. This is why upload.js must drop

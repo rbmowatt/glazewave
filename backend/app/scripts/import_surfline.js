@@ -40,8 +40,7 @@ function range(start,stop) {
                                 url :  el._source.href,
                             }
                             SpotService.make().upsert(d)
-                            .then( data=>// console.log removed
-                            .catch(e=>{})
+                                                        .catch(e=>{})
                         })
                         .catch(e=>{})
                     }

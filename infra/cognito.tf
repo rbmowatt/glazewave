@@ -1,6 +1,14 @@
 resource "aws_cognito_user_pool" "main" {
   name = "glazewave"
 
+  # A destroyed pool takes every registered user with it, and the pool id is
+  # baked into both .env files.
+  deletion_protection = "ACTIVE"
+
+  lifecycle {
+    prevent_destroy = true
+  }
+
   username_attributes      = ["email"]
   auto_verified_attributes = ["email"]
 
