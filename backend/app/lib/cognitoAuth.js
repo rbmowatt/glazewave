@@ -1,5 +1,5 @@
 const jwkToPem = require('jwk-to-pem')
-const request = require('request')
+const axios = require('axios')
 const jwt = require('jsonwebtoken')
 const cognitoConfig = require('./../config/cognito');
 
@@ -27,31 +27,25 @@ function _getVerifyMiddleware () {
 }
 
 // One time initialisation to download the JWK keys and convert to PEM format. Returns a promise.
-function _init () {
-  return new Promise((resolve, reject) => {
-    const options = {
-      url: `${ISSUER}/.well-known/jwks.json`,
-      json: true
-    }
-    request.get(options, function (err, resp, body) {
-      if (err) {
-        console.debug(`Failed to download JWKS data. err: ${err}`)
-        reject(new Error('Internal error occurred downloading JWKS data.')) // don't return detailed info to the caller
-        return
-      }
-      if (!body || !body.keys) {
-        console.debug(`JWKS data is not in expected format. Response was: ${JSON.stringify(resp)}`)
-        reject(new Error('Internal error occurred downloading JWKS data.')) // don't return detailed info to the caller
-        return
-      }
-      const pems = {}
-      for (let i = 0; i < body.keys.length; i++) {
-        pems[body.keys[i].kid] = jwkToPem(body.keys[i])
-      }
-      console.info(`Successfully downloaded ${body.keys.length} JWK key(s)`)
-      resolve(pems)
-    })
-  })
+async function _init () {
+  let body
+  try {
+    const resp = await axios.get(`${ISSUER}/.well-known/jwks.json`)
+    body = resp.data
+  } catch (err) {
+    console.debug(`Failed to download JWKS data. err: ${err}`)
+    throw new Error('Internal error occurred downloading JWKS data.') // don't return detailed info to the caller
+  }
+  if (!body || !body.keys) {
+    console.debug(`JWKS data is not in expected format. Response was: ${JSON.stringify(body)}`)
+    throw new Error('Internal error occurred downloading JWKS data.') // don't return detailed info to the caller
+  }
+  const pems = {}
+  for (const key of body.keys) {
+    pems[key.kid] = jwkToPem(key)
+  }
+  console.info(`Successfully downloaded ${body.keys.length} JWK key(s)`)
+  return pems
 }
 
 // Verify the Authorization header and call the next middleware handler if appropriate
@@ -118,7 +112,10 @@ function _verifyProm (pems, auth) {
     }
 
     // Now verify the JWT signature matches the relevant key
+    // jsonwebtoken 9 infers allowed algorithms from the key, which would still admit
+    // any RS/PS/ES variant. Cognito only ever signs with RS256, so pin it.
     jwt.verify(token, pems[decodedNotVerified.header.kid], {
+      algorithms: ['RS256'],
       issuer: ISSUER,
       maxAge: MAX_TOKEN_AGE
     },
