@@ -8,7 +8,10 @@ export const getSessionData = (lat, lng) => {
             getSpots(lat, lng).then(spots=>{
                 if (!spots.length) return resolve(null);
                 const spot = spots[0];
-            fetch(`${apiConfig.host + apiConfig.port }/api/sc?lat=${spot.lat}&lon=${spot.lon}&name=${spot.id}`).then((response) => response.json()).then((jsonData) => {
+            fetch(`${apiConfig.host + apiConfig.port }/api/sc?lat=${spot.lat}&lon=${spot.lon}&name=${spot.id}`).then((response) => response.ok ? response.json() : null).then((jsonData) => {
+                // a failing /api/sc answers with a {message} body, so reading
+                // hours[] off it throws rather than degrading
+                if (!jsonData || !jsonData.hours) return resolve(null);
                const data = jsonData.hours[currentTime.getHours()];
                 const obj = {
                     water_temperature : ((data.waterTemperature.sg * 9/5) + 32).toFixed(),
