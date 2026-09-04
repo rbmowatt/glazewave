@@ -2,7 +2,6 @@
 import React from 'react';
 import { connect } from "react-redux";
 import { safeLocate, defaultOptions } from './../../../lib/utils/geolocator';
-import getSpots from './../../../lib/utils/surfline_alg_geo';
 import {StormGlassLoaded} from './../../../actions/stormglass';
 import apiConfig from './../../../config/api';
 import {getSessionData} from './helpers/session';

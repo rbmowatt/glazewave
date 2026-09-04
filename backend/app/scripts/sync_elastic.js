@@ -1,17 +1,15 @@
 const SessionService = require("../services/SessionService");
 const UserBoardService = require("../services/UserBoardService");
-const SurflineSpotService = require("../services/SurflineSpotService");
 const {
   getSessionQueue,
   getUserBoardQueue,
-  getSurflineSpotsQueue,
 } = require("./../services/queue/BetterQueue");
 const elasticConfig = require("./../config/elastic");
 const { Client } = require("@elastic/elasticsearch");
 const sesssionMappings = require("./elastic/session_mappings.json");
 const userBoardMappings = require("./elastic/user_board_mappings.json");
 
-const getClient = (index) => {
+const getClient = () => {
   const client = new Client({ node: elasticConfig.host });
   client.on("response", (err, result) => {
     if (err) {
@@ -77,13 +75,3 @@ client.indices.exists(
   }
 );
 
-/*
-let queue = getSurflineSpotsQueue();
-SurflineSpotService.make().all({limit : 10000, with_all_relations : false}).then(data=>{
-  data.forEach(spot=>
-      {
-        queue.push(spot).on('finish', function (result) {
-        })
-      })
-}).catch(e=>{})
-*/

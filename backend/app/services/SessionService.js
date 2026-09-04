@@ -6,13 +6,12 @@ const LocationService = require('./LocationService');
 const SessionDataModel = db.SessionData;
 const GooglePlaces = require('node-googleplaces');
 const googleConfig  = require('./../config/google')
-let algoliaIndex = 'user_sessions';
 
 
 class SessionService  extends BaseService {
 
     constructor(){
-        super(BaseModel, algoliaIndex);
+        super(BaseModel);
     }
 
     async create(params, callback = null)

@@ -6,10 +6,9 @@ const describeCache = new Map();
 
 class BaseService {
 
-  constructor(BaseModel, algoliaIndex = null)
+  constructor(BaseModel)
   {
     this.BaseModel = BaseModel;
-    this.algoliaIndex = algoliaIndex;
   }
 
   async all( {limit = 20, page = 0, with_all_relations = false, order_by} )

@@ -9,7 +9,7 @@
     "create-db": "node bin/sql/createRecipesTable.js",
     "delete-db": "node bin/sql/deleteUsersTable.js",
     "load-data": "node bin/sql/loadRecipesTable.js",
-    "sync-agolia": "node app/scripts/sync_agolia.js",
+    "sync-elastic": "node app/scripts/sync_elastic.js",
     "sync-surfline": "node app/scripts/import_surfline.js",
     "test-queue": "node app/services/queue/BetterQueue.js",
     "test-elastic": "node app/scripts/elastic/test.js",

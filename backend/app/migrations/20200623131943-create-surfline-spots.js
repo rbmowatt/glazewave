@@ -54,6 +54,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('sufline_spots');
+    return queryInterface.dropTable('surfline_spots');
   }
 };

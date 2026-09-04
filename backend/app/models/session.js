@@ -1,5 +1,5 @@
 'use strict';
-const {getSessionQueue, getClient, ALGOLIA_SESSION_INDEX, ALGOLIA_SESSION_PREFIX} = require('./../services/queue/BetterQueue')
+const {getSessionQueue, getClient} = require('./../services/queue/BetterQueue')
 
 const sessionUpsertCallback = async (session, options) => {
   getSessionQueue().push(session).on('finish', function (result) {
@@ -28,11 +28,10 @@ module.exports = (sequelize, DataTypes) => {
     session_date : DataTypes.DATE
   }, {underscored: true},
   );
-  //add hooks to algolia
   Session.addHook('afterCreate', sessionUpsertCallback)
   Session.addHook('afterUpdate',sessionUpsertCallback)
   Session.addHook('afterDestroy', async (session, options) => {
-    getClient().delete({id : session.id, index : 'sessions'})
+    getClient().delete({id : session.id, index : process.env.ELASTIC_SESSIONS_INDEX})
   })
 
   Session.associate = function(models) {
