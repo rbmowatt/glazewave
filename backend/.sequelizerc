@@ -1,5 +1,10 @@
-var path = require('path')
+const path = require('path')
 
+// Paths resolve against the process CWD, so sequelize-cli must be run from
+// backend/. The previous version pointed at a nonexistent 'path/config/seqelize.js'.
 module.exports = {
-  'config': path.resolve('path', 'config/seqelize.js'),
+  config: path.resolve('app', 'config', 'mysql.js'),
+  'migrations-path': path.resolve('app', 'migrations'),
+  'seeders-path': path.resolve('app', 'config', 'seeders'),
+  'models-path': path.resolve('app', 'models'),
 }
