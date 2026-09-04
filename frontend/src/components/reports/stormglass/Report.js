@@ -64,7 +64,7 @@ class Report extends React.Component{
             <div className="col">   
             <div>Water Temp: {this.state.data.water_temperature}F</div>  
             <div>Swell Height: {this.state.data.swell_height}ft</div>  
-            <div>Swell Period: {this.state.data.swellPeriod }s</div>  
+            <div>Swell Period: {this.state.data.swell_period }s</div>  
             <div>Wave Height: {this.state.data.wave_height }ft</div>  
             <div>Wave Period: {this.state.data.wave_period }s</div>  
             <div>Pressure: {this.state.data.pressure }in</div>  
