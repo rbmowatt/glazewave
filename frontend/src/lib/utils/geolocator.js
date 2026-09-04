@@ -1,6 +1,5 @@
 import googleConfig from './../../config/google';
 
-const hasGoogleKey = Boolean(googleConfig.api_key);
 
 window.geolocator.config({
   language: 'en',
@@ -12,9 +11,12 @@ window.geolocator.config({
 
 export const locator = window.geolocator;
 
-// addressLookup calls the Google Geocoding API. With no key or an invalid one
-// the library raises GeoError outside the locate() callback, which escapes
-// componentDidMount and unmounts the whole React tree.
+// addressLookup is off on purpose. It calls the Geocoding *web service*
+// (maps/api/geocode/json) straight from the browser, and Google refuses a
+// referrer-restricted key on web-service endpoints - "API keys with referer
+// restrictions cannot be used with this API" - so there is no key setting that
+// makes it work from here. Every caller reads only location.coords, so the
+// formatted address it fetched was never used by anything.
 export const defaultOptions = {
   enableHighAccuracy: true,
   timeout: 10000,
@@ -22,7 +24,7 @@ export const defaultOptions = {
   maximumAge: 0,
   desiredAccuracy: 5000,
   fallbackToIP: true,
-  addressLookup: hasGoogleKey,
+  addressLookup: false,
 };
 
 // geolocator can throw synchronously rather than calling back, so callers must

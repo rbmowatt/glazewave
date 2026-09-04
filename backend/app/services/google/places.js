@@ -19,13 +19,24 @@ async function placeDetails(placeId) {
   if (!googleConfig.MAPS_KEY) {
     throw new Error('GOOGLE_MAPS_KEY is not set');
   }
-  const resp = await axios.get(`${DETAILS_URL}/${encodeURIComponent(placeId)}`, {
-    headers: {
-      'X-Goog-Api-Key': googleConfig.MAPS_KEY,
-      'X-Goog-FieldMask': FIELD_MASK,
-    },
-  });
-  return resp.data;
+  try {
+    const resp = await axios.get(`${DETAILS_URL}/${encodeURIComponent(placeId)}`, {
+      headers: {
+        'X-Goog-Api-Key': googleConfig.MAPS_KEY,
+        'X-Goog-FieldMask': FIELD_MASK,
+      },
+    });
+    return resp.data;
+  } catch (err) {
+    // Axios reports only "Request failed with status code 403". Google puts the
+    // reason that actually matters - API not enabled, key restriction rejected
+    // the caller, referrer-restricted key used server side - in the body.
+    const detail = err.response && err.response.data && err.response.data.error;
+    if (detail) {
+      throw new Error(`Places API ${detail.status || err.response.status}: ${detail.message}`);
+    }
+    throw err;
+  }
 }
 
 // The legacy details payload is gone and the column names no longer line up
