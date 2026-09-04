@@ -8,7 +8,9 @@ const user = (state = initialState, action) => {
     case USER_LOADED:
       return {...newState, ...{data :  action.payload}}
     case USER_IMAGE_UPDATED:
-      return {...newState, ...{data : {profile_img : action.payload.data}}}
+      // Spread the existing user: this replaced the whole record, so name,
+      // email and username vanished from the store until the next reload.
+      return {...newState, ...{data : {...newState.data, profile_img : action.payload.data}}}
     case USER_AVERAGES_LOADED :
       return {...newState, ...{averages : {...action.payload}}}
     default:

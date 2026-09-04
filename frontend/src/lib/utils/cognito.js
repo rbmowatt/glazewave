@@ -84,8 +84,16 @@ const getCognitoSession = (dispatch) => {
         reject(new Error('Failure getting Cognito session: ' + err))
         return
       }
-      axios.get( apiConfig.host + apiConfig.port + `/api/user/firstOrNew?username=` + result.idToken.payload['cognito:username'] 
-      + '&email=' + result.idToken.payload.email + '&first_name=' + result.idToken.payload.given_name + '&last_name=' + result.idToken.payload.family_name
+      // given_name/family_name are optional Cognito attributes. String
+      // concatenation turned a missing one into the literal text "undefined",
+      // which is what got written to the users row and rendered on the
+      // dashboard. Omit absent attributes instead, and encode the rest.
+      const claims = result.idToken.payload;
+      const params = new URLSearchParams({ username: claims['cognito:username'] });
+      if (claims.email) params.set('email', claims.email);
+      if (claims.given_name) params.set('first_name', claims.given_name);
+      if (claims.family_name) params.set('last_name', claims.family_name);
+      axios.get( apiConfig.host + apiConfig.port + `/api/user/firstOrNew?` + params.toString()
         ).then(data => {
         const session = formatSessionObject(data.data.id, result);
         TokenStorage.setToken({access_token : session.jwt, refresh_token : null});

@@ -93,7 +93,8 @@ class SessionIndex extends Component {
   }
 
   editSession(sessionId) {
-    this.props.history.push("/session/edit/" + sessionId);
+    // There is no edit route or edit component; View is the inline editor.
+    this.props.history.push("/session/" + sessionId);
   }
 
   viewSession(sessionId) {

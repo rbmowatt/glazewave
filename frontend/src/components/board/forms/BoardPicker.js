@@ -76,10 +76,13 @@ class BoardPicker extends React.Component {
 			this.props.clearCreatedBoard();
 			//this.setState({ board_id : board_id})
 			this.props.onChange(board_id);
-			this.props.loadBoard(this.props.session, {
-				id: board_id,
-				withs: ["UserBoardImage"],
-			});
+			// A session with no board leaves board_id null here, which fetched
+			// /api/user_board/null on every detail page load.
+			if (board_id)
+				this.props.loadBoard(this.props.session, {
+					id: board_id,
+					withs: ["UserBoardImage"],
+				});
 		}
 	}
 

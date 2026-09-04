@@ -99,7 +99,8 @@ class BoardIndex extends Component {
 	}
 
 	editBoard(boardId) {
-		this.props.history.push("/board/edit/" + boardId);
+		// There is no edit route or edit component; View is the inline editor.
+		this.props.history.push("/board/" + boardId);
 	}
 
 	boardCreated = (id) => {

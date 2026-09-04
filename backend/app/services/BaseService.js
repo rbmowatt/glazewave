@@ -46,22 +46,21 @@ class BaseService {
     );
   }
 
+  /**
+   * Resolves the updated instance, or null when the row does not exist.
+   * The previous version resolved the instance too but had no catch on
+   * save(), so a write that failed left the promise pending and the HTTP
+   * request open until it timed out.
+   */
   async update(id, params, callback = null)
   {
-    return new Promise((resolve, reject)=>
-        {
-          this.find({id: id})
-              .then(data=>
-                  {
-                    for (let [key, value] of Object.entries(params)) {
-                      data[key] = value;
-                    }
-                    data.save().then(res=>resolve(data))
-                  }
-              )
-              .catch(e=>reject(e))
-        }
-    )
+    const data = await this.find({id: id});
+    if (!data) return null;
+    for (let [key, value] of Object.entries(params)) {
+      data[key] = value;
+    }
+    await data.save();
+    return data;
   }
 
   async upsert(params, callback = null)
