@@ -1,7 +1,7 @@
 //import './css/Report.css'
 import React from 'react';
 import { connect } from "react-redux";
-import { locator, defaultOptions } from './../../../lib/utils/geolocator';
+import { safeLocate, defaultOptions } from './../../../lib/utils/geolocator';
 import getSpots from './../../../lib/utils/surfline_alg_geo';
 import {StormGlassLoaded} from './../../../actions/stormglass';
 import apiConfig from './../../../config/api';
@@ -40,7 +40,7 @@ class Report extends React.Component{
       else {
         const setState = this.setState;
         const sgLoaded = this.props.stormglassLoaded;
-        locator.locate(defaultOptions , function (err, location) {
+        safeLocate(defaultOptions, function (err, location) {
           if (err) return /* console.log removed */;
           getSessionData(location.coords.latitude,location.coords.longitude).then(data=>
             {
