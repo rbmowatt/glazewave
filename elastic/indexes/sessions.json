@@ -1,0 +1,86 @@
+{
+  "settings": {
+    "number_of_replicas": 0,
+    "analysis": {
+      "filter": {
+        "englishStopWords": {
+          "type": "stop",
+          "stopwords": "_english_"
+        }
+      },
+      "analyzer": {
+        "sessionNameAnalyzer": {
+          "tokenizer": "standard",
+          "filter": [
+            "lowercase",
+            "englishStopWords"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "title": {
+        "type": "keyword",
+        "fields": {
+          "analyzed": {
+            "type": "text",
+            "analyzer": "sessionNameAnalyzer",
+            "search_analyzer": "sessionNameAnalyzer"
+          }
+        }
+      },
+      "location": {
+        "type": "keyword",
+        "fields": {
+          "analyzed": {
+            "type": "text",
+            "analyzer": "sessionNameAnalyzer",
+            "search_analyzer": "sessionNameAnalyzer"
+          }
+        }
+      },
+      "board": {
+        "type": "keyword",
+        "fields": {
+          "analyzed": {
+            "type": "text",
+            "analyzer": "sessionNameAnalyzer",
+            "search_analyzer": "sessionNameAnalyzer"
+          }
+        }
+      },
+      "id": {
+        "type": "integer"
+      },
+      "user_id": {
+        "type": "integer"
+      },
+      "rating": {
+        "type": "integer"
+      },
+      "is_public": {
+        "type": "integer"
+      },
+      "wave_period": {
+        "type": "float"
+      },
+      "wave_height": {
+        "type": "float"
+      },
+      "swell_height": {
+        "type": "float"
+      },
+      "swell_period": {
+        "type": "float"
+      },
+      "water_temperature": {
+        "type": "float"
+      },
+      "wind_speed": {
+        "type": "float"
+      }
+    }
+  }
+}
