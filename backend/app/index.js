@@ -18,6 +18,7 @@ const userRouter = require('./routes/user');
 const userBoardRouter = require('./routes/user_boards');
 const stormcastRouter = require('./routes/stormcast');
 const spotRouter = require('./routes/spot');
+const esRouter = require('./routes/es');
 const cognitoAuthMiddleware = cognitoAuth.getVerifyMiddleware();
 const queryParser = require('./middleware/QueryParser');
 
@@ -39,6 +40,7 @@ app.use('/api/spot', spotRouter);
 app.use('/api/sc', stormcastRouter);
 app.use('/api/image', imageRouter);
 app.use('/api/user_board', cognitoAuthMiddleware, userBoardRouter);
+app.use('/api/es', cognitoAuthMiddleware, esRouter);
 
 
 
