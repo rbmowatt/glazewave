@@ -10,6 +10,8 @@
     "delete-db": "node bin/sql/deleteUsersTable.js",
     "load-data": "node bin/sql/loadRecipesTable.js",
     "sync-elastic": "node app/scripts/sync_elastic.js",
+    "spots:probe": "node app/scripts/probe_spot_sources.js",
+    "spots:seed-file": "node app/scripts/build_spot_seed.js",
     "sync-surfline": "node app/scripts/import_surfline.js",
     "test-queue": "node app/services/queue/BetterQueue.js",
     "test-elastic": "node app/scripts/elastic/test.js",
