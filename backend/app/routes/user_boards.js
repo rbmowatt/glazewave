@@ -91,26 +91,20 @@ router.post('/', upload({destinationPath : 'user_boards'}).single('photo'), func
 
 router.put('/:id', upload({destinationPath : 'user_boards'}).single('photo'),function (req, res) {
   BaseService.make().update(req.params.id, req.body)
-    .then(num => {
-      if (num == 1) {
-        BaseService.make().find({id : req.params.id})
-        .then(data => {
-          res.send(data);
-        })
-        .catch(err => {
-          res.status(500).send({
-            message: "Error retrieving " + EntityType + " with id=" + req.params.id
-          });
-        });
-      } else {
-        res.send({
-          message: `Cannot update ${EntityType} with id=${id}. Maybe ${EntityType} was not found or req.body is empty!`
+    .then(data => {
+      // update() resolves the saved instance, so there is nothing to re-fetch
+      // and nothing to compare against a row count. The client merges this
+      // response straight into its store, so it has to be the record.
+      if (!data) {
+        return res.status(404).send({
+          message: `Cannot update ${EntityType} with id=${req.params.id}.`
         });
       }
+      res.send(data);
     })
     .catch(err => {
       res.status(500).send({
-        message: "Error updating " + EntityType + "  with id=" + id
+        message: "Error updating " + EntityType + " with id=" + req.params.id
       });
     });
 });

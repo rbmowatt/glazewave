@@ -110,44 +110,47 @@ router.post('/board', upload({destinationPath : 'board'}).single('photo'), funct
 });
 
 router.post('/images', upload({destinationPath : 'user', width : 400, height : 400}).single('photo'), function (req, res) {
-  if(req.file ){
-    BaseService.make().update(req.body.user_id,  {profile_img : req.file.key })
-    .then(num => {
-      if (num == 1) {
-        res.send({
-          data : req.file.key, 
-          message: "User Imade was updated successfully."
-        });
-      } else {
-        res.send({
-          message: `Cannot update ${EntityType} with id=${req.body.user_id}. Maybe ${EntityType} was not found or req.body is empty!`
+  // Without a file the old version fell off the end of the handler and never
+  // answered, so the browser sat on an open request until it timed out.
+  if (!req.file) {
+    return res.status(400).send({ message: "No photo was uploaded." });
+  }
+  BaseService.make().update(req.body.user_id,  {profile_img : req.file.key })
+    .then(data => {
+      if (!data) {
+        return res.status(404).send({
+          message: `Cannot update ${EntityType} with id=${req.body.user_id}.`
         });
       }
+      // The reducer reads payload.data, so this shape is load bearing.
+      res.send({
+        data : req.file.key,
+        message: "User image was updated successfully."
+      });
     })
     .catch(err => {
       res.status(500).send({
-        message: "Error updating " + EntityType + "  with id=" + req.body.user_id
+        message: "Error updating " + EntityType + " with id=" + req.body.user_id
       });
     });
-    }
 });
 
 router.put('/:id', function (req, res) {
   BaseService.make().update(req.params.id, req.body)
-    .then(num => {
-      if (num == 1) {
-        res.send({
-          message: "Session was updated successfully."
-        });
-      } else {
-        res.send({
-          message: `Cannot update ${EntityType} with id=${id}. Maybe ${EntityType} was not found or req.body is empty!`
+    .then(data => {
+      // update() resolves the saved instance, so there is nothing to re-fetch
+      // and nothing to compare against a row count. The client merges this
+      // response straight into its store, so it has to be the record.
+      if (!data) {
+        return res.status(404).send({
+          message: `Cannot update ${EntityType} with id=${req.params.id}.`
         });
       }
+      res.send(data);
     })
     .catch(err => {
       res.status(500).send({
-        message: "Error updating " + EntityType + "  with id=" + id
+        message: "Error updating " + EntityType + " with id=" + req.params.id
       });
     });
 });

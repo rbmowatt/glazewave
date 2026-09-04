@@ -178,7 +178,7 @@ class Location extends Component {
 
             {loadError && (
               <small className="form-text text-muted">
-                Location lookup unavailable. Type a name and it will be saved without coordinates.
+                Location lookup is unavailable.
               </small>
             )}
 
