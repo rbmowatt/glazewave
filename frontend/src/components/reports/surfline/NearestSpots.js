@@ -42,6 +42,7 @@ class NearestSpots extends React.Component{
             setState({spots : spots})
             cache.setWithExpiry(CACHE_KEY, JSON.stringify(spots), 36000);
           })
+          .catch(()=>{})
         });
       }
     }
