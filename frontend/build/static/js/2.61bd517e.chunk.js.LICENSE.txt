@@ -151,8 +151,6 @@ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
 
-/*! algoliasearch-lite.umd.js | 4.26.0 | © Algolia, inc. | https://github.com/algolia/algoliasearch-client-javascript */
-
 /*! https://mths.be/punycode v1.4.1 by @mathias */
 
 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */

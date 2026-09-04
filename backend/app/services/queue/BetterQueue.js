@@ -1,14 +1,7 @@
 var Queue = require('better-queue');
-const {getAlgoliaClient} = require('./../algolia/client');
 const db = require('./../../services/sequelize');
 const elasticConfig = require('./../../config/elastic');
 const { QueryTypes } = require('sequelize');
-const ALGOLIA_SESSION_INDEX = 'sessions';
-const ALGOLIA_SESSION_PREFIX = 'session_';
-const ALGOLIA_USER_BOARD_INDEX = 'user_boards';
-const ALGOLIA_USER_BOARD_PREFIX = 'user_board_';
-const ALGOLIA_SUFLINE_SPOT_INDEX = 'surfline_spots';
-const ALGOLIA_SUFLINE_SPOT_PREFIX = 'sl_spot_';
 require('dotenv').config();
 
 
@@ -16,7 +9,7 @@ require('dotenv').config();
 const { Client } = require('@elastic/elasticsearch')
 
 
-const getClient = (index) =>
+const getClient = () =>
 {
     const client = new Client({ node: elasticConfig.host })
 client.on('response', (err, result) => {
@@ -90,41 +83,8 @@ const setUserBoardQueue = (boards, cb)=>
 }
 
 
-const setSurflineSpotsQueue = (spots, cb)=>
-{
-    let data = [];
-    spots.forEach((spot)=>
-    {
-        console.log('adding spot', spot.id)
-        spotData = spot.dataValues;
-        spotData.objectID = ALGOLIA_SUFLINE_SPOT_PREFIX + spot.id;
-        spotData._geoloc  = {
-            lat : parseFloat(spot.lat),
-            lon : parseFloat(spot.lon),
-        }
-        delete spotData.geo;
-        delete spotData.lat;
-        delete spotData.lon;
-        delete spotData.createdAt;
-        delete spotData.updatedAt;
-        delete spotData.crumbs;
-        console.log(spotData)
-        data.push(spotData);
-    });
-   
-    getAlgoliaClient(ALGOLIA_SUFLINE_SPOT_INDEX).saveObjects(data, {
-        }).then(({ objectIDs }) => {
-            result = objectIDs;
-            console.log('added record', objectIDs)
-        }).catch(e=>console.log(e));
-        cb(null, data);
-}
 
 
-var getSurflineSpotsQueue= () => {
-    return new Queue(setSurflineSpotsQueue, 
-        {batchSize: 10})
-    }
 
 var getSessionQueue = () => {
     return new Queue(setSessionQueue, 
@@ -141,14 +101,9 @@ var getSessionQueue = () => {
     }   
 
 module.exports = {
-    ALGOLIA_SESSION_INDEX,
-    ALGOLIA_SESSION_PREFIX,
-    ALGOLIA_USER_BOARD_INDEX,
-    ALGOLIA_USER_BOARD_PREFIX,
     getSessionQueue,
     getUserBoardQueue,
-    getClient,
-    getSurflineSpotsQueue
+    getClient
 };
 
 

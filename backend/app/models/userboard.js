@@ -1,5 +1,5 @@
 'use strict';
-const {getUserBoardQueue, getClient, ALGOLIA_USER_BOARD_INDEX, ALGOLIA_USER_BOARD_PREFIX} = require('./../services/queue/BetterQueue')
+const {getUserBoardQueue, getClient} = require('./../services/queue/BetterQueue')
 
 const userBoardUpsertCallback = async (board, options) => {
   getUserBoardQueue().push(board).on('finish', function (result) {
@@ -24,11 +24,10 @@ module.exports = (sequelize, DataTypes) => {
     notes: DataTypes.TEXT,
     is_public: DataTypes.BOOLEAN
   }, {underscored: true, tableName: 'user_boards'});
-   //add hooks to algolia
    UserBoard.addHook('afterCreate', userBoardUpsertCallback )
    UserBoard.addHook('afterUpdate', userBoardUpsertCallback )
    UserBoard.addHook('afterDestroy', async (board, options) => {
-    getClient(ALGOLIA_USER_BOARD_INDEX ).deleteObject(ALGOLIA_USER_BOARD_PREFIX + board.id)
+    getClient().delete({id : board.id, index : process.env.ELASTIC_USER_BOARDS_INDEX})
   })
 
   UserBoard.associate = function(models) {

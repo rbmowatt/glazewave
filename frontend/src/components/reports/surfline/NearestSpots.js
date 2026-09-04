@@ -2,12 +2,12 @@ import './css/NearestSpots.css'
 import React from 'react';
 import { connect } from "react-redux";
 import { safeLocate, defaultOptions } from './../../../lib/utils/geolocator';
-import getSpots from './../../../lib/utils/surfline_alg_geo';
+import getSpots from './../../../lib/utils/spots';
 import ReactTooltip from 'react-tooltip'
 import Iframe from 'react-iframe'
 import  cache from './../../../lib/utils/cache';
 
-const CACHE_KEY = 'nrspt';
+const CACHE_KEY = 'nrspt2';
 
 const mapStateToProps = (state) => {
     return {
@@ -38,9 +38,9 @@ class NearestSpots extends React.Component{
       {
         safeLocate(defaultOptions, function (err, location) {
         if (err) return /* console.log removed */;
-        getSpots(location.coords.latitude,location.coords.longitude).then(data=>{
-            setState({spots : data.hits})
-            cache.setWithExpiry(CACHE_KEY, JSON.stringify(data.hits), 36000);
+        getSpots(location.coords.latitude,location.coords.longitude).then(spots=>{
+            setState({spots : spots})
+            cache.setWithExpiry(CACHE_KEY, JSON.stringify(spots), 36000);
           })
         });
       }
@@ -54,7 +54,7 @@ class NearestSpots extends React.Component{
     return <div className="container surfline nearest_spots">
         <h6>Nearest Spots</h6>
         {spots.map(el => (
-        <div className="row spot" key={el.url}>
+        <div className="row spot" key={el.id}>
             <div className="col">
               <a href={el.url} target="_blank">{el.name}</a>        
             </div>
@@ -75,7 +75,7 @@ export default connect(mapStateToProps)(NearestSpots);
     return <div className="container surfline nearest_spots">
         <h6>Nearest Spots</h6>
         {spots.map(el => (
-        <div className="row spot" key={el.url}>
+        <div className="row spot" key={el.id}>
             <div className="col">
             <div data-tip data-event="click" data-for={el.url} href="#" data-tip="http://localhost:3000/user/dashboard" data-iscapture='true'>{el.name}</div>
             <ReactTooltip id={el.url}  getContent={(datatip) => { 
