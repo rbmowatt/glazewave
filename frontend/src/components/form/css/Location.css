@@ -1,0 +1,23 @@
+/* The suggestion list overlays rather than displacing: this field sits inside
+   the session modal, and a list that pushes content down shoves the submit
+   button off the visible area while the user is still typing. */
+.location-field-input {
+  position: relative;
+}
+
+.location-suggestions {
+  position: absolute;
+  z-index: 1060; /* above the bootstrap modal, which sits at 1050 */
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 16rem;
+  overflow-y: auto;
+  margin-top: 0.125rem;
+}
+
+.location-suggestions .list-group-item {
+  cursor: pointer;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.9rem;
+}

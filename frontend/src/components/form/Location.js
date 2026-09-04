@@ -1,61 +1,111 @@
+import "./css/Location.css";
 import React, {Component} from "react"
-import ReactGoogleMapLoader from "react-google-maps-loader"
-import ReactGooglePlacesSuggest from "react-google-places-suggest"
 import { createField, fieldPresets } from 'react-advanced-form'
 import { getSessionData} from './../reports/stormglass/helpers/session';
-import googleConfig from './../../config/google';
+import { loadPlaces } from './../../lib/utils/googleMaps';
 
- 
+// Autocomplete bills per request, so a request per keystroke is real money on a
+// field people type a whole beach name into.
+const DEBOUNCE_MS = 300;
+
 class Location extends Component {
     state = {
         search: "",
         value: "",
         location_id : "",
-        is_editing : false
+        is_editing : false,
+        places : null,
+        loadError : null,
+        suggestions : [],
+        open : false
     }
- 
+
+    componentDidMount() {
+        loadPlaces()
+            .then(places => this.setState({places}))
+            .catch(err => this.setState({loadError: err.message}));
+    }
+
+    componentWillUnmount() {
+        clearTimeout(this.debounce);
+        this.unmounted = true;
+    }
+
     handleInputChange = e => {
-        this.setState({search: e.target.value, value: e.target.value, is_editing : true}) 
+        const search = e.target.value;
+        this.setState({search, value: search, is_editing: true});
+        clearTimeout(this.debounce);
+        if (!search.trim()) {
+            this.setState({suggestions: [], open: false});
+            return;
+        }
+        this.debounce = setTimeout(() => this.fetchSuggestions(search), DEBOUNCE_MS);
     }
- 
-    handleSelectSuggest = (geocodedPrediction, originalPrediction) => {
+
+    fetchSuggestions = async (input) => {
+        const { places } = this.state;
+        if (!places) return;
+        const { AutocompleteSuggestion, AutocompleteSessionToken } = places;
+        // One token spans a whole typing session and is consumed by
+        // fetchFields, which is what makes the autocomplete calls free and
+        // bills only the details call that follows.
+        if (!this.token) this.token = new AutocompleteSessionToken();
+        try {
+            const { suggestions } = await AutocompleteSuggestion.fetchAutocompleteSuggestions({
+                input,
+                sessionToken: this.token
+            });
+            if (this.unmounted) return;
+            this.setState({
+                suggestions: suggestions.filter(s => s.placePrediction),
+                open: true
+            });
+        } catch (err) {
+            if (!this.unmounted) this.setState({suggestions: [], open: false});
+        }
+    }
+
+    handleSelectSuggest = async (suggestion) => {
+        const place = suggestion.placePrediction.toPlace();
+        await place.fetchFields({fields: ['id', 'displayName', 'formattedAddress', 'location']});
+        // fetchFields closes the session, so the next keystroke has to open a
+        // new one or every later request bills as an unsessioned call.
+        this.token = null;
+        if (this.unmounted) return;
+
         this.setState({
             search: "",
-            value: geocodedPrediction.formatted_address,
-            location_id : geocodedPrediction.place_id
-        })
-        this.props.onChange('location_id', geocodedPrediction.place_id);
-        this.setState({is_editing : false});
-        getSessionData(geocodedPrediction.geometry.location.lat(),geocodedPrediction.geometry.location.lng())
+            value: place.formattedAddress || place.displayName,
+            location_id: place.id,
+            is_editing: false,
+            suggestions: [],
+            open: false
+        });
+        this.props.onChange('location_id', place.id);
+        getSessionData(place.location.lat(), place.location.lng())
             .then(d=>{ if (d) this.props.onChange('conditions', d); })
             .catch(()=>{})
-    }
- 
-    handleNoResult = () => {
-    }
- 
-    handleStatusUpdate = status => {
-     // this.setState({is_editing : true});
     }
 
     onBlur = (e)=>
     {
-      
-      if(this.state.is_editing){
-        this.setState({
-          value: '',
-          is_editing : false
-        })
-      }
+      // Deferred so a click on a suggestion registers before the list closes.
+      setTimeout(() => {
+        if (this.unmounted) return;
+        this.setState({open: false});
+        if(this.state.is_editing){
+          this.setState({
+            value: '',
+            is_editing : false
+          })
+        }
+      }, 150);
     }
- 
+
     render() {
-      //if(this.props.disable && this.props.disable === true){
-        //return  <div className="sc-ifAKCX">{this.props.placeholder}</div>
-     // }
-        const {search, value} = this.state
+        const {value, suggestions, open, loadError} = this.state
         const { fieldProps, fieldState, id, name, label, hint } = this.props
-    
+
         const {
           touched,
           pristine,
@@ -69,7 +119,7 @@ class Location extends Component {
           invalid,
           errors,
         } = fieldState
-    
+
         const inputClassNames = [
           'form-control',
           touched && 'is-touched',
@@ -81,90 +131,68 @@ class Location extends Component {
           validSync && 'valid-sync',
           validAsync && 'valid-async',
           invalid && 'is-invalid',
-          'google-locations-input',
-          'sc-EHOje fVJbnH'
+          'google-locations-input'
         ]
           .filter(Boolean)
           .join(' ')
-    
-          const inputProps = {
-            ...fieldProps,
-            className: inputClassNames,
-            autoComplete: "off"
-          };
-    
-        const wrapperClass = !this.props.display ? "sc-bxivhb" : "sc-bxivhb d-none";
-    
+
+        const inputProps = {
+          ...fieldProps,
+          className: inputClassNames,
+          autoComplete: "off"
+        };
+
+        const wrapperClass = !this.props.display ? "location-field" : "location-field d-none";
+
         return (
           <div className={wrapperClass}>
             {label && (
-              <label className="sc-bwzfXH dybocD" htmlFor={id || name}>
+              <label htmlFor={id || name}>
                 {label}
                 {required && ' *'}
               </label>
             )}
-            <div className="sc-ifAKCX">
-            <ReactGoogleMapLoader
-                params={{
-                    // Build-time inlined, so a key change is a rebuild. With no
-                    // key the loader never resolves, googleMaps stays null and
-                    // the render callback below emits nothing at all - the
-                    // location field disappears rather than degrading to a
-                    // plain text input.
-                    key: googleConfig.api_key,
-                    libraries: "places,geocode",
-                }}
-                render={googleMaps =>
-                    googleMaps && (
-                        <ReactGooglePlacesSuggest
-                            googleMaps={googleMaps}
-                            autocompletionRequest={{
-                                input: search,
-                                //types: ['(route)']
-                                // Optional options
-                                // https://developers.google.com/maps/documentation/javascript/reference?hl=fr#AutocompletionRequest
-                            }}
-                            // Optional props
-                            onNoResult={this.handleNoResult}
-                            onSelectSuggest={this.handleSelectSuggest}
-                            onStatusUpdate={this.handleStatusUpdate}
-                            textNoResults="My custom no results text" // null or "" if you want to disable the no results item
-                            customRender={prediction => (
-                                <div className="customWrapper">
-                                    {this.locRender(prediction)}
-                                </div>
-                            )}
-                        >
-                            <input
-                                {...inputProps}
-                                type="text"
-                                autoComplete="off"
-                                value={value}
-                                onBlur={this.onBlur}
-                                onChange={this.handleInputChange}
-                            />
-                        </ReactGooglePlacesSuggest>
-                    )
-                }
-            />
-       </div>
+            <div className="location-field-input">
+              <input
+                {...inputProps}
+                type="text"
+                autoComplete="off"
+                value={value}
+                onBlur={this.onBlur}
+                onChange={this.handleInputChange}
+              />
+              {open && suggestions.length > 0 && (
+                <ul className="list-group location-suggestions">
+                  {suggestions.map(suggestion => (
+                    <li
+                      key={suggestion.placePrediction.placeId}
+                      className="list-group-item list-group-item-action"
+                      onMouseDown={() => this.handleSelectSuggest(suggestion)}
+                    >
+                      {suggestion.placePrediction.text.toString()}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
 
+            {loadError && (
+              <small className="form-text text-muted">
+                Location lookup unavailable. Type a name and it will be saved without coordinates.
+              </small>
+            )}
 
-{hint && <small className="form-text text-muted">{hint}</small>}
+            {hint && <small className="form-text text-muted">{hint}</small>}
 
-{errors &&
-  errors.map((error, index) => (
-    <div key={index} className="invalid-feedback">
-      {error}
-    </div>
-  ))}
-</div>
-)
-}
-locRender = (prediction)=>{
-  return prediction.types.indexOf("route") !== -1
-  ? prediction.description
-  : null}
+            {errors &&
+              errors.map((error, index) => (
+                <div key={index} className="invalid-feedback">
+                  {error}
+                </div>
+              ))}
+          </div>
+        )
+    }
 }
 
 export default createField(fieldPresets.input)(Location)

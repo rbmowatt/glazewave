@@ -1,11 +1,13 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Location = sequelize.define('Location', {
+    // The column is VARCHAR and holds a Google place id, not an integer -
+    // see migration 20200516162256-create-location. The model said INTEGER
+    // autoIncrement, which is neither.
     id: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       primaryKey: true,
       allowNull: false,
-      autoIncrement: true,
     },
     name: DataTypes.STRING,
     formatted_address: DataTypes.STRING,
