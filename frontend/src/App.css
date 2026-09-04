@@ -23,3 +23,15 @@ body {
 
 
  
+
+.attribution {
+  padding: 1.25rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  opacity: 0.75;
+}
+
+.attribution a {
+  text-decoration: underline;
+}

@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import * as React from 'react';
 import Navbar from './components/layout/Navbar';
+import Attribution from './components/layout/Attribution';
 import PrivateRoute from './components/auth/PrivateRoute';
 import Page404 from './components/home/Page404';
 import Home from './components/home/Home';
@@ -59,6 +60,7 @@ class App extends React.Component{
 
           <Route component={Page404} />
         </Switch>
+        <Attribution />
       </div>  
     );
   }
