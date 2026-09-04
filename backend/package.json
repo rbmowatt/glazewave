@@ -36,7 +36,6 @@
     "multer-sharp-s3": "^0.2.1",
     "mysql2": "^2.3.3",
     "node-cache": "^5.1.2",
-    "node-googleplaces": "^0.1.2",
     "sequelize": "^5.22.5",
     "wkx": "^0.5.0"
   },
