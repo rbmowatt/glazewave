@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import { confirmAlert } from "react-confirm-alert";
 import { connect } from "react-redux";
 import elasticConfig from './../../config/elastic';
+import { esHeaders } from './../../lib/utils/elastic';
 import { Link } from "react-router-dom";
 import MainContainer from "./../layout/MainContainer";
 import SessionCard from "./SessionCard";
@@ -146,7 +147,7 @@ class SessionIndex extends Component {
 
     return (
       <MainContainer>
-        <ReactiveBase app={elasticConfig.sessions_index} url={elasticConfig.host} credentials={elasticConfig.credentials}>
+        <ReactiveBase app={elasticConfig.sessions_index} url={elasticConfig.host} headers={esHeaders()}>
           <div className="row">
             <div className="container card card-lg mx-auto">
               <div className="card-title">

@@ -12,6 +12,7 @@ import {
 	UserBoardCreatedCleared,
 } from "./../../actions/user_board";
 import elasticConfig from './../../config/elastic';
+import { esHeaders } from './../../lib/utils/elastic';
 import Modal from "./../layout/Modal";
 import CreateUserBoard from "./CreateUserBoard";
 import { Radio } from "react-advanced-form-addons";
@@ -170,7 +171,7 @@ class BoardIndex extends Component {
 		const showModal = this.showModal;
 		return (
 			<MainContainer>
-				<ReactiveBase app={elasticConfig.user_boards_index} url={elasticConfig.host} credentials={elasticConfig.credentials}>
+				<ReactiveBase app={elasticConfig.user_boards_index} url={elasticConfig.host} headers={esHeaders()}>
 					<div className="row">
 						<div className="container card card-lg mx-auto">
 							<div className="card-title">
