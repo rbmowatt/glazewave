@@ -4,7 +4,7 @@ const EntityType = 'Spot';
 
 const router = new Router();
 
-const DEFAULT_RADIUS_M = 10000;
+const DEFAULT_RADIUS_M = 50000;
 const MAX_RADIUS_M = 200000;
 const DEFAULT_LIMIT = 5;
 const MAX_LIMIT = 50;
