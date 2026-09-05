@@ -1,5 +1,4 @@
 import React from 'react';
-import StarBar from './../layout/StarBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { faEdit } from '@fortawesome/free-solid-svg-icons';
@@ -7,32 +6,44 @@ import { s3Conf } from './../../config/s3';
 import moment from 'moment'
 import { withRouter } from "react-router";
 
+const HIGH_RATING = 8;
 
-const SessionCard = props =>{
+const SessionCard = props => {
+    const { session } = props;
+    const open = () => props.history.push("/session/" + session.id);
+    const image = session.SessionImages && session.SessionImages.length
+        ? s3Conf.root + session.SessionImages[0].name
+        : "/img/session_default_lg.png";
+
+    const meta = [
+        moment(session.createdAt).format("MMM DD"),
+        session.Location && session.Location.name,
+        session.UserBoard && session.UserBoard.name,
+    ].filter(Boolean).join(" · ");
+
+    const rating = Number(session.rating) || 0;
+
     return (
-        <div className="container-fluid session-card" >
-            <div className="row">
-                <div className="col-12 session-card-title" onClick={()=>props.history.push("/session/" + props.session.id)} ><button className="btn btn-link card-title" onClick={()=>props.history.push("/session/" + props.session.id) }>{props.session.title}</button></div>
-                <div className="col-4">
-                <div onClick={()=>props.history.push("/session/" + props.session.id)} >
-                    <img className="img-responsive img-thumbnail img-card" alt={props.session.title}
-                        src={props.session.SessionImages && props.session.SessionImages.length ? s3Conf.root + props.session.SessionImages[0].name 
-                        : "/img/session_default_lg.png" }/>
+        <div className="gw-row">
+            <img className="gw-row-thumb" alt={session.title} src={image} onClick={open} />
+            <div className="gw-row-body" onClick={open}>
+                <div className="gw-row-title">{session.title}</div>
+                <div className="gw-row-meta">{meta}</div>
+            </div>
+            {props.isOwner &&
+                <div className="gw-row-actions">
+                    {props.editSession &&
+                        <FontAwesomeIcon alt="edit session" icon={faEdit}
+                            onClick={() => props.editSession(session.id)} />
+                    }
+                    {props.deleteSession &&
+                        <FontAwesomeIcon alt="delete session" icon={faTrash}
+                            onClick={(e) => { e.preventDefault(); props.deleteSession(session.id) }} />
+                    }
                 </div>
-                { props.isOwner && 
-                    <div style={{textAlign : 'center', marginTop : '0.3em'}}>
-                        { props.editSession && <FontAwesomeIcon size="lg" alt="edit user" style={{ marginLeft:'.1em' , cursor:'pointer'}}  icon={faEdit} onClick={() => props.editSession(props.session.id)} /> }
-                        { props.deleteSession && <FontAwesomeIcon  size="lg"  alt="delete user" style={{ marginLeft:'.5em', cursor:'pointer'}}  icon={faTrash} 
-                        onClick={(e) => { e.preventDefault();props.deleteSession(props.session.id)}} /> }
-                    </div>
-}
-                </div>
-                <div className="col-8" onClick={()=>props.history.push("/session/" + props.session.id)} >
-                    <div className="card-date" >{moment(props.session.createdAt).calendar()}</div>
-                    <div className="card-rating" ><StarBar stars={props.session.rating} /></div>
-                    <div className="capitalize">{props.session.UserBoard && props.session.UserBoard.name ? props.session.UserBoard.name : "No Board Selected"}</div>
-                    <div className="capitalize">{props.session.Location && props.session.Location.name ?  props.session.Location.name  + ' ' + props.session.Location.vicinity : "No Location Specified"}</div>
-                </div>
+            }
+            <div className={`gw-row-rating${rating >= HIGH_RATING ? ' is-high' : ''}`} onClick={open}>
+                {rating ? rating.toFixed(1) : "--"}
             </div>
         </div>
     )

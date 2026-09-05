@@ -1,80 +1,88 @@
-//import './css/Report.css'
 import React from 'react';
 import { connect } from "react-redux";
 import { safeLocate, defaultOptions } from './../../../lib/utils/geolocator';
-import {StormGlassLoaded} from './../../../actions/stormglass';
-import apiConfig from './../../../config/api';
-import {getSessionData} from './helpers/session';
+import { StormGlassLoaded } from './../../../actions/stormglass';
+import { getSessionData } from './helpers/session';
 
 const mapStateToProps = (state) => {
-    return {
-      session: state.session,
-      stormglass : state.stormglass
-    };
+  return {
+    session: state.session,
+    stormglass: state.stormglass
   };
+};
 
-  const mapDispachToProps = (dispatch) => {
-    return {
-      stormglassLoaded: (data) => dispatch(StormGlassLoaded(data)),
-    };
+const mapDispachToProps = (dispatch) => {
+  return {
+    stormglassLoaded: (data) => dispatch(StormGlassLoaded(data)),
   };
+};
 
-class Report extends React.Component{
-  constructor()
-  {
+// Units are set in backend/app/services/stormcast, not here.
+const ROWS = [
+  { key: 'swell_height', label: 'Swell', unit: 'ft' },
+  { key: 'swell_period', label: 'Swell period', unit: 's' },
+  { key: 'wave_height', label: 'Wave', unit: 'ft' },
+  { key: 'wave_period', label: 'Wave period', unit: 's' },
+  { key: 'wind_speed', label: 'Wind', unit: 'kt' },
+  { key: 'water_temperature', label: 'Water', unit: '°F' },
+  { key: 'pressure', label: 'Pressure', unit: 'in' },
+];
+
+class Report extends React.Component {
+  constructor() {
     super();
     this.state = {
-        data : {},
-        location : ''
+      data: {},
+      location: ''
     }
     this.setState = this.setState.bind(this);
   }
 
   componentDidMount() {
     if (this.props.session.isLoggedIn) {
-      if(this.props.stormglass.data.wave_period)
-      {
-        this.setState({data : this.props.stormglass.data});
+      if (this.props.stormglass.data.wave_period) {
+        this.setState({ data: this.props.stormglass.data });
       }
       else {
         const setState = this.setState;
         const sgLoaded = this.props.stormglassLoaded;
         safeLocate(defaultOptions, function (err, location) {
-          if (err) return /* console.log removed */;
-          getSessionData(location.coords.latitude,location.coords.longitude).then(data=>
-            {
-              if (!data) return;
-              sgLoaded(data);
-              setState({data :data});
-            })
-            .catch(()=>{})
-          });
-        }
+          if (err) return;
+          getSessionData(location.coords.latitude, location.coords.longitude).then(data => {
+            if (!data) return;
+            sgLoaded(data);
+            setState({ data: data });
+          })
+            .catch(() => { })
+        });
       }
+    }
   }
 
-
-
-  render()
-  {    
-    return <div className="container surfline nearest_spots">
-          <h6>Local Report</h6>
-          <div className="row spot"><div className="col"> <i>Observations Near {this.state.location}</i></div></div>
-          <div className="row spot" >
-            <div className="col">   
-            <div>Water Temp: {this.state.data.water_temperature}F</div>  
-            <div>Swell Height: {this.state.data.swell_height}ft</div>  
-            <div>Swell Period: {this.state.data.swell_period }s</div>  
-            <div>Wave Height: {this.state.data.wave_height }ft</div>  
-            <div>Wave Period: {this.state.data.wave_period }s</div>  
-            <div>Pressure: {this.state.data.pressure }in</div>  
-            <div>Wind Speed: {this.state.data.wind_speed }k</div>  
+  render() {
+    const { data, location } = this.state;
+    const rows = ROWS.filter(row => data[row.key] !== null && data[row.key] !== undefined);
+    return (
+      <div>
+        <div className="gw-eyebrow">Local report</div>
+        <div className="gw-report-title">{location || 'Your position'}</div>
+        {rows.length === 0 ? (
+          <div className="gw-trend-empty">NO OBSERVATIONS FOR THIS POSITION</div>
+        ) : (
+          <div className="gw-kv">
+            {rows.map(row => (
+              <div className="gw-kv-row" key={row.key}>
+                <span>{row.label}</span>
+                <span>{data[row.key]}{row.unit}</span>
+              </div>
+            ))}
           </div>
-        </div>
+        )}
+        {/* Open-Meteo is CC BY 4.0; the backend service comment says so too. */}
+        <div className="gw-attribution">WEATHER DATA BY OPEN-METEO.COM</div>
       </div>
-    }  
-    
+    )
+  }
 }
 
-
-export default connect(mapStateToProps, mapDispachToProps )(Report);
+export default connect(mapStateToProps, mapDispachToProps)(Report);

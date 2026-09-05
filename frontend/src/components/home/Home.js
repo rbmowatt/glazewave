@@ -1,18 +1,16 @@
 import React, { Component } from 'react'
 import './Home.css'
+import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import cognitoUtils from '../../lib/utils/cognito'
 import { s3Conf } from './../../config/s3';
-//import { initSession } from '../../actions/session';
 
 const mapStateToProps = state => {
   return { session: state.session }
 }
 
 function mapDispatchToProps (dispatch) {
-  return {
-   // initSession: () => dispatch(initSession())
-  }
+  return {}
 }
 
 class Home extends Component {
@@ -27,71 +25,64 @@ class Home extends Component {
     e.preventDefault()
     cognitoUtils.signOutCognitoSession()
   }
+
   render () {
+    const signInUri = cognitoUtils.getCognitoSignInUri();
     return (
       <div className="Home">
         <header className="background home-background">
-            <div className="container container-home">
-              <div className="row align-items-center my-5">
-                  <div className="col-lg-7">
-                    <img className="img-fluid rounded mb-4 mb-lg-0" src="/img/glazewave_index.png" alt="" />
-                  </div>
-                  <div className="col-lg-5">
-                    <h1 className="font-weight-light"><img
-									className="align-left"
-									src="/img/LogoMakr_4GvwRg.png"
-									alt="glazewave"
-								/></h1>
-                    <p>Get Stoked. Get Wet. Get Smart. Get Better.</p>
-                   
-                  </div>
-              </div>
-              <div className="card index-cta my-5 py-4 text-center bg-primary">
-                    <p>A Free online tool to track your time getting wet and gain analytics into your performance!</p>
-                    <p><a className="btn btn-primary" href={cognitoUtils.getCognitoSignInUri()}>Sign Up!</a></p>
-              </div>
-              <div className="row">
-                  <div className="col-md-4 mb-5">
-                    <div className="card h-100">
-                        <div className="card-body">
-                          <h3 className="card-title">Track Sessions</h3>
-                          <img src={s3Conf.root + 'site/session_example.png'} />
-                          <p className="card-text">Track and rate your session then use the stats to decide the best board and location for the swell!</p>
-                        </div>
-                        <div className="card-footer">
-                            <a className="btn btn-primary" href={cognitoUtils.getCognitoSignInUri()}>Sign Up!</a>
-                        </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4 mb-5">
-                    <div className="card h-100">
-                        <div className="card-body">
-                          <h3 className="card-title">Store Boards</h3>
-                          <img src={s3Conf.root + 'site/board_example.png'} />
-                          <p className="card-text">Show your quiver off to friends and the public while keeping track of how each performs in different conditions!.</p>
-                        </div>
-                        <div className="card-footer">
-                          <a className="btn btn-primary" href={cognitoUtils.getCognitoSignInUri()}>Sign Up!</a>
-                        </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4 mb-5">
-                    <div className="card h-100">
-                        <div className="card-body">
-                          <h3 className="card-title">Stow Photos</h3>
-                          <p className="card-text">Create image galleries with your best photos from each session.</p>
-                          <h3 className="card-title">Get Reports</h3>
-                          <p className="card-text">See your local conditions and nearest spots to surf!</p>
-                          <h3 className="card-title">View &amp; Share</h3>
-                          <p className="card-text">Privacy controls let each user share and view boards and sessions!<br /><i>(Only if you choose of course. We'll always take your privacy seriously)</i></p>
-                        </div>
-                        <div className="card-footer">
-                          <a href="#" className="btn btn-primary btn-sm">Sign Up!</a>
-                        </div>
-                    </div>
-                  </div>
+          <section className="gw-hero">
+            <div className="gw-hero-copy">
+              <div className="gw-hero-eyebrow">Surf session analytics</div>
+              <h1>Every session,<br />measured.</h1>
+              <p>
+                Log where you paddled out, which board you rode and what the ocean
+                was doing. Glazewave keeps the numbers, so the pattern shows up on
+                its own.
+              </p>
+              <div className="gw-hero-actions">
+                <a className="gw-btn gw-btn-solid" href={signInUri}>Create an account</a>
+                <Link className="gw-btn" to={'/session'}>See a sample log</Link>
               </div>
             </div>
+            <div className="gw-hero-media">
+              <img src="/img/glazewave_index.png" alt="Glazewave session log" />
+            </div>
+          </section>
+
+          <section className="gw-features">
+            <div className="gw-feature">
+              <h3>Track sessions</h3>
+              <img src={s3Conf.root + 'site/session_example.png'} alt="A logged session" />
+              <p>
+                Rate a session, then let the stats tell you which board and which
+                spot actually suit the swell you get.
+              </p>
+              <a className="gw-btn" href={signInUri}>Sign up</a>
+            </div>
+            <div className="gw-feature">
+              <h3>Store boards</h3>
+              <img src={s3Conf.root + 'site/board_example.png'} alt="A board in the quiver" />
+              <p>
+                Keep the quiver in one place and see how each board performs as the
+                conditions change.
+              </p>
+              <a className="gw-btn" href={signInUri}>Sign up</a>
+            </div>
+            <div className="gw-feature">
+              <h3>Photos and reports</h3>
+              <p>
+                Build a gallery from each session, and check local conditions and
+                the nearest spots before you go.
+              </p>
+              <h3>View and share</h3>
+              <p>
+                Privacy controls decide what other people see. Nothing is public
+                unless you make it public.
+              </p>
+              <a className="gw-btn" href={signInUri}>Sign up</a>
+            </div>
+          </section>
         </header>
       </div>
     )
@@ -99,7 +90,3 @@ class Home extends Component {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
-
-/*
-<img  className="Home-logo " alt="logo" src="https://umanage-mowatr.s3.amazonaws.com/bake_n_flake_logo_250_250.png" />
-*/
