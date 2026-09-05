@@ -3,6 +3,7 @@ import './Home.css'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import cognitoUtils from '../../lib/utils/cognito'
+import { isDemoPublic } from '../../lib/utils/demo'
 
 const mapStateToProps = state => {
   return { session: state.session }
@@ -41,7 +42,14 @@ class Home extends Component {
               </p>
               <div className="gw-hero-actions">
                 <a className="gw-btn gw-btn-solid" href={signInUri}>Create an account</a>
-                <Link className="gw-btn" to={'/session'}>See a sample log</Link>
+                {/*
+                  * Falls back to the public session index when the demo is off,
+                  * so the button never dead-ends on the "demo unavailable" page.
+                  * REACT_APP_DEMO_PUBLIC is inlined at build time and the
+                  * server's DEMO_PUBLIC is runtime, so the two can disagree
+                  * until the frontend is rebuilt.
+                  */}
+                <Link className="gw-btn" to={isDemoPublic() ? '/demo' : '/session'}>See a sample log</Link>
               </div>
             </div>
             <div className="gw-hero-media">
