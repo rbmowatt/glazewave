@@ -2,6 +2,7 @@ const jwkToPem = require('jwk-to-pem')
 const axios = require('axios')
 const jwt = require('jsonwebtoken')
 const cognitoConfig = require('./../config/cognito');
+const demoToken = require('./demoToken');
 
 const TOKEN_USE_ACCESS = 'access'
 const TOKEN_USE_ID = 'id'
@@ -19,6 +20,12 @@ function _getVerifyMiddleware () {
     .catch((err) => {
       // Failed to get the JWKS data - all subsequent auth requests will fail
       console.error(err)
+      // Except demo ones. The demo key is local, so it is still usable while
+      // Cognito is unreachable, which is the one condition a login that does
+      // not depend on Cognito exists to survive. Returning { err } instead
+      // would take the demo down with the outage.
+      const demoPem = demoToken.canVerify() ? demoToken.publicPem() : null
+      if (demoPem) return { [demoToken.KID]: demoPem }
       return { err }
     })
   return function (req, res, next) {
@@ -45,6 +52,13 @@ async function _init () {
     pems[key.kid] = jwkToPem(key)
   }
   console.info(`Successfully downloaded ${body.keys.length} JWK key(s)`)
+  // Merged rather than special-cased in _verifyProm so a demo token walks the
+  // same issuer, client_id, token_use and maxAge checks a Cognito one does.
+  // The kid is what separates them, and Cognito will not mint that kid.
+  if (demoToken.canVerify()) {
+    pems[demoToken.KID] = demoToken.publicPem()
+    console.info('Demo signing key enabled')
+  }
   return pems
 }
 
