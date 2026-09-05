@@ -13,33 +13,23 @@ const db = require('./../services/sequelize');
 const { QueryTypes } = require('sequelize');
 const { Client } = require('@elastic/elasticsearch');
 const elasticConfig = require('./../config/elastic');
+const {
+  SESSION_BACKFILL_SQL,
+  USER_BOARD_BACKFILL_SQL,
+} = require('./../services/elastic/projections');
 
 const CHUNK = 500;
 
-// Same projections BetterQueue writes on create/update. They have to stay in
-// step or a backfilled document will differ from a freshly saved one.
+// Shared with BetterQueue through services/elastic/projections.js, so a
+// backfilled document cannot differ from a freshly saved one.
 const TARGETS = {
   sessions: {
     index: () => process.env.ELASTIC_SESSIONS_INDEX,
-    sql: `SELECT sessions.id, sessions.user_id, title, sessions.rating,
-                 user_boards.name as board, sessions.is_public,
-                 locations.name as location, session_data.water_temperature,
-                 session_data.swell_height, session_data.swell_period,
-                 session_data.wave_height, session_data.wave_period,
-                 session_data.pressure, session_data.wind_speed
-          FROM sessions
-          LEFT JOIN session_data ON sessions.id = session_data.session_id
-          LEFT JOIN user_boards ON user_boards.id = sessions.board_id
-          LEFT JOIN locations ON locations.id = sessions.location_id`,
+    sql: SESSION_BACKFILL_SQL,
   },
   user_boards: {
     index: () => process.env.ELASTIC_USER_BOARDS_INDEX,
-    sql: `SELECT user_boards.user_id, user_boards.id, user_boards.name,
-                 user_boards.rating, user_boards.is_public, user_boards.notes,
-                 boards.model, manufacturers.name as manufacturer
-          FROM user_boards
-          LEFT JOIN boards ON boards.id = user_boards.board_id
-          LEFT JOIN manufacturers ON manufacturers.id = boards.manufacturer_id`,
+    sql: USER_BOARD_BACKFILL_SQL,
   },
 };
 

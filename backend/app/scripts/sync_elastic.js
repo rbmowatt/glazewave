@@ -6,8 +6,8 @@ const {
 } = require("./../services/queue/BetterQueue");
 const elasticConfig = require("./../config/elastic");
 const { Client } = require("@elastic/elasticsearch");
-const sesssionMappings = require("./elastic/session_mappings.json");
-const userBoardMappings = require("./elastic/user_board_mappings.json");
+const sesssionMappings = require("./../../../elastic/indexes/sessions.json");
+const userBoardMappings = require("./../../../elastic/indexes/user_boards.json");
 
 const getClient = () => {
   const client = new Client({ node: elasticConfig.host });
