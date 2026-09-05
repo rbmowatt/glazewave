@@ -3,9 +3,16 @@ import {USER_BOARD_IMAGES_LOADED, USER_BOARD_IMAGES_CREATED, USER_BOARD_IMAGE_DE
 
 const INITIAL_STATE_ID = 1;
 
+/*
+ * Which stand-in a board gets depends on its id, and a reducer has none, so the
+ * entry is flagged instead and the board page swaps the urls in when it renders.
+ * The flag rather than the id is what View matches on: INITIAL_STATE_ID is 1,
+ * and a real UserBoardImage can be id 1 too.
+ */
 const initialState = [
     {
         id : INITIAL_STATE_ID ,
+        placeholder: true,
         original: "/img/board_default_lg.png",
         thumbnail: "/img/board_default_lg.png",
     }

@@ -7,6 +7,7 @@ import {
 	UserBoardCreatedCleared,
 } from "./../../../actions/user_board";
 import { s3Conf } from "./../../../config/s3";
+import { boardPlaceholder } from "./../../../lib/utils/placeholder";
 import Modal from "./../../layout/Modal";
 import CreateUserBoard from "./../CreateUserBoard";
 import StarBar from "./../../layout/StarBar";
@@ -32,7 +33,6 @@ class BoardPicker extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			defaultImage: "/img/board_default_lg.png",
 			requestedId: null,
 			show: false,
 		};
@@ -109,7 +109,7 @@ class BoardPicker extends React.Component {
 		const boardImage =
 			board.UserBoardImages && board.UserBoardImages.length
 				? s3Conf.root + board.UserBoardImages[0].name
-				: this.state.defaultImage;
+				: boardPlaceholder(board.id);
 		return (
 			<div className={this.props.wrapperClass + " "}>
 				<div className="container">

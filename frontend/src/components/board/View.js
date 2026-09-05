@@ -13,6 +13,7 @@ import StarBar from "./../layout/StarBar";
 import UserBoardRequests from "./../../requests/UserBoardRequests";
 import ImageUploader from "react-images-upload";
 import ImageGallery from "react-image-gallery";
+import { boardPlaceholder } from "./../../lib/utils/placeholder";
 import TypeAheadInput from "./../form/TypeAheadInput";
 import { sizes } from "./data/board_sizes";
 import InlineEdit, { InputType } from "riec";
@@ -236,6 +237,16 @@ class BoardView extends Component {
 	render() {
 		const { board } = this.props;
 		let isOwner = this.props.board.user_id === this.props.session.user.id;
+		// The reducer cannot know which board it is holding images for, so the
+		// stand-in it supplies is generic until here.
+		const galleryItems = this.props.images.map((image) =>
+			image.placeholder
+				? Object.assign({}, image, {
+						original: boardPlaceholder(board.id),
+						thumbnail: boardPlaceholder(board.id),
+				  })
+				: image
+		);
 		const modelPlaceholder = this.state.modelPlaceholder
 			? this.state.modelPlaceholder
 			: board.Board
@@ -306,7 +317,7 @@ class BoardView extends Component {
 									/>
 									<div>
 										<ImageGallery
-											items={this.props.images}
+											items={galleryItems}
 											showBullets={true}
 											showIndex={true}
 											startIndex={this.state.imageIndex}

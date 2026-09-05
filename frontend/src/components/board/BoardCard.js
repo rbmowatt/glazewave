@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { faEdit } from "@fortawesome/free-solid-svg-icons";
 import { s3Conf } from "./../../config/s3";
+import { boardPlaceholder } from "./../../lib/utils/placeholder";
 import { withRouter } from "react-router";
 
 const HIGH_RATING = 8;
@@ -12,7 +13,7 @@ const BoardCard = (props) => {
 	const open = () => props.history.push("/board/" + board.id);
 	const image = board.UserBoardImages && board.UserBoardImages.length
 		? s3Conf.root + board.UserBoardImages[0].name
-		: "/img/board_default_lg.png";
+		: boardPlaceholder(board.id);
 
 	// Manufacturer only arrives when the caller asked for "Board.Manufacturer";
 	// the dashboard asks for "Board" alone.
