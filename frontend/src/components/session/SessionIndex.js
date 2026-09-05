@@ -5,7 +5,6 @@ import { confirmAlert } from "react-confirm-alert";
 import { connect } from "react-redux";
 import elasticConfig from './../../config/elastic';
 import { esHeaders } from './../../lib/utils/elastic';
-import { Link } from "react-router-dom";
 import MainContainer from "./../layout/MainContainer";
 import SessionCard from "./SessionCard";
 import {
@@ -15,8 +14,7 @@ import {
 } from "./../../actions/user_session";
 import Create from "./Create";
 import Modal from "./../layout/Modal";
-import { Radio } from "react-advanced-form-addons";
-import { Form } from "react-advanced-form";
+import ScopePicker from "./../layout/ScopePicker";
 import NearestSpots from "./../reports/surfline/NearestSpots";
 import Report from "./../reports/stormglass/Report";
 import {
@@ -24,11 +22,19 @@ import {
   MultiList,
   SelectedFilters,
   ReactiveList,
-  StateProvider,
 } from "@appbaseio/reactivesearch";
 
 const DEFAULT_SORT = "id_DESC";
 const DEFAULT_SHOW = 8;
+
+const FACET_CLASSES = {
+  title: "gw-facet-title",
+  input: "gw-facet-input",
+  list: "gw-facet-list",
+  checkbox: "gw-facet-checkbox",
+  label: "gw-facet-label",
+  count: "gw-facet-count",
+};
 
 const mapStateToProps = (state) => {
   return {
@@ -133,7 +139,7 @@ class SessionIndex extends Component {
       this.props.clearSessions();
     }
   };
-  
+
   setScope = (e) => {
     const scopes = [{ match: { user_id: this.props.session.user.id } }];
     if (e.nextValue && parseInt(e.nextValue) === 1) {
@@ -143,216 +149,181 @@ class SessionIndex extends Component {
     this.setState({ esFilters: scopes, showAll: parseInt(e.nextValue) });
   };
 
+  // Rebuilt inline on every render on purpose: ReactiveSearch re-runs
+  // defaultQuery when the prop identity changes, and a stable reference
+  // stops a scope switch from retriggering the query.
+  scopeQuery = () => {
+    return {
+      query: {
+        bool: { should: this.state.esFilters },
+      },
+    };
+  };
+
   render() {
     const showModal = this.showModal;
 
     return (
       <MainContainer>
         <ReactiveBase app={elasticConfig.sessions_index} url={elasticConfig.host} headers={esHeaders()}>
-          <div className="row">
-            <div className="container card card-lg mx-auto">
-              <div className="card-title">
-                <h2>
-                  Sessions
-                  <Link
-                    to="#"
-                    onClick={this.showModal}
-                    className="btn btn-sm btn-outline-secondary float-right"
-                  >
-                    Create New Session
-                  </Link>
-                </h2>
-              </div>
-              <div className="card-text">
-                <div className="container">
-                  <div className="row col-12">
-                    <div className="col-2"></div>
-                    <div className="col-10">
-                      <span className="float-right"></span>
-                    </div>
-                  </div>
+          <div className="gw-index">
 
-                  <div className="row col-12">
-                    <div className="col-12">
-                      <div className="col-3"></div>
-                      <div className="col-9">
-                        <SelectedFilters />
-                      </div>
-                    </div>
-                    <div className="col-3">
-                      <div className="detail-line is_public_radio">
-                        <Form>
-                          <Radio
-                            name="is_public"
-                            label="Mine"
-                            value="0"
-                            onChange={this.setScope}
-                            checked={parseInt(this.state.showAll) === 0}
-                          />
-                          <Radio
-                            className="is_public_radio"
-                            name="is_public"
-                            label="Mine + Public"
-                            value="1"
-                            onChange={this.setScope}
-                            checked={parseInt(this.state.showAll) === 1}
-                          />
-                        </Form>
-                      </div>
-                      <div className="filter-widgets" id="sessions">
-                        <MultiList
-                          componentId="board"
-                          dataField="board"
-                          innerClass={{
-                            label: "elastic-facet-label",
-                            input: "form-control",
-                          }}
-                          title="Boards"
-                          react={{
-                            and: ["locations"],
-                          }}
-                          defaultQuery={() => {
-                            return {
-                              query: {
-                                bool: { should: this.state.esFilters },
-                              },
-                            };
-                          }}
-                        />
-                        <MultiList
-                          componentId="locations"
-                          dataField="location"
-                          title="Locations"
-                          innerClass={{
-                            label: "elastic-facet-label",
-                          }}
-                          react={{
-                            and: ["board"],
-                          }}
-                          defaultQuery={() => {
-                            return {
-                              query: {
-                                bool: { should: this.state.esFilters },
-                              },
-                            };
-                          }}
-                        />
-                      </div>
-                    </div>
-                    <div className="col-7">
-                      <div className="row">
-                        <ReactiveList
-                          onData={this.elasticResultHandler}
-                          onQueryChange={this.onSortUpdated}
-                          defaultQuery={() => {
-                            return {
-                              query: {
-                                bool: { should: this.state.esFilters },
-                              },
-                            };
-                          }}
-                          renderResultStats={function (stats) {
-                            return (
-                              <div className="elastic-meta">
-                                {stats.numberOfResults + " Results Sorted By"}
-                              </div>
-                            );
-                          }}
-                          renderNoResults={function () {
-                            return (
-                              <div className="alert alert-primary text-center index-empty-resultset">
-                                  <div>You Haven't Created Any Sessions Yet</div>
-                                  <div><button className="btn btn-sm btn-primary"  onClick={showModal} >Get Started!</button></div>
-                              </div>
-                            );
-                          }}
-                          className="col-12"
-                          componentId="results"
-                          react={{
-                            and: ["board", "locations"],
-                          }}
-                          pagination
-                          size={DEFAULT_SHOW}
-                          infiniteScroll={true}
-                          innerClass={{
-                            pagination: "elastic-paginate",
-                            sortOptions: "form-control elastic-sort",
-                          }}
-                          sortOptions={[
-                            {
-                              dataField: "id",
-                              sortBy: "desc",
-                              label: "Newest To Oldest",
-                            },
-                            {
-                              dataField: "id",
-                              sortBy: "asc",
-                              label: "Oldest To Newest",
-                            },
-                            {
-                              dataField: "title",
-                              sortBy: "asc",
-                              label: "Title A->Z",
-                            },
-                            {
-                              dataField: "title",
-                              sortBy: "desc",
-                              label: "Title Z->A",
-                            },
-                            {
-                              dataField: "rating",
-                              sortBy: "asc",
-                              label: "Rating 1-10",
-                            },
-                            {
-                              dataField: "rating",
-                              sortBy: "desc",
-                              label: "Rating 10-1",
-                            },
-                          ]}
-                          paginationAt="both"
-                          render={({ data }) =>
-                            this.props.sessions &&
-                            this.props.sessions.map((session) => (
-                              <div key={session.id} className="col-12">
-                                <SessionCard
-                                  isOwner={session.user_id === this.props.session.user.id}
-                                  session={session}
-                                  key={session.id}
-                                  deleteSession={this.deleteSession}
-                                  viewSession={this.viewSession}
-                                  editSession={this.editSession}
-                                />
-                              </div>
-                            ))
-                          }
-                        />
-                      </div>
-                    </div>
-                    <div className="col-2">
-                    <div className="index-sidecard">
-                      <img
-                        className="align-left"
-                        src="/img/LogoMakr_4GvwRg.png"
-                        alt="glazewave"
-                      />
-							      </div>
-                      <div className="index-sidecard">
-                        <Report />
-                      </div>
-                      <div className="index-sidecard">
-                        <NearestSpots />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row col-12">
-                    <div className="col-6"></div>
-                    <div className="col-6">
-                      <span className="float-right"></span>
-                    </div>
-                  </div>
+            <div className="gw-index-head">
+              <div>
+                <div className="gw-index-title">Sessions</div>
+                <div className="gw-index-meta">EVERY SESSION YOU HAVE LOGGED</div>
+              </div>
+              <button className="gw-index-create" onClick={this.showModal}>
+                Log a session
+              </button>
+            </div>
+
+            <div className="gw-index-body">
+
+              <div className="gw-index-facets">
+                <ScopePicker
+                  name="session_scope"
+                  value={this.state.showAll}
+                  onChange={this.setScope}
+                />
+
+                <hr className="gw-rule" />
+
+                <div className="gw-facet-group">
+                  <MultiList
+                    componentId="board"
+                    dataField="board"
+                    innerClass={FACET_CLASSES}
+                    title="Boards"
+                    react={{
+                      and: ["locations"],
+                    }}
+                    defaultQuery={() => this.scopeQuery()}
+                  />
+                </div>
+                <div className="gw-facet-group">
+                  <MultiList
+                    componentId="locations"
+                    dataField="location"
+                    title="Locations"
+                    innerClass={FACET_CLASSES}
+                    react={{
+                      and: ["board"],
+                    }}
+                    defaultQuery={() => this.scopeQuery()}
+                  />
                 </div>
               </div>
+
+              <div className="gw-index-results">
+                <div className="gw-results-bar">
+                  <div className="gw-chips">
+                    <SelectedFilters
+                      innerClass={{
+                        button: "gw-chip",
+                        clearAll: "gw-chip-clear",
+                      }}
+                    />
+                  </div>
+                </div>
+
+                <ReactiveList
+                  onData={this.elasticResultHandler}
+                  onQueryChange={this.onSortUpdated}
+                  defaultQuery={() => this.scopeQuery()}
+                  renderResultStats={function (stats) {
+                    return (
+                      <div className="gw-result-stats">
+                        {stats.numberOfResults} results · sorted by
+                      </div>
+                    );
+                  }}
+                  renderNoResults={function () {
+                    return (
+                      <div className="gw-index-empty">
+                        <div className="gw-index-empty-title">Nothing here yet</div>
+                        <div className="gw-index-empty-hint">
+                          NO SESSIONS MATCH THIS SCOPE AND THESE FILTERS
+                        </div>
+                        <div style={{ marginTop: "20px" }}>
+                          <button className="gw-btn gw-btn-primary" style={{ width: "auto", padding: "10px 18px" }} onClick={showModal}>
+                            Log a session
+                          </button>
+                        </div>
+                      </div>
+                    );
+                  }}
+                  componentId="results"
+                  react={{
+                    and: ["board", "locations"],
+                  }}
+                  pagination
+                  size={DEFAULT_SHOW}
+                  infiniteScroll={true}
+                  innerClass={{
+                    resultsInfo: "gw-sort",
+                    pagination: "gw-paginate",
+                    sortOptions: "gw-sort-select",
+                    button: "gw-load-more",
+                  }}
+                  sortOptions={[
+                    {
+                      dataField: "id",
+                      sortBy: "desc",
+                      label: "Newest To Oldest",
+                    },
+                    {
+                      dataField: "id",
+                      sortBy: "asc",
+                      label: "Oldest To Newest",
+                    },
+                    {
+                      dataField: "title",
+                      sortBy: "asc",
+                      label: "Title A->Z",
+                    },
+                    {
+                      dataField: "title",
+                      sortBy: "desc",
+                      label: "Title Z->A",
+                    },
+                    {
+                      dataField: "rating",
+                      sortBy: "asc",
+                      label: "Rating 1-10",
+                    },
+                    {
+                      dataField: "rating",
+                      sortBy: "desc",
+                      label: "Rating 10-1",
+                    },
+                  ]}
+                  paginationAt="both"
+                  render={({ data }) => (
+                    <div className="gw-list">
+                      {this.props.sessions &&
+                        this.props.sessions.map((session) => (
+                          <SessionCard
+                            detailed
+                            isOwner={session.user_id === this.props.session.user.id}
+                            session={session}
+                            key={session.id}
+                            deleteSession={this.deleteSession}
+                            viewSession={this.viewSession}
+                            editSession={this.editSession}
+                          />
+                        ))}
+                    </div>
+                  )}
+                />
+              </div>
+
+              <div className="gw-index-side">
+                <Report />
+                <hr className="gw-rule" />
+                <NearestSpots />
+              </div>
+
             </div>
           </div>
         </ReactiveBase>
@@ -368,4 +339,3 @@ class SessionIndex extends Component {
   }
 }
 export default connect(mapStateToProps, mapDispachToProps)(SessionIndex);
-

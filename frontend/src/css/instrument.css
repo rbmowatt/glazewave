@@ -509,16 +509,6 @@ nav.navbar .nav-link.active {
 	line-height: 1.8;
 }
 
-/* index.css styles div.session-card white for the index pages; the row
-   treatment above replaces it on the dashboard only. */
-div.session-card {
-	background: var(--gw-raised);
-	border: 1px solid var(--gw-edge);
-	border-radius: 0;
-	color: var(--gw-text);
-}
-button.card-title { color: var(--gw-text); }
-
 /* ---------- landing ---------- */
 
 .gw-hero {
@@ -629,4 +619,247 @@ button.card-title { color: var(--gw-text); }
 	font-family: var(--gw-mono);
 	font-size: 11px;
 	opacity: 1;
+}
+
+/* ================= index pages (sessions, boards) ================= */
+
+.gw-index {
+	max-width: 1280px;
+	margin: 0 auto;
+	border: 1px solid #1b2227;
+	background: var(--gw-ground);
+}
+
+.gw-index-head {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 24px;
+	padding: 26px 32px 22px;
+	border-bottom: 1px solid #161d22;
+}
+.gw-index-title {
+	font-size: 26px;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+}
+.gw-index-meta {
+	font-family: var(--gw-mono);
+	font-size: 11px;
+	color: var(--gw-muted);
+	margin-top: 6px;
+	letter-spacing: 0.06em;
+}
+.gw-index-create {
+	font-family: var(--gw-mono);
+	font-size: 12px;
+	padding: 12px 20px;
+	background: var(--gw-accent);
+	color: var(--gw-ground);
+	font-weight: 700;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	border: 1px solid var(--gw-accent);
+	cursor: pointer;
+	white-space: nowrap;
+}
+.gw-index-create:hover {
+	background: var(--gw-accent-hover);
+	border-color: var(--gw-accent-hover);
+	color: var(--gw-ground);
+	text-decoration: none;
+}
+
+.gw-index-body {
+	display: grid;
+	grid-template-columns: 248px minmax(0, 1fr) 268px;
+	gap: 1px;
+	background: var(--gw-line);
+	min-height: 640px;
+}
+.gw-index-body > * {
+	background: var(--gw-panel);
+	min-width: 0;
+}
+.gw-index-facets { padding: 24px 22px; display: flex; flex-direction: column; gap: 24px; }
+.gw-index-results { padding: 24px 26px; display: flex; flex-direction: column; gap: 18px; }
+.gw-index-side { padding: 24px 22px; display: flex; flex-direction: column; gap: 24px; }
+
+@media (max-width: 1180px) {
+	.gw-index-body { grid-template-columns: 1fr; }
+}
+
+.gw-scope { display: flex; flex-direction: column; gap: 8px; }
+.gw-scope-option {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+	font-size: 13px;
+	color: var(--gw-muted);
+	margin: 0;
+}
+.gw-scope-option.is-active { color: var(--gw-text); }
+.gw-scope-option input { position: absolute; opacity: 0; pointer-events: none; }
+.gw-scope-dot {
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	border: 1px solid var(--gw-edge-strong);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+.gw-scope-option.is-active .gw-scope-dot { border-color: var(--gw-accent); }
+.gw-scope-dot::after {
+	content: "";
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: transparent;
+}
+.gw-scope-option.is-active .gw-scope-dot::after { background: var(--gw-accent); }
+
+.gw-results-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+.gw-chips { display: flex; gap: 8px; flex-wrap: wrap; min-height: 26px; align-items: center; flex: 1; }
+.gw-sort { display: flex; align-items: center; gap: 10px; }
+
+.gw-index-foot {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	padding-top: 6px;
+	border-top: 1px solid var(--gw-rule);
+	font-family: var(--gw-mono);
+	font-size: 11px;
+	color: var(--gw-muted);
+	letter-spacing: 0.05em;
+}
+
+/* ---------- detailed row ---------- */
+
+.gw-row-lg { padding: 14px; gap: 16px; align-items: center; }
+.gw-row-lg .gw-row-thumb { width: 78px; height: 58px; }
+.gw-row-lg .gw-row-title { font-size: 15px; }
+
+.gw-row-titleline {
+	display: flex;
+	align-items: center;
+	gap: 9px;
+	min-width: 0;
+}
+.gw-row-tag {
+	font-family: var(--gw-mono);
+	font-size: 9px;
+	letter-spacing: 0.1em;
+	padding: 2px 6px;
+	border: 1px solid var(--gw-edge-strong);
+	color: var(--gw-muted);
+	flex-shrink: 0;
+	text-transform: uppercase;
+}
+.gw-row-tag.is-public {
+	border-color: #23414a;
+	color: var(--gw-accent);
+}
+
+.gw-row-stats {
+	display: flex;
+	gap: 18px;
+	flex-wrap: wrap;
+	margin-top: 9px;
+	font-family: var(--gw-mono);
+	font-size: 10px;
+	color: var(--gw-muted);
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.gw-row-score { text-align: right; flex-shrink: 0; }
+.gw-row-score .gw-row-rating { font-size: 22px; }
+.gw-row-score-label {
+	font-family: var(--gw-mono);
+	font-size: 9px;
+	color: var(--gw-dim);
+	letter-spacing: 0.12em;
+	margin-top: 2px;
+}
+
+.gw-index-empty {
+	border: 1px dashed var(--gw-edge-strong);
+	padding: 48px 24px;
+	text-align: center;
+}
+.gw-index-empty-title { font-size: 16px; font-weight: 500; }
+.gw-index-empty-hint {
+	font-family: var(--gw-mono);
+	font-size: 11px;
+	color: var(--gw-muted);
+	margin-top: 8px;
+	letter-spacing: 0.05em;
+}
+
+/* ---------- create modal ---------- */
+
+.modal {
+	background: rgba(3, 5, 7, 0.78);
+}
+.modal .modal-main {
+	background: var(--gw-panel);
+	border: 1px solid var(--gw-edge-strong);
+	color: var(--gw-text);
+	width: 620px;
+	max-width: calc(100vw - 48px);
+	max-height: calc(100vh - 80px);
+	overflow-y: auto;
+}
+.modal .modal-main .card {
+	background: transparent;
+	border: 0;
+	margin: 0;
+}
+.modal .modal-main label,
+.modal .modal-main strong {
+	font-family: var(--gw-mono);
+	font-size: 10px !important;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	color: var(--gw-dim);
+}
+/* index.css forces .form-control white with !important for the inline
+   editors, which is why these need it back. */
+.modal .modal-main .form-control,
+.modal .modal-main input[type="text"],
+.modal .modal-main textarea {
+	background: var(--gw-raised) !important;
+	border: 1px solid var(--gw-edge-strong) !important;
+	color: var(--gw-text) !important;
+	border-radius: 0;
+}
+.modal .modal-main ::placeholder { color: var(--gw-faint) !important; }
+.modal .modal-main .btn {
+	font-family: var(--gw-mono);
+	font-size: 12px;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	border-radius: 0;
+}
+.modal .modal-main .btn-primary {
+	background: var(--gw-accent);
+	border-color: var(--gw-accent);
+	color: var(--gw-ground);
+	font-weight: 700;
+}
+.modal .modal-main .btn-primary:hover {
+	background: var(--gw-accent-hover);
+	border-color: var(--gw-accent-hover);
+	color: var(--gw-ground);
 }
