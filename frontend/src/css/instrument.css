@@ -659,11 +659,11 @@ div.details div.privacy input[type="radio"] {
 	align-items: flex-end;
 	justify-content: space-between;
 	gap: 24px;
-	padding: 26px 32px 22px;
+	padding: 20px 32px 18px;
 	border-bottom: 1px solid #161d22;
 }
 .gw-index-title {
-	font-size: 26px;
+	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: -0.02em;
 }
@@ -676,8 +676,8 @@ div.details div.privacy input[type="radio"] {
 }
 .gw-index-create {
 	font-family: var(--gw-mono);
-	font-size: 12px;
-	padding: 12px 20px;
+	font-size: 11px;
+	padding: 9px 16px;
 	background: var(--gw-accent);
 	color: var(--gw-ground);
 	font-weight: 700;
@@ -717,17 +717,17 @@ div.details div.privacy input[type="radio"] {
 .gw-scope-option {
 	display: flex;
 	align-items: center;
-	gap: 10px;
+	gap: 9px;
 	cursor: pointer;
-	font-size: 13px;
+	font-size: 12px;
 	color: var(--gw-muted);
 	margin: 0;
 }
 .gw-scope-option.is-active { color: var(--gw-text); }
 .gw-scope-option input { position: absolute; opacity: 0; pointer-events: none; }
 .gw-scope-dot {
-	width: 13px;
-	height: 13px;
+	width: 12px;
+	height: 12px;
 	border-radius: 50%;
 	border: 1px solid var(--gw-edge-strong);
 	display: flex;
@@ -738,8 +738,8 @@ div.details div.privacy input[type="radio"] {
 .gw-scope-option.is-active .gw-scope-dot { border-color: var(--gw-accent); }
 .gw-scope-dot::after {
 	content: "";
-	width: 6px;
-	height: 6px;
+	width: 5px;
+	height: 5px;
 	border-radius: 50%;
 	background: transparent;
 }

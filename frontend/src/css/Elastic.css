@@ -1,94 +1,113 @@
 /*
- * ReactiveSearch 3.x renders through emotion, so its own class names are
- * generated per build and cannot be targeted. Everything below hangs off the
- * `innerClass` hooks passed in SessionIndex/BoardIndex, or off plain element
- * selectors scoped to those wrappers.
+ * ReactiveSearch 3.x styles itself with emotion, which injects its rules into
+ * <head> at RUNTIME -- always after this stylesheet. At equal specificity
+ * emotion therefore wins, which is why the facet title rendered 16px in
+ * #424242 and the search box came out white on a dark panel. Every property
+ * emotion also sets is marked !important here; the rest is left plain.
+ *
+ * The class names below come from the `innerClass` maps in SessionIndex and
+ * BoardIndex. Emotion's own hashes (css-1dd55xt-Title and friends) change per
+ * build and must never be targeted.
  */
 
-.gw-facet-group + .gw-facet-group { margin-top: 24px; }
+/* An unmatched facet still renders its wrapper, which left a dead gap in the
+   sidebar between the scope rule and the first real facet. */
+.gw-facet-group:empty { display: none; }
+.gw-facet-group + .gw-facet-group { margin-top: 20px; }
 
-.gw-facet-title {
-	font-family: var(--gw-mono);
-	font-size: 10px;
-	letter-spacing: 0.18em;
-	text-transform: uppercase;
-	color: var(--gw-dim);
-	margin: 0 0 12px;
-	font-weight: 400;
+.gw-index-facets .gw-facet-title {
+	font-family: var(--gw-mono) !important;
+	font-size: 10px !important;
+	line-height: 1.4 !important;
+	letter-spacing: 0.18em !important;
+	text-transform: uppercase !important;
+	color: var(--gw-dim) !important;
+	font-weight: 400 !important;
+	margin: 0 0 10px !important;
 }
 
-.gw-facet-input {
-	background: var(--gw-raised);
-	border: 1px solid var(--gw-edge-strong);
-	color: var(--gw-text);
-	border-radius: 0;
-	font-family: var(--gw-mono);
-	font-size: 11px;
-	padding: 7px 10px;
-	width: 100%;
-	margin-bottom: 10px;
-	height: auto;
+.gw-index-facets .gw-facet-input {
+	background: var(--gw-raised) !important;
+	border: 1px solid var(--gw-edge-strong) !important;
+	border-radius: 0 !important;
+	color: var(--gw-text) !important;
+	font-family: var(--gw-mono) !important;
+	font-size: 11px !important;
+	/* emotion sets min-height:42px, which is what kept the box tall no matter
+	   what height said. */
+	min-height: 0 !important;
+	height: auto !important;
+	padding: 6px 9px !important;
+	margin: 0 0 8px !important;
+	width: 100% !important;
+	box-shadow: none !important;
 }
-.gw-facet-input::placeholder { color: var(--gw-faint); }
-.gw-facet-input:focus {
-	outline: none;
-	border-color: var(--gw-accent);
-	background: var(--gw-raised);
-	color: var(--gw-text);
-	box-shadow: none;
+.gw-index-facets .gw-facet-input::placeholder { color: var(--gw-faint) !important; }
+.gw-index-facets .gw-facet-input:focus {
+	border-color: var(--gw-accent) !important;
+	outline: none !important;
 }
 
-.gw-facet-list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	max-height: 260px;
+.gw-index-facets .gw-facet-list {
+	list-style: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	max-height: 240px;
 	overflow-y: auto;
 }
-.gw-facet-list li {
+.gw-index-facets .gw-facet-list li {
 	display: flex;
 	align-items: center;
-	padding: 0;
-	margin: 0;
+	padding: 0 !important;
+	margin: 0 !important;
+	border: 0 !important;
 }
-.gw-facet-list li:hover { opacity: 0.85; }
 
-/* The checkbox is visually replaced by the ::before square on its label; it
-   stays in the DOM because ReactiveSearch reads its checked state. */
-.gw-facet-checkbox {
-	position: absolute;
-	opacity: 0;
-	width: 0;
-	height: 0;
+/* Kept in the DOM because ReactiveSearch reads its checked state; the visible
+   box is the label's ::before. */
+.gw-index-facets .gw-facet-checkbox {
+	position: absolute !important;
+	opacity: 0 !important;
+	width: 1px !important;
+	height: 1px !important;
 	pointer-events: none;
 }
 
-.gw-facet-label {
+.gw-index-facets .gw-facet-list .gw-facet-label {
 	display: flex !important;
-	align-items: center;
-	gap: 10px;
+	align-items: center !important;
+	gap: 9px;
 	width: 100%;
-	padding: 6px 0;
-	margin: 0;
-	font-size: 13px;
-	color: var(--gw-muted);
+	padding: 5px 0 !important;
+	margin: 0 !important;
+	font-size: 12px !important;
+	line-height: 1.4;
+	color: var(--gw-muted) !important;
 	cursor: pointer;
 	min-width: 0;
 }
-.gw-facet-label::before {
-	content: "";
-	width: 13px;
-	height: 13px;
-	border: 1px solid var(--gw-edge-strong);
-	background: transparent;
+.gw-index-facets .gw-facet-list .gw-facet-label::before {
+	content: "" !important;
+	display: block !important;
+	width: 12px !important;
+	height: 12px !important;
+	min-width: 12px !important;
+	border: 1px solid var(--gw-edge-strong) !important;
+	border-radius: 0 !important;
+	background: transparent !important;
+	box-shadow: none !important;
 	flex-shrink: 0;
+	margin: 0 !important;
 }
-.gw-facet-checkbox:checked + .gw-facet-label { color: var(--gw-text); }
-.gw-facet-checkbox:checked + .gw-facet-label::before {
-	border-color: var(--gw-accent);
-	background: var(--gw-accent);
+.gw-index-facets .gw-facet-list .gw-facet-label::after { content: none !important; }
+
+.gw-index-facets .gw-facet-checkbox:checked + .gw-facet-label { color: var(--gw-text) !important; }
+.gw-index-facets .gw-facet-checkbox:checked + .gw-facet-label::before {
+	border-color: var(--gw-accent) !important;
+	background: var(--gw-accent) !important;
 }
-.gw-facet-label > span {
+
+.gw-index-facets .gw-facet-label > span {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -96,120 +115,135 @@
 	flex: 1;
 	min-width: 0;
 }
-.gw-facet-label > span > span:first-child {
+.gw-index-facets .gw-facet-label > span > span:first-child {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
 
-.gw-facet-count {
-	font-family: var(--gw-mono);
-	font-size: 11px;
-	color: var(--gw-muted);
+.gw-index-facets .gw-facet-count {
+	font-family: var(--gw-mono) !important;
+	font-size: 10px !important;
+	color: var(--gw-faint) !important;
 	flex-shrink: 0;
 }
 
 /* ---------- selected filter chips ---------- */
 
-.gw-chip {
-	display: inline-flex;
+.gw-index-results .gw-chip {
+	display: inline-flex !important;
 	align-items: center;
 	gap: 8px;
-	padding: 5px 10px;
-	background: #12222a;
-	border: 1px solid #23414a;
-	border-radius: 0;
-	font-family: var(--gw-mono);
-	font-size: 11px;
-	color: var(--gw-accent);
+	padding: 4px 9px !important;
+	background: #12222a !important;
+	border: 1px solid #23414a !important;
+	border-radius: 0 !important;
+	font-family: var(--gw-mono) !important;
+	font-size: 10px !important;
+	color: var(--gw-accent) !important;
 	cursor: pointer;
-	text-transform: none;
+	text-transform: none !important;
+	height: auto !important;
+	box-shadow: none !important;
 }
-.gw-chip:hover {
-	border-color: var(--gw-accent);
-	background: #12222a;
-	color: var(--gw-accent);
+.gw-index-results .gw-chip:hover {
+	border-color: var(--gw-accent) !important;
+	background: #12222a !important;
 }
-.gw-chip-clear {
-	background: none;
-	border: 0;
-	padding: 5px 4px;
-	font-family: var(--gw-mono);
-	font-size: 11px;
+.gw-index-results .gw-chip-clear {
+	background: none !important;
+	border: 0 !important;
+	padding: 4px !important;
+	font-family: var(--gw-mono) !important;
+	font-size: 10px !important;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-	color: var(--gw-accent);
+	color: var(--gw-accent) !important;
 	cursor: pointer;
 }
-.gw-chip-clear:hover { color: var(--gw-accent-hover); background: none; }
+.gw-index-results .gw-chip-clear:hover { color: var(--gw-accent-hover) !important; }
 
 /* ---------- sort ---------- */
 
-select.gw-sort-select {
-	background: var(--gw-raised);
-	color: var(--gw-text);
-	border: 1px solid var(--gw-edge-strong);
-	border-radius: 0;
-	font-family: var(--gw-mono);
-	font-size: 11px;
-	padding: 7px 10px;
+.gw-index-results select.gw-sort-select {
+	background: var(--gw-raised) !important;
+	color: var(--gw-text) !important;
+	border: 1px solid var(--gw-edge-strong) !important;
+	border-radius: 0 !important;
+	font-family: var(--gw-mono) !important;
+	font-size: 10px !important;
+	letter-spacing: 0.04em;
+	padding: 5px 8px !important;
+	height: auto !important;
+	width: auto !important;
+	margin: 0 !important;
 	outline: none;
 	cursor: pointer;
-	width: auto;
-	height: auto;
-	margin: 0;
+	box-shadow: none !important;
+}
+
+.gw-index-results .gw-sort {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	flex-wrap: wrap;
 }
 
 .gw-result-stats {
 	font-family: var(--gw-mono);
-	font-size: 11px;
-	color: var(--gw-muted);
-	letter-spacing: 0.05em;
+	font-size: 10px;
+	color: var(--gw-faint);
+	letter-spacing: 0.08em;
 	text-transform: uppercase;
 }
 
-/* ---------- pagination / load more ---------- */
+/* ---------- pagination ---------- */
 
-.gw-paginate {
+.gw-index-results .gw-paginate {
 	display: flex;
 	justify-content: flex-end;
-	gap: 4px;
+	gap: 3px;
 	font-family: var(--gw-mono);
-	font-size: 11px;
-	padding: 4px 0;
+	font-size: 10px;
+	padding: 2px 0;
 }
-.gw-paginate a,
-.gw-paginate button {
-	background: none;
-	border: 1px solid var(--gw-edge-strong);
-	color: var(--gw-muted);
-	padding: 6px 12px;
-	border-radius: 0;
-	letter-spacing: 0.07em;
+/*
+ * ReactiveSearch hands innerClass.button to BOTH the Prev/1/Next anchors and
+ * the load-more button, so they are one control here. An earlier version also
+ * styled `.gw-paginate a`, which outspecified `.gw-load-more` and silently won
+ * -- that was the oversized pagination, nothing to do with emotion.
+ */
+.gw-index-results .gw-paginate a,
+.gw-index-results .gw-paginate button,
+.gw-index-results .gw-load-more {
+	background: none !important;
+	border: 1px solid var(--gw-edge-strong) !important;
+	border-radius: 0 !important;
+	color: var(--gw-muted) !important;
+	font-family: var(--gw-mono) !important;
+	font-size: 10px !important;
+	line-height: 1.4 !important;
+	letter-spacing: 0.07em !important;
+	text-transform: uppercase !important;
+	padding: 4px 9px !important;
+	margin: 0 !important;
+	min-width: 0 !important;
+	min-height: 0 !important;
+	height: auto !important;
 	cursor: pointer;
+	box-shadow: none !important;
 }
-.gw-paginate a:hover,
-.gw-paginate button:hover {
-	border-color: #48606c;
-	color: var(--gw-text);
+.gw-index-results .gw-paginate a:hover,
+.gw-index-results .gw-paginate button:hover,
+.gw-index-results .gw-load-more:hover {
+	border-color: #48606c !important;
+	color: var(--gw-text) !important;
 	text-decoration: none;
 }
-.gw-paginate a.active {
-	background: var(--gw-accent);
-	border-color: var(--gw-accent);
-	color: var(--gw-ground);
+.gw-index-results .gw-paginate a.active,
+.gw-index-results .gw-load-more.active {
+	background: var(--gw-accent) !important;
+	border-color: var(--gw-accent) !important;
+	color: var(--gw-ground) !important;
 }
-
-.gw-load-more {
-	font-family: var(--gw-mono);
-	font-size: 11px;
-	padding: 8px 16px;
-	border: 1px solid var(--gw-edge-strong);
-	background: none;
-	color: var(--gw-muted);
-	letter-spacing: 0.07em;
-	text-transform: uppercase;
-	cursor: pointer;
-	border-radius: 0;
-}
-.gw-load-more:hover { border-color: #48606c; color: var(--gw-text); }
