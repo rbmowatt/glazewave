@@ -3,9 +3,16 @@ import {USER_SESSION_IMAGES_LOADED, USER_SESSION_IMAGES_CREATED, USER_SESSION_IM
 
 const INITIAL_STATE_ID = 1;
 
+/*
+ * Which stand-in a session gets depends on its id, and a reducer has none, so
+ * the entry is flagged instead and the session page swaps the urls in when it
+ * renders. The flag rather than the id is what View matches on: INITIAL_STATE_ID
+ * is 1, and a real SessionImage can be id 1 too.
+ */
 const initialState = [
     {
         id : INITIAL_STATE_ID ,
+        placeholder: true,
         original: "/img/session_default_lg.png",
         thumbnail: "/img/session_default_lg.png",
     }

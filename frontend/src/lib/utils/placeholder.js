@@ -24,14 +24,38 @@ const BOARD_PLACEHOLDERS = [
 ];
 
 /*
- * Board ids arrive as a number from the API and as a string from a route param,
- * and an unsaved board has none at all. Anything that does not parse takes the
- * first entry rather than rendering a broken image from `NaN % 10`.
+ * Ids arrive as a number from the API and as a string from a route param, and
+ * an unsaved record has none at all. Anything that does not parse takes the
+ * first entry rather than rendering a broken image from `NaN % length`.
  */
-export const boardPlaceholder = (boardId) => {
-  const id = parseInt(boardId, 10);
-  if (!Number.isFinite(id) || id < 0) return BOARD_PLACEHOLDERS[0];
-  return BOARD_PLACEHOLDERS[id % BOARD_PLACEHOLDERS.length];
+const pick = (list, recordId) => {
+  const id = parseInt(recordId, 10);
+  if (!Number.isFinite(id) || id < 0) return list[0];
+  return list[id % list.length];
 };
 
-export default BOARD_PLACEHOLDERS;
+export const boardPlaceholder = (boardId) => pick(BOARD_PLACEHOLDERS, boardId);
+
+/*
+ * The same arrangement for a session with no photo. Six rather than ten: four
+ * of the ten generated frames had a surfer whose body did not connect to itself
+ * or to the board, and they were left out of the repo entirely.
+ *
+ * `fun` and `action` sit last deliberately. They survive a glance but not
+ * scrutiny - a board with no fins and no leash, a rider standing upright in
+ * ankle-deep water. Being last only buys anything for ids 0-3; past that the
+ * modulo hands out all six evenly. Drop them from the array if that is not
+ * good enough - nothing else has to change.
+ *
+ * Same rule as above: APPEND ONLY. The order is what assigns the art.
+ */
+const SESSION_PLACEHOLDERS = [
+  "/img/placeholders/surfer_missing_lookout.jpg",
+  "/img/placeholders/surfer_missing_lineup.jpg",
+  "/img/placeholders/surfer_missing_post.jpg",
+  "/img/placeholders/surfer_missing_cutback.jpg",
+  "/img/placeholders/surfer_missing_fun.jpg",
+  "/img/placeholders/surfer_missing_action.jpg",
+];
+
+export const sessionPlaceholder = (sessionId) => pick(SESSION_PLACEHOLDERS, sessionId);

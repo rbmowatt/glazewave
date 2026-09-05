@@ -32,6 +32,7 @@ import { FacebookProvider, Share, Comments, Page } from "react-facebook";
 import fbConfig from "./../../config/fb";
 import Conditions from "./Conditions";
 import { defaultSessionTitle } from "./../../lib/utils/sessionTitle";
+import { sessionPlaceholder } from "./../../lib/utils/placeholder";
 
 const mapStateToProps = (state) => {
   return {
@@ -266,6 +267,16 @@ class SessionView extends Component {
   render() {
     const session = this.props.current_session;
     const isOwner = this.props.session.user.id === session.user_id;
+    // The reducer cannot know which session it is holding images for, so the
+    // stand-in it supplies is generic until here.
+    const galleryItems = this.props.session_images.map((image) =>
+      image.placeholder
+        ? Object.assign({}, image, {
+            original: sessionPlaceholder(session.id),
+            thumbnail: sessionPlaceholder(session.id),
+          })
+        : image
+    );
     return (
       <MainContainer>
         <FacebookProvider appId={fbConfig.api_key}>
@@ -389,7 +400,7 @@ class SessionView extends Component {
                       )}
                       <div>
                         <ImageGallery
-                          items={this.props.session_images}
+                          items={galleryItems}
                           showBullets={true}
                           showIndex={true}
                           startIndex={this.state.imageIndex}

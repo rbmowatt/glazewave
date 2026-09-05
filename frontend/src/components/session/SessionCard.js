@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { faEdit } from '@fortawesome/free-solid-svg-icons';
 import { s3Conf } from './../../config/s3';
+import { sessionPlaceholder } from './../../lib/utils/placeholder';
 import moment from 'moment'
 import { withRouter } from "react-router";
 
@@ -33,7 +34,7 @@ const SessionCard = props => {
     const open = () => props.history.push("/session/" + session.id);
     const image = session.SessionImages && session.SessionImages.length
         ? s3Conf.root + session.SessionImages[0].name
-        : "/img/session_default_lg.png";
+        : sessionPlaceholder(session.id);
 
     const meta = [
         moment(session.createdAt).format("MMM DD"),
