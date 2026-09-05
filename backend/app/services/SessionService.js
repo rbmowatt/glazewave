@@ -40,18 +40,24 @@ class SessionService  extends BaseService {
         const session = await super.update(id, params, callback);
         if (!session) return null;
 
-        if (before && this.conditionsAreStale(before, session)) {
-            await this.syncConditions(session);
+        if (before) {
+            const movedPlace = String(before.location_id) !== String(session.location_id);
+            const movedTime = this.sessionTime(before) !== this.sessionTime(session);
+            if (movedPlace || movedTime) {
+                await this.syncConditions(session, { resetManual: movedPlace });
+            }
         }
-        return session;
+
+        // The client merges this response straight into its store, so the
+        // conditions have to ride along. Returning the bare session left the
+        // page showing the row it loaded with, which reads as "the update did
+        // nothing" even though the database and the index both moved.
+        return this.find({id: session.id, withs: [{model: SessionDataModel}]});
     }
 
-    conditionsAreStale(before, after)
+    sessionTime(session)
     {
-        if (String(before.location_id) !== String(after.location_id)) return true;
-        const was = before.session_date ? new Date(before.session_date).getTime() : null;
-        const now = after.session_date ? new Date(after.session_date).getTime() : null;
-        return was !== now;
+        return session.session_date ? new Date(session.session_date).getTime() : null;
     }
 
     /*
@@ -65,7 +71,7 @@ class SessionService  extends BaseService {
      * with null values is how "we looked and there is no marine data here"
      * is recorded, which an absent row cannot say.
      */
-    async syncConditions(session)
+    async syncConditions(session, { resetManual = false } = {})
     {
         if (!session || !session.location_id) return null;
 
@@ -93,12 +99,20 @@ class SessionService  extends BaseService {
             );
         }
 
-        // Anything the user corrected by hand survives a later change of date
-        // or spot; everything else moves with it.
-        const manual = Array.isArray(existing.manual_fields) ? existing.manual_fields : [];
+        /*
+         * A correction survives a change of date but not a change of place: a
+         * water temperature someone fixed by hand at Mavericks says nothing
+         * about Playa Cerritos, so moving the session to a different location
+         * drops every override rather than carrying one beach's reading onto
+         * another.
+         */
+        const manual = (!resetManual && Array.isArray(existing.manual_fields))
+            ? existing.manual_fields
+            : [];
         CONDITION_FIELDS.forEach((field) => {
             if (manual.indexOf(field) === -1) existing[field] = resolved[field];
         });
+        if (resetManual) existing.manual_fields = null;
         existing.lat = resolved.lat;
         existing.lon = resolved.lon;
         existing.resolved_for = resolved.resolved_for;

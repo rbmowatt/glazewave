@@ -113,6 +113,7 @@ class SessionForm extends React.Component {
                 label="Where You paddling Out?"
                 className="form-control"
                 onChange={this.onChange}
+                previewConditions
                 at={this.sessionUtc()}
                 value={this.state.location_id}
               />

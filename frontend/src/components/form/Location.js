@@ -39,8 +39,15 @@ class Location extends Component {
         this.unmounted = true;
     }
 
+    /*
+     * Only the create form previews conditions. On an existing session the
+     * server resolves them during the save and returns them with the record,
+     * so fetching here would spend a request on a value the store is about to
+     * replace anyway.
+     */
     fetchConditions = () => {
         const {lat, lng} = this.state;
+        if (!this.props.previewConditions) return;
         if (lat === null || lat === undefined) return;
 
         this.props.onChange('conditionsError', null);
