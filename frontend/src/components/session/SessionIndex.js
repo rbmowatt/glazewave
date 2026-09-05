@@ -16,7 +16,7 @@ import Create from "./Create";
 import Modal from "./../layout/Modal";
 import ScopePicker from "./../layout/ScopePicker";
 import NearestSpots from "./../reports/surfline/NearestSpots";
-import Report from "./../reports/stormglass/Report";
+import Report from "./../reports/conditions/Report";
 import {
   ReactiveBase,
   MultiList,
@@ -149,19 +149,20 @@ class SessionIndex extends Component {
     this.setState({ esFilters: scopes, showAll: parseInt(e.nextValue) });
   };
 
-  // Rebuilt inline on every render on purpose: ReactiveSearch re-runs
-  // defaultQuery when the prop identity changes, and a stable reference
-  // stops a scope switch from retriggering the query.
-  scopeQuery = () => {
-    return {
-      query: {
-        bool: { should: this.state.esFilters },
-      },
-    };
-  };
+  // ReactiveSearch decides whether to re-run a component's defaultQuery by
+  // calling BOTH the current and the previous props' function and deep-comparing
+  // the results. A closure over this.state makes the previous one return today's
+  // filters, so a scope switch reads as no change and MultiList never re-queries
+  // its aggregation - the facets keep the mine-only buckets. Capture the value.
+  scopeQuery = (filters) => () => ({
+    query: {
+      bool: { should: filters },
+    },
+  });
 
   render() {
     const showModal = this.showModal;
+    const scopeQuery = this.scopeQuery(this.state.esFilters);
 
     return (
       <MainContainer>
@@ -198,7 +199,7 @@ class SessionIndex extends Component {
                     react={{
                       and: ["locations"],
                     }}
-                    defaultQuery={() => this.scopeQuery()}
+                    defaultQuery={scopeQuery}
                   />
                 </div>
                 <div className="gw-facet-group">
@@ -210,7 +211,7 @@ class SessionIndex extends Component {
                     react={{
                       and: ["board"],
                     }}
-                    defaultQuery={() => this.scopeQuery()}
+                    defaultQuery={scopeQuery}
                   />
                 </div>
               </div>
@@ -230,7 +231,7 @@ class SessionIndex extends Component {
                 <ReactiveList
                   onData={this.elasticResultHandler}
                   onQueryChange={this.onSortUpdated}
-                  defaultQuery={() => this.scopeQuery()}
+                  defaultQuery={scopeQuery}
                   renderResultStats={function (stats) {
                     return (
                       <div className="gw-result-stats">

@@ -1,5 +1,6 @@
 const { Router } = require('express');
 const BaseService = require('./../services/BoardService');
+const BoardImageService = require('./../services/BoardImageService');
 const EntityType = 'Board';
 const multer  = require('multer');
 let upload = multer();
@@ -19,6 +20,23 @@ router.get('/', function (req, res) {
     });
 });
 
+
+// Catalog images, already resolved to { url, credit, credit_url }. This is the
+// only path that returns a usable image URL: the BoardImage default scope hides
+// the URL columns from ?with[]=BoardImage, so a generic include cannot produce
+// something renderable and therefore cannot produce something uncredited.
+router.get('/:id/images', function (req, res) {
+  BoardImageService.make().publicFor(req.params.id)
+    .then(data => {
+      res.send(data);
+    })
+    .catch(err => {
+      console.error(`GET /api/board/${req.params.id}/images failed:`, err);
+      res.status(500).send({
+        message: "Error retrieving images for " + EntityType + " with id=" + req.params.id
+      });
+    });
+});
 
 router.get('/:id', function (req, res) {
   req.parser.id = req.params.id;

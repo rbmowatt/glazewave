@@ -21,6 +21,18 @@
   },
   "mappings": {
     "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "user_id": {
+        "type": "integer"
+      },
+      "board_id": {
+        "type": "integer"
+      },
+      "manufacturer_id": {
+        "type": "integer"
+      },
       "name": {
         "type": "keyword",
         "fields": {
@@ -51,21 +63,33 @@
           }
         }
       },
-      "note": {
-        "type": "keyword",
-        "fields": {
-          "analyzed": {
-            "type": "text",
-            "analyzer": "userBoardNameAnalyzer",
-            "search_analyzer": "userBoardNameAnalyzer"
-          }
-        }
+      "notes": {
+        "type": "text",
+        "analyzer": "userBoardNameAnalyzer"
       },
-      "id": {
-        "type": "integer"
+      "size": {
+        "type": "keyword"
       },
-      "user_id": {
-        "type": "integer"
+      "length_in": {
+        "type": "float"
+      },
+      "width_in": {
+        "type": "float"
+      },
+      "thickness_in": {
+        "type": "float"
+      },
+      "volume_l": {
+        "type": "float"
+      },
+      "dims_source": {
+        "type": "keyword"
+      },
+      "category": {
+        "type": "keyword"
+      },
+      "year_introduced": {
+        "type": "short"
       },
       "rating": {
         "type": "integer"

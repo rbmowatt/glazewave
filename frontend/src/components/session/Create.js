@@ -64,7 +64,7 @@ class Create extends React.Component{
         }
     }
 
-    processFormSubmission = ({ conditions, serialized, fields, form})=> {
+    processFormSubmission = ({ session_date, serialized, fields, form})=> {
         const {session, createSession} = this.props;
         const { images } = this.state;
         return new Promise(function(resolve, reject){
@@ -73,7 +73,10 @@ class Create extends React.Component{
                 images.forEach((file, i) => {
                     formData.append('photo', file)
                 })
-                formData.append('conditions', JSON.stringify(conditions));
+                // Conditions are no longer posted. The form shows them as a
+                // preview; the server resolves and writes the stored row from
+                // this timestamp and the session's location.
+                formData.append('session_date', session_date);
                 createSession(session, {data : formData});
                 resolve(formData);
             }else{

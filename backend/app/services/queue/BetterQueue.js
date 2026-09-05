@@ -15,20 +15,10 @@ const getClient = () => {
     return client;
 };
 
-// The projections the index is built from. A backfill runs the same SQL (see
-// scripts/backfill_elastic.js) so a rebuilt document matches a freshly saved
-// one; change one and change the other.
-const SESSION_SQL = `SELECT sessions.id, sessions.user_id, title, sessions.rating, user_boards.name as board, sessions.is_public, locations.name as location,
-    session_data.water_temperature, session_data.swell_height, session_data.swell_period, session_data.wave_height, session_data.wave_period, session_data.pressure,
-    session_data.wind_speed FROM sessions
-    LEFT JOIN session_data ON sessions.id = session_data.session_id
-    LEFT JOIN user_boards ON user_boards.id = sessions.board_id
-    LEFT JOIN locations on locations.id = sessions.location_id where sessions.id IN (:ids)`;
-
-const USER_BOARD_SQL = `SELECT user_boards.user_id,  user_boards.id, user_boards.name, user_boards.rating,
-   user_boards.is_public, user_boards.notes,  boards.model, manufacturers.name as manufacturer  from user_boards
-    LEFT JOIN boards on boards.id = user_boards.board_id
-    LEFT JOIN manufacturers ON manufacturers.id = boards.manufacturer_id where user_boards.id IN (:ids)`;
+// Both projections live in services/elastic/projections.js, which backfill
+// also imports. They were duplicated here and there with a comment asking that
+// they be kept in step, and they were not.
+const { SESSION_SQL, USER_BOARD_SQL } = require('./../elastic/projections');
 
 async function indexBatch(rows, sql, index) {
     if (!index) throw new Error('no elasticsearch index configured');

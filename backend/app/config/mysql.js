@@ -25,6 +25,11 @@ module.exports = {
         "host": process.env.MYSQL_HOST,
         "port": process.env.MYSQL_PORT,
         "dialect": "mysql",
-        "operatorsAliases": false
+        "operatorsAliases": false,
+        // Every query was going to journalctl, which is the only place the
+        // real cause of a 500 appears at all - finalhandler replaces the
+        // response body with the bare status phrase under NODE_ENV=production.
+        // The one readable log was buried under the projection SELECT.
+        "logging": false
     }
   }

@@ -492,6 +492,11 @@ div.details div.privacy input[type="radio"] {
 }
 .gw-row-body { flex: 1; min-width: 0; }
 .gw-row-title {
+	/* A flex item's default min-width is auto, so without this the title refuses
+	   to shrink below its text and pushes the Public/Private tag out of the row
+	   instead of ellipsizing. Spot-prefixed titles hit that on every card. */
+	min-width: 0;
+	flex: 1 1 auto;
 	font-size: 14px;
 	font-weight: 500;
 	color: var(--gw-text);
@@ -1020,12 +1025,73 @@ div.owner div.details .board-select:hover {
 
 .detail-line { padding-bottom: 14px; }
 
-.session-title .form-control {
-	font-size: 20px;
+/*
+ * riek puts .form-control on the resting span and the edit input alike, so at
+ * rest the title was a full-width bordered box rather than a heading. It reads
+ * as a heading until hovered, and only becomes a field once focused.
+ */
+/*
+ * The title deliberately does NOT carry .form-control. riek applies whatever
+ * className it is given to the resting span and the edit input alike, and
+ * every legacy .form-control rule in index.css plus the details rules above
+ * were fighting over its border. Its own class sidesteps all of them.
+ */
+.gw-title-field {
+	display: block;
+	width: 100%;
+	font-family: var(--gw-sans);
+	font-size: 24px;
 	font-weight: 700;
-	letter-spacing: -0.01em;
-	padding: 8px 10px !important;
+	line-height: 1.25;
+	letter-spacing: -0.02em;
+	text-transform: capitalize;
+	color: var(--gw-text);
+	background: transparent;
+	border: 0;
+	border-bottom: 1px solid var(--gw-rule);
+	border-radius: 0;
+	padding: 2px 0;
+	margin: 0;
 }
+/* Titles now carry a spot name and a timestamp, so they run long. Two lines,
+   then ellipsis; the full string is on the element's title attribute. */
+h1.gw-title-field {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	overflow-wrap: anywhere;
+}
+
+.gw-title-actions {
+	display: flex;
+	gap: 14px;
+	margin-top: 6px;
+}
+.gw-title-action {
+	font-family: var(--gw-mono);
+	font-size: 10px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--gw-muted);
+	background: none;
+	border: 0;
+	padding: 0;
+	cursor: pointer;
+}
+.gw-title-action:hover { color: var(--gw-accent); }
+
+.gw-title-field:hover { border-bottom-color: var(--gw-edge-strong); }
+input.gw-title-field:focus {
+	background: var(--gw-raised);
+	border: 1px solid var(--gw-accent);
+	padding: 4px 8px;
+	outline: none;
+}
+
+/* The title sits in its own `details row`; the stars row follows immediately
+   underneath it with nothing between them. */
+.details.row { margin-bottom: 18px; }
 
 .text-area { min-height: 120px; }
 
@@ -1049,26 +1115,37 @@ div.owner div.details .board-select:hover {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	gap: 18px;
+	gap: 20px;
 	margin-top: 0;
 }
-/* react-advanced-form-addons ships styled-components rules (.tcOJC and the
-   like, hashed per build) that paint these labels #222 on the dark panel.
-   Literal colour for the same reason as the borders above. */
-.privacy label,
-.privacy label span {
-	display: inline-flex !important;
-	align-items: center;
+/* Segmented control, used for the session privacy switch. */
+.gw-segmented {
+	display: inline-flex;
+	border: 1px solid #26343c;
+}
+.gw-segment {
 	font-family: var(--gw-mono);
-	font-size: 11px !important;
+	font-size: 11px;
+	line-height: 1.4;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
-	color: #93a5ac !important;
-	margin: 0 !important;
+	padding: 6px 14px;
+	background: none;
+	border: 0;
+	border-right: 1px solid #26343c;
+	border-radius: 0;
+	color: #93a5ac;
 	cursor: pointer;
 }
-.privacy input[type="radio"]:checked + label,
-.privacy input[type="radio"]:checked + label span { color: #e6edf0 !important; }
+.gw-segment:last-child { border-right: 0; }
+.gw-segment:hover { color: #e6edf0; background: #0f151a; }
+.gw-segment:focus { outline: none; }
+.gw-segment.is-active {
+	background: #3fd0dd;
+	color: #07090b;
+	font-weight: 700;
+}
+.gw-segment.is-active:hover { background: #6fe0e9; color: #07090b; }
 
 /* Board.css and Session.css are imported from inside their components, so they
    land after this file and win any tie. */

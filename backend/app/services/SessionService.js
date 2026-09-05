@@ -3,7 +3,17 @@ const BaseModel = db.Session;
 const BaseService = require('./BaseService');
 const LocationService = require('./LocationService');
 const SessionDataModel = db.SessionData;
+const resolveConditions = require('./conditions');
 
+const CONDITION_FIELDS = [
+    'water_temperature',
+    'swell_height',
+    'swell_period',
+    'wave_height',
+    'wave_period',
+    'pressure',
+    'wind_speed',
+];
 
 class SessionService  extends BaseService {
 
@@ -14,23 +24,109 @@ class SessionService  extends BaseService {
     async create(params, callback = null)
     {
         await this.ensureLocation(params);
-        return super.create(params, callback);
-    }
-
-    async addConditons( conditions )
-    {
-        return SessionDataModel.create(conditions);
+        const session = await super.create(params, callback);
+        await this.syncConditions(session);
+        return session;
     }
 
     async update(id, params, callback = null)
     {
         await this.ensureLocation(params);
-        return super.update(id, params, callback);
+
+        // Read before the write so the two timestamps can be compared. find()
+        // returns a fresh instance each call, so this one keeps the old values
+        // after super.update() mutates its own.
+        const before = await this.find({id: id});
+        const session = await super.update(id, params, callback);
+        if (!session) return null;
+
+        if (before) {
+            const movedPlace = String(before.location_id) !== String(session.location_id);
+            const movedTime = this.sessionTime(before) !== this.sessionTime(session);
+            if (movedPlace || movedTime) {
+                await this.syncConditions(session, { resetManual: movedPlace });
+            }
+        }
+
+        // The client merges this response straight into its store, so the
+        // conditions have to ride along. Returning the bare session left the
+        // page showing the row it loaded with, which reads as "the update did
+        // nothing" even though the database and the index both moved.
+        return this.find({id: session.id, withs: [{model: SessionDataModel}]});
+    }
+
+    sessionTime(session)
+    {
+        return session.session_date ? new Date(session.session_date).getTime() : null;
+    }
+
+    /*
+     * The server resolves conditions, not the browser. The client used to post
+     * them as a JSON blob alongside the session, which meant nothing stopped a
+     * payload carrying one day's swell with another day's session_date - and
+     * once the date became editable there was no way to tell the pair apart
+     * from a correct one.
+     *
+     * A row is written even when every field comes back null. resolved_at set
+     * with null values is how "we looked and there is no marine data here"
+     * is recorded, which an absent row cannot say.
+     */
+    async syncConditions(session, { resetManual = false } = {})
+    {
+        if (!session || !session.location_id) return null;
+
+        const location = await db.Location.findByPk(session.location_id);
+        if (!location || !location.lat || !location.lng) return null;
+
+        let resolved;
+        try {
+            resolved = await resolveConditions({
+                lat: location.lat,
+                lon: location.lng,
+                at: session.session_date,
+            });
+        } catch (e) {
+            // A session has to save even when open-meteo is unreachable.
+            // resolved_at stays null, which marks the row for a later retry.
+            console.error(`conditions lookup failed for session ${session.id}:`, e.message);
+            return null;
+        }
+
+        const existing = await SessionDataModel.findOne({ where: { session_id: session.id } });
+        if (!existing) {
+            return SessionDataModel.create(
+                Object.assign({ session_id: session.id }, resolved)
+            );
+        }
+
+        /*
+         * A correction survives a change of date but not a change of place: a
+         * water temperature someone fixed by hand at Mavericks says nothing
+         * about Playa Cerritos, so moving the session to a different location
+         * drops every override rather than carrying one beach's reading onto
+         * another.
+         */
+        const manual = (!resetManual && Array.isArray(existing.manual_fields))
+            ? existing.manual_fields
+            : [];
+        CONDITION_FIELDS.forEach((field) => {
+            if (manual.indexOf(field) === -1) existing[field] = resolved[field];
+        });
+        if (resetManual) existing.manual_fields = null;
+        existing.lat = resolved.lat;
+        existing.lon = resolved.lon;
+        existing.resolved_for = resolved.resolved_for;
+        existing.resolved_at = resolved.resolved_at;
+        return existing.save();
     }
 
     // The FK means the locations row has to land first. The old version fired
     // the lookup and the save together and never rejected, so a failed details
     // call left the request hanging open instead of returning an error.
+    //
+    // The return value is not usable: Sequelize 5 upsert() resolves a boolean,
+    // so this hands back an instance for a location already stored and true
+    // for one it just created. Read the row back by primary key instead.
     async ensureLocation(params)
     {
         if(!params.location_id) return null;

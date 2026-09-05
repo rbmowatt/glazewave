@@ -8,11 +8,12 @@ import { Form } from "react-advanced-form";
 import { FormCard } from "./../layout/FormCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
-import { RIEInput, RIETextArea } from "@attently/riek";
+import { RIETextArea } from "@attently/riek";
 import DatePicker from "react-datepicker";
 import ImageUploader from "react-images-upload";
 import ImageGallery from "react-image-gallery";
 import Location from "./../form/Location";
+import PrivacyToggle from "./../layout/PrivacyToggle";
 import MainContainer from "./../layout/MainContainer";
 import StarBar from "./../layout/StarBar";
 import SessionRequests from "./../../requests/SessionRequests";
@@ -27,10 +28,11 @@ import {
 } from "./../../actions/user_session";
 import noaaForecaster from "noaa-forecasts";
 import BoardPicker from "./../board/forms/BoardPicker";
-import { Radio } from "react-advanced-form-addons";
 import { FacebookProvider, Share, Comments, Page } from "react-facebook";
 import fbConfig from "./../../config/fb";
 import Conditions from "./Conditions";
+import { defaultSessionTitle } from "./../../lib/utils/sessionTitle";
+import { sessionPlaceholder } from "./../../lib/utils/placeholder";
 
 const mapStateToProps = (state) => {
   return {
@@ -77,6 +79,8 @@ class SessionView extends Component {
       imageIndex: 0, //the begining index of images
       date: "", //initialize date
       is_public: null, //internal prop to keep track of pribacy desires
+      editingTitle: false, //whether the title edit input is open
+      titleDraft: "", //the edit input opens blank; empty on close means cancel
     };
     this.onDrop = this.onDrop.bind(this);
   }
@@ -153,6 +157,10 @@ class SessionView extends Component {
 
   onLocationChange = (propertyName, newValue) => {
     if (!newValue) return;
+    // Location reports its display name next to the id for the create form's
+    // title. There is no such column here, and passing it through would fire a
+    // second PUT that sequelize would then silently drop.
+    if (propertyName === "location_name") return;
     const data = [];
     data[propertyName] = newValue;
     this.submitUpdate({ ...data });
@@ -211,15 +219,64 @@ class SessionView extends Component {
     });
   };
 
+  startTitleEdit = () => this.setState({ editingTitle: true, titleDraft: "" });
+
+  /*
+   * The input opens blank on purpose, so leaving it blank is the same gesture
+   * as clicking away - it closes and the existing title stands. Getting back to
+   * the generated name is the reset control, not an empty save; a blank submit
+   * regenerating would have quietly destroyed a name someone typed.
+   */
+  commitTitle = () => {
+    const next = this.state.titleDraft.trim();
+    this.setState({ editingTitle: false, titleDraft: "" });
+    if (!next || next === this.props.current_session.title) return;
+    this.submitUpdate({ title: next });
+  };
+
+  onTitleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      e.target.blur();
+    }
+    if (e.key === "Escape") {
+      // Clearing first makes the blur that follows read as a cancel.
+      this.setState({ titleDraft: "" }, () => e.target.blur());
+    }
+  };
+
+  resetTitle = () => {
+    const session = this.props.current_session;
+    const next = defaultSessionTitle(
+      session.Location && session.Location.name,
+      session.session_date
+    );
+    if (next === session.title) return;
+    this.submitUpdate({ title: next });
+  };
+
   onDateChange = (date) => {
-    let formattedDate = moment(date).format("YYYY-MM-DD HH:mm:ss");
-    this.submitUpdate({ session_date: formattedDate });
+    // UTC, not local wall clock. session_date is a zoneless DATETIME and the
+    // backend floors it to a UTC hour to pick the reading, so sending 6am from
+    // a UTC-7 beach as "06:00" would resolve conditions for 11pm the night
+    // before - plausible numbers, wrong session.
+    this.submitUpdate({ session_date: moment(date).toISOString() });
     this.setState({ date: date });
   };
 
   render() {
     const session = this.props.current_session;
     const isOwner = this.props.session.user.id === session.user_id;
+    // The reducer cannot know which session it is holding images for, so the
+    // stand-in it supplies is generic until here.
+    const galleryItems = this.props.session_images.map((image) =>
+      image.placeholder
+        ? Object.assign({}, image, {
+            original: sessionPlaceholder(session.id),
+            thumbnail: sessionPlaceholder(session.id),
+          })
+        : image
+    );
     return (
       <MainContainer>
         <FacebookProvider appId={fbConfig.api_key}>
@@ -228,15 +285,42 @@ class SessionView extends Component {
               <div className={isOwner ? "container owner" : "container"}>
                 <div className="details row">
                   <div className="col-7 session-title">
-                    <RIEInput
-                      required={false}
-                      value={session.title || ""}
-                      defaultValue={session.title}
-                      change={this.submitUpdate}
-                      propName="title"
-                      editProps={{ disabled: !isOwner }}
-                      className="form-control"
-                    />
+                    {this.state.editingTitle ? (
+                      <input
+                        autoFocus
+                        type="text"
+                        className="gw-title-field"
+                        placeholder={session.title || ""}
+                        value={this.state.titleDraft}
+                        onChange={(e) =>
+                          this.setState({ titleDraft: e.target.value })
+                        }
+                        onKeyDown={this.onTitleKeyDown}
+                        onBlur={this.commitTitle}
+                      />
+                    ) : (
+                      <h1 className="gw-title-field" title={session.title || ""}>
+                        {session.title}
+                      </h1>
+                    )}
+                    {isOwner && !this.state.editingTitle && (
+                      <div className="gw-title-actions">
+                        <button
+                          type="button"
+                          className="gw-title-action"
+                          onClick={this.startTitleEdit}
+                        >
+                          Edit
+                        </button>
+                        <button
+                          type="button"
+                          className="gw-title-action"
+                          onClick={this.resetTitle}
+                        >
+                          Reset to default
+                        </button>
+                      </div>
+                    )}
                   </div>
                   <div className="col-5" style={{textAlign: 'right'}} >
                     <span className="gw-brand">
@@ -259,19 +343,9 @@ class SessionView extends Component {
                       <div className="col-6">
                         {isOwner && (
                           <div className="privacy text-right">
-                            <Radio
-                              name="is_public"
-                              label="Private"
-                              value="0"
+                            <PrivacyToggle
+                              value={this.isPublic() ? "1" : "0"}
                               onChange={this.onPrivacyChange}
-                              checked={!this.isPublic()}
-                            />
-                            <Radio
-                              name="is_public"
-                              label="Public"
-                              value="1"
-                              onChange={this.onPrivacyChange}
-                              checked={this.isPublic()}
                             />
                           </div>
                         )}
@@ -326,7 +400,7 @@ class SessionView extends Component {
                       )}
                       <div>
                         <ImageGallery
-                          items={this.props.session_images}
+                          items={galleryItems}
                           showBullets={true}
                           showIndex={true}
                           startIndex={this.state.imageIndex}

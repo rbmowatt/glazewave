@@ -1,7 +1,7 @@
 import "./css/Location.css";
 import React, {Component} from "react"
 import { createField, fieldPresets } from 'react-advanced-form'
-import { getSessionData} from './../reports/stormglass/helpers/session';
+import { getSessionData} from './../reports/conditions/helpers/session';
 import { loadPlaces } from './../../lib/utils/googleMaps';
 
 // Autocomplete bills per request, so a request per keystroke is real money on a
@@ -17,7 +17,9 @@ class Location extends Component {
         places : null,
         loadError : null,
         suggestions : [],
-        open : false
+        open : false,
+        lat : null,
+        lng : null
     }
 
     componentDidMount() {
@@ -26,9 +28,41 @@ class Location extends Component {
             .catch(err => this.setState({loadError: err.message}));
     }
 
+    // The conditions belong to an hour, not just a place, so moving the
+    // session's date has to re-ask for them.
+    componentDidUpdate(prevProps) {
+        if (prevProps.at !== this.props.at) this.fetchConditions();
+    }
+
     componentWillUnmount() {
         clearTimeout(this.debounce);
         this.unmounted = true;
+    }
+
+    /*
+     * Only the create form previews conditions. On an existing session the
+     * server resolves them during the save and returns them with the record,
+     * so fetching here would spend a request on a value the store is about to
+     * replace anyway.
+     */
+    fetchConditions = () => {
+        const {lat, lng} = this.state;
+        if (!this.props.previewConditions) return;
+        if (lat === null || lat === undefined) return;
+
+        this.props.onChange('conditionsError', null);
+        getSessionData(lat, lng, this.props.at)
+            .then(data => {
+                if (this.unmounted) return;
+                this.props.onChange('conditions', data);
+            })
+            .catch(err => {
+                if (this.unmounted) return;
+                // This was swallowed, which is how a session saved with no
+                // conditions and nothing on screen to say why.
+                this.props.onChange('conditions', {});
+                this.props.onChange('conditionsError', err.message);
+            });
     }
 
     handleInputChange = e => {
@@ -82,9 +116,14 @@ class Location extends Component {
             open: false
         });
         this.props.onChange('location_id', place.id);
-        getSessionData(place.location.lat(), place.location.lng())
-            .then(d=>{ if (d) this.props.onChange('conditions', d); })
-            .catch(()=>{})
+        // The display name, not the formatted address: the create form builds a
+        // session title from it and "Ocean Grove Beach" is a title where
+        // "Ocean Grove Beach, Ocean Grove, NJ 07756, USA" is not.
+        this.props.onChange('location_name', place.displayName || place.formattedAddress);
+        this.setState(
+            {lat: place.location.lat(), lng: place.location.lng()},
+            this.fetchConditions
+        );
     }
 
     onBlur = (e)=>

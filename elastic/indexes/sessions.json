@@ -9,7 +9,7 @@
         }
       },
       "analyzer": {
-        "sessionNameAnalyzer": {
+        "userBoardNameAnalyzer": {
           "tokenizer": "standard",
           "filter": [
             "lowercase",
@@ -21,41 +21,28 @@
   },
   "mappings": {
     "properties": {
-      "title": {
-        "type": "keyword",
-        "fields": {
-          "analyzed": {
-            "type": "text",
-            "analyzer": "sessionNameAnalyzer",
-            "search_analyzer": "sessionNameAnalyzer"
-          }
-        }
-      },
-      "location": {
-        "type": "keyword",
-        "fields": {
-          "analyzed": {
-            "type": "text",
-            "analyzer": "sessionNameAnalyzer",
-            "search_analyzer": "sessionNameAnalyzer"
-          }
-        }
-      },
-      "board": {
-        "type": "keyword",
-        "fields": {
-          "analyzed": {
-            "type": "text",
-            "analyzer": "sessionNameAnalyzer",
-            "search_analyzer": "sessionNameAnalyzer"
-          }
-        }
-      },
       "id": {
         "type": "integer"
       },
       "user_id": {
         "type": "integer"
+      },
+      "title": {
+        "type": "keyword",
+        "fields": {
+          "analyzed": {
+            "type": "text",
+            "analyzer": "userBoardNameAnalyzer",
+            "search_analyzer": "userBoardNameAnalyzer"
+          }
+        }
+      },
+      "notes": {
+        "type": "text",
+        "analyzer": "userBoardNameAnalyzer"
+      },
+      "session_date": {
+        "type": "date"
       },
       "rating": {
         "type": "integer"
@@ -63,10 +50,78 @@
       "is_public": {
         "type": "integer"
       },
-      "wave_period": {
+      "location": {
+        "type": "keyword",
+        "fields": {
+          "analyzed": {
+            "type": "text",
+            "analyzer": "userBoardNameAnalyzer",
+            "search_analyzer": "userBoardNameAnalyzer"
+          }
+        }
+      },
+      "location_id": {
+        "type": "keyword"
+      },
+      "location_point": {
+        "type": "geo_point",
+        "ignore_malformed": true
+      },
+      "board": {
+        "type": "keyword",
+        "fields": {
+          "analyzed": {
+            "type": "text",
+            "analyzer": "userBoardNameAnalyzer",
+            "search_analyzer": "userBoardNameAnalyzer"
+          }
+        }
+      },
+      "board_id": {
+        "type": "integer"
+      },
+      "manufacturer": {
+        "type": "keyword",
+        "fields": {
+          "analyzed": {
+            "type": "text",
+            "analyzer": "userBoardNameAnalyzer",
+            "search_analyzer": "userBoardNameAnalyzer"
+          }
+        }
+      },
+      "model": {
+        "type": "keyword",
+        "fields": {
+          "analyzed": {
+            "type": "text",
+            "analyzer": "userBoardNameAnalyzer",
+            "search_analyzer": "userBoardNameAnalyzer"
+          }
+        }
+      },
+      "category": {
+        "type": "keyword"
+      },
+      "board_length_in": {
         "type": "float"
       },
+      "board_width_in": {
+        "type": "float"
+      },
+      "board_thickness_in": {
+        "type": "float"
+      },
+      "board_volume_l": {
+        "type": "float"
+      },
+      "board_dims_source": {
+        "type": "keyword"
+      },
       "wave_height": {
+        "type": "float"
+      },
+      "wave_period": {
         "type": "float"
       },
       "swell_height": {
@@ -79,6 +134,9 @@
         "type": "float"
       },
       "wind_speed": {
+        "type": "float"
+      },
+      "pressure": {
         "type": "float"
       }
     }

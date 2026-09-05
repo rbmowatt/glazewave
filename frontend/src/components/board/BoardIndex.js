@@ -17,7 +17,7 @@ import Modal from "./../layout/Modal";
 import CreateUserBoard from "./CreateUserBoard";
 import ScopePicker from "./../layout/ScopePicker";
 import NearestSpots from "./../reports/surfline/NearestSpots";
-import Report from "./../reports/stormglass/Report";
+import Report from "./../reports/conditions/Report";
 import {
 	ReactiveBase,
 	MultiList,
@@ -140,16 +140,16 @@ class BoardIndex extends Component {
 		this.setState({ filters: scopes, showAll: parseInt(e.nextValue), mlVal : [] });
 	};
 
-	// Rebuilt inline on every render on purpose: ReactiveSearch re-runs
-	// defaultQuery when the prop identity changes, and a stable reference
-	// stops a scope switch from retriggering the query.
-	scopeQuery = () => {
-		return {
-			query: {
-				bool: { should: this.state.filters },
-			},
-		};
-	};
+	// ReactiveSearch decides whether to re-run a component's defaultQuery by
+	// calling BOTH the current and the previous props' function and deep-comparing
+	// the results. A closure over this.state makes the previous one return today's
+	// filters, so a scope switch reads as no change and MultiList never re-queries
+	// its aggregation - the facets keep the mine-only buckets. Capture the value.
+	scopeQuery = (filters) => () => ({
+		query: {
+			bool: { should: filters },
+		},
+	});
 
 	/**
 	 * We need to keep track of sort order so that when we ask API to hydrrate items
@@ -187,6 +187,7 @@ class BoardIndex extends Component {
 
 	render() {
 		const showModal = this.showModal;
+		const scopeQuery = this.scopeQuery(this.state.filters);
 		return (
 			<MainContainer>
 				<ReactiveBase app={elasticConfig.user_boards_index} url={elasticConfig.host} headers={esHeaders()}>
@@ -223,7 +224,7 @@ class BoardIndex extends Component {
 											and: ["models"],
 											or: ["board_list"]
 										}}
-										defaultQuery={() => this.scopeQuery()}
+										defaultQuery={scopeQuery}
 									/>
 								</div>
 								<div className="gw-facet-group">
@@ -239,7 +240,7 @@ class BoardIndex extends Component {
 										renderNoResults={() => (
 											<div className="gw-index-empty-hint">NO MODELS MATCH</div>
 										)}
-										defaultQuery={() => this.scopeQuery()}
+										defaultQuery={scopeQuery}
 									/>
 								</div>
 							</div>
@@ -261,7 +262,7 @@ class BoardIndex extends Component {
 									dataField="id"
 									onData={this.elasticResultHandler}
 									onQueryChange={this.onSortUpdated}
-									defaultQuery={() => this.scopeQuery()}
+									defaultQuery={scopeQuery}
 									renderResultStats={function (stats) {
 										return (
 											<div className="gw-result-stats">
