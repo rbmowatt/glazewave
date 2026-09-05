@@ -159,12 +159,18 @@ class SessionView extends Component {
   };
 
   onPrivacyChange = (e) => {
-    //@totdo this double submits without keeping track of state
-    if (e.nextValue !== this.state.is_public) {
-      this.setState({ is_public: e.nextValue });
-      this.submitUpdate({ is_public: e.nextValue });
-    }
+    // Compared against the stored record, not local state. The two used to
+    // drift: the radios read their checked state from the store while the
+    // guard read this.state, so after one toggle the guard would swallow the
+    // next click and the control looked dead.
+    const next = parseInt(e.nextValue, 10) === 1;
+    if (next === this.isPublic()) return;
+    this.submitUpdate({ is_public: next ? 1 : 0 });
   };
+
+  // The API sends is_public back as a MySQL tinyint, so it arrives as 1/0 on
+  // some paths and true/false on others. Strict === true missed the tinyint.
+  isPublic = () => Number(this.props.current_session.is_public) === 1;
 
   onBoardChange = (id) => {
     if (!id) return;
@@ -255,16 +261,14 @@ class SessionView extends Component {
                               label="Private"
                               value="0"
                               onChange={this.onPrivacyChange}
-                              checked={session.id && session.is_public !== true}
+                              checked={!this.isPublic()}
                             />
                             <Radio
                               name="is_public"
                               label="Public"
                               value="1"
                               onChange={this.onPrivacyChange}
-                              checked={
-                                session.is_public && session.is_public === true
-                              }
+                              checked={this.isPublic()}
                             />
                           </div>
                         )}

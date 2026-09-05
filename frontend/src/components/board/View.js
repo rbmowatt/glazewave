@@ -114,7 +114,7 @@ class BoardView extends Component {
 	};
 
 	onTypeAheadSelected = (propertyName, newValue) => {
-		const data = [];
+		const data = {};
 		data[propertyName] = newValue;
 		//here we have to make sure to clear out the model if not belong to shaper
 		if (propertyName === "manufacturer_id") {
@@ -132,6 +132,13 @@ class BoardView extends Component {
 		this.setState({
 			...data,
 		});
+		// This used to setState and stop, so both type-aheads reverted on
+		// reload while every other field on the page persisted. Only board_id
+		// is written: manufacturer_id is not a column on user_boards, the
+		// shaper only narrows which models the model picker offers.
+		if (data.board_id) {
+			this.submitUpdate({ board_id: data.board_id });
+		}
 	};
 
 	getShaperSuggestions = (value, reason) => {

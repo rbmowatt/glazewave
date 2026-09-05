@@ -292,13 +292,37 @@ nav.navbar .nav-link.active {
 }
 
 /* react-images-upload renders its own button; .fileContainer rules in
-   index.css already strip its chrome, this only recolors what is left. */
+   index.css strip its chrome down to bare text, which read as a caption
+   rather than a control, so the border and padding are put back here. */
+.gw-uploader .fileContainer { width: 100%; }
 .gw-uploader .fileContainer .chooseFileButton {
-	color: var(--gw-accent) !important;
+	display: block;
+	width: 100%;
+	color: var(--gw-muted) !important;
+	background: none !important;
+	border: 1px solid var(--gw-edge-strong) !important;
+	border-radius: 0 !important;
 	font-family: var(--gw-mono);
 	font-size: 12px !important;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
+	padding: 9px 12px !important;
+	margin: 0 !important;
+}
+.gw-uploader .fileContainer .chooseFileButton:hover {
+	border-color: #48606c !important;
+	color: var(--gw-text) !important;
+	background: none !important;
+}
+
+/* index.css pulls div.privacy up by -1.2em, which lands the two radios on
+   top of the rating row above them and eats clicks near the top edge. */
+div.privacy { margin-top: 0; }
+div.details div.privacy input[type="radio"] {
+	border: 1px solid var(--gw-edge-strong) !important;
+	padding: 0;
+	margin: 0 6px 0 0;
+	vertical-align: middle;
 }
 
 /* ---------- rating trend ---------- */
