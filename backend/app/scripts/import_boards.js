@@ -146,7 +146,11 @@ async function importBoard(board, refs, stats) {
     // No bytes are downloaded here, so there is nothing to hash. The URL stands
     // in as the dedupe key, which is what a re-run can actually compare.
     const hash = crypto.createHash('sha256').update(img.source_url).digest('hex');
-    const existing = await db.BoardImage.findOne({ where: { board_id: row.id, content_hash: hash } });
+    // scope('rights') on purpose: the default scope hides non-renderable rows
+    // and the content_hash column, and every harvested image is both. Without
+    // it this dedupe check finds nothing and a second run recreates them all.
+    const existing = await db.BoardImage.scope('rights')
+      .findOne({ where: { board_id: row.id, content_hash: hash } });
     if (existing) continue;
 
     const draft = { license_id: license.id, rights_verified_at: null };

@@ -99,8 +99,58 @@ async function reconcile(sequelize) {
   return rows;
 }
 
+const RENDERABLE = [SCOPE.PUBLIC, SCOPE.ATTRIBUTED];
+
+/**
+ * Turns a board_images row into the only shape a client is ever given:
+ * a URL and an optional credit line. Returns null when the image may not be
+ * rendered, so a caller cannot accidentally emit one.
+ *
+ * The license has to be loaded. Without it there is no way to know whether a
+ * credit is required, and an uncredited CC-BY image is a licence breach - so
+ * a missing license fails closed rather than rendering bare.
+ */
+function publicImage(image, s3PublicRoot) {
+  if (!image) return null;
+  if (!image.is_public || !RENDERABLE.includes(image.display_scope)) return null;
+
+  const license = image.ImageLicense || null;
+  if (!license) return null;
+
+  // A mirrored image lives in the uploads bucket under `name`, the same column
+  // user uploads use. A hotlinked one was never copied and is served from the
+  // source, which is why storage and display are separate columns.
+  const url = image.storage === 'mirrored' && image.name
+    ? s3PublicRoot + image.name
+    : image.source_url;
+  if (!url) return null;
+
+  return {
+    id: image.id,
+    url,
+    credit: license.requires_attribution ? renderCredit(license, image) : null,
+    credit_url: license.requires_attribution ? (image.attribution_url || null) : null,
+    is_default: !!image.is_default,
+    position: image.position || 0,
+  };
+}
+
+function renderCredit(license, image) {
+  if (image.attribution_text) return image.attribution_text;
+  const source = image.BoardSource || null;
+  const template = license.attribution_template || '{author}, {license}';
+  return template
+    .replace('{author}', image.author || (source && source.name) || 'Unknown')
+    .replace('{license}', license.name || license.code)
+    .replace('{source}', (source && source.name) || '')
+    .replace(/,\s*$/, '')
+    .trim();
+}
+
 module.exports = {
   SCOPE,
+  RENDERABLE,
+  publicImage,
   GRANT_MAX_AGE_DAYS,
   deriveDisplayScope,
   deriveStorage,

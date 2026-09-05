@@ -36,7 +36,31 @@ module.exports = (sequelize, DataTypes) => {
     rights_note: DataTypes.TEXT,
     last_checked_at: DataTypes.DATE,
     position: DataTypes.INTEGER,
-  },  {underscored: true, tableName: 'board_images'});;
+  },  {
+    underscored: true,
+    tableName: 'board_images',
+    // QueryParser turns ?with[]=BoardImage into a generic include, so anything
+    // this model will hand back is reachable from an unauthenticated URL. The
+    // default scope is what stops that being a way around the rights gate:
+    // non-renderable rows never load, and neither do the two columns that could
+    // be turned into an <img src>. Rendering goes through
+    // BoardImageService.publicFor, which is the only path that also carries the
+    // credit line a licence may require.
+    defaultScope: {
+      where: {
+        is_public: true,
+        display_scope: ['public', 'attributed'],
+      },
+      attributes: {
+        exclude: ['source_url', 'name', 'rights_note', 'content_hash', 'permission_id'],
+      },
+    },
+    scopes: {
+      // Everything, unfiltered. For server-side rights work and admin views,
+      // never for a response body.
+      rights: {},
+    },
+  });
 
   // Instance hooks do not fire on bulkCreate without individualHooks, and a
   // harvest writes in bulk. DisplayScope.reconcile is what catches those.
