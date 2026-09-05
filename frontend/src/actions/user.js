@@ -1,4 +1,4 @@
-import { USER_LOADED, USER_LOGGED_IN, USER_IMAGE_UPDATED, USER_AVERAGES_LOADED} from "./types";
+import { USER_LOADED, USER_LOGGED_IN, USER_IMAGE_UPDATED, USER_UPDATED, USER_AVERAGES_LOADED} from "./types";
 import UserRequests from './../requests/UserRequests';
 
 
@@ -20,6 +20,11 @@ export const UserLoaded = data => ({
 
   export const UserImageUpdated = data => ({
     type: USER_IMAGE_UPDATED,
+    payload: data
+  });
+
+  export const UserUpdated = data => ({
+    type: USER_UPDATED,
     payload: data
   });
 
@@ -65,6 +70,17 @@ export const UserLoaded = data => ({
       const params = {...args, ...{onSuccess : (data)=>{ return UserImageUpdated(data)} }}
       dispatch(
         new UserRequests(session).updateProfileImage(params)
+      )
+    }
+  }
+
+  export const updateUser = ( session, args )=>
+  {
+    return function(dispatch, getState)
+    {
+      const params = {...args, ...{onSuccess : (data)=>{ return UserUpdated(data)} }}
+      dispatch(
+        new UserRequests(session).update(params)
       )
     }
   }

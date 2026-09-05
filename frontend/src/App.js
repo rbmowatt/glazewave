@@ -1,6 +1,9 @@
 import { connect } from 'react-redux';
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
+// Must stay after App.css: App.css @imports bootstrap, and the reskin
+// overrides it by source order rather than by specificity.
+import './css/instrument.css';
 import * as React from 'react';
 import Navbar from './components/layout/Navbar';
 import Attribution from './components/layout/Attribution';

@@ -15,9 +15,7 @@ import elasticConfig from './../../config/elastic';
 import { esHeaders } from './../../lib/utils/elastic';
 import Modal from "./../layout/Modal";
 import CreateUserBoard from "./CreateUserBoard";
-import { Radio } from "react-advanced-form-addons";
-import { Form } from "react-advanced-form";
-import { hasSession } from "./../../lib/utils/session";
+import ScopePicker from "./../layout/ScopePicker";
 import NearestSpots from "./../reports/surfline/NearestSpots";
 import Report from "./../reports/stormglass/Report";
 import {
@@ -31,6 +29,15 @@ import { refresh } from './../../lib/utils/cognito';
 
 const DEFAULT_SORT = "created_at_DESC";
 const DEFAULT_SHOW = 12;
+
+const FACET_CLASSES = {
+	title: "gw-facet-title",
+	input: "gw-facet-input",
+	list: "gw-facet-list",
+	checkbox: "gw-facet-checkbox",
+	label: "gw-facet-label",
+	count: "gw-facet-count",
+};
 
 const mapStateToProps = (state) => {
 	return {
@@ -69,9 +76,6 @@ class BoardIndex extends Component {
 
 	componentDidMount() {
 		refresh().catch(() => {})
-		if (this.props.userSession.isLoggedIn) {
-			//this.props.loadBoards(this.props.userSession, { orderBy : DEFAULT_SORT , wheres : {user_id : this.props.userSession.user.id }, withs : relations.user_board} );
-		}
 	}
 
 	componentWillUnmount() {
@@ -82,7 +86,7 @@ class BoardIndex extends Component {
 	deleteBoard(id) {
 		confirmAlert({
 			title: "Confirm To Delete",
-			message: "Are you sure you want to delete this userSession?",
+			message: "Are you sure you want to delete this board?",
 			buttons: [
 				{
 					label: "Yes",
@@ -135,6 +139,18 @@ class BoardIndex extends Component {
 		}
 		this.setState({ filters: scopes, showAll: parseInt(e.nextValue), mlVal : [] });
 	};
+
+	// Rebuilt inline on every render on purpose: ReactiveSearch re-runs
+	// defaultQuery when the prop identity changes, and a stable reference
+	// stops a scope switch from retriggering the query.
+	scopeQuery = () => {
+		return {
+			query: {
+				bool: { should: this.state.filters },
+			},
+		};
+	};
+
 	/**
 	 * We need to keep track of sort order so that when we ask API to hydrrate items
 	 * it returns them in the proper order
@@ -147,6 +163,7 @@ class BoardIndex extends Component {
 		}
 		this.setState({ selectedSortOrder: sortString });
 	};
+
 	/**
 	 * Gets called everytime elastic updates
 	 * we'll take the id's it has returned and ask the api to hydrate them
@@ -173,223 +190,170 @@ class BoardIndex extends Component {
 		return (
 			<MainContainer>
 				<ReactiveBase app={elasticConfig.user_boards_index} url={elasticConfig.host} headers={esHeaders()}>
-					<div className="row">
-						<div className="container card card-lg mx-auto">
-							<div className="card-title">
-								<h2>
-									Boards
-									<button
-										onClick={this.showModal}
-										className="btn btn-sm btn-outline-secondary float-right"
-									>
-										Create New Board
-									</button>
-								</h2>
-							</div>
-							<div className="card-text">
-								<div className="container">
-									<div className="row col-12">
-										<div className="col-2"></div>
-										<div className="col-10">
-											<span className="float-right"></span>
-										</div>
-									</div>
+					<div className="gw-index">
 
-									<div className="row col-12">
-										<div className="col-12">
-											<div className="col-3"></div>
-											<div className="col-9">
-												<SelectedFilters
-													innerClass={{
-														button: "btn btn-primary",
-													}}
-												/>
-											</div>
-										</div>
-										<div className="col-3">
-											<div className="detail-line is_public_radio">
-												<Form>
-													<Radio
-														name="is_public"
-														label="Mine"
-														value="0"
-														onChange={this.setScope}
-														checked={parseInt(this.state.showAll) === 0}
-													/>
-													<Radio
-														className="is_public_radio"
-														name="is_public"
-														label="Mine + Public"
-														value="1"
-														onChange={this.setScope}
-														checked={parseInt(this.state.showAll) === 1}
-													/>
-												</Form>
-											</div>
-											<div className="filter-widgets" id="sessions">
-												<MultiList
-										
-													componentId="manufacturers"
-													dataField="manufacturer"
-													title="Manufacturers"
-													innerClass={{
-														label: "elastic-facet-label",
-													}}
-													onError={this.setValues}
-													react={{
-														and: ["models"],
-														or:["board_list"]
-													}}
-													defaultQuery={() => {
-														return {
-															query: {
-																bool: { should: this.state.filters }
-															},
-														};
-													}}
-												/>
-												<MultiList
-												//value={this.state.mlVal}
-													componentId="models"
-													dataField="model"
-													innerClass={{
-														label: "elastic-facet-label",
-														input: "form-control",
-													}}
-													title="Models"
-													react={{
-														and: ["manufacturers"],
-														or: ["board_list"]
-													}}
-													renderNoResults={() => <p>No Results Found!</p>}
-													defaultQuery={() => {
-														return {
-															query: {
-																bool: { should: this.state.filters }
-															},
-														};
-													}}
-												/>
-											</div>
-										</div>
-										<div className="col-7">
-											<div className="row">
-												<ReactiveList
-													componentId="board_list"
-													dataField="id"
-													onData={this.elasticResultHandler}
-													onQueryChange={this.onSortUpdated}
-													defaultQuery={() => {
-														return {
-															query: {
-																bool: { should: this.state.filters }
-															},
-														};
-													}}
-													renderResultStats={function (stats) {
-														return (
-															<div className="elastic-meta">
-																{stats.numberOfResults + " Results Sorted By"}
-															</div>
-														);
-													}}
-													className="col-12"
-						
-													react={{
-														and: ["models", "manufacturers"],
-													}}
-													pagination
-													size={DEFAULT_SHOW}
-													infiniteScroll={true}
-													innerClass={{
-														pagination: "elastic-paginate",
-														sortOptions: "form-control elastic-sort",
-													}}
-													renderNoResults={function () {
-														return (
-														  <div className="alert alert-primary text-center index-empty-resultset">
-															  <div>You Haven't Created Any Boards Yet</div>
-															  <div><button className="btn btn-sm btn-primary"  onClick={showModal} >Get Started!</button></div>
-														  </div>
-														);
-													}}
-													sortOptions={[
-														{
-															dataField: "id",
-															sortBy: "desc",
-															label: "Newest To Oldest",
-														},
-														{
-															dataField: "id",
-															sortBy: "asc",
-															label: "Oldest To Newest",
-														},
-														{
-															dataField: "name",
-															sortBy: "asc",
-															label: "Name A->Z",
-														},
-														{
-															dataField: "name",
-															sortBy: "desc",
-															label: "Name Z->A",
-														},
-														{
-															dataField: "rating",
-															sortBy: "asc",
-															label: "Rating 1-10",
-														},
-														{
-															dataField: "rating",
-															sortBy: "desc",
-															label: "Rating 10-1",
-														},
-													]}
-													paginationAt="both"
-													render={({ data }) =>
-														this.props.boards &&
-														this.props.boards.map((board) => (
-															<div
-																key={board.id}
-																className="col-md-12 col-sm-12"
-															>
-																<BoardCard
-																	board={board}
-																	deleteBoard={this.deleteBoard}
-																	viewBoard={this.boardCreated}
-																	editBoard={this.editBoard}
-																	isOwner={board.user_id === this.props.userSession.user.id}
-																/>
-															</div>
-														))
-													}
-												/>
-											</div>
-										</div>
-										<div className="col-2">
-											<div className="index-sidecard">
-												<img
-													className="align-left"
-													src="/img/LogoMakr_4GvwRg.png"
-													alt="glazewave"
-												/>
-											</div>
-											<div className="index-sidecard">
-												<Report />
-											</div>
-											<div className="index-sidecard">
-												<NearestSpots />
-											</div>
-										</div>
-									</div>
-									<div className="row col-12">
-										<div className="col-6"></div>
-										<div className="col-6">
-											<span className="float-right"></span>
-										</div>
-									</div>
+						<div className="gw-index-head">
+							<div>
+								<div className="gw-index-title">Boards</div>
+								<div className="gw-index-meta">EVERY BOARD IN YOUR QUIVER</div>
+							</div>
+							<button className="gw-index-create" onClick={this.showModal}>
+								Add a board
+							</button>
+						</div>
+
+						<div className="gw-index-body">
+
+							<div className="gw-index-facets">
+								<ScopePicker
+									name="board_scope"
+									value={this.state.showAll}
+									onChange={this.setScope}
+								/>
+
+								<hr className="gw-rule" />
+
+								<div className="gw-facet-group">
+									<MultiList
+										componentId="manufacturers"
+										dataField="manufacturer"
+										title="Manufacturers"
+										innerClass={FACET_CLASSES}
+										react={{
+											and: ["models"],
+											or: ["board_list"]
+										}}
+										defaultQuery={() => this.scopeQuery()}
+									/>
+								</div>
+								<div className="gw-facet-group">
+									<MultiList
+										componentId="models"
+										dataField="model"
+										innerClass={FACET_CLASSES}
+										title="Models"
+										react={{
+											and: ["manufacturers"],
+											or: ["board_list"]
+										}}
+										renderNoResults={() => (
+											<div className="gw-index-empty-hint">NO MODELS MATCH</div>
+										)}
+										defaultQuery={() => this.scopeQuery()}
+									/>
 								</div>
 							</div>
+
+							<div className="gw-index-results">
+								<div className="gw-results-bar">
+									<div className="gw-chips">
+										<SelectedFilters
+											innerClass={{
+												button: "gw-chip",
+												clearAll: "gw-chip-clear",
+											}}
+										/>
+									</div>
+								</div>
+
+								<ReactiveList
+									componentId="board_list"
+									dataField="id"
+									onData={this.elasticResultHandler}
+									onQueryChange={this.onSortUpdated}
+									defaultQuery={() => this.scopeQuery()}
+									renderResultStats={function (stats) {
+										return (
+											<div className="gw-result-stats">
+												{stats.numberOfResults} results · sorted by
+											</div>
+										);
+									}}
+									react={{
+										and: ["models", "manufacturers"],
+									}}
+									pagination
+									size={DEFAULT_SHOW}
+									infiniteScroll={true}
+									innerClass={{
+										resultsInfo: "gw-sort",
+										pagination: "gw-paginate",
+										sortOptions: "gw-sort-select",
+										button: "gw-load-more",
+									}}
+									renderNoResults={function () {
+										return (
+											<div className="gw-index-empty">
+												<div className="gw-index-empty-title">Nothing here yet</div>
+												<div className="gw-index-empty-hint">
+													NO BOARDS MATCH THIS SCOPE AND THESE FILTERS
+												</div>
+												<div style={{ marginTop: "20px" }}>
+													<button className="gw-btn gw-btn-primary" style={{ width: "auto", padding: "10px 18px" }} onClick={showModal}>
+														Add a board
+													</button>
+												</div>
+											</div>
+										);
+									}}
+									sortOptions={[
+										{
+											dataField: "id",
+											sortBy: "desc",
+											label: "Newest To Oldest",
+										},
+										{
+											dataField: "id",
+											sortBy: "asc",
+											label: "Oldest To Newest",
+										},
+										{
+											dataField: "name",
+											sortBy: "asc",
+											label: "Name A->Z",
+										},
+										{
+											dataField: "name",
+											sortBy: "desc",
+											label: "Name Z->A",
+										},
+										{
+											dataField: "rating",
+											sortBy: "asc",
+											label: "Rating 1-10",
+										},
+										{
+											dataField: "rating",
+											sortBy: "desc",
+											label: "Rating 10-1",
+										},
+									]}
+									paginationAt="both"
+									render={({ data }) => (
+										<div className="gw-list">
+											{this.props.boards &&
+												this.props.boards.map((board) => (
+													<BoardCard
+														detailed
+														board={board}
+														key={board.id}
+														deleteBoard={this.deleteBoard}
+														viewBoard={this.boardCreated}
+														editBoard={this.editBoard}
+														isOwner={board.user_id === this.props.userSession.user.id}
+													/>
+												))}
+										</div>
+									)}
+								/>
+							</div>
+
+							<div className="gw-index-side">
+								<Report />
+								<hr className="gw-rule" />
+								<NearestSpots />
+							</div>
+
 						</div>
 					</div>
 				</ReactiveBase>

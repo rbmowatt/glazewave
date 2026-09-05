@@ -3,27 +3,28 @@ import BoardCard from "./BoardCard";
 import { Link } from 'react-router-dom';
 
 export const NewestBoards = (props) => {
-  if (!props.boards.length) {
-    return (
-    <div className="alert alert-primary text-center card-newest-resultset card-newest-empty-resultset">
-        <h5>Newest Boards</h5>
-        <div>You haven't added any Boards Yet.</div>
-        <div>
-            <Link className="btn btn-sm btn-primary" to={'/board'} >Get Started!</Link>
-        </div>
-      </div>
-    );
-  }
-  return (
-    <div className="alert alert-primary text-center card-newest-resultset">
-      <h5>Newest Boards</h5>
-      {
-        props.boards.reduce((mappedArray, board, index) => {
-          if (index < props.limit) {
-            mappedArray.push(<BoardCard board={board} key={board.id} />);
-          }
-          return mappedArray;
-        }, [])}
-    </div>
-  );
+	const boards = props.boards || [];
+	return (
+		<div>
+			<div className="gw-list-head">
+				<div className="gw-eyebrow">Quiver</div>
+				{boards.length > 0 &&
+					<Link className="gw-link" to={'/board'}>ALL {boards.length} &rarr;</Link>
+				}
+			</div>
+			{boards.length === 0 ? (
+				<div className="gw-empty">
+					NO BOARDS YET
+					<br />
+					<Link className="gw-link" to={'/board/create'}>ADD YOUR FIRST BOARD &rarr;</Link>
+				</div>
+			) : (
+				<div className="gw-list">
+					{boards.slice(0, props.limit).map(board => (
+						<BoardCard board={board} key={board.id} />
+					))}
+				</div>
+			)}
+		</div>
+	);
 };

@@ -1,185 +1,162 @@
 import React from 'react';
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom';
 import ImageUploader from 'react-images-upload';
+import { RIEInput } from '@attently/riek';
 import moment from 'moment';
 import UserRequests from './../../requests/UserRequests';
 import { s3Conf } from './../../config/s3';
-import {loadUser, updateUserImage, loadUserAverages} from './../../actions/user';
+import { loadUser, updateUser, updateUserImage, loadUserAverages } from './../../actions/user';
 
 const mapStateToProps = state => {
-    return { user : state.user.data, session : state.session, aggregations : state.user.averages }
-  }
-  const mapDispachToProps = dispatch => {
+    return { user: state.user.data, session: state.session, aggregations: state.user.averages }
+}
+const mapDispachToProps = dispatch => {
     return {
-      //updateImage : (request, data) => dispatch( request.updateProfileImage({data: data , onSuccess : (data)=>{ return {type: "SESSION_IMAGE_UPDATED", payload: data}}})),
-      updateImage : (session, params)=>dispatch(updateUserImage(session, params)),
-      loadUser : (session, params)=>dispatch(loadUser(session, params)),
-      loadUserAverages : (session, params)=>dispatch(loadUserAverages(session, params))
-    }}
+        updateImage: (session, params) => dispatch(updateUserImage(session, params)),
+        updateUser: (session, params) => dispatch(updateUser(session, params)),
+        loadUser: (session, params) => dispatch(loadUser(session, params)),
+        loadUserAverages: (session, params) => dispatch(loadUserAverages(session, params))
+    }
+}
 
-class ProfileCard extends React.Component{
+class ProfileCard extends React.Component {
 
-    constructor()
-    {
+    constructor() {
         super();
         this.state = {
             board_id: null,
-            manufacturer_id : null,
-            uploaderInstance : 1
+            manufacturer_id: null,
+            uploaderInstance: 1
         };
         this.onDrop = this.onDrop.bind(this);
+        this.saveField = this.saveField.bind(this);
     }
 
     componentDidMount() {
         if (this.props.session.isLoggedIn) {
-            this.props.loadUser(this.props.session, {id : this.props.session.user.id} );
-            this.props.loadUserAverages(this.props.session, {id : this.props.session.user.id} );
+            this.props.loadUser(this.props.session, { id: this.props.session.user.id });
+            this.props.loadUserAverages(this.props.session, { id: this.props.session.user.id });
         }
     }
 
+    // riek hands back {[propName]: value}, which is already the PUT body.
+    saveField(data) {
+        this.props.updateUser(this.props.session, {
+            id: this.props.session.user.id,
+            data: data,
+        });
+    }
+
     onDrop(pictureFiles, pictureDataURLs) {
-        const formData = UserRequests.createFormRequest({user_id : this.props.session.user.id});
+        const formData = UserRequests.createFormRequest({ user_id: this.props.session.user.id });
         pictureFiles.forEach((file, i) => {
             formData.append('photo', file)
         })
-        this.props.updateImage(this.props.session, { data : formData});
-        this.setState({uploaderInstance : this.state.uploaderInstance + 1})
+        this.props.updateImage(this.props.session, { data: formData });
+        this.setState({ uploaderInstance: this.state.uploaderInstance + 1 })
     }
 
-render(){
-    const {user} = this.props;
-    const image = this.props.user.profile_img ? s3Conf.root +  this.props.user.profile_img : 'https://www.bootdey.com/img/Content/avatar/avatar7.png';
-    return (
-            <div className="team-single">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-                <div className="row">
-                    <div className="col-lg-4 col-md-5 xs-margin-30px-bottom">
-                        <div className="team-single-img">
-                            <img src={image} alt="" />
-                        </div>
-                        <div className="bg-light-gray padding-30px-all md-padding-25px-all sm-padding-20px-all text-center">
-                            <div className="sm-width-95 sm-margin-auto">
-                                <ImageUploader
-                                    key={this.state.uploaderInstance}
-                                    withIcon={false}
-                                    buttonText='Update Profile Photo'
-                                    onChange={this.onDrop}
-                                    imgExtension={['.jpg', '.gif', '.png', '.gif']}
-                                    maxFileSize={5242880}
-                                    label=''
-                                    withPreview={false}
-                                    singleImage={true}
-                                />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-8 col-md-7">
-                        <div className="team-single-text padding-50px-left sm-no-padding-left">
-                            <h4 className="font-size38 sm-font-size32 xs-font-size30">{user.first_name} {user.last_name}</h4>
-                            <p className="no-margin-bottom">
-                                { /* text colud go here */}
-                            </p>
-                            <div className="contact-info-section margin-40px-tb">
-                                <ul className="list-style9 no-margin">
-                                <li>
-                                        <div className="row">
-                                            <div className="col-md-5 col-5">
-                                                <i className="far fa-gem text-yellow"></i>
-                                                <strong className="margin-10px-left text-yellow">username:</strong>
-                                            </div>
-                                            <div className="col-md-7 col-7">
-                                                <p>{user.username}</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="row">
-                                            <div className="col-md-5 col-5">
-                                                <i className="far fa-gem text-yellow"></i>
-                                                <strong className="margin-10px-left text-yellow">Member Since:</strong>
-                                            </div>
-                                            <div className="col-md-7 col-7">
-                                                <p>{moment(user.createdAt).format("MM-DD-YYYY")}</p>
-                                            </div>
-                                        </div>
-                                    </li>
+    render() {
+        const { user, aggregations } = this.props;
+        const image = user.profile_img
+            ? s3Conf.root + user.profile_img
+            : '/img/session_default_lg.png';
 
-                                    <li>
-                                        <div className="row">
-                                            <div className="col-md-5 col-5">
-                                                <i className="fas fa-envelope text-pink"></i>
-                                                <strong className="margin-10px-left xs-margin-four-left text-pink">Email:</strong>
-                                            </div>
-                                            <div className="col-md-7 col-7">
-                                                <p>{user.email}</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                             <div className="sm-no-margin">
-                             <div className="progress-text">
-                                    <div className="row">
-                                        <div className="col-7">Total Sessions</div>
-                                        <div className="col-5 text-right">{Math.round(this.props.aggregations.total_sessions)}</div>
-                                    </div>
-                                </div>
-                                <div className="progress-text">
-                                    <div className="row">
-                                        <div className="col-7">Average Session Rating</div>
-                                        <div className="col-5 text-right">{this.props.aggregations.session_rating} out of 10</div>
-                                    </div>
-                                </div>
-                                <div className="custom-progress progress">
-                                    <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style={{width : `${this.props.aggregations.session_rating * 10}%`}} className="animated custom-bar progress-bar slideInLeft bg-sky">
-                                    </div>
-                                </div>
-                            </div>
+        // Every aggregation comes back through toFixed(1), so total_sessions
+        // arrives as "148.0" and has to be rounded before it is shown.
+        const totalSessions = aggregations.total_sessions
+            ? Math.round(aggregations.total_sessions)
+            : 0;
+        const rating = Number(aggregations.session_rating) || 0;
+
+        return (
+            <React.Fragment>
+                <div className="gw-profile-head">
+                    <img className="gw-profile-img" src={image} alt="" />
+                    <div>
+                        <div className="gw-profile-name gw-inline-edit">
+                            <RIEInput
+                                required={false}
+                                value={user.first_name || "First name"}
+                                defaultValue={user.first_name}
+                                change={this.saveField}
+                                propName="first_name"
+                                className="gw-rie"
+                            />
+                            {" "}
+                            <RIEInput
+                                required={false}
+                                value={user.last_name || "Last name"}
+                                defaultValue={user.last_name}
+                                change={this.saveField}
+                                propName="last_name"
+                                className="gw-rie"
+                            />
                         </div>
+                        {user.createdAt &&
+                            <div className="gw-profile-since">
+                                SINCE {moment(user.createdAt).format("MM / YYYY")}
+                            </div>
+                        }
                     </div>
                 </div>
-            </div>
+
+                <hr className="gw-rule" />
+
+                <div className="d-flex flex-column" style={{ gap: '14px' }}>
+                    <div className="gw-eyebrow">Lifetime</div>
+                    <div className="gw-stat-row">
+                        <div className="gw-stat-label">Sessions logged</div>
+                        <div className="gw-stat-value">{totalSessions}</div>
+                    </div>
+                    <div className="gw-stat-row">
+                        <div className="gw-stat-label">Boards in quiver</div>
+                        <div className="gw-stat-value">{this.props.boardCount}</div>
+                    </div>
+                    <div className="gw-stat-row">
+                        <div className="gw-stat-label">Spots surfed</div>
+                        <div className="gw-stat-value">{this.props.spotCount}</div>
+                    </div>
+                </div>
+
+                <hr className="gw-rule" />
+
+                <div className="d-flex flex-column" style={{ gap: '10px' }}>
+                    <div className="gw-stat-row">
+                        <div className="gw-eyebrow">Avg rating</div>
+                        <div className="gw-mono" style={{ fontSize: '13px', color: '#3fd0dd' }}>
+                            {rating ? `${rating} / 10` : '--'}
+                        </div>
+                    </div>
+                    <div className="gw-meter">
+                        <div className="gw-meter-fill" style={{ width: `${rating * 10}%` }} />
+                    </div>
+                </div>
+
+                <hr className="gw-rule" />
+
+                <div className="d-flex flex-column" style={{ gap: '9px' }}>
+                    <div className="gw-eyebrow">Actions</div>
+                    <Link className="gw-btn gw-btn-primary" to={'/session/create'}>Log a session</Link>
+                    <Link className="gw-btn" to={'/board/create'}>Add a board</Link>
+                    <div className="gw-uploader">
+                        <ImageUploader
+                            key={this.state.uploaderInstance}
+                            withIcon={false}
+                            buttonText='Update profile photo'
+                            onChange={this.onDrop}
+                            imgExtension={['.jpg', '.gif', '.png', '.gif']}
+                            maxFileSize={5242880}
+                            label=''
+                            withPreview={false}
+                            singleImage={true}
+                        />
+                    </div>
+                </div>
+            </React.Fragment>
         )
     }
 }
 
 export default connect(mapStateToProps, mapDispachToProps)(ProfileCard);
-
-/**
- *                             <div className="margin-20px-top team-single-icons">
-                                <ul className="no-margin">
-                                    <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-
-
-                                                                <li>
-                                        <div className="row">
-                                            <div className="col-md-5 col-5">
-                                                <i className="fas fa-map-marker-alt text-green"></i>
-                                                <strong className="margin-10px-left text-green">Region:</strong>
-                                            </div>
-                                            <div className="col-md-7 col-7">
-                                                <p>Regina ST, London, SK.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-
-
-
-                                                        <h5 className="font-size24 sm-font-size22 xs-font-size20">Professional Skills</h5>
-                             <div className="sm-no-margin">
-                                <div className="progress-text">
-                                    <div className="row">
-                                        <div className="col-7">Positive Behaviors</div>
-                                        <div className="col-5 text-right">40%</div>
-                                    </div>
-                                </div>
-                                <div className="custom-progress progress">
-                                    <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style={{width : "40%"}} className="animated custom-bar progress-bar slideInLeft bg-sky">
-                                    </div>
-                                </div>
-                            </div>
- */
