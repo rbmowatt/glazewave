@@ -3,7 +3,6 @@ import './Home.css'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import cognitoUtils from '../../lib/utils/cognito'
-import { s3Conf } from './../../config/s3';
 
 const mapStateToProps = state => {
   return { session: state.session }
@@ -53,7 +52,7 @@ class Home extends Component {
           <section className="gw-features">
             <div className="gw-feature">
               <h3>Track sessions</h3>
-              <img src={s3Conf.root + 'site/session_example.png'} alt="A logged session" />
+              <img src="/img/home_sessions.jpg" alt="A surfer heading out at dawn" />
               <p>
                 Rate a session, then let the stats tell you which board and which
                 spot actually suit the swell you get.
@@ -62,7 +61,7 @@ class Home extends Component {
             </div>
             <div className="gw-feature">
               <h3>Store boards</h3>
-              <img src={s3Conf.root + 'site/board_example.png'} alt="A board in the quiver" />
+              <img src="/img/home_quiver.jpg" alt="A quiver of boards on a rack" />
               <p>
                 Keep the quiver in one place and see how each board performs as the
                 conditions change.
