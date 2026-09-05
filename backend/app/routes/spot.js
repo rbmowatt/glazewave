@@ -1,4 +1,5 @@
 const { Router } = require('express');
+const cognitoAuth = require('./../lib/cognitoAuth');
 const BaseService = require('./../services/SurflineSpotService');
 const EntityType = 'Spot';
 
@@ -46,6 +47,28 @@ router.get('/nearest', function (req, res) {
         message:
           err.message || "Some error occurred while retrieving " + EntityType + "."
       });
+    });
+});
+
+/*
+ * Auth is applied per route rather than to the whole router: /nearest has to
+ * stay open, because a signed-out visitor looking at a public session should
+ * still see where it was surfed.
+ */
+router.post('/', cognitoAuth.getVerifyMiddleware(), function (req, res) {
+  BaseService.make().create({ ...req.body, created_by: req.body.created_by })
+    .then(spot => {
+      res.status(201).send(spot);
+    })
+    .catch(err => {
+      if (err.code === 'SPOT_EXISTS') {
+        // 409 rather than 400: the request was fine, the spot just exists. The
+        // client shows the match and lets the user pick it.
+        res.status(409).send({ message: err.message, spot: err.spot });
+        return;
+      }
+      console.error('POST /api/spot failed:', err);
+      res.status(400).send({ message: err.message });
     });
 });
 
