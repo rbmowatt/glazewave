@@ -95,6 +95,7 @@ router.post('/', upload({destinationPath : 'user_sessions'}).array('photo'), fun
       }
     })
     .catch(err => {
+      console.error('POST /api/session failed:', err);
       res.status(500).send({
         message:
           err.message || "Some error occurred while creating the " + EntityType + "."
@@ -116,8 +117,13 @@ router.put('/:id', upload({destinationPath : 'user_sessions'}).single('photo'),f
       res.send(data);
     })
     .catch(err => {
+      // NODE_ENV=production is set on the systemd unit, so nothing else prints
+      // this. Without it the only trace of a failed save is a 500 body carrying
+      // none of the cause, and journalctl shows the last query and no error.
+      console.error(`PUT /api/session/${req.params.id} failed:`, err);
       res.status(500).send({
-        message: "Error updating " + EntityType + " with id=" + req.params.id
+        message: "Error updating " + EntityType + " with id=" + req.params.id,
+        error: process.env.NODE_ENV === 'production' ? undefined : err.message
       });
     });
 });
