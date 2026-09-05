@@ -32,11 +32,8 @@ class BoardPicker extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			select: { id: 0, name: "No Board Selected" },
-			selectOptions: [],
-			defaultImage:"/img/board_default_lg.png",
-			board_id: props.board_id,
-			selectedBoard: {},
+			defaultImage: "/img/board_default_lg.png",
+			requestedId: null,
 			show: false,
 		};
 		this.hideModal = this.hideModal.bind(this);
@@ -51,50 +48,67 @@ class BoardPicker extends React.Component {
 		this.setState({ show: false });
 	};
 
-	componentDidMount() {
-		if (this.props.session.isLoggedIn) {
-			this.setState({
-				board_id: this.props.board_id,
-				selectedBoard: this.props.current_session.UserBoard,
-			});
-			if (this.props.current_session.board_id)
-				this.props.loadBoard(this.props.session, {
-					id: this.props.current_session.board_id,
-					withs: ["UserBoardImage"],
-				});
-		}
-	}
+	/*
+	The session payload already carries the board, because View asks for
+	with[]=UserBoard.UserBoardImage and /api/session is not behind
+	cognitoAuthMiddleware. /api/user_board is. Reading the board out of the
+	session first is what stops a refresh that outruns the Cognito token
+	rehydration from 401ing and leaving the picker blank while the rest of the
+	page renders fine.
+
+	The store copy still wins when it matches, because a board picked a moment
+	ago is only in the store: the PUT response carries the new board_id and no
+	association, so session.UserBoard is one board behind until the next load.
+	*/
+	getBoard = () => {
+		const id = Number(this.props.board_id);
+		if (!id) return {};
+
+		const fromStore = this.props.user_board;
+		if (fromStore && Number(fromStore.id) === id) return fromStore;
+
+		const fromSession = this.props.current_session.UserBoard;
+		if (fromSession && Number(fromSession.id) === id) return fromSession;
+
+		return {};
+	};
 
 	componentDidUpdate(prevProps, prevState, snapshot) {
-		if (
-			prevProps.current_session.board_id !== this.props.board_id ||
-			this.props.board_created !== false
-		) {
-			const board_id = this.props.board_created
-				? this.props.board_created.id
-				: this.props.board_id;
+		// A board made in the modal exists nowhere else yet, so this is the one
+		// case that has to tell the parent to save. The previous version fired
+		// onChange on every load as well, which PUT the session back to the value
+		// it already held and reindexed it in Elasticsearch each time.
+		if (this.props.board_created) {
+			const created = this.props.board_created;
 			this.props.clearCreatedBoard();
-			//this.setState({ board_id : board_id})
-			this.props.onChange(board_id);
-			// A session with no board leaves board_id null here, which fetched
-			// /api/user_board/null on every detail page load.
-			if (board_id)
-				this.props.loadBoard(this.props.session, {
-					id: board_id,
-					withs: ["UserBoardImage"],
-				});
+			this.props.onChange(created.id);
+			return;
+		}
+
+		// Only fetch what is not already in hand. On a page load the session
+		// payload covers it and this makes no request at all.
+		const id = Number(this.props.board_id);
+		if (id && !this.getBoard().id && this.state.requestedId !== id) {
+			this.setState({ requestedId: id });
+			this.props.loadBoard(this.props.session, {
+				id: id,
+				withs: ["UserBoardImage"],
+			});
 		}
 	}
 
 	render() {
 		const session = this.props.current_session;
+		const board = this.getBoard();
+		// Ownership is a property of the session, not of the board. Reading it
+		// off the board meant a session with no board yet reported "not owner"
+		// and rendered the picker disabled, so it could never get one.
 		const isOwner =
-			this.props.session.user.id === this.props.user_board.user_id;
+			!!session.user_id &&
+			this.props.session.user.id === session.user_id;
 		const boardImage =
-			this.props.user_board &&
-			this.props.user_board.UserBoardImages &&
-			this.props.user_board.UserBoardImages.length
-				? s3Conf.root + this.props.user_board.UserBoardImages[0].name
+			board.UserBoardImages && board.UserBoardImages.length
+				? s3Conf.root + board.UserBoardImages[0].name
 				: this.state.defaultImage;
 		return (
 			<div className={this.props.wrapperClass + " "}>
@@ -106,12 +120,12 @@ class BoardPicker extends React.Component {
 
 						<div className="col-5">
 							<img
-								style={{ cursor: "pointer" }}
+								style={{ cursor: board.id ? "pointer" : "default" }}
 								onClick={() =>
-									this.props.history.push("/board/" + session.board_id)
+									board.id && this.props.history.push("/board/" + board.id)
 								}
 								src={boardImage}
-								alt={this.props.user_board.name}
+								alt={board.name || "No board selected"}
 							/>
 						</div>
 						<div className="col-7">
@@ -124,21 +138,20 @@ class BoardPicker extends React.Component {
 							>
 								<InlineEdit
 									type={InputType.Select}
-									value={this.props.user_board.name || "Select A Board"}
-									defaultValue={this.props.user_board.name}
+									value={board.name || "Select A Board"}
+									defaultValue={board.name}
 									onChange={this.props.onChange}
 									options={this.props.boards}
 									valueKey="id"
 									labelKey="name"
 									editClass="form-control"
-									
 								/>
 							</div>
 
-							{this.props.user_board && (
+							{board.id && (
 								<div className="board-picker-line">
 									<StarBar
-										stars={this.props.user_board.rating}
+										stars={board.rating}
 										onClick={this.submitUpdate}
 										size="xs"
 										static={true}
@@ -146,9 +159,9 @@ class BoardPicker extends React.Component {
 								</div>
 							)}
 
-							{this.props.user_board && (
+							{board.id && (
 								<div className="board-picker-line">
-									Size:{this.props.user_board.size}
+									Size:{board.size}
 								</div>
 							)}
 							{isOwner && (
