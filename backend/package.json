@@ -16,7 +16,10 @@
     "test-queue": "node app/services/queue/BetterQueue.js",
     "test-elastic": "node app/scripts/elastic/test.js",
     "sequelize": "npx sequelize-cli --options-path=app/config/sequelize.js",
-    "backfill-elastic": "node app/scripts/backfill_elastic.js"
+    "backfill-elastic": "node app/scripts/backfill_elastic.js",
+    "boards:import": "node app/scripts/import_boards.js",
+    "boards:makers": "node app/scripts/import_boards.js --report-makers",
+    "boards:dry-run": "node app/scripts/import_boards.js --dry-run"
   },
   "dependencies": {
     "@elastic/elasticsearch": "~7.17.0",
