@@ -27,6 +27,11 @@
 	--gw-accent-hover: #6fe0e9;
 	--gw-accent-wash: #0f1a1c;
 
+	/* Without this Chrome paints radios, checkboxes, selects, date pickers and
+	   scrollbars in their light theme regardless of what we set around them. */
+	color-scheme: dark;
+	accent-color: #3fd0dd;
+
 	--gw-sans: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 	--gw-mono: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
 }
@@ -917,3 +922,190 @@ div.details div.privacy input[type="radio"] {
 	width: 7ch;
 	min-width: 6ch;
 }
+
+/* ================= forms and detail pages ================= */
+
+/*
+ * These override index.css, which dates from the light build and paints every
+ * field white -- several rules with !important, so the !important below are
+ * matched to theirs, not decorative.
+ */
+
+.form-control,
+.details input[type="text"],
+.details input[type="email"],
+.details input[type="number"],
+.details textarea,
+.details select {
+	background: var(--gw-raised);
+	border: 1px solid var(--gw-edge-strong);
+	border-radius: 0;
+	color: var(--gw-text);
+	box-shadow: none;
+}
+.form-control:focus {
+	background: var(--gw-raised);
+	border-color: var(--gw-accent);
+	color: var(--gw-text);
+	box-shadow: none;
+	outline: none;
+}
+
+/* index.css forces these white so the read-only inline editors look flat. */
+input:disabled,
+.form-control:disabled,
+.form-control[readonly] {
+	background-color: var(--gw-panel) !important;
+	border: 1px solid var(--gw-rule) !important;
+	color: var(--gw-muted) !important;
+	opacity: 1;
+}
+
+::placeholder { color: var(--gw-faint) !important; }
+.date-picker-input::-webkit-input-placeholder,
+.google-locations-input::-webkit-input-placeholder { color: var(--gw-faint); }
+
+/*
+ * index.css puts `border: 2px solid white` on these. Written as longhands with
+ * a literal colour rather than the shorthand and a var(): while checking this
+ * against the deployed build, border-width from the shorthand applied and
+ * border-color did not, and I could not get a var()-valued border-color to
+ * stick here at all. Literal longhands do.
+ */
+.form-control,
+div.details .form-control,
+div.details .board-select,
+.details input[type="text"],
+.details textarea,
+.details select {
+	border-width: 1px !important;
+	border-style: solid !important;
+	border-color: #26343c !important;
+}
+.form-control:focus,
+div.owner div.details .form-control:hover,
+div.details input[type="text"]:hover,
+div.owner div.details .board-select:hover {
+	border-color: #3fd0dd !important;
+}
+/* index.css also nudged margin-right on hover, which shifted the field under
+   the cursor by a whole em. */
+div.owner div.details .form-control:hover,
+div.details input[type="text"]:hover,
+div.owner div.details .board-select:hover {
+	margin-right: 0;
+}
+
+.details label,
+.details strong {
+	display: block;
+	font-family: var(--gw-mono);
+	font-size: 10px !important;
+	line-height: 1.4;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	color: var(--gw-dim);
+	font-weight: 400;
+	margin-bottom: 6px;
+}
+
+.details input[type="text"],
+.details textarea,
+.details .form-control {
+	font-size: 13px !important;
+	font-weight: 400 !important;
+	padding: 8px 10px !important;
+	margin: 0 !important;
+}
+
+.detail-line { padding-bottom: 14px; }
+
+.session-title .form-control {
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: -0.01em;
+	padding: 8px 10px !important;
+}
+
+.text-area { min-height: 120px; }
+
+.card-close { color: var(--gw-faint); }
+.card-close:hover { color: var(--gw-text); }
+
+/* index.css put a red 2px border and 10px of padding on every radio in a
+   details block, which is what made them float away from their labels. */
+.details input[type="radio"],
+.details input[type="checkbox"] {
+	border: 0 !important;
+	padding: 0 !important;
+	margin: 0 6px 0 0 !important;
+	width: 13px;
+	height: 13px;
+	vertical-align: middle;
+	accent-color: var(--gw-accent);
+}
+
+.privacy {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 18px;
+	margin-top: 0;
+}
+/* react-advanced-form-addons ships styled-components rules (.tcOJC and the
+   like, hashed per build) that paint these labels #222 on the dark panel.
+   Literal colour for the same reason as the borders above. */
+.privacy label,
+.privacy label span {
+	display: inline-flex !important;
+	align-items: center;
+	font-family: var(--gw-mono);
+	font-size: 11px !important;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: #93a5ac !important;
+	margin: 0 !important;
+	cursor: pointer;
+}
+.privacy input[type="radio"]:checked + label,
+.privacy input[type="radio"]:checked + label span { color: #e6edf0 !important; }
+
+/* Board.css and Session.css are imported from inside their components, so they
+   land after this file and win any tie. */
+.star,
+.star-static,
+.star-selected { color: var(--gw-accent) !important; }
+.star-disabled,
+.star-disabled-static { color: var(--gw-edge) !important; }
+.star-disabled:hover { color: var(--gw-accent-hover) !important; }
+
+.react-datepicker {
+	background: var(--gw-panel);
+	border: 1px solid var(--gw-edge-strong);
+	border-radius: 0;
+	font-family: var(--gw-mono);
+	color: var(--gw-text);
+}
+.react-datepicker__header {
+	background: var(--gw-raised);
+	border-bottom: 1px solid var(--gw-rule);
+}
+.react-datepicker__current-month,
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker-time__header,
+.react-datepicker__time-list-item { color: var(--gw-text); }
+.react-datepicker__day:hover,
+.react-datepicker__time-list-item:hover {
+	background: var(--gw-edge);
+	border-radius: 0;
+}
+.react-datepicker__day--selected,
+.react-datepicker__time-list-item--selected {
+	background: var(--gw-accent) !important;
+	color: var(--gw-ground) !important;
+	border-radius: 0;
+}
+.react-datepicker__time-container,
+.react-datepicker__time,
+.react-datepicker__time-box { background: var(--gw-panel); }

@@ -239,7 +239,10 @@ class SessionView extends Component {
                     />
                   </div>
                   <div className="col-5" style={{textAlign: 'right'}} >
-                    <img src="/img/LogoMakr_4GvwRg.png" style={{ height:'50px'}} />
+                    <span className="gw-brand">
+                      <span className="gw-brand-mark" />
+                      <span>glazewave</span>
+                    </span>
                   </div>
                 </div>
                 <div className="row">
