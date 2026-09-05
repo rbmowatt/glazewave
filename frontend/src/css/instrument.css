@@ -887,3 +887,33 @@ div.details div.privacy input[type="radio"] {
 	border-color: var(--gw-accent-hover);
 	color: var(--gw-ground);
 }
+
+/* ---------- riek inline edit ---------- */
+
+/*
+ * riek puts the same className on the resting span and on the input it swaps
+ * in, so one rule has to read as both a label and a field. The dotted rule is
+ * the only thing telling anyone the name is editable at all.
+ */
+.gw-inline-edit .gw-rie {
+	display: inline-block;
+	color: inherit;
+	font: inherit;
+	background: none;
+	border: 0;
+	border-bottom: 1px dotted var(--gw-edge-strong);
+	padding: 0 1px;
+	margin: 0;
+	max-width: 100%;
+	cursor: text;
+}
+.gw-inline-edit .gw-rie:hover { border-bottom-color: var(--gw-accent); }
+.gw-inline-edit input.gw-rie {
+	background: var(--gw-raised);
+	border: 1px solid var(--gw-accent);
+	border-radius: 0;
+	padding: 1px 4px;
+	outline: none;
+	width: 7ch;
+	min-width: 6ch;
+}

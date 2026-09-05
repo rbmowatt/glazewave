@@ -2,10 +2,11 @@ import React from 'react';
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom';
 import ImageUploader from 'react-images-upload';
+import { RIEInput } from '@attently/riek';
 import moment from 'moment';
 import UserRequests from './../../requests/UserRequests';
 import { s3Conf } from './../../config/s3';
-import { loadUser, updateUserImage, loadUserAverages } from './../../actions/user';
+import { loadUser, updateUser, updateUserImage, loadUserAverages } from './../../actions/user';
 
 const mapStateToProps = state => {
     return { user: state.user.data, session: state.session, aggregations: state.user.averages }
@@ -13,6 +14,7 @@ const mapStateToProps = state => {
 const mapDispachToProps = dispatch => {
     return {
         updateImage: (session, params) => dispatch(updateUserImage(session, params)),
+        updateUser: (session, params) => dispatch(updateUser(session, params)),
         loadUser: (session, params) => dispatch(loadUser(session, params)),
         loadUserAverages: (session, params) => dispatch(loadUserAverages(session, params))
     }
@@ -28,6 +30,7 @@ class ProfileCard extends React.Component {
             uploaderInstance: 1
         };
         this.onDrop = this.onDrop.bind(this);
+        this.saveField = this.saveField.bind(this);
     }
 
     componentDidMount() {
@@ -35,6 +38,14 @@ class ProfileCard extends React.Component {
             this.props.loadUser(this.props.session, { id: this.props.session.user.id });
             this.props.loadUserAverages(this.props.session, { id: this.props.session.user.id });
         }
+    }
+
+    // riek hands back {[propName]: value}, which is already the PUT body.
+    saveField(data) {
+        this.props.updateUser(this.props.session, {
+            id: this.props.session.user.id,
+            data: data,
+        });
     }
 
     onDrop(pictureFiles, pictureDataURLs) {
@@ -64,7 +75,25 @@ class ProfileCard extends React.Component {
                 <div className="gw-profile-head">
                     <img className="gw-profile-img" src={image} alt="" />
                     <div>
-                        <div className="gw-profile-name">{user.first_name} {user.last_name}</div>
+                        <div className="gw-profile-name gw-inline-edit">
+                            <RIEInput
+                                required={false}
+                                value={user.first_name || "First name"}
+                                defaultValue={user.first_name}
+                                change={this.saveField}
+                                propName="first_name"
+                                className="gw-rie"
+                            />
+                            {" "}
+                            <RIEInput
+                                required={false}
+                                value={user.last_name || "Last name"}
+                                defaultValue={user.last_name}
+                                change={this.saveField}
+                                propName="last_name"
+                                className="gw-rie"
+                            />
+                        </div>
                         {user.createdAt &&
                             <div className="gw-profile-since">
                                 SINCE {moment(user.createdAt).format("MM / YYYY")}
