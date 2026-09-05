@@ -19,7 +19,8 @@
     "backfill-elastic": "node app/scripts/backfill_elastic.js",
     "boards:import": "node app/scripts/import_boards.js",
     "boards:makers": "node app/scripts/import_boards.js --report-makers",
-    "boards:dry-run": "node app/scripts/import_boards.js --dry-run"
+    "boards:dry-run": "node app/scripts/import_boards.js --dry-run",
+    "demo:seed": "node app/scripts/demo_seed.js"
   },
   "dependencies": {
     "@elastic/elasticsearch": "~7.17.0",
