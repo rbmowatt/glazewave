@@ -1,7 +1,7 @@
 import "./css/Location.css";
 import React, {Component} from "react"
 import { createField, fieldPresets } from 'react-advanced-form'
-import { getSessionData} from './../reports/stormglass/helpers/session';
+import { getSessionData} from './../reports/conditions/helpers/session';
 import { loadPlaces } from './../../lib/utils/googleMaps';
 
 // Autocomplete bills per request, so a request per keystroke is real money on a

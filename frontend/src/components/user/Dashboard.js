@@ -9,7 +9,7 @@ import { UserBoardsLoaded } from "./../../actions/user_board";
 import ProfileCard from "./ProfileCard";
 import RatingTrend from "./RatingTrend";
 import NearestSpots from "./../reports/surfline/NearestSpots";
-import Report from "./../reports/stormglass/Report";
+import Report from "./../reports/conditions/Report";
 import Conditions from "./../session/Conditions";
 import { LatestSessions } from "./../session/LatestSessions";
 import { NewestBoards } from "./../board/NewestBoards";

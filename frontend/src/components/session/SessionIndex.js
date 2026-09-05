@@ -16,7 +16,7 @@ import Create from "./Create";
 import Modal from "./../layout/Modal";
 import ScopePicker from "./../layout/ScopePicker";
 import NearestSpots from "./../reports/surfline/NearestSpots";
-import Report from "./../reports/stormglass/Report";
+import Report from "./../reports/conditions/Report";
 import {
   ReactiveBase,
   MultiList,

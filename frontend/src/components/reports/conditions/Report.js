@@ -1,19 +1,19 @@
 import React from 'react';
 import { connect } from "react-redux";
 import { safeLocate, defaultOptions } from './../../../lib/utils/geolocator';
-import { StormGlassLoaded } from './../../../actions/stormglass';
+import { ConditionsLoaded } from './../../../actions/conditions';
 import { getSessionData } from './helpers/session';
 
 const mapStateToProps = (state) => {
   return {
     session: state.session,
-    stormglass: state.stormglass
+    conditions: state.conditions
   };
 };
 
 const mapDispachToProps = (dispatch) => {
   return {
-    stormglassLoaded: (data) => dispatch(StormGlassLoaded(data)),
+    conditionsLoaded: (data) => dispatch(ConditionsLoaded(data)),
   };
 };
 
@@ -40,12 +40,12 @@ class Report extends React.Component {
 
   componentDidMount() {
     if (this.props.session.isLoggedIn) {
-      if (this.props.stormglass.data.wave_period) {
-        this.setState({ data: this.props.stormglass.data });
+      if (this.props.conditions.data.wave_period) {
+        this.setState({ data: this.props.conditions.data });
       }
       else {
         const setState = this.setState;
-        const sgLoaded = this.props.stormglassLoaded;
+        const sgLoaded = this.props.conditionsLoaded;
         safeLocate(defaultOptions, function (err, location) {
           if (err) return;
           getSessionData(location.coords.latitude, location.coords.longitude).then(data => {
