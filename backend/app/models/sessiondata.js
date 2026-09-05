@@ -1,4 +1,21 @@
 'use strict';
+const {getSessionQueue} = require('./../services/queue/BetterQueue')
+
+/*
+ * The elasticsearch projection joins session_data, but only Session carried
+ * index hooks - so a conditions row written after the session was created had
+ * nothing to reindex it. It only ever landed because the queue's 5s batch
+ * delay outlasted the second write, which is timing, not a guarantee.
+ */
+const reindexSession = async (sessionData, options) => {
+  if (!sessionData.session_id) return;
+  getSessionQueue().push({id: sessionData.session_id})
+    .on('finish', function (result) {
+    })
+    .on('failed', function (err) {
+    })
+}
+
 module.exports = (sequelize, DataTypes) => {
   const SessionData = sequelize.define('SessionData', {
       id: {
@@ -43,6 +60,8 @@ module.exports = (sequelize, DataTypes) => {
     }
 
   },  {underscored: true, tableName: 'session_data'});;
+  SessionData.addHook('afterCreate', reindexSession)
+  SessionData.addHook('afterUpdate', reindexSession)
   SessionData.associate = function(models) {
     SessionData.belongsTo(models.Session);
   };

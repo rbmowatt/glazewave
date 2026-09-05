@@ -12,6 +12,13 @@
  * elastic/indexes/sessions.json already maps all seven as float, so the index
  * needs no change - it has been coercing the strings all along.
  *
+ * sessions.session_date is fixed here too. Its migration carried
+ * `defaultValue: new Date()`, which evaluated once when that file was loaded
+ * and baked a literal timestamp into the column DDL. Nothing on the create
+ * path sends the field, so every session written since has inherited that one
+ * frozen instant - six of the first eight shared it across eight hours. It is
+ * also the field the whole conditions lookup keys on.
+ *
  * DOUBLE rather than DECIMAL: mysql2 hands DECIMAL back as a string to keep
  * precision, which would leave these exactly as unusable in JS as the VARCHAR
  * they replace. These are physical measurements at one or two decimals, not
@@ -67,9 +74,22 @@ module.exports = {
       type: Sequelize.DATE,
       allowNull: true,
     });
+
+    await queryInterface.changeColumn('sessions', 'session_date', {
+      type: Sequelize.DATE,
+      allowNull: false,
+      defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
+    });
   },
 
   down: async (queryInterface, Sequelize) => {
+    // The original frozen literal is deliberately not restored; dropping the
+    // default back to none is as far back as this goes.
+    await queryInterface.changeColumn('sessions', 'session_date', {
+      type: Sequelize.DATE,
+      allowNull: false,
+    });
+
     await queryInterface.removeColumn('session_data', 'resolved_for');
     await queryInterface.removeColumn('session_data', 'resolved_at');
     await queryInterface.removeColumn('session_data', 'manual_fields');

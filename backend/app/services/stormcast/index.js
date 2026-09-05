@@ -41,8 +41,20 @@ const expect = (units, field, wanted) => {
     }
 };
 
-const round = (n, places = 1) =>
-    (n === null || n === undefined) ? null : Number(n).toFixed(places);
+/*
+ * The null check has to happen before the arithmetic, not after. open-meteo
+ * returns null for all four marine fields at an inland or land grid point, and
+ * null * 3.28084 is 0 while (null * 9 / 5) + 32 is 32 - so guarding the result
+ * instead of the input reported Omaha as 32F water and flat rather than as no
+ * data at all. Periods were the only fields that ever came back null because
+ * they are the only ones never multiplied.
+ */
+const AS_IS = (n) => n;
+
+const convert = (value, transform, places) =>
+    (value === null || value === undefined)
+        ? null
+        : Number(transform(value)).toFixed(places);
 
 const buildConditions = (marine, forecast) => {
     const m = marine.current, mu = marine.current_units;
@@ -55,13 +67,13 @@ const buildConditions = (marine, forecast) => {
     expect(fu, 'pressure_msl', 'hPa');
 
     return {
-        water_temperature: round(C_TO_F(m.sea_surface_temperature), 0),
-        swell_height: round(m.swell_wave_height * M_TO_FT, 1),
-        swell_period: round(m.swell_wave_period, 0),
-        wave_height: round(m.wave_height * M_TO_FT, 1),
-        wave_period: round(m.wave_period, 0),
-        pressure: round(f.pressure_msl * HPA_TO_INHG, 2),
-        wind_speed: round(f.wind_speed_10m * MS_TO_KNOTS, 1),
+        water_temperature: convert(m.sea_surface_temperature, C_TO_F, 0),
+        swell_height: convert(m.swell_wave_height, (n) => n * M_TO_FT, 1),
+        swell_period: convert(m.swell_wave_period, AS_IS, 0),
+        wave_height: convert(m.wave_height, (n) => n * M_TO_FT, 1),
+        wave_period: convert(m.wave_period, AS_IS, 0),
+        pressure: convert(f.pressure_msl, (n) => n * HPA_TO_INHG, 2),
+        wind_speed: convert(f.wind_speed_10m, (n) => n * MS_TO_KNOTS, 1),
         observed_at: m.time,
     };
 };
