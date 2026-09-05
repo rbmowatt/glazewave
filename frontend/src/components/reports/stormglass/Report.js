@@ -17,7 +17,7 @@ const mapDispachToProps = (dispatch) => {
   };
 };
 
-// Units are set in backend/app/services/stormcast, not here.
+// Units are set in backend/app/services/conditions, not here.
 const ROWS = [
   { key: 'swell_height', label: 'Swell', unit: 'ft' },
   { key: 'swell_period', label: 'Swell period', unit: 's' },

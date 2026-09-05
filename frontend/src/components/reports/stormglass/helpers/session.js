@@ -1,21 +1,24 @@
 
-import getSpots from './../../../../lib/utils/spots';
 import apiConfig from './../../../../config/api';
 
-export const getSessionData = (lat, lng) => {
-    return new Promise(( resolve, reject )=>{
-        getSpots(lat, lng).then(spots=>{
-            if (!spots.length) return resolve(null);
-            const spot = spots[0];
-            fetch(`${apiConfig.host + apiConfig.port }/api/sc?lat=${spot.lat}&lon=${spot.lon}&name=${spot.id}`)
-                .then((response) => response.ok ? response.json() : null)
-                .then((conditions) => {
-                    // the session POST only writes a session_data row when
-                    // wave_height is present, so a partial payload must not
-                    // reach the form looking like a real reading
-                    if (!conditions || !conditions.wave_height) return resolve(null);
-                    resolve(Object.assign({}, conditions, { lat: spot.lat, lon: spot.lon }));
-                })
-                .catch(reject);
-        }).catch(reject)
-})}
+/*
+ * Resolved against the location's own coordinates, and against a timestamp
+ * when one is given. This used to find the nearest seeded spot first and give
+ * up when there was none, which left every session outside New Jersey and Baja
+ * with no conditions at all - open-meteo answers for any point on earth, and
+ * the backend borrows a nearby spot itself when a point has no marine data.
+ *
+ * An all-null payload is a real answer, not a failure: it means the point was
+ * checked and has no marine data. Conditions renders that differently from a
+ * session whose conditions were never looked up.
+ */
+export const getSessionData = (lat, lng, at) => {
+    const query = `lat=${lat}&lon=${lng}` + (at ? `&at=${encodeURIComponent(at)}` : '');
+    return fetch(`${apiConfig.host + apiConfig.port}/api/sc?${query}`)
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error(`Conditions lookup failed (${response.status}).`);
+            }
+            return response.json();
+        });
+};

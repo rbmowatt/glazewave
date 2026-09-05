@@ -212,8 +212,11 @@ class SessionView extends Component {
   };
 
   onDateChange = (date) => {
-    let formattedDate = moment(date).format("YYYY-MM-DD HH:mm:ss");
-    this.submitUpdate({ session_date: formattedDate });
+    // UTC, not local wall clock. session_date is a zoneless DATETIME and the
+    // backend floors it to a UTC hour to pick the reading, so sending 6am from
+    // a UTC-7 beach as "06:00" would resolve conditions for 11pm the night
+    // before - plausible numbers, wrong session.
+    this.submitUpdate({ session_date: moment(date).toISOString() });
     this.setState({ date: date });
   };
 

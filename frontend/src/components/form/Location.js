@@ -17,7 +17,9 @@ class Location extends Component {
         places : null,
         loadError : null,
         suggestions : [],
-        open : false
+        open : false,
+        lat : null,
+        lng : null
     }
 
     componentDidMount() {
@@ -26,9 +28,34 @@ class Location extends Component {
             .catch(err => this.setState({loadError: err.message}));
     }
 
+    // The conditions belong to an hour, not just a place, so moving the
+    // session's date has to re-ask for them.
+    componentDidUpdate(prevProps) {
+        if (prevProps.at !== this.props.at) this.fetchConditions();
+    }
+
     componentWillUnmount() {
         clearTimeout(this.debounce);
         this.unmounted = true;
+    }
+
+    fetchConditions = () => {
+        const {lat, lng} = this.state;
+        if (lat === null || lat === undefined) return;
+
+        this.props.onChange('conditionsError', null);
+        getSessionData(lat, lng, this.props.at)
+            .then(data => {
+                if (this.unmounted) return;
+                this.props.onChange('conditions', data);
+            })
+            .catch(err => {
+                if (this.unmounted) return;
+                // This was swallowed, which is how a session saved with no
+                // conditions and nothing on screen to say why.
+                this.props.onChange('conditions', {});
+                this.props.onChange('conditionsError', err.message);
+            });
     }
 
     handleInputChange = e => {
@@ -82,9 +109,10 @@ class Location extends Component {
             open: false
         });
         this.props.onChange('location_id', place.id);
-        getSessionData(place.location.lat(), place.location.lng())
-            .then(d=>{ if (d) this.props.onChange('conditions', d); })
-            .catch(()=>{})
+        this.setState(
+            {lat: place.location.lat(), lng: place.location.lng()},
+            this.fetchConditions
+        );
     }
 
     onBlur = (e)=>
