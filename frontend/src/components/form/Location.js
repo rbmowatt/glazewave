@@ -116,6 +116,10 @@ class Location extends Component {
             open: false
         });
         this.props.onChange('location_id', place.id);
+        // The display name, not the formatted address: the create form builds a
+        // session title from it and "Ocean Grove Beach" is a title where
+        // "Ocean Grove Beach, Ocean Grove, NJ 07756, USA" is not.
+        this.props.onChange('location_name', place.displayName || place.formattedAddress);
         this.setState(
             {lat: place.location.lat(), lng: place.location.lng()},
             this.fetchConditions

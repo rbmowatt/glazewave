@@ -9,6 +9,7 @@ import messages from "./validation-messages";
 import moment from "moment";
 import { loadUserBoards, clearUserBoards } from "./../../../actions/user_board";
 import { refresh } from "./../../../lib/utils/cognito";
+import { defaultSessionTitle } from "./../../../lib/utils/sessionTitle";
 
 // What <input type="datetime-local"> reads and writes. It is local wall clock
 // with no zone, which is why nothing sends this value anywhere as-is.
@@ -33,11 +34,16 @@ class SessionForm extends React.Component {
   constructor(props) {
     refresh(props.session.user.id);
     super(props);
-    this.defaultName = moment().format("MMMM D YYYY, h:mm a");
     this.state = {
       show: false,
       pictures: props.pictures,
       location_id: "",
+      // Location reports this alongside the id so the title can name the spot.
+      location_name: "",
+      title: "",
+      // Until someone types, the field tracks the spot and the date. After,
+      // it is theirs and nothing overwrites it.
+      titleTouched: false,
       conditions: {},
       conditionsError: null,
       session_local: moment().format(LOCAL_FORMAT),
@@ -61,6 +67,24 @@ class SessionForm extends React.Component {
     this.setState({ session_local: e.target.value });
   };
 
+  titleDefault = () =>
+    defaultSessionTitle(this.state.location_name, this.state.session_local);
+
+  titleValue = () =>
+    this.state.titleTouched ? this.state.title : this.titleDefault();
+
+  onTitleChange = (e) => {
+    this.setState({ title: e.target.value, titleTouched: true });
+  };
+
+  // Title is not a react-advanced-form field. It has to follow the spot and
+  // date fields live, and RAF reads initialValue once at mount, so the value
+  // is held here and merged into the serialized payload on submit instead.
+  serializeWithTitle = (serialized) =>
+    Object.assign({}, serialized, {
+      title: this.titleValue().trim() || this.titleDefault(),
+    });
+
   componentDidMount() {
     if (this.props.session.isLoggedIn) {
       if (!this.props.boards.loaded)
@@ -82,7 +106,7 @@ class SessionForm extends React.Component {
             this.props.processFormSubmission({
               session: this.props.session,
               session_date: this.sessionUtc(),
-              serialized,
+              serialized: this.serializeWithTitle(serialized),
               fields,
               form,
             })
@@ -92,12 +116,14 @@ class SessionForm extends React.Component {
         >
           <div className="row">
             <div className="col-12 ">
-              <Input
+              <label htmlFor="session_title">Session Name</label>
+              <input
+                id="session_title"
                 name="title"
-                label="Session Name"
+                type="text"
                 className="form-control"
-                initialValue={this.defaultName}
-                required
+                value={this.titleValue()}
+                onChange={this.onTitleChange}
               />
               <label htmlFor="session_local">When Did You Paddle Out?</label>
               <input
