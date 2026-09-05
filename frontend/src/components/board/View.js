@@ -255,7 +255,7 @@ class BoardView extends Component {
 										change={this.submitUpdate}
 										propName="name"
 										editProps={{ disabled: !isOwner }}
-										className="form-control"
+										className="gw-title-field"
 									/>
 								</div>
 								<div className="col-6"></div>

@@ -13,6 +13,7 @@ import DatePicker from "react-datepicker";
 import ImageUploader from "react-images-upload";
 import ImageGallery from "react-image-gallery";
 import Location from "./../form/Location";
+import PrivacyToggle from "./../layout/PrivacyToggle";
 import MainContainer from "./../layout/MainContainer";
 import StarBar from "./../layout/StarBar";
 import SessionRequests from "./../../requests/SessionRequests";
@@ -27,7 +28,6 @@ import {
 } from "./../../actions/user_session";
 import noaaForecaster from "noaa-forecasts";
 import BoardPicker from "./../board/forms/BoardPicker";
-import { Radio } from "react-advanced-form-addons";
 import { FacebookProvider, Share, Comments, Page } from "react-facebook";
 import fbConfig from "./../../config/fb";
 import Conditions from "./Conditions";
@@ -235,7 +235,7 @@ class SessionView extends Component {
                       change={this.submitUpdate}
                       propName="title"
                       editProps={{ disabled: !isOwner }}
-                      className="form-control"
+                      className="gw-title-field"
                     />
                   </div>
                   <div className="col-5" style={{textAlign: 'right'}} >
@@ -259,19 +259,9 @@ class SessionView extends Component {
                       <div className="col-6">
                         {isOwner && (
                           <div className="privacy text-right">
-                            <Radio
-                              name="is_public"
-                              label="Private"
-                              value="0"
+                            <PrivacyToggle
+                              value={this.isPublic() ? "1" : "0"}
                               onChange={this.onPrivacyChange}
-                              checked={!this.isPublic()}
-                            />
-                            <Radio
-                              name="is_public"
-                              label="Public"
-                              value="1"
-                              onChange={this.onPrivacyChange}
-                              checked={this.isPublic()}
                             />
                           </div>
                         )}
