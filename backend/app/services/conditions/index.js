@@ -25,15 +25,28 @@ const WEATHER_HOURLY = [
     'pressure_msl',
 ];
 
-/*
- * The fields that come from the marine model. All five null is how open-meteo
- * reports a grid cell with no water in it, which is both an inland session and
- * a bayside beach whose nearest cell landed on shore. Elevation does not
- * predict it: Mavericks reports 21m and returns full data, La Paz bay reports
- * 30m and returns nothing.
- */
+// The fields the marine endpoint supplies, as opposed to wind and pressure.
 const MARINE_OUTPUT = [
     'water_temperature',
+    'swell_height',
+    'swell_period',
+    'wave_height',
+    'wave_period',
+];
+
+/*
+ * Blankness is judged on the wave fields alone. Sea surface temperature comes
+ * off a different grid than the wave model, so a cell can carry one without
+ * the other: La Paz bay returns 89.8F with all four wave fields null. Counting
+ * that temperature as data kept the fallback from ever firing at the one place
+ * it was written for.
+ *
+ * All four null is how open-meteo reports a cell with no usable water in it -
+ * an inland point, or a bayside beach whose nearest cell landed on shore.
+ * Elevation does not predict it: Mavericks reports 21m and returns full data,
+ * La Paz bay reports 30m and returns none.
+ */
+const WAVE_OUTPUT = [
     'swell_height',
     'swell_period',
     'wave_height',
@@ -163,7 +176,7 @@ const buildConditions = (marine, weather) => {
 };
 
 const isBlank = (conditions) =>
-    MARINE_OUTPUT.every((field) => conditions[field] === null);
+    WAVE_OUTPUT.every((field) => conditions[field] === null);
 
 /*
  * Keyed on the point and the hour, never on the spot name. The previous cache
@@ -244,3 +257,4 @@ module.exports = resolve;
 module.exports.resolveAt = resolveAt;
 module.exports.isBlank = isBlank;
 module.exports.MARINE_OUTPUT = MARINE_OUTPUT;
+module.exports.WAVE_OUTPUT = WAVE_OUTPUT;
