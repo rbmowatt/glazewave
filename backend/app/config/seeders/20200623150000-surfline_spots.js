@@ -16,11 +16,20 @@ const CHUNK = 500;
 // 'user' and are never touched.
 const OWNED = ['legacy', 'osm'];
 
+// Rows written before this seeder stamped a source. They belong to nobody, so
+// nothing else will ever clear them and a reseed collides on their primary key
+// forever - a NULL never matches an IN list. Swept here rather than by hand,
+// so a box already in that state recovers on the next run.
+const ownedWhere = (Sequelize) => ({
+  [Sequelize.Op.or]: [
+    { source: { [Sequelize.Op.in]: OWNED } },
+    { source: null },
+  ],
+});
+
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.bulkDelete('surfline_spots', {
-      source: { [Sequelize.Op.in]: OWNED },
-    });
+    await queryInterface.bulkDelete('surfline_spots', ownedWhere(Sequelize));
 
     const [states] = await queryInterface.sequelize.query(
       'SELECT id, name FROM states'
@@ -28,7 +37,10 @@ module.exports = {
     const byName = new Map(states.map((s) => [s.name, s.id]));
 
     const now = new Date();
-    const rows = data.map((row) => Object.assign({}, row, {
+    // source first, so a row that carries its own wins. The seed file predates
+    // the column and has no source key at all, and a row inserted without one
+    // is what the sweep above exists to clean up.
+    const rows = data.map((row) => Object.assign({source: 'osm'}, row, {
       state_id: byName.get(String(row.crumbs || '').split(', ').pop()) || null,
       created_at: now,
       updated_at: now,
@@ -41,7 +53,6 @@ module.exports = {
     }
   },
 
-  down: (queryInterface, Sequelize) => queryInterface.bulkDelete('surfline_spots', {
-    source: { [Sequelize.Op.in]: OWNED },
-  }),
+  down: (queryInterface, Sequelize) =>
+    queryInterface.bulkDelete('surfline_spots', ownedWhere(Sequelize)),
 };
