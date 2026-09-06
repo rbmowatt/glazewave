@@ -16,8 +16,8 @@ import ImageUploader from "react-images-upload";
 import ImageGallery from "react-image-gallery";
 import { boardPlaceholder } from "./../../lib/utils/placeholder";
 import TypeAheadInput from "./../form/TypeAheadInput";
+import BoardSelect from "./forms/BoardSelect";
 import { sizes } from "./data/board_sizes";
-import InlineEdit, { InputType } from "riec";
 import { loadBoards } from "./../../actions/board";
 import { loadShapers } from "./../../actions/shaper";
 import { loadUserSessions } from "./../../actions/user_session";
@@ -109,11 +109,9 @@ class BoardView extends Component {
 		} else this.props.history.push("/board");
 	}
 
-	prepBoardSizeOptions = (sizes) => {
-		const filteredSizes = [];
-		sizes.forEach((size) => filteredSizes.push({ id: size }));
-		return filteredSizes;
-	};
+	// BoardSelect keys on id and labels on name. A size is its own label, so
+	// both carry the same string.
+	prepBoardSizeOptions = (sizes) => sizes.map((size) => ({ id: size, name: size }));
 
 	onTypeAheadSelected = (propertyName, newValue) => {
 		const data = {};
@@ -365,26 +363,22 @@ class BoardView extends Component {
 										/>
 									</div>
 									<div className="detail-line">
-										<strong>Size:</strong>
-										&nbsp;
-										<InlineEdit
-											type={InputType.Select}
-											value={
-												board.size || "Select A Size"
-											}
-											onChange={(data) => {
-												this.submitUpdate({
-													size: data,
-												});
-											}}
-											options={
-												this.state.boardSizeOptions
-											}
-											valueKey="id"
-											labelKey="id"
-											editClass="form-control"
-											isDisabled={0}
-										/>
+										<div>
+											<strong>Size:</strong>
+										</div>
+										{/* riec rendered this as bare text that
+										    swapped for the OS select on click,
+										    and isDisabled={0} let anyone change
+										    a board that was not theirs. */}
+										<div className="board-size-select">
+											<BoardSelect
+												value={board.size}
+												options={this.state.boardSizeOptions}
+												onChange={(size) => this.submitUpdate({ size: size })}
+												disabled={!isOwner}
+												placeholder="None"
+											/>
+										</div>
 									</div>
 									<div className="detail-line">
 										<div>

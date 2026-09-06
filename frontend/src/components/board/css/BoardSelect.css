@@ -103,3 +103,13 @@
 	font-size: 0.85rem;
 	color: var(--gw-faint);
 }
+
+/* On the board page this control sits between Shaper/Company and Model, which
+   are .form-control inputs. `.details .form-control` runs 13px with 8px 10px
+   padding and a #26343c border, so the three boxes only line up if this one
+   carries the same metrics rather than the picker's more compact ones. */
+.details .board-size-select .board-select-control {
+	font-size: 13px;
+	padding: 8px 10px;
+	border-color: #26343c;
+}
