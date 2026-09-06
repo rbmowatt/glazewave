@@ -1186,3 +1186,19 @@ input.gw-title-field:focus {
 .react-datepicker__time-container,
 .react-datepicker__time,
 .react-datepicker__time-box { background: var(--gw-panel); }
+
+/*
+ * The create-session form is not inside .details, so it gets bootstrap's bare
+ * .form-control and nothing else: zero margin, which puts each label hard
+ * against the bottom border of the field above it.
+ *
+ * index.css used to zero the padding and border on .google-locations-input,
+ * which made the location field 26px tall against 38px for its neighbours and
+ * sat its text flush on the left edge. That rule is gone now; inside .details
+ * it was already dead, because .details .form-control forces 8px 10px with
+ * !important.
+ */
+.session-form label { margin-bottom: 6px; }
+.session-form .form-control { margin-bottom: 18px; }
+.session-form .location-field { margin-bottom: 18px; }
+.session-form .location-field .form-control { margin-bottom: 0; }

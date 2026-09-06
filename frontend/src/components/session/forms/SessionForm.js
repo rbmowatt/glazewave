@@ -100,7 +100,7 @@ class SessionForm extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container session-form">
         <Form
           action={({ serialized, fields, form }) =>
             this.props.processFormSubmission({

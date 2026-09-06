@@ -34,10 +34,6 @@ img.preview {
 	max-width: 250px;
 	max-height: 250px;
 }
-.date-picker-input, .google-locations-input{
-	border: none;
-	padding:0px;
-}
 .date-picker-input::-webkit-input-placeholder, .google-locations-input::-webkit-input-placeholder {
 	color: black;
 }
