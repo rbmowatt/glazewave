@@ -11,11 +11,15 @@
 // Usage:
 //   node app/scripts/import_boards.js --report-makers
 //   node app/scripts/import_boards.js --dry-run
-//   node app/scripts/import_boards.js --file data/board_catalog.json
+//   node app/scripts/import_boards.js --file=data/board_catalog.json
 //
 // Input is the harvester's own JSON: an array of records with at least
 // record_type, maker and model. Records whose record_type is not 'model' are
 // stock listings from retailer feeds, not catalog entries, and are skipped.
+//
+// --file takes a comma-separated list because the harvest output is a
+// generated file that gets overwritten by the next run, and the hand-compiled
+// historical rows have to survive that.
 
 require('dotenv').config();
 const fs = require('fs');
@@ -34,7 +38,10 @@ const DRY_RUN = args.includes('--dry-run');
 // NOT data/boards.json - that name is taken by the 200-row fixture the boards
 // seeder loads, and pointing this at it silently imports nothing, because
 // fixture rows carry manufacturer_id rather than a maker name.
-const FILE = flag('file', 'data/board_catalog.json');
+const FILES = flag('file', 'data/board_catalog.json,data/board_registry.json')
+  .split(',')
+  .map((f) => f.trim())
+  .filter(Boolean);
 
 const {
   makerSlugOf,
@@ -174,11 +181,16 @@ async function importBoard(board, refs, stats) {
 }
 
 async function main() {
-  const file = path.isAbsolute(FILE) ? FILE : path.join(process.cwd(), FILE);
-  const records = JSON.parse(fs.readFileSync(file, 'utf8'));
+  const files = FILES.map((f) => (path.isAbsolute(f) ? f : path.join(process.cwd(), f)));
+  const records = [];
+  for (const file of files) {
+    const rows = JSON.parse(fs.readFileSync(file, 'utf8'));
+    console.log(`${path.basename(file)}: ${rows.length} records`);
+    records.push(...rows);
+  }
 
   // Optional curated map of maker-slug variants, e.g. { "sharpeye": "sharp-eye" }.
-  const aliasFile = path.join(path.dirname(file), 'maker_aliases.json');
+  const aliasFile = path.join(path.dirname(files[0]), 'maker_aliases.json');
   const makerAliases = fs.existsSync(aliasFile)
     ? JSON.parse(fs.readFileSync(aliasFile, 'utf8'))
     : {};

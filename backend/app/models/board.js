@@ -23,7 +23,7 @@ module.exports = (sequelize, DataTypes) => {
     year_introduced: DataTypes.INTEGER,
     // 'field' is the only authoritative level: an actual yearIntroduced column
     // from EOS rather than a number pulled out of marketing copy.
-    year_confidence: DataTypes.ENUM('field', 'stated', 'title', 'mentioned', 'boilerplate'),
+    year_confidence: DataTypes.ENUM('field', 'stated', 'secondary', 'title', 'mentioned', 'boilerplate'),
     year_evidence: DataTypes.STRING,
     length_in: DataTypes.DECIMAL(6, 3),
     width_in: DataTypes.DECIMAL(6, 3),
