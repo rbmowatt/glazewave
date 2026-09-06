@@ -44,6 +44,7 @@ const FILES = flag('file', 'data/board_catalog.json,data/board_registry.json')
   .filter(Boolean);
 
 const {
+  slugify,
   makerSlugOf,
   nearDuplicateMakers,
   merge,
@@ -85,8 +86,46 @@ async function resolveManufacturer(board, cache) {
   return row;
 }
 
+/*
+ * The designer as an entity, resolved the same way a maker is. Returns null
+ * rather than creating a row when the record carries no designer, which is
+ * every record in the current harvest - Shopify products.json has no such
+ * field. Guarding here is what stops a future source with an empty string in
+ * that column filling the table with one blank shaper.
+ *
+ * slugify, not makerSlugOf: the maker version strips a trailing "Surfboards"
+ * or "Designs", which is right for a label and wrong for a person - it would
+ * turn Slater Designs into "slater".
+ */
+async function resolveShaper(board, cache) {
+  const name = String(board.designer || '').trim();
+  if (!name) return null;
+
+  const slug = slugify(name);
+  if (!slug) return null;
+  if (cache.has(slug)) return cache.get(slug);
+
+  let row = await db.Shaper.findOne({ where: { slug: slug } });
+  if (!row) {
+    // A shaper typed in by a person will not have a slug yet, so match the
+    // name before creating a duplicate alongside them.
+    row = await db.Shaper.findOne({ where: { name: name } });
+  }
+  if (!row) {
+    row = await db.Shaper.create({ name: name, slug: slug, aliases: [name] });
+  } else {
+    const aliases = new Set([...(row.aliases || []), name]);
+    row.slug = row.slug || slug;
+    row.aliases = [...aliases];
+    await row.save();
+  }
+  cache.set(slug, row);
+  return row;
+}
+
 async function importBoard(board, refs, stats) {
   const maker = await resolveManufacturer(board, refs.makerCache);
+  const shaper = await resolveShaper(board, refs.shaperCache);
 
   let row = await db.Board.findOne({ where: { canonical_key: board.canonical_key } });
 
@@ -98,6 +137,8 @@ async function importBoard(board, refs, stats) {
     row.set({
       manufacturer_id: maker.id,
       slug: row.slug || board.slug,
+      // A harvest with no designer must not unassign one that is already set.
+      shaper_id: shaper ? shaper.id : row.shaper_id,
       designer: board.designer ?? row.designer,
       category: board.category ?? row.category,
       discontinued: board.discontinued,
@@ -114,6 +155,7 @@ async function importBoard(board, refs, stats) {
   } else {
     row = await db.Board.create({
       manufacturer_id: maker.id,
+      shaper_id: shaper ? shaper.id : null,
       model: board.model,
       slug: board.slug,
       canonical_key: board.canonical_key,
@@ -217,7 +259,7 @@ async function main() {
     return;
   }
 
-  const refs = { ...(await lookups()), makerCache: new Map() };
+  const refs = { ...(await lookups()), makerCache: new Map(), shaperCache: new Map() };
   if (refs.sourceByKey.size === 0) {
     throw new Error('board_sources is empty - run the seeders before importing');
   }

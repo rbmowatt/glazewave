@@ -8,6 +8,9 @@ module.exports = (sequelize, DataTypes) => {
       autoIncrement: true,
     },
     manufacturer_id: DataTypes.INTEGER,
+    // The resolved designer. `designer` below keeps the raw string the source
+    // supplied, so a name nothing could be matched against is not lost.
+    shaper_id: DataTypes.INTEGER,
     model: DataTypes.STRING,
     isPublic: DataTypes.BOOLEAN,
     // Null marks a harvested row. A row with a creator was typed by a person,
@@ -33,6 +36,7 @@ module.exports = (sequelize, DataTypes) => {
   Board.associate = function(models) {
     // associations can be defined here
     Board.belongsTo(models.Manufacturer);
+    Board.belongsTo(models.Shaper);
     Board.hasMany(models.BoardImage, {foreignKey: 'board_id'});
     Board.hasMany(models.BoardModelSource, {foreignKey: 'board_id'});
   };
