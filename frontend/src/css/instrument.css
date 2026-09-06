@@ -1209,3 +1209,69 @@ input.gw-title-field:focus {
 	color: #e08a7a;
 	margin-top: 6px;
 }
+
+/* ---------- image gallery ---------- */
+
+/*
+ * react-image-gallery ships light-theme defaults: a #337ab7 4px border on the
+ * active thumbnail and a strip whose height came from Nav.css's bare `nav`
+ * rule. With that rule gone the strip is sized by the thumbnails themselves,
+ * so the padding here is what centers them.
+ */
+.image-gallery-slide-wrapper {
+	background: var(--gw-ground);
+	border: 1px solid var(--gw-edge);
+	padding: 8px;
+}
+.image-gallery-slide .image-gallery-image { display: block; }
+
+.image-gallery-thumbnails { padding: 12px 0; overflow-x: auto; }
+.image-gallery-thumbnails-container { line-height: 0; }
+
+.image-gallery-thumbnail {
+	width: 84px;
+	border: 1px solid var(--gw-edge-strong);
+	vertical-align: middle;
+	opacity: 0.55;
+	transition: opacity 0.2s ease-out, border-color 0.2s ease-out;
+}
+.image-gallery-thumbnail + .image-gallery-thumbnail { margin-left: 6px; }
+.image-gallery-thumbnail:hover {
+	border: 1px solid var(--gw-edge-hover);
+	opacity: 1;
+}
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus {
+	border: 1px solid var(--gw-accent);
+	opacity: 1;
+}
+
+.image-gallery-icon:focus { outline: none; }
+.image-gallery-icon:hover { color: var(--gw-accent); }
+.image-gallery-fullscreen-button,
+.image-gallery-play-button { padding: 12px; }
+.image-gallery-fullscreen-button .image-gallery-svg,
+.image-gallery-play-button .image-gallery-svg { height: 20px; width: 20px; }
+
+.image-gallery-bullets .image-gallery-bullet {
+	box-shadow: none;
+	padding: 3px;
+	border-color: rgba(230, 237, 240, 0.65);
+}
+.image-gallery-bullets .image-gallery-bullet:hover,
+.image-gallery-bullets .image-gallery-bullet:focus,
+.image-gallery-bullets .image-gallery-bullet.active {
+	background: var(--gw-accent);
+	border-color: var(--gw-accent);
+	transform: none;
+}
+
+.image-gallery-index {
+	top: 8px;
+	right: 8px;
+	background: rgba(7, 9, 11, 0.72);
+	font-family: var(--gw-mono);
+	font-size: 11px;
+	letter-spacing: 0.08em;
+	padding: 5px 9px;
+}

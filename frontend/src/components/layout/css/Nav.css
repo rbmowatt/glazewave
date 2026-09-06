@@ -1,30 +1,12 @@
-nav {
-    /** width: 300px;
-     **/
-     margin: 0 auto;
-     background: #282c34;
-     height: 70px;
-     line-height: 70px;
- }
- nav .dropdown {
-     line-height: normal;
-     border:3px solid red;
-     margin:0px;
-     display:block;
- }
- nav ul li {
-     display: inline;
-     list-style-type: none;
-     text-align: center;
-     padding: 30px;
- }
- nav ul li a {
-     margin: 50px 0;
-     font-weight: bold;
-     color: white;
-     text-decoration: none;
- }
- nav ul li a:hover {
-     color: white;
-     text-decoration: none;
- }
+/*
+ * Everything that was here selected the bare `nav` element, so it also hit
+ * react-image-gallery's thumbnail strip, which renders as a <nav>: that is
+ * where the 70px #282c34 band under the session photo came from, and why the
+ * thumbnail overflowed it and got clipped by the strip's overflow:hidden.
+ *
+ * None of it reached the real navbar. instrument.css `nav.navbar` already sets
+ * the background, height, line-height and margin, the markup carries no <ul>
+ * and no .dropdown, and removing the rules leaves the header pixel identical.
+ *
+ * Nothing left to declare. Safe to delete along with the import in Navbar.js.
+ */
