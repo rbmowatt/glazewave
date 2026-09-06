@@ -1202,3 +1202,10 @@ input.gw-title-field:focus {
 .session-form .form-control { margin-bottom: 18px; }
 .session-form .location-field { margin-bottom: 18px; }
 .session-form .location-field .form-control { margin-bottom: 0; }
+
+.gw-uploader-error {
+	font-size: 11px;
+	line-height: 1.4;
+	color: #e08a7a;
+	margin-top: 6px;
+}
