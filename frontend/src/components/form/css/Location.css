@@ -72,3 +72,17 @@
   color: var(--gw-faint);
   margin-top: 0.35rem;
 }
+
+.location-suggestions .list-group-item.location-suggestions-credit {
+  cursor: default;
+  font-size: 0.6rem;
+  color: var(--gw-faint);
+  padding: 0.3rem 0.75rem;
+}
+
+.location-suggestion-distance {
+  float: right;
+  font-family: var(--gw-mono);
+  font-size: 0.65rem;
+  color: var(--gw-dim);
+}

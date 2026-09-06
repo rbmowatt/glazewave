@@ -3,11 +3,17 @@ import React, {Component} from "react"
 import { createField, fieldPresets } from 'react-advanced-form'
 import { getSessionData} from './../reports/conditions/helpers/session';
 import { loadPlaces } from './../../lib/utils/googleMaps';
-import getSpots from './../../lib/utils/spots';
+import getSpots, { searchSpots } from './../../lib/utils/spots';
 
-// Autocomplete bills per request, so a request per keystroke is real money on a
-// field people type a whole beach name into.
-const DEBOUNCE_MS = 300;
+// The spot search is a local query and free, so this is latency tuning rather
+// than cost control. Google only runs when the spot table came back empty, and
+// its requests share one session token, so a shorter wait does not multiply
+// what it bills.
+const DEBOUNCE_MS = 180;
+
+// Below this the search matches most of the table and ranks it by distance,
+// which reads as a broken field. Matches MIN_QUERY_LENGTH on the route.
+const MIN_QUERY_LENGTH = 2;
 
 // Tighter than the 50km /api/spot/nearest default. These are chips you tap
 // without reading, so a spot an hour up the coast is a wrong answer, not a
@@ -20,6 +26,10 @@ const asKm = (metres) =>
     metres === null || metres === undefined ? null : `${(metres / 1000).toFixed(1)} km`;
 
 class Location extends Component {
+    // Responses can land out of order. Only the newest request may write to
+    // state, or a slow "pl" overwrites the results for "playa".
+    seq = 0
+
     state = {
         search: "",
         value: "",
@@ -27,9 +37,13 @@ class Location extends Component {
         is_editing : false,
         places : null,
         loadError : null,
-        suggestions : [],
+        // One list, tagged by origin: spot rows come from surfline_spots and
+        // place rows from Google. They are never mixed - Google is only asked
+        // when the spot search found nothing - but they select differently.
+        results : [],
         open : false,
         nearby : [],
+        coords : null,
         lat : null,
         lng : null
     }
@@ -56,6 +70,14 @@ class Location extends Component {
         navigator.geolocation.getCurrentPosition(
             (position) => {
                 if (this.unmounted) return;
+                // Kept for the search ranking too, so a denied permission
+                // costs the ordering and nothing else.
+                this.setState({
+                    coords: {
+                        lat: position.coords.latitude,
+                        lon: position.coords.longitude
+                    }
+                });
                 getSpots(
                     position.coords.latitude,
                     position.coords.longitude,
@@ -113,16 +135,62 @@ class Location extends Component {
         const search = e.target.value;
         this.setState({search, value: search, is_editing: true});
         clearTimeout(this.debounce);
-        if (!search.trim()) {
-            this.setState({suggestions: [], open: false});
+        if (search.trim().length < MIN_QUERY_LENGTH) {
+            // Bump the sequence so an in-flight response for a longer string
+            // cannot repopulate the list after it was cleared.
+            this.seq++;
+            this.setState({results: [], open: false});
             return;
         }
         this.debounce = setTimeout(() => this.fetchSuggestions(search), DEBOUNCE_MS);
     }
 
+    /*
+     * Seeded spots first, Google only when they came back empty.
+     *
+     * The spot table is the better answer where it has coverage: it is filtered
+     * to ocean-facing coast by the seed script's shoreline test, so it cannot
+     * offer a lake beach, and it ranks by distance from the person typing.
+     * Google is the long tail - anywhere the seed has not been run.
+     */
     fetchSuggestions = async (input) => {
+        const seq = ++this.seq;
+
+        let spots = [];
+        try {
+            spots = await searchSpots(input, this.state.coords || {});
+        } catch (err) {
+            spots = [];
+        }
+        if (this.unmounted || seq !== this.seq) return;
+
+        if (spots.length) {
+            this.setState({
+                results: spots.map(spot => ({
+                    kind: 'spot',
+                    key: spot.id,
+                    label: spot.name,
+                    distance_m: spot.distance_m,
+                    spot: spot
+                })),
+                open: true
+            });
+            return;
+        }
+
+        const places = await this.fetchPlaceSuggestions(input);
+        if (this.unmounted || seq !== this.seq) return;
+        this.setState({results: places, open: places.length > 0});
+    }
+
+    /*
+     * Only reached on a spot miss, so the session token is minted on the first
+     * request Google actually sees rather than on the first keystroke. A run of
+     * typing that never leaves the spot table now opens no session at all.
+     */
+    fetchPlaceSuggestions = async (input) => {
         const { places } = this.state;
-        if (!places) return;
+        if (!places) return [];
         const { AutocompleteSuggestion, AutocompleteSessionToken } = places;
         // One token spans a whole typing session and is consumed by
         // fetchFields, which is what makes the autocomplete calls free and
@@ -133,14 +201,22 @@ class Location extends Component {
                 input,
                 sessionToken: this.token
             });
-            if (this.unmounted) return;
-            this.setState({
-                suggestions: suggestions.filter(s => s.placePrediction),
-                open: true
-            });
+            return suggestions
+                .filter(s => s.placePrediction)
+                .map(s => ({
+                    kind: 'place',
+                    key: s.placePrediction.placeId,
+                    label: s.placePrediction.text.toString(),
+                    suggestion: s
+                }));
         } catch (err) {
-            if (!this.unmounted) this.setState({suggestions: [], open: false});
+            return [];
         }
+    }
+
+    handleSelectResult = (result) => {
+        if (result.kind === 'spot') return this.handleSelectSpot(result.spot);
+        return this.handleSelectSuggest(result.suggestion);
     }
 
     handleSelectSuggest = async (suggestion) => {
@@ -156,7 +232,7 @@ class Location extends Component {
             value: place.formattedAddress || place.displayName,
             location_id: place.id,
             is_editing: false,
-            suggestions: [],
+            results: [],
             open: false
         });
         this.props.onChange('location_id', place.id);
@@ -191,7 +267,7 @@ class Location extends Component {
             value: spot.name,
             location_id: spot.id,
             is_editing: false,
-            suggestions: [],
+            results: [],
             open: false,
             nearby: []
         });
@@ -216,7 +292,7 @@ class Location extends Component {
     }
 
     render() {
-        const {value, search, suggestions, open, loadError, nearby, location_id} = this.state
+        const {value, search, open, loadError, nearby, location_id, results} = this.state
         const { fieldProps, fieldState, id, name, label, hint } = this.props
 
         const {
@@ -274,17 +350,32 @@ class Location extends Component {
                 onBlur={this.onBlur}
                 onChange={this.handleInputChange}
               />
-              {open && suggestions.length > 0 && (
+              {open && results.length > 0 && (
                 <ul className="list-group location-suggestions">
-                  {suggestions.map(suggestion => (
+                  {results.map(result => (
                     <li
-                      key={suggestion.placePrediction.placeId}
+                      key={result.key}
                       className="list-group-item list-group-item-action"
-                      onMouseDown={() => this.handleSelectSuggest(suggestion)}
+                      /* Not onClick: the input's onBlur fires first and its
+                         deferred handler closes the list. */
+                      onMouseDown={() => this.handleSelectResult(result)}
                     >
-                      {suggestion.placePrediction.text.toString()}
+                      {result.label}
+                      {result.kind === 'spot' && asKm(result.distance_m) && (
+                        <span className="location-suggestion-distance">
+                          {asKm(result.distance_m)}
+                        </span>
+                      )}
                     </li>
                   ))}
+                  {results[0].kind === 'spot' && (
+                    /* Spot rows are OSM-derived, so ODbL requires the credit
+                       wherever they are shown. Never a mixed list: Google is
+                       only asked when the spot search returned nothing. */
+                    <li className="list-group-item location-suggestions-credit">
+                      © OpenStreetMap contributors
+                    </li>
+                  )}
                 </ul>
               )}
             </div>
@@ -318,9 +409,12 @@ class Location extends Component {
               </div>
             )}
 
+            {/* Google is now the fallback, not the field, so this can no
+                longer say the lookup is unavailable - with no key the spot
+                search still answers everywhere the seed has been run. */}
             {loadError && (
               <small className="form-text text-muted">
-                Location lookup is unavailable.
+                Searching seeded surf spots only.
               </small>
             )}
 
