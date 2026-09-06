@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import cognitoUtils from './../../lib/utils/cognito'
 import { isDemoPublic } from './../../lib/utils/demo'
+import { s3Conf } from './../../config/s3'
 import './css/Nav.css'
 
 const onSignOut = (e) => {
@@ -38,7 +39,11 @@ const Navbar = props =>{
                 <>
                   <span className="white-txt">{props.username}</span>
                   <button type="button" className="gw-link" onClick={onSignOut}>SIGN OUT</button>
-                  <span className="gw-nav-avatar" />
+                  {/* The empty span stays the fallback: a rider with no photo
+                      still gets the circle rather than a broken image icon. */}
+                  {props.profileImg
+                    ? <img className="gw-nav-avatar" src={s3Conf.root + props.profileImg} alt="" />
+                    : <span className="gw-nav-avatar" />}
                 </>
               ) : (
                 <>

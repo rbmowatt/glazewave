@@ -147,6 +147,10 @@ nav.navbar .nav-link.active {
 	border-radius: 50%;
 	background: var(--gw-edge);
 	border: 1px solid var(--gw-edge-strong);
+	/* The same class covers the placeholder span and the <img>, so the image
+	   needs both of these or a non-square photo renders stretched. */
+	object-fit: cover;
+	flex-shrink: 0;
 }
 .white-txt { color: var(--gw-faint); }
 

@@ -99,7 +99,10 @@ const getCognitoSession = (dispatch) => {
         const session = formatSessionObject(data.data.id, result);
         TokenStorage.setToken({access_token : session.jwt, refresh_token : null});
         session.user = {...session.user, ...data.data[0]};
-        dispatch(loadUser(session, {wheres : {email : result.idToken.payload.email}}));
+        // loadUser goes through getOne(), which builds /api/user/:id and never
+        // looks at wheres, so the email filter here was requesting
+        // /api/user/null and writing null over the store's user record.
+        dispatch(loadUser(session, {id : data.data.id}));
         resolve(session);
       });     
     })

@@ -27,11 +27,16 @@ import BoardView from './components/board/View';
 
 import { withRouter } from "react-router";
 import cognitoUtils from './lib/utils/cognito'
+import { loadUser } from './actions/user';
 
 
 const mapStateToProps = state => {
     return { session: state.session, user : state.user, api : state.api }
-}  
+}
+
+const mapDispatchToProps = dispatch => {
+  return { loadUser: (session, params) => dispatch(loadUser(session, params)) }
+}
 
 class App extends React.Component{
 
@@ -40,10 +45,38 @@ class App extends React.Component{
     if(!this.props.api.authorized) cognitoUtils.signOutCognitoSession();
   }
 
+  componentDidMount() { this.ensureUser(); }
+  componentDidUpdate() { this.ensureUser(); }
+
+  /*
+  Only Dashboard ever loaded the user record, so on every other page the store
+  held the empty initial state and the navbar had no name and no photo to show.
+  A reload restores the session straight out of localStorage without going near
+  getCognitoSession, so login is not a reliable place to do this either.
+
+  requestedFor, rather than a loading flag: a user with no row yet leaves
+  user.data empty, and componentDidUpdate runs on every store change, so the
+  guard has to survive the request coming back with nothing.
+  */
+  ensureUser() {
+    const { session, user } = this.props;
+    const id = session.isLoggedIn && session.user && session.user.id;
+    if (!id) return;
+    if (user.data && user.data.id) return;
+    if (this.requestedFor === id) return;
+    this.requestedFor = id;
+    this.props.loadUser(session, { id: id });
+  }
+
   render() {
+    const user = this.props.user.data || {};
     return (
       <div>
-        <Navbar session={this.props.session} username={this.props.user.first_name} />
+        <Navbar
+          session={this.props.session}
+          username={user.first_name}
+          profileImg={user.profile_img}
+        />
         <Switch>
           <Route path={'/'} exact component={Home} />
           <Route path={'/login'} exact component={Login} />
@@ -72,4 +105,4 @@ class App extends React.Component{
 }
 
 //export default connect(mapStateToProps)(App)
-export default withRouter(connect(mapStateToProps)(App));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
