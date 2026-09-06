@@ -2,6 +2,7 @@ import * as React from 'react';
 import { connect } from 'react-redux'
 import axios from 'axios';
 import apiConfig from '../../config/api.js';
+import authHeaders from './../../lib/utils/authHeaders';
 import  MainContainer  from './../layout/MainContainer';
 import {FormCard} from './../layout/FormCard';
 import {UserForm} from './UserForm';
@@ -49,7 +50,7 @@ class CreateUser extends React.Component{
         this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
 
         if (this.props.session.isLoggedIn) {
-            axios.post(apiConfig.host + apiConfig.port + `/api/user`, formData, this.props.session.headers).then(data => [
+            axios.post(apiConfig.host + apiConfig.port + `/api/user`, formData, authHeaders()).then(data => [
             setTimeout(() => {
                 this.props.history.push('/user');
             }, 1500)

@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import apiConfig from '../../config/api.js';
+import authHeaders from './../../lib/utils/authHeaders';
 import  MainContainer  from './../layout/MainContainer';
 import UserRow from './UserRow';
 import { confirmAlert } from 'react-confirm-alert'; // Import
@@ -24,7 +25,7 @@ class UserIndex extends Component {
 
     componentDidMount(){
         if (this.props.session.isLoggedIn) {
-            axios.get( apiConfig.host + apiConfig.port + `/api/user`, this.props.session.headers).then(data => {
+            axios.get( apiConfig.host + apiConfig.port + `/api/user`, authHeaders()).then(data => {
                 data.data.sort((a,b) => (a.Username > b.Username) ? 1 : ((b.Username > a.Username) ? -1 : 0));
                 this.setState({ users: data.data })
             });
@@ -39,7 +40,7 @@ class UserIndex extends Component {
               {
                 label: 'Yes',
                 onClick: () => {
-                    axios.delete(apiConfig.host + apiConfig.port + `/api/user/${id}`, this.props.session.headers).then(data => {
+                    axios.delete(apiConfig.host + apiConfig.port + `/api/user/${id}`, authHeaders()).then(data => {
                         const index = this.state.users.findIndex(user => user.Username === id);
                         this.state.users.splice(index, 1);
                         this.props.history.push('/user');
