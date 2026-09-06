@@ -43,14 +43,11 @@
  * OSM data is ODbL and GSHHG is LGPL. Anything published from this file needs
  * to credit OpenStreetMap contributors and Wessel and Smith's GSHHG.
  *
- * Dependency-free on purpose, so it runs from a bare checkout. Overpass
- * responses are cached in CACHE_DIR; delete it to force a refetch.
- *
- * Setup, once:
- *   curl -sL -o $TMPDIR/glazewave-spot-seed/gshhg.zip \
- *     https://www.soest.hawaii.edu/pwessel/gshhg/gshhg-bin-2.3.7.zip
- *   unzip -o $TMPDIR/glazewave-spot-seed/gshhg.zip gshhs_f.b \
- *     -d $TMPDIR/glazewave-spot-seed
+ * Dependency-free on purpose, so it runs from a bare checkout. The shoreline
+ * file is downloaded on first run and both it and the Overpass responses are
+ * cached under ~/.cache/glazewave (GLAZEWAVE_CACHE overrides). Not $TMPDIR:
+ * macOS purges that after a few days and the download is 118MB. Delete the
+ * cache to force a refetch.
  *
  * Usage:
  *   node build_spot_seed.js                 all regions, writes the seed
@@ -67,6 +64,7 @@
 const fs = require('fs');
 const path = require('path');
 const os = require('os');
+const zlib = require('zlib');
 
 // The main instance refuses connections outright once a client has used its
 // quota, rather than answering 429, so a run that trips it needs somewhere
@@ -77,8 +75,12 @@ const MIRRORS = [
   'https://overpass.private.coffee/api/interpreter',
 ];
 const OUT = path.join(__dirname, '../../data/surfline_spots.json');
-const CACHE_DIR = path.join(os.tmpdir(), 'glazewave-spot-seed');
-const GSHHG = process.env.GSHHG_BIN || path.join(CACHE_DIR, 'gshhs_f.b');
+const CACHE_ROOT = process.env.GLAZEWAVE_CACHE
+  || path.join(os.homedir(), '.cache', 'glazewave');
+const CACHE_DIR = path.join(CACHE_ROOT, 'overpass');
+const GSHHG = process.env.GSHHG_BIN || path.join(CACHE_ROOT, 'gshhs_f.b');
+const GSHHG_ZIP = 'https://www.soest.hawaii.edu/pwessel/gshhg/gshhg-bin-2.3.7.zip';
+const GSHHG_MEMBER = 'gshhs_f.b';
 
 // Overpass rejects the default node User-Agent, and OSM policy asks callers to
 // identify themselves.
@@ -170,7 +172,7 @@ const overpass = async (key, query) => {
 
   // Overpass answers 429 when the caller has used its slot and 504 when the
   // query outruns the server's own budget; both are worth waiting out.
-  const waits = [5000, 20000, 60000];
+  const waits = [5000, 20000];
   for (let attempt = 0; ; attempt += 1) {
     const endpoint = MIRRORS[attempt % MIRRORS.length];
     const res = await fetch(endpoint, {
@@ -188,36 +190,189 @@ const overpass = async (key, query) => {
       return body;
     }
     if (attempt >= waits.length) {
-      console.log(`  ${key}: HTTP ${res.status} from ${endpoint} after ${attempt} retries, skipped`);
-      return { elements: [] };
+      console.log(`  ${key}: HTTP ${res.status} from ${endpoint} after ${attempt} retries`);
+      return { elements: [], failed: true };
     }
     console.log(`  ${key}: HTTP ${res.status} from ${endpoint}, next mirror in ${waits[attempt] / 1000}s`);
     await sleep(waits[attempt]);
   }
 };
 
-const fetchFeatures = (region) => overpass(
-  `feat-${region.iso}`,
-  `[out:json][timeout:900];`
-  + `area["ISO3166-2"="${region.iso}"]["admin_level"="4"]->.a;`
-  + `(nwr["natural"="beach"]["name"](area.a);`
-  + `nwr["sport"="surfing"]["name"](area.a););`
-  + `out center tags;`
-);
+// A whole-state area query times out on every public instance for anything the
+// size of Maine, so features are asked for one tile at a time with the bbox
+// first: Overpass narrows by bbox cheaply, then tests area membership on what
+// little is left. Membership is still what assigns a spot to its state, so
+// tiles overlapping a border cost nothing in correctness.
+const TILE_FEAT_DEG = 2;
+const MIN_TILE_DEG = 0.5;
+
+const fetchBounds = async () => {
+  const body = await overpass(
+    'bounds',
+    `[out:json][timeout:180];`
+    + `(rel["ISO3166-2"~"^US-"]["admin_level"="4"];`
+    + `rel["ISO3166-2"~"^MX-"]["admin_level"="4"];);`
+    + `out bb;`
+  );
+  const out = {};
+  for (const el of body.elements || []) {
+    if (el.tags && el.bounds) out[el.tags['ISO3166-2']] = el.bounds;
+  }
+  return out;
+};
+
+let coastalCells = null;
+
+const coastal = (size) => {
+  if (coastalCells) return coastalCells;
+  loadBuffer();
+  const buf = shorelineBuffer;
+  const cells = new Set();
+  let off = 0;
+  while (off + 44 <= buf.length) {
+    const n = buf.readInt32BE(off + 4);
+    const level = buf.readInt32BE(off + 8) & 255;
+    const start = off + 44;
+    off = start + n * 8;
+    if (level !== 1 || n < 2) continue;
+    for (let i = 0; i < n; i += 1) {
+      const p = start + i * 8;
+      let lon = buf.readInt32BE(p) / 1e6;
+      if (lon > 180) lon -= 360;
+      const lat = buf.readInt32BE(p + 4) / 1e6;
+      cells.add(`${Math.floor(lat / size)}_${Math.floor(lon / size)}`);
+    }
+  }
+  coastalCells = cells;
+  return cells;
+};
+
+// Alaska's bounds run 172E to 130W, so the longitude range wraps and has to be
+// walked in two pieces or it comes out empty.
+const lonRange = (min, max, size) => {
+  const steps = (a, b) => {
+    const out = [];
+    for (let i = Math.floor(a / size); i <= Math.floor(b / size); i += 1) out.push(i);
+    return out;
+  };
+  return max < min
+    ? steps(min, 180 - 1e-9).concat(steps(-180, max))
+    : steps(min, max);
+};
+
+const tilesFor = (bb, size) => {
+  const cells = coastal(size);
+  const out = [];
+  for (let y = Math.floor(bb.minlat / size); y <= Math.floor(bb.maxlat / size); y += 1) {
+    for (const x of lonRange(bb.minlon, bb.maxlon, size)) {
+      if (cells.has(`${y}_${x}`)) out.push({ s: y * size, w: x * size, size: size });
+    }
+  }
+  return out;
+};
+
+const fetchTile = async (region, tile) => {
+  const n = tile.s + tile.size;
+  const e = tile.w + tile.size;
+  const box = `${tile.s},${tile.w},${n},${e}`;
+  const body = await overpass(
+    `feat-${region.iso}-${tile.s}_${tile.w}-${tile.size}`,
+    `[out:json][timeout:300];`
+    + `area["ISO3166-2"="${region.iso}"]["admin_level"="4"]->.a;`
+    + `(nwr["natural"="beach"]["name"](${box})(area.a);`
+    + `nwr["sport"="surfing"]["name"](${box})(area.a););`
+    + `out center tags;`
+  );
+
+  if (!body.failed) return body.elements || [];
+  if (tile.size <= MIN_TILE_DEG) {
+    console.log(`  ${region.iso} ${box}: giving up on this tile`);
+    return [];
+  }
+  const half = tile.size / 2;
+  let split = [];
+  for (const dy of [0, half]) {
+    for (const dx of [0, half]) {
+      split = split.concat(
+        await fetchTile(region, { s: tile.s + dy, w: tile.w + dx, size: half })
+      );
+    }
+  }
+  return split;
+};
+
+const fetchFeatures = async (region, bounds) => {
+  const bb = bounds[region.iso];
+  if (!bb) {
+    console.log(`${region.iso}: no boundary in OSM, skipped`);
+    return { elements: [] };
+  }
+  const tiles = tilesFor(bb, TILE_FEAT_DEG);
+  const found = new Map();
+  for (const tile of tiles) {
+    for (const el of await fetchTile(region, tile)) found.set(`${el.type}/${el.id}`, el);
+  }
+  return { elements: [...found.values()], tiles: tiles.length };
+};
+
+// Minimal zip reader: pulling one member out of the archive beats shelling out
+// to unzip, which is not installed by default on the server images this runs on.
+const unzipMember = (zip, name) => {
+  let eocd = -1;
+  for (let i = zip.length - 22; i >= 0 && i > zip.length - 66000; i -= 1) {
+    if (zip.readUInt32LE(i) === 0x06054b50) { eocd = i; break; }
+  }
+  if (eocd < 0) throw new Error('not a zip file');
+
+  const count = zip.readUInt16LE(eocd + 10);
+  let p = zip.readUInt32LE(eocd + 16);
+  for (let i = 0; i < count; i += 1) {
+    if (zip.readUInt32LE(p) !== 0x02014b50) throw new Error('bad central directory');
+    const method = zip.readUInt16LE(p + 10);
+    const compressed = zip.readUInt32LE(p + 20);
+    const nameLen = zip.readUInt16LE(p + 28);
+    const extraLen = zip.readUInt16LE(p + 30);
+    const commentLen = zip.readUInt16LE(p + 32);
+    const localAt = zip.readUInt32LE(p + 42);
+    const entry = zip.toString('utf8', p + 46, p + 46 + nameLen);
+    if (entry === name || entry.endsWith(`/${name}`)) {
+      const dataAt = localAt + 30
+        + zip.readUInt16LE(localAt + 26) + zip.readUInt16LE(localAt + 28);
+      const body = zip.subarray(dataAt, dataAt + compressed);
+      return method === 0 ? body : zlib.inflateRawSync(body);
+    }
+    p += 46 + nameLen + extraLen + commentLen;
+  }
+  throw new Error(`${name} not found in archive`);
+};
+
+const ensureShoreline = async () => {
+  if (fs.existsSync(GSHHG)) return;
+  fs.mkdirSync(CACHE_ROOT, { recursive: true });
+  console.log(`fetching shoreline data to ${GSHHG}, once, about 118MB`);
+  const res = await fetch(GSHHG_ZIP, { signal: AbortSignal.timeout(600000) });
+  if (!res.ok) {
+    console.error(`shoreline download failed: HTTP ${res.status} from ${GSHHG_ZIP}`);
+    process.exit(1);
+  }
+  const zip = Buffer.from(await res.arrayBuffer());
+  fs.writeFileSync(GSHHG, unzipMember(zip, GSHHG_MEMBER));
+  console.log(`extracted ${GSHHG_MEMBER}`);
+};
 
 let shorelineBuffer = null;
+
+const loadBuffer = () => {
+  if (!shorelineBuffer) shorelineBuffer = fs.readFileSync(GSHHG);
+  return shorelineBuffer;
+};
 
 // Longitudes are carried in a shifted space so a region straddling the
 // antimeridian - the Aleutians do - stays one contiguous range.
 const shifter = (crosses) => (lon) => (crosses && lon < 0 ? lon + 360 : lon);
 
 const loadShoreline = (box, crosses) => {
-  if (!fs.existsSync(GSHHG)) {
-    console.error(`missing ${GSHHG}\nsee the setup block at the top of this file`);
-    process.exit(1);
-  }
-  if (!shorelineBuffer) shorelineBuffer = fs.readFileSync(GSHHG);
-  const buf = shorelineBuffer;
+  const buf = loadBuffer();
   const shift = shifter(crosses);
   const segs = [];
   let off = 0;
@@ -406,10 +561,13 @@ const run = async () => {
     ? REGIONS.filter((r) => picked.includes(r.iso))
     : REGIONS;
 
+  await ensureShoreline();
+  const bounds = await fetchBounds();
+
   const rows = [];
   let examined = 0;
   for (const region of regions) {
-    const body = await fetchFeatures(region);
+    const body = await fetchFeatures(region, bounds);
     const candidates = (body.elements || [])
       .filter((el) => el.tags && el.tags.name && !rejected(el.tags))
       .map((el) => ({ el: el, row: toRow(el, region) }))
@@ -451,7 +609,7 @@ const run = async () => {
         kept += 1;
       }
     }
-    console.log(`${region.iso}: ${candidates.length} candidates, ${kept} ocean-facing`);
+    console.log(`${region.iso}: ${candidates.length} candidates, ${kept} ocean-facing, ${body.tiles} tiles`);
   }
 
   if (report) {

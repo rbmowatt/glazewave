@@ -10,8 +10,18 @@ const data = require('../../../data/surfline_spots.json');
 // found by crumbs alone.
 const CHUNK = 500;
 
+// Rows this seeder owns. sequelize-cli has no seederStorage configured, so a
+// seed can be run again at any time; clearing these first makes a reseed an
+// update rather than a primary key collision. Contributed spots are source
+// 'user' and are never touched.
+const OWNED = ['legacy', 'osm'];
+
 module.exports = {
-  up: async (queryInterface) => {
+  up: async (queryInterface, Sequelize) => {
+    await queryInterface.bulkDelete('surfline_spots', {
+      source: { [Sequelize.Op.in]: OWNED },
+    });
+
     const [states] = await queryInterface.sequelize.query(
       'SELECT id, name FROM states'
     );
@@ -31,5 +41,7 @@ module.exports = {
     }
   },
 
-  down: (queryInterface) => queryInterface.bulkDelete('surfline_spots', null, {}),
+  down: (queryInterface, Sequelize) => queryInterface.bulkDelete('surfline_spots', {
+    source: { [Sequelize.Op.in]: OWNED },
+  }),
 };
