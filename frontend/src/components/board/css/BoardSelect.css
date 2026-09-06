@@ -1,0 +1,105 @@
+.board-select-root {
+	position: relative;
+	width: 100%;
+}
+
+.board-select-control {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+	width: 100%;
+	text-align: left;
+	background: var(--gw-raised);
+	border: 1px solid var(--gw-edge);
+	border-radius: 0;
+	color: var(--gw-text);
+	font-family: var(--gw-sans);
+	font-size: 0.9rem;
+	padding: 0.35rem 0.6rem;
+	cursor: pointer;
+}
+
+.board-select-control:hover:not(:disabled) {
+	background: var(--gw-raised-hover);
+	border-color: var(--gw-edge-hover);
+}
+
+.board-select-control:focus {
+	outline: none;
+	border-color: var(--gw-accent);
+}
+
+.board-select-control.is-open {
+	border-color: var(--gw-accent);
+}
+
+.board-select-control:disabled {
+	background: transparent;
+	border-color: transparent;
+	color: var(--gw-muted);
+	cursor: default;
+	padding-left: 0;
+}
+
+.board-select-value {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.board-select-value.is-placeholder {
+	color: var(--gw-faint);
+}
+
+.board-select-caret {
+	flex: 0 0 auto;
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 5px solid var(--gw-dim);
+}
+
+.board-select-control.is-open .board-select-caret {
+	border-top-color: var(--gw-accent);
+}
+
+/* Overlays rather than displacing: the picker sits mid-card on the session
+   page and a list that pushes content down moves the notes field under the
+   cursor while the menu is open. */
+.board-select-menu {
+	position: absolute;
+	z-index: 1060; /* above the bootstrap modal, which sits at 1050 */
+	top: 100%;
+	left: 0;
+	right: 0;
+	margin: 0.125rem 0 0;
+	padding: 0;
+	list-style: none;
+	max-height: 14rem;
+	overflow-y: auto;
+	background: var(--gw-panel);
+	border: 1px solid var(--gw-edge-strong);
+}
+
+.board-select-option {
+	padding: 0.4rem 0.6rem;
+	font-size: 0.9rem;
+	color: var(--gw-text);
+	cursor: pointer;
+}
+
+.board-select-option.is-active {
+	background: var(--gw-raised-hover);
+}
+
+.board-select-option.is-selected {
+	color: var(--gw-accent);
+}
+
+.board-select-empty {
+	padding: 0.4rem 0.6rem;
+	font-size: 0.85rem;
+	color: var(--gw-faint);
+}
