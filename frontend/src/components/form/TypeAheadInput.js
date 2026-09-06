@@ -1,6 +1,7 @@
 import React from "react";
 import { createField, fieldPresets } from "react-advanced-form";
 import Autosuggest from "react-autosuggest";
+import "./css/TypeAhead.css";
 
 class TypeAheadInput extends React.Component {
   constructor(props) {
@@ -87,7 +88,6 @@ class TypeAheadInput extends React.Component {
       validSync && "valid-sync",
       validAsync && "valid-async",
       invalid && "is-invalid",
-      "sc-EHOje fVJbnH",
     ]
       .filter(Boolean)
       .join(" ");
@@ -108,22 +108,31 @@ class TypeAheadInput extends React.Component {
       autoComplete: "off",
     };
 
+    /*
+    These used to be "sc-bxivhb", "sc-bwzfXH dybocD" and "sc-ifAKCX fatWUN":
+    styled-components class names copied out of a react-advanced-form-addons
+    build. The addons generate those at runtime and the hash changes with the
+    styles, so the frozen copies matched nothing and this field rendered with no
+    layout at all while the addons' own Input beside it laid out fine.
+
+    The wrapper around Autosuggest also carried an inline maxHeight/overflow,
+    which is what put a horizontal scrollbar across the bottom of the create
+    modal and clipped the suggestion list to 200px inside the field. The list
+    overlays now, the same way the location field's does.
+    */
     const wrapperClass = this.props.display
-      ? "sc-bxivhb"
-      : "sc-bxivhb d-none";
+      ? "gw-field"
+      : "gw-field d-none";
 
     return (
       <div className={wrapperClass}>
         {label && (
-          <label className="sc-bwzfXH dybocD" htmlFor={id || name}>
+          <label className="gw-field-label" htmlFor={id || name}>
             {label}
-            {required && " *"}
+            {required && <span className="gw-field-req">*</span>}
           </label>
         )}
-        <div
-          className="sc-ifAKCX fatWUN"
-          style={{ maxHeight: 200, overflow: "auto" }}
-        >
+        <div className="gw-typeahead">
           <Autosuggest
             suggestions={suggestions}
             onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}

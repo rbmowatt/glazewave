@@ -1330,3 +1330,140 @@ input.gw-title-field:focus {
 	margin-top: 5px;
 }
 .gw-row-stars svg { cursor: pointer; }
+
+/* ---------- create modals ---------- */
+
+/*
+ * react-advanced-form-addons renders its fields and its submit button through
+ * styled-components, which injects at runtime and therefore lands after this
+ * file in the cascade. Everything below is a descendant selector for that
+ * reason: matching their specificity would lose on source order.
+ */
+
+.modal .modal-main h2 {
+	font-size: 21px;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+	margin: 0 0 14px;
+}
+
+/* Bootstrap's alert-info is a slab of cyan. This is a caption, not an alarm. */
+.modal .modal-main .alert-info {
+	background: transparent;
+	border: 0;
+	border-left: 2px solid var(--gw-edge-strong);
+	border-radius: 0;
+	color: var(--gw-dim);
+	font-size: 12px;
+	padding: 2px 0 2px 12px;
+	margin: 0 0 20px;
+}
+
+/* FormCard nests .row inside .container inside another .row, all inside a
+   fixed 620px panel. The rows' -15px margins escape and put a horizontal
+   scrollbar across the bottom of the modal. Flattening the grid here also
+   lines the heading, the fields and the uploader up on one left edge, which
+   the nested columns' padding was breaking. */
+.modal .modal-main .row { margin-left: 0; margin-right: 0; }
+.modal .modal-main .container { padding-left: 0; padding-right: 0; }
+.modal .modal-main [class^="col-"],
+.modal .modal-main [class*=" col-"] { padding-left: 0; padding-right: 0; }
+
+.modal .modal-main .gw-field { margin-bottom: 16px; }
+
+/* The addons' own label is a plain styled span; this pulls it onto the same
+   mono eyebrow the rest of the app uses so it matches .gw-field-label. */
+.modal .modal-main label {
+	display: block;
+	font-family: var(--gw-mono);
+	font-size: 10px;
+	line-height: 1.4;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	color: var(--gw-dim);
+	font-weight: 400;
+	margin-bottom: 6px;
+}
+
+.modal .modal-main input[type="text"],
+.modal .modal-main input[type="email"],
+.modal .modal-main input[type="number"],
+.modal .modal-main input[type="datetime-local"],
+.modal .modal-main .form-control,
+.modal .modal-main textarea {
+	display: block;
+	width: 100%;
+	font-size: 13px;
+	padding: 8px 10px;
+	margin: 0;
+	border-radius: 0;
+}
+
+/* The addons render the submit as a styled-components button with no class of
+   ours on it, which is why it came out light on a dark panel. */
+.modal .modal-main button[type="submit"] {
+	background: var(--gw-accent);
+	border: 1px solid var(--gw-accent);
+	border-radius: 0;
+	color: var(--gw-ground);
+	font-family: var(--gw-mono);
+	font-size: 11px;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 10px 18px;
+	box-shadow: none;
+}
+.modal .modal-main button[type="submit"]:hover {
+	background: var(--gw-accent-hover);
+	border-color: var(--gw-accent-hover);
+	color: var(--gw-ground);
+}
+
+/* react-images-upload draws no container of its own, so the picker read as a
+   stray blue link under a line of grey text. */
+.gw-uploader-drop .fileContainer {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 18px 14px;
+	background: var(--gw-raised);
+	border: 1px dashed var(--gw-edge-strong);
+	border-radius: 0;
+	box-shadow: none;
+	text-align: center;
+}
+.gw-uploader-drop .fileContainer:hover { border-color: var(--gw-edge-hover); }
+.gw-uploader-drop .fileContainer p {
+	font-family: var(--gw-mono);
+	font-size: 10px;
+	letter-spacing: 0.08em;
+	color: var(--gw-faint);
+	margin: 0 0 10px;
+}
+.gw-uploader-drop .fileContainer .chooseFileButton {
+	display: inline-block;
+	width: auto;
+	background: none !important;
+	border: 1px solid var(--gw-edge-strong) !important;
+	border-radius: 0 !important;
+	color: var(--gw-muted) !important;
+	font-family: var(--gw-mono);
+	font-size: 11px !important;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	padding: 8px 16px !important;
+	margin: 0 !important;
+}
+.gw-uploader-drop .fileContainer .chooseFileButton:hover {
+	border-color: var(--gw-accent) !important;
+	color: var(--gw-text) !important;
+}
+.gw-uploader-drop .fileContainer .uploadPicturesWrapper { margin-top: 12px; }
+.gw-uploader-drop .fileContainer .uploadPictureContainer {
+	background: var(--gw-panel);
+	border: 1px solid var(--gw-edge-strong);
+	border-radius: 0;
+	padding: 6px;
+	box-shadow: none;
+}

@@ -141,17 +141,23 @@ class UserBoardForm extends React.Component {
 								className="form-control"
 								placeholder="Defaults to shaper + model"
 							/>
-							<ImageUploader
-								withIcon={false}
-								buttonText="Choose images"
-								onChange={this.props.onDrop}
-								imgExtension={[".jpg", ".jpeg", ".png", ".gif"]}
-								/* the library's default label hardcodes its own extension list,
-								   so it keeps saying jpg|gif|png unless it is passed in */
-								label="Max file size: 5mb, accepted: jpg|jpeg|png|gif"
-								maxFileSize={5242880}
-								withPreview={true}
-							/>
+							<div className="gw-field">
+								<label className="gw-field-label">Photos</label>
+								<div className="gw-uploader gw-uploader-drop">
+									<ImageUploader
+										withIcon={false}
+										buttonText="Choose images"
+										onChange={this.props.onDrop}
+										imgExtension={[".jpg", ".jpeg", ".png", ".gif"]}
+										/* the library's default label hardcodes its own extension
+										   list, so it keeps saying jpg|gif|png unless it is
+										   passed in */
+										label="Max file size: 5mb, accepted: jpg|jpeg|png|gif"
+										maxFileSize={5242880}
+										withPreview={true}
+									/>
+								</div>
+							</div>
 						</div>
 						<div className="col-12">
 							<Input
