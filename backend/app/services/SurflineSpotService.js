@@ -13,6 +13,14 @@ const { sameSpotName } = require('./../lib/spot_name');
 // merging them loses the distinction a surf log exists to record.
 const DUPLICATE_RADIUS_M = 75;
 
+/*
+ * A name someone types is a literal, so % and _ have to stop being wildcards
+ * before they reach LIKE. ! is the escape character rather than a backslash:
+ * a backslash stops escaping anything under NO_BACKSLASH_ESCAPES, and that
+ * mode is a server setting no query should depend on.
+ */
+const escapeLike = (value) => String(value).replace(/[!%_]/g, '!$&');
+
 class SurflineSpotService  extends BaseService {
     constructor(){
         super(BaseModel);
@@ -43,6 +51,63 @@ class SurflineSpotService  extends BaseService {
         return sequelize.query(query, {
             type: QueryTypes.SELECT,
             replacements: { lat, lon, radius, limit },
+        });
+    }
+
+    /*
+     * Name search for the location field, distance-ranked when the browser
+     * gave up coordinates. Google cannot do the useful half of this: typing
+     * "cerritos" from La Paz has to put the Cerritos twenty minutes away above
+     * the one in Baja Norte, and only the caller's own position decides that.
+     *
+     * Accent and case folding come from the column's collation, not from
+     * anything here - MySQL 8 defaults to utf8mb4_0900_ai_ci, under which
+     * "suenos" finds "Bahia de los Suenos". If the box was initialised with an
+     * _as_ or _bin collation this silently gets stricter rather than failing,
+     * so confirm it rather than trusting the default.
+     */
+    search({ q, lat, lon, limit })
+    {
+        const hasOrigin = Number.isFinite(lat) && Number.isFinite(lon);
+
+        // Without an origin the column is null and the ordering is name alone.
+        // Sending POINT(NULL, NULL) instead would make ST_Distance_Sphere
+        // return null for every row and sort them arbitrarily.
+        const distance = hasOrigin
+            ? `ST_Distance_Sphere(
+                   POINT(CAST(lon AS DECIMAL(10,7)), CAST(lat AS DECIMAL(10,7))),
+                   POINT(:lon, :lat)
+               )`
+            : 'NULL';
+
+        const query = `
+            SELECT id, name, url,
+                   CAST(lat AS DECIMAL(10,7)) AS lat,
+                   CAST(lon AS DECIMAL(10,7)) AS lon,
+                   ${distance} AS distance_m
+            FROM surfline_spots
+            WHERE name IS NOT NULL
+              AND name LIKE :contains ESCAPE '!'
+              AND lat IS NOT NULL AND lon IS NOT NULL AND lat <> '' AND lon <> ''
+            -- The rank stays in ORDER BY rather than the select list so the row
+            -- shape matches /nearest exactly; both feed the same components.
+            ORDER BY CASE WHEN name LIKE :prefix ESCAPE '!' THEN 0 ELSE 1 END,
+                     ${hasOrigin ? 'distance_m' : 'name'}
+            LIMIT :limit`;
+
+        const replacements = {
+            prefix: `${escapeLike(q)}%`,
+            contains: `%${escapeLike(q)}%`,
+            limit,
+        };
+        if (hasOrigin) {
+            replacements.lat = lat;
+            replacements.lon = lon;
+        }
+
+        return sequelize.query(query, {
+            type: QueryTypes.SELECT,
+            replacements: replacements,
         });
     }
 

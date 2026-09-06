@@ -9,6 +9,12 @@ const DEFAULT_RADIUS_M = 50000;
 const MAX_RADIUS_M = 200000;
 const DEFAULT_LIMIT = 5;
 const MAX_LIMIT = 50;
+const DEFAULT_SEARCH_LIMIT = 8;
+const MAX_SEARCH_LIMIT = 25;
+
+// One character matches most of the table and ranks it by distance, which
+// reads as a broken field rather than a search.
+const MIN_QUERY_LENGTH = 2;
 
 const clamp = (value, fallback, max) => {
   const parsed = Number.parseInt(value, 10);
@@ -43,6 +49,49 @@ router.get('/nearest', function (req, res) {
       res.send({ spots: spots });
     })
     .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while retrieving " + EntityType + "."
+      });
+    });
+});
+
+/*
+ * Name search behind the location field. Open for the same reason /nearest is.
+ *
+ * lat and lon are optional and only rank the results - a search still answers
+ * without them, which is what happens when the browser denies geolocation.
+ *
+ * QueryParser puts q, lat and lon into req.parser.wheres, so as with /nearest
+ * these have to come off req.query or they reach Sequelize as a where clause.
+ */
+router.get('/search', function (req, res) {
+  const q = String(req.query.q || '').trim();
+
+  // An empty result, not a 400: the field calls this on every keystroke and a
+  // rejected request would put an error in the console for normal typing.
+  if (q.length < MIN_QUERY_LENGTH) {
+    res.send({ spots: [] });
+    return;
+  }
+
+  const lat = Number.parseFloat(req.query.lat);
+  const lon = Number.parseFloat(req.query.lon);
+  const hasOrigin =
+    Number.isFinite(lat) && lat >= -90 && lat <= 90 &&
+    Number.isFinite(lon) && lon >= -180 && lon <= 180;
+
+  BaseService.make().search({
+    q: q,
+    lat: hasOrigin ? lat : null,
+    lon: hasOrigin ? lon : null,
+    limit: clamp(req.query.limit, DEFAULT_SEARCH_LIMIT, MAX_SEARCH_LIMIT),
+  })
+    .then(spots => {
+      res.send({ spots: spots });
+    })
+    .catch(err => {
+      console.error('GET /api/spot/search failed:', err);
       res.status(500).send({
         message:
           err.message || "Some error occurred while retrieving " + EntityType + "."
