@@ -109,12 +109,6 @@ class UserBoardForm extends React.Component {
 				>
 					<div className="row">
 						<div className="col-12 ">
-							<Input
-								name="name"
-								label="Nickname"
-								className="form-control"
-								required
-							/>
 							<TypeAheadInput
 								entity={this.props.shapers}
 								name="manufacturer_id"
@@ -141,11 +135,20 @@ class UserBoardForm extends React.Component {
 								display={this.state.manufacturer_id !== null}
 								required
 							/>
+							<Input
+								name="name"
+								label="Nickname (optional)"
+								className="form-control"
+								placeholder="Defaults to shaper + model"
+							/>
 							<ImageUploader
 								withIcon={false}
 								buttonText="Choose images"
 								onChange={this.props.onDrop}
-								imgExtension={[".jpg", ".gif", ".png", ".gif"]}
+								imgExtension={[".jpg", ".jpeg", ".png", ".gif"]}
+								/* the library's default label hardcodes its own extension list,
+								   so it keeps saying jpg|gif|png unless it is passed in */
+								label="Max file size: 5mb, accepted: jpg|jpeg|png|gif"
 								maxFileSize={5242880}
 								withPreview={true}
 							/>
