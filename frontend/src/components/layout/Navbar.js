@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import cognitoUtils from './../../lib/utils/cognito'
+import { isDemoPublic } from './../../lib/utils/demo'
 import './css/Nav.css'
 
 const onSignOut = (e) => {
@@ -40,7 +41,12 @@ const Navbar = props =>{
                   <span className="gw-nav-avatar" />
                 </>
               ) : (
-                <a className="gw-link" href={cognitoUtils.getCognitoSignInUri()}>SIGN IN</a>
+                <>
+                  {isDemoPublic() &&
+                    <NavLink className="gw-link" to={'/demo'}>TRY THE DEMO</NavLink>
+                  }
+                  <a className="gw-link" href={cognitoUtils.getCognitoSignInUri()}>SIGN IN</a>
+                </>
               )}
               </div>
           </div>

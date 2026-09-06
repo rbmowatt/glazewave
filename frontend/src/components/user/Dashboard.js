@@ -59,15 +59,6 @@ const mapDispachToProps = (dispatch) => {
 	};
 };
 
-// Sessions carry their Location through the `withs` above, so the spot count
-// is already in the store -- there is no endpoint that returns it.
-const distinctSpots = (sessions) =>
-	new Set(
-		sessions
-			.filter((session) => session.Location && session.Location.name)
-			.map((session) => session.Location.name.toLowerCase())
-	).size;
-
 class UserDashboard extends React.Component {
 	componentDidMount() {
 		if (this.props.session.isLoggedIn) {
@@ -90,12 +81,12 @@ class UserDashboard extends React.Component {
 					<aside className="gw-col">
 						<ProfileCard
 							boardCount={boards.length}
-							spotCount={distinctSpots(user_sessions)}
+							spotCount={averages.distinct_spots || 0}
 						/>
 					</aside>
 
 					<section className="gw-col gw-col-main">
-						<RatingTrend sessions={user_sessions} />
+						<RatingTrend trend={averages.rating_trend} />
 						<hr className="gw-rule" />
 						<Conditions values={averages} title="Average conditions you surf" />
 					</section>

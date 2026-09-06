@@ -3,30 +3,25 @@ import moment from "moment";
 
 const W = 620;
 const H = 196;
-const MONTHS = 12;
 const MAX_RATING = 10;
 
-// Sessions arrive from the dashboard's own store slice, which holds every
-// session for the user -- the DASHBOARD_LIST_LIMIT is applied at render, not
-// in the request, so there is no extra call to make here.
-const monthlyAverages = (sessions) => {
-	const start = moment().startOf("month").subtract(MONTHS - 1, "months");
-	const buckets = new Array(MONTHS).fill(null).map(() => ({ sum: 0, count: 0 }));
-
-	sessions.forEach((session) => {
-		const rating = Number(session.rating);
-		if (!rating) return;
-		const index = moment(session.createdAt).startOf("month").diff(start, "months");
-		if (index < 0 || index >= MONTHS) return;
-		buckets[index].sum += rating;
-		buckets[index].count += 1;
-	});
-
-	return buckets.map((bucket, index) => ({
-		label: moment(start).add(index, "months").format("MMM").toUpperCase(),
-		value: bucket.count ? bucket.sum / bucket.count : null,
+/*
+ * The series is aggregated in Elasticsearch and arrives on the averages
+ * payload, already twelve monthly buckets with the gaps filled in.
+ *
+ * It used to be computed here from the dashboard's session list, bucketed on
+ * createdAt. Two things were wrong with that. The list is capped at twenty
+ * rows, so the trend was drawn from the twenty most recent sessions whatever
+ * the header claimed. And createdAt is when a session was typed, not when it
+ * was surfed, so every backdated session landed in the wrong month - a whole
+ * backfilled history collapses into the day it was entered and the chart falls
+ * through to the empty state.
+ */
+const toSeries = (trend) =>
+	(trend || []).map((bucket) => ({
+		label: moment(bucket.month, "YYYY-MM").format("MMM").toUpperCase(),
+		value: bucket.rating,
 	}));
-};
 
 const toPoints = (series) =>
 	series
@@ -56,10 +51,11 @@ const smoothPath = (points) => {
 };
 
 const RatingTrend = (props) => {
-	const sessions = props.sessions || [];
-	const series = monthlyAverages(sessions);
+	const series = toSeries(props.trend);
 	const points = toPoints(series);
-	const rated = sessions.filter((session) => Number(session.rating)).length;
+	// A session can be saved without a rating, so this is not the month's
+	// session count.
+	const rated = (props.trend || []).reduce((sum, bucket) => sum + (bucket.rated || 0), 0);
 
 	return (
 		<div className="d-flex flex-column" style={{ gap: "24px" }}>

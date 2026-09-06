@@ -8,6 +8,7 @@ import apiConfig from '../../config/api.js';
 import {logInUser, loadUser} from './../../actions/user';
 import store from './../../store/index'
 import TokenStorage from './../utils/token_storage';
+import { startDemoSession, isDemoSession, storedSession } from './demo';
 const axios = require('axios');
 
 
@@ -126,6 +127,22 @@ const formatSessionObject = (id, result) =>
 
 export const refresh = (id = null) =>
 {
+  /*
+   * A demo session has no Cognito user to getSession() from. This is called
+   * from hasSession() five minutes before expiry and from the api middleware
+   * on any 401, so without this branch a demo dies an hour in by redirecting
+   * to the hosted UI - which reads as the demo being broken rather than as the
+   * token having aged out.
+   */
+  if (isDemoSession()) {
+    const previous = storedSession();
+    return startDemoSession(previous.demoKey).then(session => {
+      TokenStorage.setToken({access_token : session.jwt, refresh_token : null});
+      setSessionCookie(session);
+      store.dispatch({ type: SET_SESSION, session });
+      return session;
+    });
+  }
   return new Promise((resolve, reject) => {
     const auth = createCognitoAuth();
     auth.userhandler = {
@@ -146,7 +163,15 @@ export const refresh = (id = null) =>
 
 // Sign out of the current session (will redirect to signout URI)
 const signOutCognitoSession = () => {
+  const wasDemo = isDemoSession();
   clearSession();
+  TokenStorage.clearToken();
+  if (wasDemo) {
+    // auth.signOut() redirects to the Cognito hosted signout, which has no
+    // record of this session and bounces to an error page rather than home.
+    window.location.href = '/';
+    return;
+  }
   const auth = createCognitoAuth()
   auth.signOut()
 }

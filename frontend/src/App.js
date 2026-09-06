@@ -11,6 +11,7 @@ import PrivateRoute from './components/auth/PrivateRoute';
 import Page404 from './components/home/Page404';
 import Home from './components/home/Home';
 import Login from './components/home/Login';
+import Demo from './components/home/Demo';
 import UserIndex from './components/user/UserIndex';
 
 import CreateUser from './components/user/Create';
@@ -46,6 +47,7 @@ class App extends React.Component{
         <Switch>
           <Route path={'/'} exact component={Home} />
           <Route path={'/login'} exact component={Login} />
+          <Route path={'/demo'} exact component={Demo} />
           <Route path={'/logout'} exact component={Home} />
           
           <PrivateRoute path={'/user'} exact component={UserIndex} session={this.props.session} />

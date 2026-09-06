@@ -1,7 +1,7 @@
 import "./../css/BoardPicker.css";
 import * as React from "react";
 import { connect } from "react-redux";
-import InlineEdit, { InputType } from "riec";
+import BoardSelect from "./BoardSelect";
 import {
 	loadUserBoard,
 	UserBoardCreatedCleared,
@@ -129,22 +129,15 @@ class BoardPicker extends React.Component {
 							/>
 						</div>
 						<div className="col-7">
-							<div
-								className={
-									isOwner
-										? "board-select row"
-										: "board-select-disabled row"
-								}
-							>
-								<InlineEdit
-									type={InputType.Select}
-									value={board.name || "Select A Board"}
-									defaultValue={board.name}
-									onChange={this.props.onChange}
+							<div className="board-select">
+								<BoardSelect
+									value={board.id}
 									options={this.props.boards}
-									valueKey="id"
-									labelKey="name"
-									editClass="form-control"
+									onChange={this.props.onChange}
+									disabled={!isOwner}
+									placeholder={
+										isOwner ? "Select a board" : "No board selected"
+									}
 								/>
 							</div>
 

@@ -444,10 +444,20 @@ class SessionView extends Component {
                             onBlur={this.onLocationBlur}
                             value={session.location_id}
                             disable={!isOwner}
+                            /*
+                             * Location renders an empty input and shows the
+                             * saved place through the placeholder only, so a
+                             * null here is a blank box with no hint that a
+                             * location was ever set. A spot picked from the
+                             * nearest-spot chips has a name and a point and no
+                             * address, which is why name is the fallback rather
+                             * than a second null.
+                             */
                             placeholder={
-                              session.Location
-                                ? session.Location.formatted_address
-                                : "No Location Specified"
+                              (session.Location &&
+                                (session.Location.formatted_address ||
+                                  session.Location.name)) ||
+                              "No Location Specified"
                             }
                           />
                         </div>

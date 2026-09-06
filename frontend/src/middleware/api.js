@@ -38,7 +38,11 @@ const apiMiddleware = ({ dispatch }) => (next) => (action) => {
         originalRequest._retry = true;
         return refresh()
           .then((res) => {
-              TokenStorage.setToken(res.jwt);
+              // setToken reads .access_token off its argument. Passing the bare
+              // string wrote the literal "undefined" into localStorage, so the
+              // retry here succeeded and the next page load signed out. Only
+              // shows up once a token has actually aged out.
+              TokenStorage.setToken({access_token : res.jwt, refresh_token : null});
               axios.defaults.headers.common["Authorization"] = `Bearer ${res.jwt}`;
               return axios(originalRequest);
           });
