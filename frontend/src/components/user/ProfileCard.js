@@ -6,6 +6,7 @@ import { RIEInput } from '@attently/riek';
 import moment from 'moment';
 import UserRequests from './../../requests/UserRequests';
 import { s3Conf } from './../../config/s3';
+import Modal from './../layout/Modal';
 import { loadUser, updateUser, updateUserImage, loadUserAverages } from './../../actions/user';
 
 const mapStateToProps = state => {
@@ -28,8 +29,11 @@ class ProfileCard extends React.Component {
             board_id: null,
             manufacturer_id: null,
             uploaderInstance: 1,
-            uploadError: null
+            uploadError: null,
+            showImage: false
         };
+        this.showImage = this.showImage.bind(this);
+        this.hideImage = this.hideImage.bind(this);
         this.onDrop = this.onDrop.bind(this);
         this.saveField = this.saveField.bind(this);
     }
@@ -40,6 +44,9 @@ class ProfileCard extends React.Component {
             this.props.loadUserAverages(this.props.session, { id: this.props.session.user.id });
         }
     }
+
+    showImage() { this.setState({ showImage: true }); }
+    hideImage() { this.setState({ showImage: false }); }
 
     // riek hands back {[propName]: value}, which is already the PUT body.
     saveField(data) {
@@ -85,7 +92,12 @@ class ProfileCard extends React.Component {
         return (
             <React.Fragment>
                 <div className="gw-profile-head">
-                    <img className="gw-profile-img" src={image} alt="" />
+                    <img
+                        className="gw-profile-img"
+                        src={image}
+                        alt=""
+                        onClick={this.showImage}
+                    />
                     <div>
                         <div className="gw-profile-name gw-inline-edit">
                             <RIEInput
@@ -169,6 +181,23 @@ class ProfileCard extends React.Component {
                         )}
                     </div>
                 </div>
+                <Modal
+                    show={this.state.showImage}
+                    handleClose={this.hideImage}
+                    className="gw-lightbox"
+                >
+                    <div className="gw-lightbox-body">
+                        <button
+                            type="button"
+                            className="gw-lightbox-close"
+                            onClick={this.hideImage}
+                            aria-label="Close"
+                        >
+                            &times;
+                        </button>
+                        <img src={image} alt="" />
+                    </div>
+                </Modal>
             </React.Fragment>
         )
     }

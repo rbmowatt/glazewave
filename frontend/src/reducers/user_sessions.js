@@ -36,9 +36,20 @@ const user_sessions = (state = initialState, action) => {
         newState = state.filter((item) => item.id !== action.payload);
         return newState;
     case USER_SESSION_UPDATED :
-        newState = {...state, ...{selected : 
-          {...state.selected, ...action.payload}
-        }}
+        // The index renders from data, not from selected, so a rating changed
+        // inline there redrew nothing until this merged both. It merges rather
+        // than replaces because the PUT answers with the session row alone:
+        // overwriting would drop the Location, UserBoard and SessionImages the
+        // row needs to render.
+        newState = {...state,
+          selected : {...state.selected, ...action.payload},
+          data : (action.payload && action.payload.id)
+            ? state.data.map((row) =>
+                Number(row.id) === Number(action.payload.id)
+                  ? {...row, ...action.payload}
+                  : row)
+            : state.data
+        }
         return newState;
     case USER_SESSION_CREATED_CLEARED :
       newState = {...state, ...{created : false}}

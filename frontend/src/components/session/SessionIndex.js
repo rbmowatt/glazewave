@@ -10,6 +10,7 @@ import SessionCard from "./SessionCard";
 import {
   loadUserSessions,
   deleteUserSession,
+  updateUserSession,
   UserSessionsCleared,
 } from "./../../actions/user_session";
 import Create from "./Create";
@@ -47,6 +48,7 @@ const mapDispachToProps = (dispatch) => {
   return {
     loadSessions: (session, params) => dispatch(loadUserSessions(session, params)),
     deleteSession: (session, id) => dispatch(deleteUserSession(session, id)),
+    updateSession: (session, params) => dispatch(updateUserSession(session, params)),
     clearSessions: () => dispatch(UserSessionsCleared()),
   };
 };
@@ -68,6 +70,7 @@ class SessionIndex extends Component {
     this.editSession = this.editSession.bind(this);
     this.viewSession = this.viewSession.bind(this);
     this.showModal = this.showModal.bind(this);
+    this.rateSession = this.rateSession.bind(this);
   }
 
   componentDidMount() {
@@ -96,6 +99,15 @@ class SessionIndex extends Component {
         },
       ],
     });
+  }
+
+  /*
+  The list is rendered from redux, not from the Elasticsearch hit, so the row
+  redraws off the PUT response. The reindex the model's afterUpdate hook queues
+  is what a later query sees; it is not what updates this row.
+  */
+  rateSession(id, rating) {
+    this.props.updateSession(this.props.session, { id: id, data: { rating: rating } });
   }
 
   editSession(sessionId) {
@@ -312,6 +324,7 @@ class SessionIndex extends Component {
                             deleteSession={this.deleteSession}
                             viewSession={this.viewSession}
                             editSession={this.editSession}
+                            onRate={this.rateSession}
                           />
                         ))}
                     </div>

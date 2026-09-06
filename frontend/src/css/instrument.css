@@ -1275,3 +1275,54 @@ input.gw-title-field:focus {
 	letter-spacing: 0.08em;
 	padding: 5px 9px;
 }
+
+/* ---------- profile photo lightbox ---------- */
+
+.gw-profile-img { cursor: pointer; }
+.gw-profile-img:hover { border-color: var(--gw-accent); }
+
+/* .modal .modal-main pins a 620px form width; the lightbox is sized by the
+   photo instead, and overflow has to stay visible or the close button that
+   sits outside the corner is clipped. */
+.modal.gw-lightbox .modal-main {
+	width: auto;
+	background: var(--gw-panel);
+	border: 1px solid var(--gw-edge-strong);
+	padding: 10px;
+	overflow: visible;
+}
+.gw-lightbox-body { position: relative; line-height: 0; }
+.gw-lightbox-body img {
+	display: block;
+	max-width: calc(100vw - 88px);
+	max-height: calc(100vh - 120px);
+	object-fit: contain;
+}
+.gw-lightbox-close {
+	position: absolute;
+	top: -13px;
+	right: -13px;
+	width: 26px;
+	height: 26px;
+	line-height: 1;
+	padding: 0;
+	background: var(--gw-panel);
+	border: 1px solid var(--gw-edge-strong);
+	color: var(--gw-muted);
+	font-size: 17px;
+	cursor: pointer;
+}
+.gw-lightbox-close:hover {
+	color: var(--gw-text);
+	border-color: var(--gw-edge-hover);
+}
+
+/* ---------- inline rating on the sessions index ---------- */
+
+.gw-row-stars {
+	display: flex;
+	justify-content: flex-end;
+	gap: 1px;
+	margin-top: 5px;
+}
+.gw-row-stars svg { cursor: pointer; }
