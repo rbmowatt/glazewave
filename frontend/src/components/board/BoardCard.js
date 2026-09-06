@@ -5,6 +5,7 @@ import { faEdit } from "@fortawesome/free-solid-svg-icons";
 import { s3Conf } from "./../../config/s3";
 import { boardPlaceholder } from "./../../lib/utils/placeholder";
 import { withRouter } from "react-router";
+import StarBar from "./../layout/StarBar";
 
 const HIGH_RATING = 8;
 
@@ -25,6 +26,7 @@ const BoardCard = (props) => {
 
 	const rating = Number(board.rating) || 0;
 	const isPublic = Number(board.is_public) === 1;
+	const canRate = Boolean(props.isOwner && props.onRate);
 
 	const cells = [];
 	if (props.detailed && board.size) cells.push(`SIZE ${board.size}`);
@@ -65,7 +67,19 @@ const BoardCard = (props) => {
 					<div className={`gw-row-rating${rating >= HIGH_RATING ? " is-high" : ""}`}>
 						{rating ? rating.toFixed(1) : "--"}
 					</div>
-					<div className="gw-row-score-label">Avg</div>
+					{canRate ? (
+						// Everything else in the row opens the board, so the
+						// stars have to keep their click to themselves.
+						<div className="gw-row-stars" onClick={(e) => e.stopPropagation()}>
+							<StarBar
+								stars={rating}
+								size="xs"
+								onClick={({ rating: picked }) => props.onRate(board.id, picked)}
+							/>
+						</div>
+					) : (
+						<div className="gw-row-score-label">Avg</div>
+					)}
 				</div>
 			) : (
 				<div className={`gw-row-rating${rating >= HIGH_RATING ? " is-high" : ""}`} onClick={open}>

@@ -8,6 +8,7 @@ import BoardCard from "./../board/BoardCard";
 import {
 	loadUserBoards,
 	deleteUserBoard,
+	updateUserBoard,
 	UserBoardsCleared,
 	UserBoardCreatedCleared,
 } from "./../../actions/user_board";
@@ -50,6 +51,7 @@ const mapDispachToProps = (dispatch) => {
 	return {
 		loadBoards: (userSession, params) =>dispatch(loadUserBoards(userSession, params)),
 		deleteBoard: (userSession, id) =>dispatch(deleteUserBoard(userSession, id)),
+		updateBoard: (userSession, params) => dispatch(updateUserBoard(userSession, params)),
 		clearBoards: () => dispatch(UserBoardsCleared()),
 		clearCreatedBoard: () => dispatch(UserBoardCreatedCleared()),
 	};
@@ -72,6 +74,16 @@ class BoardIndex extends Component {
 		this.deleteBoard = this.deleteBoard.bind(this);
 		this.editBoard = this.editBoard.bind(this);
 		this.viewBoard = this.viewBoard.bind(this);
+		this.rateBoard = this.rateBoard.bind(this);
+	}
+
+	/*
+	The rating lives on user_boards, so this only ever touches the rider's own
+	row. The catalog Board it points at is not in the payload and is never
+	written from here.
+	*/
+	rateBoard(id, rating) {
+		this.props.updateBoard(this.props.userSession, { id: id, data: { rating: rating } });
 	}
 
 	componentDidMount() {
@@ -150,6 +162,29 @@ class BoardIndex extends Component {
 			bool: { should: filters },
 		},
 	});
+
+	/*
+	Elasticsearch picks which boards are on the page; MySQL orders them.
+	elasticResultHandler hands the hit ids to /api/user_board and order_by does
+	the sorting, so a fetch is always current. Nothing refetches after an inline
+	rating though, and the row would sit in its old slot until something else
+	did. Ratings are INTEGER, so this repeats the comparison the server just
+	made rather than approximating it.
+
+	Which page a board belongs on still comes from the index, which is about a
+	second behind a write.
+	*/
+	sortedBoards = () => {
+		const boards = this.props.boards || [];
+		const order = this.state.selectedSortOrder || DEFAULT_SORT;
+		const cut = order.lastIndexOf("_");
+		if (cut === -1) return boards;
+		if (order.slice(0, cut) !== "rating") return boards;
+		const direction = order.slice(cut + 1).toLowerCase() === "asc" ? 1 : -1;
+		return boards
+			.slice()
+			.sort((a, b) => ((Number(a.rating) || 0) - (Number(b.rating) || 0)) * direction);
+	};
 
 	/**
 	 * We need to keep track of sort order so that when we ask API to hydrrate items
@@ -332,8 +367,7 @@ class BoardIndex extends Component {
 									paginationAt="both"
 									render={({ data }) => (
 										<div className="gw-list">
-											{this.props.boards &&
-												this.props.boards.map((board) => (
+											{this.sortedBoards().map((board) => (
 													<BoardCard
 														detailed
 														board={board}
@@ -342,6 +376,7 @@ class BoardIndex extends Component {
 														viewBoard={this.boardCreated}
 														editBoard={this.editBoard}
 														isOwner={board.user_id === this.props.userSession.user.id}
+														onRate={this.rateBoard}
 													/>
 												))}
 										</div>

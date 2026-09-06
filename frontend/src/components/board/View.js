@@ -9,6 +9,7 @@ import { Form } from "react-advanced-form";
 import { RIEInput, RIETextArea } from "@attently/riek";
 import SessionCard from "./../session/SessionCard";
 import MainContainer from "./../layout/MainContainer";
+import PrivacyToggle from "./../layout/PrivacyToggle";
 import StarBar from "./../layout/StarBar";
 import UserBoardRequests from "./../../requests/UserBoardRequests";
 import ImageUploader from "react-images-upload";
@@ -181,12 +182,30 @@ class BoardView extends Component {
 			  );
 	};
 
+	/*
+	Every edit on this page lands on user_boards through PUT /api/user_board/:id.
+	The catalog row the board points at is reached through board.Board and is
+	never in this payload: changing the shaper or the model repoints board_id,
+	it does not rewrite the model everyone else sees.
+	*/
 	submitUpdate = (data) => {
 		this.props.editUserBoard(this.props.session, {
 			id: this.props.match.params.id,
 			data: data,
 		});
 		this.setState(data);
+	};
+
+	// The API sends is_public back as a MySQL tinyint, so it arrives as 1/0 on
+	// some paths and true/false on others. Strict === true misses the tinyint.
+	isPublic = () => Number(this.props.board.is_public) === 1;
+
+	// Compared against the stored record rather than local state, so a second
+	// click is not swallowed by a guard reading a value the toggle never wrote.
+	onPrivacyChange = (e) => {
+		const next = parseInt(e.nextValue, 10) === 1;
+		if (next === this.isPublic()) return;
+		this.submitUpdate({ is_public: next ? 1 : 0 });
 	};
 
 	returnToIndex = (e) => {
@@ -269,7 +288,16 @@ class BoardView extends Component {
 										className="gw-title-field"
 									/>
 								</div>
-								<div className="col-6"></div>
+								<div className="col-6">
+									{isOwner && (
+										<div className="privacy text-right">
+											<PrivacyToggle
+												value={this.isPublic() ? "1" : "0"}
+												onChange={this.onPrivacyChange}
+											/>
+										</div>
+									)}
+								</div>
 							</div>
 							<div className="row">
 								<div className="preview col-6">
