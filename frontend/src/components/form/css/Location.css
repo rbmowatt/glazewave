@@ -21,3 +21,54 @@
   padding: 0.4rem 0.75rem;
   font-size: 0.9rem;
 }
+
+/* Sits below the input and in flow, so the suggestion overlay covers it once
+   someone starts typing - by then the chips are the wrong affordance anyway. */
+.location-nearby {
+  margin-top: 0.5rem;
+}
+
+.location-nearby-label {
+  font-family: var(--gw-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gw-faint);
+  margin-bottom: 0.35rem;
+}
+
+.location-nearby-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.location-nearby-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  background: var(--gw-raised);
+  border: 1px solid var(--gw-edge);
+  border-radius: 999px;
+  color: var(--gw-text);
+  font-size: 0.8rem;
+  padding: 0.25rem 0.7rem;
+  cursor: pointer;
+}
+
+.location-nearby-chip:hover {
+  background: var(--gw-raised-hover);
+  border-color: var(--gw-edge-hover);
+}
+
+.location-nearby-distance {
+  font-family: var(--gw-mono);
+  font-size: 0.65rem;
+  color: var(--gw-dim);
+}
+
+.location-nearby-credit {
+  font-size: 0.6rem;
+  color: var(--gw-faint);
+  margin-top: 0.35rem;
+}

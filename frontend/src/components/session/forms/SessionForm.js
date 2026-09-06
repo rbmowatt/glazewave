@@ -140,6 +140,7 @@ class SessionForm extends React.Component {
                 className="form-control"
                 onChange={this.onChange}
                 previewConditions
+                prefillNearby
                 at={this.sessionUtc()}
                 value={this.state.location_id}
               />

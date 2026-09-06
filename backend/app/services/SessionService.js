@@ -124,13 +124,13 @@ class SessionService  extends BaseService {
     // the lookup and the save together and never rejected, so a failed details
     // call left the request hanging open instead of returning an error.
     //
-    // The return value is not usable: Sequelize 5 upsert() resolves a boolean,
-    // so this hands back an instance for a location already stored and true
-    // for one it just created. Read the row back by primary key instead.
+    // resolve() takes either a Google place id or a surfline_spots id and always
+    // resolves the instance - Sequelize 5 upsert() answers a boolean, so it
+    // reads the row back itself rather than handing that boolean up.
     async ensureLocation(params)
     {
         if(!params.location_id) return null;
-        return LocationService.make().createFromGoogle(params.location_id);
+        return LocationService.make().resolve(params.location_id);
     }
 }
 
