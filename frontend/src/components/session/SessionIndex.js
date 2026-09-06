@@ -172,6 +172,30 @@ class SessionIndex extends Component {
     },
   });
 
+  /*
+  Elasticsearch picks which sessions are on the page; MySQL orders them.
+  elasticResultHandler hands the hit ids to /api/session and order_by does the
+  sorting, so the order a fetch returns is always current. Nothing refetches
+  after an inline rating though, and the row would sit in its old slot until
+  something else did. Ratings are INTEGER, so this repeats the comparison the
+  server just made rather than approximating it.
+
+  Which page a session belongs on still comes from the index, and that is
+  roughly a second behind a write. A rating that should jump a session onto
+  page one gets there on the next query, not this render.
+  */
+  sortedSessions = () => {
+    const sessions = this.props.sessions || [];
+    const order = this.state.selectedSortOrder || DEFAULT_SORT;
+    const cut = order.lastIndexOf("_");
+    if (cut === -1) return sessions;
+    if (order.slice(0, cut) !== "rating") return sessions;
+    const direction = order.slice(cut + 1).toLowerCase() === "asc" ? 1 : -1;
+    return sessions
+      .slice()
+      .sort((a, b) => ((Number(a.rating) || 0) - (Number(b.rating) || 0)) * direction);
+  };
+
   render() {
     const showModal = this.showModal;
     const scopeQuery = this.scopeQuery(this.state.esFilters);
@@ -314,8 +338,7 @@ class SessionIndex extends Component {
                   paginationAt="both"
                   render={({ data }) => (
                     <div className="gw-list">
-                      {this.props.sessions &&
-                        this.props.sessions.map((session) => (
+                      {this.sortedSessions().map((session) => (
                           <SessionCard
                             detailed
                             isOwner={session.user_id === this.props.session.user.id}
