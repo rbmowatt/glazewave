@@ -26,6 +26,7 @@ import {
 	ReactiveList
 } from "@appbaseio/reactivesearch";
 import { refresh } from './../../lib/utils/cognito';
+import { scopeFromSearch, searchWithScope } from './../../lib/utils/scope';
 
 
 const DEFAULT_SORT = "created_at_DESC";
@@ -64,13 +65,14 @@ const relations = {
 class BoardIndex extends Component {
 	constructor(props) {
 		super(props);
+		const showAll = scopeFromSearch(props.location && props.location.search);
 		this.state = {
 			// /board/create redirects here carrying this flag, so a bookmark or an
 			// old link still lands on the create form rather than the bare index.
 			show: !!(props.location && props.location.state && props.location.state.createBoard),//toggle for modal
 			selectedSortOrder: DEFAULT_SORT,
-			showAll: 0,//whether we are are showing only user boards or all public boards
-			filters: [{ match: { user_id: props.userSession.user.id } }],//a set of default filters to be sent to elastic
+			showAll: showAll,//whether we are are showing only user boards or all public boards
+			filters: BoardIndex.scopeFilters(props.userSession.user.id, showAll),//a set of default filters to be sent to elastic
 			mlVal : []
 		};
 		this.deleteBoard = this.deleteBoard.bind(this);
@@ -145,13 +147,28 @@ class BoardIndex extends Component {
 	/**
 	 * Will set some additional filters on elaticsearch
 	 */
-	setScope = (e) => {
-		const scopes = [{ match: { user_id: this.props.userSession.user.id } }]; //we always want to match against user id
-		if (parseInt(e.nextValue) === 1) {
-			const isPublic = { match: { is_public: 1 } }; //user also wants to see all public boards
-			scopes.push(isPublic);
+	static scopeFilters(userId, showAll) {
+		const scopes = [{ match: { user_id: userId } }]; //we always want to match against user id
+		if (parseInt(showAll) === 1) {
+			scopes.push({ match: { is_public: 1 } }); //user also wants to see all public boards
 		}
-		this.setState({ filters: scopes, showAll: parseInt(e.nextValue), mlVal : [] });
+		return scopes;
+	}
+
+	setScope = (e) => {
+		const showAll = parseInt(e.nextValue);
+		// replace, not push: the scope is a view of this page, not a step back
+		// to it. goBack() from a board still lands on the list as it was left.
+		this.props.history.replace({
+			pathname: this.props.location.pathname,
+			search: searchWithScope(this.props.location.search, showAll),
+			state: this.props.location.state,
+		});
+		this.setState({
+			filters: BoardIndex.scopeFilters(this.props.userSession.user.id, showAll),
+			showAll: showAll,
+			mlVal: [],
+		});
 	};
 
 	// ReactiveSearch decides whether to re-run a component's defaultQuery by

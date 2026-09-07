@@ -16,6 +16,7 @@ import {
 import Create from "./Create";
 import Modal from "./../layout/Modal";
 import ScopePicker from "./../layout/ScopePicker";
+import { scopeFromSearch, searchWithScope } from './../../lib/utils/scope';
 import NearestSpots from "./../reports/surfline/NearestSpots";
 import Report from "./../reports/conditions/Report";
 import {
@@ -65,8 +66,8 @@ class SessionIndex extends Component {
       // old link still lands on the create form rather than the bare index.
       show: !!(props.location && props.location.state && props.location.state.createSession),//whether modal is showing or not
       selectedSortOrder: DEFAULT_SORT,
-      showAll: 0,//whether or not we are showing user + public sessiions
-      esFilters: []//an array of filters to be added to any ES queries
+      showAll: scopeFromSearch(props.location && props.location.search),//whether or not we are showing user + public sessiions
+      esFilters: []//an array of filters to be added to any ES queries, filled by the componentDidMount scope seed
     };
     this.deleteSession = this.deleteSession.bind(this);
     this.editSession = this.editSession.bind(this);
@@ -76,8 +77,10 @@ class SessionIndex extends Component {
   }
 
   componentDidMount() {
-    //set the initial scope to private
-    this.setScope({nextValue : 0});
+    // esFilters starts empty because the user id is not known until props are
+    // in hand. Seeding from state rather than a literal 0 is what lets a return
+    // from a session page keep the scope the URL is still carrying.
+    this.setScope({ nextValue: this.state.showAll });
   }
 
   componentWillUnmount() {
@@ -155,12 +158,20 @@ class SessionIndex extends Component {
   };
 
   setScope = (e) => {
+    const showAll = parseInt(e.nextValue) === 1 ? 1 : 0;
     const scopes = [{ match: { user_id: this.props.session.user.id } }];
-    if (e.nextValue && parseInt(e.nextValue) === 1) {
+    if (showAll === 1) {
       const isPublic = { match: { is_public: 1 } };
       scopes.push(isPublic);
     }
-    this.setState({ esFilters: scopes, showAll: parseInt(e.nextValue) });
+    // replace, not push: the scope is a view of this page, not a step back to
+    // it. goBack() from a session still lands on the list as it was left.
+    this.props.history.replace({
+      pathname: this.props.location.pathname,
+      search: searchWithScope(this.props.location.search, showAll),
+      state: this.props.location.state,
+    });
+    this.setState({ esFilters: scopes, showAll: showAll });
   };
 
   // ReactiveSearch decides whether to re-run a component's defaultQuery by
