@@ -519,6 +519,45 @@ div.details div.privacy input[type="radio"] {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+/* ---------- owner badge ---------- */
+
+/* Sized off .gw-nav-avatar rather than sharing it: the navbar circle is 28px
+   and swamps a list row. Same object-fit rule though, because the same class
+   covers both the <img> and the empty-state <span>. */
+.gw-owner {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	margin-top: 6px;
+	min-width: 0;
+}
+.gw-owner-avatar {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background: var(--gw-edge);
+	border: 1px solid var(--gw-edge-strong);
+	object-fit: cover;
+	flex-shrink: 0;
+}
+.gw-owner-name {
+	font-family: var(--gw-mono);
+	font-size: 10px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--gw-dim);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* The detail pages sit under a title rather than in a dense row, so the badge
+   gets room to breathe and a slightly larger circle. */
+.session-title .gw-owner,
+.gw-title-block .gw-owner { margin-top: 10px; }
+.session-title .gw-owner-avatar,
+.gw-title-block .gw-owner-avatar { width: 22px; height: 22px; }
+
 .gw-row-rating {
 	font-family: var(--gw-mono);
 	font-size: 15px;

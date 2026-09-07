@@ -15,6 +15,7 @@ import ImageGallery from "react-image-gallery";
 import Location from "./../form/Location";
 import PrivacyToggle from "./../layout/PrivacyToggle";
 import MainContainer from "./../layout/MainContainer";
+import OwnerBadge from "./../layout/OwnerBadge";
 import StarBar from "./../layout/StarBar";
 import SessionRequests from "./../../requests/SessionRequests";
 import { loadUserBoards } from "./../../actions/user_board";
@@ -45,7 +46,7 @@ const mapStateToProps = (state) => {
 };
 
 const withs = {
-  session: ["Location", "UserBoard.UserBoardImage", "SessionData"],
+  session: ["Location", "UserBoard.UserBoardImage", "SessionData", "User"],
 };
 
 const mapDispachToProps = (dispatch) => {
@@ -303,6 +304,7 @@ class SessionView extends Component {
                         {session.title}
                       </h1>
                     )}
+                    <OwnerBadge user={session.User} label="Surfed by" />
                     {isOwner && !this.state.editingTitle && (
                       <div className="gw-title-actions">
                         <button

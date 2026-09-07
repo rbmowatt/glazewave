@@ -54,7 +54,7 @@ const mapDispachToProps = (dispatch) => {
 };
 
 const relations = {
-  user_session: ["UserBoard", "Location", "SessionImage", "SessionData"],
+  user_session: ["UserBoard", "Location", "SessionImage", "SessionData", "User"],
 };
 
 class SessionIndex extends Component {

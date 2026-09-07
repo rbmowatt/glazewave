@@ -6,6 +6,7 @@ import { s3Conf } from "./../../config/s3";
 import { boardPlaceholder } from "./../../lib/utils/placeholder";
 import { withRouter } from "react-router";
 import StarBar from "./../layout/StarBar";
+import OwnerBadge from "./../layout/OwnerBadge";
 
 const HIGH_RATING = 8;
 
@@ -44,6 +45,7 @@ const BoardCard = (props) => {
 					}
 				</div>
 				<div className="gw-row-meta">{meta}</div>
+				<OwnerBadge user={board.User} />
 				{cells.length > 0 &&
 					<div className="gw-row-stats">
 						{cells.map(cell => <div key={cell}>{cell}</div>)}

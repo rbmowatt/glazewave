@@ -58,7 +58,7 @@ const mapDispachToProps = (dispatch) => {
 };
 
 const relations = {
-	user_board: ["Board.Manufacturer", "UserBoardImage"],
+	user_board: ["Board.Manufacturer", "UserBoardImage", "User"],
 };
 
 class BoardIndex extends Component {

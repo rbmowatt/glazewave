@@ -15,6 +15,7 @@ import UserBoardRequests from "./../../requests/UserBoardRequests";
 import ImageUploader from "react-images-upload";
 import ImageGallery from "react-image-gallery";
 import { boardPlaceholder } from "./../../lib/utils/placeholder";
+import OwnerBadge from "./../layout/OwnerBadge";
 import TypeAheadInput from "./../form/TypeAheadInput";
 import { matchSuggestions } from "./../../lib/utils/suggest";
 import BoardSelect from "./forms/BoardSelect";
@@ -61,11 +62,12 @@ const mapDispachToProps = (dispatch) => {
 };
 
 const relations = {
-	user_session: ["Location", "SessionImage"],
+	user_session: ["Location", "SessionImage", "User"],
 	selected_board: [
 		"Board.Manufacturer",
 		"Session.SessionImage",
 		"Session.UserBoard",
+		"User",
 	],
 	shapers: ["Board"],
 	boards: ["Manufacturer"],
@@ -265,6 +267,7 @@ class BoardView extends Component {
 										editProps={{ disabled: !isOwner }}
 										className="gw-title-field"
 									/>
+									<OwnerBadge user={board.User} label="Ridden by" />
 								</div>
 								<div className="col-6">
 									{isOwner && (

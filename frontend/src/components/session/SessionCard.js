@@ -7,6 +7,7 @@ import { sessionPlaceholder } from './../../lib/utils/placeholder';
 import moment from 'moment'
 import { withRouter } from "react-router";
 import StarBar from './../layout/StarBar';
+import OwnerBadge from './../layout/OwnerBadge';
 
 const HIGH_RATING = 8;
 
@@ -61,6 +62,7 @@ const SessionCard = props => {
                     }
                 </div>
                 <div className="gw-row-meta">{meta}</div>
+                <OwnerBadge user={session.User} />
                 {cells.length > 0 &&
                     <div className="gw-row-stats">
                         {cells.map(cell => <div key={cell}>{cell}</div>)}
