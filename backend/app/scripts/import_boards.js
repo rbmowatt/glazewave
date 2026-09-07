@@ -27,7 +27,7 @@ const path = require('path');
 const crypto = require('crypto');
 const db = require('./../models');
 const DisplayScope = require('./../services/rights/DisplayScope');
-const { getUserBoardQueue } = require('./../services/queue/BetterQueue');
+const cascade = require('./../services/elastic/Cascade');
 
 const args = process.argv.slice(2);
 const flag = (name, fallback) => {
@@ -151,7 +151,10 @@ async function importBoard(board, refs, stats) {
       volume_l: board.volume_l ?? row.volume_l,
     });
     if (row.changed()) stats.updated += 1;
-    await row.save();
+    // Hooks off: Board's afterUpdate cascades a reindex per row, which over a
+    // ten thousand row catalog is two queries each for the same answer the
+    // single bulk walk below gets once.
+    await row.save({ hooks: false });
   } else {
     row = await db.Board.create({
       manufacturer_id: maker.id,
@@ -274,13 +277,11 @@ async function main() {
     touched.push(await importBoard(board, refs, stats));
   }
 
-  // user_boards documents denormalize boards.model and manufacturers.name, and
-  // nothing reindexes them when the catalog changes - the hook only fires on a
-  // UserBoard save. Without this an import leaves the index disagreeing with
-  // MySQL for every board somebody owns.
-  const affected = await db.UserBoard.findAll({ where: { board_id: touched }, raw: true });
-  for (const ub of affected) getUserBoardQueue().push(ub);
-  console.log(`queued ${affected.length} user_boards for reindex`);
+  // Both documents denormalize boards.model and manufacturers.name - the
+  // user_board directly, the session through the user_board it was ridden on.
+  // Without this an import leaves the index disagreeing with MySQL for every
+  // board somebody owns, and for every session they logged on one.
+  await cascade.boardChanged(touched.filter(Boolean));
 
   console.log(JSON.stringify({
     ...stats,

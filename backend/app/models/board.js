@@ -1,4 +1,14 @@
 'use strict';
+const cascade = require('./../services/elastic/Cascade')
+
+// Every column of this table that either document denormalizes. A row can
+// change for a dozen other reasons - slug, evidence, discontinued - and none of
+// those are worth a reindex.
+const PROJECTED = [
+  'model', 'category', 'manufacturer_id', 'year_introduced',
+  'length_in', 'width_in', 'thickness_in', 'volume_l',
+]
+
 module.exports = (sequelize, DataTypes) => {
   const Board = sequelize.define('Board', {
     id: {
@@ -33,6 +43,12 @@ module.exports = (sequelize, DataTypes) => {
     thickness_in: DataTypes.DECIMAL(6, 3),
     volume_l: DataTypes.DECIMAL(6, 2),
   }, {underscored: true});
+  // Both documents carry these: user_board directly, session through the
+  // user_board that points here.
+  Board.addHook('afterUpdate', (board, options) =>
+    cascade.changedAny(options, board, PROJECTED) ? cascade.boardChanged(board.id) : null
+  )
+
   Board.associate = function(models) {
     // associations can be defined here
     Board.belongsTo(models.Manufacturer);
