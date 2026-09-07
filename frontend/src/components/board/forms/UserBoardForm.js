@@ -8,6 +8,7 @@ import messages from "./validation-messages";
 import ImageUploader from "react-images-upload";
 import { loadShapers } from "./../../../actions/shaper";
 import { loadBoards } from "./../../../actions/board";
+import { matchSuggestions } from "./../../../lib/utils/suggest";
 
 const mapStateToProps = (state) => {
 	return {
@@ -63,34 +64,20 @@ class UserBoardForm extends React.Component {
 		}
 	}
 
-	getBoardSuggestions = (value) => {
-		if (!value) {
-			return this.props.boards.filter(
-				(entity) => entity.manufacturer_id === this.state.manufacturer_id
-			);
-		}
-		const inputValue = value.trim().toLowerCase();
-		const inputLength = inputValue.length;
-		return inputLength === 0
-			? []
-			: this.props.boards.filter(
-					(entity) =>
-						entity.model.toLowerCase().slice(0, inputLength) === inputValue &&
-						entity.manufacturer_id === this.state.manufacturer_id
-			  );
+	// onBlur writes the raw text when it matches nothing, so the selected shaper
+	// is not always the number the catalog rows carry.
+	boardsForShaper = () => {
+		const shaperId = Number(this.state.manufacturer_id);
+		return this.props.boards.filter(
+			(entity) => Number(entity.manufacturer_id) === shaperId
+		);
 	};
 
-	getShaperSuggestions = (value) => {
-		if (!value) return this.props.shapers;
-		const inputValue = value.trim().toLowerCase();
-		const inputLength = inputValue.length;
-		return inputLength === 0
-			? []
-			: this.props.shapers.filter(
-					(entity) =>
-						entity.name.toLowerCase().slice(0, inputLength) === inputValue
-			  );
-	};
+	getBoardSuggestions = (value) =>
+		matchSuggestions(this.boardsForShaper(), "model", value);
+
+	getShaperSuggestions = (value) =>
+		matchSuggestions(this.props.shapers, "name", value);
 
 	render() {
 		return (

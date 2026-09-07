@@ -16,6 +16,7 @@ import ImageUploader from "react-images-upload";
 import ImageGallery from "react-image-gallery";
 import { boardPlaceholder } from "./../../lib/utils/placeholder";
 import TypeAheadInput from "./../form/TypeAheadInput";
+import { matchSuggestions } from "./../../lib/utils/suggest";
 import BoardSelect from "./forms/BoardSelect";
 import { sizes } from "./data/board_sizes";
 import { loadBoards } from "./../../actions/board";
@@ -141,43 +142,22 @@ class BoardView extends Component {
 		}
 	};
 
-	getShaperSuggestions = (value, reason) => {
-		//if its empty or just focused let's show everything
-		if (!value || reason === "type_ahead_focused")
-			return this.props.shapers;
+	getShaperSuggestions = (value) =>
+		matchSuggestions(this.props.shapers, "name", value);
 
-		const inputValue = value.trim().toLowerCase();
-		const inputLength = inputValue.length;
-		return inputLength === 0
-			? []
-			: this.props.shapers.filter(
-					(entity) =>
-						entity.name.toLowerCase().slice(0, inputLength) ===
-						inputValue
-			  );
-	};
-
-	getBoardSuggestions = (value, reason) => {
-		//if its empty or just focused let's show everything
-		if (!value || reason === "type_ahead_focused") {
-			const shaperId =
-				this.state.manufacturer_id === ""
-					? this.props.board.Board.manufacturer_id
-					: this.state.manufacturer_id;
-			return this.props.boards.filter(
-				(entity) => entity.manufacturer_id === shaperId
-			);
-		}
-		const inputValue = value.trim().toLowerCase();
-		const inputLength = inputValue.length;
-		return inputLength === 0
-			? []
-			: this.props.boards.filter(
-					(entity) =>
-						entity.model.toLowerCase().slice(0, inputLength) ===
-							inputValue &&
-						entity.manufacturer_id === this.state.manufacturer_id
-			  );
+	// The page opens with manufacturer_id empty because the shaper is not a
+	// column on user_boards; it has to come off the catalog row the board
+	// points at until the picker sets one.
+	getBoardSuggestions = (value) => {
+		const shaperId = Number(
+			this.state.manufacturer_id === ""
+				? this.props.board.Board.manufacturer_id
+				: this.state.manufacturer_id
+		);
+		const boards = this.props.boards.filter(
+			(entity) => Number(entity.manufacturer_id) === shaperId
+		);
+		return matchSuggestions(boards, "model", value);
 	};
 
 	/*

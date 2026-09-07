@@ -11,6 +11,7 @@ import {
 } from "./../../actions/user_board";
 import Modal from "./../layout/Modal";
 import CreateUserBoard from "./../board/CreateUserBoard";
+import CreateSession from "./../session/Create";
 import ProfileCard from "./ProfileCard";
 import RatingTrend from "./RatingTrend";
 import NearestSpots from "./../reports/surfline/NearestSpots";
@@ -68,7 +69,7 @@ const mapDispachToProps = (dispatch) => {
 class UserDashboard extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = { showBoardModal: false };
+		this.state = { showBoardModal: false, showSessionModal: false };
 	}
 
 	showBoardModal = () => {
@@ -89,6 +90,24 @@ class UserDashboard extends React.Component {
 	boardCreated = () => {
 		this.props.clearCreatedBoard();
 		this.setState({ showBoardModal: false });
+	};
+
+	showSessionModal = () => {
+		this.setState({ showSessionModal: true });
+	};
+
+	hideSessionModal = (e = false) => {
+		if (e && e.preventDefault) e.preventDefault();
+		this.setState({ showSessionModal: false });
+	};
+
+	/*
+	Create clears user_sessions.created itself before it calls back, so unlike
+	the board modal there is nothing left to clean up here. The new session is
+	already in user_sessions.data, so LatestSessions repaints on its own.
+	*/
+	sessionCreated = () => {
+		this.setState({ showSessionModal: false });
 	};
 
 	componentDidMount() {
@@ -114,6 +133,7 @@ class UserDashboard extends React.Component {
 							boardCount={boards.length}
 							spotCount={averages.distinct_spots || 0}
 							onAddBoard={this.showBoardModal}
+							onLogSession={this.showSessionModal}
 						/>
 					</aside>
 
@@ -133,6 +153,7 @@ class UserDashboard extends React.Component {
 						<LatestSessions
 							sessions={user_sessions}
 							limit={DASHBOARD_LIST_LIMIT}
+							onLogSession={this.showSessionModal}
 						/>
 						<NewestBoards
 							boards={boards}
@@ -149,6 +170,15 @@ class UserDashboard extends React.Component {
 						onSuccess={this.hideBoardModal}
 						onSubmissionComplete={this.boardCreated}
 						close={this.hideBoardModal}
+					/>
+				</Modal>
+				{/* No handleClose, matching SessionIndex: the session form is long
+				    enough that a stray backdrop click should not throw it away. */}
+				<Modal show={this.state.showSessionModal}>
+					<CreateSession
+						onSuccess={this.hideSessionModal}
+						onSubmissionComplete={this.sessionCreated}
+						close={this.hideSessionModal}
 					/>
 				</Modal>
 			</MainContainer>

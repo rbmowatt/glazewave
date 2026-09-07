@@ -34,10 +34,16 @@ class TypeAheadInput extends React.Component {
     <div>{suggestion[this.props.keyName]}</div>
   );
 
-  // Autosuggest will call this function every time we need to update suggestions.
+  /*
+  Autosuggest fires this on focus with whatever is already in the input, which
+  would narrow the list to the one row the field already holds. Clicking into
+  the field is a request to see the whole list, so the search is forced empty
+  for that reason and the typed value is used for every other.
+  */
   onSuggestionsFetchRequested = ({ value, reason }) => {
+    const search = reason === "input-focused" ? "" : value;
     this.setState({
-      suggestions: this.props.getSuggestions(value, reason),
+      suggestions: this.props.getSuggestions(search, reason),
     });
   };
 
@@ -97,11 +103,6 @@ class TypeAheadInput extends React.Component {
       value,
       onBlur: this.onBlur,
       onChange: this.onChange,
-      onFocus: () =>
-        this.onSuggestionsFetchRequested({
-          value: name,
-          reason: "type_ahead_focused",
-        }),
       id: name,
       name,
       className: inputClassNames,

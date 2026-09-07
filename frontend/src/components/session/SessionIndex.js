@@ -61,7 +61,9 @@ class SessionIndex extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: false,//whether modal is showing or not
+      // /session/create redirects here carrying this flag, so a bookmark or an
+      // old link still lands on the create form rather than the bare index.
+      show: !!(props.location && props.location.state && props.location.state.createSession),//whether modal is showing or not
       selectedSortOrder: DEFAULT_SORT,
       showAll: 0,//whether or not we are showing user + public sessiions
       esFilters: []//an array of filters to be added to any ES queries

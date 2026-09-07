@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom';
 import ImageUploader from 'react-images-upload';
 import { RIEInput } from '@attently/riek';
 import moment from 'moment';
@@ -162,7 +161,7 @@ class ProfileCard extends React.Component {
 
                 <div className="d-flex flex-column" style={{ gap: '9px' }}>
                     <div className="gw-eyebrow">Actions</div>
-                    <Link className="gw-btn gw-btn-primary" to={'/session/create'}>Log a session</Link>
+                    <button type="button" className="gw-btn gw-btn-primary" onClick={this.props.onLogSession}>Log a session</button>
                     <button type="button" className="gw-btn" onClick={this.props.onAddBoard}>Add a board</button>
                     <div className="gw-uploader">
                         <ImageUploader

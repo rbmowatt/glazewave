@@ -18,7 +18,6 @@ import CreateUser from './components/user/Create';
 import EditUser from './components/user/Edit';
 import UserDashboard from './components/user/Dashboard';
 import SessionIndex from './components/session/SessionIndex';
-import CreateSession from './components/session/Create';
 
 import SessionView from './components/session/View';
 import BoardIndex from './components/board/BoardIndex';
@@ -88,7 +87,7 @@ class App extends React.Component{
           <PrivateRoute path={'/user/edit/:id'} exact component={EditUser} session={this.props.session}  />
           
           <Route  path={'/session'} exact component={SessionIndex } />
-          <PrivateRoute path={'/session/create'} exact component={CreateSession} session={this.props.session} />
+          <Route path={'/session/create'} exact render={() => <Redirect to={{ pathname: '/session', state: { createSession: true } }} />} />
           <Route  path={'/session/:id'} exact component={SessionView } />
 
           <Route  path={'/board'} exact component={BoardIndex } />
