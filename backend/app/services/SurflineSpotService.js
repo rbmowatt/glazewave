@@ -6,6 +6,7 @@ const sequelize = require('./sequelize');
 const { QueryTypes } = require('sequelize');
 const crypto = require('crypto');
 const { sameSpotName } = require('./../lib/spot_name');
+const roadDistance = require('./RoadDistance');
 
 // How close a new spot has to be to an existing one, with a similar name,
 // before it is treated as the same break rather than a new one. Deliberately
@@ -32,7 +33,7 @@ class SurflineSpotService  extends BaseService {
      * not read here. lat and lon are VARCHAR, and an uncast string compares as
      * 0 rather than raising, which silently puts every spot off West Africa.
      */
-    nearest({ lat, lon, radius, limit })
+    nearestByCrow({ lat, lon, radius, limit })
     {
         const query = `
             SELECT id, name, url,
@@ -52,6 +53,26 @@ class SurflineSpotService  extends BaseService {
             type: QueryTypes.SELECT,
             replacements: { lat, lon, radius, limit },
         });
+    }
+
+    /*
+     * What /api/spot/nearest answers with. Pulls a wider pool by straight-line
+     * distance, then hands it to the router to reorder by how far the surfer
+     * actually has to drive.
+     *
+     * distance_m is road metres when a road ranking was available for these
+     * coordinates and straight-line metres when it was not, never a mix inside
+     * one response. A cold origin gets straight-line and warms the cache, so
+     * the same call can answer in a different order a moment later. The row
+     * shape is unchanged either way, so /search returns the same columns.
+     */
+    async nearest({ lat, lon, radius, limit })
+    {
+        const pool = await this.nearestByCrow({
+            lat, lon, radius, limit: roadDistance.poolSize(limit),
+        });
+        const ranked = await roadDistance.rank(lat, lon, pool);
+        return (ranked || pool).slice(0, limit);
     }
 
     /*
@@ -131,7 +152,9 @@ class SurflineSpotService  extends BaseService {
         if (!Number.isFinite(lat) || lat < -90 || lat > 90) throw new Error('lat must be a valid latitude');
         if (!Number.isFinite(lon) || lon < -180 || lon > 180) throw new Error('lon must be a valid longitude');
 
-        const near = await this.nearest({ lat, lon, radius: DUPLICATE_RADIUS_M, limit: 10 });
+        // Crow-flight deliberately: a re-add is the same physical break, and a
+        // 75m duplicate check must not depend on a road existing between them.
+        const near = await this.nearestByCrow({ lat, lon, radius: DUPLICATE_RADIUS_M, limit: 10 });
         const collision = near.find((spot) => sameSpotName(spot.name, name));
         if (collision) {
             const error = new Error(`"${collision.name}" is already recorded ${Math.round(collision.distance_m)}m away`);

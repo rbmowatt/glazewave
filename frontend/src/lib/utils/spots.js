@@ -4,9 +4,13 @@ import apiConfig from './../../config/api';
 const base = () => apiConfig.host + apiConfig.port;
 
 /*
- * Replaces the Algolia surfline_spots index. Returns spots ordered nearest
- * first, and an empty array when nothing falls inside the radius -- callers
- * must handle that, which the Algolia version was never written to do.
+ * Replaces the Algolia surfline_spots index. Returns an empty array when
+ * nothing falls inside the radius -- callers must handle that, which the
+ * Algolia version was never written to do.
+ *
+ * Ordering is by driving distance once the server has a road ranking for these
+ * coordinates, and straight-line distance until then, so the same request can
+ * come back in a different order the second time it is made.
  */
 const getSpots = (lat, lon, radius = 50000, limit = 5) =>
   axios

@@ -16,6 +16,20 @@ const MAX_SEARCH_LIMIT = 25;
 // reads as a broken field rather than a search.
 const MIN_QUERY_LENGTH = 2;
 
+/*
+ * limit is one of QueryParser's reserved keys and it deletes those off
+ * req.query before any router runs, so req.query.limit is always undefined
+ * here and both routes served their default no matter what the caller asked
+ * for. The raw URL still carries it. lat, lon, radius and q are unreserved
+ * and survive, so only limit needs this.
+ */
+const rawParam = (req, name) => {
+  const mark = req.originalUrl.indexOf('?');
+  if (mark === -1) return undefined;
+  const value = new URLSearchParams(req.originalUrl.slice(mark + 1)).get(name);
+  return value === null ? undefined : value;
+};
+
 const clamp = (value, fallback, max) => {
   const parsed = Number.parseInt(value, 10);
   if (!Number.isFinite(parsed) || parsed < 1) return fallback;
@@ -43,7 +57,7 @@ router.get('/nearest', function (req, res) {
     lat: lat,
     lon: lon,
     radius: clamp(req.query.radius, DEFAULT_RADIUS_M, MAX_RADIUS_M),
-    limit: clamp(req.query.limit, DEFAULT_LIMIT, MAX_LIMIT),
+    limit: clamp(rawParam(req, 'limit'), DEFAULT_LIMIT, MAX_LIMIT),
   })
     .then(spots => {
       res.send({ spots: spots });
@@ -85,7 +99,7 @@ router.get('/search', function (req, res) {
     q: q,
     lat: hasOrigin ? lat : null,
     lon: hasOrigin ? lon : null,
-    limit: clamp(req.query.limit, DEFAULT_SEARCH_LIMIT, MAX_SEARCH_LIMIT),
+    limit: clamp(rawParam(req, 'limit'), DEFAULT_SEARCH_LIMIT, MAX_SEARCH_LIMIT),
   })
     .then(spots => {
       res.send({ spots: spots });
