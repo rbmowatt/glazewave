@@ -1,6 +1,6 @@
 # MX-BC — Mexico, Baja California
 
-17 images across 8 spots. Licence rules and the OSM credit are in [the index](./README.md).
+16 images across 8 spots. Licence rules and the OSM credit are in [the index](./README.md).
 
 ## El Playón
 
@@ -167,12 +167,4 @@
   - 1600×901px, 450 KB, shot 836 m from the spot
   - Description: Punta Azul, Playas de Rosarito (human settlement in Mexico)
   - Match: score 10.5 via coastal-in-title, name:rosarito, kw:playa, geo:836m, w>=1000, landscape
-- **`mx-bc-rosarito-tripizdon-beach-3.jpg`** ✗ **not a coastal photo** — “Rosarito Beach,B.C.Mexico. - panoramio (2)” by Roman Eugeniusz, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Rosarito_Beach,B.C.Mexico._-_panoramio_(2).jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Roman Eugeniusz — https://web.archive.org/web/20161023124946/http://www.panoramio.com/user/1699605?with_photo_id=53832278
-  - Dated: 6 June 2011 (original upload date)
-  - 1600×954px, 251 KB, shot 919 m from the spot
-  - Description: Rosarito Beach,B.C.Mexico.
-  - Match: score 10.5 via coastal-in-title, name:rosarito, kw:beach, geo:919m, w>=1000, landscape
 

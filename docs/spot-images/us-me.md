@@ -1,6 +1,6 @@
 # US-ME — United States, Maine
 
-147 images across 51 spots. Licence rules and the OSM credit are in [the index](./README.md).
+110 images across 47 spots. Licence rules and the OSM credit are in [the index](./README.md).
 
 ## Andrews Beach
 
@@ -22,14 +22,6 @@
   - 1600×1119px, 204 KB, shot 4801478 m from the spot
   - Description: St Andrews beach and shoreline
   - Match: score 11 via coastal-in-title, name:andrews, kw:beach+shore+shoreline, geo:4801478m, w>=1000, landscape
-- **`us-me-andrews-beach-3.jpg`** ✗ **not a coastal photo** — “The Wanderer memorial, St. Andrews Beach Park” by Michael Rivera, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:The_Wanderer_memorial,_St._Andrews_Beach_Park.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Michael Rivera — //commons.wikimedia.org/wiki/User:Mjrmtg
-  - Dated: 2021-03-19 14:31:35
-  - 1600×1067px, 761 KB, shot 1721386 m from the spot
-  - Description: The Wanderer memorial, St. Andrews Beach Park, Jekyll Island, Glynn County, Georgia
-  - Match: score 10 via coastal-in-title, name:andrews, kw:beach+mar, geo:1721386m, w>=1000, landscape
 
 ## Arundel Beach
 
@@ -43,14 +35,6 @@
   - 1600×1065px, 615 KB, shot 1374 m from the spot
   - Description: Gooch's Beach, Kennebunk ME, in Summer
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:1374m, w>=1000, landscape
-- **`us-me-arundel-beach-2.jpg`** ✗ **not a coastal photo** — “Buses at Seashore Trolley Museum, August 2006” by Gail Frederick from New York State, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Buses_at_Seashore_Trolley_Museum,_August_2006.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Gail Frederick from New York State, USA — https://www.flickr.com/people/71365354@N00
-  - Dated: 2006-08-19 12:50
-  - 1600×870px, 937 KB, shot 2556 m from the spot
-  - Description: Buses at the Seashore Trolley Museum in 2006. From left to right: MBTA Flyer #9138, CATA GMC RTS #7804, MBTA GMC New Look #6169, Greater Portland Transit District GMC Old Look #504, and New Orleans Public Service Flxible New Look #333
-  - Match: score 8 via coastal-in-title, kw:sea+shore+seashore, geo:2556m, w>=1000, landscape
 
 ## Biddeford Pool Beach
 
@@ -209,14 +193,6 @@
   - 1600×1065px, 615 KB, shot 631 m from the spot
   - Description: Gooch's Beach, Kennebunk ME, in Summer
   - Match: score 6.5 via coastal-in-title, kw:beach, geo:631m, w>=1000, landscape
-- **`us-me-colony-beach-2.jpg`** ✗ **not a coastal photo** — “Buses at Seashore Trolley Museum, August 2006” by Gail Frederick from New York State, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Buses_at_Seashore_Trolley_Museum,_August_2006.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Gail Frederick from New York State, USA — https://www.flickr.com/people/71365354@N00
-  - Dated: 2006-08-19 12:50
-  - 1600×870px, 937 KB, shot 1828 m from the spot
-  - Description: Buses at the Seashore Trolley Museum in 2006. From left to right: MBTA Flyer #9138, CATA GMC RTS #7804, MBTA GMC New Look #6169, Greater Portland Transit District GMC Old Look #504, and New Orleans Public Service Flxible New Look #333
-  - Match: score 8 via coastal-in-title, kw:sea+shore+seashore, geo:1828m, w>=1000, landscape
 
 ## Crescent Beach
 
@@ -238,14 +214,6 @@
   - 1600×899px, 324 KB
   - Description: I took this on a trip I took in October 2023.
   - Match: score 8.5 via coastal-in-title, name:crescent, kw:beach, w>=1000, landscape
-- **`us-me-crescent-beach-3.jpg`** ✗ **not a coastal photo** — Crescent Beach station 1910 postcard — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Crescent_Beach_station_1910_postcard.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Unknown author Unknown author
-  - Dated: circa 1907-1915
-  - 1600×1014px, 1120 KB
-  - Description: Divided back postcard of Crescent Beach station, postmarked 1910
-  - Match: score 10 via coastal-in-title, name:crescent, kw:beach+mar, w>=1000, landscape
 
 ## Crescent Beach
 
@@ -267,14 +235,6 @@
   - 1600×899px, 451 KB
   - Description: I took this on a trip I took in October 2023.
   - Match: score 8.5 via coastal-in-title, name:crescent, kw:beach, w>=1000, landscape
-- **`us-me-crescent-beach-445354-3.jpg`** ✗ **not a coastal photo** — Crescent Beach station 1910 postcard — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Crescent_Beach_station_1910_postcard.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Unknown author Unknown author
-  - Dated: circa 1907-1915
-  - 1600×1014px, 1120 KB
-  - Description: Divided back postcard of Crescent Beach station, postmarked 1910
-  - Match: score 10 via coastal-in-title, name:crescent, kw:beach+mar, w>=1000, landscape
 
 ## Crescent Beach
 
@@ -288,22 +248,6 @@
   - 1600×1063px, 561 KB
   - Description: Crescent Beach (left) and Cannon Beach, Oregon, U.S. Haystack Rock and other offshore rock formations seen from Ecola Point, Ecola State Park.
   - Match: score 11 via coastal-in-title, name:crescent, kw:beach+sea+shore+point, w>=1000, landscape
-- **`us-me-crescent-beach-550497-2.jpg`** ✗ **not a coastal photo** — Crescent Beach station 1910 postcard — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Crescent_Beach_station_1910_postcard.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Unknown author Unknown author
-  - Dated: circa 1907-1915
-  - 1600×1014px, 1120 KB
-  - Description: Divided back postcard of Crescent Beach station, postmarked 1910
-  - Match: score 10 via coastal-in-title, name:crescent, kw:beach+mar, w>=1000, landscape
-- **`us-me-crescent-beach-550497-3.jpg`** ✗ **not a coastal photo** — “Sea Rose - Flickr - Me in ME” by Paul VanDerWerf from Brunswick, Maine, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Sea_Rose_-_Flickr_-_Me_in_ME.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
-  - Dated: Taken on 15 June 2022, 14:33
-  - 1600×1600px, 1020 KB, shot 585 m from the spot
-  - Description: As their name implies here in Maine, these flowers are very common along the coast. They are quite tolerant on salty sea spray. Rosa rugosa (rugosa rose, beach rose, Japanese rose, Ramanas rose, or letchberry) is a species of rose native to eastern Asia, in northeastern China, Japan, Korea and southeastern Siberia, where it grows on beach coasts, often on sand dunes. It should not be confused with Rosa multiflora, which is also known as "Japanese rose". The Latin word "rugosa" means "wrinkled", referring to the wrinkled leaves.[Wikipedia]
-  - Match: score 8.5 via coastal-in-title, kw:beach+sea+coast+sand, geo:585m, w>=1000
 
 ## Crescent Surf
 
@@ -316,22 +260,6 @@
   - Dated: 2022-07-25 10:22:43
   - 1600×1067px, 528 KB, shot 1621 m from the spot
   - Description: Parson's Beach, Kennebunk, Maine, US (PPL1-Corrected)
-  - Match: score 5.5 via coastal-in-title, kw:beach, geo:1621m, w>=1000, landscape
-- **`us-me-crescent-surf-2.jpg`** ✗ **not a coastal photo** — “Sanderling (29631011276)” by Paul VanDerWerf from Brunswick, Maine, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Sanderling_(29631011276).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
-  - Dated: 2016-09-13 15:43
-  - 1600×1651px, 676 KB, shot 762 m from the spot
-  - Description: Seen yesterday while on a visit to the Wells Reserve at Laudholm.
-  - Match: score 6 via coastal-in-title, kw:sand, geo:762m, w>=1000
-- **`us-me-crescent-surf-3.jpg`** ✗ **not a coastal photo** — “Mousam River, Parson's Beach, Kennebunk, Maine, US (PPL1-Corrected) julesvernex2” by Jules Verne Times Two, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Mousam_River,_Parson%27s_Beach,_Kennebunk,_Maine,_US_(PPL1-Corrected)_julesvernex2.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Jules Verne Times Two — //commons.wikimedia.org/wiki/User:Julesvernex2
-  - Dated: 2022-07-25 10:53:43
-  - 1600×1130px, 274 KB, shot 1621 m from the spot
-  - Description: Mousam River, Parson's Beach, Kennebunk, Maine, US (PPL1-Corrected)
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:1621m, w>=1000, landscape
 
 ## Devil's Bathing Beach
@@ -382,14 +310,6 @@
   - Dated: 2014-08-18 00:00
   - 1600×1200px, 44 KB, shot 2179 m from the spot
   - Description: This Hurricane Sandy recovery project repaired damages to a section of boardwalk on the Carson Trail at Rachel Carson National Wildlife Refuge (ME). More project details: <a href=" http://www.fws.gov/hurricane/sandy/projects/RachelCarson.html " rel="nofollow">www.fws.gov/hurricane/sandy/projects/RachelCarson.html</a> Photo credit: Karrie Schwaab/USFWS Like us on Facebook: <a href=" http://facebook.com/usfwsnortheast " rel="nofollow">facebook.com/usfwsnortheast</a> Follow us on Twitter: <a href=" https://twitter.com/usfwsnortheast " rel="nofollow">twitter.com/usfwsnortheast</a>
-  - Match: score 8 via coastal-in-title, kw:sand+cove+boardwalk, geo:2179m, w>=1000, landscape
-- **`us-me-drakes-island-beach-3.jpg`** ✗ **not a coastal photo** — Before Carson Trail boardwalk restoration (15871174290) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Before_Carson_Trail_boardwalk_restoration_(15871174290).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: U. S. Fish and Wildlife Service - Northeast Region — https://www.flickr.com/people/43322816@N08
-  - Dated: 2014-08-13 00:00:00
-  - 1600×1200px, 320 KB, shot 2179 m from the spot
-  - Description: This Hurricane Sandy recovery project repaired damages to a section of boardwalk on the Carson Trail at Rachel Carson National Wildlife Refuge (ME). More project details: http://www.fws.gov/hurricane/sandy/projects/RachelCarson.html Photo credit: Karrie Schwaab/USFWS Like us on Facebook: Follow us on Twitter:
   - Match: score 8 via coastal-in-title, kw:sand+cove+boardwalk, geo:2179m, w>=1000, landscape
 
 ## Drift Inn Beach
@@ -450,35 +370,6 @@
   - Description: Taken at Reid State Park in Georgetown Maine. The tide was out and there was lots of reflective area on the wet sand. This couple were enjoying walking on the sand with their shoes in hand. Processed in Silver Efex Pro after Lightroom.
   - Match: score 8.5 via coastal-in-title, kw:beach+sand+tide, geo:448m, w>=1000
 
-## Eastern Beach
-
-`osm:node/358226542` · 44.1228605, -68.3480717
-
-- **`us-me-eastern-beach-1.jpg`** ✗ **not a coastal photo** — “Breccia (Shatter Zone, Late Devonian; Sand Beach, Mt. Desert Island, Maine, USA) 4” by James St. John, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Breccia_(Shatter_Zone,_Late_Devonian;_Sand_Beach,_Mt._Desert_Island,_Maine,_USA)_4.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: James St. John
-  - Dated: 2006-09-12 12:00:56
-  - 1600×1064px, 1214 KB
-  - Description: In the Acadia National Park area of coastal Maine, a band of breccia called the "Shatter Zone" occurs around the Cadillac Mountain Granite, a large mid-Paleozoic pluton. The breccia formed in the subsurface during a caldera-forming event that followed a large explosive volcanic eruption (see Braun, 2016). The granite pluton itself is the remains of the cooled magma chamber beneath that ancient volcanic center. Locality: outcrop at eastern end of Sand Beach, Mt. Desert Island, coastal Maine, USA (44° 19' 43.59" North latitude, 68° 10' 48.57" West longitude) Reference cited: Braun (2016) - The S
-  - Match: score 11 via coastal-in-title, name:eastern, kw:beach+surf+coast+coastal, w>=1000, landscape
-- **`us-me-eastern-beach-2.jpg`** ✗ **not a coastal photo** — “Breccia (Shatter Zone, Late Devonian; Sand Beach, Mt. Desert Island, Maine, USA) 9” by James St. John, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Breccia_(Shatter_Zone,_Late_Devonian;_Sand_Beach,_Mt._Desert_Island,_Maine,_USA)_9.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: James St. John
-  - Dated: 2006-09-12 12:02:16
-  - 1600×1128px, 1289 KB
-  - Description: In the Acadia National Park area of coastal Maine, a band of breccia called the "Shatter Zone" occurs around the Cadillac Mountain Granite, a large mid-Paleozoic pluton. The breccia formed in the subsurface during a caldera-forming event that followed a large explosive volcanic eruption (see Braun, 2016). The granite pluton itself is the remains of the cooled magma chamber beneath that ancient volcanic center. Locality: outcrop at eastern end of Sand Beach, Mt. Desert Island, coastal Maine, USA (44° 19' 43.59" North latitude, 68° 10' 48.57" West longitude) Reference cited: Braun (2016) - The S
-  - Match: score 11 via coastal-in-title, name:eastern, kw:beach+surf+coast+coastal, w>=1000, landscape
-- **`us-me-eastern-beach-3.jpg`** ✗ **not a coastal photo** — “Breccia (Shatter Zone, Late Devonian; Sand Beach, Mt. Desert Island, Maine, USA) 14” by James St. John, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Breccia_(Shatter_Zone,_Late_Devonian;_Sand_Beach,_Mt._Desert_Island,_Maine,_USA)_14.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: James St. John
-  - Dated: 2006-09-12 12:02:44
-  - 1600×1064px, 1185 KB
-  - Description: In the Acadia National Park area of coastal Maine, a band of breccia called the "Shatter Zone" occurs around the Cadillac Mountain Granite, a large mid-Paleozoic pluton. The breccia formed in the subsurface during a caldera-forming event that followed a large explosive volcanic eruption (see Braun, 2016). The granite pluton itself is the remains of the cooled magma chamber beneath that ancient volcanic center. Locality: outcrop at eastern end of Sand Beach, Mt. Desert Island, coastal Maine, USA (44° 19' 43.59" North latitude, 68° 10' 48.57" West longitude) Reference cited: Braun (2016) - The S
-  - Match: score 11 via coastal-in-title, name:eastern, kw:beach+surf+coast+coastal, w>=1000, landscape
-
 ## Footbridge Beach
 
 `osm:way/766104172` · 43.2629505, -70.5883736 · beach type: **sandy** (OpenStreetMap surface=sand)
@@ -491,22 +382,6 @@
   - 1600×1200px, 194 KB
   - Description: Footbridge Beach Ogunquit’s Atlantic waterfront New England
   - Match: score 8.5 via coastal-in-title, name:footbridge, kw:beach, w>=1000, landscape
-- **`us-me-footbridge-beach-2.jpg`** ✗ **not a coastal photo** — “Malom-tó É-ÉNy és stég, 2019 Veresegyház” by Globetrotter19, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Malom-t%C3%B3_%C3%89-%C3%89Ny_%C3%A9s_st%C3%A9g,_2019_Veresegyh%C3%A1z.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Globetrotter19 — //commons.wikimedia.org/wiki/User:Globetrotter19
-  - Dated: 2019-06
-  - 1600×1200px, 507 KB
-  - Description: : View to north from Malom Lake footbridge. Beach pier and Lake N NW part- Veresegyház , Pest County , Hungary .
-  - Match: score 8 via name:footbridge, kw:beach+pier, w>=1000, landscape
-- **`us-me-footbridge-beach-3.jpg`** ✗ **not a coastal photo** — “Leaf on beach ogunquit” by Captain-tucker, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Leaf_on_beach_ogunquit.JPG
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Captain-tucker — //commons.wikimedia.org/wiki/User:Captain-tucker
-  - Dated: 2007-11-13
-  - 1600×1200px, 871 KB, shot 1365 m from the spot
-  - Description: Leaf on the beach in Ogunquit, Maine
-  - Match: score 5.5 via coastal-in-title, kw:beach, geo:1365m, w>=1000, landscape
 
 ## Fortunes Rocks Beach
 
@@ -528,14 +403,6 @@
   - 1600×454px, 215 KB, shot 2097 m from the spot
   - Description: As part of my quest to find a snowy owl that had been reported to be in this area I stopped by this beach in Biddeford Pool, Maine. this is a five image panorama merged in Lightroom and converted to BW with Silver Efex Pro.
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:2097m, w>=1000, landscape
-- **`us-me-fortunes-rocks-beach-3.jpg`** ✗ **not a coastal photo** — “The Maine Partial Eclipse A Few Minutes Before The Maximum Coverage” by Johnster2222, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:The_Maine_Partial_Eclipse_A_Few_Minutes_Before_The_Maximum_Coverage.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Johnster2222 — //commons.wikimedia.org/wiki/User:Johnster2222
-  - Dated: 2017-08-21 14:41:39
-  - 1600×2130px, 34 KB, shot 2122 m from the spot
-  - Description: The Partial Maine Solar Eclipse. A Few Minutes Before Max Coverage, which was 68%. The Time is 2:41 PM and The Max Coverage was at 2:45 PM.
-  - Match: score 5 via coastal-in-title, kw:cove, geo:2122m, w>=1000
 
 ## Freddy Beach
 
@@ -566,35 +433,6 @@
   - Description: Wood Island Light is an active lighthouse on the eastern edge of Wood Island in Saco Bay, on the southern coast of Maine. The light is just outside the entrance to Biddeford Pool and the end of the Saco River. The lighthouse is a 47-foot (14 m) tall conical white tower constructed of granite rubble. The light itself sits 71 feet (22 m) above mean high water. It currently is automated and has an alternating green and white beacon every 10 seconds. Wood Island Light is Maine's second oldest lighthouse (after Portland Head Light) and the nation's eleventh oldest. It was added to the National Regi
   - Match: score 5 via kw:coast+bay+lighthouse, geo:4091m, w>=1000, landscape
 
-## Gilley Beach
-
-`osm:node/358226550` · 44.2570253, -68.2250135
-
-- **`us-me-gilley-beach-1.jpg`** ✗ **not a coastal photo** — Broadband - Cranberry Isles Surf the Internet (20180710-RD-LSC-0526) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Broadband_-_Cranberry_Isles_Surf_the_Internet_(20180710-RD-LSC-0526).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: USDAgov — https://www.flickr.com/people/usdagov/
-  - Dated: Taken on 10 July 2018, 11:14:53
-  - 1600×1067px, 793 KB, shot 1063 m from the spot
-  - Description: Maine's U.S. Representative Bruce Poliquin's Maine Staff Assistant Angus S. King, Jr.'s, Regional Represenative Mark Kontio speaks during the Ribbon Cutting Ceremony fora U.S. Department of Agriculture (USDA) RUral Development (RD) Community Connect Grant at Neighborhood House, on Islesford Island (part of the Cranberry Isles), Maine, on July 10, 2018. Cranberry Isle received a Community Connect Grant in the amount of $1,320,370. This is the first Community Connect Grant a Maine community has received in over a decade. Rural Development funds will be used to construct a combination fiber-to-th
-  - Match: score 8 via coastal-in-title, kw:surf+mar, geo:1063m, w>=1000, landscape
-- **`us-me-gilley-beach-2.jpg`** ✗ **not a coastal photo** — Broadband - Cranberry Isles Surf the Internet (20180710-RD-LSC-0605) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Broadband_-_Cranberry_Isles_Surf_the_Internet_(20180710-RD-LSC-0605).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: USDAgov — https://www.flickr.com/people/usdagov/
-  - Dated: Taken on 10 July 2018, 12:30:24
-  - 1600×1067px, 287 KB, shot 1029 m from the spot
-  - Description: Islesford (of the Cranberry Isles), Maine, on July 10, 2018. Cranberry Isles are the islands of Great Cranberry, Islesford (Little Cranberry), Sutton, Baker and Bear. Buoys dot the surrounding waters where lobster fisherman haul their catch in the morning and afternoons. The communities on these islands are home to many of the fishermen. Cranberry Isles received a U.S. Department of Agriculture (USDA) Rural Development (RD) Community Connect Grant in the amount of $1,320,370. This is the first Community Connect Grant a Maine community has received in over a decade. Rural Development funds will
-  - Match: score 6.5 via coastal-in-title, kw:surf, geo:1029m, w>=1000, landscape
-- **`us-me-gilley-beach-3.jpg`** ✗ **not a coastal photo** — Broadband - Cranberry Isles Surf the Internet (20180710-RD-LSC-0608) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Broadband_-_Cranberry_Isles_Surf_the_Internet_(20180710-RD-LSC-0608).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: USDAgov — https://www.flickr.com/people/usdagov/
-  - Dated: Taken on 10 July 2018, 12:39:15
-  - 1600×1067px, 394 KB, shot 1017 m from the spot
-  - Description: Volunteer Fire Department and new communications tower in Islesford (of the Cranberry Isles), Maine, on July 10, 2018. Cranberry Isles are the islands of Great Cranberry, Islesford (Little Cranberry), Sutton, Baker and Bear. Buoys dot the surrounding waters where lobster fisherman haul their catch in the morning and afternoons. The communities on these islands are home to many of the fishermen. Cranberry Isles received a U.S. Department of Agriculture (USDA) Rural Development (RD) Community Connect Grant in the amount of $1,320,370. This is the first Community Connect Grant a Maine community h
-  - Match: score 6.5 via coastal-in-title, kw:surf, geo:1017m, w>=1000, landscape
-
 ## Goochs Beach
 
 `osm:way/788922162` · 43.3464186, -70.4810927
@@ -607,14 +445,6 @@
   - 1600×1065px, 615 KB, shot 166 m from the spot
   - Description: Gooch's Beach, Kennebunk ME, in Summer
   - Match: score 7.5 via coastal-in-title, kw:beach, geo:166m, w>=1000, landscape
-- **`us-me-goochs-beach-2.jpg`** ✗ **not a coastal photo** — “Buses at Seashore Trolley Museum, August 2006” by Gail Frederick from New York State, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Buses_at_Seashore_Trolley_Museum,_August_2006.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Gail Frederick from New York State, USA — https://www.flickr.com/people/71365354@N00
-  - Dated: 2006-08-19 12:50
-  - 1600×870px, 937 KB, shot 1826 m from the spot
-  - Description: Buses at the Seashore Trolley Museum in 2006. From left to right: MBTA Flyer #9138, CATA GMC RTS #7804, MBTA GMC New Look #6169, Greater Portland Transit District GMC Old Look #504, and New Orleans Public Service Flxible New Look #333
-  - Match: score 8 via coastal-in-title, kw:sea+shore+seashore, geo:1826m, w>=1000, landscape
 
 ## Goodie's Beach
 
@@ -636,14 +466,6 @@
   - 1600×1067px, 679 KB, shot 205 m from the spot
   - Description: A picnic at Rockport harbor. Thanksgiving sandwiches from The Market Basket.
   - Match: score 7 via kw:sand+mar, geo:205m, w>=1000, landscape
-- **`us-me-goodie-s-beach-3.jpg`** ✗ **not a coastal photo** — “Andre the Seal Marker” by LittleT889, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Andre_the_Seal_Marker.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: LittleT889 — //commons.wikimedia.org/w/index.php?title=User:LittleT889&amp;action=edit&amp;redlink=1
-  - Dated: 2020-10-24 13:35:27
-  - 1600×1388px, 1582 KB, shot 170 m from the spot
-  - Description: Andre the Seal Marker in Rockport, Maine
-  - Match: score 8.5 via coastal-in-title, kw:sea+mar, geo:170m, w>=1000
 
 ## Grimes Cove Beach
 
@@ -744,14 +566,6 @@
   - 1600×1065px, 294 KB, shot 4467707 m from the spot
   - Description: Local Hero Beach
   - Match: score 8.5 via coastal-in-title, name:hero, kw:beach, geo:4467707m, w>=1000, landscape
-- **`us-me-hero-beach-2.jpg`** ✗ **not a coastal photo** — Northern Moon Snail (Euspira heros) — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Northern_Moon_Snail_(Euspira_heros).jpg
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: Gastronomepalindrome — //commons.wikimedia.org/w/index.php?title=User:Gastronomepalindrome&amp;action=edit&amp;redlink=1
-  - Dated: 2023-04-10 09:52:06
-  - 1600×1274px, 1021 KB, shot 158267 m from the spot
-  - Description: Northern Moon Snail on a beach in Cape Elizabeth, Maine.
-  - Match: score 6 via name:hero, kw:beach, geo:158267m, w>=1000
 
 ## Higgins Beach
 
@@ -852,22 +666,6 @@
   - 1600×1134px, 923 KB
   - Description: Taken at the beach near Laudholm Farm in Wells, Maine. I wish I could say I saw this when I took the image but I did not notice there is the image of the sanderling flying, a reflection in the wet sand and a shadow on the sand as well.
   - Match: score 8 via name:laudholm, kw:beach+sand, w>=1000, landscape
-- **`us-me-laudholm-beach-2.jpg`** ✗ **not a coastal photo** — “Sanderling (29631011276)” by Paul VanDerWerf from Brunswick, Maine, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Sanderling_(29631011276).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
-  - Dated: 2016-09-13 15:43
-  - 1600×1651px, 676 KB, shot 261 m from the spot
-  - Description: Seen yesterday while on a visit to the Wells Reserve at Laudholm.
-  - Match: score 11 via coastal-in-title, name:laudholm, kw:sand, geo:261m, w>=1000
-- **`us-me-laudholm-beach-3.jpg`** ✗ **not a coastal photo** — “Shadows and Reflections (30066251002)” by Paul VanDerWerf from Brunswick, Maine, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Shadows_and_Reflections_(30066251002).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
-  - Dated: 2016-09-13 16:22
-  - 1600×2314px, 891 KB, shot 939 m from the spot
-  - Description: A open door on one of the sheds that is part of the Laudholm farm in Wells Maine.
-  - Match: score 8 via name:laudholm, kw:sea, geo:939m, w>=1000
 
 ## Little Beach
 
@@ -976,14 +774,6 @@
   - 1600×1065px, 615 KB, shot 1304 m from the spot
   - Description: Gooch's Beach, Kennebunk ME, in Summer
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:1304m, w>=1000, landscape
-- **`us-me-little-mother-s-beach-3.jpg`** ✗ **not a coastal photo** — “Mousam River, Parson's Beach, Kennebunk, Maine, US (PPL1-Corrected) julesvernex2” by Jules Verne Times Two, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Mousam_River,_Parson%27s_Beach,_Kennebunk,_Maine,_US_(PPL1-Corrected)_julesvernex2.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Jules Verne Times Two — //commons.wikimedia.org/wiki/User:Julesvernex2
-  - Dated: 2022-07-25 10:53:43
-  - 1600×1130px, 274 KB, shot 1662 m from the spot
-  - Description: Mousam River, Parson's Beach, Kennebunk, Maine, US (PPL1-Corrected)
-  - Match: score 5.5 via coastal-in-title, kw:beach, geo:1662m, w>=1000, landscape
 
 ## Long Sands
 
@@ -1005,14 +795,6 @@
   - 1600×2133px, 1077 KB
   - Description: Photograph of Long Sands Beach in York Beach, Maine, USA
   - Match: score 14.5 via coastal-in-title, name:long+sands, kw:beach+ocean+sand, w>=1000
-- **`us-me-long-sands-3.jpg`** ✗ **not a coastal photo** — “Long Sands Historic Marker (3617456256)” by InAweofGod'sCreation, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Long_Sands_Historic_Marker_(3617456256).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: InAweofGod'sCreation — https://www.flickr.com/people/36783643@N05
-  - Dated: 2004-12-29 14:30
-  - 1600×835px, 564 KB, shot 677 m from the spot
-  - Description: Talk of building a lighthouse on Boon Island dates back as early as 1710 when the ship Nottingham Galley ran aground on the barren outcrop that makes up the island. The crew of the Galley were forced to resort to cannibalism before being rescued. In 1799 the first day marker and the station itself were established on the island. In 1811 the station was converted to a full light station and a granite tower was constructed. The first tower along with a subsequent replacement were both washed away in storms. The current cylindrical brown granite tower was constructed in 1855 and originally had a 
-  - Match: score 17 via coastal-in-title, name:long+sands, kw:sand+mar+lighthouse, geo:677m, w>=1000, landscape
 
 ## Middle Beach
 
@@ -1179,43 +961,6 @@
   - 1600×1065px, 615 KB, shot 1467 m from the spot
   - Description: Gooch's Beach, Kennebunk ME, in Summer
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:1467m, w>=1000, landscape
-- **`us-me-mothers-beach-3.jpg`** ✗ **not a coastal photo** — “Mousam River, Parson's Beach, Kennebunk, Maine, US (PPL1-Corrected) julesvernex2” by Jules Verne Times Two, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Mousam_River,_Parson%27s_Beach,_Kennebunk,_Maine,_US_(PPL1-Corrected)_julesvernex2.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Jules Verne Times Two — //commons.wikimedia.org/wiki/User:Julesvernex2
-  - Dated: 2022-07-25 10:53:43
-  - 1600×1130px, 274 KB, shot 1510 m from the spot
-  - Description: Mousam River, Parson's Beach, Kennebunk, Maine, US (PPL1-Corrected)
-  - Match: score 5.5 via coastal-in-title, kw:beach, geo:1510m, w>=1000, landscape
-
-## Ogunquit Beach
-
-`osm:way/438218314` · 43.2528447, -70.5932093 · beach type: **sandy** (OpenStreetMap surface=sand)
-
-- **`us-me-ogunquit-beach-1.jpg`** ✗ **not a coastal photo** — “Leaf on beach ogunquit” by Captain-tucker, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Leaf_on_beach_ogunquit.JPG
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Captain-tucker — //commons.wikimedia.org/wiki/User:Captain-tucker
-  - Dated: 2007-11-13
-  - 1600×1200px, 871 KB, shot 241 m from the spot
-  - Description: Leaf on the beach in Ogunquit, Maine
-  - Match: score 11.5 via coastal-in-title, name:ogunquit, kw:beach, geo:241m, w>=1000, landscape
-- **`us-me-ogunquit-beach-2.jpg`** ✗ **not a coastal photo** — “Christmas by the Sea Parade in Ogunquit, Maine-IMG 1497” by Captain-tucker, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Christmas_by_the_Sea_Parade_in_Ogunquit,_Maine-IMG_1497.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Captain-tucker
-  - Dated: 2008-12-20 15:17:10
-  - 1600×1200px, 869 KB, shot 711 m from the spot
-  - Description: Christmas by the Sea Parade in Ogunquit, Maine 2008
-  - Match: score 10.5 via coastal-in-title, name:ogunquit, kw:sea, geo:711m, w>=1000, landscape
-- **`us-me-ogunquit-beach-3.jpg`** ✗ **not a coastal photo** — “Christmas by the Sea Parade in Ogunquit, Maine-IMG 1498” by Captain-tucker, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Christmas_by_the_Sea_Parade_in_Ogunquit,_Maine-IMG_1498.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Captain-tucker
-  - Dated: 2008-12-20 15:17:17
-  - 1600×1200px, 949 KB, shot 711 m from the spot
-  - Description: Christmas by the Sea Parade in Ogunquit, Maine 2008
-  - Match: score 10.5 via coastal-in-title, name:ogunquit, kw:sea, geo:711m, w>=1000, landscape
 
 ## Parsons Beach
 
@@ -1229,22 +974,6 @@
   - 1600×1067px, 528 KB, shot 364 m from the spot
   - Description: Parson's Beach, Kennebunk, Maine, US (PPL1-Corrected)
   - Match: score 7.5 via coastal-in-title, kw:beach, geo:364m, w>=1000, landscape
-- **`us-me-parsons-beach-2.jpg`** ✗ **not a coastal photo** — “Mousam River, Parson's Beach, Kennebunk, Maine, US (PPL1-Corrected) julesvernex2” by Jules Verne Times Two, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Mousam_River,_Parson%27s_Beach,_Kennebunk,_Maine,_US_(PPL1-Corrected)_julesvernex2.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Jules Verne Times Two — //commons.wikimedia.org/wiki/User:Julesvernex2
-  - Dated: 2022-07-25 10:53:43
-  - 1600×1130px, 274 KB, shot 364 m from the spot
-  - Description: Mousam River, Parson's Beach, Kennebunk, Maine, US (PPL1-Corrected)
-  - Match: score 7.5 via coastal-in-title, kw:beach, geo:364m, w>=1000, landscape
-- **`us-me-parsons-beach-3.jpg`** ✗ **not a coastal photo** — “Alate (winged ant) at Parson's Beach, Kennebunk, Maine, US (PPL1-Corrected) julesvernex2” by Jules Verne Times Two, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Alate_(winged_ant)_at_Parson%27s_Beach,_Kennebunk,_Maine,_US_(PPL1-Corrected)_julesvernex2.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Jules Verne Times Two — //commons.wikimedia.org/wiki/User:Julesvernex2
-  - Dated: 2022-07-25 10:28:17
-  - 1600×1393px, 548 KB, shot 364 m from the spot
-  - Description: Alate (winged ant) at Parson's Beach, Kennebunk, Maine, US (PPL1-Corrected)
-  - Match: score 7 via coastal-in-title, kw:beach, geo:364m, w>=1000
 
 ## Sand Dune Beach
 
@@ -1323,43 +1052,6 @@
   - 1600×1200px, 748 KB
   - Description: Seapoint
   - Match: score 11 via coastal-in-title, name:seapoint, kw:sea+point+tide+rocks, w>=1000, landscape
-- **`us-me-seapoint-beach-3.jpg`** ✗ **not a coastal photo** — “305.Groundnut Seapoint Beach” by InAweofGod'sCreation, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:305.Groundnut_Seapoint_Beach.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: InAweofGod'sCreation — //www.flickr.com/people/36783643@N05
-  - Dated: 2004-08-22 11:20:16
-  - 1600×1032px, 93 KB
-  - Description: Kittery Point Apios americana, sometimes called the potato bean, hopniss, Indian potato or groundnut (but not to be confused with other plants sometimes known by the name groundnut) is a perennial vine native to eastern North America, and bears edible beans and large edible tubers. It grows to 3-4 m long, with pinnate leaves 8-15 cm long with 5-7 leaflets. The flowers are red-brown to purple, produced in dense racemes. The fruit is a legume (pod) 6-12 cm long. The tubers are crunchy and nutritious, with a high content of starch and especially protein. The plant was one of the most important fo
-  - Match: score 11 via coastal-in-title, name:seapoint, kw:beach+sea+point, w>=1000, landscape
-
-## Seawall Beach
-
-`osm:way/1352195752` · 43.7258031, -69.8235425
-
-- **`us-me-seawall-beach-1.jpg`** ✗ **not a coastal photo** — “Metatuffs (Cranberry Island Series, Upper Silurian, 424 Ma; Seawall Beach, Mt. Desert Island, Maine, USA) 1” by James St. John, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Metatuffs_(Cranberry_Island_Series,_Upper_Silurian,_424_Ma;_Seawall_Beach,_Mt._Desert_Island,_Maine,_USA)_1.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: James St. John
-  - Dated: 2006-09-12 16:09:23
-  - 1600×1064px, 1082 KB
-  - Description: Rhyolitic metatuffs in the Silurian of Maine, USA. In the Mt. Desert Island area of coastal Maine, felsic and mafic volcanic rocks of Late Silurian age occur near the Cadillac Mountain Granite, a large mid-Paleozoic pluton. The rocks were erupted when the island was a large volcanic center. The granite body is the remains of the solidified magma chamber beneath that ancient volcano. The volcanic succession, called the Cranberry Island Series, mostly consists of rhyolitic volcanic breccias, volcanic tuffs, and rhyolite lava flows. Mafic tuffs and basalt lava flows occur at the top. Seen here ar
-  - Match: score 11 via coastal-in-title, name:seawall, kw:beach+sea+coast+coastal, w>=1000, landscape
-- **`us-me-seawall-beach-2.jpg`** ✗ **not a coastal photo** — “Metatuffs (Cranberry Island Series, Upper Silurian, 424 Ma; Seawall Beach, Mt. Desert Island, Maine, USA) 2” by James St. John, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Metatuffs_(Cranberry_Island_Series,_Upper_Silurian,_424_Ma;_Seawall_Beach,_Mt._Desert_Island,_Maine,_USA)_2.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: James St. John
-  - Dated: 2006-09-12 16:09:25
-  - 1600×1064px, 1190 KB
-  - Description: Rhyolitic metatuffs in the Silurian of Maine, USA. In the Mt. Desert Island area of coastal Maine, felsic and mafic volcanic rocks of Late Silurian age occur near the Cadillac Mountain Granite, a large mid-Paleozoic pluton. The rocks were erupted when the island was a large volcanic center. The granite body is the remains of the solidified magma chamber beneath that ancient volcano. The volcanic succession, called the Cranberry Island Series, mostly consists of rhyolitic volcanic breccias, volcanic tuffs, and rhyolite lava flows. Mafic tuffs and basalt lava flows occur at the top. Seen here ar
-  - Match: score 11 via coastal-in-title, name:seawall, kw:beach+sea+coast+coastal, w>=1000, landscape
-- **`us-me-seawall-beach-3.jpg`** ✗ **not a coastal photo** — “Metatuffs (Cranberry Island Series, Upper Silurian, 424 Ma; Seawall Beach, Mt. Desert Island, Maine, USA) 3” by James St. John, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Metatuffs_(Cranberry_Island_Series,_Upper_Silurian,_424_Ma;_Seawall_Beach,_Mt._Desert_Island,_Maine,_USA)_3.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: James St. John
-  - Dated: 2006-09-12 16:09:27
-  - 1600×1064px, 1080 KB
-  - Description: Rhyolitic metatuffs in the Silurian of Maine, USA. In the Mt. Desert Island area of coastal Maine, felsic and mafic volcanic rocks of Late Silurian age occur near the Cadillac Mountain Granite, a large mid-Paleozoic pluton. The rocks were erupted when the island was a large volcanic center. The granite body is the remains of the solidified magma chamber beneath that ancient volcano. The volcanic succession, called the Cranberry Island Series, mostly consists of rhyolitic volcanic breccias, volcanic tuffs, and rhyolite lava flows. Mafic tuffs and basalt lava flows occur at the top. Seen here ar
-  - Match: score 11 via coastal-in-title, name:seawall, kw:beach+sea+coast+coastal, w>=1000, landscape
 
 ## Short Sands Beach
 
@@ -1380,13 +1072,6 @@
   - Dated: 2017-09-14
   - 1600×1200px, 667 KB
   - Description: Short Sands Beach at York Beach in September
-  - Match: score 14 via coastal-in-title, name:short+sands, kw:beach+sand, w>=1000, landscape
-- **`us-me-short-sands-beach-3.jpg`** ✗ **not a coastal photo** — The Square, York Beach, ME — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:The_Square,_York_Beach,_ME.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Unknown author Unknown author
-  - 1600×978px, 78 KB
-  - Description: The Square at Short Sands Beach, York Beach, ME; from a c. 1915 postcard.
   - Match: score 14 via coastal-in-title, name:short+sands, kw:beach+sand, w>=1000, landscape
 
 ## Suprise Beach

@@ -1,6 +1,6 @@
 # US-MA — United States, Massachusetts
 
-219 images across 78 spots. Licence rules and the OSM credit are in [the index](./README.md).
+164 images across 74 spots. Licence rules and the OSM credit are in [the index](./README.md).
 
 ## Barrier Beach
 
@@ -22,14 +22,6 @@
   - 1600×2133px, 765 KB, shot 2211 m from the spot
   - Description: waves from back of boat
   - Match: score 6.5 via coastal-in-title, kw:wave+waves, geo:2211m, w>=1000
-- **`us-ma-barrier-beach-3.jpg`** ✗ **not a coastal photo** — “"Protected" side of barrier beach, facing Duxbury Bay” by Nelson Pavlosky, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:%22Protected%22_side_of_barrier_beach,_facing_Duxbury_Bay.jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Nelson Pavlosky — https://www.flickr.com/people/skyfaller/
-  - Dated: 2009-09-07
-  - 1600×900px, 647 KB
-  - Description: Typical Duxbury Beach flora is visible in the foreground. In the top right is the Powder Point Bridge, and some houses on Powder Point in the top center.
-  - Match: score 11 via coastal-in-title, name:barrier, kw:beach+bay+point, w>=1000, landscape
 
 ## Black Rock Beach
 
@@ -109,14 +101,6 @@
   - 1600×1200px, 844 KB, shot 181 m from the spot
   - Description: Lez Zeppelin at The Beachcomber, 20007-05-27
   - Match: score 7.5 via coastal-in-title, kw:beach, geo:181m, w>=1000, landscape
-- **`us-ma-cahoon-hollow-beach-3.jpg`** ✗ **not a coastal photo** — Duck Harbor Saltmarsh Spring.JPG (d2971f9e-e7ba-4b5b-b8ca-66b34c45ff47) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Duck_Harbor_Saltmarsh_Spring.JPG_(d2971f9e-e7ba-4b5b-b8ca-66b34c45ff47).JPG
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: NPS
-  - Dated: Taken on 9 June 2023
-  - 1600×1200px, 1023 KB, shot 2108 m from the spot
-  - Description: Some saltmarsh vegetation sprouting in big, cleared areas in Duck Harbor on a partly cloudy day with trees in the background. Duck Harbor Saltmarsh in Spring
-  - Match: score 6 via kw:sea+shore+mar+seashore, geo:2108m, w>=1000, landscape
 
 ## Canoe Beach
 
@@ -129,22 +113,6 @@
   - 1600×1229px, 540 KB
   - Description: Thirty-three men sit in a long canoe next to a beach. Distant shore in background. Photograph collected by Charles Appleton Longfellow during his trip to New Zealand in 1891. Thirty-three men sit in a long canoe next to a beach. Man in front, probably the "chief," wears cloak around his shoulders. Others wear combinations of European and Maori attire, most with feathers in their hair. Inscription below photograph reads, "Paul Paora Tuhaere Chief Orakie War Canoe - New Zealand." Archives Number: 1008-2-1-2-9-34 Keywords: charles appleton longfellow; maori; new zealand; pulman; travel
   - Match: score 8 via name:canoe, kw:beach+shore, w>=1000, landscape
-- **`us-ma-canoe-beach-2.jpg`** ✗ **not a coastal photo** — “Life on a Grain of Sand 3 (4478011500)” by Anthony D'Onofrio, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Life_on_a_Grain_of_Sand_3_(4478011500).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Anthony D'Onofrio — https://www.flickr.com/people/48784416@N06
-  - Dated: 2010-03-28 22:25
-  - 1600×1200px, 847 KB, shot 19 m from the spot
-  - Description: A natural community of bacteria growing on a single grain of sand. The sand was collected from intertidal sediment on a beach near Boston, MA in February 2009 and imaged using a Scanning Electron Microscope (SEM). You are free to distribute this image while giving attribution in the following manner: "Image courtesy of the Lewis Lab at Northeastern University. Image created by Anthony D'Onofrio, William H. Fowle, Eric J. Stewart and Kim Lewis."
-  - Match: score 9 via coastal-in-title, kw:beach+sand, geo:19m, w>=1000, landscape
-- **`us-ma-canoe-beach-3.jpg`** ✗ **not a coastal photo** — “Life on a Grain of Sand 2 (4477990850)” by Anthony D'Onofrio, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Life_on_a_Grain_of_Sand_2_(4477990850).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Anthony D'Onofrio — https://www.flickr.com/people/48784416@N06
-  - Dated: 2010-03-28 22:30
-  - 1600×1200px, 900 KB, shot 11 m from the spot
-  - Description: A natural community of bacteria growing on a single grain of sand. The sand was collected from intertidal sediment on a beach near Boston, MA in February 2009 and imaged using a Scanning Electron Microscope (SEM). You are free to distribute this image while giving attribution in the following manner: "Image courtesy of the Lewis Lab at Northeastern University. Image created by Anthony D'Onofrio, William H. Fowle, Eric J. Stewart and Kim Lewis."
-  - Match: score 9 via coastal-in-title, kw:beach+sand, geo:11m, w>=1000, landscape
 
 ## Cape Hedge Beach
 
@@ -171,22 +139,6 @@
   - 1600×1200px, 1004 KB, shot 241 m from the spot
   - Description: Carson Beach in South Boston
   - Match: score 11.5 via coastal-in-title, name:carson, kw:beach, geo:241m, w>=1000, landscape
-- **`us-ma-carson-beach-2.jpg`** ✗ **not a coastal photo** — “Carson Beach” by Arturoramos, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Carson_Beach.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Arturoramos — //commons.wikimedia.org/wiki/User:Arturoramos
-  - Dated: 2011-12-13
-  - 1600×2142px, 1278 KB, shot 361 m from the spot
-  - Description: Sunrise on Carson Beach in South Boston
-  - Match: score 12.5 via coastal-in-title, name:carson, kw:beach+sunrise, geo:361m, w>=1000
-- **`us-ma-carson-beach-3.jpg`** ✗ **not a coastal photo** — “White Mayflower beside blue sea of South Boston” by Nhatchimai8, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:White_Mayflower_beside_blue_sea_of_South_Boston.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Nhatchimai8 — //commons.wikimedia.org/w/index.php?title=User:Nhatchimai8&amp;action=edit&amp;redlink=1
-  - Dated: 2018-05-08 17:35:01
-  - 1600×2133px, 1907 KB, shot 470 m from the spot
-  - Description: hoa Mây trắng bên biển xanh S. Boston
-  - Match: score 11.5 via coastal-in-title, name:carson, kw:beach+sea, geo:470m, w>=1000
 
 ## Cisco Beach
 
@@ -200,22 +152,6 @@
   - 1600×1137px, 538 KB, shot 3386617 m from the spot
   - Description: Off Cisco Beach
   - Match: score 8.5 via coastal-in-title, name:cisco, kw:beach, geo:3386617m, w>=1000, landscape
-- **`us-ma-cisco-beach-2.jpg`** ✗ **not a coastal photo** — Logan Canyon Scenic Byway - A Cisco Fish In Hand - NARA - 7720123 — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Logan_Canyon_Scenic_Byway_-_A_Cisco_Fish_In_Hand_-_NARA_-_7720123.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Unknown author Unknown author or not provided
-  - Dated: Taken on 26 January 2013, 16:31 (accordi
-  - 1600×1076px, 213 KB
-  - Description: Scope and content: The original finding aid described this photograph as: Original Caption: Closeup of a captured cisco fish. The cisco is endemic to Bear Lake and spawns every January. Local fishermen and women come to the region to carve holes in the ice (when the lake is frozen) and scoop them up! Location: Cisco Beach, Utah (41.954° N 111.278° W) Status: Public domain. Photo by A. E. Crane
-  - Match: score 6.5 via name:cisco, kw:beach, w>=1000, landscape
-- **`us-ma-cisco-beach-3.jpg`** ✗ **not a coastal photo** — Logan Canyon Scenic Byway - Cisco in the Net - NARA - 7720124 — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Logan_Canyon_Scenic_Byway_-_Cisco_in_the_Net_-_NARA_-_7720124.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: A. E. Crane, U.S. Department of Transportation
-  - Dated: Taken on 26 January 2013, 16:33 (accordi
-  - 1600×1156px, 472 KB
-  - Description: Scope and content: The original finding aid described this photograph as: Original Caption: A woman shows the cisco fish she has just scooped out of a hole in the ice in Bear Lake. Location: Cisco Beach, Utah (41.954° N 111.278° W) Status: Public domain. Photo by A. E. Crane
-  - Match: score 6.5 via name:cisco, kw:beach, w>=1000, landscape
 
 ## Coast Guard Beach
 
@@ -245,35 +181,6 @@
   - 1600×900px, 426 KB, shot 203 m from the spot
   - Description: Cape Cod: Sunrise on Coast Guard Beach, Eastham MA.
   - Match: score 18 via coastal-in-title, name:coast+guard, kw:beach+sea+coast+shore, geo:203m, w>=1000, landscape
-
-## Crescent Beach
-
-`osm:way/29688389` · 42.2673604, -70.8318613 · beach type: **sandy** (OpenStreetMap surface=sand) · access: yes
-
-- **`us-ma-crescent-beach-1.jpg`** ✗ **not a coastal photo** — Crescent Beach station 1910 postcard — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Crescent_Beach_station_1910_postcard.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Unknown author Unknown author
-  - Dated: circa 1907-1915
-  - 1600×1014px, 1120 KB
-  - Description: Divided back postcard of Crescent Beach station, postmarked 1910
-  - Match: score 10 via coastal-in-title, name:crescent, kw:beach+mar, w>=1000, landscape
-- **`us-ma-crescent-beach-2.jpg`** ✗ **not a coastal photo** — Crescent Beach station postcard by Reichner Brothers — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Crescent_Beach_station_postcard_by_Reichner_Brothers.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Reichner Brothers, Germany
-  - Dated: circa 1909 date QS:P,+1909-00-00T00:00:0
-  - 1600×1038px, 1042 KB
-  - Description: Divided back postcard of Crescent Beach station, postmarked 1909
-  - Match: score 10 via coastal-in-title, name:crescent, kw:beach+mar, w>=1000, landscape
-- **`us-ma-crescent-beach-3.jpg`** ✗ **not a coastal photo** — Crescent Beach station postcard by Tichnor Brothers — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Crescent_Beach_station_postcard_by_Tichnor_Brothers.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Tichnor Brothers
-  - Dated: circa 1913 date QS:P,+1913-00-00T00:00:0
-  - 1600×1032px, 1087 KB
-  - Description: Divided back postcard of Crescent Beach station, postmarked 1913
-  - Match: score 10 via coastal-in-title, name:crescent, kw:beach+mar, w>=1000, landscape
 
 ## East Beach
 
@@ -316,14 +223,6 @@
   - 1600×1022px, 521 KB
   - Description: Safaga diving and surfing
   - Match: score 5 via kw:beach+surf+surfing, w>=1000, landscape
-- **`us-ma-egypt-beach-2.jpg`** ✗ **not a coastal photo** — “اسبح فوق الماء وحيدا” by Mohamed3171979, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:%D8%A7%D8%B3%D8%A8%D8%AD_%D9%81%D9%88%D9%82_%D8%A7%D9%84%D9%85%D8%A7%D8%A1_%D9%88%D8%AD%D9%8A%D8%AF%D8%A7.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Mohamed3171979 — //commons.wikimedia.org/w/index.php?title=User:Mohamed3171979&amp;action=edit&amp;redlink=1
-  - Dated: 2015-09-19 15:25:14
-  - 1600×1067px, 718 KB
-  - Description: شاطىء لاجونا من ضمن محمية ابو جالوم ، جنوب سيناء ، مصر
-  - Match: score 9 via name:egypt, kw:beach+surf+surfing+sea, w>=1000, landscape
 
 ## Fisherman's Beach
 
@@ -366,22 +265,6 @@
   - 1600×1067px, 662 KB, shot 868 m from the spot
   - Description: WW2 era firing control tower in Halibut Point State Park, part of the Boston coastal defenses. Facing roughly east.
   - Match: score 7 via kw:coast+coastal+point, geo:868m, w>=1000, landscape
-- **`us-ma-folly-cove-shore-dive-site-2.jpg`** ✗ **not a coastal photo** — “Purple Sandpiper -5 100- (32777234951)” by Tim Sackton from Somerville, MA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Purple_Sandpiper_-5_100-_(32777234951).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Tim Sackton from Somerville, MA — https://www.flickr.com/people/43581314@N08
-  - Dated: 2017-01-22 11:19
-  - 1600×1067px, 723 KB, shot 1347 m from the spot
-  - Description: Purple sandpipers are one of the few shorebirds that winter in Massachusetts, and provide a nice change of pace from the winter ducks, gulls, and other seabirds typically spotted from our coasts in January. These were putting on quite a show hopping around the rocks at Halibut Point State Park a few weeks ago.
-  - Match: score 12 via coastal-in-title, name:shore, kw:sea+coast+shore+sand, geo:1347m, w>=1000, landscape
-- **`us-ma-folly-cove-shore-dive-site-3.jpg`** ✗ **not a coastal photo** — “Northern Gannet -4 100- (32017840414)” by Tim Sackton from Somerville, MA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Northern_Gannet_-4_100-_(32017840414).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Tim Sackton from Somerville, MA — https://www.flickr.com/people/43581314@N08
-  - Dated: 2017-01-22 09:44
-  - 1600×1067px, 414 KB, shot 1764 m from the spot
-  - Description: For my 4th shot in my 100x Birds series, one of my favorite birds, the Northern Gannet. These seabirds are not uncommon off the Massachusetts coast in the winter, and are amazing flyers and spectacular divers. They are so much fun to watch. I have gotten a bit of a slow start to this project, partly due to being a bit burnt out from my 365 project last year, and partly just due to the nature of bird photography in the winter in Massachusetts. I have one or two more shots to post from the past month, but then the pace will pick up considerably: I am going to Costa Rica at the end of next week, 
-  - Match: score 9 via name:dive, kw:sea+coast, geo:1764m, w>=1000, landscape
 
 ## Fort Beach
 
@@ -403,43 +286,6 @@
   - 1600×1200px, 481 KB, shot 93 m from the spot
   - Description: View at Fort Sewall low tide
   - Match: score 11.5 via coastal-in-title, name:fort, kw:tide, geo:93m, w>=1000, landscape
-- **`us-ma-fort-beach-3.jpg`** ✗ **not a coastal photo** — “Fort Sewall 1742 Marblehead ,July 2010 - panoramio” by joefrogger, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Fort_Sewall_1742_Marblehead_,July_2010_-_panoramio.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: joefrogger — https://web.archive.org/web/20161014220317/http://www.panoramio.com/user/2074768?with_photo_id=38001814
-  - Dated: Taken on 5 July 2010
-  - 1600×1200px, 477 KB, shot 44 m from the spot
-  - Description: Fort Sewall 1742 Marblehead ,July 2010
-  - Match: score 11 via name:fort, kw:mar+bay, geo:44m, w>=1000, landscape
-
-## Forty Steps Beach
-
-`osm:way/206174179` · 42.4224538, -70.9090858 · beach type: **sandy** (OpenStreetMap surface=sand) · lifeguard: no · site: https://nahant.org/coastalresources/beaches/#40-steps-beach
-
-- **`us-ma-forty-steps-beach-1.jpg`** ✗ **not a coastal photo** — “Life on a Grain of Sand 3 (4478011500)” by Anthony D'Onofrio, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Life_on_a_Grain_of_Sand_3_(4478011500).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Anthony D'Onofrio — https://www.flickr.com/people/48784416@N06
-  - Dated: 2010-03-28 22:25
-  - 1600×1200px, 847 KB, shot 370 m from the spot
-  - Description: A natural community of bacteria growing on a single grain of sand. The sand was collected from intertidal sediment on a beach near Boston, MA in February 2009 and imaged using a Scanning Electron Microscope (SEM). You are free to distribute this image while giving attribution in the following manner: "Image courtesy of the Lewis Lab at Northeastern University. Image created by Anthony D'Onofrio, William H. Fowle, Eric J. Stewart and Kim Lewis."
-  - Match: score 9 via coastal-in-title, kw:beach+sand, geo:370m, w>=1000, landscape
-- **`us-ma-forty-steps-beach-2.jpg`** ✗ **not a coastal photo** — “Life on a Grain of Sand 2 (4477990850)” by Anthony D'Onofrio, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Life_on_a_Grain_of_Sand_2_(4477990850).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Anthony D'Onofrio — https://www.flickr.com/people/48784416@N06
-  - Dated: 2010-03-28 22:30
-  - 1600×1200px, 900 KB, shot 356 m from the spot
-  - Description: A natural community of bacteria growing on a single grain of sand. The sand was collected from intertidal sediment on a beach near Boston, MA in February 2009 and imaged using a Scanning Electron Microscope (SEM). You are free to distribute this image while giving attribution in the following manner: "Image courtesy of the Lewis Lab at Northeastern University. Image created by Anthony D'Onofrio, William H. Fowle, Eric J. Stewart and Kim Lewis."
-  - Match: score 9 via coastal-in-title, kw:beach+sand, geo:356m, w>=1000, landscape
-- **`us-ma-forty-steps-beach-3.jpg`** ✗ **not a coastal photo** — “Vibrio Cells 1 (5390287631)” by Anthony D'Onofrio, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Vibrio_Cells_1_(5390287631).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Anthony D'Onofrio — https://www.flickr.com/people/48784416@N06
-  - Dated: 2011-01-26 12:57
-  - 1600×1284px, 493 KB, shot 364 m from the spot
-  - Description: This is a Scanning Electron Microscope (SEM) image of cells of the bacteria Vibrio tasmaniensis KLE1213 (a close relative of Vibrio cholerae , the causative agent of cholera. The strain was cultured from intertidal sand grains from a beach in Nahant, MA. It is a relative of the bacteria that causes cholera. This particular strain produces a siderophore which induces the growth of a rare species of bacteria. More info can be found in the following peer-reviewed research paper: Anthony D'Onofrio, Jason M. Crawford, Eric J. Stewart, Kathrin Witt, Ekaterina Gavrish, Slava Epstein, Jon Clardy, Kim 
-  - Match: score 7.5 via kw:beach+sea+sand, geo:364m, w>=1000
 
 ## Front Beach
 
@@ -490,14 +336,6 @@
   - 1600×1067px, 561 KB, shot 1282 m from the spot
   - Description: Letting down the bongo nets, we did a tow for 10 minutes to collect small organisms, looking for offshore larval fish. Follow what we're up to! The OSV Bold is sampling along the coast of New England August 5-11, 2011 @ 1.usa.gov/oI38ve Photo by Eric Vance, U.S. EPA www.epa.gov/boldkids
   - Match: score 6 via kw:ocean+coast+shore+mar, geo:1282m, w>=1000, landscape
-- **`us-ma-garmet-beach-3.jpg`** ✗ **not a coastal photo** — “In Lighthouse Park-Abbott Hall, Marblehead winter - panoramio” by joefrogger, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:In_Lighthouse_Park-Abbott_Hall,_Marblehead_winter_-_panoramio.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: joefrogger — https://web.archive.org/web/20161012082528/http://www.panoramio.com/user/2074768?with_photo_id=13425878
-  - Dated: 23 August 2008 (original upload date)
-  - 1600×1067px, 499 KB, shot 826 m from the spot
-  - Description: In Lighthouse Park-Abbott Hall, Marblehead winter
-  - Match: score 8 via coastal-in-title, kw:mar+lighthouse, geo:826m, w>=1000, landscape
 
 ## Gas House Basin
 
@@ -519,14 +357,6 @@
   - 1600×1200px, 481 KB, shot 682 m from the spot
   - Description: View at Fort Sewall low tide
   - Match: score 6.5 via coastal-in-title, kw:tide, geo:682m, w>=1000, landscape
-- **`us-ma-gas-house-basin-3.jpg`** ✗ **not a coastal photo** — “Fort Sewall 1742 Marblehead ,July 2010 - panoramio” by joefrogger, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Fort_Sewall_1742_Marblehead_,July_2010_-_panoramio.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: joefrogger — https://web.archive.org/web/20161014220317/http://www.panoramio.com/user/2074768?with_photo_id=38001814
-  - Dated: Taken on 5 July 2010
-  - 1600×1200px, 477 KB, shot 580 m from the spot
-  - Description: Fort Sewall 1742 Marblehead ,July 2010
-  - Match: score 6 via kw:mar+bay, geo:580m, w>=1000, landscape
 
 ## Gay Head Town Beach
 
@@ -577,14 +407,6 @@
   - 1600×1200px, 349 KB, shot 1066 m from the spot
   - Description: Summer morning on Singing Beach
   - Match: score 6.5 via coastal-in-title, kw:beach, geo:1066m, w>=1000, landscape
-- **`us-ma-graves-beach-3.jpg`** ✗ **not a coastal photo** — Manchester-by-the-Sea station postcard — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Manchester-by-the-Sea_station_postcard.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Unknown author Unknown author
-  - Dated: circa 1909 date QS:P,+1909-00-00T00:00:0
-  - 1600×1038px, 491 KB, shot 1811 m from the spot
-  - Description: Divided back postcard of Manchester-by-the-Sea station. This copy was postmarked in 1913; others were issued at least as early as 1909.
-  - Match: score 7 via coastal-in-title, kw:sea+mar, geo:1811m, w>=1000, landscape
 
 ## Gray Beach
 
@@ -635,13 +457,6 @@
   - 1600×1022px, 188 KB, shot 1211 m from the spot
   - Description: White border back postcard of Nantasket Pier, with Nantasket station on the Nantasket Beach Branch in the foreground
   - Match: score 7 via coastal-in-title, kw:beach+pier, geo:1211m, w>=1000, landscape
-- **`us-ma-gun-rock-beach-3.jpg`** ✗ **not a coastal photo** — Beach, cliffs, and Gun Rock House, from Robert N. Dennis collection of stereoscopic views — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Beach,_cliffs,_and_Gun_Rock_House,_from_Robert_N._Dennis_collection_of_stereoscopic_views.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Unknown artist Unknown artist
-  - Dated: Coverage: 1859?-1885?. Source Imprint: 1
-  - 1600×821px, 57 KB
-  - Match: score 14 via coastal-in-title, name:gun+rock, kw:beach+cliff, w>=1000, landscape
 
 ## Hampton Beach
 
@@ -750,14 +565,6 @@
   - 1600×1200px, 605 KB, shot 103714 m from the spot
   - Description: View of Little Nahant from the isthmus connecting Nahant to the mainland.
   - Match: score 8.5 via coastal-in-title, name:little, kw:beach, geo:103714m, w>=1000, landscape
-- **`us-ma-little-beach-3.jpg`** ✗ **not a coastal photo** — “Little Sand Castle (2014)” by Eric Kilby from Somerville, MA, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Little_Sand_Castle_(2014).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Eric Kilby from Somerville, MA, USA — https://www.flickr.com/people/8749778@N06
-  - Dated: 2014-07-21 20:57
-  - 1600×1068px, 664 KB, shot 99750 m from the spot
-  - Description: Little Sand Castle
-  - Match: score 10 via coastal-in-title, name:little, kw:beach+sand, geo:99750m, w>=1000, landscape
 
 ## Little Beach
 
@@ -779,14 +586,6 @@
   - 1600×1200px, 605 KB, shot 20302 m from the spot
   - Description: View of Little Nahant from the isthmus connecting Nahant to the mainland.
   - Match: score 8.5 via coastal-in-title, name:little, kw:beach, geo:20302m, w>=1000, landscape
-- **`us-ma-little-beach-691700-3.jpg`** ✗ **not a coastal photo** — “Little Sand Castle (2014)” by Eric Kilby from Somerville, MA, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Little_Sand_Castle_(2014).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Eric Kilby from Somerville, MA, USA — https://www.flickr.com/people/8749778@N06
-  - Dated: 2014-07-21 20:57
-  - 1600×1068px, 664 KB, shot 18682 m from the spot
-  - Description: Little Sand Castle
-  - Match: score 10 via coastal-in-title, name:little, kw:beach+sand, geo:18682m, w>=1000, landscape
 
 ## Long Beach
 
@@ -808,14 +607,6 @@
   - 1600×1200px, 295 KB
   - Description: Plymouth Long Beach Warren Cove Plymouth Bay
   - Match: score 11 via coastal-in-title, name:long, kw:beach+bay+cove, w>=1000, landscape
-- **`us-ma-long-beach-3.jpg`** ✗ **not a coastal photo** — A.D. Widger's, Long Beach, Gloucester, Mass (78624) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:A.D._Widger%27s,_Long_Beach,_Gloucester,_Mass_(78624).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Tichnor Bros. Inc., Boston, Mass
-  - Dated: between circa 1930 and circa 1945 date Q
-  - 1600×1031px, 1271 KB
-  - Description: Title: A.D. Widger's, Long Beach, Gloucester, Mass. Description: A.D. Widger's, Long Beach, Gloucester, Mass. Specializing in Barbecued Chicken, Seafood, Ice Cream and Sandwiches. Where Quality is not by Accident. Ample Parking Space. Subjects: Restaurants Places: Massachusetts > Essex (county) > Gloucester Notes: Title from item. Extent: 1 print (postcard) : linen texture, color ; 3 1/2 x 5 1/2 in. Accession #: 06_10_000613
-  - Match: score 11 via coastal-in-title, name:long, kw:beach+sea+sand, w>=1000, landscape
 
 ## Long Beach
 
@@ -835,14 +626,6 @@
   - Author: Martin Johnson Heade — https://en.wikipedia.org/wiki/en:Martin_Johnson_Heade
   - 1600×753px, 100 KB
   - Match: score 11 via coastal-in-title, name:long, kw:beach+mar+sunset, w>=1000, landscape
-- **`us-ma-long-beach-274942-3.jpg`** ✗ **not a coastal photo** — A.D. Widger's, Long Beach, Gloucester, Mass (78624) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:A.D._Widger%27s,_Long_Beach,_Gloucester,_Mass_(78624).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Tichnor Bros. Inc., Boston, Mass
-  - Dated: between circa 1930 and circa 1945 date Q
-  - 1600×1031px, 1271 KB
-  - Description: Title: A.D. Widger's, Long Beach, Gloucester, Mass. Description: A.D. Widger's, Long Beach, Gloucester, Mass. Specializing in Barbecued Chicken, Seafood, Ice Cream and Sandwiches. Where Quality is not by Accident. Ample Parking Space. Subjects: Restaurants Places: Massachusetts > Essex (county) > Gloucester Notes: Title from item. Extent: 1 print (postcard) : linen texture, color ; 3 1/2 x 5 1/2 in. Accession #: 06_10_000613
-  - Match: score 11 via coastal-in-title, name:long, kw:beach+sea+sand, w>=1000, landscape
 
 ## Longnook Beach
 
@@ -935,14 +718,6 @@
   - 1600×900px, 885 KB, shot 2617 m from the spot
   - Description: Sankaty Head Lighthouse
   - Match: score 5.5 via coastal-in-title, kw:lighthouse, geo:2617m, w>=1000, landscape
-- **`us-ma-madequecham-beach-3.png`** ✗ **not a coastal photo** — “Nantucket Memorial Airport from sand dunes” by Yellowknife Patrol, Wikimedia Commons, CC BY 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Nantucket_Memorial_Airport_from_sand_dunes.png
-  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
-  - Author: Yellowknife Patrol — //commons.wikimedia.org/wiki/User:Yellowknife_Patrol
-  - Dated: 9/16/2025
-  - 1600×901px, 1273 KB, shot 2818 m from the spot
-  - Description: Nantucket Memorial Airport from 1 mile away, picture taken Sand Dunes in between Nobadeer beach and Surfside Beach
-  - Match: score 8 via coastal-in-title, kw:beach+surf+sand+dune, geo:2818m, w>=1000, landscape
 
 ## Marconi Beach
 
@@ -985,22 +760,6 @@
   - 1600×371px, 154 KB, shot 2230 m from the spot
   - Description: Panoramic view of Surfside Beach, Nantucket.
   - Match: score 7 via coastal-in-title, kw:beach+surf, geo:2230m, w>=1000, landscape
-- **`us-ma-miacomet-beach-2.jpg`** ✗ **not a coastal photo** — “Willet -25 100- (33593314364)” by Tim Sackton from Somerville, MA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Willet_-25_100-_(33593314364).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Tim Sackton from Somerville, MA — https://www.flickr.com/people/43581314@N08
-  - Dated: 2017-04-29 12:25
-  - 1600×1067px, 144 KB, shot 965 m from the spot
-  - Description: Willets are much more striking birds in flight than on the ground, so I was happy to get this shot of this bird against the surf at Miacomet beach on Nantucket.
-  - Match: score 10 via name:miacomet, kw:beach+surf, geo:965m, w>=1000, landscape
-- **`us-ma-miacomet-beach-3.png`** ✗ **not a coastal photo** — “Nantucket Memorial Airport from sand dunes” by Yellowknife Patrol, Wikimedia Commons, CC BY 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Nantucket_Memorial_Airport_from_sand_dunes.png
-  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
-  - Author: Yellowknife Patrol — //commons.wikimedia.org/wiki/User:Yellowknife_Patrol
-  - Dated: 9/16/2025
-  - 1600×901px, 1273 KB, shot 3564 m from the spot
-  - Description: Nantucket Memorial Airport from 1 mile away, picture taken Sand Dunes in between Nobadeer beach and Surfside Beach
-  - Match: score 7 via coastal-in-title, kw:beach+surf+sand+dune, geo:3564m, w>=1000, landscape
 
 ## Minot Beach
 
@@ -1014,22 +773,6 @@
   - 1600×2133px, 765 KB, shot 4192 m from the spot
   - Description: waves from back of boat
   - Match: score 5.5 via coastal-in-title, kw:wave+waves, geo:4192m, w>=1000
-- **`us-ma-minot-beach-2.jpg`** ✗ **not a coastal photo** — “CohassetMA GovernmentIslandPark LIghthouseFoundations” by Magicpiano, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:CohassetMA_GovernmentIslandPark_LIghthouseFoundations.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Magicpiano — //commons.wikimedia.org/wiki/User:Magicpiano
-  - Dated: 2016-10-07 14:08:06
-  - 1600×1063px, 261 KB, shot 2108 m from the spot
-  - Description: Government Island Historic District , Cohasset, Massachusetts. Foundations on which the Minot's Ledge Light was test-built.
-  - Match: score 9.5 via coastal-in-title, name:minot, kw:lighthouse, geo:2108m, w>=1000, landscape
-- **`us-ma-minot-beach-3.jpg`** ✗ **not a coastal photo** — “Strawberry-Pt-Site-115-1D” by Pgrig at English Wikipedia, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Strawberry-Pt-Site-115-1D.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Pgrig at English Wikipedia — https://en.wikipedia.org/wiki/User:Pgrig
-  - Dated: 2009
-  - 1600×1085px, 182 KB, shot 1196 m from the spot
-  - Description: Looking westerly at one of the two "cottage-type" fire control buildings on Strawberry Point in Scituate, MA. Built during WW2, this building was meant to look like a seaside cottage, and has in fact now been remodeled for just this type of use. The original poured concrete chimney and the two rows of vision slits (now fitted with modern replacement windows) for the observing instruments mark its original purpose, however. The shed-roofed entryway and the rear deck were added-on since the war. During WW2, this structure contained two base end stations and an observation post for the Southern C
-  - Match: score 7 via kw:sea+mar+point, geo:1196m, w>=1000, landscape
 
 ## Moshup Beach
 
@@ -1080,14 +823,6 @@
   - 1600×1068px, 812 KB, shot 174 m from the spot
   - Description: The clay cliffs of Aquinnah and the w:Gay Head Lighthouse , Aquinnah, w:Martha’s Vineyard , Massachusetts
   - Match: score 10 via coastal-in-title, kw:mar+lighthouse+cliff, geo:174m, w>=1000, landscape
-- **`us-ma-moshup-beach-910382-3.jpg`** ✗ **not a coastal photo** — “Edwin DeVries Vanderhoop Homestead (Aquinnah Cultural Center)” by Wosketomp, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Edwin_DeVries_Vanderhoop_Homestead_(Aquinnah_Cultural_Center).jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Wosketomp — //commons.wikimedia.org/w/index.php?title=User:Wosketomp&amp;action=edit&amp;redlink=1
-  - Dated: 2023-11-05
-  - 1600×1082px, 722 KB, shot 109 m from the spot
-  - Description: The Edwin DeVries Vanderhoop Homestead was built c. 1890. It now houses the Aquinnah Cultural Center , which preserves the history of the Wampanoag Tribe of Gay Head . Photo taken from a public walking trail that goes toward Moshup Beach.
-  - Match: score 9.5 via name:moshup, kw:beach, geo:109m, w>=1000, landscape
 
 ## Nahant Beach
 
@@ -1225,27 +960,6 @@
   - 1600×1200px, 632 KB, shot 7509 m from the spot
   - Description: Nauset Beach Light
   - Match: score 8.5 via coastal-in-title, name:nauset, kw:beach, geo:7509m, w>=1000, landscape
-- **`us-ma-nauset-beach-282901-3.jpg`** ✗ **not a coastal photo** — “Nauset Marsh (6310524578)” by Chris M Morris, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Nauset_Marsh_(6310524578).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Chris M Morris — https://www.flickr.com/people/79666107@N00
-  - Dated: 2011-09-27 09:35
-  - 1600×767px, 458 KB, shot 4058 m from the spot
-  - Description: in Cape Cod National Seashore
-  - Match: score 9 via name:nauset, kw:sea+shore+mar+seashore, geo:4058m, w>=1000, landscape
-
-## Nobadeer Beach
-
-`osm:node/358279617` · 41.2431794, -70.0594597
-
-- **`us-ma-nobadeer-beach-1.png`** ✗ **not a coastal photo** — “Nantucket Memorial Airport from sand dunes” by Yellowknife Patrol, Wikimedia Commons, CC BY 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Nantucket_Memorial_Airport_from_sand_dunes.png
-  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
-  - Author: Yellowknife Patrol — //commons.wikimedia.org/wiki/User:Yellowknife_Patrol
-  - Dated: 9/16/2025
-  - 1600×901px, 1273 KB, shot 1558 m from the spot
-  - Description: Nantucket Memorial Airport from 1 mile away, picture taken Sand Dunes in between Nobadeer beach and Surfside Beach
-  - Match: score 12 via coastal-in-title, name:nobadeer, kw:beach+surf+sand+dune, geo:1558m, w>=1000, landscape
 
 ## Nobadeer Beach
 
@@ -1267,14 +981,6 @@
   - 1600×713px, 1684 KB, shot 28 m from the spot
   - Description: Nantucket Memorial Airport from sand dunes at night
   - Match: score 7 via kw:sand+dune, geo:28m, w>=1000, landscape
-- **`us-ma-nobadeer-beach-630687-3.png`** ✗ **not a coastal photo** — “Nantucket Memorial Airport from sand dunes” by Yellowknife Patrol, Wikimedia Commons, CC BY 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Nantucket_Memorial_Airport_from_sand_dunes.png
-  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
-  - Author: Yellowknife Patrol — //commons.wikimedia.org/wiki/User:Yellowknife_Patrol
-  - Dated: 9/16/2025
-  - 1600×901px, 1273 KB, shot 28 m from the spot
-  - Description: Nantucket Memorial Airport from 1 mile away, picture taken Sand Dunes in between Nobadeer beach and Surfside Beach
-  - Match: score 14 via coastal-in-title, name:nobadeer, kw:beach+surf+sand+dune, geo:28m, w>=1000, landscape
 
 ## North Scituate Beach
 
@@ -1288,22 +994,6 @@
   - 1600×1022px, 1044 KB
   - Description: Title: The pool and glades, North Scituate Beach, Mass. Subjects: Beaches Places: Massachusetts > Plymouth (county) > Scituate Notes: Title from item. Extent: 1 print (postcard) : linen texture, color ; 3 1/2 x 5 1/2 in. Accession #: 06_10_001491
   - Match: score 8.5 via coastal-in-title, name:scituate, kw:beach, w>=1000, landscape
-- **`us-ma-north-scituate-beach-2.jpg`** ✗ **not a coastal photo** — “Strawberry-Pt-Site-115-1D” by Pgrig at English Wikipedia, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Strawberry-Pt-Site-115-1D.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Pgrig at English Wikipedia — https://en.wikipedia.org/wiki/User:Pgrig
-  - Dated: 2009
-  - 1600×1085px, 182 KB, shot 2336 m from the spot
-  - Description: Looking westerly at one of the two "cottage-type" fire control buildings on Strawberry Point in Scituate, MA. Built during WW2, this building was meant to look like a seaside cottage, and has in fact now been remodeled for just this type of use. The original poured concrete chimney and the two rows of vision slits (now fitted with modern replacement windows) for the observing instruments mark its original purpose, however. The shed-roofed entryway and the rear deck were added-on since the war. During WW2, this structure contained two base end stations and an observation post for the Southern C
-  - Match: score 10 via name:scituate, kw:sea+mar+point, geo:2336m, w>=1000, landscape
-- **`us-ma-north-scituate-beach-3.jpg`** ✗ **not a coastal photo** — “CohassetMA GovernmentIslandPark LIghthouseFoundations” by Magicpiano, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:CohassetMA_GovernmentIslandPark_LIghthouseFoundations.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Magicpiano — //commons.wikimedia.org/wiki/User:Magicpiano
-  - Dated: 2016-10-07 14:08:06
-  - 1600×1063px, 261 KB, shot 2635 m from the spot
-  - Description: Government Island Historic District , Cohasset, Massachusetts. Foundations on which the Minot's Ledge Light was test-built.
-  - Match: score 5.5 via coastal-in-title, kw:lighthouse, geo:2635m, w>=1000, landscape
 
 ## North Scituate Beach
 
@@ -1317,22 +1007,6 @@
   - 1600×1022px, 1044 KB
   - Description: Title: The pool and glades, North Scituate Beach, Mass. Subjects: Beaches Places: Massachusetts > Plymouth (county) > Scituate Notes: Title from item. Extent: 1 print (postcard) : linen texture, color ; 3 1/2 x 5 1/2 in. Accession #: 06_10_001491
   - Match: score 8.5 via coastal-in-title, name:scituate, kw:beach, w>=1000, landscape
-- **`us-ma-north-scituate-beach-596987-2.jpg`** ✗ **not a coastal photo** — “Strawberry-Pt-Site-115-1D” by Pgrig at English Wikipedia, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Strawberry-Pt-Site-115-1D.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Pgrig at English Wikipedia — https://en.wikipedia.org/wiki/User:Pgrig
-  - Dated: 2009
-  - 1600×1085px, 182 KB, shot 2029 m from the spot
-  - Description: Looking westerly at one of the two "cottage-type" fire control buildings on Strawberry Point in Scituate, MA. Built during WW2, this building was meant to look like a seaside cottage, and has in fact now been remodeled for just this type of use. The original poured concrete chimney and the two rows of vision slits (now fitted with modern replacement windows) for the observing instruments mark its original purpose, however. The shed-roofed entryway and the rear deck were added-on since the war. During WW2, this structure contained two base end stations and an observation post for the Southern C
-  - Match: score 10 via name:scituate, kw:sea+mar+point, geo:2029m, w>=1000, landscape
-- **`us-ma-north-scituate-beach-596987-3.jpg`** ✗ **not a coastal photo** — “CohassetMA GovernmentIslandPark LIghthouseFoundations” by Magicpiano, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:CohassetMA_GovernmentIslandPark_LIghthouseFoundations.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Magicpiano — //commons.wikimedia.org/wiki/User:Magicpiano
-  - Dated: 2016-10-07 14:08:06
-  - 1600×1063px, 261 KB, shot 2477 m from the spot
-  - Description: Government Island Historic District , Cohasset, Massachusetts. Foundations on which the Minot's Ledge Light was test-built.
-  - Match: score 5.5 via coastal-in-title, kw:lighthouse, geo:2477m, w>=1000, landscape
 
 ## Old Garden Beach
 
@@ -1354,14 +1028,6 @@
   - 1600×1200px, 492 KB, shot 650 m from the spot
   - Description: Rockport, MA pier view
   - Match: score 6.5 via coastal-in-title, kw:pier, geo:650m, w>=1000, landscape
-- **`us-ma-old-garden-beach-3.jpg`** ✗ **not a coastal photo** — “The Starry Night (44117217260)” by mail_collector, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:The_Starry_Night_(44117217260).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: mail_collector — https://www.flickr.com/people/91272573@N05
-  - Dated: 2018-09-11 00:02
-  - 1600×1200px, 930 KB, shot 634 m from the spot
-  - Description: Interplay of dusk lighting, wet surface, and some oily sheen painted seaweed in very peculiar colors. I just pushed them a bit for this picture.
-  - Match: score 6 via kw:surf+sea, geo:634m, w>=1000, landscape
 
 ## Parkwood Beach
 
@@ -1396,14 +1062,6 @@
   - 1600×892px, 1207 KB
   - Description: The main reception area at Pebble Beach. In the foreground is German philanthropist Rolf Bauer and his wife (seated).
   - Match: score 10 via coastal-in-title, name:pebble, kw:beach+sea, w>=1000, landscape
-- **`us-ma-pebble-beach-3.jpg`** ✗ **not a coastal photo** — “Quadrat on pebble beach” by Martinvl, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Quadrat_on_pebble_beach.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Martinvl — //commons.wikimedia.org/wiki/User:Martinvl
-  - Dated: 2019-04-01 13:20:38
-  - 1600×2218px, 2477 KB
-  - Description: A 50-cm quadrat and a 30 cm ruler on a pebble beach at Burton Bradstock , part of the Chesil Beach , about 3 km from the western end ( West Bay ) and 24 km from its eastern end ( Portland ). The quadrat was used for sizing the pebbles along the Beach. At the eastern end of the Chesil Bank, the pebbles average 35 mm in size. [ 1 ] Here, as shown by the quadrat, the pebbles are 2 to 3 mm in size. This image was taken during a school fieldwork project.
-  - Match: score 9.5 via coastal-in-title, name:pebble, kw:beach+bay, w>=1000
 
 ## Pebble Beach
 
@@ -1425,14 +1083,6 @@
   - 1600×892px, 1207 KB
   - Description: The main reception area at Pebble Beach. In the foreground is German philanthropist Rolf Bauer and his wife (seated).
   - Match: score 10 via coastal-in-title, name:pebble, kw:beach+sea, w>=1000, landscape
-- **`us-ma-pebble-beach-981673-3.jpg`** ✗ **not a coastal photo** — “Quadrat on pebble beach” by Martinvl, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Quadrat_on_pebble_beach.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Martinvl — //commons.wikimedia.org/wiki/User:Martinvl
-  - Dated: 2019-04-01 13:20:38
-  - 1600×2218px, 2477 KB
-  - Description: A 50-cm quadrat and a 30 cm ruler on a pebble beach at Burton Bradstock , part of the Chesil Beach , about 3 km from the western end ( West Bay ) and 24 km from its eastern end ( Portland ). The quadrat was used for sizing the pebbles along the Beach. At the eastern end of the Chesil Bank, the pebbles average 35 mm in size. [ 1 ] Here, as shown by the quadrat, the pebbles are 2 to 3 mm in size. This image was taken during a school fieldwork project.
-  - Match: score 9.5 via coastal-in-title, name:pebble, kw:beach+bay, w>=1000
 
 ## Peggotty Beach
 
@@ -1533,21 +1183,6 @@
   - 1600×1022px, 188 KB, shot 3815 m from the spot
   - Description: White border back postcard of Nantasket Pier, with Nantasket station on the Nantasket Beach Branch in the foreground
   - Match: score 6 via coastal-in-title, kw:beach+pier, geo:3815m, w>=1000, landscape
-- **`us-ma-pleasant-beach-2.jpg`** ✗ **not a coastal photo** — Kimballs's pleasant beach house, Cohassett, Mass, by Soule, John P., 1827-1904 — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Kimballs%27s_pleasant_beach_house,_Cohassett,_Mass,_by_Soule,_John_P.,_1827-1904.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: John P. Soule — https://en.wikipedia.org/wiki/en:John_P._Soule
-  - Dated: Coverage: 1859?-1885?. Source Imprint: 1
-  - 1600×794px, 38 KB
-  - Match: score 8.5 via coastal-in-title, name:pleasant, kw:beach, w>=1000, landscape
-- **`us-ma-pleasant-beach-3.jpg`** ✗ **not a coastal photo** — Pleasant Street station postcard — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Pleasant_Street_station_postcard.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Unknown author Unknown author
-  - Dated: between 1928 and 1940 date QS:P,+1950-00
-  - 1600×1012px, 347 KB, shot 20202 m from the spot
-  - Description: Postcard of a Boston, Revere Beach & Lynn Railroad train at Pleasant Street station after electrification
-  - Match: score 6.5 via name:pleasant, kw:beach, geo:20202m, w>=1000, landscape
 
 ## Plum Island Beach
 
@@ -1606,35 +1241,6 @@
   - 1600×1143px, 323 KB, shot 4632 m from the spot
   - Description: Newbury Beach - Newbury, Massachusetts, USA
   - Match: score 12.5 via coastal-in-title, name:plum+island, kw:beach, geo:4632m, w>=1000, landscape
-
-## Preston Beach
-
-`osm:way/81606280` · 42.4781424, -70.8797488 · beach type: **sandy** (OpenStreetMap surface=sand)
-
-- **`us-ma-preston-beach-1.jpg`** ✗ **not a coastal photo** — Bungalow at Monument Beach AABN March 27, 1880 — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Bungalow_at_Monument_Beach_AABN_March_27,_1880.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: William Gibbons Preston
-  - Dated: 1880-03-27
-  - 1600×923px, 304 KB
-  - Description: Image of the bungalow at Monument Beach, Massachusetts, by William Gibbons Preston, architect, as it appeared in the March 27, 1880 edition of American Architect and Building News
-  - Match: score 10 via coastal-in-title, name:preston, kw:beach+mar, w>=1000, landscape
-- **`us-ma-preston-beach-2.jpg`** ✗ **not a coastal photo** — “Marian-Court-College-seaside” by Chonak, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Marian-Court-College-seaside.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Chonak — //commons.wikimedia.org/wiki/User:Chonak
-  - Dated: 2009-02-21
-  - 1600×1200px, 505 KB, shot 1624 m from the spot
-  - Description: Marian Court College, Swampscott, Massachusetts, seaside view
-  - Match: score 7 via coastal-in-title, kw:sea+mar, geo:1624m, w>=1000, landscape
-- **`us-ma-preston-beach-3.jpg`** ✗ **not a coastal photo** — “Marblehead Rail Trail at West Shore Drive, May 2017” by Pi.1415926535, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Marblehead_Rail_Trail_at_West_Shore_Drive,_May_2017.JPG
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Pi.1415926535 — //commons.wikimedia.org/wiki/User:Pi.1415926535
-  - Dated: Taken on 28 May 2017
-  - 1600×1200px, 1135 KB, shot 2189 m from the spot
-  - Description: Marblehead Rail Trail at West Shore Drive in May 2017
-  - Match: score 7 via coastal-in-title, kw:shore+mar, geo:2189m, w>=1000, landscape
 
 ## Quidnet Beach
 
@@ -1706,22 +1312,6 @@
   - 1600×1200px, 501 KB, shot 594 m from the spot
   - Description: Salisbury Beach, just south of the center, in August 2020.
   - Match: score 10.5 via coastal-in-title, name:salisbury, kw:beach, geo:594m, w>=1000, landscape
-- **`us-ma-salisbury-beach-2.jpg`** ✗ **not a coastal photo** — The Frolics, Salisbury Beach, Mass (65207) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:The_Frolics,_Salisbury_Beach,_Mass_(65207).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Tichnor Bros. Inc., Boston, Mass
-  - Dated: between circa 1930 and circa 1945 date Q
-  - 1600×1013px, 1150 KB
-  - Description: Title: The Frolics, Salisbury Beach, Mass. Description: The Frolics, Salisbury Beach, Mass. The largest and most modern Night Spot on the New England Coast. Open from 11 A, M. to 1 A. M. during the summer months. Featuring two Musical Revues nightly 9 and 11:30 P. M. on large elevated stage. Dancing until 1 A. M. Fine cuisine, choice liquors. Seating capacity 1200. An ideal spot to entertain your friends. Subjects: Nightclubs; Interiors Places: Massachusetts > Essex (county) > Salisbury Notes: Title from item. Extent: 1 print (postcard) : linen texture, color ; 3 1/2 x 5 1/2 in. Accession #: 0
-  - Match: score 11 via coastal-in-title, name:salisbury, kw:beach+sea+coast, w>=1000, landscape
-- **`us-ma-salisbury-beach-3.jpg`** ✗ **not a coastal photo** — “MA 1A nb at NH state line, April 2025” by Mr. Matté, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:MA_1A_nb_at_NH_state_line,_April_2025.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Mr. Matté — //commons.wikimedia.org/wiki/User:Mr._Matt%C3%A9
-  - Dated: 2025-04-11 10:14:43
-  - 1600×1205px, 649 KB, shot 2749 m from the spot
-  - Description: Photo of northbound Massachusetts Route 1A (North End Boulevard) in the community of Salisbury Beach within Salisbury , Massachusetts at the New Hampshire state line. Photo taken looking north between Cottage Way and Bay State Road / state line.
-  - Match: score 10 via name:salisbury, kw:beach+sea+bay, geo:2749m, w>=1000, landscape
 
 ## Sand Hills Beach
 
@@ -1801,14 +1391,6 @@
   - 1600×2001px, 507 KB
   - Description: Constance Viola Greene Haroldson (1906-1996?) posing with a surfboard on Siasconset beach. 1932. Image number: A72-4
   - Match: score 9.5 via coastal-in-title, name:siasconset, kw:beach+surf, w>=1000
-- **`us-ma-siasconset-beach-3.jpg`** ✗ **not a coastal photo** — “2010 Siasconset Massachusetts USA 4873930151 370e0454e2 o” by Tim Sackton from Somerville, MA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:2010_Siasconset_Massachusetts_USA_4873930151_370e0454e2_o.jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Tim Sackton from Somerville, MA — https://www.flickr.com/people/43581314@N08
-  - Dated: 2010-07-21 11:31
-  - 1600×916px, 954 KB, shot 240 m from the spot
-  - Description: A house near the beach in Sconset. Shot with Canon T1i, EF-S17-85mm f/4-5.6 IS USM @ 50mm ¹⁄₃₂₀ sec at f/13, ISO400, no flash
-  - Match: score 9.5 via name:siasconset, kw:beach, geo:240m, w>=1000, landscape
 
 ## Singing Beach
 
@@ -1888,14 +1470,6 @@
   - 1600×1033px, 1077 KB
   - Description: Title: The boat landing, Nantasket Beach, Mass. Description: Nantasket Beach. Playground of the Indians. Colonial and Modern Boston's Summer Resort. From Boston, an hour's drive along its mellow storied South Shore or sail through its historic harbor. Subjects: Piers & wharves; Boats Places: Massachusetts > Plymouth (county) > Nantasket Beach; Massachusetts > Plymouth (county) > Hull Notes: Title from item. Extent: 1 print (postcard) : linen texture, color ; 3 1/2 x 5 1/2 in. Accession #: 06_10_000968
   - Match: score 11 via coastal-in-title, name:shore, kw:beach+shore+pier, w>=1000, landscape
-- **`us-ma-south-shore-3.jpg`** ✗ **not a coastal photo** — The South Shore Farms, Hull, Mass., on the Old Nantasket Beach Road (62295) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:The_South_Shore_Farms,_Hull,_Mass.,_on_the_Old_Nantasket_Beach_Road_(62295).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Tichnor Bros. Inc., Boston, Mass
-  - Dated: between circa 1930 and circa 1945 date Q
-  - 1600×1033px, 1097 KB
-  - Description: Title: The South Shore Farms, Hull, Mass., on the Old Nantasket Beach Road Description: To relax and enjoy unusual food and choicest liquors, visit The South Shore Farms, Hull, Mass. Special dining rooms for private parties arranged. Tel. HULL 0724. John J. Macris, Mgr. Subjects: Commercial facilities Places: Massachusetts > Plymouth (county) > Hull Notes: Title from item. Extent: 1 print (postcard) : linen texture, color ; 3 1/2 x 5 1/2 in. Accession #: 06_10_000730
-  - Match: score 10 via coastal-in-title, name:shore, kw:beach+shore, w>=1000, landscape
 
 ## South Shore Beach
 
@@ -1917,14 +1491,6 @@
   - 1600×1033px, 1077 KB
   - Description: Title: The boat landing, Nantasket Beach, Mass. Description: Nantasket Beach. Playground of the Indians. Colonial and Modern Boston's Summer Resort. From Boston, an hour's drive along its mellow storied South Shore or sail through its historic harbor. Subjects: Piers & wharves; Boats Places: Massachusetts > Plymouth (county) > Nantasket Beach; Massachusetts > Plymouth (county) > Hull Notes: Title from item. Extent: 1 print (postcard) : linen texture, color ; 3 1/2 x 5 1/2 in. Accession #: 06_10_000968
   - Match: score 11 via coastal-in-title, name:shore, kw:beach+shore+pier, w>=1000, landscape
-- **`us-ma-south-shore-beach-3.jpg`** ✗ **not a coastal photo** — The South Shore Farms, Hull, Mass., on the Old Nantasket Beach Road (62295) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:The_South_Shore_Farms,_Hull,_Mass.,_on_the_Old_Nantasket_Beach_Road_(62295).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Tichnor Bros. Inc., Boston, Mass
-  - Dated: between circa 1930 and circa 1945 date Q
-  - 1600×1033px, 1097 KB
-  - Description: Title: The South Shore Farms, Hull, Mass., on the Old Nantasket Beach Road Description: To relax and enjoy unusual food and choicest liquors, visit The South Shore Farms, Hull, Mass. Special dining rooms for private parties arranged. Tel. HULL 0724. John J. Macris, Mgr. Subjects: Commercial facilities Places: Massachusetts > Plymouth (county) > Hull Notes: Title from item. Extent: 1 print (postcard) : linen texture, color ; 3 1/2 x 5 1/2 in. Accession #: 06_10_000730
-  - Match: score 10 via coastal-in-title, name:shore, kw:beach+shore, w>=1000, landscape
 
 ## Squibnocket Beach
 
@@ -1972,14 +1538,6 @@
   - 1600×1100px, 640 KB
   - Description: Early divided back postcard of the wreckage of Stony Beach station after an 1898 storm
   - Match: score 8.5 via coastal-in-title, name:stony, kw:beach, w>=1000, landscape
-- **`us-ma-stony-beach-3.jpg`** ✗ **not a coastal photo** — “Life on a Grain of Sand 3 (4478011500)” by Anthony D'Onofrio, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Life_on_a_Grain_of_Sand_3_(4478011500).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Anthony D'Onofrio — https://www.flickr.com/people/48784416@N06
-  - Dated: 2010-03-28 22:25
-  - 1600×1200px, 847 KB, shot 1186 m from the spot
-  - Description: A natural community of bacteria growing on a single grain of sand. The sand was collected from intertidal sediment on a beach near Boston, MA in February 2009 and imaged using a Scanning Electron Microscope (SEM). You are free to distribute this image while giving attribution in the following manner: "Image courtesy of the Lewis Lab at Northeastern University. Image created by Anthony D'Onofrio, William H. Fowle, Eric J. Stewart and Kim Lewis."
-  - Match: score 8 via coastal-in-title, kw:beach+sand, geo:1186m, w>=1000, landscape
 
 ## Surfside Beach
 
@@ -2001,14 +1559,6 @@
   - 1600×1200px, 2315 KB
   - Description: North Atlantic Ocean, taken from Surfside Beach, SC, 9 AUG 2007.
   - Match: score 11 via coastal-in-title, name:surfside, kw:beach+surf+ocean+coast, w>=1000, landscape
-- **`us-ma-surfside-beach-3.png`** ✗ **not a coastal photo** — “Nantucket Memorial Airport from sand dunes” by Yellowknife Patrol, Wikimedia Commons, CC BY 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Nantucket_Memorial_Airport_from_sand_dunes.png
-  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
-  - Author: Yellowknife Patrol — //commons.wikimedia.org/wiki/User:Yellowknife_Patrol
-  - Dated: 9/16/2025
-  - 1600×901px, 1273 KB, shot 2124 m from the spot
-  - Description: Nantucket Memorial Airport from 1 mile away, picture taken Sand Dunes in between Nobadeer beach and Surfside Beach
-  - Match: score 12 via coastal-in-title, name:surfside, kw:beach+surf+sand+dune, geo:2124m, w>=1000, landscape
 
 ## Surfside Beach
 
@@ -2030,14 +1580,6 @@
   - 1600×1200px, 2315 KB
   - Description: North Atlantic Ocean, taken from Surfside Beach, SC, 9 AUG 2007.
   - Match: score 11 via coastal-in-title, name:surfside, kw:beach+surf+ocean+coast, w>=1000, landscape
-- **`us-ma-surfside-beach-279640-3.png`** ✗ **not a coastal photo** — “Nantucket Memorial Airport from sand dunes” by Yellowknife Patrol, Wikimedia Commons, CC BY 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Nantucket_Memorial_Airport_from_sand_dunes.png
-  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
-  - Author: Yellowknife Patrol — //commons.wikimedia.org/wiki/User:Yellowknife_Patrol
-  - Dated: 9/16/2025
-  - 1600×901px, 1273 KB, shot 80 m from the spot
-  - Description: Nantucket Memorial Airport from 1 mile away, picture taken Sand Dunes in between Nobadeer beach and Surfside Beach
-  - Match: score 14 via coastal-in-title, name:surfside, kw:beach+surf+sand+dune, geo:80m, w>=1000, landscape
 
 ## Tenean Beach
 

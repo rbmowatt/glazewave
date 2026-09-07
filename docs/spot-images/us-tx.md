@@ -1,6 +1,6 @@
 # US-TX — United States, Texas
 
-77 images across 29 spots. Licence rules and the OSM credit are in [the index](./README.md).
+57 images across 24 spots. Licence rules and the OSM credit are in [the index](./README.md).
 
 ## Aurora 19 Public Beach Access
 
@@ -22,56 +22,6 @@
   - 1600×1200px, 576 KB, shot 1690 m from the spot
   - Description: Dock into the adjacent lagoon; egg hatching in the container beneath the sun shade
   - Match: score 7 via coastal-in-title, kw:sea+lagoon, geo:1690m, w>=1000, landscape
-- **`us-tx-aurora-19-public-beach-access-3.jpg`** ✗ **not a coastal photo** — “Sea Turtle Inc lagoon” by Spheroidite, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Sea_Turtle_Inc_lagoon.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Spheroidite — //commons.wikimedia.org/wiki/User:Spheroidite
-  - Dated: 2023-07-29 11:24:46
-  - 1600×1200px, 588 KB, shot 1684 m from the spot
-  - Description: View of amphitheater and lagoon
-  - Match: score 7 via coastal-in-title, kw:sea+lagoon, geo:1684m, w>=1000, landscape
-
-## Babe's Beach
-
-`osm:way/946053668` · 29.2583841, -94.8396346 · beach type: **sandy** (OpenStreetMap surface=sand)
-
-- **`us-tx-babe-s-beach-1.jpg`** ✗ **not a coastal photo** — QSF18 Field Research Team Monitors Data from Flight (AFRC2018-0287-306) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:QSF18_Field_Research_Team_Monitors_Data_from_Flight_(AFRC2018-0287-306).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: NASA Armstrong Flight Research Center / NASA/Carla Thomas — https://www.nasa.gov/armstrong/
-  - Dated: Taken on 6 November 2018
-  - 1600×1068px, 585 KB, shot 1860 m from the spot
-  - Description: While NASA’s F/A-18 goes supersonic off the coast, a team of researchers monitor the flight and operate multiple sound monitor stations around Galveston and its surrounding area. This allows NASA to obtain accurate sound level data, which gets matched to community response data.
-  - Match: score 7 via coastal-in-title, kw:sea+coast, geo:1860m, w>=1000, landscape
-- **`us-tx-babe-s-beach-2.jpg`** ✗ **not a coastal photo** — QSF18 Field Research Team Monitors Data from Flight (AFRC2018-0287-308) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:QSF18_Field_Research_Team_Monitors_Data_from_Flight_(AFRC2018-0287-308).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: NASA Armstrong Flight Research Center / NASA/Carla Thomas — https://www.nasa.gov/armstrong/
-  - Dated: Taken on 6 November 2018
-  - 1600×1068px, 495 KB, shot 1861 m from the spot
-  - Description: While NASA’s F/A-18 goes supersonic off the coast, a team of researchers monitor the flight and operate multiple sound monitor stations around Galveston and its surrounding area. This allows NASA to obtain accurate sound level data, which gets matched to community response data.
-  - Match: score 7 via coastal-in-title, kw:sea+coast, geo:1861m, w>=1000, landscape
-- **`us-tx-babe-s-beach-3.jpg`** ✗ **not a coastal photo** — QSF18 Field Research Team Monitors Data from Flight (AFRC2018-0287-315) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:QSF18_Field_Research_Team_Monitors_Data_from_Flight_(AFRC2018-0287-315).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: NASA Armstrong Flight Research Center / NASA/Carla Thomas — https://www.nasa.gov/armstrong/
-  - Dated: Taken on 6 November 2018
-  - 1600×1067px, 797 KB, shot 1851 m from the spot
-  - Description: While NASA’s F/A-18 goes supersonic off the coast, a team of researchers monitor the flight and operate multiple sound monitor stations around Galveston and its surrounding area. This allows NASA to obtain accurate sound level data, which gets matched to community response data.
-  - Match: score 7 via coastal-in-title, kw:sea+coast, geo:1851m, w>=1000, landscape
-
-## Bermuda Beach
-
-`osm:node/356751653` · 29.2094059, -94.9240883
-
-- **`us-tx-bermuda-beach-1.jpg`** ✗ **not a coastal photo** — “Bay-breasted Warbler - Flickr - GregTheBusker” by Greg Schechter from San Francisco, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Bay-breasted_Warbler_-_Flickr_-_GregTheBusker.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Greg Schechter from San Francisco, USA — https://www.flickr.com/people/17004938@N00
-  - Dated: 2015-04-28 08:18
-  - 1600×899px, 566 KB, shot 1464 m from the spot
-  - Description: Bay-breasted Warbler
-  - Match: score 5.5 via coastal-in-title, kw:bay, geo:1464m, w>=1000, landscape
 
 ## Boca Chica Beach
 
@@ -142,41 +92,6 @@
   - 1600×1067px, 404 KB, shot 2115 m from the spot
   - Description: Fruit stand near Bryan Beach State Recreation Park
   - Match: score 11 via coastal-in-title, name:bryan, kw:beach+mar, geo:2115m, w>=1000, landscape
-- **`us-tx-bryan-beach-2.jpg`** ✗ **not a coastal photo** — “3-26-08-2 Royal Terns in mating dance Bryan Beach Tx” by BillTex49, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:3-26-08-2_Royal_Terns_in_mating_dance_Bryan_Beach_Tx.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: BillTex49 — //commons.wikimedia.org/w/index.php?title=User:BillTex49&amp;action=edit&amp;redlink=1
-  - 1600×1071px, 1268 KB
-  - Description: Royal Terns in mating dance
-  - Match: score 8.5 via coastal-in-title, name:bryan, kw:beach, w>=1000, landscape
-
-## Crystal Beach
-
-`osm:node/356753643` · 29.4527328, -94.6296375
-
-- **`us-tx-crystal-beach-1.jpg`** ✗ **not a coastal photo** — CrystalBeachPostOffice — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:CrystalBeachPostOffice.JPG
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: WhisperToMe — //commons.wikimedia.org/wiki/User:WhisperToMe
-  - 1600×1200px, 500 KB
-  - Description: Crystal Beach Station Post Office
-  - Match: score 8.5 via coastal-in-title, name:crystal, kw:beach, w>=1000, landscape
-- **`us-tx-crystal-beach-2.jpg`** ✗ **not a coastal photo** — FEMA - 38597 - Hurricane damage in Crystal Beach — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:FEMA_-_38597_-_Hurricane_damage_in_Crystal_Beach.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Jocelyn Augustino
-  - Dated: 2008-09-20
-  - 1600×1065px, 720 KB
-  - Description: Crystal Beach, TX, September 20, 2008 -- Debris and damaged houses along Highway 87 due to Hurricane Ike. Jocelyn Augustino/FEMA
-  - Match: score 8.5 via coastal-in-title, name:crystal, kw:beach, w>=1000, landscape
-- **`us-tx-crystal-beach-3.jpg`** ✗ **not a coastal photo** — FEMA - 44202 - Home being elevated in Crystal Beach, TX — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:FEMA_-_44202_-_Home_being_elevated_in_Crystal_Beach,_TX.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Patsy Lynch
-  - Dated: 2010-05-19
-  - 1600×1063px, 580 KB
-  - Description: Crystal Beach, TX, May 19, 2010 -- A home being elevated to comply with the new requirements for homes being built and or repaired on the Bolivar Peninsula. FEMA is working with local, state and other federal agencies working to restore the Bolivar Peninsula community which was devastated during Hurricane IKE. Photo by Patsy Lynch/FEMA
-  - Match: score 8.5 via coastal-in-title, name:crystal, kw:beach, w>=1000, landscape
 
 ## East Beach
 
@@ -198,14 +113,6 @@
   - 1600×1236px, 316 KB
   - Description: GALVESTON, Texas - Hosea Melancon, left, and Josh Giessinger, contractors working to clean the beaches in Gavleston, shovel potentially oil coated waste into waste bags on East Beach Sunday, July 11, 2010. Clean up crews have been cleaning Texas beaches since July 3, when reports of tar were made to officials. Coast Guard photo by Petty Officer Prentice Danner.
   - Match: score 6.5 via coastal-in-title, kw:beach+sea+coast, w>=1000
-- **`us-tx-east-beach-3.jpg`** ✗ **not a coastal photo** — “Sunset on the Beach at Galveston, Texas - panoramio” by Chanilim714, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Sunset_on_the_Beach_at_Galveston,_Texas_-_panoramio.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Chanilim714 — https://web.archive.org/web/20161028054659/http://www.panoramio.com/user/2881048?with_photo_id=23725398
-  - Dated: Taken on 22 June 2009
-  - 1600×1200px, 339 KB, shot 1717 m from the spot
-  - Description: Sunset on the Beach at Galveston, Texas
-  - Match: score 7 via coastal-in-title, kw:beach+sunset, geo:1717m, w>=1000, landscape
 
 ## East Beach
 
@@ -306,22 +213,6 @@
   - 1600×1200px, 568 KB
   - Description: Holiday Beach undergoing reinforcements
   - Match: score 8.5 via coastal-in-title, name:holiday, kw:beach, w>=1000, landscape
-- **`us-tx-holiday-beach-2.jpg`** ✗ **not a coastal photo** — Holiday Beach undergoing reinforcements - 02 — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Holiday_Beach_undergoing_reinforcements_-_02.JPG
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: Anna Frodesiak — //commons.wikimedia.org/wiki/User:Anna_Frodesiak
-  - Dated: 2015-05-14 07:51:49
-  - 1600×1200px, 833 KB
-  - Description: Holiday Beach undergoing reinforcements
-  - Match: score 8.5 via coastal-in-title, name:holiday, kw:beach, w>=1000, landscape
-- **`us-tx-holiday-beach-3.jpg`** ✗ **not a coastal photo** — Holiday Beach undergoing reinforcements - 04 — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Holiday_Beach_undergoing_reinforcements_-_04.JPG
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: Anna Frodesiak — //commons.wikimedia.org/wiki/User:Anna_Frodesiak
-  - Dated: 2015-05-14 07:26:49
-  - 1600×1200px, 906 KB
-  - Description: Holiday Beach undergoing reinforcements
-  - Match: score 8.5 via coastal-in-title, name:holiday, kw:beach, w>=1000, landscape
 
 ## Isla Blanca Beach
 
@@ -385,14 +276,6 @@
   - 1600×1200px, 364 KB, shot 39 m from the spot
   - Description: Flock of Seagulls
   - Match: score 13 via coastal-in-title, name:jamaica, kw:beach+sea, geo:39m, w>=1000, landscape
-- **`us-tx-jamaica-beach-3.jpg`** ✗ **not a coastal photo** — “Jamaica Beach TX banner” by lowryba, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Jamaica_Beach_TX_banner.jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: lowryba — https://web.archive.org/web/20161010181427/http://www.panoramio.com/user/907531?with_photo_id=8077199
-  - Dated: Taken on 24 February 2008
-  - 1600×229px, 66 KB, shot 1193 m from the spot
-  - Description: 16715 Montego Way, Feb 2008
-  - Match: score 10.5 via coastal-in-title, name:jamaica, kw:beach, geo:1193m, w>=1000, landscape
 
 ## Malaquite Beach
 
@@ -414,14 +297,6 @@
   - 1600×1200px, 748 KB, shot 435 m from the spot
   - Description: Parde Island National Sea Shore in south Texas
   - Match: score 7 via kw:sea+shore+seashore, geo:435m, w>=1000, landscape
-- **`us-tx-malaquite-beach-3.jpg`** ✗ **not a coastal photo** — 2009 Kemp's ridley sea turtle project at Padre Island National Seashore (9f74a803-a05f-4adf-aab8-951a59fed856) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:2009_Kemp%27s_ridley_sea_turtle_project_at_Padre_Island_National_Seashore_(9f74a803-a05f-4adf-aab8-951a59fed856).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: NPS Staff
-  - Dated: Taken on 23 April 2009
-  - 1600×1072px, 195 KB
-  - Description: Nesting Kemp's ridley sea turtle returns to the water after nesting at Padre Island National Seashore on 24 April 2009. A record 117 Kemp?s ridley nests were located at the park during 2009, marking the sixth consecutive year that record numbers of Kemp's ridley nests have been recorded at the park since record keeping began in 1980.Park: Padre Island National SeashoreDate Taken: 04/09Photographer: NPS StaffLocation: Padre Island National SeashoreFig. 2. NPS staff record data on a nesting Kemp's ridley sea turtle on 23 April 2009. Park: Padre Island National SeashoreDate Taken: 04/09Photograph
-  - Match: score 7 via coastal-in-title, kw:sea+shore+mar+seashore, w>=1000, landscape
 
 ## Matagorda Beach
 
@@ -481,19 +356,6 @@
   - Description: “German Shepard Dog at the beach - july 2019.jpg”
   - Match: score 6 via coastal-in-title, kw:beach, geo:900m, w>=1000
 
-## Pirates' Beach
-
-`osm:way/62514958` · 29.2013747, -94.93832 · lifeguard: no
-
-- **`us-tx-pirates-beach-1.jpg`** ✗ **not a coastal photo** — “Tiddies Sandals” by Jphill19, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Tiddies_Sandals.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Jphill19 — //commons.wikimedia.org/w/index.php?title=User:Jphill19&amp;action=edit&amp;redlink=1
-  - Dated: 2021-11-11
-  - 1600×1282px, 487 KB
-  - Description: Tiddies sandals were designed and developed in Pasadena, Texas . The beach apparel with it's coral reef and fluorescent color palette selection was popular among the sand and surf cliques of the 1970s and 1980s . The surgical tubing sandals are better known as Pirate Sandals ( aka ... Pirate Brand) from Nassau Bay, Texas .
-  - Match: score 6.5 via coastal-in-title, kw:beach+surf+sand+bay, w>=1000
-
 ## Porretto Beach
 
 `osm:node/3364777275` · 29.3010276, -94.7745796 · beach type: **sandy** (OpenStreetMap surface=sand) · site: https://www.porrettobeach.com/
@@ -535,14 +397,6 @@
   - 1600×1200px, 549 KB, shot 523 m from the spot
   - Description: Beach View at Galveston, Texas
   - Match: score 6.5 via coastal-in-title, kw:beach, geo:523m, w>=1000, landscape
-- **`us-tx-porretto-beach-873760-3.jpg`** ✗ **not a coastal photo** — “Sunset on the Beach at Galveston, Texas - panoramio” by Chanilim714, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Sunset_on_the_Beach_at_Galveston,_Texas_-_panoramio.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Chanilim714 — https://web.archive.org/web/20161028054659/http://www.panoramio.com/user/2881048?with_photo_id=23725398
-  - Dated: Taken on 22 June 2009
-  - 1600×1200px, 339 KB, shot 876 m from the spot
-  - Description: Sunset on the Beach at Galveston, Texas
-  - Match: score 8 via coastal-in-title, kw:beach+sunset, geo:876m, w>=1000, landscape
 
 ## San Luis Beach
 
@@ -645,14 +499,6 @@
   - 1600×1067px, 362 KB, shot 2154 m from the spot
   - Description: Galveston Island, United States
   - Match: score 8 via coastal-in-title, kw:beach+shore+shoreline+sunrise, geo:2154m, w>=1000, landscape
-- **`us-tx-sunny-beach-3.jpg`** ✗ **not a coastal photo** — Turkey (MODIS 2019-04-28) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Turkey_(MODIS_2019-04-28).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: MODIS Land Rapid Response Team, NASA GSFC
-  - Dated: Taken on 22 April 2019
-  - 1600×991px, 513 KB
-  - Description: On April 22, 2019, the Moderate Resolution Imaging Spectroradiometer (MODIS) on board NASA’s Terra satellite acquired a true-color image of southwestern Turkey. Encompassing 769,632 square kilometers of land (297,156.5 sq mi), Turkey is the 38th largest country in the world and slightly larger than the state of Texas. The southwestern region of the country claims both a sweeping, beautiful and long Mediterranean coastline and the tall Taurus Mountains. The mountains separate the seaside from the central Anatolian Plateau. Many cities have sprung up along the Turkish coast and, with a sunny and
-  - Match: score 9 via name:sunny, kw:sea+coast+coastline, w>=1000, landscape
 
 ## Surfside beach
 
@@ -722,33 +568,4 @@
   - Dated: May 1972 date QS:P571,+1972-05-00T00:00:
   - 1600×1082px, 254 KB
   - Match: score 6 via coastal-in-title, kw:beach+sunset, w>=1000, landscape
-
-## West Beach
-
-`osm:way/62615395` · 29.1577314, -95.0111165
-
-- **`us-tx-west-beach-615395-1.jpg`** ✗ **not a coastal photo** — “2025-09-13 13 47 49 View east along Texas Farm-to-Market Road 3005 (Termini-San Luis Pass Road) near Sea Grass Lane in Galveston, Galveston County, Texas” by Famartin, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:2025-09-13_13_47_49_View_east_along_Texas_Farm-to-Market_Road_3005_(Termini-San_Luis_Pass_Road)_near_Sea_Grass_Lane_in_Galveston,_Galveston_County,_Texas.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
-  - Dated: 2025-09-13 13:47:49
-  - 1600×1200px, 918 KB, shot 2775 m from the spot
-  - Description: View east along Texas Farm-to-Market Road 3005 (Termini-San Luis Pass Road) near Sea Grass Lane in Galveston, Galveston County, Texas
-  - Match: score 7 via coastal-in-title, kw:sea+mar, geo:2775m, w>=1000, landscape
-- **`us-tx-west-beach-615395-2.jpg`** ✗ **not a coastal photo** — “2025-09-13 13 48 23 View east along Texas Farm-to-Market Road 3005 (Termini-San Luis Pass Road) near Sea Grass Lane in Galveston, Galveston County, Texas” by Famartin, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:2025-09-13_13_48_23_View_east_along_Texas_Farm-to-Market_Road_3005_(Termini-San_Luis_Pass_Road)_near_Sea_Grass_Lane_in_Galveston,_Galveston_County,_Texas.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
-  - Dated: 2025-09-13 13:48:23
-  - 1600×1200px, 897 KB, shot 2764 m from the spot
-  - Description: View east along Texas Farm-to-Market Road 3005 (Termini-San Luis Pass Road) near Sea Grass Lane in Galveston, Galveston County, Texas
-  - Match: score 7 via coastal-in-title, kw:sea+mar, geo:2764m, w>=1000, landscape
-- **`us-tx-west-beach-615395-3.jpg`** ✗ **not a coastal photo** — “2025-09-13 13 48 32 View east along Texas Farm-to-Market Road 3005 (Termini-San Luis Pass Road) near Sea Grass Lane in Galveston, Galveston County, Texas” by Famartin, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:2025-09-13_13_48_32_View_east_along_Texas_Farm-to-Market_Road_3005_(Termini-San_Luis_Pass_Road)_near_Sea_Grass_Lane_in_Galveston,_Galveston_County,_Texas.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
-  - Dated: 2025-09-13 13:48:32
-  - 1600×1200px, 937 KB, shot 2761 m from the spot
-  - Description: View east along Texas Farm-to-Market Road 3005 (Termini-San Luis Pass Road) near Sea Grass Lane in Galveston, Galveston County, Texas
-  - Match: score 7 via coastal-in-title, kw:sea+mar, geo:2761m, w>=1000, landscape
 

@@ -1,6 +1,6 @@
 # US-GA — United States, Georgia
 
-56 images across 19 spots. Licence rules and the OSM credit are in [the index](./README.md).
+20 images across 12 spots. Licence rules and the OSM credit are in [the index](./README.md).
 
 ## 11th Streeth Public Beach Access
 
@@ -22,72 +22,6 @@
   - 1600×2134px, 868 KB, shot 290 m from the spot
   - Description: First constructed in 1810, this historic lighthouse was listed on the US National Register in 1974.It was renovated several times, the most recent being 2010. It contains a biconvex Fresnel lens, one of only 70 such lenses which remain operational in the United States
   - Match: score 7 via coastal-in-title, kw:lighthouse, geo:290m, w>=1000
-- **`us-ga-11th-streeth-public-beach-access-3.jpg`** ✗ **not a coastal photo** — “Lighthouse Garden (3898543357)” by David Harrington from Macon, GA, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Lighthouse_Garden_(3898543357).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: David Harrington from Macon, GA, USA — https://www.flickr.com/people/42267367@N04
-  - Dated: 2009-09-07 11:28
-  - 1600×1200px, 460 KB, shot 370 m from the spot
-  - Description: This photo was taken on St. Simons Island, GA and is of the lighthouse there.
-  - Match: score 7.5 via coastal-in-title, kw:lighthouse, geo:370m, w>=1000, landscape
-
-## 5th Street Public Beach Access
-
-`osm:node/9826912084` · 31.1359256, -81.385041
-
-- **`us-ga-5th-street-public-beach-access-1.jpg`** ✗ **not a coastal photo** — “Wedding Cake (7712258102)” by Ralph Daily from Birmingham, United States, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Wedding_Cake_(7712258102).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Ralph Daily from Birmingham, United States — https://www.flickr.com/people/92269745@N00
-  - Dated: 2012-06-17 17:53
-  - 1600×1060px, 393 KB, shot 693 m from the spot
-  - Description: This is an incredible wedding cake made a caterer from Brunswick for a lawn wedding at the King and Prince right outside our room. Note the two seahorses at the top, sand dollars, star fish, shells and beach motif. Great St. Simons wedding. The cake looked good!
-  - Match: score 7 via kw:beach+sea+sand, geo:693m, w>=1000, landscape
-- **`us-ga-5th-street-public-beach-access-2.jpg`** ✗ **not a coastal photo** — “Crabdaddy's Seafood Grill, St. Simons” by Michael Rivera, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Crabdaddy%27s_Seafood_Grill,_St._Simons.JPG
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Michael Rivera — //commons.wikimedia.org/wiki/User:Mjrmtg
-  - Dated: 2015-06-29 13:18:54
-  - 1600×1200px, 655 KB, shot 657 m from the spot
-  - Description: St. Simons, Glynn County, Georgia
-  - Match: score 6.5 via coastal-in-title, kw:sea, geo:657m, w>=1000, landscape
-- **`us-ga-5th-street-public-beach-access-3.jpg`** ✗ **not a coastal photo** — “Lighthouse Garden (3898543357)” by David Harrington from Macon, GA, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Lighthouse_Garden_(3898543357).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: David Harrington from Macon, GA, USA — https://www.flickr.com/people/42267367@N04
-  - Dated: 2009-09-07 11:28
-  - 1600×1200px, 460 KB, shot 892 m from the spot
-  - Description: This photo was taken on St. Simons Island, GA and is of the lighthouse there.
-  - Match: score 6.5 via coastal-in-title, kw:lighthouse, geo:892m, w>=1000, landscape
-
-## 6th Street Public Beach Access
-
-`osm:node/9826912083` · 31.1353629, -81.3865681
-
-- **`us-ga-6th-street-public-beach-access-1.jpg`** ✗ **not a coastal photo** — “Wedding Cake (7712258102)” by Ralph Daily from Birmingham, United States, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Wedding_Cake_(7712258102).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Ralph Daily from Birmingham, United States — https://www.flickr.com/people/92269745@N00
-  - Dated: 2012-06-17 17:53
-  - 1600×1060px, 393 KB, shot 850 m from the spot
-  - Description: This is an incredible wedding cake made a caterer from Brunswick for a lawn wedding at the King and Prince right outside our room. Note the two seahorses at the top, sand dollars, star fish, shells and beach motif. Great St. Simons wedding. The cake looked good!
-  - Match: score 7 via kw:beach+sea+sand, geo:850m, w>=1000, landscape
-- **`us-ga-6th-street-public-beach-access-2.jpg`** ✗ **not a coastal photo** — “Lighthouse Garden (3898543357)” by David Harrington from Macon, GA, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Lighthouse_Garden_(3898543357).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: David Harrington from Macon, GA, USA — https://www.flickr.com/people/42267367@N04
-  - Dated: 2009-09-07 11:28
-  - 1600×1200px, 460 KB, shot 742 m from the spot
-  - Description: This photo was taken on St. Simons Island, GA and is of the lighthouse there.
-  - Match: score 6.5 via coastal-in-title, kw:lighthouse, geo:742m, w>=1000, landscape
-- **`us-ga-6th-street-public-beach-access-3.jpg`** ✗ **not a coastal photo** — “Crabdaddy's Seafood Grill, St. Simons” by Michael Rivera, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Crabdaddy%27s_Seafood_Grill,_St._Simons.JPG
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Michael Rivera — //commons.wikimedia.org/wiki/User:Mjrmtg
-  - Dated: 2015-06-29 13:18:54
-  - 1600×1200px, 655 KB, shot 796 m from the spot
-  - Description: St. Simons, Glynn County, Georgia
-  - Match: score 6.5 via coastal-in-title, kw:sea, geo:796m, w>=1000, landscape
 
 ## 7th Street Public Beach Access
 
@@ -101,22 +35,6 @@
   - 1600×1200px, 654 KB, shot 871 m from the spot
   - Description: St. Simons, Glynn County, Georgia
   - Match: score 6.5 via coastal-in-title, kw:pier, geo:871m, w>=1000, landscape
-- **`us-ga-7th-street-public-beach-access-2.jpg`** ✗ **not a coastal photo** — “Lighthouse Garden (3898543357)” by David Harrington from Macon, GA, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Lighthouse_Garden_(3898543357).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: David Harrington from Macon, GA, USA — https://www.flickr.com/people/42267367@N04
-  - Dated: 2009-09-07 11:28
-  - 1600×1200px, 460 KB, shot 662 m from the spot
-  - Description: This photo was taken on St. Simons Island, GA and is of the lighthouse there.
-  - Match: score 6.5 via coastal-in-title, kw:lighthouse, geo:662m, w>=1000, landscape
-- **`us-ga-7th-street-public-beach-access-3.jpg`** ✗ **not a coastal photo** — “Welcome to Neptune Park sign and pier” by Michael Rivera, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Welcome_to_Neptune_Park_sign_and_pier.JPG
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Michael Rivera — //commons.wikimedia.org/wiki/User:Mjrmtg
-  - Dated: 2015-06-29 11:59:28
-  - 1600×1200px, 786 KB, shot 870 m from the spot
-  - Description: St. Simons, Glynn County, Georgia
-  - Match: score 6.5 via coastal-in-title, kw:pier, geo:870m, w>=1000, landscape
 
 ## 9th Street Public Beach Access
 
@@ -138,14 +56,6 @@
   - 1600×1200px, 654 KB, shot 705 m from the spot
   - Description: St. Simons, Glynn County, Georgia
   - Match: score 6.5 via coastal-in-title, kw:pier, geo:705m, w>=1000, landscape
-- **`us-ga-9th-street-public-beach-access-3.jpg`** ✗ **not a coastal photo** — “Lighthouse Garden (3898543357)” by David Harrington from Macon, GA, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Lighthouse_Garden_(3898543357).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: David Harrington from Macon, GA, USA — https://www.flickr.com/people/42267367@N04
-  - Dated: 2009-09-07 11:28
-  - 1600×1200px, 460 KB, shot 505 m from the spot
-  - Description: This photo was taken on St. Simons Island, GA and is of the lighthouse there.
-  - Match: score 6.5 via coastal-in-title, kw:lighthouse, geo:505m, w>=1000, landscape
 
 ## Blackbeard Island Public Beach
 
@@ -159,51 +69,6 @@
   - 1600×1067px, 232 KB
   - Description: July 17, 2012 - Blackbeard Island, GA. Sunset over the edge of Blackbeard's boneyard beach. Credit: USFWS/Molly Martin
   - Match: score 13 via name:blackbeard+island, kw:beach+mar+sunset, w>=1000, landscape
-- **`us-ga-blackbeard-island-public-beach-2.jpg`** ✗ **not a coastal photo** — BIG ocean (7644494246) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:BIG_ocean_(7644494246).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: U.S. Fish and Wildlife Service Southeast Region — https://www.flickr.com/people/41464593@N02
-  - Dated: 2012-07-24 12:54
-  - 1600×1200px, 430 KB
-  - Description: July 24, 2012- Blackbeard Island, GA Our perspective of the turtle's voyage. Credit: USFWS/Becky Skiba
-  - Match: score 14 via coastal-in-title, name:blackbeard+island, kw:beach+ocean, w>=1000, landscape
-- **`us-ga-blackbeard-island-public-beach-3.jpg`** ✗ **not a coastal photo** — One more step (7644528580) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:One_more_step_(7644528580).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: U.S. Fish and Wildlife Service Southeast Region — https://www.flickr.com/people/41464593@N02
-  - Dated: 2012-07-24 12:57
-  - 1600×1200px, 395 KB
-  - Description: July 24, 2012- Blackbeard Island, GA This hatchling has already made it farther in life than a lot of his siblings and peers. His egg developed successfully without mutations. He has overcome the threats from fire ants, ghost crabs, wild hogs, raccoons, and birds. Now he looks ahead to his future challenges under the waves. Credit: USFWS/Becky Skiba
-  - Match: score 13 via name:blackbeard+island, kw:beach+wave+waves, w>=1000, landscape
-
-## Cedar Street Public Beach Access
-
-`osm:node/9826912089` · 31.1380579, -81.3802426
-
-- **`us-ga-cedar-street-public-beach-access-1.jpg`** ✗ **not a coastal photo** — “Wedding Cake (7712258102)” by Ralph Daily from Birmingham, United States, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Wedding_Cake_(7712258102).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Ralph Daily from Birmingham, United States — https://www.flickr.com/people/92269745@N00
-  - Dated: 2012-06-17 17:53
-  - 1600×1060px, 393 KB, shot 180 m from the spot
-  - Description: This is an incredible wedding cake made a caterer from Brunswick for a lawn wedding at the King and Prince right outside our room. Note the two seahorses at the top, sand dollars, star fish, shells and beach motif. Great St. Simons wedding. The cake looked good!
-  - Match: score 8 via kw:beach+sea+sand, geo:180m, w>=1000, landscape
-- **`us-ga-cedar-street-public-beach-access-2.jpg`** ✗ **not a coastal photo** — “Crabdaddy's Seafood Grill, St. Simons” by Michael Rivera, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Crabdaddy%27s_Seafood_Grill,_St._Simons.JPG
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Michael Rivera — //commons.wikimedia.org/wiki/User:Mjrmtg
-  - Dated: 2015-06-29 13:18:54
-  - 1600×1200px, 655 KB, shot 315 m from the spot
-  - Description: St. Simons, Glynn County, Georgia
-  - Match: score 7.5 via coastal-in-title, kw:sea, geo:315m, w>=1000, landscape
-- **`us-ga-cedar-street-public-beach-access-3.jpg`** ✗ **not a coastal photo** — “The Crab Trap, St. Simons” by Michael Rivera, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:The_Crab_Trap,_St._Simons.JPG
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Michael Rivera — //commons.wikimedia.org/wiki/User:Mjrmtg
-  - Dated: 2015-06-29 13:18:26
-  - 1600×1200px, 588 KB, shot 303 m from the spot
-  - Description: St. Simons, Glynn County, Georgia
-  - Match: score 5.5 via kw:sea, geo:303m, w>=1000, landscape
 
 ## Driftwood Beach
 
@@ -246,22 +111,6 @@
   - 1600×1067px, 563 KB, shot 1614 m from the spot
   - Description: St. Andrews Beach Park, Jekyll Island, Glynn County, Georgia
   - Match: score 7 via coastal-in-title, kw:beach+mar, geo:1614m, w>=1000, landscape
-- **`us-ga-glory-2.jpg`** ✗ **not a coastal photo** — “Summer Waves Water Park” by Michael Rivera, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Summer_Waves_Water_Park.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Michael Rivera — //commons.wikimedia.org/wiki/User:Mjrmtg
-  - Dated: 2021-03-19 15:02:51
-  - 1600×1067px, 1022 KB, shot 1360 m from the spot
-  - Description: Summer Waves Water Park, Jekyll Island, Glynn County, Georgia
-  - Match: score 8 via coastal-in-title, kw:wave+waves+mar, geo:1360m, w>=1000, landscape
-- **`us-ga-glory-3.jpg`** ✗ **not a coastal photo** — “The Wanderer memorial, St. Andrews Beach Park” by Michael Rivera, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:The_Wanderer_memorial,_St._Andrews_Beach_Park.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Michael Rivera — //commons.wikimedia.org/wiki/User:Mjrmtg
-  - Dated: 2021-03-19 14:31:35
-  - 1600×1067px, 761 KB, shot 1624 m from the spot
-  - Description: The Wanderer memorial, St. Andrews Beach Park, Jekyll Island, Glynn County, Georgia
-  - Match: score 7 via coastal-in-title, kw:beach+mar, geo:1624m, w>=1000, landscape
 
 ## Jekyll Point
 
@@ -283,43 +132,6 @@
   - 1600×1067px, 563 KB, shot 832 m from the spot
   - Description: St. Andrews Beach Park, Jekyll Island, Glynn County, Georgia
   - Match: score 12 via coastal-in-title, name:jekyll, kw:beach+mar, geo:832m, w>=1000, landscape
-- **`us-ga-jekyll-point-3.jpg`** ✗ **not a coastal photo** — “The Wanderer memorial, St. Andrews Beach Park” by Michael Rivera, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:The_Wanderer_memorial,_St._Andrews_Beach_Park.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Michael Rivera — //commons.wikimedia.org/wiki/User:Mjrmtg
-  - Dated: 2021-03-19 14:31:35
-  - 1600×1067px, 761 KB, shot 618 m from the spot
-  - Description: The Wanderer memorial, St. Andrews Beach Park, Jekyll Island, Glynn County, Georgia
-  - Match: score 12 via coastal-in-title, name:jekyll, kw:beach+mar, geo:618m, w>=1000, landscape
-
-## Marker Post
-
-`osm:node/6865326581` · 30.886746, -81.4134655
-
-- **`us-ga-marker-post-1.jpg`** ✗ **not a coastal photo** — Wild-living cattle at Cumberland Island National Seashore, Georgia (de315d26-6679-450d-973f-a015ccbb04ae) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Wild-living_cattle_at_Cumberland_Island_National_Seashore,_Georgia_(de315d26-6679-450d-973f-a015ccbb04ae).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: NPS staff
-  - Dated: Taken on 5 January 2004
-  - 1600×1067px, 408 KB, shot 4873 m from the spot
-  - Description: Wild horses Free-roaming cattle at Cumberland Island. Keywords: cuis; Seashores; Cattle
-  - Match: score 7 via coastal-in-title, kw:sea+shore+seashore, geo:4873m, w>=1000, landscape
-- **`us-ga-marker-post-2.jpg`** ✗ **not a coastal photo** — Blackened saw palmettto (71efd6a6-2359-4579-8751-e90c9cb45210) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Blackened_saw_palmettto_(71efd6a6-2359-4579-8751-e90c9cb45210).JPG
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: NPS Photo
-  - Dated: Taken on 30 June 2019
-  - 1600×1200px, 1474 KB, shot 3242 m from the spot
-  - Description: blackened forest floor with thick palmetto roots Saw palmetto have tough root systems that growing along the soil making them very resistant to fires. Following a burn, palmettos with sprout bright green new growth Keywords: Cumberland Island National Seashore; cumberland island; Whitney Fire; wildfire; fire
-  - Match: score 5 via kw:sea+shore+seashore, geo:3242m, w>=1000, landscape
-- **`us-ga-marker-post-3.jpg`** ✗ **not a coastal photo** — Bunkley Trail west edge of fire on day 1 (b9701233-a6f4-44db-85d1-0b0e8857d920) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Bunkley_Trail_west_edge_of_fire_on_day_1_(b9701233-a6f4-44db-85d1-0b0e8857d920).JPG
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: NPS Photo
-  - Dated: Taken on 30 June 2019
-  - 1600×1200px, 1565 KB, shot 3218 m from the spot
-  - Description: trail with green vegetation to the left and blackened vegetation to the right showing the extent of the fire's spread The Whitney Fire stopped burning when it reached the Bunkley Trail on its west edge. The fire eventually crossed this trail the following day when fire activity increase in the afternoon. Keywords: Cumberland Island National Seashore; cumberland island; Whitney Fire; wildfire; fire
-  - Match: score 5 via kw:sea+shore+seashore, geo:3218m, w>=1000, landscape
 
 ## Mid Beach
 
@@ -333,51 +145,6 @@
   - 1600×1200px, 765 KB, shot 1418017 m from the spot
   - Description: Tiny is a township, part of Simcoe County in south-central Ontario, Canada. The Township of Tiny can be found in the Southern Georgian Bay region and is approximately 43 miles long or 160 square miles. The township was named, in 1822, after a pet dog of Lady Sarah Maitland (1792-1873), wife of Sir Peregrine Maitland, Lieutenant Governor of Upper Canada. Two other adjoining townships were also named for her pet dogs, Tay and Flos (now Springwater Township). The history of Tiny Township reflects its three founding cultures: Native, French and British. Located within Wendake, the historical homel
   - Match: score 7 via coastal-in-title, kw:beach+sand+bay+point, geo:1418017m, w>=1000, landscape
-- **`us-ga-mid-beach-2.jpg`** ✗ **not a coastal photo** — Tybee Island Beach Renourishment 2014 - Dredge visit (15843220836) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Tybee_Island_Beach_Renourishment_2014_-_Dredge_visit_(15843220836).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: U.S. Army Corps of Engineers Savannah District — https://www.flickr.com/people/45417428@N05
-  - Dated: Taken on 20 November 2014, 11:11
-  - 1600×1063px, 370 KB
-  - Description: Workers on the dredge Alaska, owned and operated by the Great Lakes Dredge and Dock Company of Illinois, pump sand from off-shore of Tybee Island, Georgia, onto the beach. Under contract with the U.S. Army Corps of Engineers, Savannah District, the company removes beach-quality sand from the ocean floor and pumps it to the beach where construction workers place the sand in the most advantageous locations to protect the dunes and property from damage caused by passing storms. The project has the additional benefit of enhancing the beach for public use. Storm protection is also known as beach re
-  - Match: score 7 via coastal-in-title, kw:beach+ocean+shore+sand, w>=1000, landscape
-- **`us-ga-mid-beach-3.jpg`** ✗ **not a coastal photo** — Tybee Island Beach Renourishment 2014 - Dredge visit (15681691980) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Tybee_Island_Beach_Renourishment_2014_-_Dredge_visit_(15681691980).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: U.S. Army Corps of Engineers Savannah District — https://www.flickr.com/people/45417428@N05
-  - Dated: Taken on 20 November 2014, 11:18
-  - 1600×1063px, 469 KB
-  - Description: Workers on the dredge Alaska, owned and operated by the Great Lakes Dredge and Dock Company of Illinois, pump sand from off-shore of Tybee Island, Georgia, onto the beach. Under contract with the U.S. Army Corps of Engineers, Savannah District, the company removes beach-quality sand from the ocean floor and pumps it to the beach where construction workers place the sand in the most advantageous locations to protect the dunes and property from damage caused by passing storms. The project has the additional benefit of enhancing the beach for public use. Storm protection is also known as beach re
-  - Match: score 7 via coastal-in-title, kw:beach+ocean+shore+sand, w>=1000, landscape
-
-## Myrtle Street Public Beach Access
-
-`osm:node/9826912085` · 31.1377432, -81.3811942
-
-- **`us-ga-myrtle-street-public-beach-access-1.jpg`** ✗ **not a coastal photo** — “Wedding Cake (7712258102)” by Ralph Daily from Birmingham, United States, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Wedding_Cake_(7712258102).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Ralph Daily from Birmingham, United States — https://www.flickr.com/people/92269745@N00
-  - Dated: 2012-06-17 17:53
-  - 1600×1060px, 393 KB, shot 275 m from the spot
-  - Description: This is an incredible wedding cake made a caterer from Brunswick for a lawn wedding at the King and Prince right outside our room. Note the two seahorses at the top, sand dollars, star fish, shells and beach motif. Great St. Simons wedding. The cake looked good!
-  - Match: score 8 via kw:beach+sea+sand, geo:275m, w>=1000, landscape
-- **`us-ga-myrtle-street-public-beach-access-2.jpg`** ✗ **not a coastal photo** — “Crabdaddy's Seafood Grill, St. Simons” by Michael Rivera, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Crabdaddy%27s_Seafood_Grill,_St._Simons.JPG
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Michael Rivera — //commons.wikimedia.org/wiki/User:Mjrmtg
-  - Dated: 2015-06-29 13:18:54
-  - 1600×1200px, 655 KB, shot 339 m from the spot
-  - Description: St. Simons, Glynn County, Georgia
-  - Match: score 7.5 via coastal-in-title, kw:sea, geo:339m, w>=1000, landscape
-- **`us-ga-myrtle-street-public-beach-access-3.jpg`** ✗ **not a coastal photo** — “The Crab Trap, St. Simons” by Michael Rivera, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:The_Crab_Trap,_St._Simons.JPG
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Michael Rivera — //commons.wikimedia.org/wiki/User:Mjrmtg
-  - Dated: 2015-06-29 13:18:26
-  - 1600×1200px, 588 KB, shot 318 m from the spot
-  - Description: St. Simons, Glynn County, Georgia
-  - Match: score 5.5 via kw:sea, geo:318m, w>=1000, landscape
 
 ## Nanny Goat Beach
 
@@ -400,64 +167,6 @@
   - Description: Nanny Goat beach boardwalk from nature trail
   - Match: score 11.5 via name:nanny+goat, kw:beach+boardwalk, w>=1000
 
-## Neptune Road Public Beach Access
-
-`osm:node/9826912090` · 31.1388301, -81.3798688
-
-- **`us-ga-neptune-road-public-beach-access-1.jpg`** ✗ **not a coastal photo** — “Wedding Cake (7712258102)” by Ralph Daily from Birmingham, United States, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Wedding_Cake_(7712258102).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Ralph Daily from Birmingham, United States — https://www.flickr.com/people/92269745@N00
-  - Dated: 2012-06-17 17:53
-  - 1600×1060px, 393 KB, shot 110 m from the spot
-  - Description: This is an incredible wedding cake made a caterer from Brunswick for a lawn wedding at the King and Prince right outside our room. Note the two seahorses at the top, sand dollars, star fish, shells and beach motif. Great St. Simons wedding. The cake looked good!
-  - Match: score 8 via kw:beach+sea+sand, geo:110m, w>=1000, landscape
-- **`us-ga-neptune-road-public-beach-access-2.jpg`** ✗ **not a coastal photo** — “Crabdaddy's Seafood Grill, St. Simons” by Michael Rivera, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Crabdaddy%27s_Seafood_Grill,_St._Simons.JPG
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Michael Rivera — //commons.wikimedia.org/wiki/User:Mjrmtg
-  - Dated: 2015-06-29 13:18:54
-  - 1600×1200px, 655 KB, shot 248 m from the spot
-  - Description: St. Simons, Glynn County, Georgia
-  - Match: score 7.5 via coastal-in-title, kw:sea, geo:248m, w>=1000, landscape
-- **`us-ga-neptune-road-public-beach-access-3.jpg`** ✗ **not a coastal photo** — “The Crab Trap, St. Simons” by Michael Rivera, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:The_Crab_Trap,_St._Simons.JPG
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Michael Rivera — //commons.wikimedia.org/wiki/User:Mjrmtg
-  - Dated: 2015-06-29 13:18:26
-  - 1600×1200px, 588 KB, shot 244 m from the spot
-  - Description: St. Simons, Glynn County, Georgia
-  - Match: score 5.5 via kw:sea, geo:244m, w>=1000, landscape
-
-## North Beach
-
-`osm:way/919178309` · 32.0221855, -80.8454584 · beach type: **sandy** (OpenStreetMap surface=sand)
-
-- **`us-ga-north-beach-1.jpg`** ✗ **not a coastal photo** — 18-11-076-lighthouse — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:18-11-076-lighthouse.jpg
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: Dsdugan — //commons.wikimedia.org/w/index.php?title=User:Dsdugan&amp;action=edit&amp;redlink=1
-  - Dated: 2018-10-20 16:25:29
-  - 1600×1068px, 720 KB, shot 41 m from the spot
-  - Description: upstairs bedroom
-  - Match: score 7.5 via coastal-in-title, kw:lighthouse, geo:41m, w>=1000, landscape
-- **`us-ga-north-beach-2.jpg`** ✗ **not a coastal photo** — 18-11-087-lighthouse — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:18-11-087-lighthouse.jpg
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: Dsdugan — //commons.wikimedia.org/w/index.php?title=User:Dsdugan&amp;action=edit&amp;redlink=1
-  - Dated: 2018-10-20 16:28:38
-  - 1600×1063px, 724 KB, shot 41 m from the spot
-  - Description: upstairs bedroom
-  - Match: score 7.5 via coastal-in-title, kw:lighthouse, geo:41m, w>=1000, landscape
-- **`us-ga-north-beach-3.jpg`** ✗ **not a coastal photo** — 18-11-010-lighthouse — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:18-11-010-lighthouse.jpg
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: Dsdugan — //commons.wikimedia.org/w/index.php?title=User:Dsdugan&amp;action=edit&amp;redlink=1
-  - Dated: 2018-10-20 15:19:57
-  - 1600×1068px, 936 KB, shot 20 m from the spot
-  - Description: Head Keeper's Cottage from lighthouse
-  - Match: score 7.5 via coastal-in-title, kw:lighthouse, geo:20m, w>=1000, landscape
-
 ## Sea Camp Beach
 
 `osm:node/2413820605` · 30.7642827, -81.4623627
@@ -470,22 +179,6 @@
   - 1600×1200px, 598 KB, shot 2552 m from the spot
   - Description: Looking North from Dungeness runway. Kings Bay Submarine Base can be seen in the upper left.
   - Match: score 8 via coastal-in-title, kw:beach+mar+bay, geo:2552m, w>=1000, landscape
-- **`us-ga-sea-camp-beach-2.jpg`** ✗ **not a coastal photo** — “Greyfield Inn” by Lecrosby, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Greyfield_Inn.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Lecrosby — //commons.wikimedia.org/w/index.php?title=User:Lecrosby&amp;action=edit&amp;redlink=1
-  - Dated: 2006-11-24 17:13:01
-  - 1600×1200px, 823 KB, shot 1823 m from the spot
-  - Description: Greyfield
-  - Match: score 10 via name:sea, kw:sea+shore+seashore, geo:1823m, w>=1000, landscape
-- **`us-ga-sea-camp-beach-3.jpg`** ✗ **not a coastal photo** — “Cumberland Island Main Road With Armadillos” by Will.i.am, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Cumberland_Island_Main_Road_With_Armadillos.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Will.i.am — //commons.wikimedia.org/wiki/User:Will.i.am
-  - Dated: 2024-05-18
-  - 1600×1067px, 1309 KB, shot 3998 m from the spot
-  - Description: Two armadillos run across the gravel lanes of the Main Road on Cumberland Island in the Cumberland Island National Seashore near St. Marys, Georgia. Live oak trees draped with Spanish moss overhang the road. Saw palmetto plants and creeping vines are abundant.
-  - Match: score 9 via name:sea, kw:sea+shore+mar+seashore, geo:3998m, w>=1000, landscape
 
 ## Sea Island Beach
 
@@ -528,20 +221,4 @@
   - 1600×214px, 148 KB, shot 15828117 m from the spot
   - Description: Dendy Street Beach and Middle Brighton Beach on a summer's afternoon, featuring the Melbourne tourist icon of the Brighton Bathing Boxes. In the background can be seen the Middle Brighton Baths, the Middle Brighton Pier and Breakwater, and boats of the Royal Brighton Yacht Club. In the far distance is the Melbourne City skyline, some 12km away. Brighton, Victoria, Australia.
   - Match: score 7 via coastal-in-title, kw:beach+pier+bay+break, geo:15828117m, w>=1000, landscape
-- **`us-ga-south-beach-2.jpg`** ✗ **not a coastal photo** — “On The Beach (195577451)” by Georg Botz, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:On_The_Beach_(195577451).jpeg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Georg Botz — https://500px.com/georgbotz
-  - Dated: 15 January 2015, 14:51:15 (UTC)
-  - 1600×1067px, 447 KB, shot 10544407 m from the spot
-  - Description: 500px provided description: A king penguin about to enter the ocean near Gold Harbour, South Georgia. [#Ocean ,#Coast ,#King Penguin ,#South Georgia ,#Aptenodytes patagonicus ,#Sub-Antarctica]
-  - Match: score 7 via coastal-in-title, kw:beach+ocean+coast+sand, geo:10544407m, w>=1000, landscape
-- **`us-ga-south-beach-3.jpg`** ✗ **not a coastal photo** — “King Penguins and Southern Elephant Seals snoozing on the beach (5848797587)” by Liam Quinn from Canada, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:King_Penguins_and_Southern_Elephant_Seals_snoozing_on_the_beach_(5848797587).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Liam Quinn from Canada — https://www.flickr.com/people/59222181@N03
-  - Dated: 2011-01-19 11:32
-  - 1600×1067px, 730 KB, shot 10517886 m from the spot
-  - Description: At St. Andrews Bay, South Georgia.
-  - Match: score 7 via coastal-in-title, kw:beach+sea+bay, geo:10517886m, w>=1000, landscape
 

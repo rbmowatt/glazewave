@@ -1,6 +1,6 @@
 # MX-GRO — Mexico, Guerrero
 
-26 images across 9 spots. Licence rules and the OSM credit are in [the index](./README.md).
+25 images across 9 spots. Licence rules and the OSM credit are in [the index](./README.md).
 
 ## Playa Azul Grand
 
@@ -246,12 +246,4 @@
   - 1600×1071px, 594 KB, shot 4 m from the spot
   - Description: The boardwalk or malecon of Acapulco from Tlacopanocha Beach
   - Match: score 11 via name:tlacopanocha, kw:beach+boardwalk, geo:4m, w>=1000, landscape
-- **`mx-gro-playa-tlacopanocha-3.jpg`** ✗ **not a coastal photo** — “DIEGO RIVERA, MURALES REALIZADOS EN 1957, EN LA CASA DE DOLORES OLMEDO. EN ACAPULCO (3570781160)” by Eduardo Francisco Vazquez Murillo from Acapulco, Mexico, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:DIEGO_RIVERA,_MURALES_REALIZADOS_EN_1957,_EN_LA_CASA_DE_DOLORES_OLMEDO._EN_ACAPULCO_(3570781160).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Eduardo Francisco Vazquez Murillo from Acapulco, Mexico — https://www.flickr.com/people/30993853@N06
-  - Dated: 2009-05-22 18:12
-  - 1600×1205px, 1255 KB, shot 415 m from the spot
-  - Description: Mural de Diego Rivera en Acapulco Este hermoso y natural destino turístico mexicano debe su fama internacional a la coexistencia de una gran variedad de atractivos, entre los que se encuentran sus extensas playas, el agua de mar cristalina, lagunas, ríos, puertos, bahías y espacios de un rico patrimonio histórico y cultural. En relación a estos últimos, uno de los mejores exponentes es el mural de Diego de Rivera en Acapulco. Mural de Diego Rivera en Acapulco Este hermoso y natural destino turístico mexicano debe su fama internacional a la coexistencia de una gran variedad de atractivos, entre
-  - Match: score 6 via kw:playa+mar, geo:415m, w>=1000, landscape
 

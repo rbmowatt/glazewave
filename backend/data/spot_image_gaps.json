@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-07T23:06:29.975Z",
+  "generated_at": "2026-09-07T23:19:02.273Z",
   "summary": {
     "spots_total": 1611,
     "spots_with_a_coastal_image": 1188,
     "spots_context_only": 134,
-    "spots_no_usable_image": 105,
-    "spots_no_image_at_all": 184
+    "spots_no_usable_image": 0,
+    "spots_no_image_at_all": 289
   },
   "context_only": [
     {
@@ -29,8 +29,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/mx-bc/mx-bc-rosarito-tripizdon-beach-1.jpg",
-        "spot-images/mx-bc/mx-bc-rosarito-tripizdon-beach-2.jpg",
-        "spot-images/mx-bc/mx-bc-rosarito-tripizdon-beach-3.jpg"
+        "spot-images/mx-bc/mx-bc-rosarito-tripizdon-beach-2.jpg"
       ]
     },
     {
@@ -42,8 +41,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/mx-gro/mx-gro-playa-tlacopanocha-1.jpg",
-        "spot-images/mx-gro/mx-gro-playa-tlacopanocha-2.jpg",
-        "spot-images/mx-gro/mx-gro-playa-tlacopanocha-3.jpg"
+        "spot-images/mx-gro/mx-gro-playa-tlacopanocha-2.jpg"
       ]
     },
     {
@@ -54,9 +52,7 @@
       "lon": "-105.4539734",
       "best_subject": "context",
       "files": [
-        "spot-images/mx-nay/mx-nay-playa-carricitos-1.jpg",
-        "spot-images/mx-nay/mx-nay-playa-carricitos-2.jpg",
-        "spot-images/mx-nay/mx-nay-playa-carricitos-3.jpg"
+        "spot-images/mx-nay/mx-nay-playa-carricitos-1.jpg"
       ]
     },
     {
@@ -89,9 +85,7 @@
       "lon": "-106.427268",
       "best_subject": "context",
       "files": [
-        "spot-images/mx-sin/mx-sin-playa-olas-altas-1.jpg",
-        "spot-images/mx-sin/mx-sin-playa-olas-altas-2.jpg",
-        "spot-images/mx-sin/mx-sin-playa-olas-altas-3.jpg"
+        "spot-images/mx-sin/mx-sin-playa-olas-altas-1.jpg"
       ]
     },
     {
@@ -126,9 +120,7 @@
       "lon": "-96.1005439",
       "best_subject": "context",
       "files": [
-        "spot-images/mx-ver/mx-ver-playa-gaviota-1.jpg",
-        "spot-images/mx-ver/mx-ver-playa-gaviota-2.jpg",
-        "spot-images/mx-ver/mx-ver-playa-gaviota-3.jpg"
+        "spot-images/mx-ver/mx-ver-playa-gaviota-1.jpg"
       ]
     },
     {
@@ -139,9 +131,7 @@
       "lon": "-97.7915551",
       "best_subject": "context",
       "files": [
-        "spot-images/mx-ver/mx-ver-playa-hermosa-1.jpg",
-        "spot-images/mx-ver/mx-ver-playa-hermosa-2.jpg",
-        "spot-images/mx-ver/mx-ver-playa-hermosa-3.jpg"
+        "spot-images/mx-ver/mx-ver-playa-hermosa-1.jpg"
       ]
     },
     {
@@ -163,8 +153,7 @@
       "lon": "-87.5583287",
       "best_subject": "context",
       "files": [
-        "spot-images/us-al/us-al-west-jetty-1.jpg",
-        "spot-images/us-al/us-al-west-jetty-2.jpg"
+        "spot-images/us-al/us-al-west-jetty-1.jpg"
       ]
     },
     {
@@ -175,9 +164,7 @@
       "lon": "173.0750921",
       "best_subject": "context",
       "files": [
-        "spot-images/us-ak/us-ak-austin-beach-1.jpg",
-        "spot-images/us-ak/us-ak-austin-beach-2.jpg",
-        "spot-images/us-ak/us-ak-austin-beach-3.jpg"
+        "spot-images/us-ak/us-ak-austin-beach-1.jpg"
       ]
     },
     {
@@ -199,9 +186,7 @@
       "lon": "-159.9620379",
       "best_subject": "context",
       "files": [
-        "spot-images/us-ak/us-ak-second-beach-1.jpg",
-        "spot-images/us-ak/us-ak-second-beach-2.jpg",
-        "spot-images/us-ak/us-ak-second-beach-3.jpg"
+        "spot-images/us-ak/us-ak-second-beach-1.jpg"
       ]
     },
     {
@@ -226,8 +211,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-ca/us-ca-balboa-beach-1.jpg",
-        "spot-images/us-ca/us-ca-balboa-beach-2.jpg",
-        "spot-images/us-ca/us-ca-balboa-beach-3.jpg"
+        "spot-images/us-ca/us-ca-balboa-beach-2.jpg"
       ]
     },
     {
@@ -239,8 +223,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-ca/us-ca-cabrillo-beach-1.jpg",
-        "spot-images/us-ca/us-ca-cabrillo-beach-2.jpg",
-        "spot-images/us-ca/us-ca-cabrillo-beach-3.jpg"
+        "spot-images/us-ca/us-ca-cabrillo-beach-2.jpg"
       ]
     },
     {
@@ -328,8 +311,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-ca/us-ca-jones-beach-1.jpg",
-        "spot-images/us-ca/us-ca-jones-beach-2.jpg",
-        "spot-images/us-ca/us-ca-jones-beach-3.jpg"
+        "spot-images/us-ca/us-ca-jones-beach-2.jpg"
       ]
     },
     {
@@ -341,8 +323,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-ca/us-ca-la-jolla-shores-beach-1.jpg",
-        "spot-images/us-ca/us-ca-la-jolla-shores-beach-2.jpg",
-        "spot-images/us-ca/us-ca-la-jolla-shores-beach-3.jpg"
+        "spot-images/us-ca/us-ca-la-jolla-shores-beach-2.jpg"
       ]
     },
     {
@@ -353,9 +334,7 @@
       "lon": "-122.1563034",
       "best_subject": "context",
       "files": [
-        "spot-images/us-ca/us-ca-laguna-creek-beach-1.jpg",
-        "spot-images/us-ca/us-ca-laguna-creek-beach-2.jpg",
-        "spot-images/us-ca/us-ca-laguna-creek-beach-3.jpg"
+        "spot-images/us-ca/us-ca-laguna-creek-beach-1.jpg"
       ]
     },
     {
@@ -456,9 +435,7 @@
       "lon": "-119.1961466",
       "best_subject": "context",
       "files": [
-        "spot-images/us-ca/us-ca-port-hueneme-beach-1.jpg",
-        "spot-images/us-ca/us-ca-port-hueneme-beach-2.jpg",
-        "spot-images/us-ca/us-ca-port-hueneme-beach-3.jpg"
+        "spot-images/us-ca/us-ca-port-hueneme-beach-1.jpg"
       ]
     },
     {
@@ -493,8 +470,7 @@
       "lon": "-117.3605905",
       "best_subject": "context",
       "files": [
-        "spot-images/us-ca/us-ca-saint-malo-beach-1.jpg",
-        "spot-images/us-ca/us-ca-saint-malo-beach-2.jpg"
+        "spot-images/us-ca/us-ca-saint-malo-beach-1.jpg"
       ]
     },
     {
@@ -518,9 +494,7 @@
       "lon": "-119.5506999",
       "best_subject": "context",
       "files": [
-        "spot-images/us-ca/us-ca-santa-claus-beach-1.jpg",
-        "spot-images/us-ca/us-ca-santa-claus-beach-2.jpg",
-        "spot-images/us-ca/us-ca-santa-claus-beach-3.jpg"
+        "spot-images/us-ca/us-ca-santa-claus-beach-1.jpg"
       ]
     },
     {
@@ -532,8 +506,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-ca/us-ca-south-oceanside-beach-1.jpg",
-        "spot-images/us-ca/us-ca-south-oceanside-beach-2.jpg",
-        "spot-images/us-ca/us-ca-south-oceanside-beach-3.jpg"
+        "spot-images/us-ca/us-ca-south-oceanside-beach-2.jpg"
       ]
     },
     {
@@ -544,9 +517,7 @@
       "lon": "-120.6069923",
       "best_subject": "context",
       "files": [
-        "spot-images/us-ca/us-ca-surf-beach-1.jpg",
-        "spot-images/us-ca/us-ca-surf-beach-2.jpg",
-        "spot-images/us-ca/us-ca-surf-beach-3.jpg"
+        "spot-images/us-ca/us-ca-surf-beach-1.jpg"
       ]
     },
     {
@@ -558,8 +529,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-ca/us-ca-ventura-city-beach-178918-1.jpg",
-        "spot-images/us-ca/us-ca-ventura-city-beach-178918-2.jpg",
-        "spot-images/us-ca/us-ca-ventura-city-beach-178918-3.jpg"
+        "spot-images/us-ca/us-ca-ventura-city-beach-178918-2.jpg"
       ]
     },
     {
@@ -570,9 +540,7 @@
       "lon": "-117.7621732",
       "best_subject": "context",
       "files": [
-        "spot-images/us-ca/us-ca-victoria-beach-1.jpg",
-        "spot-images/us-ca/us-ca-victoria-beach-2.jpg",
-        "spot-images/us-ca/us-ca-victoria-beach-3.jpg"
+        "spot-images/us-ca/us-ca-victoria-beach-1.jpg"
       ]
     },
     {
@@ -584,8 +552,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-ct/us-ct-marvin-beach-1.jpg",
-        "spot-images/us-ct/us-ct-marvin-beach-2.jpg",
-        "spot-images/us-ct/us-ct-marvin-beach-3.jpg"
+        "spot-images/us-ct/us-ct-marvin-beach-2.jpg"
       ]
     },
     {
@@ -608,8 +575,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-fl/us-fl-boca-beach-1.jpg",
-        "spot-images/us-fl/us-fl-boca-beach-2.jpg",
-        "spot-images/us-fl/us-fl-boca-beach-3.jpg"
+        "spot-images/us-fl/us-fl-boca-beach-2.jpg"
       ]
     },
     {
@@ -654,8 +620,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-fl/us-fl-delray-public-beach-1.jpg",
-        "spot-images/us-fl/us-fl-delray-public-beach-2.jpg",
-        "spot-images/us-fl/us-fl-delray-public-beach-3.jpg"
+        "spot-images/us-fl/us-fl-delray-public-beach-2.jpg"
       ]
     },
     {
@@ -666,9 +631,7 @@
       "lon": "-81.7929829",
       "best_subject": "context",
       "files": [
-        "spot-images/us-fl/us-fl-dog-beach-1.jpg",
-        "spot-images/us-fl/us-fl-dog-beach-2.jpg",
-        "spot-images/us-fl/us-fl-dog-beach-3.jpg"
+        "spot-images/us-fl/us-fl-dog-beach-1.jpg"
       ]
     },
     {
@@ -679,9 +642,7 @@
       "lon": "-80.1142111",
       "best_subject": "context",
       "files": [
-        "spot-images/us-fl/us-fl-hollywood-beach-1.jpg",
-        "spot-images/us-fl/us-fl-hollywood-beach-2.jpg",
-        "spot-images/us-fl/us-fl-hollywood-beach-3.jpg"
+        "spot-images/us-fl/us-fl-hollywood-beach-1.jpg"
       ]
     },
     {
@@ -717,8 +678,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-fl/us-fl-miami-beach-986732-1.jpg",
-        "spot-images/us-fl/us-fl-miami-beach-986732-2.jpg",
-        "spot-images/us-fl/us-fl-miami-beach-986732-3.jpg"
+        "spot-images/us-fl/us-fl-miami-beach-986732-2.jpg"
       ]
     },
     {
@@ -729,9 +689,7 @@
       "lon": "-80.5755077",
       "best_subject": "context",
       "files": [
-        "spot-images/us-fl/us-fl-paradise-beach-1.jpg",
-        "spot-images/us-fl/us-fl-paradise-beach-2.jpg",
-        "spot-images/us-fl/us-fl-paradise-beach-3.jpg"
+        "spot-images/us-fl/us-fl-paradise-beach-1.jpg"
       ]
     },
     {
@@ -755,9 +713,7 @@
       "lon": "-80.0321928",
       "best_subject": "context",
       "files": [
-        "spot-images/us-fl/us-fl-riviera-beach-1.jpg",
-        "spot-images/us-fl/us-fl-riviera-beach-2.jpg",
-        "spot-images/us-fl/us-fl-riviera-beach-3.jpg"
+        "spot-images/us-fl/us-fl-riviera-beach-1.jpg"
       ]
     },
     {
@@ -769,8 +725,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-fl/us-fl-seminole-beach-1.jpg",
-        "spot-images/us-fl/us-fl-seminole-beach-2.jpg",
-        "spot-images/us-fl/us-fl-seminole-beach-3.jpg"
+        "spot-images/us-fl/us-fl-seminole-beach-2.jpg"
       ]
     },
     {
@@ -792,9 +747,7 @@
       "lon": "-157.9509122",
       "best_subject": "context",
       "files": [
-        "spot-images/us-hi/us-hi-hickam-harbor-beach-1.jpg",
-        "spot-images/us-hi/us-hi-hickam-harbor-beach-2.jpg",
-        "spot-images/us-hi/us-hi-hickam-harbor-beach-3.jpg"
+        "spot-images/us-hi/us-hi-hickam-harbor-beach-1.jpg"
       ]
     },
     {
@@ -818,9 +771,7 @@
       "lon": "-159.4275429",
       "best_subject": "context",
       "files": [
-        "spot-images/us-hi/us-hi-kalihiwai-beach-1.jpg",
-        "spot-images/us-hi/us-hi-kalihiwai-beach-2.jpg",
-        "spot-images/us-hi/us-hi-kalihiwai-beach-3.jpg"
+        "spot-images/us-hi/us-hi-kalihiwai-beach-1.jpg"
       ]
     },
     {
@@ -843,8 +794,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-hi/us-hi-kumukea-beach-1.jpg",
-        "spot-images/us-hi/us-hi-kumukea-beach-2.jpg",
-        "spot-images/us-hi/us-hi-kumukea-beach-3.jpg"
+        "spot-images/us-hi/us-hi-kumukea-beach-2.jpg"
       ]
     },
     {
@@ -869,8 +819,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-hi/us-hi-queen-kapi-olani-beach-1.jpg",
-        "spot-images/us-hi/us-hi-queen-kapi-olani-beach-2.jpg",
-        "spot-images/us-hi/us-hi-queen-kapi-olani-beach-3.jpg"
+        "spot-images/us-hi/us-hi-queen-kapi-olani-beach-2.jpg"
       ]
     },
     {
@@ -934,8 +883,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-me/us-me-goodie-s-beach-1.jpg",
-        "spot-images/us-me/us-me-goodie-s-beach-2.jpg",
-        "spot-images/us-me/us-me-goodie-s-beach-3.jpg"
+        "spot-images/us-me/us-me-goodie-s-beach-2.jpg"
       ]
     },
     {
@@ -970,9 +918,7 @@
       "lon": "-70.9070987",
       "best_subject": "context",
       "files": [
-        "spot-images/us-ma/us-ma-canoe-beach-1.jpg",
-        "spot-images/us-ma/us-ma-canoe-beach-2.jpg",
-        "spot-images/us-ma/us-ma-canoe-beach-3.jpg"
+        "spot-images/us-ma/us-ma-canoe-beach-1.jpg"
       ]
     },
     {
@@ -983,9 +929,7 @@
       "lon": "-70.6421272",
       "best_subject": "context",
       "files": [
-        "spot-images/us-ma/us-ma-folly-cove-shore-dive-site-1.jpg",
-        "spot-images/us-ma/us-ma-folly-cove-shore-dive-site-2.jpg",
-        "spot-images/us-ma/us-ma-folly-cove-shore-dive-site-3.jpg"
+        "spot-images/us-ma/us-ma-folly-cove-shore-dive-site-1.jpg"
       ]
     },
     {
@@ -997,8 +941,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-ma/us-ma-garmet-beach-1.jpg",
-        "spot-images/us-ma/us-ma-garmet-beach-2.jpg",
-        "spot-images/us-ma/us-ma-garmet-beach-3.jpg"
+        "spot-images/us-ma/us-ma-garmet-beach-2.jpg"
       ]
     },
     {
@@ -1010,8 +953,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-ma/us-ma-gun-rock-beach-1.jpg",
-        "spot-images/us-ma/us-ma-gun-rock-beach-2.jpg",
-        "spot-images/us-ma/us-ma-gun-rock-beach-3.jpg"
+        "spot-images/us-ma/us-ma-gun-rock-beach-2.jpg"
       ]
     },
     {
@@ -1034,9 +976,7 @@
       "lon": "-70.7643367",
       "best_subject": "context",
       "files": [
-        "spot-images/us-ma/us-ma-minot-beach-1.jpg",
-        "spot-images/us-ma/us-ma-minot-beach-2.jpg",
-        "spot-images/us-ma/us-ma-minot-beach-3.jpg"
+        "spot-images/us-ma/us-ma-minot-beach-1.jpg"
       ]
     },
     {
@@ -1074,8 +1014,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-ma/us-ma-nauset-beach-282901-1.jpg",
-        "spot-images/us-ma/us-ma-nauset-beach-282901-2.jpg",
-        "spot-images/us-ma/us-ma-nauset-beach-282901-3.jpg"
+        "spot-images/us-ma/us-ma-nauset-beach-282901-2.jpg"
       ]
     },
     {
@@ -1087,8 +1026,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-ma/us-ma-old-garden-beach-1.jpg",
-        "spot-images/us-ma/us-ma-old-garden-beach-2.jpg",
-        "spot-images/us-ma/us-ma-old-garden-beach-3.jpg"
+        "spot-images/us-ma/us-ma-old-garden-beach-2.jpg"
       ]
     },
     {
@@ -1110,9 +1048,7 @@
       "lon": "-70.8105992",
       "best_subject": "context",
       "files": [
-        "spot-images/us-ma/us-ma-pleasant-beach-1.jpg",
-        "spot-images/us-ma/us-ma-pleasant-beach-2.jpg",
-        "spot-images/us-ma/us-ma-pleasant-beach-3.jpg"
+        "spot-images/us-ma/us-ma-pleasant-beach-1.jpg"
       ]
     },
     {
@@ -1124,8 +1060,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-ma/us-ma-siasconset-beach-1.jpg",
-        "spot-images/us-ma/us-ma-siasconset-beach-2.jpg",
-        "spot-images/us-ma/us-ma-siasconset-beach-3.jpg"
+        "spot-images/us-ma/us-ma-siasconset-beach-2.jpg"
       ]
     },
     {
@@ -1195,9 +1130,7 @@
       "lon": "-74.0778834",
       "best_subject": "context",
       "files": [
-        "spot-images/us-nj/us-nj-sandy-point-yacht-club-private-beach-1.jpg",
-        "spot-images/us-nj/us-nj-sandy-point-yacht-club-private-beach-2.jpg",
-        "spot-images/us-nj/us-nj-sandy-point-yacht-club-private-beach-3.jpg"
+        "spot-images/us-nj/us-nj-sandy-point-yacht-club-private-beach-1.jpg"
       ]
     },
     {
@@ -1208,9 +1141,7 @@
       "lon": "-74.5369764",
       "best_subject": "context",
       "files": [
-        "spot-images/us-nj/us-nj-the-point-2-beach-1.jpg",
-        "spot-images/us-nj/us-nj-the-point-2-beach-2.jpg",
-        "spot-images/us-nj/us-nj-the-point-2-beach-3.jpg"
+        "spot-images/us-nj/us-nj-the-point-2-beach-1.jpg"
       ]
     },
     {
@@ -1248,8 +1179,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-ny/us-ny-lighthouse-beach-613528-1.jpg",
-        "spot-images/us-ny/us-ny-lighthouse-beach-613528-2.jpg",
-        "spot-images/us-ny/us-ny-lighthouse-beach-613528-3.jpg"
+        "spot-images/us-ny/us-ny-lighthouse-beach-613528-2.jpg"
       ]
     },
     {
@@ -1261,8 +1191,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-ny/us-ny-lighthouse-beach-613529-1.jpg",
-        "spot-images/us-ny/us-ny-lighthouse-beach-613529-2.jpg",
-        "spot-images/us-ny/us-ny-lighthouse-beach-613529-3.jpg"
+        "spot-images/us-ny/us-ny-lighthouse-beach-613529-2.jpg"
       ]
     },
     {
@@ -1274,8 +1203,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-ny/us-ny-rockaway-beach-1.jpg",
-        "spot-images/us-ny/us-ny-rockaway-beach-2.jpg",
-        "spot-images/us-ny/us-ny-rockaway-beach-3.jpg"
+        "spot-images/us-ny/us-ny-rockaway-beach-2.jpg"
       ]
     },
     {
@@ -1299,9 +1227,7 @@
       "lon": "-73.7497337",
       "best_subject": "context",
       "files": [
-        "spot-images/us-ny/us-ny-sun-and-surf-beach-club-1.jpg",
-        "spot-images/us-ny/us-ny-sun-and-surf-beach-club-2.jpg",
-        "spot-images/us-ny/us-ny-sun-and-surf-beach-club-3.jpg"
+        "spot-images/us-ny/us-ny-sun-and-surf-beach-club-1.jpg"
       ]
     },
     {
@@ -1312,8 +1238,7 @@
       "lon": "-75.4845982",
       "best_subject": "context",
       "files": [
-        "spot-images/us-nc/us-nc-bald-beach-797125-1.jpg",
-        "spot-images/us-nc/us-nc-bald-beach-797125-2.jpg"
+        "spot-images/us-nc/us-nc-bald-beach-797125-1.jpg"
       ]
     },
     {
@@ -1325,8 +1250,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-nc/us-nc-caswell-beach-1.jpg",
-        "spot-images/us-nc/us-nc-caswell-beach-2.jpg",
-        "spot-images/us-nc/us-nc-caswell-beach-3.jpg"
+        "spot-images/us-nc/us-nc-caswell-beach-2.jpg"
       ]
     },
     {
@@ -1338,8 +1262,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-nc/us-nc-currituck-beach-1.jpg",
-        "spot-images/us-nc/us-nc-currituck-beach-2.jpg",
-        "spot-images/us-nc/us-nc-currituck-beach-3.jpg"
+        "spot-images/us-nc/us-nc-currituck-beach-2.jpg"
       ]
     },
     {
@@ -1350,9 +1273,7 @@
       "lon": "-76.8711693",
       "best_subject": "context",
       "files": [
-        "spot-images/us-nc/us-nc-indian-beach-1.jpg",
-        "spot-images/us-nc/us-nc-indian-beach-2.jpg",
-        "spot-images/us-nc/us-nc-indian-beach-3.jpg"
+        "spot-images/us-nc/us-nc-indian-beach-1.jpg"
       ]
     },
     {
@@ -1364,8 +1285,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-nc/us-nc-kure-beach-1.jpg",
-        "spot-images/us-nc/us-nc-kure-beach-2.jpg",
-        "spot-images/us-nc/us-nc-kure-beach-3.jpg"
+        "spot-images/us-nc/us-nc-kure-beach-2.jpg"
       ]
     },
     {
@@ -1389,9 +1309,7 @@
       "lon": "-77.5358921",
       "best_subject": "context",
       "files": [
-        "spot-images/us-nc/us-nc-stevens-street-public-beach-access-1.jpg",
-        "spot-images/us-nc/us-nc-stevens-street-public-beach-access-2.jpg",
-        "spot-images/us-nc/us-nc-stevens-street-public-beach-access-3.jpg"
+        "spot-images/us-nc/us-nc-stevens-street-public-beach-access-1.jpg"
       ]
     },
     {
@@ -1428,9 +1346,7 @@
       "lon": "-71.4963127",
       "best_subject": "context",
       "files": [
-        "spot-images/us-ri/us-ri-captain-roger-w-wheeler-state-beach-1.jpg",
-        "spot-images/us-ri/us-ri-captain-roger-w-wheeler-state-beach-2.jpg",
-        "spot-images/us-ri/us-ri-captain-roger-w-wheeler-state-beach-3.jpg"
+        "spot-images/us-ri/us-ri-captain-roger-w-wheeler-state-beach-1.jpg"
       ]
     },
     {
@@ -1466,8 +1382,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-ri/us-ri-ocean-house-beach-1.jpg",
-        "spot-images/us-ri/us-ri-ocean-house-beach-2.jpg",
-        "spot-images/us-ri/us-ri-ocean-house-beach-3.jpg"
+        "spot-images/us-ri/us-ri-ocean-house-beach-2.jpg"
       ]
     },
     {
@@ -1503,8 +1418,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-sc/us-sc-dolphin-beach-1.jpg",
-        "spot-images/us-sc/us-sc-dolphin-beach-2.jpg",
-        "spot-images/us-sc/us-sc-dolphin-beach-3.jpg"
+        "spot-images/us-sc/us-sc-dolphin-beach-2.jpg"
       ]
     },
     {
@@ -1528,8 +1442,7 @@
       "best_subject": "context",
       "files": [
         "spot-images/us-sc/us-sc-turtle-beach-1.jpg",
-        "spot-images/us-sc/us-sc-turtle-beach-2.jpg",
-        "spot-images/us-sc/us-sc-turtle-beach-3.jpg"
+        "spot-images/us-sc/us-sc-turtle-beach-2.jpg"
       ]
     },
     {
@@ -1540,9 +1453,7 @@
       "lon": "-78.7268041",
       "best_subject": "context",
       "files": [
-        "spot-images/us-sc/us-sc-windy-hill-beach-1.jpg",
-        "spot-images/us-sc/us-sc-windy-hill-beach-2.jpg",
-        "spot-images/us-sc/us-sc-windy-hill-beach-3.jpg"
+        "spot-images/us-sc/us-sc-windy-hill-beach-1.jpg"
       ]
     },
     {
@@ -1566,8 +1477,7 @@
       "lon": "-95.3507732",
       "best_subject": "context",
       "files": [
-        "spot-images/us-tx/us-tx-bryan-beach-1.jpg",
-        "spot-images/us-tx/us-tx-bryan-beach-2.jpg"
+        "spot-images/us-tx/us-tx-bryan-beach-1.jpg"
       ]
     },
     {
@@ -1591,9 +1501,7 @@
       "lon": "-97.0637188",
       "best_subject": "context",
       "files": [
-        "spot-images/us-tx/us-tx-holiday-beach-1.jpg",
-        "spot-images/us-tx/us-tx-holiday-beach-2.jpg",
-        "spot-images/us-tx/us-tx-holiday-beach-3.jpg"
+        "spot-images/us-tx/us-tx-holiday-beach-1.jpg"
       ]
     },
     {
@@ -1669,9 +1577,7 @@
       "lon": "-124.6902661",
       "best_subject": "context",
       "files": [
-        "spot-images/us-wa/us-wa-shi-shi-beach-1.jpg",
-        "spot-images/us-wa/us-wa-shi-shi-beach-2.jpg",
-        "spot-images/us-wa/us-wa-shi-shi-beach-3.jpg"
+        "spot-images/us-wa/us-wa-shi-shi-beach-1.jpg"
       ]
     },
     {
@@ -1699,1316 +1605,7 @@
       ]
     }
   ],
-  "no_usable_image": [
-    {
-      "spot_id": "osm:way/1338703202",
-      "name": "Playa Las Piedritas",
-      "region": "MX-COL",
-      "lat": "19.0352685",
-      "lon": "-104.3321414",
-      "best_subject": "not",
-      "files": [
-        "spot-images/mx-col/mx-col-playa-las-piedritas-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/2641581257",
-      "name": "Caleta Tankah",
-      "region": "MX-ROO",
-      "lat": "20.231678",
-      "lon": "-87.4180992",
-      "best_subject": "not",
-      "files": [
-        "spot-images/mx-roo/mx-roo-caleta-tankah-1.jpg",
-        "spot-images/mx-roo/mx-roo-caleta-tankah-2.jpg",
-        "spot-images/mx-roo/mx-roo-caleta-tankah-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/10175978018",
-      "name": "Playa 88",
-      "region": "MX-ROO",
-      "lat": "20.6452725",
-      "lon": "-87.0549509",
-      "best_subject": "not",
-      "files": [
-        "spot-images/mx-roo/mx-roo-playa-88-1.jpg",
-        "spot-images/mx-roo/mx-roo-playa-88-2.jpg",
-        "spot-images/mx-roo/mx-roo-playa-88-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/506426452",
-      "name": "Playa Akun",
-      "region": "MX-ROO",
-      "lat": "20.1014589",
-      "lon": "-87.4727931",
-      "best_subject": "not",
-      "files": [
-        "spot-images/mx-roo/mx-roo-playa-akun-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/1464972988",
-      "name": "Plaa Hermosay",
-      "region": "MX-VER",
-      "lat": "18.6645303",
-      "lon": "-95.1297191",
-      "best_subject": "not",
-      "files": [
-        "spot-images/mx-ver/mx-ver-plaa-hermosay-1.jpg",
-        "spot-images/mx-ver/mx-ver-plaa-hermosay-2.jpg",
-        "spot-images/mx-ver/mx-ver-plaa-hermosay-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/730332996",
-      "name": "Playa Coatza",
-      "region": "MX-VER",
-      "lat": "18.1536536",
-      "lon": "-94.4566311",
-      "best_subject": "not",
-      "files": [
-        "spot-images/mx-ver/mx-ver-playa-coatza-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:relation/17920247",
-      "name": "East End Beach",
-      "region": "US-AL",
-      "lat": "30.2455874",
-      "lon": "-88.0836713",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-al/us-al-east-end-beach-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/702023397",
-      "name": "Outside Beach",
-      "region": "US-AK",
-      "lat": "59.4540274",
-      "lon": "-151.7176",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ak/us-ak-outside-beach-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/13081294681",
-      "name": "Third Beach",
-      "region": "US-AK",
-      "lat": "58.5988163",
-      "lon": "-159.9626333",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ak/us-ak-third-beach-1.jpg",
-        "spot-images/us-ak/us-ak-third-beach-2.jpg",
-        "spot-images/us-ak/us-ak-third-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/358796549",
-      "name": "Amarillo Beach",
-      "region": "US-CA",
-      "lat": "34.0303972",
-      "lon": "-118.7036072",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-amarillo-beach-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/1103243464",
-      "name": "Bessemer Beach",
-      "region": "US-CA",
-      "lat": "32.7180309",
-      "lon": "-117.2334493",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-bessemer-beach-1.jpg",
-        "spot-images/us-ca/us-ca-bessemer-beach-2.jpg",
-        "spot-images/us-ca/us-ca-bessemer-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/467517605",
-      "name": "Faria Beach",
-      "region": "US-CA",
-      "lat": "34.3226784",
-      "lon": "-119.3940059",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-faria-beach-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/4374966213",
-      "name": "Fort Bragg Landing",
-      "region": "US-CA",
-      "lat": "39.442259",
-      "lon": "-123.8125928",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-fort-bragg-landing-1.jpg",
-        "spot-images/us-ca/us-ca-fort-bragg-landing-2.jpg",
-        "spot-images/us-ca/us-ca-fort-bragg-landing-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/358821846",
-      "name": "Gold Bluffs Beach",
-      "region": "US-CA",
-      "lat": "41.3965108",
-      "lon": "-124.0684062",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-gold-bluffs-beach-1.jpg",
-        "spot-images/us-ca/us-ca-gold-bluffs-beach-2.jpg",
-        "spot-images/us-ca/us-ca-gold-bluffs-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:relation/11657616",
-      "name": "Huntington State Beach",
-      "region": "US-CA",
-      "lat": "33.6383602",
-      "lon": "-117.9733803",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-huntington-state-beach-1.jpg",
-        "spot-images/us-ca/us-ca-huntington-state-beach-2.jpg",
-        "spot-images/us-ca/us-ca-huntington-state-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/446160699",
-      "name": "Kelham Beach",
-      "region": "US-CA",
-      "lat": "37.9956014",
-      "lon": "-122.8209841",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-kelham-beach-1.jpg",
-        "spot-images/us-ca/us-ca-kelham-beach-2.jpg",
-        "spot-images/us-ca/us-ca-kelham-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:relation/7102574",
-      "name": "La Jolla Cove",
-      "region": "US-CA",
-      "lat": "32.8504521",
-      "lon": "-117.2727298",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-la-jolla-cove-1.jpg",
-        "spot-images/us-ca/us-ca-la-jolla-cove-2.jpg",
-        "spot-images/us-ca/us-ca-la-jolla-cove-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/1082439264",
-      "name": "Latigo Beach",
-      "region": "US-CA",
-      "lat": "34.0300323",
-      "lon": "-118.7515038",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-latigo-beach-1.jpg",
-        "spot-images/us-ca/us-ca-latigo-beach-2.jpg",
-        "spot-images/us-ca/us-ca-latigo-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/445950449",
-      "name": "Limantour Beach",
-      "region": "US-CA",
-      "lat": "38.0244007",
-      "lon": "-122.8805787",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-limantour-beach-1.jpg",
-        "spot-images/us-ca/us-ca-limantour-beach-2.jpg",
-        "spot-images/us-ca/us-ca-limantour-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/250245534",
-      "name": "More Mesa Beach",
-      "region": "US-CA",
-      "lat": "34.4180418",
-      "lon": "-119.802111",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-more-mesa-beach-1.jpg",
-        "spot-images/us-ca/us-ca-more-mesa-beach-2.jpg",
-        "spot-images/us-ca/us-ca-more-mesa-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/250245535",
-      "name": "More Mesa Beach",
-      "region": "US-CA",
-      "lat": "34.4183202",
-      "lon": "-119.7958875",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-more-mesa-beach-245535-1.jpg",
-        "spot-images/us-ca/us-ca-more-mesa-beach-245535-2.jpg",
-        "spot-images/us-ca/us-ca-more-mesa-beach-245535-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/446753851",
-      "name": "More Mesa Beach",
-      "region": "US-CA",
-      "lat": "34.4181391",
-      "lon": "-119.7984601",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-more-mesa-beach-753851-1.jpg",
-        "spot-images/us-ca/us-ca-more-mesa-beach-753851-2.jpg",
-        "spot-images/us-ca/us-ca-more-mesa-beach-753851-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/6403360920",
-      "name": "More Mesa Nude Beach",
-      "region": "US-CA",
-      "lat": "34.4174347",
-      "lon": "-119.7898217",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-more-mesa-nude-beach-1.jpg",
-        "spot-images/us-ca/us-ca-more-mesa-nude-beach-2.jpg",
-        "spot-images/us-ca/us-ca-more-mesa-nude-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/27294347",
-      "name": "Mother's Beach",
-      "region": "US-CA",
-      "lat": "33.9810266",
-      "lon": "-118.4572839",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-mother-s-beach-1.jpg",
-        "spot-images/us-ca/us-ca-mother-s-beach-2.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/118076810",
-      "name": "Needle Rock Beach",
-      "region": "US-CA",
-      "lat": "39.9427051",
-      "lon": "-123.9666812",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-needle-rock-beach-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/358790118",
-      "name": "Ormond Beach",
-      "region": "US-CA",
-      "lat": "34.1369497",
-      "lon": "-119.1842735",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-ormond-beach-1.jpg",
-        "spot-images/us-ca/us-ca-ormond-beach-2.jpg",
-        "spot-images/us-ca/us-ca-ormond-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/11925837134",
-      "name": "Ranger Steven's Beach",
-      "region": "US-CA",
-      "lat": "34.0316513",
-      "lon": "-118.6989496",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-ranger-steven-s-beach-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:relation/5255980",
-      "name": "Red Rock Beach",
-      "region": "US-CA",
-      "lat": "37.8896305",
-      "lon": "-122.6332104",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-red-rock-beach-1.jpg",
-        "spot-images/us-ca/us-ca-red-rock-beach-2.jpg",
-        "spot-images/us-ca/us-ca-red-rock-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/24656288",
-      "name": "Rodeo Beach",
-      "region": "US-CA",
-      "lat": "37.8305433",
-      "lon": "-122.5371176",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-rodeo-beach-1.jpg",
-        "spot-images/us-ca/us-ca-rodeo-beach-2.jpg",
-        "spot-images/us-ca/us-ca-rodeo-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/232399654",
-      "name": "Sculptured Beach",
-      "region": "US-CA",
-      "lat": "38.0099237",
-      "lon": "-122.8447917",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-sculptured-beach-1.jpg",
-        "spot-images/us-ca/us-ca-sculptured-beach-2.jpg",
-        "spot-images/us-ca/us-ca-sculptured-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/8357030666",
-      "name": "Shipwreck Shore",
-      "region": "US-CA",
-      "lat": "33.2961491",
-      "lon": "-117.4700217",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-shipwreck-shore-1.jpg",
-        "spot-images/us-ca/us-ca-shipwreck-shore-2.jpg",
-        "spot-images/us-ca/us-ca-shipwreck-shore-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:relation/8845887",
-      "name": "Stengel Beach",
-      "region": "US-CA",
-      "lat": "38.7157338",
-      "lon": "-123.4600077",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-stengel-beach-1.jpg",
-        "spot-images/us-ca/us-ca-stengel-beach-2.jpg",
-        "spot-images/us-ca/us-ca-stengel-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/275414187",
-      "name": "Wildcat Beach",
-      "region": "US-CA",
-      "lat": "37.9653039",
-      "lon": "-122.791381",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ca/us-ca-wildcat-beach-1.jpg",
-        "spot-images/us-ca/us-ca-wildcat-beach-2.jpg",
-        "spot-images/us-ca/us-ca-wildcat-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/358372924",
-      "name": "Clinton Town Beach",
-      "region": "US-CT",
-      "lat": "41.2677654",
-      "lon": "-72.5196706",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ct/us-ct-clinton-town-beach-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/43399716",
-      "name": "Indian Cove Beach",
-      "region": "US-CT",
-      "lat": "41.2552322",
-      "lon": "-72.6847888",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ct/us-ct-indian-cove-beach-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/359277513",
-      "name": "Indiantown Beach",
-      "region": "US-CT",
-      "lat": "41.277321",
-      "lon": "-72.4017522",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ct/us-ct-indiantown-beach-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/1216673425",
-      "name": "Jacobs Public Beach",
-      "region": "US-CT",
-      "lat": "41.2684077",
-      "lon": "-72.6678989",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ct/us-ct-jacobs-public-beach-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/1116334300",
-      "name": "Blind Pass Beach",
-      "region": "US-FL",
-      "lat": "26.4813835",
-      "lon": "-82.181675",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-fl/us-fl-blind-pass-beach-1.jpg",
-        "spot-images/us-fl/us-fl-blind-pass-beach-2.png",
-        "spot-images/us-fl/us-fl-blind-pass-beach-3.png"
-      ]
-    },
-    {
-      "spot_id": "osm:node/358692793",
-      "name": "Bunche Beach",
-      "region": "US-FL",
-      "lat": "26.4760335",
-      "lon": "-81.9673298",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-fl/us-fl-bunche-beach-1.jpg",
-        "spot-images/us-fl/us-fl-bunche-beach-2.jpg",
-        "spot-images/us-fl/us-fl-bunche-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/922205230",
-      "name": "Fernandina Beach",
-      "region": "US-FL",
-      "lat": "30.6752854",
-      "lon": "-81.4385031",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-fl/us-fl-fernandina-beach-1.jpg",
-        "spot-images/us-fl/us-fl-fernandina-beach-2.jpg",
-        "spot-images/us-fl/us-fl-fernandina-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/147499385",
-      "name": "Fort Island Beach",
-      "region": "US-FL",
-      "lat": "28.9078976",
-      "lon": "-82.6909501",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-fl/us-fl-fort-island-beach-1.jpg",
-        "spot-images/us-fl/us-fl-fort-island-beach-2.jpg",
-        "spot-images/us-fl/us-fl-fort-island-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/1189281206",
-      "name": "Howard Park Beach",
-      "region": "US-FL",
-      "lat": "28.1541816",
-      "lon": "-82.8063358",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-fl/us-fl-howard-park-beach-1.jpg",
-        "spot-images/us-fl/us-fl-howard-park-beach-2.jpg",
-        "spot-images/us-fl/us-fl-howard-park-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/189310353",
-      "name": "Klondike Beach",
-      "region": "US-FL",
-      "lat": "28.7785418",
-      "lon": "-80.720836",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-fl/us-fl-klondike-beach-1.jpg",
-        "spot-images/us-fl/us-fl-klondike-beach-2.jpg",
-        "spot-images/us-fl/us-fl-klondike-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/358699809",
-      "name": "Manatee County Beach",
-      "region": "US-FL",
-      "lat": "27.4997598",
-      "lon": "-82.7139886",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-fl/us-fl-manatee-county-beach-1.jpg",
-        "spot-images/us-fl/us-fl-manatee-county-beach-2.jpg",
-        "spot-images/us-fl/us-fl-manatee-county-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/4859762944",
-      "name": "Marriott Beach",
-      "region": "US-FL",
-      "lat": "25.9301532",
-      "lon": "-81.7317433",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-fl/us-fl-marriott-beach-1.jpg",
-        "spot-images/us-fl/us-fl-marriott-beach-2.jpg",
-        "spot-images/us-fl/us-fl-marriott-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/368693214",
-      "name": "Park East On-Leash Dog Beach",
-      "region": "US-FL",
-      "lat": "30.344591",
-      "lon": "-87.068866",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-fl/us-fl-park-east-on-leash-dog-beach-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/6748857338",
-      "name": "Princess Beach",
-      "region": "US-FL",
-      "lat": "30.3899317",
-      "lon": "-86.5393626",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-fl/us-fl-princess-beach-1.jpg",
-        "spot-images/us-fl/us-fl-princess-beach-2.jpg",
-        "spot-images/us-fl/us-fl-princess-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/5898656288",
-      "name": "Public Beach Access 3",
-      "region": "US-FL",
-      "lat": "27.2745231",
-      "lon": "-82.5676594",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-fl/us-fl-public-beach-access-3-1.jpg",
-        "spot-images/us-fl/us-fl-public-beach-access-3-2.jpg",
-        "spot-images/us-fl/us-fl-public-beach-access-3-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/1102961309",
-      "name": "Sand Dollar Spit Beach and Landing",
-      "region": "US-FL",
-      "lat": "25.9468759",
-      "lon": "-81.7458815",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-fl/us-fl-sand-dollar-spit-beach-and-landing-1.jpg",
-        "spot-images/us-fl/us-fl-sand-dollar-spit-beach-and-landing-2.jpg",
-        "spot-images/us-fl/us-fl-sand-dollar-spit-beach-and-landing-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:relation/21244093",
-      "name": "Tigertail Beach",
-      "region": "US-FL",
-      "lat": "25.9471206",
-      "lon": "-81.7429546",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-fl/us-fl-tigertail-beach-1.jpg",
-        "spot-images/us-fl/us-fl-tigertail-beach-2.jpg",
-        "spot-images/us-fl/us-fl-tigertail-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/11766208655",
-      "name": "Turner Beach",
-      "region": "US-FL",
-      "lat": "26.4830351",
-      "lon": "-82.1838909",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-fl/us-fl-turner-beach-1.png",
-        "spot-images/us-fl/us-fl-turner-beach-2.png",
-        "spot-images/us-fl/us-fl-turner-beach-3.png"
-      ]
-    },
-    {
-      "spot_id": "osm:way/207517050",
-      "name": "Turner's Beach",
-      "region": "US-FL",
-      "lat": "26.5045368",
-      "lon": "-82.1890729",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-fl/us-fl-turner-s-beach-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/9826912084",
-      "name": "5th Street Public Beach Access",
-      "region": "US-GA",
-      "lat": "31.1359256",
-      "lon": "-81.385041",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ga/us-ga-5th-street-public-beach-access-1.jpg",
-        "spot-images/us-ga/us-ga-5th-street-public-beach-access-2.jpg",
-        "spot-images/us-ga/us-ga-5th-street-public-beach-access-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/9826912083",
-      "name": "6th Street Public Beach Access",
-      "region": "US-GA",
-      "lat": "31.1353629",
-      "lon": "-81.3865681",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ga/us-ga-6th-street-public-beach-access-1.jpg",
-        "spot-images/us-ga/us-ga-6th-street-public-beach-access-2.jpg",
-        "spot-images/us-ga/us-ga-6th-street-public-beach-access-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/9826912089",
-      "name": "Cedar Street Public Beach Access",
-      "region": "US-GA",
-      "lat": "31.1380579",
-      "lon": "-81.3802426",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ga/us-ga-cedar-street-public-beach-access-1.jpg",
-        "spot-images/us-ga/us-ga-cedar-street-public-beach-access-2.jpg",
-        "spot-images/us-ga/us-ga-cedar-street-public-beach-access-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/6865326581",
-      "name": "Marker Post",
-      "region": "US-GA",
-      "lat": "30.886746",
-      "lon": "-81.4134655",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ga/us-ga-marker-post-1.jpg",
-        "spot-images/us-ga/us-ga-marker-post-2.jpg",
-        "spot-images/us-ga/us-ga-marker-post-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/9826912085",
-      "name": "Myrtle Street Public Beach Access",
-      "region": "US-GA",
-      "lat": "31.1377432",
-      "lon": "-81.3811942",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ga/us-ga-myrtle-street-public-beach-access-1.jpg",
-        "spot-images/us-ga/us-ga-myrtle-street-public-beach-access-2.jpg",
-        "spot-images/us-ga/us-ga-myrtle-street-public-beach-access-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/9826912090",
-      "name": "Neptune Road Public Beach Access",
-      "region": "US-GA",
-      "lat": "31.1388301",
-      "lon": "-81.3798688",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ga/us-ga-neptune-road-public-beach-access-1.jpg",
-        "spot-images/us-ga/us-ga-neptune-road-public-beach-access-2.jpg",
-        "spot-images/us-ga/us-ga-neptune-road-public-beach-access-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/919178309",
-      "name": "North Beach",
-      "region": "US-GA",
-      "lat": "32.0221855",
-      "lon": "-80.8454584",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ga/us-ga-north-beach-1.jpg",
-        "spot-images/us-ga/us-ga-north-beach-2.jpg",
-        "spot-images/us-ga/us-ga-north-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:relation/1616261",
-      "name": "'Anini Beach",
-      "region": "US-HI",
-      "lat": "22.2247993",
-      "lon": "-159.4494051",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-hi/us-hi-anini-beach-1.jpg",
-        "spot-images/us-hi/us-hi-anini-beach-2.jpg",
-        "spot-images/us-hi/us-hi-anini-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/996197272",
-      "name": "Aki's Beach",
-      "region": "US-HI",
-      "lat": "21.4684569",
-      "lon": "-158.2174789",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-hi/us-hi-aki-s-beach-1.jpg",
-        "spot-images/us-hi/us-hi-aki-s-beach-2.jpg",
-        "spot-images/us-hi/us-hi-aki-s-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/358650609",
-      "name": "Baby Beach",
-      "region": "US-HI",
-      "lat": "21.8795991",
-      "lon": "-159.4718979",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-hi/us-hi-baby-beach-1.jpg",
-        "spot-images/us-hi/us-hi-baby-beach-2.jpg",
-        "spot-images/us-hi/us-hi-baby-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/287216568",
-      "name": "Baby Beach",
-      "region": "US-HI",
-      "lat": "20.8823469",
-      "lon": "-156.6863725",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-hi/us-hi-baby-beach-216568-1.jpg",
-        "spot-images/us-hi/us-hi-baby-beach-216568-2.jpg",
-        "spot-images/us-hi/us-hi-baby-beach-216568-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:relation/1576102",
-      "name": "Barking Sands Beach",
-      "region": "US-HI",
-      "lat": "22.0683788",
-      "lon": "-159.7765662",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-hi/us-hi-barking-sands-beach-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/11293954906",
-      "name": "Hunakai Beach",
-      "region": "US-HI",
-      "lat": "21.2629119",
-      "lon": "-157.7837667",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-hi/us-hi-hunakai-beach-1.jpg",
-        "spot-images/us-hi/us-hi-hunakai-beach-2.jpg",
-        "spot-images/us-hi/us-hi-hunakai-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/173089926",
-      "name": "Kahekili Beach",
-      "region": "US-HI",
-      "lat": "20.9360435",
-      "lon": "-156.6936108",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-hi/us-hi-kahekili-beach-1.jpg",
-        "spot-images/us-hi/us-hi-kahekili-beach-2.jpg",
-        "spot-images/us-hi/us-hi-kahekili-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/678711674",
-      "name": "Kamalino Beach",
-      "region": "US-HI",
-      "lat": "21.8387096",
-      "lon": "-160.2443424",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-hi/us-hi-kamalino-beach-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/856027718",
-      "name": "Kamilo",
-      "region": "US-HI",
-      "lat": "18.9719088",
-      "lon": "-155.6016651",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-hi/us-hi-kamilo-1.jpg",
-        "spot-images/us-hi/us-hi-kamilo-2.jpg",
-        "spot-images/us-hi/us-hi-kamilo-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/583044500",
-      "name": "Ooma Beach",
-      "region": "US-HI",
-      "lat": "19.7050642",
-      "lon": "-156.048022",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-hi/us-hi-ooma-beach-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/11221002545",
-      "name": "Swanzy Beach",
-      "region": "US-HI",
-      "lat": "21.5573689",
-      "lon": "-157.8538257",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-hi/us-hi-swanzy-beach-1.jpg",
-        "spot-images/us-hi/us-hi-swanzy-beach-2.jpg",
-        "spot-images/us-hi/us-hi-swanzy-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/229841214",
-      "name": "Waiapua'a",
-      "region": "US-HI",
-      "lat": "21.9934068",
-      "lon": "-159.7673505",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-hi/us-hi-waiapua-a-1.jpg",
-        "spot-images/us-hi/us-hi-waiapua-a-2.jpg",
-        "spot-images/us-hi/us-hi-waiapua-a-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/413420356",
-      "name": "Waimanalo Beach",
-      "region": "US-HI",
-      "lat": "21.3363025",
-      "lon": "-157.6959352",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-hi/us-hi-waimanalo-beach-1.jpg",
-        "spot-images/us-hi/us-hi-waimanalo-beach-2.jpg",
-        "spot-images/us-hi/us-hi-waimanalo-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/583044499",
-      "name": "Wawaloli Beach",
-      "region": "US-HI",
-      "lat": "19.7156923",
-      "lon": "-156.0493838",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-hi/us-hi-wawaloli-beach-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/358226542",
-      "name": "Eastern Beach",
-      "region": "US-ME",
-      "lat": "44.1228605",
-      "lon": "-68.3480717",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-me/us-me-eastern-beach-1.jpg",
-        "spot-images/us-me/us-me-eastern-beach-2.jpg",
-        "spot-images/us-me/us-me-eastern-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/358226550",
-      "name": "Gilley Beach",
-      "region": "US-ME",
-      "lat": "44.2570253",
-      "lon": "-68.2250135",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-me/us-me-gilley-beach-1.jpg",
-        "spot-images/us-me/us-me-gilley-beach-2.jpg",
-        "spot-images/us-me/us-me-gilley-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/438218314",
-      "name": "Ogunquit Beach",
-      "region": "US-ME",
-      "lat": "43.2528447",
-      "lon": "-70.5932093",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-me/us-me-ogunquit-beach-1.jpg",
-        "spot-images/us-me/us-me-ogunquit-beach-2.jpg",
-        "spot-images/us-me/us-me-ogunquit-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/1352195752",
-      "name": "Seawall Beach",
-      "region": "US-ME",
-      "lat": "43.7258031",
-      "lon": "-69.8235425",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-me/us-me-seawall-beach-1.jpg",
-        "spot-images/us-me/us-me-seawall-beach-2.jpg",
-        "spot-images/us-me/us-me-seawall-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/29688389",
-      "name": "Crescent Beach",
-      "region": "US-MA",
-      "lat": "42.2673604",
-      "lon": "-70.8318613",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ma/us-ma-crescent-beach-1.jpg",
-        "spot-images/us-ma/us-ma-crescent-beach-2.jpg",
-        "spot-images/us-ma/us-ma-crescent-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/206174179",
-      "name": "Forty Steps Beach",
-      "region": "US-MA",
-      "lat": "42.4224538",
-      "lon": "-70.9090858",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ma/us-ma-forty-steps-beach-1.jpg",
-        "spot-images/us-ma/us-ma-forty-steps-beach-2.jpg",
-        "spot-images/us-ma/us-ma-forty-steps-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/358279617",
-      "name": "Nobadeer Beach",
-      "region": "US-MA",
-      "lat": "41.2431794",
-      "lon": "-70.0594597",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ma/us-ma-nobadeer-beach-1.png"
-      ]
-    },
-    {
-      "spot_id": "osm:way/81606280",
-      "name": "Preston Beach",
-      "region": "US-MA",
-      "lat": "42.4781424",
-      "lon": "-70.8797488",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ma/us-ma-preston-beach-1.jpg",
-        "spot-images/us-ma/us-ma-preston-beach-2.jpg",
-        "spot-images/us-ma/us-ma-preston-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/357717358",
-      "name": "Chadwick Beach",
-      "region": "US-NJ",
-      "lat": "39.9912456",
-      "lon": "-74.0610879",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-nj/us-nj-chadwick-beach-1.jpg",
-        "spot-images/us-nj/us-nj-chadwick-beach-2.jpg",
-        "spot-images/us-nj/us-nj-chadwick-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:relation/11048143",
-      "name": "Malibu Beach",
-      "region": "US-NJ",
-      "lat": "39.3102657",
-      "lon": "-74.5484172",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-nj/us-nj-malibu-beach-1.jpg",
-        "spot-images/us-nj/us-nj-malibu-beach-2.jpg",
-        "spot-images/us-nj/us-nj-malibu-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/1057432975",
-      "name": "Jacob Riis Park Beach 1",
-      "region": "US-NY",
-      "lat": "40.567162",
-      "lon": "-73.8641526",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ny/us-ny-jacob-riis-park-beach-1-1.jpg",
-        "spot-images/us-ny/us-ny-jacob-riis-park-beach-1-2.jpg",
-        "spot-images/us-ny/us-ny-jacob-riis-park-beach-1-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/1057432974",
-      "name": "Jacob Riis Park Beach 2",
-      "region": "US-NY",
-      "lat": "40.5668129",
-      "lon": "-73.8660351",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ny/us-ny-jacob-riis-park-beach-2-1.jpg",
-        "spot-images/us-ny/us-ny-jacob-riis-park-beach-2-2.jpg",
-        "spot-images/us-ny/us-ny-jacob-riis-park-beach-2-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/357592890",
-      "name": "Tiana Beach",
-      "region": "US-NY",
-      "lat": "40.8306559",
-      "lon": "-72.5145343",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ny/us-ny-tiana-beach-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:relation/6961137",
-      "name": "Tiana Beach",
-      "region": "US-NY",
-      "lat": "40.8293459",
-      "lon": "-72.5196744",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-ny/us-ny-tiana-beach-961137-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/357777177",
-      "name": "Long Beach",
-      "region": "US-NC",
-      "lat": "33.9140624",
-      "lon": "-78.1549947",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-nc/us-nc-long-beach-1.jpg",
-        "spot-images/us-nc/us-nc-long-beach-2.jpg",
-        "spot-images/us-nc/us-nc-long-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/357805200",
-      "name": "Pine Knoll Shores",
-      "region": "US-NC",
-      "lat": "34.6993283",
-      "lon": "-76.7979912",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-nc/us-nc-pine-knoll-shores-1.jpg",
-        "spot-images/us-nc/us-nc-pine-knoll-shores-2.jpg",
-        "spot-images/us-nc/us-nc-pine-knoll-shores-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/6441737599",
-      "name": "Rodanthe Public Beach Access",
-      "region": "US-NC",
-      "lat": "35.594498",
-      "lon": "-75.4631672",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-nc/us-nc-rodanthe-public-beach-access-1.jpg",
-        "spot-images/us-nc/us-nc-rodanthe-public-beach-access-2.jpg",
-        "spot-images/us-nc/us-nc-rodanthe-public-beach-access-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:relation/13515120",
-      "name": "Barley Beach",
-      "region": "US-OR",
-      "lat": "42.4529996",
-      "lon": "-124.4272069",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-or/us-or-barley-beach-1.jpg",
-        "spot-images/us-or/us-or-barley-beach-2.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/808144840",
-      "name": "Hobbit Beach",
-      "region": "US-OR",
-      "lat": "44.1465067",
-      "lon": "-124.1216791",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-or/us-or-hobbit-beach-1.jpg",
-        "spot-images/us-or/us-or-hobbit-beach-2.jpg",
-        "spot-images/us-or/us-or-hobbit-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:relation/7169477",
-      "name": "Burkes Beach",
-      "region": "US-SC",
-      "lat": "32.1931058",
-      "lon": "-80.695651",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-sc/us-sc-burkes-beach-1.jpg",
-        "spot-images/us-sc/us-sc-burkes-beach-2.jpg",
-        "spot-images/us-sc/us-sc-burkes-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/7782786103",
-      "name": "Capers Island Boneyard",
-      "region": "US-SC",
-      "lat": "32.8545874",
-      "lon": "-79.6922949",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-sc/us-sc-capers-island-boneyard-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/799303272",
-      "name": "Fripp Island beach",
-      "region": "US-SC",
-      "lat": "32.3135225",
-      "lon": "-80.4801277",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-sc/us-sc-fripp-island-beach-1.jpg",
-        "spot-images/us-sc/us-sc-fripp-island-beach-2.jpg",
-        "spot-images/us-sc/us-sc-fripp-island-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/612794847",
-      "name": "Meher Beach",
-      "region": "US-SC",
-      "lat": "33.7791331",
-      "lon": "-78.7551692",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-sc/us-sc-meher-beach-1.jpg",
-        "spot-images/us-sc/us-sc-meher-beach-2.jpg",
-        "spot-images/us-sc/us-sc-meher-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/946053668",
-      "name": "Babe's Beach",
-      "region": "US-TX",
-      "lat": "29.2583841",
-      "lon": "-94.8396346",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-tx/us-tx-babe-s-beach-1.jpg",
-        "spot-images/us-tx/us-tx-babe-s-beach-2.jpg",
-        "spot-images/us-tx/us-tx-babe-s-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/356751653",
-      "name": "Bermuda Beach",
-      "region": "US-TX",
-      "lat": "29.2094059",
-      "lon": "-94.9240883",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-tx/us-tx-bermuda-beach-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/356753643",
-      "name": "Crystal Beach",
-      "region": "US-TX",
-      "lat": "29.4527328",
-      "lon": "-94.6296375",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-tx/us-tx-crystal-beach-1.jpg",
-        "spot-images/us-tx/us-tx-crystal-beach-2.jpg",
-        "spot-images/us-tx/us-tx-crystal-beach-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/62514958",
-      "name": "Pirates' Beach",
-      "region": "US-TX",
-      "lat": "29.2013747",
-      "lon": "-94.93832",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-tx/us-tx-pirates-beach-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:way/62615395",
-      "name": "West Beach",
-      "region": "US-TX",
-      "lat": "29.1577314",
-      "lon": "-95.0111165",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-tx/us-tx-west-beach-615395-1.jpg",
-        "spot-images/us-tx/us-tx-west-beach-615395-2.jpg",
-        "spot-images/us-tx/us-tx-west-beach-615395-3.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/356560726",
-      "name": "Cedar Island Beach",
-      "region": "US-VA",
-      "lat": "37.6281881",
-      "lon": "-75.6002047",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-va/us-va-cedar-island-beach-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/356567735",
-      "name": "Parramore Beach",
-      "region": "US-VA",
-      "lat": "37.5487462",
-      "lon": "-75.6146483",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-va/us-va-parramore-beach-1.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:node/356566130",
-      "name": "Smith Island Beach",
-      "region": "US-VA",
-      "lat": "37.1320875",
-      "lon": "-75.8802044",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-va/us-va-smith-island-beach-1.jpg",
-        "spot-images/us-va/us-va-smith-island-beach-2.jpg"
-      ]
-    },
-    {
-      "spot_id": "osm:relation/7254414",
-      "name": "Ocean Shores Beach",
-      "region": "US-WA",
-      "lat": "46.9605865",
-      "lon": "-124.1749788",
-      "best_subject": "not",
-      "files": [
-        "spot-images/us-wa/us-wa-ocean-shores-beach-1.jpg",
-        "spot-images/us-wa/us-wa-ocean-shores-beach-2.jpg",
-        "spot-images/us-wa/us-wa-ocean-shores-beach-3.jpg"
-      ]
-    }
-  ],
+  "no_usable_image": [],
   "no_image_at_all": [
     {
       "spot_id": "osm:node/5315632204",
@@ -3270,6 +1867,13 @@
       "lon": "-104.3294189"
     },
     {
+      "spot_id": "osm:way/1338703202",
+      "name": "Playa Las Piedritas",
+      "region": "MX-COL",
+      "lat": "19.0352685",
+      "lon": "-104.3321414"
+    },
+    {
       "spot_id": "osm:way/376883854",
       "name": "Playa Majagua",
       "region": "MX-COL",
@@ -3515,6 +2119,13 @@
       "lon": "-95.2509382"
     },
     {
+      "spot_id": "osm:node/2641581257",
+      "name": "Caleta Tankah",
+      "region": "MX-ROO",
+      "lat": "20.231678",
+      "lon": "-87.4180992"
+    },
+    {
       "spot_id": "osm:node/7312813573",
       "name": "Esduma La Perla Hotel Isla Mujeres",
       "region": "MX-ROO",
@@ -3534,6 +2145,20 @@
       "region": "MX-ROO",
       "lat": "21.0318186",
       "lon": "-86.7798471"
+    },
+    {
+      "spot_id": "osm:node/10175978018",
+      "name": "Playa 88",
+      "region": "MX-ROO",
+      "lat": "20.6452725",
+      "lon": "-87.0549509"
+    },
+    {
+      "spot_id": "osm:way/506426452",
+      "name": "Playa Akun",
+      "region": "MX-ROO",
+      "lat": "20.1014589",
+      "lon": "-87.4727931"
     },
     {
       "spot_id": "osm:way/251399940",
@@ -3613,11 +2238,25 @@
       "lon": "-97.6815948"
     },
     {
+      "spot_id": "osm:way/1464972988",
+      "name": "Plaa Hermosay",
+      "region": "MX-VER",
+      "lat": "18.6645303",
+      "lon": "-95.1297191"
+    },
+    {
       "spot_id": "osm:relation/16073925",
       "name": "Playa Chalchihueca",
       "region": "MX-VER",
       "lat": "19.3327326",
       "lon": "-96.2979542"
+    },
+    {
+      "spot_id": "osm:way/730332996",
+      "name": "Playa Coatza",
+      "region": "MX-VER",
+      "lat": "18.1536536",
+      "lon": "-94.4566311"
     },
     {
       "spot_id": "osm:way/448841153",
@@ -3676,6 +2315,13 @@
       "lon": "-88.0481752"
     },
     {
+      "spot_id": "osm:relation/17920247",
+      "name": "East End Beach",
+      "region": "US-AL",
+      "lat": "30.2455874",
+      "lon": "-88.0836713"
+    },
+    {
       "spot_id": "osm:way/1111492300",
       "name": "Earle Beach",
       "region": "US-AK",
@@ -3711,11 +2357,25 @@
       "lon": "172.8716154"
     },
     {
+      "spot_id": "osm:way/702023397",
+      "name": "Outside Beach",
+      "region": "US-AK",
+      "lat": "59.4540274",
+      "lon": "-151.7176"
+    },
+    {
       "spot_id": "osm:node/13081327380",
       "name": "Second Prime Beach",
       "region": "US-AK",
       "lat": "58.6030268",
       "lon": "-159.9608807"
+    },
+    {
+      "spot_id": "osm:node/13081294681",
+      "name": "Third Beach",
+      "region": "US-AK",
+      "lat": "58.5988163",
+      "lon": "-159.9626333"
     },
     {
       "spot_id": "osm:node/13081294679",
@@ -3725,11 +2385,39 @@
       "lon": "-159.9829533"
     },
     {
+      "spot_id": "osm:node/358796549",
+      "name": "Amarillo Beach",
+      "region": "US-CA",
+      "lat": "34.0303972",
+      "lon": "-118.7036072"
+    },
+    {
+      "spot_id": "osm:way/1103243464",
+      "name": "Bessemer Beach",
+      "region": "US-CA",
+      "lat": "32.7180309",
+      "lon": "-117.2334493"
+    },
+    {
       "spot_id": "osm:relation/7122526",
       "name": "Empire Landing",
       "region": "US-CA",
       "lat": "33.4264572",
       "lon": "-118.4340566"
+    },
+    {
+      "spot_id": "osm:way/467517605",
+      "name": "Faria Beach",
+      "region": "US-CA",
+      "lat": "34.3226784",
+      "lon": "-119.3940059"
+    },
+    {
+      "spot_id": "osm:node/4374966213",
+      "name": "Fort Bragg Landing",
+      "region": "US-CA",
+      "lat": "39.442259",
+      "lon": "-123.8125928"
     },
     {
       "spot_id": "osm:relation/7125364",
@@ -3739,11 +2427,32 @@
       "lon": "-118.4069771"
     },
     {
+      "spot_id": "osm:node/358821846",
+      "name": "Gold Bluffs Beach",
+      "region": "US-CA",
+      "lat": "41.3965108",
+      "lon": "-124.0684062"
+    },
+    {
       "spot_id": "osm:way/428961192",
       "name": "Group Campsite",
       "region": "US-CA",
       "lat": "33.4614196",
       "lon": "-117.6786461"
+    },
+    {
+      "spot_id": "osm:relation/11657616",
+      "name": "Huntington State Beach",
+      "region": "US-CA",
+      "lat": "33.6383602",
+      "lon": "-117.9733803"
+    },
+    {
+      "spot_id": "osm:way/446160699",
+      "name": "Kelham Beach",
+      "region": "US-CA",
+      "lat": "37.9956014",
+      "lon": "-122.8209841"
     },
     {
       "spot_id": "osm:node/358821841",
@@ -3753,11 +2462,116 @@
       "lon": "-124.2125842"
     },
     {
+      "spot_id": "osm:relation/7102574",
+      "name": "La Jolla Cove",
+      "region": "US-CA",
+      "lat": "32.8504521",
+      "lon": "-117.2727298"
+    },
+    {
+      "spot_id": "osm:way/1082439264",
+      "name": "Latigo Beach",
+      "region": "US-CA",
+      "lat": "34.0300323",
+      "lon": "-118.7515038"
+    },
+    {
+      "spot_id": "osm:way/445950449",
+      "name": "Limantour Beach",
+      "region": "US-CA",
+      "lat": "38.0244007",
+      "lon": "-122.8805787"
+    },
+    {
+      "spot_id": "osm:way/250245534",
+      "name": "More Mesa Beach",
+      "region": "US-CA",
+      "lat": "34.4180418",
+      "lon": "-119.802111"
+    },
+    {
+      "spot_id": "osm:way/250245535",
+      "name": "More Mesa Beach",
+      "region": "US-CA",
+      "lat": "34.4183202",
+      "lon": "-119.7958875"
+    },
+    {
+      "spot_id": "osm:way/446753851",
+      "name": "More Mesa Beach",
+      "region": "US-CA",
+      "lat": "34.4181391",
+      "lon": "-119.7984601"
+    },
+    {
+      "spot_id": "osm:node/6403360920",
+      "name": "More Mesa Nude Beach",
+      "region": "US-CA",
+      "lat": "34.4174347",
+      "lon": "-119.7898217"
+    },
+    {
+      "spot_id": "osm:way/27294347",
+      "name": "Mother's Beach",
+      "region": "US-CA",
+      "lat": "33.9810266",
+      "lon": "-118.4572839"
+    },
+    {
+      "spot_id": "osm:way/118076810",
+      "name": "Needle Rock Beach",
+      "region": "US-CA",
+      "lat": "39.9427051",
+      "lon": "-123.9666812"
+    },
+    {
+      "spot_id": "osm:node/358790118",
+      "name": "Ormond Beach",
+      "region": "US-CA",
+      "lat": "34.1369497",
+      "lon": "-119.1842735"
+    },
+    {
+      "spot_id": "osm:node/11925837134",
+      "name": "Ranger Steven's Beach",
+      "region": "US-CA",
+      "lat": "34.0316513",
+      "lon": "-118.6989496"
+    },
+    {
+      "spot_id": "osm:relation/5255980",
+      "name": "Red Rock Beach",
+      "region": "US-CA",
+      "lat": "37.8896305",
+      "lon": "-122.6332104"
+    },
+    {
       "spot_id": "osm:relation/7122527",
       "name": "Rippers Cove",
       "region": "US-CA",
       "lat": "33.4274548",
       "lon": "-118.4278776"
+    },
+    {
+      "spot_id": "osm:way/24656288",
+      "name": "Rodeo Beach",
+      "region": "US-CA",
+      "lat": "37.8305433",
+      "lon": "-122.5371176"
+    },
+    {
+      "spot_id": "osm:way/232399654",
+      "name": "Sculptured Beach",
+      "region": "US-CA",
+      "lat": "38.0099237",
+      "lon": "-122.8447917"
+    },
+    {
+      "spot_id": "osm:node/8357030666",
+      "name": "Shipwreck Shore",
+      "region": "US-CA",
+      "lat": "33.2961491",
+      "lon": "-117.4700217"
     },
     {
       "spot_id": "osm:relation/7125478",
@@ -3774,6 +2588,20 @@
       "lon": "-122.6014608"
     },
     {
+      "spot_id": "osm:relation/8845887",
+      "name": "Stengel Beach",
+      "region": "US-CA",
+      "lat": "38.7157338",
+      "lon": "-123.4600077"
+    },
+    {
+      "spot_id": "osm:way/275414187",
+      "name": "Wildcat Beach",
+      "region": "US-CA",
+      "lat": "37.9653039",
+      "lon": "-122.791381"
+    },
+    {
       "spot_id": "osm:node/358821914",
       "name": "Windansea Beach",
       "region": "US-CA",
@@ -3788,11 +2616,39 @@
       "lon": "-117.280905"
     },
     {
+      "spot_id": "osm:way/358372924",
+      "name": "Clinton Town Beach",
+      "region": "US-CT",
+      "lat": "41.2677654",
+      "lon": "-72.5196706"
+    },
+    {
       "spot_id": "osm:way/1198807662",
       "name": "Daniel Ave. Beach",
       "region": "US-CT",
       "lat": "41.2585515",
       "lon": "-72.6845162"
+    },
+    {
+      "spot_id": "osm:way/43399716",
+      "name": "Indian Cove Beach",
+      "region": "US-CT",
+      "lat": "41.2552322",
+      "lon": "-72.6847888"
+    },
+    {
+      "spot_id": "osm:node/359277513",
+      "name": "Indiantown Beach",
+      "region": "US-CT",
+      "lat": "41.277321",
+      "lon": "-72.4017522"
+    },
+    {
+      "spot_id": "osm:way/1216673425",
+      "name": "Jacobs Public Beach",
+      "region": "US-CT",
+      "lat": "41.2684077",
+      "lon": "-72.6678989"
     },
     {
       "spot_id": "osm:way/1219057992",
@@ -3809,11 +2665,39 @@
       "lon": "-80.2469432"
     },
     {
+      "spot_id": "osm:way/1116334300",
+      "name": "Blind Pass Beach",
+      "region": "US-FL",
+      "lat": "26.4813835",
+      "lon": "-82.181675"
+    },
+    {
       "spot_id": "osm:node/358692335",
       "name": "Bonair Beach",
       "region": "US-FL",
       "lat": "27.0819973",
       "lon": "-80.1219875"
+    },
+    {
+      "spot_id": "osm:node/358692793",
+      "name": "Bunche Beach",
+      "region": "US-FL",
+      "lat": "26.4760335",
+      "lon": "-81.9673298"
+    },
+    {
+      "spot_id": "osm:way/922205230",
+      "name": "Fernandina Beach",
+      "region": "US-FL",
+      "lat": "30.6752854",
+      "lon": "-81.4385031"
+    },
+    {
+      "spot_id": "osm:way/147499385",
+      "name": "Fort Island Beach",
+      "region": "US-FL",
+      "lat": "28.9078976",
+      "lon": "-82.6909501"
     },
     {
       "spot_id": "osm:node/358696387",
@@ -3830,11 +2714,39 @@
       "lon": "-82.7628017"
     },
     {
+      "spot_id": "osm:way/1189281206",
+      "name": "Howard Park Beach",
+      "region": "US-FL",
+      "lat": "28.1541816",
+      "lon": "-82.8063358"
+    },
+    {
+      "spot_id": "osm:way/189310353",
+      "name": "Klondike Beach",
+      "region": "US-FL",
+      "lat": "28.7785418",
+      "lon": "-80.720836"
+    },
+    {
       "spot_id": "osm:way/1219055486",
       "name": "Little Mud Creek Beach",
       "region": "US-FL",
       "lat": "27.3816585",
       "lon": "-80.2549422"
+    },
+    {
+      "spot_id": "osm:node/358699809",
+      "name": "Manatee County Beach",
+      "region": "US-FL",
+      "lat": "27.4997598",
+      "lon": "-82.7139886"
+    },
+    {
+      "spot_id": "osm:node/4859762944",
+      "name": "Marriott Beach",
+      "region": "US-FL",
+      "lat": "25.9301532",
+      "lon": "-81.7317433"
     },
     {
       "spot_id": "osm:node/3549005479",
@@ -3844,11 +2756,39 @@
       "lon": "-81.355668"
     },
     {
+      "spot_id": "osm:way/368693214",
+      "name": "Park East On-Leash Dog Beach",
+      "region": "US-FL",
+      "lat": "30.344591",
+      "lon": "-87.068866"
+    },
+    {
       "spot_id": "osm:way/1218660816",
       "name": "Playalinda Beach (Nudist Area)",
       "region": "US-FL",
       "lat": "28.7041096",
       "lon": "-80.6683063"
+    },
+    {
+      "spot_id": "osm:node/6748857338",
+      "name": "Princess Beach",
+      "region": "US-FL",
+      "lat": "30.3899317",
+      "lon": "-86.5393626"
+    },
+    {
+      "spot_id": "osm:node/5898656288",
+      "name": "Public Beach Access 3",
+      "region": "US-FL",
+      "lat": "27.2745231",
+      "lon": "-82.5676594"
+    },
+    {
+      "spot_id": "osm:way/1102961309",
+      "name": "Sand Dollar Spit Beach and Landing",
+      "region": "US-FL",
+      "lat": "25.9468759",
+      "lon": "-81.7458815"
     },
     {
       "spot_id": "osm:way/878055217",
@@ -3872,11 +2812,116 @@
       "lon": "-81.5587489"
     },
     {
+      "spot_id": "osm:relation/21244093",
+      "name": "Tigertail Beach",
+      "region": "US-FL",
+      "lat": "25.9471206",
+      "lon": "-81.7429546"
+    },
+    {
+      "spot_id": "osm:node/11766208655",
+      "name": "Turner Beach",
+      "region": "US-FL",
+      "lat": "26.4830351",
+      "lon": "-82.1838909"
+    },
+    {
+      "spot_id": "osm:way/207517050",
+      "name": "Turner's Beach",
+      "region": "US-FL",
+      "lat": "26.5045368",
+      "lon": "-82.1890729"
+    },
+    {
       "spot_id": "osm:way/1219060379",
       "name": "Walton Rocks Beach",
       "region": "US-FL",
       "lat": "27.3386246",
       "lon": "-80.2330372"
+    },
+    {
+      "spot_id": "osm:node/9826912084",
+      "name": "5th Street Public Beach Access",
+      "region": "US-GA",
+      "lat": "31.1359256",
+      "lon": "-81.385041"
+    },
+    {
+      "spot_id": "osm:node/9826912083",
+      "name": "6th Street Public Beach Access",
+      "region": "US-GA",
+      "lat": "31.1353629",
+      "lon": "-81.3865681"
+    },
+    {
+      "spot_id": "osm:node/9826912089",
+      "name": "Cedar Street Public Beach Access",
+      "region": "US-GA",
+      "lat": "31.1380579",
+      "lon": "-81.3802426"
+    },
+    {
+      "spot_id": "osm:node/6865326581",
+      "name": "Marker Post",
+      "region": "US-GA",
+      "lat": "30.886746",
+      "lon": "-81.4134655"
+    },
+    {
+      "spot_id": "osm:node/9826912085",
+      "name": "Myrtle Street Public Beach Access",
+      "region": "US-GA",
+      "lat": "31.1377432",
+      "lon": "-81.3811942"
+    },
+    {
+      "spot_id": "osm:node/9826912090",
+      "name": "Neptune Road Public Beach Access",
+      "region": "US-GA",
+      "lat": "31.1388301",
+      "lon": "-81.3798688"
+    },
+    {
+      "spot_id": "osm:way/919178309",
+      "name": "North Beach",
+      "region": "US-GA",
+      "lat": "32.0221855",
+      "lon": "-80.8454584"
+    },
+    {
+      "spot_id": "osm:relation/1616261",
+      "name": "'Anini Beach",
+      "region": "US-HI",
+      "lat": "22.2247993",
+      "lon": "-159.4494051"
+    },
+    {
+      "spot_id": "osm:way/996197272",
+      "name": "Aki's Beach",
+      "region": "US-HI",
+      "lat": "21.4684569",
+      "lon": "-158.2174789"
+    },
+    {
+      "spot_id": "osm:way/358650609",
+      "name": "Baby Beach",
+      "region": "US-HI",
+      "lat": "21.8795991",
+      "lon": "-159.4718979"
+    },
+    {
+      "spot_id": "osm:way/287216568",
+      "name": "Baby Beach",
+      "region": "US-HI",
+      "lat": "20.8823469",
+      "lon": "-156.6863725"
+    },
+    {
+      "spot_id": "osm:relation/1576102",
+      "name": "Barking Sands Beach",
+      "region": "US-HI",
+      "lat": "22.0683788",
+      "lon": "-159.7765662"
     },
     {
       "spot_id": "osm:way/902536680",
@@ -3935,6 +2980,13 @@
       "lon": "-156.8936576"
     },
     {
+      "spot_id": "osm:node/11293954906",
+      "name": "Hunakai Beach",
+      "region": "US-HI",
+      "lat": "21.2629119",
+      "lon": "-157.7837667"
+    },
+    {
       "spot_id": "osm:node/7728877738",
       "name": "\u02bbOlo\u02bbupena",
       "region": "US-HI",
@@ -3949,6 +3001,13 @@
       "lon": "-157.2899892"
     },
     {
+      "spot_id": "osm:way/173089926",
+      "name": "Kahekili Beach",
+      "region": "US-HI",
+      "lat": "20.9360435",
+      "lon": "-156.6936108"
+    },
+    {
       "spot_id": "osm:way/678709962",
       "name": "Ka\u02bbaku\u02bbu Beach",
       "region": "US-HI",
@@ -3961,6 +3020,20 @@
       "region": "US-HI",
       "lat": "21.1148744",
       "lon": "-157.3013614"
+    },
+    {
+      "spot_id": "osm:way/678711674",
+      "name": "Kamalino Beach",
+      "region": "US-HI",
+      "lat": "21.8387096",
+      "lon": "-160.2443424"
+    },
+    {
+      "spot_id": "osm:way/856027718",
+      "name": "Kamilo",
+      "region": "US-HI",
+      "lat": "18.9719088",
+      "lon": "-155.6016651"
     },
     {
       "spot_id": "osm:way/320314113",
@@ -4047,6 +3120,13 @@
       "lon": "-160.2375057"
     },
     {
+      "spot_id": "osm:way/583044500",
+      "name": "Ooma Beach",
+      "region": "US-HI",
+      "lat": "19.7050642",
+      "lon": "-156.048022"
+    },
+    {
       "spot_id": "osm:way/360100820",
       "name": "Polihua Beach",
       "region": "US-HI",
@@ -4059,6 +3139,34 @@
       "region": "US-HI",
       "lat": "20.8548944",
       "lon": "-156.6636634"
+    },
+    {
+      "spot_id": "osm:node/11221002545",
+      "name": "Swanzy Beach",
+      "region": "US-HI",
+      "lat": "21.5573689",
+      "lon": "-157.8538257"
+    },
+    {
+      "spot_id": "osm:way/229841214",
+      "name": "Waiapua'a",
+      "region": "US-HI",
+      "lat": "21.9934068",
+      "lon": "-159.7673505"
+    },
+    {
+      "spot_id": "osm:way/413420356",
+      "name": "Waimanalo Beach",
+      "region": "US-HI",
+      "lat": "21.3363025",
+      "lon": "-157.6959352"
+    },
+    {
+      "spot_id": "osm:way/583044499",
+      "name": "Wawaloli Beach",
+      "region": "US-HI",
+      "lat": "19.7156923",
+      "lon": "-156.0493838"
     },
     {
       "spot_id": "osm:node/358381584",
@@ -4082,6 +3190,34 @@
       "lon": "-68.6078018"
     },
     {
+      "spot_id": "osm:node/358226542",
+      "name": "Eastern Beach",
+      "region": "US-ME",
+      "lat": "44.1228605",
+      "lon": "-68.3480717"
+    },
+    {
+      "spot_id": "osm:node/358226550",
+      "name": "Gilley Beach",
+      "region": "US-ME",
+      "lat": "44.2570253",
+      "lon": "-68.2250135"
+    },
+    {
+      "spot_id": "osm:way/438218314",
+      "name": "Ogunquit Beach",
+      "region": "US-ME",
+      "lat": "43.2528447",
+      "lon": "-70.5932093"
+    },
+    {
+      "spot_id": "osm:way/1352195752",
+      "name": "Seawall Beach",
+      "region": "US-ME",
+      "lat": "43.7258031",
+      "lon": "-69.8235425"
+    },
+    {
       "spot_id": "osm:way/83258915",
       "name": "Ballston Beach",
       "region": "US-MA",
@@ -4096,11 +3232,25 @@
       "lon": "-70.0166168"
     },
     {
+      "spot_id": "osm:way/29688389",
+      "name": "Crescent Beach",
+      "region": "US-MA",
+      "lat": "42.2673604",
+      "lon": "-70.8318613"
+    },
+    {
       "spot_id": "osm:node/12379118858",
       "name": "Eisman's Beach",
       "region": "US-MA",
       "lat": "42.4638793",
       "lon": "-70.9013475"
+    },
+    {
+      "spot_id": "osm:way/206174179",
+      "name": "Forty Steps Beach",
+      "region": "US-MA",
+      "lat": "42.4224538",
+      "lon": "-70.9090858"
     },
     {
       "spot_id": "osm:node/358275276",
@@ -4124,6 +3274,34 @@
       "lon": "-69.9934738"
     },
     {
+      "spot_id": "osm:node/358279617",
+      "name": "Nobadeer Beach",
+      "region": "US-MA",
+      "lat": "41.2431794",
+      "lon": "-70.0594597"
+    },
+    {
+      "spot_id": "osm:way/81606280",
+      "name": "Preston Beach",
+      "region": "US-MA",
+      "lat": "42.4781424",
+      "lon": "-70.8797488"
+    },
+    {
+      "spot_id": "osm:node/357717358",
+      "name": "Chadwick Beach",
+      "region": "US-NJ",
+      "lat": "39.9912456",
+      "lon": "-74.0610879"
+    },
+    {
+      "spot_id": "osm:relation/11048143",
+      "name": "Malibu Beach",
+      "region": "US-NJ",
+      "lat": "39.3102657",
+      "lon": "-74.5484172"
+    },
+    {
       "spot_id": "osm:relation/11038853",
       "name": "Whale Beach;Ludlam Beach",
       "region": "US-NJ",
@@ -4131,11 +3309,39 @@
       "lon": "-74.6832474"
     },
     {
+      "spot_id": "osm:way/1057432975",
+      "name": "Jacob Riis Park Beach 1",
+      "region": "US-NY",
+      "lat": "40.567162",
+      "lon": "-73.8641526"
+    },
+    {
+      "spot_id": "osm:way/1057432974",
+      "name": "Jacob Riis Park Beach 2",
+      "region": "US-NY",
+      "lat": "40.5668129",
+      "lon": "-73.8660351"
+    },
+    {
       "spot_id": "osm:way/1270883882",
       "name": "Shore Acres Pool Club Beach",
       "region": "US-NY",
       "lat": "40.9426708",
       "lon": "-73.7256168"
+    },
+    {
+      "spot_id": "osm:node/357592890",
+      "name": "Tiana Beach",
+      "region": "US-NY",
+      "lat": "40.8306559",
+      "lon": "-72.5145343"
+    },
+    {
+      "spot_id": "osm:relation/6961137",
+      "name": "Tiana Beach",
+      "region": "US-NY",
+      "lat": "40.8293459",
+      "lon": "-72.5196744"
     },
     {
       "spot_id": "osm:relation/6961135",
@@ -4159,11 +3365,46 @@
       "lon": "-76.4843657"
     },
     {
+      "spot_id": "osm:node/357777177",
+      "name": "Long Beach",
+      "region": "US-NC",
+      "lat": "33.9140624",
+      "lon": "-78.1549947"
+    },
+    {
       "spot_id": "osm:node/357797352",
       "name": "North Topsail Shores",
       "region": "US-NC",
       "lat": "34.5218322",
       "lon": "-77.3552372"
+    },
+    {
+      "spot_id": "osm:node/357805200",
+      "name": "Pine Knoll Shores",
+      "region": "US-NC",
+      "lat": "34.6993283",
+      "lon": "-76.7979912"
+    },
+    {
+      "spot_id": "osm:node/6441737599",
+      "name": "Rodanthe Public Beach Access",
+      "region": "US-NC",
+      "lat": "35.594498",
+      "lon": "-75.4631672"
+    },
+    {
+      "spot_id": "osm:relation/13515120",
+      "name": "Barley Beach",
+      "region": "US-OR",
+      "lat": "42.4529996",
+      "lon": "-124.4272069"
+    },
+    {
+      "spot_id": "osm:way/808144840",
+      "name": "Hobbit Beach",
+      "region": "US-OR",
+      "lat": "44.1465067",
+      "lon": "-124.1216791"
     },
     {
       "spot_id": "osm:way/553624856",
@@ -4201,6 +3442,13 @@
       "lon": "-71.7394492"
     },
     {
+      "spot_id": "osm:relation/7169477",
+      "name": "Burkes Beach",
+      "region": "US-SC",
+      "lat": "32.1931058",
+      "lon": "-80.695651"
+    },
+    {
       "spot_id": "osm:way/608724654",
       "name": "Cape San Roman Beach",
       "region": "US-SC",
@@ -4208,11 +3456,32 @@
       "lon": "-79.1801176"
     },
     {
+      "spot_id": "osm:node/7782786103",
+      "name": "Capers Island Boneyard",
+      "region": "US-SC",
+      "lat": "32.8545874",
+      "lon": "-79.6922949"
+    },
+    {
       "spot_id": "osm:relation/8455023",
       "name": "DeBordieu Beach",
       "region": "US-SC",
       "lat": "33.3538297",
       "lon": "-79.1564817"
+    },
+    {
+      "spot_id": "osm:way/799303272",
+      "name": "Fripp Island beach",
+      "region": "US-SC",
+      "lat": "32.3135225",
+      "lon": "-80.4801277"
+    },
+    {
+      "spot_id": "osm:way/612794847",
+      "name": "Meher Beach",
+      "region": "US-SC",
+      "lat": "33.7791331",
+      "lon": "-78.7551692"
     },
     {
       "spot_id": "osm:node/4985887970",
@@ -4243,11 +3512,39 @@
       "lon": "-79.1445705"
     },
     {
+      "spot_id": "osm:way/946053668",
+      "name": "Babe's Beach",
+      "region": "US-TX",
+      "lat": "29.2583841",
+      "lon": "-94.8396346"
+    },
+    {
+      "spot_id": "osm:node/356751653",
+      "name": "Bermuda Beach",
+      "region": "US-TX",
+      "lat": "29.2094059",
+      "lon": "-94.9240883"
+    },
+    {
+      "spot_id": "osm:node/356753643",
+      "name": "Crystal Beach",
+      "region": "US-TX",
+      "lat": "29.4527328",
+      "lon": "-94.6296375"
+    },
+    {
       "spot_id": "osm:way/384091122",
       "name": "MacFadden Beach",
       "region": "US-TX",
       "lat": "29.6627726",
       "lon": "-94.0869948"
+    },
+    {
+      "spot_id": "osm:way/62514958",
+      "name": "Pirates' Beach",
+      "region": "US-TX",
+      "lat": "29.2013747",
+      "lon": "-94.93832"
     },
     {
       "spot_id": "osm:node/2060298842",
@@ -4264,6 +3561,20 @@
       "lon": "-97.1950465"
     },
     {
+      "spot_id": "osm:way/62615395",
+      "name": "West Beach",
+      "region": "US-TX",
+      "lat": "29.1577314",
+      "lon": "-95.0111165"
+    },
+    {
+      "spot_id": "osm:node/356560726",
+      "name": "Cedar Island Beach",
+      "region": "US-VA",
+      "lat": "37.6281881",
+      "lon": "-75.6002047"
+    },
+    {
       "spot_id": "osm:node/356561849",
       "name": "Gargathy Beach",
       "region": "US-VA",
@@ -4276,6 +3587,13 @@
       "region": "US-VA",
       "lat": "37.1915312",
       "lon": "-75.8099237"
+    },
+    {
+      "spot_id": "osm:node/356567735",
+      "name": "Parramore Beach",
+      "region": "US-VA",
+      "lat": "37.5487462",
+      "lon": "-75.6146483"
     },
     {
       "spot_id": "osm:node/4068387745",
@@ -4292,11 +3610,25 @@
       "lon": "-75.9567842"
     },
     {
+      "spot_id": "osm:node/356566130",
+      "name": "Smith Island Beach",
+      "region": "US-VA",
+      "lat": "37.1320875",
+      "lon": "-75.8802044"
+    },
+    {
       "spot_id": "osm:relation/5936881",
       "name": "Kayostla Beach",
       "region": "US-WA",
       "lat": "48.0302292",
       "lon": "-124.6817522"
+    },
+    {
+      "spot_id": "osm:relation/7254414",
+      "name": "Ocean Shores Beach",
+      "region": "US-WA",
+      "lat": "46.9605865",
+      "lon": "-124.1749788"
     }
   ]
 }

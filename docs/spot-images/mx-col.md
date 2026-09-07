@@ -1,6 +1,6 @@
 # MX-COL — Mexico, Colima
 
-19 images across 8 spots. Licence rules and the OSM credit are in [the index](./README.md).
+15 images across 7 spots. Licence rules and the OSM credit are in [the index](./README.md).
 
 ## Boca de Pascuales
 
@@ -85,14 +85,6 @@
   - 1600×1068px, 859 KB
   - Description: Playa Jacó, es un distrito y ciudad cabecera del cantón de Garabito, en la provincia de Puntarenas de Costa Rica, donde se practica el deporte acuático del Surf, siendo sede de torneos mundiales.
   - Match: score 7 via coastal-in-title, kw:surf+surfer+wave+waves, w>=1000, landscape
-- **`mx-col-playa-campos-3.jpg`** ✗ **not a coastal photo** — “Playa y Termoelectrica - panoramio” by Wiper México, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Playa_y_Termoelectrica_-_panoramio.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Wiper México — https://web.archive.org/web/20161012103323/http://www.panoramio.com/user/568665?with_photo_id=11055496
-  - Dated: Taken on 8 June 2008
-  - 1600×1201px, 63 KB, shot 2616 m from the spot
-  - Description: Playa y Termoelectrica
-  - Match: score 5.5 via coastal-in-title, kw:playa, geo:2616m, w>=1000, landscape
 
 ## Playa Campos
 
@@ -114,27 +106,6 @@
   - 1600×1068px, 859 KB
   - Description: Playa Jacó, es un distrito y ciudad cabecera del cantón de Garabito, en la provincia de Puntarenas de Costa Rica, donde se practica el deporte acuático del Surf, siendo sede de torneos mundiales.
   - Match: score 7 via coastal-in-title, kw:surf+surfer+wave+waves, w>=1000, landscape
-- **`mx-col-playa-campos-922061-3.jpg`** ✗ **not a coastal photo** — “Playa y Termoelectrica - panoramio” by Wiper México, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Playa_y_Termoelectrica_-_panoramio.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Wiper México — https://web.archive.org/web/20161012103323/http://www.panoramio.com/user/568665?with_photo_id=11055496
-  - Dated: Taken on 8 June 2008
-  - 1600×1201px, 63 KB, shot 1229 m from the spot
-  - Description: Playa y Termoelectrica
-  - Match: score 5.5 via coastal-in-title, kw:playa, geo:1229m, w>=1000, landscape
-
-## Playa Las Piedritas
-
-`osm:way/1338703202` · 19.0352685, -104.3321414 · beach type: **gravel** (OpenStreetMap surface=gravel)
-
-- **`mx-col-playa-las-piedritas-1.jpg`** ✗ **not a coastal photo** — “Playa y Termoelectrica - panoramio” by Wiper México, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Playa_y_Termoelectrica_-_panoramio.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Wiper México — https://web.archive.org/web/20161012103323/http://www.panoramio.com/user/568665?with_photo_id=11055496
-  - Dated: Taken on 8 June 2008
-  - 1600×1201px, 63 KB, shot 2741 m from the spot
-  - Description: Playa y Termoelectrica
-  - Match: score 5.5 via coastal-in-title, kw:playa, geo:2741m, w>=1000, landscape
 
 ## Playa Norte
 
@@ -185,12 +156,4 @@
   - 1600×1201px, 63 KB, shot 238 m from the spot
   - Description: Vista a Laguna de Manzanillo
   - Match: score 5.5 via kw:lagoon, geo:238m, w>=1000, landscape
-- **`mx-col-playa-ventanas-3.jpg`** ✗ **not a coastal photo** — “Playa y Termoelectrica - panoramio” by Wiper México, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Playa_y_Termoelectrica_-_panoramio.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Wiper México — https://web.archive.org/web/20161012103323/http://www.panoramio.com/user/568665?with_photo_id=11055496
-  - Dated: Taken on 8 June 2008
-  - 1600×1201px, 63 KB, shot 2604 m from the spot
-  - Description: Playa y Termoelectrica
-  - Match: score 5.5 via coastal-in-title, kw:playa, geo:2604m, w>=1000, landscape
 

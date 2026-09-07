@@ -1,35 +1,6 @@
 # MX-ROO — Mexico, Quintana Roo
 
-89 images across 34 spots. Licence rules and the OSM credit are in [the index](./README.md).
-
-## Caleta Tankah
-
-`osm:node/2641581257` · 20.231678, -87.4180992 · site: https://www.caletatankah.com/
-
-- **`mx-roo-caleta-tankah-1.jpg`** ✗ **not a coastal photo** — “Lighthouse Mexico-5773 - El Castillo (The Castle) (4624963497)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Lighthouse_Mexico-5773_-_El_Castillo_(The_Castle)_(4624963497).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
-  - Dated: 2010-05-03 17:18
-  - 1600×1063px, 978 KB, shot 1839 m from the spot
-  - Description: El Castillo (The Castle). This is the city's (Tulum) most imposing building and its most important. The structure has two small rooms in its upper part where the principal religious ceremonies were held. The facade was decorated with sculptures. The upper temple was built on top of another building, which can still be seen from either side of the stairway. At ground level are two other small temples where offerings were deposited. El Castillo was dedicated to the Mayan god Kukulkan and is located on the site's highest point. In addition to its function as a temple, El Castillo may also have be
-  - Match: score 7 via coastal-in-title, kw:point+lighthouse, geo:1839m, w>=1000, landscape
-- **`mx-roo-caleta-tankah-2.jpg`** ✗ **not a coastal photo** — “Beach and Ruins at Tulum” by FeldBum, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Beach_and_Ruins_at_Tulum.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: FeldBum — //commons.wikimedia.org/wiki/User:FeldBum
-  - Dated: 2016-01-24 12:31:57
-  - 1600×900px, 573 KB, shot 838 m from the spot
-  - Description: Beach and Ruins at Tulum, looking North.
-  - Match: score 6.5 via coastal-in-title, kw:beach, geo:838m, w>=1000, landscape
-- **`mx-roo-caleta-tankah-3.jpg`** ✗ **not a coastal photo** — “Tulum City Walls - 52596675814” by Stabbur's Master, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Tulum_City_Walls_-_52596675814.jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Stabbur's Master
-  - Dated: 2022-11-17 13:37:51
-  - 1600×1200px, 931 KB, shot 2026 m from the spot
-  - Description: In the 1200's, Tulum was an important Mayan seaport along the Yucatan coast. It was the only Mayan city built on a coast. It remained inhabited well after the arrival of the Spanish. The city was surrounded by a wall. There were five entrances to the city. This is one of the north entrances.
-  - Match: score 5 via kw:sea+coast, geo:2026m, w>=1000, landscape
+73 images across 31 spots. Licence rules and the OSM credit are in [the index](./README.md).
 
 ## Kanai, Riviera Maya
 
@@ -43,14 +14,6 @@
   - 1600×795px, 399 KB, shot 605 m from the spot
   - Description: All beaches end somewhere...near Maroma
   - Match: score 8 via coastal-in-title, kw:beach+mar, geo:605m, w>=1000, landscape
-- **`mx-roo-kanai-riviera-maya-2.jpg`** ✗ **not a coastal photo** — “Maroma Beach Star - panoramio” by Alfonzo Buscemi, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Maroma_Beach_Star_-_panoramio.jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: Alfonzo Buscemi — https://web.archive.org/web/20161028163811/http://www.panoramio.com/user/5107822?with_photo_id=103095661
-  - Dated: 12 February 2014 (original upload date)
-  - 1600×1063px, 613 KB, shot 3710 m from the spot
-  - Description: Maroma Beach Star
-  - Match: score 6 via coastal-in-title, kw:beach+mar, geo:3710m, w>=1000, landscape
 
 ## La Playa mas Hermosa
 
@@ -73,35 +36,6 @@
   - Description: Punta sur Cozumel Mexico
   - Match: score 5 via kw:beach+sand+rocks, geo:4621m, w>=1000, landscape
 
-## Playa 88
-
-`osm:node/10175978018` · 20.6452725, -87.0549509
-
-- **`mx-roo-playa-88-1.jpg`** ✗ **not a coastal photo** — “Buffet rest. coco bay - panoramio” by Sven-eric, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Buffet_rest._coco_bay_-_panoramio.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Sven-eric — https://web.archive.org/web/20161010121835/http://www.panoramio.com/user/770029?with_photo_id=3883323
-  - Dated: 12 August 2007 (original upload date)
-  - 1600×1202px, 639 KB, shot 1083 m from the spot
-  - Description: buffet rest. coco bay
-  - Match: score 8 via coastal-in-title, kw:playa+bay, geo:1083m, w>=1000, landscape
-- **`mx-roo-playa-88-2.jpg`** ✗ **not a coastal photo** — “Buffet rest. coco bay - panoramio - Sven-eric” by Sven-eric, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Buffet_rest._coco_bay_-_panoramio_-_Sven-eric.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Sven-eric — https://www.panoramio.com/user/770029?with_photo_id=3883377
-  - Dated: 12 August 2007 (original upload date)
-  - 1600×1202px, 679 KB, shot 1084 m from the spot
-  - Description: buffet rest. coco bay
-  - Match: score 8 via coastal-in-title, kw:playa+bay, geo:1084m, w>=1000, landscape
-- **`mx-roo-playa-88-3.jpg`** ✗ **not a coastal photo** — “Buffet rest. coco bay - panoramio - Sven-eric (1)” by Sven-eric, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Buffet_rest._coco_bay_-_panoramio_-_Sven-eric_(1).jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Sven-eric — https://web.archive.org/web/20161010065515/http://www.panoramio.com/user/770029?with_photo_id=3883424
-  - Dated: 12 August 2007 (original upload date)
-  - 1600×1200px, 552 KB, shot 1085 m from the spot
-  - Description: buffet rest. coco bay
-  - Match: score 8 via coastal-in-title, kw:playa+bay, geo:1085m, w>=1000, landscape
-
 ## Playa Akumal
 
 `osm:relation/13560317` · 20.3935758, -87.3162035
@@ -114,35 +48,6 @@
   - 1600×488px, 201 KB, shot 283 m from the spot
   - Description: Pano made of 6 shots. this is side to side of the bay. taken around 6:40am better geotag [?]
   - Match: score 13 via coastal-in-title, name:akumal, kw:beach+bay, geo:283m, w>=1000, landscape
-- **`mx-roo-playa-akumal-2.jpg`** ✗ **not a coastal photo** — “Spanish Cannon below the waves, Akumal” by Eden, Janine and Jim from New York City, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Spanish_Cannon_below_the_waves,_Akumal.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Eden, Janine and Jim from New York City — https://www.flickr.com/people/10485077@N06
-  - Dated: 22 June 2024, 10:23:20 (according to Exi
-  - 1600×2800px, 528 KB, shot 270 m from the spot
-  - Description: This is from the wreck of Nuestra Señora de los Milagros, an armed Spanish merchant ship that was wrecked on Akumal's reef in 1740--almost three centuries ago.
-  - Match: score 13.5 via coastal-in-title, name:akumal, kw:wave+waves+reef, geo:270m, w>=1000
-- **`mx-roo-playa-akumal-3.jpg`** ✗ **not a coastal photo** — “Green Sea Turtle grazing seagrass” by P.Lindgren, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Green_Sea_Turtle_grazing_seagrass.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: P.Lindgren — //commons.wikimedia.org/wiki/User:P.Lindgren
-  - Dated: 2013-05-10 10:56:56
-  - 1600×1200px, 575 KB, shot 322 m from the spot
-  - Description: Green Sea Turtle grazing seagrass at Akumal bay.
-  - Match: score 13 via coastal-in-title, name:akumal, kw:sea+bay, geo:322m, w>=1000, landscape
-
-## Playa Akun
-
-`osm:way/506426452` · 20.1014589, -87.4727931
-
-- **`mx-roo-playa-akun-1.jpg`** ✗ **not a coastal photo** — “2019-02-15 074 Roseate spoonbill (Platalea ajaja) at Sian Ka'an Biosphere Reserve, Mexico” by Gordon Leggett, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:2019-02-15_074_Roseate_spoonbill_(Platalea_ajaja)_at_Sian_Ka%27an_Biosphere_Reserve,_Mexico.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Gordon Leggett — //commons.wikimedia.org/wiki/User:GRDN711
-  - Dated: 2019-02-15 11:15:22
-  - 1600×1068px, 309 KB, shot 1784 m from the spot
-  - Description: Roseate Spoonbill (Platalea ajaja) in flight at Sian Ka'an Biosphere Reserve, Yucatan Mexico on February 15, 2019.
-  - Match: score 5.5 via coastal-in-title, kw:sea, geo:1784m, w>=1000, landscape
 
 ## Playa Amansala
 
@@ -338,14 +243,6 @@
   - 1600×972px, 553 KB, shot 38 m from the spot
   - Description: The largest building of the Tulum complex, the guard tower nicknamed El Castillo, in the front and Templo del Dios del Viento (Temple of the Wind God) in the back. They appear particularly impressive when seen from the sea, on top of the cliffs. The picturesque beach below is also a breeding ground for sea turtles.
   - Match: score 14 via coastal-in-title, name:tulum, kw:beach+sea+cliff, geo:38m, w>=1000, landscape
-- **`mx-roo-playa-de-tulum-3.jpg`** ✗ **not a coastal photo** — “Tulum, Mexico 076B5427 8 9 fused (15781369495)” by Bruce Tuten from Savannah, Georgia, United States, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Tulum,_Mexico_076B5427_8_9_fused_(15781369495).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Bruce Tuten from Savannah, Georgia, United States — https://www.flickr.com/people/95158573@N00
-  - Dated: 2014-11-05 13:03
-  - 1600×1064px, 1087 KB, shot 65 m from the spot
-  - Description: Mayan ruins tower over the sea in Tulum. The formerly walled city was one of the last to be built by the Mayans, and its archaeological sites are incredibly well preserved. Take a break from the beach to visit El Castillo, the Temple of the Frescoes, and the Temple of the Descending God.
-  - Match: score 12 via name:tulum, kw:beach+sea+break, geo:65m, w>=1000, landscape
 
 ## Playa Delfines
 
@@ -367,14 +264,6 @@
   - 1600×1200px, 334 KB, shot 204 m from the spot
   - Description: PLAYA DELFINES 02 - 01 ENE 2013
   - Match: score 13 via coastal-in-title, name:delfines, kw:beach+playa, geo:204m, w>=1000, landscape
-- **`mx-roo-playa-delfines-3.jpg`** ✗ **not a coastal photo** — “LAGUNA NICHUPTE DESDE PLAYA DELFINES - panoramio” by ERVIN ESCOBAR, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:LAGUNA_NICHUPTE_DESDE_PLAYA_DELFINES_-_panoramio.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: ERVIN ESCOBAR — https://web.archive.org/web/20161029151405/http://www.panoramio.com/user/5726193?with_photo_id=91852107
-  - Dated: Taken on 2 April 2013
-  - 1600×1200px, 304 KB, shot 106 m from the spot
-  - Description: LAGUNA NICHUPTE DESDE PLAYA DELFINES
-  - Match: score 14 via coastal-in-title, name:delfines, kw:beach+playa+lagoon, geo:106m, w>=1000, landscape
 
 ## Playa El Niño
 
@@ -396,14 +285,6 @@
   - 1600×1200px, 546 KB, shot 540 m from the spot
   - Description: Villa Del Palmar Cancun, Mexico 2012
   - Match: score 6.5 via coastal-in-title, kw:mar, geo:540m, w>=1000, landscape
-- **`mx-roo-playa-el-nino-3.jpg`** ✗ **not a coastal photo** — “Food Stalls along the beach - Cancun QR 2020” by Bernard DUPONT, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Food_Stalls_along_the_beach_-_Cancun_QR_2020.jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Bernard DUPONT
-  - Dated: 2020-03-01 13:30:53
-  - 1600×1428px, 952 KB
-  - Description: Playa del Niño, Cancun, Quintana Roo, MEXICO. Food Stalls along the beach ... (Photo by JC PLE)
-  - Match: score 6.5 via coastal-in-title, kw:beach+playa+mar, w>=1000
 
 ## Playa Gaviota Azul
 
@@ -425,14 +306,6 @@
   - 1600×900px, 758 KB, shot 82 m from the spot
   - Description: Aerial view of Cancun Lagoon and Nichupte Lagoon from Gaviota Azul Beach, Cancun, Quintana Roo, Mexico.
   - Match: score 18 via coastal-in-title, name:gaviota+azul, kw:beach+playa+lagoon, geo:82m, w>=1000, landscape
-- **`mx-roo-playa-gaviota-azul-3.jpg`** ✗ **not a coastal photo** — “Forum by the Sea Cancún - panoramio” by kajikawa, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Forum_by_the_Sea_Canc%C3%BAn_-_panoramio.jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: kajikawa — https://web.archive.org/web/20161015112801/http://www.panoramio.com/user/7158?with_photo_id=39711837
-  - Dated: Taken on 17 January 2009
-  - 1600×1200px, 1003 KB, shot 64 m from the spot
-  - Description: Forum by the Sea Cancún
-  - Match: score 17 via coastal-in-title, name:gaviota+azul, kw:beach+sea, geo:64m, w>=1000, landscape
 
 ## Playa Ixpalbarco
 
@@ -704,14 +577,6 @@
   - 1600×1200px, 708 KB, shot 2066 m from the spot
   - Description: The view looking south down the windward (eastern) shore from atop the cliffs at Coconuts Bar & Grill . Photo taken with a Panasonic Lumix DMC-FZ50 on the island of Cozumel in Quintana Roo , Mexico .
   - Match: score 6 via kw:beach+shore+cliff, geo:2066m, w>=1000, landscape
-- **`mx-roo-playa-san-martin-2.jpg`** ✗ **not a coastal photo** — “The wisdom of Coconut Bar Cozumel (6758202133)” by Serge Melki from Indianapolis, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:The_wisdom_of_Coconut_Bar_Cozumel_(6758202133).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Serge Melki from Indianapolis, USA — https://www.flickr.com/people/67958110@N00
-  - Dated: 2012-01-20 16:04
-  - 1600×1200px, 773 KB, shot 3479 m from the spot
-  - Description: Coconut Bar Cozumel - on the rough side of the island
-  - Match: score 8 via name:martin, kw:beach+mar, geo:3479m, w>=1000, landscape
 
 ## Playa San Miguelito
 
@@ -759,14 +624,6 @@
   - 1600×1200px, 480 KB, shot 1855 m from the spot
   - Description: Beach in Hawaii
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:1855m, w>=1000, landscape
-- **`mx-roo-playa-xpu-ha-3.jpg`** ✗ **not a coastal photo** — “Cenote Tajma-Ha” by Offthebeatonpath, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Cenote_Tajma-Ha.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Offthebeatonpath — //commons.wikimedia.org/w/index.php?title=User:Offthebeatonpath&amp;action=edit&amp;redlink=1
-  - Dated: 2018-03-28 17:31:20
-  - 1600×900px, 678 KB, shot 2394 m from the spot
-  - Description: Cenote Tajma-Ha is located in the state of Quintana Roo, in the Yucatan Peninsula of Mexico. It is a sinkhole (i.e., cenote). This picture represents the surface of the cenote as taken from the shoreline.
-  - Match: score 6 via kw:surf+shore+shoreline, geo:2394m, w>=1000, landscape
 
 ## Punta Cocos
 

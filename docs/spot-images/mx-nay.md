@@ -1,6 +1,6 @@
 # MX-NAY — Mexico, Nayarit
 
-48 images across 18 spots. Licence rules and the OSM credit are in [the index](./README.md).
+45 images across 18 spots. Licence rules and the OSM credit are in [the index](./README.md).
 
 ## Playa Careyeros
 
@@ -43,22 +43,6 @@
   - 1600×1201px, 622 KB, shot 643 m from the spot
   - Description: Playa de los Muertos, Sayulita, Nayarit
   - Match: score 6.5 via coastal-in-title, kw:playa, geo:643m, w>=1000, landscape
-- **`mx-nay-playa-carricitos-2.jpg`** ✗ **not a coastal photo** — “Cementerio de Sayulita, a un lado de la Playa de los Muertos 01” by Luisalvaz, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Cementerio_de_Sayulita,_a_un_lado_de_la_Playa_de_los_Muertos_01.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Luisalvaz — //commons.wikimedia.org/wiki/User:Luisalvaz
-  - Dated: 2024-12-20 13:41:03
-  - 1600×1201px, 801 KB, shot 836 m from the spot
-  - Description: Cementerio de Sayulita, a un lado de la Playa de los Muertos
-  - Match: score 6.5 via coastal-in-title, kw:playa, geo:836m, w>=1000, landscape
-- **`mx-nay-playa-carricitos-3.jpg`** ✗ **not a coastal photo** — “Cementerio de Sayulita, a un lado de la Playa de los Muertos 03” by Luisalvaz, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Cementerio_de_Sayulita,_a_un_lado_de_la_Playa_de_los_Muertos_03.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Luisalvaz — //commons.wikimedia.org/wiki/User:Luisalvaz
-  - Dated: 2024-12-20 13:41:21
-  - 1600×1201px, 852 KB, shot 826 m from the spot
-  - Description: Cementerio de Sayulita, a un lado de la Playa de los Muertos
-  - Match: score 6.5 via coastal-in-title, kw:playa, geo:826m, w>=1000, landscape
 
 ## Playa Chacala
 
@@ -301,14 +285,6 @@
   - 1600×228px, 97 KB, shot 1728 m from the spot
   - Description: Nonono
   - Match: score 9 via name:marcos, kw:beach+mar, geo:1728m, w>=1000, landscape
-- **`mx-nay-playa-lo-de-marcos-3.jpg`** ✗ **not a coastal photo** — “Lo de Marcos” by Camila Glez, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Lo_de_Marcos.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Camila Glez — //commons.wikimedia.org/w/index.php?title=User:Camilo_Glez&amp;action=edit&amp;redlink=1
-  - Dated: 2023-04-15 14:25:01
-  - 1600×2133px, 1460 KB, shot 1096 m from the spot
-  - Description: Nonono
-  - Match: score 9.5 via name:marcos, kw:beach+mar, geo:1096m, w>=1000
 
 ## Playa los Muertos
 

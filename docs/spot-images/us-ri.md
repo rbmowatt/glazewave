@@ -1,6 +1,6 @@
 # US-RI — United States, Rhode Island
 
-132 images across 46 spots. Licence rules and the OSM credit are in [the index](./README.md).
+111 images across 46 spots. Licence rules and the OSM credit are in [the index](./README.md).
 
 ## Atlantic Beach
 
@@ -106,14 +106,6 @@
   - 1600×2350px, 4813 KB, shot 2870 m from the spot
   - Description: Southeast Lighthouse tower on Block Island, New Shoreham, RI
   - Match: score 6.5 via coastal-in-title, kw:shore+lighthouse, geo:2870m, w>=1000
-- **`us-ri-baby-beach-3.png`** ✗ **not a coastal photo** — Block Island Southeast Lighthouse sign — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Block_Island_Southeast_Lighthouse_sign.png
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: Waz8 — //commons.wikimedia.org/wiki/User:Waz8
-  - Dated: 2012-06-15
-  - 1600×943px, 3289 KB, shot 2870 m from the spot
-  - Description: Southeast Lighthouse sign on Block Island, New Shoreham, RI
-  - Match: score 7 via coastal-in-title, kw:shore+lighthouse, geo:2870m, w>=1000, landscape
 
 ## Bailey Beach
 
@@ -213,22 +205,6 @@
   - 1600×900px, 494 KB, shot 614 m from the spot
   - Description: Narragansett, Rhode Island
   - Match: score 14.5 via coastal-in-title, name:roger+wheeler, kw:beach, geo:614m, w>=1000, landscape
-- **`us-ri-captain-roger-w-wheeler-state-beach-2.jpg`** ✗ **not a coastal photo** — “Snow Buntings, Roger Wheeler State Beach (32020107712)” by Doug McGrady from Warwick, RI, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Snow_Buntings,_Roger_Wheeler_State_Beach_(32020107712).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Doug McGrady from Warwick, RI, USA — https://www.flickr.com/people/150919437@N06
-  - Dated: 2013-01-05 12:00
-  - 1600×1200px, 724 KB
-  - Description: Snow Buntings, Roger Wheeler State Beach
-  - Match: score 12.5 via coastal-in-title, name:roger+wheeler, kw:beach, w>=1000, landscape
-- **`us-ri-captain-roger-w-wheeler-state-beach-3.jpg`** ✗ **not a coastal photo** — “Snow Buntings, Roger Wheeler State Beach, Narragansett, RI (32050837691)” by Doug McGrady from Warwick, RI, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Snow_Buntings,_Roger_Wheeler_State_Beach,_Narragansett,_RI_(32050837691).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Doug McGrady from Warwick, RI, USA — https://www.flickr.com/people/150919437@N06
-  - Dated: 2013-01-05 12:00
-  - 1600×1067px, 831 KB
-  - Description: Snow Buntings, Roger Wheeler State Beach, Narragansett, RI
-  - Match: score 12.5 via coastal-in-title, name:roger+wheeler, kw:beach, w>=1000, landscape
 
 ## Charlestown Beach
 
@@ -250,14 +226,6 @@
   - 1600×1081px, 81 KB
   - Description: Charlestown Beach, near St Austell , Cornwall , England . Taken by fabiform
   - Match: score 8.5 via coastal-in-title, name:charlestown, kw:beach, w>=1000, landscape
-- **`us-ri-charlestown-beach-3.jpg`** ✗ **not a coastal photo** — Foster Cove Loop Trail of Ninigret National WIldlife Refuge — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Foster_Cove_Loop_Trail_of_Ninigret_National_WIldlife_Refuge.JPG
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Juliancolton — //commons.wikimedia.org/wiki/User:Juliancolton
-  - Dated: 2010-08-04
-  - 1600×1071px, 1102 KB, shot 3555 m from the spot
-  - Description: Foster Cove Loop Trail in the Ninigret National Wildlife Refuge , which borders Ninigret Pond , in or near Charlestown, Rhode Island . The wildlife refuge incorporates the former Naval Auxiliary Air Station Charlestown .
-  - Match: score 8.5 via coastal-in-title, name:charlestown, kw:cove, geo:3555m, w>=1000, landscape
 
 ## Conochet Club Beach
 
@@ -366,14 +334,6 @@
   - 1600×1038px, 653 KB
   - Description: Fogland Beach is a narrow strip of land which connects Tiverton, Rhode Island to Fogland Point, 35 acres (14 ha) of land which projects out into the Sakonnet River. The beach itself – one of two in Tiverton, along with Grinnel's Beach – is on the south side of the neck, while a cove called Fogland with a rocky beach is on the north side. The road which runs down the neck is called 3 Rod Way.
   - Match: score 7 via coastal-in-title, kw:beach+cove+point, w>=1000, landscape
-- **`us-ri-east-beach-3.jpg`** ✗ **not a coastal photo** — US Navy 110713-N-QE550-025 The U.S. Navy Band, North East Rhode Island Sound, performs at the Ontario Beach Park during Concerts by the Shore as pa — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:US_Navy_110713-N-QE550-025_The_U.S._Navy_Band,_North_East_Rhode_Island_Sound,_performs_at_the_Ontario_Beach_Park_during_Concerts_by_the_Shore_as_pa.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: U.S. Navy photo by Mass Communication Specialist 1st Class Katrina Sartain
-  - Dated: Taken on 13 July 2011
-  - 1600×1067px, 756 KB
-  - Description: ROCHESTER, N.Y. (July 13, 2011) The U.S. Navy Band, North East Rhode Island Sound, performs at the Ontario Beach Park during Concerts by the Shore as part of Rochester Navy Week, one of 21 Navy Weeks planned across America for 2011. Navy Weeks are designed to showcase the investment Americans have made in their Navy and increase awareness in cities that do not have a significant Navy presence. (U.S. Navy photo by Mass Communication Specialist 1st Class Katrina Sartain/Released)
-  - Match: score 6 via coastal-in-title, kw:beach+shore, w>=1000, landscape
 
 ## East Beach
 
@@ -395,14 +355,6 @@
   - 1600×1038px, 653 KB, shot 58805 m from the spot
   - Description: Fogland Beach is a narrow strip of land which connects Tiverton, Rhode Island to Fogland Point, 35 acres (14 ha) of land which projects out into the Sakonnet River. The beach itself – one of two in Tiverton, along with Grinnel's Beach – is on the south side of the neck, while a cove called Fogland with a rocky beach is on the north side. The road which runs down the neck is called 3 Rod Way.
   - Match: score 7 via coastal-in-title, kw:beach+cove+point, geo:58805m, w>=1000, landscape
-- **`us-ri-east-beach-832705-3.jpg`** ✗ **not a coastal photo** — “Hylidae- Dryophytes versicolor (Eastern Gray Treefrog) - 48040853896” by Kristof Zyskowski & Yulia Bereshpolova, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Hylidae-_Dryophytes_versicolor_(Eastern_Gray_Treefrog)_-_48040853896.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Kristof Zyskowski & Yulia Bereshpolova
-  - Dated: 2019-06-08 22:09:17
-  - 1600×955px, 540 KB, shot 747 m from the spot
-  - Description: USA: Rhode Island, Washington County, Watch Hill
-  - Match: score 6.5 via coastal-in-title, kw:reef, geo:747m, w>=1000, landscape
 
 ## East Matunuck State Beach
 
@@ -453,14 +405,6 @@
   - 1600×477px, 331 KB
   - Description: A panoramic view of Easton Beach, Rhode Island.
   - Match: score 8.5 via coastal-in-title, name:easton, kw:beach, w>=1000, landscape
-- **`us-ri-easton-s-beach-3.jpg`** ✗ **not a coastal photo** — “Easton's Beach aka First Beach, Newport Rhode Island” by Kenneth C. Zirkel, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Easton%27s_Beach_aka_First_Beach,_Newport_Rhode_Island.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Kenneth C. Zirkel — //commons.wikimedia.org/wiki/User:Kzirkel
-  - Dated: 2021-11-13 15:46:32
-  - 1600×1200px, 965 KB, shot 224 m from the spot
-  - Description: Easton's Beach, aka "First Beach", Newport Rhode Island
-  - Match: score 11.5 via coastal-in-title, name:easton, kw:beach, geo:224m, w>=1000, landscape
 
 ## Fenway Beach
 
@@ -487,22 +431,6 @@
   - 1600×1060px, 367 KB, shot 1336 m from the spot
   - Description: New Shoreham, United States
   - Match: score 7 via coastal-in-title, kw:shore+sunset, geo:1336m, w>=1000, landscape
-- **`us-ri-fred-benson-town-beach-2.png`** ✗ **not a coastal photo** — Block Island Southeast Lighthouse sign — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Block_Island_Southeast_Lighthouse_sign.png
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: Waz8 — //commons.wikimedia.org/wiki/User:Waz8
-  - Dated: 2012-06-15
-  - 1600×943px, 3289 KB, shot 3425 m from the spot
-  - Description: Southeast Lighthouse sign on Block Island, New Shoreham, RI
-  - Match: score 6 via coastal-in-title, kw:shore+lighthouse, geo:3425m, w>=1000, landscape
-- **`us-ri-fred-benson-town-beach-3.jpg`** ✗ **not a coastal photo** — “Hylidae- Dryophytes versicolor (Eastern Gray Treefrog)” by Kristof Zyskowski & Yulia Bereshpolova, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Hylidae-_Dryophytes_versicolor_(Eastern_Gray_Treefrog).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Kristof Zyskowski & Yulia Bereshpolova
-  - Dated: 2019-06-08 22:03:10
-  - 1600×1067px, 1112 KB, shot 2244 m from the spot
-  - Description: USA: Rhode Island, Washington County, Watch Hill
-  - Match: score 5.5 via coastal-in-title, kw:reef, geo:2244m, w>=1000, landscape
 
 ## Gooseberry Beach
 
@@ -524,14 +452,6 @@
   - 1600×1174px, 493 KB
   - Description: Waterfront Mansion Ocean Avenue Newport Rhode Island and Hobie 16 Sailing Catamaran View from Gooseberry Beach
   - Match: score 11 via coastal-in-title, name:gooseberry, kw:beach+ocean+mar, w>=1000, landscape
-- **`us-ri-gooseberry-beach-3.jpg`** ✗ **not a coastal photo** — “Gooseberry Beach, Newport Rhode Island” by Kenneth C. Zirkel, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Gooseberry_Beach,_Newport_Rhode_Island.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Kenneth C. Zirkel — //commons.wikimedia.org/wiki/User:Kzirkel
-  - Dated: 2022-05-01 14:25:13
-  - 1600×1067px, 751 KB, shot 129 m from the spot
-  - Description: Gooseberry Beach, Newport Rhode Island
-  - Match: score 11.5 via coastal-in-title, name:gooseberry, kw:beach, geo:129m, w>=1000, landscape
 
 ## Hazard Beach
 
@@ -545,22 +465,6 @@
   - 1600×702px, 132 KB, shot 283 m from the spot
   - Description: Gooseberry Beach - Newport, Rhode Island, USA
   - Match: score 7.5 via coastal-in-title, kw:beach, geo:283m, w>=1000, landscape
-- **`us-ri-hazard-beach-2.jpg`** ✗ **not a coastal photo** — “The Waves (Newport mansion) at night” by Kenneth C. Zirkel, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:The_Waves_(Newport_mansion)_at_night.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Kenneth C. Zirkel — //commons.wikimedia.org/wiki/User:Kzirkel
-  - Dated: 2023-05-05 20:41:36
-  - 1600×1200px, 784 KB, shot 1433 m from the spot
-  - Description: John Russell Pope House (The Waves) at night. Newport, Rhode Island. View from the Cliff Walk.
-  - Match: score 8 via coastal-in-title, kw:wave+waves+cliff, geo:1433m, w>=1000, landscape
-- **`us-ri-hazard-beach-3.jpg`** ✗ **not a coastal photo** — “Gooseberry Beach, Newport Rhode Island” by Kenneth C. Zirkel, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Gooseberry_Beach,_Newport_Rhode_Island.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Kenneth C. Zirkel — //commons.wikimedia.org/wiki/User:Kzirkel
-  - Dated: 2022-05-01 14:25:13
-  - 1600×1067px, 751 KB, shot 291 m from the spot
-  - Description: Gooseberry Beach, Newport Rhode Island
-  - Match: score 7.5 via coastal-in-title, kw:beach, geo:291m, w>=1000, landscape
 
 ## Lloyd's Beach
 
@@ -827,14 +731,6 @@
   - 1600×1067px, 141 KB, shot 718 m from the spot
   - Description: Sailboats rest on a floating dock in Watch Hill Cove, Watch Hill, Rhode Island , as the morning sun burns away the fog.
   - Match: score 8 via coastal-in-title, kw:cove+sunrise, geo:718m, w>=1000, landscape
-- **`us-ri-ocean-house-beach-3.jpg`** ✗ **not a coastal photo** — “Hylidae- Dryophytes versicolor (Eastern Gray Treefrog) - 48040853896” by Kristof Zyskowski & Yulia Bereshpolova, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Hylidae-_Dryophytes_versicolor_(Eastern_Gray_Treefrog)_-_48040853896.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Kristof Zyskowski & Yulia Bereshpolova
-  - Dated: 2019-06-08 22:09:17
-  - 1600×955px, 540 KB, shot 276 m from the spot
-  - Description: USA: Rhode Island, Washington County, Watch Hill
-  - Match: score 7.5 via coastal-in-title, kw:reef, geo:276m, w>=1000, landscape
 
 ## Pebbly Beach
 
@@ -854,14 +750,6 @@
   - Author: Chris Olszewski — //commons.wikimedia.org/wiki/User:Kgbo
   - Dated: 2025-03-07 18:27:16
   - 1600×1200px, 993 KB
-  - Description: Pebbly Beach, Oak Beach, Queensland, 2025
-  - Match: score 10 via coastal-in-title, name:pebbly, kw:beach+mar, w>=1000, landscape
-- **`us-ri-pebbly-beach-3.jpg`** ✗ **not a coastal photo** — “Pebbly Beach, Queensland, 2025, 03” by Chris Olszewski, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Pebbly_Beach,_Queensland,_2025,_03.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Chris Olszewski — //commons.wikimedia.org/wiki/User:Kgbo
-  - Dated: 2025-03-07 18:15:37
-  - 1600×1200px, 942 KB
   - Description: Pebbly Beach, Oak Beach, Queensland, 2025
   - Match: score 10 via coastal-in-title, name:pebbly, kw:beach+mar, w>=1000, landscape
 
@@ -885,14 +773,6 @@
   - 1600×1068px, 561 KB, shot 712 m from the spot
   - Description: Rocks - Cliff Walk, Newport, Rhode Island, USA
   - Match: score 8 via coastal-in-title, kw:cliff+rocks, geo:712m, w>=1000, landscape
-- **`us-ri-rejects-beach-3.jpg`** ✗ **not a coastal photo** — “The Waves (Newport mansion) at night” by Kenneth C. Zirkel, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:The_Waves_(Newport_mansion)_at_night.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Kenneth C. Zirkel — //commons.wikimedia.org/wiki/User:Kzirkel
-  - Dated: 2023-05-05 20:41:36
-  - 1600×1200px, 784 KB, shot 467 m from the spot
-  - Description: John Russell Pope House (The Waves) at night. Newport, Rhode Island. View from the Cliff Walk.
-  - Match: score 9 via coastal-in-title, kw:wave+waves+cliff, geo:467m, w>=1000, landscape
 
 ## Roy Carpenter's Beach
 
@@ -913,14 +793,6 @@
   - Dated: between circa 1930 and circa 1945 date Q
   - 1600×1026px, 1254 KB
   - Description: Title: Roy Carpenter's Camp Grounds and Beach from the Air, Matunuck, R.I. Subjects: Beaches Places: Rhode Island > Washington (county) > Perryville Notes: Title from item. Extent: 1 print (postcard) : linen texture, color ; 3 1/2 x 5 1/2 in. Accession #: 06_10_001910
-  - Match: score 12.5 via coastal-in-title, name:roy+carpenter, kw:beach, w>=1000, landscape
-- **`us-ri-roy-carpenter-s-beach-3.jpg`** ✗ **not a coastal photo** — “Matunuck Roy Carpenter Beach Rhode Island” by Swampyank at English Wikipedia, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Matunuck_Roy_Carpenter_Beach_Rhode_Island.JPG
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Swampyank at English Wikipedia — https://en.wikipedia.org/wiki/User:Swampyank
-  - Dated: 6 November 2008 (original upload date)
-  - 1600×1200px, 514 KB
-  - Description: This is my 2008 photo of Matunuck, Rhode Island's Roy Carpenter Beach cottages.
   - Match: score 12.5 via coastal-in-title, name:roy+carpenter, kw:beach, w>=1000, landscape
 
 ## Salty Brine State Beach
@@ -964,22 +836,6 @@
   - 1600×1200px, 614 KB
   - Description: Bailey's Beach in Newport Rhode Island RI after Hurricane Sandy. Off Ocean Drive.
   - Match: score 11 via coastal-in-title, name:sandy, kw:beach+ocean+sand, w>=1000, landscape
-- **`us-ri-sandy-beach-2.jpg`** ✗ **not a coastal photo** — Sandy Point, RI. Credit- Susi von Oettingen-USFWS (5230034076) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Sandy_Point,_RI._Credit-_Susi_von_Oettingen-USFWS_(5230034076).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: U. S. Fish and Wildlife Service - Northeast Region — https://www.flickr.com/people/43322816@N08
-  - Dated: 2010-12-03 16:21:37
-  - 1600×1201px, 60 KB
-  - Description: Sandy Point, RI. Credit: Susi von Oettingen/USFWS
-  - Match: score 11 via coastal-in-title, name:sandy, kw:beach+sand+point, w>=1000, landscape
-- **`us-ri-sandy-beach-3.jpg`** ✗ **not a coastal photo** — Common Terns on Beach (5229440865) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Common_Terns_on_Beach_(5229440865).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: U. S. Fish and Wildlife Service - Northeast Region — https://www.flickr.com/people/43322816@N08
-  - Dated: 2010-12-03 16:21:31
-  - 1600×1201px, 37 KB
-  - Description: Sandy Point, RI. Credit: Susi von Oettingen/USFWS
-  - Match: score 11 via coastal-in-title, name:sandy, kw:beach+sand+point, w>=1000, landscape
 
 ## Scarborough South State Beach
 
@@ -1203,14 +1059,6 @@
   - 1600×2350px, 4813 KB, shot 1701 m from the spot
   - Description: Southeast Lighthouse tower on Block Island, New Shoreham, RI
   - Match: score 6.5 via coastal-in-title, kw:shore+lighthouse, geo:1701m, w>=1000
-- **`us-ri-vaill-beach-3.png`** ✗ **not a coastal photo** — Block Island Southeast Lighthouse sign — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Block_Island_Southeast_Lighthouse_sign.png
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: Waz8 — //commons.wikimedia.org/wiki/User:Waz8
-  - Dated: 2012-06-15
-  - 1600×943px, 3289 KB, shot 1701 m from the spot
-  - Description: Southeast Lighthouse sign on Block Island, New Shoreham, RI
-  - Match: score 7 via coastal-in-title, kw:shore+lighthouse, geo:1701m, w>=1000, landscape
 
 ## Warren's Point Beach
 
@@ -1245,14 +1093,6 @@
   - 1600×1071px, 389 KB, shot 2342 m from the spot
   - Description: Sunrise on Misquamicut Beach, Rhode Island .
   - Match: score 7 via coastal-in-title, kw:beach+sunrise, geo:2342m, w>=1000, landscape
-- **`us-ri-westerly-town-beach-3.jpg`** ✗ **not a coastal photo** — 1940 Census Enumeration District Descriptions - Rhode Island - Washington County - ED 5-39, ED 5-40, ED 5-41 - NARA - 5879862 — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:1940_Census_Enumeration_District_Descriptions_-_Rhode_Island_-_Washington_County_-_ED_5-39,_ED_5-40,_ED_5-41_-_NARA_-_5879862.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Unknown author Unknown author or not provided
-  - Dated: 1850 – 1950
-  - 1600×875px, 246 KB
-  - Description: Scope and content: This item lists Enumeration Districts for: RI ED 5-39: WESTERLY TOWN BOUNDED BY (N) BROAD, MAIN, CROSS; (E) WESTMINSTER, WELLS, BEACH; (S) WASHINGTON AV; (W) PAWCATUCK RIVER; ALSO WESTERLY (PART). RI ED 5-40: WESTERLY TOWN BOUNDED BY (N) CROSS; (E) GRANITE, FRANKLIN, POST RD; (S) WELLS; (W) WESTMINSTER; ALSO WESTERLY (PART). RI ED 5-41: WESTERLY TOWN BOUNDED BY (N) WASHINGTON AV, BEACH, WELLS, POST RD, POND RD, BRADFORD RD, NEW YORK, NEW HAVEN & HARTFORD RAILROAD, PAWCATUCK RIVER; (E) TOWN LINE; (S) ATLANTIC OCEAN; (W) LITTLE NARRAGANSETT BAY, PAWCATUCK RIVER; ALSO BRADFORD 
-  - Match: score 13 via name:westerly+town, kw:beach+ocean+bay, w>=1000, landscape
 
 ## Westerly Town Beach
 
@@ -1274,12 +1114,4 @@
   - 1600×1071px, 389 KB, shot 3853 m from the spot
   - Description: Sunrise on Misquamicut Beach, Rhode Island .
   - Match: score 6 via coastal-in-title, kw:beach+sunrise, geo:3853m, w>=1000, landscape
-- **`us-ri-westerly-town-beach-832701-3.jpg`** ✗ **not a coastal photo** — 1940 Census Enumeration District Descriptions - Rhode Island - Washington County - ED 5-39, ED 5-40, ED 5-41 - NARA - 5879862 — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:1940_Census_Enumeration_District_Descriptions_-_Rhode_Island_-_Washington_County_-_ED_5-39,_ED_5-40,_ED_5-41_-_NARA_-_5879862.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Unknown author Unknown author or not provided
-  - Dated: 1850 – 1950
-  - 1600×875px, 246 KB
-  - Description: Scope and content: This item lists Enumeration Districts for: RI ED 5-39: WESTERLY TOWN BOUNDED BY (N) BROAD, MAIN, CROSS; (E) WESTMINSTER, WELLS, BEACH; (S) WASHINGTON AV; (W) PAWCATUCK RIVER; ALSO WESTERLY (PART). RI ED 5-40: WESTERLY TOWN BOUNDED BY (N) CROSS; (E) GRANITE, FRANKLIN, POST RD; (S) WELLS; (W) WESTMINSTER; ALSO WESTERLY (PART). RI ED 5-41: WESTERLY TOWN BOUNDED BY (N) WASHINGTON AV, BEACH, WELLS, POST RD, POND RD, BRADFORD RD, NEW YORK, NEW HAVEN & HARTFORD RAILROAD, PAWCATUCK RIVER; (E) TOWN LINE; (S) ATLANTIC OCEAN; (W) LITTLE NARRAGANSETT BAY, PAWCATUCK RIVER; ALSO BRADFORD 
-  - Match: score 13 via name:westerly+town, kw:beach+ocean+bay, w>=1000, landscape
 

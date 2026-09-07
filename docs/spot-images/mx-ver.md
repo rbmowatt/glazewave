@@ -1,35 +1,6 @@
 # MX-VER — Mexico, Veracruz
 
-46 images across 18 spots. Licence rules and the OSM credit are in [the index](./README.md).
-
-## Plaa Hermosay
-
-`osm:way/1464972988` · 18.6645303, -95.1297191
-
-- **`mx-ver-plaa-hermosay-1.jpg`** ✗ **not a coastal photo** — “BridgeCostadeOro02” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:BridgeCostadeOro02.JPG
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: AlejandroLinaresGarcia — //commons.wikimedia.org/wiki/User:AlejandroLinaresGarcia
-  - Dated: 2014-04-16 08:39:13
-  - 1600×1064px, 641 KB, shot 75 m from the spot
-  - Description: Bridge over small river at Playa Hermosa (?) in the muncipality of San Andrés Tuxtla, Veracruz, Mexico
-  - Match: score 5.5 via kw:playa, geo:75m, w>=1000, landscape
-- **`mx-ver-plaa-hermosay-2.jpg`** ✗ **not a coastal photo** — “BridgeCostadeOro04” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:BridgeCostadeOro04.JPG
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: AlejandroLinaresGarcia — //commons.wikimedia.org/wiki/User:AlejandroLinaresGarcia
-  - Dated: 2014-04-16 08:39:21
-  - 1600×1064px, 449 KB, shot 75 m from the spot
-  - Description: Bridge over small river at Playa Hermosa (?) in the muncipality of San Andrés Tuxtla, Veracruz, Mexico
-  - Match: score 5.5 via kw:playa, geo:75m, w>=1000, landscape
-- **`mx-ver-plaa-hermosay-3.jpg`** ✗ **not a coastal photo** — “BridgeCostadeOro05” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:BridgeCostadeOro05.JPG
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: AlejandroLinaresGarcia — //commons.wikimedia.org/wiki/User:AlejandroLinaresGarcia
-  - Dated: 2014-04-16 08:39:44
-  - 1600×1064px, 572 KB, shot 75 m from the spot
-  - Description: Bridge over small river at Playa Hermosa (?) in the muncipality of San Andrés Tuxtla, Veracruz, Mexico
-  - Match: score 5.5 via kw:playa, geo:75m, w>=1000, landscape
+33 images across 16 spots. Licence rules and the OSM credit are in [the index](./README.md).
 
 ## Playa Arroyo de la Liza
 
@@ -88,19 +59,6 @@
   - 1600×1064px, 297 KB, shot 292 m from the spot
   - Description: Rock outcropping in the bay of Puerto de Balzapote, Veracruz
   - Match: score 9.5 via name:balzapote, kw:bay, geo:292m, w>=1000, landscape
-
-## Playa Coatza
-
-`osm:way/730332996` · 18.1536536, -94.4566311
-
-- **`mx-ver-playa-coatza-1.jpg`** ✗ **not a coastal photo** — “Ferrocarril del Istmo de Tehuantepec (FIT) 10” by Own work, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Ferrocarril_del_Istmo_de_Tehuantepec_(FIT)_10.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Own work
-  - Dated: 2024-09-12 06:22:41
-  - 1600×1067px, 493 KB, shot 3473 m from the spot
-  - Description: Passengers buying tickets at a digital ticket office of the Interoceanic Train at the Coatzacoalcos station. Ferrocarril del Istmo de Tehuantepec, Veracruz, Mexico.
-  - Match: score 6.5 via name:coatza, kw:ocean, geo:3473m, w>=1000, landscape
 
 ## Playa Costa de Oro
 
@@ -214,22 +172,6 @@
   - 1600×1200px, 293 KB
   - Description: Gaviotas en una playa de Veracruz
   - Match: score 10 via coastal-in-title, name:gaviota, kw:beach+playa, w>=1000, landscape
-- **`mx-ver-playa-gaviota-2.jpg`** ✗ **not a coastal photo** — “Gaviotas en una playa de Veracruz 02” by Luis Alvaz, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Gaviotas_en_una_playa_de_Veracruz_02.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Luis Alvaz — //commons.wikimedia.org/wiki/User:Luisalvaz
-  - Dated: 2019-01-05 18:10:03
-  - 1600×1200px, 229 KB
-  - Description: Gaviotas en una playa de Veracruz
-  - Match: score 10 via coastal-in-title, name:gaviota, kw:beach+playa, w>=1000, landscape
-- **`mx-ver-playa-gaviota-3.jpg`** ✗ **not a coastal photo** — “Gaviotas en una playa de Veracruz 04” by Luis Alvaz, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Gaviotas_en_una_playa_de_Veracruz_04.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Luis Alvaz — //commons.wikimedia.org/wiki/User:Luisalvaz
-  - Dated: 2019-01-05 18:10:38
-  - 1600×1200px, 93 KB
-  - Description: Gaviotas en una playa de Veracruz
-  - Match: score 10 via coastal-in-title, name:gaviota, kw:beach+playa, w>=1000, landscape
 
 ## Playa Hermita
 
@@ -256,22 +198,6 @@
   - 1600×1200px, 540 KB, shot 805 m from the spot
   - Description: Puente Inconcluso para ir a Playa Hermosa sobre el Canal "El chijol"
   - Match: score 10.5 via coastal-in-title, name:hermosa, kw:playa, geo:805m, w>=1000, landscape
-- **`mx-ver-playa-hermosa-2.jpg`** ✗ **not a coastal photo** — “Puente Inconcluso para ir a Playa Hermosa sobre el Canal "El chijol" - panoramio” by YoPoio, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Puente_Inconcluso_para_ir_a_Playa_Hermosa_sobre_el_Canal_%22El_chijol%22_-_panoramio.jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: YoPoio — https://web.archive.org/web/20161028113037/http://www.panoramio.com/user/24052?with_photo_id=23928447
-  - Dated: 5 January 2007 (according to Exif data)
-  - 1600×1200px, 483 KB, shot 860 m from the spot
-  - Description: Puente Inconcluso para ir a Playa Hermosa sobre el Canal "El chijol"
-  - Match: score 10.5 via coastal-in-title, name:hermosa, kw:playa, geo:860m, w>=1000, landscape
-- **`mx-ver-playa-hermosa-3.jpg`** ✗ **not a coastal photo** — “Puente Inconcluso para ir a Playa Hermosa sobre el Canal "El chijol" - panoramio - YoPoio (1)” by YoPoio, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Puente_Inconcluso_para_ir_a_Playa_Hermosa_sobre_el_Canal_%22El_chijol%22_-_panoramio_-_YoPoio_(1).jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: YoPoio — https://web.archive.org/web/20161028112758/http://www.panoramio.com/user/24052?with_photo_id=23928533
-  - Dated: 5 January 2007 (according to Exif data)
-  - 1600×1200px, 674 KB, shot 862 m from the spot
-  - Description: Puente Inconcluso para ir a Playa Hermosa sobre el Canal "El chijol"
-  - Match: score 10.5 via coastal-in-title, name:hermosa, kw:playa, geo:862m, w>=1000, landscape
 
 ## Playa La Bamba
 
@@ -293,14 +219,6 @@
   - 1600×1200px, 450 KB
   - Description: La Bamba Beach in Veracruz (city)
   - Match: score 10 via coastal-in-title, name:bamba, kw:beach+playa, w>=1000, landscape
-- **`mx-ver-playa-la-bamba-3.jpg`** ✗ **not a coastal photo** — “Dr. DADID DE JONG junto al Apicultor Sandry Luis Osorio en el XXXI CONGRESO INTERNACIONAL DE ACTUALIZACIÓN APÍCOLA 2025” by Sandry Luis Osorio, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Dr._DADID_DE_JONG_junto_al_Apicultor_Sandry_Luis_Osorio_en_el_XXXI_CONGRESO_INTERNACIONAL_DE_ACTUALIZACI%C3%93N_AP%C3%8DCOLA_2025.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Sandry Luis Osorio — //commons.wikimedia.org/w/index.php?title=User:Sandry_Luis_Osorio&amp;action=edit&amp;redlink=1
-  - Dated: 5 September 2025 (according to Exif data
-  - 1600×2125px, 656 KB, shot 437 m from the spot
-  - Description: Dr. DADID DE JONG junto al Apicultor Sandry Luis Osorio en el XXXI CONGRESO INTERNACIONAL DE ACTUALIZACIÓN APÍCOLA 2025
-  - Match: score 7.5 via coastal-in-title, kw:sand+cove, geo:437m, w>=1000
 
 ## Playa Maracaibo
 
@@ -364,14 +282,6 @@
   - 1600×1200px, 418 KB, shot 1761 m from the spot
   - Description: foto de playa en dia nublado
   - Match: score 5.5 via coastal-in-title, kw:playa, geo:1761m, w>=1000, landscape
-- **`mx-ver-playa-penacho-del-indio-3.jpg`** ✗ **not a coastal photo** — “Dr. DADID DE JONG junto al Apicultor Sandry Luis Osorio en el XXXI CONGRESO INTERNACIONAL DE ACTUALIZACIÓN APÍCOLA 2025” by Sandry Luis Osorio, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Dr._DADID_DE_JONG_junto_al_Apicultor_Sandry_Luis_Osorio_en_el_XXXI_CONGRESO_INTERNACIONAL_DE_ACTUALIZACI%C3%93N_AP%C3%8DCOLA_2025.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Sandry Luis Osorio — //commons.wikimedia.org/w/index.php?title=User:Sandry_Luis_Osorio&amp;action=edit&amp;redlink=1
-  - Dated: 5 September 2025 (according to Exif data
-  - 1600×2125px, 656 KB, shot 2236 m from the spot
-  - Description: Dr. DADID DE JONG junto al Apicultor Sandry Luis Osorio en el XXXI CONGRESO INTERNACIONAL DE ACTUALIZACIÓN APÍCOLA 2025
-  - Match: score 6.5 via coastal-in-title, kw:sand+cove, geo:2236m, w>=1000
 
 ## Playa Tortuga
 
@@ -393,14 +303,6 @@
   - 1600×2133px, 1040 KB, shot 992406 m from the spot
   - Description: Ubicada en la Riviera Nayarita, esta playa tiene alrededor mde 50 años y es muy fecuentada por personas que practican surf. Este espacio se reconoce tambié como santuario de la tortuga Golfina
   - Match: score 9.5 via coastal-in-title, name:tortuga, kw:surf+playa, geo:992406m, w>=1000
-- **`mx-ver-playa-tortuga-3.jpg`** ✗ **not a coastal photo** — “Playa San Pancho 01” by WendyAvilesR, Wikimedia Commons, CC BY 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Playa_San_Pancho_01.jpg
-  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
-  - Author: WendyAvilesR — //commons.wikimedia.org/w/index.php?title=User:WendyAvilesR&amp;action=edit&amp;redlink=1
-  - Dated: 2024-07-29 06:47:14
-  - 1600×2133px, 1751 KB, shot 992328 m from the spot
-  - Description: Ubicada en la Riviera Nayarita, esta playa tiene alrededor mde 50 años y es muy fecuentada por personas que practican surf. Este espacio se reconoce tambié como santuario de la tortuga Golfina
-  - Match: score 9.5 via coastal-in-title, name:tortuga, kw:surf+playa, geo:992328m, w>=1000
 
 ## Playa Tumbao
 
@@ -422,14 +324,6 @@
   - 1600×899px, 334 KB, shot 720 m from the spot
   - Description: Playa
   - Match: score 6.5 via coastal-in-title, kw:playa, geo:720m, w>=1000, landscape
-- **`mx-ver-playa-tumbao-3.jpg`** ✗ **not a coastal photo** — “Boca del rio public el penacho camion” by Coral2712, Wikimedia Commons, CC BY 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Boca_del_rio_public_el_penacho_camion.jpg
-  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
-  - Author: Coral2712 — //commons.wikimedia.org/wiki/User:Coral2712
-  - Dated: 2020-07-01
-  - 1600×1200px, 221 KB, shot 819 m from the spot
-  - Description: a view of boca del rio veracruz public transportation route called "penacho" that travels from anton lizado to vercruz city center recoring all the coastline
-  - Match: score 6 via kw:coast+coastline, geo:819m, w>=1000, landscape
 
 ## Playa Vicente Fox
 
@@ -451,12 +345,4 @@
   - 1600×899px, 334 KB, shot 2551 m from the spot
   - Description: Playa
   - Match: score 5.5 via coastal-in-title, kw:playa, geo:2551m, w>=1000, landscape
-- **`mx-ver-playa-vicente-fox-3.jpg`** ✗ **not a coastal photo** — “Boca del rio public el penacho camion” by Coral2712, Wikimedia Commons, CC BY 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Boca_del_rio_public_el_penacho_camion.jpg
-  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
-  - Author: Coral2712 — //commons.wikimedia.org/wiki/User:Coral2712
-  - Dated: 2020-07-01
-  - 1600×1200px, 221 KB, shot 1029 m from the spot
-  - Description: a view of boca del rio veracruz public transportation route called "penacho" that travels from anton lizado to vercruz city center recoring all the coastline
-  - Match: score 6 via kw:coast+coastline, geo:1029m, w>=1000, landscape
 

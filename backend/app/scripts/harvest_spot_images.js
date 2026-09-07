@@ -74,6 +74,7 @@ const DATA_DIR = path.resolve(__dirname, '../../data');
 const SEED_FILE = path.join(DATA_DIR, 'surfline_spots.json');
 const IMAGE_DIR = path.join(DATA_DIR, 'spot-images');
 const MANIFEST_FILE = path.join(DATA_DIR, 'spot_images.json');
+const REJECTS_FILE = path.join(DATA_DIR, 'spot_image_rejects.json');
 const DOCS_DIR = path.resolve(__dirname, '../../../docs');
 
 const CACHE_DIR = path.join(
@@ -109,6 +110,28 @@ const REGION_FILTER = (opt('regions', '') || '')
   .filter(Boolean);
 
 const outOfBudget = () => BUDGET_MS > 0 && Date.now() - started > BUDGET_MS;
+
+/* Files a human already looked at and rejected as not being pictures of a coast.
+ * Without this a rerun re-fetches all 692 of them and re-proposes the same hotel
+ * lobby, and somebody reviews them a second time.
+ *
+ * The ledger is keyed on sha256 because two Commons URLs in this harvest return
+ * identical bytes, and a URL key lets the twin back in. sha256 is only known
+ * after download, so the title set does the work at meta time and the hash set
+ * catches the twin at download time. Both, not either. */
+const REJECTS = (() => {
+  if (!fs.existsSync(REJECTS_FILE)) return { titles: new Set(), hashes: new Set() };
+  try {
+    const led = JSON.parse(fs.readFileSync(REJECTS_FILE, 'utf8'));
+    return {
+      titles: new Set(led.rejects.map((r) => r.title)),
+      hashes: new Set(led.rejects.map((r) => r.sha256)),
+    };
+  } catch (e) {
+    console.log(`rejects ledger unreadable (${e.message}), continuing without it`);
+    return { titles: new Set(), hashes: new Set() };
+  }
+})();
 
 /* ------------------------------------------------------------------ */
 /* region codes                                                        */
@@ -694,6 +717,10 @@ async function harvestSpot(spot, osm) {
     if (!titles.has(t)) { titles.set(t, d); tierOf.set(t, 'commons-text'); }
   }
 
+  for (const t of [...titles.keys()]) {
+    if (REJECTS.titles.has(t)) titles.delete(t);
+  }
+
   const info = await commonsImageInfo([...titles.keys()]);
   const cands = [];
   for (const [title, rec] of Object.entries(info)) {
@@ -858,13 +885,19 @@ async function stageDownload(spots) {
         return;
       }
       const buf = fs.readFileSync(blob);
+      const hash = crypto.createHash('sha256').update(buf).digest('hex');
+      if (REJECTS.hashes.has(hash)) {
+        img.download_error = 'previously rejected by review';
+        missing += 1;
+        return;
+      }
       if (!fs.existsSync(dest) || fs.statSync(dest).size !== buf.length) {
         fs.writeFileSync(dest, buf);
       }
       delete img.download_error;
       img.file = path.relative(DATA_DIR, dest);
       img.bytes = buf.length;
-      img.sha256 = crypto.createHash('sha256').update(buf).digest('hex');
+      img.sha256 = hash;
       placed += 1;
     });
     cacheSet(`spot_${slug(spot.id)}`, rec);

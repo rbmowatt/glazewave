@@ -1,6 +1,6 @@
 # MX-BCS — Mexico, Baja California Sur
 
-87 images across 31 spots. Licence rules and the OSM credit are in [the index](./README.md).
+82 images across 31 spots. Licence rules and the OSM credit are in [the index](./README.md).
 
 ## Cerritos Beach
 
@@ -180,14 +180,6 @@
   - 1600×1067px, 649 KB, shot 2669 m from the spot
   - Description: Beach Front RIU Palace
   - Match: score 11 via coastal-in-title, name:cabo, kw:beach+playa, geo:2669m, w>=1000, landscape
-- **`mx-bcs-playa-cabo-bello-3.jpg`** ✗ **not a coastal photo** — “Take a seat (6655103999) (6)” by Clemens Vasters from Viersen, Germany, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Take_a_seat_(6655103999)_(6).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Clemens Vasters from Viersen, Germany — https://www.flickr.com/people/7489441@N06
-  - Dated: 2012-01-03 12:44
-  - 1600×1067px, 441 KB, shot 2669 m from the spot
-  - Description: Take a seat
-  - Match: score 9.5 via coastal-in-title, name:cabo, kw:sea, geo:2669m, w>=1000, landscape
 
 ## Playa Cabo del Este
 
@@ -201,22 +193,6 @@
   - 1600×1064px, 572 KB, shot 3926 m from the spot
   - Description: San Jose Estuary and the sand bar that separates it from the open ocean in San Jose del Cabo, Baja California Sur
   - Match: score 12 via name:cabo+este, kw:ocean+sand, geo:3926m, w>=1000, landscape
-- **`mx-bcs-playa-cabo-del-este-2.jpg`** ✗ **not a coastal photo** — “EsteroSanJose07” by Thelmadatter, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:EsteroSanJose07.JPG
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Thelmadatter — //commons.wikimedia.org/wiki/User:Thelmadatter
-  - Dated: 2014-07-14 08:19:16
-  - 1600×1064px, 513 KB, shot 4087 m from the spot
-  - Description: View of the San Jose Estuary from the sand bar separating it from the sea, in San Jose del Cabo, Baja California Sur
-  - Match: score 12 via name:cabo+este, kw:sea+sand, geo:4087m, w>=1000, landscape
-- **`mx-bcs-playa-cabo-del-este-3.jpg`** ✗ **not a coastal photo** — “EsteroSanJose09” by Thelmadatter, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:EsteroSanJose09.JPG
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Thelmadatter — //commons.wikimedia.org/wiki/User:Thelmadatter
-  - Dated: 2014-07-14 08:25:18
-  - 1600×1064px, 475 KB, shot 4087 m from the spot
-  - Description: View of the San Jose Estuary from the sand bar separating it from the sea, in San Jose del Cabo, Baja California Sur
-  - Match: score 12 via name:cabo+este, kw:sea+sand, geo:4087m, w>=1000, landscape
 
 ## Playa Cabo Real
 
@@ -628,14 +604,6 @@
   - 1600×1067px, 649 KB, shot 2085 m from the spot
   - Description: Beach Front RIU Palace
   - Match: score 7 via coastal-in-title, kw:beach+playa, geo:2085m, w>=1000, landscape
-- **`mx-bcs-playa-monumentos-3.jpg`** ✗ **not a coastal photo** — “Take a seat (6655103999) (6)” by Clemens Vasters from Viersen, Germany, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Take_a_seat_(6655103999)_(6).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Clemens Vasters from Viersen, Germany — https://www.flickr.com/people/7489441@N06
-  - Dated: 2012-01-03 12:44
-  - 1600×1067px, 441 KB, shot 2085 m from the spot
-  - Description: Take a seat
-  - Match: score 5.5 via coastal-in-title, kw:sea, geo:2085m, w>=1000, landscape
 
 ## Playa Palmilla
 
@@ -844,12 +812,4 @@
   - 1600×1023px, 240 KB, shot 2774 m from the spot
   - Description: Baja California Sur.
   - Match: score 11 via coastal-in-title, name:pescadero, kw:beach+playa, geo:2774m, w>=1000, landscape
-- **`mx-bcs-san-pedrito-ejido-el-pescadero-b-c-s-mx-2.jpg`** ✗ **not a coastal photo** — “Porophyllum sp. (9232516808)” by Dick Culbert from Gibsons, B.C., Canada, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Porophyllum_sp._(9232516808).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Dick Culbert from Gibsons, B.C., Canada — https://www.flickr.com/people/92252798@N07
-  - Dated: 2013-07-06 15:50
-  - 1600×1431px, 281 KB, shot 876 m from the spot
-  - Description: From Pescadero Beach, Mexico. In context at www.dixpix.ca/meso_america/Flora/aster/index.html
-  - Match: score 8 via name:pescadero, kw:beach, geo:876m, w>=1000
 

@@ -1,19 +1,6 @@
 # US-VA — United States, Virginia
 
-14 images across 7 spots. Licence rules and the OSM credit are in [the index](./README.md).
-
-## Cedar Island Beach
-
-`osm:node/356560726` · 37.6281881, -75.6002047
-
-- **`us-va-cedar-island-beach-1.jpg`** ✗ **not a coastal photo** — Nor'Ida Virginia damage — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Nor%27Ida_Virginia_damage.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: United States Geological Survey
-  - Dated: 2009-05-21
-  - 1600×2091px, 268 KB
-  - Description: Oblique aerial photography from Cedar Island, VA on May 21, 2009 (top) and December 4, 2009 (bottom), roughly two weeks after the storm. The yellow arrows point to the same location in each photograph. This location is characterized by extreme erosion, to the point where the small beach has disappeared and an overwash deposit has been eroded exposing, in places, an underlying marsh surface. This response suggests that the beach system may have been inundated during some part of the storm. At this time we do not know if the missing house was lost during this storm or removed prior. No debris is
-  - Match: score 12.5 via name:cedar+island, kw:beach+surf+mar+point, w>=1000
+10 images across 4 spots. Licence rules and the OSM credit are in [the index](./README.md).
 
 ## Fishing & Dog Beach
 
@@ -27,19 +14,6 @@
   - 1600×1200px, 757 KB, shot 3356 m from the spot
   - Description: Sandbridge
   - Match: score 6 via coastal-in-title, kw:sand+sunrise, geo:3356m, w>=1000, landscape
-
-## Parramore Beach
-
-`osm:node/356567735` · 37.5487462, -75.6146483
-
-- **`us-va-parramore-beach-1.jpg`** ✗ **not a coastal photo** — 1940 Census Enumeration District Descriptions - Virginia - Accomack County - ED 1-23, ED 1-24, ED 1-25, ED 1-26, ED 1-27 - NARA - 5884849 — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:1940_Census_Enumeration_District_Descriptions_-_Virginia_-_Accomack_County_-_ED_1-23,_ED_1-24,_ED_1-25,_ED_1-26,_ED_1-27_-_NARA_-_5884849.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Unknown author Unknown author or not provided
-  - Dated: 1850 – 1950
-  - 1600×825px, 386 KB
-  - Description: Scope and content: This item lists Enumeration Districts for: VA ED 1-23: METOMPKIN MAGISTERIAL DISTRICT OUTSIDE PARKSLEY TOWN W OF PENNSYLVANIA RAILROAD, GUILFORD, HALLWOOD (PART), HOPETON (PART), HOPKINS (PART), JUSTISVILLE, ISLANDS. VA ED 1-24: PUNGOTEAGUE MAGISTERIAL DISTRICT, BELLE HAVEN TOWN. VA ED 1-25: PUNGOTEAGUE MAGISTERIAL DISTRICT, WACHAPREAGUE TOWN. VA ED 1-26: PUNGOTEAGUE MAGISTERIAL DISTRICT OUTSIDE WACHAPREAGUE TOWN E OF STATE ROAD 600, PARRAMORE ISLAND, QUINBY, ISLANDS. VA ED 1-27: PUNGOTEAGUE MAGISTERIAL DISTRICT, U.S. COAST GUARD (PARRAMORE BEACH STATION).
-  - Match: score 8 via name:parramore, kw:beach+coast, w>=1000, landscape
 
 ## Sandbridge Beach
 
@@ -69,27 +43,6 @@
   - 1600×1067px, 648 KB
   - Description: SANDBRIDGE, Va. -- The Norfolk District, U.S. Army Corps of Engineers, partnering with the city of Virginia Beach, Va., began a five-mile hurricane protection and beach renourishment project in Sandbridge in mid-April, 2013. The $13.35 million non-federal project included the dredging and placement of approximately 2 million cubic yards of sand along public beachfront from Back Bay National Wildlife Refuge to the Dam Neck Naval facility.
   - Match: score 11 via coastal-in-title, name:sandbridge, kw:beach+sand+bay, w>=1000, landscape
-
-## Smith Island Beach
-
-`osm:node/356566130` · 37.1320875, -75.8802044
-
-- **`us-va-smith-island-beach-1.jpg`** ✗ **not a coastal photo** — “Shawnee SM looking back at turtle island (7244609984)” by Virginia State Parks staff, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Shawnee_SM_looking_back_at_turtle_island_(7244609984).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Virginia State Parks staff — https://www.flickr.com/people/37922399@N05
-  - Dated: 2012-05-09 11:21
-  - 1600×1163px, 122 KB
-  - Description: used in blog uploaded by SA
-  - Match: score 10.5 via name:smith+island, kw:beach, w>=1000, landscape
-- **`us-va-smith-island-beach-2.jpg`** ✗ **not a coastal photo** — “Island in the Sky (24674940208)” by Bill Smith from Virginia Beach, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Island_in_the_Sky_(24674940208).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Bill Smith from Virginia Beach — https://www.flickr.com/people/10688882@N00
-  - Dated: 2017-11-20 13:45
-  - 1600×1111px, 526 KB, shot 41719 m from the spot
-  - Description: Caught this island floating by in the sky, heading east towards the Atlantic. Will wonders never cease!
-  - Match: score 6.5 via name:island, kw:beach, geo:41719m, w>=1000, landscape
 
 ## Surfing Beach
 

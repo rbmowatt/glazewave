@@ -1,6 +1,6 @@
 # MX-SIN — Mexico, Sinaloa
 
-23 images across 8 spots. Licence rules and the OSM credit are in [the index](./README.md).
+21 images across 8 spots. Licence rules and the OSM credit are in [the index](./README.md).
 
 ## El Maviri
 
@@ -122,22 +122,6 @@
   - 1600×1200px, 146 KB, shot 83 m from the spot
   - Description: A statue of Mexican composer Fernando Valadés faces Playa Olas Altas in Mazatlan, Sinaloa, Mexico.
   - Match: score 15.5 via coastal-in-title, name:olas+altas, kw:playa, geo:83m, w>=1000, landscape
-- **`mx-sin-playa-olas-altas-2.jpg`** ✗ **not a coastal photo** — “Olas Altas desde el Malecón - panoramio” by panza.rayada, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Olas_Altas_desde_el_Malec%C3%B3n_-_panoramio.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: panza.rayada — https://web.archive.org/web/20161027002510/http://www.panoramio.com/user/44886?with_photo_id=75870205
-  - Dated: Taken on 16 July 2012
-  - 1600×1067px, 450 KB, shot 179 m from the spot
-  - Description: Olas Altas desde el Malecón
-  - Match: score 13.5 via name:olas+altas, kw:beach, geo:179m, w>=1000, landscape
-- **`mx-sin-playa-olas-altas-3.jpg`** ✗ **not a coastal photo** — “Monument to Pedro Infante (26852174842)” by David Stanley from Nanaimo, Canada, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Monument_to_Pedro_Infante_(26852174842).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: David Stanley from Nanaimo, Canada — https://www.flickr.com/people/79721788@N00
-  - Dated: 13 December 2015, 11:20 (according to Ex
-  - 1600×1200px, 149 KB, shot 194 m from the spot
-  - Description: A monument to Mexican singer Pedro Infante is on Olas Alta Beach at Mazatlan, Sinaloa. One of Infante's most popular films "A Toda Máquina" featured motorcycles.
-  - Match: score 9.5 via name:olas, kw:beach, geo:194m, w>=1000, landscape
 
 ## Playa Pinitos
 

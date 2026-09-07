@@ -1,6 +1,6 @@
 # US-NY — United States, New York
 
-109 images across 40 spots. Licence rules and the OSM credit are in [the index](./README.md).
+82 images across 36 spots. Licence rules and the OSM credit are in [the index](./README.md).
 
 ## Amagansett Beach
 
@@ -51,14 +51,6 @@
   - 1600×1200px, 690 KB, shot 443 m from the spot
   - Description: The beach in the village of Atlantic Beach on Long Island, NY. This photo was taken facing northwest. The boardwalk is visible on the right hand side of the photo.
   - Match: score 13 via coastal-in-title, name:atlantic, kw:beach+coast+boardwalk, geo:443m, w>=1000, landscape
-- **`us-ny-atlantic-beach-3.jpg`** ✗ **not a coastal photo** — “Piping Plovers Atlantic Beach New York” by Agiorgio, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Piping_Plovers_Atlantic_Beach_New_York.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Agiorgio — //commons.wikimedia.org/wiki/User:Agiorgio
-  - Dated: 2010-09-17
-  - 1600×1200px, 381 KB, shot 371 m from the spot
-  - Description: Sanderlings (Calidris alba) at Atlantic Beach, New York
-  - Match: score 14 via coastal-in-title, name:atlantic, kw:beach+coast+sand, geo:371m, w>=1000, landscape
 
 ## Cedar Beach
 
@@ -80,14 +72,6 @@
   - 1600×1025px, 458 KB
   - Description: 12-30-17 Cedar Beach LI NY
   - Match: score 10 via coastal-in-title, name:cedar, kw:beach+pier, w>=1000, landscape
-- **`us-ny-cedar-beach-3.jpg`** ✗ **not a coastal photo** — “Ocean Parkway Road on Long Island 2021” by jphillipobrien2006, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Ocean_Parkway_Road_on_Long_Island_2021.jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: jphillipobrien2006 — https://www.flickr.com/photos/yojimbot/
-  - Dated: 2021-09-04
-  - 1600×900px, 780 KB, shot 423 m from the spot
-  - Description: This is a stunning aerial view of a long stretch of Ocean Parkway on Southern Long Island near Gilgo Beach in Suffolk County, New York where the human remains of the original "The Gilgo Four" (Maureen Brainard-Barnes, Melissa Barthelemy, Megan Waterman and Amber Lynn Costello) were discovered in the shrubbery, trees and marshes along this road in December 2010. Then, between March to April 2011, six more sets of human remains were also found by police along this stretch of parkway road. They were subsequently identified as Valerie Mack, Jessica Taylor, Karen Vergata, Tanya Jackson aka “Peaches
-  - Match: score 13 via coastal-in-title, name:cedar, kw:beach+ocean+mar+cove, geo:423m, w>=1000, landscape
 
 ## Cedar Overlook Beach
 
@@ -109,14 +93,6 @@
   - 1600×1882px, 849 KB, shot 57 m from the spot
   - Description: Joe Pomarico painting on the beach.
   - Match: score 6.5 via kw:beach+mar, geo:57m, w>=1000
-- **`us-ny-cedar-overlook-beach-3.jpg`** ✗ **not a coastal photo** — “Ocean Parkway Road on Long Island 2021” by jphillipobrien2006, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Ocean_Parkway_Road_on_Long_Island_2021.jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: jphillipobrien2006 — https://www.flickr.com/photos/yojimbot/
-  - Dated: 2021-09-04
-  - 1600×900px, 780 KB, shot 669 m from the spot
-  - Description: This is a stunning aerial view of a long stretch of Ocean Parkway on Southern Long Island near Gilgo Beach in Suffolk County, New York where the human remains of the original "The Gilgo Four" (Maureen Brainard-Barnes, Melissa Barthelemy, Megan Waterman and Amber Lynn Costello) were discovered in the shrubbery, trees and marshes along this road in December 2010. Then, between March to April 2011, six more sets of human remains were also found by police along this stretch of parkway road. They were subsequently identified as Valerie Mack, Jessica Taylor, Karen Vergata, Tanya Jackson aka “Peaches
-  - Match: score 13 via coastal-in-title, name:cedar, kw:beach+ocean+mar+cove, geo:669m, w>=1000, landscape
 
 ## Cupsoque Beach
 
@@ -130,14 +106,6 @@
   - 1600×1071px, 664 KB, shot 1902 m from the spot
   - Description: 2006 aerial shot showing the East Moriches (bottom) and Moriches (top) hamlets in Suffolk County, New York.
   - Match: score 5.5 via coastal-in-title, kw:inlet, geo:1902m, w>=1000, landscape
-- **`us-ny-cupsoque-beach-2.jpg`** ✗ **not a coastal photo** — “Ospreys on Dune Road” by Molly Adams, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Ospreys_on_Dune_Road.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Molly Adams — //commons.wikimedia.org/w/index.php?title=User:Ilovemoss&amp;action=edit&amp;redlink=1
-  - Dated: 2019-07-20 20:03:41
-  - 1600×1695px, 258 KB, shot 2944 m from the spot
-  - Description: Osprey pair with fish taken through binoculars
-  - Match: score 6.5 via coastal-in-title, kw:dune+sunset, geo:2944m, w>=1000
 
 ## East Atlantic Beach
 
@@ -151,22 +119,6 @@
   - 1600×1200px, 453 KB, shot 1780 m from the spot
   - Description: A rock groyne at Atlantic Beach, New York.
   - Match: score 12 via coastal-in-title, name:atlantic, kw:beach+coast+jetty, geo:1780m, w>=1000, landscape
-- **`us-ny-east-atlantic-beach-2.jpg`** ✗ **not a coastal photo** — “Piping Plovers Atlantic Beach New York” by Agiorgio, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Piping_Plovers_Atlantic_Beach_New_York.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Agiorgio — //commons.wikimedia.org/wiki/User:Agiorgio
-  - Dated: 2010-09-17
-  - 1600×1200px, 381 KB, shot 1780 m from the spot
-  - Description: Sanderlings (Calidris alba) at Atlantic Beach, New York
-  - Match: score 12 via coastal-in-title, name:atlantic, kw:beach+coast+sand, geo:1780m, w>=1000, landscape
-- **`us-ny-east-atlantic-beach-3.jpg`** ✗ **not a coastal photo** — Long Beach welcome jeh — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_welcome_jeh.JPG
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Jim.henderson — //commons.wikimedia.org/wiki/User:Jim.henderson
-  - Dated: 2009-04-25
-  - 1600×1097px, 504 KB, shot 325 m from the spot
-  - Description: Lookng northeast at the Long Beach Welcomes You sign at the western entrance from Atlantic Beach.
-  - Match: score 11.5 via coastal-in-title, name:atlantic, kw:beach, geo:325m, w>=1000, landscape
 
 ## East Hampton Beach
 
@@ -208,22 +160,6 @@
   - 1600×1200px, 310 KB, shot 548 m from the spot
   - Description: The Atlantic Ocean - Queens, NY
   - Match: score 14.5 via coastal-in-title, name:fort+tilden, kw:ocean, geo:548m, w>=1000, landscape
-- **`us-ny-fort-tilden-beach-2.jpg`** ✗ **not a coastal photo** — “Hudsonian Whimbrel on Fort Tilden beach, Queens, New York” by Remydee1, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Hudsonian_Whimbrel_on_Fort_Tilden_beach,_Queens,_New_York.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Remydee1 — //commons.wikimedia.org/wiki/User:Remydee1
-  - Dated: 2021-09-24 16:03:01
-  - 1600×1200px, 467 KB, shot 216 m from the spot
-  - Description: Whimbrel on the beach at Fort Tilden beach, Queens. Rare shorebird for this location
-  - Match: score 17 via coastal-in-title, name:fort+tilden, kw:beach+shore, geo:216m, w>=1000, landscape
-- **`us-ny-fort-tilden-beach-3.jpg`** ✗ **not a coastal photo** — “Bch 169th St Ft Tilden Riis Park td 13 - FDNY Engine 329” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Bch_169th_St_Ft_Tilden_Riis_Park_td_13_-_FDNY_Engine_329.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
-  - Dated: Taken on 12 August 2018, 16:58:33
-  - 1600×1067px, 651 KB, shot 976 m from the spot
-  - Description: Looking north towards the Neponsit Fire Station along Beach 169th Street between Fort Tilden (left) and Jacob Riis Park (right) in Roxbury, Queens. The Marine Parkway Bridge is in the distance.
-  - Match: score 14 via name:fort+tilden, kw:beach+mar, geo:976m, w>=1000, landscape
 
 ## Gilgo Beach
 
@@ -245,43 +181,6 @@
   - 1600×1015px, 81 KB
   - Description: Atlantic Ocean from Babylon's Gilgo Beach
   - Match: score 10 via coastal-in-title, name:gilgo, kw:beach+ocean, w>=1000, landscape
-- **`us-ny-gilgo-beach-3.jpg`** ✗ **not a coastal photo** — “Ocean Parkway Road on Long Island 2021” by jphillipobrien2006, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Ocean_Parkway_Road_on_Long_Island_2021.jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: jphillipobrien2006 — https://www.flickr.com/photos/yojimbot/
-  - Dated: 2021-09-04
-  - 1600×900px, 780 KB, shot 5832 m from the spot
-  - Description: This is a stunning aerial view of a long stretch of Ocean Parkway on Southern Long Island near Gilgo Beach in Suffolk County, New York where the human remains of the original "The Gilgo Four" (Maureen Brainard-Barnes, Melissa Barthelemy, Megan Waterman and Amber Lynn Costello) were discovered in the shrubbery, trees and marshes along this road in December 2010. Then, between March to April 2011, six more sets of human remains were also found by police along this stretch of parkway road. They were subsequently identified as Valerie Mack, Jessica Taylor, Karen Vergata, Tanya Jackson aka “Peaches
-  - Match: score 11 via coastal-in-title, name:gilgo, kw:beach+ocean+mar+cove, geo:5832m, w>=1000, landscape
-
-## Jacob Riis Park Beach 1
-
-`osm:way/1057432975` · 40.567162, -73.8641526 · beach type: **sandy** (OpenStreetMap surface=sand)
-
-- **`us-ny-jacob-riis-park-beach-1-1.jpg`** ✗ **not a coastal photo** — “Jacob Riis Park td (2018-08-03) 008 - Neponsit Beach Hospital” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Jacob_Riis_Park_td_(2018-08-03)_008_-_Neponsit_Beach_Hospital.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
-  - Dated: Taken on 3 August 2018, 19:01:25
-  - 1600×1067px, 835 KB, shot 201 m from the spot
-  - Description: A trio of modern DSNY trash cans at the bus stop for eastbound Q22 and Q35 buses at the east end of Jacob Riis Park in front of Neponsit Beach Hospital, on the south side of Rockaway Beach Boulevard near Beach 149th Street in Rockaway, Queens.
-  - Match: score 15.5 via coastal-in-title, name:jacob+riis, kw:beach, geo:201m, w>=1000, landscape
-- **`us-ny-jacob-riis-park-beach-1-2.jpg`** ✗ **not a coastal photo** — “Jacob Riis Park td (2023-09-04) 002 - Neponsit Beach Hospital” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Jacob_Riis_Park_td_(2023-09-04)_002_-_Neponsit_Beach_Hospital.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
-  - Dated: 2023-09-04 10:44:18
-  - 1600×1067px, 478 KB, shot 201 m from the spot
-  - Description: Looking south at the former site of Neponsit Beach Hospital at the far east end of Jacob Riis Park, at Rockaway Beach Boulevard and Beach 149th Street in Neponsit, Queens. The should-have-been-historic complex of hospital buildings, first a tuberculosis hospital and later a nursing home, was demolished this year. Sad. Congrats Mr. Lhota.
-  - Match: score 15.5 via coastal-in-title, name:jacob+riis, kw:beach, geo:201m, w>=1000, landscape
-- **`us-ny-jacob-riis-park-beach-1-3.jpg`** ✗ **not a coastal photo** — “Jacob Riis Park td (2023-09-04) 015 - Neponsit Beach Hospital” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Jacob_Riis_Park_td_(2023-09-04)_015_-_Neponsit_Beach_Hospital.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
-  - Dated: 2023-09-04 10:47:00
-  - 1600×1067px, 519 KB, shot 201 m from the spot
-  - Description: A new-looking FDNY call box at the entrance into the former site of Neponsit Beach Hospital at the far east end of Jacob Riis Park, on Rockaway Beach Boulevard west of Beach 149th Street in Neponsit, Queens. Edit:This new call box replaced an old burnt-out Art Deco call box .
-  - Match: score 15.5 via coastal-in-title, name:jacob+riis, kw:beach, geo:201m, w>=1000, landscape
 
 ## Jacob Riis Park Beach 10
 
@@ -427,35 +326,6 @@
   - 1600×1067px, 619 KB, shot 164 m from the spot
   - Description: Walking east along the crescent boardwalk of the main beach of Jacob Riis Park, east of Beach 169th Street in Rockaway, Queens. Pictured are bicycle racks near Bay 13.
   - Match: score 16 via name:jacob+riis, kw:beach+bay+boardwalk, geo:164m, w>=1000, landscape
-
-## Jacob Riis Park Beach 2
-
-`osm:way/1057432974` · 40.5668129, -73.8660351 · beach type: **sandy** (OpenStreetMap surface=sand)
-
-- **`us-ny-jacob-riis-park-beach-2-1.jpg`** ✗ **not a coastal photo** — “Jacob Riis Park td (2023-09-04) 002 - Neponsit Beach Hospital” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Jacob_Riis_Park_td_(2023-09-04)_002_-_Neponsit_Beach_Hospital.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
-  - Dated: 2023-09-04 10:44:18
-  - 1600×1067px, 478 KB, shot 234 m from the spot
-  - Description: Looking south at the former site of Neponsit Beach Hospital at the far east end of Jacob Riis Park, at Rockaway Beach Boulevard and Beach 149th Street in Neponsit, Queens. The should-have-been-historic complex of hospital buildings, first a tuberculosis hospital and later a nursing home, was demolished this year. Sad. Congrats Mr. Lhota.
-  - Match: score 15.5 via coastal-in-title, name:jacob+riis, kw:beach, geo:234m, w>=1000, landscape
-- **`us-ny-jacob-riis-park-beach-2-2.jpg`** ✗ **not a coastal photo** — “Jacob Riis Park td (2023-09-04) 016 - Neponsit Beach Hospital” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Jacob_Riis_Park_td_(2023-09-04)_016_-_Neponsit_Beach_Hospital.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
-  - Dated: 2023-09-04 10:47:07
-  - 1600×1067px, 592 KB, shot 234 m from the spot
-  - Description: Looking into the cleared site of Neponsit Beach Hospital at the far east end of Jacob Riis Park, on Rockaway Beach Boulevard west of Beach 149th Street in Neponsit, Queens. The should-have-been-historic complex of hospital buildings, first a tuberculosis hospital and later a nursing home, was demolished this year. Sad.
-  - Match: score 15.5 via coastal-in-title, name:jacob+riis, kw:beach, geo:234m, w>=1000, landscape
-- **`us-ny-jacob-riis-park-beach-2-3.jpg`** ✗ **not a coastal photo** — “Jacob Riis Park td (2018-08-03) 019” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Jacob_Riis_Park_td_(2018-08-03)_019.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
-  - Dated: Taken on 3 August 2018, 19:04:06
-  - 1600×1067px, 602 KB, shot 162 m from the spot
-  - Description: The two baseball diamonds adjacent to Neponsit Beach Hospital at the east end of Jacob Riis Park, on Rockaway Beach Boulevard at the roundabout in Rockaway, Queens. The land was originally part of the hospital property, but was ceded back to the park in 1959 and the two baseball fields were constructed under the watch of Robert Moses. The beach in front of the hospital was also ceded back to the park. Note that the grass on the field has been allowed to grow out, with the entire infield save for home plate and the pitchers mound covered in grass. Sad.
-  - Match: score 15 via name:jacob+riis, kw:beach+cove, geo:162m, w>=1000, landscape
 
 ## Jacob Riis Park Beach 3
 
@@ -622,14 +492,6 @@
   - 1600×1067px, 333 KB, shot 203 m from the spot
   - Description: Looking west down the boardwalk at the Wise and Son Clock in Jacob Riis Park, north of Bay 5 between the main beach and bathhouse in Rockaway, Queens. This four-face clock was donated to the park in 1941. It originally used a single mechanism to operate.
   - Match: score 16 via name:jacob+riis, kw:beach+bay+boardwalk, geo:203m, w>=1000, landscape
-- **`us-ny-jacob-riis-park-beach-8-3.jpg`** ✗ **not a coastal photo** — “Jacob Riis Park td (2018-08-12) 153” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Jacob_Riis_Park_td_(2018-08-12)_153.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
-  - Dated: Taken on 12 August 2018, 17:43:18
-  - 1600×1067px, 61 KB, shot 167 m from the spot
-  - Description: Birds atop a typical boardwalk lampost near the center of Jacob Riis Park, east of the central mall on Rockaway Beach Boulevard east of Beach 169th Street in Rockaway, Queens. I originally thought these were hopscotch courts.
-  - Match: score 15 via name:jacob+riis, kw:beach+boardwalk, geo:167m, w>=1000, landscape
 
 ## Jacob Riis Park Beach 9
 
@@ -643,22 +505,6 @@
   - 1600×1067px, 415 KB, shot 147 m from the spot
   - Description: Walking east along the crescent boardwalk of the main beach of Jacob Riis Park, east of Beach 169th Street in Rockaway, Queens.
   - Match: score 15 via name:jacob+riis, kw:beach+boardwalk, geo:147m, w>=1000, landscape
-- **`us-ny-jacob-riis-park-beach-9-2.jpg`** ✗ **not a coastal photo** — “Jacob Riis Park td (2018-08-12) 032” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Jacob_Riis_Park_td_(2018-08-12)_032.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
-  - Dated: Taken on 12 August 2018, 17:12:30
-  - 1600×1067px, 1020 KB, shot 147 m from the spot
-  - Description: A Parks Department-style water fountain outside the western set of handball courts of Jacob Riis Park, east of Beach 169th Street in Rockaway, Queens. These fountains at Riis Park feature a different style of faucet, and are for the most part inoperable.
-  - Match: score 15 via name:jacob+riis, kw:beach+boardwalk, geo:147m, w>=1000, landscape
-- **`us-ny-jacob-riis-park-beach-9-3.jpg`** ✗ **not a coastal photo** — “Jacob Riis Park td (2018-08-12) 039 - Golf Course” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Jacob_Riis_Park_td_(2018-08-12)_039_-_Golf_Course.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
-  - Dated: Taken on 12 August 2018, 17:14:21
-  - 1600×1067px, 777 KB, shot 135 m from the spot
-  - Description: The entrance to the Pitch and Putt golf course next to the western central mall building of Jacob Riis Park, east of Beach 169th Street in Rockaway, Queens. The course is operated by the Brooklyn Golf Center, which also operates the (relatively) nearby Marine Park Golf Course in Brooklyn.
-  - Match: score 15 via name:jacob+riis, kw:beach+mar, geo:135m, w>=1000, landscape
 
 ## Jones Beach
 
@@ -767,14 +613,6 @@
   - 1600×1067px, 210 KB, shot 343 m from the spot
   - Description: Fire Island Light Station
   - Match: score 11.5 via coastal-in-title, name:lighthouse, kw:lighthouse, geo:343m, w>=1000, landscape
-- **`us-ny-lighthouse-beach-613528-3.jpg`** ✗ **not a coastal photo** — “Remains of the Original Fire Island Lighthouse - panoramio” by dans362, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Remains_of_the_Original_Fire_Island_Lighthouse_-_panoramio.jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: dans362 — https://web.archive.org/web/20161018020906/http://www.panoramio.com/user/4821500?with_photo_id=43763578
-  - Dated: Taken on 12 February 2010
-  - 1600×1200px, 458 KB, shot 331 m from the spot
-  - Description: Remains of the Original Fire Island Lighthouse
-  - Match: score 11.5 via coastal-in-title, name:lighthouse, kw:lighthouse, geo:331m, w>=1000, landscape
 
 ## Lighthouse Beach
 
@@ -796,14 +634,6 @@
   - 1600×1067px, 210 KB, shot 366 m from the spot
   - Description: Fire Island Light Station
   - Match: score 11.5 via coastal-in-title, name:lighthouse, kw:lighthouse, geo:366m, w>=1000, landscape
-- **`us-ny-lighthouse-beach-613529-3.jpg`** ✗ **not a coastal photo** — “Remains of the Original Fire Island Lighthouse - panoramio” by dans362, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Remains_of_the_Original_Fire_Island_Lighthouse_-_panoramio.jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: dans362 — https://web.archive.org/web/20161018020906/http://www.panoramio.com/user/4821500?with_photo_id=43763578
-  - Dated: Taken on 12 February 2010
-  - 1600×1200px, 458 KB, shot 398 m from the spot
-  - Description: Remains of the Original Fire Island Lighthouse
-  - Match: score 11.5 via coastal-in-title, name:lighthouse, kw:lighthouse, geo:398m, w>=1000, landscape
 
 ## Long Beach
 
@@ -880,14 +710,6 @@
   - 1600×1013px, 442 KB
   - Description: Circa 1910s postcard (postmarked 1919) of the Atlas Baths in Rockaway Beach, Queens, New York City
   - Match: score 11 via coastal-in-title, name:rockaway, kw:beach+sea+mar, w>=1000, landscape
-- **`us-ny-rockaway-beach-3.jpg`** ✗ **not a coastal photo** — “Rockaway Beach Christmas Tree (8282229919)” by Roman Iakoubtchik from New York, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Rockaway_Beach_Christmas_Tree_(8282229919).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Roman Iakoubtchik from New York, USA — https://www.flickr.com/people/79128958@N02
-  - Dated: 2012-12-14 16:11
-  - 1600×1195px, 646 KB, shot 3348 m from the spot
-  - Description: Rockaway communities clean up after being ripped apart by Hurricane Sandy. Rockaway Beach, N.Y. 2012
-  - Match: score 11 via coastal-in-title, name:rockaway, kw:beach+shore+sand+bay, geo:3348m, w>=1000, landscape
 
 ## Rockaway Beach
 
@@ -978,48 +800,6 @@
   - 1600×2400px, 1139 KB
   - Description: Aerial photograph of Sun and Surf Beach Club - Atlantic Beach
   - Match: score 21.5 via coastal-in-title, name:sun+and+surf+club, kw:beach+surf, w>=1000
-- **`us-ny-sun-and-surf-beach-club-2.jpg`** ✗ **not a coastal photo** — “MTA (2016 livery, operated by MTA Bus Company) New Flyer Xcelsior XD60 5400” by Adam Moreira (AEMoreira042281), Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:MTA_(2016_livery,_operated_by_MTA_Bus_Company)_New_Flyer_Xcelsior_XD60_5400.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Adam Moreira (AEMoreira042281) — //commons.wikimedia.org/wiki/User:AEMoreira042281
-  - Dated: Taken on 1 June 2016, 15:22:34
-  - 1600×1200px, 744 KB, shot 1005 m from the spot
-  - Description: A Metropolitan Transportation Authority New Flyer Xcelsior XD60 articulated bus, #5400, is sitting at the final stop of the Q113/Q114 service from Jamaica, Queens, in Far Rockaway, Queens. Although operated by MTA Bus Company, the new livery (this example is from the first batch to receive the new livery, along with WiFi capability and USB charging outllets) eliminates all external distinctions between NYC Transit Authority/Manhattan and Bronx Surface Transit Operating Authority operated buses and MTA Bus Company operated buses. This livery, replacing the blue stripe livery, will eventually be
-  - Match: score 14 via name:and+surf, kw:surf+sea, geo:1005m, w>=1000, landscape
-- **`us-ny-sun-and-surf-beach-club-3.jpg`** ✗ **not a coastal photo** — Beach 25th St IND platform jeh — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Beach_25th_St_IND_platform_jeh.JPG
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Jim.henderson — //commons.wikimedia.org/wiki/User:Jim.henderson
-  - Dated: Taken on 1 June 2008
-  - 1600×1200px, 735 KB, shot 1764 m from the spot
-  - Description: Looking east out door of train stopped at en:Beach 25th Street (IND Rockaway Line) , and along Aztec Place on a sunny midday.
-  - Match: score 13.5 via coastal-in-title, name:sun+and, kw:beach, geo:1764m, w>=1000, landscape
-
-## Tiana Beach
-
-`osm:node/357592890` · 40.8306559, -72.5145343
-
-- **`us-ny-tiana-beach-1.jpg`** ✗ **not a coastal photo** — 1940 Census Enumeration District Descriptions - New York - Suffolk County - ED 52-179, ED 52-180, ED 52-181, ED 52-182 - NARA - 5856006 — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:1940_Census_Enumeration_District_Descriptions_-_New_York_-_Suffolk_County_-_ED_52-179,_ED_52-180,_ED_52-181,_ED_52-182_-_NARA_-_5856006.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Unknown author Unknown author or not provided
-  - Dated: 1850 – 1950
-  - 1600×848px, 299 KB
-  - Description: Scope and content: This item lists Enumeration Districts for: NY ED 52-179: SOUTHAMPTON TOWN OUTSIDE SOUTHAMPTON AND WESTHAMPTON BEACH VILLAGES BOUNDED BY (N) TIANA BAY, SHINNECOCK BAY; (E) SOUTHAMPTON VILLAGE LIMITS; (S) ATLANTIC OCEAN; (W) WESTHAMPTON BEACH VILLAGE LIMITS; ALSO WARNER ISLAND, ISLANDS. NY ED 52-180: SOUTHAMPTON TOWN, QUOGUE COAST GUARD STATION. NY ED 52-181: SOUTHAMPTON TOWN, TIANA COAST GUARD STATION. NY ED 52-182: SOUTHAMPTON TOWN OUTSIDE QUOGUE AND WESTHAMPTON BEACH VILLAGES BOUNDED BY RIVERHEAD RD, LONG ISLAND RAIL ROAD; TIANA BAY, CREEK, QUANTUCK BAY; WESTHAMPTON BEACH V
-  - Match: score 9 via name:tiana, kw:beach+ocean+coast+bay, w>=1000, landscape
-
-## Tiana Beach
-
-`osm:relation/6961137` · 40.8293459, -72.5196744 · beach type: **sandy** (OpenStreetMap surface=sand)
-
-- **`us-ny-tiana-beach-961137-1.jpg`** ✗ **not a coastal photo** — 1940 Census Enumeration District Descriptions - New York - Suffolk County - ED 52-179, ED 52-180, ED 52-181, ED 52-182 - NARA - 5856006 — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:1940_Census_Enumeration_District_Descriptions_-_New_York_-_Suffolk_County_-_ED_52-179,_ED_52-180,_ED_52-181,_ED_52-182_-_NARA_-_5856006.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Unknown author Unknown author or not provided
-  - Dated: 1850 – 1950
-  - 1600×848px, 299 KB
-  - Description: Scope and content: This item lists Enumeration Districts for: NY ED 52-179: SOUTHAMPTON TOWN OUTSIDE SOUTHAMPTON AND WESTHAMPTON BEACH VILLAGES BOUNDED BY (N) TIANA BAY, SHINNECOCK BAY; (E) SOUTHAMPTON VILLAGE LIMITS; (S) ATLANTIC OCEAN; (W) WESTHAMPTON BEACH VILLAGE LIMITS; ALSO WARNER ISLAND, ISLANDS. NY ED 52-180: SOUTHAMPTON TOWN, QUOGUE COAST GUARD STATION. NY ED 52-181: SOUTHAMPTON TOWN, TIANA COAST GUARD STATION. NY ED 52-182: SOUTHAMPTON TOWN OUTSIDE QUOGUE AND WESTHAMPTON BEACH VILLAGES BOUNDED BY RIVERHEAD RD, LONG ISLAND RAIL ROAD; TIANA BAY, CREEK, QUANTUCK BAY; WESTHAMPTON BEACH V
-  - Match: score 9 via name:tiana, kw:beach+ocean+coast+bay, w>=1000, landscape
 
 ## Tobay Beach
 
@@ -1033,14 +813,6 @@
   - 1600×1200px, 729 KB, shot 2992 m from the spot
   - Description: This is a sunny spectacular view of Gilgo Beach at West Babylon , Long Beach on Long Island , New York state, USA. This photo of Gilgo Beach on Long Island was taken in 2016 by Sebastien Rigault of Québec , Canada.
   - Match: score 7 via coastal-in-title, kw:beach+mar, geo:2992m, w>=1000, landscape
-- **`us-ny-tobay-beach-2.jpg`** ✗ **not a coastal photo** — “Tobay Beach Spray Park-2” by DanTD, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Tobay_Beach_Spray_Park-2.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: DanTD — //commons.wikimedia.org/wiki/User:DanTD
-  - Dated: 2021-11-28 13:52:38
-  - 1600×1200px, 527 KB
-  - Description: One of two images of the Tobay Beach Spray Park, a small water park on the north side of Tobay Beach on Jones Beach Island in the Town of Oyster Bay in southeastern Nassau County, New York, The park is next to the Surf Shack Restaurant, and this image includes the sign for the park.
-  - Match: score 11 via coastal-in-title, name:tobay, kw:beach+surf+bay, w>=1000, landscape
 
 ## Wainscott Beach
 
@@ -1062,12 +834,4 @@
   - 1600×1200px, 54 KB, shot 2609 m from the spot
   - Description: The beach line at Georgica beach in East Hampton on palindrome 91419
   - Match: score 7.5 via name:wainscott, kw:beach, geo:2609m, w>=1000, landscape
-- **`us-ny-wainscott-beach-3.jpg`** ✗ **not a coastal photo** — “Benches, Georgica HOA Tennis 20190914 075135” by CaptJayRuffins, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Benches,_Georgica_HOA_Tennis_20190914_075135.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: CaptJayRuffins — //commons.wikimedia.org/wiki/User:CaptJayRuffins
-  - Dated: 2019-09-14 06:53:09
-  - 1600×1200px, 104 KB, shot 4142 m from the spot
-  - Description: The bench line at Georgica beach in East Hampton on palindrome 91419
-  - Match: score 6.5 via name:wainscott, kw:beach, geo:4142m, w>=1000, landscape
 

@@ -1,6 +1,6 @@
 # US-LA — United States, Louisiana
 
-9 images across 3 spots. Licence rules and the OSM credit are in [the index](./README.md).
+6 images across 3 spots. Licence rules and the OSM credit are in [the index](./README.md).
 
 ## Grand Isle Beach
 
@@ -14,22 +14,6 @@
   - 1600×1200px, 638 KB
   - Description: Surf and Oil Rigs on Grand Isle, Louisiana, April 2023
   - Match: score 15 via coastal-in-title, name:grand+isle, kw:beach+surf+shore, w>=1000, landscape
-- **`us-la-grand-isle-beach-2.jpg`** ✗ **not a coastal photo** — August 7, Container waits near beach for oil waste (4900869519) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:August_7,_Container_waits_near_beach_for_oil_waste_(4900869519).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: USEPA Environmental-Protection-Agency — https://www.flickr.com/people/24400159@N05
-  - Dated: 2010-08-07 12:09
-  - 1600×1065px, 444 KB, shot 554 m from the spot
-  - Description: Oily waste collected on beaches and shoreline areas is bagged and placed into these containers for shipment and diposal to a regulated landfill. US EPA photo by Eric Vance. www.epa.gov/bpspill/waste.html
-  - Match: score 17 via coastal-in-title, name:grand+isle, kw:beach+shore+shoreline, geo:554m, w>=1000, landscape
-- **`us-la-grand-isle-beach-3.jpg`** ✗ **not a coastal photo** — August 7, Efforts to wash oiled sand continues (4901455090) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:August_7,_Efforts_to_wash_oiled_sand_continues_(4901455090).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: USEPA Environmental-Protection-Agency — https://www.flickr.com/people/24400159@N05
-  - Dated: 2010-08-07 12:06
-  - 1600×1065px, 658 KB, shot 541 m from the spot
-  - Description: Efforts have been underway to collect oil-contaminated sand to put through a series of hot water washes. Oily wash water is collected and disposed of, and clean sand is returned to the beach. This innovative process prevents tons of sand from being disposed of into landfills, reduces the depletion of sand from the beaches, and helps to eliminate oil from the beaches of the Gulf Coast. US EPA photo by Eric Vance.
-  - Match: score 17 via coastal-in-title, name:grand+isle, kw:beach+coast+sand, geo:541m, w>=1000, landscape
 
 ## Holly Beach
 
@@ -78,14 +62,6 @@
   - Author: Alina Zienowicz Ala z — https://pl.wikipedia.org/wiki/User:Ala_z
   - Dated: 2004
   - 1600×1200px, 494 KB
-  - Description: Olimpic Beach, Greece
-  - Match: score 8.5 via coastal-in-title, name:olimpic, kw:beach, w>=1000, landscape
-- **`us-la-olimpic-beach-3.jpg`** ✗ **not a coastal photo** — “Olympic Beach, Greece 01” by Alina Zienowicz Ala z, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Olympic_Beach,_Greece_01.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Alina Zienowicz Ala z — https://pl.wikipedia.org/wiki/User:Ala_z
-  - Dated: 2004
-  - 1600×1200px, 479 KB
   - Description: Olimpic Beach, Greece
   - Match: score 8.5 via coastal-in-title, name:olimpic, kw:beach, w>=1000, landscape
 

@@ -1,6 +1,6 @@
 # US-WA — United States, Washington
 
-62 images across 22 spots. Licence rules and the OSM credit are in [the index](./README.md).
+49 images across 21 spots. Licence rules and the OSM credit are in [the index](./README.md).
 
 ## Beach 3
 
@@ -22,14 +22,6 @@
   - 1600×1067px, 649 KB, shot 1097 m from the spot
   - Description: Olympic NP Coastline
   - Match: score 9 via coastal-in-title, kw:beach+coast+coastline, geo:1097m, w>=1000, landscape
-- **`us-wa-beach-3-3.jpg`** ✗ **not a coastal photo** — “Washington Coastline (5768933029) (2)” by John Murphy, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Washington_Coastline_(5768933029)_(2).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: John Murphy — https://www.flickr.com/people/14727154@N03
-  - Dated: 2011-04-22 17:51
-  - 1600×1067px, 833 KB, shot 1140 m from the spot
-  - Description: Coastline of Washington state in the United States. According to the coordinates, this at Beach 4 in the Kalaloch area. [1]
-  - Match: score 9 via coastal-in-title, kw:beach+coast+coastline, geo:1140m, w>=1000, landscape
 
 ## Benson Beach
 
@@ -71,22 +63,6 @@
   - 1600×1200px, 352 KB, shot 1822 m from the spot
   - Description: Ocean Shores, Washington Sunset on beach.
   - Match: score 8 via coastal-in-title, kw:beach+ocean+shore+sunset, geo:1822m, w>=1000, landscape
-- **`us-wa-chance-a-la-mer-beach-2.jpg`** ✗ **not a coastal photo** — Birds By The Bay (Unsplash) — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Birds_By_The_Bay_(Unsplash).jpg
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: Kyle Chicoine kylechicoine — https://unsplash.com/@kylechicoine
-  - Dated: 8 September 2015, 14:10 (according to Ex
-  - 1600×1200px, 187 KB, shot 411 m from the spot
-  - Description: Ocean Shores, United States
-  - Match: score 9 via coastal-in-title, kw:ocean+shore+bay, geo:411m, w>=1000, landscape
-- **`us-wa-chance-a-la-mer-beach-3.jpg`** ✗ **not a coastal photo** — “US-WA-OceanShores-2013.01.01-033” by Brylie Oxley, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:US-WA-OceanShores-2013.01.01-033.JPG
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Brylie Oxley — //commons.wikimedia.org/wiki/User:Brylie
-  - Dated: 2013-01-01 15:09:29
-  - 1600×1200px, 148 KB, shot 1837 m from the spot
-  - Description: Ocean Shores, Washington Sunset on surf.
-  - Match: score 8 via coastal-in-title, kw:beach+surf+ocean+shore, geo:1837m, w>=1000, landscape
 
 ## Copalis Beach
 
@@ -108,14 +84,6 @@
   - 1600×685px, 42 KB
   - Description: Copalis, Wash., plant of the Sea Beach Packing Works : Leading Razor Clam Canneries of the Pacific Coast Subject: Sea Beach Packing Works (Copalis, Washington), Canneries--Washington (State), Clam fisheries--Washington (State) Geographic Subject: United States--Washington (State)--Copalis Tag: Commercial Fisheries
   - Match: score 11 via coastal-in-title, name:copalis, kw:beach+sea+coast, w>=1000, landscape
-- **`us-wa-copalis-beach-3.jpg`** ✗ **not a coastal photo** — “Griffiths-Priday State Park” by ECTran71, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Griffiths-Priday_State_Park.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: ECTran71 — //commons.wikimedia.org/wiki/User:ECTran71
-  - Dated: 2020-02-22 15:58:38
-  - 1600×1200px, 671 KB, shot 1385 m from the spot
-  - Description: Grass-covered dunes in Griffiths-Priday State Park in the U.S. state of Washington. The Pacific Ocean is visible at the horizon in the distance. The tiny rock in the ocean barely visible in the center is Copalis Rock.
-  - Match: score 10 via name:copalis, kw:ocean+coast+coastal+dune, geo:1385m, w>=1000, landscape
 
 ## First Beach
 
@@ -166,14 +134,6 @@
   - 1600×1068px, 387 KB, shot 446 m from the spot
   - Description: Full moon had just risen. D800E, 16mm, ISO 1600, 20 sec. f/6.3. It was a couple of hours after sunset, so the northwestern sky (far right) still has some light. Twilight seems to go on forever up there. Better on black. (Press the "L" key.)
   - Match: score 9 via coastal-in-title, kw:beach+bay+sunset, geo:446m, w>=1000, landscape
-- **`us-wa-hobuck-beach-3.jpg`** ✗ **not a coastal photo** — “Makah Nation (7773528258)” by John Fowler from Placitas, NM, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Makah_Nation_(7773528258).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: John Fowler from Placitas, NM, USA — https://www.flickr.com/people/53986933@N00
-  - Dated: 2012-08-04 11:45
-  - 1600×1185px, 683 KB, shot 6206 m from the spot
-  - Description: The Makah Indian Reservation occupies the northwest corner of Washington's Olympic Peninsula, including the town of Neah Bay and Cape Flattery. These statues and the cultural center and museum are in Neah Bay. I spent two nights at the Hobuck Beach Resort and Campground, on the west side by Makah Bay.
-  - Match: score 8 via name:hobuck, kw:beach+bay, geo:6206m, w>=1000, landscape
 
 ## Kalaloch Beach 1
 
@@ -275,35 +235,6 @@
   - Description: A clam gun is basically a PVC tube with one empty end (that goes in the sand) and one end (with the handle) that's covered except for a hole. Using it is more of a plunging motion than digging. When you see a clam's breathing hole in the sand, you quickly shove the clam gun into the sand (trying not to crunch the clam), then cover the hole with your thumb and pull the clam gun out. You'll have pulled up a core sample of the beach, hopefully including a clam.
   - Match: score 16.5 via coastal-in-title, name:ocean+city, kw:beach+ocean+sand+cove, geo:937m, w>=1000
 
-## Ocean Shores Beach
-
-`osm:relation/7254414` · 46.9605865, -124.1749788 · beach type: **sandy** (OpenStreetMap surface=sand)
-
-- **`us-wa-ocean-shores-beach-1.jpg`** ✗ **not a coastal photo** — “Ocean Shores, WA, USA - panoramio (3)” by Kira Picabo, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Ocean_Shores,_WA,_USA_-_panoramio_(3).jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: Kira Picabo — https://web.archive.org/web/20161029164155/http://www.panoramio.com/user/7165758?with_photo_id=94933823
-  - Dated: Taken on 17 August 2013
-  - 1600×1200px, 989 KB, shot 1978 m from the spot
-  - Description: Ocean Shores, WA, USA
-  - Match: score 15 via coastal-in-title, name:ocean+shores, kw:ocean+shore, geo:1978m, w>=1000, landscape
-- **`us-wa-ocean-shores-beach-2.jpg`** ✗ **not a coastal photo** — “Ocean Shores, WA, USA - panoramio (5)” by Kira Picabo, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Ocean_Shores,_WA,_USA_-_panoramio_(5).jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: Kira Picabo — https://web.archive.org/web/20161029051058/http://www.panoramio.com/user/7165758?with_photo_id=94934905
-  - Dated: Taken on 17 August 2013
-  - 1600×1200px, 749 KB, shot 1953 m from the spot
-  - Description: Ocean Shores, WA, USA
-  - Match: score 15 via coastal-in-title, name:ocean+shores, kw:ocean+shore, geo:1953m, w>=1000, landscape
-- **`us-wa-ocean-shores-beach-3.jpg`** ✗ **not a coastal photo** — “Ocean Shores, WA, USA - panoramio (6)” by Kira Picabo, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Ocean_Shores,_WA,_USA_-_panoramio_(6).jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: Kira Picabo — https://web.archive.org/web/20161029051154/http://www.panoramio.com/user/7165758?with_photo_id=94934909
-  - Dated: Taken on 17 August 2013
-  - 1600×1200px, 1045 KB, shot 1950 m from the spot
-  - Description: Ocean Shores, WA, USA
-  - Match: score 15 via coastal-in-title, name:ocean+shores, kw:ocean+shore, geo:1950m, w>=1000, landscape
-
 ## Rialto Beach
 
 `osm:relation/3326596` · 47.9290009, -124.6440934 · beach type: **sandy** (OpenStreetMap surface=sand) · lifeguard: no · site: https://www.nps.gov/olym/planyourvisit/rialto-beach.htm
@@ -353,14 +284,6 @@
   - 1600×900px, 404 KB, shot 994 m from the spot
   - Description: Another view of Ruby Beach, Olympic National Park, Washington, USA. Ruby Beach has beautiful rocks and an enormous amount of driftwood. The sand on the beach contains ruby-like crystals, hence the name.
   - Match: score 13 via coastal-in-title, name:ruby, kw:beach+sea+sand+rocks, geo:994m, w>=1000, landscape
-- **`us-wa-ruby-beach-3.jpg`** ✗ **not a coastal photo** — “99 Sea Stacks—Ruby Beach 16-9 ratio, 7200x4050 pixels” by Washington State Department of Natural Resources, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:99_Sea_Stacks%E2%80%94Ruby_Beach_16-9_ratio,_7200x4050_pixels.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Washington State Department of Natural Resources
-  - Dated: 2025-11-12 13:59:11
-  - 1600×900px, 1220 KB, shot 714 m from the spot
-  - Description: Sea stacks along the Olympic coastline (like Abbey Island and smaller coastal columns shown in this image) record former shorelines that were slowly eroded by the ocean. These sea stacks are made of the Hoh assemblage, a sequence of volcanic rocks and debris flow deposits laid down in the Miocene when the area was under the ocean. These sediments were buried, lithified, and later compressed and uplifted by tectonic forces. Image by Daniel E. Coe, Washington Geological Survey Other versions of this image: High-resolution 16:9 ratio image with text High-resolution 16:9 ratio image without text H
-  - Match: score 13 via coastal-in-title, name:ruby, kw:beach+ocean+sea+coast, geo:714m, w>=1000, landscape
 
 ## Second Beach
 
@@ -403,22 +326,6 @@
   - 1600×1084px, 354 KB
   - Description: Looking for a place to adventure? Check out your national marine sanctuaries! Here, backpackers walk along Shi Shi Beach in Olympic National Park, overlooking Olympic Coast National Marine Sanctuary. Learn about recreational opportunities in sanctuaries at <a href=" https://sanctuaries.noaa.gov/visit/ " rel="nofollow">sanctuaries.noaa.gov/visit/</a>. (Photo: Matt McIntosh/NOAA)
   - Match: score 15 via coastal-in-title, name:shi+shi, kw:beach+coast+mar, w>=1000, landscape
-- **`us-wa-shi-shi-beach-2.jpg`** ✗ **not a coastal photo** — Seaweed Staghorn tidepool Shi Shi beach NPS Photo (16705052183) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Seaweed_Staghorn_tidepool_Shi_Shi_beach_NPS_Photo_(16705052183).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Olympic National Park — https://www.flickr.com/people/131856925@N02
-  - Dated: 2015-04-30 13:53
-  - 1600×1200px, 897 KB, shot 522 m from the spot
-  - Description: OLYMPUS DIGITAL CAMERA
-  - Match: score 17 via coastal-in-title, name:shi+shi, kw:beach+sea+tide, geo:522m, w>=1000, landscape
-- **`us-wa-shi-shi-beach-3.jpg`** ✗ **not a coastal photo** — Shi Shi beach Goose neck Barnacles NPS Photo (17134879710) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Shi_Shi_beach_Goose_neck_Barnacles_NPS_Photo_(17134879710).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Olympic National Park — https://www.flickr.com/people/131856925@N02
-  - Dated: 2015-04-30 08:05
-  - 1600×1200px, 610 KB, shot 522 m from the spot
-  - Description: OLYMPUS DIGITAL CAMERA
-  - Match: score 14.5 via coastal-in-title, name:shi+shi, kw:beach, geo:522m, w>=1000, landscape
 
 ## Sooes Beach
 
@@ -496,14 +403,6 @@
   - Author: Ron Clausen (Commons user)
   - 1600×1874px, 552 KB
   - Match: score 9.5 via coastal-in-title, name:third, kw:beach+coast, w>=1000
-- **`us-wa-third-beach-3.jpg`** ✗ **not a coastal photo** — “West Palm Beach (3119349206)” by Tory from washington, dc, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:West_Palm_Beach_(3119349206).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Tory from washington, dc — https://www.flickr.com/people/65004407@N00
-  - Dated: Taken on 31 October 2008, 14:37
-  - 1600×1200px, 494 KB
-  - Description: DSC08758
-  - Match: score 10 via coastal-in-title, name:third, kw:beach+cove, w>=1000, landscape
 
 ## Waikiki Beach
 
@@ -554,14 +453,6 @@
   - 1600×1200px, 869 KB, shot 193 m from the spot
   - Description: Washaway Beach scene 2
   - Match: score 11.5 via coastal-in-title, name:washaway, kw:beach, geo:193m, w>=1000, landscape
-- **`us-wa-washaway-beach-3.jpg`** ✗ **not a coastal photo** — “Washaway Beach scene 3 - panoramio” by zak11527, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Washaway_Beach_scene_3_-_panoramio.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: zak11527 — https://web.archive.org/web/20161017175111/http://www.panoramio.com/user/691355?with_photo_id=48525803
-  - Dated: Taken on 20 February 2011
-  - 1600×1200px, 676 KB, shot 220 m from the spot
-  - Description: Washaway Beach scene 3
-  - Match: score 11.5 via coastal-in-title, name:washaway, kw:beach, geo:220m, w>=1000, landscape
 
 ## Westport Beach
 
