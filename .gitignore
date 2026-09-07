@@ -5,3 +5,6 @@ node_modules
 
 CLAUDE.md
 TODO.md
+
+# 2.5GB of harvested spot photos; rebuild with `npm run spots:images`
+backend/data/spot-images/
