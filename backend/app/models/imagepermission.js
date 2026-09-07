@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {underscored: true, tableName: 'image_permissions'});
   ImagePermission.associate = function(models) {
     ImagePermission.belongsTo(models.Manufacturer);
-    ImagePermission.belongsTo(models.BoardSource, {foreignKey: 'source_id'});
+    ImagePermission.belongsTo(models.ContentSource, {foreignKey: 'source_id'});
     ImagePermission.hasMany(models.BoardImage, {foreignKey: 'permission_id'});
   };
   return ImagePermission;

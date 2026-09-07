@@ -23,7 +23,7 @@ class BoardImageService extends BaseService {
     {
         const rows = await BaseModel.scope('rights').findAll({
             where: { board_id: boardId },
-            include: [{ model: db.ImageLicense }, { model: db.BoardSource }],
+            include: [{ model: db.ImageLicense }, { model: db.ContentSource }],
             order: [['is_default', 'DESC'], ['position', 'ASC'], ['id', 'ASC']],
         });
 

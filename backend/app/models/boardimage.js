@@ -70,7 +70,7 @@ module.exports = (sequelize, DataTypes) => {
 
   BoardImage.associate = function(models) {
     BoardImage.belongsTo(models.Board);
-    BoardImage.belongsTo(models.BoardSource, {foreignKey: 'source_id'});
+    BoardImage.belongsTo(models.ContentSource, {foreignKey: 'source_id'});
     BoardImage.belongsTo(models.ImageLicense, {foreignKey: 'license_id'});
     BoardImage.belongsTo(models.ImagePermission, {foreignKey: 'permission_id'});
   };

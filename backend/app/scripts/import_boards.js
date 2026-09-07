@@ -53,7 +53,7 @@ const {
 async function lookups() {
   const [licenses, sources] = await Promise.all([
     db.ImageLicense.findAll({ raw: true }),
-    db.BoardSource.findAll({ raw: true }),
+    db.ContentSource.findAll({ raw: true }),
   ]);
   return {
     licenseByCode: new Map(licenses.map((l) => [l.code, l])),
@@ -264,7 +264,7 @@ async function main() {
 
   const refs = { ...(await lookups()), makerCache: new Map(), shaperCache: new Map() };
   if (refs.sourceByKey.size === 0) {
-    throw new Error('board_sources is empty - run the seeders before importing');
+    throw new Error('content_sources is empty - run the seeders before importing');
   }
 
   const stats = {

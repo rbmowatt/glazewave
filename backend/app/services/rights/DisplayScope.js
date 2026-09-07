@@ -74,28 +74,39 @@ async function applyTo(image, models) {
 // A bulk insert bypasses instance hooks entirely, which is exactly how a
 // harvest writes. Run this on a schedule and treat any row it returns as a bug
 // in whatever wrote it, not as something to quietly repair.
-const RECONCILE_SQL = `
-  SELECT bi.id,
-         bi.display_scope AS stored,
+//
+// Parameterized by table because board_images and spot_images derive
+// display_scope from the same three inputs. The table name is interpolated, so
+// it comes from RECONCILABLE and never from a caller.
+const RECONCILABLE = ['board_images', 'spot_images'];
+
+function reconcileSql(table) {
+  if (!RECONCILABLE.includes(table)) {
+    throw new Error(`reconcile: ${table} is not a rights-bearing table`);
+  }
+  return `
+  SELECT i.id,
+         i.display_scope AS stored,
          CASE
            WHEN l.id IS NULL OR l.allows_public_display = 0 THEN 'blocked'
            WHEN l.needs_grant = 1
                 AND (p.id IS NULL
                      OR (p.expires_at IS NOT NULL AND p.expires_at < CURDATE())
-                     OR bi.rights_verified_at IS NULL
-                     OR bi.rights_verified_at < DATE_SUB(NOW(), INTERVAL ${GRANT_MAX_AGE_DAYS} DAY))
+                     OR i.rights_verified_at IS NULL
+                     OR i.rights_verified_at < DATE_SUB(NOW(), INTERVAL ${GRANT_MAX_AGE_DAYS} DAY))
                 THEN 'internal'
            WHEN l.requires_attribution = 1 THEN 'attributed'
            ELSE 'public'
          END AS expected
-    FROM board_images bi
-    LEFT JOIN image_licenses l ON l.id = bi.license_id
-    LEFT JOIN image_permissions p ON p.id = bi.permission_id
+    FROM ${table} i
+    LEFT JOIN image_licenses l ON l.id = i.license_id
+    LEFT JOIN image_permissions p ON p.id = i.permission_id
    HAVING stored <> expected
 `;
+}
 
-async function reconcile(sequelize) {
-  const [rows] = await sequelize.query(RECONCILE_SQL);
+async function reconcile(sequelize, table = 'board_images') {
+  const [rows] = await sequelize.query(reconcileSql(table));
   return rows;
 }
 
@@ -137,7 +148,7 @@ function publicImage(image, s3PublicRoot) {
 
 function renderCredit(license, image) {
   if (image.attribution_text) return image.attribution_text;
-  const source = image.BoardSource || null;
+  const source = image.ContentSource || null;
   const template = license.attribution_template || '{author}, {license}';
   return template
     .replace('{author}', image.author || (source && source.name) || 'Unknown')
@@ -156,5 +167,6 @@ module.exports = {
   deriveStorage,
   applyTo,
   reconcile,
-  RECONCILE_SQL,
+  reconcileSql,
+  RECONCILABLE,
 };

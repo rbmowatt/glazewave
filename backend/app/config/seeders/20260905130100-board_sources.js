@@ -24,7 +24,7 @@ module.exports = {
     );
     const byCode = new Map(licenses.map((l) => [l.code, l.id]));
 
-    return queryInterface.bulkInsert('board_sources', sources.map((row) => ({
+    return queryInterface.bulkInsert('content_sources', sources.map((row) => ({
       source_key: row[0],
       name: row[1],
       url: row[2],
@@ -37,6 +37,6 @@ module.exports = {
   },
 
   down: (queryInterface) => {
-    return queryInterface.bulkDelete('board_sources', null, {});
+    return queryInterface.bulkDelete('content_sources', null, {});
   },
 };

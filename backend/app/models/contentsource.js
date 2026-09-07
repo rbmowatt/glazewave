@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  const BoardSource = sequelize.define('BoardSource', {
+  const ContentSource = sequelize.define('ContentSource', {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -16,11 +16,12 @@ module.exports = (sequelize, DataTypes) => {
     redistributable: DataTypes.BOOLEAN,
     default_license_id: DataTypes.INTEGER,
     notes: DataTypes.TEXT,
-  }, {underscored: true, tableName: 'board_sources'});
-  BoardSource.associate = function(models) {
-    BoardSource.belongsTo(models.ImageLicense, {as: 'defaultLicense', foreignKey: 'default_license_id'});
-    BoardSource.hasMany(models.BoardModelSource, {foreignKey: 'source_id'});
-    BoardSource.hasMany(models.BoardImage, {foreignKey: 'source_id'});
+  }, {underscored: true, tableName: 'content_sources'});
+  ContentSource.associate = function(models) {
+    ContentSource.belongsTo(models.ImageLicense, {as: 'defaultLicense', foreignKey: 'default_license_id'});
+    ContentSource.hasMany(models.BoardModelSource, {foreignKey: 'source_id'});
+    ContentSource.hasMany(models.BoardImage, {foreignKey: 'source_id'});
+    ContentSource.hasMany(models.SpotImage, {foreignKey: 'source_id'});
   };
-  return BoardSource;
+  return ContentSource;
 };

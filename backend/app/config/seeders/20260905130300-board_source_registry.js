@@ -6,7 +6,7 @@
 const now = new Date();
 
 module.exports = {
-  up: (queryInterface) => queryInterface.bulkInsert('board_sources', [{
+  up: (queryInterface) => queryInterface.bulkInsert('content_sources', [{
     source_key: 'registry',
     name: 'Historical model registry (compiled)',
     url: null,
@@ -17,5 +17,5 @@ module.exports = {
     updated_at: now,
   }], {}),
 
-  down: (queryInterface) => queryInterface.bulkDelete('board_sources', { source_key: 'registry' }, {}),
+  down: (queryInterface) => queryInterface.bulkDelete('content_sources', { source_key: 'registry' }, {}),
 };
