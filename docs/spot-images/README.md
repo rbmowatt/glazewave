@@ -1,6 +1,6 @@
 # Glazewave spot imagery — attribution and provenance
 
-Generated 2026-09-07T20:15:38.297Z by `backend/app/scripts/harvest_spot_images.js`.
+Generated 2026-09-07T23:06:29.975Z by `backend/app/scripts/harvest_spot_images.js`.
 
 **4039 images across 1427 of 1611 spots.** Files live under `backend/data/spot-images/<region>/`, named `<region>-<spot-slug>-<rank>.<ext>`, ranked 1 = best match. The machine-readable version of everything here is `backend/data/spot_images.json`; `backend/data/spot_images.csv` is the same thing flattened one row per image.
 
@@ -39,6 +39,18 @@ Two separate obligations, and they are not the same one.
 | CC BY 3.0 pl | 3 | required | no |
 | CC BY 3.0 cl | 1 | required | no |
 | CC BY-SA 3.0 de | 1 | required | yes |
+
+## What the images are actually pictures of
+
+Every distinct file was reviewed by eye. Relevance scoring reads filenames and Commons categories, and text cannot tell a photograph of a beach from a photograph of a lizard standing on one — so this column, not the score, is what says whether an image is usable.
+
+| Subject | All images | As a spot's rank 1 | Meaning |
+| --- | ---: | ---: | --- |
+| coastal | 2463 | 1188 | the coast is the subject — usable |
+| context | 699 | 134 | coastal setting, other subject — judgement |
+| not | 877 | 105 | no coastal subject — do not publish |
+
+Images are ordered by subject first and relevance score second, so rank 1 is the best available photo of the coast for that spot. A spot whose rank 1 is `not` has no coastal image among its candidates at all.
 
 ## Coverage by region
 

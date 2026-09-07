@@ -114,7 +114,7 @@
 
 `osm:way/250042450` · 23.1968363, -106.427268
 
-- **`mx-sin-playa-olas-altas-1.jpg`** — “Playa Olas Altas (26338612793)” by David Stanley from Nanaimo, Canada, Wikimedia Commons, CC BY 2.0
+- **`mx-sin-playa-olas-altas-1.jpg`** ⚠︎ *context, not the coast itself* — “Playa Olas Altas (26338612793)” by David Stanley from Nanaimo, Canada, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Playa_Olas_Altas_(26338612793).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: David Stanley from Nanaimo, Canada — https://www.flickr.com/people/79721788@N00
@@ -122,7 +122,7 @@
   - 1600×1200px, 146 KB, shot 83 m from the spot
   - Description: A statue of Mexican composer Fernando Valadés faces Playa Olas Altas in Mazatlan, Sinaloa, Mexico.
   - Match: score 15.5 via coastal-in-title, name:olas+altas, kw:playa, geo:83m, w>=1000, landscape
-- **`mx-sin-playa-olas-altas-2.jpg`** — “Olas Altas desde el Malecón - panoramio” by panza.rayada, Wikimedia Commons, CC BY-SA 3.0
+- **`mx-sin-playa-olas-altas-2.jpg`** ✗ **not a coastal photo** — “Olas Altas desde el Malecón - panoramio” by panza.rayada, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Olas_Altas_desde_el_Malec%C3%B3n_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: panza.rayada — https://web.archive.org/web/20161027002510/http://www.panoramio.com/user/44886?with_photo_id=75870205
@@ -130,7 +130,7 @@
   - 1600×1067px, 450 KB, shot 179 m from the spot
   - Description: Olas Altas desde el Malecón
   - Match: score 13.5 via name:olas+altas, kw:beach, geo:179m, w>=1000, landscape
-- **`mx-sin-playa-olas-altas-3.jpg`** — “Monument to Pedro Infante (26852174842)” by David Stanley from Nanaimo, Canada, Wikimedia Commons, CC BY 2.0
+- **`mx-sin-playa-olas-altas-3.jpg`** ✗ **not a coastal photo** — “Monument to Pedro Infante (26852174842)” by David Stanley from Nanaimo, Canada, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Monument_to_Pedro_Infante_(26852174842).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: David Stanley from Nanaimo, Canada — https://www.flickr.com/people/79721788@N00
@@ -217,7 +217,7 @@
   - 1600×1200px, 572 KB, shot 516 m from the spot
   - Description: Mazatlan, Sinaloa. Playa norte
   - Match: score 8 via coastal-in-title, kw:beach+playa, geo:516m, w>=1000, landscape
-- **`mx-sin-punta-cerritos-3.jpg`** — “Mazatlan, Sinaloa. Playa norte - panoramio” by Lynx Burgos, Wikimedia Commons, CC BY-SA 3.0
+- **`mx-sin-punta-cerritos-3.jpg`** ⚠︎ *context, not the coast itself* — “Mazatlan, Sinaloa. Playa norte - panoramio” by Lynx Burgos, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Mazatlan,_Sinaloa._Playa_norte_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Lynx Burgos — https://web.archive.org/web/20161101170405/http://www.panoramio.com/user/5807932?with_photo_id=119473882

@@ -22,7 +22,7 @@
   - 1600×1070px, 419 KB, shot 377198 m from the spot
   - Description: Part where the Pacific Ocean and Gulf of California meet, viewed from Cerritos Beach, located in Mazatlan, Sinaloa, Mexico.
   - Match: score 11 via coastal-in-title, name:cerritos, kw:beach+ocean+playa, geo:377198m, w>=1000, landscape
-- **`mx-bcs-cerritos-beach-3.jpg`** — “Boat-Shaped House - Cerritos Beach - Near Todos Santos - Baja California Sur - Mexico (23749001246)” by Adam Jones from Kelowna, BC, Canada, Wikimedia Commons, CC BY-SA 2.0
+- **`mx-bcs-cerritos-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Boat-Shaped House - Cerritos Beach - Near Todos Santos - Baja California Sur - Mexico (23749001246)” by Adam Jones from Kelowna, BC, Canada, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Boat-Shaped_House_-_Cerritos_Beach_-_Near_Todos_Santos_-_Baja_California_Sur_-_Mexico_(23749001246).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Adam Jones from Kelowna, BC, Canada — https://www.flickr.com/people/41000732@N04
@@ -51,7 +51,7 @@
   - 1600×1070px, 419 KB, shot 378109 m from the spot
   - Description: Part where the Pacific Ocean and Gulf of California meet, viewed from Cerritos Beach, located in Mazatlan, Sinaloa, Mexico.
   - Match: score 11 via coastal-in-title, name:cerritos, kw:beach+ocean+playa, geo:378109m, w>=1000, landscape
-- **`mx-bcs-cerritos-beach-035104-3.jpg`** — “Boat-Shaped House - Cerritos Beach - Near Todos Santos - Baja California Sur - Mexico (23749001246)” by Adam Jones from Kelowna, BC, Canada, Wikimedia Commons, CC BY-SA 2.0
+- **`mx-bcs-cerritos-beach-035104-3.jpg`** ⚠︎ *context, not the coast itself* — “Boat-Shaped House - Cerritos Beach - Near Todos Santos - Baja California Sur - Mexico (23749001246)” by Adam Jones from Kelowna, BC, Canada, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Boat-Shaped_House_-_Cerritos_Beach_-_Near_Todos_Santos_-_Baja_California_Sur_-_Mexico_(23749001246).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Adam Jones from Kelowna, BC, Canada — https://www.flickr.com/people/41000732@N04
@@ -164,15 +164,7 @@
 
 `osm:relation/13715891` · 22.8984016, -109.8649109 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`mx-bcs-playa-cabo-bello-1.jpg`** — “Beach Front RIU Palace (6655209615) (4)” by Clemens Vasters from Viersen, Germany, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Beach_Front_RIU_Palace_(6655209615)_(4).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Clemens Vasters from Viersen, Germany — https://www.flickr.com/people/7489441@N06
-  - Dated: 2012-01-02 13:46
-  - 1600×1067px, 649 KB, shot 2669 m from the spot
-  - Description: Beach Front RIU Palace
-  - Match: score 11 via coastal-in-title, name:cabo, kw:beach+playa, geo:2669m, w>=1000, landscape
-- **`mx-bcs-playa-cabo-bello-2.jpg`** — “View of El Arco and the Bay at Cabo San Lucas - panoramio” by Shane Smith, Wikimedia Commons, CC BY-SA 3.0
+- **`mx-bcs-playa-cabo-bello-1.jpg`** — “View of El Arco and the Bay at Cabo San Lucas - panoramio” by Shane Smith, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:View_of_El_Arco_and_the_Bay_at_Cabo_San_Lucas_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Shane Smith — https://web.archive.org/web/20161031190458/http://www.panoramio.com/user/7799482?with_photo_id=128383564
@@ -180,7 +172,15 @@
   - 1600×1067px, 609 KB, shot 865 m from the spot
   - Description: View of El Arco and the Bay at Cabo San Lucas
   - Match: score 10.5 via coastal-in-title, name:cabo, kw:bay, geo:865m, w>=1000, landscape
-- **`mx-bcs-playa-cabo-bello-3.jpg`** — “Take a seat (6655103999) (6)” by Clemens Vasters from Viersen, Germany, Wikimedia Commons, CC BY 2.0
+- **`mx-bcs-playa-cabo-bello-2.jpg`** ⚠︎ *context, not the coast itself* — “Beach Front RIU Palace (6655209615) (4)” by Clemens Vasters from Viersen, Germany, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Beach_Front_RIU_Palace_(6655209615)_(4).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Clemens Vasters from Viersen, Germany — https://www.flickr.com/people/7489441@N06
+  - Dated: 2012-01-02 13:46
+  - 1600×1067px, 649 KB, shot 2669 m from the spot
+  - Description: Beach Front RIU Palace
+  - Match: score 11 via coastal-in-title, name:cabo, kw:beach+playa, geo:2669m, w>=1000, landscape
+- **`mx-bcs-playa-cabo-bello-3.jpg`** ✗ **not a coastal photo** — “Take a seat (6655103999) (6)” by Clemens Vasters from Viersen, Germany, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Take_a_seat_(6655103999)_(6).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Clemens Vasters from Viersen, Germany — https://www.flickr.com/people/7489441@N06
@@ -201,7 +201,7 @@
   - 1600×1064px, 572 KB, shot 3926 m from the spot
   - Description: San Jose Estuary and the sand bar that separates it from the open ocean in San Jose del Cabo, Baja California Sur
   - Match: score 12 via name:cabo+este, kw:ocean+sand, geo:3926m, w>=1000, landscape
-- **`mx-bcs-playa-cabo-del-este-2.jpg`** — “EsteroSanJose07” by Thelmadatter, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-bcs-playa-cabo-del-este-2.jpg`** ✗ **not a coastal photo** — “EsteroSanJose07” by Thelmadatter, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:EsteroSanJose07.JPG
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Thelmadatter — //commons.wikimedia.org/wiki/User:Thelmadatter
@@ -209,7 +209,7 @@
   - 1600×1064px, 513 KB, shot 4087 m from the spot
   - Description: View of the San Jose Estuary from the sand bar separating it from the sea, in San Jose del Cabo, Baja California Sur
   - Match: score 12 via name:cabo+este, kw:sea+sand, geo:4087m, w>=1000, landscape
-- **`mx-bcs-playa-cabo-del-este-3.jpg`** — “EsteroSanJose09” by Thelmadatter, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-bcs-playa-cabo-del-este-3.jpg`** ✗ **not a coastal photo** — “EsteroSanJose09” by Thelmadatter, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:EsteroSanJose09.JPG
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Thelmadatter — //commons.wikimedia.org/wiki/User:Thelmadatter
@@ -230,7 +230,7 @@
   - 1600×1200px, 1287 KB, shot 2895 m from the spot
   - Description: Playa Santa Maria, Baja California
   - Match: score 12 via coastal-in-title, name:cabo, kw:beach+playa+mar, geo:2895m, w>=1000, landscape
-- **`mx-bcs-playa-cabo-real-2.jpg`** — “Los cabos sunrise - Flickr - lecates” by lecates, Wikimedia Commons, CC BY-SA 2.0
+- **`mx-bcs-playa-cabo-real-2.jpg`** ⚠︎ *context, not the coast itself* — “Los cabos sunrise - Flickr - lecates” by lecates, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Los_cabos_sunrise_-_Flickr_-_lecates.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: lecates — https://www.flickr.com/people/23688516@N00
@@ -396,15 +396,7 @@
   - 1600×1200px, 723 KB
   - Description: San Juan del Sur es una ciudad y puerto de Nicaragua situado sobre la costa del Pacífico en el meridional departamento de Rivas. Es uno de los destinos turísticos más importantes de este país centroamericano gracias a la frescura y serenidad de las aguas de su bahía, así como por las varias playas cercanas aptas para el surf.
   - Match: score 10 via coastal-in-title, name:puerto, kw:surf+playa, w>=1000, landscape
-- **`mx-bcs-playa-del-puerto-2.jpg`** — “La vida del niño pescador en su grandioso mundo natural” by Marcos j. urquia aure, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:La_vida_del_ni%C3%B1o_pescador_en_su_grandioso_mundo_natural.JPG
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Marcos j. urquia aure — //commons.wikimedia.org/w/index.php?title=User:Marcos_j._urquia_aure&amp;action=edit&amp;redlink=1
-  - Dated: 2012-12-20 10:05:17
-  - 1600×1200px, 756 KB
-  - Description: esta foto la tome en puerto maya estado aragua, me centre en los niños que van caminando luego de entretenerse jugando en la playa con cajas de anime imitando tablas de surf. se observa todo lo que rodea su infancia, con su principal actividad economica que es la pesca.
-  - Match: score 9 via name:puerto, kw:beach+surf+playa, w>=1000, landscape
-- **`mx-bcs-playa-del-puerto-3.jpg`** — “El paraíso” by ChavadorPaz, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-bcs-playa-del-puerto-2.jpg`** — “El paraíso” by ChavadorPaz, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:El_para%C3%ADso.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: ChavadorPaz — //commons.wikimedia.org/w/index.php?title=User:ChavadorPaz&amp;action=edit&amp;redlink=1
@@ -412,6 +404,14 @@
   - 1600×1200px, 428 KB
   - Description: La playa Zicatela ubicada al oriente de Puerto Escondido, Oaxaca, la playa es famosa por la práctica del surfing ya que año con año se realizan torneos nacionales e internacionales.
   - Match: score 9 via name:puerto, kw:surf+surfing+playa, w>=1000, landscape
+- **`mx-bcs-playa-del-puerto-3.jpg`** ⚠︎ *context, not the coast itself* — “La vida del niño pescador en su grandioso mundo natural” by Marcos j. urquia aure, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:La_vida_del_ni%C3%B1o_pescador_en_su_grandioso_mundo_natural.JPG
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Marcos j. urquia aure — //commons.wikimedia.org/w/index.php?title=User:Marcos_j._urquia_aure&amp;action=edit&amp;redlink=1
+  - Dated: 2012-12-20 10:05:17
+  - 1600×1200px, 756 KB
+  - Description: esta foto la tome en puerto maya estado aragua, me centre en los niños que van caminando luego de entretenerse jugando en la playa con cajas de anime imitando tablas de surf. se observa todo lo que rodea su infancia, con su principal actividad economica que es la pesca.
+  - Match: score 9 via name:puerto, kw:beach+surf+playa, w>=1000, landscape
 
 ## Playa el Chileno
 
@@ -438,23 +438,7 @@
 
 `osm:relation/13838462` · 22.8865982, -109.9029892 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`mx-bcs-playa-el-farito-1.jpg`** — “Cabo San Lucas beach resort” by Lisa Andres, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Cabo_San_Lucas_beach_resort.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Lisa Andres
-  - Dated: 2008-04-11 14:21:30
-  - 1600×1200px, 163 KB, shot 131 m from the spot
-  - Description: Cabos San Lucas, Baja California Sur, Mexico, 2008
-  - Match: score 13 via coastal-in-title, name:farito, kw:beach+playa, geo:131m, w>=1000, landscape
-- **`mx-bcs-playa-el-farito-2.jpg`** — “Vista de la playa - panoramio” by jrtaylor08, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Vista_de_la_playa_-_panoramio.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: jrtaylor08 — https://web.archive.org/web/20161012090136/http://www.panoramio.com/user/1805328?with_photo_id=17344566
-  - Dated: 26 June 2008 (according to Exif data)
-  - 1600×900px, 534 KB, shot 316 m from the spot
-  - Description: Vista de la playa
-  - Match: score 11.5 via coastal-in-title, name:farito, kw:playa, geo:316m, w>=1000, landscape
-- **`mx-bcs-playa-el-farito-3.jpg`** — “La playa del Cabo - panoramio” by jrtaylor08, Wikimedia Commons, CC BY-SA 3.0
+- **`mx-bcs-playa-el-farito-1.jpg`** — “La playa del Cabo - panoramio” by jrtaylor08, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:La_playa_del_Cabo_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: jrtaylor08 — https://web.archive.org/web/20161012123942/http://www.panoramio.com/user/1805328?with_photo_id=17344773
@@ -462,6 +446,22 @@
   - 1600×1200px, 158 KB, shot 452 m from the spot
   - Description: La playa del Cabo
   - Match: score 10.5 via coastal-in-title, name:farito, kw:playa, geo:452m, w>=1000, landscape
+- **`mx-bcs-playa-el-farito-2.jpg`** ⚠︎ *context, not the coast itself* — “Cabo San Lucas beach resort” by Lisa Andres, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Cabo_San_Lucas_beach_resort.jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Lisa Andres
+  - Dated: 2008-04-11 14:21:30
+  - 1600×1200px, 163 KB, shot 131 m from the spot
+  - Description: Cabos San Lucas, Baja California Sur, Mexico, 2008
+  - Match: score 13 via coastal-in-title, name:farito, kw:beach+playa, geo:131m, w>=1000, landscape
+- **`mx-bcs-playa-el-farito-3.jpg`** ⚠︎ *context, not the coast itself* — “Vista de la playa - panoramio” by jrtaylor08, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Vista_de_la_playa_-_panoramio.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: jrtaylor08 — https://web.archive.org/web/20161012090136/http://www.panoramio.com/user/1805328?with_photo_id=17344566
+  - Dated: 26 June 2008 (according to Exif data)
+  - 1600×900px, 534 KB, shot 316 m from the spot
+  - Description: Vista de la playa
+  - Match: score 11.5 via coastal-in-title, name:farito, kw:playa, geo:316m, w>=1000, landscape
 
 ## Playa el Faro
 
@@ -496,15 +496,7 @@
 
 `osm:relation/13719918` · 22.8950575, -109.8877655 · beach type: **sandy** (OpenStreetMap surface=sand) · lifeguard: no · site: https://vi.me/gkb9N
 
-- **`mx-bcs-playa-el-medano-1.jpg`** — Majestic Princess (ship, 2017) El Medano Beach (Cabo San Lucas) November 2024 — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Majestic_Princess_(ship,_2017)_El_Medano_Beach_(Cabo_San_Lucas)_November_2024.jpg
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: Alexis Doine
-  - Dated: 2024-11-14 12:48:02
-  - 1600×901px, 484 KB, shot 1306 m from the spot
-  - Description: Majestic Princess (ship, 2017) El Medano Beach (Cabo San Lucas) November 2024.
-  - Match: score 11 via coastal-in-title, name:medano, kw:beach+playa, geo:1306m, w>=1000, landscape
-- **`mx-bcs-playa-el-medano-2.jpg`** — Medano Beach, Cabo San Lucas 2024-11-14 — CC0 (Wikimedia Commons), no attribution required
+- **`mx-bcs-playa-el-medano-1.jpg`** — Medano Beach, Cabo San Lucas 2024-11-14 — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Medano_Beach,_Cabo_San_Lucas_2024-11-14.jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Alexis Doine
@@ -512,7 +504,7 @@
   - 1600×900px, 513 KB, shot 1332 m from the spot
   - Description: Medano Beach, Cabo San Lucas
   - Match: score 11 via coastal-in-title, name:medano, kw:beach+playa, geo:1332m, w>=1000, landscape
-- **`mx-bcs-playa-el-medano-3.jpg`** — El Medano Beach (Cabo San Lucas) November 2024 — CC0 (Wikimedia Commons), no attribution required
+- **`mx-bcs-playa-el-medano-2.jpg`** — El Medano Beach (Cabo San Lucas) November 2024 — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:El_Medano_Beach_(Cabo_San_Lucas)_November_2024.jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Alexis Doine
@@ -520,6 +512,14 @@
   - 1600×2844px, 1369 KB, shot 1305 m from the spot
   - Description: El Medano Beach (Cabo San Lucas) November 2024.
   - Match: score 10.5 via coastal-in-title, name:medano, kw:beach+playa, geo:1305m, w>=1000
+- **`mx-bcs-playa-el-medano-3.jpg`** ⚠︎ *context, not the coast itself* — Majestic Princess (ship, 2017) El Medano Beach (Cabo San Lucas) November 2024 — CC0 (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Majestic_Princess_(ship,_2017)_El_Medano_Beach_(Cabo_San_Lucas)_November_2024.jpg
+  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
+  - Author: Alexis Doine
+  - Dated: 2024-11-14 12:48:02
+  - 1600×901px, 484 KB, shot 1306 m from the spot
+  - Description: Majestic Princess (ship, 2017) El Medano Beach (Cabo San Lucas) November 2024.
+  - Match: score 11 via coastal-in-title, name:medano, kw:beach+playa, geo:1306m, w>=1000, landscape
 
 ## Playa El Tecolote
 
@@ -570,7 +570,7 @@
   - 1600×1200px, 1158 KB, shot 3681 m from the spot
   - Description: Playa El Tule, Baja California
   - Match: score 5 via kw:beach+playa+sunset, geo:3681m, w>=1000, landscape
-- **`mx-bcs-playa-la-viudas-3.jpg`** — El Encanto Lighthouse (Cabo San Lucas) — CC0 (Wikimedia Commons), no attribution required
+- **`mx-bcs-playa-la-viudas-3.jpg`** ⚠︎ *context, not the coast itself* — El Encanto Lighthouse (Cabo San Lucas) — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:El_Encanto_Lighthouse_(Cabo_San_Lucas).jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Alexis Doine
@@ -612,15 +612,7 @@
 
 `osm:relation/13715893` · 22.8982008, -109.8706117 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`mx-bcs-playa-monumentos-1.jpg`** — “Beach Front RIU Palace (6655209615) (4)” by Clemens Vasters from Viersen, Germany, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Beach_Front_RIU_Palace_(6655209615)_(4).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Clemens Vasters from Viersen, Germany — https://www.flickr.com/people/7489441@N06
-  - Dated: 2012-01-02 13:46
-  - 1600×1067px, 649 KB, shot 2085 m from the spot
-  - Description: Beach Front RIU Palace
-  - Match: score 7 via coastal-in-title, kw:beach+playa, geo:2085m, w>=1000, landscape
-- **`mx-bcs-playa-monumentos-2.jpg`** — “View of El Arco and the Bay at Cabo San Lucas - panoramio” by Shane Smith, Wikimedia Commons, CC BY-SA 3.0
+- **`mx-bcs-playa-monumentos-1.jpg`** — “View of El Arco and the Bay at Cabo San Lucas - panoramio” by Shane Smith, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:View_of_El_Arco_and_the_Bay_at_Cabo_San_Lucas_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Shane Smith — https://web.archive.org/web/20161031190458/http://www.panoramio.com/user/7799482?with_photo_id=128383564
@@ -628,7 +620,15 @@
   - 1600×1067px, 609 KB, shot 841 m from the spot
   - Description: View of El Arco and the Bay at Cabo San Lucas
   - Match: score 6.5 via coastal-in-title, kw:bay, geo:841m, w>=1000, landscape
-- **`mx-bcs-playa-monumentos-3.jpg`** — “Take a seat (6655103999) (6)” by Clemens Vasters from Viersen, Germany, Wikimedia Commons, CC BY 2.0
+- **`mx-bcs-playa-monumentos-2.jpg`** ⚠︎ *context, not the coast itself* — “Beach Front RIU Palace (6655209615) (4)” by Clemens Vasters from Viersen, Germany, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Beach_Front_RIU_Palace_(6655209615)_(4).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Clemens Vasters from Viersen, Germany — https://www.flickr.com/people/7489441@N06
+  - Dated: 2012-01-02 13:46
+  - 1600×1067px, 649 KB, shot 2085 m from the spot
+  - Description: Beach Front RIU Palace
+  - Match: score 7 via coastal-in-title, kw:beach+playa, geo:2085m, w>=1000, landscape
+- **`mx-bcs-playa-monumentos-3.jpg`** ✗ **not a coastal photo** — “Take a seat (6655103999) (6)” by Clemens Vasters from Viersen, Germany, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Take_a_seat_(6655103999)_(6).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Clemens Vasters from Viersen, Germany — https://www.flickr.com/people/7489441@N06
@@ -649,15 +649,7 @@
   - 1600×900px, 696 KB, shot 215 m from the spot
   - Description: Drone footage of a beach in Palmilla, Cabo San Lucas. Taken by https://www.suncabo.com/
   - Match: score 13 via coastal-in-title, name:palmilla, kw:beach+playa, geo:215m, w>=1000, landscape
-- **`mx-bcs-playa-palmilla-2.jpg`** — “Palmilla - panoramio” by JAGarcia, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Palmilla_-_panoramio.jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: JAGarcia — https://web.archive.org/web/20161021182221/http://www.panoramio.com/user/1025071?with_photo_id=69607190
-  - Dated: Taken on 1 January 2005
-  - 1600×1200px, 439 KB, shot 490 m from the spot
-  - Description: Palmilla
-  - Match: score 8.5 via name:palmilla, kw:playa, geo:490m, w>=1000, landscape
-- **`mx-bcs-playa-palmilla-3.jpg`** — “Hurricane Dora (5968203312)” by Ana Rodríguez Carrington from Baja California Sur, Mexico, Wikimedia Commons, CC BY 2.0
+- **`mx-bcs-playa-palmilla-2.jpg`** — “Hurricane Dora (5968203312)” by Ana Rodríguez Carrington from Baja California Sur, Mexico, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hurricane_Dora_(5968203312).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Ana Rodríguez Carrington from Baja California Sur, Mexico — https://www.flickr.com/people/35506817@N00
@@ -665,20 +657,20 @@
   - 1600×1200px, 466 KB, shot 941 m from the spot
   - Description: Once a powerful hurricane, this beautiful tropical storm is passing us by, with marvelous waves but no rain at all. San José del Cabo, Baja California Sur.
   - Match: score 7 via kw:wave+waves+mar, geo:941m, w>=1000, landscape
+- **`mx-bcs-playa-palmilla-3.jpg`** ⚠︎ *context, not the coast itself* — “Palmilla - panoramio” by JAGarcia, Wikimedia Commons, CC BY 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Palmilla_-_panoramio.jpg
+  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
+  - Author: JAGarcia — https://web.archive.org/web/20161021182221/http://www.panoramio.com/user/1025071?with_photo_id=69607190
+  - Dated: Taken on 1 January 2005
+  - 1600×1200px, 439 KB, shot 490 m from the spot
+  - Description: Palmilla
+  - Match: score 8.5 via name:palmilla, kw:playa, geo:490m, w>=1000, landscape
 
 ## Playa Paraiso
 
 `osm:relation/13071505` · 22.9009003, -109.8525205 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`mx-bcs-playa-paraiso-1.jpg`** — “Playa de Valdevaqueros” by Susiypunto, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Playa_de_Valdevaqueros.JPG
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Susiypunto — //commons.wikimedia.org/w/index.php?title=User:Susiypunto&amp;action=edit&amp;redlink=1
-  - Dated: 2012-07-29
-  - 1600×1067px, 365 KB
-  - Description: Playa virgen de Valdevaqueros, paraiso del Kite Surf
-  - Match: score 10 via coastal-in-title, name:paraiso, kw:surf+playa, w>=1000, landscape
-- **`mx-bcs-playa-paraiso-2.jpg`** — “Vista de la playa del Esperanza - panoramio” by jrtaylor08, Wikimedia Commons, CC BY-SA 3.0
+- **`mx-bcs-playa-paraiso-1.jpg`** — “Vista de la playa del Esperanza - panoramio” by jrtaylor08, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Vista_de_la_playa_del_Esperanza_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: jrtaylor08 — https://web.archive.org/web/20161013064052/http://www.panoramio.com/user/1805328?with_photo_id=17344673
@@ -686,7 +678,7 @@
   - 1600×900px, 811 KB, shot 97 m from the spot
   - Description: Vista de la playa del Esperanza
   - Match: score 7.5 via coastal-in-title, kw:playa, geo:97m, w>=1000, landscape
-- **`mx-bcs-playa-paraiso-3.jpg`** — “Hacienda del mar - panoramio” by calwolfe, Wikimedia Commons, CC BY-SA 3.0
+- **`mx-bcs-playa-paraiso-2.jpg`** — “Hacienda del mar - panoramio” by calwolfe, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hacienda_del_mar_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: calwolfe — https://web.archive.org/web/20161010033326/http://www.panoramio.com/user/1637425?with_photo_id=9544738
@@ -694,6 +686,14 @@
   - 1600×1065px, 480 KB, shot 2071 m from the spot
   - Description: Hacienda del mar
   - Match: score 5.5 via coastal-in-title, kw:mar, geo:2071m, w>=1000, landscape
+- **`mx-bcs-playa-paraiso-3.jpg`** ⚠︎ *context, not the coast itself* — “Playa de Valdevaqueros” by Susiypunto, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Playa_de_Valdevaqueros.JPG
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Susiypunto — //commons.wikimedia.org/w/index.php?title=User:Susiypunto&amp;action=edit&amp;redlink=1
+  - Dated: 2012-07-29
+  - 1600×1067px, 365 KB
+  - Description: Playa virgen de Valdevaqueros, paraiso del Kite Surf
+  - Match: score 10 via coastal-in-title, name:paraiso, kw:surf+playa, w>=1000, landscape
 
 ## Playa Punta Arena
 
@@ -844,7 +844,7 @@
   - 1600×1023px, 240 KB, shot 2774 m from the spot
   - Description: Baja California Sur.
   - Match: score 11 via coastal-in-title, name:pescadero, kw:beach+playa, geo:2774m, w>=1000, landscape
-- **`mx-bcs-san-pedrito-ejido-el-pescadero-b-c-s-mx-2.jpg`** — “Porophyllum sp. (9232516808)” by Dick Culbert from Gibsons, B.C., Canada, Wikimedia Commons, CC BY 2.0
+- **`mx-bcs-san-pedrito-ejido-el-pescadero-b-c-s-mx-2.jpg`** ✗ **not a coastal photo** — “Porophyllum sp. (9232516808)” by Dick Culbert from Gibsons, B.C., Canada, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Porophyllum_sp._(9232516808).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Dick Culbert from Gibsons, B.C., Canada — https://www.flickr.com/people/92252798@N07

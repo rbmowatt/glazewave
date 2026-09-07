@@ -6,15 +6,7 @@
 
 `osm:way/1107488622` · 43.0072131, -70.7419418 · beach type: **gravel** (OpenStreetMap surface=gravel)
 
-- **`us-nh-foss-beach-1.jpg`** — BARGE KILVANIA GROUNDED DVIDS1072535 — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:BARGE_KILVANIA_GROUNDED_DVIDS1072535.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Fæ (Commons user)
-  - Dated: Taken on 8 October 2002
-  - 1600×1200px, 367 KB
-  - Description: KODIAK, Alaska (Oct. 8, 2002)--A Coast Guard Air Station Kodiak air crew conducts an overflight of the barge Kivalina to check for pollution after it broke tow with the tug Stacey Foss in the Chukcki Sea October 8. The barge carrying 30 thousand gallons of diesel fuel drifted about four miles offshore before grounding on a gravel beach. Despite 15 foot breaking surf, the barge is not discharging any pollutants. Foss Maritime responders from Seattle and Coast Guard officials are on scene. USCG photoby Petty Officer Jerome Lockwood
-  - Match: score 9 via name:foss, kw:beach+surf+sea+coast, w>=1000, landscape
-- **`us-nh-foss-beach-2.jpg`** — “Rye Harbor State Park (NH) beach view” by Dmoore5556, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nh-foss-beach-1.jpg`** — “Rye Harbor State Park (NH) beach view” by Dmoore5556, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Rye_Harbor_State_Park_(NH)_beach_view.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Dmoore5556 — //commons.wikimedia.org/wiki/User:Dmoore5556
@@ -22,20 +14,20 @@
   - 1600×1200px, 852 KB, shot 628 m from the spot
   - Description: View of the beach to the north of Rye Harbor State Park in New Hampshire.
   - Match: score 6.5 via coastal-in-title, kw:beach, geo:628m, w>=1000, landscape
+- **`us-nh-foss-beach-2.jpg`** ⚠︎ *context, not the coast itself* — BARGE KILVANIA GROUNDED DVIDS1072535 — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:BARGE_KILVANIA_GROUNDED_DVIDS1072535.jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: Fæ (Commons user)
+  - Dated: Taken on 8 October 2002
+  - 1600×1200px, 367 KB
+  - Description: KODIAK, Alaska (Oct. 8, 2002)--A Coast Guard Air Station Kodiak air crew conducts an overflight of the barge Kivalina to check for pollution after it broke tow with the tug Stacey Foss in the Chukcki Sea October 8. The barge carrying 30 thousand gallons of diesel fuel drifted about four miles offshore before grounding on a gravel beach. Despite 15 foot breaking surf, the barge is not discharging any pollutants. Foss Maritime responders from Seattle and Coast Guard officials are on scene. USCG photoby Petty Officer Jerome Lockwood
+  - Match: score 9 via name:foss, kw:beach+surf+sea+coast, w>=1000, landscape
 
 ## Hampton Beach
 
 `osm:way/269747704` · 42.909043, -70.807584 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-nh-hampton-beach-1.jpg`** — Hampton Beach NH Sand Sculpture — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Hampton_Beach_NH_Sand_Sculpture.jpg
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: Blervis — //commons.wikimedia.org/wiki/User:Blervis
-  - Dated: 2018-06-16 14:04:32
-  - 1600×2133px, 824 KB, shot 254 m from the spot
-  - Description: Sand Sculpture at the Hampton Beach Sand Sculpting Classing in June 2018.
-  - Match: score 12.5 via coastal-in-title, name:hampton, kw:beach+sand, geo:254m, w>=1000
-- **`us-nh-hampton-beach-2.jpg`** — Surf and Great Boar's Head, Hampton Beach, N.H (67533) — Public domain (Wikimedia Commons), no attribution required
+- **`us-nh-hampton-beach-1.jpg`** — Surf and Great Boar's Head, Hampton Beach, N.H (67533) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Surf_and_Great_Boar%27s_Head,_Hampton_Beach,_N.H_(67533).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Tichnor Brothers, Publisher
@@ -43,7 +35,7 @@
   - 1600×1041px, 1013 KB
   - Description: Title: Surf and Great Boar's Head, Hampton Beach, N.H. Subjects: Seas Places: New Hampshire > Rockingham (county) > Hampton Beach Notes: Title from item. Extent: 1 print (postcard) : linen texture, color ; 3 1/2 x 5 1/2 in. Accession #: 06_10_002534
   - Match: score 11 via coastal-in-title, name:hampton, kw:beach+surf+sea, w>=1000, landscape
-- **`us-nh-hampton-beach-3.jpg`** — Surf and rocks at Great Boars Head, Hampton Beach, N.H (83114) — Public domain (Wikimedia Commons), no attribution required
+- **`us-nh-hampton-beach-2.jpg`** — Surf and rocks at Great Boars Head, Hampton Beach, N.H (83114) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Surf_and_rocks_at_Great_Boars_Head,_Hampton_Beach,_N.H_(83114).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Tichnor Brothers, Publisher
@@ -51,28 +43,20 @@
   - 1600×1035px, 1090 KB
   - Description: Title: Surf and rocks at Great Boars Head, Hampton Beach, N.H. Subjects: Beaches; Seas Places: New Hampshire > Rockingham (county) > Hampton Beach Notes: Title from item. Extent: 1 print (postcard) : linen texture, color ; 3 1/2 x 5 1/2 in. Accession #: 06_10_002496
   - Match: score 11 via coastal-in-title, name:hampton, kw:beach+surf+sea+rocks, w>=1000, landscape
+- **`us-nh-hampton-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Hampton Beach NH Sand Sculpture — CC0 (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Hampton_Beach_NH_Sand_Sculpture.jpg
+  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
+  - Author: Blervis — //commons.wikimedia.org/wiki/User:Blervis
+  - Dated: 2018-06-16 14:04:32
+  - 1600×2133px, 824 KB, shot 254 m from the spot
+  - Description: Sand Sculpture at the Hampton Beach Sand Sculpting Classing in June 2018.
+  - Match: score 12.5 via coastal-in-title, name:hampton, kw:beach+sand, geo:254m, w>=1000
 
 ## Jenness Beach
 
 `osm:way/269728710` · 42.9865401, -70.7595564 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-nh-jenness-beach-1.jpg`** — “Harry Bliss with his dog Penny on Rye Beach New Hampshire” by Cartoonigor, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Harry_Bliss_with_his_dog_Penny_on_Rye_Beach_New_Hampshire.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Cartoonigor — //commons.wikimedia.org/w/index.php?title=User:Cartoonigor&amp;action=edit&amp;redlink=1
-  - Dated: 2019-09-10
-  - 1600×1610px, 431 KB, shot 297 m from the spot
-  - Description: Harry Bliss with his muse, Penny, who passed away in 2021
-  - Match: score 7 via coastal-in-title, kw:beach, geo:297m, w>=1000
-- **`us-nh-jenness-beach-2.jpg`** — “Rye Beach, NH - panoramio” by PennyLennox, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Rye_Beach,_NH_-_panoramio.jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: PennyLennox — https://web.archive.org/web/20161018032648/http://www.panoramio.com/user/5528387?with_photo_id=47785527
-  - Dated: Taken on 13 June 2009
-  - 1600×2133px, 350 KB, shot 1082 m from the spot
-  - Description: Rye Beach, NH
-  - Match: score 6 via coastal-in-title, kw:beach, geo:1082m, w>=1000
-- **`us-nh-jenness-beach-3.jpg`** — “Rye Harbor State Park (NH) beach view” by Dmoore5556, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nh-jenness-beach-1.jpg`** — “Rye Harbor State Park (NH) beach view” by Dmoore5556, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Rye_Harbor_State_Park_(NH)_beach_view.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Dmoore5556 — //commons.wikimedia.org/wiki/User:Dmoore5556
@@ -80,6 +64,22 @@
   - 1600×1200px, 852 KB, shot 2137 m from the spot
   - Description: View of the beach to the north of Rye Harbor State Park in New Hampshire.
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:2137m, w>=1000, landscape
+- **`us-nh-jenness-beach-2.jpg`** ✗ **not a coastal photo** — “Harry Bliss with his dog Penny on Rye Beach New Hampshire” by Cartoonigor, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Harry_Bliss_with_his_dog_Penny_on_Rye_Beach_New_Hampshire.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Cartoonigor — //commons.wikimedia.org/w/index.php?title=User:Cartoonigor&amp;action=edit&amp;redlink=1
+  - Dated: 2019-09-10
+  - 1600×1610px, 431 KB, shot 297 m from the spot
+  - Description: Harry Bliss with his muse, Penny, who passed away in 2021
+  - Match: score 7 via coastal-in-title, kw:beach, geo:297m, w>=1000
+- **`us-nh-jenness-beach-3.jpg`** ✗ **not a coastal photo** — “Rye Beach, NH - panoramio” by PennyLennox, Wikimedia Commons, CC BY 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Rye_Beach,_NH_-_panoramio.jpg
+  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
+  - Author: PennyLennox — https://web.archive.org/web/20161018032648/http://www.panoramio.com/user/5528387?with_photo_id=47785527
+  - Dated: Taken on 13 June 2009
+  - 1600×2133px, 350 KB, shot 1082 m from the spot
+  - Description: Rye Beach, NH
+  - Match: score 6 via coastal-in-title, kw:beach, geo:1082m, w>=1000
 
 ## North Beach
 
@@ -143,23 +143,7 @@
 
 `osm:way/272646762` · 42.9761352, -70.7645808 · beach type: **sandy** (OpenStreetMap surface=sand;stones)
 
-- **`us-nh-philbricks-beach-1.jpg`** — “Rye Beach, NH - panoramio” by PennyLennox, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Rye_Beach,_NH_-_panoramio.jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: PennyLennox — https://web.archive.org/web/20161018032648/http://www.panoramio.com/user/5528387?with_photo_id=47785527
-  - Dated: Taken on 13 June 2009
-  - 1600×2133px, 350 KB, shot 193 m from the spot
-  - Description: Rye Beach, NH
-  - Match: score 7 via coastal-in-title, kw:beach, geo:193m, w>=1000
-- **`us-nh-philbricks-beach-2.jpg`** — “Harry Bliss with his dog Penny on Rye Beach New Hampshire” by Cartoonigor, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Harry_Bliss_with_his_dog_Penny_on_Rye_Beach_New_Hampshire.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Cartoonigor — //commons.wikimedia.org/w/index.php?title=User:Cartoonigor&amp;action=edit&amp;redlink=1
-  - Dated: 2019-09-10
-  - 1600×1610px, 431 KB, shot 1005 m from the spot
-  - Description: Harry Bliss with his muse, Penny, who passed away in 2021
-  - Match: score 6 via coastal-in-title, kw:beach, geo:1005m, w>=1000
-- **`us-nh-philbricks-beach-3.jpg`** — “Hampton Beach, New Hampshire - low tide - panoramio” by Steve Hedin, Wikimedia Commons, CC BY-SA 3.0
+- **`us-nh-philbricks-beach-1.jpg`** — “Hampton Beach, New Hampshire - low tide - panoramio” by Steve Hedin, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hampton_Beach,_New_Hampshire_-_low_tide_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Steve Hedin — https://web.archive.org/web/20161011235750/http://www.panoramio.com/user/727703?with_photo_id=3632647
@@ -167,6 +151,22 @@
   - 1600×1054px, 585 KB, shot 4138 m from the spot
   - Description: Hampton Beach, New Hampshire - low tide
   - Match: score 6 via coastal-in-title, kw:beach+tide, geo:4138m, w>=1000, landscape
+- **`us-nh-philbricks-beach-2.jpg`** ✗ **not a coastal photo** — “Rye Beach, NH - panoramio” by PennyLennox, Wikimedia Commons, CC BY 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Rye_Beach,_NH_-_panoramio.jpg
+  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
+  - Author: PennyLennox — https://web.archive.org/web/20161018032648/http://www.panoramio.com/user/5528387?with_photo_id=47785527
+  - Dated: Taken on 13 June 2009
+  - 1600×2133px, 350 KB, shot 193 m from the spot
+  - Description: Rye Beach, NH
+  - Match: score 7 via coastal-in-title, kw:beach, geo:193m, w>=1000
+- **`us-nh-philbricks-beach-3.jpg`** ✗ **not a coastal photo** — “Harry Bliss with his dog Penny on Rye Beach New Hampshire” by Cartoonigor, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Harry_Bliss_with_his_dog_Penny_on_Rye_Beach_New_Hampshire.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Cartoonigor — //commons.wikimedia.org/w/index.php?title=User:Cartoonigor&amp;action=edit&amp;redlink=1
+  - Dated: 2019-09-10
+  - 1600×1610px, 431 KB, shot 1005 m from the spot
+  - Description: Harry Bliss with his muse, Penny, who passed away in 2021
+  - Match: score 6 via coastal-in-title, kw:beach, geo:1005m, w>=1000
 
 ## Pirates Cove Beach
 
@@ -188,7 +188,7 @@
   - 1600×535px, 328 KB, shot 671 m from the spot
   - Description: Looking East towards the Isle of Shoals.
   - Match: score 8 via coastal-in-title, kw:beach+sand, geo:671m, w>=1000, landscape
-- **`us-nh-pirates-cove-beach-3.jpg`** — Great Bay National Wildlife Refuge (53453949695) — Public domain (Wikimedia Commons), no attribution required
+- **`us-nh-pirates-cove-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Great Bay National Wildlife Refuge (53453949695) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Great_Bay_National_Wildlife_Refuge_(53453949695).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: U.S. Department of the Interior — https://www.flickr.com/people/42687493@N06
@@ -275,7 +275,7 @@
   - 1600×1200px, 852 KB, shot 1325 m from the spot
   - Description: View of the beach to the north of Rye Harbor State Park in New Hampshire.
   - Match: score 9.5 via coastal-in-title, name:rye, kw:beach, geo:1325m, w>=1000, landscape
-- **`us-nh-rye-north-beach-3.jpg`** — “Harry Bliss with his dog Penny on Rye Beach New Hampshire” by Cartoonigor, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nh-rye-north-beach-3.jpg`** ✗ **not a coastal photo** — “Harry Bliss with his dog Penny on Rye Beach New Hampshire” by Cartoonigor, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Harry_Bliss_with_his_dog_Penny_on_Rye_Beach_New_Hampshire.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Cartoonigor — //commons.wikimedia.org/w/index.php?title=User:Cartoonigor&amp;action=edit&amp;redlink=1
@@ -288,23 +288,7 @@
 
 `osm:way/1107584558` · 42.9794285, -70.7637531 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-nh-sawyers-beach-1.jpg`** — “Rye Beach, NH - panoramio” by PennyLennox, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Rye_Beach,_NH_-_panoramio.jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: PennyLennox — https://web.archive.org/web/20161018032648/http://www.panoramio.com/user/5528387?with_photo_id=47785527
-  - Dated: Taken on 13 June 2009
-  - 1600×2133px, 350 KB, shot 225 m from the spot
-  - Description: Rye Beach, NH
-  - Match: score 7 via coastal-in-title, kw:beach, geo:225m, w>=1000
-- **`us-nh-sawyers-beach-2.jpg`** — “Harry Bliss with his dog Penny on Rye Beach New Hampshire” by Cartoonigor, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Harry_Bliss_with_his_dog_Penny_on_Rye_Beach_New_Hampshire.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Cartoonigor — //commons.wikimedia.org/w/index.php?title=User:Cartoonigor&amp;action=edit&amp;redlink=1
-  - Dated: 2019-09-10
-  - 1600×1610px, 431 KB, shot 632 m from the spot
-  - Description: Harry Bliss with his muse, Penny, who passed away in 2021
-  - Match: score 6 via coastal-in-title, kw:beach, geo:632m, w>=1000
-- **`us-nh-sawyers-beach-3.jpg`** — “Hampton Beach, New Hampshire - low tide - panoramio” by Steve Hedin, Wikimedia Commons, CC BY-SA 3.0
+- **`us-nh-sawyers-beach-1.jpg`** — “Hampton Beach, New Hampshire - low tide - panoramio” by Steve Hedin, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hampton_Beach,_New_Hampshire_-_low_tide_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Steve Hedin — https://web.archive.org/web/20161011235750/http://www.panoramio.com/user/727703?with_photo_id=3632647
@@ -312,6 +296,22 @@
   - 1600×1054px, 585 KB, shot 4498 m from the spot
   - Description: Hampton Beach, New Hampshire - low tide
   - Match: score 6 via coastal-in-title, kw:beach+tide, geo:4498m, w>=1000, landscape
+- **`us-nh-sawyers-beach-2.jpg`** ✗ **not a coastal photo** — “Rye Beach, NH - panoramio” by PennyLennox, Wikimedia Commons, CC BY 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Rye_Beach,_NH_-_panoramio.jpg
+  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
+  - Author: PennyLennox — https://web.archive.org/web/20161018032648/http://www.panoramio.com/user/5528387?with_photo_id=47785527
+  - Dated: Taken on 13 June 2009
+  - 1600×2133px, 350 KB, shot 225 m from the spot
+  - Description: Rye Beach, NH
+  - Match: score 7 via coastal-in-title, kw:beach, geo:225m, w>=1000
+- **`us-nh-sawyers-beach-3.jpg`** ✗ **not a coastal photo** — “Harry Bliss with his dog Penny on Rye Beach New Hampshire” by Cartoonigor, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Harry_Bliss_with_his_dog_Penny_on_Rye_Beach_New_Hampshire.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Cartoonigor — //commons.wikimedia.org/w/index.php?title=User:Cartoonigor&amp;action=edit&amp;redlink=1
+  - Dated: 2019-09-10
+  - 1600×1610px, 431 KB, shot 632 m from the spot
+  - Description: Harry Bliss with his muse, Penny, who passed away in 2021
+  - Match: score 6 via coastal-in-title, kw:beach, geo:632m, w>=1000
 
 ## Seabrook Beach
 
@@ -325,15 +325,7 @@
   - 1600×1067px, 418 KB, shot 232 m from the spot
   - Description: Seabrook Beach, Seabrook, United States
   - Match: score 13 via coastal-in-title, name:seabrook, kw:beach+sea, geo:232m, w>=1000, landscape
-- **`us-nh-seabrook-beach-2.jpg`** — “Blackwater River marshes and Seabrook Station from NH 286, April 2025” by Mr. Matté, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Blackwater_River_marshes_and_Seabrook_Station_from_NH_286,_April_2025.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Mr. Matté — //commons.wikimedia.org/wiki/User:Mr._Matt%C3%A9
-  - Dated: 2025-04-11 10:15:16
-  - 1600×1176px, 405 KB, shot 1352 m from the spot
-  - Description: Photo of marshlands of the Blackwater River as seen from New Hampshire Route 286 (Black Water Road) in the community of Seabrook Beach within Seabrook , New Hampshire . Seabrook Station is seen on the left. Photo taken looking north-northwest.
-  - Match: score 12 via coastal-in-title, name:seabrook, kw:beach+sea+mar, geo:1352m, w>=1000, landscape
-- **`us-nh-seabrook-beach-3.jpg`** — Baby Quinn (Unsplash) — CC0 (Wikimedia Commons), no attribution required
+- **`us-nh-seabrook-beach-2.jpg`** ⚠︎ *context, not the coast itself* — Baby Quinn (Unsplash) — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Baby_Quinn_(Unsplash).jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Derek Thomson derekthomson — https://unsplash.com/@derekthomson
@@ -341,6 +333,14 @@
   - 1600×1067px, 198 KB, shot 232 m from the spot
   - Description: Seabrook Beach, Seabrook, United States
   - Match: score 11 via name:seabrook, kw:beach+sea, geo:232m, w>=1000, landscape
+- **`us-nh-seabrook-beach-3.jpg`** ✗ **not a coastal photo** — “Blackwater River marshes and Seabrook Station from NH 286, April 2025” by Mr. Matté, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Blackwater_River_marshes_and_Seabrook_Station_from_NH_286,_April_2025.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Mr. Matté — //commons.wikimedia.org/wiki/User:Mr._Matt%C3%A9
+  - Dated: 2025-04-11 10:15:16
+  - 1600×1176px, 405 KB, shot 1352 m from the spot
+  - Description: Photo of marshlands of the Blackwater River as seen from New Hampshire Route 286 (Black Water Road) in the community of Seabrook Beach within Seabrook , New Hampshire . Seabrook Station is seen on the left. Photo taken looking north-northwest.
+  - Match: score 12 via coastal-in-title, name:seabrook, kw:beach+sea+mar, geo:1352m, w>=1000, landscape
 
 ## South Beach
 
@@ -354,15 +354,7 @@
   - 1600×1067px, 418 KB, shot 1665 m from the spot
   - Description: Seabrook Beach, Seabrook, United States
   - Match: score 7 via coastal-in-title, kw:beach+sea, geo:1665m, w>=1000, landscape
-- **`us-nh-south-beach-2.jpg`** — “Blackwater River marshes and Seabrook Station from NH 286, April 2025” by Mr. Matté, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Blackwater_River_marshes_and_Seabrook_Station_from_NH_286,_April_2025.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Mr. Matté — //commons.wikimedia.org/wiki/User:Mr._Matt%C3%A9
-  - Dated: 2025-04-11 10:15:16
-  - 1600×1176px, 405 KB, shot 3119 m from the spot
-  - Description: Photo of marshlands of the Blackwater River as seen from New Hampshire Route 286 (Black Water Road) in the community of Seabrook Beach within Seabrook , New Hampshire . Seabrook Station is seen on the left. Photo taken looking north-northwest.
-  - Match: score 7 via coastal-in-title, kw:beach+sea+mar, geo:3119m, w>=1000, landscape
-- **`us-nh-south-beach-3.jpg`** — “Hordle Cliff, beach - geograph.org.uk - 2118836” by Mike Faherty, Wikimedia Commons, CC BY-SA 2.0
+- **`us-nh-south-beach-2.jpg`** — “Hordle Cliff, beach - geograph.org.uk - 2118836” by Mike Faherty, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hordle_Cliff,_beach_-_geograph.org.uk_-_2118836.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Mike Faherty — https://www.geograph.org.uk/profile/30470
@@ -370,6 +362,14 @@
   - 1600×1152px, 451 KB, shot 5141171 m from the spot
   - Description: Hordle Cliff, beach
   - Match: score 7 via coastal-in-title, kw:beach+sea+cliff, geo:5141171m, w>=1000, landscape
+- **`us-nh-south-beach-3.jpg`** ✗ **not a coastal photo** — “Blackwater River marshes and Seabrook Station from NH 286, April 2025” by Mr. Matté, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Blackwater_River_marshes_and_Seabrook_Station_from_NH_286,_April_2025.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Mr. Matté — //commons.wikimedia.org/wiki/User:Mr._Matt%C3%A9
+  - Dated: 2025-04-11 10:15:16
+  - 1600×1176px, 405 KB, shot 3119 m from the spot
+  - Description: Photo of marshlands of the Blackwater River as seen from New Hampshire Route 286 (Black Water Road) in the community of Seabrook Beach within Seabrook , New Hampshire . Seabrook Station is seen on the left. Photo taken looking north-northwest.
+  - Match: score 7 via coastal-in-title, kw:beach+sea+mar, geo:3119m, w>=1000, landscape
 
 ## Wallis Sands Beach
 
@@ -391,7 +391,7 @@
   - 1600×535px, 328 KB, shot 60 m from the spot
   - Description: Looking East towards the Isle of Shoals.
   - Match: score 17 via coastal-in-title, name:wallis+sands, kw:beach+sand, geo:60m, w>=1000, landscape
-- **`us-nh-wallis-sands-beach-3.jpg`** — Scientists set up a mist net (51855442497) — Public domain (Wikimedia Commons), no attribution required
+- **`us-nh-wallis-sands-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Scientists set up a mist net (51855442497) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Scientists_set_up_a_mist_net_(51855442497).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: U. S. Fish and Wildlife Service - Northeast Region — https://www.flickr.com/people/usfwsnortheast/

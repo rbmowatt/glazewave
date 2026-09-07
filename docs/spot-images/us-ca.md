@@ -151,7 +151,7 @@
 
 `osm:relation/6651388` · 33.7550611, -118.1306288 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-alamitos-bay-beach-1.jpg`** — “Horny Corner at Alamitos Bay July 4th 2019” by Simon Talbot, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-alamitos-bay-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Horny Corner at Alamitos Bay July 4th 2019” by Simon Talbot, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Horny_Corner_at_Alamitos_Bay_July_4th_2019.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Simon Talbot — //commons.wikimedia.org/w/index.php?title=User:Talbot.simon&amp;action=edit&amp;redlink=1
@@ -159,7 +159,7 @@
   - 1600×844px, 691 KB, shot 127 m from the spot
   - Description: Horny Corner at Alamitos Bay July 4th 2019
   - Match: score 13 via coastal-in-title, name:alamitos, kw:beach+bay, geo:127m, w>=1000, landscape
-- **`us-ca-alamitos-bay-beach-2.jpg`** — “Alamitos Bay Sunset (250501277)” by Terry Lucas, Wikimedia Commons, CC BY 3.0
+- **`us-ca-alamitos-bay-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Alamitos Bay Sunset (250501277)” by Terry Lucas, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Alamitos_Bay_Sunset_(250501277).jpeg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Terry Lucas — https://500px.com/tdlucas5000
@@ -167,7 +167,7 @@
   - 1600×1068px, 667 KB, shot 1855 m from the spot
   - Description: 500px provided description: Sunset and a Lucky boat [#sunset ,#boat ,#clouds ,#orange ,#california ,#bay ,#photomatix ,#HDR ,#Sigma 24-105 ,#D850]
   - Match: score 12 via coastal-in-title, name:alamitos, kw:beach+bay+sunset, geo:1855m, w>=1000, landscape
-- **`us-ca-alamitos-bay-beach-3.jpg`** — “Belmont Shore and Belmont Heights in Long Beach California” by Darkest tree, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-alamitos-bay-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Belmont Shore and Belmont Heights in Long Beach California” by Darkest tree, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Belmont_Shore_and_Belmont_Heights_in_Long_Beach_California.JPG
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Darkest tree — //commons.wikimedia.org/wiki/User:Darkest_tree
@@ -209,7 +209,7 @@
 
 `osm:node/358796549` · 34.0303972, -118.7036072
 
-- **`us-ca-amarillo-beach-1.jpg`** — “L.B. Kyle Keilman in Malibu, November 2017” by Jusdafax, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-amarillo-beach-1.jpg`** ✗ **not a coastal photo** — “L.B. Kyle Keilman in Malibu, November 2017” by Jusdafax, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:L.B._Kyle_Keilman_in_Malibu,_November_2017.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Jusdafax — //commons.wikimedia.org/wiki/User:Jusdafax
@@ -288,15 +288,7 @@
   - 1600×1072px, 115 KB, shot 367 m from the spot
   - Description: The Beach of Santa Barbara, California in March 2008
   - Match: score 18 via coastal-in-title, name:arroyo+burro, kw:beach+mar+sunset, geo:367m, w>=1000, landscape
-- **`us-ca-arroyo-burro-beach-2.jpg`** — “Beach Play (3264564569)” by Damian Gadal, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Beach_Play_(3264564569).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Damian Gadal — https://www.flickr.com/people/23024164@N06
-  - Dated: 2005-06-26 18:47
-  - 1600×1064px, 782 KB, shot 128 m from the spot
-  - Description: Summer along the California Coast
-  - Match: score 17 via coastal-in-title, name:arroyo+burro, kw:beach+coast, geo:128m, w>=1000, landscape
-- **`us-ca-arroyo-burro-beach-3.jpg`** — “Summer Beach (2750563289)” by Damian Gadal, Wikimedia Commons, CC BY 2.0
+- **`us-ca-arroyo-burro-beach-2.jpg`** — “Summer Beach (2750563289)” by Damian Gadal, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Summer_Beach_(2750563289).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Damian Gadal — https://www.flickr.com/people/23024164@N06
@@ -304,6 +296,14 @@
   - 1600×1070px, 359 KB, shot 106 m from the spot
   - Description: Summer Scene Along the California Coast
   - Match: score 17 via coastal-in-title, name:arroyo+burro, kw:beach+coast, geo:106m, w>=1000, landscape
+- **`us-ca-arroyo-burro-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Beach Play (3264564569)” by Damian Gadal, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Beach_Play_(3264564569).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Damian Gadal — https://www.flickr.com/people/23024164@N06
+  - Dated: 2005-06-26 18:47
+  - 1600×1064px, 782 KB, shot 128 m from the spot
+  - Description: Summer along the California Coast
+  - Match: score 17 via coastal-in-title, name:arroyo+burro, kw:beach+coast, geo:128m, w>=1000, landscape
 
 ## Arroyo De Los Frijoles Beach
 
@@ -325,7 +325,7 @@
   - 1600×1067px, 558 KB, shot 243 m from the spot
   - Description: I think the coast of California is spectacularly scenic. I believe someday I need to come back here and spend some more time.
   - Match: score 10 via coastal-in-title, kw:sea+coast+cliff+sunset, geo:243m, w>=1000, landscape
-- **`us-ca-arroyo-de-los-frijoles-beach-3.jpg`** — “Tafoni at Bean Hollow State Beach” by Inklein, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-arroyo-de-los-frijoles-beach-3.jpg`** ✗ **not a coastal photo** — “Tafoni at Bean Hollow State Beach” by Inklein, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Tafoni_at_Bean_Hollow_State_Beach.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Inklein — //commons.wikimedia.org/wiki/User:Inklein
@@ -383,7 +383,7 @@
   - 1600×1133px, 598 KB, shot 141 m from the spot
   - Description: Photo contributed by the Estate of Dr. & Mrs. J.L. Beebe. This is just one sample of the many items included in the time capsule placed at Dana Point Harbor during the harbor's "rock placing" (groundbreaking) in 1966. The capsule was opened during a special ceremony in Aug. 2016. There are no known copyright restrictions on this image. All future uses of this photo should include the courtesy line, "Photo courtesy Orange County Archives." Comments are welcome after reading our <a href=" http://egov.ocgov.com/ocgov/CommentPolicy " rel="nofollow">Comment Policy</a>.
   - Match: score 10 via coastal-in-title, kw:cove+point+break+headland, geo:141m, w>=1000, landscape
-- **`us-ca-baby-beach-3.jpg`** — “Pier at Dana Cove, 1929 (29365495844)” by Orange County Archives from Orange County, California, United States of America, Wikimedia Commons, CC BY 2.0
+- **`us-ca-baby-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Pier at Dana Cove, 1929 (29365495844)” by Orange County Archives from Orange County, California, United States of America, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Pier_at_Dana_Cove,_1929_(29365495844).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Orange County Archives from Orange County, California, United States of America — https://www.flickr.com/people/30346812@N07
@@ -396,15 +396,7 @@
 
 `osm:way/375723280` · 33.6006693, -117.905493 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-balboa-beach-1.jpg`** — “Newport Beach, January 2009 - panoramio” by Kevin.Daniels, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Newport_Beach,_January_2009_-_panoramio.jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: Kevin.Daniels — https://web.archive.org/web/20161016191826/http://www.panoramio.com/user/5035009?with_photo_id=43171397
-  - Dated: Taken on 17 January 2009
-  - 1600×1067px, 279 KB, shot 228 m from the spot
-  - Description: Newport Beach, January 2009
-  - Match: score 11.5 via coastal-in-title, name:balboa, kw:beach, geo:228m, w>=1000, landscape
-- **`us-ca-balboa-beach-2.jpg`** — “Newport Beach 2013 c Photo Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-balboa-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Newport Beach 2013 c Photo Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Newport_Beach_2013_c_Photo_Don_Ramey_Logan.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
@@ -412,7 +404,7 @@
   - 1600×1063px, 952 KB
   - Description: Newport Beach 2013 Photo D Ramey Logan, must publish photographer credit if used outside of wikipedia
   - Match: score 11 via coastal-in-title, name:balboa, kw:beach+mar+jetty+bay, w>=1000, landscape
-- **`us-ca-balboa-beach-3.jpg`** — “Balboa Pier, February 2012 - panoramio (1)” by Kevin.Daniels, Wikimedia Commons, CC BY 3.0
+- **`us-ca-balboa-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Balboa Pier, February 2012 - panoramio (1)” by Kevin.Daniels, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Balboa_Pier,_February_2012_-_panoramio_(1).jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Kevin.Daniels — https://web.archive.org/web/20161021002447/http://www.panoramio.com/user/5035009?with_photo_id=66997823
@@ -420,6 +412,14 @@
   - 1600×949px, 307 KB, shot 467 m from the spot
   - Description: Balboa Pier, February 2012
   - Match: score 10.5 via coastal-in-title, name:balboa, kw:pier, geo:467m, w>=1000, landscape
+- **`us-ca-balboa-beach-3.jpg`** ✗ **not a coastal photo** — “Newport Beach, January 2009 - panoramio” by Kevin.Daniels, Wikimedia Commons, CC BY 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Newport_Beach,_January_2009_-_panoramio.jpg
+  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
+  - Author: Kevin.Daniels — https://web.archive.org/web/20161016191826/http://www.panoramio.com/user/5035009?with_photo_id=43171397
+  - Dated: Taken on 17 January 2009
+  - 1600×1067px, 279 KB, shot 228 m from the spot
+  - Description: Newport Beach, January 2009
+  - Match: score 11.5 via coastal-in-title, name:balboa, kw:beach, geo:228m, w>=1000, landscape
 
 ## Bannings Beach
 
@@ -433,15 +433,7 @@
   - 1600×2000px, 1480 KB, shot 791 m from the spot
   - Description: This image is an aerial view of the Christian Camp, Campus by the Sea, on Catalina Island, just 22 miles off the coast of Los Angeles, CA. Campus by the Sea is located in Gallagher's Cove just north of the harbor city of Avalon.
   - Match: score 8.5 via coastal-in-title, kw:beach+sea+coast+cove, geo:791m, w>=1000
-- **`us-ca-bannings-beach-2.jpg`** — DOROTHY THIEROLF, OCEAN BEACH BUSINESSWOMAN AND LEADER OF FIGHT TO REOPEN NEARBY BEACH TO AUTO TRAFFIC. TO PROTECT... - NARA - 545253 — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:DOROTHY_THIEROLF,_OCEAN_BEACH_BUSINESSWOMAN_AND_LEADER_OF_FIGHT_TO_REOPEN_NEARBY_BEACH_TO_AUTO_TRAFFIC._TO_PROTECT..._-_NARA_-_545253.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Gene Daniels — https://www.wikidata.org/wiki/Q12018125
-  - Dated: August 1972 date QS:P571,+1972-08-00T00:
-  - 1600×1083px, 417 KB
-  - Description: Ms. Thierolf is holding a hand-painted sign that reads "We pay taxes, parks don't"
-  - Match: score 6 via coastal-in-title, kw:beach+ocean, w>=1000, landscape
-- **`us-ca-bannings-beach-3.jpg`** — “Moonstone Beach Catalina CA by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-bannings-beach-2.jpg`** — “Moonstone Beach Catalina CA by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Moonstone_Beach_Catalina_CA_by_Don_Ramey_Logan.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
@@ -449,20 +441,20 @@
   - 1600×1200px, 1044 KB, shot 2011 m from the spot
   - Description: NHYC's Moonstone Beach in Catalina CA by Don Ramey Logan
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:2011m, w>=1000, landscape
+- **`us-ca-bannings-beach-3.jpg`** ✗ **not a coastal photo** — DOROTHY THIEROLF, OCEAN BEACH BUSINESSWOMAN AND LEADER OF FIGHT TO REOPEN NEARBY BEACH TO AUTO TRAFFIC. TO PROTECT... - NARA - 545253 — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:DOROTHY_THIEROLF,_OCEAN_BEACH_BUSINESSWOMAN_AND_LEADER_OF_FIGHT_TO_REOPEN_NEARBY_BEACH_TO_AUTO_TRAFFIC._TO_PROTECT..._-_NARA_-_545253.jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: Gene Daniels — https://www.wikidata.org/wiki/Q12018125
+  - Dated: August 1972 date QS:P571,+1972-08-00T00:
+  - 1600×1083px, 417 KB
+  - Description: Ms. Thierolf is holding a hand-painted sign that reads "We pay taxes, parks don't"
+  - Match: score 6 via coastal-in-title, kw:beach+ocean, w>=1000, landscape
 
 ## Bay Street Beach
 
 `osm:relation/17854192` · 34.0052806, -118.4924507
 
-- **`us-ca-bay-street-beach-1.jpg`** — “Coastal-cleanup-month-ocean-blue-projects” by Ocean Blue Project, Inc, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Coastal-cleanup-month-ocean-blue-projects.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Ocean Blue Project, Inc — //commons.wikimedia.org/wiki/User:OceanBlueOregon
-  - Dated: 2021-09-18 15:14:19
-  - 1600×2133px, 1255 KB, shot 79 m from the spot
-  - Description: Volunteers at local beach cleanups with Ocean Blue Project. Host your next cleanup with Ocean Blue Project. We never use single use plastic bags at our cleanups.
-  - Match: score 9.5 via coastal-in-title, kw:beach+ocean+coast+coastal, geo:79m, w>=1000
-- **`us-ca-bay-street-beach-2.jpg`** — “Santa Monica State Beach 7” by APK, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-bay-street-beach-1.jpg`** — “Santa Monica State Beach 7” by APK, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Santa_Monica_State_Beach_7.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: APK — //commons.wikimedia.org/wiki/User:APK
@@ -470,7 +462,7 @@
   - 1600×763px, 380 KB, shot 146 m from the spot
   - Description: Santa Monica State Beach in California
   - Match: score 9 via coastal-in-title, kw:beach+pier, geo:146m, w>=1000, landscape
-- **`us-ca-bay-street-beach-3.jpg`** — “Santa Monica State Beach 21” by APK, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-bay-street-beach-2.jpg`** — “Santa Monica State Beach 21” by APK, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Santa_Monica_State_Beach_21.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: APK — //commons.wikimedia.org/wiki/User:APK
@@ -478,20 +470,20 @@
   - 1600×984px, 311 KB, shot 154 m from the spot
   - Description: Santa Monica State Beach in California
   - Match: score 9 via coastal-in-title, kw:beach+sunset, geo:154m, w>=1000, landscape
+- **`us-ca-bay-street-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Coastal-cleanup-month-ocean-blue-projects” by Ocean Blue Project, Inc, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Coastal-cleanup-month-ocean-blue-projects.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Ocean Blue Project, Inc — //commons.wikimedia.org/wiki/User:OceanBlueOregon
+  - Dated: 2021-09-18 15:14:19
+  - 1600×2133px, 1255 KB, shot 79 m from the spot
+  - Description: Volunteers at local beach cleanups with Ocean Blue Project. Host your next cleanup with Ocean Blue Project. We never use single use plastic bags at our cleanups.
+  - Match: score 9.5 via coastal-in-title, kw:beach+ocean+coast+coastal, geo:79m, w>=1000
 
 ## Bean Hollow State Beach
 
 `osm:way/39902416` · 37.2442468, -122.4184173
 
-- **`us-ca-bean-hollow-state-beach-1.jpg`** — “Tafoni at Bean Hollow State Beach” by Inklein, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Tafoni_at_Bean_Hollow_State_Beach.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Inklein — //commons.wikimedia.org/wiki/User:Inklein
-  - Dated: 2021-12-28 11:20:08
-  - 1600×720px, 753 KB, shot 2183 m from the spot
-  - Description: Tafoni in the rocks at Bean Hollow State Beach, California, USA
-  - Match: score 15 via coastal-in-title, name:bean+hollow, kw:beach+rocks, geo:2183m, w>=1000, landscape
-- **`us-ca-bean-hollow-state-beach-2.jpg`** — “Sandstone, Bean Hollow State Beach” by Ray Bouknight, Wikimedia Commons, CC BY 2.0
+- **`us-ca-bean-hollow-state-beach-1.jpg`** — “Sandstone, Bean Hollow State Beach” by Ray Bouknight, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sandstone,_Bean_Hollow_State_Beach.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Ray Bouknight — https://www.flickr.com/photos/66801522@N00/
@@ -499,7 +491,15 @@
   - 1600×1067px, 813 KB
   - Description: Sandstone formation at Bean Hollow State Beach, California, USA
   - Match: score 14 via coastal-in-title, name:bean+hollow, kw:beach+sand, w>=1000, landscape
-- **`us-ca-bean-hollow-state-beach-3.jpg`** — “Bean Hollow State Beach Gems” by John Kim, Wikimedia Commons, CC BY 2.0
+- **`us-ca-bean-hollow-state-beach-2.jpg`** ✗ **not a coastal photo** — “Tafoni at Bean Hollow State Beach” by Inklein, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Tafoni_at_Bean_Hollow_State_Beach.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Inklein — //commons.wikimedia.org/wiki/User:Inklein
+  - Dated: 2021-12-28 11:20:08
+  - 1600×720px, 753 KB, shot 2183 m from the spot
+  - Description: Tafoni in the rocks at Bean Hollow State Beach, California, USA
+  - Match: score 15 via coastal-in-title, name:bean+hollow, kw:beach+rocks, geo:2183m, w>=1000, landscape
+- **`us-ca-bean-hollow-state-beach-3.jpg`** ✗ **not a coastal photo** — “Bean Hollow State Beach Gems” by John Kim, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Bean_Hollow_State_Beach_Gems.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: John Kim — https://www.flickr.com/photos/45229639@N00/
@@ -512,23 +512,7 @@
 
 `osm:node/5279810799` · 36.9541683, -121.8850215
 
-- **`us-ca-beer-can-beach-1.jpg`** — “Beer Can Races Newport Beach California photo Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Beer_Can_Races_Newport_Beach_California_photo_Don_Ramey_Logan.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
-  - Dated: 2013-06-26 14:21:39
-  - 1600×900px, 582 KB
-  - Description: Beer Can Races Newport Beach California photo Don Ramey Logan
-  - Match: score 12.5 via coastal-in-title, name:beer+can, kw:beach, w>=1000, landscape
-- **`us-ca-beer-can-beach-2.jpg`** — “Shell - panoramio (9)” by Dicie Hinaga, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Shell_-_panoramio_(9).jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: Dicie Hinaga — https://web.archive.org/web/20161028081159/http://www.panoramio.com/user/6029333?with_photo_id=104945650
-  - Dated: Taken on 23 November 2013
-  - 1600×1200px, 1192 KB, shot 240 m from the spot
-  - Description: Shell
-  - Match: score 8 via kw:beach+sea+sand, geo:240m, w>=1000, landscape
-- **`us-ca-beer-can-beach-3.jpg`** — “Rio Del Mar Beach fisherman” by Dicklyon, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-beer-can-beach-1.jpg`** — “Rio Del Mar Beach fisherman” by Dicklyon, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Rio_Del_Mar_Beach_fisherman.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Dicklyon — //commons.wikimedia.org/wiki/User:Dicklyon
@@ -536,6 +520,22 @@
   - 1600×1200px, 722 KB, shot 1102 m from the spot
   - Description: Fishing at Rio Del Mar Beach on a winter afternoon, looking southwest
   - Match: score 8 via coastal-in-title, kw:beach+mar, geo:1102m, w>=1000, landscape
+- **`us-ca-beer-can-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Beer Can Races Newport Beach California photo Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Beer_Can_Races_Newport_Beach_California_photo_Don_Ramey_Logan.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
+  - Dated: 2013-06-26 14:21:39
+  - 1600×900px, 582 KB
+  - Description: Beer Can Races Newport Beach California photo Don Ramey Logan
+  - Match: score 12.5 via coastal-in-title, name:beer+can, kw:beach, w>=1000, landscape
+- **`us-ca-beer-can-beach-3.jpg`** ✗ **not a coastal photo** — “Shell - panoramio (9)” by Dicie Hinaga, Wikimedia Commons, CC BY 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Shell_-_panoramio_(9).jpg
+  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
+  - Author: Dicie Hinaga — https://web.archive.org/web/20161028081159/http://www.panoramio.com/user/6029333?with_photo_id=104945650
+  - Dated: Taken on 23 November 2013
+  - 1600×1200px, 1192 KB, shot 240 m from the spot
+  - Description: Shell
+  - Match: score 8 via kw:beach+sea+sand, geo:240m, w>=1000, landscape
 
 ## Ben Weston Beach
 
@@ -549,7 +549,7 @@
   - 1600×1200px, 896 KB, shot 2204 m from the spot
   - Description: Cliffs in the Distance
   - Match: score 5.5 via coastal-in-title, kw:cliff, geo:2204m, w>=1000, landscape
-- **`us-ca-ben-weston-beach-2.jpg`** — “Toward Shore - panoramio” by bahniuk, Wikimedia Commons, CC BY 3.0
+- **`us-ca-ben-weston-beach-2.jpg`** ✗ **not a coastal photo** — “Toward Shore - panoramio” by bahniuk, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Toward_Shore_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: bahniuk — https://web.archive.org/web/20161102215649/http://www.panoramio.com/user/7764891?with_photo_id=94053426
@@ -557,7 +557,7 @@
   - 1600×915px, 601 KB, shot 2166 m from the spot
   - Description: Toward Shore
   - Match: score 5.5 via coastal-in-title, kw:shore, geo:2166m, w>=1000, landscape
-- **`us-ca-ben-weston-beach-3.jpg`** — “Beach Layout - panoramio” by bahniuk, Wikimedia Commons, CC BY 3.0
+- **`us-ca-ben-weston-beach-3.jpg`** ✗ **not a coastal photo** — “Beach Layout - panoramio” by bahniuk, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Beach_Layout_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: bahniuk — https://web.archive.org/web/20161030121107/http://www.panoramio.com/user/7764891?with_photo_id=94053258
@@ -570,7 +570,7 @@
 
 `osm:way/1103243464` · 32.7180309, -117.2334493 · lifeguard: no
 
-- **`us-ca-bessemer-beach-1.jpg`** — “La Playa, San Diego, CA, USA - panoramio (35)” by Roman Eugeniusz, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-bessemer-beach-1.jpg`** ✗ **not a coastal photo** — “La Playa, San Diego, CA, USA - panoramio (35)” by Roman Eugeniusz, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:La_Playa,_San_Diego,_CA,_USA_-_panoramio_(35).jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Roman Eugeniusz — https://web.archive.org/web/20161031193923/http://www.panoramio.com/user/1699605?with_photo_id=128086616
@@ -578,7 +578,7 @@
   - 1600×880px, 485 KB, shot 765 m from the spot
   - Description: La Playa, San Diego, CA, USA
   - Match: score 8 via coastal-in-title, kw:playa+point, geo:765m, w>=1000, landscape
-- **`us-ca-bessemer-beach-2.jpg`** — “La Playa, San Diego, CA, USA - panoramio (36)” by Roman Eugeniusz, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-bessemer-beach-2.jpg`** ✗ **not a coastal photo** — “La Playa, San Diego, CA, USA - panoramio (36)” by Roman Eugeniusz, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:La_Playa,_San_Diego,_CA,_USA_-_panoramio_(36).jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Roman Eugeniusz — https://web.archive.org/web/20161031115335/http://www.panoramio.com/user/1699605?with_photo_id=128086609
@@ -586,7 +586,7 @@
   - 1600×935px, 465 KB, shot 765 m from the spot
   - Description: La Playa, San Diego, CA, USA
   - Match: score 8 via coastal-in-title, kw:playa+point, geo:765m, w>=1000, landscape
-- **`us-ca-bessemer-beach-3.jpg`** — “La Playa, San Diego, CA, USA - panoramio (37)” by Roman Eugeniusz, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-bessemer-beach-3.jpg`** ✗ **not a coastal photo** — “La Playa, San Diego, CA, USA - panoramio (37)” by Roman Eugeniusz, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:La_Playa,_San_Diego,_CA,_USA_-_panoramio_(37).jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Roman Eugeniusz — https://web.archive.org/web/20161031193916/http://www.panoramio.com/user/1699605?with_photo_id=128086613
@@ -599,15 +599,7 @@
 
 `osm:way/562942102` · 39.303083, -123.7941332
 
-- **`us-ca-big-river-beach-1.jpg`** — “Big River Beach, Mendocino” by btwashburn, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Big_River_Beach,_Mendocino.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: btwashburn
-  - Dated: Taken on 20 April 2015, 15:29:25
-  - 1600×1200px, 544 KB, shot 88 m from the spot
-  - Description: Big River Beach, Mendocino
-  - Match: score 17 via coastal-in-title, name:big+river, kw:beach+headland, geo:88m, w>=1000, landscape
-- **`us-ca-big-river-beach-2.jpg`** — “Big sur panorama” by Brian Cantoni, Wikimedia Commons, CC BY 2.0
+- **`us-ca-big-river-beach-1.jpg`** — “Big sur panorama” by Brian Cantoni, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Big_sur_panorama.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Brian Cantoni — https://www.flickr.com/photos/cantoni/
@@ -615,7 +607,7 @@
   - 1600×533px, 424 KB
   - Description: This view from Andrew Molera State Park headlands, California, USA, looks southeast. The Big Sur River meets the Pacific Ocean here.
   - Match: score 13 via name:big+river, kw:beach+ocean+headland, w>=1000, landscape
-- **`us-ca-big-river-beach-3.jpg`** — “Pfeiffer Beach Stream” by Arthurrh, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-big-river-beach-2.jpg`** — “Pfeiffer Beach Stream” by Arthurrh, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Pfeiffer_Beach_Stream.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Arthurrh — //commons.wikimedia.org/wiki/User:Arthurrh
@@ -623,12 +615,36 @@
   - 1600×1200px, 733 KB
   - Description: Pfeiffer Beach at the mouth of the Big Sur River in Pfeiffer Big Sur State Park, Big Sur, California. View looking upriver from the beach, with Cupressus macrocarpa trees.
   - Match: score 12.5 via coastal-in-title, name:big+river, kw:beach, w>=1000, landscape
+- **`us-ca-big-river-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Big River Beach, Mendocino” by btwashburn, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Big_River_Beach,_Mendocino.jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: btwashburn
+  - Dated: Taken on 20 April 2015, 15:29:25
+  - 1600×1200px, 544 KB, shot 88 m from the spot
+  - Description: Big River Beach, Mendocino
+  - Match: score 17 via coastal-in-title, name:big+river, kw:beach+headland, geo:88m, w>=1000, landscape
 
 ## Big Rock Beach
 
 `osm:way/1092168329` · 34.0377457, -118.62126 · beach type: **gravel** (OpenStreetMap surface=gravel)
 
-- **`us-ca-big-rock-beach-1.jpg`** — “Pacific Coast Highway at Big Rock” by JCS, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-big-rock-beach-1.jpg`** — “ARCH AT THE BEACH, PFEIFFER POINT SUR STATE PARK” by JERRYE AND ROY KLOTZ MD, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:ARCH_AT_THE_BEACH,_PFEIFFER_POINT_SUR_STATE_PARK.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: JERRYE AND ROY KLOTZ MD — //commons.wikimedia.org/wiki/User:KLOTZ
+  - Dated: 2008-02-01 12:09:59
+  - 1600×1068px, 478 KB
+  - Description: THIS ARCH IS PART OF LARGE ROCK FORMATIONS AT THE END OF SYCAMORE CANYON IN PFEIFFER BIG SUR STATE PARK, PFEIFFER BEACH AT THE END OF SYCAMORE CANYON THE LOCATION OF THE BEACH SCENE IN THE FILM "THE SANDPIPER"
+  - Match: score 15 via coastal-in-title, name:big+rock, kw:beach+sand+point, w>=1000, landscape
+- **`us-ca-big-rock-beach-2.jpg`** — “Portal of the Sun, Pfeiffer Beach, Big Sur, California” by Jason Swearingen, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Portal_of_the_Sun,_Pfeiffer_Beach,_Big_Sur,_California.jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Jason Swearingen
+  - Dated: 2007-01-25 13:14:41
+  - 1600×1064px, 330 KB
+  - Description: This opening in a cliff face at Pfeiffer Beach in Big Sur allows large waves to come through at high tide before a big storm. The waves often fill the entire portal to the top, and the portal becomes a giant water shotgun! The Tufoni formations in the rock are incredible and should be seen in person. The sun was only like this for about 30 seconds so I had to work fast. Fortunately, the sun was dimmed by high clouds but there was still enough light to reflect onto the rock face from the cliff behind the camera. Backlighting is crucial here; otherwise you have an overexposed portal with no deta
+  - Match: score 15 via coastal-in-title, name:big+rock, kw:beach+wave+waves+cliff, w>=1000, landscape
+- **`us-ca-big-rock-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Pacific Coast Highway at Big Rock” by JCS, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Pacific_Coast_Highway_at_Big_Rock.JPG
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: JCS — //commons.wikimedia.org/wiki/User:JCS
@@ -636,7 +652,12 @@
   - 1600×1067px, 862 KB, shot 886 m from the spot
   - Description: Pacific Coast Highway at Big Rock
   - Match: score 16 via coastal-in-title, name:big+rock, kw:coast+cliff, geo:886m, w>=1000, landscape
-- **`us-ca-big-rock-beach-2.jpg`** — “ARCH AT THE BEACH, PFEIFFER POINT SUR STATE PARK” by JERRYE AND ROY KLOTZ MD, Wikimedia Commons, CC BY-SA 3.0
+
+## Big Rock Beach
+
+`osm:relation/14402116` · 34.0377016, -118.6091694 · beach type: **sandy** (OpenStreetMap surface=sand)
+
+- **`us-ca-big-rock-beach-402116-1.jpg`** — “ARCH AT THE BEACH, PFEIFFER POINT SUR STATE PARK” by JERRYE AND ROY KLOTZ MD, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:ARCH_AT_THE_BEACH,_PFEIFFER_POINT_SUR_STATE_PARK.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: JERRYE AND ROY KLOTZ MD — //commons.wikimedia.org/wiki/User:KLOTZ
@@ -644,7 +665,7 @@
   - 1600×1068px, 478 KB
   - Description: THIS ARCH IS PART OF LARGE ROCK FORMATIONS AT THE END OF SYCAMORE CANYON IN PFEIFFER BIG SUR STATE PARK, PFEIFFER BEACH AT THE END OF SYCAMORE CANYON THE LOCATION OF THE BEACH SCENE IN THE FILM "THE SANDPIPER"
   - Match: score 15 via coastal-in-title, name:big+rock, kw:beach+sand+point, w>=1000, landscape
-- **`us-ca-big-rock-beach-3.jpg`** — “Portal of the Sun, Pfeiffer Beach, Big Sur, California” by Jason Swearingen, Wikimedia Commons, CC BY 2.0
+- **`us-ca-big-rock-beach-402116-2.jpg`** — “Portal of the Sun, Pfeiffer Beach, Big Sur, California” by Jason Swearingen, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Portal_of_the_Sun,_Pfeiffer_Beach,_Big_Sur,_California.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Jason Swearingen
@@ -652,12 +673,7 @@
   - 1600×1064px, 330 KB
   - Description: This opening in a cliff face at Pfeiffer Beach in Big Sur allows large waves to come through at high tide before a big storm. The waves often fill the entire portal to the top, and the portal becomes a giant water shotgun! The Tufoni formations in the rock are incredible and should be seen in person. The sun was only like this for about 30 seconds so I had to work fast. Fortunately, the sun was dimmed by high clouds but there was still enough light to reflect onto the rock face from the cliff behind the camera. Backlighting is crucial here; otherwise you have an overexposed portal with no deta
   - Match: score 15 via coastal-in-title, name:big+rock, kw:beach+wave+waves+cliff, w>=1000, landscape
-
-## Big Rock Beach
-
-`osm:relation/14402116` · 34.0377016, -118.6091694 · beach type: **sandy** (OpenStreetMap surface=sand)
-
-- **`us-ca-big-rock-beach-402116-1.jpg`** — “Pacific Coast Highway at Big Rock” by JCS, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-big-rock-beach-402116-3.jpg`** ⚠︎ *context, not the coast itself* — “Pacific Coast Highway at Big Rock” by JCS, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Pacific_Coast_Highway_at_Big_Rock.JPG
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: JCS — //commons.wikimedia.org/wiki/User:JCS
@@ -665,22 +681,6 @@
   - 1600×1067px, 862 KB, shot 312 m from the spot
   - Description: Pacific Coast Highway at Big Rock
   - Match: score 17 via coastal-in-title, name:big+rock, kw:coast+cliff, geo:312m, w>=1000, landscape
-- **`us-ca-big-rock-beach-402116-2.jpg`** — “ARCH AT THE BEACH, PFEIFFER POINT SUR STATE PARK” by JERRYE AND ROY KLOTZ MD, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:ARCH_AT_THE_BEACH,_PFEIFFER_POINT_SUR_STATE_PARK.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: JERRYE AND ROY KLOTZ MD — //commons.wikimedia.org/wiki/User:KLOTZ
-  - Dated: 2008-02-01 12:09:59
-  - 1600×1068px, 478 KB
-  - Description: THIS ARCH IS PART OF LARGE ROCK FORMATIONS AT THE END OF SYCAMORE CANYON IN PFEIFFER BIG SUR STATE PARK, PFEIFFER BEACH AT THE END OF SYCAMORE CANYON THE LOCATION OF THE BEACH SCENE IN THE FILM "THE SANDPIPER"
-  - Match: score 15 via coastal-in-title, name:big+rock, kw:beach+sand+point, w>=1000, landscape
-- **`us-ca-big-rock-beach-402116-3.jpg`** — “Portal of the Sun, Pfeiffer Beach, Big Sur, California” by Jason Swearingen, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Portal_of_the_Sun,_Pfeiffer_Beach,_Big_Sur,_California.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Jason Swearingen
-  - Dated: 2007-01-25 13:14:41
-  - 1600×1064px, 330 KB
-  - Description: This opening in a cliff face at Pfeiffer Beach in Big Sur allows large waves to come through at high tide before a big storm. The waves often fill the entire portal to the top, and the portal becomes a giant water shotgun! The Tufoni formations in the rock are incredible and should be seen in person. The sun was only like this for about 30 seconds so I had to work fast. Fortunately, the sun was dimmed by high clouds but there was still enough light to reflect onto the rock face from the cliff behind the camera. Backlighting is crucial here; otherwise you have an overexposed portal with no deta
-  - Match: score 15 via coastal-in-title, name:big+rock, kw:beach+wave+waves+cliff, w>=1000, landscape
 
 ## Bight Beach
 
@@ -773,7 +773,15 @@
 
 `osm:way/940973966` · 40.0546824, -124.0794832 · beach type: **gravel** (OpenStreetMap surface=gravel)
 
-- **`us-ca-black-sands-beach-1.jpg`** — “Shelter Cove - Black Sands Beach, CA, USA - panoramio” by MARELBU, Wikimedia Commons, CC BY 3.0
+- **`us-ca-black-sands-beach-1.jpg`** — “Shelter Cove - Black Sands Beach, CA, USA - panoramio (4)” by MARELBU, Wikimedia Commons, CC BY 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Shelter_Cove_-_Black_Sands_Beach,_CA,_USA_-_panoramio_(4).jpg
+  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
+  - Author: MARELBU — https://web.archive.org/web/20161014041139/http://www.panoramio.com/user/2353739?with_photo_id=26969916
+  - Dated: 18 September 2009 (original upload date)
+  - 1600×1200px, 689 KB, shot 992 m from the spot
+  - Description: Shelter Cove - Black Sands Beach, CA, USA
+  - Match: score 17 via coastal-in-title, name:black+sands, kw:beach+sand+cove, geo:992m, w>=1000, landscape
+- **`us-ca-black-sands-beach-2.jpg`** ✗ **not a coastal photo** — “Shelter Cove - Black Sands Beach, CA, USA - panoramio” by MARELBU, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Shelter_Cove_-_Black_Sands_Beach,_CA,_USA_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: MARELBU — https://web.archive.org/web/20161014031656/http://www.panoramio.com/user/2353739?with_photo_id=26969879
@@ -781,20 +789,12 @@
   - 1600×1200px, 1203 KB, shot 992 m from the spot
   - Description: Shelter Cove - Black Sands Beach, CA, USA
   - Match: score 17 via coastal-in-title, name:black+sands, kw:beach+sand+cove, geo:992m, w>=1000, landscape
-- **`us-ca-black-sands-beach-2.jpg`** — “Shelter Cove - Black Sands Beach, CA, USA - panoramio (3)” by MARELBU, Wikimedia Commons, CC BY 3.0
+- **`us-ca-black-sands-beach-3.jpg`** ✗ **not a coastal photo** — “Shelter Cove - Black Sands Beach, CA, USA - panoramio (3)” by MARELBU, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Shelter_Cove_-_Black_Sands_Beach,_CA,_USA_-_panoramio_(3).jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: MARELBU — https://web.archive.org/web/20161014133306/http://www.panoramio.com/user/2353739?with_photo_id=26969864
   - Dated: 18 September 2009 (original upload date)
   - 1600×1200px, 1038 KB, shot 992 m from the spot
-  - Description: Shelter Cove - Black Sands Beach, CA, USA
-  - Match: score 17 via coastal-in-title, name:black+sands, kw:beach+sand+cove, geo:992m, w>=1000, landscape
-- **`us-ca-black-sands-beach-3.jpg`** — “Shelter Cove - Black Sands Beach, CA, USA - panoramio (4)” by MARELBU, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Shelter_Cove_-_Black_Sands_Beach,_CA,_USA_-_panoramio_(4).jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: MARELBU — https://web.archive.org/web/20161014041139/http://www.panoramio.com/user/2353739?with_photo_id=26969916
-  - Dated: 18 September 2009 (original upload date)
-  - 1600×1200px, 689 KB, shot 992 m from the spot
   - Description: Shelter Cove - Black Sands Beach, CA, USA
   - Match: score 17 via coastal-in-title, name:black+sands, kw:beach+sand+cove, geo:992m, w>=1000, landscape
 
@@ -818,7 +818,7 @@
   - 1600×1064px, 629 KB
   - Description: Black's Beach, La Jolla, San Diego, California
   - Match: score 11 via coastal-in-title, name:black, kw:beach+sea+point+cliff, w>=1000, landscape
-- **`us-ca-black-s-beach-3.jpg`** — “Pyramid Blacks Beach San Diego California” by Jason Scragz, Wikimedia Commons, CC BY 2.0
+- **`us-ca-black-s-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Pyramid Blacks Beach San Diego California” by Jason Scragz, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Pyramid_Blacks_Beach_San_Diego_California.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Jason Scragz
@@ -831,15 +831,7 @@
 
 `osm:way/481466133` · 36.9607108, -121.9942106 · beach type: **sandy** (OpenStreetMap surface=sand) · lifeguard: yes
 
-- **`us-ca-black-s-beach-lincoln-beach-1.jpg`** — “Life Guard Station and Lighthouse (8508498499)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Life_Guard_Station_and_Lighthouse_(8508498499).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Don DeBold from San Jose, CA, USA — https://www.flickr.com/people/28156071@N00
-  - Dated: 2013-02-23 10:30
-  - 1600×1200px, 928 KB, shot 369 m from the spot
-  - Description: Life Guard Station and Lighthouse
-  - Match: score 10 via coastal-in-title, kw:beach+break+lighthouse, geo:369m, w>=1000, landscape
-- **`us-ca-black-s-beach-lincoln-beach-2.jpg`** — “Twin Lakes State Beach and lighthouse” by Don DeBold, Wikimedia Commons, CC BY 2.0
+- **`us-ca-black-s-beach-lincoln-beach-1.jpg`** — “Twin Lakes State Beach and lighthouse” by Don DeBold, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Twin_Lakes_State_Beach_and_lighthouse.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Don DeBold — https://www.flickr.com/photos/28156071@N00/
@@ -847,7 +839,15 @@
   - 1600×1200px, 718 KB, shot 449 m from the spot
   - Description: The Santa Cruz Breakwater Lighthouse, a.k.a. the Walton Lighthouse, from Twin Lakes State Beach, California, USA
   - Match: score 9 via coastal-in-title, kw:beach+break+lighthouse, geo:449m, w>=1000, landscape
-- **`us-ca-black-s-beach-lincoln-beach-3.jpg`** — “Lighthouse Bench, Volleyball and Lighthouse (6868329285)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-black-s-beach-lincoln-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Life Guard Station and Lighthouse (8508498499)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Life_Guard_Station_and_Lighthouse_(8508498499).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Don DeBold from San Jose, CA, USA — https://www.flickr.com/people/28156071@N00
+  - Dated: 2013-02-23 10:30
+  - 1600×1200px, 928 KB, shot 369 m from the spot
+  - Description: Life Guard Station and Lighthouse
+  - Match: score 10 via coastal-in-title, kw:beach+break+lighthouse, geo:369m, w>=1000, landscape
+- **`us-ca-black-s-beach-lincoln-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Lighthouse Bench, Volleyball and Lighthouse (6868329285)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Lighthouse_Bench,_Volleyball_and_Lighthouse_(6868329285).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Don DeBold from San Jose, CA, USA — https://www.flickr.com/people/28156071@N00
@@ -947,23 +947,7 @@
 
 `osm:way/412615679` · 37.9057417, -122.6856277 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-bolinas-beach-1.jpg`** — “Jellyfish on the beach in Bolinas, California” by Airickson, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Jellyfish_on_the_beach_in_Bolinas,_California.JPG
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Airickson — //commons.wikimedia.org/wiki/User:Airickson
-  - Dated: 2013-01-12 03:01:03
-  - 1600×1067px, 665 KB, shot 350 m from the spot
-  - Description: Jellyfish on a rock filled beach in Bolinas, California
-  - Match: score 13 via coastal-in-title, name:bolinas, kw:beach+mar, geo:350m, w>=1000, landscape
-- **`us-ca-bolinas-beach-2.jpg`** — “Bolinas Marina at high tide” by flamenc, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Bolinas_Marina_at_high_tide.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: flamenc — https://ca.wikipedia.org/wiki/usuari:flamenc
-  - Dated: 2 October 2013, 10:15:41 (according to E
-  - 1600×1067px, 594 KB, shot 487 m from the spot
-  - Description: California ( Bolinas ), United States : Marina at high tide
-  - Match: score 12 via coastal-in-title, name:bolinas, kw:mar+tide, geo:487m, w>=1000, landscape
-- **`us-ca-bolinas-beach-3.jpg`** — “Bolinas Lagoon, California - panoramio” by Steve Hedin, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-bolinas-beach-1.jpg`** — “Bolinas Lagoon, California - panoramio” by Steve Hedin, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Bolinas_Lagoon,_California_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Steve Hedin — https://web.archive.org/web/20161011155049/http://www.panoramio.com/user/727703?with_photo_id=4027354
@@ -971,20 +955,28 @@
   - 1600×1200px, 751 KB, shot 357 m from the spot
   - Description: Bolinas Lagoon, California
   - Match: score 11.5 via coastal-in-title, name:bolinas, kw:lagoon, geo:357m, w>=1000, landscape
+- **`us-ca-bolinas-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Bolinas Marina at high tide” by flamenc, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Bolinas_Marina_at_high_tide.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: flamenc — https://ca.wikipedia.org/wiki/usuari:flamenc
+  - Dated: 2 October 2013, 10:15:41 (according to E
+  - 1600×1067px, 594 KB, shot 487 m from the spot
+  - Description: California ( Bolinas ), United States : Marina at high tide
+  - Match: score 12 via coastal-in-title, name:bolinas, kw:mar+tide, geo:487m, w>=1000, landscape
+- **`us-ca-bolinas-beach-3.jpg`** ✗ **not a coastal photo** — “Jellyfish on the beach in Bolinas, California” by Airickson, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Jellyfish_on_the_beach_in_Bolinas,_California.JPG
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Airickson — //commons.wikimedia.org/wiki/User:Airickson
+  - Dated: 2013-01-12 03:01:03
+  - 1600×1067px, 665 KB, shot 350 m from the spot
+  - Description: Jellyfish on a rock filled beach in Bolinas, California
+  - Match: score 13 via coastal-in-title, name:bolinas, kw:beach+mar, geo:350m, w>=1000, landscape
 
 ## Bolsa Chica State Beach
 
 `osm:way/39970014` · 33.6955041, -118.0491648 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-bolsa-chica-state-beach-1.jpg`** — “Ridgway's Rail, Huntingdon Beach, California (25186518316)” by Mike's Birds from Riverside, CA, US, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Ridgway%27s_Rail,_Huntingdon_Beach,_California_(25186518316).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Mike's Birds from Riverside, CA, US — https://www.flickr.com/people/42646706@N02
-  - Dated: 2016-02-14 12:17
-  - 1600×1067px, 673 KB, shot 312 m from the spot
-  - Description: Ridgway's Rail Rallus obsoletus , Huntington Beach, California
-  - Match: score 15.5 via coastal-in-title, name:bolsa+chica, kw:beach, geo:312m, w>=1000, landscape
-- **`us-ca-bolsa-chica-state-beach-2.jpg`** — BolsaChicaSurf — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-bolsa-chica-state-beach-1.jpg`** — BolsaChicaSurf — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:BolsaChicaSurf.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Ldoorts ( talk ) ( Uploads ) — https://en.wikipedia.org/wiki/User:Ldoorts
@@ -992,7 +984,15 @@
   - 1600×1200px, 630 KB
   - Description: Bolsa Chica State Beach. Late Fall, early Winter. 15 foot Surf. Photo provided by California State Lifeguards.
   - Match: score 14 via coastal-in-title, name:bolsa+chica, kw:beach+surf, w>=1000, landscape
-- **`us-ca-bolsa-chica-state-beach-3.jpg`** — “Loon (24739029870)” by Mike's Birds from Riverside, CA, US, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-bolsa-chica-state-beach-2.jpg`** ✗ **not a coastal photo** — “Ridgway's Rail, Huntingdon Beach, California (25186518316)” by Mike's Birds from Riverside, CA, US, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Ridgway%27s_Rail,_Huntingdon_Beach,_California_(25186518316).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Mike's Birds from Riverside, CA, US — https://www.flickr.com/people/42646706@N02
+  - Dated: 2016-02-14 12:17
+  - 1600×1067px, 673 KB, shot 312 m from the spot
+  - Description: Ridgway's Rail Rallus obsoletus , Huntington Beach, California
+  - Match: score 15.5 via coastal-in-title, name:bolsa+chica, kw:beach, geo:312m, w>=1000, landscape
+- **`us-ca-bolsa-chica-state-beach-3.jpg`** ✗ **not a coastal photo** — “Loon (24739029870)” by Mike's Birds from Riverside, CA, US, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Loon_(24739029870).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Mike's Birds from Riverside, CA, US — https://www.flickr.com/people/42646706@N02
@@ -1042,15 +1042,7 @@
   - 1600×1200px, 364 KB, shot 94 m from the spot
   - Description: Bonny Doon Beach, a little over 10 miles north of Santa Cruz, in Santa Cruz County, California. (For scale, look at the people on the beach and at the top of the cliff. And compare that to the size of the waves.) (img_3007)
   - Match: score 18 via coastal-in-title, name:bonny+doon, kw:beach+wave+waves+sea, geo:94m, w>=1000, landscape
-- **`us-ca-bonny-doon-beach-2.jpg`** — “Highway One parking near Bonny Doon Beach. - panoramio” by mr_write, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Highway_One_parking_near_Bonny_Doon_Beach._-_panoramio.jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: mr_write — https://web.archive.org/web/20161016223224/http://www.panoramio.com/user/4915463?with_photo_id=40515064
-  - Dated: Taken on 7 September 2010
-  - 1600×1195px, 635 KB, shot 70 m from the spot
-  - Description: Highway One parking near Bonny Doon Beach.
-  - Match: score 15.5 via coastal-in-title, name:bonny+doon, kw:beach, geo:70m, w>=1000, landscape
-- **`us-ca-bonny-doon-beach-3.jpg`** — “Sunset at Shark Fin Cove” by Meiko21 ( talk ), Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-bonny-doon-beach-2.jpg`** — “Sunset at Shark Fin Cove” by Meiko21 ( talk ), Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sunset_at_Shark_Fin_Cove.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Meiko21 ( talk ) — //commons.wikimedia.org/wiki/User:Meiko21
@@ -1058,6 +1050,14 @@
   - 1600×1205px, 610 KB, shot 540 m from the spot
   - Description: Sunset at Shark Fin Cove Beach, Davenport, California, U.S.
   - Match: score 9 via coastal-in-title, kw:beach+cove+sunset, geo:540m, w>=1000, landscape
+- **`us-ca-bonny-doon-beach-3.jpg`** ✗ **not a coastal photo** — “Highway One parking near Bonny Doon Beach. - panoramio” by mr_write, Wikimedia Commons, CC BY 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Highway_One_parking_near_Bonny_Doon_Beach._-_panoramio.jpg
+  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
+  - Author: mr_write — https://web.archive.org/web/20161016223224/http://www.panoramio.com/user/4915463?with_photo_id=40515064
+  - Dated: Taken on 7 September 2010
+  - 1600×1195px, 635 KB, shot 70 m from the spot
+  - Description: Highway One parking near Bonny Doon Beach.
+  - Match: score 15.5 via coastal-in-title, name:bonny+doon, kw:beach, geo:70m, w>=1000, landscape
 
 ## Boomer Beach
 
@@ -1129,15 +1129,7 @@
   - 1600×1057px, 681 KB, shot 384346 m from the spot
   - Description: The beach of la Jolla from Ellen Browning Scripps Park .
   - Match: score 11 via coastal-in-title, name:brown, kw:beach+surf+shore, geo:384346m, w>=1000, landscape
-- **`us-ca-brown-s-beach-2.jpg`** — Andrea Dransfield, a BeachCOMBERS volunteer, examines a California brown pelican found on Silver Strand beach during her monthly survey. (35549064043) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Andrea_Dransfield,_a_BeachCOMBERS_volunteer,_examines_a_California_brown_pelican_found_on_Silver_Strand_beach_during_her_monthly_survey._(35549064043).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Pacific Southwest Region USFWS from Sacramento, US — https://www.flickr.com/people/54430347@N04
-  - Dated: 2017-06-03 13:02
-  - 1600×1143px, 939 KB, shot 153446 m from the spot
-  - Description: OXNARD, Calif. (June 3, 2017) - Andrea Dransfield, a BeachCOMBERS volunteer, examines a California brown pelican found on Silver Strand beach during her monthly survey. BeachCOMBERS trains volunteers to record data about deceased marine mammals or birds along a shoreline, contributing to long-term information about the health of a marine ecosystem. (Photo by Jason Kraus.)
-  - Match: score 11 via coastal-in-title, name:brown, kw:beach+shore+shoreline+mar, geo:153446m, w>=1000, landscape
-- **`us-ca-brown-s-beach-3.jpg`** — “Seal Rocks, Ocean Beach, San Francisco” by Radomianin, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-brown-s-beach-2.jpg`** — “Seal Rocks, Ocean Beach, San Francisco” by Radomianin, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Seal_Rocks,_Ocean_Beach,_San_Francisco.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Radomianin — //commons.wikimedia.org/wiki/User:Radomianin
@@ -1145,20 +1137,20 @@
   - 1600×920px, 467 KB, shot 362428 m from the spot
   - Description: View of the Seal Rocks at the north end of Ocean Beach , San Francisco, California, USA
   - Match: score 11 via coastal-in-title, name:brown, kw:beach+wave+waves+ocean, geo:362428m, w>=1000, landscape
+- **`us-ca-brown-s-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Andrea Dransfield, a BeachCOMBERS volunteer, examines a California brown pelican found on Silver Strand beach during her monthly survey. (35549064043) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Andrea_Dransfield,_a_BeachCOMBERS_volunteer,_examines_a_California_brown_pelican_found_on_Silver_Strand_beach_during_her_monthly_survey._(35549064043).jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: Pacific Southwest Region USFWS from Sacramento, US — https://www.flickr.com/people/54430347@N04
+  - Dated: 2017-06-03 13:02
+  - 1600×1143px, 939 KB, shot 153446 m from the spot
+  - Description: OXNARD, Calif. (June 3, 2017) - Andrea Dransfield, a BeachCOMBERS volunteer, examines a California brown pelican found on Silver Strand beach during her monthly survey. BeachCOMBERS trains volunteers to record data about deceased marine mammals or birds along a shoreline, contributing to long-term information about the health of a marine ecosystem. (Photo by Jason Kraus.)
+  - Match: score 11 via coastal-in-title, name:brown, kw:beach+shore+shoreline+mar, geo:153446m, w>=1000, landscape
 
 ## Buccaneer Beach
 
 `osm:way/31959573` · 33.1814201, -117.3733164
 
-- **`us-ca-buccaneer-beach-1.jpg`** — “Tall Ship and Beach - panoramio” by Shane Smith, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Tall_Ship_and_Beach_-_panoramio.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Shane Smith — https://web.archive.org/web/20161031183941/http://www.panoramio.com/user/7799482?with_photo_id=128368533
-  - Dated: Taken on 9 February 2016
-  - 1600×1067px, 812 KB, shot 1359022 m from the spot
-  - Description: Tall Ship and Beach
-  - Match: score 10 via coastal-in-title, name:buccaneer, kw:beach+playa, geo:1359022m, w>=1000, landscape
-- **`us-ca-buccaneer-beach-2.jpg`** — Oceanside, United States (Unsplash) — CC0 (Wikimedia Commons), no attribution required
+- **`us-ca-buccaneer-beach-1.jpg`** — Oceanside, United States (Unsplash) — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Oceanside,_United_States_(Unsplash).jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Jason Zook jasondoesstuff — https://unsplash.com/@jasondoesstuff
@@ -1166,7 +1158,7 @@
   - 1600×929px, 320 KB, shot 961 m from the spot
   - Description: Oceanside, United States
   - Match: score 9 via coastal-in-title, kw:beach+ocean+sunset, geo:961m, w>=1000, landscape
-- **`us-ca-buccaneer-beach-3.jpg`** — “Carlsbad - Oceanside, CA - panoramio” by catlin.wolfard, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-buccaneer-beach-2.jpg`** — “Carlsbad - Oceanside, CA - panoramio” by catlin.wolfard, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Carlsbad_-_Oceanside,_CA_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: catlin.wolfard — https://web.archive.org/web/20161017005049/http://www.panoramio.com/user/1470246?with_photo_id=42521268
@@ -1174,6 +1166,14 @@
   - 1600×1067px, 321 KB, shot 1204 m from the spot
   - Description: Carlsbad / Oceanside, CA
   - Match: score 7 via coastal-in-title, kw:ocean+sunset, geo:1204m, w>=1000, landscape
+- **`us-ca-buccaneer-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Tall Ship and Beach - panoramio” by Shane Smith, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Tall_Ship_and_Beach_-_panoramio.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Shane Smith — https://web.archive.org/web/20161031183941/http://www.panoramio.com/user/7799482?with_photo_id=128368533
+  - Dated: Taken on 9 February 2016
+  - 1600×1067px, 812 KB, shot 1359022 m from the spot
+  - Description: Tall Ship and Beach
+  - Match: score 10 via coastal-in-title, name:buccaneer, kw:beach+playa, geo:1359022m, w>=1000, landscape
 
 ## Button Shell Beach
 
@@ -1187,7 +1187,7 @@
   - 1600×1200px, 1044 KB, shot 1792 m from the spot
   - Description: NHYC's Moonstone Beach in Catalina CA by Don Ramey Logan
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:1792m, w>=1000, landscape
-- **`us-ca-button-shell-beach-2.jpg`** — “Sea Cucumber (7622463718)” by Ed Bierman from CA, usa, Wikimedia Commons, CC BY 2.0
+- **`us-ca-button-shell-beach-2.jpg`** ✗ **not a coastal photo** — “Sea Cucumber (7622463718)” by Ed Bierman from CA, usa, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sea_Cucumber_(7622463718).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Ed Bierman from CA, usa — https://www.flickr.com/people/26216388@N02
@@ -1200,15 +1200,7 @@
 
 `osm:way/31927905` · 33.7103923, -118.2814269 · beach type: **sandy** (OpenStreetMap surface=sand) · lifeguard: yes
 
-- **`us-ca-cabrillo-beach-1.jpg`** — “Sea stars and sea urchins in the tide pool touch tank at the Cabrillo Marine Aquarium” by Jllm06, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Sea_stars_and_sea_urchins_in_the_tide_pool_touch_tank_at_the_Cabrillo_Marine_Aquarium.JPG
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Jllm06 — //commons.wikimedia.org/wiki/User:Jllm06
-  - Dated: 2012-07-15 13:39:05
-  - 1600×1067px, 692 KB, shot 456 m from the spot
-  - Description: Sea stars and sea urchins in the tide pool touch tank at the Cabrillo Marine Aquarium
-  - Match: score 13 via coastal-in-title, name:cabrillo, kw:sea+mar+tide, geo:456m, w>=1000, landscape
-- **`us-ca-cabrillo-beach-2.jpg`** — “Cabrillo Beach Pier - California” by Tequask, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-cabrillo-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Cabrillo Beach Pier - California” by Tequask, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Cabrillo_Beach_Pier_-_California.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tequask — //commons.wikimedia.org/wiki/User:Tequask
@@ -1216,7 +1208,7 @@
   - 1600×1140px, 775 KB
   - Description: Cabrillo Beach Pier in San Pedro alongside the Long Beach/Los Angeles Harbors Sea Wall.
   - Match: score 11 via coastal-in-title, name:cabrillo, kw:beach+sea+pier, w>=1000, landscape
-- **`us-ca-cabrillo-beach-3.jpg`** — “Vanishing Beach (4312247197)” by Damian Gadal, Wikimedia Commons, CC BY 2.0
+- **`us-ca-cabrillo-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Vanishing Beach (4312247197)” by Damian Gadal, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Vanishing_Beach_(4312247197).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Damian Gadal — https://www.flickr.com/people/23024164@N06
@@ -1224,28 +1216,20 @@
   - 1600×1071px, 1010 KB, shot 149862 m from the spot
   - Description: Beach Erosion
   - Match: score 11 via coastal-in-title, name:cabrillo, kw:beach+coast+coastal, geo:149862m, w>=1000, landscape
+- **`us-ca-cabrillo-beach-3.jpg`** ✗ **not a coastal photo** — “Sea stars and sea urchins in the tide pool touch tank at the Cabrillo Marine Aquarium” by Jllm06, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Sea_stars_and_sea_urchins_in_the_tide_pool_touch_tank_at_the_Cabrillo_Marine_Aquarium.JPG
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Jllm06 — //commons.wikimedia.org/wiki/User:Jllm06
+  - Dated: 2012-07-15 13:39:05
+  - 1600×1067px, 692 KB, shot 456 m from the spot
+  - Description: Sea stars and sea urchins in the tide pool touch tank at the Cabrillo Marine Aquarium
+  - Match: score 13 via coastal-in-title, name:cabrillo, kw:sea+mar+tide, geo:456m, w>=1000, landscape
 
 ## Cabrillo Beach
 
 `osm:relation/7125365` · 33.419917, -118.4045309
 
-- **`us-ca-cabrillo-beach-125365-1.jpg`** — “Cabrillo Beach Pier - California” by Tequask, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Cabrillo_Beach_Pier_-_California.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Tequask — //commons.wikimedia.org/wiki/User:Tequask
-  - Dated: 1978-01-11
-  - 1600×1140px, 775 KB
-  - Description: Cabrillo Beach Pier in San Pedro alongside the Long Beach/Los Angeles Harbors Sea Wall.
-  - Match: score 11 via coastal-in-title, name:cabrillo, kw:beach+sea+pier, w>=1000, landscape
-- **`us-ca-cabrillo-beach-125365-2.jpg`** — “Vanishing Beach (4312247197)” by Damian Gadal, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Vanishing_Beach_(4312247197).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Damian Gadal — https://www.flickr.com/people/23024164@N06
-  - Dated: 2010-01-23 10:51
-  - 1600×1071px, 1010 KB, shot 160794 m from the spot
-  - Description: Beach Erosion
-  - Match: score 11 via coastal-in-title, name:cabrillo, kw:beach+coast+coastal, geo:160794m, w>=1000, landscape
-- **`us-ca-cabrillo-beach-125365-3.jpg`** — “Point Cabrillo Light Station SHP ocean” by David McSpadden, Wikimedia Commons, CC BY 2.0
+- **`us-ca-cabrillo-beach-125365-1.jpg`** — “Point Cabrillo Light Station SHP ocean” by David McSpadden, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Point_Cabrillo_Light_Station_SHP_ocean.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: David McSpadden — https://www.flickr.com/photos/12786044@N00/
@@ -1253,6 +1237,22 @@
   - 1600×1060px, 574 KB, shot 817908 m from the spot
   - Description: Beach at Point Cabrillo Light Station State Historic Park, California, USA
   - Match: score 11 via coastal-in-title, name:cabrillo, kw:beach+ocean+point, geo:817908m, w>=1000, landscape
+- **`us-ca-cabrillo-beach-125365-2.jpg`** ⚠︎ *context, not the coast itself* — “Cabrillo Beach Pier - California” by Tequask, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Cabrillo_Beach_Pier_-_California.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Tequask — //commons.wikimedia.org/wiki/User:Tequask
+  - Dated: 1978-01-11
+  - 1600×1140px, 775 KB
+  - Description: Cabrillo Beach Pier in San Pedro alongside the Long Beach/Los Angeles Harbors Sea Wall.
+  - Match: score 11 via coastal-in-title, name:cabrillo, kw:beach+sea+pier, w>=1000, landscape
+- **`us-ca-cabrillo-beach-125365-3.jpg`** ⚠︎ *context, not the coast itself* — “Vanishing Beach (4312247197)” by Damian Gadal, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Vanishing_Beach_(4312247197).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Damian Gadal — https://www.flickr.com/people/23024164@N06
+  - Dated: 2010-01-23 10:51
+  - 1600×1071px, 1010 KB, shot 160794 m from the spot
+  - Description: Beach Erosion
+  - Match: score 11 via coastal-in-title, name:cabrillo, kw:beach+coast+coastal, geo:160794m, w>=1000, landscape
 
 ## Campus Beach
 
@@ -1266,7 +1266,7 @@
   - 1600×971px, 435 KB, shot 187 m from the spot
   - Description: Yes I got a wide angle again. Feels good :) After a continuous 5 hours library-study on this intricate cryptography topic, I decided to give myself a break and headed towards a near by beach at my college. I have started PhD in Computer Science starting this fall. Back to the student life again. This place is called 'Campus Point' as many students love to take a break here between classes. LARGE size Fly to this location using FlickrFly (Requires Google Earth ) INFO: 3xp HDR through CPL filter. First post taken by my new 'budget lens' 17-50mm f/2.8 XR Di II. This comparison shows it is nicely 
   - Match: score 12 via name:campus, kw:beach+point+break+sunrise, geo:187m, w>=1000, landscape
-- **`us-ca-campus-beach-2.jpg`** — “Platform Holly at Sunset (47055746371)” by Glenn Beltz from Goleta, CA, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-campus-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Platform Holly at Sunset (47055746371)” by Glenn Beltz from Goleta, CA, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Platform_Holly_at_Sunset_(47055746371).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Glenn Beltz from Goleta, CA, USA — https://www.flickr.com/people/23089307@N02
@@ -1274,7 +1274,7 @@
   - 1600×1067px, 209 KB, shot 182 m from the spot
   - Description: Platform Holly at sunset - Viewed from campus point at UCSB.
   - Match: score 12 via name:campus, kw:sea+point+seascape+sunset, geo:182m, w>=1000, landscape
-- **`us-ca-campus-beach-3.jpg`** — “Platform Holly Solar Eclipse (33200942298)” by Glenn Beltz from Goleta, CA, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-campus-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Platform Holly Solar Eclipse (33200942298)” by Glenn Beltz from Goleta, CA, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Platform_Holly_Solar_Eclipse_(33200942298).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Glenn Beltz from Goleta, CA, USA — https://www.flickr.com/people/23089307@N02
@@ -1295,7 +1295,7 @@
   - 1600×1067px, 826 KB
   - Description: Located at Schooner Gulch State Beach along the Mendocino coast in California is Bowling Ball Beach. An interesting geologic phenomena can be observed during low tides. Hard mineral deposits form 4' to 5' in diameter 'bowling balls.' Wave action over millions of years has worn away the softer material where the mineral deposits originally formed.
   - Match: score 11 via coastal-in-title, name:cannonball, kw:beach+wave+coast+mar, w>=1000, landscape
-- **`us-ca-cannonball-beach-2.jpg`** — “Wildlands Seawood Cape Redwoods” by BookOfDisquiet, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-cannonball-beach-2.jpg`** ✗ **not a coastal photo** — “Wildlands Seawood Cape Redwoods” by BookOfDisquiet, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Wildlands_Seawood_Cape_Redwoods.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: BookOfDisquiet — //commons.wikimedia.org/w/index.php?title=User:BookOfDisquiet&amp;action=edit&amp;redlink=1
@@ -1329,15 +1329,7 @@
 
 `osm:way/1082435169` · 34.0383047, -118.6614546 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-carbon-beach-1.jpg`** — “Confluence of Coyote Creek and San Gabriel River, Long Beach, California, on Approach to Long Beach Airport (6013277245)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Confluence_of_Coyote_Creek_and_San_Gabriel_River,_Long_Beach,_California,_on_Approach_to_Long_Beach_Airport_(6013277245).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
-  - Dated: 2011-08-04 18:51
-  - 1600×1200px, 662 KB, shot 59297 m from the spot
-  - Description: Coyote Creek is a principal tributary of the San Gabriel River in northwest Orange County, southeast Los Angeles County, and southwest Riverside County in the U.S. state of California. It drains a land area of roughly 41.3 square miles (107 km2) covering five major cities, including Brea, Buena Park, Fullerton, La Habra, and La Palma. Some major tributaries of the creek in the highly urbanized watershed include Brea Creek, Fullerton Creek and Carbon Creek. The mostly flat creek basin is separated by a series of low mountains, and is bounded by several small mountain ranges, including the Chino
-  - Match: score 10 via coastal-in-title, name:carbon, kw:beach+cove, geo:59297m, w>=1000, landscape
-- **`us-ca-carbon-beach-2.jpg`** — “The Malibu Pier from Surfrider Beach - panoramio” by Darin R. McClure, Wikimedia Commons, CC BY 3.0
+- **`us-ca-carbon-beach-1.jpg`** — “The Malibu Pier from Surfrider Beach - panoramio” by Darin R. McClure, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:The_Malibu_Pier_from_Surfrider_Beach_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Darin R. McClure — https://web.archive.org/web/20161017083206/http://www.panoramio.com/user/516393?with_photo_id=40954222
@@ -1345,7 +1337,7 @@
   - 1600×1071px, 613 KB, shot 1343 m from the spot
   - Description: The Malibu Pier from Surfrider Beach
   - Match: score 8 via coastal-in-title, kw:beach+surf+pier, geo:1343m, w>=1000, landscape
-- **`us-ca-carbon-beach-3.jpg`** — Day Break (257825987) — CC0 (Wikimedia Commons), no attribution required
+- **`us-ca-carbon-beach-2.jpg`** — Day Break (257825987) — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Day_Break_(257825987).jpeg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Robbie Lee Coyle — https://500px.com/rcoyle1
@@ -1353,6 +1345,14 @@
   - 1600×1069px, 613 KB, shot 417 m from the spot
   - Description: 500px provided description: Day Break [#sunrise ,#sunset ,#mountains ,#beach ,#sun ,#horizon ,#landscapes ,#sundown ,#photography ,#nighttime ,#cliffs ,#distance ,#dramatic sky ,#daybreak ,#bird of prey ,#nightfall ,#blue skies ,#sunup ,#setting sun ,#beach life ,#Popular Tags ,#sonya7s]
   - Match: score 7 via kw:beach+break+cliff+sunset, geo:417m, w>=1000, landscape
+- **`us-ca-carbon-beach-3.jpg`** ✗ **not a coastal photo** — “Confluence of Coyote Creek and San Gabriel River, Long Beach, California, on Approach to Long Beach Airport (6013277245)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Confluence_of_Coyote_Creek_and_San_Gabriel_River,_Long_Beach,_California,_on_Approach_to_Long_Beach_Airport_(6013277245).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
+  - Dated: 2011-08-04 18:51
+  - 1600×1200px, 662 KB, shot 59297 m from the spot
+  - Description: Coyote Creek is a principal tributary of the San Gabriel River in northwest Orange County, southeast Los Angeles County, and southwest Riverside County in the U.S. state of California. It drains a land area of roughly 41.3 square miles (107 km2) covering five major cities, including Brea, Buena Park, Fullerton, La Habra, and La Palma. Some major tributaries of the creek in the highly urbanized watershed include Brea Creek, Fullerton Creek and Carbon Creek. The mostly flat creek basin is separated by a series of low mountains, and is bounded by several small mountain ranges, including the Chino
+  - Match: score 10 via coastal-in-title, name:carbon, kw:beach+cove, geo:59297m, w>=1000, landscape
 
 ## Cardiff State Beach
 
@@ -1366,13 +1366,7 @@
   - 1600×1200px, 438 KB
   - Description: Kite surfing
   - Match: score 11 via coastal-in-title, name:cardiff, kw:beach+surf+surfing, w>=1000, landscape
-- **`us-ca-cardiff-state-beach-2.jpg`** — Cardiff by the Sea — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Cardiff_by_the_Sea.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Laszlo2 (Commons user)
-  - 1600×1042px, 1381 KB, shot 1555 m from the spot
-  - Match: score 11 via coastal-in-title, name:cardiff, kw:beach+sea, geo:1555m, w>=1000, landscape
-- **`us-ca-cardiff-state-beach-3.jpg`** — North Solana Beach, Looking South — CC0 (Wikimedia Commons), no attribution required
+- **`us-ca-cardiff-state-beach-2.jpg`** — North Solana Beach, Looking South — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:North_Solana_Beach,_Looking_South.jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Z3lvs — //commons.wikimedia.org/wiki/User:Z3lvs
@@ -1380,6 +1374,12 @@
   - 1600×1200px, 1134 KB, shot 3719 m from the spot
   - Description: The northernmost beach in Solana Beach, California. It is right next to Cardiff State Beach. Looking south, one can see La Jolla in the distance.
   - Match: score 11 via coastal-in-title, name:cardiff, kw:beach+sea+cliff, geo:3719m, w>=1000, landscape
+- **`us-ca-cardiff-state-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Cardiff by the Sea — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Cardiff_by_the_Sea.jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: Laszlo2 (Commons user)
+  - 1600×1042px, 1381 KB, shot 1555 m from the spot
+  - Match: score 11 via coastal-in-title, name:cardiff, kw:beach+sea, geo:1555m, w>=1000, landscape
 
 ## Carmel Beach
 
@@ -1422,20 +1422,20 @@
   - 1600×1200px, 748 KB
   - Description: The beach on a sunny afternoon at Carmel-by-the-Sea.
   - Match: score 11 via coastal-in-title, name:carmel, kw:beach+sea+bay, w>=1000, landscape
-- **`us-ca-carmel-beach-826538-2.png`** — Carmel Beach and Bath House (back) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Carmel_Beach_and_Bath_House_(back).png
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Louis S. Slevin — https://en.wikipedia.org/wiki/en:Louis_S._Slevin
-  - Dated: 1907
-  - 1600×1033px, 1168 KB
-  - Description: People and horses cluster around the bathhouse at left and from there to the right edge of the photograph. The Carmel Bathhouse was constructed at the foot of Ocean Avenue in 1889 by Delos E. Goldsmith and lasted for 40 years.
-  - Match: score 10 via coastal-in-title, name:carmel, kw:beach+ocean, w>=1000, landscape
-- **`us-ca-carmel-beach-826538-3.png`** — Carmel Beach and Bath House — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-carmel-beach-826538-2.png`** — Carmel Beach and Bath House — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Carmel_Beach_and_Bath_House.png
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Louis S. Slevin — https://en.wikipedia.org/wiki/en:Louis_S._Slevin
   - Dated: 1907
   - 1600×1035px, 3758 KB
+  - Description: People and horses cluster around the bathhouse at left and from there to the right edge of the photograph. The Carmel Bathhouse was constructed at the foot of Ocean Avenue in 1889 by Delos E. Goldsmith and lasted for 40 years.
+  - Match: score 10 via coastal-in-title, name:carmel, kw:beach+ocean, w>=1000, landscape
+- **`us-ca-carmel-beach-826538-3.png`** ✗ **not a coastal photo** — Carmel Beach and Bath House (back) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Carmel_Beach_and_Bath_House_(back).png
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: Louis S. Slevin — https://en.wikipedia.org/wiki/en:Louis_S._Slevin
+  - Dated: 1907
+  - 1600×1033px, 1168 KB
   - Description: People and horses cluster around the bathhouse at left and from there to the right edge of the photograph. The Carmel Bathhouse was constructed at the foot of Ocean Avenue in 1889 by Delos E. Goldsmith and lasted for 40 years.
   - Match: score 10 via coastal-in-title, name:carmel, kw:beach+ocean, w>=1000, landscape
 
@@ -1488,7 +1488,7 @@
   - 1600×1067px, 129 KB, shot 1793 m from the spot
   - Description: Oil rigs @ sunset
   - Match: score 9 via name:carpinteria, kw:shore+sunset, geo:1793m, w>=1000, landscape
-- **`us-ca-carpinteria-seal-sanctuary-3.jpg`** — “Carpinteria Creek under overpass” by Dreamyshade, Wikimedia Commons, CC BY 4.0
+- **`us-ca-carpinteria-seal-sanctuary-3.jpg`** ✗ **not a coastal photo** — “Carpinteria Creek under overpass” by Dreamyshade, Wikimedia Commons, CC BY 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Carpinteria_Creek_under_overpass.jpg
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Dreamyshade — //commons.wikimedia.org/wiki/User:Dreamyshade
@@ -1538,15 +1538,7 @@
   - 1600×1181px, 668 KB, shot 460 m from the spot
   - Description: Caspar Headlands State Beach in 2009
   - Match: score 17 via coastal-in-title, name:caspar+headlands, kw:beach+coast+headland, geo:460m, w>=1000, landscape
-- **`us-ca-caspar-headlands-state-beach-2.jpg`** — “Point Cabrillo Light Station adjacent headlands, Caspar, CA 2017-09-01” by Nwhysel, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Point_Cabrillo_Light_Station_adjacent_headlands,_Caspar,_CA_2017-09-01.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Nwhysel — //commons.wikimedia.org/wiki/User:Nwhysel
-  - Dated: Taken on 1 September 2017, 12:39:02
-  - 1600×1200px, 602 KB, shot 1161 m from the spot
-  - Description: Point Cabrillo Light Station adjacent headlands, Caspar, CA 2017-09-01
-  - Match: score 16 via coastal-in-title, name:caspar+headlands, kw:point+headland, geo:1161m, w>=1000, landscape
-- **`us-ca-caspar-headlands-state-beach-3.jpg`** — “Cloudy Light Ocean” by Michael Potts, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-caspar-headlands-state-beach-2.jpg`** — “Cloudy Light Ocean” by Michael Potts, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Cloudy_Light_Ocean.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Michael Potts
@@ -1554,6 +1546,14 @@
   - 1600×1202px, 520 KB, shot 449 m from the spot
   - Description: The tail of a cold air mass parades by
   - Match: score 12 via coastal-in-title, name:caspar, kw:ocean+coast, geo:449m, w>=1000, landscape
+- **`us-ca-caspar-headlands-state-beach-3.jpg`** ✗ **not a coastal photo** — “Point Cabrillo Light Station adjacent headlands, Caspar, CA 2017-09-01” by Nwhysel, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Point_Cabrillo_Light_Station_adjacent_headlands,_Caspar,_CA_2017-09-01.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Nwhysel — //commons.wikimedia.org/wiki/User:Nwhysel
+  - Dated: Taken on 1 September 2017, 12:39:02
+  - 1600×1200px, 602 KB, shot 1161 m from the spot
+  - Description: Point Cabrillo Light Station adjacent headlands, Caspar, CA 2017-09-01
+  - Match: score 16 via coastal-in-title, name:caspar+headlands, kw:point+headland, geo:1161m, w>=1000, landscape
 
 ## Castle Rock Beach
 
@@ -1646,23 +1646,7 @@
 
 `osm:node/358845839` · 32.6842188, -117.1869782
 
-- **`us-ca-central-beach-1.jpg`** — “Long Beach Airport, Long Beach, California (6013828556)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Airport,_Long_Beach,_California_(6013828556).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
-  - Dated: 2011-08-04 19:10
-  - 1600×1200px, 343 KB
-  - Description: Long Beach Airport, also known as Daugherty Field, is a city-owned public-use airport located three nautical miles (6 km) northeast of the central business district of the City of Long Beach, in Los Angeles County, California, United States. It serves Los Angeles and Orange Counties. It was formerly known as Long Beach Municipal Airport. This airport is included in the National Plan of Integrated Airport Systems for 2011–2015, which categorized it as a primary commercial service airport. As per Federal Aviation Administration records, the airport had 1,413,251 passenger boardings (enplanements
-  - Match: score 10 via coastal-in-title, name:central, kw:beach+mar, w>=1000, landscape
-- **`us-ca-central-beach-2.jpg`** — “Long Beach Airport, Long Beach, California (6013279317)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Airport,_Long_Beach,_California_(6013279317).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
-  - Dated: 2011-08-04 18:58
-  - 1600×1200px, 403 KB
-  - Description: Long Beach Airport, also known as Daugherty Field, is a city-owned public-use airport located three nautical miles (6 km) northeast of the central business district of the City of Long Beach, in Los Angeles County, California, United States. It serves Los Angeles and Orange Counties. It was formerly known as Long Beach Municipal Airport. This airport is included in the National Plan of Integrated Airport Systems for 2011–2015, which categorized it as a primary commercial service airport. As per Federal Aviation Administration records, the airport had 1,413,251 passenger boardings (enplanements
-  - Match: score 10 via coastal-in-title, name:central, kw:beach+mar, w>=1000, landscape
-- **`us-ca-central-beach-3.jpg`** — “Central California Beach No Nudity Beyond This Sign O (229906445)” by Paul Dineen, Wikimedia Commons, CC BY 3.0
+- **`us-ca-central-beach-1.jpg`** — “Central California Beach No Nudity Beyond This Sign O (229906445)” by Paul Dineen, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Central_California_Beach_No_Nudity_Beyond_This_Sign_O_(229906445).jpeg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Paul Dineen — https://500px.com/thepauldineen
@@ -1670,28 +1654,28 @@
   - 1600×1067px, 439 KB
   - Description: 500px provided description: Central California Beach No Nudity Beyond This Sign O [#beach ,#california ,#nude ,#sign ,#nudity ,#prohibited ,#pauldineen]
   - Match: score 10 via coastal-in-title, name:central, kw:beach+coast, w>=1000, landscape
+- **`us-ca-central-beach-2.jpg`** ✗ **not a coastal photo** — “Long Beach Airport, Long Beach, California (6013828556)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Airport,_Long_Beach,_California_(6013828556).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
+  - Dated: 2011-08-04 19:10
+  - 1600×1200px, 343 KB
+  - Description: Long Beach Airport, also known as Daugherty Field, is a city-owned public-use airport located three nautical miles (6 km) northeast of the central business district of the City of Long Beach, in Los Angeles County, California, United States. It serves Los Angeles and Orange Counties. It was formerly known as Long Beach Municipal Airport. This airport is included in the National Plan of Integrated Airport Systems for 2011–2015, which categorized it as a primary commercial service airport. As per Federal Aviation Administration records, the airport had 1,413,251 passenger boardings (enplanements
+  - Match: score 10 via coastal-in-title, name:central, kw:beach+mar, w>=1000, landscape
+- **`us-ca-central-beach-3.jpg`** ✗ **not a coastal photo** — “Long Beach Airport, Long Beach, California (6013279317)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Airport,_Long_Beach,_California_(6013279317).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
+  - Dated: 2011-08-04 18:58
+  - 1600×1200px, 403 KB
+  - Description: Long Beach Airport, also known as Daugherty Field, is a city-owned public-use airport located three nautical miles (6 km) northeast of the central business district of the City of Long Beach, in Los Angeles County, California, United States. It serves Los Angeles and Orange Counties. It was formerly known as Long Beach Municipal Airport. This airport is included in the National Plan of Integrated Airport Systems for 2011–2015, which categorized it as a primary commercial service airport. As per Federal Aviation Administration records, the airport had 1,413,251 passenger boardings (enplanements
+  - Match: score 10 via coastal-in-title, name:central, kw:beach+mar, w>=1000, landscape
 
 ## Children's Pool Beach
 
 `osm:relation/7102575` · 32.8475494, -117.2784999
 
-- **`us-ca-children-s-pool-beach-1.jpg`** — “SeaLionsChildrensPoolBeachSDJan07” by Nehrams2020, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:SeaLionsChildrensPoolBeachSDJan07.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Nehrams2020 — //commons.wikimedia.org/wiki/User:Nehrams2020
-  - Dated: 2007-01-20
-  - 1600×1202px, 833 KB, shot 21 m from the spot
-  - Description: Seals at Children's Pool Beach in San Diego, California.
-  - Match: score 17 via coastal-in-title, name:children+pool, kw:beach+sea, geo:21m, w>=1000, landscape
-- **`us-ca-children-s-pool-beach-2.jpg`** — “Seals Flock on beach” by CaliforniaCat0001, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Seals_Flock_on_beach.JPG
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: CaliforniaCat0001 — //commons.wikimedia.org/w/index.php?title=User:CaliforniaCat0001&amp;action=edit&amp;redlink=1
-  - Dated: 2014-04-15 15:10:56
-  - 1600×1064px, 770 KB, shot 21 m from the spot
-  - Description: Seals on beach
-  - Match: score 17 via coastal-in-title, name:children+pool, kw:beach+sea, geo:21m, w>=1000, landscape
-- **`us-ca-children-s-pool-beach-3.jpg`** — Children's Pool Beach, United States (Unsplash) — CC0 (Wikimedia Commons), no attribution required
+- **`us-ca-children-s-pool-beach-1.jpg`** — Children's Pool Beach, United States (Unsplash) — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Children%27s_Pool_Beach,_United_States_(Unsplash).jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Matt Howard thematthoward — https://unsplash.com/@thematthoward
@@ -1699,20 +1683,28 @@
   - 1600×899px, 702 KB, shot 27 m from the spot
   - Description: Children's Pool Beach, United States
   - Match: score 15.5 via coastal-in-title, name:children+pool, kw:beach, geo:27m, w>=1000, landscape
+- **`us-ca-children-s-pool-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “SeaLionsChildrensPoolBeachSDJan07” by Nehrams2020, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:SeaLionsChildrensPoolBeachSDJan07.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Nehrams2020 — //commons.wikimedia.org/wiki/User:Nehrams2020
+  - Dated: 2007-01-20
+  - 1600×1202px, 833 KB, shot 21 m from the spot
+  - Description: Seals at Children's Pool Beach in San Diego, California.
+  - Match: score 17 via coastal-in-title, name:children+pool, kw:beach+sea, geo:21m, w>=1000, landscape
+- **`us-ca-children-s-pool-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Seals Flock on beach” by CaliforniaCat0001, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Seals_Flock_on_beach.JPG
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: CaliforniaCat0001 — //commons.wikimedia.org/w/index.php?title=User:CaliforniaCat0001&amp;action=edit&amp;redlink=1
+  - Dated: 2014-04-15 15:10:56
+  - 1600×1064px, 770 KB, shot 21 m from the spot
+  - Description: Seals on beach
+  - Match: score 17 via coastal-in-title, name:children+pool, kw:beach+sea, geo:21m, w>=1000, landscape
 
 ## China Cove Beach
 
 `osm:node/358822074` · 33.598078, -117.8795013
 
-- **`us-ca-china-cove-beach-1.jpg`** — “China Cove Newport Beach.for my pal Keilana .by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:China_Cove_Newport_Beach.for_my_pal_Keilana_.by_Don_Ramey_Logan.jpg
-  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
-  - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
-  - Dated: 2016-06-25 16:43:16
-  - 1600×464px, 588 KB, shot 315 m from the spot
-  - Description: China Cove Newport Beach.for my pal Keilana .by Don Ramey Logan
-  - Match: score 17 via coastal-in-title, name:china+cove, kw:beach+cove, geo:315m, w>=1000, landscape
-- **`us-ca-china-cove-beach-2.jpg`** — “2013, A Nice Beach, Corona del Mar - panoramio” by Chris English, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-china-cove-beach-1.jpg`** — “2013, A Nice Beach, Corona del Mar - panoramio” by Chris English, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:2013,_A_Nice_Beach,_Corona_del_Mar_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Chris English — https://web.archive.org/web/20161028191243/http://www.panoramio.com/user/4447772?with_photo_id=99860430
@@ -1720,7 +1712,15 @@
   - 1600×1067px, 341 KB, shot 226 m from the spot
   - Description: 2013, A Nice Beach, Corona del Mar
   - Match: score 9 via coastal-in-title, kw:beach+mar, geo:226m, w>=1000, landscape
-- **`us-ca-china-cove-beach-3.jpg`** — “Orange County (27258525413)” by Sergei Gussev, Wikimedia Commons, CC BY 2.0
+- **`us-ca-china-cove-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “China Cove Newport Beach.for my pal Keilana .by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:China_Cove_Newport_Beach.for_my_pal_Keilana_.by_Don_Ramey_Logan.jpg
+  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
+  - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
+  - Dated: 2016-06-25 16:43:16
+  - 1600×464px, 588 KB, shot 315 m from the spot
+  - Description: China Cove Newport Beach.for my pal Keilana .by Don Ramey Logan
+  - Match: score 17 via coastal-in-title, name:china+cove, kw:beach+cove, geo:315m, w>=1000, landscape
+- **`us-ca-china-cove-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Orange County (27258525413)” by Sergei Gussev, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Orange_County_(27258525413).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Sergei Gussev — https://www.flickr.com/people/133200397@N03
@@ -1733,15 +1733,7 @@
 
 `osm:relation/7079998` · 37.0670186, -122.257155
 
-- **`us-ca-china-ladder-beach-1.jpg`** — “Pescadero State Beach on the Slow Coast” by RealChrisCain, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Pescadero_State_Beach_on_the_Slow_Coast.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: RealChrisCain — //commons.wikimedia.org/w/index.php?title=User:RealChrisCain&amp;action=edit&amp;redlink=1
-  - Dated: 2016-08-07
-  - 1600×1200px, 579 KB, shot 449 m from the spot
-  - Description: Public access to the Beach on Cabrillo Highway, CA State Route 1
-  - Match: score 8 via coastal-in-title, kw:beach+coast, geo:449m, w>=1000, landscape
-- **`us-ca-china-ladder-beach-2.jpg`** — “Aeolian Sand Ripples 1 (173891135)” by Justin Dolske, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-china-ladder-beach-1.jpg`** — “Aeolian Sand Ripples 1 (173891135)” by Justin Dolske, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Aeolian_Sand_Ripples_1_(173891135).jpeg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Justin Dolske — https://500px.com/dolske
@@ -1749,7 +1741,15 @@
   - 1600×1194px, 1261 KB, shot 3538 m from the spot
   - Description: 500px provided description: Light and dark sand ripple texture. Waddell Creek Beach, CA [#beach ,#sand]
   - Match: score 6 via coastal-in-title, kw:beach+sand, geo:3538m, w>=1000, landscape
-- **`us-ca-china-ladder-beach-3.jpg`** — “Aeolian Sand Ripples 5 (173891139)” by Justin Dolske, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-china-ladder-beach-2.jpg`** ✗ **not a coastal photo** — “Pescadero State Beach on the Slow Coast” by RealChrisCain, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Pescadero_State_Beach_on_the_Slow_Coast.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: RealChrisCain — //commons.wikimedia.org/w/index.php?title=User:RealChrisCain&amp;action=edit&amp;redlink=1
+  - Dated: 2016-08-07
+  - 1600×1200px, 579 KB, shot 449 m from the spot
+  - Description: Public access to the Beach on Cabrillo Highway, CA State Route 1
+  - Match: score 8 via coastal-in-title, kw:beach+coast, geo:449m, w>=1000, landscape
+- **`us-ca-china-ladder-beach-3.jpg`** ✗ **not a coastal photo** — “Aeolian Sand Ripples 5 (173891139)” by Justin Dolske, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Aeolian_Sand_Ripples_5_(173891139).jpeg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Justin Dolske — https://500px.com/dolske
@@ -1778,7 +1778,7 @@
   - 1600×2390px, 746 KB, shot 1302 m from the spot
   - Description: Dogpatch San Onofre Surfing USA
   - Match: score 7.5 via coastal-in-title, kw:beach+surf+surfing, geo:1302m, w>=1000
-- **`us-ca-church-3.jpg`** — “Nuke Plant, Great White Shark Breeding Ground, ^ Surfspot, Dogpatch San Onofre - panoramio” by Darin R. McClure, Wikimedia Commons, CC BY 3.0
+- **`us-ca-church-3.jpg`** ⚠︎ *context, not the coast itself* — “Nuke Plant, Great White Shark Breeding Ground, ^ Surfspot, Dogpatch San Onofre - panoramio” by Darin R. McClure, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Nuke_Plant,_Great_White_Shark_Breeding_Ground,_%5E_Surfspot,_Dogpatch_San_Onofre_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Darin R. McClure — https://web.archive.org/web/20161015051159/http://www.panoramio.com/user/516393?with_photo_id=39618567
@@ -1791,15 +1791,7 @@
 
 `osm:node/358763656` · 38.5154685, -123.2541745
 
-- **`us-ca-clam-beach-1.jpg`** — Long Beach Pike thronging with pedestrians, ca.1910 (CHS-1971) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Pike_thronging_with_pedestrians,_ca.1910_(CHS-1971).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Unknown author Unknown author
-  - Dated: circa 1910 date QS:P,+1910-00-00T00:00:0
-  - 1600×1243px, 480 KB
-  - Description: Long Beach Pike thronging with pedestrians, ca.1910 Photograph of the Long Beach Pike amusement park, ca.1910. To the right is the "Theatorium" which features moving pictures and the "Ohio Lunch Room". Strollers with umbrellas are seen the length of the Pike which is crowded with pedestrians. Part of the roller coaster is visible in the distance at left. Legible signs include: "Hot coffee, sandwiches, cold drinks", "Orange cider 5AC/", "Lease for sale"..., "Fruits", "Daily"..., "Con[...] beach"..., "Pool", "Looff's h"..., "Majestic dances", "Lovera"..., "Coney Island clam chowder", "Dancing", 
-  - Match: score 10.5 via coastal-in-title, name:clam, kw:beach+coast+sand, w>=1000
-- **`us-ca-clam-beach-2.jpg`** — “Goleta Beach (2013) 10” by Nandaro, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-clam-beach-1.jpg`** — “Goleta Beach (2013) 10” by Nandaro, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Goleta_Beach_(2013)_10.JPG
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Nandaro — //commons.wikimedia.org/wiki/User:Nandaro
@@ -1807,7 +1799,15 @@
   - 1600×1064px, 616 KB
   - Description: Kelp forest beneath the Goleta Beach Recreational Pier, near University of California, Santa Barbara (UCSB). There are mussels and other clams on the pillars.
   - Match: score 10 via coastal-in-title, name:clam, kw:beach+pier, w>=1000, landscape
-- **`us-ca-clam-beach-3.jpg`** — Men dumping clams into horse-drawn wagon for weighing, Sea Beach Packing Works, Copalis, ca 1916 (INDOCC 685) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-clam-beach-2.jpg`** ⚠︎ *context, not the coast itself* — Long Beach Pike thronging with pedestrians, ca.1910 (CHS-1971) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Pike_thronging_with_pedestrians,_ca.1910_(CHS-1971).jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: Unknown author Unknown author
+  - Dated: circa 1910 date QS:P,+1910-00-00T00:00:0
+  - 1600×1243px, 480 KB
+  - Description: Long Beach Pike thronging with pedestrians, ca.1910 Photograph of the Long Beach Pike amusement park, ca.1910. To the right is the "Theatorium" which features moving pictures and the "Ohio Lunch Room". Strollers with umbrellas are seen the length of the Pike which is crowded with pedestrians. Part of the roller coaster is visible in the distance at left. Legible signs include: "Hot coffee, sandwiches, cold drinks", "Orange cider 5AC/", "Lease for sale"..., "Fruits", "Daily"..., "Con[...] beach"..., "Pool", "Looff's h"..., "Majestic dances", "Lovera"..., "Coney Island clam chowder", "Dancing", 
+  - Match: score 10.5 via coastal-in-title, name:clam, kw:beach+coast+sand, w>=1000
+- **`us-ca-clam-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Men dumping clams into horse-drawn wagon for weighing, Sea Beach Packing Works, Copalis, ca 1916 (INDOCC 685) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Men_dumping_clams_into_horse-drawn_wagon_for_weighing,_Sea_Beach_Packing_Works,_Copalis,_ca_1916_(INDOCC_685).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Unknown author Unknown author
@@ -1820,15 +1820,7 @@
 
 `osm:node/358814951` · 40.9962365, -124.1161782
 
-- **`us-ca-clam-beach-814951-1.jpg`** — Long Beach Pike thronging with pedestrians, ca.1910 (CHS-1971) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Pike_thronging_with_pedestrians,_ca.1910_(CHS-1971).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Unknown author Unknown author
-  - Dated: circa 1910 date QS:P,+1910-00-00T00:00:0
-  - 1600×1243px, 480 KB
-  - Description: Long Beach Pike thronging with pedestrians, ca.1910 Photograph of the Long Beach Pike amusement park, ca.1910. To the right is the "Theatorium" which features moving pictures and the "Ohio Lunch Room". Strollers with umbrellas are seen the length of the Pike which is crowded with pedestrians. Part of the roller coaster is visible in the distance at left. Legible signs include: "Hot coffee, sandwiches, cold drinks", "Orange cider 5AC/", "Lease for sale"..., "Fruits", "Daily"..., "Con[...] beach"..., "Pool", "Looff's h"..., "Majestic dances", "Lovera"..., "Coney Island clam chowder", "Dancing", 
-  - Match: score 10.5 via coastal-in-title, name:clam, kw:beach+coast+sand, w>=1000
-- **`us-ca-clam-beach-814951-2.jpg`** — “Goleta Beach (2013) 10” by Nandaro, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-clam-beach-814951-1.jpg`** — “Goleta Beach (2013) 10” by Nandaro, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Goleta_Beach_(2013)_10.JPG
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Nandaro — //commons.wikimedia.org/wiki/User:Nandaro
@@ -1836,7 +1828,15 @@
   - 1600×1064px, 616 KB
   - Description: Kelp forest beneath the Goleta Beach Recreational Pier, near University of California, Santa Barbara (UCSB). There are mussels and other clams on the pillars.
   - Match: score 10 via coastal-in-title, name:clam, kw:beach+pier, w>=1000, landscape
-- **`us-ca-clam-beach-814951-3.jpg`** — Men dumping clams into horse-drawn wagon for weighing, Sea Beach Packing Works, Copalis, ca 1916 (INDOCC 685) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-clam-beach-814951-2.jpg`** ⚠︎ *context, not the coast itself* — Long Beach Pike thronging with pedestrians, ca.1910 (CHS-1971) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Pike_thronging_with_pedestrians,_ca.1910_(CHS-1971).jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: Unknown author Unknown author
+  - Dated: circa 1910 date QS:P,+1910-00-00T00:00:0
+  - 1600×1243px, 480 KB
+  - Description: Long Beach Pike thronging with pedestrians, ca.1910 Photograph of the Long Beach Pike amusement park, ca.1910. To the right is the "Theatorium" which features moving pictures and the "Ohio Lunch Room". Strollers with umbrellas are seen the length of the Pike which is crowded with pedestrians. Part of the roller coaster is visible in the distance at left. Legible signs include: "Hot coffee, sandwiches, cold drinks", "Orange cider 5AC/", "Lease for sale"..., "Fruits", "Daily"..., "Con[...] beach"..., "Pool", "Looff's h"..., "Majestic dances", "Lovera"..., "Coney Island clam chowder", "Dancing", 
+  - Match: score 10.5 via coastal-in-title, name:clam, kw:beach+coast+sand, w>=1000
+- **`us-ca-clam-beach-814951-3.jpg`** ⚠︎ *context, not the coast itself* — Men dumping clams into horse-drawn wagon for weighing, Sea Beach Packing Works, Copalis, ca 1916 (INDOCC 685) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Men_dumping_clams_into_horse-drawn_wagon_for_weighing,_Sea_Beach_Packing_Works,_Copalis,_ca_1916_(INDOCC_685).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Unknown author Unknown author
@@ -1878,23 +1878,7 @@
 
 `osm:relation/6826539` · 38.3652768, -123.0712965
 
-- **`us-ca-coleman-beach-1.jpg`** — “Ardea herodias, Coleman Beach - by Mike Baird” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Ardea_herodias,_Coleman_Beach_-_by_Mike_Baird.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Mike Baird from Morro Bay, USA — https://www.flickr.com/people/72825507@N00
-  - Dated: 2007-05-08 13:31
-  - 1600×1600px, 582 KB, shot 386579 m from the spot
-  - Description: Great Blue Heron in Morro Bay, CA; photographed at Coleman Beach at low tide.
-  - Match: score 10.5 via coastal-in-title, name:coleman, kw:beach+bay+tide, geo:386579m, w>=1000
-- **`us-ca-coleman-beach-2.jpg`** — “Ardea herodias, Coleman Beach - by Mike Baird (cropped)” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Ardea_herodias,_Coleman_Beach_-_by_Mike_Baird_(cropped).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Mike Baird from Morro Bay, USA — https://www.flickr.com/people/72825507@N00
-  - Dated: 2007-05-08 13:31
-  - 1600×1600px, 586 KB, shot 386579 m from the spot
-  - Description: Great Blue Heron in Morro Bay, CA; photographed at Coleman Beach at low tide.
-  - Match: score 10.5 via coastal-in-title, name:coleman, kw:beach+bay+tide, geo:386579m, w>=1000
-- **`us-ca-coleman-beach-3.jpg`** — “Sunset on the Sonoma Coast - Flickr - Joe Parks” by Joe Parks from Berkeley, CA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-coleman-beach-1.jpg`** — “Sunset on the Sonoma Coast - Flickr - Joe Parks” by Joe Parks from Berkeley, CA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sunset_on_the_Sonoma_Coast_-_Flickr_-_Joe_Parks.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Joe Parks from Berkeley, CA — https://www.flickr.com/people/34450190@N08
@@ -1902,6 +1886,22 @@
   - 1600×1067px, 260 KB, shot 583 m from the spot
   - Description: Sunset along California's rugged Sonoma Coast, near Bodega Bay. [Canon 6d / 24-105mm f/4L]
   - Match: score 9 via coastal-in-title, kw:coast+bay+sunset, geo:583m, w>=1000, landscape
+- **`us-ca-coleman-beach-2.jpg`** ✗ **not a coastal photo** — “Ardea herodias, Coleman Beach - by Mike Baird” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Ardea_herodias,_Coleman_Beach_-_by_Mike_Baird.jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Mike Baird from Morro Bay, USA — https://www.flickr.com/people/72825507@N00
+  - Dated: 2007-05-08 13:31
+  - 1600×1600px, 582 KB, shot 386579 m from the spot
+  - Description: Great Blue Heron in Morro Bay, CA; photographed at Coleman Beach at low tide.
+  - Match: score 10.5 via coastal-in-title, name:coleman, kw:beach+bay+tide, geo:386579m, w>=1000
+- **`us-ca-coleman-beach-3.jpg`** ✗ **not a coastal photo** — “Ardea herodias, Coleman Beach - by Mike Baird (cropped)” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Ardea_herodias,_Coleman_Beach_-_by_Mike_Baird_(cropped).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Mike Baird from Morro Bay, USA — https://www.flickr.com/people/72825507@N00
+  - Dated: 2007-05-08 13:31
+  - 1600×1600px, 586 KB, shot 386579 m from the spot
+  - Description: Great Blue Heron in Morro Bay, CA; photographed at Coleman Beach at low tide.
+  - Match: score 10.5 via coastal-in-title, name:coleman, kw:beach+bay+tide, geo:386579m, w>=1000
 
 ## College Cove North
 
@@ -1980,7 +1980,7 @@
   - 1600×950px, 573 KB, shot 3508 m from the spot
   - Description: View from behind Trink's Cafe in Gualala of the mouth of the Gualala River, where the river crosses a sandbar extending from Gualala Point Regional Park to enter the Pacific
   - Match: score 6 via coastal-in-title, kw:sand+point, geo:3508m, w>=1000, landscape
-- **`us-ca-cooks-beach-3.jpg`** — “Snowy Egret, Goleta Beach, Santa Barbara, California (50698211093)” by Channel City Camera Club /Susan T. Cook, Wikimedia Commons, CC BY 2.0
+- **`us-ca-cooks-beach-3.jpg`** ✗ **not a coastal photo** — “Snowy Egret, Goleta Beach, Santa Barbara, California (50698211093)” by Channel City Camera Club /Susan T. Cook, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Snowy_Egret,_Goleta_Beach,_Santa_Barbara,_California_(50698211093).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Channel City Camera Club /Susan T. Cook — https://www.flickr.com/people/135081788@N03
@@ -2051,15 +2051,7 @@
 
 `osm:node/358821883` · 32.6764413, -117.1744776
 
-- **`us-ca-coronado-shores-beach-1.jpg`** — “SS Monte Carlo near Coronado Shores, Coronado, California (4321109056)” by Jamie Lantzy from San Diego, CA, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:SS_Monte_Carlo_near_Coronado_Shores,_Coronado,_California_(4321109056).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Jamie Lantzy from San Diego, CA, USA — https://www.flickr.com/people/18762235@N00
-  - Dated: 2010-01-31 16:39
-  - 1600×1200px, 512 KB, shot 285 m from the spot
-  - Description: Photos taken at low-tide on 1/30/2010 of the wreck of the SS Monte Carlo near Coronado Shores, Coronado, California. The Monte Carlo was a 300 ft concrete-hulled ship originally launched as the McKittick in 1921 from Wilmington NC. In 1936, the ship was anchored 3 miles of the coast of Point Loma and served as a gambling and prositution ship, avoiding local laws as it was in international waters. On December 31, 1936, a storm broke the anchor lines, and the ship foundered near the shore and was abandoned by its re Photos taken at low-tide on 1/30/2010 of the wreck of the SS Monte Carlo near Co
-  - Match: score 18 via coastal-in-title, name:coronado+shores, kw:coast+shore+point+tide, geo:285m, w>=1000, landscape
-- **`us-ca-coronado-shores-beach-2.jpg`** — “SS Monte Carlo near Coronado Shores, Coronado, California (4320412419)” by Jamie Lantzy from San Diego, CA, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-coronado-shores-beach-1.jpg`** — “SS Monte Carlo near Coronado Shores, Coronado, California (4320412419)” by Jamie Lantzy from San Diego, CA, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:SS_Monte_Carlo_near_Coronado_Shores,_Coronado,_California_(4320412419).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Jamie Lantzy from San Diego, CA, USA — https://www.flickr.com/people/18762235@N00
@@ -2067,7 +2059,7 @@
   - 1600×1200px, 533 KB, shot 285 m from the spot
   - Description: Photos taken at low-tide on 1/30/2010 of the wreck of the SS Monte Carlo near Coronado Shores, Coronado, California. The Monte Carlo was a 300 ft concrete-hulled ship originally launched as the McKittick in 1921 from Wilmington NC. In 1936, the ship was anchored 3 miles of the coast of Point Loma and served as a gambling and prositution ship, avoiding local laws as it was in international waters. On December 31, 1936, a storm broke the anchor lines, and the ship foundered near the shore and was abandoned by its owners (supposedly, the mob). It's usually buried in the sand, but occasionally tur
   - Match: score 18 via coastal-in-title, name:coronado+shores, kw:coast+shore+sand+point, geo:285m, w>=1000, landscape
-- **`us-ca-coronado-shores-beach-3.jpg`** — “SS Monte Carlo near Coronado Shores, Coronado, California (4321143872)” by Jamie Lantzy from San Diego, CA, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-coronado-shores-beach-2.jpg`** — “SS Monte Carlo near Coronado Shores, Coronado, California (4321143872)” by Jamie Lantzy from San Diego, CA, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:SS_Monte_Carlo_near_Coronado_Shores,_Coronado,_California_(4321143872).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Jamie Lantzy from San Diego, CA, USA — https://www.flickr.com/people/18762235@N00
@@ -2075,6 +2067,14 @@
   - 1600×1200px, 573 KB, shot 285 m from the spot
   - Description: Photos taken at low-tide on 1/30/2010 of the wreck of the SS Monte Carlo near Coronado Shores, Coronado, California. The Monte Carlo was a 300 ft concrete-hulled ship originally launched as the McKittick in 1921 from Wilmington NC. In 1936, the ship was anchored 3 miles of the coast of Point Loma and served as a gambling and prositution ship, avoiding local laws as it was in international waters. On December 31, 1936, a storm broke the anchor lines, and the ship foundered near the shore and was abandoned by its owners (supposedly, the mob). It's usually buried in the sand, but occasionally tur
   - Match: score 18 via coastal-in-title, name:coronado+shores, kw:coast+shore+sand+point, geo:285m, w>=1000, landscape
+- **`us-ca-coronado-shores-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “SS Monte Carlo near Coronado Shores, Coronado, California (4321109056)” by Jamie Lantzy from San Diego, CA, USA, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:SS_Monte_Carlo_near_Coronado_Shores,_Coronado,_California_(4321109056).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Jamie Lantzy from San Diego, CA, USA — https://www.flickr.com/people/18762235@N00
+  - Dated: 2010-01-31 16:39
+  - 1600×1200px, 512 KB, shot 285 m from the spot
+  - Description: Photos taken at low-tide on 1/30/2010 of the wreck of the SS Monte Carlo near Coronado Shores, Coronado, California. The Monte Carlo was a 300 ft concrete-hulled ship originally launched as the McKittick in 1921 from Wilmington NC. In 1936, the ship was anchored 3 miles of the coast of Point Loma and served as a gambling and prositution ship, avoiding local laws as it was in international waters. On December 31, 1936, a storm broke the anchor lines, and the ship foundered near the shore and was abandoned by its re Photos taken at low-tide on 1/30/2010 of the wreck of the SS Monte Carlo near Co
+  - Match: score 18 via coastal-in-title, name:coronado+shores, kw:coast+shore+point+tide, geo:285m, w>=1000, landscape
 
 ## County Line Beach
 
@@ -2096,7 +2096,7 @@
   - 1600×985px, 956 KB, shot 2693 m from the spot
   - Description: Only minutes away from fast-moving Los Angeles, the Palos Verdes Peninsula is filled with natural beauty and majestic beaches while providing a great diversity of habitat and life. Considered on of the most beautiful areas in the world, Point Vicente is the centerpiece of breathtaking coastline vistas, dramatic steep cliffs, gracefully rolling hills, and deep canyons. It is a perfect gateway to Discover the Coast. Photo by David Ledig, BLM.
   - Match: score 12 via coastal-in-title, name:line, kw:beach+coast+coastal+coastline, geo:2693m, w>=1000, landscape
-- **`us-ca-county-line-beach-3.jpg`** — California Coastal National Monument at Point Vicente (28352930552) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-county-line-beach-3.jpg`** ⚠︎ *context, not the coast itself* — California Coastal National Monument at Point Vicente (28352930552) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:California_Coastal_National_Monument_at_Point_Vicente_(28352930552).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: blmcalifornia — https://www.flickr.com/people/blmcalifornia/
@@ -2167,15 +2167,7 @@
 
 `osm:relation/12940204` · 41.7268851, -124.1621073 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-crescent-beach-1.jpg`** — “The Two LIghthouses (6130735537)” by Anita Ritenour from Santa Maria, CA, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:The_Two_LIghthouses_(6130735537).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Anita Ritenour from Santa Maria, CA, USA — https://www.flickr.com/people/11418908@N07
-  - Dated: 2011-08-30 14:43
-  - 1600×981px, 827 KB, shot 880 m from the spot
-  - Description: A better version of this shot will certainly follow in the months to come. I was inspired to get a shot as good or better than this one <a href=" http://home.earthlink.net/~north_coast/id26.html " rel="nofollow">home.earthlink.net/~north_coast/id26.html</a> shot by Crescent City photographer Alan Justice. According to Alan, from this perspective, the nearer Battery Point Lighthouse is 4 miles and the St George Reef Lighthouse beyond is 10 miles from the BP lighthouse. With the zoom lens from this point on the east shore of Crescent City harbor, the lighthouses look much closer. To improve the 
-  - Match: score 13 via coastal-in-title, name:crescent, kw:coast+shore+point+lighthouse, geo:880m, w>=1000, landscape
-- **`us-ca-crescent-beach-2.jpg`** — “Crescent Beach Overlook Redwood National Park” by Adbar, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-crescent-beach-1.jpg`** — “Crescent Beach Overlook Redwood National Park” by Adbar, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Crescent_Beach_Overlook_Redwood_National_Park.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Adbar — //commons.wikimedia.org/wiki/User:Adbar
@@ -2183,7 +2175,15 @@
   - 1600×1071px, 433 KB, shot 2766 m from the spot
   - Description: Crescent Beach Overlook, Enderts Beach Road, Redwood National Park, south of Crescent City (Requa?)
   - Match: score 11 via coastal-in-title, name:crescent, kw:beach+coast, geo:2766m, w>=1000, landscape
-- **`us-ca-crescent-beach-3.jpg`** — “Laguna Beach , crescent bay - panoramio” by Patrick Nouhailler's…, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-crescent-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “The Two LIghthouses (6130735537)” by Anita Ritenour from Santa Maria, CA, USA, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:The_Two_LIghthouses_(6130735537).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Anita Ritenour from Santa Maria, CA, USA — https://www.flickr.com/people/11418908@N07
+  - Dated: 2011-08-30 14:43
+  - 1600×981px, 827 KB, shot 880 m from the spot
+  - Description: A better version of this shot will certainly follow in the months to come. I was inspired to get a shot as good or better than this one <a href=" http://home.earthlink.net/~north_coast/id26.html " rel="nofollow">home.earthlink.net/~north_coast/id26.html</a> shot by Crescent City photographer Alan Justice. According to Alan, from this perspective, the nearer Battery Point Lighthouse is 4 miles and the St George Reef Lighthouse beyond is 10 miles from the BP lighthouse. With the zoom lens from this point on the east shore of Crescent City harbor, the lighthouses look much closer. To improve the 
+  - Match: score 13 via coastal-in-title, name:crescent, kw:coast+shore+point+lighthouse, geo:880m, w>=1000, landscape
+- **`us-ca-crescent-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Laguna Beach , crescent bay - panoramio” by Patrick Nouhailler's…, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Laguna_Beach_,_crescent_bay_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Patrick Nouhailler's… — https://web.archive.org/web/20161014232828/http://www.panoramio.com/user/1286122?with_photo_id=30998273
@@ -2204,7 +2204,7 @@
   - 1600×1200px, 393 KB, shot 39 m from the spot
   - Description: Laguna Beach, crescent Bay - Patrick Nouhailler
   - Match: score 10 via coastal-in-title, kw:beach+bay+sunset, geo:39m, w>=1000, landscape
-- **`us-ca-cresent-bay-beach-2.jpg`** — “Crescent Bay Point Park, January 2012 - panoramio (1)” by Kevin.Daniels, Wikimedia Commons, CC BY 3.0
+- **`us-ca-cresent-bay-beach-2.jpg`** ✗ **not a coastal photo** — “Crescent Bay Point Park, January 2012 - panoramio (1)” by Kevin.Daniels, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Crescent_Bay_Point_Park,_January_2012_-_panoramio_(1).jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Kevin.Daniels — https://web.archive.org/web/20161020022750/http://www.panoramio.com/user/5035009?with_photo_id=66998130
@@ -2212,7 +2212,7 @@
   - 1600×1349px, 439 KB, shot 186 m from the spot
   - Description: Crescent Bay Point Park, January 2012
   - Match: score 9.5 via coastal-in-title, kw:beach+bay+point, geo:186m, w>=1000
-- **`us-ca-cresent-bay-beach-3.jpg`** — “Wildflower at Crescent Bay Point Park, January 2012 - panoramio” by Kevin.Daniels, Wikimedia Commons, CC BY 3.0
+- **`us-ca-cresent-bay-beach-3.jpg`** ✗ **not a coastal photo** — “Wildflower at Crescent Bay Point Park, January 2012 - panoramio” by Kevin.Daniels, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Wildflower_at_Crescent_Bay_Point_Park,_January_2012_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Kevin.Daniels — https://web.archive.org/web/20161019183722/http://www.panoramio.com/user/5035009?with_photo_id=67097466
@@ -2225,23 +2225,7 @@
 
 `osm:relation/14402194` · 34.0314417, -118.7476966 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-dan-blocker-county-beach-1.jpg`** — “Grilled swordfish, fish sandwich, fish tacos” by T.Tseng, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Grilled_swordfish,_fish_sandwich,_fish_tacos.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: T.Tseng
-  - Dated: Taken on 10 March 2019
-  - 1600×1200px, 607 KB, shot 1170 m from the spot
-  - Description: Malibu Seafood, Malibu CA
-  - Match: score 9 via coastal-in-title, kw:sea+sand+mar, geo:1170m, w>=1000, landscape
-- **`us-ca-dan-blocker-county-beach-2.jpg`** — “Grilled swordfish, fish sandwich, fish tacos - 47345668791” by T.Tseng, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Grilled_swordfish,_fish_sandwich,_fish_tacos_-_47345668791.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: T.Tseng
-  - Dated: Taken on 10 March 2019
-  - 1600×1200px, 596 KB, shot 1170 m from the spot
-  - Description: Malibu Seafood, Malibu CA
-  - Match: score 9 via coastal-in-title, kw:sea+sand+mar, geo:1170m, w>=1000, landscape
-- **`us-ca-dan-blocker-county-beach-3.jpg`** — “Malibu, California, Pacific Coast Highway (3125721526)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-dan-blocker-county-beach-1.jpg`** — “Malibu, California, Pacific Coast Highway (3125721526)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Malibu,_California,_Pacific_Coast_Highway_(3125721526).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
@@ -2249,6 +2233,22 @@
   - 1600×1200px, 170 KB, shot 16340 m from the spot
   - Description: Malibu is an affluent beach city in Los Angeles County, California, United States. As of the 2010 census, the city population was 12,645. Malibu consists of a 21-mile (34 km) strip of prime Pacific coastline. Nicknamed "the 'Bu" by surfers and locals, the community is famous for its warm, sandy beaches, and for being the home of many Hollywood movie stars and others associated with the entertainment industry. Signs around the city proclaim "27 miles of scenic beauty", referring to Malibu's original length of 27 miles (43 km) before the city was incorporated in 1991. Most Malibu residents live 
   - Match: score 7 via coastal-in-title, kw:beach+surf+surfer+coast, geo:16340m, w>=1000, landscape
+- **`us-ca-dan-blocker-county-beach-2.jpg`** ✗ **not a coastal photo** — “Grilled swordfish, fish sandwich, fish tacos” by T.Tseng, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Grilled_swordfish,_fish_sandwich,_fish_tacos.jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: T.Tseng
+  - Dated: Taken on 10 March 2019
+  - 1600×1200px, 607 KB, shot 1170 m from the spot
+  - Description: Malibu Seafood, Malibu CA
+  - Match: score 9 via coastal-in-title, kw:sea+sand+mar, geo:1170m, w>=1000, landscape
+- **`us-ca-dan-blocker-county-beach-3.jpg`** ✗ **not a coastal photo** — “Grilled swordfish, fish sandwich, fish tacos - 47345668791” by T.Tseng, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Grilled_swordfish,_fish_sandwich,_fish_tacos_-_47345668791.jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: T.Tseng
+  - Dated: Taken on 10 March 2019
+  - 1600×1200px, 596 KB, shot 1170 m from the spot
+  - Description: Malibu Seafood, Malibu CA
+  - Match: score 9 via coastal-in-title, kw:sea+sand+mar, geo:1170m, w>=1000, landscape
 
 ## Davenport Beach
 
@@ -2357,7 +2357,7 @@
   - 1600×1200px, 912 KB, shot 360 m from the spot
   - Description: California, USA - September 2016 San Diego in September 2016
   - Match: score 16 via name:mar+dog, kw:beach+coast+shore+mar, geo:360m, w>=1000, landscape
-- **`us-ca-del-mar-dog-beach-3.jpg`** — “San Diego beach walk” by Laredawg, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-del-mar-dog-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “San Diego beach walk” by Laredawg, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:San_Diego_beach_walk.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Laredawg — //commons.wikimedia.org/wiki/User:Laredawg
@@ -2370,23 +2370,7 @@
 
 `osm:node/13850826844` · 34.4074089, -119.8501831
 
-- **`us-ca-depressions-beach-1.jpg`** — “UCSB Lagoon (4547142266)” by Dhilung Kirat from Santa Barbara, CA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:UCSB_Lagoon_(4547142266).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Dhilung Kirat from Santa Barbara, CA — https://www.flickr.com/people/7236858@N07
-  - Dated: 2010-03-04 10:05
-  - 1600×1000px, 397 KB, shot 130 m from the spot
-  - Description: Storke Tower on the University of California, Santa Barbara campus
-  - Match: score 7.5 via coastal-in-title, kw:lagoon, geo:130m, w>=1000, landscape
-- **`us-ca-depressions-beach-2.jpg`** — “UCSB Lagoon - Flickr - dhilung” by Dhilung Kirat from Santa Barbara, CA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:UCSB_Lagoon_-_Flickr_-_dhilung.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Dhilung Kirat from Santa Barbara, CA — https://www.flickr.com/people/7236858@N07
-  - Dated: Taken on 4 March 2010, 10:05
-  - 1600×1034px, 394 KB, shot 130 m from the spot
-  - Description: I love how this Storke Tower glows at night - delivering a silent lecture about patience I guess. My good escape from those horrible deadlines and schedules. This photograph was recorded couple of weeks back during a night after a heavy rainfall. INFO: 17mm F/2.8 30 secs Two shots panorama.
-  - Match: score 7.5 via coastal-in-title, kw:lagoon, geo:130m, w>=1000, landscape
-- **`us-ca-depressions-beach-3.jpg`** — “Morro Strand State Beach (1)” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-depressions-beach-1.jpg`** — “Morro Strand State Beach (1)” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Morro_Strand_State_Beach_(1).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Mike Baird from Morro Bay, USA — https://www.flickr.com/people/72825507@N00
@@ -2394,12 +2378,28 @@
   - 1600×1066px, 435 KB, shot 143278 m from the spot
   - Description: Morro Strand State Beach — viewed from the Back Dunes with Morro Rock, located on Estero Bay in San Luis Obispo County, California. Taken after the Snowy Plover habitat protection fence was taken down for the season, in October 2011. Information about the area's natural history, from: www.slostateparks.com/general_park_info/resources/MSSB_Biological_Inventory.pdf Morro Strand State Beach (MSSB) comprises approximately 159.15 acres between the north parcel (Old Creek site) and south parcel (formerly called Atascadero State Beach) as well as an additional 23 acres which is to be transferred to S
   - Match: score 7 via coastal-in-title, kw:beach+sea+coast+coastal, geo:143278m, w>=1000, landscape
+- **`us-ca-depressions-beach-2.jpg`** ✗ **not a coastal photo** — “UCSB Lagoon (4547142266)” by Dhilung Kirat from Santa Barbara, CA, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:UCSB_Lagoon_(4547142266).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Dhilung Kirat from Santa Barbara, CA — https://www.flickr.com/people/7236858@N07
+  - Dated: 2010-03-04 10:05
+  - 1600×1000px, 397 KB, shot 130 m from the spot
+  - Description: Storke Tower on the University of California, Santa Barbara campus
+  - Match: score 7.5 via coastal-in-title, kw:lagoon, geo:130m, w>=1000, landscape
+- **`us-ca-depressions-beach-3.jpg`** ✗ **not a coastal photo** — “UCSB Lagoon - Flickr - dhilung” by Dhilung Kirat from Santa Barbara, CA, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:UCSB_Lagoon_-_Flickr_-_dhilung.jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Dhilung Kirat from Santa Barbara, CA — https://www.flickr.com/people/7236858@N07
+  - Dated: Taken on 4 March 2010, 10:05
+  - 1600×1034px, 394 KB, shot 130 m from the spot
+  - Description: I love how this Storke Tower glows at night - delivering a silent lecture about patience I guess. My good escape from those horrible deadlines and schedules. This photograph was recorded couple of weeks back during a night after a heavy rainfall. INFO: 17mm F/2.8 30 secs Two shots panorama.
+  - Match: score 7.5 via coastal-in-title, kw:lagoon, geo:130m, w>=1000, landscape
 
 ## Descanso Beach
 
 `osm:way/379370569` · 33.3508328, -118.3283714 · beach type: **sandy** (OpenStreetMap surface=sand) · lifeguard: yes
 
-- **`us-ca-descanso-beach-1.jpg`** — “Avalon Harbor” by Boothsift, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-descanso-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Avalon Harbor” by Boothsift, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Avalon_Harbor.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Boothsift — //commons.wikimedia.org/wiki/User:Boothsift
@@ -2412,15 +2412,7 @@
 
 `osm:way/551452844` · 34.4081671, -119.8739104
 
-- **`us-ca-devereux-beach-1.jpg`** — “Devereux Dog (3953795022)” by Dhilung Kirat from Santa Barbara, CA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Devereux_Dog_(3953795022).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Dhilung Kirat from Santa Barbara, CA — https://www.flickr.com/people/7236858@N07
-  - Dated: 2009-09-15 05:34
-  - 1600×1004px, 354 KB, shot 331 m from the spot
-  - Description: This month many things happened to me for the first time (both good and bad ). It makes me realize that still how young I am in my life to live, how small I am on this earth to dwell and therefore how much possibilities there lie before me to head for. This was the first time I touched the ocean in my life, got tar at my feet and also the first time I photographed a dog :) INFO: Devereux Beach at Santa Barbara, California. I bought a new 50mm/1.8 and that is the only lens I have these days. Feels like in a jail for a landscaper :(. View On Black Explored! :) Trackback: www.wamphotography.com/2
-  - Match: score 11 via name:devereux, kw:beach+ocean, geo:331m, w>=1000, landscape
-- **`us-ca-devereux-beach-2.jpg`** — “Sands Beach - Flickr - beltz6” by Glenn Beltz from Goleta, CA, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-devereux-beach-1.jpg`** — “Sands Beach - Flickr - beltz6” by Glenn Beltz from Goleta, CA, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sands_Beach_-_Flickr_-_beltz6.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Glenn Beltz from Goleta, CA, USA — https://www.flickr.com/people/23089307@N02
@@ -2428,7 +2420,7 @@
   - 1600×1061px, 818 KB, shot 83 m from the spot
   - Description: Minolta XE-7, Acros Neopan 100, MC Tele-Rokkor PF 135mm f/2.8 lens.
   - Match: score 10 via coastal-in-title, kw:beach+sand+point, geo:83m, w>=1000, landscape
-- **`us-ca-devereux-beach-3.jpg`** — “Surfers at Sands (46899474861)” by Glenn Beltz from Goleta, CA, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-devereux-beach-2.jpg`** — “Surfers at Sands (46899474861)” by Glenn Beltz from Goleta, CA, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Surfers_at_Sands_(46899474861).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Glenn Beltz from Goleta, CA, USA — https://www.flickr.com/people/23089307@N02
@@ -2436,6 +2428,14 @@
   - 1600×900px, 732 KB, shot 80 m from the spot
   - Description: Sands Beach
   - Match: score 10 via coastal-in-title, kw:beach+surf+surfer+sand, geo:80m, w>=1000, landscape
+- **`us-ca-devereux-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Devereux Dog (3953795022)” by Dhilung Kirat from Santa Barbara, CA, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Devereux_Dog_(3953795022).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Dhilung Kirat from Santa Barbara, CA — https://www.flickr.com/people/7236858@N07
+  - Dated: 2009-09-15 05:34
+  - 1600×1004px, 354 KB, shot 331 m from the spot
+  - Description: This month many things happened to me for the first time (both good and bad ). It makes me realize that still how young I am in my life to live, how small I am on this earth to dwell and therefore how much possibilities there lie before me to head for. This was the first time I touched the ocean in my life, got tar at my feet and also the first time I photographed a dog :) INFO: Devereux Beach at Santa Barbara, California. I bought a new 50mm/1.8 and that is the only lens I have these days. Feels like in a jail for a landscaper :(. View On Black Explored! :) Trackback: www.wamphotography.com/2
+  - Match: score 11 via name:devereux, kw:beach+ocean, geo:331m, w>=1000, landscape
 
 ## Devils Slide Beach
 
@@ -2486,7 +2486,7 @@
   - 1600×1200px, 570 KB, shot 934 m from the spot
   - Description: The Pacific Ocean photographed on Dockweiler Beach.
   - Match: score 12 via coastal-in-title, name:dockweiler, kw:beach+ocean, geo:934m, w>=1000, landscape
-- **`us-ca-dockweiler-state-beach-3.jpg`** — Post129b - Flickr - NOAA Photo Library — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-dockweiler-state-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Post129b - Flickr - NOAA Photo Library — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Post129b_-_Flickr_-_NOAA_Photo_Library.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: NOAA Photo Library — https://www.flickr.com/people/51647007@N08
@@ -2499,14 +2499,7 @@
 
 `osm:relation/7102584` · 32.7555329, -117.2470027 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-dog-beach-1.jpg`** — “Dog Beach sign” by RightCowLeftCoast, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Dog_Beach_sign.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: RightCowLeftCoast — //commons.wikimedia.org/wiki/User:RightCowLeftCoast
-  - 1600×2133px, 1565 KB, shot 290 m from the spot
-  - Description: A direction sign on the north corner of W Point Loma Blvd and Voltaire St
-  - Match: score 13.5 via coastal-in-title, name:dog, kw:beach+ocean+point, geo:290m, w>=1000
-- **`us-ca-dog-beach-2.jpg`** — “Dog Beach Jetty - panoramio” by hakkun, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-dog-beach-1.jpg`** — “Dog Beach Jetty - panoramio” by hakkun, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Dog_Beach_Jetty_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: hakkun — https://web.archive.org/web/20161013053729/http://www.panoramio.com/user/593016?with_photo_id=16669185
@@ -2514,7 +2507,14 @@
   - 1600×1200px, 422 KB, shot 554 m from the spot
   - Description: Dog Beach Jetty
   - Match: score 13 via coastal-in-title, name:dog, kw:beach+coast+coastal+jetty, geo:554m, w>=1000, landscape
-- **`us-ca-dog-beach-3.jpg`** — “Paw print-Dog Beach, San Diego - panoramio” by hakkun, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-dog-beach-2.jpg`** ✗ **not a coastal photo** — “Dog Beach sign” by RightCowLeftCoast, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Dog_Beach_sign.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: RightCowLeftCoast — //commons.wikimedia.org/wiki/User:RightCowLeftCoast
+  - 1600×2133px, 1565 KB, shot 290 m from the spot
+  - Description: A direction sign on the north corner of W Point Loma Blvd and Voltaire St
+  - Match: score 13.5 via coastal-in-title, name:dog, kw:beach+ocean+point, geo:290m, w>=1000
+- **`us-ca-dog-beach-3.jpg`** ✗ **not a coastal photo** — “Paw print-Dog Beach, San Diego - panoramio” by hakkun, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Paw_print-Dog_Beach,_San_Diego_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: hakkun — https://web.archive.org/web/20161012205049/http://www.panoramio.com/user/593016?with_photo_id=16669171
@@ -2564,15 +2564,7 @@
   - 1600×1064px, 536 KB, shot 437923 m from the spot
   - Description: Sand dune drift patterns at Morro Strand State Beach with Morro Rock in the background. Morro Bay, California, USA
   - Match: score 15 via coastal-in-title, name:dune+drift, kw:beach+sand+dune+bay, geo:437923m, w>=1000, landscape
-- **`us-ca-dune-drift-beach-2.jpg`** — California Coast National Monument, Sea Ranch Task Force, Ukiah Field Office (50166812983) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:California_Coast_National_Monument,_Sea_Ranch_Task_Force,_Ukiah_Field_Office_(50166812983).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: blmcalifornia — https://www.flickr.com/people/blmcalifornia/
-  - Dated: Taken on 25 November 2019, 16:48:18
-  - 1600×1200px, 990 KB, shot 613 m from the spot
-  - Description: Photo by Neil Chris Lloyd, BLM.
-  - Match: score 9 via coastal-in-title, kw:sea+coast+coastal, geo:613m, w>=1000, landscape
-- **`us-ca-dune-drift-beach-3.jpg`** — “-california -coast -ocean” by Peter Alfred Hess, Wikimedia Commons, CC BY 2.0
+- **`us-ca-dune-drift-beach-2.jpg`** — “-california -coast -ocean” by Peter Alfred Hess, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:-california_-coast_-ocean.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Peter Alfred Hess
@@ -2580,20 +2572,20 @@
   - 1600×1600px, 146 KB, shot 1548 m from the spot
   - Description: California Coast from Sea Ranch, California
   - Match: score 7.5 via coastal-in-title, kw:ocean+sea+coast, geo:1548m, w>=1000
+- **`us-ca-dune-drift-beach-3.jpg`** ⚠︎ *context, not the coast itself* — California Coast National Monument, Sea Ranch Task Force, Ukiah Field Office (50166812983) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:California_Coast_National_Monument,_Sea_Ranch_Task_Force,_Ukiah_Field_Office_(50166812983).jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: blmcalifornia — https://www.flickr.com/people/blmcalifornia/
+  - Dated: Taken on 25 November 2019, 16:48:18
+  - 1600×1200px, 990 KB, shot 613 m from the spot
+  - Description: Photo by Neil Chris Lloyd, BLM.
+  - Match: score 9 via coastal-in-title, kw:sea+coast+coastal, geo:613m, w>=1000, landscape
 
 ## Dunes Beach
 
 `osm:node/358765013` · 37.4837053, -122.4534213
 
-- **`us-ca-dunes-beach-1.jpg`** — “Newport Beach CA Back Bay The Dunes by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Newport_Beach_CA_Back_Bay_The_Dunes_by_Don_Ramey_Logan.jpg
-  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
-  - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
-  - Dated: 2016-04-01 18:44:50
-  - 1600×704px, 378 KB, shot 595492 m from the spot
-  - Description: Newport Beach CA Back Bay The Dunes by Don Ramey Logan
-  - Match: score 11 via coastal-in-title, name:dunes, kw:beach+dune+bay, geo:595492m, w>=1000, landscape
-- **`us-ca-dunes-beach-2.png`** — “Marina State Beach - dunes” by Eric Polk, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-dunes-beach-1.png`** — “Marina State Beach - dunes” by Eric Polk, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Marina_State_Beach_-_dunes.png
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Eric Polk — //commons.wikimedia.org/wiki/User:Epolk
@@ -2601,7 +2593,7 @@
   - 1600×739px, 2739 KB
   - Description: Coastal dunes at Marina State Beach, Marina, California, USA.
   - Match: score 11 via coastal-in-title, name:dunes, kw:beach+coast+coastal+dune, w>=1000, landscape
-- **`us-ca-dunes-beach-3.jpg`** — “Morro Strand State Beach (1)” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-dunes-beach-2.jpg`** — “Morro Strand State Beach (1)” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Morro_Strand_State_Beach_(1).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Mike Baird from Morro Bay, USA — https://www.flickr.com/people/72825507@N00
@@ -2609,12 +2601,20 @@
   - 1600×1066px, 435 KB, shot 272617 m from the spot
   - Description: Morro Strand State Beach — viewed from the Back Dunes with Morro Rock, located on Estero Bay in San Luis Obispo County, California. Taken after the Snowy Plover habitat protection fence was taken down for the season, in October 2011. Information about the area's natural history, from: www.slostateparks.com/general_park_info/resources/MSSB_Biological_Inventory.pdf Morro Strand State Beach (MSSB) comprises approximately 159.15 acres between the north parcel (Old Creek site) and south parcel (formerly called Atascadero State Beach) as well as an additional 23 acres which is to be transferred to S
   - Match: score 11 via coastal-in-title, name:dunes, kw:beach+sea+coast+coastal, geo:272617m, w>=1000, landscape
+- **`us-ca-dunes-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Newport Beach CA Back Bay The Dunes by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Newport_Beach_CA_Back_Bay_The_Dunes_by_Don_Ramey_Logan.jpg
+  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
+  - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
+  - Dated: 2016-04-01 18:44:50
+  - 1600×704px, 378 KB, shot 595492 m from the spot
+  - Description: Newport Beach CA Back Bay The Dunes by Don Ramey Logan
+  - Match: score 11 via coastal-in-title, name:dunes, kw:beach+dune+bay, geo:595492m, w>=1000, landscape
 
 ## Edgewater
 
 `osm:way/513663101` · 33.605872, -117.904898 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-edgewater-1.jpg`** — “Bay Island Newport Beach CA 2017 by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-edgewater-1.jpg`** ⚠︎ *context, not the coast itself* — “Bay Island Newport Beach CA 2017 by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Bay_Island_Newport_Beach_CA_2017_by_Don_Ramey_Logan.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
@@ -2622,7 +2622,7 @@
   - 1600×477px, 261 KB, shot 272 m from the spot
   - Description: Bay Island Newport Beach CA 2017 by Don Ramey Logan
   - Match: score 9 via coastal-in-title, kw:beach+bay, geo:272m, w>=1000, landscape
-- **`us-ca-edgewater-2.jpg`** — “2013, Day's End, Balboa Harbor, Newport Beach, CA - panoramio” by Chris English, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-edgewater-2.jpg`** ⚠︎ *context, not the coast itself* — “2013, Day's End, Balboa Harbor, Newport Beach, CA - panoramio” by Chris English, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:2013,_Day%27s_End,_Balboa_Harbor,_Newport_Beach,_CA_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Chris English — https://web.archive.org/web/20161030125032/http://www.panoramio.com/user/4447772?with_photo_id=99859221
@@ -2630,7 +2630,7 @@
   - 1600×1067px, 413 KB, shot 352 m from the spot
   - Description: 2013, Day's End, Balboa Harbor, Newport Beach, CA
   - Match: score 7.5 via coastal-in-title, kw:beach, geo:352m, w>=1000, landscape
-- **`us-ca-edgewater-3.jpg`** — “Harbor 20 Racing in Newport Beach by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-edgewater-3.jpg`** ⚠︎ *context, not the coast itself* — “Harbor 20 Racing in Newport Beach by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Harbor_20_Racing_in_Newport_Beach_by_Don_Ramey_Logan.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
@@ -2701,15 +2701,7 @@
 
 `osm:relation/7086869` · 34.0379743, -118.8749949 · beach type: **sandy** (OpenStreetMap surface=sand) · lifeguard: no
 
-- **`us-ca-el-matador-beach-1.jpg`** — “Facing The Wave at El Matador State Beach (35874040713)” by Prayitno / Thank you for (12 millions +) view from Los Angeles, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Facing_The_Wave_at_El_Matador_State_Beach_(35874040713).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Prayitno / Thank you for (12 millions +) view from Los Angeles, USA — https://www.flickr.com/people/34128007@N04
-  - Dated: 2017-08-19 15:55
-  - 1600×835px, 398 KB, shot 52 m from the spot
-  - Description: El Matador State Beach 32350 East Pacific Coast Highway, Malibu, CA 90265
-  - Match: score 14 via coastal-in-title, name:matador, kw:beach+wave+coast, geo:52m, w>=1000, landscape
-- **`us-ca-el-matador-beach-2.jpg`** — “El Matador Beach (231445251)” by Hanlu Cao, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-el-matador-beach-1.jpg`** — “El Matador Beach (231445251)” by Hanlu Cao, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:El_Matador_Beach_(231445251).jpeg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Hanlu Cao — https://500px.com/hanluus
@@ -2717,7 +2709,7 @@
   - 1600×1068px, 616 KB, shot 32 m from the spot
   - Description: 500px provided description: El Matador Beach [#sea ,#beach ,#ocean ,#vacation ,#rocks ,#summer ,#california ,#malibu ,#seascape ,#seashore ,#hot day ,#cliffs ,#swimming ,#socal ,#hanlu cao]
   - Match: score 14 via coastal-in-title, name:matador, kw:beach+ocean+sea+shore, geo:32m, w>=1000, landscape
-- **`us-ca-el-matador-beach-3.jpg`** — El Matador State Beach, Malibu (Unsplash) — CC0 (Wikimedia Commons), no attribution required
+- **`us-ca-el-matador-beach-2.jpg`** — El Matador State Beach, Malibu (Unsplash) — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:El_Matador_State_Beach,_Malibu_(Unsplash).jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Joseph Yates josephyates_ — https://unsplash.com/@josephyates_
@@ -2725,6 +2717,14 @@
   - 1600×1067px, 660 KB, shot 177 m from the spot
   - Description: El Matador State Beach, Malibu, United States
   - Match: score 13 via coastal-in-title, name:matador, kw:beach+sunset, geo:177m, w>=1000, landscape
+- **`us-ca-el-matador-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Facing The Wave at El Matador State Beach (35874040713)” by Prayitno / Thank you for (12 millions +) view from Los Angeles, USA, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Facing_The_Wave_at_El_Matador_State_Beach_(35874040713).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Prayitno / Thank you for (12 millions +) view from Los Angeles, USA — https://www.flickr.com/people/34128007@N04
+  - Dated: 2017-08-19 15:55
+  - 1600×835px, 398 KB, shot 52 m from the spot
+  - Description: El Matador State Beach 32350 East Pacific Coast Highway, Malibu, CA 90265
+  - Match: score 14 via coastal-in-title, name:matador, kw:beach+wave+coast, geo:52m, w>=1000, landscape
 
 ## El Pescador Beach
 
@@ -2788,15 +2788,7 @@
 
 `osm:way/486417631` · 33.9106198, -118.4264215 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-el-segundo-beach-1.jpg`** — El Segundo sand dunes 1918 "heavy sand impassable" — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:El_Segundo_sand_dunes_1918_%22heavy_sand_impassable%22.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: AAA
-  - Dated: 1918
-  - 1600×1600px, 541 KB
-  - Description: El Segundo sand dunes 1918 "heavy sand impassable"
-  - Match: score 10.5 via coastal-in-title, name:segundo, kw:sand+dune+playa, w>=1000
-- **`us-ca-el-segundo-beach-2.jpg`** — “Surfer, El Porto, California (38076546355)” by Pedro Szekely from Los Angeles, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-el-segundo-beach-1.jpg`** — “Surfer, El Porto, California (38076546355)” by Pedro Szekely from Los Angeles, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Surfer,_El_Porto,_California_(38076546355).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Pedro Szekely from Los Angeles, USA — https://www.flickr.com/people/43355249@N00
@@ -2804,7 +2796,7 @@
   - 1600×1600px, 608 KB, shot 818 m from the spot
   - Description: Surfer, El Porto, California
   - Match: score 8.5 via coastal-in-title, kw:beach+surf+surfer+sunset, geo:818m, w>=1000
-- **`us-ca-el-segundo-beach-3.jpg`** — “Surfer, El Porto, California (27170954009)” by Pedro Szekely from Los Angeles, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-el-segundo-beach-2.jpg`** — “Surfer, El Porto, California (27170954009)” by Pedro Szekely from Los Angeles, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Surfer,_El_Porto,_California_(27170954009).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Pedro Szekely from Los Angeles, USA — https://www.flickr.com/people/43355249@N00
@@ -2812,20 +2804,20 @@
   - 1600×1600px, 2239 KB, shot 818 m from the spot
   - Description: Surfer, El Porto, California
   - Match: score 8.5 via coastal-in-title, kw:beach+surf+surfer+sunset, geo:818m, w>=1000
+- **`us-ca-el-segundo-beach-3.jpg`** ✗ **not a coastal photo** — El Segundo sand dunes 1918 "heavy sand impassable" — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:El_Segundo_sand_dunes_1918_%22heavy_sand_impassable%22.jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: AAA
+  - Dated: 1918
+  - 1600×1600px, 541 KB
+  - Description: El Segundo sand dunes 1918 "heavy sand impassable"
+  - Match: score 10.5 via coastal-in-title, name:segundo, kw:sand+dune+playa, w>=1000
 
 ## Ellwood Beach
 
 `osm:way/550756082` · 34.4160437, -119.891024
 
-- **`us-ca-ellwood-beach-1.jpg`** — “Western Grebe - Aechmophorus occidentalisBird (28805794558)” by Björn S, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Western_Grebe_-_Aechmophorus_occidentalisBird_(28805794558).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Björn S — https://www.flickr.com/people/40948266@N04
-  - Dated: Taken on 2 June 2018, 20:00
-  - 1600×1067px, 411 KB, shot 367 m from the spot
-  - Description: Western grebe Aechmophorus occidentalis , Ellwood Beach, Goleta, California
-  - Match: score 9.5 via name:ellwood, kw:beach, geo:367m, w>=1000, landscape
-- **`us-ca-ellwood-beach-2.jpg`** — “Rocks at the Beach (40870048740)” by Björn S, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-ellwood-beach-1.jpg`** — “Rocks at the Beach (40870048740)” by Björn S, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Rocks_at_the_Beach_(40870048740).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Björn S — https://www.flickr.com/people/40948266@N04
@@ -2833,7 +2825,15 @@
   - 1600×1067px, 467 KB, shot 371 m from the spot
   - Description: Rocks at the Beach
   - Match: score 9 via coastal-in-title, kw:beach+rocks, geo:371m, w>=1000, landscape
-- **`us-ca-ellwood-beach-3.jpg`** — “Ellwood oil storage tanks” by Dreamyshade, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-ellwood-beach-2.jpg`** ✗ **not a coastal photo** — “Western Grebe - Aechmophorus occidentalisBird (28805794558)” by Björn S, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Western_Grebe_-_Aechmophorus_occidentalisBird_(28805794558).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Björn S — https://www.flickr.com/people/40948266@N04
+  - Dated: Taken on 2 June 2018, 20:00
+  - 1600×1067px, 411 KB, shot 367 m from the spot
+  - Description: Western grebe Aechmophorus occidentalis , Ellwood Beach, Goleta, California
+  - Match: score 9.5 via name:ellwood, kw:beach, geo:367m, w>=1000, landscape
+- **`us-ca-ellwood-beach-3.jpg`** ✗ **not a coastal photo** — “Ellwood oil storage tanks” by Dreamyshade, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Ellwood_oil_storage_tanks.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Dreamyshade — //commons.wikimedia.org/wiki/User:Dreamyshade
@@ -2891,7 +2891,7 @@
   - 1600×1086px, 588 KB, shot 496 m from the spot
   - Description: A few empty campsites at Emma Wood State Beach in Ventura County, California.
   - Match: score 12.5 via name:emma+wood, kw:beach, geo:496m, w>=1000, landscape
-- **`us-ca-emma-wood-state-beach-3.jpg`** — “Emma-wood-gate” by DillyLynn, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-emma-wood-state-beach-3.jpg`** ✗ **not a coastal photo** — “Emma-wood-gate” by DillyLynn, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Emma-wood-gate.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: DillyLynn — //commons.wikimedia.org/wiki/User:DillyLynn
@@ -2932,15 +2932,7 @@
 
 `osm:way/38340877` · 34.0243636, -118.77087 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-escondido-beach-1.jpg`** — Surfer in Malibu (Unsplash) — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Surfer_in_Malibu_(Unsplash).jpg
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: Cam Adams camadams — https://unsplash.com/@camadams
-  - Dated: 2015-12-14
-  - 1600×1064px, 204 KB, shot 837 m from the spot
-  - Description: Malibu, United States
-  - Match: score 9 via coastal-in-title, kw:beach+surf+surfer+sunset, geo:837m, w>=1000, landscape
-- **`us-ca-escondido-beach-2.jpg`** — “Strand In Malibu Kalifornien - Paradise Cove (125512469)” by Dronepicr, Wikimedia Commons, CC BY 3.0
+- **`us-ca-escondido-beach-1.jpg`** — “Strand In Malibu Kalifornien - Paradise Cove (125512469)” by Dronepicr, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Strand_In_Malibu_Kalifornien_-_Paradise_Cove_(125512469).jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Dronepicr — https://500px.com/dronepicr
@@ -2948,7 +2940,7 @@
   - 1600×1200px, 574 KB, shot 703 m from the spot
   - Description: 500px provided description: Strand In Malibu Kalifornien [#landscape ,#sea ,#nature ,#beach ,#travel ,#sun ,#freedom ,#usa ,#california ,#sand ,#malibu ,#us ,#relax ,#trip ,#belize ,#natur ,#sonne ,#meer ,#strand ,#landschaft ,#freiheit ,#baywatch ,#reise ,#losangeles ,#st?dte ,#geotagged ,#karibik ,#l?nder ,#carri ,#allgemein ,#l?nderst?dte]
   - Match: score 9 via coastal-in-title, kw:beach+sea+sand+bay, geo:703m, w>=1000, landscape
-- **`us-ca-escondido-beach-3.jpg`** — “Strand in Malibu, Kalifornien - Paradise Cove (22061347488)” by dronepicr, Wikimedia Commons, CC BY 2.0
+- **`us-ca-escondido-beach-2.jpg`** — “Strand in Malibu, Kalifornien - Paradise Cove (22061347488)” by dronepicr, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Strand_in_Malibu,_Kalifornien_-_Paradise_Cove_(22061347488).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: dronepicr — https://www.flickr.com/people/132646954@N02
@@ -2956,6 +2948,14 @@
   - 1600×1200px, 819 KB, shot 703 m from the spot
   - Description: Strand in Malibu, Kalifornien
   - Match: score 8 via coastal-in-title, kw:bay+cove, geo:703m, w>=1000, landscape
+- **`us-ca-escondido-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Surfer in Malibu (Unsplash) — CC0 (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Surfer_in_Malibu_(Unsplash).jpg
+  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
+  - Author: Cam Adams camadams — https://unsplash.com/@camadams
+  - Dated: 2015-12-14
+  - 1600×1064px, 204 KB, shot 837 m from the spot
+  - Description: Malibu, United States
+  - Match: score 9 via coastal-in-title, kw:beach+surf+surfer+sunset, geo:837m, w>=1000, landscape
 
 ## Escondido Beach
 
@@ -2977,7 +2977,7 @@
   - 1600×1200px, 819 KB, shot 353 m from the spot
   - Description: Strand in Malibu, Kalifornien
   - Match: score 9 via coastal-in-title, kw:bay+cove, geo:353m, w>=1000, landscape
-- **`us-ca-escondido-beach-454763-3.jpg`** — Surfer in Malibu (Unsplash) — CC0 (Wikimedia Commons), no attribution required
+- **`us-ca-escondido-beach-454763-3.jpg`** ⚠︎ *context, not the coast itself* — Surfer in Malibu (Unsplash) — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Surfer_in_Malibu_(Unsplash).jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Cam Adams camadams — https://unsplash.com/@camadams
@@ -3019,7 +3019,7 @@
 
 `osm:way/467517605` · 34.3226784, -119.3940059
 
-- **`us-ca-faria-beach-1.jpg`** — “Finding Seacliff (5212365343)” by Damian Gadal, Wikimedia Commons, CC BY 2.0
+- **`us-ca-faria-beach-1.jpg`** ✗ **not a coastal photo** — “Finding Seacliff (5212365343)” by Damian Gadal, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Finding_Seacliff_(5212365343).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Damian Gadal — https://www.flickr.com/people/23024164@N06
@@ -3040,15 +3040,7 @@
   - 1600×1066px, 334 KB, shot 2624 m from the spot
   - Description: 500px provided description: Tide [#water ,#sun ,#ocean ,#waves ,#california ,#sand ,#pacific ,#Beach ,#Santa Cruz ,#Tide]
   - Match: score 8 via coastal-in-title, kw:beach+wave+waves+ocean, geo:2624m, w>=1000, landscape
-- **`us-ca-fern-grotto-beach-2.jpg`** — “Bird (176662265)” by Zane Schmidlen, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Bird_(176662265).jpeg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: Zane Schmidlen — https://500px.com/zaneschmidlen
-  - Dated: 7 October 2016, 20:06:53 (UTC)
-  - 1600×1066px, 62 KB, shot 2624 m from the spot
-  - Description: 500px provided description: Bird [#sky ,#water ,#sun ,#ocean ,#waves ,#california ,#sand ,#pacific ,#natural bridges ,#Beach ,#Santa Cruz]
-  - Match: score 6 via kw:beach+wave+waves+ocean, geo:2624m, w>=1000, landscape
-- **`us-ca-fern-grotto-beach-3.jpg`** — “USA-Santa Cruz-Natural Bridges State Beach-2” by Eugene Zelenko, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-fern-grotto-beach-2.jpg`** — “USA-Santa Cruz-Natural Bridges State Beach-2” by Eugene Zelenko, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:USA-Santa_Cruz-Natural_Bridges_State_Beach-2.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Eugene Zelenko — //commons.wikimedia.org/wiki/User:EugeneZelenko
@@ -3056,6 +3048,14 @@
   - 1600×1200px, 439 KB, shot 2507 m from the spot
   - Description: Natural Bridges State Beach . Santa Cruz, California , USA .
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:2507m, w>=1000, landscape
+- **`us-ca-fern-grotto-beach-3.jpg`** ✗ **not a coastal photo** — “Bird (176662265)” by Zane Schmidlen, Wikimedia Commons, CC BY 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Bird_(176662265).jpeg
+  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
+  - Author: Zane Schmidlen — https://500px.com/zaneschmidlen
+  - Dated: 7 October 2016, 20:06:53 (UTC)
+  - 1600×1066px, 62 KB, shot 2624 m from the spot
+  - Description: 500px provided description: Bird [#sky ,#water ,#sun ,#ocean ,#waves ,#california ,#sand ,#pacific ,#natural bridges ,#Beach ,#Santa Cruz]
+  - Match: score 6 via kw:beach+wave+waves+ocean, geo:2624m, w>=1000, landscape
 
 ## First Peak
 
@@ -3118,7 +3118,7 @@
   - 1600×1067px, 967 KB, shot 1554 m from the spot
   - Description: Near Salt Creek recreation area on the Sonoma Coast
   - Match: score 8 via coastal-in-title, kw:wave+waves+ocean+coast, geo:1554m, w>=1000, landscape
-- **`us-ca-fisk-mill-cove-3.jpg`** — “Armeria.maritima.subsp.californica.Alan” by Alan Rockefeller, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-fisk-mill-cove-3.jpg`** ✗ **not a coastal photo** — “Armeria.maritima.subsp.californica.Alan” by Alan Rockefeller, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Armeria.maritima.subsp.californica.Alan.JPG
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Alan Rockefeller — //commons.wikimedia.org/wiki/User:Alan_Rockefeller
@@ -3139,7 +3139,7 @@
   - 1600×1200px, 850 KB, shot 442807 m from the spot
   - Description: Looking over the cliff from Centerville Beach Cross down to Pacific Ocean strand about two hours after high tide. Centerville Beach is five miles west of Ferndale, California.
   - Match: score 15 via coastal-in-title, name:five+mile, kw:beach+ocean+cliff+tide, geo:442807m, w>=1000, landscape
-- **`us-ca-five-mile-beach-2.jpg`** — “Confluence of Coyote Creek and San Gabriel River, Long Beach, California, on Approach to Long Beach Airport (6013277245)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-five-mile-beach-2.jpg`** ✗ **not a coastal photo** — “Confluence of Coyote Creek and San Gabriel River, Long Beach, California, on Approach to Long Beach Airport (6013277245)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Confluence_of_Coyote_Creek_and_San_Gabriel_River,_Long_Beach,_California,_on_Approach_to_Long_Beach_Airport_(6013277245).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
@@ -3147,7 +3147,7 @@
   - 1600×1200px, 662 KB, shot 510276 m from the spot
   - Description: Coyote Creek is a principal tributary of the San Gabriel River in northwest Orange County, southeast Los Angeles County, and southwest Riverside County in the U.S. state of California. It drains a land area of roughly 41.3 square miles (107 km2) covering five major cities, including Brea, Buena Park, Fullerton, La Habra, and La Palma. Some major tributaries of the creek in the highly urbanized watershed include Brea Creek, Fullerton Creek and Carbon Creek. The mostly flat creek basin is separated by a series of low mountains, and is bounded by several small mountain ranges, including the Chino
   - Match: score 14 via coastal-in-title, name:five+mile, kw:beach+cove, geo:510276m, w>=1000, landscape
-- **`us-ca-five-mile-beach-3.jpg`** — Centerville Beach CA Tsunami Hazard Zone — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-five-mile-beach-3.jpg`** ✗ **not a coastal photo** — Centerville Beach CA Tsunami Hazard Zone — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Centerville_Beach_CA_Tsunami_Hazard_Zone.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Ellin Beltz — //commons.wikimedia.org/wiki/User:Ellin_Beltz
@@ -3189,7 +3189,7 @@
 
 `osm:node/4374966213` · 39.442259, -123.8125928
 
-- **`us-ca-fort-bragg-landing-1.jpg`** — “Mendocino Coast Model Railroad & Historical Society - 2021-08-22 - Sarah Stierch 03” by Missvain, Wikimedia Commons, CC BY 4.0
+- **`us-ca-fort-bragg-landing-1.jpg`** ✗ **not a coastal photo** — “Mendocino Coast Model Railroad & Historical Society - 2021-08-22 - Sarah Stierch 03” by Missvain, Wikimedia Commons, CC BY 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Mendocino_Coast_Model_Railroad_%26_Historical_Society_-_2021-08-22_-_Sarah_Stierch_03.jpg
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Missvain — //commons.wikimedia.org/wiki/User:Missvain
@@ -3197,7 +3197,7 @@
   - 1600×1200px, 1286 KB, shot 590 m from the spot
   - Description: Mendocino Coast Model Railroad & Historical Society, Fort Bragg, California
   - Match: score 14.5 via coastal-in-title, name:fort+bragg, kw:coast, geo:590m, w>=1000, landscape
-- **`us-ca-fort-bragg-landing-2.jpg`** — “Mendocino Coast Model Railroad & Historical Society - 2021-08-22 - Sarah Stierch 01” by Missvain, Wikimedia Commons, CC BY 4.0
+- **`us-ca-fort-bragg-landing-2.jpg`** ✗ **not a coastal photo** — “Mendocino Coast Model Railroad & Historical Society - 2021-08-22 - Sarah Stierch 01” by Missvain, Wikimedia Commons, CC BY 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Mendocino_Coast_Model_Railroad_%26_Historical_Society_-_2021-08-22_-_Sarah_Stierch_01.jpg
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Missvain — //commons.wikimedia.org/wiki/User:Missvain
@@ -3205,7 +3205,7 @@
   - 1600×1200px, 766 KB, shot 587 m from the spot
   - Description: Mendocino Coast Model Railroad & Historical Society, Fort Bragg, California
   - Match: score 14.5 via coastal-in-title, name:fort+bragg, kw:coast, geo:587m, w>=1000, landscape
-- **`us-ca-fort-bragg-landing-3.jpg`** — “Mendocino Coast Model Railroad & Historical Society - 2021-08-22 - Sarah Stierch 05” by Missvain, Wikimedia Commons, CC BY 4.0
+- **`us-ca-fort-bragg-landing-3.jpg`** ✗ **not a coastal photo** — “Mendocino Coast Model Railroad & Historical Society - 2021-08-22 - Sarah Stierch 05” by Missvain, Wikimedia Commons, CC BY 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Mendocino_Coast_Model_Railroad_%26_Historical_Society_-_2021-08-22_-_Sarah_Stierch_05.jpg
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Missvain — //commons.wikimedia.org/wiki/User:Missvain
@@ -3226,7 +3226,7 @@
   - 1600×1064px, 420 KB, shot 2216 m from the spot
   - Description: 500px provided description: Fisheye Image at Panther Beach, CA. [#water ,#beach ,#clouds ,#fisheye ,#rocks ,#pretty ,#sand ,#surf ,#fine art ,#cave ,#fish-eye ,#parks ,#half moon bay ,#sunburst ,#panther beach ,#pacific coast ,#Sun ,#Ocean ,#California ,#route one]
   - Match: score 8 via coastal-in-title, kw:beach+surf+wave+ocean, geo:2216m, w>=1000, landscape
-- **`us-ca-four-mile-beach-2.jpg`** — “Outstanding in the Field table setting on beach” by jan hobbel, Wikimedia Commons, CC BY 2.0
+- **`us-ca-four-mile-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Outstanding in the Field table setting on beach” by jan hobbel, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Outstanding_in_the_Field_table_setting_on_beach.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: jan hobbel
@@ -3276,7 +3276,7 @@
   - 1600×2000px, 1480 KB, shot 211 m from the spot
   - Description: This image is an aerial view of the Christian Camp, Campus by the Sea, on Catalina Island, just 22 miles off the coast of Los Angeles, CA. Campus by the Sea is located in Gallagher's Cove just north of the harbor city of Avalon.
   - Match: score 13.5 via coastal-in-title, name:gallagher, kw:beach+sea+coast+cove, geo:211m, w>=1000
-- **`us-ca-gallagher-beach-2.jpg`** — “Gallagher Beach in the fog, Buffalo, New York - 20200202” by Andre Carrotflower, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-gallagher-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Gallagher Beach in the fog, Buffalo, New York - 20200202” by Andre Carrotflower, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Gallagher_Beach_in_the_fog,_Buffalo,_New_York_-_20200202.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Andre Carrotflower — //commons.wikimedia.org/wiki/User:Andre_Carrotflower
@@ -3284,7 +3284,7 @@
   - 1600×1200px, 416 KB, shot 3575616 m from the spot
   - Description: Gallagher Beach in Buffalo, New York as seen on a foggy February 2020 afternoon. The Cargill Pool Elevator is seen in the background just left of center; further in the background at the far left is the former St. Lawrence Cement Company terminal, now owned by CRH.
   - Match: score 8.5 via coastal-in-title, name:gallagher, kw:beach, geo:3575616m, w>=1000, landscape
-- **`us-ca-gallagher-beach-3.jpg`** — “Gallagher Beach, Buffalo Harbor State Park, Buffalo, New York - 20210527” by Andre Carrotflower, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-gallagher-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Gallagher Beach, Buffalo Harbor State Park, Buffalo, New York - 20210527” by Andre Carrotflower, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Gallagher_Beach,_Buffalo_Harbor_State_Park,_Buffalo,_New_York_-_20210527.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Andre Carrotflower — //commons.wikimedia.org/wiki/User:Andre_Carrotflower
@@ -3413,23 +3413,7 @@
 
 `osm:relation/7522432` · 39.4536561, -123.8125443
 
-- **`us-ca-glass-beach-1.jpg`** — “Sea glass at Glass Beach in California (closeup) - 2016” by Moximox, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Sea_glass_at_Glass_Beach_in_California_(closeup)_-_2016.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Moximox — //commons.wikimedia.org/w/index.php?title=User:Moximox&amp;action=edit&amp;redlink=1
-  - Dated: Taken on 4 September 2016, 09:52:58
-  - 1600×1067px, 511 KB, shot 45 m from the spot
-  - Description: Gently polished broken glass. Glass Beach. Fort Bragg, CA
-  - Match: score 13 via coastal-in-title, name:glass, kw:beach+sea, geo:45m, w>=1000, landscape
-- **`us-ca-glass-beach-2.jpg`** — “Sea Glass on Glass Beach near Fort Bragg” by Ryanx7, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Sea_Glass_on_Glass_Beach_near_Fort_Bragg.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Ryanx7 — //commons.wikimedia.org/wiki/User:Ryanx7
-  - Dated: Taken on 16 January 2016, 10:32:06
-  - 1600×1067px, 862 KB, shot 45 m from the spot
-  - Description: Sea Glass on Glass Beach near Fort Bragg, CA
-  - Match: score 13 via coastal-in-title, name:glass, kw:beach+sea, geo:45m, w>=1000, landscape
-- **`us-ca-glass-beach-3.jpg`** — “Cove At Glass Beach Fort Bragg Ca. - panoramio” by Noah_Loverbear, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-glass-beach-1.jpg`** — “Cove At Glass Beach Fort Bragg Ca. - panoramio” by Noah_Loverbear, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Cove_At_Glass_Beach_Fort_Bragg_Ca._-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Noah_Loverbear — https://web.archive.org/web/20161029195344/http://www.panoramio.com/user/6952727?with_photo_id=93540971
@@ -3437,6 +3421,22 @@
   - 1600×1200px, 512 KB, shot 75 m from the spot
   - Description: Cove At Glass Beach Fort Bragg Ca.
   - Match: score 13 via coastal-in-title, name:glass, kw:beach+cove, geo:75m, w>=1000, landscape
+- **`us-ca-glass-beach-2.jpg`** ✗ **not a coastal photo** — “Sea glass at Glass Beach in California (closeup) - 2016” by Moximox, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Sea_glass_at_Glass_Beach_in_California_(closeup)_-_2016.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Moximox — //commons.wikimedia.org/w/index.php?title=User:Moximox&amp;action=edit&amp;redlink=1
+  - Dated: Taken on 4 September 2016, 09:52:58
+  - 1600×1067px, 511 KB, shot 45 m from the spot
+  - Description: Gently polished broken glass. Glass Beach. Fort Bragg, CA
+  - Match: score 13 via coastal-in-title, name:glass, kw:beach+sea, geo:45m, w>=1000, landscape
+- **`us-ca-glass-beach-3.jpg`** ✗ **not a coastal photo** — “Sea Glass on Glass Beach near Fort Bragg” by Ryanx7, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Sea_Glass_on_Glass_Beach_near_Fort_Bragg.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Ryanx7 — //commons.wikimedia.org/wiki/User:Ryanx7
+  - Dated: Taken on 16 January 2016, 10:32:06
+  - 1600×1067px, 862 KB, shot 45 m from the spot
+  - Description: Sea Glass on Glass Beach near Fort Bragg, CA
+  - Match: score 13 via coastal-in-title, name:glass, kw:beach+sea, geo:45m, w>=1000, landscape
 
 ## Gleason Beach
 
@@ -3500,14 +3500,14 @@
 
 `osm:node/358821846` · 41.3965108, -124.0684062
 
-- **`us-ca-gold-bluffs-beach-1.jpg`** — Roosevelt elk at Gold Bluffs Beach - DPLA - eeff2f54972aefd741f1d0d2e35c1058 — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-gold-bluffs-beach-1.jpg`** ✗ **not a coastal photo** — Roosevelt elk at Gold Bluffs Beach - DPLA - eeff2f54972aefd741f1d0d2e35c1058 — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Roosevelt_elk_at_Gold_Bluffs_Beach_-_DPLA_-_eeff2f54972aefd741f1d0d2e35c1058.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Department of the Interior. U.S. Fish and Wildlife Service. National Conservation Training Center.…
   - 1600×2408px, 713 KB
   - Description: Note: Some of the following information may have arrived from the agency cut off or incomplete. Creator: Blake, Tupper Ansel. Description: Roosevelt elk standing among tall grasses at Gold Bluffs Beach. Subjects: Mammals; Grasses. Location: California. Publisher: U.S. Fish and Wildlife Service.
   - Match: score 12 via coastal-in-title, name:gold+bluffs, kw:beach, w>=1000
-- **`us-ca-gold-bluffs-beach-2.jpg`** — “Big Critter (252101046)” by Mike, Wikimedia Commons, CC BY 2.0
+- **`us-ca-gold-bluffs-beach-2.jpg`** ✗ **not a coastal photo** — “Big Critter (252101046)” by Mike, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Big_Critter_(252101046).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Mike — https://www.flickr.com/people/92282757@N00
@@ -3515,7 +3515,7 @@
   - 1600×1197px, 133 KB, shot 1400 m from the spot
   - Description: Roosevelt Elk in Gold Bluff beach campground.
   - Match: score 11.5 via name:gold+bluffs, kw:beach, geo:1400m, w>=1000, landscape
-- **`us-ca-gold-bluffs-beach-3.jpg`** — “Elk near Gold Bluffs in the Redwoods National Park (2820215343)” by sergejf, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-gold-bluffs-beach-3.jpg`** ✗ **not a coastal photo** — “Elk near Gold Bluffs in the Redwoods National Park (2820215343)” by sergejf, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Elk_near_Gold_Bluffs_in_the_Redwoods_National_Park_(2820215343).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: sergejf — https://www.flickr.com/people/7942389@N04
@@ -3602,7 +3602,7 @@
   - 1600×1200px, 813 KB
   - Description: Greyhound Rock Beach in Davenport, Santa Cruz County, California. The beach is part of the Greyhound Rock State Marine Conservation Area.
   - Match: score 14 via coastal-in-title, name:greyhound+rock, kw:beach+mar, w>=1000, landscape
-- **`us-ca-greyhound-rock-beach-3.jpg`** — “Pescadero State Beach on the Slow Coast” by RealChrisCain, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-greyhound-rock-beach-3.jpg`** ✗ **not a coastal photo** — “Pescadero State Beach on the Slow Coast” by RealChrisCain, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Pescadero_State_Beach_on_the_Slow_Coast.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: RealChrisCain — //commons.wikimedia.org/w/index.php?title=User:RealChrisCain&amp;action=edit&amp;redlink=1
@@ -3628,7 +3628,7 @@
 
 `osm:relation/14332442` · 33.2044883, -117.3936781 · lifeguard: yes
 
-- **`us-ca-harbor-beach-1.jpg`** — “Woman Oceanside Junior Lifeguard (33702989533)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-harbor-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Woman Oceanside Junior Lifeguard (33702989533)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Woman_Oceanside_Junior_Lifeguard_(33702989533).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Chris Hunkeler from Carlsbad, California, USA — https://www.flickr.com/people/14913305@N00
@@ -3636,7 +3636,7 @@
   - 1600×2400px, 836 KB, shot 95 m from the spot
   - Description: One of the few female junior lifeguards exits the water with her rescue equipment: board, tube and flippers. The waves were large and powerful on the day of this annual event. Lifeguards protected swimmers during the Spring Classic Swim that was held May 21, 2016 at South Oceanside Harbor Beach. ZHP_3742_rot1.2_cr
   - Match: score 13.5 via coastal-in-title, name:harbor, kw:beach+wave+waves+ocean, geo:95m, w>=1000
-- **`us-ca-harbor-beach-2.jpg`** — “Life Guard Exits as Surf Lesson Starts (34127946220)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-harbor-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Life Guard Exits as Surf Lesson Starts (34127946220)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Life_Guard_Exits_as_Surf_Lesson_Starts_(34127946220).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Chris Hunkeler from Carlsbad, California, USA — https://www.flickr.com/people/14913305@N00
@@ -3644,7 +3644,7 @@
   - 1600×2133px, 787 KB, shot 95 m from the spot
   - Description: This Oceanside Junior Lifeguard had his colors coordinated with yellow, red, beige and black until he grabbed someone else's blue rescue board. Lifeguards protected swimmers during the annual Spring Classic Swim that was held May 21, 2016 at South Oceanside Harbor Beach. After the swim event was over, a high school physical education class entered the water for a surf lesson. ZHP_3876_cr
   - Match: score 13.5 via coastal-in-title, name:harbor, kw:beach+surf+ocean, geo:95m, w>=1000
-- **`us-ca-harbor-beach-3.jpg`** — “Oceanside Junior Lifeguard (33702988423)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-harbor-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Oceanside Junior Lifeguard (33702988423)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Oceanside_Junior_Lifeguard_(33702988423).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Chris Hunkeler from Carlsbad, California, USA — https://www.flickr.com/people/14913305@N00
@@ -3657,7 +3657,7 @@
 
 `osm:way/483772010` · 36.9624554, -122.0008616
 
-- **`us-ca-harbor-beach-772010-1.jpg`** — “Santa Cruz Harbor - Walton Lighthouse (17369936420)” by Shannon McGee from Huntsville, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-harbor-beach-772010-1.jpg`** ⚠︎ *context, not the coast itself* — “Santa Cruz Harbor - Walton Lighthouse (17369936420)” by Shannon McGee from Huntsville, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Santa_Cruz_Harbor_-_Walton_Lighthouse_(17369936420).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Shannon McGee from Huntsville, USA — https://www.flickr.com/people/7830943@N03
@@ -3665,7 +3665,7 @@
   - 1600×1600px, 317 KB, shot 71 m from the spot
   - Description: Santa Cruz Harbor - Walton Lighthouse
   - Match: score 13.5 via coastal-in-title, name:harbor, kw:beach+break+lighthouse, geo:71m, w>=1000
-- **`us-ca-harbor-beach-772010-2.jpg`** — “Beach Volleyball at Santa Cruz Harbor (6868331563)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-harbor-beach-772010-2.jpg`** ⚠︎ *context, not the coast itself* — “Beach Volleyball at Santa Cruz Harbor (6868331563)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Beach_Volleyball_at_Santa_Cruz_Harbor_(6868331563).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Don DeBold from San Jose, CA, USA — https://www.flickr.com/people/28156071@N00
@@ -3673,7 +3673,7 @@
   - 1600×1063px, 532 KB, shot 45 m from the spot
   - Description: Beach Volleyball at Santa Cruz Harbor
   - Match: score 13 via coastal-in-title, name:harbor, kw:beach+break, geo:45m, w>=1000, landscape
-- **`us-ca-harbor-beach-772010-3.jpg`** — “Beach Volleyball at Santa Cruz Harbor (6868335563)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-harbor-beach-772010-3.jpg`** ⚠︎ *context, not the coast itself* — “Beach Volleyball at Santa Cruz Harbor (6868335563)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Beach_Volleyball_at_Santa_Cruz_Harbor_(6868335563).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Don DeBold from San Jose, CA, USA — https://www.flickr.com/people/28156071@N00
@@ -3686,15 +3686,7 @@
 
 `osm:relation/19178919` · 34.246921, -119.2679856 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-harbor-cove-beach-1.jpg`** — “Pier at Dana Cove, 1929 (29365495844)” by Orange County Archives from Orange County, California, United States of America, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Pier_at_Dana_Cove,_1929_(29365495844).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Orange County Archives from Orange County, California, United States of America — https://www.flickr.com/people/30346812@N07
-  - Dated: 2016-09-28 13:46
-  - 1600×1155px, 496 KB, shot 168518 m from the spot
-  - Description: Contributed by the Dana Point Yacht Club. This is just one sample of the many items included in the time capsule placed at Dana Point Harbor during the harbor's "rock placing" (groundbreaking) in 1966. The capsule was opened during a special ceremony in Aug. 2016. There are no known copyright restrictions on this image. All future uses of this photo should include the courtesy line, "Photo courtesy Orange County Archives." Comments are welcome after reading our <a href=" http://egov.ocgov.com/ocgov/CommentPolicy " rel="nofollow">Comment Policy</a>.
-  - Match: score 15 via coastal-in-title, name:harbor+cove, kw:beach+pier+cove+point, geo:168518m, w>=1000, landscape
-- **`us-ca-harbor-cove-beach-2.jpg`** — “Point Bluff and Ross Cove Beach” by Wonderlane, Wikimedia Commons, CC BY 2.0
+- **`us-ca-harbor-cove-beach-1.jpg`** — “Point Bluff and Ross Cove Beach” by Wonderlane, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Point_Bluff_and_Ross_Cove_Beach.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Wonderlane
@@ -3702,7 +3694,15 @@
   - 1600×1064px, 480 KB
   - Description: Point Bluff and Ross Cove Beach. San Mateo County, California. "Pillar Point Bluff offers hikers, joggers, bicyclists, and dog-walkers a chance to take in the breathtaking sights and sounds of the Pacific Ocean. The 220-acre bluff top includes a section of the California Coastal Trail and offers views of Half Moon Bay and Pillar Point Harbor, agricultural lands and the world famous Mavericks surf break. The surf break is located approximately half a mile off shore due west from the Pillar Point Air Force Tracking station and is best viewed with binoculars. Ross’s Cove, the beach below the bluf
   - Match: score 15 via coastal-in-title, name:harbor+cove, kw:beach+surf+ocean+coast, w>=1000, landscape
-- **`us-ca-harbor-cove-beach-3.jpg`** — “Sea lions at la jolla cove” by Charles Edward, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-harbor-cove-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Pier at Dana Cove, 1929 (29365495844)” by Orange County Archives from Orange County, California, United States of America, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Pier_at_Dana_Cove,_1929_(29365495844).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Orange County Archives from Orange County, California, United States of America — https://www.flickr.com/people/30346812@N07
+  - Dated: 2016-09-28 13:46
+  - 1600×1155px, 496 KB, shot 168518 m from the spot
+  - Description: Contributed by the Dana Point Yacht Club. This is just one sample of the many items included in the time capsule placed at Dana Point Harbor during the harbor's "rock placing" (groundbreaking) in 1966. The capsule was opened during a special ceremony in Aug. 2016. There are no known copyright restrictions on this image. All future uses of this photo should include the courtesy line, "Photo courtesy Orange County Archives." Comments are welcome after reading our <a href=" http://egov.ocgov.com/ocgov/CommentPolicy " rel="nofollow">Comment Policy</a>.
+  - Match: score 15 via coastal-in-title, name:harbor+cove, kw:beach+pier+cove+point, geo:168518m, w>=1000, landscape
+- **`us-ca-harbor-cove-beach-3.jpg`** ✗ **not a coastal photo** — “Sea lions at la jolla cove” by Charles Edward, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sea_lions_at_la_jolla_cove.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Charles Edward — //commons.wikimedia.org/wiki/User:Charles_Edward
@@ -3773,7 +3773,15 @@
 
 `osm:relation/6580306` · 33.8639326, -118.4037054 · beach type: **sandy** (OpenStreetMap surface=sand) · lifeguard: yes
 
-- **`us-ca-hermosa-city-beach-1.jpg`** — “Hermosa Beach (8260461388)” by InSapphoWeTrust from Los Angeles, California, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-hermosa-city-beach-1.jpg`** — “Hermosa Beach (8260460714)” by InSapphoWeTrust from Los Angeles, California, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Hermosa_Beach_(8260460714).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: InSapphoWeTrust from Los Angeles, California, USA — https://www.flickr.com/people/56619626@N05
+  - Dated: 2012-12-09 15:20
+  - 1600×1063px, 572 KB, shot 273 m from the spot
+  - Description: How the holiday season plays out on the sunny, mild Southern California coastline... For a while I had forgotten what kinds of fun I could have with a telephoto lens. Now I am spending a few moments re-discovering the fun.
+  - Match: score 14 via coastal-in-title, name:hermosa, kw:beach+sea+coast+coastline, geo:273m, w>=1000, landscape
+- **`us-ca-hermosa-city-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Hermosa Beach (8260461388)” by InSapphoWeTrust from Los Angeles, California, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hermosa_Beach_(8260461388).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: InSapphoWeTrust from Los Angeles, California, USA — https://www.flickr.com/people/56619626@N05
@@ -3781,21 +3789,13 @@
   - 1600×1032px, 488 KB, shot 273 m from the spot
   - Description: How the holiday season plays out on the sunny, mild Southern California coastline... For a while I had forgotten what kinds of fun I could have with a telephoto lens. Now I am spending a few moments re-discovering the fun.
   - Match: score 14 via coastal-in-title, name:hermosa, kw:beach+sea+coast+coastline, geo:273m, w>=1000, landscape
-- **`us-ca-hermosa-city-beach-2.jpg`** — “Hermosa Beach (8260460960)” by InSapphoWeTrust from Los Angeles, California, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-hermosa-city-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Hermosa Beach (8260460960)” by InSapphoWeTrust from Los Angeles, California, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hermosa_Beach_(8260460960).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: InSapphoWeTrust from Los Angeles, California, USA — https://www.flickr.com/people/56619626@N05
   - Dated: 2012-12-09 15:22
   - 1600×1074px, 554 KB, shot 273 m from the spot
   - Description: How the holiday season plays out on the sunny, mild Southern California coastline... For a while I had forgotten what kinds of fun I could have with a telephoto lens. Now I am spending a few moments re-discovering the fun. Like, being able to eavesdrop in on a photographer who is staging a photoshoot for two of her friends in Santa costumes.
-  - Match: score 14 via coastal-in-title, name:hermosa, kw:beach+sea+coast+coastline, geo:273m, w>=1000, landscape
-- **`us-ca-hermosa-city-beach-3.jpg`** — “Hermosa Beach (8260460714)” by InSapphoWeTrust from Los Angeles, California, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Hermosa_Beach_(8260460714).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: InSapphoWeTrust from Los Angeles, California, USA — https://www.flickr.com/people/56619626@N05
-  - Dated: 2012-12-09 15:20
-  - 1600×1063px, 572 KB, shot 273 m from the spot
-  - Description: How the holiday season plays out on the sunny, mild Southern California coastline... For a while I had forgotten what kinds of fun I could have with a telephoto lens. Now I am spending a few moments re-discovering the fun.
   - Match: score 14 via coastal-in-title, name:hermosa, kw:beach+sea+coast+coastline, geo:273m, w>=1000, landscape
 
 ## Hermosa Terrace Park
@@ -3829,15 +3829,7 @@
 
 `osm:way/346400873` · 36.5104501, -121.9414231
 
-- **`us-ca-hidden-beach-1.jpg`** — Hidden beach, Loch Lomond — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Hidden_beach,_Loch_Lomond.jpg
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: GeographUser — //commons.wikimedia.org/wiki/User:GeographUser
-  - Dated: 2024-01-20
-  - 1600×1200px, 1117 KB
-  - Description: A small pebble beach emerges, hidden in thick foliage and tree cover all around. Somewhere on the eastern shore of Loch Lomond, next to the West Highland Way.
-  - Match: score 11 via coastal-in-title, name:hidden, kw:beach+shore+cove, w>=1000, landscape
-- **`us-ca-hidden-beach-2.jpg`** — “Hidden-Beach-Rocks-05” by Oneconscious at English Wikipedia, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-hidden-beach-1.jpg`** — “Hidden-Beach-Rocks-05” by Oneconscious at English Wikipedia, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hidden-Beach-Rocks-05.JPG
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Oneconscious at English Wikipedia — https://en.wikipedia.org/wiki/User:Oneconscious
@@ -3845,7 +3837,15 @@
   - 1600×1200px, 680 KB
   - Description: Rocks @ Hidden Beach 2006, Minneapolis MN
   - Match: score 10 via coastal-in-title, name:hidden, kw:beach+rocks, w>=1000, landscape
-- **`us-ca-hidden-beach-3.jpg`** — “Hidden Beach - Flickr - Peter.Samow” by Peter Samow, Wikimedia Commons, CC BY 2.0
+- **`us-ca-hidden-beach-2.jpg`** ✗ **not a coastal photo** — Hidden beach, Loch Lomond — CC0 (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Hidden_beach,_Loch_Lomond.jpg
+  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
+  - Author: GeographUser — //commons.wikimedia.org/wiki/User:GeographUser
+  - Dated: 2024-01-20
+  - 1600×1200px, 1117 KB
+  - Description: A small pebble beach emerges, hidden in thick foliage and tree cover all around. Somewhere on the eastern shore of Loch Lomond, next to the West Highland Way.
+  - Match: score 11 via coastal-in-title, name:hidden, kw:beach+shore+cove, w>=1000, landscape
+- **`us-ca-hidden-beach-3.jpg`** ✗ **not a coastal photo** — “Hidden Beach - Flickr - Peter.Samow” by Peter Samow, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hidden_Beach_-_Flickr_-_Peter.Samow.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Peter Samow — https://www.flickr.com/people/96400650@N02
@@ -3858,15 +3858,7 @@
 
 `osm:way/251234047` · 41.5774114, -124.1000764
 
-- **`us-ca-hidden-beach-234047-1.jpg`** — Hidden beach, Loch Lomond — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Hidden_beach,_Loch_Lomond.jpg
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: GeographUser — //commons.wikimedia.org/wiki/User:GeographUser
-  - Dated: 2024-01-20
-  - 1600×1200px, 1117 KB
-  - Description: A small pebble beach emerges, hidden in thick foliage and tree cover all around. Somewhere on the eastern shore of Loch Lomond, next to the West Highland Way.
-  - Match: score 11 via coastal-in-title, name:hidden, kw:beach+shore+cove, w>=1000, landscape
-- **`us-ca-hidden-beach-234047-2.jpg`** — “Hidden-Beach-Rocks-05” by Oneconscious at English Wikipedia, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-hidden-beach-234047-1.jpg`** — “Hidden-Beach-Rocks-05” by Oneconscious at English Wikipedia, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hidden-Beach-Rocks-05.JPG
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Oneconscious at English Wikipedia — https://en.wikipedia.org/wiki/User:Oneconscious
@@ -3874,7 +3866,15 @@
   - 1600×1200px, 680 KB
   - Description: Rocks @ Hidden Beach 2006, Minneapolis MN
   - Match: score 10 via coastal-in-title, name:hidden, kw:beach+rocks, w>=1000, landscape
-- **`us-ca-hidden-beach-234047-3.jpg`** — “Hidden Beach - Flickr - Peter.Samow” by Peter Samow, Wikimedia Commons, CC BY 2.0
+- **`us-ca-hidden-beach-234047-2.jpg`** ✗ **not a coastal photo** — Hidden beach, Loch Lomond — CC0 (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Hidden_beach,_Loch_Lomond.jpg
+  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
+  - Author: GeographUser — //commons.wikimedia.org/wiki/User:GeographUser
+  - Dated: 2024-01-20
+  - 1600×1200px, 1117 KB
+  - Description: A small pebble beach emerges, hidden in thick foliage and tree cover all around. Somewhere on the eastern shore of Loch Lomond, next to the West Highland Way.
+  - Match: score 11 via coastal-in-title, name:hidden, kw:beach+shore+cove, w>=1000, landscape
+- **`us-ca-hidden-beach-234047-3.jpg`** ✗ **not a coastal photo** — “Hidden Beach - Flickr - Peter.Samow” by Peter Samow, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hidden_Beach_-_Flickr_-_Peter.Samow.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Peter Samow — https://www.flickr.com/people/96400650@N02
@@ -3887,15 +3887,7 @@
 
 `osm:way/738331632` · 34.160685, -119.222138
 
-- **`us-ca-hobie-beach-1.jpg`** — “Hobie Beach, Port Elizabeth - South africa (2417710541)” by South African Tourism from South Africa, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Hobie_Beach,_Port_Elizabeth_-_South_africa_(2417710541).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: South African Tourism from South Africa — https://www.flickr.com/people/25779097@N08
-  - Dated: 2008-04-16 02:15
-  - 1600×1056px, 530 KB, shot 16546709 m from the spot
-  - Description: Hobie Beach in Port Elizabeth attracts water sports fanatics and families with its clean, white sands, playful surf and variety of entertainment.
-  - Match: score 11 via coastal-in-title, name:hobie, kw:beach+surf+sand, geo:16546709m, w>=1000, landscape
-- **`us-ca-hobie-beach-2.jpg`** — Andrea Dransfield, a BeachCOMBERS volunteer, surveys Silver Strand beach. (35521962514) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-hobie-beach-1.jpg`** — Andrea Dransfield, a BeachCOMBERS volunteer, surveys Silver Strand beach. (35521962514) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Andrea_Dransfield,_a_BeachCOMBERS_volunteer,_surveys_Silver_Strand_beach._(35521962514).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Pacific Southwest Region USFWS from Sacramento, US — https://www.flickr.com/people/54430347@N04
@@ -3903,7 +3895,15 @@
   - 1600×1143px, 413 KB, shot 684 m from the spot
   - Description: OXNARD, Calif. (June 3, 2017) - Andrea Dransfield, a BeachCOMBERS volunteer, surveys Silver Strand beach. BeachCOMBERS trains volunteers to record data about deceased marine mammals or birds along a shoreline, contributing to long-term information about the health of a marine ecosystem. (Photo by Jason Kraus.)
   - Match: score 9 via coastal-in-title, kw:beach+shore+shoreline+mar, geo:684m, w>=1000, landscape
-- **`us-ca-hobie-beach-3.jpg`** — Karen Sinclair, a fish and wildlife biologist with the U.S. Fish and Wildlife Service in Ventura braces against the wind while looking for brown pelicans during the biannual brown pelican survey held along the West Coast. (34375760720) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-hobie-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Hobie Beach, Port Elizabeth - South africa (2417710541)” by South African Tourism from South Africa, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Hobie_Beach,_Port_Elizabeth_-_South_africa_(2417710541).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: South African Tourism from South Africa — https://www.flickr.com/people/25779097@N08
+  - Dated: 2008-04-16 02:15
+  - 1600×1056px, 530 KB, shot 16546709 m from the spot
+  - Description: Hobie Beach in Port Elizabeth attracts water sports fanatics and families with its clean, white sands, playful surf and variety of entertainment.
+  - Match: score 11 via coastal-in-title, name:hobie, kw:beach+surf+sand, geo:16546709m, w>=1000, landscape
+- **`us-ca-hobie-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Karen Sinclair, a fish and wildlife biologist with the U.S. Fish and Wildlife Service in Ventura braces against the wind while looking for brown pelicans during the biannual brown pelican survey held along the West Coast. (34375760720) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Karen_Sinclair,_a_fish_and_wildlife_biologist_with_the_U.S._Fish_and_Wildlife_Service_in_Ventura_braces_against_the_wind_while_looking_for_brown_pelicans_during_the_biannual_brown_pelican_survey_held_along_the_West_Coast._(34375760720).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Pacific Southwest Region USFWS from Sacramento, US — https://www.flickr.com/people/54430347@N04
@@ -3916,7 +3916,7 @@
 
 `osm:way/37783716` · 34.1669824, -119.2315625 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-hollywood-beach-1.jpg`** — “Jeremy Yablan Surfing Hollywood Beach” by Jeremyyablan, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-hollywood-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Jeremy Yablan Surfing Hollywood Beach” by Jeremyyablan, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Jeremy_Yablan_Surfing_Hollywood_Beach.JPG
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Jeremyyablan — //commons.wikimedia.org/w/index.php?title=User:Jeremyyablan&amp;action=edit&amp;redlink=1
@@ -3924,7 +3924,7 @@
   - 1600×1600px, 577 KB, shot 179 m from the spot
   - Description: Jeremy Yablan by his yellow longboard surfboard at Hollywood Beach
   - Match: score 13.5 via coastal-in-title, name:hollywood, kw:beach+surf+surfing+longboard, geo:179m, w>=1000
-- **`us-ca-hollywood-beach-2.jpg`** — Kendra Chan is a fish and wildlife biologist with the U.S. Fish and Wildlife Service in Ventura and BeachCOMBERS volunteer. Chan surveys Hollywood Beach in Oxnard, California. (36298868772) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-hollywood-beach-2.jpg`** ⚠︎ *context, not the coast itself* — Kendra Chan is a fish and wildlife biologist with the U.S. Fish and Wildlife Service in Ventura and BeachCOMBERS volunteer. Chan surveys Hollywood Beach in Oxnard, California. (36298868772) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Kendra_Chan_is_a_fish_and_wildlife_biologist_with_the_U.S._Fish_and_Wildlife_Service_in_Ventura_and_BeachCOMBERS_volunteer._Chan_surveys_Hollywood_Beach_in_Oxnard,_California._(36298868772).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Pacific Southwest Region USFWS from Sacramento, US — https://www.flickr.com/people/54430347@N04
@@ -3932,7 +3932,7 @@
   - 1600×1143px, 407 KB, shot 10376 m from the spot
   - Description: VENTURA, Calif. (Aug. 8, 2017) - Kendra Chan is a fish and wildlife biologist with the U.S. Fish and Wildlife Service in Ventura and BeachCOMBERS volunteer. Chan surveys Hollywood Beach in Oxnard, California. BeachCOMBERS trains volunteers to record data about deceased marine mammals or birds along a shoreline, contributing to long-term information about the health of a marine ecosystem.
   - Match: score 11 via coastal-in-title, name:hollywood, kw:beach+shore+shoreline+mar, geo:10376m, w>=1000, landscape
-- **`us-ca-hollywood-beach-3.jpg`** — Lena Chang, senior fish and wildlife biologist with the Service in Ventura, and volunteer coordinator for the South Coast Chapter of BeachCOMBERS, conducts a survey of Hollywood Beach. (36357449165) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-hollywood-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Lena Chang, senior fish and wildlife biologist with the Service in Ventura, and volunteer coordinator for the South Coast Chapter of BeachCOMBERS, conducts a survey of Hollywood Beach. (36357449165) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Lena_Chang,_senior_fish_and_wildlife_biologist_with_the_Service_in_Ventura,_and_volunteer_coordinator_for_the_South_Coast_Chapter_of_BeachCOMBERS,_conducts_a_survey_of_Hollywood_Beach._(36357449165).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Pacific Southwest Region USFWS from Sacramento, US — https://www.flickr.com/people/54430347@N04
@@ -3953,7 +3953,7 @@
   - 1600×1200px, 865 KB, shot 2144 m from the spot
   - Description: Santa Barbara tide pools @ sunset
   - Match: score 7 via coastal-in-title, kw:tide+sunset, geo:2144m, w>=1000, landscape
-- **`us-ca-hope-ranch-private-beach-2.jpg`** — “Striped Shore crab - Pachygrapsus crassipes (29253769698)” by Björn S, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-hope-ranch-private-beach-2.jpg`** ✗ **not a coastal photo** — “Striped Shore crab - Pachygrapsus crassipes (29253769698)” by Björn S, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Striped_Shore_crab_-_Pachygrapsus_crassipes_(29253769698).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Björn S — https://www.flickr.com/people/40948266@N04
@@ -3961,7 +3961,7 @@
   - 1600×1067px, 450 KB, shot 2034 m from the spot
   - Description: Striped Shore crab - Pachygrapsus crassipes
   - Match: score 5.5 via coastal-in-title, kw:shore, geo:2034m, w>=1000, landscape
-- **`us-ca-hope-ranch-private-beach-3.jpg`** — “Striped Shore crab - Pachygrapsus crassipes (29253766698)” by Björn S, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-hope-ranch-private-beach-3.jpg`** ✗ **not a coastal photo** — “Striped Shore crab - Pachygrapsus crassipes (29253766698)” by Björn S, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Striped_Shore_crab_-_Pachygrapsus_crassipes_(29253766698).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Björn S — https://www.flickr.com/people/40948266@N04
@@ -4003,7 +4003,7 @@
 
 `osm:relation/11657616` · 33.6383602, -117.9733803 · beach type: **sandy** (OpenStreetMap surface=sand) · site: http://www.southcarolinaparks.com/huntingtonbeach
 
-- **`us-ca-huntington-state-beach-1.jpg`** — “2013, Huntington Beach, Brookhurst Wetlands - panoramio” by Chris English, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-huntington-state-beach-1.jpg`** ✗ **not a coastal photo** — “2013, Huntington Beach, Brookhurst Wetlands - panoramio” by Chris English, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:2013,_Huntington_Beach,_Brookhurst_Wetlands_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Chris English — https://web.archive.org/web/20161029043409/http://www.panoramio.com/user/4447772?with_photo_id=99911839
@@ -4011,7 +4011,7 @@
   - 1600×1067px, 236 KB, shot 174 m from the spot
   - Description: 2013, Huntington Beach, Brookhurst Wetlands
   - Match: score 13 via coastal-in-title, name:huntington, kw:beach+mar, geo:174m, w>=1000, landscape
-- **`us-ca-huntington-state-beach-2.jpg`** — “2013, A Huntington Beach Marsh - panoramio” by Chris English, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-huntington-state-beach-2.jpg`** ✗ **not a coastal photo** — “2013, A Huntington Beach Marsh - panoramio” by Chris English, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:2013,_A_Huntington_Beach_Marsh_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Chris English — https://web.archive.org/web/20161030033834/http://www.panoramio.com/user/4447772?with_photo_id=99911072
@@ -4019,7 +4019,7 @@
   - 1600×1067px, 285 KB, shot 751 m from the spot
   - Description: 2013, A Huntington Beach Marsh
   - Match: score 12 via coastal-in-title, name:huntington, kw:beach+mar, geo:751m, w>=1000, landscape
-- **`us-ca-huntington-state-beach-3.jpg`** — “2013, Huntington Beach Wetlands, Talbert Marsh. - panoramio” by Chris English, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-huntington-state-beach-3.jpg`** ✗ **not a coastal photo** — “2013, Huntington Beach Wetlands, Talbert Marsh. - panoramio” by Chris English, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:2013,_Huntington_Beach_Wetlands,_Talbert_Marsh._-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Chris English — https://web.archive.org/web/20161101002823/http://www.panoramio.com/user/4447772?with_photo_id=99911108
@@ -4069,15 +4069,7 @@
   - 1600×1200px, 651 KB
   - Description: Santa Cruz Island - one of the US Channel Islands National Park
   - Match: score 11 via coastal-in-title, name:island, kw:beach+coast+bay, w>=1000, landscape
-- **`us-ca-island-beach-2.jpg`** — “Bay Island Sunset Newport Beach CA by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Bay_Island_Sunset_Newport_Beach_CA_by_Don_Ramey_Logan.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
-  - Dated: 2021-05-25 17:36:58
-  - 1600×1177px, 434 KB
-  - Description: Bay Island Sunset Newport Beach CA by Don Ramey Logan
-  - Match: score 11 via coastal-in-title, name:island, kw:beach+bay+sunset, w>=1000, landscape
-- **`us-ca-island-beach-3.jpg`** — “Long Beach, California” by John Murphy at flickr, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-island-beach-2.jpg`** — “Long Beach, California” by John Murphy at flickr, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach,_California.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: John Murphy at flickr
@@ -4085,12 +4077,20 @@
   - 1600×1366px, 434 KB
   - Description: shoreline and beach of Bluff Park, Long Beach, California
   - Match: score 10.5 via coastal-in-title, name:island, kw:beach+shore+shoreline, w>=1000
+- **`us-ca-island-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Bay Island Sunset Newport Beach CA by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Bay_Island_Sunset_Newport_Beach_CA_by_Don_Ramey_Logan.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
+  - Dated: 2021-05-25 17:36:58
+  - 1600×1177px, 434 KB
+  - Description: Bay Island Sunset Newport Beach CA by Don Ramey Logan
+  - Match: score 11 via coastal-in-title, name:island, kw:beach+bay+sunset, w>=1000, landscape
 
 ## Its Beach
 
 `osm:relation/7063045` · 36.9516316, -122.0276644
 
-- **`us-ca-its-beach-1.jpg`** — “Santa Cruz Lighthouse and Surfing Museum (8321929497)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-its-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Santa Cruz Lighthouse and Surfing Museum (8321929497)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Santa_Cruz_Lighthouse_and_Surfing_Museum_(8321929497).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Don DeBold from San Jose, CA, USA — https://www.flickr.com/people/28156071@N00
@@ -4098,7 +4098,7 @@
   - 1600×1067px, 472 KB, shot 58 m from the spot
   - Description: Santa Cruz Lighthouse and Surfing Museum
   - Match: score 10 via coastal-in-title, kw:surf+surfing+lighthouse, geo:58m, w>=1000, landscape
-- **`us-ca-its-beach-2.jpg`** — “Looking at the waves (8321931485)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-its-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Looking at the waves (8321931485)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Looking_at_the_waves_(8321931485).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Don DeBold from San Jose, CA, USA — https://www.flickr.com/people/28156071@N00
@@ -4106,7 +4106,7 @@
   - 1600×1063px, 457 KB, shot 87 m from the spot
   - Description: Looking at the waves
   - Match: score 10 via coastal-in-title, kw:wave+waves+coast, geo:87m, w>=1000, landscape
-- **`us-ca-its-beach-3.jpg`** — “Lighthouse California-06648 - Mark Abbott Memorial Lighthouse (21108115174)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-its-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Lighthouse California-06648 - Mark Abbott Memorial Lighthouse (21108115174)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Lighthouse_California-06648_-_Mark_Abbott_Memorial_Lighthouse_(21108115174).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
@@ -4119,15 +4119,7 @@
 
 `osm:way/436924162` · 38.4530826, -123.1332386
 
-- **`us-ca-jenner-beach-1.jpg`** — “Wildlands Jenner Headlands Rock Formation” by BookOfDisquiet, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Wildlands_Jenner_Headlands_Rock_Formation.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: BookOfDisquiet — //commons.wikimedia.org/w/index.php?title=User:BookOfDisquiet&amp;action=edit&amp;redlink=1
-  - Dated: 2023-04-26 08:39:01
-  - 1600×1200px, 900 KB, shot 1183 m from the spot
-  - Description: Tree growing against rock formation with wildflowers in the foreground. Location is partway up the loop trail at The Wildlands Conservancy Jenner Headlands Preserve.
-  - Match: score 12 via coastal-in-title, name:jenner, kw:coast+headland, geo:1183m, w>=1000, landscape
-- **`us-ca-jenner-beach-2.jpg`** — “Wildlands Jenner Headlands Russian River” by BookOfDisquiet, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-jenner-beach-1.jpg`** — “Wildlands Jenner Headlands Russian River” by BookOfDisquiet, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Wildlands_Jenner_Headlands_Russian_River.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: BookOfDisquiet — //commons.wikimedia.org/w/index.php?title=User:BookOfDisquiet&amp;action=edit&amp;redlink=1
@@ -4135,7 +4127,7 @@
   - 1600×1200px, 897 KB, shot 1451 m from the spot
   - Description: This is coastal prairie descending to Russian River mouth and Pacific Ocean. The view is from The Wildlands Conservancy Jenner Headlands Preserve. The river is a major geographic feature in this region.
   - Match: score 12 via coastal-in-title, name:jenner, kw:ocean+coast+coastal+headland, geo:1451m, w>=1000, landscape
-- **`us-ca-jenner-beach-3.jpg`** — “Wildlands Jenner Headlands Tree On Rocks” by BookOfDisquiet, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-jenner-beach-2.jpg`** — “Wildlands Jenner Headlands Tree On Rocks” by BookOfDisquiet, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Wildlands_Jenner_Headlands_Tree_On_Rocks.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: BookOfDisquiet — //commons.wikimedia.org/w/index.php?title=User:BookOfDisquiet&amp;action=edit&amp;redlink=1
@@ -4143,6 +4135,14 @@
   - 1600×1200px, 982 KB, shot 2069 m from the spot
   - Description: Tree growing from cluster of rocks overlooking ocean. Beautiful coastal prairie with smaller rocks and wildflowers is visible. Picnic spot with great vista. Located at The Wildlands Conservancy Jenner Headlands Preserve.
   - Match: score 12 via coastal-in-title, name:jenner, kw:ocean+coast+coastal+headland, geo:2069m, w>=1000, landscape
+- **`us-ca-jenner-beach-3.jpg`** ✗ **not a coastal photo** — “Wildlands Jenner Headlands Rock Formation” by BookOfDisquiet, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Wildlands_Jenner_Headlands_Rock_Formation.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: BookOfDisquiet — //commons.wikimedia.org/w/index.php?title=User:BookOfDisquiet&amp;action=edit&amp;redlink=1
+  - Dated: 2023-04-26 08:39:01
+  - 1600×1200px, 900 KB, shot 1183 m from the spot
+  - Description: Tree growing against rock formation with wildflowers in the foreground. Location is partway up the loop trail at The Wildlands Conservancy Jenner Headlands Preserve.
+  - Match: score 12 via coastal-in-title, name:jenner, kw:coast+headland, geo:1183m, w>=1000, landscape
 
 ## Jetty Beach
 
@@ -4162,7 +4162,7 @@
   - Author: Unknown author Unknown author or not provided
   - 1600×1203px, 351 KB
   - Match: score 11 via coastal-in-title, name:jetty, kw:beach+sea+jetty, w>=1000, landscape
-- **`us-ca-jetty-beach-3.jpg`** — Naval Ammunition and Net Depot, Seal Beach, California. (Aerial view showing jetty jutting into ocean and coastline... - NARA - 295516 — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-jetty-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Naval Ammunition and Net Depot, Seal Beach, California. (Aerial view showing jetty jutting into ocean and coastline... - NARA - 295516 — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Naval_Ammunition_and_Net_Depot,_Seal_Beach,_California._(Aerial_view_showing_jetty_jutting_into_ocean_and_coastline..._-_NARA_-_295516.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Unknown author Unknown author or not provided
@@ -4181,15 +4181,7 @@
   - 1600×455px, 404 KB, shot 1701 m from the spot
   - Description: Camp site No 1 is considered the premium location at Parsons Landing. It gives you privacy from all the other sites on the beach but is rather pebbly and restricts your views of the rest of the beach. I enjoyed it for one night on Christmas Day and then moved down the beach to make room for Joshua and Justin who had reserved it for the Boxing Day. You can see my tent at the far right of the panorama shot. IMG_20161225_164314370
   - Match: score 11 via coastal-in-title, name:landing, kw:beach+cove, geo:1701m, w>=1000, landscape
-- **`us-ca-johnsons-landing-2.jpg`** — “Parsons Landing Camp Site (31892014982)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Parsons_Landing_Camp_Site_(31892014982).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Chris Hunkeler from Carlsbad, California, USA — https://www.flickr.com/people/14913305@N00
-  - Dated: Taken on 26 December 2016, 10:58
-  - 1600×900px, 654 KB, shot 1894 m from the spot
-  - Description: I actually preferred this location because it was winter and the camp ground was fairly empty, it gave better views of the whole beach, I could set my tent up right at the water's edge at a high point in the sand and it was right next to a spectacular boulder on the beach. The boulder looks smaller than me here due to the wide angle lens but it was really much taller than me. This can be seen in the next photo. This one-person tent is a Big Agnes Fly Creek HV UL1. I am modeling an Icebreaker men's Oasis long sleeve hoodie of merino wool, Bodyfit fit and Gritstone Heather / Stealth colors. I we
-  - Match: score 10 via name:landing, kw:beach+sand+point+break, geo:1894m, w>=1000, landscape
-- **`us-ca-johnsons-landing-3.jpg`** — “Parsons Landing (31892012092)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-johnsons-landing-2.jpg`** — “Parsons Landing (31892012092)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Parsons_Landing_(31892012092).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Chris Hunkeler from Carlsbad, California, USA — https://www.flickr.com/people/14913305@N00
@@ -4197,12 +4189,20 @@
   - 1600×900px, 779 KB, shot 2362 m from the spot
   - Description: I am on my way to Starlight Beach and looking back at my campsite at Parsons Landing. If you zoom into the beach, you can see the large boulder I spoke of in the previous photo. To the right of that is a rock that is flush with the beach and appears as a long white smudge. To the right of that is a tiny white dot with a shadow - that is my tent. IMG_20161226_115008561
   - Match: score 9 via name:landing, kw:beach+coast, geo:2362m, w>=1000, landscape
+- **`us-ca-johnsons-landing-3.jpg`** ⚠︎ *context, not the coast itself* — “Parsons Landing Camp Site (31892014982)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Parsons_Landing_Camp_Site_(31892014982).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Chris Hunkeler from Carlsbad, California, USA — https://www.flickr.com/people/14913305@N00
+  - Dated: Taken on 26 December 2016, 10:58
+  - 1600×900px, 654 KB, shot 1894 m from the spot
+  - Description: I actually preferred this location because it was winter and the camp ground was fairly empty, it gave better views of the whole beach, I could set my tent up right at the water's edge at a high point in the sand and it was right next to a spectacular boulder on the beach. The boulder looks smaller than me here due to the wide angle lens but it was really much taller than me. This can be seen in the next photo. This one-person tent is a Big Agnes Fly Creek HV UL1. I am modeling an Icebreaker men's Oasis long sleeve hoodie of merino wool, Bodyfit fit and Gritstone Heather / Stealth colors. I we
+  - Match: score 10 via name:landing, kw:beach+sand+point+break, geo:1894m, w>=1000, landscape
 
 ## Jones Beach
 
 `osm:way/118076807` · 39.9535033, -123.9744043
 
-- **`us-ca-jones-beach-1.jpg`** — “Boat-Shaped House - Cerritos Beach - Near Todos Santos - Baja California Sur - Mexico (23749001246)” by Adam Jones from Kelowna, BC, Canada, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-jones-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Boat-Shaped House - Cerritos Beach - Near Todos Santos - Baja California Sur - Mexico (23749001246)” by Adam Jones from Kelowna, BC, Canada, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Boat-Shaped_House_-_Cerritos_Beach_-_Near_Todos_Santos_-_Baja_California_Sur_-_Mexico_(23749001246).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Adam Jones from Kelowna, BC, Canada — https://www.flickr.com/people/41000732@N04
@@ -4210,15 +4210,7 @@
   - 1600×1200px, 981 KB
   - Description: Boat-Shaped House - Cerritos Beach - Near Todos Santos - Baja California Sur - Mexico
   - Match: score 6 via coastal-in-title, kw:beach+playa, w>=1000, landscape
-- **`us-ca-jones-beach-2.jpg`** — “Cerritos Beach - Near Todos Santos - Baja California Sur - Mexico - 02 (23748981286)” by Adam Jones from Kelowna, BC, Canada, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Cerritos_Beach_-_Near_Todos_Santos_-_Baja_California_Sur_-_Mexico_-_02_(23748981286).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Adam Jones from Kelowna, BC, Canada — https://www.flickr.com/people/41000732@N04
-  - Dated: 2015-12-15 12:08
-  - 1600×1200px, 893 KB
-  - Description: Cerritos Beach - Near Todos Santos - Baja California Sur - Mexico - 02
-  - Match: score 6 via coastal-in-title, kw:beach+playa, w>=1000, landscape
-- **`us-ca-jones-beach-3.jpg`** — “Panorama of Cerritos Beach - Near Todos Santos - Baja California Sur - Mexico - 01 (23775145865)” by Adam Jones from Kelowna, BC, Canada, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-jones-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Panorama of Cerritos Beach - Near Todos Santos - Baja California Sur - Mexico - 01 (23775145865)” by Adam Jones from Kelowna, BC, Canada, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Panorama_of_Cerritos_Beach_-_Near_Todos_Santos_-_Baja_California_Sur_-_Mexico_-_01_(23775145865).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Adam Jones from Kelowna, BC, Canada — https://www.flickr.com/people/41000732@N04
@@ -4226,28 +4218,20 @@
   - 1600×352px, 148 KB
   - Description: Panorama of Cerritos Beach - Near Todos Santos - Baja California Sur - Mexico - 01
   - Match: score 6 via coastal-in-title, kw:beach+playa, w>=1000, landscape
+- **`us-ca-jones-beach-3.jpg`** ✗ **not a coastal photo** — “Cerritos Beach - Near Todos Santos - Baja California Sur - Mexico - 02 (23748981286)” by Adam Jones from Kelowna, BC, Canada, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Cerritos_Beach_-_Near_Todos_Santos_-_Baja_California_Sur_-_Mexico_-_02_(23748981286).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Adam Jones from Kelowna, BC, Canada — https://www.flickr.com/people/41000732@N04
+  - Dated: 2015-12-15 12:08
+  - 1600×1200px, 893 KB
+  - Description: Cerritos Beach - Near Todos Santos - Baja California Sur - Mexico - 02
+  - Match: score 6 via coastal-in-title, kw:beach+playa, w>=1000, landscape
 
 ## Jug Handle Beach
 
 `osm:way/129733558` · 39.3766844, -123.817574 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-jug-handle-beach-1.jpg`** — “California-06429 - Seals (21718935762)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:California-06429_-_Seals_(21718935762).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
-  - Dated: Taken on 8 August 2015, 13:52
-  - 1600×900px, 2692 KB, shot 91 m from the spot
-  - Description: Managed to see a couple of seals on the distant rocks.
-  - Match: score 18 via coastal-in-title, name:jug+handle, kw:beach+sea+rocks, geo:91m, w>=1000, landscape
-- **`us-ca-jug-handle-beach-2.jpg`** — “California-06430 - Seals (21730479565)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:California-06430_-_Seals_(21730479565).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
-  - Dated: Taken on 8 August 2015, 13:52
-  - 1600×900px, 2493 KB, shot 91 m from the spot
-  - Description: Managed to see a couple of seals on the distant rocks.
-  - Match: score 18 via coastal-in-title, name:jug+handle, kw:beach+sea+rocks, geo:91m, w>=1000, landscape
-- **`us-ca-jug-handle-beach-3.jpg`** — “Jug Handle Beach” by David Eppstein, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-jug-handle-beach-1.jpg`** — “Jug Handle Beach” by David Eppstein, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Jug_Handle_Beach.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: David Eppstein — //commons.wikimedia.org/wiki/User:David_Eppstein
@@ -4255,6 +4239,22 @@
   - 1600×800px, 479 KB, shot 65 m from the spot
   - Description: The beach at Jug Handle State Natural Reserve near Mendocino, California
   - Match: score 15.5 via coastal-in-title, name:jug+handle, kw:beach, geo:65m, w>=1000, landscape
+- **`us-ca-jug-handle-beach-2.jpg`** ✗ **not a coastal photo** — “California-06429 - Seals (21718935762)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:California-06429_-_Seals_(21718935762).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
+  - Dated: Taken on 8 August 2015, 13:52
+  - 1600×900px, 2692 KB, shot 91 m from the spot
+  - Description: Managed to see a couple of seals on the distant rocks.
+  - Match: score 18 via coastal-in-title, name:jug+handle, kw:beach+sea+rocks, geo:91m, w>=1000, landscape
+- **`us-ca-jug-handle-beach-3.jpg`** ✗ **not a coastal photo** — “California-06430 - Seals (21730479565)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:California-06430_-_Seals_(21730479565).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
+  - Dated: Taken on 8 August 2015, 13:52
+  - 1600×900px, 2493 KB, shot 91 m from the spot
+  - Description: Managed to see a couple of seals on the distant rocks.
+  - Match: score 18 via coastal-in-title, name:jug+handle, kw:beach+sea+rocks, geo:91m, w>=1000, landscape
 
 ## Kehoe Beach
 
@@ -4268,15 +4268,7 @@
   - 1600×1071px, 354 KB
   - Description: Kehoe Beach at sunset during low tide at Point Reyes National Seashore. NPS/Debra Miller
   - Match: score 11 via coastal-in-title, name:kehoe, kw:beach+sea+shore+point, w>=1000, landscape
-- **`us-ca-kehoe-beach-2.jpg`** — “Odocoileus hemionus, Point Reyes National Seashore” by Frank Schulenburg, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Odocoileus_hemionus,_Point_Reyes_National_Seashore.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Frank Schulenburg — //commons.wikimedia.org/wiki/User:Frank_Schulenburg
-  - Dated: 2013-01-11 23:22:30
-  - 1600×1163px, 692 KB, shot 1789 m from the spot
-  - Description: Mule deer ( Odocoileus hemionus ) at Point Reyes National Seashore, California, United States.
-  - Match: score 8 via coastal-in-title, kw:sea+shore+point+seashore, geo:1789m, w>=1000, landscape
-- **`us-ca-kehoe-beach-3.jpg`** — “Point Reyes National Seashore, California - 52640844527” by lamblukas, Wikimedia Commons, CC BY 2.0
+- **`us-ca-kehoe-beach-2.jpg`** — “Point Reyes National Seashore, California - 52640844527” by lamblukas, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Point_Reyes_National_Seashore,_California_-_52640844527.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: lamblukas
@@ -4284,12 +4276,20 @@
   - 1600×900px, 449 KB, shot 2884 m from the spot
   - Description: Point Reyes National Seashore
   - Match: score 8 via coastal-in-title, kw:sea+coast+shore+point, geo:2884m, w>=1000, landscape
+- **`us-ca-kehoe-beach-3.jpg`** ✗ **not a coastal photo** — “Odocoileus hemionus, Point Reyes National Seashore” by Frank Schulenburg, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Odocoileus_hemionus,_Point_Reyes_National_Seashore.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Frank Schulenburg — //commons.wikimedia.org/wiki/User:Frank_Schulenburg
+  - Dated: 2013-01-11 23:22:30
+  - 1600×1163px, 692 KB, shot 1789 m from the spot
+  - Description: Mule deer ( Odocoileus hemionus ) at Point Reyes National Seashore, California, United States.
+  - Match: score 8 via coastal-in-title, kw:sea+shore+point+seashore, geo:1789m, w>=1000, landscape
 
 ## Kelham Beach
 
 `osm:way/446160699` · 37.9956014, -122.8209841
 
-- **`us-ca-kelham-beach-1.jpg`** — Woodward Fire - Burnt Coyote Bush and Point Resistance - August 23, 2020 - 10-24 am (45cc9514-0274-4ef1-9318-979aa0e90b09) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-kelham-beach-1.jpg`** ✗ **not a coastal photo** — Woodward Fire - Burnt Coyote Bush and Point Resistance - August 23, 2020 - 10-24 am (45cc9514-0274-4ef1-9318-979aa0e90b09) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Woodward_Fire_-_Burnt_Coyote_Bush_and_Point_Resistance_-_August_23,_2020_-_10-24_am_(45cc9514-0274-4ef1-9318-979aa0e90b09).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: NPS Photo
@@ -4297,7 +4297,7 @@
   - 1600×1200px, 825 KB, shot 166 m from the spot
   - Description: Burnt shrubs and ground are in the foreground and on the right. Across a trail on the left is green vegetation. In the distance is a low, rocky headland stretching into a bay below vary low clouds. Burnt coyote bush with Point Resistance in the background on the morning of August 23, 2020. Keywords: Point Reyes National Seashore; Point Reyes; Fire; Fire Management; Wildfire; Woodward Fire; Coast Trail; coyote bush; coyote brush; Baccharis pilularis; Point Resistance
   - Match: score 8 via kw:sea+coast+shore+bay, geo:166m, w>=1000, landscape
-- **`us-ca-kelham-beach-2.jpg`** — Woodward Fire - Firefighter Walks along the Coast Trail - August 31, 2020 - 11-50 am (a5b6f6e1-d643-447e-b980-b829bab00023) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-kelham-beach-2.jpg`** ✗ **not a coastal photo** — Woodward Fire - Firefighter Walks along the Coast Trail - August 31, 2020 - 11-50 am (a5b6f6e1-d643-447e-b980-b829bab00023) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Woodward_Fire_-_Firefighter_Walks_along_the_Coast_Trail_-_August_31,_2020_-_11-50_am_(a5b6f6e1-d643-447e-b980-b829bab00023).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: NPS Photo
@@ -4305,7 +4305,7 @@
   - 1600×1200px, 873 KB, shot 2005 m from the spot
   - Description: A firefighter dressed in a yellow shirt and hard hat and green pants wearing a black backpack walks along a trail that passes through a burned landscape. A firefighter walks along the Coast Trail on August 31, 2020. Keywords: Point Reyes National Seashore; Point Reyes; Fire; Fire Management; Wildfire; Woodward Fire; firefighter; firefighters; Coast Trail; Sculptured Beach
   - Match: score 8 via coastal-in-title, kw:beach+sea+coast+shore, geo:2005m, w>=1000, landscape
-- **`us-ca-kelham-beach-3.jpg`** — “Equestrians - panoramio” by Kurt Minard, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-kelham-beach-3.jpg`** ✗ **not a coastal photo** — “Equestrians - panoramio” by Kurt Minard, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Equestrians_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Kurt Minard — https://web.archive.org/web/20161014183106/http://www.panoramio.com/user/2201121?with_photo_id=37932446
@@ -4326,15 +4326,7 @@
   - 1600×1143px, 413 KB, shot 563 m from the spot
   - Description: OXNARD, Calif. (June 3, 2017) - Andrea Dransfield, a BeachCOMBERS volunteer, surveys Silver Strand beach. BeachCOMBERS trains volunteers to record data about deceased marine mammals or birds along a shoreline, contributing to long-term information about the health of a marine ecosystem. (Photo by Jason Kraus.)
   - Match: score 9 via coastal-in-title, kw:beach+shore+shoreline+mar, geo:563m, w>=1000, landscape
-- **`us-ca-kiddie-beach-2.jpg`** — Andrea Dransfield, a BeachCOMBERS volunteer, uses a bill plate to identify a bird found on Silver Strand beach during her monthly survey. (35960707160) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Andrea_Dransfield,_a_BeachCOMBERS_volunteer,_uses_a_bill_plate_to_identify_a_bird_found_on_Silver_Strand_beach_during_her_monthly_survey._(35960707160).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Pacific Southwest Region USFWS from Sacramento, US — https://www.flickr.com/people/54430347@N04
-  - Dated: 2017-06-03 12:54
-  - 1600×2241px, 2571 KB, shot 741 m from the spot
-  - Description: OXNARD, Calif. (June 3, 2017) - Andrea Dransfield, a BeachCOMBERS volunteer, uses a bill plate to identify a bird found on Silver Strand beach during her monthly survey. BeachCOMBERS trains volunteers to record data about deceased marine mammals or birds along a shoreline, contributing to long-term information about the health of a marine ecosystem. (Photo by Jason Kraus.)
-  - Match: score 8.5 via coastal-in-title, kw:beach+shore+shoreline+mar, geo:741m, w>=1000
-- **`us-ca-kiddie-beach-3.jpg`** — Karen Sinclair, a fish and wildlife biologist with the U.S. Fish and Wildlife Service in Ventura braces against the wind while looking for brown pelicans during the biannual brown pelican survey held along the West Coast. (34375760720) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-kiddie-beach-2.jpg`** ⚠︎ *context, not the coast itself* — Karen Sinclair, a fish and wildlife biologist with the U.S. Fish and Wildlife Service in Ventura braces against the wind while looking for brown pelicans during the biannual brown pelican survey held along the West Coast. (34375760720) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Karen_Sinclair,_a_fish_and_wildlife_biologist_with_the_U.S._Fish_and_Wildlife_Service_in_Ventura_braces_against_the_wind_while_looking_for_brown_pelicans_during_the_biannual_brown_pelican_survey_held_along_the_West_Coast._(34375760720).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Pacific Southwest Region USFWS from Sacramento, US — https://www.flickr.com/people/54430347@N04
@@ -4342,6 +4334,14 @@
   - 1600×1143px, 571 KB, shot 567 m from the spot
   - Description: OXNARD, Calif. (May 6, 2016) - Karen Sinclair, a fish and wildlife biologist with the U.S. Fish and Wildlife Service in Ventura braces against the wind while looking for brown pelicans during the biannual brown pelican survey held along the West Coast. The survey is conducted with the intent to gather information needed to understand how potential threats from changes in weather patterns, prey availability, or changes in habitat or contaminants could impact California brown pelican populations over time. Photo by Kendra Chan/USFWS.
   - Match: score 8 via coastal-in-title, kw:beach+coast, geo:567m, w>=1000, landscape
+- **`us-ca-kiddie-beach-3.jpg`** ✗ **not a coastal photo** — Andrea Dransfield, a BeachCOMBERS volunteer, uses a bill plate to identify a bird found on Silver Strand beach during her monthly survey. (35960707160) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Andrea_Dransfield,_a_BeachCOMBERS_volunteer,_uses_a_bill_plate_to_identify_a_bird_found_on_Silver_Strand_beach_during_her_monthly_survey._(35960707160).jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: Pacific Southwest Region USFWS from Sacramento, US — https://www.flickr.com/people/54430347@N04
+  - Dated: 2017-06-03 12:54
+  - 1600×2241px, 2571 KB, shot 741 m from the spot
+  - Description: OXNARD, Calif. (June 3, 2017) - Andrea Dransfield, a BeachCOMBERS volunteer, uses a bill plate to identify a bird found on Silver Strand beach during her monthly survey. BeachCOMBERS trains volunteers to record data about deceased marine mammals or birds along a shoreline, contributing to long-term information about the health of a marine ecosystem. (Photo by Jason Kraus.)
+  - Match: score 8.5 via coastal-in-title, kw:beach+shore+shoreline+mar, geo:741m, w>=1000
 
 ## La Conchita Beach
 
@@ -4355,7 +4355,7 @@
   - 1600×1204px, 85 KB, shot 539 m from the spot
   - Description: California, April 2008
   - Match: score 8.5 via name:conchita, kw:coast, geo:539m, w>=1000, landscape
-- **`us-ca-la-conchita-beach-2.jpg`** — “Pacific Coast Highway & Ocean Avenue (8175953721)” by Tony Webster from Portland, Oregon, United States, Wikimedia Commons, CC BY 2.0
+- **`us-ca-la-conchita-beach-2.jpg`** ✗ **not a coastal photo** — “Pacific Coast Highway & Ocean Avenue (8175953721)” by Tony Webster from Portland, Oregon, United States, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Pacific_Coast_Highway_%26_Ocean_Avenue_(8175953721).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Tony Webster from Portland, Oregon, United States — https://www.flickr.com/people/87296837@N00
@@ -4363,7 +4363,7 @@
   - 1600×1067px, 528 KB, shot 1191 m from the spot
   - Description: Pacific Coast Highway & Ocean Avenue
   - Match: score 8 via coastal-in-title, kw:ocean+coast, geo:1191m, w>=1000, landscape
-- **`us-ca-la-conchita-beach-3.jpg`** — “Oxnard-Thousand Oaks-Ventura, CA, CA, USA - panoramio (7)” by Mountain Mike Johans…, Wikimedia Commons, CC BY 3.0
+- **`us-ca-la-conchita-beach-3.jpg`** ✗ **not a coastal photo** — “Oxnard-Thousand Oaks-Ventura, CA, CA, USA - panoramio (7)” by Mountain Mike Johans…, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Oxnard-Thousand_Oaks-Ventura,_CA,_CA,_USA_-_panoramio_(7).jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Mountain Mike Johans… — https://web.archive.org/web/20161026213326/http://www.panoramio.com/user/1093175?with_photo_id=86345624
@@ -4413,7 +4413,7 @@
   - 1600×1057px, 681 KB, shot 213234 m from the spot
   - Description: The beach of la Jolla from Ellen Browning Scripps Park .
   - Match: score 11 via coastal-in-title, name:jolla, kw:beach+surf+shore, geo:213234m, w>=1000, landscape
-- **`us-ca-la-jolla-beach-2.jpg`** — “Sea lion on the beach in La Jolla (70367)” by Rhododendrites, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-la-jolla-beach-2.jpg`** ✗ **not a coastal photo** — “Sea lion on the beach in La Jolla (70367)” by Rhododendrites, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sea_lion_on_the_beach_in_La_Jolla_(70367).jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Rhododendrites — //commons.wikimedia.org/wiki/User:Rhododendrites
@@ -4421,7 +4421,7 @@
   - 1600×1004px, 810 KB, shot 213234 m from the spot
   - Description: A California sea lion ( Zalophus californianus ) coming ashore in La Jolla (San Diego, California).
   - Match: score 11 via coastal-in-title, name:jolla, kw:beach+sea+shore+cove, geo:213234m, w>=1000, landscape
-- **`us-ca-la-jolla-beach-3.jpg`** — “Sea lion on the beach in La Jolla (70368)” by Rhododendrites, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-la-jolla-beach-3.jpg`** ✗ **not a coastal photo** — “Sea lion on the beach in La Jolla (70368)” by Rhododendrites, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sea_lion_on_the_beach_in_La_Jolla_(70368).jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Rhododendrites — //commons.wikimedia.org/wiki/User:Rhododendrites
@@ -4434,7 +4434,7 @@
 
 `osm:relation/7102574` · 32.8504521, -117.2727298 · beach type: **rocky** (OpenStreetMap surface=rock)
 
-- **`us-ca-la-jolla-cove-1.jpg`** — “La Jolla Cove, San Diego, California (9) (5141541857)” by Ken Lund from Las Vegas, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-la-jolla-cove-1.jpg`** ✗ **not a coastal photo** — “La Jolla Cove, San Diego, California (9) (5141541857)” by Ken Lund from Las Vegas, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:La_Jolla_Cove,_San_Diego,_California_(9)_(5141541857).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Ken Lund from Las Vegas, Nevada, USA — https://www.flickr.com/people/75683070@N00
@@ -4442,7 +4442,7 @@
   - 1600×1200px, 466 KB, shot 50 m from the spot
   - Description: La Jolla Cove is a cove and a beach in La Jolla, San Diego, California. It is a very small beach within walking distance from the Children's Pool Beach. Scripps Park, a grassy area commonly used for picnicking, is located on the bluffs above the beach. La Jolla Cove is popular for swimming, scuba diving and snorkelling. However, since La Jolla Cove is within the San Diego-La Jolla Underwater Park (a marine refuge area), swimming devices such as surfboards, boogie boards, and even inflatable mattresses are not permitted, and this rule is carefully enforced by the lifeguards, specifically in the
   - Match: score 18 via coastal-in-title, name:jolla+cove, kw:beach+surf+shore+mar, geo:50m, w>=1000, landscape
-- **`us-ca-la-jolla-cove-2.jpg`** — “Sea lion on the beach in La Jolla (70367)” by Rhododendrites, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-la-jolla-cove-2.jpg`** ✗ **not a coastal photo** — “Sea lion on the beach in La Jolla (70367)” by Rhododendrites, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sea_lion_on_the_beach_in_La_Jolla_(70367).jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Rhododendrites — //commons.wikimedia.org/wiki/User:Rhododendrites
@@ -4450,7 +4450,7 @@
   - 1600×1004px, 810 KB, shot 98 m from the spot
   - Description: A California sea lion ( Zalophus californianus ) coming ashore in La Jolla (San Diego, California).
   - Match: score 18 via coastal-in-title, name:jolla+cove, kw:beach+sea+shore+cove, geo:98m, w>=1000, landscape
-- **`us-ca-la-jolla-cove-3.jpg`** — “Sea lion on the beach in La Jolla (70368)” by Rhododendrites, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-la-jolla-cove-3.jpg`** ✗ **not a coastal photo** — “Sea lion on the beach in La Jolla (70368)” by Rhododendrites, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sea_lion_on_the_beach_in_La_Jolla_(70368).jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Rhododendrites — //commons.wikimedia.org/wiki/User:Rhododendrites
@@ -4463,15 +4463,7 @@
 
 `osm:node/358787126` · 32.861436, -117.2553146
 
-- **`us-ca-la-jolla-shores-beach-1.jpg`** — “Scripps Institute of Oceanography Monument Sign” by RightCowLeftCoast, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Scripps_Institute_of_Oceanography_Monument_Sign.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: RightCowLeftCoast — //commons.wikimedia.org/wiki/User:RightCowLeftCoast
-  - Dated: 2017-10-15 11:34:01
-  - 1600×900px, 982 KB, shot 286 m from the spot
-  - Description: Corner of El Paseo Grande and La Jolla Shores Drive
-  - Match: score 17 via coastal-in-title, name:jolla+shores, kw:ocean+shore, geo:286m, w>=1000, landscape
-- **`us-ca-la-jolla-shores-beach-2.jpg`** — “29June2019 La Jolla Shores bonfire meetup-4” by RightCowLeftCoast, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-la-jolla-shores-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “29June2019 La Jolla Shores bonfire meetup-4” by RightCowLeftCoast, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:29June2019_La_Jolla_Shores_bonfire_meetup-4.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: RightCowLeftCoast — //commons.wikimedia.org/wiki/User:RightCowLeftCoast
@@ -4479,7 +4471,7 @@
   - 1600×1200px, 471 KB, shot 361 m from the spot
   - Description: Four Wikimedians meet at a meetup.com bonfire event at La Jolla Shores Beach
   - Match: score 17 via coastal-in-title, name:jolla+shores, kw:beach+shore, geo:361m, w>=1000, landscape
-- **`us-ca-la-jolla-shores-beach-3.jpg`** — “29June2019 La Jolla Shores bonfire meetup-5” by RightCowLeftCoast, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-la-jolla-shores-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “29June2019 La Jolla Shores bonfire meetup-5” by RightCowLeftCoast, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:29June2019_La_Jolla_Shores_bonfire_meetup-5.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: RightCowLeftCoast — //commons.wikimedia.org/wiki/User:RightCowLeftCoast
@@ -4487,6 +4479,14 @@
   - 1600×1200px, 557 KB, shot 386 m from the spot
   - Description: Four Wikimedians meet at a meetup.com bonfire event at La Jolla Shores Beach
   - Match: score 17 via coastal-in-title, name:jolla+shores, kw:beach+shore, geo:386m, w>=1000, landscape
+- **`us-ca-la-jolla-shores-beach-3.jpg`** ✗ **not a coastal photo** — “Scripps Institute of Oceanography Monument Sign” by RightCowLeftCoast, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Scripps_Institute_of_Oceanography_Monument_Sign.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: RightCowLeftCoast — //commons.wikimedia.org/wiki/User:RightCowLeftCoast
+  - Dated: 2017-10-15 11:34:01
+  - 1600×900px, 982 KB, shot 286 m from the spot
+  - Description: Corner of El Paseo Grande and La Jolla Shores Drive
+  - Match: score 17 via coastal-in-title, name:jolla+shores, kw:ocean+shore, geo:286m, w>=1000, landscape
 
 ## La Jolla Tide Pools
 
@@ -4550,15 +4550,7 @@
 
 `osm:relation/20219889` · 36.9828906, -122.1563034 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-laguna-creek-beach-1.jpg`** — “The Ritz View, Sand Creek Beach, Laguna Niguel, CA 2016 (32287182971)” by inkknife_2000 (7.5 million views +), Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:The_Ritz_View,_Sand_Creek_Beach,_Laguna_Niguel,_CA_2016_(32287182971).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: inkknife_2000 (7.5 million views +) — https://www.flickr.com/people/23155134@N06
-  - Dated: 2016-09-12 12:59:26
-  - 1600×1195px, 969 KB, shot 560685 m from the spot
-  - Description: (1 in a multiple picture album) The Ritz Carlton sits on a prime piece of land high above the Pacific giving clients a great view for their money. The grounds are immaculate and planted with all sorts of sea shore and desert plants.
-  - Match: score 15 via coastal-in-title, name:laguna+creek, kw:beach+sea+shore+sand, geo:560685m, w>=1000, landscape
-- **`us-ca-laguna-creek-beach-2.jpg`** — “Ritz-Carlton from Salt Creek Beach Park” by Nandaro, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-laguna-creek-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Ritz-Carlton from Salt Creek Beach Park” by Nandaro, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Ritz-Carlton_from_Salt_Creek_Beach_Park.JPG
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Nandaro — //commons.wikimedia.org/wiki/User:Nandaro
@@ -4566,7 +4558,15 @@
   - 1600×1157px, 596 KB
   - Description: The Ritz-Carlton, Laguna Niguel as seen from the beach area of Salt Creek Beach Park in Dana Point, California , U.S.A. Here's a photo of the picnic area of Salt Creek Beach Park .
   - Match: score 14 via coastal-in-title, name:laguna+creek, kw:beach+point, w>=1000, landscape
-- **`us-ca-laguna-creek-beach-3.jpg`** — “Aliso Creek Aerial Between Laguna Beach and Laguna Niguel (52840216765)” by formulanone, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-laguna-creek-beach-2.jpg`** ✗ **not a coastal photo** — “The Ritz View, Sand Creek Beach, Laguna Niguel, CA 2016 (32287182971)” by inkknife_2000 (7.5 million views +), Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:The_Ritz_View,_Sand_Creek_Beach,_Laguna_Niguel,_CA_2016_(32287182971).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: inkknife_2000 (7.5 million views +) — https://www.flickr.com/people/23155134@N06
+  - Dated: 2016-09-12 12:59:26
+  - 1600×1195px, 969 KB, shot 560685 m from the spot
+  - Description: (1 in a multiple picture album) The Ritz Carlton sits on a prime piece of land high above the Pacific giving clients a great view for their money. The grounds are immaculate and planted with all sorts of sea shore and desert plants.
+  - Match: score 15 via coastal-in-title, name:laguna+creek, kw:beach+sea+shore+sand, geo:560685m, w>=1000, landscape
+- **`us-ca-laguna-creek-beach-3.jpg`** ✗ **not a coastal photo** — “Aliso Creek Aerial Between Laguna Beach and Laguna Niguel (52840216765)” by formulanone, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Aliso_Creek_Aerial_Between_Laguna_Beach_and_Laguna_Niguel_(52840216765).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: formulanone — https://www.flickr.com/people/30552029@N00
@@ -4624,7 +4624,7 @@
   - 1600×1194px, 1261 KB, shot 660 m from the spot
   - Description: 500px provided description: Light and dark sand ripple texture. Waddell Creek Beach, CA [#beach ,#sand]
   - Match: score 8 via coastal-in-title, kw:beach+sand, geo:660m, w>=1000, landscape
-- **`us-ca-las-trancas-beach-3.jpg`** — “Aeolian Sand Ripples 5 (173891139)” by Justin Dolske, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-las-trancas-beach-3.jpg`** ✗ **not a coastal photo** — “Aeolian Sand Ripples 5 (173891139)” by Justin Dolske, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Aeolian_Sand_Ripples_5_(173891139).jpeg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Justin Dolske — https://500px.com/dolske
@@ -4645,15 +4645,7 @@
   - 1600×1067px, 618 KB, shot 119 m from the spot
   - Description: Pacific Coast Highway near Topanga State Beachb
   - Match: score 9 via coastal-in-title, kw:beach+coast, geo:119m, w>=1000, landscape
-- **`us-ca-las-tunas-beach-2.jpg`** — “Pacific Coast Highway at Butwood Rock” by JCS, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Pacific_Coast_Highway_at_Butwood_Rock.JPG
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: JCS — //commons.wikimedia.org/wiki/User:JCS
-  - Dated: 2011-07-09 17:21:35
-  - 1600×1067px, 890 KB, shot 352 m from the spot
-  - Description: Pacific Coast Highway at Butwood Rock
-  - Match: score 7.5 via coastal-in-title, kw:coast, geo:352m, w>=1000, landscape
-- **`us-ca-las-tunas-beach-3.jpg`** — “Pacific Coast Highway at Big Rock” by JCS, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-las-tunas-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Pacific Coast Highway at Big Rock” by JCS, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Pacific_Coast_Highway_at_Big_Rock.JPG
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: JCS — //commons.wikimedia.org/wiki/User:JCS
@@ -4661,12 +4653,20 @@
   - 1600×1067px, 862 KB, shot 1262 m from the spot
   - Description: Pacific Coast Highway at Big Rock
   - Match: score 7 via coastal-in-title, kw:coast+cliff, geo:1262m, w>=1000, landscape
+- **`us-ca-las-tunas-beach-3.jpg`** ✗ **not a coastal photo** — “Pacific Coast Highway at Butwood Rock” by JCS, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Pacific_Coast_Highway_at_Butwood_Rock.JPG
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: JCS — //commons.wikimedia.org/wiki/User:JCS
+  - Dated: 2011-07-09 17:21:35
+  - 1600×1067px, 890 KB, shot 352 m from the spot
+  - Description: Pacific Coast Highway at Butwood Rock
+  - Match: score 7.5 via coastal-in-title, kw:coast, geo:352m, w>=1000, landscape
 
 ## Latigo Beach
 
 `osm:way/1082439264` · 34.0300323, -118.7515038 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-latigo-beach-1.jpg`** — “Grilled swordfish, fish sandwich, fish tacos” by T.Tseng, Wikimedia Commons, CC BY 2.0
+- **`us-ca-latigo-beach-1.jpg`** ✗ **not a coastal photo** — “Grilled swordfish, fish sandwich, fish tacos” by T.Tseng, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Grilled_swordfish,_fish_sandwich,_fish_tacos.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: T.Tseng
@@ -4674,7 +4674,7 @@
   - 1600×1200px, 607 KB, shot 1548 m from the spot
   - Description: Malibu Seafood, Malibu CA
   - Match: score 8 via coastal-in-title, kw:sea+sand+mar, geo:1548m, w>=1000, landscape
-- **`us-ca-latigo-beach-2.jpg`** — “Grilled swordfish, fish sandwich, fish tacos - 47345668791” by T.Tseng, Wikimedia Commons, CC BY 2.0
+- **`us-ca-latigo-beach-2.jpg`** ✗ **not a coastal photo** — “Grilled swordfish, fish sandwich, fish tacos - 47345668791” by T.Tseng, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Grilled_swordfish,_fish_sandwich,_fish_tacos_-_47345668791.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: T.Tseng
@@ -4682,7 +4682,7 @@
   - 1600×1200px, 596 KB, shot 1548 m from the spot
   - Description: Malibu Seafood, Malibu CA
   - Match: score 8 via coastal-in-title, kw:sea+sand+mar, geo:1548m, w>=1000, landscape
-- **`us-ca-latigo-beach-3.jpg`** — “Cliff Aster (132340525)” by Jennifer Putman, Wikimedia Commons, CC BY 3.0
+- **`us-ca-latigo-beach-3.jpg`** ✗ **not a coastal photo** — “Cliff Aster (132340525)” by Jennifer Putman, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Cliff_Aster_(132340525).jpeg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Jennifer Putman — https://500px.com/JenniferMPutman
@@ -4695,7 +4695,7 @@
 
 `osm:node/13248777148` · 32.8022086, -117.2601184
 
-- **`us-ca-law-street-beach-1.jpg`** — “San Diego coastline, California, USA25” by dconvertini, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-law-street-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “San Diego coastline, California, USA25” by dconvertini, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:San_Diego_coastline,_California,_USA25.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: dconvertini
@@ -4703,7 +4703,7 @@
   - 1600×1067px, 496 KB, shot 464 m from the spot
   - Description: San Diego - May 2022
   - Match: score 9 via coastal-in-title, kw:beach+coast+coastline, geo:464m, w>=1000, landscape
-- **`us-ca-law-street-beach-2.jpg`** — “San Diego coastline, California, USA26” by dconvertini, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-law-street-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “San Diego coastline, California, USA26” by dconvertini, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:San_Diego_coastline,_California,_USA26.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: dconvertini
@@ -4711,7 +4711,7 @@
   - 1600×1067px, 398 KB, shot 464 m from the spot
   - Description: San Diego - May 2022
   - Match: score 9 via coastal-in-title, kw:beach+coast+coastline, geo:464m, w>=1000, landscape
-- **`us-ca-law-street-beach-3.jpg`** — “San Diego coastline, California, USA27” by dconvertini, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-law-street-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “San Diego coastline, California, USA27” by dconvertini, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:San_Diego_coastline,_California,_USA27.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: dconvertini
@@ -4724,15 +4724,7 @@
 
 `osm:way/227236034` · 34.0361649, -118.8667614 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-lechuza-beach-1.jpg`** — “Facing The Wave at El Matador State Beach (35874040713)” by Prayitno / Thank you for (12 millions +) view from Los Angeles, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Facing_The_Wave_at_El_Matador_State_Beach_(35874040713).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Prayitno / Thank you for (12 millions +) view from Los Angeles, USA — https://www.flickr.com/people/34128007@N04
-  - Dated: 2017-08-19 15:55
-  - 1600×835px, 398 KB, shot 733 m from the spot
-  - Description: El Matador State Beach 32350 East Pacific Coast Highway, Malibu, CA 90265
-  - Match: score 9 via coastal-in-title, kw:beach+wave+coast, geo:733m, w>=1000, landscape
-- **`us-ca-lechuza-beach-2.jpg`** — “El Matador Beach (231445251)” by Hanlu Cao, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-lechuza-beach-1.jpg`** — “El Matador Beach (231445251)” by Hanlu Cao, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:El_Matador_Beach_(231445251).jpeg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Hanlu Cao — https://500px.com/hanluus
@@ -4740,7 +4732,7 @@
   - 1600×1068px, 616 KB, shot 757 m from the spot
   - Description: 500px provided description: El Matador Beach [#sea ,#beach ,#ocean ,#vacation ,#rocks ,#summer ,#california ,#malibu ,#seascape ,#seashore ,#hot day ,#cliffs ,#swimming ,#socal ,#hanlu cao]
   - Match: score 9 via coastal-in-title, kw:beach+ocean+sea+shore, geo:757m, w>=1000, landscape
-- **`us-ca-lechuza-beach-3.jpg`** — El Matador State Beach, Malibu (Unsplash) — CC0 (Wikimedia Commons), no attribution required
+- **`us-ca-lechuza-beach-2.jpg`** — El Matador State Beach, Malibu (Unsplash) — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:El_Matador_State_Beach,_Malibu_(Unsplash).jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Joseph Yates josephyates_ — https://unsplash.com/@josephyates_
@@ -4748,6 +4740,14 @@
   - 1600×1067px, 660 KB, shot 909 m from the spot
   - Description: El Matador State Beach, Malibu, United States
   - Match: score 8 via coastal-in-title, kw:beach+sunset, geo:909m, w>=1000, landscape
+- **`us-ca-lechuza-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Facing The Wave at El Matador State Beach (35874040713)” by Prayitno / Thank you for (12 millions +) view from Los Angeles, USA, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Facing_The_Wave_at_El_Matador_State_Beach_(35874040713).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Prayitno / Thank you for (12 millions +) view from Los Angeles, USA — https://www.flickr.com/people/34128007@N04
+  - Dated: 2017-08-19 15:55
+  - 1600×835px, 398 KB, shot 733 m from the spot
+  - Description: El Matador State Beach 32350 East Pacific Coast Highway, Malibu, CA 90265
+  - Match: score 9 via coastal-in-title, kw:beach+wave+coast, geo:733m, w>=1000, landscape
 
 ## Leo Carrillo State Beach
 
@@ -4840,7 +4840,7 @@
 
 `osm:way/445950449` · 38.0244007, -122.8805787
 
-- **`us-ca-limantour-beach-1.jpg`** — Limantour Beach, United States (Unsplash) — CC0 (Wikimedia Commons), no attribution required
+- **`us-ca-limantour-beach-1.jpg`** ✗ **not a coastal photo** — Limantour Beach, United States (Unsplash) — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Limantour_Beach,_United_States_(Unsplash).jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Jessica Ruscello jruscello — https://unsplash.com/@jruscello
@@ -4848,7 +4848,7 @@
   - 1600×1067px, 733 KB, shot 1228 m from the spot
   - Description: Limantour Beach, United States
   - Match: score 12 via coastal-in-title, name:limantour, kw:beach+sea+shore+point, geo:1228m, w>=1000, landscape
-- **`us-ca-limantour-beach-2.jpg`** — “Sanderling (50228962202)” by Becky Matsubara from El Sobrante, California, Wikimedia Commons, CC BY 2.0
+- **`us-ca-limantour-beach-2.jpg`** ✗ **not a coastal photo** — “Sanderling (50228962202)” by Becky Matsubara from El Sobrante, California, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sanderling_(50228962202).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Becky Matsubara from El Sobrante, California — https://www.flickr.com/people/130819719@N05
@@ -4856,7 +4856,7 @@
   - 1600×960px, 333 KB, shot 1485 m from the spot
   - Description: Limantour Beach, Point Reyes National Seashore, Marin County, California
   - Match: score 12 via coastal-in-title, name:limantour, kw:beach+sea+shore+sand, geo:1485m, w>=1000, landscape
-- **`us-ca-limantour-beach-3.jpg`** — “Sanderling (50228744101)” by Becky Matsubara from Contra Costa County, California, Wikimedia Commons, CC BY 2.0
+- **`us-ca-limantour-beach-3.jpg`** ✗ **not a coastal photo** — “Sanderling (50228744101)” by Becky Matsubara from Contra Costa County, California, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sanderling_(50228744101).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Becky Matsubara from Contra Costa County, California — https://www.flickr.com/people/130819719@N05
@@ -4940,22 +4940,7 @@
 
 `osm:node/358769520` · 41.0162364, -124.1097896
 
-- **`us-ca-little-river-state-beach-1.png`** — LittleRiverEstuaryAtLittleRiverStateBeach — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:LittleRiverEstuaryAtLittleRiverStateBeach.png
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: Thewellman — //commons.wikimedia.org/wiki/User:Thewellman
-  - Dated: 2013-10-13
-  - 1600×696px, 2843 KB
-  - Description: Little River estuary at the north end of Little River State Beach, Humboldt County, California, USA.
-  - Match: score 12.5 via coastal-in-title, name:little+river, kw:beach, w>=1000, landscape
-- **`us-ca-little-river-state-beach-2.jpg`** — SUNBATHERS AT LITTLE SUR RIVER - NARA - 543325 — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:SUNBATHERS_AT_LITTLE_SUR_RIVER_-_NARA_-_543325.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Dick Rowan — https://www.wikidata.org/wiki/Q64021029
-  - Dated: May 1972 date QS:P571,+1972-05-00T00:00:
-  - 1600×1076px, 564 KB
-  - Match: score 10.5 via name:little+river, kw:beach, w>=1000, landscape
-- **`us-ca-little-river-state-beach-3.jpg`** — “Video of ocean on a summer day north of Arcata (21746056749)” by Robert Ashworth from Bellingham, WA., USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-little-river-state-beach-1.jpg`** — “Video of ocean on a summer day north of Arcata (21746056749)” by Robert Ashworth from Bellingham, WA., USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Video_of_ocean_on_a_summer_day_north_of_Arcata_(21746056749).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Robert Ashworth from Bellingham, WA., USA — https://www.flickr.com/people/90536753@N00
@@ -4963,6 +4948,21 @@
   - 1600×900px, 32 KB, shot 996 m from the spot
   - Description: Video of ocean on a summer day north of Arcata
   - Match: score 6.5 via coastal-in-title, kw:ocean, geo:996m, w>=1000, landscape
+- **`us-ca-little-river-state-beach-2.jpg`** ⚠︎ *context, not the coast itself* — SUNBATHERS AT LITTLE SUR RIVER - NARA - 543325 — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:SUNBATHERS_AT_LITTLE_SUR_RIVER_-_NARA_-_543325.jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: Dick Rowan — https://www.wikidata.org/wiki/Q64021029
+  - Dated: May 1972 date QS:P571,+1972-05-00T00:00:
+  - 1600×1076px, 564 KB
+  - Match: score 10.5 via name:little+river, kw:beach, w>=1000, landscape
+- **`us-ca-little-river-state-beach-3.png`** ✗ **not a coastal photo** — LittleRiverEstuaryAtLittleRiverStateBeach — CC0 (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:LittleRiverEstuaryAtLittleRiverStateBeach.png
+  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
+  - Author: Thewellman — //commons.wikimedia.org/wiki/User:Thewellman
+  - Dated: 2013-10-13
+  - 1600×696px, 2843 KB
+  - Description: Little River estuary at the north end of Little River State Beach, Humboldt County, California, USA.
+  - Match: score 12.5 via coastal-in-title, name:little+river, kw:beach, w>=1000, landscape
 
 ## Little Wind-an-Sea
 
@@ -4997,15 +4997,7 @@
 
 `osm:way/251520532` · 33.7616314, -118.1656809 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-long-beach-city-beach-1.jpg`** — “Long Beach Airport, Long Beach, California (6013828556)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Airport,_Long_Beach,_California_(6013828556).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
-  - Dated: 2011-08-04 19:10
-  - 1600×1200px, 343 KB, shot 10403 m from the spot
-  - Description: Long Beach Airport, also known as Daugherty Field, is a city-owned public-use airport located three nautical miles (6 km) northeast of the central business district of the City of Long Beach, in Los Angeles County, California, United States. It serves Los Angeles and Orange Counties. It was formerly known as Long Beach Municipal Airport. This airport is included in the National Plan of Integrated Airport Systems for 2011–2015, which categorized it as a primary commercial service airport. As per Federal Aviation Administration records, the airport had 1,413,251 passenger boardings (enplanements
-  - Match: score 14 via coastal-in-title, name:long+city, kw:beach+mar, geo:10403m, w>=1000, landscape
-- **`us-ca-long-beach-city-beach-2.jpg`** — “Belmont Fishing Pier (191455031)” by Terry Lucas, Wikimedia Commons, CC BY 3.0
+- **`us-ca-long-beach-city-beach-1.jpg`** — “Belmont Fishing Pier (191455031)” by Terry Lucas, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Belmont_Fishing_Pier_(191455031).jpeg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Terry Lucas — https://500px.com/tdlucas5000
@@ -5013,7 +5005,7 @@
   - 1600×1000px, 723 KB, shot 797 m from the spot
   - Description: 500px provided description: Long Beach, California. Belmont Pier in the distance. [#beach ,#clouds ,#ocean ,#california ,#seascape ,#poppies ,#photomatix ,#palm trees ,#long beach ,#HDR ,#belmont pier]
   - Match: score 13 via coastal-in-title, name:long, kw:beach+ocean+sea+shore, geo:797m, w>=1000, landscape
-- **`us-ca-long-beach-city-beach-3.jpg`** — “Long Beach - Flickr - tdlucas5000” by tdlucas5000 from Lakewood Ca., United States, Wikimedia Commons, CC BY 2.0
+- **`us-ca-long-beach-city-beach-2.jpg`** — “Long Beach - Flickr - tdlucas5000” by tdlucas5000 from Lakewood Ca., United States, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_-_Flickr_-_tdlucas5000.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: tdlucas5000 from Lakewood Ca., United States — https://www.flickr.com/people/27656017@N02
@@ -5021,6 +5013,14 @@
   - 1600×987px, 1714 KB, shot 600 m from the spot
   - Description: No clouds, just an orange glow.
   - Match: score 12 via coastal-in-title, name:long, kw:beach+sunset, geo:600m, w>=1000, landscape
+- **`us-ca-long-beach-city-beach-3.jpg`** ✗ **not a coastal photo** — “Long Beach Airport, Long Beach, California (6013828556)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Airport,_Long_Beach,_California_(6013828556).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
+  - Dated: 2011-08-04 19:10
+  - 1600×1200px, 343 KB, shot 10403 m from the spot
+  - Description: Long Beach Airport, also known as Daugherty Field, is a city-owned public-use airport located three nautical miles (6 km) northeast of the central business district of the City of Long Beach, in Los Angeles County, California, United States. It serves Los Angeles and Orange Counties. It was formerly known as Long Beach Municipal Airport. This airport is included in the National Plan of Integrated Airport Systems for 2011–2015, which categorized it as a primary commercial service airport. As per Federal Aviation Administration records, the airport had 1,413,251 passenger boardings (enplanements
+  - Match: score 14 via coastal-in-title, name:long+city, kw:beach+mar, geo:10403m, w>=1000, landscape
 
 ## LongPoint Beach
 
@@ -5034,7 +5034,7 @@
   - 1600×1200px, 1044 KB, shot 2088 m from the spot
   - Description: NHYC's Moonstone Beach in Catalina CA by Don Ramey Logan
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:2088m, w>=1000, landscape
-- **`us-ca-longpoint-beach-2.jpg`** — “Sea Cucumber (7622463718)” by Ed Bierman from CA, usa, Wikimedia Commons, CC BY 2.0
+- **`us-ca-longpoint-beach-2.jpg`** ✗ **not a coastal photo** — “Sea Cucumber (7622463718)” by Ed Bierman from CA, usa, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sea_Cucumber_(7622463718).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Ed Bierman from CA, usa — https://www.flickr.com/people/26216388@N02
@@ -5055,15 +5055,7 @@
   - 1600×455px, 404 KB, shot 1665 m from the spot
   - Description: Camp site No 1 is considered the premium location at Parsons Landing. It gives you privacy from all the other sites on the beach but is rather pebbly and restricts your views of the rest of the beach. I enjoyed it for one night on Christmas Day and then moved down the beach to make room for Joshua and Justin who had reserved it for the Boxing Day. You can see my tent at the far right of the panorama shot. IMG_20161225_164314370
   - Match: score 7 via coastal-in-title, kw:beach+cove, geo:1665m, w>=1000, landscape
-- **`us-ca-lorenzo-beach-2.jpg`** — “Parsons Landing Camp Site (31892014982)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Parsons_Landing_Camp_Site_(31892014982).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Chris Hunkeler from Carlsbad, California, USA — https://www.flickr.com/people/14913305@N00
-  - Dated: Taken on 26 December 2016, 10:58
-  - 1600×900px, 654 KB, shot 1454 m from the spot
-  - Description: I actually preferred this location because it was winter and the camp ground was fairly empty, it gave better views of the whole beach, I could set my tent up right at the water's edge at a high point in the sand and it was right next to a spectacular boulder on the beach. The boulder looks smaller than me here due to the wide angle lens but it was really much taller than me. This can be seen in the next photo. This one-person tent is a Big Agnes Fly Creek HV UL1. I am modeling an Icebreaker men's Oasis long sleeve hoodie of merino wool, Bodyfit fit and Gritstone Heather / Stealth colors. I we
-  - Match: score 6 via kw:beach+sand+point+break, geo:1454m, w>=1000, landscape
-- **`us-ca-lorenzo-beach-3.jpg`** — “Parsons Landing (31892012092)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-lorenzo-beach-2.jpg`** — “Parsons Landing (31892012092)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Parsons_Landing_(31892012092).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Chris Hunkeler from Carlsbad, California, USA — https://www.flickr.com/people/14913305@N00
@@ -5071,12 +5063,20 @@
   - 1600×900px, 779 KB, shot 987 m from the spot
   - Description: I am on my way to Starlight Beach and looking back at my campsite at Parsons Landing. If you zoom into the beach, you can see the large boulder I spoke of in the previous photo. To the right of that is a rock that is flush with the beach and appears as a long white smudge. To the right of that is a tiny white dot with a shadow - that is my tent. IMG_20161226_115008561
   - Match: score 6 via kw:beach+coast, geo:987m, w>=1000, landscape
+- **`us-ca-lorenzo-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Parsons Landing Camp Site (31892014982)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Parsons_Landing_Camp_Site_(31892014982).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Chris Hunkeler from Carlsbad, California, USA — https://www.flickr.com/people/14913305@N00
+  - Dated: Taken on 26 December 2016, 10:58
+  - 1600×900px, 654 KB, shot 1454 m from the spot
+  - Description: I actually preferred this location because it was winter and the camp ground was fairly empty, it gave better views of the whole beach, I could set my tent up right at the water's edge at a high point in the sand and it was right next to a spectacular boulder on the beach. The boulder looks smaller than me here due to the wide angle lens but it was really much taller than me. This can be seen in the next photo. This one-person tent is a Big Agnes Fly Creek HV UL1. I am modeling an Icebreaker men's Oasis long sleeve hoodie of merino wool, Bodyfit fit and Gritstone Heather / Stealth colors. I we
+  - Match: score 6 via kw:beach+sand+point+break, geo:1454m, w>=1000, landscape
 
 ## Lost Coast
 
 `osm:node/6604283855` · 40.438537, -124.4095003
 
-- **`us-ca-lost-coast-1.jpg`** — “Mattole Road North California” by Islander61, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-lost-coast-1.jpg`** ⚠︎ *context, not the coast itself* — “Mattole Road North California” by Islander61, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Mattole_Road_North_California.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Islander61 — //commons.wikimedia.org/wiki/User:Islander61
@@ -5084,7 +5084,7 @@
   - 1600×1067px, 916 KB, shot 1311 m from the spot
   - Description: Mattole Road North California direction Black Sand Beach
   - Match: score 10 via name:coast, kw:beach+coast+sand, geo:1311m, w>=1000, landscape
-- **`us-ca-lost-coast-2.jpg`** — “Mattole Road (20747961763)” by John Leszczynski from Washington, DC, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-lost-coast-2.jpg`** ⚠︎ *context, not the coast itself* — “Mattole Road (20747961763)” by John Leszczynski from Washington, DC, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Mattole_Road_(20747961763).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: John Leszczynski from Washington, DC, USA — https://www.flickr.com/people/76796234@N07
@@ -5097,15 +5097,7 @@
 
 `osm:relation/7099359` · 33.5403067, -117.785294 · beach type: **sandy** (OpenStreetMap surface=sand) · lifeguard: yes
 
-- **`us-ca-main-beach-1.jpg`** — “Laguna Beach Lifeguard Tower” by CactusWriter, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Laguna_Beach_Lifeguard_Tower.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: CactusWriter — //commons.wikimedia.org/wiki/User:CactusWriter
-  - Dated: 2013-10-04 07:48:23
-  - 1600×2142px, 314 KB, shot 192 m from the spot
-  - Description: Lifeguard Tower -- landmark on the main beach of Laguna Beach, California
-  - Match: score 12.5 via coastal-in-title, name:main, kw:beach+mar, geo:192m, w>=1000
-- **`us-ca-main-beach-2.jpg`** — “Laguna Beach, the beach - Patrick Nouhailler - panoramio” by Patrick Nouhailler's…, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-main-beach-1.jpg`** — “Laguna Beach, the beach - Patrick Nouhailler - panoramio” by Patrick Nouhailler's…, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Laguna_Beach,_the_beach_-_Patrick_Nouhailler_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Patrick Nouhailler's… — https://web.archive.org/web/20161015000456/http://www.panoramio.com/user/1286122?with_photo_id=31596034
@@ -5113,7 +5105,15 @@
   - 1600×1200px, 554 KB, shot 202 m from the spot
   - Description: Laguna Beach, the beach - Patrick Nouhailler
   - Match: score 11.5 via coastal-in-title, name:main, kw:beach, geo:202m, w>=1000, landscape
-- **`us-ca-main-beach-3.jpg`** — “Laguna Beach, Main Beach Park - Patrick Nouhailler - panoramio” by Patrick Nouhailler's…, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-main-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Laguna Beach Lifeguard Tower” by CactusWriter, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Laguna_Beach_Lifeguard_Tower.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: CactusWriter — //commons.wikimedia.org/wiki/User:CactusWriter
+  - Dated: 2013-10-04 07:48:23
+  - 1600×2142px, 314 KB, shot 192 m from the spot
+  - Description: Lifeguard Tower -- landmark on the main beach of Laguna Beach, California
+  - Match: score 12.5 via coastal-in-title, name:main, kw:beach+mar, geo:192m, w>=1000
+- **`us-ca-main-beach-3.jpg`** ✗ **not a coastal photo** — “Laguna Beach, Main Beach Park - Patrick Nouhailler - panoramio” by Patrick Nouhailler's…, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Laguna_Beach,_Main_Beach_Park_-_Patrick_Nouhailler_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Patrick Nouhailler's… — https://web.archive.org/web/20161015094622/http://www.panoramio.com/user/1286122?with_photo_id=31596016
@@ -5134,7 +5134,7 @@
   - 1600×900px, 98 KB, shot 240 m from the spot
   - Description: 500px provided description: If you like my pictures please support me buying a print from my shop www.pixael.com/en/pictures thanks! You can follow me on www.facebook.com/giuseppemilophoto twitter.com/pixael_com instagram.com/pixael/ [#sky ,#city ,#sea ,#street ,#beach ,#contrast ,#sun ,#bw ,#light ,#clouds ,#waves ,#urban ,#dog ,#black and white ,#man ,#white ,#photo ,#usa ,#fuji ,#monochrome ,#malibu ,#black ,#walking ,#photography ,#blackandwhite ,#candid ,#united states ,#faceless ,#fujifilm ,#streetphotography ,#geotagged ,#xt10 ,#fujix ,#fuji 18mm ,#fujixt10 ,#fuji xt10 ,#fuji 18]
   - Match: score 12 via name:malibu, kw:beach+wave+waves+sea, geo:240m, w>=1000, landscape
-- **`us-ca-malibu-beach-2.jpg`** — “Snowy Egret at Malibu Lagoon 5” by stevevoght, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-malibu-beach-2.jpg`** ✗ **not a coastal photo** — “Snowy Egret at Malibu Lagoon 5” by stevevoght, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Snowy_Egret_at_Malibu_Lagoon_5.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: stevevoght
@@ -5142,7 +5142,7 @@
   - 1600×1071px, 287 KB, shot 662 m from the spot
   - Description: Snowy egret at Malibu Lagoon
   - Match: score 12 via coastal-in-title, name:malibu, kw:beach+lagoon, geo:662m, w>=1000, landscape
-- **`us-ca-malibu-beach-3.jpg`** — “Snowy Egret at Malibu Lagoon 6” by stevevoght, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-malibu-beach-3.jpg`** ✗ **not a coastal photo** — “Snowy Egret at Malibu Lagoon 6” by stevevoght, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Snowy_Egret_at_Malibu_Lagoon_6.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: stevevoght
@@ -5155,7 +5155,7 @@
 
 `osm:way/37808277` · 34.1920478, -119.2458653 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-mandalay-beach-1.jpg`** — “Ocean-view suites at Embassy Suites Oxnard, CA, May 2009 - panoramio” by Tori Sloane, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-mandalay-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Ocean-view suites at Embassy Suites Oxnard, CA, May 2009 - panoramio” by Tori Sloane, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Ocean-view_suites_at_Embassy_Suites_Oxnard,_CA,_May_2009_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Tori Sloane — https://web.archive.org/web/20161016204153/http://www.panoramio.com/user/2220720?with_photo_id=43695147
@@ -5163,7 +5163,7 @@
   - 1600×809px, 313 KB, shot 1597 m from the spot
   - Description: Ocean-view suites at Embassy Suites Oxnard, CA, May 2009
   - Match: score 12 via coastal-in-title, name:mandalay, kw:beach+ocean+dune, geo:1597m, w>=1000, landscape
-- **`us-ca-mandalay-beach-2.jpg`** — “Mandalay-Beach” by Fettlemap, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-mandalay-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Mandalay-Beach” by Fettlemap, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Mandalay-Beach.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Fettlemap — //commons.wikimedia.org/w/index.php?title=User:Fettlemap&amp;action=edit&amp;redlink=1
@@ -5171,7 +5171,7 @@
   - 1600×590px, 249 KB, shot 475 m from the spot
   - Description: View of Mandalay Beach, looking towards Reliant Energy power station and mountains above the City of Ventura in the background
   - Match: score 10.5 via coastal-in-title, name:mandalay, kw:beach, geo:475m, w>=1000, landscape
-- **`us-ca-mandalay-beach-3.jpg`** — “Embassy Suites at Sunset, Oxnard, CA, USA, May 2009 - panoramio” by Tori Sloane, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-mandalay-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Embassy Suites at Sunset, Oxnard, CA, USA, May 2009 - panoramio” by Tori Sloane, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Embassy_Suites_at_Sunset,_Oxnard,_CA,_USA,_May_2009_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Tori Sloane — https://web.archive.org/web/20161017091905/http://www.panoramio.com/user/2220720?with_photo_id=43695151
@@ -5184,7 +5184,7 @@
 
 `osm:way/41225794` · 34.2015701, -119.2506026 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-mandalay-state-beach-1.jpg`** — “Mandalay-Beach” by Fettlemap, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-mandalay-state-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Mandalay-Beach” by Fettlemap, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Mandalay-Beach.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Fettlemap — //commons.wikimedia.org/w/index.php?title=User:Fettlemap&amp;action=edit&amp;redlink=1
@@ -5192,7 +5192,7 @@
   - 1600×590px, 249 KB, shot 670 m from the spot
   - Description: View of Mandalay Beach, looking towards Reliant Energy power station and mountains above the City of Ventura in the background
   - Match: score 10.5 via coastal-in-title, name:mandalay, kw:beach, geo:670m, w>=1000, landscape
-- **`us-ca-mandalay-state-beach-2.jpg`** — “Oxnard, California (21575547072)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-mandalay-state-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Oxnard, California (21575547072)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Oxnard,_California_(21575547072).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
@@ -5200,7 +5200,7 @@
   - 1600×1200px, 591 KB, shot 37813 m from the spot
   - Description: The City of Oxnard is home to over 20 miles (32 km) of scenic, relatively uncrowded coastline. The beaches in Oxnard are large and the sand is exceptionally soft. The sand dunes in Oxnard, which were once much more extensive, have been used to recreate Middle-Eastern desert dunes in many movies, the first being The Sheik with Rudolph Valentino. There are very few rocks or driftwood piles at most beaches, but Oxnard is known to have dangerous rip-currents at certain beaches. Oxnard is home to world-class surf, although its best surf is inaccessible to the general public because it breaks at the
   - Match: score 5 via kw:beach+surf+coast+coastline, geo:37813m, w>=1000, landscape
-- **`us-ca-mandalay-state-beach-3.jpg`** — “Santa Paula and Oxnard, California (21399010458)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-mandalay-state-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Santa Paula and Oxnard, California (21399010458)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Santa_Paula_and_Oxnard,_California_(21399010458).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
@@ -5271,15 +5271,7 @@
 
 `osm:node/4505489419` · 36.6987342, -121.8091734
 
-- **`us-ca-marina-state-beach-1.jpg`** — “At the Beach - panoramio” by Steve Villata, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:At_the_Beach_-_panoramio.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Steve Villata — https://web.archive.org/web/20161010093834/http://www.panoramio.com/user/237050?with_photo_id=9104833
-  - Dated: Taken on 24 March 2008
-  - 1600×1063px, 375 KB, shot 229 m from the spot
-  - Description: At the Beach
-  - Match: score 13 via coastal-in-title, name:marina, kw:beach+mar, geo:229m, w>=1000, landscape
-- **`us-ca-marina-state-beach-2.jpg`** — “Marina Dunes Preserve” by Vogabulary, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-marina-state-beach-1.jpg`** — “Marina Dunes Preserve” by Vogabulary, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Marina_Dunes_Preserve.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Vogabulary — //commons.wikimedia.org/w/index.php?title=User:Vogabulary&amp;action=edit&amp;redlink=1
@@ -5287,7 +5279,7 @@
   - 1600×900px, 670 KB, shot 737 m from the spot
   - Description: A view of the dunes at Marina Dunes Preserve in Marina, CA
   - Match: score 12 via coastal-in-title, name:marina, kw:dune+mar, geo:737m, w>=1000, landscape
-- **`us-ca-marina-state-beach-3.jpg`** — “Marina State Beach tides” by John Loo, Wikimedia Commons, CC BY 2.0
+- **`us-ca-marina-state-beach-2.jpg`** — “Marina State Beach tides” by John Loo, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Marina_State_Beach_tides.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: John Loo — https://www.flickr.com/photos/8510225@N07/
@@ -5295,6 +5287,14 @@
   - 1600×1065px, 296 KB
   - Description: Marina State Beach, California, USA
   - Match: score 11 via coastal-in-title, name:marina, kw:beach+mar+tide, w>=1000, landscape
+- **`us-ca-marina-state-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “At the Beach - panoramio” by Steve Villata, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:At_the_Beach_-_panoramio.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Steve Villata — https://web.archive.org/web/20161010093834/http://www.panoramio.com/user/237050?with_photo_id=9104833
+  - Dated: Taken on 24 March 2008
+  - 1600×1063px, 375 KB, shot 229 m from the spot
+  - Description: At the Beach
+  - Match: score 13 via coastal-in-title, name:marina, kw:beach+mar, geo:229m, w>=1000, landscape
 
 ## Marine Street Beach
 
@@ -5308,7 +5308,7 @@
   - 1600×1200px, 687 KB, shot 237 m from the spot
   - Description: San Diego - La Jolla, Marine Street Beach
   - Match: score 13 via coastal-in-title, name:marine, kw:beach+mar, geo:237m, w>=1000, landscape
-- **`us-ca-marine-street-beach-2.jpg`** — “Marine Street Steps” by Visitor7, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-marine-street-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Marine Street Steps” by Visitor7, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Marine_Street_Steps.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Visitor7 — //commons.wikimedia.org/w/index.php?title=User:Visitor7&amp;action=edit&amp;redlink=1
@@ -5316,7 +5316,7 @@
   - 1600×1067px, 1079 KB, shot 41 m from the spot
   - Description: Steps leading from Marine Street to the beach in La Jolla, California
   - Match: score 11 via name:marine, kw:beach+mar, geo:41m, w>=1000, landscape
-- **`us-ca-marine-street-beach-3.jpg`** — “Golden Shore Marine Biological Reserve, Long Beach, CA” by Downtowngal, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-marine-street-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Golden Shore Marine Biological Reserve, Long Beach, CA” by Downtowngal, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Golden_Shore_Marine_Biological_Reserve,_Long_Beach,_CA.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Downtowngal — //commons.wikimedia.org/wiki/User:Downtowngal
@@ -5329,23 +5329,7 @@
 
 `osm:way/37022449` · 37.3751867, -122.4099045
 
-- **`us-ca-martins-beach-1.jpg`** — “Popular Martins Beach (14883284959)” by Lars Rosengreen, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Popular_Martins_Beach_(14883284959).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Lars Rosengreen — https://www.flickr.com/people/46369606@N04
-  - Dated: circa 1970 date QS:P,+1970-00-00T00:00:0
-  - 1600×1044px, 759 KB, shot 137 m from the spot
-  - Description: Before I knew how to swim or even walk. My family used to come here all the time on fog-less summer days. As you can see, it used to be a pretty popular spot. Vinod Khosla has now locked the gate on the access road, effectively preventing public use of the beach. There are currently several attempts underway to change that through the court system and the California legislature. This picture was submitted to the California Coastal Commission in response to their <a href=" https://docs.google.com/file/d/0B42mX4T7d2CYMWhlcnlGOE5kT00/edit " rel="noreferrer nofollow">public access questionnaire</a
-  - Match: score 14 via coastal-in-title, name:martins, kw:beach+coast+coastal+mar, geo:137m, w>=1000, landscape
-- **`us-ca-martins-beach-2.jpg`** — “Farmlands and the ocean beyond (21377317838)” by Robert Ashworth from Bellingham, WA., USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Farmlands_and_the_ocean_beyond_(21377317838).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Robert Ashworth from Bellingham, WA., USA — https://www.flickr.com/people/90536753@N00
-  - Dated: 2015-09-20 04:10
-  - 1600×1200px, 495 KB, shot 342 m from the spot
-  - Description: Farmlands and the ocean beyond
-  - Match: score 9 via coastal-in-title, kw:ocean+bay, geo:342m, w>=1000, landscape
-- **`us-ca-martins-beach-3.jpg`** — “Beach - panoramio - Vadim Manuylov” by Vadim Manuylov, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-martins-beach-1.jpg`** — “Beach - panoramio - Vadim Manuylov” by Vadim Manuylov, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Beach_-_panoramio_-_Vadim_Manuylov.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Vadim Manuylov — https://web.archive.org/web/20161024005936/http://www.panoramio.com/user/462847?with_photo_id=20559472
@@ -5353,6 +5337,22 @@
   - 1600×1067px, 508 KB, shot 1976 m from the spot
   - Description: Beach
   - Match: score 8 via coastal-in-title, kw:beach+sea+cliff, geo:1976m, w>=1000, landscape
+- **`us-ca-martins-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Popular Martins Beach (14883284959)” by Lars Rosengreen, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Popular_Martins_Beach_(14883284959).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Lars Rosengreen — https://www.flickr.com/people/46369606@N04
+  - Dated: circa 1970 date QS:P,+1970-00-00T00:00:0
+  - 1600×1044px, 759 KB, shot 137 m from the spot
+  - Description: Before I knew how to swim or even walk. My family used to come here all the time on fog-less summer days. As you can see, it used to be a pretty popular spot. Vinod Khosla has now locked the gate on the access road, effectively preventing public use of the beach. There are currently several attempts underway to change that through the court system and the California legislature. This picture was submitted to the California Coastal Commission in response to their <a href=" https://docs.google.com/file/d/0B42mX4T7d2CYMWhlcnlGOE5kT00/edit " rel="noreferrer nofollow">public access questionnaire</a
+  - Match: score 14 via coastal-in-title, name:martins, kw:beach+coast+coastal+mar, geo:137m, w>=1000, landscape
+- **`us-ca-martins-beach-3.jpg`** ✗ **not a coastal photo** — “Farmlands and the ocean beyond (21377317838)” by Robert Ashworth from Bellingham, WA., USA, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Farmlands_and_the_ocean_beyond_(21377317838).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Robert Ashworth from Bellingham, WA., USA — https://www.flickr.com/people/90536753@N00
+  - Dated: 2015-09-20 04:10
+  - 1600×1200px, 495 KB, shot 342 m from the spot
+  - Description: Farmlands and the ocean beyond
+  - Match: score 9 via coastal-in-title, kw:ocean+bay, geo:342m, w>=1000, landscape
 
 ## Mateo Coast State Beaches
 
@@ -5403,7 +5403,7 @@
   - 1600×1065px, 1558 KB
   - Description: San Gregorio State Beach San Mateo County coast. This image was one of my first shots on this beach during a meet up with Lorenzo Montezemolo. I actually got caught inside the tidal wash in this image and became drenched from the knee down as 10-15 foot waves crashed just offshore. I wont forget Lorenzo Yelling "Here it Comes!" as i composed the shot with my back to the ocean.(bad idea) It was worth it and luckily the water felt great on this nearly perfect 70 degree day.I was attracted to the texture of this rock and i knew a long exposure was perfect for the scene. Once the tide came in ther
   - Match: score 15 via coastal-in-title, name:mateo+coast, kw:beach+wave+waves+ocean, w>=1000, landscape
-- **`us-ca-mateo-coast-state-beaches-021894-3.jpg`** — “Pescadero State Beach on the Slow Coast” by RealChrisCain, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-mateo-coast-state-beaches-021894-3.jpg`** ✗ **not a coastal photo** — “Pescadero State Beach on the Slow Coast” by RealChrisCain, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Pescadero_State_Beach_on_the_Slow_Coast.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: RealChrisCain — //commons.wikimedia.org/w/index.php?title=User:RealChrisCain&amp;action=edit&amp;redlink=1
@@ -5424,7 +5424,7 @@
   - 1600×279px, 190 KB, shot 110 m from the spot
   - Description: Mattole Beach near Petrolia, California.
   - Match: score 13 via coastal-in-title, name:mattole, kw:beach+coast, geo:110m, w>=1000, landscape
-- **`us-ca-mattole-beach-2.jpg`** — Mattole Recreation Site (26105267080) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-mattole-beach-2.jpg`** ✗ **not a coastal photo** — Mattole Recreation Site (26105267080) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Mattole_Recreation_Site_(26105267080).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: blmcalifornia — https://www.flickr.com/people/blmcalifornia/
@@ -5432,7 +5432,7 @@
   - 1600×1200px, 906 KB, shot 147 m from the spot
   - Description: The 20-acre Mattole Recreation Site is at the northern tip of the King Range National Conservation Area, where the Mattole River meets the Pacific Ocean. The Mattole River is the major inland collection point for 39 tributary streams, and drains 300 square miles of watershed. Its 100-acre estuary is important to migrating birds and shorebirds, providing the only protected wetland habitat along many miles of rugged coast. Wildlife of various kinds are attracted by the lush riverside vegetation, the beach, offshore rocks and the sea beyond. Photo by Justin Robbins, BLM.
   - Match: score 12 via name:mattole, kw:beach+ocean+sea+coast, geo:147m, w>=1000, landscape
-- **`us-ca-mattole-beach-3.jpg`** — Mattole Recreation Site (26352200726) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-mattole-beach-3.jpg`** ✗ **not a coastal photo** — Mattole Recreation Site (26352200726) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Mattole_Recreation_Site_(26352200726).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: blmcalifornia — https://www.flickr.com/people/blmcalifornia/
@@ -5540,7 +5540,7 @@
   - 1600×1067px, 466 KB
   - Description: The Santa Clara River estuary at McGrath State Beach in Ventura, California. The Santa Clara River is a rarity in Southern California: a river largely untouched by channelization, dams or leveed waterways, and boasts an abundance of wildlife. This one wild river remains due in no small part to a long-standing partnership of federal, state, local and non-governmental agencies who work to ensure it stays that way. Photo by Robyn Gerstenslager/USFWS.
   - Match: score 8.5 via coastal-in-title, name:mcgrath, kw:beach, w>=1000, landscape
-- **`us-ca-mcgrath-state-beach-2.jpg`** — California State Parks staff install fencing (16447762807) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-mcgrath-state-beach-2.jpg`** ⚠︎ *context, not the coast itself* — California State Parks staff install fencing (16447762807) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:California_State_Parks_staff_install_fencing_(16447762807).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Pacific Southwest Region USFWS from Sacramento, US — https://www.flickr.com/people/54430347@N04
@@ -5548,7 +5548,7 @@
   - 1600×1067px, 348 KB
   - Description: California State Parks staff install fencing in late February at McGrath State Beach to designate areas that will be closed to the public during the plover and tern breeding season. Photo by Ashley Spratt/USFWS
   - Match: score 8 via name:mcgrath, kw:beach+sea, w>=1000, landscape
-- **`us-ca-mcgrath-state-beach-3.jpg`** — “Oxnard, California (21575547072)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-mcgrath-state-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Oxnard, California (21575547072)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Oxnard,_California_(21575547072).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
@@ -5577,7 +5577,7 @@
   - 1600×1067px, 430 KB, shot 1081 m from the spot
   - Description: Mt. Tam coastline in the Golden Gate National Recreation Area, "stuck in the coast"
   - Match: score 9 via coastal-in-title, kw:coast+coastline+mar, geo:1081m, w>=1000, landscape
-- **`us-ca-mickey-s-beach-3.jpg`** — Stinson Beach RPPC 1916 — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-mickey-s-beach-3.jpg`** ✗ **not a coastal photo** — Stinson Beach RPPC 1916 — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Stinson_Beach_RPPC_1916.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: this copy appeared in "History watch: Plan derailed," Marin Independent Journal, 6 September 2010
@@ -5590,7 +5590,7 @@
 
 `osm:way/359881196` · 33.3437399, -118.3253926
 
-- **`us-ca-middle-beach-1.jpg`** — “Belmont Shore and Belmont Heights in Long Beach California” by Darkest tree, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-middle-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Belmont Shore and Belmont Heights in Long Beach California” by Darkest tree, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Belmont_Shore_and_Belmont_Heights_in_Long_Beach_California.JPG
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Darkest tree — //commons.wikimedia.org/wiki/User:Darkest_tree
@@ -5598,7 +5598,7 @@
   - 1600×1200px, 731 KB
   - Description: The Belmont Shore neighborhood of Long Beach, California in the upper-middle of this image, with the Belmont Heights neighborhood in the lower foreground, looking southeast.
   - Match: score 11 via coastal-in-title, name:middle, kw:beach+shore+jetty+bay, w>=1000, landscape
-- **`us-ca-middle-beach-2.jpg`** — “Port of Long Beach aerial by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-middle-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Port of Long Beach aerial by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Port_of_Long_Beach_aerial_by_Don_Ramey_Logan.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
@@ -5606,7 +5606,7 @@
   - 1600×1067px, 816 KB
   - Description: Port of Long Beach aerial by Don Ramey Logan
   - Match: score 11 via coastal-in-title, name:middle, kw:beach+shore+shoreline+mar, w>=1000, landscape
-- **`us-ca-middle-beach-3.jpg`** — “The port of Long Beach by Don Ramey Logan” by © 2022, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-middle-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “The port of Long Beach by Don Ramey Logan” by © 2022, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:The_port_of_Long_Beach_by_Don_Ramey_Logan.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: © 2022 — //commons.wikimedia.org/wiki/User:WPPilot
@@ -5619,15 +5619,7 @@
 
 `osm:way/195638010` · 37.7873804, -122.5064333
 
-- **`us-ca-mile-rock-beach-1.jpg`** — “2017 Mile Rocks Lighthouse” by Beyond My Ken, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:2017_Mile_Rocks_Lighthouse.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Beyond My Ken — //commons.wikimedia.org/wiki/User:Beyond_My_Ken
-  - Dated: 2017-04-21
-  - 1600×1324px, 461 KB, shot 368 m from the spot
-  - Description: Mile Rocks Lighthouse is located on a rock about 2 miles (3.2 km) southwest of the Golden Gate Bridge, California. It was completed in 1906, replacing a nearby bell buoy. The tower of the lighthouse was removed in 1966, the top converted into a landing pad for helicopters, and the light automated. The lighthouse was at one time painted with alternating red and white rings, but as of 2017, the lighthouse is painted plain white.
-  - Match: score 16.5 via coastal-in-title, name:mile+rock, kw:lighthouse+rocks, geo:368m, w>=1000
-- **`us-ca-mile-rock-beach-2.jpg`** — “Golden Gate Bridge from Mile Rock Beach” by Poshotenk, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-mile-rock-beach-1.jpg`** — “Golden Gate Bridge from Mile Rock Beach” by Poshotenk, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_from_Mile_Rock_Beach.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Poshotenk — //commons.wikimedia.org/w/index.php?title=User:Poshotenk&amp;action=edit&amp;redlink=1
@@ -5635,7 +5627,7 @@
   - 1600×2096px, 506 KB, shot 37 m from the spot
   - Description: Golden Gate Bridge from Mile Rock Beach
   - Match: score 15 via coastal-in-title, name:mile+rock, kw:beach, geo:37m, w>=1000
-- **`us-ca-mile-rock-beach-3.jpg`** — “Driftwood at the Ten Mile Beach State Marine Conservation Area near Whale Rock, Mendocino-L1004543” by Frank Schulenburg, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-mile-rock-beach-2.jpg`** — “Driftwood at the Ten Mile Beach State Marine Conservation Area near Whale Rock, Mendocino-L1004543” by Frank Schulenburg, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Driftwood_at_the_Ten_Mile_Beach_State_Marine_Conservation_Area_near_Whale_Rock,_Mendocino-L1004543.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Frank Schulenburg — //commons.wikimedia.org/wiki/User:Frank_Schulenburg
@@ -5643,6 +5635,14 @@
   - 1600×1000px, 965 KB
   - Description: Driftwood on the beach of the Ten Mile Beach State Marine Conservation Area near Whale Rock on the Pacific Coast of Mendocino County, California, on January 30, 2024
   - Match: score 15 via coastal-in-title, name:mile+rock, kw:beach+coast+mar, w>=1000, landscape
+- **`us-ca-mile-rock-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “2017 Mile Rocks Lighthouse” by Beyond My Ken, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:2017_Mile_Rocks_Lighthouse.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Beyond My Ken — //commons.wikimedia.org/wiki/User:Beyond_My_Ken
+  - Dated: 2017-04-21
+  - 1600×1324px, 461 KB, shot 368 m from the spot
+  - Description: Mile Rocks Lighthouse is located on a rock about 2 miles (3.2 km) southwest of the Golden Gate Bridge, California. It was completed in 1906, replacing a nearby bell buoy. The tower of the lighthouse was removed in 1966, the top converted into a landing pad for helicopters, and the light automated. The lighthouse was at one time painted with alternating red and white rings, but as of 2017, the lighthouse is painted plain white.
+  - Match: score 16.5 via coastal-in-title, name:mile+rock, kw:lighthouse+rocks, geo:368m, w>=1000
 
 ## Minuteman Beach
 
@@ -5656,7 +5656,7 @@
   - 1600×1143px, 732 KB
   - Description: Two 30th Security Forces Airmen search for litter during a beach clean-up day along the shoreline of Minuteman Beach at Vandenberg Space Force Base, Calif., Friday, Jan. 26, 2024.Their commitment played a key role in collecting a total of 155 pounds of waste, enhancing the quality of life for both the base community and the local marine ecosystem. (Photo by Joseph Avenida)
   - Match: score 11 via coastal-in-title, name:minuteman, kw:beach+sea+shore+shoreline, w>=1000, landscape
-- **`us-ca-minuteman-beach-2.jpg`** — Vandenberg Space Force Base Beach Clean-up Day 2024 (8216503) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-minuteman-beach-2.jpg`** ⚠︎ *context, not the coast itself* — Vandenberg Space Force Base Beach Clean-up Day 2024 (8216503) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Vandenberg_Space_Force_Base_Beach_Clean-up_Day_2024_(8216503).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: U.S. Space Force SLD30 by Senior Airman Joshua LeRoi — https://www.dvidshub.net/portfolio/1701137
@@ -5664,7 +5664,7 @@
   - 1600×1143px, 690 KB
   - Description: United States service members work in tandem during a Minuteman Beach cleanup at Vandenberg Space Force Base, Calif., Friday, Jan. 26, 2024. The team’s efforts to remove an estimated 155 pounds of trash, increases the resilience of our coastline and preserving the local marine environment. (Photo by Senior Airman Joshua Leroi)
   - Match: score 11 via coastal-in-title, name:minuteman, kw:beach+coast+coastline+mar, w>=1000, landscape
-- **`us-ca-minuteman-beach-3.jpg`** — Vandenberg Space Force Base Beach Clean-up Day 2024 (8216504) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-minuteman-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Vandenberg Space Force Base Beach Clean-up Day 2024 (8216504) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Vandenberg_Space_Force_Base_Beach_Clean-up_Day_2024_(8216504).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: U.S. Space Force SLD30 by Senior Airman Joshua LeRoi — https://www.dvidshub.net/portfolio/1701137
@@ -5677,23 +5677,7 @@
 
 `osm:node/358770845` · 37.4932741, -122.4602544
 
-- **`us-ca-miramar-beach-1.jpg`** — “Miramar Beach at sundown” by Elinruby, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Miramar_Beach_at_sundown.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Elinruby — //commons.wikimedia.org/wiki/User:Elinruby
-  - Dated: 2011-02-10
-  - 1600×1200px, 209 KB
-  - Description: taken from the Patio at Bach Dancing and Dynamite
-  - Match: score 11 via coastal-in-title, name:miramar, kw:beach+mar+sunset, w>=1000, landscape
-- **`us-ca-miramar-beach-2.jpg`** — “Miramar Beach 2” by Kumars, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Miramar_Beach_2.JPG
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Kumars — //commons.wikimedia.org/w/index.php?title=User:Kumars&amp;action=edit&amp;redlink=1
-  - Dated: 2010-09-06
-  - 1600×1200px, 346 KB
-  - Description: Miramar Beach is situated 1 kilometer ahead of the confluence of Mandovi River and the Arabian Sea . It is situated on the way towards Dona Paula , about 3 kilometers from Panaji (Panjim) , the capital city of Goa , India .
-  - Match: score 11 via coastal-in-title, name:miramar, kw:beach+sea+mar, w>=1000, landscape
-- **`us-ca-miramar-beach-3.jpg`** — “Torrance California Beach” by Thurifer, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-miramar-beach-1.jpg`** — “Torrance California Beach” by Thurifer, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Torrance_California_Beach.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Thurifer — //commons.wikimedia.org/w/index.php?title=User:Thurifer&amp;action=edit&amp;redlink=1
@@ -5701,6 +5685,22 @@
   - 1600×980px, 545 KB
   - Description: Torrance Beach from Torrance Miramar Park, the Palos Verdes Peninsula in the distance.
   - Match: score 11 via coastal-in-title, name:miramar, kw:beach+coast+mar, w>=1000, landscape
+- **`us-ca-miramar-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Miramar Beach at sundown” by Elinruby, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Miramar_Beach_at_sundown.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Elinruby — //commons.wikimedia.org/wiki/User:Elinruby
+  - Dated: 2011-02-10
+  - 1600×1200px, 209 KB
+  - Description: taken from the Patio at Bach Dancing and Dynamite
+  - Match: score 11 via coastal-in-title, name:miramar, kw:beach+mar+sunset, w>=1000, landscape
+- **`us-ca-miramar-beach-3.jpg`** ✗ **not a coastal photo** — “Miramar Beach 2” by Kumars, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Miramar_Beach_2.JPG
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Kumars — //commons.wikimedia.org/w/index.php?title=User:Kumars&amp;action=edit&amp;redlink=1
+  - Dated: 2010-09-06
+  - 1600×1200px, 346 KB
+  - Description: Miramar Beach is situated 1 kilometer ahead of the confluence of Mandovi River and the Arabian Sea . It is situated on the way towards Dona Paula , about 3 kilometers from Panaji (Panjim) , the capital city of Goa , India .
+  - Match: score 11 via coastal-in-title, name:miramar, kw:beach+sea+mar, w>=1000, landscape
 
 ## Mitchell's Cove Beach
 
@@ -5735,15 +5735,7 @@
 
 `osm:relation/6826537` · 38.3600521, -123.0688571
 
-- **`us-ca-miwok-beach-1.jpg`** — Views at Point Reyes National Seashore, California (ec230aa3-0d7a-4d24-9a4e-ddca42092387) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Views_at_Point_Reyes_National_Seashore,_California_(ec230aa3-0d7a-4d24-9a4e-ddca42092387).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: NPS staff
-  - Dated: Taken on 26 February 2004
-  - 1600×1067px, 610 KB
-  - Description: Miwok lodge Point Reyes National Seashore contains unique elements of biological and historical interest in a spectacularly scenic panorama of thunderous ocean breakers, open grasslands, bushy hillsides and forested ridges. Native land mammals number about 37 species and marine mammals augment this total by another dozen species. The biological diversity stems from a favorable location in the middle of California and the natural occurrence of many distinct habitats. Nearly 20% of the State's flowering plant species are represented on the peninsula and over 45% of the bird species in North Amer
-  - Match: score 11 via coastal-in-title, name:miwok, kw:beach+ocean+sea+shore, w>=1000, landscape
-- **`us-ca-miwok-beach-2.jpg`** — “Sunset - Salmon Creek Beach” by Caitlin Childs, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-miwok-beach-1.jpg`** — “Sunset - Salmon Creek Beach” by Caitlin Childs, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sunset_-_Salmon_Creek_Beach.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Caitlin Childs
@@ -5751,7 +5743,7 @@
   - 1600×1067px, 357 KB, shot 377 m from the spot
   - Description: Sunset - Salmon Creek Beach
   - Match: score 10 via coastal-in-title, kw:beach+sea+seascape+sunset, geo:377m, w>=1000, landscape
-- **`us-ca-miwok-beach-3.jpg`** — “Salmon Creek Lagoon kz2” by Krzysztof Ziarnek, Kenraiz, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-miwok-beach-2.jpg`** — “Salmon Creek Lagoon kz2” by Krzysztof Ziarnek, Kenraiz, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Salmon_Creek_Lagoon_kz2.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Krzysztof Ziarnek, Kenraiz — //commons.wikimedia.org/wiki/User:Kenraiz
@@ -5759,28 +5751,20 @@
   - 1600×992px, 652 KB, shot 1082 m from the spot
   - Description: Salmon Creek Lagoon in Sonoma Coast State Park, California
   - Match: score 9 via coastal-in-title, kw:beach+coast+lagoon, geo:1082m, w>=1000, landscape
+- **`us-ca-miwok-beach-3.jpg`** ✗ **not a coastal photo** — Views at Point Reyes National Seashore, California (ec230aa3-0d7a-4d24-9a4e-ddca42092387) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Views_at_Point_Reyes_National_Seashore,_California_(ec230aa3-0d7a-4d24-9a4e-ddca42092387).jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: NPS staff
+  - Dated: Taken on 26 February 2004
+  - 1600×1067px, 610 KB
+  - Description: Miwok lodge Point Reyes National Seashore contains unique elements of biological and historical interest in a spectacularly scenic panorama of thunderous ocean breakers, open grasslands, bushy hillsides and forested ridges. Native land mammals number about 37 species and marine mammals augment this total by another dozen species. The biological diversity stems from a favorable location in the middle of California and the natural occurrence of many distinct habitats. Nearly 20% of the State's flowering plant species are represented on the peninsula and over 45% of the bird species in North Amer
+  - Match: score 11 via coastal-in-title, name:miwok, kw:beach+ocean+sea+shore, w>=1000, landscape
 
 ## Montara State Beach
 
 `osm:way/218110772` · 37.5505606, -122.5145563
 
-- **`us-ca-montara-state-beach-1.jpg`** — “California-05762 - Point Montara Lighthouse (20644271341)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:California-05762_-_Point_Montara_Lighthouse_(20644271341).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
-  - Dated: 2015-08-05 19:38
-  - 1600×967px, 386 KB, shot 227 m from the spot
-  - Description: The Point Montara lighthouse in Montara, approximately 40.23 km (25 mi) south of San Francisco. The lighthouse is open to the public, and is the site of a youth hostel sponsored by Hostelling International USA. This lighthouse station was established in February 1875. It originally had a kerosene lantern, but was upgraded in 1912 to a fourth order Fresnel lens. The current tower was first erected in 1881 in Wellfleet, Massachusetts as the Mayo Beach Lighthouse. In 1925, the cast iron tower from the discontinued Mayo Beach Light was disassembled and moved to Yerba Buena. It was moved again and 
-  - Match: score 14 via coastal-in-title, name:montara, kw:beach+point+lighthouse, geo:227m, w>=1000, landscape
-- **`us-ca-montara-state-beach-2.jpg`** — “California-05765 - Hostel & Lighthouse (20628495302)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:California-05765_-_Hostel_%26_Lighthouse_(20628495302).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
-  - Dated: 2015-08-05 19:39
-  - 1600×919px, 508 KB, shot 227 m from the spot
-  - Description: The Point Montara lighthouse in Montara, approximately 40.23 km (25 mi) south of San Francisco. The lighthouse is open to the public, and is the site of a youth hostel sponsored by Hostelling International USA. This lighthouse station was established in February 1875. It originally had a kerosene lantern, but was upgraded in 1912 to a fourth order Fresnel lens. The current tower was first erected in 1881 in Wellfleet, Massachusetts as the Mayo Beach Lighthouse. In 1925, the cast iron tower from the discontinued Mayo Beach Light was disassembled and moved to Yerba Buena. It was moved again and 
-  - Match: score 14 via coastal-in-title, name:montara, kw:beach+point+lighthouse, geo:227m, w>=1000, landscape
-- **`us-ca-montara-state-beach-3.jpg`** — “California-05763 - Point Montara Lighthouse (20637610625)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-montara-state-beach-1.jpg`** — “California-05763 - Point Montara Lighthouse (20637610625)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:California-05763_-_Point_Montara_Lighthouse_(20637610625).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
@@ -5788,20 +5772,28 @@
   - 1600×2844px, 1488 KB, shot 227 m from the spot
   - Description: The Point Montara lighthouse in Montara, approximately 40.23 km (25 mi) south of San Francisco. The lighthouse is open to the public, and is the site of a youth hostel sponsored by Hostelling International USA. This lighthouse station was established in February 1875. It originally had a kerosene lantern, but was upgraded in 1912 to a fourth order Fresnel lens. The current tower was first erected in 1881 in Wellfleet, Massachusetts as the Mayo Beach Lighthouse. In 1925, the cast iron tower from the discontinued Mayo Beach Light was disassembled and moved to Yerba Buena. It was moved again and 
   - Match: score 13.5 via coastal-in-title, name:montara, kw:beach+point+lighthouse, geo:227m, w>=1000
+- **`us-ca-montara-state-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “California-05762 - Point Montara Lighthouse (20644271341)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:California-05762_-_Point_Montara_Lighthouse_(20644271341).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
+  - Dated: 2015-08-05 19:38
+  - 1600×967px, 386 KB, shot 227 m from the spot
+  - Description: The Point Montara lighthouse in Montara, approximately 40.23 km (25 mi) south of San Francisco. The lighthouse is open to the public, and is the site of a youth hostel sponsored by Hostelling International USA. This lighthouse station was established in February 1875. It originally had a kerosene lantern, but was upgraded in 1912 to a fourth order Fresnel lens. The current tower was first erected in 1881 in Wellfleet, Massachusetts as the Mayo Beach Lighthouse. In 1925, the cast iron tower from the discontinued Mayo Beach Light was disassembled and moved to Yerba Buena. It was moved again and 
+  - Match: score 14 via coastal-in-title, name:montara, kw:beach+point+lighthouse, geo:227m, w>=1000, landscape
+- **`us-ca-montara-state-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “California-05765 - Hostel & Lighthouse (20628495302)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:California-05765_-_Hostel_%26_Lighthouse_(20628495302).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
+  - Dated: 2015-08-05 19:39
+  - 1600×919px, 508 KB, shot 227 m from the spot
+  - Description: The Point Montara lighthouse in Montara, approximately 40.23 km (25 mi) south of San Francisco. The lighthouse is open to the public, and is the site of a youth hostel sponsored by Hostelling International USA. This lighthouse station was established in February 1875. It originally had a kerosene lantern, but was upgraded in 1912 to a fourth order Fresnel lens. The current tower was first erected in 1881 in Wellfleet, Massachusetts as the Mayo Beach Lighthouse. In 1925, the cast iron tower from the discontinued Mayo Beach Light was disassembled and moved to Yerba Buena. It was moved again and 
+  - Match: score 14 via coastal-in-title, name:montara, kw:beach+point+lighthouse, geo:227m, w>=1000, landscape
 
 ## Montara State Beach
 
 `osm:relation/17606820` · 37.5387509, -122.5183165
 
-- **`us-ca-montara-state-beach-606820-1.jpg`** — “Point Montara Lighthouse” by Christopher Padalinski, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Point_Montara_Lighthouse.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Christopher Padalinski — //commons.wikimedia.org/w/index.php?title=User:Krispy3d&amp;action=edit&amp;redlink=1
-  - Dated: 2012-09-25 09:47:51
-  - 1600×1067px, 97 KB, shot 202 m from the spot
-  - Description: The lighthouse at Point Montara, on the central coast of California.
-  - Match: score 14 via coastal-in-title, name:montara, kw:coast+point+lighthouse, geo:202m, w>=1000, landscape
-- **`us-ca-montara-state-beach-606820-2.jpg`** — “Kite Surfing, Montara (1773174175)” by Sharon Mollerus, Wikimedia Commons, CC BY 2.0
+- **`us-ca-montara-state-beach-606820-1.jpg`** — “Kite Surfing, Montara (1773174175)” by Sharon Mollerus, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Kite_Surfing,_Montara_(1773174175).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Sharon Mollerus — https://www.flickr.com/people/38315261@N00
@@ -5809,7 +5801,15 @@
   - 1600×1067px, 1088 KB, shot 426 m from the spot
   - Description: Kite Surfing, Montara
   - Match: score 13 via coastal-in-title, name:montara, kw:beach+surf+surfing, geo:426m, w>=1000, landscape
-- **`us-ca-montara-state-beach-606820-3.jpg`** — “California-05762 - Point Montara Lighthouse (20644271341)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-montara-state-beach-606820-2.jpg`** ⚠︎ *context, not the coast itself* — “Point Montara Lighthouse” by Christopher Padalinski, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Point_Montara_Lighthouse.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Christopher Padalinski — //commons.wikimedia.org/w/index.php?title=User:Krispy3d&amp;action=edit&amp;redlink=1
+  - Dated: 2012-09-25 09:47:51
+  - 1600×1067px, 97 KB, shot 202 m from the spot
+  - Description: The lighthouse at Point Montara, on the central coast of California.
+  - Match: score 14 via coastal-in-title, name:montara, kw:coast+point+lighthouse, geo:202m, w>=1000, landscape
+- **`us-ca-montara-state-beach-606820-3.jpg`** ⚠︎ *context, not the coast itself* — “California-05762 - Point Montara Lighthouse (20644271341)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:California-05762_-_Point_Montara_Lighthouse_(20644271341).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
@@ -5838,7 +5838,7 @@
   - 1600×900px, 362 KB
   - Description: The view of the east side of the beach shore when directly facing the ocean. Great view of the redwoods meeting with the ocean.
   - Match: score 11 via coastal-in-title, name:moonstone, kw:beach+ocean+shore, w>=1000, landscape
-- **`us-ca-moonstone-beach-3.jpg`** — “"Skull" tafoni at Moonstone beach, near Cambria Calif” by Peter D. Tillman from USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-moonstone-beach-3.jpg`** ✗ **not a coastal photo** — “"Skull" tafoni at Moonstone beach, near Cambria Calif” by Peter D. Tillman from USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:%22Skull%22_tafoni_at_Moonstone_beach,_near_Cambria_Calif.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Peter D. Tillman from USA — https://www.flickr.com/people/29050464@N06
@@ -5851,23 +5851,7 @@
 
 `osm:way/348451527` · 35.5748067, -121.1140043
 
-- **`us-ca-moonstone-beach-451527-1.jpg`** — “Mazzaella splendens, Iridescent (or rainbow) seaweed” by Peter D. Tillman, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Mazzaella_splendens,_Iridescent_(or_rainbow)_seaweed.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Peter D. Tillman
-  - Dated: 05/22/15
-  - 1600×1088px, 535 KB, shot 390 m from the spot
-  - Description: Mazzaella splendens, Iridescent (or rainbow) seaweed. At Moonstone beach, Cambria CA
-  - Match: score 14 via coastal-in-title, name:moonstone, kw:beach+sea+mar, geo:390m, w>=1000, landscape
-- **`us-ca-moonstone-beach-451527-2.jpg`** — “"Skull" tafoni at Moonstone beach, near Cambria Calif” by Peter D. Tillman from USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:%22Skull%22_tafoni_at_Moonstone_beach,_near_Cambria_Calif.jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Peter D. Tillman from USA — https://www.flickr.com/people/29050464@N06
-  - Dated: Taken on 16 April 2020, 13:31
-  - 1600×1126px, 1245 KB, shot 239 m from the spot
-  - Description: I found this one (and others) at a rock in an area that's usually hard to get to, near the seal rocks off the Moonstone boardwalk. Exceptionally deep cellular weathering in jointed Cretaceous graywacke. Barnacles for scale: they are around 1/4 to 1/3 inch diameter (middle left).
-  - Match: score 14 via coastal-in-title, name:moonstone, kw:beach+sea+boardwalk+rocks, geo:239m, w>=1000, landscape
-- **`us-ca-moonstone-beach-451527-3.jpg`** — “Big Surf! (46214181982)” by Peter D. Tillman from USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-moonstone-beach-451527-1.jpg`** — “Big Surf! (46214181982)” by Peter D. Tillman from USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Big_Surf!_(46214181982).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Peter D. Tillman from USA — https://www.flickr.com/people/29050464@N06
@@ -5875,28 +5859,28 @@
   - 1600×994px, 467 KB, shot 507 m from the spot
   - Description: Just north of Leffingwell Landing, and taken from the Moonstone Beach boardwalk. Visible in the distance are San Simeon point and, on the skyline, Pt. Piedras Blancas, where the old lighthouse is. A nice morning walk!
   - Match: score 13 via coastal-in-title, name:moonstone, kw:beach+surf+point+boardwalk, geo:507m, w>=1000, landscape
+- **`us-ca-moonstone-beach-451527-2.jpg`** ✗ **not a coastal photo** — “Mazzaella splendens, Iridescent (or rainbow) seaweed” by Peter D. Tillman, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Mazzaella_splendens,_Iridescent_(or_rainbow)_seaweed.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Peter D. Tillman
+  - Dated: 05/22/15
+  - 1600×1088px, 535 KB, shot 390 m from the spot
+  - Description: Mazzaella splendens, Iridescent (or rainbow) seaweed. At Moonstone beach, Cambria CA
+  - Match: score 14 via coastal-in-title, name:moonstone, kw:beach+sea+mar, geo:390m, w>=1000, landscape
+- **`us-ca-moonstone-beach-451527-3.jpg`** ✗ **not a coastal photo** — “"Skull" tafoni at Moonstone beach, near Cambria Calif” by Peter D. Tillman from USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:%22Skull%22_tafoni_at_Moonstone_beach,_near_Cambria_Calif.jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Peter D. Tillman from USA — https://www.flickr.com/people/29050464@N06
+  - Dated: Taken on 16 April 2020, 13:31
+  - 1600×1126px, 1245 KB, shot 239 m from the spot
+  - Description: I found this one (and others) at a rock in an area that's usually hard to get to, near the seal rocks off the Moonstone boardwalk. Exceptionally deep cellular weathering in jointed Cretaceous graywacke. Barnacles for scale: they are around 1/4 to 1/3 inch diameter (middle left).
+  - Match: score 14 via coastal-in-title, name:moonstone, kw:beach+sea+boardwalk+rocks, geo:239m, w>=1000, landscape
 
 ## Moran Lake Beach
 
 `osm:relation/9415332` · 36.9562194, -121.9784257
 
-- **`us-ca-moran-lake-beach-1.jpg`** — “Life Guard Station and Lighthouse (8508498499)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Life_Guard_Station_and_Lighthouse_(8508498499).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Don DeBold from San Jose, CA, USA — https://www.flickr.com/people/28156071@N00
-  - Dated: 2013-02-23 10:30
-  - 1600×1200px, 928 KB, shot 1846 m from the spot
-  - Description: Life Guard Station and Lighthouse
-  - Match: score 12 via coastal-in-title, name:lake, kw:beach+break+lighthouse, geo:1846m, w>=1000, landscape
-- **`us-ca-moran-lake-beach-2.jpg`** — “Family on Twin Lakes State Beach (8509609608)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Family_on_Twin_Lakes_State_Beach_(8509609608).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Don DeBold from San Jose, CA, USA — https://www.flickr.com/people/28156071@N00
-  - Dated: 2013-02-23 10:33
-  - 1600×1200px, 574 KB, shot 1846 m from the spot
-  - Description: Family on Twin Lakes State Beach
-  - Match: score 11 via coastal-in-title, name:lake, kw:beach+break, geo:1846m, w>=1000, landscape
-- **`us-ca-moran-lake-beach-3.jpg`** — “Pleasure Point Surfer in Santa Cruz CA. - panoramio” by Noah_Loverbear, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-moran-lake-beach-1.jpg`** — “Pleasure Point Surfer in Santa Cruz CA. - panoramio” by Noah_Loverbear, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Pleasure_Point_Surfer_in_Santa_Cruz_CA._-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Noah_Loverbear — https://web.archive.org/web/20161026170658/http://www.panoramio.com/user/6952727?with_photo_id=88811499
@@ -5904,12 +5888,28 @@
   - 1600×1200px, 566 KB, shot 712 m from the spot
   - Description: Pleasure Point Surfer in Santa Cruz CA.
   - Match: score 9 via coastal-in-title, kw:surf+surfer+surfing+point, geo:712m, w>=1000, landscape
+- **`us-ca-moran-lake-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Life Guard Station and Lighthouse (8508498499)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Life_Guard_Station_and_Lighthouse_(8508498499).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Don DeBold from San Jose, CA, USA — https://www.flickr.com/people/28156071@N00
+  - Dated: 2013-02-23 10:30
+  - 1600×1200px, 928 KB, shot 1846 m from the spot
+  - Description: Life Guard Station and Lighthouse
+  - Match: score 12 via coastal-in-title, name:lake, kw:beach+break+lighthouse, geo:1846m, w>=1000, landscape
+- **`us-ca-moran-lake-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Family on Twin Lakes State Beach (8509609608)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Family_on_Twin_Lakes_State_Beach_(8509609608).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Don DeBold from San Jose, CA, USA — https://www.flickr.com/people/28156071@N00
+  - Dated: 2013-02-23 10:33
+  - 1600×1200px, 574 KB, shot 1846 m from the spot
+  - Description: Family on Twin Lakes State Beach
+  - Match: score 11 via coastal-in-title, name:lake, kw:beach+break, geo:1846m, w>=1000, landscape
 
 ## More Mesa Beach
 
 `osm:way/250245534` · 34.4180418, -119.802111
 
-- **`us-ca-more-mesa-beach-1.jpg`** — “Tringa incana, More Mesa Beach, California 1” by NatureShutterbug from USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-more-mesa-beach-1.jpg`** ✗ **not a coastal photo** — “Tringa incana, More Mesa Beach, California 1” by NatureShutterbug from USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Tringa_incana,_More_Mesa_Beach,_California_1.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: NatureShutterbug from USA — https://www.flickr.com/people/37748226@N00
@@ -5917,7 +5917,7 @@
   - 1600×1200px, 73 KB
   - Description: Wandering Tattler Tringa incana , More Mesa Beach, Santa Barbara County, California
   - Match: score 12.5 via coastal-in-title, name:more+mesa, kw:beach, w>=1000, landscape
-- **`us-ca-more-mesa-beach-2.jpg`** — “Checking out the beach (51052488321)” by Channel City Camera Club /Don Green, Wikimedia Commons, CC BY 2.0
+- **`us-ca-more-mesa-beach-2.jpg`** ✗ **not a coastal photo** — “Checking out the beach (51052488321)” by Channel City Camera Club /Don Green, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Checking_out_the_beach_(51052488321).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Channel City Camera Club /Don Green — https://www.flickr.com/people/135081788@N03
@@ -5925,7 +5925,7 @@
   - 1600×859px, 448 KB
   - Description: Photo: Don Green More Mesa
   - Match: score 12.5 via coastal-in-title, name:more+mesa, kw:beach, w>=1000, landscape
-- **`us-ca-more-mesa-beach-3.jpg`** — “Huntington Beach and Fountain Valley from over Costa Mesa by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-more-mesa-beach-3.jpg`** ✗ **not a coastal photo** — “Huntington Beach and Fountain Valley from over Costa Mesa by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Huntington_Beach_and_Fountain_Valley_from_over_Costa_Mesa_by_Don_Ramey_Logan.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
@@ -5938,7 +5938,7 @@
 
 `osm:way/250245535` · 34.4183202, -119.7958875 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-more-mesa-beach-245535-1.jpg`** — “Tringa incana, More Mesa Beach, California 1” by NatureShutterbug from USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-more-mesa-beach-245535-1.jpg`** ✗ **not a coastal photo** — “Tringa incana, More Mesa Beach, California 1” by NatureShutterbug from USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Tringa_incana,_More_Mesa_Beach,_California_1.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: NatureShutterbug from USA — https://www.flickr.com/people/37748226@N00
@@ -5946,7 +5946,7 @@
   - 1600×1200px, 73 KB
   - Description: Wandering Tattler Tringa incana , More Mesa Beach, Santa Barbara County, California
   - Match: score 12.5 via coastal-in-title, name:more+mesa, kw:beach, w>=1000, landscape
-- **`us-ca-more-mesa-beach-245535-2.jpg`** — “Checking out the beach (51052488321)” by Channel City Camera Club /Don Green, Wikimedia Commons, CC BY 2.0
+- **`us-ca-more-mesa-beach-245535-2.jpg`** ✗ **not a coastal photo** — “Checking out the beach (51052488321)” by Channel City Camera Club /Don Green, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Checking_out_the_beach_(51052488321).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Channel City Camera Club /Don Green — https://www.flickr.com/people/135081788@N03
@@ -5954,7 +5954,7 @@
   - 1600×859px, 448 KB
   - Description: Photo: Don Green More Mesa
   - Match: score 12.5 via coastal-in-title, name:more+mesa, kw:beach, w>=1000, landscape
-- **`us-ca-more-mesa-beach-245535-3.jpg`** — “Huntington Beach and Fountain Valley from over Costa Mesa by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-more-mesa-beach-245535-3.jpg`** ✗ **not a coastal photo** — “Huntington Beach and Fountain Valley from over Costa Mesa by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Huntington_Beach_and_Fountain_Valley_from_over_Costa_Mesa_by_Don_Ramey_Logan.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
@@ -5967,7 +5967,7 @@
 
 `osm:way/446753851` · 34.4181391, -119.7984601 · beach type: **rocky** (OpenStreetMap surface=pebblestone)
 
-- **`us-ca-more-mesa-beach-753851-1.jpg`** — “Tringa incana, More Mesa Beach, California 1” by NatureShutterbug from USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-more-mesa-beach-753851-1.jpg`** ✗ **not a coastal photo** — “Tringa incana, More Mesa Beach, California 1” by NatureShutterbug from USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Tringa_incana,_More_Mesa_Beach,_California_1.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: NatureShutterbug from USA — https://www.flickr.com/people/37748226@N00
@@ -5975,7 +5975,7 @@
   - 1600×1200px, 73 KB
   - Description: Wandering Tattler Tringa incana , More Mesa Beach, Santa Barbara County, California
   - Match: score 12.5 via coastal-in-title, name:more+mesa, kw:beach, w>=1000, landscape
-- **`us-ca-more-mesa-beach-753851-2.jpg`** — “Checking out the beach (51052488321)” by Channel City Camera Club /Don Green, Wikimedia Commons, CC BY 2.0
+- **`us-ca-more-mesa-beach-753851-2.jpg`** ✗ **not a coastal photo** — “Checking out the beach (51052488321)” by Channel City Camera Club /Don Green, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Checking_out_the_beach_(51052488321).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Channel City Camera Club /Don Green — https://www.flickr.com/people/135081788@N03
@@ -5983,7 +5983,7 @@
   - 1600×859px, 448 KB
   - Description: Photo: Don Green More Mesa
   - Match: score 12.5 via coastal-in-title, name:more+mesa, kw:beach, w>=1000, landscape
-- **`us-ca-more-mesa-beach-753851-3.jpg`** — “Huntington Beach and Fountain Valley from over Costa Mesa by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-more-mesa-beach-753851-3.jpg`** ✗ **not a coastal photo** — “Huntington Beach and Fountain Valley from over Costa Mesa by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Huntington_Beach_and_Fountain_Valley_from_over_Costa_Mesa_by_Don_Ramey_Logan.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
@@ -5996,7 +5996,7 @@
 
 `osm:node/6403360920` · 34.4174347, -119.7898217 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-more-mesa-nude-beach-1.jpg`** — “More Mesa (17121602429)” by Brian from California Coast, United States, Wikimedia Commons, CC BY 2.0
+- **`us-ca-more-mesa-nude-beach-1.jpg`** ✗ **not a coastal photo** — “More Mesa (17121602429)” by Brian from California Coast, United States, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:More_Mesa_(17121602429).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Brian from California Coast, United States — https://www.flickr.com/people/23728403@N00
@@ -6004,7 +6004,7 @@
   - 1600×1200px, 609 KB, shot 177 m from the spot
   - Description: Tire swing by the Pacific Ocean More Mesa preserved area near Santa Barbara, California.
   - Match: score 13.5 via name:more+mesa, kw:ocean, geo:177m, w>=1000, landscape
-- **`us-ca-more-mesa-nude-beach-2.jpg`** — “Striped Shore crab - Pachygrapsus crassipes (29253769698)” by Björn S, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-more-mesa-nude-beach-2.jpg`** ✗ **not a coastal photo** — “Striped Shore crab - Pachygrapsus crassipes (29253769698)” by Björn S, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Striped_Shore_crab_-_Pachygrapsus_crassipes_(29253769698).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Björn S — https://www.flickr.com/people/40948266@N04
@@ -6012,7 +6012,7 @@
   - 1600×1067px, 450 KB, shot 714 m from the spot
   - Description: Striped Shore crab - Pachygrapsus crassipes
   - Match: score 6.5 via coastal-in-title, kw:shore, geo:714m, w>=1000, landscape
-- **`us-ca-more-mesa-nude-beach-3.jpg`** — “Striped Shore crab - Pachygrapsus crassipes (29253766698)” by Björn S, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-more-mesa-nude-beach-3.jpg`** ✗ **not a coastal photo** — “Striped Shore crab - Pachygrapsus crassipes (29253766698)” by Björn S, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Striped_Shore_crab_-_Pachygrapsus_crassipes_(29253766698).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Björn S — https://www.flickr.com/people/40948266@N04
@@ -6025,15 +6025,7 @@
 
 `osm:relation/5193367` · 35.3275311, -120.8661916
 
-- **`us-ca-morro-dunes-natural-preserve-1.jpg`** — “Surf Scoter” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Surf_Scoter.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Mike Baird from Morro Bay, USA — https://www.flickr.com/people/72825507@N00
-  - Dated: 2007-03-28 10:28
-  - 1600×1067px, 324 KB, shot 1454 m from the spot
-  - Description: Surf Scoter ( Melanitta perspicillata ), Los Osos, Morro Bay, CA, March 28, 2007. Shot with a Canon 5D with 600mm IS lens with polarizer, Whimerley head, and Gitzo tripod, firmly mounted in the front of Marc Schulman's two-person outrigger canoe www.orchidoutriggers.com , shot in RAW, sharpened in Photoshop CS2. Photo by Mike Baird bairdphotos.com 28mar2007 28march2007
-  - Match: score 12 via coastal-in-title, name:morro, kw:surf+mar+bay, geo:1454m, w>=1000, landscape
-- **`us-ca-morro-dunes-natural-preserve-2.jpg`** — “Morro Rock, Morro Bay, CA, with Sandspit and Grassy Island” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-morro-dunes-natural-preserve-1.jpg`** — “Morro Rock, Morro Bay, CA, with Sandspit and Grassy Island” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Morro_Rock,_Morro_Bay,_CA,_with_Sandspit_and_Grassy_Island.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Mike Baird from Morro Bay, USA — https://www.flickr.com/people/72825507@N00
@@ -6041,7 +6033,7 @@
   - 1600×800px, 548 KB, shot 1779 m from the spot
   - Description: Morro Rock, Morro Bay, CA, with Sandspit and Wednesday Island in foreground at ultra low tide, Morro Bay, CA 14 January 2011 taken during the 2011 Morro Bay Winter Bird Festival’s Shooting From the Water tour led by me (Mike Baird). Photo © 2011 “Mike” Michael L. Baird, mike {at] mikebaird d o t com, flickr.bairdphotos.com, shooting a Canon EOS 1D Mark III 10.1MP Digital SLR Camera, Canon EF 100-400mm f4.5-5.6L IS USM Telephoto Zoom Lens, with circular polarizer, handheld, RAW. To use this photo, see access, attribution, and commenting recommendations at www.flickr.com/people/mikebaird/#credit
   - Match: score 12 via coastal-in-title, name:morro, kw:sand+mar+bay+tide, geo:1779m, w>=1000, landscape
-- **`us-ca-morro-dunes-natural-preserve-3.jpg`** — “Morro Bay Kayak” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-morro-dunes-natural-preserve-2.jpg`** ⚠︎ *context, not the coast itself* — “Morro Bay Kayak” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Morro_Bay_Kayak.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Mike Baird from Morro Bay, USA — https://www.flickr.com/people/72825507@N00
@@ -6049,6 +6041,14 @@
   - 1600×1042px, 291 KB, shot 990 m from the spot
   - Description: Morro Bay and its upper Estero Bay with kayaks . Located in San Luis Obispo County , central California . L-R: Betty, Ann — on Kayak Morro Bay outing groups.yahoo.com/group/kayakmorrobay/ to Shark Inlet and Baywood for the Baywood & Los OSos, CA October Fest street faire. Morro Bay, CA 30 Oct. 2011. Attended by Mike, Ron, Betty, and Ann, and a second group who arrived later after the Kayak Shack opened for rentals... Virginia, Judie, Fred, and Claudia whom we met at Baywood later. :* groups.yahoo.com/group/kayakmorrobay/surveys?id=13103656 Will you attend? Last Sunday Paddle 9 AM, Oct. 30, 201
   - Match: score 12 via coastal-in-title, name:morro, kw:bay+inlet, geo:990m, w>=1000, landscape
+- **`us-ca-morro-dunes-natural-preserve-3.jpg`** ✗ **not a coastal photo** — “Surf Scoter” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Surf_Scoter.jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Mike Baird from Morro Bay, USA — https://www.flickr.com/people/72825507@N00
+  - Dated: 2007-03-28 10:28
+  - 1600×1067px, 324 KB, shot 1454 m from the spot
+  - Description: Surf Scoter ( Melanitta perspicillata ), Los Osos, Morro Bay, CA, March 28, 2007. Shot with a Canon 5D with 600mm IS lens with polarizer, Whimerley head, and Gitzo tripod, firmly mounted in the front of Marc Schulman's two-person outrigger canoe www.orchidoutriggers.com , shot in RAW, sharpened in Photoshop CS2. Photo by Mike Baird bairdphotos.com 28mar2007 28march2007
+  - Match: score 12 via coastal-in-title, name:morro, kw:surf+mar+bay, geo:1454m, w>=1000, landscape
 
 ## Morro Rock Beach
 
@@ -6070,7 +6070,7 @@
   - 1600×1067px, 821 KB, shot 71 m from the spot
   - Description: Morro Bay Kite Festival, 26 April 2014, Morro Bay, CA. Kites of all sizes are flown just north of Morro Rock in this annual event. In the morning the wind was a nil 7 mph, but it picked up in the afternoon to 15-20+ mph, making it impractical to walk on the beach without getting sand in one’s eyes and equipment. Photo © 2014 “Mike” Michael L. Baird, mike {at] mikebaird d o t com, flickr.bairdphotos.com. Canon 5D Mark III, with Canon EF 24-105mm f/4 L IS USM Lens w/ circular polarizer, handheld, RAW. See EXIF for exposure settings. GPS EXIF geotag comes from a realtime on-camera Canon GP-E2 GPS
   - Match: score 18 via coastal-in-title, name:morro+rock, kw:beach+sand+mar+bay, geo:71m, w>=1000, landscape
-- **`us-ca-morro-rock-beach-3.jpg`** — “A surf board with bottom art, Morro Bay” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-morro-rock-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “A surf board with bottom art, Morro Bay” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:A_surf_board_with_bottom_art,_Morro_Bay.jpeg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Mike Baird from Morro Bay, USA — https://www.flickr.com/people/72825507@N00
@@ -6091,7 +6091,7 @@
   - 1600×1067px, 469 KB, shot 1127 m from the spot
   - Description: Morro Strand State Beach sunset from rocks near tidepool at Northpoint, Morro Bay, CA 27 Nov. 2012 Photo © 2012 “Mike” Michael L. Baird, mike {at] mikebaird d o t com, flickr.bairdphotos.com, Canon 5D Mark III, with Canon EF 16-35mm f/2.8L II USM Ultra Wide Angle Zoom Lens w/ circular polarizer, RAW. To use this photo, see access, attribution, and commenting recommendations at <a href=" https://www.flickr.com/people/mikebaird/#credit ">www.flickr.com/people/mikebaird/#credit</a> - Please add comments/notes/tags to add to or correct information, identification, etc. Please, no comments or invit
   - Match: score 17 via coastal-in-title, name:morro+strand, kw:beach+mar+bay+point, geo:1127m, w>=1000, landscape
-- **`us-ca-morro-strand-state-beach-2.jpg`** — “Long-billed Curlew, Morro Strand State Beach3” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-morro-strand-state-beach-2.jpg`** ✗ **not a coastal photo** — “Long-billed Curlew, Morro Strand State Beach3” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Long-billed_Curlew,_Morro_Strand_State_Beach3.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Mike Baird from Morro Bay, USA — https://www.flickr.com/people/72825507@N00
@@ -6099,7 +6099,7 @@
   - 1600×1066px, 202 KB, shot 2114 m from the spot
   - Description: Long-billed Curlew ( Numenius americanus ), Morro Strand State Beach, Morro Bay, CA, 31 jan 2008 31jan2008 - Photo by Michael "Mike" L. Baird bairdphotos.com Canon 1D Mark III w/ 100-400mm IS lens with 1.4X II TE (center-point auto-focus) and circular polarizer, handheld.
   - Match: score 16 via coastal-in-title, name:morro+strand, kw:beach+mar+bay+point, geo:2114m, w>=1000, landscape
-- **`us-ca-morro-strand-state-beach-3.jpg`** — “Long-billed Curlew, Morro Strand State Beach4” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-morro-strand-state-beach-3.jpg`** ✗ **not a coastal photo** — “Long-billed Curlew, Morro Strand State Beach4” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Long-billed_Curlew,_Morro_Strand_State_Beach4.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Mike Baird from Morro Bay, USA — https://www.flickr.com/people/72825507@N00
@@ -6141,15 +6141,7 @@
 
 `osm:relation/7099355` · 33.5253482, -117.7691655
 
-- **`us-ca-moss-point-1.jpg`** — “Moss Point, December 2008 - panoramio” by Kevin.Daniels, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Moss_Point,_December_2008_-_panoramio.jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: Kevin.Daniels — https://web.archive.org/web/20161018033425/http://www.panoramio.com/user/5035009?with_photo_id=41808579
-  - Dated: Taken on 29 December 2008
-  - 1600×1067px, 359 KB, shot 47 m from the spot
-  - Description: Moss Point, December 2008
-  - Match: score 11 via name:moss, kw:beach+point, geo:47m, w>=1000, landscape
-- **`us-ca-moss-point-2.jpg`** — “Pillar Point Bluff Ross' Cove Trail 1 Sept 2024” by Viriditas, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-moss-point-1.jpg`** — “Pillar Point Bluff Ross' Cove Trail 1 Sept 2024” by Viriditas, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Pillar_Point_Bluff_Ross%27_Cove_Trail_1_Sept_2024.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Viriditas — //commons.wikimedia.org/wiki/User:Viriditas
@@ -6157,7 +6149,7 @@
   - 1600×1754px, 1279 KB
   - Description: Ross' Cove Trail, Moss Beach, Half Moon Bay, California. Looking southwest from the Pillar Point Bluff Trail, from left to right, the Jean Lauer Trail continues south, intersecting with Ross' Cove Trail. The white radome of the Pillar Point Air Force Station is visible towards the center. In the distance, Maverick’s surf break is located on the edge of the Pillar Point State Marine Conservation Area. The beach below the bluff is part of the Fitzgerald Marine Reserve. The bluff is classified as a coastal scrub habitat, and it is common to see cottontail rabbits on the trails. In the spring, gra
   - Match: score 10.5 via coastal-in-title, name:moss, kw:beach+surf+coast+coastal, w>=1000
-- **`us-ca-moss-point-3.jpg`** — “Pillar Point Bluff facing southwest” by Viriditas, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-moss-point-2.jpg`** — “Pillar Point Bluff facing southwest” by Viriditas, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Pillar_Point_Bluff_facing_southwest.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Viriditas — //commons.wikimedia.org/wiki/User:Viriditas
@@ -6165,12 +6157,20 @@
   - 1600×977px, 696 KB
   - Description: Pillar Point Bluff Trail, Moss Beach, Half Moon Bay, California. Looking southwest from the Pillar Point Bluff Trail, from left to right, the Jean Lauer Trail continues south, intersecting with Ross' Cove Trail. The white radome of the Pillar Point Air Force Station is visible towards the center. In the distance, Maverick’s surf break is located on the edge of the Pillar Point State Marine Conservation Area. The beach below the bluff is part of the Fitzgerald Marine Reserve. The bluff is classified as a coastal scrub habitat, and it is common to see cottontail rabbits on the trails. In the spr
   - Match: score 9 via name:moss, kw:beach+surf+coast+coastal, w>=1000, landscape
+- **`us-ca-moss-point-3.jpg`** ✗ **not a coastal photo** — “Moss Point, December 2008 - panoramio” by Kevin.Daniels, Wikimedia Commons, CC BY 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Moss_Point,_December_2008_-_panoramio.jpg
+  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
+  - Author: Kevin.Daniels — https://web.archive.org/web/20161018033425/http://www.panoramio.com/user/5035009?with_photo_id=41808579
+  - Dated: Taken on 29 December 2008
+  - 1600×1067px, 359 KB, shot 47 m from the spot
+  - Description: Moss Point, December 2008
+  - Match: score 11 via name:moss, kw:beach+point, geo:47m, w>=1000, landscape
 
 ## Mother's Beach
 
 `osm:way/27294347` · 33.9810266, -118.4572839 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-mother-s-beach-1.jpg`** — “A Seagull from Venice Fishing Pier” by Snake311, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-mother-s-beach-1.jpg`** ✗ **not a coastal photo** — “A Seagull from Venice Fishing Pier” by Snake311, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:A_Seagull_from_Venice_Fishing_Pier.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Snake311 — //commons.wikimedia.org/wiki/User:Snake311
@@ -6178,7 +6178,7 @@
   - 1600×2133px, 247 KB, shot 559 m from the spot
   - Description: Photo of a Western Gull from a fishing pier in Venice beach, CA. Image taken from a 4th generation iPod touch in 2011.
   - Match: score 8.5 via coastal-in-title, kw:beach+sea+pier, geo:559m, w>=1000
-- **`us-ca-mother-s-beach-2.jpg`** — “Benjamin Bautista - LA Half Marathon 13.1 - Los Angeles” by Michael Dorausch, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-mother-s-beach-2.jpg`** ✗ **not a coastal photo** — “Benjamin Bautista - LA Half Marathon 13.1 - Los Angeles” by Michael Dorausch, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Benjamin_Bautista_-_LA_Half_Marathon_13.1_-_Los_Angeles.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Michael Dorausch
@@ -6220,23 +6220,7 @@
 
 `osm:node/358771452` · 37.4883842, -122.4560306
 
-- **`us-ca-naples-beach-1.jpg`** — “Belmont Shore and Belmont Heights in Long Beach California” by Darkest tree, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Belmont_Shore_and_Belmont_Heights_in_Long_Beach_California.JPG
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Darkest tree — //commons.wikimedia.org/wiki/User:Darkest_tree
-  - Dated: 2007-03-29 00:54:02
-  - 1600×1200px, 731 KB
-  - Description: The Belmont Shore neighborhood of Long Beach, California in the upper-middle of this image, with the Belmont Heights neighborhood in the lower foreground, looking southeast.
-  - Match: score 11 via coastal-in-title, name:naples, kw:beach+shore+jetty+bay, w>=1000, landscape
-- **`us-ca-naples-beach-2.jpg`** — “Belmont Park-Naples-Peninsula Long Beach California” by Darkest tree, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Belmont_Park-Naples-Peninsula_Long_Beach_California.JPG
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Darkest tree — //commons.wikimedia.org/wiki/User:Darkest_tree
-  - Dated: 2007-03-29
-  - 1600×1200px, 621 KB
-  - Description: Belmont Park, Naples Island, and The Peninsula neighborhoods of Long Beach, California, looking southeast.
-  - Match: score 11 via coastal-in-title, name:naples, kw:beach+shore+jetty+bay, w>=1000, landscape
-- **`us-ca-naples-beach-3.jpg`** — “Sunset at Naples Beach, Florida” by daniel rengel, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-naples-beach-1.jpg`** — “Sunset at Naples Beach, Florida” by daniel rengel, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sunset_at_Naples_Beach,_Florida.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: daniel rengel
@@ -6244,6 +6228,22 @@
   - 1600×900px, 400 KB
   - Description: Sunset in Florida
   - Match: score 11 via coastal-in-title, name:naples, kw:beach+sea+sand+pier, w>=1000, landscape
+- **`us-ca-naples-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Belmont Shore and Belmont Heights in Long Beach California” by Darkest tree, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Belmont_Shore_and_Belmont_Heights_in_Long_Beach_California.JPG
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Darkest tree — //commons.wikimedia.org/wiki/User:Darkest_tree
+  - Dated: 2007-03-29 00:54:02
+  - 1600×1200px, 731 KB
+  - Description: The Belmont Shore neighborhood of Long Beach, California in the upper-middle of this image, with the Belmont Heights neighborhood in the lower foreground, looking southeast.
+  - Match: score 11 via coastal-in-title, name:naples, kw:beach+shore+jetty+bay, w>=1000, landscape
+- **`us-ca-naples-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Belmont Park-Naples-Peninsula Long Beach California” by Darkest tree, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Belmont_Park-Naples-Peninsula_Long_Beach_California.JPG
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Darkest tree — //commons.wikimedia.org/wiki/User:Darkest_tree
+  - Dated: 2007-03-29
+  - 1600×1200px, 621 KB
+  - Description: Belmont Park, Naples Island, and The Peninsula neighborhoods of Long Beach, California, looking southeast.
+  - Match: score 11 via coastal-in-title, name:naples, kw:beach+shore+jetty+bay, w>=1000, landscape
 
 ## Natural Bridges State Beach
 
@@ -6278,7 +6278,7 @@
 
 `osm:way/118076810` · 39.9427051, -123.9666812
 
-- **`us-ca-needle-rock-beach-1.jpg`** — “Sinkyone State Wilderness- Lost Coast Trail - panoramio” by MARELBU, Wikimedia Commons, CC BY 3.0
+- **`us-ca-needle-rock-beach-1.jpg`** ✗ **not a coastal photo** — “Sinkyone State Wilderness- Lost Coast Trail - panoramio” by MARELBU, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sinkyone_State_Wilderness-_Lost_Coast_Trail_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: MARELBU — https://web.archive.org/web/20161014035449/http://www.panoramio.com/user/2353739?with_photo_id=26969820
@@ -6291,15 +6291,7 @@
 
 `osm:node/358789710` · 33.6044294, -117.9160285
 
-- **`us-ca-newport-beach-1.jpg`** — “The Balboa Bay Club by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:The_Balboa_Bay_Club_by_Don_Ramey_Logan.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
-  - Dated: 2017-12-03 15:30:10
-  - 1600×900px, 448 KB, shot 1021 m from the spot
-  - Description: The BBC in December 2017 by Don Ramey Logan
-  - Match: score 12 via coastal-in-title, name:newport, kw:beach+bay, geo:1021m, w>=1000, landscape
-- **`us-ca-newport-beach-2.jpg`** — “Near Tower 20 and Newport Pier (49081452016)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-newport-beach-1.jpg`** — “Near Tower 20 and Newport Pier (49081452016)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Near_Tower_20_and_Newport_Pier_(49081452016).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Chris Hunkeler from Carlsbad, California, USA — https://www.flickr.com/people/14913305@N00
@@ -6307,7 +6299,7 @@
   - 1600×900px, 420 KB, shot 1149 m from the spot
   - Description: Spectators and supporters hang out on the beach on this cool, overcast morning as they wait for the swimmers to arrive. The 2019 Newport Pier to Pier Two-Mile Swim was held Saturday, July 13, 2019 and facilitated by Newport Beach Lifeguard Association. The race officially started at 10:00 starting at Tower M just south of Balboa Pier. The swimmers follow Balboa Peninsula north towards the finish line just south of Newport Pier at Tower 20. US Masters Swimming Rules governed the event that was sanctioned by Southern Pacific Local Masters Swimming Committee (LMSC). JPY_9036_cr
   - Match: score 12 via coastal-in-title, name:newport, kw:beach+pier, geo:1149m, w>=1000, landscape
-- **`us-ca-newport-beach-3.jpg`** — “Newport Beach, California 5 2022-10-08” by F ASTILY, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-newport-beach-2.jpg`** — “Newport Beach, California 5 2022-10-08” by F ASTILY, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Newport_Beach,_California_5_2022-10-08.jpeg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: F ASTILY — //commons.wikimedia.org/wiki/User_talk:Fastily
@@ -6315,6 +6307,14 @@
   - 1600×1200px, 665 KB, shot 1162 m from the spot
   - Description: Newport Beach, California
   - Match: score 12 via coastal-in-title, name:newport, kw:beach+pier, geo:1162m, w>=1000, landscape
+- **`us-ca-newport-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “The Balboa Bay Club by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:The_Balboa_Bay_Club_by_Don_Ramey_Logan.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
+  - Dated: 2017-12-03 15:30:10
+  - 1600×900px, 448 KB, shot 1021 m from the spot
+  - Description: The BBC in December 2017 by Don Ramey Logan
+  - Match: score 12 via coastal-in-title, name:newport, kw:beach+bay, geo:1021m, w>=1000, landscape
 
 ## Nicholas Canyon Beach
 
@@ -6386,7 +6386,7 @@
   - 1600×1238px, 384 KB, shot 661 m from the spot
   - Description: For several years when our kids were in school, we would rent a housekeeping apartment at the beach in San Clemente and spend a week there just before they started the school year. We'd walk the beach after supper, watching the sun go down. This evening the color was different — a purple-red tint. I looked out to see these three surfers waiting for their last ride of the day, silhouetted by the setting sun.
   - Match: score 8.5 via coastal-in-title, kw:beach+surf+surfer+surfing, geo:661m, w>=1000
-- **`us-ca-north-beach-913033-2.jpg`** — “San Clemente Beach Club” by Vincent R. Jackson, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-north-beach-913033-2.jpg`** ⚠︎ *context, not the coast itself* — “San Clemente Beach Club” by Vincent R. Jackson, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:San_Clemente_Beach_Club.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Vincent R. Jackson — //commons.wikimedia.org/w/index.php?title=User:Frelon420&amp;action=edit&amp;redlink=1
@@ -6394,7 +6394,7 @@
   - 1600×1068px, 300 KB, shot 192 m from the spot
   - Description: San Clemente Beach Club
   - Match: score 7.5 via coastal-in-title, kw:beach, geo:192m, w>=1000, landscape
-- **`us-ca-north-beach-913033-3.jpg`** — “Metrolink @ San Clemente CA. - panoramio” by Loco Steve, Wikimedia Commons, CC BY 3.0
+- **`us-ca-north-beach-913033-3.jpg`** ⚠︎ *context, not the coast itself* — “Metrolink @ San Clemente CA. - panoramio” by Loco Steve, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Metrolink_@_San_Clemente_CA._-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Loco Steve — https://web.archive.org/web/20161019225548/http://www.panoramio.com/user/4751889?with_photo_id=67939643
@@ -6423,7 +6423,7 @@
   - 1600×1067px, 717 KB, shot 364 m from the spot
   - Description: Only minutes away from fast-moving Los Angeles, the Palos Verdes Peninsula is filled with natural beauty and majestic beaches while providing a great diversity of habitat and life. Considered on of the most beautiful areas in the world, Point Vicente is the centerpiece of breathtaking coastline vistas, dramatic steep cliffs, gracefully rolling hills, and deep canyons. It is a perfect gateway to Discover the Coast. Photo by David Ledig, BLM.
   - Match: score 10 via coastal-in-title, kw:beach+coast+coastal+coastline, geo:364m, w>=1000, landscape
-- **`us-ca-north-beach-001068-3.jpg`** — California Coastal National Monument at Point Vicente (28352930552) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-north-beach-001068-3.jpg`** ⚠︎ *context, not the coast itself* — California Coastal National Monument at Point Vicente (28352930552) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:California_Coastal_National_Monument_at_Point_Vicente_(28352930552).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: blmcalifornia — https://www.flickr.com/people/blmcalifornia/
@@ -6436,15 +6436,7 @@
 
 `osm:node/358823462` · 38.0771474, -122.9758312
 
-- **`us-ca-north-beach-823462-1.jpg`** — “Dry grass, deep green grass, Point Reyes, Marin county sea shore DSC 0091 (47938679803)” by Bill Abbott, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Dry_grass,_deep_green_grass,_Point_Reyes,_Marin_county_sea_shore_DSC_0091_(47938679803).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Bill Abbott — https://www.flickr.com/people/9998127@N06
-  - Dated: 2016-02-21 17:19
-  - 1600×1066px, 840 KB, shot 1087 m from the spot
-  - Description: Dry grass, deep green grass, Point Reyes, Marin county sea shore DSC_0091
-  - Match: score 9 via coastal-in-title, kw:sea+shore+mar+point, geo:1087m, w>=1000, landscape
-- **`us-ca-north-beach-823462-2.jpg`** — “Creamery Bay” by Mark Gunn from Novato, California, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-north-beach-823462-1.jpg`** — “Creamery Bay” by Mark Gunn from Novato, California, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Creamery_Bay.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Mark Gunn from Novato, California, USA — https://www.flickr.com/people/22592971@N04
@@ -6452,7 +6444,15 @@
   - 1600×760px, 610 KB, shot 1640 m from the spot
   - Description: Creamery Bay off Drakes Estero, Point Reyes National Seashore, CA, USA
   - Match: score 8 via coastal-in-title, kw:sea+coast+shore+mar, geo:1640m, w>=1000, landscape
-- **`us-ca-north-beach-823462-3.jpg`** — Elk Grazing, Point Reyes National Seashore (23105761300) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-north-beach-823462-2.jpg`** ✗ **not a coastal photo** — “Dry grass, deep green grass, Point Reyes, Marin county sea shore DSC 0091 (47938679803)” by Bill Abbott, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Dry_grass,_deep_green_grass,_Point_Reyes,_Marin_county_sea_shore_DSC_0091_(47938679803).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Bill Abbott — https://www.flickr.com/people/9998127@N06
+  - Dated: 2016-02-21 17:19
+  - 1600×1066px, 840 KB, shot 1087 m from the spot
+  - Description: Dry grass, deep green grass, Point Reyes, Marin county sea shore DSC_0091
+  - Match: score 9 via coastal-in-title, kw:sea+shore+mar+point, geo:1087m, w>=1000, landscape
+- **`us-ca-north-beach-823462-3.jpg`** ✗ **not a coastal photo** — Elk Grazing, Point Reyes National Seashore (23105761300) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Elk_Grazing,_Point_Reyes_National_Seashore_(23105761300).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: moonjazz from Palm Desert, United States — https://www.flickr.com/people/8398907@N02
@@ -6473,7 +6473,7 @@
   - 1600×1200px, 579 KB
   - Description: A stormy day. This was at low low tide, almost a -1, but the size and frequency of the waves pushed the sea up to the cliffs.
   - Match: score 11 via coastal-in-title, name:day, kw:beach+wave+waves+sea, w>=1000, landscape
-- **`us-ca-north-day-use-beach-2.jpg`** — “Columbus Day Italian Heritage Parade in SF North Beach 2011 36” by Team at Carnaval.com Studios, Wikimedia Commons, CC BY 2.0
+- **`us-ca-north-day-use-beach-2.jpg`** ✗ **not a coastal photo** — “Columbus Day Italian Heritage Parade in SF North Beach 2011 36” by Team at Carnaval.com Studios, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Columbus_Day_Italian_Heritage_Parade_in_SF_North_Beach_2011_36.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Team at Carnaval.com Studios — https://www.flickr.com/people/17281186@N00
@@ -6481,7 +6481,7 @@
   - 1600×1280px, 1084 KB
   - Description: Columbus Day Italian Heritage Parade in SF North Beach 2011
   - Match: score 9.5 via coastal-in-title, name:day, kw:beach+mar, w>=1000
-- **`us-ca-north-day-use-beach-3.jpg`** — “The Blue Ice at Long Beach Arena (4281150126)” by mark6mauno, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-north-day-use-beach-3.jpg`** ✗ **not a coastal photo** — “The Blue Ice at Long Beach Arena (4281150126)” by mark6mauno, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:The_Blue_Ice_at_Long_Beach_Arena_(4281150126).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: mark6mauno — https://www.flickr.com/people/98147195@N00
@@ -6494,15 +6494,7 @@
 
 `osm:node/2058856434` · 36.6998261, -121.8094595
 
-- **`us-ca-north-marina-1.jpg`** — “At the Beach - panoramio” by Steve Villata, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:At_the_Beach_-_panoramio.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Steve Villata — https://web.archive.org/web/20161010093834/http://www.panoramio.com/user/237050?with_photo_id=9104833
-  - Dated: Taken on 24 March 2008
-  - 1600×1063px, 375 KB, shot 109 m from the spot
-  - Description: At the Beach
-  - Match: score 13 via coastal-in-title, name:marina, kw:beach+mar, geo:109m, w>=1000, landscape
-- **`us-ca-north-marina-2.jpg`** — “Marina Dunes Preserve” by Vogabulary, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-north-marina-1.jpg`** — “Marina Dunes Preserve” by Vogabulary, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Marina_Dunes_Preserve.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Vogabulary — //commons.wikimedia.org/w/index.php?title=User:Vogabulary&amp;action=edit&amp;redlink=1
@@ -6510,7 +6502,15 @@
   - 1600×900px, 670 KB, shot 626 m from the spot
   - Description: A view of the dunes at Marina Dunes Preserve in Marina, CA
   - Match: score 12 via coastal-in-title, name:marina, kw:dune+mar, geo:626m, w>=1000, landscape
-- **`us-ca-north-marina-3.jpg`** — “California-05895 - Sea Lions (20644343201)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-north-marina-2.jpg`** ⚠︎ *context, not the coast itself* — “At the Beach - panoramio” by Steve Villata, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:At_the_Beach_-_panoramio.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Steve Villata — https://web.archive.org/web/20161010093834/http://www.panoramio.com/user/237050?with_photo_id=9104833
+  - Dated: Taken on 24 March 2008
+  - 1600×1063px, 375 KB, shot 109 m from the spot
+  - Description: At the Beach
+  - Match: score 13 via coastal-in-title, name:marina, kw:beach+mar, geo:109m, w>=1000, landscape
+- **`us-ca-north-marina-3.jpg`** ⚠︎ *context, not the coast itself* — “California-05895 - Sea Lions (20644343201)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:California-05895_-_Sea_Lions_(20644343201).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
@@ -6597,7 +6597,7 @@
   - 1600×1200px, 469 KB, shot 163 m from the spot
   - Description: Noyo Bay Harbor Entrance Fort Bragg Ca.
   - Match: score 11.5 via coastal-in-title, name:noyo, kw:bay, geo:163m, w>=1000, landscape
-- **`us-ca-noyo-beach-3.jpg`** — “Fishing Boat In Noyo Bay Fort Bragg Ca. - panoramio” by Noah_Loverbear, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-noyo-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Fishing Boat In Noyo Bay Fort Bragg Ca. - panoramio” by Noah_Loverbear, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Fishing_Boat_In_Noyo_Bay_Fort_Bragg_Ca._-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Noah_Loverbear — https://web.archive.org/web/20161102211814/http://www.panoramio.com/user/6952727?with_photo_id=93541424
@@ -6684,7 +6684,7 @@
   - 1600×1200px, 336 KB
   - Description: View of Pismo Beach from Oceano State Vehicular Recreation Area.
   - Match: score 15 via coastal-in-title, name:oceano+dunes, kw:beach+ocean+dune, w>=1000, landscape
-- **`us-ca-oceano-dunes-3.jpg`** — “Oceano County Airport 2013” by Eric Shalov, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-oceano-dunes-3.jpg`** ⚠︎ *context, not the coast itself* — “Oceano County Airport 2013” by Eric Shalov, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Oceano_County_Airport_2013.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Eric Shalov — //commons.wikimedia.org/wiki/User:Eric_Shalov
@@ -6697,15 +6697,7 @@
 
 `osm:node/358822247` · 33.1953141, -117.3853169
 
-- **`us-ca-oceanside-city-beach-1.jpg`** — “Pier, Oceanside, California (15038692804)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Pier,_Oceanside,_California_(15038692804).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
-  - Dated: 2014-10-28 20:16
-  - 1600×1200px, 245 KB, shot 516 m from the spot
-  - Description: Oceanside is a coastal city located on California's South Coast. It is the third-largest city in San Diego County, California. The city had a population of 183,095 at the 2010 census. Together with Carlsbad and Vista, it forms a tri-city area. Oceanside is located just south of Marine Corps Base Camp Pendleton. Originally inhabited by Native Americans, the first European explorers arrived in 1769. Spanish missionaries under Father Junipero Serra founded Mission San Luis Rey de Francia on a former site of a Luiseño Indian village on the banks of the San Luis Rey River. In the early 19th century
-  - Match: score 17 via coastal-in-title, name:oceanside+city, kw:ocean+coast+coastal+mar, geo:516m, w>=1000, landscape
-- **`us-ca-oceanside-city-beach-2.jpg`** — “Oceanside (19791855516)” by Davide D'Amico from London, United Kingdom, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-oceanside-city-beach-1.jpg`** — “Oceanside (19791855516)” by Davide D'Amico from London, United Kingdom, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Oceanside_(19791855516).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Davide D'Amico from London, United Kingdom — https://www.flickr.com/people/31560348@N05
@@ -6713,7 +6705,7 @@
   - 1600×1067px, 770 KB
   - Description: Oceanside
   - Match: score 15 via coastal-in-title, name:oceanside+city, kw:beach+ocean+sea+cliff, w>=1000, landscape
-- **`us-ca-oceanside-city-beach-3.jpg`** — “Gaggle of Surfers (52618180016)” by Glenn Beltz from Goleta, CA, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-oceanside-city-beach-2.jpg`** — “Gaggle of Surfers (52618180016)” by Glenn Beltz from Goleta, CA, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Gaggle_of_Surfers_(52618180016).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Glenn Beltz from Goleta, CA, USA — https://www.flickr.com/people/23089307@N02
@@ -6721,6 +6713,14 @@
   - 1600×900px, 795 KB, shot 161 m from the spot
   - Description: Taken in Oceanside, California, with a Nikon F3 loaded with Tri-X. Lens was an AI-S 400mm f/5.6.
   - Match: score 14 via coastal-in-title, name:oceanside, kw:surf+surfer+ocean, geo:161m, w>=1000, landscape
+- **`us-ca-oceanside-city-beach-3.jpg`** ✗ **not a coastal photo** — “Pier, Oceanside, California (15038692804)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Pier,_Oceanside,_California_(15038692804).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
+  - Dated: 2014-10-28 20:16
+  - 1600×1200px, 245 KB, shot 516 m from the spot
+  - Description: Oceanside is a coastal city located on California's South Coast. It is the third-largest city in San Diego County, California. The city had a population of 183,095 at the 2010 census. Together with Carlsbad and Vista, it forms a tri-city area. Oceanside is located just south of Marine Corps Base Camp Pendleton. Originally inhabited by Native Americans, the first European explorers arrived in 1769. Spanish missionaries under Father Junipero Serra founded Mission San Luis Rey de Francia on a former site of a Luiseño Indian village on the banks of the San Luis Rey River. In the early 19th century
+  - Match: score 17 via coastal-in-title, name:oceanside+city, kw:ocean+coast+coastal+mar, geo:516m, w>=1000, landscape
 
 ## Ohlson Beach
 
@@ -6734,7 +6734,7 @@
   - 1600×1060px, 821 KB, shot 799 m from the spot
   - Description: Seals hauled out at Green Cove Seal Rookery near Sea Ranch Abalone Bay Vacation Rental
   - Match: score 9 via coastal-in-title, kw:sea+coast+bay+cove, geo:799m, w>=1000, landscape
-- **`us-ca-ohlson-beach-2.jpg`** — “Marine Reserve 2 near Sea Ranch Abalone Bay Vacation Rental” by AbaloneBay, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-ohlson-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Marine Reserve 2 near Sea Ranch Abalone Bay Vacation Rental” by AbaloneBay, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Marine_Reserve_2_near_Sea_Ranch_Abalone_Bay_Vacation_Rental.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: AbaloneBay — //commons.wikimedia.org/wiki/User:AbaloneBay
@@ -6742,7 +6742,7 @@
   - 1600×1060px, 943 KB, shot 799 m from the spot
   - Description: Sign for Marine Reserve near Sea Ranch Abalone Bay Vacation Rental
   - Match: score 9 via coastal-in-title, kw:sea+mar+bay, geo:799m, w>=1000, landscape
-- **`us-ca-ohlson-beach-3.jpg`** — “Jogger on ocean bluff trail near Sea Ranch Abalone Bay Vacation Rental” by AbaloneBay, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-ohlson-beach-3.jpg`** ✗ **not a coastal photo** — “Jogger on ocean bluff trail near Sea Ranch Abalone Bay Vacation Rental” by AbaloneBay, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Jogger_on_ocean_bluff_trail_near_Sea_Ranch_Abalone_Bay_Vacation_Rental.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: AbaloneBay — //commons.wikimedia.org/wiki/User:AbaloneBay
@@ -6763,15 +6763,7 @@
   - 1600×1229px, 461 KB
   - Description: Point Loma from Coronado Beach, San Diego, ca.1900 Photograph of Point Loma from Coronado Beach, San Diego, ca.1900. There is a beached boat in the left foreground. A pier extends more than halfway across the image. There is an oil derrick behind the pier in the water. Three other small boats are in the water beside the pier. Call number : CHS-928 Filename : CHS-928 Coverage date : circa 1900 Part of collection : California Historical Society Collection, 1860-1960 Format : glass plate negatives Type : images Geographic subject (city or populated place) : Point Loma Repository name : USC Librar
   - Match: score 15 via coastal-in-title, name:oil+piers, kw:beach+pier+cove+point, w>=1000, landscape
-- **`us-ca-oil-piers-beach-2.jpg`** — “Oil rig from Seal Beach pier” by Photograph by Mike Peel ( www.mikepeel.net ), Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Oil_rig_from_Seal_Beach_pier.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Photograph by Mike Peel ( www.mikepeel.net ) — //commons.wikimedia.org/wiki/User:Mike_Peel
-  - Dated: 2013-11-27
-  - 1600×1067px, 195 KB
-  - Description: Platform Esther. Oil rig from Seal Beach pier, California.
-  - Match: score 11 via coastal-in-title, name:oil, kw:beach+sea+pier, w>=1000, landscape
-- **`us-ca-oil-piers-beach-3.jpg`** — “Huntington Beach, 1956” by Orange County Archives, Wikimedia Commons, CC BY 2.0
+- **`us-ca-oil-piers-beach-2.jpg`** — “Huntington Beach, 1956” by Orange County Archives, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Huntington_Beach,_1956.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Orange County Archives — https://www.flickr.com/people/30346812@N07
@@ -6779,6 +6771,14 @@
   - 1600×1598px, 951 KB
   - Description: View up the coast from the Huntington Beach Pier of oil wells — Huntington Beach , Southern California. The old Huntington Inn appears on the right edge of the photo. There are no known copyright restrictions on this image. All future uses of this photo should include the courtesy line, "Photo courtesy Orange County Archives." Comments are welcome after reading our <a href=" http://egov.ocgov.com/ocgov/CommentPolicy " rel="nofollow">Comment Policy</a>. Acc#1986-30&31 (PC1129)
   - Match: score 10.5 via coastal-in-title, name:oil, kw:beach+coast+pier, w>=1000
+- **`us-ca-oil-piers-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Oil rig from Seal Beach pier” by Photograph by Mike Peel ( www.mikepeel.net ), Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Oil_rig_from_Seal_Beach_pier.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Photograph by Mike Peel ( www.mikepeel.net ) — //commons.wikimedia.org/wiki/User:Mike_Peel
+  - Dated: 2013-11-27
+  - 1600×1067px, 195 KB
+  - Description: Platform Esther. Oil rig from Seal Beach pier, California.
+  - Match: score 11 via coastal-in-title, name:oil, kw:beach+sea+pier, w>=1000, landscape
 
 ## Old Ben Weston Beach
 
@@ -6792,7 +6792,7 @@
   - 1600×1200px, 896 KB, shot 2822 m from the spot
   - Description: Cliffs in the Distance
   - Match: score 5.5 via coastal-in-title, kw:cliff, geo:2822m, w>=1000, landscape
-- **`us-ca-old-ben-weston-beach-2.jpg`** — “Toward Shore - panoramio” by bahniuk, Wikimedia Commons, CC BY 3.0
+- **`us-ca-old-ben-weston-beach-2.jpg`** ✗ **not a coastal photo** — “Toward Shore - panoramio” by bahniuk, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Toward_Shore_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: bahniuk — https://web.archive.org/web/20161102215649/http://www.panoramio.com/user/7764891?with_photo_id=94053426
@@ -6800,7 +6800,7 @@
   - 1600×915px, 601 KB, shot 2783 m from the spot
   - Description: Toward Shore
   - Match: score 5.5 via coastal-in-title, kw:shore, geo:2783m, w>=1000, landscape
-- **`us-ca-old-ben-weston-beach-3.jpg`** — “Beach Layout - panoramio” by bahniuk, Wikimedia Commons, CC BY 3.0
+- **`us-ca-old-ben-weston-beach-3.jpg`** ✗ **not a coastal photo** — “Beach Layout - panoramio” by bahniuk, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Beach_Layout_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: bahniuk — https://web.archive.org/web/20161030121107/http://www.panoramio.com/user/7764891?with_photo_id=94053258
@@ -6813,7 +6813,7 @@
 
 `osm:node/358790118` · 34.1369497, -119.1842735
 
-- **`us-ca-ormond-beach-1.jpg`** — “Ormond Beach Tennis Center P3250101” by Gamweb, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-ormond-beach-1.jpg`** ✗ **not a coastal photo** — “Ormond Beach Tennis Center P3250101” by Gamweb, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Ormond_Beach_Tennis_Center_P3250101.JPG
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Gamweb — //commons.wikimedia.org/wiki/User:Gamweb
@@ -6821,7 +6821,7 @@
   - 1600×1200px, 604 KB
   - Description: Ormond Beach Tennis Center in Ormond Beach, Florida. The Greater Volusia Tennis League plays matches at this venue.
   - Match: score 8.5 via coastal-in-title, name:ormond, kw:beach, w>=1000, landscape
-- **`us-ca-ormond-beach-2.jpg`** — “Ormond Beach Tennis Center P3250108” by Gamweb, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-ormond-beach-2.jpg`** ✗ **not a coastal photo** — “Ormond Beach Tennis Center P3250108” by Gamweb, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Ormond_Beach_Tennis_Center_P3250108.JPG
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Gamweb — //commons.wikimedia.org/wiki/User:Gamweb
@@ -6829,7 +6829,7 @@
   - 1600×1200px, 768 KB
   - Description: Ormond Beach Tennis Center in Ormond Beach, Florida. The Greater Volusia Tennis League plays matches at this venue.
   - Match: score 8.5 via coastal-in-title, name:ormond, kw:beach, w>=1000, landscape
-- **`us-ca-ormond-beach-3.jpg`** — “Ormond Beach Tennis Center P3250115” by Gamweb, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-ormond-beach-3.jpg`** ✗ **not a coastal photo** — “Ormond Beach Tennis Center P3250115” by Gamweb, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Ormond_Beach_Tennis_Center_P3250115.JPG
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Gamweb — //commons.wikimedia.org/wiki/User:Gamweb
@@ -6842,7 +6842,7 @@
 
 `osm:way/37808275` · 34.1808251, -119.2393994 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-oxnard-beach-1.jpg`** — “Ocean-view suites at Embassy Suites Oxnard, CA, May 2009 - panoramio” by Tori Sloane, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-oxnard-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Ocean-view suites at Embassy Suites Oxnard, CA, May 2009 - panoramio” by Tori Sloane, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Ocean-view_suites_at_Embassy_Suites_Oxnard,_CA,_May_2009_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Tori Sloane — https://web.archive.org/web/20161016204153/http://www.panoramio.com/user/2220720?with_photo_id=43695147
@@ -6850,7 +6850,7 @@
   - 1600×809px, 313 KB, shot 260 m from the spot
   - Description: Ocean-view suites at Embassy Suites Oxnard, CA, May 2009
   - Match: score 14 via coastal-in-title, name:oxnard, kw:beach+ocean+dune, geo:260m, w>=1000, landscape
-- **`us-ca-oxnard-beach-2.jpg`** — “Embassy Suites at Sunset, Oxnard, CA, USA, May 2009 - panoramio” by Tori Sloane, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-oxnard-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Embassy Suites at Sunset, Oxnard, CA, USA, May 2009 - panoramio” by Tori Sloane, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Embassy_Suites_at_Sunset,_Oxnard,_CA,_USA,_May_2009_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Tori Sloane — https://web.archive.org/web/20161017091905/http://www.panoramio.com/user/2220720?with_photo_id=43695151
@@ -6858,7 +6858,7 @@
   - 1600×1115px, 302 KB, shot 440 m from the spot
   - Description: Embassy Suites at Sunset, Oxnard, CA, USA, May 2009
   - Match: score 11 via name:oxnard, kw:beach+dune+sunset, geo:440m, w>=1000, landscape
-- **`us-ca-oxnard-beach-3.jpg`** — Kendra Chan is a fish and wildlife biologist with the U.S. Fish and Wildlife Service in Ventura and BeachCOMBERS volunteer. Chan surveys Hollywood Beach in Oxnard, California. (36298868772) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-oxnard-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Kendra Chan is a fish and wildlife biologist with the U.S. Fish and Wildlife Service in Ventura and BeachCOMBERS volunteer. Chan surveys Hollywood Beach in Oxnard, California. (36298868772) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Kendra_Chan_is_a_fish_and_wildlife_biologist_with_the_U.S._Fish_and_Wildlife_Service_in_Ventura_and_BeachCOMBERS_volunteer._Chan_surveys_Hollywood_Beach_in_Oxnard,_California._(36298868772).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Pacific Southwest Region USFWS from Sacramento, US — https://www.flickr.com/people/54430347@N04
@@ -6879,15 +6879,7 @@
   - 1600×1067px, 665 KB, shot 134 m from the spot
   - Description: These photos were shot in the city of Pacifica, which is located in Northern California, south of San Francisco.
   - Match: score 14 via coastal-in-title, name:pacifica, kw:beach+surf+surfing, geo:134m, w>=1000, landscape
-- **`us-ca-pacifica-state-beach-2.jpg`** — “W. Stubbs' first day surfing” by Ian Brown, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:W._Stubbs%27_first_day_surfing.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Ian Brown
-  - Dated: 2007-07-07
-  - 1600×2133px, 61 KB, shot 286 m from the spot
-  - Description: W. Stubbs' first day surfing.
-  - Match: score 12.5 via coastal-in-title, name:pacifica, kw:surf+surfing, geo:286m, w>=1000
-- **`us-ca-pacifica-state-beach-3.jpg`** — “"Generations," Pacifica” by Kai Schreiber, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-pacifica-state-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “"Generations," Pacifica” by Kai Schreiber, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:%22Generations,%22_Pacifica.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Kai Schreiber
@@ -6895,6 +6887,14 @@
   - 1600×1067px, 353 KB, shot 304 m from the spot
   - Description: "Generations," Pacifica
   - Match: score 12 via name:pacifica, kw:beach+surf+surfing, geo:304m, w>=1000, landscape
+- **`us-ca-pacifica-state-beach-3.jpg`** ✗ **not a coastal photo** — “W. Stubbs' first day surfing” by Ian Brown, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:W._Stubbs%27_first_day_surfing.jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Ian Brown
+  - Dated: 2007-07-07
+  - 1600×2133px, 61 KB, shot 286 m from the spot
+  - Description: W. Stubbs' first day surfing.
+  - Match: score 12.5 via coastal-in-title, name:pacifica, kw:surf+surfing, geo:286m, w>=1000
 
 ## Palisades Beach
 
@@ -6966,14 +6966,7 @@
   - 1600×986px, 516 KB
   - Description: Palomarin Beach at Point Reyes National Seashore
   - Match: score 9 via name:palomarin, kw:beach+sea+shore+mar, w>=1000, landscape
-- **`us-ca-palomarin-beach-2.jpg`** — Deja Olumba – Point Reyes National Seashore, California (6660c505-3739-46bb-ad18-2bf4eb607b10) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Deja_Olumba_%E2%80%93_Point_Reyes_National_Seashore,_California_(6660c505-3739-46bb-ad18-2bf4eb607b10).jpeg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: NPS
-  - 1600×1200px, 801 KB, shot 3718 m from the spot
-  - Description: Intern standing in stream using scientific instrument My name is Deja Olumba, and I am currently enrolled at Texas A&M University and pursuing my bachelor’s degree in Wildlife and Fisheries Sciences and a minor in Horticulture. I just completed my sophomore year, and I am so excited to be a part of the Mosaics in Science program! This opportunity to work for the National Parks Service would be a huge boost in my professional goals due to the amazing experience and networking opportunities. Point Reyes National Seashore is very far from my home and offers a new environment and ecosystem that I 
-  - Match: score 7 via coastal-in-title, kw:sea+shore+point+seashore, geo:3718m, w>=1000, landscape
-- **`us-ca-palomarin-beach-3.jpg`** — “Peninsula to peninsula (8483524932)” by Akos Kokai, Wikimedia Commons, CC BY 2.0
+- **`us-ca-palomarin-beach-2.jpg`** — “Peninsula to peninsula (8483524932)” by Akos Kokai, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Peninsula_to_peninsula_(8483524932).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Akos Kokai — https://www.flickr.com/people/51212909@N02
@@ -6981,6 +6974,13 @@
   - 1600×1200px, 723 KB, shot 1698 m from the spot
   - Description: Distant hills in the centre are in San Francisco, and the Sutro Tower is just visible. Bolinas is on the far side of the peninsula in the middle ground.
   - Match: score 6 via kw:sea+shore+point+cliff, geo:1698m, w>=1000, landscape
+- **`us-ca-palomarin-beach-3.jpg`** ✗ **not a coastal photo** — Deja Olumba – Point Reyes National Seashore, California (6660c505-3739-46bb-ad18-2bf4eb607b10) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Deja_Olumba_%E2%80%93_Point_Reyes_National_Seashore,_California_(6660c505-3739-46bb-ad18-2bf4eb607b10).jpeg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: NPS
+  - 1600×1200px, 801 KB, shot 3718 m from the spot
+  - Description: Intern standing in stream using scientific instrument My name is Deja Olumba, and I am currently enrolled at Texas A&M University and pursuing my bachelor’s degree in Wildlife and Fisheries Sciences and a minor in Horticulture. I just completed my sophomore year, and I am so excited to be a part of the Mosaics in Science program! This opportunity to work for the National Parks Service would be a huge boost in my professional goals due to the amazing experience and networking opportunities. Point Reyes National Seashore is very far from my home and offers a new environment and ecosystem that I 
+  - Match: score 7 via coastal-in-title, kw:sea+shore+point+seashore, geo:3718m, w>=1000, landscape
 
 ## Panther Beach
 
@@ -7052,7 +7052,14 @@
   - 1600×1200px, 574 KB, shot 73897 m from the spot
   - Description: 500px provided description: Strand In Malibu Kalifornien [#landscape ,#sea ,#nature ,#beach ,#travel ,#sun ,#freedom ,#usa ,#california ,#sand ,#malibu ,#us ,#relax ,#trip ,#belize ,#natur ,#sonne ,#meer ,#strand ,#landschaft ,#freiheit ,#baywatch ,#reise ,#losangeles ,#st?dte ,#geotagged ,#karibik ,#l?nder ,#carri ,#allgemein ,#l?nderst?dte]
   - Match: score 15 via coastal-in-title, name:paradise+cove, kw:beach+sea+sand+bay, geo:73897m, w>=1000, landscape
-- **`us-ca-paradise-cove-2.jpg`** — “Paradise Cove Bar on the beach” by Ilpo's Sojourn, Wikimedia Commons, CC BY 2.0
+- **`us-ca-paradise-cove-2.jpg`** — “Bird of Paradise at Crystal Cove beach” by Ayesha Nadiadwala, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Bird_of_Paradise_at_Crystal_Cove_beach.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Ayesha Nadiadwala — //commons.wikimedia.org/w/index.php?title=User:Anadiadw&amp;action=edit&amp;redlink=1
+  - Dated: Taken on 21 October 2015, 10:44:44
+  - 1600×899px, 431 KB
+  - Match: score 14 via coastal-in-title, name:paradise+cove, kw:beach+cove, w>=1000, landscape
+- **`us-ca-paradise-cove-3.jpg`** ⚠︎ *context, not the coast itself* — “Paradise Cove Bar on the beach” by Ilpo's Sojourn, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Paradise_Cove_Bar_on_the_beach.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Ilpo's Sojourn — https://www.flickr.com/people/28238346@N00
@@ -7060,13 +7067,6 @@
   - 1600×1200px, 206 KB, shot 68431 m from the spot
   - Description: And view to another direction. No, girls in the front are not Californian: they spoke stockholmssvenskan. Funny: wherever you go in the world, the most beautiful young girls are always Swedish.
   - Match: score 14 via coastal-in-title, name:paradise+cove, kw:beach+cove, geo:68431m, w>=1000, landscape
-- **`us-ca-paradise-cove-3.jpg`** — “Bird of Paradise at Crystal Cove beach” by Ayesha Nadiadwala, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Bird_of_Paradise_at_Crystal_Cove_beach.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Ayesha Nadiadwala — //commons.wikimedia.org/w/index.php?title=User:Anadiadw&amp;action=edit&amp;redlink=1
-  - Dated: Taken on 21 October 2015, 10:44:44
-  - 1600×899px, 431 KB
-  - Match: score 14 via coastal-in-title, name:paradise+cove, kw:beach+cove, w>=1000, landscape
 
 ## Pebble Beach
 
@@ -7080,15 +7080,7 @@
   - 1600×1200px, 288 KB, shot 111 m from the spot
   - Description: Rocky coastline and a modern house, from a beach that had "pebbles" in the name, San Mateo County, California. (img_2986)
   - Match: score 14 via coastal-in-title, name:pebble, kw:beach+coast+coastline+point, geo:111m, w>=1000, landscape
-- **`us-ca-pebble-beach-2.jpg`** — “Rocky Waves - panoramio - Vadim Manuylov (2)” by Vadim Manuylov, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Rocky_Waves_-_panoramio_-_Vadim_Manuylov_(2).jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Vadim Manuylov — https://web.archive.org/web/20161011203906/http://www.panoramio.com/user/462847?with_photo_id=3351432
-  - Dated: Taken on 15 July 2007
-  - 1600×1067px, 589 KB, shot 305 m from the spot
-  - Description: Rocky Waves
-  - Match: score 9 via coastal-in-title, kw:wave+waves, geo:305m, w>=1000, landscape
-- **`us-ca-pebble-beach-3.jpg`** — “Coastlines (4349414497)” by Martin Cathrae from Charlottetown, PE, Canada, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-pebble-beach-2.jpg`** — “Coastlines (4349414497)” by Martin Cathrae from Charlottetown, PE, Canada, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Coastlines_(4349414497).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Martin Cathrae from Charlottetown, PE, Canada — https://www.flickr.com/people/34067077@N00
@@ -7096,6 +7088,14 @@
   - 1600×1067px, 399 KB, shot 1135 m from the spot
   - Description: Near sunset along the coast of California.
   - Match: score 9 via coastal-in-title, kw:sea+coast+coastline+cliff, geo:1135m, w>=1000, landscape
+- **`us-ca-pebble-beach-3.jpg`** ✗ **not a coastal photo** — “Rocky Waves - panoramio - Vadim Manuylov (2)” by Vadim Manuylov, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Rocky_Waves_-_panoramio_-_Vadim_Manuylov_(2).jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Vadim Manuylov — https://web.archive.org/web/20161011203906/http://www.panoramio.com/user/462847?with_photo_id=3351432
+  - Dated: Taken on 15 July 2007
+  - 1600×1067px, 589 KB, shot 305 m from the spot
+  - Description: Rocky Waves
+  - Match: score 9 via coastal-in-title, kw:wave+waves, geo:305m, w>=1000, landscape
 
 ## Pebble Beach
 
@@ -7109,7 +7109,7 @@
   - 1600×1060px, 821 KB, shot 1146 m from the spot
   - Description: Seals hauled out at Green Cove Seal Rookery near Sea Ranch Abalone Bay Vacation Rental
   - Match: score 9 via coastal-in-title, kw:sea+coast+bay+cove, geo:1146m, w>=1000, landscape
-- **`us-ca-pebble-beach-570912-2.jpg`** — “Marine Reserve 2 near Sea Ranch Abalone Bay Vacation Rental” by AbaloneBay, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-pebble-beach-570912-2.jpg`** ⚠︎ *context, not the coast itself* — “Marine Reserve 2 near Sea Ranch Abalone Bay Vacation Rental” by AbaloneBay, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Marine_Reserve_2_near_Sea_Ranch_Abalone_Bay_Vacation_Rental.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: AbaloneBay — //commons.wikimedia.org/wiki/User:AbaloneBay
@@ -7117,7 +7117,7 @@
   - 1600×1060px, 943 KB, shot 1146 m from the spot
   - Description: Sign for Marine Reserve near Sea Ranch Abalone Bay Vacation Rental
   - Match: score 9 via coastal-in-title, kw:sea+mar+bay, geo:1146m, w>=1000, landscape
-- **`us-ca-pebble-beach-570912-3.jpg`** — “Jogger on ocean bluff trail near Sea Ranch Abalone Bay Vacation Rental” by AbaloneBay, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-pebble-beach-570912-3.jpg`** ✗ **not a coastal photo** — “Jogger on ocean bluff trail near Sea Ranch Abalone Bay Vacation Rental” by AbaloneBay, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Jogger_on_ocean_bluff_trail_near_Sea_Ranch_Abalone_Bay_Vacation_Rental.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: AbaloneBay — //commons.wikimedia.org/wiki/User:AbaloneBay
@@ -7420,15 +7420,7 @@
 
 `osm:relation/5192510` · 35.117614, -120.6396371 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-pismo-beach-1.jpg`** — “Sand croton, Croton californicus (16800342515)” by Jim Morefield from Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Sand_croton,_Croton_californicus_(16800342515).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Jim Morefield from Nevada, USA — https://www.flickr.com/people/127605180@N04
-  - Dated: 2013-10-12 14:54
-  - 1600×1200px, 721 KB, shot 622 m from the spot
-  - Description: sand croton, Croton californicus, Pismo State Beach, elevation 0 m (0 ft)
-  - Match: score 12 via coastal-in-title, name:pismo, kw:beach+sand, geo:622m, w>=1000, landscape
-- **`us-ca-pismo-beach-2.jpg`** — “Pismo Beach Pier, North view 20110805 1” by DXR, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-pismo-beach-1.jpg`** — “Pismo Beach Pier, North view 20110805 1” by DXR, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Pismo_Beach_Pier,_North_view_20110805_1.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: DXR — //commons.wikimedia.org/wiki/User:DXR
@@ -7436,7 +7428,7 @@
   - 1600×900px, 519 KB, shot 2500 m from the spot
   - Description: Pismo Beach Pier at sunset, as seen from north
   - Match: score 12 via coastal-in-title, name:pismo, kw:beach+pier+sunset, geo:2500m, w>=1000, landscape
-- **`us-ca-pismo-beach-3.jpg`** — “Pismo Beach (California, USA), Point San Luis -- 2012 -- 4734” by Dietmar Rabich, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-pismo-beach-2.jpg`** — “Pismo Beach (California, USA), Point San Luis -- 2012 -- 4734” by Dietmar Rabich, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Pismo_Beach_(California,_USA),_Point_San_Luis_--_2012_--_4734.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Dietmar Rabich — https://www.wikidata.org/wiki/Q34788025
@@ -7444,12 +7436,20 @@
   - 1600×900px, 294 KB
   - Description: Sunset from the beach on Pier Avenue overlooking Point San Luis, Pismo Beach , California , USA
   - Match: score 11 via coastal-in-title, name:pismo, kw:beach+pier+point+headland, w>=1000, landscape
+- **`us-ca-pismo-beach-3.jpg`** ✗ **not a coastal photo** — “Sand croton, Croton californicus (16800342515)” by Jim Morefield from Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Sand_croton,_Croton_californicus_(16800342515).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Jim Morefield from Nevada, USA — https://www.flickr.com/people/127605180@N04
+  - Dated: 2013-10-12 14:54
+  - 1600×1200px, 721 KB, shot 622 m from the spot
+  - Description: sand croton, Croton californicus, Pismo State Beach, elevation 0 m (0 ft)
+  - Match: score 12 via coastal-in-title, name:pismo, kw:beach+sand, geo:622m, w>=1000, landscape
 
 ## Pistachio Beach
 
 `osm:way/680203318` · 37.1893916, -122.3978379
 
-- **`us-ca-pistachio-beach-1.jpg`** — “Pigeon Point Lighthouse, CA USA - panoramio” by MARELBU, Wikimedia Commons, CC BY 3.0
+- **`us-ca-pistachio-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Pigeon Point Lighthouse, CA USA - panoramio” by MARELBU, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Pigeon_Point_Lighthouse,_CA_USA_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: MARELBU — https://web.archive.org/web/20161028133559/http://www.panoramio.com/user/2353739?with_photo_id=93544618
@@ -7457,7 +7457,7 @@
   - 1600×1066px, 560 KB, shot 185 m from the spot
   - Description: Pigeon Point Lighthouse, CA USA
   - Match: score 9 via coastal-in-title, kw:point+lighthouse, geo:185m, w>=1000, landscape
-- **`us-ca-pistachio-beach-2.jpg`** — “Pigeon Point Lighthouse, CA USA - panoramio (5)” by MARELBU, Wikimedia Commons, CC BY 3.0
+- **`us-ca-pistachio-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Pigeon Point Lighthouse, CA USA - panoramio (5)” by MARELBU, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Pigeon_Point_Lighthouse,_CA_USA_-_panoramio_(5).jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: MARELBU — https://web.archive.org/web/20161027213757/http://www.panoramio.com/user/2353739?with_photo_id=93544620
@@ -7465,7 +7465,7 @@
   - 1600×1153px, 480 KB, shot 215 m from the spot
   - Description: Pigeon Point Lighthouse, CA USA
   - Match: score 9 via coastal-in-title, kw:point+lighthouse, geo:215m, w>=1000, landscape
-- **`us-ca-pistachio-beach-3.jpg`** — “Lighthouse California-06722 - Pigeon Point Lighthouse (21740196451)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-pistachio-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Lighthouse California-06722 - Pigeon Point Lighthouse (21740196451)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Lighthouse_California-06722_-_Pigeon_Point_Lighthouse_(21740196451).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
@@ -7586,7 +7586,7 @@
   - 1600×760px, 610 KB, shot 1575 m from the spot
   - Description: Creamery Bay off Drakes Estero, Point Reyes National Seashore, CA, USA
   - Match: score 12 via coastal-in-title, name:reyes, kw:sea+coast+shore+mar, geo:1575m, w>=1000, landscape
-- **`us-ca-point-reyes-beach-2.jpg`** — “Dry grass, deep green grass, Point Reyes, Marin county sea shore DSC 0091 (47938679803)” by Bill Abbott, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-point-reyes-beach-2.jpg`** ✗ **not a coastal photo** — “Dry grass, deep green grass, Point Reyes, Marin county sea shore DSC 0091 (47938679803)” by Bill Abbott, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Dry_grass,_deep_green_grass,_Point_Reyes,_Marin_county_sea_shore_DSC_0091_(47938679803).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Bill Abbott — https://www.flickr.com/people/9998127@N06
@@ -7594,7 +7594,7 @@
   - 1600×1066px, 840 KB, shot 1631 m from the spot
   - Description: Dry grass, deep green grass, Point Reyes, Marin county sea shore DSC_0091
   - Match: score 12 via coastal-in-title, name:reyes, kw:sea+shore+mar+point, geo:1631m, w>=1000, landscape
-- **`us-ca-point-reyes-beach-3.jpg`** — Elk Grazing, Point Reyes National Seashore (23105761300) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-point-reyes-beach-3.jpg`** ✗ **not a coastal photo** — Elk Grazing, Point Reyes National Seashore (23105761300) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Elk_Grazing,_Point_Reyes_National_Seashore_(23105761300).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: moonjazz from Palm Desert, United States — https://www.flickr.com/people/8398907@N02
@@ -7607,15 +7607,7 @@
 
 `osm:way/708386189` · 34.8971907, -120.6443039 · access: yes
 
-- **`us-ca-point-sal-beach-1.jpg`** — Point Sal Sea Anemone in Bakersfield Field Office (37448496526) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Point_Sal_Sea_Anemone_in_Bakersfield_Field_Office_(37448496526).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: blmcalifornia — https://www.flickr.com/people/blmcalifornia/
-  - Dated: Taken on 18 August 2017, 13:39:21
-  - 1600×1200px, 1218 KB, shot 2503 m from the spot
-  - Description: Photo by Alison Lipscomb, BLM.
-  - Match: score 11 via coastal-in-title, name:sal, kw:sea+point, geo:2503m, w>=1000, landscape
-- **`us-ca-point-sal-beach-2.jpg`** — “Point Sal - August 2020” by DocFreeman24, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-point-sal-beach-1.jpg`** — “Point Sal - August 2020” by DocFreeman24, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Point_Sal_-_August_2020.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: DocFreeman24 — //commons.wikimedia.org/wiki/User:DocFreeman24
@@ -7623,7 +7615,7 @@
   - 1600×1200px, 737 KB, shot 2262 m from the spot
   - Description: Point Sal, California, as of August 2020.
   - Match: score 10 via name:sal, kw:beach+point+headland, geo:2262m, w>=1000, landscape
-- **`us-ca-point-sal-beach-3.jpg`** — “Point Sal ridgeline” by Joe Decruyenaere, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-point-sal-beach-2.jpg`** — “Point Sal ridgeline” by Joe Decruyenaere, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Point_Sal_ridgeline.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Joe Decruyenaere — //www.flickr.com/people/38213125@N00
@@ -7631,6 +7623,14 @@
   - 1600×1200px, 183 KB
   - Description: Point Sal ridgeline at Point Sal State Beach. Point Sal is at the end of the ridge.
   - Match: score 9 via name:sal, kw:beach+coast+point, w>=1000, landscape
+- **`us-ca-point-sal-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Point Sal Sea Anemone in Bakersfield Field Office (37448496526) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Point_Sal_Sea_Anemone_in_Bakersfield_Field_Office_(37448496526).jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: blmcalifornia — https://www.flickr.com/people/blmcalifornia/
+  - Dated: Taken on 18 August 2017, 13:39:21
+  - 1600×1200px, 1218 KB, shot 2503 m from the spot
+  - Description: Photo by Alison Lipscomb, BLM.
+  - Match: score 11 via coastal-in-title, name:sal, kw:sea+point, geo:2503m, w>=1000, landscape
 
 ## Ponto Beach
 
@@ -7694,7 +7694,15 @@
 
 `osm:way/39275669` · 34.1418633, -119.1961466 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-port-hueneme-beach-1.jpg`** — “Port Hueneme lighthouse” by Konrad Summers from Santa Clarita (Valencia) , California, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-port-hueneme-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Port Hueneme (5554672285)” by Konrad Summers from Santa Clarita (Valencia) , California, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Port_Hueneme_(5554672285).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Konrad Summers from Santa Clarita (Valencia) , California, USA — https://www.flickr.com/people/12806074@N08
+  - Dated: 2010-09-17 00:05
+  - 1600×1200px, 1059 KB, shot 512 m from the spot
+  - Description: Port Hueneme
+  - Match: score 14 via name:port+hueneme, kw:point+lighthouse, geo:512m, w>=1000, landscape
+- **`us-ca-port-hueneme-beach-2.jpg`** ✗ **not a coastal photo** — “Port Hueneme lighthouse” by Konrad Summers from Santa Clarita (Valencia) , California, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Port_Hueneme_lighthouse.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Konrad Summers from Santa Clarita (Valencia) , California, USA — https://www.flickr.com/people/12806074@N08
@@ -7702,20 +7710,12 @@
   - 1600×1225px, 529 KB, shot 1334 m from the spot
   - Description: Port Hueneme
   - Match: score 15 via coastal-in-title, name:port+hueneme, kw:point+lighthouse, geo:1334m, w>=1000, landscape
-- **`us-ca-port-hueneme-beach-2.jpg`** — “Port Hueneme (5555261436)” by Konrad Summers from Santa Clarita (Valencia) , California, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-port-hueneme-beach-3.jpg`** ✗ **not a coastal photo** — “Port Hueneme (5555261436)” by Konrad Summers from Santa Clarita (Valencia) , California, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Port_Hueneme_(5555261436).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Konrad Summers from Santa Clarita (Valencia) , California, USA — https://www.flickr.com/people/12806074@N08
   - Dated: 2010-09-17 00:06
   - 1600×1200px, 983 KB, shot 512 m from the spot
-  - Description: Port Hueneme
-  - Match: score 14 via name:port+hueneme, kw:point+lighthouse, geo:512m, w>=1000, landscape
-- **`us-ca-port-hueneme-beach-3.jpg`** — “Port Hueneme (5554672285)” by Konrad Summers from Santa Clarita (Valencia) , California, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Port_Hueneme_(5554672285).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Konrad Summers from Santa Clarita (Valencia) , California, USA — https://www.flickr.com/people/12806074@N08
-  - Dated: 2010-09-17 00:05
-  - 1600×1200px, 1059 KB, shot 512 m from the spot
   - Description: Port Hueneme
   - Match: score 14 via name:port+hueneme, kw:point+lighthouse, geo:512m, w>=1000, landscape
 
@@ -7789,7 +7789,7 @@
   - 1600×1067px, 810 KB, shot 98 m from the spot
   - Description: Pacific surf at Pudding Creek beach in Fort Bragg
   - Match: score 17 via coastal-in-title, name:pudding+creek, kw:beach+surf, geo:98m, w>=1000, landscape
-- **`us-ca-pudding-creek-beach-2.jpg`** — “California-06419 - Beach Side of Bridge (21542489250)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-pudding-creek-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “California-06419 - Beach Side of Bridge (21542489250)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:California-06419_-_Beach_Side_of_Bridge_(21542489250).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
@@ -7797,7 +7797,7 @@
   - 1600×900px, 1580 KB, shot 36 m from the spot
   - Description: The first thing we did in the morning was to take a walk along the beach across the road. We passed under the long wooden trestle that appeared to be for walking and bicycles. It was a beautiful beach that went for miles.
   - Match: score 15.5 via coastal-in-title, name:pudding+creek, kw:beach, geo:36m, w>=1000, landscape
-- **`us-ca-pudding-creek-beach-3.jpg`** — “FortBragg-Jan05” by Photo taken by Bobak Ha'Eri, Wikimedia Commons, CC BY-SA 2.5
+- **`us-ca-pudding-creek-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “FortBragg-Jan05” by Photo taken by Bobak Ha'Eri, Wikimedia Commons, CC BY-SA 2.5
   - Source page: https://commons.wikimedia.org/wiki/File:FortBragg-Jan05.JPG
   - Licence: CC BY-SA 2.5 (https://creativecommons.org/licenses/by-sa/2.5/) · attribution required · **share-alike**
   - Author: Photo taken by Bobak Ha'Eri — //commons.wikimedia.org/wiki/User:Bobak
@@ -7810,7 +7810,7 @@
 
 `osm:node/358796570` · 34.0313964, -118.7186973
 
-- **`us-ca-puerco-beach-1.jpg`** — “Pepperdine University + Pacific Ocean (29980837264)” by Atomic Taco from Seattle, WA, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-puerco-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Pepperdine University + Pacific Ocean (29980837264)” by Atomic Taco from Seattle, WA, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Pepperdine_University_%2B_Pacific_Ocean_(29980837264).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Atomic Taco from Seattle, WA, USA — https://www.flickr.com/people/25443792@N05
@@ -7823,7 +7823,7 @@
 
 `osm:node/11925837134` · 34.0316513, -118.6989496
 
-- **`us-ca-ranger-steven-s-beach-1.jpg`** — “Pitch Black Under the Pier (7898445710)” by micadew, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-ranger-steven-s-beach-1.jpg`** ✗ **not a coastal photo** — “Pitch Black Under the Pier (7898445710)” by micadew, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Pitch_Black_Under_the_Pier_(7898445710).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: micadew — https://www.flickr.com/people/56052306@N06
@@ -7865,7 +7865,7 @@
 
 `osm:relation/5255980` · 37.8896305, -122.6332104
 
-- **`us-ca-red-rock-beach-1.jpg`** — “Rodeo Beach colorful, large-grained sand with seaweed (13502576034)” by David Abercrombie, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-red-rock-beach-1.jpg`** ✗ **not a coastal photo** — “Rodeo Beach colorful, large-grained sand with seaweed (13502576034)” by David Abercrombie, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Rodeo_Beach_colorful,_large-grained_sand_with_seaweed_(13502576034).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: David Abercrombie — https://www.flickr.com/people/42914481@N00
@@ -7873,7 +7873,7 @@
   - 1600×905px, 727 KB
   - Description: Seaweed on large grain sand of Rodeo Beach, Marin Headlands. This colorful sand is mostly rounded red and green chert with some mafic volcanic rock fragments, mostly with 1 to 4 mm grain size. Rodeo Breach also contains carnelians, semitranslucent orange chalcedony, that formed in the vesicles of the nearby pillow basalts. (from William P. Elder, 2001, NAGT Field Trip Guidebook. NPS, GGNRA)
   - Match: score 15 via coastal-in-title, name:red+rock, kw:beach+sea+sand+mar, w>=1000, landscape
-- **`us-ca-red-rock-beach-2.jpg`** — “Rodeo Beach colorful, large-grained sand (13502225045)” by David Abercrombie, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-red-rock-beach-2.jpg`** ✗ **not a coastal photo** — “Rodeo Beach colorful, large-grained sand (13502225045)” by David Abercrombie, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Rodeo_Beach_colorful,_large-grained_sand_(13502225045).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: David Abercrombie — https://www.flickr.com/people/42914481@N00
@@ -7881,7 +7881,7 @@
   - 1600×905px, 635 KB
   - Description: The colorful, large grain sand of Rodeo Beach (Marin Headlands) is mostly rounded red and green chert with some mafic volcanic rock fragments, mostly with 1 to 4 mm grain size. Rodeo Breach also contains carnelians, semitranslucent orange chalcedony, that formed in the vesicles of the nearby pillow basalts. (from William P. Elder, 2001, NAGT Field Trip Guidebook. NPS, GGNRA).
   - Match: score 15 via coastal-in-title, name:red+rock, kw:beach+sand+mar+headland, w>=1000, landscape
-- **`us-ca-red-rock-beach-3.jpg`** — Shell beach. - Flickr - Bernard Spragg — CC0 (Wikimedia Commons), no attribution required
+- **`us-ca-red-rock-beach-3.jpg`** ✗ **not a coastal photo** — Shell beach. - Flickr - Bernard Spragg — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Shell_beach._-_Flickr_-_Bernard_Spragg.jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Bernard Spragg. NZ from Christchurch, New Zealand — https://www.flickr.com/people/88123769@N02
@@ -7910,7 +7910,7 @@
   - 1600×1600px, 955 KB
   - Description: A long-exposure photograph taken at night from Thornhill Broome Beach in California, illustrating the stark contrast between urban light pollution and natural darkness. The bright red and white light trails of vehicles speeding along the Pacific Coast Highway (PCH) are visible in the foreground, yet the dark mass of the Santa Monica Mountains looms in the background, and stars are visible in the deep blue night sky, emphasizing the resilience of nature's beauty against human impact.
   - Match: score 21.5 via coastal-in-title, name:red+white+and+blue, kw:beach+coast, w>=1000
-- **`us-ca-red-white-and-blue-beach-3.jpg`** — “The Blue Ice at Long Beach Arena (4281150126)” by mark6mauno, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-red-white-and-blue-beach-3.jpg`** ✗ **not a coastal photo** — “The Blue Ice at Long Beach Arena (4281150126)” by mark6mauno, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:The_Blue_Ice_at_Long_Beach_Arena_(4281150126).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: mark6mauno — https://www.flickr.com/people/98147195@N00
@@ -7923,23 +7923,7 @@
 
 `osm:node/358821574` · 37.4402218, -122.4438613
 
-- **`us-ca-redondo-beach-1.jpg`** — “Redondo Beach Pier, Redondo Beach, California (6027113068)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Redondo_Beach_Pier,_Redondo_Beach,_California_(6027113068).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
-  - Dated: 2011-08-07 16:07
-  - 1600×1200px, 407 KB, shot 542769 m from the spot
-  - Description: The Redondo Beach pier is located in Redondo Beach, California and stretches out onto the Pacific Ocean. The pier has been rebuilt and altered by storms and redevelopments. Its official name is "Municipal Pier", and it has also been called the "Endless Pier". Earlier versions were known as "Pleasure Pier" and "Horseshoe Pier". The pier started out as a disjointed group of wharves near the end of the 19th century, but evolved into an interconnected structure after a series of storms and demolitions throughout the 20th century. The pier area used to be heavily crowded with tourists and locals du
-  - Match: score 11 via coastal-in-title, name:redondo, kw:beach+ocean+pier, geo:542769m, w>=1000, landscape
-- **`us-ca-redondo-beach-2.jpg`** — “Sunset at Redondo beach pier” by Miximon, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Sunset_at_Redondo_beach_pier.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Miximon — //commons.wikimedia.org/w/index.php?title=User:Miximon&amp;action=edit&amp;redlink=1
-  - Dated: 29 May 2023 (according to Exif data)
-  - 1600×3548px, 1506 KB, shot 541923 m from the spot
-  - Description: Redondo Beach
-  - Match: score 10.5 via coastal-in-title, name:redondo, kw:beach+pier+sunset, geo:541923m, w>=1000
-- **`us-ca-redondo-beach-3.jpg`** — “Half Moon Bay State Beach 2 2024-04-23” by Fastily, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-redondo-beach-1.jpg`** — “Half Moon Bay State Beach 2 2024-04-23” by Fastily, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Half_Moon_Bay_State_Beach_2_2024-04-23.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Fastily — //commons.wikimedia.org/wiki/User_talk:Fastily
@@ -7947,6 +7931,22 @@
   - 1600×1200px, 895 KB, shot 136 m from the spot
   - Description: Half Moon Bay State Beach
   - Match: score 10 via coastal-in-title, kw:beach+sea+bay+cliff, geo:136m, w>=1000, landscape
+- **`us-ca-redondo-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Redondo Beach Pier, Redondo Beach, California (6027113068)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Redondo_Beach_Pier,_Redondo_Beach,_California_(6027113068).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
+  - Dated: 2011-08-07 16:07
+  - 1600×1200px, 407 KB, shot 542769 m from the spot
+  - Description: The Redondo Beach pier is located in Redondo Beach, California and stretches out onto the Pacific Ocean. The pier has been rebuilt and altered by storms and redevelopments. Its official name is "Municipal Pier", and it has also been called the "Endless Pier". Earlier versions were known as "Pleasure Pier" and "Horseshoe Pier". The pier started out as a disjointed group of wharves near the end of the 19th century, but evolved into an interconnected structure after a series of storms and demolitions throughout the 20th century. The pier area used to be heavily crowded with tourists and locals du
+  - Match: score 11 via coastal-in-title, name:redondo, kw:beach+ocean+pier, geo:542769m, w>=1000, landscape
+- **`us-ca-redondo-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Sunset at Redondo beach pier” by Miximon, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Sunset_at_Redondo_beach_pier.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Miximon — //commons.wikimedia.org/w/index.php?title=User:Miximon&amp;action=edit&amp;redlink=1
+  - Dated: 29 May 2023 (according to Exif data)
+  - 1600×3548px, 1506 KB, shot 541923 m from the spot
+  - Description: Redondo Beach
+  - Match: score 10.5 via coastal-in-title, name:redondo, kw:beach+pier+sunset, geo:541923m, w>=1000
 
 ## Redondo Beach State Park
 
@@ -8031,15 +8031,7 @@
   - 1600×1067px, 564 KB
   - Description: Rincon Beach County Park, Carpinteria, California, US
   - Match: score 8.5 via coastal-in-title, name:rincon, kw:beach, w>=1000, landscape
-- **`us-ca-rincon-beach-246794-2.jpg`** — “Finding Seacliff (5212365343)” by Damian Gadal, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Finding_Seacliff_(5212365343).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Damian Gadal — https://www.flickr.com/people/23024164@N06
-  - Dated: 2010-11-27 12:02
-  - 1600×1071px, 1095 KB, shot 1607 m from the spot
-  - Description: U.S. Highway 101
-  - Match: score 7 via coastal-in-title, kw:sea+cliff, geo:1607m, w>=1000, landscape
-- **`us-ca-rincon-beach-246794-3.jpg`** — “Sunset at Hobson County Park (46804218312)” by Glenn Beltz from Goleta, CA, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-rincon-beach-246794-2.jpg`** — “Sunset at Hobson County Park (46804218312)” by Glenn Beltz from Goleta, CA, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sunset_at_Hobson_County_Park_(46804218312).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Glenn Beltz from Goleta, CA, USA — https://www.flickr.com/people/23089307@N02
@@ -8047,6 +8039,14 @@
   - 1600×1067px, 223 KB, shot 1511 m from the spot
   - Description: Sunset at Hobson County Park
   - Match: score 6 via kw:beach+sea+seascape+sunset, geo:1511m, w>=1000, landscape
+- **`us-ca-rincon-beach-246794-3.jpg`** ✗ **not a coastal photo** — “Finding Seacliff (5212365343)” by Damian Gadal, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Finding_Seacliff_(5212365343).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Damian Gadal — https://www.flickr.com/people/23024164@N06
+  - Dated: 2010-11-27 12:02
+  - 1600×1071px, 1095 KB, shot 1607 m from the spot
+  - Description: U.S. Highway 101
+  - Match: score 7 via coastal-in-title, kw:sea+cliff, geo:1607m, w>=1000, landscape
 
 ## Rio Del Mar Beach
 
@@ -8068,7 +8068,7 @@
   - 1600×1071px, 452 KB
   - Description: Beach at Rio Del Mar
   - Match: score 14 via coastal-in-title, name:rio+mar, kw:beach+mar, w>=1000, landscape
-- **`us-ca-rio-del-mar-beach-3.jpg`** — “Kid Playing Frisbee at Seacliff State Beach (11811673305)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-rio-del-mar-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Kid Playing Frisbee at Seacliff State Beach (11811673305)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Kid_Playing_Frisbee_at_Seacliff_State_Beach_(11811673305).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Don DeBold from San Jose, CA, USA — https://www.flickr.com/people/28156071@N00
@@ -8110,7 +8110,7 @@
 
 `osm:way/24656288` · 37.8305433, -122.5371176 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-rodeo-beach-1.jpg`** — “Killdeer at Rodeo Beach” by Frank Schulenburg, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-rodeo-beach-1.jpg`** ✗ **not a coastal photo** — “Killdeer at Rodeo Beach” by Frank Schulenburg, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Killdeer_at_Rodeo_Beach.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Frank Schulenburg — https://www.wikidata.org/wiki/Q57175365
@@ -8118,7 +8118,7 @@
   - 1600×1067px, 629 KB, shot 77 m from the spot
   - Description: Killdeer ( Charadrius vociferus ) on the shore of Rodeo Lagoon, Marin County, California.
   - Match: score 14 via coastal-in-title, name:rodeo, kw:beach+shore+mar+lagoon, geo:77m, w>=1000, landscape
-- **`us-ca-rodeo-beach-2.jpg`** — “Rodeo Beach colorful, large-grained sand with seaweed (13502576034)” by David Abercrombie, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-rodeo-beach-2.jpg`** ✗ **not a coastal photo** — “Rodeo Beach colorful, large-grained sand with seaweed (13502576034)” by David Abercrombie, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Rodeo_Beach_colorful,_large-grained_sand_with_seaweed_(13502576034).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: David Abercrombie — https://www.flickr.com/people/42914481@N00
@@ -8126,7 +8126,7 @@
   - 1600×905px, 727 KB, shot 215 m from the spot
   - Description: Seaweed on large grain sand of Rodeo Beach, Marin Headlands. This colorful sand is mostly rounded red and green chert with some mafic volcanic rock fragments, mostly with 1 to 4 mm grain size. Rodeo Breach also contains carnelians, semitranslucent orange chalcedony, that formed in the vesicles of the nearby pillow basalts. (from William P. Elder, 2001, NAGT Field Trip Guidebook. NPS, GGNRA)
   - Match: score 14 via coastal-in-title, name:rodeo, kw:beach+sea+sand+mar, geo:215m, w>=1000, landscape
-- **`us-ca-rodeo-beach-3.jpg`** — “Rodeo Beach colorful, large-grained sand (13502225045)” by David Abercrombie, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-rodeo-beach-3.jpg`** ✗ **not a coastal photo** — “Rodeo Beach colorful, large-grained sand (13502225045)” by David Abercrombie, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Rodeo_Beach_colorful,_large-grained_sand_(13502225045).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: David Abercrombie — https://www.flickr.com/people/42914481@N00
@@ -8197,7 +8197,7 @@
 
 `osm:way/131561276` · 39.3291038, -123.8047428 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-russian-gulch-1.jpg`** — “Russian Gulch Beach” by David Eppstein, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-russian-gulch-1.jpg`** ⚠︎ *context, not the coast itself* — “Russian Gulch Beach” by David Eppstein, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Russian_Gulch_Beach.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: David Eppstein — //commons.wikimedia.org/wiki/User:David_Eppstein
@@ -8205,7 +8205,7 @@
   - 1600×1067px, 508 KB, shot 44 m from the spot
   - Description: Russian Gulch State Park and the Frederick W. Panhorst Bridge . Perspective distortion from the wide lens angle (as well as the lens's barrel distortion and chromatic aberration) have been removed or reduced in post-processing.
   - Match: score 17 via coastal-in-title, name:russian+gulch, kw:beach+barrel, geo:44m, w>=1000, landscape
-- **`us-ca-russian-gulch-2.jpg`** — “Russian Gulch State Park 4” by Doreeno, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-russian-gulch-2.jpg`** ⚠︎ *context, not the coast itself* — “Russian Gulch State Park 4” by Doreeno, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Russian_Gulch_State_Park_4.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Doreeno — https://www.flickr.com/photos/doreeno/
@@ -8213,7 +8213,7 @@
   - 1600×2133px, 1194 KB, shot 388 m from the spot
   - Description: The west side of Frederick W. Panhorst Bridge, carrying California State Route 1 (a/k/a the Pacific Coast Highway or Shoreline Highway ) above the beach at Russian Gulch State Park in Mendocino County
   - Match: score 15.5 via name:russian+gulch, kw:beach+coast+shore+shoreline, geo:388m, w>=1000
-- **`us-ca-russian-gulch-3.jpg`** — “2021 Mendocino beach” by tbo47, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-russian-gulch-3.jpg`** ⚠︎ *context, not the coast itself* — “2021 Mendocino beach” by tbo47, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:2021_Mendocino_beach.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: tbo47 — //commons.wikimedia.org/wiki/User:Lasthib
@@ -8226,7 +8226,7 @@
 
 `osm:way/339853960` · 33.1665775, -117.3605905
 
-- **`us-ca-saint-malo-beach-1.jpg`** — “Saint-Malo - beach 01” by Paweł 'pbm' Szubert ( talk ), Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-saint-malo-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Saint-Malo - beach 01” by Paweł 'pbm' Szubert ( talk ), Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Saint-Malo_-_beach_01.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Paweł 'pbm' Szubert ( talk ) — //commons.wikimedia.org/wiki/User:Pbm
@@ -8234,7 +8234,7 @@
   - 1600×1063px, 724 KB
   - Description: Building near beach in Saint-Malo
   - Match: score 12.5 via coastal-in-title, name:saint+malo, kw:beach, w>=1000, landscape
-- **`us-ca-saint-malo-beach-2.jpg`** — “Sm22” by Zipity.grc, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-saint-malo-beach-2.jpg`** ✗ **not a coastal photo** — “Sm22” by Zipity.grc, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sm22.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Zipity.grc — //commons.wikimedia.org/w/index.php?title=User:Zipity.grc&amp;action=edit&amp;redlink=1
@@ -8321,7 +8321,7 @@
   - 1600×1200px, 489 KB, shot 207 m from the spot
   - Description: Looking down south from a cliff at San Gregorio State Beach at the lagoon there on a misty morning. California State Route 1 in the distance.
   - Match: score 18 via coastal-in-title, name:san+gregorio, kw:beach+cliff+lagoon, geo:207m, w>=1000, landscape
-- **`us-ca-san-gregorio-beach-3.jpg`** — “Lasthenia minor, San Gregorio State Beach, San Mateo, California, United States imported from iNaturalist photo 296159” by (c) Ken-ichi Ueda, some rights reserved (CC BY), Wikimedia Commons, CC BY 4.0
+- **`us-ca-san-gregorio-beach-3.jpg`** ✗ **not a coastal photo** — “Lasthenia minor, San Gregorio State Beach, San Mateo, California, United States imported from iNaturalist photo 296159” by (c) Ken-ichi Ueda, some rights reserved (CC BY), Wikimedia Commons, CC BY 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Lasthenia_minor,_San_Gregorio_State_Beach,_San_Mateo,_California,_United_States_imported_from_iNaturalist_photo_296159.jpg
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: (c) Ken-ichi Ueda, some rights reserved (CC BY)
@@ -8392,7 +8392,7 @@
 
 `osm:node/358823548` · 37.5982705, -122.5027538
 
-- **`us-ca-san-pedro-beach-1.jpg`** — “East Village Long Beach California” by Darkest tree, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-san-pedro-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “East Village Long Beach California” by Darkest tree, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:East_Village_Long_Beach_California.JPG
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Darkest tree — //commons.wikimedia.org/wiki/User:Darkest_tree
@@ -8400,7 +8400,7 @@
   - 1600×1200px, 768 KB
   - Description: The East Village district of Long Beach, California, is in the right three-quarters of the foreground of this southwest-facing photo (the Alamitos Beach neighborhood makes up the left quarter of the foreground, on the east side of Alamitos Avenue, the diagonal street on the left). Downtown Long Beach is to the right. Queensway Bay/San Pedro Bay are visible, with the Queen Mary and part of the Port of Long Beach in the distance. Catalina Island is faintly visible on the horizon.
   - Match: score 15 via coastal-in-title, name:san+pedro, kw:beach+mar+bay, w>=1000, landscape
-- **`us-ca-san-pedro-beach-2.jpg`** — “Long Beach California as seen from the cruise ship - panoramio (4)” by Jack CameraMan, Wikimedia Commons, CC BY 3.0
+- **`us-ca-san-pedro-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Long Beach California as seen from the cruise ship - panoramio (4)” by Jack CameraMan, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_California_as_seen_from_the_cruise_ship_-_panoramio_(4).jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Jack CameraMan — https://web.archive.org/web/20161027205110/http://www.panoramio.com/user/7214997?with_photo_id=101854417
@@ -8408,7 +8408,7 @@
   - 1600×1060px, 348 KB, shot 578650 m from the spot
   - Description: Long Beach California as seen from the cruise ship
   - Match: score 15 via coastal-in-title, name:san+pedro, kw:beach+pier+bay, geo:578650m, w>=1000, landscape
-- **`us-ca-san-pedro-beach-3.jpg`** — “Port of Long Beach aerial by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-san-pedro-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Port of Long Beach aerial by Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Port_of_Long_Beach_aerial_by_Don_Ramey_Logan.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
@@ -8437,7 +8437,7 @@
   - 1600×1269px, 92 KB
   - Description: Fun sunny surf day at Sand Dollar Beach.
   - Match: score 10.5 via coastal-in-title, name:sand, kw:beach+surf+sand, w>=1000
-- **`us-ca-sand-beach-3.jpg`** — “Stairs at Sand Dune Park, Manhattan Beach, California” by Jengod, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-sand-beach-3.jpg`** ✗ **not a coastal photo** — “Stairs at Sand Dune Park, Manhattan Beach, California” by Jengod, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Stairs_at_Sand_Dune_Park,_Manhattan_Beach,_California.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Jengod — //commons.wikimedia.org/wiki/User:Jengod
@@ -8479,15 +8479,7 @@
 
 `osm:way/37022887` · 36.9546291, -122.0911225
 
-- **`us-ca-sand-plant-beach-1.jpg`** — “The Ritz View, Sand Creek Beach, Laguna Niguel, CA 2016 (32287182971)” by inkknife_2000 (7.5 million views +), Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:The_Ritz_View,_Sand_Creek_Beach,_Laguna_Niguel,_CA_2016_(32287182971).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: inkknife_2000 (7.5 million views +) — https://www.flickr.com/people/23155134@N06
-  - Dated: 2016-09-12 12:59:26
-  - 1600×1195px, 969 KB, shot 554303 m from the spot
-  - Description: (1 in a multiple picture album) The Ritz Carlton sits on a prime piece of land high above the Pacific giving clients a great view for their money. The grounds are immaculate and planted with all sorts of sea shore and desert plants.
-  - Match: score 15 via coastal-in-title, name:sand+plant, kw:beach+sea+shore+sand, geo:554303m, w>=1000, landscape
-- **`us-ca-sand-plant-beach-2.jpg`** — “Tide (176662251)” by Zane Schmidlen, Wikimedia Commons, CC BY 3.0
+- **`us-ca-sand-plant-beach-1.jpg`** — “Tide (176662251)” by Zane Schmidlen, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Tide_(176662251).jpeg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Zane Schmidlen — https://500px.com/zaneschmidlen
@@ -8495,7 +8487,15 @@
   - 1600×1066px, 334 KB, shot 2971 m from the spot
   - Description: 500px provided description: Tide [#water ,#sun ,#ocean ,#waves ,#california ,#sand ,#pacific ,#Beach ,#Santa Cruz ,#Tide]
   - Match: score 12 via coastal-in-title, name:sand, kw:beach+wave+waves+ocean, geo:2971m, w>=1000, landscape
-- **`us-ca-sand-plant-beach-3.jpg`** — “Bird (176662265)” by Zane Schmidlen, Wikimedia Commons, CC BY 3.0
+- **`us-ca-sand-plant-beach-2.jpg`** ✗ **not a coastal photo** — “The Ritz View, Sand Creek Beach, Laguna Niguel, CA 2016 (32287182971)” by inkknife_2000 (7.5 million views +), Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:The_Ritz_View,_Sand_Creek_Beach,_Laguna_Niguel,_CA_2016_(32287182971).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: inkknife_2000 (7.5 million views +) — https://www.flickr.com/people/23155134@N06
+  - Dated: 2016-09-12 12:59:26
+  - 1600×1195px, 969 KB, shot 554303 m from the spot
+  - Description: (1 in a multiple picture album) The Ritz Carlton sits on a prime piece of land high above the Pacific giving clients a great view for their money. The grounds are immaculate and planted with all sorts of sea shore and desert plants.
+  - Match: score 15 via coastal-in-title, name:sand+plant, kw:beach+sea+shore+sand, geo:554303m, w>=1000, landscape
+- **`us-ca-sand-plant-beach-3.jpg`** ✗ **not a coastal photo** — “Bird (176662265)” by Zane Schmidlen, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Bird_(176662265).jpeg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Zane Schmidlen — https://500px.com/zaneschmidlen
@@ -8508,23 +8508,7 @@
 
 `osm:way/551452843` · 34.4089631, -119.8804579
 
-- **`us-ca-sands-beach-1.jpg`** — “American Pipit (?) going after bug (51000752878)” by Channel City Camera Club /Don Green, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:American_Pipit_(%3F)_going_after_bug_(51000752878).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Channel City Camera Club /Don Green — https://www.flickr.com/people/135081788@N03
-  - Dated: Taken on 2 March 2021, 13:56
-  - 1600×1142px, 468 KB, shot 32 m from the spot
-  - Description: Sands Beach, Coal Oil Point Reserve, Goleta, California
-  - Match: score 12 via name:sands, kw:beach+sand+point, geo:32m, w>=1000, landscape
-- **`us-ca-sands-beach-2.jpg`** — “Singing Tern (49888335638)” by Channel City Camera Club /Susan T. Cook, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Singing_Tern_(49888335638).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Channel City Camera Club /Susan T. Cook — https://www.flickr.com/people/135081788@N03
-  - Dated: Taken on 11 May 2020, 08:24
-  - 1600×1142px, 354 KB, shot 191 m from the spot
-  - Description: Royal Terns Thalasseus maximus , Sands Beach, Coal Oil Point Reserve, Goleta, California
-  - Match: score 12 via name:sands, kw:beach+sand+point, geo:191m, w>=1000, landscape
-- **`us-ca-sands-beach-3.jpg`** — “Shelter Cove - Black Sands Beach, CA, USA - panoramio (4)” by MARELBU, Wikimedia Commons, CC BY 3.0
+- **`us-ca-sands-beach-1.jpg`** — “Shelter Cove - Black Sands Beach, CA, USA - panoramio (4)” by MARELBU, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Shelter_Cove_-_Black_Sands_Beach,_CA,_USA_-_panoramio_(4).jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: MARELBU — https://web.archive.org/web/20161014041139/http://www.panoramio.com/user/2353739?with_photo_id=26969916
@@ -8532,12 +8516,28 @@
   - 1600×1200px, 689 KB, shot 728491 m from the spot
   - Description: Shelter Cove - Black Sands Beach, CA, USA
   - Match: score 11 via coastal-in-title, name:sands, kw:beach+sand+cove, geo:728491m, w>=1000, landscape
+- **`us-ca-sands-beach-2.jpg`** ✗ **not a coastal photo** — “American Pipit (?) going after bug (51000752878)” by Channel City Camera Club /Don Green, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:American_Pipit_(%3F)_going_after_bug_(51000752878).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Channel City Camera Club /Don Green — https://www.flickr.com/people/135081788@N03
+  - Dated: Taken on 2 March 2021, 13:56
+  - 1600×1142px, 468 KB, shot 32 m from the spot
+  - Description: Sands Beach, Coal Oil Point Reserve, Goleta, California
+  - Match: score 12 via name:sands, kw:beach+sand+point, geo:32m, w>=1000, landscape
+- **`us-ca-sands-beach-3.jpg`** ✗ **not a coastal photo** — “Singing Tern (49888335638)” by Channel City Camera Club /Susan T. Cook, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Singing_Tern_(49888335638).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Channel City Camera Club /Susan T. Cook — https://www.flickr.com/people/135081788@N03
+  - Dated: Taken on 11 May 2020, 08:24
+  - 1600×1142px, 354 KB, shot 191 m from the spot
+  - Description: Royal Terns Thalasseus maximus , Sands Beach, Coal Oil Point Reserve, Goleta, California
+  - Match: score 12 via name:sands, kw:beach+sand+point, geo:191m, w>=1000, landscape
 
 ## Santa Claus Beach
 
 `osm:way/839964412` · 34.4074362, -119.5506999
 
-- **`us-ca-santa-claus-beach-1.jpg`** — “Hermosa Beach (8259392401)” by InSapphoWeTrust from Los Angeles, California, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-santa-claus-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Hermosa Beach (8259392401)” by InSapphoWeTrust from Los Angeles, California, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hermosa_Beach_(8259392401).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: InSapphoWeTrust from Los Angeles, California, USA — https://www.flickr.com/people/56619626@N05
@@ -8545,7 +8545,7 @@
   - 1600×1105px, 643 KB, shot 121896 m from the spot
   - Description: How the holiday season plays out on the sunny, mild Southern California coastline... For a while I had forgotten what kinds of fun I could have with a telephoto lens. Now I am spending a few moments re-discovering the fun. Like, being able to eavesdrop in on a photographer who is staging a photoshoot for two of her friends in Santa costumes.
   - Match: score 15 via coastal-in-title, name:santa+claus, kw:beach+sea+coast+coastline, geo:121896m, w>=1000, landscape
-- **`us-ca-santa-claus-beach-2.jpg`** — “Surf Santa (11390218485)” by Jukka from HELSINKI, Finland, Wikimedia Commons, CC BY 2.0
+- **`us-ca-santa-claus-beach-2.jpg`** ✗ **not a coastal photo** — “Surf Santa (11390218485)” by Jukka from HELSINKI, Finland, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Surf_Santa_(11390218485).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Jukka from HELSINKI, Finland — https://www.flickr.com/people/97702840@N00
@@ -8553,7 +8553,7 @@
   - 1600×2133px, 917 KB
   - Description: Probably one of the more photographed Santas in Laguna Beach
   - Match: score 14.5 via coastal-in-title, name:santa+claus, kw:beach+surf+surfing, w>=1000
-- **`us-ca-santa-claus-beach-3.jpg`** — “Flickr - brewbooks - Lotus, Seaside Gardens” by brewbooks from near Seattle, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-santa-claus-beach-3.jpg`** ✗ **not a coastal photo** — “Flickr - brewbooks - Lotus, Seaside Gardens” by brewbooks from near Seattle, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Flickr_-_brewbooks_-_Lotus,_Seaside_Gardens.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: brewbooks from near Seattle, USA — https://www.flickr.com/people/93452909@N00
@@ -8574,15 +8574,7 @@
   - 1600×1200px, 1287 KB, shot 2084726 m from the spot
   - Description: Playa Santa Maria, Baja California
   - Match: score 15 via coastal-in-title, name:santa+maria, kw:beach+playa+mar, geo:2084726m, w>=1000, landscape
-- **`us-ca-santa-maria-beach-2.jpg`** — Woodward Fire - Firefighter Walks along the Santa Maria Ridge Fire Line - August 27, 2020 - 3-29 pm (4ef79f93-2cff-4c02-98d1-6515c4af9f3e) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Woodward_Fire_-_Firefighter_Walks_along_the_Santa_Maria_Ridge_Fire_Line_-_August_27,_2020_-_3-29_pm_(4ef79f93-2cff-4c02-98d1-6515c4af9f3e).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: NPS Photo
-  - Dated: Taken on 27 August 2020
-  - 1600×1200px, 1054 KB, shot 2771 m from the spot
-  - Description: A firefighter dressed in a yellow shirt and hard hat and green pants wearing a black backpack walks along a fire line in a forest as smoke rises from vegetation on the left. A firefighter walks along a fire line on the Santa Maria Ridge of August 27, 2020. Keywords: Point Reyes National Seashore; Point Reyes; Fire; Fire Management; Wildfire; Woodward Fire; firefighters; smoke; fire line; Santa Maria Ridge
-  - Match: score 14 via name:santa+maria, kw:sea+shore+mar+point, geo:2771m, w>=1000, landscape
-- **`us-ca-santa-maria-beach-3.jpg`** — “Santa Maria Beach” by No machine-readable author provided. StarbucksFreak assumed (based on copyright claims), Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-santa-maria-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Santa Maria Beach” by No machine-readable author provided. StarbucksFreak assumed (based on copyright claims), Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Santa_Maria_Beach.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: No machine-readable author provided. StarbucksFreak assumed (based on copyright claims) — //commons.wikimedia.org/wiki/User:StarbucksFreak
@@ -8590,6 +8582,14 @@
   - 1600×1202px, 22 KB
   - Description: Beach in Santa María del Mar, Lima, Peru Created by User:StarbucksFreak - Mar. 2005 on March 20th 2005
   - Match: score 14 via coastal-in-title, name:santa+maria, kw:beach+mar, w>=1000, landscape
+- **`us-ca-santa-maria-beach-3.jpg`** ✗ **not a coastal photo** — Woodward Fire - Firefighter Walks along the Santa Maria Ridge Fire Line - August 27, 2020 - 3-29 pm (4ef79f93-2cff-4c02-98d1-6515c4af9f3e) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Woodward_Fire_-_Firefighter_Walks_along_the_Santa_Maria_Ridge_Fire_Line_-_August_27,_2020_-_3-29_pm_(4ef79f93-2cff-4c02-98d1-6515c4af9f3e).jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: NPS Photo
+  - Dated: Taken on 27 August 2020
+  - 1600×1200px, 1054 KB, shot 2771 m from the spot
+  - Description: A firefighter dressed in a yellow shirt and hard hat and green pants wearing a black backpack walks along a fire line in a forest as smoke rises from vegetation on the left. A firefighter walks along a fire line on the Santa Maria Ridge of August 27, 2020. Keywords: Point Reyes National Seashore; Point Reyes; Fire; Fire Management; Wildfire; Woodward Fire; firefighters; smoke; fire line; Santa Maria Ridge
+  - Match: score 14 via name:santa+maria, kw:sea+shore+mar+point, geo:2771m, w>=1000, landscape
 
 ## Santa Maria's Beach
 
@@ -8603,7 +8603,7 @@
   - 1600×1200px, 1287 KB, shot 1945777 m from the spot
   - Description: Playa Santa Maria, Baja California
   - Match: score 15 via coastal-in-title, name:santa+maria, kw:beach+playa+mar, geo:1945777m, w>=1000, landscape
-- **`us-ca-santa-maria-s-beach-2.jpg`** — “Santa Maria Beach” by No machine-readable author provided. StarbucksFreak assumed (based on copyright claims), Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-santa-maria-s-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Santa Maria Beach” by No machine-readable author provided. StarbucksFreak assumed (based on copyright claims), Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Santa_Maria_Beach.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: No machine-readable author provided. StarbucksFreak assumed (based on copyright claims) — //commons.wikimedia.org/wiki/User:StarbucksFreak
@@ -8611,7 +8611,7 @@
   - 1600×1202px, 22 KB
   - Description: Beach in Santa María del Mar, Lima, Peru Created by User:StarbucksFreak - Mar. 2005 on March 20th 2005
   - Match: score 14 via coastal-in-title, name:santa+maria, kw:beach+mar, w>=1000, landscape
-- **`us-ca-santa-maria-s-beach-3.jpg`** — “Beach at Santa Maria, Cape Verde (4334749582)” by IDS.photos from Tiverton, UK, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-santa-maria-s-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Beach at Santa Maria, Cape Verde (4334749582)” by IDS.photos from Tiverton, UK, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Beach_at_Santa_Maria,_Cape_Verde_(4334749582).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: IDS.photos from Tiverton, UK — https://www.flickr.com/people/18557934@N03
@@ -8624,15 +8624,7 @@
 
 `osm:relation/6103417` · 34.0104914, -118.4998736 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-santa-monica-state-beach-1.jpg`** — “Seabird in Santa Monica - panoramio” by Erwin Kreijne, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Seabird_in_Santa_Monica_-_panoramio.jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: Erwin Kreijne — https://web.archive.org/web/20161014210722/http://www.panoramio.com/user/2279530?with_photo_id=33370391
-  - Dated: 18 March 2010 (original upload date)
-  - 1600×1131px, 137 KB, shot 82 m from the spot
-  - Description: Seabird in Santa Monica
-  - Match: score 18 via coastal-in-title, name:santa+monica, kw:beach+sea+sunset, geo:82m, w>=1000, landscape
-- **`us-ca-santa-monica-state-beach-2.jpg`** — Mariasol Restaurant, Santa Monica Pier from the Beach (July 2022) — CC0 (Wikimedia Commons), no attribution required
+- **`us-ca-santa-monica-state-beach-1.jpg`** — Mariasol Restaurant, Santa Monica Pier from the Beach (July 2022) — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Mariasol_Restaurant,_Santa_Monica_Pier_from_the_Beach_(July_2022).jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Benoît Prieur — https://www.wikidata.org/wiki/Q42790984
@@ -8640,7 +8632,15 @@
   - 1600×1200px, 514 KB, shot 50 m from the spot
   - Description: Mariasol Restaurant, Santa Monica Pier from the Beach (July 2022)
   - Match: score 18 via coastal-in-title, name:santa+monica, kw:beach+mar+pier, geo:50m, w>=1000, landscape
-- **`us-ca-santa-monica-state-beach-3.jpg`** — “Hot Dog Stick on Santa Monica Pier - panoramio” by Clotee Pridgen Alloc…, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-santa-monica-state-beach-2.jpg`** ✗ **not a coastal photo** — “Seabird in Santa Monica - panoramio” by Erwin Kreijne, Wikimedia Commons, CC BY 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Seabird_in_Santa_Monica_-_panoramio.jpg
+  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
+  - Author: Erwin Kreijne — https://web.archive.org/web/20161014210722/http://www.panoramio.com/user/2279530?with_photo_id=33370391
+  - Dated: 18 March 2010 (original upload date)
+  - 1600×1131px, 137 KB, shot 82 m from the spot
+  - Description: Seabird in Santa Monica
+  - Match: score 18 via coastal-in-title, name:santa+monica, kw:beach+sea+sunset, geo:82m, w>=1000, landscape
+- **`us-ca-santa-monica-state-beach-3.jpg`** ✗ **not a coastal photo** — “Hot Dog Stick on Santa Monica Pier - panoramio” by Clotee Pridgen Alloc…, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hot_Dog_Stick_on_Santa_Monica_Pier_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Clotee Pridgen Alloc… — https://web.archive.org/web/20161017093633/http://www.panoramio.com/user/4624801?with_photo_id=46926880
@@ -8727,7 +8727,7 @@
   - 1600×500px, 14 KB, shot 1218342 m from the spot
   - Description: Caption on Image: Mouth of Scott Creek. Teahwhit Head in Distance. Mrs. W.F. Taylor. Mora, Wash. 555T Handwritten on verso: 1906-1915. PH Coll 678.5 Mrs. W.F. (Fannie) Taylor photographed in both Clallam and Jefferson counties in Washington. She took pictures of James Island, Cape Flattery, Mount Olympus, Waadah Island and Carroll Island, among other locations. Subjects (LCTGM): Logs Subjects (LCSH): Scott Creek (Jefferson County, Wash.); Teahwhit Head (Wash.); Pacific Ocean; Beaches--Washington (State)--Jefferson County; Capes (Coasts)--Washington (State)--Jefferson County
   - Match: score 15 via coastal-in-title, name:scott+creek, kw:beach+ocean+coast, geo:1218342m, w>=1000, landscape
-- **`us-ca-scott-creek-beach-3.jpg`** — BenHoke-CCFO-CotoniCoastDairies (53863763323) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-scott-creek-beach-3.jpg`** ⚠︎ *context, not the coast itself* — BenHoke-CCFO-CotoniCoastDairies (53863763323) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:BenHoke-CCFO-CotoniCoastDairies_(53863763323).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: blmcalifornia — https://www.flickr.com/people/blmcalifornia/
@@ -8769,7 +8769,7 @@
 
 `osm:way/232399654` · 38.0099237, -122.8447917
 
-- **`us-ca-sculptured-beach-1.jpg`** — Woodward Fire - Firefighter Walks along the Coast Trail - August 31, 2020 - 11-50 am (a5b6f6e1-d643-447e-b980-b829bab00023) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-sculptured-beach-1.jpg`** ✗ **not a coastal photo** — Woodward Fire - Firefighter Walks along the Coast Trail - August 31, 2020 - 11-50 am (a5b6f6e1-d643-447e-b980-b829bab00023) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Woodward_Fire_-_Firefighter_Walks_along_the_Coast_Trail_-_August_31,_2020_-_11-50_am_(a5b6f6e1-d643-447e-b980-b829bab00023).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: NPS Photo
@@ -8777,7 +8777,7 @@
   - 1600×1200px, 873 KB, shot 698 m from the spot
   - Description: A firefighter dressed in a yellow shirt and hard hat and green pants wearing a black backpack walks along a trail that passes through a burned landscape. A firefighter walks along the Coast Trail on August 31, 2020. Keywords: Point Reyes National Seashore; Point Reyes; Fire; Fire Management; Wildfire; Woodward Fire; firefighter; firefighters; Coast Trail; Sculptured Beach
   - Match: score 13 via coastal-in-title, name:sculptured, kw:beach+sea+coast+shore, geo:698m, w>=1000, landscape
-- **`us-ca-sculptured-beach-2.jpg`** — “Coast Campground - panoramio” by Kurt Minard, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-sculptured-beach-2.jpg`** ✗ **not a coastal photo** — “Coast Campground - panoramio” by Kurt Minard, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Coast_Campground_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Kurt Minard — https://web.archive.org/web/20161015054303/http://www.panoramio.com/user/2201121?with_photo_id=37932403
@@ -8785,7 +8785,7 @@
   - 1600×1200px, 1194 KB, shot 1102 m from the spot
   - Description: Coast Campground
   - Match: score 9 via coastal-in-title, kw:sea+coast+shore+point, geo:1102m, w>=1000, landscape
-- **`us-ca-sculptured-beach-3.jpg`** — Woodward Fire - Fire Line east of Coast Campground - September 1, 2020 - 4-12 pm (95870ede-fb62-4d63-8c78-d36e77c42a96) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-sculptured-beach-3.jpg`** ✗ **not a coastal photo** — Woodward Fire - Fire Line east of Coast Campground - September 1, 2020 - 4-12 pm (95870ede-fb62-4d63-8c78-d36e77c42a96) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Woodward_Fire_-_Fire_Line_east_of_Coast_Campground_-_September_1,_2020_-_4-12_pm_(95870ede-fb62-4d63-8c78-d36e77c42a96).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: NPS Photo
@@ -8864,15 +8864,7 @@
   - 1600×1200px, 779 KB, shot 234 m from the spot
   - Description: Reese is my son's dog. We walked 7 miles from Scotts Valley to Seabright State Beach in Santa Cruz, California today. All told we walked over 16 miles today. Reese loves the water, but this was her first time at the beach. It turns out she's afraid of the surf action. I did let her splash around in the San Lorenzo River a little, and we explored the homeless encampment underneath Highway 1 along the river. The highest levels of human coliform bacteria in Santa Cruz County are always found at various points in the San Lorenzo River (including at the mouth of the river). I've always thought this
   - Match: score 14 via coastal-in-title, name:seabright, kw:beach+surf+sea+sand, geo:234m, w>=1000, landscape
-- **`us-ca-seabright-beach-2.jpg`** — “Lighthouse California-06669 - Walton Lighthouse (21730827905)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Lighthouse_California-06669_-_Walton_Lighthouse_(21730827905).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
-  - Dated: 2015-08-10 15:59
-  - 1600×900px, 1990 KB, shot 173 m from the spot
-  - Description: Located at the northern end of Monterey Bay, Santa Cruz Harbour is a haven for fishing craft and vessels. A harbor light, located at the west jetty, has marked its entrance for forty years. The original light was a box light structure which served from 1964 – 1996. Construction started on the new lighthouse in 2001. It stands 12.65 m (41.5 ft) tall above the level of the west jetty, and 18.14 m (59.5 ft) above the mean low water mark. It weighs 350,000 pounds and is built to withstand a quarter million pounds of wave energy. The Walton lighthouse was built with donations including $60,000 from
-  - Match: score 14 via coastal-in-title, name:seabright, kw:beach+wave+sea+mar, geo:173m, w>=1000, landscape
-- **`us-ca-seabright-beach-3.jpg`** — “Walton Lighthouse View (13698625215)” by Henry Zbyszynski from Capitola California, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-seabright-beach-2.jpg`** — “Walton Lighthouse View (13698625215)” by Henry Zbyszynski from Capitola California, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Walton_Lighthouse_View_(13698625215).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Henry Zbyszynski from Capitola California, USA — https://www.flickr.com/people/7891030@N08
@@ -8880,6 +8872,14 @@
   - 1600×899px, 507 KB
   - Description: Walton Lighthouse View
   - Match: score 11 via coastal-in-title, name:seabright, kw:beach+sea+break+lighthouse, w>=1000, landscape
+- **`us-ca-seabright-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Lighthouse California-06669 - Walton Lighthouse (21730827905)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Lighthouse_California-06669_-_Walton_Lighthouse_(21730827905).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
+  - Dated: 2015-08-10 15:59
+  - 1600×900px, 1990 KB, shot 173 m from the spot
+  - Description: Located at the northern end of Monterey Bay, Santa Cruz Harbour is a haven for fishing craft and vessels. A harbor light, located at the west jetty, has marked its entrance for forty years. The original light was a box light structure which served from 1964 – 1996. Construction started on the new lighthouse in 2001. It stands 12.65 m (41.5 ft) tall above the level of the west jetty, and 18.14 m (59.5 ft) above the mean low water mark. It weighs 350,000 pounds and is built to withstand a quarter million pounds of wave energy. The Walton lighthouse was built with donations including $60,000 from
+  - Match: score 14 via coastal-in-title, name:seabright, kw:beach+wave+sea+mar, geo:173m, w>=1000, landscape
 
 ## Seal Beach
 
@@ -8943,23 +8943,7 @@
 
 `osm:way/393312301` · 38.7267547, -123.4830192
 
-- **`us-ca-seal-rookery-1.jpg`** — “Piedras Blancas Elephant Seal rookery, Jan. 2013” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Piedras_Blancas_Elephant_Seal_rookery,_Jan._2013.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Mike Baird from Morro Bay, USA — https://www.flickr.com/people/72825507@N00
-  - Dated: 2013-01-26 08:20
-  - 1600×1067px, 428 KB
-  - Description: Northern Elephant Seals (Mirounga angustirostris) at sunrise early light at Piedras Blancas, San Simeon, CA . 26 Jan 2013. Looking south from the main observation area and boardwalk. The Piedras Blancas rookery, on Highway 1 seven miles north of San Simeon on the California Central Coast, is home to about 17,000 animals. Because the tide was very high at ~ 5.5’ this morning, the elephant seals were especially crowded into this narrow swath of beach. (10 images in this set) Photographing the Northern Elephant Seals (M. angustirostris) at Sunrise. Sat, Jan. 26, 2013, on a slightly foggy day that
-  - Match: score 15 via coastal-in-title, name:seal+rookery, kw:beach+sea+coast+boardwalk, w>=1000, landscape
-- **`us-ca-seal-rookery-2.jpg`** — “Carpinteria Harbor Seal Preserve” by Chuy1530, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Carpinteria_Harbor_Seal_Preserve.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Chuy1530 — //commons.wikimedia.org/wiki/User:Chuy1530
-  - Dated: 2015-01-04 01:36:18
-  - 1600×1067px, 892 KB
-  - Description: Picture from the observation cliff of the rookery at the Carpinteria Harbor Seal preserve
-  - Match: score 15 via coastal-in-title, name:seal+rookery, kw:beach+sea+cliff, w>=1000, landscape
-- **`us-ca-seal-rookery-3.jpg`** — “Crowded beach.... (36629968304)” by Peter D. Tillman from USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-seal-rookery-1.jpg`** — “Crowded beach.... (36629968304)” by Peter D. Tillman from USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Crowded_beach...._(36629968304).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Peter D. Tillman from USA — https://www.flickr.com/people/29050464@N06
@@ -8967,6 +8951,22 @@
   - 1600×914px, 458 KB
   - Description: -- just north of Piedras Blanca light station. In season this is part of the E-seal rookery and closed (I think). Today, I had it to myself.
   - Match: score 14 via coastal-in-title, name:seal+rookery, kw:beach+sea, w>=1000, landscape
+- **`us-ca-seal-rookery-2.jpg`** ⚠︎ *context, not the coast itself* — “Piedras Blancas Elephant Seal rookery, Jan. 2013” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Piedras_Blancas_Elephant_Seal_rookery,_Jan._2013.jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Mike Baird from Morro Bay, USA — https://www.flickr.com/people/72825507@N00
+  - Dated: 2013-01-26 08:20
+  - 1600×1067px, 428 KB
+  - Description: Northern Elephant Seals (Mirounga angustirostris) at sunrise early light at Piedras Blancas, San Simeon, CA . 26 Jan 2013. Looking south from the main observation area and boardwalk. The Piedras Blancas rookery, on Highway 1 seven miles north of San Simeon on the California Central Coast, is home to about 17,000 animals. Because the tide was very high at ~ 5.5’ this morning, the elephant seals were especially crowded into this narrow swath of beach. (10 images in this set) Photographing the Northern Elephant Seals (M. angustirostris) at Sunrise. Sat, Jan. 26, 2013, on a slightly foggy day that
+  - Match: score 15 via coastal-in-title, name:seal+rookery, kw:beach+sea+coast+boardwalk, w>=1000, landscape
+- **`us-ca-seal-rookery-3.jpg`** ⚠︎ *context, not the coast itself* — “Carpinteria Harbor Seal Preserve” by Chuy1530, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Carpinteria_Harbor_Seal_Preserve.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Chuy1530 — //commons.wikimedia.org/wiki/User:Chuy1530
+  - Dated: 2015-01-04 01:36:18
+  - 1600×1067px, 892 KB
+  - Description: Picture from the observation cliff of the rookery at the Carpinteria Harbor Seal preserve
+  - Match: score 15 via coastal-in-title, name:seal+rookery, kw:beach+sea+cliff, w>=1000, landscape
 
 ## Seaside Beach
 
@@ -9030,15 +9030,7 @@
 
 `osm:way/455016581` · 38.0084827, -122.8415665
 
-- **`us-ca-secret-beach-1.jpg`** — “Three Arch Bay Photo Taken by pilot Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Three_Arch_Bay_Photo_Taken_by_pilot_Don_Ramey_Logan.jpg
-  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
-  - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
-  - Dated: 2015-01-03 14:11:58
-  - 1600×1200px, 898 KB, shot 681069 m from the spot
-  - Description: Three Arch Bay Photo Taken by pilot Don Ramey Logan Three Arch Bay in Laguna was named after the shape seen here of the arching of the rocks to form the Three Arches this exclusive area is named after. Few people even know these pools are here, located in South Laguna Beach the Three Arch Bay pools are a local secret treasure. The original pool square pool was built in 1929 by the famous director and producer Edward H. Griffith, seen in the center of the photo. This entire community was sold, in 1926 for $135,000.00. Today the original Edward H. Griffith, home featuring the original pool is on
-  - Match: score 11 via coastal-in-title, name:secret, kw:beach+bay+rocks, geo:681069m, w>=1000, landscape
-- **`us-ca-secret-beach-2.jpg`** — “New "secret" beach, near Pt Sierra Nevada (50145913833)” by Peter D. Tillman from USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-secret-beach-1.jpg`** — “New "secret" beach, near Pt Sierra Nevada (50145913833)” by Peter D. Tillman from USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:New_%22secret%22_beach,_near_Pt_Sierra_Nevada_(50145913833).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Peter D. Tillman from USA — https://www.flickr.com/people/29050464@N06
@@ -9046,7 +9038,15 @@
   - 1600×1145px, 896 KB
   - Description: Well, it's new to us, anyway, and footprint-free yesterday midday. Nice one. I'll let you guys work out the access. Hint: dunes.
   - Match: score 11 via coastal-in-title, name:secret, kw:beach+coast+dune, w>=1000, landscape
-- **`us-ca-secret-beach-3.jpg`** — Woodward Fire - Firefighter Walks along the Coast Trail - August 31, 2020 - 11-50 am (a5b6f6e1-d643-447e-b980-b829bab00023) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-secret-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Three Arch Bay Photo Taken by pilot Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Three_Arch_Bay_Photo_Taken_by_pilot_Don_Ramey_Logan.jpg
+  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
+  - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
+  - Dated: 2015-01-03 14:11:58
+  - 1600×1200px, 898 KB, shot 681069 m from the spot
+  - Description: Three Arch Bay Photo Taken by pilot Don Ramey Logan Three Arch Bay in Laguna was named after the shape seen here of the arching of the rocks to form the Three Arches this exclusive area is named after. Few people even know these pools are here, located in South Laguna Beach the Three Arch Bay pools are a local secret treasure. The original pool square pool was built in 1929 by the famous director and producer Edward H. Griffith, seen in the center of the photo. This entire community was sold, in 1926 for $135,000.00. Today the original Edward H. Griffith, home featuring the original pool is on
+  - Match: score 11 via coastal-in-title, name:secret, kw:beach+bay+rocks, geo:681069m, w>=1000, landscape
+- **`us-ca-secret-beach-3.jpg`** ✗ **not a coastal photo** — Woodward Fire - Firefighter Walks along the Coast Trail - August 31, 2020 - 11-50 am (a5b6f6e1-d643-447e-b980-b829bab00023) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Woodward_Fire_-_Firefighter_Walks_along_the_Coast_Trail_-_August_31,_2020_-_11-50_am_(a5b6f6e1-d643-447e-b980-b829bab00023).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: NPS Photo
@@ -9191,7 +9191,7 @@
   - 1600×1000px, 401 KB, shot 469786 m from the spot
   - Description: 500px provided description: Taken from Shelter Cove, looking West towards Shell Beach, before sunrise. [#landscape ,#ocean ,#cityscape ,#rocks ,#long exposure ,#cliffs ,#blue hour ,#shell beach ,#pismo]
   - Match: score 11 via coastal-in-title, name:shell, kw:beach+ocean+coast+cove, geo:469786m, w>=1000, landscape
-- **`us-ca-shell-beach-3.jpg`** — Shell beach. - Flickr - Bernard Spragg — CC0 (Wikimedia Commons), no attribution required
+- **`us-ca-shell-beach-3.jpg`** ✗ **not a coastal photo** — Shell beach. - Flickr - Bernard Spragg — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Shell_beach._-_Flickr_-_Bernard_Spragg.jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Bernard Spragg. NZ from Christchurch, New Zealand — https://www.flickr.com/people/88123769@N02
@@ -9220,7 +9220,7 @@
   - 1600×1000px, 401 KB, shot 423340 m from the spot
   - Description: 500px provided description: Taken from Shelter Cove, looking West towards Shell Beach, before sunrise. [#landscape ,#ocean ,#cityscape ,#rocks ,#long exposure ,#cliffs ,#blue hour ,#shell beach ,#pismo]
   - Match: score 11 via coastal-in-title, name:shell, kw:beach+ocean+coast+cove, geo:423340m, w>=1000, landscape
-- **`us-ca-shell-beach-899297-3.jpg`** — Shell beach. - Flickr - Bernard Spragg — CC0 (Wikimedia Commons), no attribution required
+- **`us-ca-shell-beach-899297-3.jpg`** ✗ **not a coastal photo** — Shell beach. - Flickr - Bernard Spragg — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Shell_beach._-_Flickr_-_Bernard_Spragg.jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Bernard Spragg. NZ from Christchurch, New Zealand — https://www.flickr.com/people/88123769@N02
@@ -9233,7 +9233,7 @@
 
 `osm:node/8357030666` · 33.2961491, -117.4700217
 
-- **`us-ca-shipwreck-shore-1.jpg`** — Ship-to-Shore Maneuver Exploration and Experimentation Advanced Naval Technology Exercise (S2ME2 ANTX 2017) 170426-N-PO203-312 (33484649163) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-shipwreck-shore-1.jpg`** ✗ **not a coastal photo** — Ship-to-Shore Maneuver Exploration and Experimentation Advanced Naval Technology Exercise (S2ME2 ANTX 2017) 170426-N-PO203-312 (33484649163) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Ship-to-Shore_Maneuver_Exploration_and_Experimentation_Advanced_Naval_Technology_Exercise_(S2ME2_ANTX_2017)_170426-N-PO203-312_(33484649163).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Office of Naval Research from Arlington, United States — https://www.flickr.com/people/90628118@N06
@@ -9241,7 +9241,7 @@
   - 1600×1065px, 381 KB, shot 308 m from the spot
   - Description: Lee Mastroianni, left, program officer at the Office of Naval Research (ONR), talks to Dr. David E. Walker, director, ONR Office of Technology and ONR Command Master Chief Matt Matteson, about the prototype LOCUST (Low-Cost Unmanned Aerial Vehicle Swarming Technology) tube-launched UAVs during the Ship-to-Shore Maneuver Exploration and Experimentation (S2ME2) Advanced Naval Technology Exercise (ANTX) 2017 at Marine Corps Base Camp Pendleton, California. S2ME2 ANTX brings industry, academia, and the Naval Research Development Establishment (NR&DE) together to demonstrate emerging technology and
   - Match: score 14 via coastal-in-title, name:shore, kw:sea+shore+mar, geo:308m, w>=1000, landscape
-- **`us-ca-shipwreck-shore-2.jpg`** — “170426-N-PO203-111 (33459934724)” by Office of Naval Research from Arlington, United States, Wikimedia Commons, CC BY 2.0
+- **`us-ca-shipwreck-shore-2.jpg`** ✗ **not a coastal photo** — “170426-N-PO203-111 (33459934724)” by Office of Naval Research from Arlington, United States, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:170426-N-PO203-111_(33459934724).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Office of Naval Research from Arlington, United States — https://www.flickr.com/people/90628118@N06
@@ -9249,7 +9249,7 @@
   - 1600×1065px, 334 KB, shot 294 m from the spot
   - Description: Heidi, Buck, Director, Battlespace Exploitation of Mixed Reality (BEMR) Lab at SPAWAR Systems Center, Pacific, gives a demo of the system during the Ship-to-Shore Maneuver Exploration and Experimentation (S2ME2) Advanced Naval Technology Exercise (ANTX) 2017 at Marine Corps Base Camp Pendleton, California. S2ME2 ANTX brings industry, academia, and the Naval Research Development Establishment (NR&DE) together to demonstrate emerging technology and engineering innovations that address priority Navy and Marine Corps missions. (U.S. Navy photo by John F. Williams/Released)
   - Match: score 12 via name:shore, kw:sea+shore+mar, geo:294m, w>=1000, landscape
-- **`us-ca-shipwreck-shore-3.jpg`** — “170426-N-PO203-149 (33491461283)” by Office of Naval Research from Arlington, United States, Wikimedia Commons, CC BY 2.0
+- **`us-ca-shipwreck-shore-3.jpg`** ✗ **not a coastal photo** — “170426-N-PO203-149 (33491461283)” by Office of Naval Research from Arlington, United States, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:170426-N-PO203-149_(33491461283).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Office of Naval Research from Arlington, United States — https://www.flickr.com/people/90628118@N06
@@ -9262,23 +9262,7 @@
 
 `osm:way/37783715` · 34.1511106, -119.2204168 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-silver-strand-state-beach-1.jpg`** — Andrea Dransfield, a BeachCOMBERS volunteer, examines a California brown pelican found on Silver Strand beach during her monthly survey. (35549064043) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Andrea_Dransfield,_a_BeachCOMBERS_volunteer,_examines_a_California_brown_pelican_found_on_Silver_Strand_beach_during_her_monthly_survey._(35549064043).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Pacific Southwest Region USFWS from Sacramento, US — https://www.flickr.com/people/54430347@N04
-  - Dated: 2017-06-03 13:02
-  - 1600×1143px, 939 KB, shot 169 m from the spot
-  - Description: OXNARD, Calif. (June 3, 2017) - Andrea Dransfield, a BeachCOMBERS volunteer, examines a California brown pelican found on Silver Strand beach during her monthly survey. BeachCOMBERS trains volunteers to record data about deceased marine mammals or birds along a shoreline, contributing to long-term information about the health of a marine ecosystem. (Photo by Jason Kraus.)
-  - Match: score 18 via coastal-in-title, name:silver+strand, kw:beach+shore+shoreline+mar, geo:169m, w>=1000, landscape
-- **`us-ca-silver-strand-state-beach-2.jpg`** — Andrea Dransfield, a BeachCOMBERS volunteer, uses a bill plate to identify a bird found on Silver Strand beach during her monthly survey. (35960707160) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Andrea_Dransfield,_a_BeachCOMBERS_volunteer,_uses_a_bill_plate_to_identify_a_bird_found_on_Silver_Strand_beach_during_her_monthly_survey._(35960707160).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Pacific Southwest Region USFWS from Sacramento, US — https://www.flickr.com/people/54430347@N04
-  - Dated: 2017-06-03 12:54
-  - 1600×2241px, 2571 KB, shot 219 m from the spot
-  - Description: OXNARD, Calif. (June 3, 2017) - Andrea Dransfield, a BeachCOMBERS volunteer, uses a bill plate to identify a bird found on Silver Strand beach during her monthly survey. BeachCOMBERS trains volunteers to record data about deceased marine mammals or birds along a shoreline, contributing to long-term information about the health of a marine ecosystem. (Photo by Jason Kraus.)
-  - Match: score 17.5 via coastal-in-title, name:silver+strand, kw:beach+shore+shoreline+mar, geo:219m, w>=1000
-- **`us-ca-silver-strand-state-beach-3.jpg`** — Andrea Dransfield, a BeachCOMBERS volunteer, surveys Silver Strand beach. (35521962514) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-silver-strand-state-beach-1.jpg`** — Andrea Dransfield, a BeachCOMBERS volunteer, surveys Silver Strand beach. (35521962514) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Andrea_Dransfield,_a_BeachCOMBERS_volunteer,_surveys_Silver_Strand_beach._(35521962514).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Pacific Southwest Region USFWS from Sacramento, US — https://www.flickr.com/people/54430347@N04
@@ -9286,6 +9270,22 @@
   - 1600×1143px, 413 KB, shot 411 m from the spot
   - Description: OXNARD, Calif. (June 3, 2017) - Andrea Dransfield, a BeachCOMBERS volunteer, surveys Silver Strand beach. BeachCOMBERS trains volunteers to record data about deceased marine mammals or birds along a shoreline, contributing to long-term information about the health of a marine ecosystem. (Photo by Jason Kraus.)
   - Match: score 17 via coastal-in-title, name:silver+strand, kw:beach+shore+shoreline+mar, geo:411m, w>=1000, landscape
+- **`us-ca-silver-strand-state-beach-2.jpg`** ⚠︎ *context, not the coast itself* — Andrea Dransfield, a BeachCOMBERS volunteer, examines a California brown pelican found on Silver Strand beach during her monthly survey. (35549064043) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Andrea_Dransfield,_a_BeachCOMBERS_volunteer,_examines_a_California_brown_pelican_found_on_Silver_Strand_beach_during_her_monthly_survey._(35549064043).jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: Pacific Southwest Region USFWS from Sacramento, US — https://www.flickr.com/people/54430347@N04
+  - Dated: 2017-06-03 13:02
+  - 1600×1143px, 939 KB, shot 169 m from the spot
+  - Description: OXNARD, Calif. (June 3, 2017) - Andrea Dransfield, a BeachCOMBERS volunteer, examines a California brown pelican found on Silver Strand beach during her monthly survey. BeachCOMBERS trains volunteers to record data about deceased marine mammals or birds along a shoreline, contributing to long-term information about the health of a marine ecosystem. (Photo by Jason Kraus.)
+  - Match: score 18 via coastal-in-title, name:silver+strand, kw:beach+shore+shoreline+mar, geo:169m, w>=1000, landscape
+- **`us-ca-silver-strand-state-beach-3.jpg`** ✗ **not a coastal photo** — Andrea Dransfield, a BeachCOMBERS volunteer, uses a bill plate to identify a bird found on Silver Strand beach during her monthly survey. (35960707160) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Andrea_Dransfield,_a_BeachCOMBERS_volunteer,_uses_a_bill_plate_to_identify_a_bird_found_on_Silver_Strand_beach_during_her_monthly_survey._(35960707160).jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: Pacific Southwest Region USFWS from Sacramento, US — https://www.flickr.com/people/54430347@N04
+  - Dated: 2017-06-03 12:54
+  - 1600×2241px, 2571 KB, shot 219 m from the spot
+  - Description: OXNARD, Calif. (June 3, 2017) - Andrea Dransfield, a BeachCOMBERS volunteer, uses a bill plate to identify a bird found on Silver Strand beach during her monthly survey. BeachCOMBERS trains volunteers to record data about deceased marine mammals or birds along a shoreline, contributing to long-term information about the health of a marine ecosystem. (Photo by Jason Kraus.)
+  - Match: score 17.5 via coastal-in-title, name:silver+strand, kw:beach+shore+shoreline+mar, geo:219m, w>=1000
 
 ## Somoa Beach
 
@@ -9299,7 +9299,7 @@
   - 1600×1000px, 907 KB, shot 352 m from the spot
   - Description: Samoa Beach on the ocean side of the Samoa Peninsula near Eureka, California
   - Match: score 9 via coastal-in-title, kw:beach+ocean, geo:352m, w>=1000, landscape
-- **`us-ca-somoa-beach-2.jpg`** — Humboldt Bay Maritime Museum — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-somoa-beach-2.jpg`** ✗ **not a coastal photo** — Humboldt Bay Maritime Museum — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Humboldt_Bay_Maritime_Museum.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Ellin Beltz — //commons.wikimedia.org/wiki/User:Ellin_Beltz
@@ -9307,7 +9307,7 @@
   - 1600×800px, 487 KB, shot 780 m from the spot
   - Description: Humboldt Bay Maritime Museum, Samoa, California.
   - Match: score 8 via coastal-in-title, kw:mar+bay, geo:780m, w>=1000, landscape
-- **`us-ca-somoa-beach-3.jpg`** — “Humboldt Bay Maritime Museum in Samoa, California” by Frank Schulenburg, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-somoa-beach-3.jpg`** ✗ **not a coastal photo** — “Humboldt Bay Maritime Museum in Samoa, California” by Frank Schulenburg, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Humboldt_Bay_Maritime_Museum_in_Samoa,_California.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Frank Schulenburg — //commons.wikimedia.org/wiki/User:Frank_Schulenburg
@@ -9357,7 +9357,7 @@
   - 1600×760px, 610 KB, shot 2096 m from the spot
   - Description: Creamery Bay off Drakes Estero, Point Reyes National Seashore, CA, USA
   - Match: score 8 via coastal-in-title, kw:sea+coast+shore+mar, geo:2096m, w>=1000, landscape
-- **`us-ca-south-beach-178176-2.jpg`** — “Dry grass, deep green grass, Point Reyes, Marin county sea shore DSC 0091 (47938679803)” by Bill Abbott, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-south-beach-178176-2.jpg`** ✗ **not a coastal photo** — “Dry grass, deep green grass, Point Reyes, Marin county sea shore DSC 0091 (47938679803)” by Bill Abbott, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Dry_grass,_deep_green_grass,_Point_Reyes,_Marin_county_sea_shore_DSC_0091_(47938679803).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Bill Abbott — https://www.flickr.com/people/9998127@N06
@@ -9365,7 +9365,7 @@
   - 1600×1066px, 840 KB, shot 1741 m from the spot
   - Description: Dry grass, deep green grass, Point Reyes, Marin county sea shore DSC_0091
   - Match: score 8 via coastal-in-title, kw:sea+shore+mar+point, geo:1741m, w>=1000, landscape
-- **`us-ca-south-beach-178176-3.jpg`** — Elk Grazing, Point Reyes National Seashore (23105761300) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-south-beach-178176-3.jpg`** ✗ **not a coastal photo** — Elk Grazing, Point Reyes National Seashore (23105761300) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Elk_Grazing,_Point_Reyes_National_Seashore_(23105761300).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: moonjazz from Palm Desert, United States — https://www.flickr.com/people/8398907@N02
@@ -9392,7 +9392,7 @@
   - Author: Arzun (Commons user)
   - 1600×583px, 230 KB
   - Match: score 11 via coastal-in-title, name:day, kw:beach+sea+shore+point, w>=1000, landscape
-- **`us-ca-south-day-use-beach-3.jpg`** — “Sunny Day, San Francisco, 20 stores up, Beale and Mission looking onto South Beach, California, USA” by Wonderlane, Wikimedia Commons, CC BY 2.0
+- **`us-ca-south-day-use-beach-3.jpg`** ✗ **not a coastal photo** — “Sunny Day, San Francisco, 20 stores up, Beale and Mission looking onto South Beach, California, USA” by Wonderlane, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sunny_Day,_San_Francisco,_20_stores_up,_Beale_and_Mission_looking_onto_South_Beach,_California,_USA.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Wonderlane — https://www.flickr.com/people/71401718@N00
@@ -9405,15 +9405,7 @@
 
 `osm:way/31959542` · 33.1710126, -117.3642132
 
-- **`us-ca-south-oceanside-beach-1.jpg`** — “Pier, Oceanside, California (15038692804)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Pier,_Oceanside,_California_(15038692804).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
-  - Dated: 2014-10-28 20:16
-  - 1600×1200px, 245 KB, shot 3249 m from the spot
-  - Description: Oceanside is a coastal city located on California's South Coast. It is the third-largest city in San Diego County, California. The city had a population of 183,095 at the 2010 census. Together with Carlsbad and Vista, it forms a tri-city area. Oceanside is located just south of Marine Corps Base Camp Pendleton. Originally inhabited by Native Americans, the first European explorers arrived in 1769. Spanish missionaries under Father Junipero Serra founded Mission San Luis Rey de Francia on a former site of a Luiseño Indian village on the banks of the San Luis Rey River. In the early 19th century
-  - Match: score 11 via coastal-in-title, name:oceanside, kw:ocean+coast+coastal+mar, geo:3249m, w>=1000, landscape
-- **`us-ca-south-oceanside-beach-2.jpg`** — United States and South Korean forces participate in Combined Joint Logistics Over the Shore (CJLOTS) military exercise on the Korean Peninsula 130422-N-LO372-061 — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-south-oceanside-beach-1.jpg`** ⚠︎ *context, not the coast itself* — United States and South Korean forces participate in Combined Joint Logistics Over the Shore (CJLOTS) military exercise on the Korean Peninsula 130422-N-LO372-061 — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:United_States_and_South_Korean_forces_participate_in_Combined_Joint_Logistics_Over_the_Shore_(CJLOTS)_military_exercise_on_the_Korean_Peninsula_130422-N-LO372-061.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Petty Officer 1st Class Elisandro Diaz
@@ -9421,7 +9413,7 @@
   - 1600×1065px, 541 KB
   - Description: Staff Sgt. Anthony E. Garcia, tank commander and Section Leader, San Bernardino, Ca., left, Cpl. Allan Valdez, gunner, Oceanside, Ca., and Cpl. Daniel Pearson, loader, San Diego, assigned to Marine Corps Alpha Company 4th Tanks Battalion based in Camp Pendleton, Calif., participate in Combined Joint Logistics Over the Shore (CJLOTS) military exercise underway on the Korean Peninsula April 18-28. The naval exercise aims to improve logistics interoperability, communication and cooperation between the United States and South Korea. (U.S. Navy photo by Mass Communication Specialist First Class Eli
   - Match: score 11 via coastal-in-title, name:oceanside, kw:beach+ocean+shore+mar, w>=1000, landscape
-- **`us-ca-south-oceanside-beach-3.jpg`** — “Oceanside Lifeguard with Rescue Gear (33702985453)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-south-oceanside-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Oceanside Lifeguard with Rescue Gear (33702985453)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Oceanside_Lifeguard_with_Rescue_Gear_(33702985453).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Chris Hunkeler from Carlsbad, California, USA — https://www.flickr.com/people/14913305@N00
@@ -9429,6 +9421,14 @@
   - 1600×2000px, 694 KB
   - Description: Oceanside lifeguard with rescue board, rescue tube and fins. Lifeguards protected swimmers during the annual Spring Classic Swim that was held May 21, 2016 at South Oceanside Harbor Beach. ZHP_3751_rot2.3_cr
   - Match: score 9.5 via coastal-in-title, name:oceanside, kw:beach+ocean, w>=1000
+- **`us-ca-south-oceanside-beach-3.jpg`** ✗ **not a coastal photo** — “Pier, Oceanside, California (15038692804)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Pier,_Oceanside,_California_(15038692804).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
+  - Dated: 2014-10-28 20:16
+  - 1600×1200px, 245 KB, shot 3249 m from the spot
+  - Description: Oceanside is a coastal city located on California's South Coast. It is the third-largest city in San Diego County, California. The city had a population of 183,095 at the 2010 census. Together with Carlsbad and Vista, it forms a tri-city area. Oceanside is located just south of Marine Corps Base Camp Pendleton. Originally inhabited by Native Americans, the first European explorers arrived in 1769. Spanish missionaries under Father Junipero Serra founded Mission San Luis Rey de Francia on a former site of a Luiseño Indian village on the banks of the San Luis Rey River. In the early 19th century
+  - Match: score 11 via coastal-in-title, name:oceanside, kw:ocean+coast+coastal+mar, geo:3249m, w>=1000, landscape
 
 ## South Ponto
 
@@ -9471,7 +9471,7 @@
   - 1600×636px, 343 KB, shot 68 m from the spot
   - Description: Panorama from the south end of Rodeo Beach in August 2017
   - Match: score 14 via coastal-in-title, name:rodeo, kw:beach+sea+mar+cliff, geo:68m, w>=1000, landscape
-- **`us-ca-south-rodeo-beach-2.jpg`** — “Sea Plantain (Plantago maritima) (7444991260)” by Franco Folini from San Francisco, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-south-rodeo-beach-2.jpg`** ✗ **not a coastal photo** — “Sea Plantain (Plantago maritima) (7444991260)” by Franco Folini from San Francisco, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sea_Plantain_(Plantago_maritima)_(7444991260).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Franco Folini from San Francisco, USA — https://www.flickr.com/people/78425154@N00
@@ -9479,7 +9479,7 @@
   - 1600×2133px, 1423 KB, shot 78 m from the spot
   - Description: Sea Plantain (Plantago maritima) Rodeo Cove Marin County, CA
   - Match: score 13.5 via coastal-in-title, name:rodeo, kw:sea+mar+cove, geo:78m, w>=1000
-- **`us-ca-south-rodeo-beach-3.jpg`** — “Killdeer at Rodeo Beach” by Frank Schulenburg, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-south-rodeo-beach-3.jpg`** ✗ **not a coastal photo** — “Killdeer at Rodeo Beach” by Frank Schulenburg, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Killdeer_at_Rodeo_Beach.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Frank Schulenburg — https://www.wikidata.org/wiki/Q57175365
@@ -9550,15 +9550,7 @@
 
 `osm:way/1082454799` · 34.0474674, -118.9508832 · beach type: **gravel** (OpenStreetMap surface=gravel)
 
-- **`us-ca-staircase-beach-1.jpg`** — “Strange Beach Artifact (546922)” by Steve Jurvetson from Menlo Park, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Strange_Beach_Artifact_(546922).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Steve Jurvetson from Menlo Park, USA — https://www.flickr.com/people/44124348109@N01
-  - Dated: 2003-12-27 17:31
-  - 1600×2133px, 197 KB
-  - Description: Victoria Beach tower, Laguna Beach CA. Interior is spiral staircase, built in 1920's
-  - Match: score 10.5 via coastal-in-title, name:staircase, kw:beach+wave+waves+ocean, w>=1000
-- **`us-ca-staircase-beach-2.jpg`** — Ocean bay (Unsplash) — CC0 (Wikimedia Commons), no attribution required
+- **`us-ca-staircase-beach-1.jpg`** — Ocean bay (Unsplash) — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Ocean_bay_(Unsplash).jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Cam Adams camadams — https://unsplash.com/@camadams
@@ -9566,7 +9558,15 @@
   - 1600×1064px, 467 KB, shot 993 m from the spot
   - Description: Leo Carrillo State Beach, United States
   - Match: score 9 via coastal-in-title, kw:beach+ocean+bay, geo:993m, w>=1000, landscape
-- **`us-ca-staircase-beach-3.jpg`** — Long Beach Station LACMTA — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-staircase-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Strange Beach Artifact (546922)” by Steve Jurvetson from Menlo Park, USA, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Strange_Beach_Artifact_(546922).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Steve Jurvetson from Menlo Park, USA — https://www.flickr.com/people/44124348109@N01
+  - Dated: 2003-12-27 17:31
+  - 1600×2133px, 197 KB
+  - Description: Victoria Beach tower, Laguna Beach CA. Interior is spiral staircase, built in 1920's
+  - Match: score 10.5 via coastal-in-title, name:staircase, kw:beach+wave+waves+ocean, w>=1000
+- **`us-ca-staircase-beach-3.jpg`** ✗ **not a coastal photo** — Long Beach Station LACMTA — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Station_LACMTA.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: GTD Aquitaine — //commons.wikimedia.org/w/index.php?title=User:GTD_Aquitaine&amp;action=edit&amp;redlink=1
@@ -9608,7 +9608,7 @@
 
 `osm:relation/8845887` · 38.7157338, -123.4600077
 
-- **`us-ca-stengel-beach-1.jpg`** — “Knipp and Stengel Ranch Barn, CA 1, Sea Ranch, CA 7-5-2010 7-25-07 PM” by Sanfranman59, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-stengel-beach-1.jpg`** ✗ **not a coastal photo** — “Knipp and Stengel Ranch Barn, CA 1, Sea Ranch, CA 7-5-2010 7-25-07 PM” by Sanfranman59, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Knipp_and_Stengel_Ranch_Barn,_CA_1,_Sea_Ranch,_CA_7-5-2010_7-25-07_PM.JPG
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Sanfranman59
@@ -9616,7 +9616,7 @@
   - 1600×1003px, 513 KB, shot 348 m from the spot
   - Description: National Register of Historic Places listings in Sonoma County, California . Knipp and Stengel Ranch Barn, CA 1, Sea Ranch, California
   - Match: score 11.5 via coastal-in-title, name:stengel, kw:sea, geo:348m, w>=1000, landscape
-- **`us-ca-stengel-beach-2.jpg`** — “Knipp and Stengel Ranch Barn-4” by Almonroth, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-stengel-beach-2.jpg`** ✗ **not a coastal photo** — “Knipp and Stengel Ranch Barn-4” by Almonroth, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Knipp_and_Stengel_Ranch_Barn-4.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Almonroth — //commons.wikimedia.org/wiki/User:Almonroth
@@ -9624,7 +9624,7 @@
   - 1600×1067px, 854 KB, shot 459 m from the spot
   - Description: Knipp and Stengel Ranch Barn
   - Match: score 8.5 via name:stengel, kw:sea, geo:459m, w>=1000, landscape
-- **`us-ca-stengel-beach-3.jpg`** — “Knipp and Stengel Ranch Barn-2” by Almonroth, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-stengel-beach-3.jpg`** ✗ **not a coastal photo** — “Knipp and Stengel Ranch Barn-2” by Almonroth, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Knipp_and_Stengel_Ranch_Barn-2.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Almonroth — //commons.wikimedia.org/wiki/User:Almonroth
@@ -9637,23 +9637,7 @@
 
 `osm:relation/5255971` · 37.8951158, -122.6395156
 
-- **`us-ca-stinson-beach-1.jpg`** — Stinson Beach RPPC 1916 — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Stinson_Beach_RPPC_1916.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: this copy appeared in "History watch: Plan derailed," Marin Independent Journal, 6 September 2010
-  - Dated: 1916
-  - 1600×1149px, 58 KB, shot 250 m from the spot
-  - Description: Postcard showing a photgraph of Stinson Beach , in 1916, the year that the name was changed from Willow Camp and the first Post Office opened.
-  - Match: score 13 via coastal-in-title, name:stinson, kw:beach+mar, geo:250m, w>=1000, landscape
-- **`us-ca-stinson-beach-2.jpg`** — “Dipsea Race 2013-60” by Frank Schulenburg, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Dipsea_Race_2013-60.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Frank Schulenburg — //commons.wikimedia.org/wiki/User:Frank_Schulenburg
-  - Dated: 2013-06-09 09:24:57
-  - 1600×2133px, 1198 KB, shot 146 m from the spot
-  - Description: 103rd annual Dipsea Race from Mill Valley to Stinson Beach. Wikipedia photographer Frank Schulenburg at the finish line.
-  - Match: score 12.5 via coastal-in-title, name:stinson, kw:beach+sea, geo:146m, w>=1000
-- **`us-ca-stinson-beach-3.jpg`** — “2003 Stinson Sunset” by Brendan Landis, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-stinson-beach-1.jpg`** — “2003 Stinson Sunset” by Brendan Landis, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:2003_Stinson_Sunset.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Brendan Landis
@@ -9661,28 +9645,28 @@
   - 1600×1208px, 440 KB, shot 152 m from the spot
   - Description: Stinson Beach
   - Match: score 12 via name:stinson, kw:beach+sea+seascape+sunset, geo:152m, w>=1000, landscape
+- **`us-ca-stinson-beach-2.jpg`** ✗ **not a coastal photo** — Stinson Beach RPPC 1916 — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Stinson_Beach_RPPC_1916.jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: this copy appeared in "History watch: Plan derailed," Marin Independent Journal, 6 September 2010
+  - Dated: 1916
+  - 1600×1149px, 58 KB, shot 250 m from the spot
+  - Description: Postcard showing a photgraph of Stinson Beach , in 1916, the year that the name was changed from Willow Camp and the first Post Office opened.
+  - Match: score 13 via coastal-in-title, name:stinson, kw:beach+mar, geo:250m, w>=1000, landscape
+- **`us-ca-stinson-beach-3.jpg`** ✗ **not a coastal photo** — “Dipsea Race 2013-60” by Frank Schulenburg, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Dipsea_Race_2013-60.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Frank Schulenburg — //commons.wikimedia.org/wiki/User:Frank_Schulenburg
+  - Dated: 2013-06-09 09:24:57
+  - 1600×2133px, 1198 KB, shot 146 m from the spot
+  - Description: 103rd annual Dipsea Race from Mill Valley to Stinson Beach. Wikipedia photographer Frank Schulenburg at the finish line.
+  - Match: score 12.5 via coastal-in-title, name:stinson, kw:beach+sea, geo:146m, w>=1000
 
 ## Stoneboro Beach
 
 `osm:way/965356956` · 38.9885335, -123.7124089 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-stoneboro-beach-1.jpg`** — “18 -pacificcoast” by Sharon Mollerus, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:18_-pacificcoast.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Sharon Mollerus — https://www.flickr.com/people/38315261@N00
-  - Dated: Taken on 6 July 2018, 17:54:02
-  - 1600×1067px, 1009 KB, shot 706 m from the spot
-  - Description: Manchester Beach, Manchester, California
-  - Match: score 8 via coastal-in-title, kw:beach+coast, geo:706m, w>=1000, landscape
-- **`us-ca-stoneboro-beach-2.jpg`** — “18 -birdsofprey -pacificcoast” by Sharon Mollerus, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:18_-birdsofprey_-pacificcoast.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Sharon Mollerus — https://www.flickr.com/people/38315261@N00
-  - Dated: Taken on 1 July 2018, 12:09:50
-  - 1600×1143px, 617 KB, shot 2277 m from the spot
-  - Description: Irish Beach, Manchester, California
-  - Match: score 7 via coastal-in-title, kw:beach+coast, geo:2277m, w>=1000, landscape
-- **`us-ca-stoneboro-beach-3.jpg`** — “Dune (161312707)” by Sharon Mollerus, Wikimedia Commons, CC BY 2.0
+- **`us-ca-stoneboro-beach-1.jpg`** — “Dune (161312707)” by Sharon Mollerus, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Dune_(161312707).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Sharon Mollerus — https://www.flickr.com/people/38315261@N00
@@ -9690,6 +9674,22 @@
   - 1600×1067px, 638 KB, shot 3351 m from the spot
   - Description: On the Mendocino Coast, between Point Arena Lighthouse and Manchester Beach
   - Match: score 7 via coastal-in-title, kw:beach+coast+dune+point, geo:3351m, w>=1000, landscape
+- **`us-ca-stoneboro-beach-2.jpg`** ✗ **not a coastal photo** — “18 -pacificcoast” by Sharon Mollerus, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:18_-pacificcoast.jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Sharon Mollerus — https://www.flickr.com/people/38315261@N00
+  - Dated: Taken on 6 July 2018, 17:54:02
+  - 1600×1067px, 1009 KB, shot 706 m from the spot
+  - Description: Manchester Beach, Manchester, California
+  - Match: score 8 via coastal-in-title, kw:beach+coast, geo:706m, w>=1000, landscape
+- **`us-ca-stoneboro-beach-3.jpg`** ✗ **not a coastal photo** — “18 -birdsofprey -pacificcoast” by Sharon Mollerus, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:18_-birdsofprey_-pacificcoast.jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Sharon Mollerus — https://www.flickr.com/people/38315261@N00
+  - Dated: Taken on 1 July 2018, 12:09:50
+  - 1600×1143px, 617 KB, shot 2277 m from the spot
+  - Description: Irish Beach, Manchester, California
+  - Match: score 7 via coastal-in-title, kw:beach+coast, geo:2277m, w>=1000, landscape
 
 ## Strands Beach
 
@@ -9724,22 +9724,14 @@
 
 `osm:way/37022900` · 36.9562675, -122.1020571
 
-- **`us-ca-strawberry-beach-1.jpg`** — “Beach Strawberry (Fragaria chiloensis)” by Franco Folini, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Beach_Strawberry_(Fragaria_chiloensis).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Franco Folini — https://www.flickr.com/photos/78425154@N00
-  - Dated: 2004-04-25 18:42:28
-  - 1600×1200px, 411 KB
-  - Description: Fragaria chiloensis — Beach strawberry. At Pacifica State Beach , San Mateo County, California.
-  - Match: score 11 via coastal-in-title, name:strawberry, kw:beach+coast+coastal, w>=1000, landscape
-- **`us-ca-strawberry-beach-2.jpg`** — “Wilder Ranch State Park cliffs” by Grey3k, Wikimedia Commons, CC BY 3.0
+- **`us-ca-strawberry-beach-1.jpg`** — “Wilder Ranch State Park cliffs” by Grey3k, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Wilder_Ranch_State_Park_cliffs.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Grey3k — //commons.wikimedia.org/wiki/User:Grey3k
   - 1600×1204px, 678 KB, shot 1862 m from the spot
   - Description: Wilder Ranch State Park Beach/Cliffs — of Santa Cruz County, California.
   - Match: score 8 via coastal-in-title, kw:beach+coast+cliff, geo:1862m, w>=1000, landscape
-- **`us-ca-strawberry-beach-3.jpg`** — “Harbor Seals at Wilder Ranch State Park (14725296343)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-strawberry-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Harbor Seals at Wilder Ranch State Park (14725296343)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Harbor_Seals_at_Wilder_Ranch_State_Park_(14725296343).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Don DeBold from San Jose, CA, USA — https://www.flickr.com/people/28156071@N00
@@ -9747,6 +9739,14 @@
   - 1600×1200px, 1104 KB, shot 1249 m from the spot
   - Description: Harbor Seals at Wilder Ranch State Park
   - Match: score 5.5 via coastal-in-title, kw:sea, geo:1249m, w>=1000, landscape
+- **`us-ca-strawberry-beach-3.jpg`** ✗ **not a coastal photo** — “Beach Strawberry (Fragaria chiloensis)” by Franco Folini, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Beach_Strawberry_(Fragaria_chiloensis).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Franco Folini — https://www.flickr.com/photos/78425154@N00
+  - Dated: 2004-04-25 18:42:28
+  - 1600×1200px, 411 KB
+  - Description: Fragaria chiloensis — Beach strawberry. At Pacifica State Beach , San Mateo County, California.
+  - Match: score 11 via coastal-in-title, name:strawberry, kw:beach+coast+coastal, w>=1000, landscape
 
 ## Stump Beach
 
@@ -9768,7 +9768,7 @@
   - 1600×1067px, 967 KB, shot 543 m from the spot
   - Description: Near Salt Creek recreation area on the Sonoma Coast
   - Match: score 9 via coastal-in-title, kw:wave+waves+ocean+coast, geo:543m, w>=1000, landscape
-- **`us-ca-stump-beach-3.jpg`** — “Armeria.maritima.subsp.californica.Alan” by Alan Rockefeller, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-stump-beach-3.jpg`** ✗ **not a coastal photo** — “Armeria.maritima.subsp.californica.Alan” by Alan Rockefeller, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Armeria.maritima.subsp.californica.Alan.JPG
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Alan Rockefeller — //commons.wikimedia.org/wiki/User:Alan_Rockefeller
@@ -9855,7 +9855,7 @@
   - 1600×1200px, 1122 KB
   - Description: park
   - Match: score 14 via coastal-in-title, name:sunny+cove, kw:beach+cove, w>=1000, landscape
-- **`us-ca-sunny-cove-beach-3.jpg`** — “La Jolla Cove, San Diego, California (9) (5141541857)” by Ken Lund from Las Vegas, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-sunny-cove-beach-3.jpg`** ✗ **not a coastal photo** — “La Jolla Cove, San Diego, California (9) (5141541857)” by Ken Lund from Las Vegas, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:La_Jolla_Cove,_San_Diego,_California_(9)_(5141541857).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Ken Lund from Las Vegas, Nevada, USA — https://www.flickr.com/people/75683070@N00
@@ -9868,15 +9868,7 @@
 
 `osm:relation/6651429` · 33.7174351, -118.0724568 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-sunset-beach-1.jpg`** — “Sunset Beach (2144885507)” by John Murphy, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Sunset_Beach_(2144885507).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: John Murphy — https://www.flickr.com/people/14727154@N03
-  - Dated: 2007-07-29 09:05
-  - 1600×1200px, 627 KB, shot 904 m from the spot
-  - Description: Sunset Beach
-  - Match: score 13 via coastal-in-title, name:sunset, kw:beach+mar+sunset, geo:904m, w>=1000, landscape
-- **`us-ca-sunset-beach-2.jpg`** — “Sunset-Beach” by Uzbekman24, Wikimedia Commons, CC BY 4.0
+- **`us-ca-sunset-beach-1.jpg`** — “Sunset-Beach” by Uzbekman24, Wikimedia Commons, CC BY 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sunset-Beach.jpg
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Uzbekman24 — //commons.wikimedia.org/w/index.php?title=User:Uzbekman24&amp;action=edit&amp;redlink=1
@@ -9884,7 +9876,7 @@
   - 1600×1200px, 614 KB, shot 84 m from the spot
   - Description: Sunset Beach
   - Match: score 13 via coastal-in-title, name:sunset, kw:beach+sunset, geo:84m, w>=1000, landscape
-- **`us-ca-sunset-beach-3.jpg`** — “Sunset at the Huntington Beach in California USA September 2024” by Srujanabotcha, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-sunset-beach-2.jpg`** — “Sunset at the Huntington Beach in California USA September 2024” by Srujanabotcha, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sunset_at_the_Huntington_Beach_in_California_USA_September_2024.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Srujanabotcha — //commons.wikimedia.org/w/index.php?title=User:Srujanabotcha&amp;action=edit&amp;redlink=1
@@ -9892,6 +9884,14 @@
   - 1600×3557px, 1142 KB, shot 832 m from the spot
   - Description: Huntington Beach at sunset
   - Match: score 11.5 via coastal-in-title, name:sunset, kw:beach+sunset, geo:832m, w>=1000
+- **`us-ca-sunset-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Sunset Beach (2144885507)” by John Murphy, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Sunset_Beach_(2144885507).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: John Murphy — https://www.flickr.com/people/14727154@N03
+  - Dated: 2007-07-29 09:05
+  - 1600×1200px, 627 KB, shot 904 m from the spot
+  - Description: Sunset Beach
+  - Match: score 13 via coastal-in-title, name:sunset, kw:beach+mar+sunset, geo:904m, w>=1000, landscape
 
 ## Sunset State Beach
 
@@ -9926,23 +9926,7 @@
 
 `osm:way/1361363117` · 38.0345494, -122.9257585
 
-- **`us-ca-sunshine-beach-1.jpg`** — “Long-billed curlew at Drakes Beach, Point Reyes” by Frank Schulenburg, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Long-billed_curlew_at_Drakes_Beach,_Point_Reyes.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Frank Schulenburg — //commons.wikimedia.org/wiki/User:Frank_Schulenburg
-  - Dated: Taken on 31 August 2014, 10:30:18
-  - 1600×1067px, 297 KB, shot 2534 m from the spot
-  - Description: Juvenile male long-billed curlew ( Numenius americanus ) at Drakes Beach, Point Reyes National Seashore, California.
-  - Match: score 8 via coastal-in-title, kw:beach+sea+shore+mar, geo:2534m, w>=1000, landscape
-- **`us-ca-sunshine-beach-2.jpg`** — “Long-billed curlew at Drakes Beach, Point Reyes ks01” by Frank Schulenburg , derivative work: Kreuzschnabel, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Long-billed_curlew_at_Drakes_Beach,_Point_Reyes_ks01.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Frank Schulenburg , derivative work: Kreuzschnabel — //commons.wikimedia.org/wiki/User:Frank_Schulenburg
-  - Dated: 2014-08-31 10:30:18
-  - 1600×1067px, 379 KB, shot 2534 m from the spot
-  - Description: Long-billed curlew ( Numenius americanus ) at Drakes Beach, Point Reyes National Seashore, California.
-  - Match: score 8 via coastal-in-title, kw:beach+sea+shore+point, geo:2534m, w>=1000, landscape
-- **`us-ca-sunshine-beach-3.jpg`** — “Point Reyes National Seashore - Sky Trail, CA, USA - panoramio (1)” by MARELBU, Wikimedia Commons, CC BY 3.0
+- **`us-ca-sunshine-beach-1.jpg`** — “Point Reyes National Seashore - Sky Trail, CA, USA - panoramio (1)” by MARELBU, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Point_Reyes_National_Seashore_-_Sky_Trail,_CA,_USA_-_panoramio_(1).jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: MARELBU — https://web.archive.org/web/20161014133259/http://www.panoramio.com/user/2353739?with_photo_id=26969863
@@ -9950,20 +9934,28 @@
   - 1600×1200px, 338 KB, shot 2069 m from the spot
   - Description: Point Reyes National Seashore - Sky Trail, CA, USA
   - Match: score 8 via coastal-in-title, kw:sea+coast+shore+point, geo:2069m, w>=1000, landscape
+- **`us-ca-sunshine-beach-2.jpg`** ✗ **not a coastal photo** — “Long-billed curlew at Drakes Beach, Point Reyes” by Frank Schulenburg, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Long-billed_curlew_at_Drakes_Beach,_Point_Reyes.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Frank Schulenburg — //commons.wikimedia.org/wiki/User:Frank_Schulenburg
+  - Dated: Taken on 31 August 2014, 10:30:18
+  - 1600×1067px, 297 KB, shot 2534 m from the spot
+  - Description: Juvenile male long-billed curlew ( Numenius americanus ) at Drakes Beach, Point Reyes National Seashore, California.
+  - Match: score 8 via coastal-in-title, kw:beach+sea+shore+mar, geo:2534m, w>=1000, landscape
+- **`us-ca-sunshine-beach-3.jpg`** ✗ **not a coastal photo** — “Long-billed curlew at Drakes Beach, Point Reyes ks01” by Frank Schulenburg , derivative work: Kreuzschnabel, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Long-billed_curlew_at_Drakes_Beach,_Point_Reyes_ks01.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Frank Schulenburg , derivative work: Kreuzschnabel — //commons.wikimedia.org/wiki/User:Frank_Schulenburg
+  - Dated: 2014-08-31 10:30:18
+  - 1600×1067px, 379 KB, shot 2534 m from the spot
+  - Description: Long-billed curlew ( Numenius americanus ) at Drakes Beach, Point Reyes National Seashore, California.
+  - Match: score 8 via coastal-in-title, kw:beach+sea+shore+point, geo:2534m, w>=1000, landscape
 
 ## Surf Beach
 
 `osm:relation/2145216` · 34.6813952, -120.6069923 · beach type: **sandy** (OpenStreetMap surface=sand) · access: permissive
 
-- **`us-ca-surf-beach-1.jpg`** — “Surf Amtrak Station” by Dreamyshade, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Surf_Amtrak_Station.JPG
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Dreamyshade — //commons.wikimedia.org/wiki/User:Dreamyshade
-  - Dated: Taken on 16 January 2015, 14:47:38
-  - 1600×1200px, 590 KB, shot 178 m from the spot
-  - Description: Surf Beach Amtrak train station, in the small community of Surf, California, west of the city of Lompoc.
-  - Match: score 14 via coastal-in-title, name:surf, kw:beach+surf+sea+coast, geo:178m, w>=1000, landscape
-- **`us-ca-surf-beach-2.jpg`** — “A make shift cross at surf Amtrak Station in remembrance of a surfer killed here Shark kills Surfer One of a series of photos taken from the Pacific Surfliner at Surf Amtrak station in California - panoramio” by Loco Steve, Wikimedia Commons, CC BY 3.0
+- **`us-ca-surf-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “A make shift cross at surf Amtrak Station in remembrance of a surfer killed here Shark kills Surfer One of a series of photos taken from the Pacific Surfliner at Surf Amtrak station in California - panoramio” by Loco Steve, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:A_make_shift_cross_at_surf_Amtrak_Station_in_remembrance_of_a_surfer_killed_here_Shark_kills_Surfer_One_of_a_series_of_photos_taken_from_the_Pacific_Surfliner_at_Surf_Amtrak_station_in_California_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Loco Steve — https://web.archive.org/web/20161021194712/http://www.panoramio.com/user/4751889?with_photo_id=67874140
@@ -9971,7 +9963,15 @@
   - 1600×2359px, 602 KB, shot 308 m from the spot
   - Description: a make shift cross at surf Amtrak Station in remembrance of a surfer killed here Shark kills Surfer One of a series of photos taken from the Pacific Surfliner at Surf Amtrak station in California
   - Match: score 13.5 via coastal-in-title, name:surf, kw:surf+surfer+coast, geo:308m, w>=1000
-- **`us-ca-surf-beach-3.jpg`** — “One of a series of photos taken from the Pacific Surfliner at Surf Amtrak station in California Surfer killed here by shark - panoramio” by Loco Steve, Wikimedia Commons, CC BY 3.0
+- **`us-ca-surf-beach-2.jpg`** ✗ **not a coastal photo** — “Surf Amtrak Station” by Dreamyshade, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Surf_Amtrak_Station.JPG
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Dreamyshade — //commons.wikimedia.org/wiki/User:Dreamyshade
+  - Dated: Taken on 16 January 2015, 14:47:38
+  - 1600×1200px, 590 KB, shot 178 m from the spot
+  - Description: Surf Beach Amtrak train station, in the small community of Surf, California, west of the city of Lompoc.
+  - Match: score 14 via coastal-in-title, name:surf, kw:beach+surf+sea+coast, geo:178m, w>=1000, landscape
+- **`us-ca-surf-beach-3.jpg`** ✗ **not a coastal photo** — “One of a series of photos taken from the Pacific Surfliner at Surf Amtrak station in California Surfer killed here by shark - panoramio” by Loco Steve, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:One_of_a_series_of_photos_taken_from_the_Pacific_Surfliner_at_Surf_Amtrak_station_in_California_Surfer_killed_here_by_shark_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Loco Steve — https://web.archive.org/web/20161021194737/http://www.panoramio.com/user/4751889?with_photo_id=67874144
@@ -9984,15 +9984,7 @@
 
 `osm:relation/19175595` · 34.0339521, -118.6796366 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-surfrider-beach-1.jpg`** — “Support the Surfrider Foundation - panoramio” by Darin R. McClure, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Support_the_Surfrider_Foundation_-_panoramio.jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: Darin R. McClure — https://web.archive.org/web/20161017225240/http://www.panoramio.com/user/516393?with_photo_id=40953664
-  - Dated: Taken on 10 September 2010
-  - 1600×1071px, 415 KB, shot 275 m from the spot
-  - Description: Support the Surfrider Foundation
-  - Match: score 11.5 via coastal-in-title, name:surfrider, kw:surf, geo:275m, w>=1000, landscape
-- **`us-ca-surfrider-beach-2.jpg`** — “Malibu California surf adaptive recreation” by Christina Spicuzza, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-surfrider-beach-1.jpg`** — “Malibu California surf adaptive recreation” by Christina Spicuzza, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Malibu_California_surf_adaptive_recreation.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Christina Spicuzza
@@ -10000,7 +9992,7 @@
   - 1600×1017px, 234 KB
   - Description: Adaptive recreation. Children with autism spectrum disorders learn to surf with the assistance of trained surfers. 2010 Surfer's Healing Malibu event, Surfrider Beach, California.
   - Match: score 11 via coastal-in-title, name:surfrider, kw:beach+surf+surfer+surfing, w>=1000, landscape
-- **`us-ca-surfrider-beach-3.jpg`** — “The Malibu Pier from Surfrider Beach - panoramio” by Darin R. McClure, Wikimedia Commons, CC BY 3.0
+- **`us-ca-surfrider-beach-2.jpg`** — “The Malibu Pier from Surfrider Beach - panoramio” by Darin R. McClure, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:The_Malibu_Pier_from_Surfrider_Beach_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Darin R. McClure — https://web.archive.org/web/20161017083206/http://www.panoramio.com/user/516393?with_photo_id=40954222
@@ -10008,6 +10000,14 @@
   - 1600×1071px, 613 KB
   - Description: The Malibu Pier from Surfrider Beach
   - Match: score 11 via coastal-in-title, name:surfrider, kw:beach+surf+pier, w>=1000, landscape
+- **`us-ca-surfrider-beach-3.jpg`** ✗ **not a coastal photo** — “Support the Surfrider Foundation - panoramio” by Darin R. McClure, Wikimedia Commons, CC BY 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Support_the_Surfrider_Foundation_-_panoramio.jpg
+  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
+  - Author: Darin R. McClure — https://web.archive.org/web/20161017225240/http://www.panoramio.com/user/516393?with_photo_id=40953664
+  - Dated: Taken on 10 September 2010
+  - 1600×1071px, 415 KB, shot 275 m from the spot
+  - Description: Support the Surfrider Foundation
+  - Match: score 11.5 via coastal-in-title, name:surfrider, kw:surf, geo:275m, w>=1000, landscape
 
 ## Surfside Beach
 
@@ -10029,7 +10029,7 @@
   - 1600×902px, 344 KB, shot 2224618 m from the spot
   - Description: Sunrise at Surfside Beach
   - Match: score 11 via coastal-in-title, name:surfside, kw:beach+surf+sunrise, geo:2224618m, w>=1000, landscape
-- **`us-ca-surfside-beach-3.jpg`** — “Surfside Beach Shoreline” by BullDawg2021, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-surfside-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Surfside Beach Shoreline” by BullDawg2021, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Surfside_Beach_Shoreline.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: BullDawg2021 — //commons.wikimedia.org/wiki/User:BullDawg2021
@@ -10042,15 +10042,7 @@
 
 `osm:way/56624689` · 36.9495794, -122.0475703
 
-- **`us-ca-swift-beach-1.jpg`** — “Surfers at Sunset (15708151003)” by David Merrett from Daventry, England, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Surfers_at_Sunset_(15708151003).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: David Merrett from Daventry, England — https://www.flickr.com/people/14265068@N00
-  - Dated: 2015-01-07 01:03
-  - 1600×1063px, 338 KB, shot 58 m from the spot
-  - Description: Santa Cruz, California
-  - Match: score 10 via coastal-in-title, kw:surf+surfer+surfing+sunset, geo:58m, w>=1000, landscape
-- **`us-ca-swift-beach-2.jpg`** — “Low tide in Santa Cruz with tide pools” by Grendelkhan, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-swift-beach-1.jpg`** — “Low tide in Santa Cruz with tide pools” by Grendelkhan, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Low_tide_in_Santa_Cruz_with_tide_pools.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Grendelkhan — //commons.wikimedia.org/wiki/User:Grendelkhan
@@ -10058,7 +10050,7 @@
   - 1600×1188px, 696 KB, shot 55 m from the spot
   - Description: A rocky part of the shoreline in Santa Cruz, California, at low tide. Tide pools are visible.
   - Match: score 10 via coastal-in-title, kw:beach+shore+shoreline+tide, geo:55m, w>=1000, landscape
-- **`us-ca-swift-beach-3.jpg`** — “Santa Cruz cliff (01923)” by Rhododendrites, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-swift-beach-2.jpg`** — “Santa Cruz cliff (01923)” by Rhododendrites, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Santa_Cruz_cliff_(01923).jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Rhododendrites — //commons.wikimedia.org/wiki/User:Rhododendrites
@@ -10066,6 +10058,14 @@
   - 1600×1200px, 793 KB, shot 323 m from the spot
   - Description: Cap covering the remains of a wave-powered motor on West Cliff Drive in Santa Cruz For identification see this Reddt thread .
   - Match: score 10 via coastal-in-title, kw:wave+cove+cliff, geo:323m, w>=1000, landscape
+- **`us-ca-swift-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Surfers at Sunset (15708151003)” by David Merrett from Daventry, England, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Surfers_at_Sunset_(15708151003).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: David Merrett from Daventry, England — https://www.flickr.com/people/14265068@N00
+  - Dated: 2015-01-07 01:03
+  - 1600×1063px, 338 KB, shot 58 m from the spot
+  - Description: Santa Cruz, California
+  - Match: score 10 via coastal-in-title, kw:surf+surfer+surfing+sunset, geo:58m, w>=1000, landscape
 
 ## T Street Beach
 
@@ -10100,23 +10100,7 @@
 
 `osm:relation/7099376` · 33.5018087, -117.746139
 
-- **`us-ca-table-rock-beach-1.jpg`** — “Laguna Beach Sea Cliffs Table Rock Beach Aerial (52839997854)” by formulanone, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Laguna_Beach_Sea_Cliffs_Table_Rock_Beach_Aerial_(52839997854).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: formulanone — https://www.flickr.com/people/30552029@N00
-  - Dated: 2019-05-17 14:44
-  - 1600×1067px, 540 KB
-  - Description: Laguna Beach Sea Cliffs Table Rock Beach Aerial (52839997854).jpg
-  - Match: score 15 via coastal-in-title, name:table+rock, kw:beach+sea+coast+cliff, w>=1000, landscape
-- **`us-ca-table-rock-beach-2.jpg`** — “Three Arch Bay Photo Taken by pilot Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Three_Arch_Bay_Photo_Taken_by_pilot_Don_Ramey_Logan.jpg
-  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
-  - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
-  - Dated: 2015-01-03 14:11:58
-  - 1600×1200px, 898 KB, shot 1243 m from the spot
-  - Description: Three Arch Bay Photo Taken by pilot Don Ramey Logan Three Arch Bay in Laguna was named after the shape seen here of the arching of the rocks to form the Three Arches this exclusive area is named after. Few people even know these pools are here, located in South Laguna Beach the Three Arch Bay pools are a local secret treasure. The original pool square pool was built in 1929 by the famous director and producer Edward H. Griffith, seen in the center of the photo. This entire community was sold, in 1926 for $135,000.00. Today the original Edward H. Griffith, home featuring the original pool is on
-  - Match: score 12 via coastal-in-title, name:rock, kw:beach+bay+rocks, geo:1243m, w>=1000, landscape
-- **`us-ca-table-rock-beach-3.jpg`** — “Morro Strand State Beach (1)” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-table-rock-beach-1.jpg`** — “Morro Strand State Beach (1)” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Morro_Strand_State_Beach_(1).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Mike Baird from Morro Bay, USA — https://www.flickr.com/people/72825507@N00
@@ -10124,12 +10108,7 @@
   - 1600×1066px, 435 KB, shot 354799 m from the spot
   - Description: Morro Strand State Beach — viewed from the Back Dunes with Morro Rock, located on Estero Bay in San Luis Obispo County, California. Taken after the Snowy Plover habitat protection fence was taken down for the season, in October 2011. Information about the area's natural history, from: www.slostateparks.com/general_park_info/resources/MSSB_Biological_Inventory.pdf Morro Strand State Beach (MSSB) comprises approximately 159.15 acres between the north parcel (Old Creek site) and south parcel (formerly called Atascadero State Beach) as well as an additional 23 acres which is to be transferred to S
   - Match: score 11 via coastal-in-title, name:rock, kw:beach+sea+coast+coastal, geo:354799m, w>=1000, landscape
-
-## Table Rock Beach
-
-`osm:way/196602748` · 36.9689122, -122.1344858
-
-- **`us-ca-table-rock-beach-602748-1.jpg`** — “Laguna Beach Sea Cliffs Table Rock Beach Aerial (52839997854)” by formulanone, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-table-rock-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Laguna Beach Sea Cliffs Table Rock Beach Aerial (52839997854)” by formulanone, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Laguna_Beach_Sea_Cliffs_Table_Rock_Beach_Aerial_(52839997854).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: formulanone — https://www.flickr.com/people/30552029@N00
@@ -10137,7 +10116,20 @@
   - 1600×1067px, 540 KB
   - Description: Laguna Beach Sea Cliffs Table Rock Beach Aerial (52839997854).jpg
   - Match: score 15 via coastal-in-title, name:table+rock, kw:beach+sea+coast+cliff, w>=1000, landscape
-- **`us-ca-table-rock-beach-602748-2.jpg`** — Waiting For The Wave (23804321) — CC0 (Wikimedia Commons), no attribution required
+- **`us-ca-table-rock-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Three Arch Bay Photo Taken by pilot Don Ramey Logan” by Don Ramey Logan, Wikimedia Commons, CC BY 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Three_Arch_Bay_Photo_Taken_by_pilot_Don_Ramey_Logan.jpg
+  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
+  - Author: Don Ramey Logan — //commons.wikimedia.org/wiki/Category:Photographs_by_Don_Ramey_Logan
+  - Dated: 2015-01-03 14:11:58
+  - 1600×1200px, 898 KB, shot 1243 m from the spot
+  - Description: Three Arch Bay Photo Taken by pilot Don Ramey Logan Three Arch Bay in Laguna was named after the shape seen here of the arching of the rocks to form the Three Arches this exclusive area is named after. Few people even know these pools are here, located in South Laguna Beach the Three Arch Bay pools are a local secret treasure. The original pool square pool was built in 1929 by the famous director and producer Edward H. Griffith, seen in the center of the photo. This entire community was sold, in 1926 for $135,000.00. Today the original Edward H. Griffith, home featuring the original pool is on
+  - Match: score 12 via coastal-in-title, name:rock, kw:beach+bay+rocks, geo:1243m, w>=1000, landscape
+
+## Table Rock Beach
+
+`osm:way/196602748` · 36.9689122, -122.1344858
+
+- **`us-ca-table-rock-beach-602748-1.jpg`** — Waiting For The Wave (23804321) — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Waiting_For_The_Wave_(23804321).jpeg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Liza Turchinksy — https://500px.com/DontPullMyLens
@@ -10145,7 +10137,7 @@
   - 1600×1064px, 420 KB, shot 1091 m from the spot
   - Description: 500px provided description: Fisheye Image at Panther Beach, CA. [#water ,#beach ,#clouds ,#fisheye ,#rocks ,#pretty ,#sand ,#surf ,#fine art ,#cave ,#fish-eye ,#parks ,#half moon bay ,#sunburst ,#panther beach ,#pacific coast ,#Sun ,#Ocean ,#California ,#route one]
   - Match: score 13 via coastal-in-title, name:rock, kw:beach+surf+wave+ocean, geo:1091m, w>=1000, landscape
-- **`us-ca-table-rock-beach-602748-3.jpg`** — “Morro Strand State Beach (1)” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-table-rock-beach-602748-2.jpg`** — “Morro Strand State Beach (1)” by Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Morro_Strand_State_Beach_(1).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Mike Baird from Morro Bay, USA — https://www.flickr.com/people/72825507@N00
@@ -10153,6 +10145,14 @@
   - 1600×1066px, 435 KB, shot 209179 m from the spot
   - Description: Morro Strand State Beach — viewed from the Back Dunes with Morro Rock, located on Estero Bay in San Luis Obispo County, California. Taken after the Snowy Plover habitat protection fence was taken down for the season, in October 2011. Information about the area's natural history, from: www.slostateparks.com/general_park_info/resources/MSSB_Biological_Inventory.pdf Morro Strand State Beach (MSSB) comprises approximately 159.15 acres between the north parcel (Old Creek site) and south parcel (formerly called Atascadero State Beach) as well as an additional 23 acres which is to be transferred to S
   - Match: score 11 via coastal-in-title, name:rock, kw:beach+sea+coast+coastal, geo:209179m, w>=1000, landscape
+- **`us-ca-table-rock-beach-602748-3.jpg`** ⚠︎ *context, not the coast itself* — “Laguna Beach Sea Cliffs Table Rock Beach Aerial (52839997854)” by formulanone, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Laguna_Beach_Sea_Cliffs_Table_Rock_Beach_Aerial_(52839997854).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: formulanone — https://www.flickr.com/people/30552029@N00
+  - Dated: 2019-05-17 14:44
+  - 1600×1067px, 540 KB
+  - Description: Laguna Beach Sea Cliffs Table Rock Beach Aerial (52839997854).jpg
+  - Match: score 15 via coastal-in-title, name:table+rock, kw:beach+sea+coast+cliff, w>=1000, landscape
 
 ## Tabletops
 
@@ -10195,15 +10195,7 @@
   - 1600×1067px, 393 KB, shot 852 m from the spot
   - Description: Carlsbad, United States
   - Match: score 9 via coastal-in-title, kw:beach+surf+surfer+surfing, geo:852m, w>=1000, landscape
-- **`us-ca-tamarack-beach-2.jpg`** — Agua Hedionda Lagoon 1 — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Agua_Hedionda_Lagoon_1.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Bovlb — //commons.wikimedia.org/wiki/User:Bovlb
-  - Dated: 2010-10-15
-  - 1600×1067px, 481 KB, shot 669 m from the spot
-  - Description: Looking to south across the Agua Hedionda Lagoon , from near its western end. The Encina Power Station can be seen in the background, and Historic Route 101 on the right. Located on the coast in Carlsbad , San Diego County, Southern California.
-  - Match: score 8 via coastal-in-title, kw:coast+lagoon, geo:669m, w>=1000, landscape
-- **`us-ca-tamarack-beach-3.jpg`** — “Sunset at the Beach - panoramio” by Dan Moore, Wikimedia Commons, CC BY 3.0
+- **`us-ca-tamarack-beach-2.jpg`** — “Sunset at the Beach - panoramio” by Dan Moore, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sunset_at_the_Beach_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Dan Moore — https://web.archive.org/web/20161016143210/http://www.panoramio.com/user/5284490?with_photo_id=44620190
@@ -10211,6 +10203,14 @@
   - 1600×957px, 359 KB, shot 620 m from the spot
   - Description: Sunset at the Beach
   - Match: score 8 via coastal-in-title, kw:beach+sunset, geo:620m, w>=1000, landscape
+- **`us-ca-tamarack-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Agua Hedionda Lagoon 1 — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Agua_Hedionda_Lagoon_1.jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: Bovlb — //commons.wikimedia.org/wiki/User:Bovlb
+  - Dated: 2010-10-15
+  - 1600×1067px, 481 KB, shot 669 m from the spot
+  - Description: Looking to south across the Agua Hedionda Lagoon , from near its western end. The Encina Power Station can be seen in the background, and Historic Route 101 on the right. Located on the coast in Carlsbad , San Diego County, Southern California.
+  - Match: score 8 via coastal-in-title, kw:coast+lagoon, geo:669m, w>=1000, landscape
 
 ## Ten Mile Beach
 
@@ -10224,15 +10224,7 @@
   - 1600×1000px, 965 KB, shot 3258 m from the spot
   - Description: Driftwood on the beach of the Ten Mile Beach State Marine Conservation Area near Whale Rock on the Pacific Coast of Mendocino County, California, on January 30, 2024
   - Match: score 15 via coastal-in-title, name:ten+mile, kw:beach+coast+mar, geo:3258m, w>=1000, landscape
-- **`us-ca-ten-mile-beach-2.jpg`** — “Birch Trees, Ten Mile Estuary State Marine Conservation Area-L1004571” by Frank Schulenburg, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Birch_Trees,_Ten_Mile_Estuary_State_Marine_Conservation_Area-L1004571.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Frank Schulenburg — //commons.wikimedia.org/wiki/User:Frank_Schulenburg
-  - Dated: 2024-01-30 14:06:17
-  - 1600×1000px, 1330 KB, shot 3676 m from the spot
-  - Description: Birch trees in the Ten Mile Estuary State Marine Conservation Area south of Newport, Mendocino County, California, on January 30, 2024
-  - Match: score 12.5 via coastal-in-title, name:ten+mile, kw:mar, geo:3676m, w>=1000, landscape
-- **`us-ca-ten-mile-beach-3.jpg`** — “Frazer Creek - Ten Mile River Bluff, Northern California (24033119025)” by Tony Webster from Portland, Oregon, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-ten-mile-beach-2.jpg`** — “Frazer Creek - Ten Mile River Bluff, Northern California (24033119025)” by Tony Webster from Portland, Oregon, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Frazer_Creek_-_Ten_Mile_River_Bluff,_Northern_California_(24033119025).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Tony Webster from Portland, Oregon — https://www.flickr.com/people/87296837@N00
@@ -10240,6 +10232,14 @@
   - 1600×1300px, 713 KB, shot 3721 m from the spot
   - Description: Northern California Beach.
   - Match: score 12.5 via name:ten+mile, kw:beach+mar+sunset, geo:3721m, w>=1000
+- **`us-ca-ten-mile-beach-3.jpg`** ✗ **not a coastal photo** — “Birch Trees, Ten Mile Estuary State Marine Conservation Area-L1004571” by Frank Schulenburg, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Birch_Trees,_Ten_Mile_Estuary_State_Marine_Conservation_Area-L1004571.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Frank Schulenburg — //commons.wikimedia.org/wiki/User:Frank_Schulenburg
+  - Dated: 2024-01-30 14:06:17
+  - 1600×1000px, 1330 KB, shot 3676 m from the spot
+  - Description: Birch trees in the Ten Mile Estuary State Marine Conservation Area south of Newport, Mendocino County, California, on January 30, 2024
+  - Match: score 12.5 via coastal-in-title, name:ten+mile, kw:mar, geo:3676m, w>=1000, landscape
 
 ## Tennessee Beach
 
@@ -10303,15 +10303,7 @@
 
 `osm:way/389455903` · 33.420011, -117.6207123 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-the-pier-beach-1.jpg`** — “Restaurant on San Clemente Pier - panoramio” by Kinney, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Restaurant_on_San_Clemente_Pier_-_panoramio.jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: Kinney — https://web.archive.org/web/20161015171751/http://www.panoramio.com/user/2655239?with_photo_id=31436586
-  - Dated: Taken on 7 January 2010
-  - 1600×1200px, 659 KB, shot 69 m from the spot
-  - Description: Restaurant on San Clemente Pier
-  - Match: score 14 via coastal-in-title, name:pier, kw:beach+coast+coastal+pier, geo:69m, w>=1000, landscape
-- **`us-ca-the-pier-beach-2.jpg`** — “Foggy Pier (142897637)” by Christopher Sardegna, Wikimedia Commons, CC BY 3.0
+- **`us-ca-the-pier-beach-1.jpg`** — “Foggy Pier (142897637)” by Christopher Sardegna, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Foggy_Pier_(142897637).jpeg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Christopher Sardegna — https://500px.com/css
@@ -10319,7 +10311,7 @@
   - 1600×1066px, 140 KB, shot 67 m from the spot
   - Description: 500px provided description: Processed with VSCOcam with s3 preset [#sky ,#sunrise ,#fog ,#lake ,#sea ,#beauty ,#sunset ,#water ,#beach ,#travel ,#light ,#clouds ,#ocean ,#summer ,#beautiful]
   - Match: score 14 via coastal-in-title, name:pier, kw:beach+ocean+sea+pier, geo:67m, w>=1000, landscape
-- **`us-ca-the-pier-beach-3.jpg`** — “Under the Palapa - panoramio” by Darin R. McClure, Wikimedia Commons, CC BY 3.0
+- **`us-ca-the-pier-beach-2.jpg`** — “Under the Palapa - panoramio” by Darin R. McClure, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Under_the_Palapa_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Darin R. McClure — https://web.archive.org/web/20161017153139/http://www.panoramio.com/user/516393?with_photo_id=46904568
@@ -10327,6 +10319,14 @@
   - 1600×1195px, 509 KB, shot 39 m from the spot
   - Description: San Clemente, California
   - Match: score 12 via name:pier, kw:beach+pier+sunset, geo:39m, w>=1000, landscape
+- **`us-ca-the-pier-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Restaurant on San Clemente Pier - panoramio” by Kinney, Wikimedia Commons, CC BY 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Restaurant_on_San_Clemente_Pier_-_panoramio.jpg
+  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
+  - Author: Kinney — https://web.archive.org/web/20161015171751/http://www.panoramio.com/user/2655239?with_photo_id=31436586
+  - Dated: Taken on 7 January 2010
+  - 1600×1200px, 659 KB, shot 69 m from the spot
+  - Description: Restaurant on San Clemente Pier
+  - Match: score 14 via coastal-in-title, name:pier, kw:beach+coast+coastal+pier, geo:69m, w>=1000, landscape
 
 ## Thousand Steps Beach
 
@@ -10361,23 +10361,7 @@
 
 `osm:node/358849224` · 36.9617234, -122.1126701
 
-- **`us-ca-three-mile-beach-1.jpg`** — “Long Beach Airport, Long Beach, California (6013828556)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Airport,_Long_Beach,_California_(6013828556).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
-  - Dated: 2011-08-04 19:10
-  - 1600×1200px, 343 KB, shot 508874 m from the spot
-  - Description: Long Beach Airport, also known as Daugherty Field, is a city-owned public-use airport located three nautical miles (6 km) northeast of the central business district of the City of Long Beach, in Los Angeles County, California, United States. It serves Los Angeles and Orange Counties. It was formerly known as Long Beach Municipal Airport. This airport is included in the National Plan of Integrated Airport Systems for 2011–2015, which categorized it as a primary commercial service airport. As per Federal Aviation Administration records, the airport had 1,413,251 passenger boardings (enplanements
-  - Match: score 14 via coastal-in-title, name:three+mile, kw:beach+mar, geo:508874m, w>=1000, landscape
-- **`us-ca-three-mile-beach-2.jpg`** — “Long Beach Airport, Long Beach, California (6013279317)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Airport,_Long_Beach,_California_(6013279317).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
-  - Dated: 2011-08-04 18:58
-  - 1600×1200px, 403 KB, shot 508837 m from the spot
-  - Description: Long Beach Airport, also known as Daugherty Field, is a city-owned public-use airport located three nautical miles (6 km) northeast of the central business district of the City of Long Beach, in Los Angeles County, California, United States. It serves Los Angeles and Orange Counties. It was formerly known as Long Beach Municipal Airport. This airport is included in the National Plan of Integrated Airport Systems for 2011–2015, which categorized it as a primary commercial service airport. As per Federal Aviation Administration records, the airport had 1,413,251 passenger boardings (enplanements
-  - Match: score 14 via coastal-in-title, name:three+mile, kw:beach+mar, geo:508837m, w>=1000, landscape
-- **`us-ca-three-mile-beach-3.jpg`** — “Laguna Beach, CA (29118984143)” by Don Graham from Redlands, CA, USA - God bless it!, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-three-mile-beach-1.jpg`** — “Laguna Beach, CA (29118984143)” by Don Graham from Redlands, CA, USA - God bless it!, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Laguna_Beach,_CA_(29118984143).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Don Graham from Redlands, CA, USA - God bless it! — https://www.flickr.com/people/23155134@N06
@@ -10385,28 +10369,28 @@
   - 1600×1362px, 1181 KB, shot 546493 m from the spot
   - Description: (1 in a multiple picture album) We went to the ocean this week. We used to go often before the traffic got so congested. Though it is only 71 miles away, it can take two or three hours on certain days. We found the town of Laguna Beach had not changed much and enjoyed the art galleries. The ocean, of course, had changed not at all. This shot is from the bluff south of Laguna Beach shot between some of the foliage in Heisler Park. It rained most of the morning but just as the sun was at the right angle the clouds parted. It was a gift from the photo gods.
   - Match: score 13.5 via coastal-in-title, name:three+mile, kw:beach+ocean, geo:546493m, w>=1000
+- **`us-ca-three-mile-beach-2.jpg`** ✗ **not a coastal photo** — “Long Beach Airport, Long Beach, California (6013828556)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Airport,_Long_Beach,_California_(6013828556).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
+  - Dated: 2011-08-04 19:10
+  - 1600×1200px, 343 KB, shot 508874 m from the spot
+  - Description: Long Beach Airport, also known as Daugherty Field, is a city-owned public-use airport located three nautical miles (6 km) northeast of the central business district of the City of Long Beach, in Los Angeles County, California, United States. It serves Los Angeles and Orange Counties. It was formerly known as Long Beach Municipal Airport. This airport is included in the National Plan of Integrated Airport Systems for 2011–2015, which categorized it as a primary commercial service airport. As per Federal Aviation Administration records, the airport had 1,413,251 passenger boardings (enplanements
+  - Match: score 14 via coastal-in-title, name:three+mile, kw:beach+mar, geo:508874m, w>=1000, landscape
+- **`us-ca-three-mile-beach-3.jpg`** ✗ **not a coastal photo** — “Long Beach Airport, Long Beach, California (6013279317)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Airport,_Long_Beach,_California_(6013279317).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
+  - Dated: 2011-08-04 18:58
+  - 1600×1200px, 403 KB, shot 508837 m from the spot
+  - Description: Long Beach Airport, also known as Daugherty Field, is a city-owned public-use airport located three nautical miles (6 km) northeast of the central business district of the City of Long Beach, in Los Angeles County, California, United States. It serves Los Angeles and Orange Counties. It was formerly known as Long Beach Municipal Airport. This airport is included in the National Plan of Integrated Airport Systems for 2011–2015, which categorized it as a primary commercial service airport. As per Federal Aviation Administration records, the airport had 1,413,251 passenger boardings (enplanements
+  - Match: score 14 via coastal-in-title, name:three+mile, kw:beach+mar, geo:508837m, w>=1000, landscape
 
 ## Three Mile Beach
 
 `osm:way/37022938` · 36.9618735, -122.1139517
 
-- **`us-ca-three-mile-beach-022938-1.jpg`** — “Long Beach Airport, Long Beach, California (6013828556)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Airport,_Long_Beach,_California_(6013828556).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
-  - Dated: 2011-08-04 19:10
-  - 1600×1200px, 343 KB, shot 508969 m from the spot
-  - Description: Long Beach Airport, also known as Daugherty Field, is a city-owned public-use airport located three nautical miles (6 km) northeast of the central business district of the City of Long Beach, in Los Angeles County, California, United States. It serves Los Angeles and Orange Counties. It was formerly known as Long Beach Municipal Airport. This airport is included in the National Plan of Integrated Airport Systems for 2011–2015, which categorized it as a primary commercial service airport. As per Federal Aviation Administration records, the airport had 1,413,251 passenger boardings (enplanements
-  - Match: score 14 via coastal-in-title, name:three+mile, kw:beach+mar, geo:508969m, w>=1000, landscape
-- **`us-ca-three-mile-beach-022938-2.jpg`** — “Long Beach Airport, Long Beach, California (6013279317)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Airport,_Long_Beach,_California_(6013279317).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
-  - Dated: 2011-08-04 18:58
-  - 1600×1200px, 403 KB, shot 508932 m from the spot
-  - Description: Long Beach Airport, also known as Daugherty Field, is a city-owned public-use airport located three nautical miles (6 km) northeast of the central business district of the City of Long Beach, in Los Angeles County, California, United States. It serves Los Angeles and Orange Counties. It was formerly known as Long Beach Municipal Airport. This airport is included in the National Plan of Integrated Airport Systems for 2011–2015, which categorized it as a primary commercial service airport. As per Federal Aviation Administration records, the airport had 1,413,251 passenger boardings (enplanements
-  - Match: score 14 via coastal-in-title, name:three+mile, kw:beach+mar, geo:508932m, w>=1000, landscape
-- **`us-ca-three-mile-beach-022938-3.jpg`** — “Laguna Beach, CA (29118984143)” by Don Graham from Redlands, CA, USA - God bless it!, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-three-mile-beach-022938-1.jpg`** — “Laguna Beach, CA (29118984143)” by Don Graham from Redlands, CA, USA - God bless it!, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Laguna_Beach,_CA_(29118984143).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Don Graham from Redlands, CA, USA - God bless it! — https://www.flickr.com/people/23155134@N06
@@ -10414,6 +10398,22 @@
   - 1600×1362px, 1181 KB, shot 546588 m from the spot
   - Description: (1 in a multiple picture album) We went to the ocean this week. We used to go often before the traffic got so congested. Though it is only 71 miles away, it can take two or three hours on certain days. We found the town of Laguna Beach had not changed much and enjoyed the art galleries. The ocean, of course, had changed not at all. This shot is from the bluff south of Laguna Beach shot between some of the foliage in Heisler Park. It rained most of the morning but just as the sun was at the right angle the clouds parted. It was a gift from the photo gods.
   - Match: score 13.5 via coastal-in-title, name:three+mile, kw:beach+ocean, geo:546588m, w>=1000
+- **`us-ca-three-mile-beach-022938-2.jpg`** ✗ **not a coastal photo** — “Long Beach Airport, Long Beach, California (6013828556)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Airport,_Long_Beach,_California_(6013828556).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
+  - Dated: 2011-08-04 19:10
+  - 1600×1200px, 343 KB, shot 508969 m from the spot
+  - Description: Long Beach Airport, also known as Daugherty Field, is a city-owned public-use airport located three nautical miles (6 km) northeast of the central business district of the City of Long Beach, in Los Angeles County, California, United States. It serves Los Angeles and Orange Counties. It was formerly known as Long Beach Municipal Airport. This airport is included in the National Plan of Integrated Airport Systems for 2011–2015, which categorized it as a primary commercial service airport. As per Federal Aviation Administration records, the airport had 1,413,251 passenger boardings (enplanements
+  - Match: score 14 via coastal-in-title, name:three+mile, kw:beach+mar, geo:508969m, w>=1000, landscape
+- **`us-ca-three-mile-beach-022938-3.jpg`** ✗ **not a coastal photo** — “Long Beach Airport, Long Beach, California (6013279317)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Airport,_Long_Beach,_California_(6013279317).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
+  - Dated: 2011-08-04 18:58
+  - 1600×1200px, 403 KB, shot 508932 m from the spot
+  - Description: Long Beach Airport, also known as Daugherty Field, is a city-owned public-use airport located three nautical miles (6 km) northeast of the central business district of the City of Long Beach, in Los Angeles County, California, United States. It serves Los Angeles and Orange Counties. It was formerly known as Long Beach Municipal Airport. This airport is included in the National Plan of Integrated Airport Systems for 2011–2015, which categorized it as a primary commercial service airport. As per Federal Aviation Administration records, the airport had 1,413,251 passenger boardings (enplanements
+  - Match: score 14 via coastal-in-title, name:three+mile, kw:beach+mar, geo:508932m, w>=1000, landscape
 
 ## Tide Pool Beach
 
@@ -10477,23 +10477,7 @@
 
 `osm:relation/6651383` · 33.8098934, -118.392681
 
-- **`us-ca-torrance-county-beach-1.jpg`** — “Redondo Beach Meteor (20598243)” by Jason Hullinger, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Redondo_Beach_Meteor_(20598243).jpeg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: Jason Hullinger — https://500px.com/JasonHullinger
-  - Dated: 13 December 2012, 05:00:00 (UTC)
-  - 1600×900px, 190 KB, shot 588 m from the spot
-  - Description: 500px provided description: During the Geminid meteor shower taken at Redondo Beach, CA in Miramar Park [#meteor ,#meteor shower ,#geminid]
-  - Match: score 12 via coastal-in-title, name:torrance, kw:beach+mar, geo:588m, w>=1000, landscape
-- **`us-ca-torrance-county-beach-2.jpg`** — “Welcome to Torrance, California (6027111406)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Welcome_to_Torrance,_California_(6027111406).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
-  - Dated: 2011-08-07 15:57
-  - 1600×1199px, 1259 KB, shot 411 m from the spot
-  - Description: Torrance is a city incorporated in 1921 and located in the South Bay (southwestern) region of Los Angeles County, California, United States. Torrance has 1.5 miles (2.4 km) of shore-front beaches on the Pacific Ocean, quieter and less well known by tourists than others on the Santa Monica Bay, such as those of neighboring Redondo Beach and Manhattan Beach. Torrance enjoys a moderate year-round climate with warm temperatures, sea breezes, low humidity and an average rainfall of 12.55 inches per year. The Torrance population was 145,438 at the 2010 census. This residential and light-high-tech in
-  - Match: score 11 via name:torrance, kw:beach+ocean+sea+shore, geo:411m, w>=1000, landscape
-- **`us-ca-torrance-county-beach-3.jpg`** — “People Walking on Torrance Beach” by DylanMoz49, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-torrance-county-beach-1.jpg`** — “People Walking on Torrance Beach” by DylanMoz49, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:People_Walking_on_Torrance_Beach.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: DylanMoz49 — //commons.wikimedia.org/w/index.php?title=User:DylanMoz49&amp;action=edit&amp;redlink=1
@@ -10501,6 +10485,22 @@
   - 1600×1200px, 564 KB
   - Description: Women strolling along the shoreline of Torrance Beach, located in the South Bay of Los Angeles County, California
   - Match: score 11 via coastal-in-title, name:torrance, kw:beach+shore+shoreline+bay, w>=1000, landscape
+- **`us-ca-torrance-county-beach-2.jpg`** ✗ **not a coastal photo** — “Redondo Beach Meteor (20598243)” by Jason Hullinger, Wikimedia Commons, CC BY 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Redondo_Beach_Meteor_(20598243).jpeg
+  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
+  - Author: Jason Hullinger — https://500px.com/JasonHullinger
+  - Dated: 13 December 2012, 05:00:00 (UTC)
+  - 1600×900px, 190 KB, shot 588 m from the spot
+  - Description: 500px provided description: During the Geminid meteor shower taken at Redondo Beach, CA in Miramar Park [#meteor ,#meteor shower ,#geminid]
+  - Match: score 12 via coastal-in-title, name:torrance, kw:beach+mar, geo:588m, w>=1000, landscape
+- **`us-ca-torrance-county-beach-3.jpg`** ✗ **not a coastal photo** — “Welcome to Torrance, California (6027111406)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Welcome_to_Torrance,_California_(6027111406).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
+  - Dated: 2011-08-07 15:57
+  - 1600×1199px, 1259 KB, shot 411 m from the spot
+  - Description: Torrance is a city incorporated in 1921 and located in the South Bay (southwestern) region of Los Angeles County, California, United States. Torrance has 1.5 miles (2.4 km) of shore-front beaches on the Pacific Ocean, quieter and less well known by tourists than others on the Santa Monica Bay, such as those of neighboring Redondo Beach and Manhattan Beach. Torrance enjoys a moderate year-round climate with warm temperatures, sea breezes, low humidity and an average rainfall of 12.55 inches per year. The Torrance population was 145,438 at the 2010 census. This residential and light-high-tech in
+  - Match: score 11 via name:torrance, kw:beach+ocean+sea+shore, geo:411m, w>=1000, landscape
 
 ## Torrey Pines City Beach
 
@@ -10638,7 +10638,7 @@
   - 1600×984px, 154 KB
   - Description: Aerial photo of the main Gaviota Beach campground at Gaviota State Park — located west of Goleta in Santa Barbara County, California.
   - Match: score 10 via coastal-in-title, name:trestle, kw:beach+pier, w>=1000, landscape
-- **`us-ca-trestle-beach-3.jpg`** — “Metrolink Trestles Beach S” by Andrewaronoshn, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-trestle-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Metrolink Trestles Beach S” by Andrewaronoshn, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Metrolink_Trestles_Beach_S.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Andrewaronoshn — //commons.wikimedia.org/w/index.php?title=User:Andrewaronoshn&amp;action=edit&amp;redlink=1
@@ -10688,15 +10688,7 @@
   - 1600×1177px, 432 KB, shot 382 m from the spot
   - Description: View across Tunitas Beach from cliff level.
   - Match: score 14 via coastal-in-title, name:tunitas, kw:beach+sea+cliff, geo:382m, w>=1000, landscape
-- **`us-ca-tunitas-beach-2.jpg`** — “Climbing up from Tunitas Beach” by Grendelkhan, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Climbing_up_from_Tunitas_Beach.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Grendelkhan — //commons.wikimedia.org/wiki/User:Grendelkhan
-  - Dated: 8 January 2012 (according to Exif data)
-  - 1600×1200px, 744 KB, shot 340 m from the spot
-  - Description: Two people climbing the steep path up from Tunitas Beach in Half Moon Bay.
-  - Match: score 14 via coastal-in-title, name:tunitas, kw:beach+sea+bay+cliff, geo:340m, w>=1000, landscape
-- **`us-ca-tunitas-beach-3.jpg`** — “Beach and Cliff (99025024)” by David Baron from San Francisco, California, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-tunitas-beach-2.jpg`** — “Beach and Cliff (99025024)” by David Baron from San Francisco, California, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Beach_and_Cliff_(99025024).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: David Baron from San Francisco, California, USA — https://www.flickr.com/people/14869313@N00
@@ -10704,6 +10696,14 @@
   - 1600×1200px, 328 KB, shot 316 m from the spot
   - Description: The view north along the coast from from the path starting at call box SM-001-205 down to Tunitas Beach, along Highway 1 between 92 and 84, in San Mateo County, California. (img_4355)
   - Match: score 14 via coastal-in-title, name:tunitas, kw:beach+sea+coast+cliff, geo:316m, w>=1000, landscape
+- **`us-ca-tunitas-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Climbing up from Tunitas Beach” by Grendelkhan, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Climbing_up_from_Tunitas_Beach.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Grendelkhan — //commons.wikimedia.org/wiki/User:Grendelkhan
+  - Dated: 8 January 2012 (according to Exif data)
+  - 1600×1200px, 744 KB, shot 340 m from the spot
+  - Description: Two people climbing the steep path up from Tunitas Beach in Half Moon Bay.
+  - Match: score 14 via coastal-in-title, name:tunitas, kw:beach+sea+bay+cliff, geo:340m, w>=1000, landscape
 
 ## Twin Lakes Beach
 
@@ -10717,7 +10717,7 @@
   - 1600×1200px, 718 KB, shot 46 m from the spot
   - Description: The Santa Cruz Breakwater Lighthouse, a.k.a. the Walton Lighthouse, from Twin Lakes State Beach, California, USA
   - Match: score 18 via coastal-in-title, name:twin+lakes, kw:beach+break+lighthouse, geo:46m, w>=1000, landscape
-- **`us-ca-twin-lakes-beach-2.jpg`** — “Lighthouse Bench, Volleyball and Lighthouse (6868329285)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-twin-lakes-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Lighthouse Bench, Volleyball and Lighthouse (6868329285)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Lighthouse_Bench,_Volleyball_and_Lighthouse_(6868329285).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Don DeBold from San Jose, CA, USA — https://www.flickr.com/people/28156071@N00
@@ -10725,7 +10725,7 @@
   - 1600×1200px, 707 KB, shot 214 m from the spot
   - Description: Lighthouse Bench, Volleyball and Lighthouse
   - Match: score 18 via coastal-in-title, name:twin+lakes, kw:beach+break+lighthouse, geo:214m, w>=1000, landscape
-- **`us-ca-twin-lakes-beach-3.jpg`** — “Life Guard Station and Lighthouse (8508498499)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-twin-lakes-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Life Guard Station and Lighthouse (8508498499)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Life_Guard_Station_and_Lighthouse_(8508498499).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Don DeBold from San Jose, CA, USA — https://www.flickr.com/people/28156071@N00
@@ -10753,7 +10753,7 @@
   - Dated: May 1975 date QS:P571,+1975-05-00T00:00:
   - 1600×1086px, 360 KB
   - Match: score 11 via coastal-in-title, name:upper, kw:beach+surf+surfer+surfing, w>=1000, landscape
-- **`us-ca-upper-beach-3.jpg`** — “Belmont Shore and Belmont Heights in Long Beach California” by Darkest tree, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-upper-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Belmont Shore and Belmont Heights in Long Beach California” by Darkest tree, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Belmont_Shore_and_Belmont_Heights_in_Long_Beach_California.JPG
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Darkest tree — //commons.wikimedia.org/wiki/User:Darkest_tree
@@ -10766,15 +10766,7 @@
 
 `osm:way/34931517` · 39.8290618, -123.8497124
 
-- **`us-ca-usal-beach-1.jpg`** — “Lost Coast backpacking” by Melanienacouzi, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Lost_Coast_backpacking.JPG
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Melanienacouzi — //commons.wikimedia.org/wiki/User:Melanienacouzi
-  - Dated: Taken on 5 July 2013, 16:29:11
-  - 1600×1200px, 704 KB, shot 2077 m from the spot
-  - Description: Backpackers and day hikers alike can enjoy spectacular views along the cliffs of this stretch of remote coastline.
-  - Match: score 8 via coastal-in-title, kw:beach+coast+coastline+cliff, geo:2077m, w>=1000, landscape
-- **`us-ca-usal-beach-2.jpg`** — “Bowling Balls Beach 2” by Brocken Inaglory, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-usal-beach-1.jpg`** — “Bowling Balls Beach 2” by Brocken Inaglory, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Bowling_Balls_Beach_2.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Brocken Inaglory — https://sites.google.com/site/thebrockeninglory/
@@ -10782,7 +10774,7 @@
   - 1600×1035px, 487 KB, shot 107416 m from the spot
   - Description: Bowling Balls Beach in Mendocino county, California, USA.
   - Match: score 7 via coastal-in-title, kw:beach+sea+mar+point, geo:107416m, w>=1000, landscape
-- **`us-ca-usal-beach-3.jpg`** — “Bowling Balls Beach 2 edit” by Brocken Inaglory (edited by Noodle snacks ), Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-usal-beach-2.jpg`** — “Bowling Balls Beach 2 edit” by Brocken Inaglory (edited by Noodle snacks ), Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Bowling_Balls_Beach_2_edit.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Brocken Inaglory (edited by Noodle snacks ) — https://sites.google.com/site/thebrockeninglory/
@@ -10790,20 +10782,20 @@
   - 1600×1035px, 530 KB, shot 107416 m from the spot
   - Description: Bowling Balls Beach in Mendocino county, California, USA. Concretions on Bowling Balls Beach ( Mendocino County , California) were weathered out of steeply-tilted Cenozoic mudstone
   - Match: score 7 via coastal-in-title, kw:beach+sea+mar+point, geo:107416m, w>=1000, landscape
+- **`us-ca-usal-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Lost Coast backpacking” by Melanienacouzi, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Lost_Coast_backpacking.JPG
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Melanienacouzi — //commons.wikimedia.org/wiki/User:Melanienacouzi
+  - Dated: Taken on 5 July 2013, 16:29:11
+  - 1600×1200px, 704 KB, shot 2077 m from the spot
+  - Description: Backpackers and day hikers alike can enjoy spectacular views along the cliffs of this stretch of remote coastline.
+  - Match: score 8 via coastal-in-title, kw:beach+coast+coastline+cliff, geo:2077m, w>=1000, landscape
 
 ## Vallejo Beach
 
 `osm:node/358777975` · 37.4963891, -122.4639199
 
-- **`us-ca-vallejo-beach-1.jpg`** — “Vallejo Beach Half Moon Bay 1 2020-02-06” by F ASTILY, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Vallejo_Beach_Half_Moon_Bay_1_2020-02-06.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: F ASTILY — //commons.wikimedia.org/wiki/User_talk:Fastily
-  - Dated: 2020-02-06 00:51:25
-  - 1600×1200px, 357 KB, shot 732 m from the spot
-  - Description: Vallejo Beach Half Moon Bay
-  - Match: score 12 via coastal-in-title, name:vallejo, kw:beach+bay, geo:732m, w>=1000, landscape
-- **`us-ca-vallejo-beach-2.jpg`** — “Vallejo Beach Half Moon Bay 2 2020-02-06” by F ASTILY, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-vallejo-beach-1.jpg`** — “Vallejo Beach Half Moon Bay 2 2020-02-06” by F ASTILY, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Vallejo_Beach_Half_Moon_Bay_2_2020-02-06.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: F ASTILY — //commons.wikimedia.org/wiki/User_talk:Fastily
@@ -10811,7 +10803,7 @@
   - 1600×1200px, 380 KB, shot 733 m from the spot
   - Description: Vallejo Beach Half Moon Bay
   - Match: score 12 via coastal-in-title, name:vallejo, kw:beach+bay, geo:733m, w>=1000, landscape
-- **`us-ca-vallejo-beach-3.jpg`** — “Mavericks Beach 9 2024-03-17” by Fastily, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-vallejo-beach-2.jpg`** — “Mavericks Beach 9 2024-03-17” by Fastily, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Mavericks_Beach_9_2024-03-17.jpeg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Fastily — //commons.wikimedia.org/wiki/User_talk:Fastily
@@ -10819,6 +10811,14 @@
   - 1600×1200px, 731 KB, shot 858 m from the spot
   - Description: Mavericks Beach
   - Match: score 9 via coastal-in-title, kw:beach+sea+cliff, geo:858m, w>=1000, landscape
+- **`us-ca-vallejo-beach-3.jpg`** ✗ **not a coastal photo** — “Vallejo Beach Half Moon Bay 1 2020-02-06” by F ASTILY, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Vallejo_Beach_Half_Moon_Bay_1_2020-02-06.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: F ASTILY — //commons.wikimedia.org/wiki/User_talk:Fastily
+  - Dated: 2020-02-06 00:51:25
+  - 1600×1200px, 357 KB, shot 732 m from the spot
+  - Description: Vallejo Beach Half Moon Bay
+  - Match: score 12 via coastal-in-title, name:vallejo, kw:beach+bay, geo:732m, w>=1000, landscape
 
 ## Venice Beach
 
@@ -10882,23 +10882,7 @@
 
 `osm:relation/7342041` · 34.2745663, -119.2985926 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-ventura-city-beach-1.jpg`** — “Beach Poppy! (8055780773)” by Living in Monrovia from Monrovia, CA, United States, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Beach_Poppy!_(8055780773).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Living in Monrovia from Monrovia, CA, United States — https://www.flickr.com/people/69166981@N00
-  - Dated: 2012-10-01 18:14
-  - 1600×1200px, 2116 KB, shot 328 m from the spot
-  - Description: Poppy is a natural model. She seemed to know just when I wanted to take her photo when we visited Ventura beach. She and Theo had so much fun romping on the sand!
-  - Match: score 13 via coastal-in-title, name:ventura, kw:beach+sand, geo:328m, w>=1000, landscape
-- **`us-ca-ventura-city-beach-2.jpg`** — “Mandalay-Beach” by Fettlemap, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Mandalay-Beach.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Fettlemap — //commons.wikimedia.org/w/index.php?title=User:Fettlemap&amp;action=edit&amp;redlink=1
-  - Dated: 2015-01-04 16:56:35
-  - 1600×590px, 249 KB, shot 9904 m from the spot
-  - Description: View of Mandalay Beach, looking towards Reliant Energy power station and mountains above the City of Ventura in the background
-  - Match: score 12.5 via coastal-in-title, name:ventura+city, kw:beach, geo:9904m, w>=1000, landscape
-- **`us-ca-ventura-city-beach-3.jpg`** — “Ventura Beach - panoramio” by Csouthard, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-ventura-city-beach-1.jpg`** — “Ventura Beach - panoramio” by Csouthard, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Ventura_Beach_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Csouthard — https://web.archive.org/web/20161029064939/http://www.panoramio.com/user/392423?with_photo_id=100376350
@@ -10906,12 +10890,28 @@
   - 1600×1200px, 634 KB, shot 402 m from the spot
   - Description: Ventura Beach
   - Match: score 12 via coastal-in-title, name:ventura, kw:beach+pier, geo:402m, w>=1000, landscape
+- **`us-ca-ventura-city-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Beach Poppy! (8055780773)” by Living in Monrovia from Monrovia, CA, United States, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Beach_Poppy!_(8055780773).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Living in Monrovia from Monrovia, CA, United States — https://www.flickr.com/people/69166981@N00
+  - Dated: 2012-10-01 18:14
+  - 1600×1200px, 2116 KB, shot 328 m from the spot
+  - Description: Poppy is a natural model. She seemed to know just when I wanted to take her photo when we visited Ventura beach. She and Theo had so much fun romping on the sand!
+  - Match: score 13 via coastal-in-title, name:ventura, kw:beach+sand, geo:328m, w>=1000, landscape
+- **`us-ca-ventura-city-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Mandalay-Beach” by Fettlemap, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Mandalay-Beach.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Fettlemap — //commons.wikimedia.org/w/index.php?title=User:Fettlemap&amp;action=edit&amp;redlink=1
+  - Dated: 2015-01-04 16:56:35
+  - 1600×590px, 249 KB, shot 9904 m from the spot
+  - Description: View of Mandalay Beach, looking towards Reliant Energy power station and mountains above the City of Ventura in the background
+  - Match: score 12.5 via coastal-in-title, name:ventura+city, kw:beach, geo:9904m, w>=1000, landscape
 
 ## Ventura City Beach
 
 `osm:relation/19178918` · 34.2531187, -119.2700044 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-ventura-city-beach-178918-1.jpg`** — Kendra Chan is a fish and wildlife biologist with the U.S. Fish and Wildlife Service in Ventura and BeachCOMBERS volunteer. Chan surveys Hollywood Beach in Oxnard, California. (36298868772) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-ventura-city-beach-178918-1.jpg`** ⚠︎ *context, not the coast itself* — Kendra Chan is a fish and wildlife biologist with the U.S. Fish and Wildlife Service in Ventura and BeachCOMBERS volunteer. Chan surveys Hollywood Beach in Oxnard, California. (36298868772) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Kendra_Chan_is_a_fish_and_wildlife_biologist_with_the_U.S._Fish_and_Wildlife_Service_in_Ventura_and_BeachCOMBERS_volunteer._Chan_surveys_Hollywood_Beach_in_Oxnard,_California._(36298868772).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Pacific Southwest Region USFWS from Sacramento, US — https://www.flickr.com/people/54430347@N04
@@ -10919,7 +10919,7 @@
   - 1600×1143px, 407 KB, shot 198 m from the spot
   - Description: VENTURA, Calif. (Aug. 8, 2017) - Kendra Chan is a fish and wildlife biologist with the U.S. Fish and Wildlife Service in Ventura and BeachCOMBERS volunteer. Chan surveys Hollywood Beach in Oxnard, California. BeachCOMBERS trains volunteers to record data about deceased marine mammals or birds along a shoreline, contributing to long-term information about the health of a marine ecosystem.
   - Match: score 14 via coastal-in-title, name:ventura, kw:beach+shore+shoreline+mar, geo:198m, w>=1000, landscape
-- **`us-ca-ventura-city-beach-178918-2.jpg`** — “Mandalay-Beach” by Fettlemap, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-ventura-city-beach-178918-2.jpg`** ⚠︎ *context, not the coast itself* — “Mandalay-Beach” by Fettlemap, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Mandalay-Beach.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Fettlemap — //commons.wikimedia.org/w/index.php?title=User:Fettlemap&amp;action=edit&amp;redlink=1
@@ -10927,7 +10927,7 @@
   - 1600×590px, 249 KB, shot 6671 m from the spot
   - Description: View of Mandalay Beach, looking towards Reliant Energy power station and mountains above the City of Ventura in the background
   - Match: score 12.5 via coastal-in-title, name:ventura+city, kw:beach, geo:6671m, w>=1000, landscape
-- **`us-ca-ventura-city-beach-178918-3.jpg`** — Bath House and Beach, Santa Monica, from Robert N. Dennis collection of stereoscopic views — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-ventura-city-beach-178918-3.jpg`** ✗ **not a coastal photo** — Bath House and Beach, Santa Monica, from Robert N. Dennis collection of stereoscopic views — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Bath_House_and_Beach,_Santa_Monica,_from_Robert_N._Dennis_collection_of_stereoscopic_views.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Unknown artist Unknown artist
@@ -10939,7 +10939,7 @@
 
 `osm:relation/7099354` · 33.5183359, -117.7621732 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-victoria-beach-1.jpg`** — “Strange Beach Artifact (546922)” by Steve Jurvetson from Menlo Park, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-victoria-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Strange Beach Artifact (546922)” by Steve Jurvetson from Menlo Park, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Strange_Beach_Artifact_(546922).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Steve Jurvetson from Menlo Park, USA — https://www.flickr.com/people/44124348109@N01
@@ -10947,7 +10947,7 @@
   - 1600×2133px, 197 KB
   - Description: Victoria Beach tower, Laguna Beach CA. Interior is spiral staircase, built in 1920's
   - Match: score 10.5 via coastal-in-title, name:victoria, kw:beach+wave+waves+ocean, w>=1000
-- **`us-ca-victoria-beach-2.jpg`** — “Long Beach Arena panorama (346126033)” by mark6mauno, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-victoria-beach-2.jpg`** ✗ **not a coastal photo** — “Long Beach Arena panorama (346126033)” by mark6mauno, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Arena_panorama_(346126033).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: mark6mauno — https://www.flickr.com/people/98147195@N00
@@ -10955,7 +10955,7 @@
   - 1600×480px, 310 KB, shot 47993 m from the spot
   - Description: Three photos, hand held, taken with 20mm lens in landscape mode. Inserted a horizontal control line in each of the three frames so that the center line of the pano came out straight. (PTGui)
   - Match: score 10 via coastal-in-title, name:victoria, kw:beach+sea, geo:47993m, w>=1000, landscape
-- **`us-ca-victoria-beach-3.jpg`** — “Long Beach Arena panorama (346204783)” by mark6mauno, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-victoria-beach-3.jpg`** ✗ **not a coastal photo** — “Long Beach Arena panorama (346204783)” by mark6mauno, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Arena_panorama_(346204783).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: mark6mauno — https://www.flickr.com/people/98147195@N00
@@ -10984,7 +10984,7 @@
   - 1600×2133px, 997 KB
   - Description: This image is incorrectly named. There is no Waddle Beach in Davenport California though there is a Waddell Beach at 37.1631° N, -122.3401° W
   - Match: score 17.5 via coastal-in-title, name:waddell+santa+cruz, kw:beach+sunset, w>=1000
-- **`us-ca-waddell-beach-county-of-santa-cruz-3.jpg`** — “This is not a dream (13523354895)” by jason jenkins from stockton, california, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-waddell-beach-county-of-santa-cruz-3.jpg`** ✗ **not a coastal photo** — “This is not a dream (13523354895)” by jason jenkins from stockton, california, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:This_is_not_a_dream_(13523354895).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: jason jenkins from stockton, california — https://www.flickr.com/people/48048313@N02
@@ -11013,7 +11013,7 @@
   - 1600×1194px, 1261 KB, shot 223 m from the spot
   - Description: 500px provided description: Light and dark sand ripple texture. Waddell Creek Beach, CA [#beach ,#sand]
   - Match: score 13 via coastal-in-title, name:waddell, kw:beach+sand, geo:223m, w>=1000, landscape
-- **`us-ca-waddell-beach-state-parks-3.jpg`** — “Aeolian Sand Ripples 5 (173891139)” by Justin Dolske, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-waddell-beach-state-parks-3.jpg`** ✗ **not a coastal photo** — “Aeolian Sand Ripples 5 (173891139)” by Justin Dolske, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Aeolian_Sand_Ripples_5_(173891139).jpeg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Justin Dolske — https://500px.com/dolske
@@ -11034,7 +11034,7 @@
   - 1600×1071px, 310 KB, shot 100 m from the spot
   - Description: The beach by Westport, California.
   - Match: score 7.5 via coastal-in-title, kw:beach, geo:100m, w>=1000, landscape
-- **`us-ca-wages-creek-beach-2.jpg`** — “Small gas pump at store along coastline north of Fort Bragg, CA. (21287547124)” by Robert Ashworth from Bellingham, WA., USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-wages-creek-beach-2.jpg`** ✗ **not a coastal photo** — “Small gas pump at store along coastline north of Fort Bragg, CA. (21287547124)” by Robert Ashworth from Bellingham, WA., USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Small_gas_pump_at_store_along_coastline_north_of_Fort_Bragg,_CA._(21287547124).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Robert Ashworth from Bellingham, WA., USA — https://www.flickr.com/people/90536753@N00
@@ -11042,7 +11042,7 @@
   - 1600×1200px, 545 KB, shot 3104 m from the spot
   - Description: I was bicycling, but store offered fuel for me as well. An apple, sandwich and chocolate milk. Welcome in a remote part of the coast. California is a state of contrasts. Big cities and areas where stores are far and few. Just north of here is a road less area called the Lost Coast.
   - Match: score 7 via coastal-in-title, kw:coast+coastline+sand, geo:3104m, w>=1000, landscape
-- **`us-ca-wages-creek-beach-3.jpg`** — “Westport-Union Landing State Beach - November 2022 - Sarah Stierch 02” by Missvain, Wikimedia Commons, CC BY 4.0
+- **`us-ca-wages-creek-beach-3.jpg`** ✗ **not a coastal photo** — “Westport-Union Landing State Beach - November 2022 - Sarah Stierch 02” by Missvain, Wikimedia Commons, CC BY 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Westport-Union_Landing_State_Beach_-_November_2022_-_Sarah_Stierch_02.jpg
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Missvain — //commons.wikimedia.org/wiki/User:Missvain
@@ -11063,15 +11063,7 @@
   - 1600×888px, 590 KB
   - Description: (1 in a multiple picture album) There is something about walking the sand along the Pacific Ocean and exploring the tide pools that attracts nearly everyone. The sound of the surf, the call of the seagulls, and the salty wind in your face is almost primal.
   - Match: score 11 via coastal-in-title, name:walk, kw:beach+surf+ocean+sea, w>=1000, landscape
-- **`us-ca-walk-on-beach-2.jpg`** — “San Diego beach walk” by Laredawg, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:San_Diego_beach_walk.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Laredawg — //commons.wikimedia.org/wiki/User:Laredawg
-  - Dated: Taken on 6 May 2020, 11:14:09
-  - 1600×1200px, 497 KB
-  - Description: When San Diego opened the beaches for exercise, we decided to get out and enjoy the fresh air
-  - Match: score 11 via coastal-in-title, name:walk, kw:beach+sea+mar+cliff, w>=1000, landscape
-- **`us-ca-walk-on-beach-3.jpg`** — “Beach in Tomales Bay” by Ana Vila-Concejo, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-walk-on-beach-2.jpg`** — “Beach in Tomales Bay” by Ana Vila-Concejo, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Beach_in_Tomales_Bay.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Ana Vila-Concejo
@@ -11079,28 +11071,20 @@
   - 1600×1200px, 1300 KB
   - Description: Sandy beach flanked by steep vegetation. The beach is very flat, and vegetation is visible above the water surface. Two men walk in the background.
   - Match: score 11 via coastal-in-title, name:walk, kw:beach+surf+sand+bay, w>=1000, landscape
+- **`us-ca-walk-on-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “San Diego beach walk” by Laredawg, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:San_Diego_beach_walk.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Laredawg — //commons.wikimedia.org/wiki/User:Laredawg
+  - Dated: Taken on 6 May 2020, 11:14:09
+  - 1600×1200px, 497 KB
+  - Description: When San Diego opened the beaches for exercise, we decided to get out and enjoy the fresh air
+  - Match: score 11 via coastal-in-title, name:walk, kw:beach+sea+mar+cliff, w>=1000, landscape
 
 ## Wall Beach
 
 `osm:way/842676335` · 34.7070798, -120.6021922 · access: military
 
-- **`us-ca-wall-beach-1.jpg`** — “Long Beach Arena panorama experiment (354470556)” by mark6mauno, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Arena_panorama_experiment_(354470556).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: mark6mauno — https://www.flickr.com/people/98147195@N00
-  - Dated: 2007-01-07 17:00
-  - 1600×803px, 250 KB, shot 245496 m from the spot
-  - Description: Experiment - Decided to see how a panorama of the LB Arena would look using the camera in my cell phone. Well, my <a href=" http://www.palm.com/us/products/smartphones/treo680/ ">Treo 680</a> produces really lousy pictures, so bad I think the camera lens may very well be defective. But a picture from the cell phone can be stitched together which was the purpose of this test. (PTGui)
-  - Match: score 11 via coastal-in-title, name:wall, kw:beach+sea+mar, geo:245496m, w>=1000, landscape
-- **`us-ca-wall-beach-2.jpg`** — “A Beautiful Beach In Monterey California United States (90939265)” by Giuseppe Milo, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:A_Beautiful_Beach_In_Monterey_California_United_States_(90939265).jpeg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: Giuseppe Milo — https://500px.com/pixael
-  - Dated: 12 November 2014, 07:15:00 (UTC)
-  - 1600×1066px, 340 KB, shot 242393 m from the spot
-  - Description: 500px provided description: This is a free picture released under Creative Commons Attribution 2.0 Generic. Feel free to use and share this picture but please give me credit linking my website or my Flickr account. More info about me on www.pixael.com. If you like my pictures please like my Facebook page (www.facebook.com/giuseppemilophoto) or follow me on Twitter (twitter.com/pixael_com) and Instagram (instagram.com/pixael). Thanks! [#sky ,#landscape ,#sea ,#beach ,#travel ,#night ,#photo ,#horizon ,#35 mm ,#usa ,#california ,#pier ,#sony ,#wall ,#seascape ,#35mm ,#photography ,#restaurant ,#
-  - Match: score 11 via coastal-in-title, name:wall, kw:beach+sea+pier+seascape, geo:242393m, w>=1000, landscape
-- **`us-ca-wall-beach-3.jpg`** — Laguna Beach surf and the rock arches at Capistrano Beach, "The Lady of the Sea", 1910 (CHS-1303) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-wall-beach-1.jpg`** — Laguna Beach surf and the rock arches at Capistrano Beach, "The Lady of the Sea", 1910 (CHS-1303) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Laguna_Beach_surf_and_the_rock_arches_at_Capistrano_Beach,_%22The_Lady_of_the_Sea%22,_1910_(CHS-1303).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Unknown author Unknown author
@@ -11108,20 +11092,28 @@
   - 1600×1236px, 502 KB
   - Description: Laguna Beach surf and the rock arches at Capistrano Beach, "The Lady of the Sea", 1910 Photograph of Laguna Beach surf and the rock arches at Capistrano Beach, "The Lady of the Sea", 1910. Two holes can be seen in the rock wall visible across center. The silhouette of a person can be seen in the hole at right. A sandy beach can be seen at left, while the ocean water can be seen from the foreground up to the rock. Other, smaller rocks can be seen in the foreground. Call number : CHS-1303 Filename : CHS-1303 Coverage date : 1910 Part of collection : California Historical Society Collection, 1860
   - Match: score 10.5 via coastal-in-title, name:wall, kw:beach+surf+ocean+sea, w>=1000
+- **`us-ca-wall-beach-2.jpg`** ✗ **not a coastal photo** — “Long Beach Arena panorama experiment (354470556)” by mark6mauno, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Long_Beach_Arena_panorama_experiment_(354470556).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: mark6mauno — https://www.flickr.com/people/98147195@N00
+  - Dated: 2007-01-07 17:00
+  - 1600×803px, 250 KB, shot 245496 m from the spot
+  - Description: Experiment - Decided to see how a panorama of the LB Arena would look using the camera in my cell phone. Well, my <a href=" http://www.palm.com/us/products/smartphones/treo680/ ">Treo 680</a> produces really lousy pictures, so bad I think the camera lens may very well be defective. But a picture from the cell phone can be stitched together which was the purpose of this test. (PTGui)
+  - Match: score 11 via coastal-in-title, name:wall, kw:beach+sea+mar, geo:245496m, w>=1000, landscape
+- **`us-ca-wall-beach-3.jpg`** ✗ **not a coastal photo** — “A Beautiful Beach In Monterey California United States (90939265)” by Giuseppe Milo, Wikimedia Commons, CC BY 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:A_Beautiful_Beach_In_Monterey_California_United_States_(90939265).jpeg
+  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
+  - Author: Giuseppe Milo — https://500px.com/pixael
+  - Dated: 12 November 2014, 07:15:00 (UTC)
+  - 1600×1066px, 340 KB, shot 242393 m from the spot
+  - Description: 500px provided description: This is a free picture released under Creative Commons Attribution 2.0 Generic. Feel free to use and share this picture but please give me credit linking my website or my Flickr account. More info about me on www.pixael.com. If you like my pictures please like my Facebook page (www.facebook.com/giuseppemilophoto) or follow me on Twitter (twitter.com/pixael_com) and Instagram (instagram.com/pixael). Thanks! [#sky ,#landscape ,#sea ,#beach ,#travel ,#night ,#photo ,#horizon ,#35 mm ,#usa ,#california ,#pier ,#sony ,#wall ,#seascape ,#35mm ,#photography ,#restaurant ,#
+  - Match: score 11 via coastal-in-title, name:wall, kw:beach+sea+pier+seascape, geo:242393m, w>=1000, landscape
 
 ## Weston Beach
 
 `osm:way/346400874` · 36.5126607, -121.9434227
 
-- **`us-ca-weston-beach-1.jpg`** — Point Lobos State Reserve around Weston Beach, August 2019 3 — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Point_Lobos_State_Reserve_around_Weston_Beach,_August_2019_3.jpg
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: Thomson200 — //commons.wikimedia.org/wiki/User:Thomson200
-  - Dated: Taken on 16 August 2019, 16:24:50
-  - 1600×1067px, 512 KB
-  - Description: Point Lobos State Reserve around Weston Beach
-  - Match: score 10 via coastal-in-title, name:weston, kw:beach+point, w>=1000, landscape
-- **`us-ca-weston-beach-2.jpg`** — Point Lobos State Reserve around Weston Beach, August 2019 1 — CC0 (Wikimedia Commons), no attribution required
+- **`us-ca-weston-beach-1.jpg`** — Point Lobos State Reserve around Weston Beach, August 2019 1 — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Point_Lobos_State_Reserve_around_Weston_Beach,_August_2019_1.jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Thomson200 — //commons.wikimedia.org/wiki/User:Thomson200
@@ -11129,12 +11121,20 @@
   - 1600×1067px, 385 KB
   - Description: Point Lobos State Reserve around Weston Beach
   - Match: score 10 via coastal-in-title, name:weston, kw:beach+point, w>=1000, landscape
-- **`us-ca-weston-beach-3.jpg`** — Point Lobos State Reserve around Weston Beach, August 2019 2 — CC0 (Wikimedia Commons), no attribution required
+- **`us-ca-weston-beach-2.jpg`** — Point Lobos State Reserve around Weston Beach, August 2019 2 — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Point_Lobos_State_Reserve_around_Weston_Beach,_August_2019_2.jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Thomson200 — //commons.wikimedia.org/wiki/User:Thomson200
   - Dated: Taken on 16 August 2019, 16:24:18
   - 1600×1067px, 415 KB
+  - Description: Point Lobos State Reserve around Weston Beach
+  - Match: score 10 via coastal-in-title, name:weston, kw:beach+point, w>=1000, landscape
+- **`us-ca-weston-beach-3.jpg`** ✗ **not a coastal photo** — Point Lobos State Reserve around Weston Beach, August 2019 3 — CC0 (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Point_Lobos_State_Reserve_around_Weston_Beach,_August_2019_3.jpg
+  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
+  - Author: Thomson200 — //commons.wikimedia.org/wiki/User:Thomson200
+  - Dated: Taken on 16 August 2019, 16:24:50
+  - 1600×1067px, 512 KB
   - Description: Point Lobos State Reserve around Weston Beach
   - Match: score 10 via coastal-in-title, name:weston, kw:beach+point, w>=1000, landscape
 
@@ -11187,7 +11187,7 @@
   - 1600×1067px, 829 KB, shot 2926 m from the spot
   - Description: Half Moon Bay, CA (San Matteo Coast)
   - Match: score 8 via coastal-in-title, kw:beach+sea+coast+bay, geo:2926m, w>=1000, landscape
-- **`us-ca-whale-bone-beach-3.jpg`** — “Yellow Flowers (302469832)” by David Baron from San Francisco, California, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-whale-bone-beach-3.jpg`** ✗ **not a coastal photo** — “Yellow Flowers (302469832)” by David Baron from San Francisco, California, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Yellow_Flowers_(302469832).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: David Baron from San Francisco, California, USA — https://www.flickr.com/people/14869313@N00
@@ -11229,7 +11229,7 @@
 
 `osm:way/275414187` · 37.9653039, -122.791381
 
-- **`us-ca-wildcat-beach-1.jpg`** — “Wildcat Beach Camping Sites - panoramio” by Doug Olson, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-wildcat-beach-1.jpg`** ✗ **not a coastal photo** — “Wildcat Beach Camping Sites - panoramio” by Doug Olson, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Wildcat_Beach_Camping_Sites_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Doug Olson — https://web.archive.org/web/20161102074740/http://www.panoramio.com/user/8082571?with_photo_id=129171721
@@ -11237,7 +11237,7 @@
   - 1600×1045px, 784 KB, shot 597 m from the spot
   - Description: Wildcat Beach Camping Sites
   - Match: score 13 via coastal-in-title, name:wildcat, kw:beach+sea+shore+point, geo:597m, w>=1000, landscape
-- **`us-ca-wildcat-beach-2.jpg`** — “Wildcat Beach Trail - panoramio” by Doug Olson, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-wildcat-beach-2.jpg`** ✗ **not a coastal photo** — “Wildcat Beach Trail - panoramio” by Doug Olson, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Wildcat_Beach_Trail_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Doug Olson — https://web.archive.org/web/20161030220149/http://www.panoramio.com/user/8082571?with_photo_id=129171719
@@ -11245,7 +11245,7 @@
   - 1600×2422px, 1490 KB, shot 936 m from the spot
   - Description: Wildcat Beach Trail
   - Match: score 12.5 via coastal-in-title, name:wildcat, kw:beach+sea+shore+mar, geo:936m, w>=1000
-- **`us-ca-wildcat-beach-3.jpg`** — “Wildcat Beach Trail Head - panoramio” by Doug Olson, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-wildcat-beach-3.jpg`** ✗ **not a coastal photo** — “Wildcat Beach Trail Head - panoramio” by Doug Olson, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Wildcat_Beach_Trail_Head_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Doug Olson — https://web.archive.org/web/20161030220143/http://www.panoramio.com/user/8082571?with_photo_id=129171716
@@ -11265,7 +11265,7 @@
   - 1600×1204px, 678 KB, shot 332 m from the spot
   - Description: Wilder Ranch State Park Beach/Cliffs — of Santa Cruz County, California.
   - Match: score 14 via coastal-in-title, name:wilder, kw:beach+coast+cliff, geo:332m, w>=1000, landscape
-- **`us-ca-wilder-beach-2.jpg`** — “Harbor Seals at Wilder Ranch State Park (14725296343)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-wilder-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Harbor Seals at Wilder Ranch State Park (14725296343)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Harbor_Seals_at_Wilder_Ranch_State_Park_(14725296343).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Don DeBold from San Jose, CA, USA — https://www.flickr.com/people/28156071@N00
@@ -11273,7 +11273,7 @@
   - 1600×1200px, 1104 KB, shot 918 m from the spot
   - Description: Harbor Seals at Wilder Ranch State Park
   - Match: score 10.5 via coastal-in-title, name:wilder, kw:sea, geo:918m, w>=1000, landscape
-- **`us-ca-wilder-beach-3.jpg`** — “Harbor Seal Sliding Down into the Water (14518766398)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-wilder-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Harbor Seal Sliding Down into the Water (14518766398)” by Don DeBold from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Harbor_Seal_Sliding_Down_into_the_Water_(14518766398).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Don DeBold from San Jose, CA, USA — https://www.flickr.com/people/28156071@N00
@@ -11300,7 +11300,7 @@
   - 1600×1200px, 153 KB, shot 516 m from the spot
   - Description: Spume left behind on Will Rogers Beach, Pacific Palisades, California, after several days of heavy rain.
   - Match: score 16 via coastal-in-title, name:will+rogers, kw:beach+sea, geo:516m, w>=1000, landscape
-- **`us-ca-will-rogers-state-beach-3.jpg`** — “Will Rogers Beach SW03” by Scotwriter21, Wikimedia Commons, CC BY-SA 4.0
+- **`us-ca-will-rogers-state-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Will Rogers Beach SW03” by Scotwriter21, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Will_Rogers_Beach_SW03.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Scotwriter21 — //commons.wikimedia.org/w/index.php?title=User:Scotwriter21&amp;action=edit&amp;redlink=1
@@ -11320,15 +11320,7 @@
   - 1600×1200px, 123 KB, shot 2472 m from the spot
   - Description: Spume on beach and receding waves, Will Rogers Beach, Pacific Palisades, California.
   - Match: score 16 via coastal-in-title, name:will+rogers, kw:beach+wave+waves+sea, geo:2472m, w>=1000, landscape
-- **`us-ca-will-rogers-state-beach-378681-2.jpg`** — “Will Rogers Beach SW03” by Scotwriter21, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Will_Rogers_Beach_SW03.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Scotwriter21 — //commons.wikimedia.org/w/index.php?title=User:Scotwriter21&amp;action=edit&amp;redlink=1
-  - Dated: 2021-07-23
-  - 1600×906px, 573 KB, shot 1036 m from the spot
-  - Description: Beach - down coast view
-  - Match: score 16 via coastal-in-title, name:will+rogers, kw:beach+coast, geo:1036m, w>=1000, landscape
-- **`us-ca-will-rogers-state-beach-378681-3.jpg`** — “Sunset at Will Rogers State Beach 2” by AllyUnion, Wikimedia Commons, CC BY-SA 3.0
+- **`us-ca-will-rogers-state-beach-378681-2.jpg`** — “Sunset at Will Rogers State Beach 2” by AllyUnion, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sunset_at_Will_Rogers_State_Beach_2.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: AllyUnion — //commons.wikimedia.org/w/index.php?title=User:AllyUnion&amp;action=edit&amp;redlink=1
@@ -11336,6 +11328,14 @@
   - 1600×1200px, 392 KB
   - Description: A shot of the sunset over Pacific Ocean at the Will Rogers State Beach
   - Match: score 15 via coastal-in-title, name:will+rogers, kw:beach+ocean+sunset, w>=1000, landscape
+- **`us-ca-will-rogers-state-beach-378681-3.jpg`** ⚠︎ *context, not the coast itself* — “Will Rogers Beach SW03” by Scotwriter21, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Will_Rogers_Beach_SW03.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Scotwriter21 — //commons.wikimedia.org/w/index.php?title=User:Scotwriter21&amp;action=edit&amp;redlink=1
+  - Dated: 2021-07-23
+  - 1600×906px, 573 KB, shot 1036 m from the spot
+  - Description: Beach - down coast view
+  - Match: score 16 via coastal-in-title, name:will+rogers, kw:beach+coast, geo:1036m, w>=1000, landscape
 
 ## William Randolph Hearst Memorial Beach
 
@@ -11391,7 +11391,7 @@
   - 1600×1200px, 556 KB, shot 45 m from the spot
   - Description: San Diego - La Jolla, Coast Boulevard Park & Wipeout Beach
   - Match: score 13 via coastal-in-title, name:wipeout, kw:beach+coast, geo:45m, w>=1000, landscape
-- **`us-ca-wipeout-beach-2.jpg`** — Palm Beach Qld Surf Life Saving Club - Stooge's surf board post traumatic wipeout, 1978 - photo John McPherson P1120038 — CC0 (Wikimedia Commons), no attribution required
+- **`us-ca-wipeout-beach-2.jpg`** ✗ **not a coastal photo** — Palm Beach Qld Surf Life Saving Club - Stooge's surf board post traumatic wipeout, 1978 - photo John McPherson P1120038 — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Palm_Beach_Qld_Surf_Life_Saving_Club_-_Stooge%27s_surf_board_post_traumatic_wipeout,_1978_-_photo_John_McPherson_P1120038.jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: John Robert McPherson — //commons.wikimedia.org/wiki/User:John_Robert_McPherson
@@ -11399,7 +11399,7 @@
   - 1600×1208px, 916 KB
   - Description: Palm Beach Qld Surf Life Saving Club - Stooge's surf board post traumatic wipeout, 1978
   - Match: score 11 via coastal-in-title, name:wipeout, kw:beach+surf+surfing, w>=1000, landscape
-- **`us-ca-wipeout-beach-3.jpg`** — Palm Beach Qld Surf Life Saving Club - Stooge's surf board post traumatic wipeout, 1978 - photo John McPherson P1120037 — CC0 (Wikimedia Commons), no attribution required
+- **`us-ca-wipeout-beach-3.jpg`** ✗ **not a coastal photo** — Palm Beach Qld Surf Life Saving Club - Stooge's surf board post traumatic wipeout, 1978 - photo John McPherson P1120037 — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Palm_Beach_Qld_Surf_Life_Saving_Club_-_Stooge%27s_surf_board_post_traumatic_wipeout,_1978_-_photo_John_McPherson_P1120037.jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: John Robert McPherson — //commons.wikimedia.org/wiki/User:John_Robert_McPherson
@@ -11428,7 +11428,7 @@
   - 1600×925px, 656 KB, shot 1313 m from the spot
   - Description: (1 in a multiple picture album) Not far from our room was a natural arch carved by the waves and sand through a jetty of rock which protruded out into the ocean. It was plenty tall enough to walk through at low tide, but you couldn't get to it when the tide was in. Further out was another huge rock where a window had been carved. I love the color of ocean water when the sun comes through a wave.
   - Match: score 8 via coastal-in-title, kw:beach+wave+waves+ocean, geo:1313m, w>=1000, landscape
-- **`us-ca-woods-cove-3.jpg`** — “Laguna Beach, CA, USA - panoramio (1)” by Lucas Migliorelli, Wikimedia Commons, CC BY 3.0
+- **`us-ca-woods-cove-3.jpg`** ✗ **not a coastal photo** — “Laguna Beach, CA, USA - panoramio (1)” by Lucas Migliorelli, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Laguna_Beach,_CA,_USA_-_panoramio_(1).jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Lucas Migliorelli — https://web.archive.org/web/20161016192028/http://www.panoramio.com/user/5308881?with_photo_id=46877142
@@ -11441,15 +11441,7 @@
 
 `osm:way/346338509` · 36.2340383, -121.7982911
 
-- **`us-ca-wreck-beach-1.jpg`** — “Beach Wreck (4305867883)” by Damian Gadal, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Beach_Wreck_(4305867883).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Damian Gadal — https://www.flickr.com/people/23024164@N06
-  - Dated: 2010-01-25 07:07
-  - 1600×1071px, 643 KB
-  - Description: Boats on beach
-  - Match: score 10 via coastal-in-title, name:wreck, kw:beach+sunset, w>=1000, landscape
-- **`us-ca-wreck-beach-2.jpg`** — “Edifice Wrecks (49812323577)” by Steve Jurvetson from Los Altos, USA, Wikimedia Commons, CC BY 2.0
+- **`us-ca-wreck-beach-1.jpg`** — “Edifice Wrecks (49812323577)” by Steve Jurvetson from Los Altos, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Edifice_Wrecks_(49812323577).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Steve Jurvetson from Los Altos, USA — https://www.flickr.com/people/44124348109@N01
@@ -11457,7 +11449,15 @@
   - 1600×1091px, 1111 KB
   - Description: before... below
   - Match: score 9 via name:wreck, kw:beach+sea+bay+cliff, w>=1000, landscape
-- **`us-ca-wreck-beach-3.jpg`** — Wreck of the bark SERVIA on Karluk Beach, Alaska, November 6, 1907 (COBB 225) — Public domain (Wikimedia Commons), no attribution required
+- **`us-ca-wreck-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Beach Wreck (4305867883)” by Damian Gadal, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Beach_Wreck_(4305867883).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Damian Gadal — https://www.flickr.com/people/23024164@N06
+  - Dated: 2010-01-25 07:07
+  - 1600×1071px, 643 KB
+  - Description: Boats on beach
+  - Match: score 10 via coastal-in-title, name:wreck, kw:beach+sunset, w>=1000, landscape
+- **`us-ca-wreck-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Wreck of the bark SERVIA on Karluk Beach, Alaska, November 6, 1907 (COBB 225) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Wreck_of_the_bark_SERVIA_on_Karluk_Beach,_Alaska,_November_6,_1907_(COBB_225).jpeg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: John Nathan Cobb — https://en.wikipedia.org/wiki/en:John_Nathan_Cobb
@@ -11486,7 +11486,7 @@
   - 1600×1200px, 690 KB, shot 1067 m from the spot
   - Description: National Register of Historic Places listings in Sonoma County, California . Duncan's Cove and Duncan's Landing, Emry Rd., Jenner, California
   - Match: score 9 via coastal-in-title, kw:sea+coast+cove+cliff, geo:1067m, w>=1000, landscape
-- **`us-ca-wright-s-beach-3.jpg`** — “Lichen at Bodega Bay - Flickr - brewbooks” by brewbooks from near Seattle, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-wright-s-beach-3.jpg`** ✗ **not a coastal photo** — “Lichen at Bodega Bay - Flickr - brewbooks” by brewbooks from near Seattle, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Lichen_at_Bodega_Bay_-_Flickr_-_brewbooks.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: brewbooks from near Seattle, USA — https://www.flickr.com/people/93452909@N00
@@ -11528,15 +11528,7 @@
 
 `osm:way/38336800` · 34.0512777, -118.9594866 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-ca-yerba-buena-beach-1.jpg`** — “California-05765 - Hostel & Lighthouse (20628495302)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:California-05765_-_Hostel_%26_Lighthouse_(20628495302).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
-  - Dated: 2015-08-05 19:39
-  - 1600×919px, 508 KB, shot 503925 m from the spot
-  - Description: The Point Montara lighthouse in Montara, approximately 40.23 km (25 mi) south of San Francisco. The lighthouse is open to the public, and is the site of a youth hostel sponsored by Hostelling International USA. This lighthouse station was established in February 1875. It originally had a kerosene lantern, but was upgraded in 1912 to a fourth order Fresnel lens. The current tower was first erected in 1881 in Wellfleet, Massachusetts as the Mayo Beach Lighthouse. In 1925, the cast iron tower from the discontinued Mayo Beach Light was disassembled and moved to Yerba Buena. It was moved again and 
-  - Match: score 15 via coastal-in-title, name:yerba+buena, kw:beach+point+lighthouse, geo:503925m, w>=1000, landscape
-- **`us-ca-yerba-buena-beach-2.jpg`** — “California-05763 - Point Montara Lighthouse (20637610625)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-yerba-buena-beach-1.jpg`** — “California-05763 - Point Montara Lighthouse (20637610625)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:California-05763_-_Point_Montara_Lighthouse_(20637610625).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
@@ -11544,7 +11536,15 @@
   - 1600×2844px, 1488 KB, shot 503925 m from the spot
   - Description: The Point Montara lighthouse in Montara, approximately 40.23 km (25 mi) south of San Francisco. The lighthouse is open to the public, and is the site of a youth hostel sponsored by Hostelling International USA. This lighthouse station was established in February 1875. It originally had a kerosene lantern, but was upgraded in 1912 to a fourth order Fresnel lens. The current tower was first erected in 1881 in Wellfleet, Massachusetts as the Mayo Beach Lighthouse. In 1925, the cast iron tower from the discontinued Mayo Beach Light was disassembled and moved to Yerba Buena. It was moved again and 
   - Match: score 14.5 via coastal-in-title, name:yerba+buena, kw:beach+point+lighthouse, geo:503925m, w>=1000
-- **`us-ca-yerba-buena-beach-3.jpg`** — “California-05766 - Point Montara Lighthouse (20015066514)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
+- **`us-ca-yerba-buena-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “California-05765 - Hostel & Lighthouse (20628495302)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:California-05765_-_Hostel_%26_Lighthouse_(20628495302).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
+  - Dated: 2015-08-05 19:39
+  - 1600×919px, 508 KB, shot 503925 m from the spot
+  - Description: The Point Montara lighthouse in Montara, approximately 40.23 km (25 mi) south of San Francisco. The lighthouse is open to the public, and is the site of a youth hostel sponsored by Hostelling International USA. This lighthouse station was established in February 1875. It originally had a kerosene lantern, but was upgraded in 1912 to a fourth order Fresnel lens. The current tower was first erected in 1881 in Wellfleet, Massachusetts as the Mayo Beach Lighthouse. In 1925, the cast iron tower from the discontinued Mayo Beach Light was disassembled and moved to Yerba Buena. It was moved again and 
+  - Match: score 15 via coastal-in-title, name:yerba+buena, kw:beach+point+lighthouse, geo:503925m, w>=1000, landscape
+- **`us-ca-yerba-buena-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “California-05766 - Point Montara Lighthouse (20015066514)” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:California-05766_-_Point_Montara_Lighthouse_(20015066514).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
@@ -11565,7 +11565,7 @@
   - 1600×1071px, 376 KB
   - Description: Phalacrocorax spp. (cormorants) on sea stack adjacent to Younger Lagoon beach
   - Match: score 11 via coastal-in-title, name:younger, kw:beach+sea+lagoon, w>=1000, landscape
-- **`us-ca-younger-beach-2.jpg`** — “Dried Macrocystis pyrifera (giant kelp) pneumatocysts and shell fragments on Younger Lagoon beach (7184132922)” by oliveoligarchy from California, United States, Wikimedia Commons, CC BY 2.0
+- **`us-ca-younger-beach-2.jpg`** ✗ **not a coastal photo** — “Dried Macrocystis pyrifera (giant kelp) pneumatocysts and shell fragments on Younger Lagoon beach (7184132922)” by oliveoligarchy from California, United States, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Dried_Macrocystis_pyrifera_(giant_kelp)_pneumatocysts_and_shell_fragments_on_Younger_Lagoon_beach_(7184132922).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: oliveoligarchy from California, United States — https://www.flickr.com/people/14818348@N00
@@ -11573,7 +11573,7 @@
   - 1600×1071px, 1091 KB
   - Description: Dried Macrocystis pyrifera (giant kelp) pneumatocysts and shell fragments on Younger Lagoon beach
   - Match: score 10 via coastal-in-title, name:younger, kw:beach+lagoon, w>=1000, landscape
-- **`us-ca-younger-beach-3.jpg`** — “Driftwood, Calystegia soldanella (beach morning glory), and Ambrosia chamissonis (beach bur) (7184136388)” by oliveoligarchy from California, United States, Wikimedia Commons, CC BY 2.0
+- **`us-ca-younger-beach-3.jpg`** ✗ **not a coastal photo** — “Driftwood, Calystegia soldanella (beach morning glory), and Ambrosia chamissonis (beach bur) (7184136388)” by oliveoligarchy from California, United States, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Driftwood,_Calystegia_soldanella_(beach_morning_glory),_and_Ambrosia_chamissonis_(beach_bur)_(7184136388).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: oliveoligarchy from California, United States — https://www.flickr.com/people/14818348@N00

@@ -27,7 +27,7 @@
   - 1600×901px, 320 KB, shot 466444 m from the spot
   - Description: Centro, 77710 Playa del Carmen, Q.R., Mexico
   - Match: score 6 via coastal-in-title, kw:beach+playa, geo:466444m, w>=1000, landscape
-- **`mx-cam-playas-de-sabancuy-2.jpg`** — “Sac Pacal, 77720 Playa del Carmen, Q.R., Mexico - panoramio (5)” by Андрей Бобровский, Wikimedia Commons, CC BY 3.0
+- **`mx-cam-playas-de-sabancuy-2.jpg`** ⚠︎ *context, not the coast itself* — “Sac Pacal, 77720 Playa del Carmen, Q.R., Mexico - panoramio (5)” by Андрей Бобровский, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sac_Pacal,_77720_Playa_del_Carmen,_Q.R.,_Mexico_-_panoramio_(5).jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Андрей Бобровский — https://web.archive.org/web/20161031092124/http://www.panoramio.com/user/558771?with_photo_id=115261698

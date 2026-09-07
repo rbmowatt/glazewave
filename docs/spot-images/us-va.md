@@ -6,7 +6,7 @@
 
 `osm:node/356560726` · 37.6281881, -75.6002047
 
-- **`us-va-cedar-island-beach-1.jpg`** — Nor'Ida Virginia damage — Public domain (Wikimedia Commons), no attribution required
+- **`us-va-cedar-island-beach-1.jpg`** ✗ **not a coastal photo** — Nor'Ida Virginia damage — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Nor%27Ida_Virginia_damage.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: United States Geological Survey
@@ -32,7 +32,7 @@
 
 `osm:node/356567735` · 37.5487462, -75.6146483
 
-- **`us-va-parramore-beach-1.jpg`** — 1940 Census Enumeration District Descriptions - Virginia - Accomack County - ED 1-23, ED 1-24, ED 1-25, ED 1-26, ED 1-27 - NARA - 5884849 — Public domain (Wikimedia Commons), no attribution required
+- **`us-va-parramore-beach-1.jpg`** ✗ **not a coastal photo** — 1940 Census Enumeration District Descriptions - Virginia - Accomack County - ED 1-23, ED 1-24, ED 1-25, ED 1-26, ED 1-27 - NARA - 5884849 — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:1940_Census_Enumeration_District_Descriptions_-_Virginia_-_Accomack_County_-_ED_1-23,_ED_1-24,_ED_1-25,_ED_1-26,_ED_1-27_-_NARA_-_5884849.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Unknown author Unknown author or not provided
@@ -61,7 +61,7 @@
   - 1600×1067px, 368 KB
   - Description: SANDBRIDGE, Va. -- The hopper dredge BE Lindholm, anchored off the coast of Virginia Beach, pumps sand from the ocean's floor. The sand is transferred through a piping system into a strainer before it is placed on the beach. Dozers then move the sand to expand and build up the beach front. Today the crew was working between the 2800 and 2900 block of Sandpiper Rd. The $13.35 million non-federal project included the dredging and placement of approximately 2 million cubic yards of sand along public beachfront from Back Bay National Wildlife Refuge to the Dam Neck Naval facility.
   - Match: score 11 via coastal-in-title, name:sandbridge, kw:beach+ocean+coast+sand, w>=1000, landscape
-- **`us-va-sandbridge-beach-3.jpg`** — Sandbridge Beach Renourishment (9022779957) — Public domain (Wikimedia Commons), no attribution required
+- **`us-va-sandbridge-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Sandbridge Beach Renourishment (9022779957) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Sandbridge_Beach_Renourishment_(9022779957).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: U.S. Army Corps of Engineers Norfolk District from United States — https://www.flickr.com/people/29327036@N03
@@ -74,7 +74,7 @@
 
 `osm:node/356566130` · 37.1320875, -75.8802044
 
-- **`us-va-smith-island-beach-1.jpg`** — “Shawnee SM looking back at turtle island (7244609984)” by Virginia State Parks staff, Wikimedia Commons, CC BY 2.0
+- **`us-va-smith-island-beach-1.jpg`** ✗ **not a coastal photo** — “Shawnee SM looking back at turtle island (7244609984)” by Virginia State Parks staff, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Shawnee_SM_looking_back_at_turtle_island_(7244609984).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Virginia State Parks staff — https://www.flickr.com/people/37922399@N05
@@ -82,7 +82,7 @@
   - 1600×1163px, 122 KB
   - Description: used in blog uploaded by SA
   - Match: score 10.5 via name:smith+island, kw:beach, w>=1000, landscape
-- **`us-va-smith-island-beach-2.jpg`** — “Island in the Sky (24674940208)” by Bill Smith from Virginia Beach, Wikimedia Commons, CC BY 2.0
+- **`us-va-smith-island-beach-2.jpg`** ✗ **not a coastal photo** — “Island in the Sky (24674940208)” by Bill Smith from Virginia Beach, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Island_in_the_Sky_(24674940208).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Bill Smith from Virginia Beach — https://www.flickr.com/people/10688882@N00
@@ -95,7 +95,7 @@
 
 `osm:node/4068387746` · 36.7852822, -75.957735
 
-- **`us-va-surfing-beach-1.jpg`** — “Beach Volleyball - ECSC East Coast Surfing Championships Virginia Beach (37119834775)” by C Watts, Wikimedia Commons, CC BY 2.0
+- **`us-va-surfing-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Beach Volleyball - ECSC East Coast Surfing Championships Virginia Beach (37119834775)” by C Watts, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Beach_Volleyball_-_ECSC_East_Coast_Surfing_Championships_Virginia_Beach_(37119834775).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: C Watts — https://www.flickr.com/people/126288307@N05
@@ -103,7 +103,7 @@
   - 1600×1176px, 673 KB
   - Description: Beach Volleyball - ECSC East Coast Surfing Championships Virginia Beach
   - Match: score 11 via coastal-in-title, name:surfing, kw:beach+surf+surfing+coast, w>=1000, landscape
-- **`us-va-surfing-beach-2.jpg`** — “Beach Volleyball - 2017 ECSC East Coast Surfing Championships Virginia Beach (36288702213)” by C Watts, Wikimedia Commons, CC BY 2.0
+- **`us-va-surfing-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Beach Volleyball - 2017 ECSC East Coast Surfing Championships Virginia Beach (36288702213)” by C Watts, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Beach_Volleyball_-_2017_ECSC_East_Coast_Surfing_Championships_Virginia_Beach_(36288702213).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: C Watts — https://www.flickr.com/people/126288307@N05
@@ -111,7 +111,7 @@
   - 1600×1086px, 566 KB
   - Description: Beach Volleyball - 2017 ECSC East Coast Surfing Championships Virginia Beach
   - Match: score 11 via coastal-in-title, name:surfing, kw:beach+surf+surfing+coast, w>=1000, landscape
-- **`us-va-surfing-beach-3.jpg`** — “Beach Volleyball - 2017 ECSC East Coast Surfing Championships Virginia Beach (36266687704)” by C Watts, Wikimedia Commons, CC BY 2.0
+- **`us-va-surfing-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Beach Volleyball - 2017 ECSC East Coast Surfing Championships Virginia Beach (36266687704)” by C Watts, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Beach_Volleyball_-_2017_ECSC_East_Coast_Surfing_Championships_Virginia_Beach_(36266687704).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: C Watts — https://www.flickr.com/people/126288307@N05
@@ -132,7 +132,7 @@
   - 1600×401px, 218 KB
   - Description: NASA Wallops Island Flight Facility on Virginia’s Eastern Shore is experiencing major erosion issues near its launch pads and vehicle assembly buildings. The agency is working with the Norfolk District, U.S. Army Corps of Engineers to extend a seawall about 1500 feet to protect the launch pads at the southern end of the island, and place about 2.6 million cubic yards of sand along the beach to help protect the entire island from further erosion. (U.S. Army photo/Patrick Bloodgood)
   - Match: score 11 via coastal-in-title, name:wallops, kw:beach+sea+shore+shoreline, w>=1000, landscape
-- **`us-va-wallops-beach-2.jpg`** — NASA Wallops Flight Facility, 2010 — Public domain (Wikimedia Commons), no attribution required
+- **`us-va-wallops-beach-2.jpg`** ⚠︎ *context, not the coast itself* — NASA Wallops Flight Facility, 2010 — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:NASA_Wallops_Flight_Facility,_2010.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: NASA/Wallops Flight Facility
@@ -140,7 +140,7 @@
   - 1600×1067px, 557 KB, shot 1414 m from the spot
   - Description: NASA Goddard Space Flight Center's Wallops Flight Facility, located on Virginia's Eastern Shore, was established in 1945 by the National Advisory Committee for Aeronautics, as a center for aeronautic research. Wallops is now NASA's principal facility for management and implementation of suborbital research programs. The Wallops Mission Plan includes the following objectives: • To help achieve NASA's strategic objectives for scientific and educational excellence through cost efficient integration, launch, and operations of suborbital and small orbital payloads. • To enable scientific, education
   - Match: score 9 via name:wallops, kw:sea+shore, geo:1414m, w>=1000, landscape
-- **`us-va-wallops-beach-3.jpg`** — Mid-Atlantic Regional Spaceport - aerial photo — Public domain (Wikimedia Commons), no attribution required
+- **`us-va-wallops-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Mid-Atlantic Regional Spaceport - aerial photo — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Mid-Atlantic_Regional_Spaceport_-_aerial_photo.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: NASA Wallops Flight Facility

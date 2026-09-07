@@ -32,15 +32,7 @@
 
 `osm:way/1089340805` · 32.3478818, -117.0630692 · beach type: **sandy** (OpenStreetMap surface=sand) · lifeguard: 06:00-20:00 · access: yes
 
-- **`mx-bc-playa-de-rosarito-1.jpg`** — “Baja Beach Fest Sunset” by Sickscott01, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Baja_Beach_Fest_Sunset.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Sickscott01
-  - Dated: 2022-08-14 19:25:28
-  - 1600×1066px, 625 KB, shot 1032 m from the spot
-  - Description: Sunset in Baja Beach Fest Rosarito Mexico. 2023121410011691
-  - Match: score 12 via coastal-in-title, name:rosarito, kw:beach+sunset, geo:1032m, w>=1000, landscape
-- **`mx-bc-playa-de-rosarito-2.jpg`** — “Rosarito's Beach” by Liliana Saeb, Wikimedia Commons, CC BY 2.0
+- **`mx-bc-playa-de-rosarito-1.jpg`** — “Rosarito's Beach” by Liliana Saeb, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Rosarito%27s_Beach.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Liliana Saeb
@@ -48,7 +40,15 @@
   - 1600×948px, 362 KB, shot 1424 m from the spot
   - Description: Lens: 18-55mm ISO: 100 Aperture: f/4.6 Processed with Photomatix Pro + Adobe Lightroom 4
   - Match: score 11 via coastal-in-title, name:rosarito, kw:beach+pier, geo:1424m, w>=1000, landscape
-- **`mx-bc-playa-de-rosarito-3.jpg`** — “Baja Beach Fest Aerial View” by Sickscott01, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-bc-playa-de-rosarito-2.jpg`** ⚠︎ *context, not the coast itself* — “Baja Beach Fest Sunset” by Sickscott01, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Baja_Beach_Fest_Sunset.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Sickscott01
+  - Dated: 2022-08-14 19:25:28
+  - 1600×1066px, 625 KB, shot 1032 m from the spot
+  - Description: Sunset in Baja Beach Fest Rosarito Mexico. 2023121410011691
+  - Match: score 12 via coastal-in-title, name:rosarito, kw:beach+sunset, geo:1032m, w>=1000, landscape
+- **`mx-bc-playa-de-rosarito-3.jpg`** ⚠︎ *context, not the coast itself* — “Baja Beach Fest Aerial View” by Sickscott01, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Baja_Beach_Fest_Aerial_View.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Sickscott01
@@ -69,15 +69,7 @@
   - 1600×1200px, 234 KB
   - Description: Atardecer en Playa El Faro, en la boca del estero de Punta Banda, Ensenada, Baja California.
   - Match: score 10 via coastal-in-title, name:faro, kw:beach+playa, w>=1000, landscape
-- **`mx-bc-playa-el-faro-2.jpg`** — “Barrenjoey Head Lighthouse, Palm Beach, New South Wales, AUSTRALIA” by Paul Anthony Stewart, (flickr user name paulhypnos), Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Barrenjoey_Head_Lighthouse,_Palm_Beach,_New_South_Wales,_AUSTRALIA.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Paul Anthony Stewart, (flickr user name paulhypnos) — //commons.wikimedia.org/wiki/User:Paulstewart77
-  - Dated: 2018-07-12 14:44:22
-  - 1600×2133px, 1226 KB, shot 12142924 m from the spot
-  - Description: Barrenjoey Lighthouse sits at Sydney’s most northern point – Barrenjoey Head at Palm Beach. Positioned 91m above sea level, the lighthouse can be reached by a couple of walks and offers outstanding views. It's an easy day trip from Sydney and a great place to bring overseas visitors – they may recognise the lighthouse from Home and Away and will find Summer Bay Surf Club nearby. The lighthouse is one of the most iconic sights on Sydney's northern beaches and boasts a notable cultural heritage. Built in 1881 from sandstone quarried on site, the lighthouse, its oil room and keepers’ cottages rem
-  - Match: score 6.5 via coastal-in-title, kw:beach+surf+sea+sand, geo:12142924m, w>=1000
-- **`mx-bc-playa-el-faro-3.jpg`** — “Sun Up at Gonsaga Bay, Baja California, Mexico - panoramio” by Bengt Nyman, Wikimedia Commons, CC BY 3.0
+- **`mx-bc-playa-el-faro-2.jpg`** — “Sun Up at Gonsaga Bay, Baja California, Mexico - panoramio” by Bengt Nyman, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sun_Up_at_Gonsaga_Bay,_Baja_California,_Mexico_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Bengt Nyman — https://web.archive.org/web/20161014232012/http://www.panoramio.com/user/4273456?with_photo_id=33156517
@@ -85,6 +77,14 @@
   - 1600×1178px, 1112 KB, shot 1937 m from the spot
   - Description: Sun Up at Gonsaga Bay, Baja California, Mexico
   - Match: score 5.5 via coastal-in-title, kw:bay, geo:1937m, w>=1000, landscape
+- **`mx-bc-playa-el-faro-3.jpg`** ⚠︎ *context, not the coast itself* — “Barrenjoey Head Lighthouse, Palm Beach, New South Wales, AUSTRALIA” by Paul Anthony Stewart, (flickr user name paulhypnos), Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Barrenjoey_Head_Lighthouse,_Palm_Beach,_New_South_Wales,_AUSTRALIA.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Paul Anthony Stewart, (flickr user name paulhypnos) — //commons.wikimedia.org/wiki/User:Paulstewart77
+  - Dated: 2018-07-12 14:44:22
+  - 1600×2133px, 1226 KB, shot 12142924 m from the spot
+  - Description: Barrenjoey Lighthouse sits at Sydney’s most northern point – Barrenjoey Head at Palm Beach. Positioned 91m above sea level, the lighthouse can be reached by a couple of walks and offers outstanding views. It's an easy day trip from Sydney and a great place to bring overseas visitors – they may recognise the lighthouse from Home and Away and will find Summer Bay Surf Club nearby. The lighthouse is one of the most iconic sights on Sydney's northern beaches and boasts a notable cultural heritage. Built in 1881 from sandstone quarried on site, the lighthouse, its oil room and keepers’ cottages rem
+  - Match: score 6.5 via coastal-in-title, kw:beach+surf+sea+sand, geo:12142924m, w>=1000
 
 ## Playa Grande
 
@@ -117,7 +117,7 @@
 
 `osm:way/758221351` · 31.0173042, -114.8333258
 
-- **`mx-bc-playa-san-felipe-1.jpg`** — “For you...^ Almost Free - panoramio” by sterferg, Wikimedia Commons, CC BY-SA 3.0
+- **`mx-bc-playa-san-felipe-1.jpg`** ⚠︎ *context, not the coast itself* — “For you...^ Almost Free - panoramio” by sterferg, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:For_you...%5E_Almost_Free_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: sterferg — https://web.archive.org/web/20161011003004/http://www.panoramio.com/user/188488?with_photo_id=1499732
@@ -125,7 +125,7 @@
   - 1600×1098px, 59 KB, shot 116 m from the spot
   - Description: For you...? Almost Free
   - Match: score 15 via name:san+felipe, kw:beach+playa, geo:116m, w>=1000, landscape
-- **`mx-bc-playa-san-felipe-2.jpg`** — “Summer in San Felipe BC 19 - panoramio” by sterferg, Wikimedia Commons, CC BY-SA 3.0
+- **`mx-bc-playa-san-felipe-2.jpg`** ⚠︎ *context, not the coast itself* — “Summer in San Felipe BC 19 - panoramio” by sterferg, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Summer_in_San_Felipe_BC_19_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: sterferg — https://web.archive.org/web/20161011045309/http://www.panoramio.com/user/188488?with_photo_id=1499721
@@ -151,7 +151,7 @@
 
 `osm:way/1089340804` · 32.3286908, -117.053995
 
-- **`mx-bc-rosarito-tripizdon-beach-1.jpg`** — “Baja Beach Fest Sunset” by Sickscott01, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-bc-rosarito-tripizdon-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Baja Beach Fest Sunset” by Sickscott01, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Baja_Beach_Fest_Sunset.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Sickscott01
@@ -159,15 +159,7 @@
   - 1600×1066px, 625 KB, shot 1275 m from the spot
   - Description: Sunset in Baja Beach Fest Rosarito Mexico. 2023121410011691
   - Match: score 11 via coastal-in-title, name:rosarito, kw:beach+sunset, geo:1275m, w>=1000, landscape
-- **`mx-bc-rosarito-tripizdon-beach-2.jpg`** — “Rosarito Beach,B.C.Mexico. - panoramio (2)” by Roman Eugeniusz, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Rosarito_Beach,B.C.Mexico._-_panoramio_(2).jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Roman Eugeniusz — https://web.archive.org/web/20161023124946/http://www.panoramio.com/user/1699605?with_photo_id=53832278
-  - Dated: 6 June 2011 (original upload date)
-  - 1600×954px, 251 KB, shot 919 m from the spot
-  - Description: Rosarito Beach,B.C.Mexico.
-  - Match: score 10.5 via coastal-in-title, name:rosarito, kw:beach, geo:919m, w>=1000, landscape
-- **`mx-bc-rosarito-tripizdon-beach-3.jpg`** — “Punta Azul, Playas de Rosarito” by Kalel Tonatiuh, Wikimedia Commons, CC BY-SA 3.0
+- **`mx-bc-rosarito-tripizdon-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Punta Azul, Playas de Rosarito” by Kalel Tonatiuh, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Punta_Azul,_Playas_de_Rosarito.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Kalel Tonatiuh — //commons.wikimedia.org/w/index.php?title=User:Kalel_Tonatiuh&amp;action=edit&amp;redlink=1
@@ -175,4 +167,12 @@
   - 1600×901px, 450 KB, shot 836 m from the spot
   - Description: Punta Azul, Playas de Rosarito (human settlement in Mexico)
   - Match: score 10.5 via coastal-in-title, name:rosarito, kw:playa, geo:836m, w>=1000, landscape
+- **`mx-bc-rosarito-tripizdon-beach-3.jpg`** ✗ **not a coastal photo** — “Rosarito Beach,B.C.Mexico. - panoramio (2)” by Roman Eugeniusz, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Rosarito_Beach,B.C.Mexico._-_panoramio_(2).jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Roman Eugeniusz — https://web.archive.org/web/20161023124946/http://www.panoramio.com/user/1699605?with_photo_id=53832278
+  - Dated: 6 June 2011 (original upload date)
+  - 1600×954px, 251 KB, shot 919 m from the spot
+  - Description: Rosarito Beach,B.C.Mexico.
+  - Match: score 10.5 via coastal-in-title, name:rosarito, kw:beach, geo:919m, w>=1000, landscape
 

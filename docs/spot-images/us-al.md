@@ -6,15 +6,7 @@
 
 `osm:node/9061212706` · 30.243679, -87.7130285
 
-- **`us-al-10th-street-beach-access-1.jpg`** — “Gulf Shores, Alabama, 2015 Luidia alternata” by Niedzielski, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Gulf_Shores,_Alabama,_2015_Luidia_alternata.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Niedzielski — //commons.wikimedia.org/wiki/User:Niedzielski
-  - Dated: 2015-06-05 10:45:41
-  - 1600×1200px, 474 KB, shot 346 m from the spot
-  - Description: Banded sea star ( Luidia alternata ) photographed a couple hundred meters off the coast of Gulf Shores, Alabama, at about 3 meters depth.
-  - Match: score 10 via coastal-in-title, kw:sea+coast+shore, geo:346m, w>=1000, landscape
-- **`us-al-10th-street-beach-access-2.jpg`** — “Gulf Shores, Alabama (beach)” by Please attribute this image as the work of " DiscoverWithDima .", Wikimedia Commons, CC BY-SA 4.0
+- **`us-al-10th-street-beach-access-1.jpg`** — “Gulf Shores, Alabama (beach)” by Please attribute this image as the work of " DiscoverWithDima .", Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Gulf_Shores,_Alabama_(beach).jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Please attribute this image as the work of " DiscoverWithDima ." — https://en.wikipedia.org/wiki/User:DDima
@@ -22,7 +14,15 @@
   - 1600×1200px, 441 KB, shot 3108 m from the spot
   - Description: View of the beach in Gulf Shores, Alabama during Spring Break.
   - Match: score 7 via coastal-in-title, kw:beach+shore+break, geo:3108m, w>=1000, landscape
-- **`us-al-10th-street-beach-access-3.jpg`** — Surf Style Gulf Shores 2026 — CC0 (Wikimedia Commons), no attribution required
+- **`us-al-10th-street-beach-access-2.jpg`** ✗ **not a coastal photo** — “Gulf Shores, Alabama, 2015 Luidia alternata” by Niedzielski, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Gulf_Shores,_Alabama,_2015_Luidia_alternata.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Niedzielski — //commons.wikimedia.org/wiki/User:Niedzielski
+  - Dated: 2015-06-05 10:45:41
+  - 1600×1200px, 474 KB, shot 346 m from the spot
+  - Description: Banded sea star ( Luidia alternata ) photographed a couple hundred meters off the coast of Gulf Shores, Alabama, at about 3 meters depth.
+  - Match: score 10 via coastal-in-title, kw:sea+coast+shore, geo:346m, w>=1000, landscape
+- **`us-al-10th-street-beach-access-3.jpg`** ✗ **not a coastal photo** — Surf Style Gulf Shores 2026 — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Surf_Style_Gulf_Shores_2026.jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Brycenrichter — //commons.wikimedia.org/wiki/User:Brycenrichter
@@ -35,15 +35,7 @@
 
 `osm:node/6318702492` · 30.2418231, -87.7306391
 
-- **`us-al-13th-st-beach-access-1.jpg`** — “Gulf Shores, Alabama, 2015 Luidia alternata” by Niedzielski, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Gulf_Shores,_Alabama,_2015_Luidia_alternata.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Niedzielski — //commons.wikimedia.org/wiki/User:Niedzielski
-  - Dated: 2015-06-05 10:45:41
-  - 1600×1200px, 474 KB, shot 1582 m from the spot
-  - Description: Banded sea star ( Luidia alternata ) photographed a couple hundred meters off the coast of Gulf Shores, Alabama, at about 3 meters depth.
-  - Match: score 8 via coastal-in-title, kw:sea+coast+shore, geo:1582m, w>=1000, landscape
-- **`us-al-13th-st-beach-access-2.jpg`** — “Gulf Shores, Alabama (beach)” by Please attribute this image as the work of " DiscoverWithDima .", Wikimedia Commons, CC BY-SA 4.0
+- **`us-al-13th-st-beach-access-1.jpg`** — “Gulf Shores, Alabama (beach)” by Please attribute this image as the work of " DiscoverWithDima .", Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Gulf_Shores,_Alabama_(beach).jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Please attribute this image as the work of " DiscoverWithDima ." — https://en.wikipedia.org/wiki/User:DDima
@@ -51,7 +43,15 @@
   - 1600×1200px, 441 KB, shot 4811 m from the spot
   - Description: View of the beach in Gulf Shores, Alabama during Spring Break.
   - Match: score 7 via coastal-in-title, kw:beach+shore+break, geo:4811m, w>=1000, landscape
-- **`us-al-13th-st-beach-access-3.jpg`** — Surf Style Gulf Shores 2026 — CC0 (Wikimedia Commons), no attribution required
+- **`us-al-13th-st-beach-access-2.jpg`** ✗ **not a coastal photo** — “Gulf Shores, Alabama, 2015 Luidia alternata” by Niedzielski, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Gulf_Shores,_Alabama,_2015_Luidia_alternata.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Niedzielski — //commons.wikimedia.org/wiki/User:Niedzielski
+  - Dated: 2015-06-05 10:45:41
+  - 1600×1200px, 474 KB, shot 1582 m from the spot
+  - Description: Banded sea star ( Luidia alternata ) photographed a couple hundred meters off the coast of Gulf Shores, Alabama, at about 3 meters depth.
+  - Match: score 8 via coastal-in-title, kw:sea+coast+shore, geo:1582m, w>=1000, landscape
+- **`us-al-13th-st-beach-access-3.jpg`** ✗ **not a coastal photo** — Surf Style Gulf Shores 2026 — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Surf_Style_Gulf_Shores_2026.jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Brycenrichter — //commons.wikimedia.org/wiki/User:Brycenrichter
@@ -64,15 +64,7 @@
 
 `osm:node/9061212707` · 30.2457503, -87.7002655
 
-- **`us-al-6th-street-beach-access-1.jpg`** — “Gulf Shores, Alabama, 2015 Luidia alternata” by Niedzielski, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Gulf_Shores,_Alabama,_2015_Luidia_alternata.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Niedzielski — //commons.wikimedia.org/wiki/User:Niedzielski
-  - Dated: 2015-06-05 10:45:41
-  - 1600×1200px, 474 KB, shot 1451 m from the spot
-  - Description: Banded sea star ( Luidia alternata ) photographed a couple hundred meters off the coast of Gulf Shores, Alabama, at about 3 meters depth.
-  - Match: score 8 via coastal-in-title, kw:sea+coast+shore, geo:1451m, w>=1000, landscape
-- **`us-al-6th-street-beach-access-2.jpg`** — “Gulf Shores, Alabama (beach)” by Please attribute this image as the work of " DiscoverWithDima .", Wikimedia Commons, CC BY-SA 4.0
+- **`us-al-6th-street-beach-access-1.jpg`** — “Gulf Shores, Alabama (beach)” by Please attribute this image as the work of " DiscoverWithDima .", Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Gulf_Shores,_Alabama_(beach).jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Please attribute this image as the work of " DiscoverWithDima ." — https://en.wikipedia.org/wiki/User:DDima
@@ -80,7 +72,15 @@
   - 1600×1200px, 441 KB, shot 1862 m from the spot
   - Description: View of the beach in Gulf Shores, Alabama during Spring Break.
   - Match: score 8 via coastal-in-title, kw:beach+shore+break, geo:1862m, w>=1000, landscape
-- **`us-al-6th-street-beach-access-3.jpg`** — Surf Style Gulf Shores 2026 — CC0 (Wikimedia Commons), no attribution required
+- **`us-al-6th-street-beach-access-2.jpg`** ✗ **not a coastal photo** — “Gulf Shores, Alabama, 2015 Luidia alternata” by Niedzielski, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Gulf_Shores,_Alabama,_2015_Luidia_alternata.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Niedzielski — //commons.wikimedia.org/wiki/User:Niedzielski
+  - Dated: 2015-06-05 10:45:41
+  - 1600×1200px, 474 KB, shot 1451 m from the spot
+  - Description: Banded sea star ( Luidia alternata ) photographed a couple hundred meters off the coast of Gulf Shores, Alabama, at about 3 meters depth.
+  - Match: score 8 via coastal-in-title, kw:sea+coast+shore, geo:1451m, w>=1000, landscape
+- **`us-al-6th-street-beach-access-3.jpg`** ✗ **not a coastal photo** — Surf Style Gulf Shores 2026 — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Surf_Style_Gulf_Shores_2026.jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Brycenrichter — //commons.wikimedia.org/wiki/User:Brycenrichter
@@ -93,23 +93,7 @@
 
 `osm:node/9927306588` · 30.2766223, -87.550249 · beach type: **sandy** (OpenStreetMap surface=fine_sand)
 
-- **`us-al-alabama-point-beach-1.jpg`** — “Waiting on the tide, Golf of Mexico” by Casey Muir-Taylor, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Waiting_on_the_tide,_Golf_of_Mexico.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Casey Muir-Taylor — https://www.flickr.com/people/54195664@N05
-  - Dated: 2011-09-15 15:13:56
-  - 1600×1067px, 318 KB, shot 4257 m from the spot
-  - Description: At the beach.
-  - Match: score 10 via coastal-in-title, name:alabama, kw:beach+tide, geo:4257m, w>=1000, landscape
-- **`us-al-alabama-point-beach-2.jpg`** — Alabama Beach Mouse — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Alabama_Beach_Mouse.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: United States Fish and Wildlife Service — https://en.wikipedia.org/wiki/United_States_Fish_and_Wildlife_Service
-  - Dated: Unknown date
-  - 1600×1418px, 13 KB
-  - Description: Alabama Beach Mouse (Peromyscus polionotus ammobates) , a federally endangered species whose habitat includes Mobile Point and Ono Island in Alabama , United States .
-  - Match: score 9.5 via coastal-in-title, name:alabama, kw:beach+point, w>=1000
-- **`us-al-alabama-point-beach-3.jpg`** — “Facebook Photo Jpg (182016815)” by Clercc, Wikimedia Commons, CC BY 3.0
+- **`us-al-alabama-point-beach-1.jpg`** — “Facebook Photo Jpg (182016815)” by Clercc, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Facebook_Photo_Jpg_(182016815).jpeg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Clercc — https://500px.com/clercc
@@ -117,12 +101,28 @@
   - 1600×1600px, 102 KB, shot 4277 m from the spot
   - Description: 500px provided description: Sunset at the peir [#Beautiful sunset and pattern on the water. Panorama.]
   - Match: score 8.5 via name:alabama, kw:beach+bay+sunset, geo:4277m, w>=1000
+- **`us-al-alabama-point-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Waiting on the tide, Golf of Mexico” by Casey Muir-Taylor, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Waiting_on_the_tide,_Golf_of_Mexico.jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Casey Muir-Taylor — https://www.flickr.com/people/54195664@N05
+  - Dated: 2011-09-15 15:13:56
+  - 1600×1067px, 318 KB, shot 4257 m from the spot
+  - Description: At the beach.
+  - Match: score 10 via coastal-in-title, name:alabama, kw:beach+tide, geo:4257m, w>=1000, landscape
+- **`us-al-alabama-point-beach-3.jpg`** ✗ **not a coastal photo** — Alabama Beach Mouse — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Alabama_Beach_Mouse.jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: United States Fish and Wildlife Service — https://en.wikipedia.org/wiki/United_States_Fish_and_Wildlife_Service
+  - Dated: Unknown date
+  - 1600×1418px, 13 KB
+  - Description: Alabama Beach Mouse (Peromyscus polionotus ammobates) , a federally endangered species whose habitat includes Mobile Point and Ono Island in Alabama , United States .
+  - Match: score 9.5 via coastal-in-title, name:alabama, kw:beach+point, w>=1000
 
 ## Bienville Beach
 
 `osm:node/358906435` · 30.2471479, -88.1236109
 
-- **`us-al-bienville-beach-1.jpg`** — “Ocean Buoy - panoramio” by Dameon Hudson, Wikimedia Commons, CC BY 3.0
+- **`us-al-bienville-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Ocean Buoy - panoramio” by Dameon Hudson, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Ocean_Buoy_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Dameon Hudson — https://web.archive.org/web/20161020131506/http://www.panoramio.com/user/3187235?with_photo_id=65851571
@@ -164,7 +164,7 @@
 
 `osm:relation/17920247` · 30.2455874, -88.0836713 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-al-east-end-beach-1.jpg`** — DauphinIslandSeaLabcropped — CC0 (Wikimedia Commons), no attribution required
+- **`us-al-east-end-beach-1.jpg`** ✗ **not a coastal photo** — DauphinIslandSeaLabcropped — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:DauphinIslandSeaLabcropped.jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Abductive — //commons.wikimedia.org/w/index.php?title=User:Abductive&amp;action=edit&amp;redlink=1
@@ -185,7 +185,7 @@
   - 1600×1200px, 441 KB, shot 548 m from the spot
   - Description: View of the beach in Gulf Shores, Alabama during Spring Break.
   - Match: score 13 via coastal-in-title, name:gulf, kw:beach+shore+break, geo:548m, w>=1000, landscape
-- **`us-al-east-gulf-place-2.jpg`** — Surf Style Gulf Shores 2026 — CC0 (Wikimedia Commons), no attribution required
+- **`us-al-east-gulf-place-2.jpg`** ✗ **not a coastal photo** — Surf Style Gulf Shores 2026 — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Surf_Style_Gulf_Shores_2026.jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Brycenrichter — //commons.wikimedia.org/wiki/User:Brycenrichter
@@ -193,7 +193,7 @@
   - 1600×1200px, 520 KB, shot 271 m from the spot
   - Description: A Surf Style store in Gulf Shores, Alabama in 2026
   - Match: score 13 via coastal-in-title, name:gulf, kw:surf+shore, geo:271m, w>=1000, landscape
-- **`us-al-east-gulf-place-3.jpg`** — “Gulf Shores, Alabama, 2015 Luidia alternata” by Niedzielski, Wikimedia Commons, CC BY-SA 4.0
+- **`us-al-east-gulf-place-3.jpg`** ✗ **not a coastal photo** — “Gulf Shores, Alabama, 2015 Luidia alternata” by Niedzielski, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Gulf_Shores,_Alabama,_2015_Luidia_alternata.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Niedzielski — //commons.wikimedia.org/wiki/User:Niedzielski
@@ -214,7 +214,7 @@
   - 1600×1193px, 410 KB
   - Description: Perdido Pass, view from the East Jetty at Perdido Pass
   - Match: score 10 via coastal-in-title, name:jetty, kw:beach+jetty, w>=1000, landscape
-- **`us-al-east-jetty-2.jpg`** — “Waiting on the tide, Golf of Mexico” by Casey Muir-Taylor, Wikimedia Commons, CC BY 2.0
+- **`us-al-east-jetty-2.jpg`** ⚠︎ *context, not the coast itself* — “Waiting on the tide, Golf of Mexico” by Casey Muir-Taylor, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Waiting_on_the_tide,_Golf_of_Mexico.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Casey Muir-Taylor — https://www.flickr.com/people/54195664@N05
@@ -235,7 +235,7 @@
   - 1600×1200px, 441 KB, shot 840 m from the spot
   - Description: View of the beach in Gulf Shores, Alabama during Spring Break.
   - Match: score 13 via coastal-in-title, name:gulf, kw:beach+shore+break, geo:840m, w>=1000, landscape
-- **`us-al-gulf-place-2.jpg`** — Surf Style Gulf Shores 2026 — CC0 (Wikimedia Commons), no attribution required
+- **`us-al-gulf-place-2.jpg`** ✗ **not a coastal photo** — Surf Style Gulf Shores 2026 — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Surf_Style_Gulf_Shores_2026.jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Brycenrichter — //commons.wikimedia.org/wiki/User:Brycenrichter
@@ -243,7 +243,7 @@
   - 1600×1200px, 520 KB, shot 181 m from the spot
   - Description: A Surf Style store in Gulf Shores, Alabama in 2026
   - Match: score 13 via coastal-in-title, name:gulf, kw:surf+shore, geo:181m, w>=1000, landscape
-- **`us-al-gulf-place-3.jpg`** — “Gulf Shores, Alabama, 2015 Luidia alternata” by Niedzielski, Wikimedia Commons, CC BY-SA 4.0
+- **`us-al-gulf-place-3.jpg`** ✗ **not a coastal photo** — “Gulf Shores, Alabama, 2015 Luidia alternata” by Niedzielski, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Gulf_Shores,_Alabama,_2015_Luidia_alternata.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Niedzielski — //commons.wikimedia.org/wiki/User:Niedzielski
@@ -256,23 +256,7 @@
 
 `osm:relation/18418703` · 30.2446589, -87.7052316 · beach type: **sandy** (OpenStreetMap surface=sand) · lifeguard: yes
 
-- **`us-al-gulf-shores-public-beach-1.jpg`** — My Public Lands Roadtrip- Sunny Alabama Shores for National Trails Day! (17959186644) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:My_Public_Lands_Roadtrip-_Sunny_Alabama_Shores_for_National_Trails_Day!_(17959186644).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Bureau of Land Management — https://www.flickr.com/people/91981596@N06
-  - Dated: 2015-06-07 20:55
-  - 1600×1063px, 602 KB
-  - Description: Today, we’re heading over to Baldwin County, Alabama, where the BLM manages seven small beach front tracts. All of these tracts are designated critical habitat for Alabama beach mouse and contain primary dunes, the preferred habitat for this species. The tracts also provide nesting habitat for loggerhead sea turtles. In fact, these beaches are one of the few areas in the U.S. that federally-threatened Loggerhead Sea Turtles use for nesting. Actually locating a sea turtle nesting spot - momma turtles like to hide and lay eggs at night - and watching eggs hatch are rare events. Volunteers regula
-  - Match: score 19 via coastal-in-title, name:gulf+shores+public, kw:beach+sea+shore+dune, w>=1000, landscape
-- **`us-al-gulf-shores-public-beach-2.jpg`** — “Gulf Shores, Alabama, 2015 Luidia alternata” by Niedzielski, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Gulf_Shores,_Alabama,_2015_Luidia_alternata.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Niedzielski — //commons.wikimedia.org/wiki/User:Niedzielski
-  - Dated: 2015-06-05 10:45:41
-  - 1600×1200px, 474 KB, shot 967 m from the spot
-  - Description: Banded sea star ( Luidia alternata ) photographed a couple hundred meters off the coast of Gulf Shores, Alabama, at about 3 meters depth.
-  - Match: score 17 via coastal-in-title, name:gulf+shores, kw:sea+coast+shore, geo:967m, w>=1000, landscape
-- **`us-al-gulf-shores-public-beach-3.jpg`** — “Gulf Shores, Alabama (beach)” by Please attribute this image as the work of " DiscoverWithDima .", Wikimedia Commons, CC BY-SA 4.0
+- **`us-al-gulf-shores-public-beach-1.jpg`** — “Gulf Shores, Alabama (beach)” by Please attribute this image as the work of " DiscoverWithDima .", Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Gulf_Shores,_Alabama_(beach).jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Please attribute this image as the work of " DiscoverWithDima ." — https://en.wikipedia.org/wiki/User:DDima
@@ -280,6 +264,22 @@
   - 1600×1200px, 441 KB, shot 2351 m from the spot
   - Description: View of the beach in Gulf Shores, Alabama during Spring Break.
   - Match: score 16 via coastal-in-title, name:gulf+shores, kw:beach+shore+break, geo:2351m, w>=1000, landscape
+- **`us-al-gulf-shores-public-beach-2.jpg`** ✗ **not a coastal photo** — My Public Lands Roadtrip- Sunny Alabama Shores for National Trails Day! (17959186644) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:My_Public_Lands_Roadtrip-_Sunny_Alabama_Shores_for_National_Trails_Day!_(17959186644).jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: Bureau of Land Management — https://www.flickr.com/people/91981596@N06
+  - Dated: 2015-06-07 20:55
+  - 1600×1063px, 602 KB
+  - Description: Today, we’re heading over to Baldwin County, Alabama, where the BLM manages seven small beach front tracts. All of these tracts are designated critical habitat for Alabama beach mouse and contain primary dunes, the preferred habitat for this species. The tracts also provide nesting habitat for loggerhead sea turtles. In fact, these beaches are one of the few areas in the U.S. that federally-threatened Loggerhead Sea Turtles use for nesting. Actually locating a sea turtle nesting spot - momma turtles like to hide and lay eggs at night - and watching eggs hatch are rare events. Volunteers regula
+  - Match: score 19 via coastal-in-title, name:gulf+shores+public, kw:beach+sea+shore+dune, w>=1000, landscape
+- **`us-al-gulf-shores-public-beach-3.jpg`** ✗ **not a coastal photo** — “Gulf Shores, Alabama, 2015 Luidia alternata” by Niedzielski, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Gulf_Shores,_Alabama,_2015_Luidia_alternata.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Niedzielski — //commons.wikimedia.org/wiki/User:Niedzielski
+  - Dated: 2015-06-05 10:45:41
+  - 1600×1200px, 474 KB, shot 967 m from the spot
+  - Description: Banded sea star ( Luidia alternata ) photographed a couple hundred meters off the coast of Gulf Shores, Alabama, at about 3 meters depth.
+  - Match: score 17 via coastal-in-title, name:gulf+shores, kw:sea+coast+shore, geo:967m, w>=1000, landscape
 
 ## Shell Beach
 
@@ -306,7 +306,7 @@
   - 1600×1200px, 441 KB, shot 1166 m from the spot
   - Description: View of the beach in Gulf Shores, Alabama during Spring Break.
   - Match: score 13 via coastal-in-title, name:gulf, kw:beach+shore+break, geo:1166m, w>=1000, landscape
-- **`us-al-west-gulf-place-2.jpg`** — “Gulf Shores, Alabama, 2015 Luidia alternata” by Niedzielski, Wikimedia Commons, CC BY-SA 4.0
+- **`us-al-west-gulf-place-2.jpg`** ✗ **not a coastal photo** — “Gulf Shores, Alabama, 2015 Luidia alternata” by Niedzielski, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Gulf_Shores,_Alabama,_2015_Luidia_alternata.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Niedzielski — //commons.wikimedia.org/wiki/User:Niedzielski
@@ -314,7 +314,7 @@
   - 1600×1200px, 474 KB, shot 2139 m from the spot
   - Description: Banded sea star ( Luidia alternata ) photographed a couple hundred meters off the coast of Gulf Shores, Alabama, at about 3 meters depth.
   - Match: score 12 via coastal-in-title, name:gulf, kw:sea+coast+shore, geo:2139m, w>=1000, landscape
-- **`us-al-west-gulf-place-3.jpg`** — Surf Style Gulf Shores 2026 — CC0 (Wikimedia Commons), no attribution required
+- **`us-al-west-gulf-place-3.jpg`** ✗ **not a coastal photo** — Surf Style Gulf Shores 2026 — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Surf_Style_Gulf_Shores_2026.jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Brycenrichter — //commons.wikimedia.org/wiki/User:Brycenrichter
@@ -327,7 +327,7 @@
 
 `osm:node/5919558631` · 30.2698122, -87.5583287
 
-- **`us-al-west-jetty-1.jpg`** — “Waiting on the tide, Golf of Mexico” by Casey Muir-Taylor, Wikimedia Commons, CC BY 2.0
+- **`us-al-west-jetty-1.jpg`** ⚠︎ *context, not the coast itself* — “Waiting on the tide, Golf of Mexico” by Casey Muir-Taylor, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Waiting_on_the_tide,_Golf_of_Mexico.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Casey Muir-Taylor — https://www.flickr.com/people/54195664@N05
@@ -335,7 +335,7 @@
   - 1600×1067px, 318 KB, shot 3358 m from the spot
   - Description: At the beach.
   - Match: score 6 via coastal-in-title, kw:beach+tide, geo:3358m, w>=1000, landscape
-- **`us-al-west-jetty-2.jpg`** — “Publix 1213” by deathpallie325, Wikimedia Commons, CC BY-SA 4.0
+- **`us-al-west-jetty-2.jpg`** ✗ **not a coastal photo** — “Publix 1213” by deathpallie325, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Publix_1213.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: deathpallie325 — //commons.wikimedia.org/w/index.php?title=User:Deathpallie325&amp;action=edit&amp;redlink=1

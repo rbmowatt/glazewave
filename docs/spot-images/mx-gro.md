@@ -72,7 +72,7 @@
   - 1600×1197px, 1233 KB, shot 8858370 m from the spot
   - Description: Foto tomada en una playa natural en Vilela de Nemiña, termino municipal de Muxía en Coruña. Playa pintoresca, rodeada de montañas y parajes naturales. Con arena blanca y rocas. Zona con oleaje , zona surf.
   - Match: score 10 via coastal-in-title, name:blanca, kw:surf+playa, geo:8858370m, w>=1000, landscape
-- **`mx-gro-playa-blanca-2.jpg`** — “Postal de Lota” by Dreamlista, Wikimedia Commons, CC BY 4.0
+- **`mx-gro-playa-blanca-2.jpg`** ⚠︎ *context, not the coast itself* — “Postal de Lota” by Dreamlista, Wikimedia Commons, CC BY 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Postal_de_Lota.jpg
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Dreamlista — //commons.wikimedia.org/w/index.php?title=User:Dreamlista&amp;action=edit&amp;redlink=1
@@ -80,7 +80,7 @@
   - 1600×1200px, 402 KB, shot 6762133 m from the spot
   - Description: Fotografía panorámica capturada desde la zona norte de la ciudad de Lota. Se aprecia en la imagen las torres que utilizaban los mineros del carbón. a su vez el sector morro en donde se realizan campeonatos de surf, en conjunto con playa blanca siendo el centro geográfico de Chile.
   - Match: score 8 via name:blanca, kw:surf+playa, geo:6762133m, w>=1000, landscape
-- **`mx-gro-playa-blanca-3.jpg`** — “Playa Barra de Potosí (5722596569)” by Jim Grandy, Wikimedia Commons, CC BY 2.0
+- **`mx-gro-playa-blanca-3.jpg`** ⚠︎ *context, not the coast itself* — “Playa Barra de Potosí (5722596569)” by Jim Grandy, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Playa_Barra_de_Potos%C3%AD_(5722596569).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Jim Grandy — https://www.flickr.com/people/76128899@N00
@@ -130,7 +130,7 @@
   - 1600×1200px, 577 KB, shot 415 m from the spot
   - Description: Atardecer en Playa Larga, Guerrero.
   - Match: score 12 via coastal-in-title, name:larga, kw:playa+sunset, geo:415m, w>=1000, landscape
-- **`mx-gro-playa-larga-2.jpg`** — “Panorama Paradise Beach” by Stimoroll, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-gro-playa-larga-2.jpg`** ⚠︎ *context, not the coast itself* — “Panorama Paradise Beach” by Stimoroll, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Panorama_Paradise_Beach.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Stimoroll — //commons.wikimedia.org/wiki/User:Stimoroll
@@ -151,7 +151,7 @@
   - 1600×1186px, 345 KB
   - Description: Playa Majahua en la Bahía de Puerto Marqués en Acapulco , Guerrero , México .
   - Match: score 11 via coastal-in-title, name:majahua, kw:beach+playa+mar, w>=1000, landscape
-- **`mx-gro-playa-majahua-2.jpg`** — IslaIxtapaCoralBeach2 — Public domain (Wikimedia Commons), no attribution required
+- **`mx-gro-playa-majahua-2.jpg`** ⚠︎ *context, not the coast itself* — IslaIxtapaCoralBeach2 — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:IslaIxtapaCoralBeach2.JPG
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Thelmadatter — //commons.wikimedia.org/wiki/User:Thelmadatter
@@ -159,7 +159,7 @@
   - 1600×1200px, 550 KB, shot 700 m from the spot
   - Description: Isla Ixtapa Guerrero Mexico Coral Beach at low tide
   - Match: score 8 via coastal-in-title, kw:beach+tide, geo:700m, w>=1000, landscape
-- **`mx-gro-playa-majahua-3.jpg`** — “PlayaPrincipalZihua01” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-gro-playa-majahua-3.jpg`** ⚠︎ *context, not the coast itself* — “PlayaPrincipalZihua01” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:PlayaPrincipalZihua01.JPG
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: AlejandroLinaresGarcia — //commons.wikimedia.org/wiki/User:AlejandroLinaresGarcia
@@ -209,7 +209,7 @@
   - 1600×1200px, 217 KB
   - Description: Ocaso en Playa Revolcadero ( Acapulco , Guerrero , México ).
   - Match: score 11 via coastal-in-title, name:revolcadero, kw:beach+playa+sunset, w>=1000, landscape
-- **`mx-gro-playa-revolcadero-2.jpg`** — “Playa Revolcadero, Acapulco, Guerrero- Revolcadero Beach, Acapulco, Guerrero (22700423344)” by Comisión Mexicana de Filmaciones from México D. F., México, Wikimedia Commons, CC BY-SA 2.0
+- **`mx-gro-playa-revolcadero-2.jpg`** ⚠︎ *context, not the coast itself* — “Playa Revolcadero, Acapulco, Guerrero- Revolcadero Beach, Acapulco, Guerrero (22700423344)” by Comisión Mexicana de Filmaciones from México D. F., México, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Playa_Revolcadero,_Acapulco,_Guerrero-_Revolcadero_Beach,_Acapulco,_Guerrero_(22700423344).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Comisión Mexicana de Filmaciones from México D. F., México — https://www.flickr.com/people/58157206@N02
@@ -217,7 +217,7 @@
   - 1600×1067px, 403 KB
   - Description: Playa Revolcadero, Acapulco, Guerrero/ Revolcadero Beach, Acapulco, Guerrero
   - Match: score 10 via coastal-in-title, name:revolcadero, kw:beach+playa, w>=1000, landscape
-- **`mx-gro-playa-revolcadero-3.jpg`** — “Playa Barra Vieja, Acapulco, Guerrero- Barra Vieja Beach, Acapulco, Guerrero (24613860289)” by Comisión Mexicana de Filmaciones from México D. F., México, Wikimedia Commons, CC BY-SA 2.0
+- **`mx-gro-playa-revolcadero-3.jpg`** ⚠︎ *context, not the coast itself* — “Playa Barra Vieja, Acapulco, Guerrero- Barra Vieja Beach, Acapulco, Guerrero (24613860289)” by Comisión Mexicana de Filmaciones from México D. F., México, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Playa_Barra_Vieja,_Acapulco,_Guerrero-_Barra_Vieja_Beach,_Acapulco,_Guerrero_(24613860289).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Comisión Mexicana de Filmaciones from México D. F., México — https://www.flickr.com/people/58157206@N02
@@ -230,7 +230,7 @@
 
 `osm:way/699712077` · 16.8451753, -99.9076879 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`mx-gro-playa-tlacopanocha-1.jpg`** — “TlalcopanochaBeachAcapulco” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-gro-playa-tlacopanocha-1.jpg`** ⚠︎ *context, not the coast itself* — “TlalcopanochaBeachAcapulco” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:TlalcopanochaBeachAcapulco.JPG
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: AlejandroLinaresGarcia — //commons.wikimedia.org/wiki/User:AlejandroLinaresGarcia
@@ -238,7 +238,7 @@
   - 1600×1071px, 670 KB, shot 24 m from the spot
   - Description: Tlacopanocha Beach looking towards the malecón in Acapulco, Mexico
   - Match: score 11.5 via coastal-in-title, name:tlacopanocha, kw:beach, geo:24m, w>=1000, landscape
-- **`mx-gro-playa-tlacopanocha-2.jpg`** — “MaleconFromTlacopanocha” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-gro-playa-tlacopanocha-2.jpg`** ⚠︎ *context, not the coast itself* — “MaleconFromTlacopanocha” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:MaleconFromTlacopanocha.JPG
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: AlejandroLinaresGarcia — //commons.wikimedia.org/wiki/User:AlejandroLinaresGarcia
@@ -246,7 +246,7 @@
   - 1600×1071px, 594 KB, shot 4 m from the spot
   - Description: The boardwalk or malecon of Acapulco from Tlacopanocha Beach
   - Match: score 11 via name:tlacopanocha, kw:beach+boardwalk, geo:4m, w>=1000, landscape
-- **`mx-gro-playa-tlacopanocha-3.jpg`** — “DIEGO RIVERA, MURALES REALIZADOS EN 1957, EN LA CASA DE DOLORES OLMEDO. EN ACAPULCO (3570781160)” by Eduardo Francisco Vazquez Murillo from Acapulco, Mexico, Wikimedia Commons, CC BY-SA 2.0
+- **`mx-gro-playa-tlacopanocha-3.jpg`** ✗ **not a coastal photo** — “DIEGO RIVERA, MURALES REALIZADOS EN 1957, EN LA CASA DE DOLORES OLMEDO. EN ACAPULCO (3570781160)” by Eduardo Francisco Vazquez Murillo from Acapulco, Mexico, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:DIEGO_RIVERA,_MURALES_REALIZADOS_EN_1957,_EN_LA_CASA_DE_DOLORES_OLMEDO._EN_ACAPULCO_(3570781160).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Eduardo Francisco Vazquez Murillo from Acapulco, Mexico — https://www.flickr.com/people/30993853@N06

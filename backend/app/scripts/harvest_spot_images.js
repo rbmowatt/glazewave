@@ -1006,6 +1006,36 @@ function writeDocs(manifest) {
     idx.push(`| ${lic} | ${n} | ${meta.attribution_required ? 'required' : 'not required'} | ${meta.share_alike ? 'yes' : 'no'} |`);
   }
   idx.push('');
+  const subj = {};
+  const rank1 = {};
+  for (const s of withImg) {
+    s.images.forEach((i, n) => {
+      const k = i.subject || 'unreviewed';
+      subj[k] = (subj[k] || 0) + 1;
+      if (n === 0) rank1[k] = (rank1[k] || 0) + 1;
+    });
+  }
+  idx.push('## What the images are actually pictures of');
+  idx.push('');
+  idx.push(
+    'Every distinct file was reviewed by eye. Relevance scoring reads filenames and ' +
+    'Commons categories, and text cannot tell a photograph of a beach from a photograph ' +
+    'of a lizard standing on one — so this column, not the score, is what says whether ' +
+    'an image is usable.'
+  );
+  idx.push('');
+  idx.push('| Subject | All images | As a spot\'s rank 1 | Meaning |');
+  idx.push('| --- | ---: | ---: | --- |');
+  idx.push(`| coastal | ${subj.coastal || 0} | ${rank1.coastal || 0} | the coast is the subject — usable |`);
+  idx.push(`| context | ${subj.context || 0} | ${rank1.context || 0} | coastal setting, other subject — judgement |`);
+  idx.push(`| not | ${subj.not || 0} | ${rank1.not || 0} | no coastal subject — do not publish |`);
+  idx.push('');
+  idx.push(
+    'Images are ordered by subject first and relevance score second, so rank 1 is the ' +
+    'best available photo of the coast for that spot. A spot whose rank 1 is `not` has ' +
+    'no coastal image among its candidates at all.'
+  );
+  idx.push('');
   idx.push('## Coverage by region');
   idx.push('');
   idx.push('| Region | Spots | With images | Images | Attribution file |');
@@ -1050,7 +1080,10 @@ function writeDocs(manifest) {
       L.push(bits.join(' · '));
       L.push('');
       for (const img of s.images) {
-        L.push(`- **\`${path.basename(img.file)}\`** — ${img.attribution_line}`);
+        const mark = img.subject === 'coastal' ? ''
+          : img.subject === 'context' ? ' ⚠︎ *context, not the coast itself*'
+            : img.subject === 'not' ? ' ✗ **not a coastal photo**' : ' *(unreviewed)*';
+        L.push(`- **\`${path.basename(img.file)}\`**${mark} — ${img.attribution_line}`);
         L.push(`  - Source page: ${img.source_page_url}`);
         L.push(`  - Licence: ${img.license}${img.license_url ? ` (${img.license_url})` : ''}` +
           ` · attribution ${img.attribution_required ? 'required' : 'not required'}` +
@@ -1069,17 +1102,19 @@ function writeDocs(manifest) {
 
   const csv = [
     ['file', 'spot_id', 'spot_name', 'region', 'lat', 'lon', 'beach_type',
-     'license', 'attribution_required', 'share_alike', 'author', 'source_page_url',
-     'attribution_line', 'width', 'height', 'bytes', 'distance_m', 'relevance_score'].join(','),
+     'subject', 'rank', 'license', 'attribution_required', 'share_alike', 'author',
+     'source_page_url', 'attribution_line', 'width', 'height', 'bytes', 'distance_m',
+     'relevance_score'].join(','),
   ];
   const q = (v) => `"${String(v == null ? '' : v).replace(/"/g, '""')}"`;
   for (const s of withImg) {
-    for (const i of s.images) {
+    s.images.forEach((i, n) => {
       csv.push([i.file, s.spot_id, s.name, s.region, s.lat, s.lon, s.osm.beach_type,
+        i.subject || 'unreviewed', n + 1,
         i.license, i.attribution_required, i.share_alike, i.author, i.source_page_url,
         i.attribution_line, i.width, i.height, i.bytes, i.distance_m, i.relevance_score]
         .map(q).join(','));
-    }
+    });
   }
   fs.writeFileSync(path.join(DATA_DIR, 'spot_images.csv'), `${csv.join('\n')}\n`, 'utf8');
 

@@ -64,15 +64,7 @@
 
 `osm:relation/12126809` · 44.6617646, -124.0612196 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-or-agate-beach-126809-1.jpg`** — Yaquina Head Outstanding Natural Area (29050011768) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Yaquina_Head_Outstanding_Natural_Area_(29050011768).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: BLM Oregon & Washington — https://www.flickr.com/people/blmoregon/
-  - Dated: Taken on 9 June 2018, 18:18:04
-  - 1600×900px, 397 KB, shot 896 m from the spot
-  - Description: A rainbow extends over Yaquina Head towards Agate Beach and Newport, Oregon, June 9, 2018. Photo: Alyssa Uhen, BLM 📍 How to visit Yaquina Head: https://www.blm.gov/learn/interpretive-centers/yaquina 👏 Seal pup rescued by Oregon Coast Aquarium, released at Yaquina Head: https://www.facebook.com/BLMOregon/videos/1724961054192353/ 🐋 Oregon’s newest license plate to help marine mammals and feature Yaquina Head Lighthouse! https://www.facebook.com/BLMOregon/photos/a.142647002423774.24515.121189811236160/1821231574565300/?type=3&theater 😮 Photos of gray whales coming close to shore at Yaquina He
-  - Match: score 11 via name:agate, kw:beach+sea+coast+shore, geo:896m, w>=1000, landscape
-- **`us-or-agate-beach-126809-2.jpg`** — “Yaquina Head Lighthouse (Agate Beach, Oregon)” by Visitor7, Wikimedia Commons, CC BY-SA 3.0
+- **`us-or-agate-beach-126809-1.jpg`** — “Yaquina Head Lighthouse (Agate Beach, Oregon)” by Visitor7, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Yaquina_Head_Lighthouse_(Agate_Beach,_Oregon).jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Visitor7 — //commons.wikimedia.org/w/index.php?title=User:Visitor7&amp;action=edit&amp;redlink=1
@@ -80,7 +72,7 @@
   - 1600×1066px, 254 KB
   - Description: Yaquina Head Lighthouse (Agate Beach, Oregon)
   - Match: score 10 via coastal-in-title, name:agate, kw:beach+lighthouse, w>=1000, landscape
-- **`us-or-agate-beach-126809-3.jpg`** — “Agate Beach, Oregon (June 2012)” by Visitor7, Wikimedia Commons, CC BY-SA 3.0
+- **`us-or-agate-beach-126809-2.jpg`** — “Agate Beach, Oregon (June 2012)” by Visitor7, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Agate_Beach,_Oregon_(June_2012).jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Visitor7 — //commons.wikimedia.org/w/index.php?title=User:Visitor7&amp;action=edit&amp;redlink=1
@@ -88,6 +80,14 @@
   - 1600×1067px, 347 KB
   - Description: Yaquina Head Lighthouse is at distant left
   - Match: score 10 via coastal-in-title, name:agate, kw:beach+lighthouse, w>=1000, landscape
+- **`us-or-agate-beach-126809-3.jpg`** ✗ **not a coastal photo** — Yaquina Head Outstanding Natural Area (29050011768) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Yaquina_Head_Outstanding_Natural_Area_(29050011768).jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: BLM Oregon & Washington — https://www.flickr.com/people/blmoregon/
+  - Dated: Taken on 9 June 2018, 18:18:04
+  - 1600×900px, 397 KB, shot 896 m from the spot
+  - Description: A rainbow extends over Yaquina Head towards Agate Beach and Newport, Oregon, June 9, 2018. Photo: Alyssa Uhen, BLM 📍 How to visit Yaquina Head: https://www.blm.gov/learn/interpretive-centers/yaquina 👏 Seal pup rescued by Oregon Coast Aquarium, released at Yaquina Head: https://www.facebook.com/BLMOregon/videos/1724961054192353/ 🐋 Oregon’s newest license plate to help marine mammals and feature Yaquina Head Lighthouse! https://www.facebook.com/BLMOregon/photos/a.142647002423774.24515.121189811236160/1821231574565300/?type=3&theater 😮 Photos of gray whales coming close to shore at Yaquina He
+  - Match: score 11 via name:agate, kw:beach+sea+coast+shore, geo:896m, w>=1000, landscape
 
 ## Agate Beach
 
@@ -101,15 +101,7 @@
   - 1600×1200px, 664 KB, shot 74 m from the spot
   - Description: Pacific Ocean from Tunnel Beach in Seaside Oregon
   - Match: score 10 via coastal-in-title, kw:beach+ocean+sea+rocks, geo:74m, w>=1000, landscape
-- **`us-or-agate-beach-198171-2.jpg`** — “Woman and dog walk on rocks at Tunnel Beach in Seaside, Oregon” by Mattsjc, Wikimedia Commons, CC BY 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Woman_and_dog_walk_on_rocks_at_Tunnel_Beach_in_Seaside,_Oregon.jpg
-  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
-  - Author: Mattsjc — //commons.wikimedia.org/wiki/User:Mattsjc
-  - Dated: 2023-04-29 14:28:38
-  - 1600×1200px, 524 KB, shot 80 m from the spot
-  - Description: Woman and dog walk on rocks at Tunnel Beach in Seaside, Oregon
-  - Match: score 10 via coastal-in-title, kw:beach+sea+rocks, geo:80m, w>=1000, landscape
-- **`us-or-agate-beach-198171-3.jpg`** — “Pacific Ocean from Tunnel Beach in Seaside Oregon” by Mattsjc, Wikimedia Commons, CC BY 4.0
+- **`us-or-agate-beach-198171-2.jpg`** — “Pacific Ocean from Tunnel Beach in Seaside Oregon” by Mattsjc, Wikimedia Commons, CC BY 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Pacific_Ocean_from_Tunnel_Beach_in_Seaside_Oregon.jpg
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Mattsjc — //commons.wikimedia.org/wiki/User:Mattsjc
@@ -117,6 +109,14 @@
   - 1600×1200px, 627 KB, shot 56 m from the spot
   - Description: Pacific Ocean from Tunnel Beach in Seaside Oregon
   - Match: score 10 via coastal-in-title, kw:beach+ocean+sea, geo:56m, w>=1000, landscape
+- **`us-or-agate-beach-198171-3.jpg`** ⚠︎ *context, not the coast itself* — “Woman and dog walk on rocks at Tunnel Beach in Seaside, Oregon” by Mattsjc, Wikimedia Commons, CC BY 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Woman_and_dog_walk_on_rocks_at_Tunnel_Beach_in_Seaside,_Oregon.jpg
+  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
+  - Author: Mattsjc — //commons.wikimedia.org/wiki/User:Mattsjc
+  - Dated: 2023-04-29 14:28:38
+  - 1600×1200px, 524 KB, shot 80 m from the spot
+  - Description: Woman and dog walk on rocks at Tunnel Beach in Seaside, Oregon
+  - Match: score 10 via coastal-in-title, kw:beach+sea+rocks, geo:80m, w>=1000, landscape
 
 ## Arcadia Beach
 
@@ -180,7 +180,7 @@
   - 1600×1195px, 613 KB, shot 711771 m from the spot
   - Description: 500px provided description: Baker Beach The Bay [#beach ,#bay ,#baker ,#san ,#francisco]
   - Match: score 10 via coastal-in-title, name:baker, kw:beach+bay, geo:711771m, w>=1000, landscape
-- **`us-or-baker-beach-3.jpg`** — “Almost Baker Beach (135919049)” by Matt Faluotico, Wikimedia Commons, CC BY 3.0
+- **`us-or-baker-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Almost Baker Beach (135919049)” by Matt Faluotico, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Almost_Baker_Beach_(135919049).jpeg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Matt Faluotico — https://500px.com/mattfxyz
@@ -222,7 +222,7 @@
 
 `osm:relation/13515120` · 42.4529996, -124.4272069
 
-- **`us-or-barley-beach-1.jpg`** — “Curry County Courthouse, Gold Beach, Oregon” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-or-barley-beach-1.jpg`** ✗ **not a coastal photo** — “Curry County Courthouse, Gold Beach, Oregon” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Curry_County_Courthouse,_Gold_Beach,_Oregon.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
@@ -230,7 +230,7 @@
   - 1600×1200px, 159 KB, shot 4970 m from the spot
   - Description: Gold Beach is a city in and the county seat of Curry County, Oregon, United States, on the Oregon Coast. The population was 2,253 at the 2010 census. The community was originally named Ellensburg in the 1850s, but later took the name Gold Beach after a beach near the mouth of the Rogue River where hundreds of placer mines extracted gold. Mailboats based in Gold Beach have been delivering mail upstream to Agness since 1895, one of only two rural mailboat routes remaining in the U.S. The population was 2,260 as of July 2011. en.wikipedia.org/wiki/Gold_Beach,_Oregon en.wikipedia.org/wiki/Wikipedi
   - Match: score 7 via coastal-in-title, kw:beach+sea+coast, geo:4970m, w>=1000, landscape
-- **`us-or-barley-beach-2.jpg`** — “Isaac Lee Patterson Bridge Crossing Rogue River, Gold Beach, Oregon (219389661)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-or-barley-beach-2.jpg`** ✗ **not a coastal photo** — “Isaac Lee Patterson Bridge Crossing Rogue River, Gold Beach, Oregon (219389661)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Isaac_Lee_Patterson_Bridge_Crossing_Rogue_River,_Gold_Beach,_Oregon_(219389661).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
@@ -243,15 +243,7 @@
 
 `osm:way/481469957` · 43.3467139, -124.350319 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-or-bastendorff-beach-1.jpg`** — Bastendorff Beach 3 (8884977276) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Bastendorff_Beach_3_(8884977276).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Bureau of Land Management — https://www.flickr.com/people/50169152@N06
-  - Dated: 2013-01-16 22:42
-  - 1600×1067px, 204 KB, shot 9857 m from the spot
-  - Description: Beachgoers, add this one to your summer adventure list! One of the few BLM-managed coastal areas, Bastendorff Beach offers something for just about everyone: picnic, hike, surf, fish, or fly a kite!
-  - Match: score 11 via coastal-in-title, name:bastendorff, kw:beach+surf+coast+coastal, geo:9857m, w>=1000, landscape
-- **`us-or-bastendorff-beach-2.jpg`** — Bastendorff Beach 10 (8885012664) — Public domain (Wikimedia Commons), no attribution required
+- **`us-or-bastendorff-beach-1.jpg`** — Bastendorff Beach 10 (8885012664) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Bastendorff_Beach_10_(8885012664).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Bureau of Land Management — https://www.flickr.com/people/50169152@N06
@@ -259,7 +251,7 @@
   - 1600×1067px, 355 KB, shot 9857 m from the spot
   - Description: Beachgoers, add this one to your summer adventure list! One of the few BLM-managed coastal areas, Bastendorff Beach offers something for just about everyone: picnic, hike, surf, fish, or fly a kite! Check out this video for more: bitly.com/1188YMR . And plan your visit from the Bastendorff Beach homepage: on.doi.gov/VSQMod
   - Match: score 11 via coastal-in-title, name:bastendorff, kw:beach+surf+coast+coastal, geo:9857m, w>=1000, landscape
-- **`us-or-bastendorff-beach-3.jpg`** — Bastendorff Beach 9 (8885003300) — Public domain (Wikimedia Commons), no attribution required
+- **`us-or-bastendorff-beach-2.jpg`** — Bastendorff Beach 9 (8885003300) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Bastendorff_Beach_9_(8885003300).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Bureau of Land Management — https://www.flickr.com/people/50169152@N06
@@ -267,20 +259,20 @@
   - 1600×1067px, 342 KB, shot 9857 m from the spot
   - Description: Beachgoers, add this one to your summer adventure list! One of the few BLM-managed coastal areas, Bastendorff Beach offers something for just about everyone: picnic, hike, surf, fish, or fly a kite!
   - Match: score 11 via coastal-in-title, name:bastendorff, kw:beach+surf+coast+coastal, geo:9857m, w>=1000, landscape
+- **`us-or-bastendorff-beach-3.jpg`** ✗ **not a coastal photo** — Bastendorff Beach 3 (8884977276) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Bastendorff_Beach_3_(8884977276).jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: Bureau of Land Management — https://www.flickr.com/people/50169152@N06
+  - Dated: 2013-01-16 22:42
+  - 1600×1067px, 204 KB, shot 9857 m from the spot
+  - Description: Beachgoers, add this one to your summer adventure list! One of the few BLM-managed coastal areas, Bastendorff Beach offers something for just about everyone: picnic, hike, surf, fish, or fly a kite!
+  - Match: score 11 via coastal-in-title, name:bastendorff, kw:beach+surf+coast+coastal, geo:9857m, w>=1000, landscape
 
 ## Beverly Beach
 
 `osm:way/143421438` · 44.7265651, -124.060026 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-or-beverly-beach-1.jpg`** — “Marine Debris Watch Sign, Beverly Beach State Park” by RickObst, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Marine_Debris_Watch_Sign,_Beverly_Beach_State_Park.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: RickObst — //commons.wikimedia.org/w/index.php?title=User:RickObst&amp;action=edit&amp;redlink=1
-  - Dated: 2017-06-11 17:25:23
-  - 1600×2133px, 875 KB, shot 942 m from the spot
-  - Description: Beverly Beach State Park is a state park in the U.S. state of Oregon located 5 miles north of Newport. It is a full R.V. hookup camping area with showers, bathrooms, beach access, and a meeting hall where evening interpretive programs take place. ( http://oregonstateparks.org/index.cfm?do=parkPage.dsp_parkPage&parkId=164 )
-  - Match: score 11.5 via coastal-in-title, name:beverly, kw:beach+mar, geo:942m, w>=1000
-- **`us-or-beverly-beach-2.jpg`** — Beverly Beach, Oregon (36362093605) — CC0 (Wikimedia Commons), no attribution required
+- **`us-or-beverly-beach-1.jpg`** — Beverly Beach, Oregon (36362093605) — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Beverly_Beach,_Oregon_(36362093605).jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: icetsarina from United States — https://www.flickr.com/people/66741228@N05
@@ -288,7 +280,15 @@
   - 1600×1067px, 306 KB
   - Description: Beverly Beach, Oregon
   - Match: score 11 via coastal-in-title, name:beverly, kw:beach+coast+coastal, w>=1000, landscape
-- **`us-or-beverly-beach-3.jpg`** — “Ancient Stump Sign at Beverly Beach State Park” by RickObst, Wikimedia Commons, CC BY-SA 4.0
+- **`us-or-beverly-beach-2.jpg`** ✗ **not a coastal photo** — “Marine Debris Watch Sign, Beverly Beach State Park” by RickObst, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Marine_Debris_Watch_Sign,_Beverly_Beach_State_Park.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: RickObst — //commons.wikimedia.org/w/index.php?title=User:RickObst&amp;action=edit&amp;redlink=1
+  - Dated: 2017-06-11 17:25:23
+  - 1600×2133px, 875 KB, shot 942 m from the spot
+  - Description: Beverly Beach State Park is a state park in the U.S. state of Oregon located 5 miles north of Newport. It is a full R.V. hookup camping area with showers, bathrooms, beach access, and a meeting hall where evening interpretive programs take place. ( http://oregonstateparks.org/index.cfm?do=parkPage.dsp_parkPage&parkId=164 )
+  - Match: score 11.5 via coastal-in-title, name:beverly, kw:beach+mar, geo:942m, w>=1000
+- **`us-or-beverly-beach-3.jpg`** ✗ **not a coastal photo** — “Ancient Stump Sign at Beverly Beach State Park” by RickObst, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Ancient_Stump_Sign_at_Beverly_Beach_State_Park.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: RickObst — //commons.wikimedia.org/w/index.php?title=User:RickObst&amp;action=edit&amp;redlink=1
@@ -343,15 +343,7 @@
 
 `osm:relation/10408696` · 45.366506, -123.9702483 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-or-cape-lookout-beach-1.jpg`** — “Woman and dog walk on beach at Cape Lookout State Park (Oregon)” by Mattsjc, Wikimedia Commons, CC BY 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Woman_and_dog_walk_on_beach_at_Cape_Lookout_State_Park_(Oregon).jpg
-  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
-  - Author: Mattsjc — //commons.wikimedia.org/wiki/User:Mattsjc
-  - Dated: 2023-04-29 20:00:10
-  - 1600×2133px, 453 KB, shot 60 m from the spot
-  - Description: Woman and dog walk on beach at Cape Lookout State Park (Oregon)
-  - Match: score 17.5 via coastal-in-title, name:cape+lookout, kw:beach+ocean+sand, geo:60m, w>=1000
-- **`us-or-cape-lookout-beach-2.jpg`** — “Beach in the day use area at Cape Lookout State Park” by RickObst, Wikimedia Commons, CC BY-SA 4.0
+- **`us-or-cape-lookout-beach-1.jpg`** — “Beach in the day use area at Cape Lookout State Park” by RickObst, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Beach_in_the_day_use_area_at_Cape_Lookout_State_Park.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: RickObst — //commons.wikimedia.org/w/index.php?title=User:RickObst&amp;action=edit&amp;redlink=1
@@ -359,7 +351,7 @@
   - 1600×1200px, 744 KB, shot 435 m from the spot
   - Description: Cape Lookout State Park is a state park on Cape Lookout in the U.S. state of Oregon. It is located in Tillamook County, south of the city of Tillamook, on a sand spit between Netarts Bay and the Pacific Ocean. ( http://oregonstateparks.org/index.cfm?do=parkPage.dsp_parkPage&parkId=134 )
   - Match: score 17 via coastal-in-title, name:cape+lookout, kw:beach+ocean+sea+coast, geo:435m, w>=1000, landscape
-- **`us-or-cape-lookout-beach-3.jpg`** — “Coastline in the day use area at Cape Lookout State Park” by RickObst, Wikimedia Commons, CC BY-SA 4.0
+- **`us-or-cape-lookout-beach-2.jpg`** — “Coastline in the day use area at Cape Lookout State Park” by RickObst, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Coastline_in_the_day_use_area_at_Cape_Lookout_State_Park.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: RickObst — //commons.wikimedia.org/w/index.php?title=User:RickObst&amp;action=edit&amp;redlink=1
@@ -367,20 +359,20 @@
   - 1600×900px, 923 KB, shot 435 m from the spot
   - Description: Cape Lookout State Park is a state park on Cape Lookout in the U.S. state of Oregon. It is located in Tillamook County, south of the city of Tillamook, on a sand spit between Netarts Bay and the Pacific Ocean. ( http://oregonstateparks.org/index.cfm?do=parkPage.dsp_parkPage&parkId=134 )
   - Match: score 17 via coastal-in-title, name:cape+lookout, kw:ocean+coast+coastline+sand, geo:435m, w>=1000, landscape
+- **`us-or-cape-lookout-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Woman and dog walk on beach at Cape Lookout State Park (Oregon)” by Mattsjc, Wikimedia Commons, CC BY 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Woman_and_dog_walk_on_beach_at_Cape_Lookout_State_Park_(Oregon).jpg
+  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
+  - Author: Mattsjc — //commons.wikimedia.org/wiki/User:Mattsjc
+  - Dated: 2023-04-29 20:00:10
+  - 1600×2133px, 453 KB, shot 60 m from the spot
+  - Description: Woman and dog walk on beach at Cape Lookout State Park (Oregon)
+  - Match: score 17.5 via coastal-in-title, name:cape+lookout, kw:beach+ocean+sand, geo:60m, w>=1000
 
 ## Cape Meares Beach
 
 `osm:relation/9198168` · 45.4996047, -123.9617424 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-or-cape-meares-beach-1.jpg`** — “The Shortest Lighthouse on the Oregon Coast (33935518625)” by Kirt Edblom from Kihei, Hi, United States, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:The_Shortest_Lighthouse_on_the_Oregon_Coast_(33935518625).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Kirt Edblom from Kihei, Hi, United States — https://www.flickr.com/people/27190564@N02
-  - Dated: 2017-03-25 14:58
-  - 1600×1070px, 1116 KB, shot 1942 m from the spot
-  - Description: The lighthouse was named for Captain John Meares who was the first to sail into Tillamook Bay. It is recognized as the shortest lighthouse on the Oregon Coast. Built in 1889, this teeny tiny wonder stands only 38 feet tall and it is truly a delight to see. Don’t let its small size fool you though, the light could be seen for 21 miles out to sea because of the steep sea cliff on which it rests and due to its Fresnel lens. Despite being Oregon’s shortest lighthouse, at a stubby 38 feet tall (most Oregon lighthouses average 60 feet tall and the Yaquina Head Lighthouse is more than 90 feet tall), 
-  - Match: score 16 via coastal-in-title, name:cape+meares, kw:sea+coast+bay+lighthouse, geo:1942m, w>=1000, landscape
-- **`us-or-cape-meares-beach-2.jpg`** — Cliffs to the north of the lighthouse, Cape Meares NWR, 2011 — CC0 (Wikimedia Commons), no attribution required
+- **`us-or-cape-meares-beach-1.jpg`** — Cliffs to the north of the lighthouse, Cape Meares NWR, 2011 — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Cliffs_to_the_north_of_the_lighthouse,_Cape_Meares_NWR,_2011.jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: DimiTalen — //commons.wikimedia.org/wiki/User:DimiTalen
@@ -388,7 +380,15 @@
   - 1600×1064px, 710 KB, shot 1931 m from the spot
   - Description: Cliffs to the north of the lighthouse, Cape Meares NWR, 2011
   - Match: score 16 via coastal-in-title, name:cape+meares, kw:point+lighthouse+cliff, geo:1931m, w>=1000, landscape
-- **`us-or-cape-meares-beach-3.jpg`** — “Oregon Ingrid's 30th Birthday on the Coast (4774622839)” by Eli Duke from Portland, OR, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-or-cape-meares-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “The Shortest Lighthouse on the Oregon Coast (33935518625)” by Kirt Edblom from Kihei, Hi, United States, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:The_Shortest_Lighthouse_on_the_Oregon_Coast_(33935518625).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Kirt Edblom from Kihei, Hi, United States — https://www.flickr.com/people/27190564@N02
+  - Dated: 2017-03-25 14:58
+  - 1600×1070px, 1116 KB, shot 1942 m from the spot
+  - Description: The lighthouse was named for Captain John Meares who was the first to sail into Tillamook Bay. It is recognized as the shortest lighthouse on the Oregon Coast. Built in 1889, this teeny tiny wonder stands only 38 feet tall and it is truly a delight to see. Don’t let its small size fool you though, the light could be seen for 21 miles out to sea because of the steep sea cliff on which it rests and due to its Fresnel lens. Despite being Oregon’s shortest lighthouse, at a stubby 38 feet tall (most Oregon lighthouses average 60 feet tall and the Yaquina Head Lighthouse is more than 90 feet tall), 
+  - Match: score 16 via coastal-in-title, name:cape+meares, kw:sea+coast+bay+lighthouse, geo:1942m, w>=1000, landscape
+- **`us-or-cape-meares-beach-3.jpg`** ✗ **not a coastal photo** — “Oregon Ingrid's 30th Birthday on the Coast (4774622839)” by Eli Duke from Portland, OR, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Oregon_Ingrid%27s_30th_Birthday_on_the_Coast_(4774622839).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Eli Duke from Portland, OR, USA — https://www.flickr.com/people/80547277@N00
@@ -633,7 +633,7 @@
 
 `osm:way/808144840` · 44.1465067, -124.1216791 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-or-hobbit-beach-1.jpg`** — “Moss, rocks along Hobbit Beach trail, Oregon” by Bobjgalindo, Wikimedia Commons, CC BY-SA 4.0
+- **`us-or-hobbit-beach-1.jpg`** ✗ **not a coastal photo** — “Moss, rocks along Hobbit Beach trail, Oregon” by Bobjgalindo, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Moss,_rocks_along_Hobbit_Beach_trail,_Oregon.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Bobjgalindo — //commons.wikimedia.org/wiki/User:Bobjgalindo
@@ -641,7 +641,7 @@
   - 1600×2133px, 1882 KB, shot 309 m from the spot
   - Description: Moss, rocks along Hobbit Beach trail, Oregon
   - Match: score 13.5 via coastal-in-title, name:hobbit, kw:beach+coast+rocks, geo:309m, w>=1000
-- **`us-or-hobbit-beach-2.jpg`** — “Sand flea, Oregon” by Bobjgalindo, Wikimedia Commons, CC BY-SA 4.0
+- **`us-or-hobbit-beach-2.jpg`** ✗ **not a coastal photo** — “Sand flea, Oregon” by Bobjgalindo, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sand_flea,_Oregon.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Bobjgalindo — //commons.wikimedia.org/wiki/User:Bobjgalindo
@@ -649,7 +649,7 @@
   - 1600×1412px, 513 KB, shot 387 m from the spot
   - Description: Sand flea, Hobbit Beach, oregon
   - Match: score 12.5 via coastal-in-title, name:hobbit, kw:beach+sand, geo:387m, w>=1000
-- **`us-or-hobbit-beach-3.jpg`** — “Hobbit Beach trail, Oregon” by Bobjgalindo, Wikimedia Commons, CC BY-SA 4.0
+- **`us-or-hobbit-beach-3.jpg`** ✗ **not a coastal photo** — “Hobbit Beach trail, Oregon” by Bobjgalindo, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hobbit_Beach_trail,_Oregon.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Bobjgalindo — //commons.wikimedia.org/wiki/User:Bobjgalindo
@@ -670,7 +670,7 @@
   - 1600×1067px, 689 KB, shot 571 m from the spot
   - Description: A view of Driftwood Beach near U.S. Route 101 in Oregon
   - Match: score 9 via coastal-in-title, kw:beach+coast+coastal, geo:571m, w>=1000, landscape
-- **`us-or-holly-beach-2.jpg`** — Holly Beach Louisiana before hurricanes — Public domain (Wikimedia Commons), no attribution required
+- **`us-or-holly-beach-2.jpg`** ⚠︎ *context, not the coast itself* — Holly Beach Louisiana before hurricanes — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Holly_Beach_Louisiana_before_hurricanes.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Arthur Belala, U.S. Army Corps of Engineers
@@ -678,7 +678,7 @@
   - 1600×1067px, 517 KB, shot 3141663 m from the spot
   - Description: Aerial view of Holly Beach, Louisiana, USA, before complete destruction by hurricanes of 2005. Photograph color-corrected by contributor.
   - Match: score 8.5 via coastal-in-title, name:holly, kw:beach, geo:3141663m, w>=1000, landscape
-- **`us-or-holly-beach-3.jpg`** — “Holly Beach LA May 2007” by Junglecat, Wikimedia Commons, CC BY-SA 2.5
+- **`us-or-holly-beach-3.jpg`** ✗ **not a coastal photo** — “Holly Beach LA May 2007” by Junglecat, Wikimedia Commons, CC BY-SA 2.5
   - Source page: https://commons.wikimedia.org/wiki/File:Holly_Beach_LA_May_2007.jpg
   - Licence: CC BY-SA 2.5 (https://creativecommons.org/licenses/by-sa/2.5/) · attribution required · **share-alike**
   - Author: Junglecat — //commons.wikimedia.org/wiki/User:Junglecat
@@ -720,15 +720,7 @@
 
 `osm:relation/1605879` · 45.9288918, -123.9786544 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-or-indian-beach-1.jpg`** — “Indian Beach Native (50323274)” by Luke Detwiler, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Indian_Beach_Native_(50323274).jpeg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: Luke Detwiler — https://500px.com/LDetwiler
-  - Dated: 11 August 2013, 09:07:46 (UTC)
-  - 1600×1066px, 422 KB, shot 1987 m from the spot
-  - Description: 500px provided description: Surfer at Indian Beach on the Oregon Coast. I was told that this is the place where the final scene of Point Break was filmed. Trails to the beach and rocks in the ocean are definitely Indian Beach, part of Ecola State Park. Beautiful little beach. [#girlsurfergirlrockrocksindianbeachoregoncostoregonfilmbeachindianwishihadtheopportunityagainiwishihadtheopportunityagainmissedopportunitymissedopportunitypointpointbreakkeanureevespatrickswayzegarybuseyecolastateparkecolaorego]
-  - Match: score 12 via coastal-in-title, name:indian, kw:beach+surf+surfer+ocean, geo:1987m, w>=1000, landscape
-- **`us-or-indian-beach-2.jpg`** — “Indian Point, Ecola State Park, Cannon Beach, Pacific Ocean - DPLA - 4e237e47eaab6f995b8debf47084c37f” by Gary Halvorson, Oregon State Archives, Wikimedia Commons, CC BY 4.0
+- **`us-or-indian-beach-1.jpg`** — “Indian Point, Ecola State Park, Cannon Beach, Pacific Ocean - DPLA - 4e237e47eaab6f995b8debf47084c37f” by Gary Halvorson, Oregon State Archives, Wikimedia Commons, CC BY 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Indian_Point,_Ecola_State_Park,_Cannon_Beach,_Pacific_Ocean_-_DPLA_-_4e237e47eaab6f995b8debf47084c37f.jpg
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Gary Halvorson, Oregon State Archives
@@ -736,7 +728,7 @@
   - 1600×1071px, 154 KB
   - Description: Sunset on the beach at Indian Point at Ecola State Park on the Pacific Ocean near Cannon Beach. Clatsop County.
   - Match: score 11 via coastal-in-title, name:indian, kw:beach+ocean+point+sunset, w>=1000, landscape
-- **`us-or-indian-beach-3.jpg`** — “Indian Point, Ecola State Park, Cannon Beach, Pacific Ocean - DPLA - 7b3714004ec7b932e5c203d9f3711d1d” by Gary Halvorson, Oregon State Archives, Wikimedia Commons, CC BY 4.0
+- **`us-or-indian-beach-2.jpg`** — “Indian Point, Ecola State Park, Cannon Beach, Pacific Ocean - DPLA - 7b3714004ec7b932e5c203d9f3711d1d” by Gary Halvorson, Oregon State Archives, Wikimedia Commons, CC BY 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Indian_Point,_Ecola_State_Park,_Cannon_Beach,_Pacific_Ocean_-_DPLA_-_7b3714004ec7b932e5c203d9f3711d1d.jpg
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Gary Halvorson, Oregon State Archives
@@ -744,6 +736,14 @@
   - 1600×1071px, 308 KB
   - Description: Sunset on the beach at Indian Point at Ecola State Park on the Pacific Ocean near Cannon Beach. Clatsop County.
   - Match: score 11 via coastal-in-title, name:indian, kw:beach+ocean+point+sunset, w>=1000, landscape
+- **`us-or-indian-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Indian Beach Native (50323274)” by Luke Detwiler, Wikimedia Commons, CC BY 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Indian_Beach_Native_(50323274).jpeg
+  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
+  - Author: Luke Detwiler — https://500px.com/LDetwiler
+  - Dated: 11 August 2013, 09:07:46 (UTC)
+  - 1600×1066px, 422 KB, shot 1987 m from the spot
+  - Description: 500px provided description: Surfer at Indian Beach on the Oregon Coast. I was told that this is the place where the final scene of Point Break was filmed. Trails to the beach and rocks in the ocean are definitely Indian Beach, part of Ecola State Park. Beautiful little beach. [#girlsurfergirlrockrocksindianbeachoregoncostoregonfilmbeachindianwishihadtheopportunityagainiwishihadtheopportunityagainmissedopportunitymissedopportunitypointpointbreakkeanureevespatrickswayzegarybuseyecolastateparkecolaorego]
+  - Match: score 12 via coastal-in-title, name:indian, kw:beach+surf+surfer+ocean, geo:1987m, w>=1000, landscape
 
 ## Kiwanda Beach
 
@@ -807,7 +807,7 @@
 
 `osm:node/357327599` · 43.3389997, -124.366507
 
-- **`us-or-lighthouse-beach-1.jpg`** — “Cape Arago Light (45816232312)” by Sheila Sund from Salem, United States, Wikimedia Commons, CC BY 2.0
+- **`us-or-lighthouse-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Cape Arago Light (45816232312)” by Sheila Sund from Salem, United States, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Cape_Arago_Light_(45816232312).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Sheila Sund from Salem, United States — https://www.flickr.com/people/90692748@N04
@@ -815,7 +815,7 @@
   - 1600×1066px, 376 KB, shot 347 m from the spot
   - Description: The first Cape Arago lighthouse was built in 1866 at the entrance to Coos Bay—a dangerous area with over 55 recorded shipwrecks. The lighthouse was replaced in 1908 and again in 1934 (the current structure). Due to extreme weather and tides, several lighthouse keepers were killed or injured trying to reach the island, prompting the construction of a high bridge from the mainland in 1898. The lighthouse was decommissioned in 2006. The Confederated Tribes of the Coos, Lower Umpqua and Siuslaw had long identified the area as a historic tribal location, including burial grounds on the adjacent poi
   - Match: score 12 via name:lighthouse, kw:coast+bay+lighthouse+tide, geo:347m, w>=1000, landscape
-- **`us-or-lighthouse-beach-2.jpg`** — Beach promenade, turnaround and bathers on the beach at Seaside, Oregon, between 1916 and 1926 (AL+CA 1662) — Public domain (Wikimedia Commons), no attribution required
+- **`us-or-lighthouse-beach-2.jpg`** ⚠︎ *context, not the coast itself* — Beach promenade, turnaround and bathers on the beach at Seaside, Oregon, between 1916 and 1926 (AL+CA 1662) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Beach_promenade,_turnaround_and_bathers_on_the_beach_at_Seaside,_Oregon,_between_1916_and_1926_(AL%2BCA_1662).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Unknown author Unknown author
@@ -823,7 +823,7 @@
   - 1600×956px, 46 KB
   - Description: Handwritten on verso: Left Astoria at 10 a.m. yesterday - arrived here at 11 a.m. spent the afternoon on the beach and camped in the city and park. This seems to be quite a summer resort. A beautiful beach. Tillamook Rock and Lighthouse is visible in the south... Postmarked August 18, 1923. Filed in: Oregon--Cities--Seaside Seaside's concrete promenade and turnaround were constructed in 1920. It is located on Broadway and Prom St. Subjects (LCTGM): Walkways--Oregon--Seaside; Traffic circles--Oregon--Seaside; Beaches--Oregon--Seaside; Postcards Subjects (LCSH): Seaside (Or.)--Buildings, structu
   - Match: score 11 via coastal-in-title, name:lighthouse, kw:beach+sea+mar+lighthouse, w>=1000, landscape
-- **`us-or-lighthouse-beach-3.jpg`** — Yaquina Head Lighthouse as seen from Cobble Beach, Oregon - Flickr - Bonnie Moreland (free images) — Public domain (Wikimedia Commons), no attribution required
+- **`us-or-lighthouse-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Yaquina Head Lighthouse as seen from Cobble Beach, Oregon - Flickr - Bonnie Moreland (free images) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Yaquina_Head_Lighthouse_as_seen_from_Cobble_Beach,_Oregon_-_Flickr_-_Bonnie_Moreland_(free_images).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Bonnie Moreland from Oregon, United States — https://www.flickr.com/people/66741228@N05
@@ -836,7 +836,7 @@
 
 `osm:relation/16889234` · 43.3396669, -124.3678551 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-or-lighthouse-beach-889234-1.jpg`** — “Cape Arago Light (45816232312)” by Sheila Sund from Salem, United States, Wikimedia Commons, CC BY 2.0
+- **`us-or-lighthouse-beach-889234-1.jpg`** ⚠︎ *context, not the coast itself* — “Cape Arago Light (45816232312)” by Sheila Sund from Salem, United States, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Cape_Arago_Light_(45816232312).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Sheila Sund from Salem, United States — https://www.flickr.com/people/90692748@N04
@@ -844,7 +844,7 @@
   - 1600×1066px, 376 KB, shot 272 m from the spot
   - Description: The first Cape Arago lighthouse was built in 1866 at the entrance to Coos Bay—a dangerous area with over 55 recorded shipwrecks. The lighthouse was replaced in 1908 and again in 1934 (the current structure). Due to extreme weather and tides, several lighthouse keepers were killed or injured trying to reach the island, prompting the construction of a high bridge from the mainland in 1898. The lighthouse was decommissioned in 2006. The Confederated Tribes of the Coos, Lower Umpqua and Siuslaw had long identified the area as a historic tribal location, including burial grounds on the adjacent poi
   - Match: score 12 via name:lighthouse, kw:coast+bay+lighthouse+tide, geo:272m, w>=1000, landscape
-- **`us-or-lighthouse-beach-889234-2.jpg`** — Yaquina Head Lighthouse as seen from Cobble Beach, Oregon - Flickr - Bonnie Moreland (free images) — Public domain (Wikimedia Commons), no attribution required
+- **`us-or-lighthouse-beach-889234-2.jpg`** ⚠︎ *context, not the coast itself* — Yaquina Head Lighthouse as seen from Cobble Beach, Oregon - Flickr - Bonnie Moreland (free images) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Yaquina_Head_Lighthouse_as_seen_from_Cobble_Beach,_Oregon_-_Flickr_-_Bonnie_Moreland_(free_images).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Bonnie Moreland from Oregon, United States — https://www.flickr.com/people/66741228@N05
@@ -852,7 +852,7 @@
   - 1600×1036px, 638 KB
   - Description: The Yaquina Head Light, also known early in its existence as the Cape Foulweather Lighthouse (though Cape Foul Weather is 4 miles to the north) is a lighthouse on the Oregon Coast of the United States, established in 1873. The tower stands 93 feet (28 m) tall, and is the tallest lighthouse in Oregon. Made in Paris in 1868 and shipped to Oregon, Yaquina Head Light was first lit August 20, 1873, and automated in 1966. It is active with an identifying light characteristic of two seconds on, two seconds off, two seconds on, and 14 seconds off. The cobblestone beach was created roughly 14 million y
   - Match: score 11 via coastal-in-title, name:lighthouse, kw:beach+coast+lighthouse, w>=1000, landscape
-- **`us-or-lighthouse-beach-889234-3.jpg`** — Beach promenade, turnaround and bathers on the beach at Seaside, Oregon, between 1916 and 1926 (AL+CA 1662) — Public domain (Wikimedia Commons), no attribution required
+- **`us-or-lighthouse-beach-889234-3.jpg`** ⚠︎ *context, not the coast itself* — Beach promenade, turnaround and bathers on the beach at Seaside, Oregon, between 1916 and 1926 (AL+CA 1662) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Beach_promenade,_turnaround_and_bathers_on_the_beach_at_Seaside,_Oregon,_between_1916_and_1926_(AL%2BCA_1662).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Unknown author Unknown author
@@ -865,15 +865,7 @@
 
 `osm:relation/12126813` · 44.8571051, -124.0463331 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-or-lincoln-beach-1.jpg`** — “Oregon Coast Harbor Seal” by Scott Catron from Sandy, Utah, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Oregon_Coast_Harbor_Seal.jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Scott Catron from Sandy, Utah, USA — https://www.flickr.com/people/9970266@N08
-  - Dated: 2003-08-06 11:11
-  - 1600×1197px, 385 KB, shot 718 m from the spot
-  - Description: Harbor seal along the Oregon coast.
-  - Match: score 13 via coastal-in-title, name:lincoln, kw:beach+sea+coast, geo:718m, w>=1000, landscape
-- **`us-or-lincoln-beach-2.jpg`** — “Lincoln Beach at sunset” by Scott Catron from Sandy, Utah, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-or-lincoln-beach-1.jpg`** — “Lincoln Beach at sunset” by Scott Catron from Sandy, Utah, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Lincoln_Beach_at_sunset.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Scott Catron from Sandy, Utah, USA — https://www.flickr.com/people/9970266@N08
@@ -881,7 +873,7 @@
   - 1600×1200px, 651 KB, shot 1269 m from the spot
   - Description: Lincoln Beach, Oregon
   - Match: score 12 via coastal-in-title, name:lincoln, kw:beach+coast+coastal+sunset, geo:1269m, w>=1000, landscape
-- **`us-or-lincoln-beach-3.jpg`** — “Breaking of the waves - edit (22584429180)” by Sheila Sund from Salem, United States, Wikimedia Commons, CC BY 2.0
+- **`us-or-lincoln-beach-2.jpg`** — “Breaking of the waves - edit (22584429180)” by Sheila Sund from Salem, United States, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Breaking_of_the_waves_-_edit_(22584429180).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Sheila Sund from Salem, United States — https://www.flickr.com/people/90692748@N04
@@ -889,6 +881,14 @@
   - 1600×2309px, 2001 KB, shot 2396 m from the spot
   - Description: Edited per suggestions of the "Critique" group - thank you. I like the edit better.
   - Match: score 11.5 via coastal-in-title, name:lincoln, kw:beach+wave+waves+ocean, geo:2396m, w>=1000
+- **`us-or-lincoln-beach-3.jpg`** ✗ **not a coastal photo** — “Oregon Coast Harbor Seal” by Scott Catron from Sandy, Utah, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Oregon_Coast_Harbor_Seal.jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Scott Catron from Sandy, Utah, USA — https://www.flickr.com/people/9970266@N08
+  - Dated: 2003-08-06 11:11
+  - 1600×1197px, 385 KB, shot 718 m from the spot
+  - Description: Harbor seal along the Oregon coast.
+  - Match: score 13 via coastal-in-title, name:lincoln, kw:beach+sea+coast, geo:718m, w>=1000, landscape
 
 ## Lone Ranch Beach
 
@@ -931,15 +931,7 @@
   - 1600×1200px, 664 KB, shot 404 m from the spot
   - Description: Pacific Ocean from Tunnel Beach in Seaside Oregon
   - Match: score 9 via coastal-in-title, kw:beach+ocean+sea+rocks, geo:404m, w>=1000, landscape
-- **`us-or-lost-boy-beach-2.jpg`** — “Woman and dog walk on rocks at Tunnel Beach in Seaside, Oregon” by Mattsjc, Wikimedia Commons, CC BY 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Woman_and_dog_walk_on_rocks_at_Tunnel_Beach_in_Seaside,_Oregon.jpg
-  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
-  - Author: Mattsjc — //commons.wikimedia.org/wiki/User:Mattsjc
-  - Dated: 2023-04-29 14:28:38
-  - 1600×1200px, 524 KB, shot 401 m from the spot
-  - Description: Woman and dog walk on rocks at Tunnel Beach in Seaside, Oregon
-  - Match: score 9 via coastal-in-title, kw:beach+sea+rocks, geo:401m, w>=1000, landscape
-- **`us-or-lost-boy-beach-3.jpg`** — “Pacific Ocean from Tunnel Beach in Seaside Oregon” by Mattsjc, Wikimedia Commons, CC BY 4.0
+- **`us-or-lost-boy-beach-2.jpg`** — “Pacific Ocean from Tunnel Beach in Seaside Oregon” by Mattsjc, Wikimedia Commons, CC BY 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Pacific_Ocean_from_Tunnel_Beach_in_Seaside_Oregon.jpg
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Mattsjc — //commons.wikimedia.org/wiki/User:Mattsjc
@@ -947,6 +939,14 @@
   - 1600×1200px, 627 KB, shot 490 m from the spot
   - Description: Pacific Ocean from Tunnel Beach in Seaside Oregon
   - Match: score 9 via coastal-in-title, kw:beach+ocean+sea, geo:490m, w>=1000, landscape
+- **`us-or-lost-boy-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Woman and dog walk on rocks at Tunnel Beach in Seaside, Oregon” by Mattsjc, Wikimedia Commons, CC BY 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Woman_and_dog_walk_on_rocks_at_Tunnel_Beach_in_Seaside,_Oregon.jpg
+  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
+  - Author: Mattsjc — //commons.wikimedia.org/wiki/User:Mattsjc
+  - Dated: 2023-04-29 14:28:38
+  - 1600×1200px, 524 KB, shot 401 m from the spot
+  - Description: Woman and dog walk on rocks at Tunnel Beach in Seaside, Oregon
+  - Match: score 9 via coastal-in-title, kw:beach+sea+rocks, geo:401m, w>=1000, landscape
 
 ## McPhillips Beach
 
@@ -960,15 +960,7 @@
   - 1600×1200px, 429 KB, shot 1967 m from the spot
   - Description: Tierra del Mar, Oregon
   - Match: score 12 via coastal-in-title, name:mcphillips, kw:beach+coast+coastal+mar, geo:1967m, w>=1000, landscape
-- **`us-or-mcphillips-beach-2.jpg`** — Sea washing ashore drone view (Unsplash) — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Sea_washing_ashore_drone_view_(Unsplash).jpg
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: Jason Patrick Schuller jasonpatricksc — https://unsplash.com/@jasonpatricksc
-  - Dated: 2016-12-17
-  - 1600×900px, 674 KB, shot 1082 m from the spot
-  - Description: Pacific City, United States
-  - Match: score 8 via coastal-in-title, kw:sea+shore, geo:1082m, w>=1000, landscape
-- **`us-or-mcphillips-beach-3.jpg`** — “Oregon Coast - panoramio” by Art Anderson, Wikimedia Commons, CC BY-SA 3.0
+- **`us-or-mcphillips-beach-2.jpg`** — “Oregon Coast - panoramio” by Art Anderson, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Oregon_Coast_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Art Anderson — https://web.archive.org/web/20161015014632/http://www.panoramio.com/user/1868017?with_photo_id=30541530
@@ -976,12 +968,28 @@
   - 1600×1192px, 406 KB, shot 365 m from the spot
   - Description: Oregon Coast
   - Match: score 7.5 via coastal-in-title, kw:coast, geo:365m, w>=1000, landscape
+- **`us-or-mcphillips-beach-3.jpg`** ✗ **not a coastal photo** — Sea washing ashore drone view (Unsplash) — CC0 (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Sea_washing_ashore_drone_view_(Unsplash).jpg
+  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
+  - Author: Jason Patrick Schuller jasonpatricksc — https://unsplash.com/@jasonpatricksc
+  - Dated: 2016-12-17
+  - 1600×900px, 674 KB, shot 1082 m from the spot
+  - Description: Pacific City, United States
+  - Match: score 8 via coastal-in-title, kw:sea+shore, geo:1082m, w>=1000, landscape
 
 ## Merchants Beach
 
 `osm:node/357327635` · 43.237054, -124.3920615
 
-- **`us-or-merchants-beach-1.jpg`** — Bastendorff Beach 3 (8884977276) — Public domain (Wikimedia Commons), no attribution required
+- **`us-or-merchants-beach-1.jpg`** — Bastendorff Beach 10 (8885012664) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Bastendorff_Beach_10_(8885012664).jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: Bureau of Land Management — https://www.flickr.com/people/50169152@N06
+  - Dated: 2013-01-16 22:44
+  - 1600×1067px, 355 KB, shot 2796 m from the spot
+  - Description: Beachgoers, add this one to your summer adventure list! One of the few BLM-managed coastal areas, Bastendorff Beach offers something for just about everyone: picnic, hike, surf, fish, or fly a kite! Check out this video for more: bitly.com/1188YMR . And plan your visit from the Bastendorff Beach homepage: on.doi.gov/VSQMod
+  - Match: score 8 via coastal-in-title, kw:beach+surf+coast+coastal, geo:2796m, w>=1000, landscape
+- **`us-or-merchants-beach-2.jpg`** ✗ **not a coastal photo** — Bastendorff Beach 3 (8884977276) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Bastendorff_Beach_3_(8884977276).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Bureau of Land Management — https://www.flickr.com/people/50169152@N06
@@ -989,20 +997,12 @@
   - 1600×1067px, 204 KB, shot 2796 m from the spot
   - Description: Beachgoers, add this one to your summer adventure list! One of the few BLM-managed coastal areas, Bastendorff Beach offers something for just about everyone: picnic, hike, surf, fish, or fly a kite!
   - Match: score 8 via coastal-in-title, kw:beach+surf+coast+coastal, geo:2796m, w>=1000, landscape
-- **`us-or-merchants-beach-2.jpg`** — Bastendorff Beach 2 (8884978380) — Public domain (Wikimedia Commons), no attribution required
+- **`us-or-merchants-beach-3.jpg`** ✗ **not a coastal photo** — Bastendorff Beach 2 (8884978380) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Bastendorff_Beach_2_(8884978380).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Bureau of Land Management — https://www.flickr.com/people/50169152@N06
   - Dated: 2013-01-16 22:34
   - 1600×983px, 468 KB, shot 2796 m from the spot
-  - Description: Beachgoers, add this one to your summer adventure list! One of the few BLM-managed coastal areas, Bastendorff Beach offers something for just about everyone: picnic, hike, surf, fish, or fly a kite! Check out this video for more: bitly.com/1188YMR . And plan your visit from the Bastendorff Beach homepage: on.doi.gov/VSQMod
-  - Match: score 8 via coastal-in-title, kw:beach+surf+coast+coastal, geo:2796m, w>=1000, landscape
-- **`us-or-merchants-beach-3.jpg`** — Bastendorff Beach 10 (8885012664) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Bastendorff_Beach_10_(8885012664).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Bureau of Land Management — https://www.flickr.com/people/50169152@N06
-  - Dated: 2013-01-16 22:44
-  - 1600×1067px, 355 KB, shot 2796 m from the spot
   - Description: Beachgoers, add this one to your summer adventure list! One of the few BLM-managed coastal areas, Bastendorff Beach offers something for just about everyone: picnic, hike, surf, fish, or fly a kite! Check out this video for more: bitly.com/1188YMR . And plan your visit from the Bastendorff Beach homepage: on.doi.gov/VSQMod
   - Match: score 8 via coastal-in-title, kw:beach+surf+coast+coastal, geo:2796m, w>=1000, landscape
 
@@ -1075,15 +1075,7 @@
   - 1600×1066px, 517 KB
   - Description: Kite Flyers on Moolack Beach
   - Match: score 11 via coastal-in-title, name:moolack, kw:beach+coast+coastal, w>=1000, landscape
-- **`us-or-moolack-beach-2.jpg`** — Yaquina Head Lighthouse, Newport, Oregon (48638250232) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Yaquina_Head_Lighthouse,_Newport,_Oregon_(48638250232).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Bonnie Moreland from Oregon, United States — https://www.flickr.com/people/66741228@N05
-  - Dated: Taken on 27 August 2019, 20:19
-  - 1600×1067px, 420 KB, shot 2659 m from the spot
-  - Description: This is Yaquina (ya -KWIN- eh) Head Lighthouse in Newport, not to be confused with Yaquina Bay Lighthouse. The 93 foot tower is located on a narrow point of land jutting due west, nearly 1 mile into the Pacific Ocean north of Newport, at Yaquina Head Outstanding Natural Area. Winds and rain have buffeted this lighthouse since its beginning in 1872. It took approximately one year, and over 370,000 bricks to construct Oregon’s tallest lighthouse. The light has been active since Head Keeper Fayette Crosby walked up the 114 steps, to light the wicks on the evening of August 20, 1873. At that time 
-  - Match: score 8 via coastal-in-title, kw:ocean+bay+point+lighthouse, geo:2659m, w>=1000, landscape
-- **`us-or-moolack-beach-3.jpg`** — Yaquina Head lighthouse, Oregon (36709618402) — Public domain (Wikimedia Commons), no attribution required
+- **`us-or-moolack-beach-2.jpg`** — Yaquina Head lighthouse, Oregon (36709618402) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Yaquina_Head_lighthouse,_Oregon_(36709618402).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Bonnie Moreland from Oregon, United States — https://www.flickr.com/people/66741228@N05
@@ -1091,6 +1083,14 @@
   - 1600×1067px, 236 KB, shot 2659 m from the spot
   - Description: incredible sunset of pink and lavenders thanks to forest fires and coastal haze.
   - Match: score 8 via coastal-in-title, kw:coast+coastal+lighthouse+sunset, geo:2659m, w>=1000, landscape
+- **`us-or-moolack-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Yaquina Head Lighthouse, Newport, Oregon (48638250232) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Yaquina_Head_Lighthouse,_Newport,_Oregon_(48638250232).jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: Bonnie Moreland from Oregon, United States — https://www.flickr.com/people/66741228@N05
+  - Dated: Taken on 27 August 2019, 20:19
+  - 1600×1067px, 420 KB, shot 2659 m from the spot
+  - Description: This is Yaquina (ya -KWIN- eh) Head Lighthouse in Newport, not to be confused with Yaquina Bay Lighthouse. The 93 foot tower is located on a narrow point of land jutting due west, nearly 1 mile into the Pacific Ocean north of Newport, at Yaquina Head Outstanding Natural Area. Winds and rain have buffeted this lighthouse since its beginning in 1872. It took approximately one year, and over 370,000 bricks to construct Oregon’s tallest lighthouse. The light has been active since Head Keeper Fayette Crosby walked up the 114 steps, to light the wicks on the evening of August 20, 1873. At that time 
+  - Match: score 8 via coastal-in-title, kw:ocean+bay+point+lighthouse, geo:2659m, w>=1000, landscape
 
 ## Nehalem Beach
 
@@ -1112,7 +1112,7 @@
   - 1600×1071px, 449 KB
   - Description: The beach at Nehalem Bay State Park on the Pacific Ocean. Tillamook County.
   - Match: score 11 via coastal-in-title, name:nehalem, kw:beach+ocean+bay, w>=1000, landscape
-- **`us-or-nehalem-beach-3.jpg`** — “Nehalem Bay State Park - DPLA - 537ad7d68d1d482b1d33a3950c153b9e” by Gary Halvorson, Oregon State Archives, Wikimedia Commons, CC BY 4.0
+- **`us-or-nehalem-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Nehalem Bay State Park - DPLA - 537ad7d68d1d482b1d33a3950c153b9e” by Gary Halvorson, Oregon State Archives, Wikimedia Commons, CC BY 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Nehalem_Bay_State_Park_-_DPLA_-_537ad7d68d1d482b1d33a3950c153b9e.jpg
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Gary Halvorson, Oregon State Archives
@@ -1125,15 +1125,7 @@
 
 `osm:node/6110263424` · 44.9585669, -124.034433
 
-- **`us-or-nelscott-reef-1.jpg`** — “1960 10 Nelscott Beach (49811883441)” by Robert Rynerson from Denver, U.S.A, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:1960_10_Nelscott_Beach_(49811883441).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Robert Rynerson from Denver, U.S.A — https://www.flickr.com/people/135141530@N04
-  - Dated: Taken in October 1960
-  - 1600×1067px, 150 KB, shot 1129 m from the spot
-  - Description: NELSCOTT - High school freshman Paul faces the Pacific surf.
-  - Match: score 12 via coastal-in-title, name:nelscott, kw:beach+surf, geo:1129m, w>=1000, landscape
-- **`us-or-nelscott-reef-2.jpg`** — “Light and surf (3891394441)” by Kenny Louie from Vancouver, Canada, Wikimedia Commons, CC BY 2.0
+- **`us-or-nelscott-reef-1.jpg`** — “Light and surf (3891394441)” by Kenny Louie from Vancouver, Canada, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Light_and_surf_(3891394441).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Kenny Louie from Vancouver, Canada — https://www.flickr.com/people/99472898@N00
@@ -1141,7 +1133,15 @@
   - 1600×1063px, 876 KB, shot 2512 m from the spot
   - Description: Light and surf
   - Match: score 8 via coastal-in-title, kw:surf+surfer+wave+waves, geo:2512m, w>=1000, landscape
-- **`us-or-nelscott-reef-3.jpg`** — “D River Beach Wayside” by Visitor7, Wikimedia Commons, CC BY-SA 3.0
+- **`us-or-nelscott-reef-2.jpg`** ⚠︎ *context, not the coast itself* — “1960 10 Nelscott Beach (49811883441)” by Robert Rynerson from Denver, U.S.A, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:1960_10_Nelscott_Beach_(49811883441).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Robert Rynerson from Denver, U.S.A — https://www.flickr.com/people/135141530@N04
+  - Dated: Taken in October 1960
+  - 1600×1067px, 150 KB, shot 1129 m from the spot
+  - Description: NELSCOTT - High school freshman Paul faces the Pacific surf.
+  - Match: score 12 via coastal-in-title, name:nelscott, kw:beach+surf, geo:1129m, w>=1000, landscape
+- **`us-or-nelscott-reef-3.jpg`** ✗ **not a coastal photo** — “D River Beach Wayside” by Visitor7, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:D_River_Beach_Wayside.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Visitor7 — //commons.wikimedia.org/w/index.php?title=User:Visitor7&amp;action=edit&amp;redlink=1
@@ -1183,15 +1183,7 @@
 
 `osm:way/553196072` · 45.1022898, -123.9862317 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-or-neskowin-beach-1.jpg`** — Facing Proposal Rock Inn from Neskowin Beach — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Facing_Proposal_Rock_Inn_from_Neskowin_Beach.jpg
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: Turtle21680 — //commons.wikimedia.org/wiki/User:Turtle21680
-  - Dated: 2023-09-04 10:41:27
-  - 1600×1200px, 842 KB, shot 168 m from the spot
-  - Description: Facing Proposal Rock Inn from eastern Neskowin Beach.
-  - Match: score 11.5 via coastal-in-title, name:neskowin, kw:beach, geo:168m, w>=1000, landscape
-- **`us-or-neskowin-beach-2.jpg`** — “Southside Beach State Park ^^ Oregon . - panoramio” by Roger Sylvia, Wikimedia Commons, CC BY-SA 3.0
+- **`us-or-neskowin-beach-1.jpg`** — “Southside Beach State Park ^^ Oregon . - panoramio” by Roger Sylvia, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Southside_Beach_State_Park_%5E%5E_Oregon_._-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Roger Sylvia — https://web.archive.org/web/20161025063105/http://www.panoramio.com/user/4242223?with_photo_id=80560778
@@ -1199,7 +1191,7 @@
   - 1600×899px, 308 KB, shot 3228 m from the spot
   - Description: Southside Beach State Park !! Oregon .
   - Match: score 11 via coastal-in-title, name:neskowin, kw:beach+coast+coastal+sunset, geo:3228m, w>=1000, landscape
-- **`us-or-neskowin-beach-3.jpg`** — “Neskowin Beach 2024” by Raven Winters, Wikimedia Commons, CC BY 4.0
+- **`us-or-neskowin-beach-2.jpg`** — “Neskowin Beach 2024” by Raven Winters, Wikimedia Commons, CC BY 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Neskowin_Beach_2024.jpg
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Raven Winters — //commons.wikimedia.org/wiki/User:Deterministics
@@ -1207,6 +1199,14 @@
   - 1600×1067px, 432 KB
   - Description: The surf of the ocean approaches the viewer as the sunsets with proposal rock in the background
   - Match: score 11 via coastal-in-title, name:neskowin, kw:beach+surf+ocean+sunset, w>=1000, landscape
+- **`us-or-neskowin-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Facing Proposal Rock Inn from Neskowin Beach — CC0 (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Facing_Proposal_Rock_Inn_from_Neskowin_Beach.jpg
+  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
+  - Author: Turtle21680 — //commons.wikimedia.org/wiki/User:Turtle21680
+  - Dated: 2023-09-04 10:41:27
+  - 1600×1200px, 842 KB, shot 168 m from the spot
+  - Description: Facing Proposal Rock Inn from eastern Neskowin Beach.
+  - Match: score 11.5 via coastal-in-title, name:neskowin, kw:beach, geo:168m, w>=1000, landscape
 
 ## Netarts Spit
 
@@ -1228,7 +1228,7 @@
   - 1600×900px, 923 KB, shot 4837 m from the spot
   - Description: Cape Lookout State Park is a state park on Cape Lookout in the U.S. state of Oregon. It is located in Tillamook County, south of the city of Tillamook, on a sand spit between Netarts Bay and the Pacific Ocean. ( http://oregonstateparks.org/index.cfm?do=parkPage.dsp_parkPage&parkId=134 )
   - Match: score 15 via coastal-in-title, name:netarts+spit, kw:ocean+coast+coastline+sand, geo:4837m, w>=1000, landscape
-- **`us-or-netarts-spit-3.jpg`** — “Cabin and day use area restrooms at Cape Lookout State Park” by RickObst, Wikimedia Commons, CC BY-SA 4.0
+- **`us-or-netarts-spit-3.jpg`** ✗ **not a coastal photo** — “Cabin and day use area restrooms at Cape Lookout State Park” by RickObst, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Cabin_and_day_use_area_restrooms_at_Cape_Lookout_State_Park.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: RickObst — //commons.wikimedia.org/w/index.php?title=User:RickObst&amp;action=edit&amp;redlink=1
@@ -1249,15 +1249,7 @@
   - 1600×233px, 140 KB, shot 84832 m from the spot
   - Description: Panorama of Cape Cove, just south of Heceta Head; north of Florence, Oregon .
   - Match: score 7 via coastal-in-title, kw:beach+sea+coast+coastal, geo:84832m, w>=1000, landscape
-- **`us-or-north-beach-2.jpg`** — “Wreck off Coos Bay, Oregon” by Erin from Oregon City, OR, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Wreck_off_Coos_Bay,_Oregon.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Erin from Oregon City, OR — https://www.flickr.com/people/49096113@N00
-  - Dated: 2008-02-17 14:07
-  - 1600×1200px, 624 KB, shot 2030 m from the spot
-  - Description: On February 4, 1999, the New Carissa was bound for the Port of Coos Bay, Oregon to pick up a load of wood chips. The ship's crew was informed by the local bar pilots that weather conditions would prevent the ship (which was empty at the time) from entering Coos Bay harbor until the next morning. The captain ordered the ship to drop anchor 1.7 nautical miles (3.1 km) off the coast in order to ride out the storm. The crew used a single anchor to secure the ship, and according to a United States Coast Guard review of the incident, used a chain that was too short. The short chain and the weather c
-  - Match: score 7 via coastal-in-title, kw:coast+bay, geo:2030m, w>=1000, landscape
-- **`us-or-north-beach-3.jpg`** — “North Jetty Beach in Florence, Oregon” by Visitor7, Wikimedia Commons, CC BY-SA 3.0
+- **`us-or-north-beach-2.jpg`** — “North Jetty Beach in Florence, Oregon” by Visitor7, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:North_Jetty_Beach_in_Florence,_Oregon.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Visitor7 — //commons.wikimedia.org/w/index.php?title=User:Visitor7&amp;action=edit&amp;redlink=1
@@ -1265,6 +1257,14 @@
   - 1600×1067px, 321 KB, shot 72013 m from the spot
   - Description: North Jetty Beach in Florence, Oregon
   - Match: score 7 via coastal-in-title, kw:beach+coast+coastal+jetty, geo:72013m, w>=1000, landscape
+- **`us-or-north-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Wreck off Coos Bay, Oregon” by Erin from Oregon City, OR, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Wreck_off_Coos_Bay,_Oregon.jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Erin from Oregon City, OR — https://www.flickr.com/people/49096113@N00
+  - Dated: 2008-02-17 14:07
+  - 1600×1200px, 624 KB, shot 2030 m from the spot
+  - Description: On February 4, 1999, the New Carissa was bound for the Port of Coos Bay, Oregon to pick up a load of wood chips. The ship's crew was informed by the local bar pilots that weather conditions would prevent the ship (which was empty at the time) from entering Coos Bay harbor until the next morning. The captain ordered the ship to drop anchor 1.7 nautical miles (3.1 km) off the coast in order to ride out the storm. The crew used a single anchor to secure the ship, and according to a United States Coast Guard review of the incident, used a chain that was too short. The short chain and the weather c
+  - Match: score 7 via coastal-in-title, kw:coast+bay, geo:2030m, w>=1000, landscape
 
 ## Nye Beach
 
@@ -1299,23 +1299,7 @@
 
 `osm:relation/12751157` · 44.5213271, -124.0757319 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-or-ona-beach-1.jpg`** — “Seal Rock, OR - Seal Rock State Park - Green Anemone in a Tidal Pool (1)” by Jrozwado, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Seal_Rock,_OR_-_Seal_Rock_State_Park_-_Green_Anemone_in_a_Tidal_Pool_(1).jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Jrozwado — //commons.wikimedia.org/w/index.php?title=User:Jrozwado&amp;action=edit&amp;redlink=1
-  - Dated: 2016-08-29
-  - 1600×1067px, 462 KB, shot 2743 m from the spot
-  - Description: This is an image of a place or building that is listed on the National Register of Historic Places in the United States of America . Its reference number is 97001007 ( Wikidata ).
-  - Match: score 11 via coastal-in-title, name:ona, kw:sea+tide, geo:2743m, w>=1000, landscape
-- **`us-or-ona-beach-2.jpg`** — “Seal Rock, OR - Seal Rock State Park - Green Anemone in a Tidal Pool (2)” by Jrozwado, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Seal_Rock,_OR_-_Seal_Rock_State_Park_-_Green_Anemone_in_a_Tidal_Pool_(2).jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Jrozwado — //commons.wikimedia.org/w/index.php?title=User:Jrozwado&amp;action=edit&amp;redlink=1
-  - Dated: 2016-08-29
-  - 1600×1067px, 516 KB, shot 2743 m from the spot
-  - Description: This is an image of a place or building that is listed on the National Register of Historic Places in the United States of America . Its reference number is 97001007 ( Wikidata ).
-  - Match: score 11 via coastal-in-title, name:ona, kw:sea+tide, geo:2743m, w>=1000, landscape
-- **`us-or-ona-beach-3.jpg`** — “Ona Beach State Park” by Finetooth, Wikimedia Commons, CC BY-SA 3.0
+- **`us-or-ona-beach-1.jpg`** — “Ona Beach State Park” by Finetooth, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Ona_Beach_State_Park.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Finetooth — //commons.wikimedia.org/wiki/User:Finetooth
@@ -1323,20 +1307,28 @@
   - 1600×1063px, 922 KB
   - Description: Pacific Ocean beach at Ona Beach State Park south of Newport in the U.S. state of Oregon
   - Match: score 11 via coastal-in-title, name:ona, kw:beach+ocean+coast, w>=1000, landscape
+- **`us-or-ona-beach-2.jpg`** ✗ **not a coastal photo** — “Seal Rock, OR - Seal Rock State Park - Green Anemone in a Tidal Pool (1)” by Jrozwado, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Seal_Rock,_OR_-_Seal_Rock_State_Park_-_Green_Anemone_in_a_Tidal_Pool_(1).jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Jrozwado — //commons.wikimedia.org/w/index.php?title=User:Jrozwado&amp;action=edit&amp;redlink=1
+  - Dated: 2016-08-29
+  - 1600×1067px, 462 KB, shot 2743 m from the spot
+  - Description: This is an image of a place or building that is listed on the National Register of Historic Places in the United States of America . Its reference number is 97001007 ( Wikidata ).
+  - Match: score 11 via coastal-in-title, name:ona, kw:sea+tide, geo:2743m, w>=1000, landscape
+- **`us-or-ona-beach-3.jpg`** ✗ **not a coastal photo** — “Seal Rock, OR - Seal Rock State Park - Green Anemone in a Tidal Pool (2)” by Jrozwado, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Seal_Rock,_OR_-_Seal_Rock_State_Park_-_Green_Anemone_in_a_Tidal_Pool_(2).jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Jrozwado — //commons.wikimedia.org/w/index.php?title=User:Jrozwado&amp;action=edit&amp;redlink=1
+  - Dated: 2016-08-29
+  - 1600×1067px, 516 KB, shot 2743 m from the spot
+  - Description: This is an image of a place or building that is listed on the National Register of Historic Places in the United States of America . Its reference number is 97001007 ( Wikidata ).
+  - Match: score 11 via coastal-in-title, name:ona, kw:sea+tide, geo:2743m, w>=1000, landscape
 
 ## Ophir Beach
 
 `osm:node/357320422` · 42.5498317, -124.3942702
 
-- **`us-or-ophir-beach-1.jpg`** — “Nesika Beach Store” by Visitor7, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Nesika_Beach_Store.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Visitor7 — //commons.wikimedia.org/w/index.php?title=User:Visitor7&amp;action=edit&amp;redlink=1
-  - Dated: 2012-08-08
-  - 1600×1067px, 484 KB
-  - Description: The Nesika Beach Store is adjacent to the Ophir Post Office.
-  - Match: score 8.5 via coastal-in-title, name:ophir, kw:beach, w>=1000, landscape
-- **`us-or-ophir-beach-2.jpg`** — “Ophirbeach2009” by Lhammer610 ( talk ), Wikimedia Commons, CC BY 3.0
+- **`us-or-ophir-beach-1.jpg`** — “Ophirbeach2009” by Lhammer610 ( talk ), Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Ophirbeach2009.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Lhammer610 ( talk ) — https://en.wikipedia.org/wiki/User:Lhammer610
@@ -1344,7 +1336,7 @@
   - 1600×1200px, 20 KB
   - Description: View to the south of Ophir Beach
   - Match: score 8.5 via coastal-in-title, name:ophir, kw:beach, w>=1000, landscape
-- **`us-or-ophir-beach-3.jpg`** — “Ophir, Devils Backbone - DPLA - 876bf05a0a6941cd9b2272a769080337” by Gary Halvorson, Oregon State Archives, Wikimedia Commons, CC BY 4.0
+- **`us-or-ophir-beach-2.jpg`** — “Ophir, Devils Backbone - DPLA - 876bf05a0a6941cd9b2272a769080337” by Gary Halvorson, Oregon State Archives, Wikimedia Commons, CC BY 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Ophir,_Devils_Backbone_-_DPLA_-_876bf05a0a6941cd9b2272a769080337.jpg
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Gary Halvorson, Oregon State Archives
@@ -1352,28 +1344,20 @@
   - 1600×1068px, 592 KB
   - Description: Rocks along the coast north of Ophir at Devils Backbone.
   - Match: score 8 via name:ophir, kw:coast+rocks, w>=1000, landscape
+- **`us-or-ophir-beach-3.jpg`** ✗ **not a coastal photo** — “Nesika Beach Store” by Visitor7, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Nesika_Beach_Store.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Visitor7 — //commons.wikimedia.org/w/index.php?title=User:Visitor7&amp;action=edit&amp;redlink=1
+  - Dated: 2012-08-08
+  - 1600×1067px, 484 KB
+  - Description: The Nesika Beach Store is adjacent to the Ophir Post Office.
+  - Match: score 8.5 via coastal-in-title, name:ophir, kw:beach, w>=1000, landscape
 
 ## Roosevelt Beach
 
 `osm:way/243962683` · 44.1803552, -124.1161275 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-or-roosevelt-beach-1.jpg`** — Roosevelt elk on Oregon coast (54086078688) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Roosevelt_elk_on_Oregon_coast_(54086078688).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: USFWS Pacific — https://www.flickr.com/people/usfwspacific/
-  - Dated: Taken on 23 August 2024, 20:28:29
-  - 1600×900px, 147 KB
-  - Description: Roosevelt elk munch on shrubs during sunset at Cannon Beach on the northern Oregon coast, with Haystack Rock in the distance, Aug. 23, 2024. USFWS video: Toshio Suzuki Oregon Islands National Wildlife Refuge includes 1,853 rocks, reefs and islands, stretching from Tillamook Head near Seaside south to the California border. All of the rocks and islands of the refuge are designated National Wilderness Areas, with the exception of 1-acre Tillamook Rock. Most of Oregon’s estimated 1.2 million nesting seabirds use Oregon Islands Refuge as a place to raise their young, and Oregon’s seals and sea lio
-  - Match: score 11 via coastal-in-title, name:roosevelt, kw:beach+sea+coast+sunset, w>=1000, landscape
-- **`us-or-roosevelt-beach-2.jpg`** — “Beach Trip 06 018” by Deloreanman14 at English Wikipedia, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Beach_Trip_06_018.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Deloreanman14 at English Wikipedia — https://en.wikipedia.org/wiki/User:Deloreanman14
-  - Dated: 11 November 2007 (original upload date)
-  - 1600×801px, 168 KB
-  - Description: US 101 is the main street (Roosevelt Drive) through Seaside, Oregon and is frequently plagued by heavy traffic backups, especially during summer weekends. Photo taken June, 2006.
-  - Match: score 10 via coastal-in-title, name:roosevelt, kw:beach+sea, w>=1000, landscape
-- **`us-or-roosevelt-beach-3.jpg`** — Oregon Dunes just north of Florence, Oregon - Flickr - Bonnie Moreland (free images) — Public domain (Wikimedia Commons), no attribution required
+- **`us-or-roosevelt-beach-1.jpg`** — Oregon Dunes just north of Florence, Oregon - Flickr - Bonnie Moreland (free images) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Oregon_Dunes_just_north_of_Florence,_Oregon_-_Flickr_-_Bonnie_Moreland_(free_images).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Bonnie Moreland from Oregon, United States — https://www.flickr.com/people/66741228@N05
@@ -1381,12 +1365,7 @@
   - 1600×1067px, 538 KB, shot 1344 m from the spot
   - Description: My exploring Oregon trips have been severely limited this year, so I am pulling out images I had shot in the past. This is on a stretch of highway south of Yachats and north of Florence. It was a stormy day and the beaches were pretty saturated with rain. However, I like the coast during storms. The Oregon Dunes National Recreation Area extends for 40 miles along the Oregon Coast from Florence, OR to Coos Bay, OR. One of the largest expanses of temperate coastal sand dunes in the world, the stark, mist-shrouded views of dunes, forests, and ocean in such close proximity to one another are rare 
   - Match: score 8 via coastal-in-title, kw:beach+ocean+coast+coastal, geo:1344m, w>=1000, landscape
-
-## Roosevelt Beach
-
-`osm:way/243962688` · 44.163548, -124.118083 · beach type: **sandy** (OpenStreetMap surface=sand)
-
-- **`us-or-roosevelt-beach-962688-1.jpg`** — Roosevelt elk on Oregon coast (54086078688) — Public domain (Wikimedia Commons), no attribution required
+- **`us-or-roosevelt-beach-2.jpg`** ⚠︎ *context, not the coast itself* — Roosevelt elk on Oregon coast (54086078688) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Roosevelt_elk_on_Oregon_coast_(54086078688).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: USFWS Pacific — https://www.flickr.com/people/usfwspacific/
@@ -1394,7 +1373,7 @@
   - 1600×900px, 147 KB
   - Description: Roosevelt elk munch on shrubs during sunset at Cannon Beach on the northern Oregon coast, with Haystack Rock in the distance, Aug. 23, 2024. USFWS video: Toshio Suzuki Oregon Islands National Wildlife Refuge includes 1,853 rocks, reefs and islands, stretching from Tillamook Head near Seaside south to the California border. All of the rocks and islands of the refuge are designated National Wilderness Areas, with the exception of 1-acre Tillamook Rock. Most of Oregon’s estimated 1.2 million nesting seabirds use Oregon Islands Refuge as a place to raise their young, and Oregon’s seals and sea lio
   - Match: score 11 via coastal-in-title, name:roosevelt, kw:beach+sea+coast+sunset, w>=1000, landscape
-- **`us-or-roosevelt-beach-962688-2.jpg`** — “Beach Trip 06 018” by Deloreanman14 at English Wikipedia, Wikimedia Commons, CC BY-SA 3.0
+- **`us-or-roosevelt-beach-3.jpg`** ✗ **not a coastal photo** — “Beach Trip 06 018” by Deloreanman14 at English Wikipedia, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Beach_Trip_06_018.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Deloreanman14 at English Wikipedia — https://en.wikipedia.org/wiki/User:Deloreanman14
@@ -1402,7 +1381,12 @@
   - 1600×801px, 168 KB
   - Description: US 101 is the main street (Roosevelt Drive) through Seaside, Oregon and is frequently plagued by heavy traffic backups, especially during summer weekends. Photo taken June, 2006.
   - Match: score 10 via coastal-in-title, name:roosevelt, kw:beach+sea, w>=1000, landscape
-- **`us-or-roosevelt-beach-962688-3.jpg`** — Oregon Dunes just north of Florence, Oregon - Flickr - Bonnie Moreland (free images) — Public domain (Wikimedia Commons), no attribution required
+
+## Roosevelt Beach
+
+`osm:way/243962688` · 44.163548, -124.118083 · beach type: **sandy** (OpenStreetMap surface=sand)
+
+- **`us-or-roosevelt-beach-962688-1.jpg`** — Oregon Dunes just north of Florence, Oregon - Flickr - Bonnie Moreland (free images) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Oregon_Dunes_just_north_of_Florence,_Oregon_-_Flickr_-_Bonnie_Moreland_(free_images).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Bonnie Moreland from Oregon, United States — https://www.flickr.com/people/66741228@N05
@@ -1410,12 +1394,36 @@
   - 1600×1067px, 538 KB, shot 544 m from the spot
   - Description: My exploring Oregon trips have been severely limited this year, so I am pulling out images I had shot in the past. This is on a stretch of highway south of Yachats and north of Florence. It was a stormy day and the beaches were pretty saturated with rain. However, I like the coast during storms. The Oregon Dunes National Recreation Area extends for 40 miles along the Oregon Coast from Florence, OR to Coos Bay, OR. One of the largest expanses of temperate coastal sand dunes in the world, the stark, mist-shrouded views of dunes, forests, and ocean in such close proximity to one another are rare 
   - Match: score 9 via coastal-in-title, kw:beach+ocean+coast+coastal, geo:544m, w>=1000, landscape
+- **`us-or-roosevelt-beach-962688-2.jpg`** ⚠︎ *context, not the coast itself* — Roosevelt elk on Oregon coast (54086078688) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Roosevelt_elk_on_Oregon_coast_(54086078688).jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: USFWS Pacific — https://www.flickr.com/people/usfwspacific/
+  - Dated: Taken on 23 August 2024, 20:28:29
+  - 1600×900px, 147 KB
+  - Description: Roosevelt elk munch on shrubs during sunset at Cannon Beach on the northern Oregon coast, with Haystack Rock in the distance, Aug. 23, 2024. USFWS video: Toshio Suzuki Oregon Islands National Wildlife Refuge includes 1,853 rocks, reefs and islands, stretching from Tillamook Head near Seaside south to the California border. All of the rocks and islands of the refuge are designated National Wilderness Areas, with the exception of 1-acre Tillamook Rock. Most of Oregon’s estimated 1.2 million nesting seabirds use Oregon Islands Refuge as a place to raise their young, and Oregon’s seals and sea lio
+  - Match: score 11 via coastal-in-title, name:roosevelt, kw:beach+sea+coast+sunset, w>=1000, landscape
+- **`us-or-roosevelt-beach-962688-3.jpg`** ✗ **not a coastal photo** — “Beach Trip 06 018” by Deloreanman14 at English Wikipedia, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Beach_Trip_06_018.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Deloreanman14 at English Wikipedia — https://en.wikipedia.org/wiki/User:Deloreanman14
+  - Dated: 11 November 2007 (original upload date)
+  - 1600×801px, 168 KB
+  - Description: US 101 is the main street (Roosevelt Drive) through Seaside, Oregon and is frequently plagued by heavy traffic backups, especially during summer weekends. Photo taken June, 2006.
+  - Match: score 10 via coastal-in-title, name:roosevelt, kw:beach+sea, w>=1000, landscape
 
 ## Sacchi Beach
 
 `osm:node/357287424` · 43.2642765, -124.3837285
 
-- **`us-or-sacchi-beach-1.jpg`** — Bastendorff Beach 3 (8884977276) — Public domain (Wikimedia Commons), no attribution required
+- **`us-or-sacchi-beach-1.jpg`** — Bastendorff Beach 10 (8885012664) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Bastendorff_Beach_10_(8885012664).jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: Bureau of Land Management — https://www.flickr.com/people/50169152@N06
+  - Dated: 2013-01-16 22:44
+  - 1600×1067px, 355 KB, shot 371 m from the spot
+  - Description: Beachgoers, add this one to your summer adventure list! One of the few BLM-managed coastal areas, Bastendorff Beach offers something for just about everyone: picnic, hike, surf, fish, or fly a kite! Check out this video for more: bitly.com/1188YMR . And plan your visit from the Bastendorff Beach homepage: on.doi.gov/VSQMod
+  - Match: score 10 via coastal-in-title, kw:beach+surf+coast+coastal, geo:371m, w>=1000, landscape
+- **`us-or-sacchi-beach-2.jpg`** ✗ **not a coastal photo** — Bastendorff Beach 3 (8884977276) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Bastendorff_Beach_3_(8884977276).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Bureau of Land Management — https://www.flickr.com/people/50169152@N06
@@ -1423,20 +1431,12 @@
   - 1600×1067px, 204 KB, shot 371 m from the spot
   - Description: Beachgoers, add this one to your summer adventure list! One of the few BLM-managed coastal areas, Bastendorff Beach offers something for just about everyone: picnic, hike, surf, fish, or fly a kite!
   - Match: score 10 via coastal-in-title, kw:beach+surf+coast+coastal, geo:371m, w>=1000, landscape
-- **`us-or-sacchi-beach-2.jpg`** — Bastendorff Beach 2 (8884978380) — Public domain (Wikimedia Commons), no attribution required
+- **`us-or-sacchi-beach-3.jpg`** ✗ **not a coastal photo** — Bastendorff Beach 2 (8884978380) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Bastendorff_Beach_2_(8884978380).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Bureau of Land Management — https://www.flickr.com/people/50169152@N06
   - Dated: 2013-01-16 22:34
   - 1600×983px, 468 KB, shot 371 m from the spot
-  - Description: Beachgoers, add this one to your summer adventure list! One of the few BLM-managed coastal areas, Bastendorff Beach offers something for just about everyone: picnic, hike, surf, fish, or fly a kite! Check out this video for more: bitly.com/1188YMR . And plan your visit from the Bastendorff Beach homepage: on.doi.gov/VSQMod
-  - Match: score 10 via coastal-in-title, kw:beach+surf+coast+coastal, geo:371m, w>=1000, landscape
-- **`us-or-sacchi-beach-3.jpg`** — Bastendorff Beach 10 (8885012664) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Bastendorff_Beach_10_(8885012664).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Bureau of Land Management — https://www.flickr.com/people/50169152@N06
-  - Dated: 2013-01-16 22:44
-  - 1600×1067px, 355 KB, shot 371 m from the spot
   - Description: Beachgoers, add this one to your summer adventure list! One of the few BLM-managed coastal areas, Bastendorff Beach offers something for just about everyone: picnic, hike, surf, fish, or fly a kite! Check out this video for more: bitly.com/1188YMR . And plan your visit from the Bastendorff Beach homepage: on.doi.gov/VSQMod
   - Match: score 10 via coastal-in-title, kw:beach+surf+coast+coastal, geo:371m, w>=1000, landscape
 
@@ -1481,7 +1481,7 @@
   - 1600×972px, 335 KB, shot 78 m from the spot
   - Description: A beach on the Pacific Ocean in the coastal community of Seaside, Oregon.
   - Match: score 14 via coastal-in-title, name:seaside, kw:beach+ocean+sea+coast, geo:78m, w>=1000, landscape
-- **`us-or-seaside-beach-2.jpg`** — “NorthWest POINT - Seaside (31025078743)” by Oregon Department of Transportation, Wikimedia Commons, CC BY 2.0
+- **`us-or-seaside-beach-2.jpg`** ✗ **not a coastal photo** — “NorthWest POINT - Seaside (31025078743)” by Oregon Department of Transportation, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:NorthWest_POINT_-_Seaside_(31025078743).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Oregon Department of Transportation — https://www.flickr.com/people/28364885@N02
@@ -1489,7 +1489,7 @@
   - 1600×1064px, 1139 KB, shot 189 m from the spot
   - Description: The NorthWest POINT offers twice-daily round trip bus service between Portland and Astoria with stops in Portland, Beaverton, Elsie, Cannon Beach, Seaside, Gearhart, and Warrenton. Information about the NorthWest POINT including stops, schedules, and tickets can be found at <a href=" http://oregon-point.com " rel="noreferrer nofollow">oregon-point.com</a>. For local transit options throughout the coast and Northwestern Oregon check out <a href=" https://www.nworegontransit.org/ " rel="noreferrer nofollow">www.nworegontransit.org/</a>. Check out our Facebook page at <a href=" http://www.faceboo
   - Match: score 14 via coastal-in-title, name:seaside, kw:beach+sea+coast+point, geo:189m, w>=1000, landscape
-- **`us-or-seaside-beach-3.jpg`** — “NorthWest POINT - Seaside (31025076073)” by Oregon Department of Transportation, Wikimedia Commons, CC BY 2.0
+- **`us-or-seaside-beach-3.jpg`** ✗ **not a coastal photo** — “NorthWest POINT - Seaside (31025076073)” by Oregon Department of Transportation, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:NorthWest_POINT_-_Seaside_(31025076073).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Oregon Department of Transportation — https://www.flickr.com/people/28364885@N02
@@ -1510,15 +1510,7 @@
   - 1600×1200px, 600 KB, shot 647 m from the spot
   - Description: A view of Seaside Beach from south towards north, Oregon Coast
   - Match: score 13 via coastal-in-title, name:seaside, kw:beach+sea+coast, geo:647m, w>=1000, landscape
-- **`us-or-seaside-cove-beach-2.jpg`** — “Driftwood at Seaside Beach and Tillamook Head” by Bobjgalindo, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Driftwood_at_Seaside_Beach_and_Tillamook_Head.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Bobjgalindo — //commons.wikimedia.org/wiki/User:Bobjgalindo
-  - Dated: 14 June 2024 (according to Exif data)
-  - 1600×2133px, 901 KB, shot 1063 m from the spot
-  - Description: Driftwood at Seaside Beach and Tillamook Head in the background, Oregon Coast.
-  - Match: score 12.5 via coastal-in-title, name:seaside, kw:beach+sea+coast, geo:1063m, w>=1000
-- **`us-or-seaside-cove-beach-3.jpg`** — “Seaside Beach and Tillamook Head at the distance” by Bobjgalindo, Wikimedia Commons, CC BY-SA 4.0
+- **`us-or-seaside-cove-beach-2.jpg`** — “Seaside Beach and Tillamook Head at the distance” by Bobjgalindo, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Seaside_Beach_and_Tillamook_Head_at_the_distance.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Bobjgalindo — //commons.wikimedia.org/wiki/User:Bobjgalindo
@@ -1526,6 +1518,14 @@
   - 1600×1200px, 650 KB, shot 647 m from the spot
   - Description: and Tillamook Head at the distance
   - Match: score 12 via coastal-in-title, name:seaside, kw:beach+sea, geo:647m, w>=1000, landscape
+- **`us-or-seaside-cove-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Driftwood at Seaside Beach and Tillamook Head” by Bobjgalindo, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Driftwood_at_Seaside_Beach_and_Tillamook_Head.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Bobjgalindo — //commons.wikimedia.org/wiki/User:Bobjgalindo
+  - Dated: 14 June 2024 (according to Exif data)
+  - 1600×2133px, 901 KB, shot 1063 m from the spot
+  - Description: Driftwood at Seaside Beach and Tillamook Head in the background, Oregon Coast.
+  - Match: score 12.5 via coastal-in-title, name:seaside, kw:beach+sea+coast, geo:1063m, w>=1000
 
 ## Secret Beach
 
@@ -1568,15 +1568,7 @@
   - 1600×887px, 379 KB, shot 171 m from the spot
   - Description: Garrett, Short Beach, Oceanside, Oregon
   - Match: score 13 via coastal-in-title, name:short, kw:beach+ocean, geo:171m, w>=1000, landscape
-- **`us-or-short-beach-2.jpg`** — “Barnacles, Short Beach, Oceanside, Oregon (52097314858)” by lamblukas from San Francisco, United States, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Barnacles,_Short_Beach,_Oceanside,_Oregon_(52097314858).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: lamblukas from San Francisco, United States — https://www.flickr.com/people/29043563@N00
-  - Dated: 2022-05-24 13:04
-  - 1600×992px, 104 KB, shot 345 m from the spot
-  - Description: barnacles, Short Beach, Oceanside, Oregon
-  - Match: score 13 via coastal-in-title, name:short, kw:beach+ocean, geo:345m, w>=1000, landscape
-- **`us-or-short-beach-3.jpg`** — Short-Beach-Oregon — CC0 (Wikimedia Commons), no attribution required
+- **`us-or-short-beach-2.jpg`** — Short-Beach-Oregon — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Short-Beach-Oregon.JPG
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Goodwid — //commons.wikimedia.org/w/index.php?title=User:Goodwid&amp;action=edit&amp;redlink=1
@@ -1584,6 +1576,14 @@
   - 1600×1200px, 733 KB, shot 486 m from the spot
   - Description: Short Beach on a rainy spring day. In Tillamook county, Oregon.
   - Match: score 10.5 via coastal-in-title, name:short, kw:beach, geo:486m, w>=1000, landscape
+- **`us-or-short-beach-3.jpg`** ✗ **not a coastal photo** — “Barnacles, Short Beach, Oceanside, Oregon (52097314858)” by lamblukas from San Francisco, United States, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Barnacles,_Short_Beach,_Oceanside,_Oregon_(52097314858).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: lamblukas from San Francisco, United States — https://www.flickr.com/people/29043563@N00
+  - Dated: 2022-05-24 13:04
+  - 1600×992px, 104 KB, shot 345 m from the spot
+  - Description: barnacles, Short Beach, Oceanside, Oregon
+  - Match: score 13 via coastal-in-title, name:short, kw:beach+ocean, geo:345m, w>=1000, landscape
 
 ## Short Sand Beach
 
@@ -1647,23 +1647,7 @@
 
 `osm:relation/14452910` · 42.8541055, -124.5480033 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-or-sixes-beach-1.jpg`** — “Mottled Sea Star (8237659142)” by Sheila Sund from Salem, United States, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Mottled_Sea_Star_(8237659142).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Sheila Sund from Salem, United States — https://www.flickr.com/people/90692748@N04
-  - Dated: 2012-08-26 12:57
-  - 1600×1558px, 1325 KB, shot 2126 m from the spot
-  - Description: Tidepooling at Cape Blanco, Oregon. Although native, I rarely see this type of sea star in the Oregon tide pools, so it felt like a discovery.
-  - Match: score 7.5 via coastal-in-title, kw:sea+cove+tide, geo:2126m, w>=1000
-- **`us-or-sixes-beach-2.jpg`** — “Cape Blanco Lighthouse (9548806114)” by Oregon Department of Transportation, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Cape_Blanco_Lighthouse_(9548806114).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Oregon Department of Transportation — https://www.flickr.com/people/28364885@N02
-  - Dated: 2013-06-11 13:57
-  - 1600×1063px, 737 KB, shot 2135 m from the spot
-  - Description: The Cape Blanco lighthouse is located on the westernmost point of Oregon.
-  - Match: score 7 via coastal-in-title, kw:point+lighthouse, geo:2135m, w>=1000, landscape
-- **`us-or-sixes-beach-3.jpg`** — North Spit, Oregon Coast — Public domain (Wikimedia Commons), no attribution required
+- **`us-or-sixes-beach-1.jpg`** — North Spit, Oregon Coast — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:North_Spit,_Oregon_Coast.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Bureau of Land Management Oregon and Washington — https://www.flickr.com/people/50169152@N06
@@ -1671,6 +1655,22 @@
   - 1600×1200px, 849 KB, shot 66057 m from the spot
   - Description: Serenity on the bay at North Spit ACEC (Area of Critical Environmental Concern) on the southern Oregon Coast, Dec. 1, 2016. This North Spit is the southernmost end of a series of sand dunes extending along the Oregon coastline from Florence to Coos Bay. The ever-changing habitat is home to a wide variety of mammals and birds, including some threatened and endangered species. Strolling along the beach, visitors may glimpse an osprey diving for fish or whales spouting offshore. A full-sized boat ramp is open for public use at no charge. ACECs are public lands where special management attention i
   - Match: score 7 via coastal-in-title, kw:beach+coast+coastline+shore, geo:66057m, w>=1000, landscape
+- **`us-or-sixes-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Cape Blanco Lighthouse (9548806114)” by Oregon Department of Transportation, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Cape_Blanco_Lighthouse_(9548806114).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Oregon Department of Transportation — https://www.flickr.com/people/28364885@N02
+  - Dated: 2013-06-11 13:57
+  - 1600×1063px, 737 KB, shot 2135 m from the spot
+  - Description: The Cape Blanco lighthouse is located on the westernmost point of Oregon.
+  - Match: score 7 via coastal-in-title, kw:point+lighthouse, geo:2135m, w>=1000, landscape
+- **`us-or-sixes-beach-3.jpg`** ✗ **not a coastal photo** — “Mottled Sea Star (8237659142)” by Sheila Sund from Salem, United States, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Mottled_Sea_Star_(8237659142).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Sheila Sund from Salem, United States — https://www.flickr.com/people/90692748@N04
+  - Dated: 2012-08-26 12:57
+  - 1600×1558px, 1325 KB, shot 2126 m from the spot
+  - Description: Tidepooling at Cape Blanco, Oregon. Although native, I rarely see this type of sea star in the Oregon tide pools, so it felt like a discovery.
+  - Match: score 7.5 via coastal-in-title, kw:sea+cove+tide, geo:2126m, w>=1000
 
 ## Sporthaven Beach
 
@@ -1750,7 +1750,7 @@
   - 1600×1200px, 162 KB
   - Description: Sunset at Cannon Beach at Pacific Coast in Oregon in The Pacific Northwest | Landscapes in The West by Jeff Hollett
   - Match: score 11 via coastal-in-title, name:sunset, kw:beach+coast+sunset, w>=1000, landscape
-- **`us-or-sunset-beach-3.jpg`** — “Trailhead - Sunset Beach SRS Oregon” by Ipoellet, Wikimedia Commons, CC BY-SA 4.0
+- **`us-or-sunset-beach-3.jpg`** ✗ **not a coastal photo** — “Trailhead - Sunset Beach SRS Oregon” by Ipoellet, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Trailhead_-_Sunset_Beach_SRS_Oregon.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Ipoellet — //commons.wikimedia.org/wiki/User:Ipoellet
@@ -1763,23 +1763,7 @@
 
 `osm:relation/20068413` · 46.1021521, -123.9454975 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-or-sunset-beach-068413-1.jpg`** — “Trailhead - Sunset Beach SRS Oregon” by Ipoellet, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Trailhead_-_Sunset_Beach_SRS_Oregon.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Ipoellet — //commons.wikimedia.org/wiki/User:Ipoellet
-  - Dated: 2017-10-28 11:51:57
-  - 1600×1200px, 873 KB, shot 663 m from the spot
-  - Description: Sunset Beach State Recreation Site , a state park adjacent to the Pacific Ocean in Oregon , en:United States .
-  - Match: score 13 via coastal-in-title, name:sunset, kw:beach+ocean+sunset, geo:663m, w>=1000, landscape
-- **`us-or-sunset-beach-068413-2.jpg`** — “Trail - Sunset Beach SRS Oregon” by Ipoellet, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Trail_-_Sunset_Beach_SRS_Oregon.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Ipoellet — //commons.wikimedia.org/wiki/User:Ipoellet
-  - Dated: 2017-10-28 12:32:18
-  - 1600×2133px, 1890 KB, shot 940 m from the spot
-  - Description: Sunset Beach State Recreation Site , a state park adjacent to the Pacific Ocean in Oregon , en:United States .
-  - Match: score 12.5 via coastal-in-title, name:sunset, kw:beach+ocean+sunset, geo:940m, w>=1000
-- **`us-or-sunset-beach-068413-3.jpg`** — “Sunset at Cannon Beach in Oregon 2” by Jeffhollett, Wikimedia Commons, CC BY-SA 4.0
+- **`us-or-sunset-beach-068413-1.jpg`** — “Sunset at Cannon Beach in Oregon 2” by Jeffhollett, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sunset_at_Cannon_Beach_in_Oregon_2.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Jeffhollett — //commons.wikimedia.org/wiki/User:Jeffhollett
@@ -1787,6 +1771,22 @@
   - 1600×1200px, 227 KB
   - Description: Sunset at Cannon Beach at Pacific Coast in Oregon in The Pacific Northwest | Landscapes in The West by Jeff Hollett
   - Match: score 11 via coastal-in-title, name:sunset, kw:beach+coast+sunset, w>=1000, landscape
+- **`us-or-sunset-beach-068413-2.jpg`** ✗ **not a coastal photo** — “Trailhead - Sunset Beach SRS Oregon” by Ipoellet, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Trailhead_-_Sunset_Beach_SRS_Oregon.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Ipoellet — //commons.wikimedia.org/wiki/User:Ipoellet
+  - Dated: 2017-10-28 11:51:57
+  - 1600×1200px, 873 KB, shot 663 m from the spot
+  - Description: Sunset Beach State Recreation Site , a state park adjacent to the Pacific Ocean in Oregon , en:United States .
+  - Match: score 13 via coastal-in-title, name:sunset, kw:beach+ocean+sunset, geo:663m, w>=1000, landscape
+- **`us-or-sunset-beach-068413-3.jpg`** ✗ **not a coastal photo** — “Trail - Sunset Beach SRS Oregon” by Ipoellet, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Trail_-_Sunset_Beach_SRS_Oregon.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Ipoellet — //commons.wikimedia.org/wiki/User:Ipoellet
+  - Dated: 2017-10-28 12:32:18
+  - 1600×2133px, 1890 KB, shot 940 m from the spot
+  - Description: Sunset Beach State Recreation Site , a state park adjacent to the Pacific Ocean in Oregon , en:United States .
+  - Match: score 12.5 via coastal-in-title, name:sunset, kw:beach+ocean+sunset, geo:940m, w>=1000
 
 ## Whaleshead Beach
 
@@ -1837,7 +1837,7 @@
   - 1600×1200px, 413 KB, shot 1647 m from the spot
   - Description: Pacific Ocean at Pacific Dunes (2)
   - Match: score 8 via coastal-in-title, kw:ocean+coast+dune, geo:1647m, w>=1000, landscape
-- **`us-or-whisky-run-beach-3.jpg`** — “Bandon Dunes Resort-2” by Visitor7, Wikimedia Commons, CC BY-SA 3.0
+- **`us-or-whisky-run-beach-3.jpg`** ✗ **not a coastal photo** — “Bandon Dunes Resort-2” by Visitor7, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Bandon_Dunes_Resort-2.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Visitor7 — //commons.wikimedia.org/w/index.php?title=User:Visitor7&amp;action=edit&amp;redlink=1

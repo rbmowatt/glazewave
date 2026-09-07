@@ -61,15 +61,7 @@
 
 `osm:way/124813968` · 15.7435063, -96.1286358
 
-- **`mx-oax-playa-la-entrega-1.jpg`** — “La Entrega Beach” by Wavehunter, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:La_Entrega_Beach.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Wavehunter — //commons.wikimedia.org/wiki/User:Wavehunter
-  - Dated: 2022-08-11
-  - 1600×1200px, 400 KB, shot 127 m from the spot
-  - Description: Vacationers on the beach and in the ocean: Oaxaca
-  - Match: score 14 via coastal-in-title, name:entrega, kw:beach+ocean+mar, geo:127m, w>=1000, landscape
-- **`mx-oax-playa-la-entrega-2.jpg`** — “Playa La Entrega, Huatulco” by ProtoplasmaKid, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-oax-playa-la-entrega-1.jpg`** — “Playa La Entrega, Huatulco” by ProtoplasmaKid, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Playa_La_Entrega,_Huatulco.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: ProtoplasmaKid — //commons.wikimedia.org/wiki/User:ProtoplasmaKid
@@ -77,7 +69,15 @@
   - 1600×900px, 896 KB, shot 318 m from the spot
   - Description: Drone shot of La Entrega Beach, Huatulco Bays, Oaxaca, Mexico.
   - Match: score 14 via coastal-in-title, name:entrega, kw:beach+playa+bay, geo:318m, w>=1000, landscape
-- **`mx-oax-playa-la-entrega-3.jpg`** — “Playa La Entrega Huatulco” by Grisiproo, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-oax-playa-la-entrega-2.jpg`** ⚠︎ *context, not the coast itself* — “La Entrega Beach” by Wavehunter, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:La_Entrega_Beach.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Wavehunter — //commons.wikimedia.org/wiki/User:Wavehunter
+  - Dated: 2022-08-11
+  - 1600×1200px, 400 KB, shot 127 m from the spot
+  - Description: Vacationers on the beach and in the ocean: Oaxaca
+  - Match: score 14 via coastal-in-title, name:entrega, kw:beach+ocean+mar, geo:127m, w>=1000, landscape
+- **`mx-oax-playa-la-entrega-3.jpg`** ⚠︎ *context, not the coast itself* — “Playa La Entrega Huatulco” by Grisiproo, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Playa_La_Entrega_Huatulco.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Grisiproo — //commons.wikimedia.org/w/index.php?title=User:Grisiproo&amp;action=edit&amp;redlink=1
@@ -106,7 +106,7 @@
   - 1600×1071px, 537 KB, shot 2514 m from the spot
   - Description: Rocky shoreline and cliffs at Punta Maldonado, Cuajinicuilapa, Guerrero
   - Match: score 6 via kw:shore+shoreline+cliff, geo:2514m, w>=1000, landscape
-- **`mx-oax-playa-tecoyame-3.jpg`** — “PuntaMaldonado15” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 3.0
+- **`mx-oax-playa-tecoyame-3.jpg`** ⚠︎ *context, not the coast itself* — “PuntaMaldonado15” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:PuntaMaldonado15.JPG
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: AlejandroLinaresGarcia — //commons.wikimedia.org/wiki/User:AlejandroLinaresGarcia
@@ -119,23 +119,7 @@
 
 `osm:way/85831960` · 15.7391731, -96.1317642
 
-- **`mx-oax-playa-violin-1.jpg`** — “La Entrega Beach” by Wavehunter, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:La_Entrega_Beach.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Wavehunter — //commons.wikimedia.org/wiki/User:Wavehunter
-  - Dated: 2022-08-11
-  - 1600×1200px, 400 KB, shot 593 m from the spot
-  - Description: Vacationers on the beach and in the ocean: Oaxaca
-  - Match: score 9 via coastal-in-title, kw:beach+ocean+mar, geo:593m, w>=1000, landscape
-- **`mx-oax-playa-violin-2.jpg`** — “Playa La Cruz, Bahías de Huatulco” by ProtoplasmaKid, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Playa_La_Cruz,_Bah%C3%ADas_de_Huatulco.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: ProtoplasmaKid — //commons.wikimedia.org/wiki/User:ProtoplasmaKid
-  - Dated: 2024-09-14 13:52:27
-  - 1600×900px, 744 KB, shot 898 m from the spot
-  - Description: Drone shot of La Cruz Beach, Huatulco Bays, Oaxaca, Mexico.
-  - Match: score 9 via coastal-in-title, kw:beach+playa+bay, geo:898m, w>=1000, landscape
-- **`mx-oax-playa-violin-3.jpg`** — “Playa La Entrega, Huatulco” by ProtoplasmaKid, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-oax-playa-violin-1.jpg`** — “Playa La Entrega, Huatulco” by ProtoplasmaKid, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Playa_La_Entrega,_Huatulco.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: ProtoplasmaKid — //commons.wikimedia.org/wiki/User:ProtoplasmaKid
@@ -143,4 +127,20 @@
   - 1600×900px, 896 KB, shot 899 m from the spot
   - Description: Drone shot of La Entrega Beach, Huatulco Bays, Oaxaca, Mexico.
   - Match: score 9 via coastal-in-title, kw:beach+playa+bay, geo:899m, w>=1000, landscape
+- **`mx-oax-playa-violin-2.jpg`** ⚠︎ *context, not the coast itself* — “La Entrega Beach” by Wavehunter, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:La_Entrega_Beach.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Wavehunter — //commons.wikimedia.org/wiki/User:Wavehunter
+  - Dated: 2022-08-11
+  - 1600×1200px, 400 KB, shot 593 m from the spot
+  - Description: Vacationers on the beach and in the ocean: Oaxaca
+  - Match: score 9 via coastal-in-title, kw:beach+ocean+mar, geo:593m, w>=1000, landscape
+- **`mx-oax-playa-violin-3.jpg`** ⚠︎ *context, not the coast itself* — “Playa La Cruz, Bahías de Huatulco” by ProtoplasmaKid, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Playa_La_Cruz,_Bah%C3%ADas_de_Huatulco.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: ProtoplasmaKid — //commons.wikimedia.org/wiki/User:ProtoplasmaKid
+  - Dated: 2024-09-14 13:52:27
+  - 1600×900px, 744 KB, shot 898 m from the spot
+  - Description: Drone shot of La Cruz Beach, Huatulco Bays, Oaxaca, Mexico.
+  - Match: score 9 via coastal-in-title, kw:beach+playa+bay, geo:898m, w>=1000, landscape
 

@@ -13,7 +13,7 @@
   - Dated: 2023-08-07 20:07:28
   - 1600×900px, 378 KB, shot 27 m from the spot
   - Match: score 14 via coastal-in-title, name:bethany, kw:beach+wave+waves+mar, geo:27m, w>=1000, landscape
-- **`us-de-bethany-beach-2.jpg`** — “Bethany Beach Vol Fire Co, Station 70 (5591054078)” by Lee Cannon from Bayville aka West Fenwick, DE, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-de-bethany-beach-2.jpg`** ✗ **not a coastal photo** — “Bethany Beach Vol Fire Co, Station 70 (5591054078)” by Lee Cannon from Bayville aka West Fenwick, DE, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Bethany_Beach_Vol_Fire_Co,_Station_70_(5591054078).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Lee Cannon from Bayville aka West Fenwick, DE, USA — https://www.flickr.com/people/9763931@N04
@@ -21,7 +21,7 @@
   - 1600×1071px, 483 KB, shot 429 m from the spot
   - Description: Side view of Rescue 70 / 70-6
   - Match: score 12 via coastal-in-title, name:bethany, kw:beach+pier, geo:429m, w>=1000, landscape
-- **`us-de-bethany-beach-3.jpg`** — “Bethany Beach Vol Fire Co, Station 70 (5591060954)” by Lee Cannon from Bayville aka West Fenwick, DE, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-de-bethany-beach-3.jpg`** ✗ **not a coastal photo** — “Bethany Beach Vol Fire Co, Station 70 (5591060954)” by Lee Cannon from Bayville aka West Fenwick, DE, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Bethany_Beach_Vol_Fire_Co,_Station_70_(5591060954).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Lee Cannon from Bayville aka West Fenwick, DE, USA — https://www.flickr.com/people/9763931@N04

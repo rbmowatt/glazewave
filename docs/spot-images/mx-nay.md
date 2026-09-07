@@ -6,15 +6,7 @@
 
 `osm:way/886865502` · 20.7838932, -105.5067715 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`mx-nay-playa-careyeros-1.jpg`** — “Palapas en la playa - panoramio” by Wiper México, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Palapas_en_la_playa_-_panoramio.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Wiper México — https://web.archive.org/web/20161012155055/http://www.panoramio.com/user/568665?with_photo_id=11055035
-  - Dated: 6 June 2008 (according to Exif data)
-  - 1600×1201px, 132 KB, shot 1770 m from the spot
-  - Description: Palapas en la playa
-  - Match: score 7 via coastal-in-title, kw:beach+playa, geo:1770m, w>=1000, landscape
-- **`mx-nay-playa-careyeros-2.jpg`** — “Playa del St. Regis - panoramio” by Lynx Burgos, Wikimedia Commons, CC BY-SA 3.0
+- **`mx-nay-playa-careyeros-1.jpg`** — “Playa del St. Regis - panoramio” by Lynx Burgos, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Playa_del_St._Regis_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Lynx Burgos — https://web.archive.org/web/20161024143145/http://www.panoramio.com/user/5807932?with_photo_id=82484317
@@ -22,7 +14,7 @@
   - 1600×1200px, 557 KB, shot 3724 m from the spot
   - Description: Playa del St. Regis
   - Match: score 6 via coastal-in-title, kw:beach+playa, geo:3724m, w>=1000, landscape
-- **`mx-nay-playa-careyeros-3.jpg`** — “Paradise (137709447)” by Mariana Cueva, Wikimedia Commons, CC BY 3.0
+- **`mx-nay-playa-careyeros-2.jpg`** — “Paradise (137709447)” by Mariana Cueva, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Paradise_(137709447).jpeg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Mariana Cueva — https://500px.com/MarianaCueva
@@ -30,12 +22,20 @@
   - 1600×1066px, 575 KB, shot 2275 m from the spot
   - Description: 500px provided description: Beatiful beach on Punta Mita. [#sky ,#sea ,#mexico ,#beach ,#travel ,#ocean]
   - Match: score 6 via kw:beach+ocean+sea, geo:2275m, w>=1000, landscape
+- **`mx-nay-playa-careyeros-3.jpg`** ⚠︎ *context, not the coast itself* — “Palapas en la playa - panoramio” by Wiper México, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Palapas_en_la_playa_-_panoramio.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Wiper México — https://web.archive.org/web/20161012155055/http://www.panoramio.com/user/568665?with_photo_id=11055035
+  - Dated: 6 June 2008 (according to Exif data)
+  - 1600×1201px, 132 KB, shot 1770 m from the spot
+  - Description: Palapas en la playa
+  - Match: score 7 via coastal-in-title, kw:beach+playa, geo:1770m, w>=1000, landscape
 
 ## Playa Carricitos
 
 `osm:way/316611198` · 20.8692213, -105.4539734 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`mx-nay-playa-carricitos-1.jpg`** — “Playa de los Muertos, Sayulita, Nayarit 01” by Luisalvaz, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-nay-playa-carricitos-1.jpg`** ⚠︎ *context, not the coast itself* — “Playa de los Muertos, Sayulita, Nayarit 01” by Luisalvaz, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Playa_de_los_Muertos,_Sayulita,_Nayarit_01.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Luisalvaz — //commons.wikimedia.org/wiki/User:Luisalvaz
@@ -43,7 +43,7 @@
   - 1600×1201px, 622 KB, shot 643 m from the spot
   - Description: Playa de los Muertos, Sayulita, Nayarit
   - Match: score 6.5 via coastal-in-title, kw:playa, geo:643m, w>=1000, landscape
-- **`mx-nay-playa-carricitos-2.jpg`** — “Cementerio de Sayulita, a un lado de la Playa de los Muertos 01” by Luisalvaz, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-nay-playa-carricitos-2.jpg`** ✗ **not a coastal photo** — “Cementerio de Sayulita, a un lado de la Playa de los Muertos 01” by Luisalvaz, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Cementerio_de_Sayulita,_a_un_lado_de_la_Playa_de_los_Muertos_01.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Luisalvaz — //commons.wikimedia.org/wiki/User:Luisalvaz
@@ -51,7 +51,7 @@
   - 1600×1201px, 801 KB, shot 836 m from the spot
   - Description: Cementerio de Sayulita, a un lado de la Playa de los Muertos
   - Match: score 6.5 via coastal-in-title, kw:playa, geo:836m, w>=1000, landscape
-- **`mx-nay-playa-carricitos-3.jpg`** — “Cementerio de Sayulita, a un lado de la Playa de los Muertos 03” by Luisalvaz, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-nay-playa-carricitos-3.jpg`** ✗ **not a coastal photo** — “Cementerio de Sayulita, a un lado de la Playa de los Muertos 03” by Luisalvaz, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Cementerio_de_Sayulita,_a_un_lado_de_la_Playa_de_los_Muertos_03.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Luisalvaz — //commons.wikimedia.org/wiki/User:Luisalvaz
@@ -164,15 +164,7 @@
   - 1600×1200px, 555 KB
   - Description: A picture of the famous "love beach" in the Marieta Islands in Mexico.
   - Match: score 9 via name:escondida, kw:beach+playa+mar, w>=1000, landscape
-- **`mx-nay-playa-escondida-2.jpg`** — “Playa de los Muertos, Sayulita, Nayarit 01” by Luisalvaz, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Playa_de_los_Muertos,_Sayulita,_Nayarit_01.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Luisalvaz — //commons.wikimedia.org/wiki/User:Luisalvaz
-  - Dated: 2024-12-20 11:29:47
-  - 1600×1201px, 622 KB, shot 955 m from the spot
-  - Description: Playa de los Muertos, Sayulita, Nayarit
-  - Match: score 6.5 via coastal-in-title, kw:playa, geo:955m, w>=1000, landscape
-- **`mx-nay-playa-escondida-3.jpg`** — “Playa de los Muertos, Sayulita, Nayarit 03” by Luisalvaz, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-nay-playa-escondida-2.jpg`** — “Playa de los Muertos, Sayulita, Nayarit 03” by Luisalvaz, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Playa_de_los_Muertos,_Sayulita,_Nayarit_03.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Luisalvaz — //commons.wikimedia.org/wiki/User:Luisalvaz
@@ -180,6 +172,14 @@
   - 1600×1201px, 548 KB, shot 1123 m from the spot
   - Description: Playa de los Muertos, Sayulita, Nayarit
   - Match: score 6.5 via coastal-in-title, kw:playa, geo:1123m, w>=1000, landscape
+- **`mx-nay-playa-escondida-3.jpg`** ⚠︎ *context, not the coast itself* — “Playa de los Muertos, Sayulita, Nayarit 01” by Luisalvaz, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Playa_de_los_Muertos,_Sayulita,_Nayarit_01.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Luisalvaz — //commons.wikimedia.org/wiki/User:Luisalvaz
+  - Dated: 2024-12-20 11:29:47
+  - 1600×1201px, 622 KB, shot 955 m from the spot
+  - Description: Playa de los Muertos, Sayulita, Nayarit
+  - Match: score 6.5 via coastal-in-title, kw:playa, geo:955m, w>=1000, landscape
 
 ## Playa Las Cuevas
 
@@ -214,15 +214,7 @@
   - 1600×1200px, 146 KB, shot 1804 m from the spot
   - Description: The beach at Sayulita, Mexico, faces the open Pacific Ocean, 42 kilometers northwest of Puerto Vallarta.
   - Match: score 8 via coastal-in-title, kw:beach+ocean+playa, geo:1804m, w>=1000, landscape
-- **`mx-nay-playa-las-cuevas-624598-2.jpg`** — “Playa Syulita” by গীতাশ্ৰী গগৈ আপ্তে, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Playa_Syulita.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: গীতাশ্ৰী গগৈ আপ্তে — //commons.wikimedia.org/wiki/User:%E0%A6%97%E0%A7%80%E0%A6%A4%E0%A6%BE%E0%A6%B6%E0%A7%8D%E0%A7%B0%E0%A7%80_%E0%A6%97%E0%A6%97%E0%A7%88_%E0%A6%86%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A7%87
-  - Dated: 8 January 2026 (according to Exif data)
-  - 1600×900px, 405 KB, shot 1072 m from the spot
-  - Description: Syulita beach, Mexico
-  - Match: score 8 via coastal-in-title, kw:beach+playa, geo:1072m, w>=1000, landscape
-- **`mx-nay-playa-las-cuevas-624598-3.jpg`** — “Pacific Breakers (17108239530)” by David Stanley from Nanaimo, Canada, Wikimedia Commons, CC BY 2.0
+- **`mx-nay-playa-las-cuevas-624598-2.jpg`** — “Pacific Breakers (17108239530)” by David Stanley from Nanaimo, Canada, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Pacific_Breakers_(17108239530).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: David Stanley from Nanaimo, Canada — https://www.flickr.com/people/79721788@N00
@@ -230,6 +222,14 @@
   - 1600×1200px, 148 KB, shot 1905 m from the spot
   - Description: Huge breakers off the Pacific Ocean make Sayulita, Mexico, a surfers paradise.
   - Match: score 6 via kw:surf+surfer+wave+waves, geo:1905m, w>=1000, landscape
+- **`mx-nay-playa-las-cuevas-624598-3.jpg`** ⚠︎ *context, not the coast itself* — “Playa Syulita” by গীতাশ্ৰী গগৈ আপ্তে, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Playa_Syulita.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: গীতাশ্ৰী গগৈ আপ্তে — //commons.wikimedia.org/wiki/User:%E0%A6%97%E0%A7%80%E0%A6%A4%E0%A6%BE%E0%A6%B6%E0%A7%8D%E0%A7%B0%E0%A7%80_%E0%A6%97%E0%A6%97%E0%A7%88_%E0%A6%86%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A7%87
+  - Dated: 8 January 2026 (according to Exif data)
+  - 1600×900px, 405 KB, shot 1072 m from the spot
+  - Description: Syulita beach, Mexico
+  - Match: score 8 via coastal-in-title, kw:beach+playa, geo:1072m, w>=1000, landscape
 
 ## Playa Las Minitas
 
@@ -293,15 +293,7 @@
   - 1600×2133px, 1571 KB, shot 1728 m from the spot
   - Description: Nonono
   - Match: score 11.5 via coastal-in-title, name:marcos, kw:beach+playa+mar, geo:1728m, w>=1000
-- **`mx-nay-playa-lo-de-marcos-2.jpg`** — “Lo de Marcos” by Camila Glez, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Lo_de_Marcos.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Camila Glez — //commons.wikimedia.org/w/index.php?title=User:Camilo_Glez&amp;action=edit&amp;redlink=1
-  - Dated: 2023-04-15 14:25:01
-  - 1600×2133px, 1460 KB, shot 1096 m from the spot
-  - Description: Nonono
-  - Match: score 9.5 via name:marcos, kw:beach+mar, geo:1096m, w>=1000
-- **`mx-nay-playa-lo-de-marcos-3.jpg`** — “Lo de Marcos banner” by Camila Glez, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-nay-playa-lo-de-marcos-2.jpg`** — “Lo de Marcos banner” by Camila Glez, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Lo_de_Marcos_banner.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Camila Glez — //commons.wikimedia.org/w/index.php?title=User:Camilo_Glez&amp;action=edit&amp;redlink=1
@@ -309,6 +301,14 @@
   - 1600×228px, 97 KB, shot 1728 m from the spot
   - Description: Nonono
   - Match: score 9 via name:marcos, kw:beach+mar, geo:1728m, w>=1000, landscape
+- **`mx-nay-playa-lo-de-marcos-3.jpg`** ✗ **not a coastal photo** — “Lo de Marcos” by Camila Glez, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Lo_de_Marcos.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Camila Glez — //commons.wikimedia.org/w/index.php?title=User:Camilo_Glez&amp;action=edit&amp;redlink=1
+  - Dated: 2023-04-15 14:25:01
+  - 1600×2133px, 1460 KB, shot 1096 m from the spot
+  - Description: Nonono
+  - Match: score 9.5 via name:marcos, kw:beach+mar, geo:1096m, w>=1000
 
 ## Playa los Muertos
 
@@ -401,15 +401,7 @@
   - 1600×228px, 55 KB, shot 351 m from the spot
   - Description: San Pancho Beach
   - Match: score 23 via name:san+francisco+san+pancho, kw:beach+playa, geo:351m, w>=1000, landscape
-- **`mx-nay-playa-san-francisco-san-pancho-2.jpg`** — San Francisco, Nayarit, desde un dron 07 — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:San_Francisco,_Nayarit,_desde_un_dron_07.jpg
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: Luisalvaz — //commons.wikimedia.org/wiki/User:Luisalvaz
-  - Dated: 2024-12-20 17:45:13
-  - 1600×900px, 714 KB, shot 70 m from the spot
-  - Description: San Francisco, Nayarit, desde un dron
-  - Match: score 21.5 via name:san+francisco+san+pancho, kw:playa, geo:70m, w>=1000, landscape
-- **`mx-nay-playa-san-francisco-san-pancho-3.jpg`** — “San Pancho Beach” by Drew Hunt, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-nay-playa-san-francisco-san-pancho-2.jpg`** — “San Pancho Beach” by Drew Hunt, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:San_Pancho_Beach.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Drew Hunt — //commons.wikimedia.org/w/index.php?title=User:Bluestraveler77&amp;action=edit&amp;redlink=1
@@ -417,6 +409,14 @@
   - 1600×668px, 228 KB, shot 351 m from the spot
   - Description: San Pancho Beach
   - Match: score 21 via coastal-in-title, name:san+san+pancho, kw:beach+playa, geo:351m, w>=1000, landscape
+- **`mx-nay-playa-san-francisco-san-pancho-3.jpg`** ⚠︎ *context, not the coast itself* — San Francisco, Nayarit, desde un dron 07 — CC0 (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:San_Francisco,_Nayarit,_desde_un_dron_07.jpg
+  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
+  - Author: Luisalvaz — //commons.wikimedia.org/wiki/User:Luisalvaz
+  - Dated: 2024-12-20 17:45:13
+  - 1600×900px, 714 KB, shot 70 m from the spot
+  - Description: San Francisco, Nayarit, desde un dron
+  - Match: score 21.5 via name:san+francisco+san+pancho, kw:playa, geo:70m, w>=1000, landscape
 
 ## Playa Sayulita
 
@@ -438,7 +438,7 @@
   - 1600×1200px, 148 KB, shot 43 m from the spot
   - Description: Huge breakers off the Pacific Ocean make Sayulita, Mexico, a surfers paradise.
   - Match: score 12 via name:sayulita, kw:surf+surfer+wave+waves, geo:43m, w>=1000, landscape
-- **`mx-nay-playa-sayulita-3.jpg`** — “Beach Life and Cafe Culture (17287660212)” by David Stanley from Nanaimo, Canada, Wikimedia Commons, CC BY 2.0
+- **`mx-nay-playa-sayulita-3.jpg`** ⚠︎ *context, not the coast itself* — “Beach Life and Cafe Culture (17287660212)” by David Stanley from Nanaimo, Canada, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Beach_Life_and_Cafe_Culture_(17287660212).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: David Stanley from Nanaimo, Canada — https://www.flickr.com/people/79721788@N00
@@ -467,7 +467,7 @@
   - 1600×1200px, 148 KB, shot 944 m from the spot
   - Description: Huge breakers off the Pacific Ocean make Sayulita, Mexico, a surfers paradise.
   - Match: score 11 via name:sayulita, kw:surf+surfer+wave+waves, geo:944m, w>=1000, landscape
-- **`mx-nay-playa-sayulita-norte-north-beach-3.jpg`** — “Beach Life and Cafe Culture (17287660212)” by David Stanley from Nanaimo, Canada, Wikimedia Commons, CC BY 2.0
+- **`mx-nay-playa-sayulita-norte-north-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Beach Life and Cafe Culture (17287660212)” by David Stanley from Nanaimo, Canada, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Beach_Life_and_Cafe_Culture_(17287660212).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: David Stanley from Nanaimo, Canada — https://www.flickr.com/people/79721788@N00

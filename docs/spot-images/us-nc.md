@@ -14,7 +14,7 @@
   - 1600×1200px, 333 KB, shot 1023 m from the spot
   - Description: Sunset Beach, North Carolina - View from beach at 36th street access
   - Match: score 8 via coastal-in-title, kw:beach+sunset, geo:1023m, w>=1000, landscape
-- **`us-nc-bald-beach-2.jpg`** — “Stairway to the Stars (53082389879)” by Jim Vajda from Oxford, Ohio, USA, Wikimedia Commons, CC BY 2.0
+- **`us-nc-bald-beach-2.jpg`** ✗ **not a coastal photo** — “Stairway to the Stars (53082389879)” by Jim Vajda from Oxford, Ohio, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Stairway_to_the_Stars_(53082389879).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Jim Vajda from Oxford, Ohio, USA — https://www.flickr.com/people/97021683@N05
@@ -22,7 +22,7 @@
   - 1600×2000px, 1118 KB, shot 64 m from the spot
   - Description: "Let's build a stairway to the stars And climb that stairway to the stars With Love beside us to fill the night with a song We'll hear the sound of violins Out yonder where the blue begins" -Ella Fitzgerald This is an 2 image, focal length blend composite of the Milky Way core looking south at Sunset Beach, North Carolina. There is a deer hidden in the dunes. Can you find it? Sky: 1 frames at 20mm, 90 second shutter, ISO 800, f/2.5, tracked, Hoya Starscape filter, Tiffen Double Fog 3 filter Foreground: 1 frame at 84mm, 1/1.6 second shutter, ISO 800, f/11, taken during blue hour to suppress lig
   - Match: score 7.5 via kw:beach+dune+sunset, geo:64m, w>=1000
-- **`us-nc-bald-beach-3.jpg`** — “The Sunset Beach Roundabout, shortly after opening, 2014 07 16” by NCDOTcommunications, Wikimedia Commons, CC BY 2.0
+- **`us-nc-bald-beach-3.jpg`** ✗ **not a coastal photo** — “The Sunset Beach Roundabout, shortly after opening, 2014 07 16” by NCDOTcommunications, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:The_Sunset_Beach_Roundabout,_shortly_after_opening,_2014_07_16.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: NCDOTcommunications — https://www.flickr.com/people/39320593@N03
@@ -35,15 +35,7 @@
 
 `osm:node/357797125` · 35.4132349, -75.4845982
 
-- **`us-nc-bald-beach-797125-1.jpg`** — Cabot's Terns, Cape Hatteras National Seashore (c881a964-1dd8-b71c-074e-68f1a0b3fe1f) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Cabot%27s_Terns,_Cape_Hatteras_National_Seashore_(c881a964-1dd8-b71c-074e-68f1a0b3fe1f).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: National Park Service
-  - Dated: Taken on 15 January 2014
-  - 1600×1083px, 2172 KB, shot 1598 m from the spot
-  - Description: Cabot's Terns Cabot's Terns seen within Cape Hatteras National Seashore. Keywords: usa; united states of america; north carolina; wildlife; cabot's tern; cape hatteras national seashore; bird
-  - Match: score 8 via coastal-in-title, kw:sea+shore+seashore, geo:1598m, w>=1000, landscape
-- **`us-nc-bald-beach-797125-2.jpg`** — 1874 Little Kinnakeet Life Saving Station building (50831649222) — Public domain (Wikimedia Commons), no attribution required
+- **`us-nc-bald-beach-797125-1.jpg`** ⚠︎ *context, not the coast itself* — 1874 Little Kinnakeet Life Saving Station building (50831649222) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:1874_Little_Kinnakeet_Life_Saving_Station_building_(50831649222).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Cape Hatteras National Seashore — https://www.flickr.com/people/106602675@N05
@@ -51,6 +43,14 @@
   - 1600×1200px, 650 KB, shot 995 m from the spot
   - Description: 1874 Little Kinnakeet Life Saving Station building.
   - Match: score 7 via kw:sea+shore+seashore, geo:995m, w>=1000, landscape
+- **`us-nc-bald-beach-797125-2.jpg`** ✗ **not a coastal photo** — Cabot's Terns, Cape Hatteras National Seashore (c881a964-1dd8-b71c-074e-68f1a0b3fe1f) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Cabot%27s_Terns,_Cape_Hatteras_National_Seashore_(c881a964-1dd8-b71c-074e-68f1a0b3fe1f).jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: National Park Service
+  - Dated: Taken on 15 January 2014
+  - 1600×1083px, 2172 KB, shot 1598 m from the spot
+  - Description: Cabot's Terns Cabot's Terns seen within Cape Hatteras National Seashore. Keywords: usa; united states of america; north carolina; wildlife; cabot's tern; cape hatteras national seashore; bird
+  - Match: score 8 via coastal-in-title, kw:sea+shore+seashore, geo:1598m, w>=1000, landscape
 
 ## Bay Beach
 
@@ -64,15 +64,7 @@
   - 1600×1065px, 378 KB, shot 78157 m from the spot
   - Description: USA-NORTH CAROLINA Features: NORTH TOPSAIL BEACH, ALLIGATOR BAY, NEW RIVER, NEW RIVER INLET, CHADWICK BAY.
   - Match: score 7 via coastal-in-title, kw:beach+bay+inlet, geo:78157m, w>=1000, landscape
-- **`us-nc-bay-beach-2.jpg`** — “Shrimping off of Long Beach in Long Bay (23764347989)” by Tom Long from Oak Island, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Shrimping_off_of_Long_Beach_in_Long_Bay_(23764347989).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Tom Long from Oak Island, USA — https://www.flickr.com/people/35404873@N08
-  - Dated: 2016-01-02 15:44
-  - 1600×900px, 506 KB
-  - Description: Shrimping off of Long Beach in Long Bay - Carolina Coast
-  - Match: score 7 via coastal-in-title, kw:beach+coast+bay, w>=1000, landscape
-- **`us-nc-bay-beach-3.jpg`** — “Outer Banks from Shallowbag Bay, Manteo, Roanoke Island, North Carolina (14459209852)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-nc-bay-beach-2.jpg`** — “Outer Banks from Shallowbag Bay, Manteo, Roanoke Island, North Carolina (14459209852)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Outer_Banks_from_Shallowbag_Bay,_Manteo,_Roanoke_Island,_North_Carolina_(14459209852).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
@@ -80,20 +72,20 @@
   - 1600×1200px, 433 KB, shot 305699 m from the spot
   - Description: The Outer Banks (also known as OBX) is a 200-mile (320-km) long string of narrow barrier islands off the coast of North Carolina and a small portion of Virginia, beginning in the southeastern corner of Virginia Beach on the east coast of the United States. They cover most of the North Carolina coastline, separating the Currituck Sound, Albemarle Sound, and Pamlico Sound from the Atlantic Ocean. The Outer Banks is a major tourist destination and is known for its temperate climate and wide expanse of open beachfront. The Cape Hatteras National Seashore has four campgrounds where visitors may cam
   - Match: score 7 via coastal-in-title, kw:beach+ocean+sea+coast, geo:305699m, w>=1000, landscape
+- **`us-nc-bay-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Shrimping off of Long Beach in Long Bay (23764347989)” by Tom Long from Oak Island, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Shrimping_off_of_Long_Beach_in_Long_Bay_(23764347989).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Tom Long from Oak Island, USA — https://www.flickr.com/people/35404873@N08
+  - Dated: 2016-01-02 15:44
+  - 1600×900px, 506 KB
+  - Description: Shrimping off of Long Beach in Long Bay - Carolina Coast
+  - Match: score 7 via coastal-in-title, kw:beach+coast+bay, w>=1000, landscape
 
 ## Big Beach
 
 `osm:node/357768732` · 33.906006, -78.3466687
 
-- **`us-nc-big-beach-1.webp`** — “Conditions in Wrightsville Beach during Hazel” by Unknown author Unknown author, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Conditions_in_Wrightsville_Beach_during_Hazel.webp
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Unknown author Unknown author
-  - Dated: 1954-10-15
-  - 1600×846px, 50 KB
-  - Description: Big waves pound the beach around the Lumina Pavilion dancehall at Wrightsville Beach during Hurricane Hazel
-  - Match: score 11 via coastal-in-title, name:big, kw:beach+wave+waves, w>=1000, landscape
-- **`us-nc-big-beach-2.jpg`** — “Big waves at Makena Beach (Big Beach) (30799850077)” by dronepicr, Wikimedia Commons, CC BY 2.0
+- **`us-nc-big-beach-1.jpg`** — “Big waves at Makena Beach (Big Beach) (30799850077)” by dronepicr, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Big_waves_at_Makena_Beach_(Big_Beach)_(30799850077).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: dronepicr — https://www.flickr.com/people/132646954@N02
@@ -101,7 +93,7 @@
   - 1600×1067px, 562 KB, shot 7684008 m from the spot
   - Description: Big waves at Makena Beach (Big Beach)
   - Match: score 11 via coastal-in-title, name:big, kw:beach+wave+waves, geo:7684008m, w>=1000, landscape
-- **`us-nc-big-beach-3.jpg`** — “Sunset at the Big Beach in Makena State Park 02394” by Dennis Clayton, Wikimedia Commons, CC BY 3.0
+- **`us-nc-big-beach-2.jpg`** — “Sunset at the Big Beach in Makena State Park 02394” by Dennis Clayton, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sunset_at_the_Big_Beach_in_Makena_State_Park_02394.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Dennis Clayton — //commons.wikimedia.org/wiki/User:Dennis.clayton
@@ -109,20 +101,20 @@
   - 1600×1014px, 239 KB
   - Description: Photo of sunset taken from the Big Beach in Makena State Park in Maui, Hawaii.
   - Match: score 10 via coastal-in-title, name:big, kw:beach+sunset, w>=1000, landscape
+- **`us-nc-big-beach-3.webp`** ⚠︎ *context, not the coast itself* — “Conditions in Wrightsville Beach during Hazel” by Unknown author Unknown author, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Conditions_in_Wrightsville_Beach_during_Hazel.webp
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Unknown author Unknown author
+  - Dated: 1954-10-15
+  - 1600×846px, 50 KB
+  - Description: Big waves pound the beach around the Lumina Pavilion dancehall at Wrightsville Beach during Hurricane Hazel
+  - Match: score 11 via coastal-in-title, name:big, kw:beach+wave+waves, w>=1000, landscape
 
 ## Caswell Beach
 
 `osm:node/357769960` · 33.8954521, -78.0508242
 
-- **`us-nc-caswell-beach-1.jpg`** — “Plants by Caswell Beach, NC” by Gaurav, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Plants_by_Caswell_Beach,_NC.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Gaurav — //commons.wikimedia.org/wiki/User:Gaurav
-  - Dated: 2021-06-13 17:49:03
-  - 1600×1200px, 1472 KB, shot 271 m from the spot
-  - Description: Cultural or natural site : N/A County : Unknown Date and time : See above
-  - Match: score 13 via coastal-in-title, name:caswell, kw:beach+swell, geo:271m, w>=1000, landscape
-- **`us-nc-caswell-beach-2.jpg`** — “Oak Island Lighthouse (2) (40694198103)” by Gerry Dincher from Hope Mills, NC, Wikimedia Commons, CC BY-SA 2.0
+- **`us-nc-caswell-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Oak Island Lighthouse (2) (40694198103)” by Gerry Dincher from Hope Mills, NC, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Oak_Island_Lighthouse_(2)_(40694198103).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Gerry Dincher from Hope Mills, NC — https://www.flickr.com/people/11629603@N04
@@ -130,7 +122,7 @@
   - 1600×1200px, 554 KB, shot 1508 m from the spot
   - Description: Caswell Beach and the Oak Island Ligh on Oak Island in Brunswick County, North Carolina is beautiful.
   - Match: score 12 via coastal-in-title, name:caswell, kw:beach+swell+lighthouse, geo:1508m, w>=1000, landscape
-- **`us-nc-caswell-beach-3.jpg`** — “Oak Island Lighthouse (32718095947)” by Gerry Dincher from Hope Mills, NC, Wikimedia Commons, CC BY-SA 2.0
+- **`us-nc-caswell-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Oak Island Lighthouse (32718095947)” by Gerry Dincher from Hope Mills, NC, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Oak_Island_Lighthouse_(32718095947).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Gerry Dincher from Hope Mills, NC — https://www.flickr.com/people/11629603@N04
@@ -138,6 +130,14 @@
   - 1600×1828px, 746 KB, shot 1508 m from the spot
   - Description: Caswell Beach and the Oak Island Ligh on Oak Island in Brunswick County, North Carolina is beautiful.
   - Match: score 11.5 via coastal-in-title, name:caswell, kw:beach+swell+lighthouse, geo:1508m, w>=1000
+- **`us-nc-caswell-beach-3.jpg`** ✗ **not a coastal photo** — “Plants by Caswell Beach, NC” by Gaurav, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Plants_by_Caswell_Beach,_NC.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Gaurav — //commons.wikimedia.org/wiki/User:Gaurav
+  - Dated: 2021-06-13 17:49:03
+  - 1600×1200px, 1472 KB, shot 271 m from the spot
+  - Description: Cultural or natural site : N/A County : Unknown Date and time : See above
+  - Match: score 13 via coastal-in-title, name:caswell, kw:beach+swell, geo:271m, w>=1000, landscape
 
 ## Coquina Beach
 
@@ -151,7 +151,7 @@
   - 1600×1200px, 613 KB, shot 191 m from the spot
   - Description: Coquina Beach ocean view in early April 2020.
   - Match: score 14 via coastal-in-title, name:coquina, kw:beach+ocean+sea+shore, geo:191m, w>=1000, landscape
-- **`us-nc-coquina-beach-2.jpg`** — Men standing on stage in front of an audience for the Coquina Beach seashore dedication in Cape Hatteras National Seashore. (40a9f128618c4b2f9028a69301fcb93f) — Public domain (Wikimedia Commons), no attribution required
+- **`us-nc-coquina-beach-2.jpg`** ✗ **not a coastal photo** — Men standing on stage in front of an audience for the Coquina Beach seashore dedication in Cape Hatteras National Seashore. (40a9f128618c4b2f9028a69301fcb93f) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Men_standing_on_stage_in_front_of_an_audience_for_the_Coquina_Beach_seashore_dedication_in_Cape_Hatteras_National_Seashore._(40a9f128618c4b2f9028a69301fcb93f).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Unknown author Unknown author
@@ -159,7 +159,7 @@
   - 1600×1064px, 335 KB
   - Description: Men standing on stage in front of an audience for the Coquina Beach seashore dedication in Cape Hatteras National Seashore. Keywords: flag; stage; visitor; nps staff; structure; Mission 66(NPS History Collection Themes); Special Events(NPS History Collection Themes); Architecture(NPS History Collection Themes)
   - Match: score 11 via coastal-in-title, name:coquina, kw:beach+sea+shore+seashore, w>=1000, landscape
-- **`us-nc-coquina-beach-3.jpg`** — Man standing on stage in front of an audience for the Coquina Beach seashore dedication in Cape Hatteras National Seashore. (7c2e04fc309b401fa805f514491267fb) — Public domain (Wikimedia Commons), no attribution required
+- **`us-nc-coquina-beach-3.jpg`** ✗ **not a coastal photo** — Man standing on stage in front of an audience for the Coquina Beach seashore dedication in Cape Hatteras National Seashore. (7c2e04fc309b401fa805f514491267fb) — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Man_standing_on_stage_in_front_of_an_audience_for_the_Coquina_Beach_seashore_dedication_in_Cape_Hatteras_National_Seashore._(7c2e04fc309b401fa805f514491267fb).jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Unknown author Unknown author
@@ -172,7 +172,7 @@
 
 `osm:way/679040716` · 36.3779945, -75.8241196
 
-- **`us-nc-currituck-beach-1.jpg`** — “Currituck Lighthouse View” by Michael Bentley, Wikimedia Commons, CC BY 2.0
+- **`us-nc-currituck-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Currituck Lighthouse View” by Michael Bentley, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Currituck_Lighthouse_View.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Michael Bentley — //www.flickr.com/people/35456872@N00
@@ -180,21 +180,21 @@
   - 1600×1067px, 574 KB, shot 661 m from the spot
   - Description: View from the top of the Currituck Beach Lighthouse of the Whalehead Club Historic House Museum, the restored private residence of northern industrialist and conservationist, Edward C. Knight Jr. and his bride Marie Louise. This is an image of a place or building that is listed on the National Register of Historic Places in the United States of America . Its reference number is 80002817 ( Wikidata ).
   - Match: score 13 via coastal-in-title, name:currituck, kw:beach+mar+lighthouse, geo:661m, w>=1000, landscape
-- **`us-nc-currituck-beach-2.jpg`** — “Currituck Beach Light - stairs” by rpertiet, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Currituck_Beach_Light_-_stairs.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: rpertiet — https://www.flickr.com/people/34652102@N04
-  - Dated: 2010-06-28 18:24
-  - 1600×1065px, 1041 KB, shot 602 m from the spot
-  - Description: Inside Currituck Beach Light , located in Corolla, North Carolina , USA
-  - Match: score 12 via coastal-in-title, name:currituck, kw:beach+lighthouse, geo:602m, w>=1000, landscape
-- **`us-nc-currituck-beach-3.jpg`** — “Currituck Beach Light” by Stryker33, Wikimedia Commons, CC BY-SA 3.0
+- **`us-nc-currituck-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Currituck Beach Light” by Stryker33, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Currituck_Beach_Light.JPG
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Stryker33 — //commons.wikimedia.org/wiki/User:Stryker33
   - Dated: 2012-09-01
   - 1600×900px, 476 KB, shot 602 m from the spot
   - Description: Currituck Beach Lighthouse
+  - Match: score 12 via coastal-in-title, name:currituck, kw:beach+lighthouse, geo:602m, w>=1000, landscape
+- **`us-nc-currituck-beach-3.jpg`** ✗ **not a coastal photo** — “Currituck Beach Light - stairs” by rpertiet, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Currituck_Beach_Light_-_stairs.jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: rpertiet — https://www.flickr.com/people/34652102@N04
+  - Dated: 2010-06-28 18:24
+  - 1600×1065px, 1041 KB, shot 602 m from the spot
+  - Description: Inside Currituck Beach Light , located in Corolla, North Carolina , USA
   - Match: score 12 via coastal-in-title, name:currituck, kw:beach+lighthouse, geo:602m, w>=1000, landscape
 
 ## East Beach
@@ -209,7 +209,7 @@
   - 1600×447px, 376 KB
   - Description: Panoramic view with Oak Island lighthouse in background. This photo is a cropped version of File: Caswell Beach.jpg so as to provide a faux panoramic view of the beach rather than rectangle. This format was chosen to blend in with associated text in the Caswell Beach NC Wikipedia page.
   - Match: score 7 via coastal-in-title, kw:beach+coast+coastal+dune, w>=1000, landscape
-- **`us-nc-east-beach-2.jpg`** — “Soundside View from "Beach Treasure", Nags Head, North Carolina (14246667907)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-nc-east-beach-2.jpg`** ✗ **not a coastal photo** — “Soundside View from "Beach Treasure", Nags Head, North Carolina (14246667907)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Soundside_View_from_%22Beach_Treasure%22,_Nags_Head,_North_Carolina_(14246667907).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
@@ -217,7 +217,7 @@
   - 1600×1200px, 890 KB
   - Description: The Outer Banks (also known as OBX) is a 200-mile (320-km) long string of narrow barrier islands off the coast of North Carolina and a small portion of Virginia, beginning in the southeastern corner of Virginia Beach on the east coast of the United States. They cover most of the North Carolina coastline, separating the Currituck Sound, Albemarle Sound, and Pamlico Sound from the Atlantic Ocean. The Outer Banks is a major tourist destination and is known for its temperate climate and wide expanse of open beachfront. The Cape Hatteras National Seashore has four campgrounds where visitors may cam
   - Match: score 7 via coastal-in-title, kw:beach+ocean+sea+coast, w>=1000, landscape
-- **`us-nc-east-beach-3.jpg`** — “Oceanside View from "Beach Treasure", Nags Head, North Carolina (14431793552)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-nc-east-beach-3.jpg`** ✗ **not a coastal photo** — “Oceanside View from "Beach Treasure", Nags Head, North Carolina (14431793552)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Oceanside_View_from_%22Beach_Treasure%22,_Nags_Head,_North_Carolina_(14431793552).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
@@ -238,7 +238,7 @@
   - 1600×1000px, 303 KB, shot 2826 m from the spot
   - Description: After a stormy night, the morning sun breaks through a cloudy sky at Carolina Beach . Photo taken with a Panasonic Lumix DMC-FZ50 in New Hanover County, NC, USA .
   - Match: score 8 via coastal-in-title, kw:beach+break+sunrise, geo:2826m, w>=1000, landscape
-- **`us-nc-freeman-park-2.jpg`** — “Carolina Beach "The Sea Merchants" Food Store - panoramio” by Mikeiamunion21, Wikimedia Commons, CC BY-SA 3.0
+- **`us-nc-freeman-park-2.jpg`** ✗ **not a coastal photo** — “Carolina Beach "The Sea Merchants" Food Store - panoramio” by Mikeiamunion21, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Carolina_Beach_%22The_Sea_Merchants%22_Food_Store_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Mikeiamunion21 — https://web.archive.org/web/20161025161555/http://www.panoramio.com/user/3525139?with_photo_id=88821100
@@ -246,7 +246,7 @@
   - 1600×1195px, 478 KB, shot 4061 m from the spot
   - Description: Carolina Beach "The Sea Merchants" Food Store
   - Match: score 6 via coastal-in-title, kw:beach+sea, geo:4061m, w>=1000, landscape
-- **`us-nc-freeman-park-3.jpg`** — “Carousel on a boardwalk (52983992783)” by Sergiy Galyonkin from Raleigh, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-nc-freeman-park-3.jpg`** ✗ **not a coastal photo** — “Carousel on a boardwalk (52983992783)” by Sergiy Galyonkin from Raleigh, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Carousel_on_a_boardwalk_(52983992783).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Sergiy Galyonkin from Raleigh, USA — https://www.flickr.com/people/22974618@N00
@@ -259,15 +259,7 @@
 
 `osm:relation/17680473` · 34.6342851, -77.1464429 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-nc-headys-beach-1.jpg`** — Coast Guard, good Samaritan rescue man after boat capsizes in NC 140101-G-ZZ999-002 — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Coast_Guard,_good_Samaritan_rescue_man_after_boat_capsizes_in_NC_140101-G-ZZ999-002.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: Coast Guard photo by Petty Officer 1st Class Colin Smith
-  - Dated: Taken on 1 January 2014
-  - 1600×1200px, 218 KB, shot 4900 m from the spot
-  - Description: Coast Guard crew members and Carteret County emergency medical services personnel assist a man off a 24-foot Special Purpose Craft - Shallow Water at Coast Guard Station Emerald Isle, N.C., Jan. 1, 2014. The man was rescued by a good Samaritan and later transferred to a Coast Guard crew after his 16-foot boat capsized at the entrance of Bear Inlet near Camp LeJeune, N.C.
-  - Match: score 7 via coastal-in-title, kw:coast+mar+inlet, geo:4900m, w>=1000, landscape
-- **`us-nc-headys-beach-2.jpg`** — “Hammocks Beach State Park June 2014 - panoramio” by Mikeiamunion21, Wikimedia Commons, CC BY-SA 3.0
+- **`us-nc-headys-beach-1.jpg`** — “Hammocks Beach State Park June 2014 - panoramio” by Mikeiamunion21, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hammocks_Beach_State_Park_June_2014_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Mikeiamunion21 — https://web.archive.org/web/20161027200925/http://www.panoramio.com/user/3525139?with_photo_id=107942563
@@ -275,7 +267,7 @@
   - 1600×1195px, 682 KB, shot 801 m from the spot
   - Description: Hammocks Beach State Park June 2014
   - Match: score 6.5 via coastal-in-title, kw:beach, geo:801m, w>=1000, landscape
-- **`us-nc-headys-beach-3.jpg`** — “Hammocks Beach State Park June 2014 Walkway Gift shop and Bath House - panoramio” by Mikeiamunion21, Wikimedia Commons, CC BY-SA 3.0
+- **`us-nc-headys-beach-2.jpg`** — “Hammocks Beach State Park June 2014 Walkway Gift shop and Bath House - panoramio” by Mikeiamunion21, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hammocks_Beach_State_Park_June_2014_Walkway_Gift_shop_and_Bath_House_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Mikeiamunion21 — https://web.archive.org/web/20161027200931/http://www.panoramio.com/user/3525139?with_photo_id=107942566
@@ -283,6 +275,14 @@
   - 1600×1195px, 907 KB, shot 818 m from the spot
   - Description: Hammocks Beach State Park June 2014 Walkway Gift shop and Bath House
   - Match: score 6.5 via coastal-in-title, kw:beach, geo:818m, w>=1000, landscape
+- **`us-nc-headys-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Coast Guard, good Samaritan rescue man after boat capsizes in NC 140101-G-ZZ999-002 — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Coast_Guard,_good_Samaritan_rescue_man_after_boat_capsizes_in_NC_140101-G-ZZ999-002.jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: Coast Guard photo by Petty Officer 1st Class Colin Smith
+  - Dated: Taken on 1 January 2014
+  - 1600×1200px, 218 KB, shot 4900 m from the spot
+  - Description: Coast Guard crew members and Carteret County emergency medical services personnel assist a man off a 24-foot Special Purpose Craft - Shallow Water at Coast Guard Station Emerald Isle, N.C., Jan. 1, 2014. The man was rescued by a good Samaritan and later transferred to a Coast Guard crew after his 16-foot boat capsized at the entrance of Bear Inlet near Camp LeJeune, N.C.
+  - Match: score 7 via coastal-in-title, kw:coast+mar+inlet, geo:4900m, w>=1000, landscape
 
 ## Holden Beach
 
@@ -375,23 +375,7 @@
 
 `osm:node/357796443` · 34.6879371, -76.8711693
 
-- **`us-nc-indian-beach-1.jpg`** — “Indian Beach Welcome Sign” by DiscoA340, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Indian_Beach_Welcome_Sign.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: DiscoA340 — //commons.wikimedia.org/wiki/User:DiscoA340
-  - Dated: 2023-04-10 14:46:40
-  - 1600×696px, 417 KB
-  - Description: Indian Beach welcome sign on NC 58 in Carteret County, North Carolina.
-  - Match: score 8.5 via coastal-in-title, name:indian, kw:beach, w>=1000, landscape
-- **`us-nc-indian-beach-2.jpg`** — “Indian Beach Welcome Sign 2” by DiscoA340, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Indian_Beach_Welcome_Sign_2.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: DiscoA340 — //commons.wikimedia.org/wiki/User:DiscoA340
-  - Dated: 2023-04-10 14:46:42
-  - 1600×705px, 385 KB
-  - Description: Indian Beach welcome sign on NC 58 in Carteret County, North Carolina.
-  - Match: score 8.5 via coastal-in-title, name:indian, kw:beach, w>=1000, landscape
-- **`us-nc-indian-beach-3.jpg`** — “Welcome to Hatteras Village, Outer Banks, North Carolina (14268215469)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-nc-indian-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Welcome to Hatteras Village, Outer Banks, North Carolina (14268215469)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Welcome_to_Hatteras_Village,_Outer_Banks,_North_Carolina_(14268215469).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
@@ -399,12 +383,28 @@
   - 1600×1200px, 512 KB, shot 124556 m from the spot
   - Description: Hatteras is an unincorporated community in Dare County, North Carolina, United States, on the Outer Banks island of Hatteras. North Carolina Highway 12 passes through the community linking it to Frisco and Ocracoke (via a ferry in Hatteras). It is south of the famous Cape Hatteras and the Cape Hatteras Lighthouse in Buxton. The inlet that the ferries use is Hatteras Inlet. Hatteras is best known as a fishing and vacation destination. This community offers visitors ample opportunities for recreation, sightseeing, and remote relaxation especially on its beautiful beaches. Watersports are plentif
   - Match: score 5 via kw:beach+lighthouse+inlet, geo:124556m, w>=1000, landscape
+- **`us-nc-indian-beach-2.jpg`** ✗ **not a coastal photo** — “Indian Beach Welcome Sign” by DiscoA340, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Indian_Beach_Welcome_Sign.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: DiscoA340 — //commons.wikimedia.org/wiki/User:DiscoA340
+  - Dated: 2023-04-10 14:46:40
+  - 1600×696px, 417 KB
+  - Description: Indian Beach welcome sign on NC 58 in Carteret County, North Carolina.
+  - Match: score 8.5 via coastal-in-title, name:indian, kw:beach, w>=1000, landscape
+- **`us-nc-indian-beach-3.jpg`** ✗ **not a coastal photo** — “Indian Beach Welcome Sign 2” by DiscoA340, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Indian_Beach_Welcome_Sign_2.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: DiscoA340 — //commons.wikimedia.org/wiki/User:DiscoA340
+  - Dated: 2023-04-10 14:46:42
+  - 1600×705px, 385 KB
+  - Description: Indian Beach welcome sign on NC 58 in Carteret County, North Carolina.
+  - Match: score 8.5 via coastal-in-title, name:indian, kw:beach, w>=1000, landscape
 
 ## Kure Beach
 
 `osm:way/692351488` · 33.9854282, -77.9099834
 
-- **`us-nc-kure-beach-1.jpg`** — “Cargo Ship on the Intracoastal” by Keyboardbrooks, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nc-kure-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Cargo Ship on the Intracoastal” by Keyboardbrooks, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Cargo_Ship_on_the_Intracoastal.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Keyboardbrooks — //commons.wikimedia.org/wiki/User:Keyboardbrooks
@@ -412,7 +412,7 @@
   - 1600×1200px, 262 KB, shot 1035 m from the spot
   - Description: A cargo ship I photographed whilst by the Intracoastal waterway in Kure Beach, NC.
   - Match: score 13 via coastal-in-title, name:kure, kw:beach+coast+coastal, geo:1035m, w>=1000, landscape
-- **`us-nc-kure-beach-2.jpg`** — Kure Beach North Carolina aerial view — Public domain (Wikimedia Commons), no attribution required
+- **`us-nc-kure-beach-2.jpg`** ⚠︎ *context, not the coast itself* — Kure Beach North Carolina aerial view — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Kure_Beach_North_Carolina_aerial_view.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Bud Davis, U.S. Army Corps of Engineers
@@ -420,7 +420,7 @@
   - 1600×1067px, 732 KB
   - Description: Aerial view of Kure Beach, North Carolina, USA. The city is located on the Atlantic Ocean. View is to the north-northeast. At the time this photograph was taken the U.S. Army Corps of Engineers was dredging and replenishing the sand on the beach.
   - Match: score 11 via coastal-in-title, name:kure, kw:beach+ocean+sand, w>=1000, landscape
-- **`us-nc-kure-beach-3.jpg`** — “Fort Fisher (3) (21426015659)” by Gerry Dincher from Hope Mills, NC, Wikimedia Commons, CC BY-SA 2.0
+- **`us-nc-kure-beach-3.jpg`** ✗ **not a coastal photo** — “Fort Fisher (3) (21426015659)” by Gerry Dincher from Hope Mills, NC, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Fort_Fisher_(3)_(21426015659).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Gerry Dincher from Hope Mills, NC — https://www.flickr.com/people/11629603@N04
@@ -433,7 +433,7 @@
 
 `osm:node/357777177` · 33.9140624, -78.1549947
 
-- **`us-nc-long-beach-1.jpg`** — “Oceanside View from "Beach Treasure", Nags Head, North Carolina (14431793552)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-nc-long-beach-1.jpg`** ✗ **not a coastal photo** — “Oceanside View from "Beach Treasure", Nags Head, North Carolina (14431793552)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Oceanside_View_from_%22Beach_Treasure%22,_Nags_Head,_North_Carolina_(14431793552).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
@@ -441,7 +441,7 @@
   - 1600×1200px, 654 KB, shot 320910 m from the spot
   - Description: The Outer Banks (also known as OBX) is a 200-mile (320-km) long string of narrow barrier islands off the coast of North Carolina and a small portion of Virginia, beginning in the southeastern corner of Virginia Beach on the east coast of the United States. They cover most of the North Carolina coastline, separating the Currituck Sound, Albemarle Sound, and Pamlico Sound from the Atlantic Ocean. The Outer Banks is a major tourist destination and is known for its temperate climate and wide expanse of open beachfront. The Cape Hatteras National Seashore has four campgrounds where visitors may cam
   - Match: score 11 via coastal-in-title, name:long, kw:beach+ocean+sea+coast, geo:320910m, w>=1000, landscape
-- **`us-nc-long-beach-2.jpg`** — “Soundside View from "Beach Treasure", Nags Head, North Carolina (14409994786)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-nc-long-beach-2.jpg`** ✗ **not a coastal photo** — “Soundside View from "Beach Treasure", Nags Head, North Carolina (14409994786)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Soundside_View_from_%22Beach_Treasure%22,_Nags_Head,_North_Carolina_(14409994786).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
@@ -449,7 +449,7 @@
   - 1600×1200px, 1224 KB, shot 320896 m from the spot
   - Description: The Outer Banks (also known as OBX) is a 200-mile (320-km) long string of narrow barrier islands off the coast of North Carolina and a small portion of Virginia, beginning in the southeastern corner of Virginia Beach on the east coast of the United States. They cover most of the North Carolina coastline, separating the Currituck Sound, Albemarle Sound, and Pamlico Sound from the Atlantic Ocean. The Outer Banks is a major tourist destination and is known for its temperate climate and wide expanse of open beachfront. The Cape Hatteras National Seashore has four campgrounds where visitors may cam
   - Match: score 11 via coastal-in-title, name:long, kw:beach+ocean+sea+coast, geo:320896m, w>=1000, landscape
-- **`us-nc-long-beach-3.jpg`** — “Soundside View from "Beach Treasure", Nags Head, North Carolina (14433106425)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-nc-long-beach-3.jpg`** ✗ **not a coastal photo** — “Soundside View from "Beach Treasure", Nags Head, North Carolina (14433106425)” by Ken Lund from Reno, Nevada, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Soundside_View_from_%22Beach_Treasure%22,_Nags_Head,_North_Carolina_(14433106425).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Ken Lund from Reno, Nevada, USA — https://www.flickr.com/people/75683070@N00
@@ -507,7 +507,7 @@
   - 1600×1200px, 417 KB
   - Description: the pier at Ocean Isle Beach, North Carolina taken in April, 2008
   - Match: score 15 via coastal-in-title, name:ocean+isle, kw:beach+ocean+pier, w>=1000, landscape
-- **`us-nc-ocean-isle-beach-3.png`** — “Juvenille-dusky-shark-ocean-isle-beach-pier” by X02, Wikimedia Commons, CC BY-SA 3.0
+- **`us-nc-ocean-isle-beach-3.png`** ✗ **not a coastal photo** — “Juvenille-dusky-shark-ocean-isle-beach-pier” by X02, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Juvenille-dusky-shark-ocean-isle-beach-pier.png
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: X02 — //commons.wikimedia.org/w/index.php?title=User:X02&amp;action=edit&amp;redlink=1
@@ -536,7 +536,7 @@
   - 1600×1200px, 417 KB
   - Description: the pier at Ocean Isle Beach, North Carolina taken in April, 2008
   - Match: score 15 via coastal-in-title, name:ocean+isle, kw:beach+ocean+pier, w>=1000, landscape
-- **`us-nc-ocean-isle-beach-727390-3.png`** — “Juvenille-dusky-shark-ocean-isle-beach-pier” by X02, Wikimedia Commons, CC BY-SA 3.0
+- **`us-nc-ocean-isle-beach-727390-3.png`** ✗ **not a coastal photo** — “Juvenille-dusky-shark-ocean-isle-beach-pier” by X02, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Juvenille-dusky-shark-ocean-isle-beach-pier.png
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: X02 — //commons.wikimedia.org/w/index.php?title=User:X02&amp;action=edit&amp;redlink=1
@@ -549,7 +549,7 @@
 
 `osm:node/11905563263` · 35.2538799, -75.5213798 · beach type: **sandy** (OpenStreetMap surface=sand) · lifeguard: no
 
-- **`us-nc-old-lighthouse-beach-1.jpg`** — “Cape Hatteras Lighthouse from beach 01” by Captain-tucker, Wikimedia Commons, CC BY-SA 3.0
+- **`us-nc-old-lighthouse-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Cape Hatteras Lighthouse from beach 01” by Captain-tucker, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Cape_Hatteras_Lighthouse_from_beach_01.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Captain-tucker
@@ -557,7 +557,7 @@
   - 1600×1200px, 615 KB, shot 39 m from the spot
   - Description: The Cape Hatteras Lighthouse as seen through the dunes on the beach.
   - Match: score 14 via coastal-in-title, name:lighthouse, kw:beach+dune+lighthouse, geo:39m, w>=1000, landscape
-- **`us-nc-old-lighthouse-beach-2.jpg`** — “Cape Hatteras Lighthouse from beach 02” by Captain-tucker, Wikimedia Commons, CC BY-SA 3.0
+- **`us-nc-old-lighthouse-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Cape Hatteras Lighthouse from beach 02” by Captain-tucker, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Cape_Hatteras_Lighthouse_from_beach_02.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Captain-tucker
@@ -565,7 +565,7 @@
   - 1600×1188px, 592 KB, shot 39 m from the spot
   - Description: The Cape Hatteras Lighthouse as seen through the dunes on the beach.
   - Match: score 14 via coastal-in-title, name:lighthouse, kw:beach+sea+shore+dune, geo:39m, w>=1000, landscape
-- **`us-nc-old-lighthouse-beach-3.jpg`** — “Cape Hatteras lighthouse (5753164228)” by Chris M Morris, Wikimedia Commons, CC BY 2.0
+- **`us-nc-old-lighthouse-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Cape Hatteras lighthouse (5753164228)” by Chris M Morris, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Cape_Hatteras_lighthouse_(5753164228).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Chris M Morris — https://www.flickr.com/people/79666107@N00
@@ -578,7 +578,7 @@
 
 `osm:node/357805200` · 34.6993283, -76.7979912
 
-- **`us-nc-pine-knoll-shores-1.jpg`** — “Starfish Arm” by jjmusgrove, Wikimedia Commons, CC BY 2.0
+- **`us-nc-pine-knoll-shores-1.jpg`** ✗ **not a coastal photo** — “Starfish Arm” by jjmusgrove, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Starfish_Arm.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: jjmusgrove
@@ -586,7 +586,7 @@
   - 1600×1001px, 285 KB, shot 2867 m from the spot
   - Description: At Pine Knoll Aquarium
   - Match: score 15.5 via name:pine+knoll+shores, kw:shore, geo:2867m, w>=1000, landscape
-- **`us-nc-pine-knoll-shores-2.jpg`** — “Snapping Turtle (Pine Knoll Aquarium)” by jjmusgrove, Wikimedia Commons, CC BY 2.0
+- **`us-nc-pine-knoll-shores-2.jpg`** ✗ **not a coastal photo** — “Snapping Turtle (Pine Knoll Aquarium)” by jjmusgrove, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Snapping_Turtle_(Pine_Knoll_Aquarium).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: jjmusgrove
@@ -594,7 +594,7 @@
   - 1600×1067px, 365 KB, shot 2867 m from the spot
   - Description: At Pine Knoll Aquarium
   - Match: score 15.5 via name:pine+knoll+shores, kw:shore, geo:2867m, w>=1000, landscape
-- **`us-nc-pine-knoll-shores-3.jpg`** — “Yellow Tail” by jjmusgrove, Wikimedia Commons, CC BY 2.0
+- **`us-nc-pine-knoll-shores-3.jpg`** ✗ **not a coastal photo** — “Yellow Tail” by jjmusgrove, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Yellow_Tail.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: jjmusgrove
@@ -607,7 +607,7 @@
 
 `osm:node/6441737599` · 35.594498, -75.4631672 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-nc-rodanthe-public-beach-access-1.jpg`** — “Tringa semipalmata-flapping” by Peterwchen, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nc-rodanthe-public-beach-access-1.jpg`** ✗ **not a coastal photo** — “Tringa semipalmata-flapping” by Peterwchen, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Tringa_semipalmata-flapping.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Peterwchen — //commons.wikimedia.org/wiki/User:Peterwchen
@@ -615,7 +615,7 @@
   - 1600×1200px, 153 KB, shot 67 m from the spot
   - Description: Willet in flight Rodanthe Public Beach , North Carolina
   - Match: score 13.5 via name:rodanthe+public, kw:beach, geo:67m, w>=1000, landscape
-- **`us-nc-rodanthe-public-beach-access-2.jpg`** — “Quiscalus major-female” by Peterwchen, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nc-rodanthe-public-beach-access-2.jpg`** ✗ **not a coastal photo** — “Quiscalus major-female” by Peterwchen, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Quiscalus_major-female.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Peterwchen — //commons.wikimedia.org/wiki/User:Peterwchen
@@ -623,7 +623,7 @@
   - 1600×1200px, 201 KB, shot 67 m from the spot
   - Description: Female Boat-tailed grackle Rodanthe Public Beach , North Carolina
   - Match: score 13.5 via name:rodanthe+public, kw:beach, geo:67m, w>=1000, landscape
-- **`us-nc-rodanthe-public-beach-access-3.jpg`** — “Thalasseus maximus-wings” by Peterwchen, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nc-rodanthe-public-beach-access-3.jpg`** ✗ **not a coastal photo** — “Thalasseus maximus-wings” by Peterwchen, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Thalasseus_maximus-wings.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Peterwchen — //commons.wikimedia.org/wiki/User:Peterwchen
@@ -649,23 +649,7 @@
 
 `osm:node/4332804123` · 34.4309657, -77.5358921
 
-- **`us-nc-stevens-street-public-beach-access-1.jpg`** — “Beached (33471098226)” by Larry Lamb, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Beached_(33471098226).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Larry Lamb — https://www.flickr.com/people/49708076@N05
-  - Dated: 2017-02-11 12:49
-  - 1600×1600px, 1197 KB, shot 161 m from the spot
-  - Description: Beached
-  - Match: score 8.5 via coastal-in-title, kw:beach+surf, geo:161m, w>=1000
-- **`us-nc-stevens-street-public-beach-access-2.jpg`** — “Strand (32935129845)” by Larry Lamb, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Strand_(32935129845).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Larry Lamb — https://www.flickr.com/people/49708076@N05
-  - Dated: 2017-02-11 13:05
-  - 1600×1083px, 774 KB, shot 37 m from the spot
-  - Description: Strand
-  - Match: score 7.5 via coastal-in-title, kw:surf, geo:37m, w>=1000, landscape
-- **`us-nc-stevens-street-public-beach-access-3.jpg`** — “Surf City Pier 1” by Robert Bourdeaux - Kloudmedia, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nc-stevens-street-public-beach-access-1.jpg`** ⚠︎ *context, not the coast itself* — “Surf City Pier 1” by Robert Bourdeaux - Kloudmedia, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Surf_City_Pier_1.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Robert Bourdeaux - Kloudmedia
@@ -673,6 +657,22 @@
   - 1600×780px, 416 KB, shot 1341 m from the spot
   - Description: Overhead view of the Surf City, NC Pier
   - Match: score 7 via coastal-in-title, kw:surf+pier, geo:1341m, w>=1000, landscape
+- **`us-nc-stevens-street-public-beach-access-2.jpg`** ✗ **not a coastal photo** — “Beached (33471098226)” by Larry Lamb, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Beached_(33471098226).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Larry Lamb — https://www.flickr.com/people/49708076@N05
+  - Dated: 2017-02-11 12:49
+  - 1600×1600px, 1197 KB, shot 161 m from the spot
+  - Description: Beached
+  - Match: score 8.5 via coastal-in-title, kw:beach+surf, geo:161m, w>=1000
+- **`us-nc-stevens-street-public-beach-access-3.jpg`** ✗ **not a coastal photo** — “Strand (32935129845)” by Larry Lamb, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Strand_(32935129845).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Larry Lamb — https://www.flickr.com/people/49708076@N05
+  - Dated: 2017-02-11 13:05
+  - 1600×1083px, 774 KB, shot 37 m from the spot
+  - Description: Strand
+  - Match: score 7.5 via coastal-in-title, kw:surf, geo:37m, w>=1000, landscape
 
 ## Sunset Beach
 
@@ -694,7 +694,7 @@
   - 1600×1067px, 874 KB, shot 2290 m from the spot
   - Description: Shallotte Township, North Carolina
   - Match: score 12 via coastal-in-title, name:sunset, kw:beach+sea+seascape+sunset, geo:2290m, w>=1000, landscape
-- **`us-nc-sunset-beach-3.jpg`** — “The Sunset Beach Roundabout, shortly after opening, 2014 07 16” by NCDOTcommunications, Wikimedia Commons, CC BY 2.0
+- **`us-nc-sunset-beach-3.jpg`** ✗ **not a coastal photo** — “The Sunset Beach Roundabout, shortly after opening, 2014 07 16” by NCDOTcommunications, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:The_Sunset_Beach_Roundabout,_shortly_after_opening,_2014_07_16.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: NCDOTcommunications — https://www.flickr.com/people/39320593@N03

@@ -6,15 +6,7 @@
 
 `osm:node/5416310329` · 40.2350234, -73.9963859
 
-- **`us-nj-allenhurst-beach-club-1.jpg`** — “Deal Lake and Loch Arbour, NJ from Ocean Avenue, April 2026” by Mr. Matté, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Deal_Lake_and_Loch_Arbour,_NJ_from_Ocean_Avenue,_April_2026.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Mr. Matté — //commons.wikimedia.org/wiki/User:Mr._Matt%C3%A9
-  - Dated: 2026-04-04 13:35:22
-  - 1600×1227px, 444 KB, shot 618 m from the spot
-  - Description: Photo of Deal Lake in Asbury Park , New Jersey . Photo taken from Deal Lake Drive between Kingsley Street and Ocean Avenue looking west-northwest across the lake towards Loch Arbour .
-  - Match: score 6.5 via coastal-in-title, kw:ocean, geo:618m, w>=1000, landscape
-- **`us-nj-allenhurst-beach-club-2.jpg`** — “Loch Arbour, NJ, USA - panoramio” by dora isabel, Wikimedia Commons, CC BY-SA 3.0
+- **`us-nj-allenhurst-beach-club-1.jpg`** — “Loch Arbour, NJ, USA - panoramio” by dora isabel, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Loch_Arbour,_NJ,_USA_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: dora isabel — https://web.archive.org/web/20161017173525/http://www.panoramio.com/user/964549?with_photo_id=44533796
@@ -22,12 +14,20 @@
   - 1600×1200px, 310 KB, shot 248 m from the spot
   - Description: Loch Arbour, NJ, USA
   - Match: score 5.5 via kw:beach, geo:248m, w>=1000, landscape
+- **`us-nj-allenhurst-beach-club-2.jpg`** ⚠︎ *context, not the coast itself* — “Deal Lake and Loch Arbour, NJ from Ocean Avenue, April 2026” by Mr. Matté, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Deal_Lake_and_Loch_Arbour,_NJ_from_Ocean_Avenue,_April_2026.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Mr. Matté — //commons.wikimedia.org/wiki/User:Mr._Matt%C3%A9
+  - Dated: 2026-04-04 13:35:22
+  - 1600×1227px, 444 KB, shot 618 m from the spot
+  - Description: Photo of Deal Lake in Asbury Park , New Jersey . Photo taken from Deal Lake Drive between Kingsley Street and Ocean Avenue looking west-northwest across the lake towards Loch Arbour .
+  - Match: score 6.5 via coastal-in-title, kw:ocean, geo:618m, w>=1000, landscape
 
 ## Bally's Legend’s VIP Beach
 
 `osm:way/1322147251` · 39.355154, -74.4313597
 
-- **`us-nj-bally-s-legend-s-vip-beach-1.jpg`** — “2025-04-28 11 17 13 View northeast from the sand dunes in front of Park Place along the Atlantic City Boardwalk in Atlantic City, Atlantic County, New Jersey” by Famartin, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nj-bally-s-legend-s-vip-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “2025-04-28 11 17 13 View northeast from the sand dunes in front of Park Place along the Atlantic City Boardwalk in Atlantic City, Atlantic County, New Jersey” by Famartin, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:2025-04-28_11_17_13_View_northeast_from_the_sand_dunes_in_front_of_Park_Place_along_the_Atlantic_City_Boardwalk_in_Atlantic_City,_Atlantic_County,_New_Jersey.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
@@ -35,7 +35,7 @@
   - 1600×1200px, 891 KB, shot 61 m from the spot
   - Description: View northeast from the sand dunes in front of Park Place along the Atlantic City Boardwalk in Atlantic City, Atlantic County, New Jersey
   - Match: score 10 via coastal-in-title, kw:sand+dune+boardwalk, geo:61m, w>=1000, landscape
-- **`us-nj-bally-s-legend-s-vip-beach-2.jpg`** — “2025-04-28 11 17 15 View northeast from the sand dunes in front of Park Place along the Atlantic City Boardwalk in Atlantic City, Atlantic County, New Jersey” by Famartin, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nj-bally-s-legend-s-vip-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “2025-04-28 11 17 15 View northeast from the sand dunes in front of Park Place along the Atlantic City Boardwalk in Atlantic City, Atlantic County, New Jersey” by Famartin, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:2025-04-28_11_17_15_View_northeast_from_the_sand_dunes_in_front_of_Park_Place_along_the_Atlantic_City_Boardwalk_in_Atlantic_City,_Atlantic_County,_New_Jersey.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
@@ -43,7 +43,7 @@
   - 1600×1200px, 903 KB, shot 103 m from the spot
   - Description: View northeast from the sand dunes in front of Park Place along the Atlantic City Boardwalk in Atlantic City, Atlantic County, New Jersey
   - Match: score 10 via coastal-in-title, kw:sand+dune+boardwalk, geo:103m, w>=1000, landscape
-- **`us-nj-bally-s-legend-s-vip-beach-3.jpg`** — “2025-04-28 11 17 23 View southwest from the sand dunes in front of Park Place along the Atlantic City Boardwalk in Atlantic City, Atlantic County, New Jersey” by Famartin, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nj-bally-s-legend-s-vip-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “2025-04-28 11 17 23 View southwest from the sand dunes in front of Park Place along the Atlantic City Boardwalk in Atlantic City, Atlantic County, New Jersey” by Famartin, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:2025-04-28_11_17_23_View_southwest_from_the_sand_dunes_in_front_of_Park_Place_along_the_Atlantic_City_Boardwalk_in_Atlantic_City,_Atlantic_County,_New_Jersey.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
@@ -85,15 +85,7 @@
 
 `osm:node/5876911130` · 39.849979, -74.0862841
 
-- **`us-nj-bathing-beach-number-2-1.jpg`** — “2017-09-04 11 40 58 Bathing beach pavillion at Bathing Beach Number 2 within Island Beach State Park, in Berkeley Township, Ocean County, New Jersey” by Famartin, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:2017-09-04_11_40_58_Bathing_beach_pavillion_at_Bathing_Beach_Number_2_within_Island_Beach_State_Park,_in_Berkeley_Township,_Ocean_County,_New_Jersey.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
-  - Dated: 2017-09-04 11:40:58
-  - 1600×1200px, 535 KB, shot 72 m from the spot
-  - Description: Bathing beach pavillion at Bathing Beach Number 2 within Island Beach State Park, in Berkeley Township, Ocean County, New Jersey
-  - Match: score 18 via coastal-in-title, name:bathing+number, kw:beach+ocean+boardwalk, geo:72m, w>=1000, landscape
-- **`us-nj-bathing-beach-number-2-2.jpg`** — “2013-08-21 14 47 17 Boardwalk from the bathing beach pavillion to the beach at Bathing Beach Number 1 in Island Beach State Park” by Famartin, Wikimedia Commons, CC BY-SA 3.0
+- **`us-nj-bathing-beach-number-2-1.jpg`** — “2013-08-21 14 47 17 Boardwalk from the bathing beach pavillion to the beach at Bathing Beach Number 1 in Island Beach State Park” by Famartin, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:2013-08-21_14_47_17_Boardwalk_from_the_bathing_beach_pavillion_to_the_beach_at_Bathing_Beach_Number_1_in_Island_Beach_State_Park.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
@@ -101,7 +93,7 @@
   - 1600×1192px, 564 KB, shot 392 m from the spot
   - Description: Boardwalk from the bathing beach pavillion to the beach at Bathing Beach Number 1 in Island Beach State Park on August 21st 2013
   - Match: score 17 via coastal-in-title, name:bathing+number, kw:beach+boardwalk, geo:392m, w>=1000, landscape
-- **`us-nj-bathing-beach-number-2-3.jpg`** — “2013-08-21 14 47 57 View east across the beach from the end of the boardwalk from the bathing beach pavillion at Bathing Beach Number 1 in Island Beach State Park” by Famartin, Wikimedia Commons, CC BY-SA 3.0
+- **`us-nj-bathing-beach-number-2-2.jpg`** — “2013-08-21 14 47 57 View east across the beach from the end of the boardwalk from the bathing beach pavillion at Bathing Beach Number 1 in Island Beach State Park” by Famartin, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:2013-08-21_14_47_57_View_east_across_the_beach_from_the_end_of_the_boardwalk_from_the_bathing_beach_pavillion_at_Bathing_Beach_Number_1_in_Island_Beach_State_Park.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
@@ -109,20 +101,20 @@
   - 1600×1188px, 582 KB, shot 338 m from the spot
   - Description: View east across the beach from the end of the boardwalk from the bathing beach pavillion at Bathing Beach Number 1 in Island Beach State Park on August 21st 2013
   - Match: score 17 via coastal-in-title, name:bathing+number, kw:beach+boardwalk, geo:338m, w>=1000, landscape
+- **`us-nj-bathing-beach-number-2-3.jpg`** ⚠︎ *context, not the coast itself* — “2017-09-04 11 40 58 Bathing beach pavillion at Bathing Beach Number 2 within Island Beach State Park, in Berkeley Township, Ocean County, New Jersey” by Famartin, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:2017-09-04_11_40_58_Bathing_beach_pavillion_at_Bathing_Beach_Number_2_within_Island_Beach_State_Park,_in_Berkeley_Township,_Ocean_County,_New_Jersey.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
+  - Dated: 2017-09-04 11:40:58
+  - 1600×1200px, 535 KB, shot 72 m from the spot
+  - Description: Bathing beach pavillion at Bathing Beach Number 2 within Island Beach State Park, in Berkeley Township, Ocean County, New Jersey
+  - Match: score 18 via coastal-in-title, name:bathing+number, kw:beach+ocean+boardwalk, geo:72m, w>=1000, landscape
 
 ## Beach B
 
 `osm:node/2573797830` · 40.4071803, -73.9764418
 
-- **`us-nj-beach-b-1.jpg`** — “Clams on Sandy Hook beaches - panoramio” by febb, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Clams_on_Sandy_Hook_beaches_-_panoramio.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: febb — https://web.archive.org/web/20161010063936/http://www.panoramio.com/user/1229496?with_photo_id=9245732
-  - Dated: Taken on 1 March 2007
-  - 1600×947px, 144 KB, shot 299 m from the spot
-  - Description: Clams on Sandy Hook beaches
-  - Match: score 9 via coastal-in-title, kw:beach+sand, geo:299m, w>=1000, landscape
-- **`us-nj-beach-b-2.jpg`** — “Navesink Inlet Sandy Hook (1700538158)” by Ted Kerwin, Wikimedia Commons, CC BY 2.0
+- **`us-nj-beach-b-1.jpg`** — “Navesink Inlet Sandy Hook (1700538158)” by Ted Kerwin, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Navesink_Inlet_Sandy_Hook_(1700538158).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Ted Kerwin — https://www.flickr.com/people/52111934@N00
@@ -130,7 +122,7 @@
   - 1600×1277px, 359 KB, shot 290 m from the spot
   - Description: Navesink Inlet Sandy Hook.jpg
   - Match: score 8.5 via coastal-in-title, kw:sand+inlet, geo:290m, w>=1000
-- **`us-nj-beach-b-3.jpg`** — “Navesink Inlet Sandy Hook 2 (1700535466)” by Ted Kerwin, Wikimedia Commons, CC BY 2.0
+- **`us-nj-beach-b-2.jpg`** ⚠︎ *context, not the coast itself* — “Navesink Inlet Sandy Hook 2 (1700535466)” by Ted Kerwin, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Navesink_Inlet_Sandy_Hook_2_(1700535466).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Ted Kerwin — https://www.flickr.com/people/52111934@N00
@@ -138,6 +130,14 @@
   - 1600×1277px, 573 KB, shot 290 m from the spot
   - Description: Navesink Inlet Sandy Hook 2.jpg
   - Match: score 8.5 via coastal-in-title, kw:sand+inlet, geo:290m, w>=1000
+- **`us-nj-beach-b-3.jpg`** ✗ **not a coastal photo** — “Clams on Sandy Hook beaches - panoramio” by febb, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Clams_on_Sandy_Hook_beaches_-_panoramio.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: febb — https://web.archive.org/web/20161010063936/http://www.panoramio.com/user/1229496?with_photo_id=9245732
+  - Dated: Taken on 1 March 2007
+  - 1600×947px, 144 KB, shot 299 m from the spot
+  - Description: Clams on Sandy Hook beaches
+  - Match: score 9 via coastal-in-title, kw:beach+sand, geo:299m, w>=1000, landscape
 
 ## Beach C
 
@@ -151,15 +151,7 @@
   - 1600×964px, 156 KB, shot 890 m from the spot
   - Description: Surfer on Sandy Hook bay
   - Match: score 9 via coastal-in-title, kw:surf+surfer+surfing+sea, geo:890m, w>=1000, landscape
-- **`us-nj-beach-c-2.jpg`** — “Clams on Sandy Hook beaches - panoramio” by febb, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Clams_on_Sandy_Hook_beaches_-_panoramio.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: febb — https://web.archive.org/web/20161010063936/http://www.panoramio.com/user/1229496?with_photo_id=9245732
-  - Dated: Taken on 1 March 2007
-  - 1600×947px, 144 KB, shot 766 m from the spot
-  - Description: Clams on Sandy Hook beaches
-  - Match: score 8 via coastal-in-title, kw:beach+sand, geo:766m, w>=1000, landscape
-- **`us-nj-beach-c-3.jpg`** — “Sandy Hook Beach at the Gateway National Recreation Area in Highlands, New Jersey” by Didier Moïse, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nj-beach-c-2.jpg`** — “Sandy Hook Beach at the Gateway National Recreation Area in Highlands, New Jersey” by Didier Moïse, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sandy_Hook_Beach_at_the_Gateway_National_Recreation_Area_in_Highlands,_New_Jersey.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Didier Moïse — //commons.wikimedia.org/wiki/User:DidierMoise
@@ -167,6 +159,14 @@
   - 1600×1067px, 437 KB, shot 657 m from the spot
   - Description: Sandy Hook South Beach at the Gateway National Recreation Area near Highlands , New Jersey .
   - Match: score 8 via coastal-in-title, kw:beach+sand, geo:657m, w>=1000, landscape
+- **`us-nj-beach-c-3.jpg`** ✗ **not a coastal photo** — “Clams on Sandy Hook beaches - panoramio” by febb, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Clams_on_Sandy_Hook_beaches_-_panoramio.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: febb — https://web.archive.org/web/20161010063936/http://www.panoramio.com/user/1229496?with_photo_id=9245732
+  - Dated: Taken on 1 March 2007
+  - 1600×947px, 144 KB, shot 766 m from the spot
+  - Description: Clams on Sandy Hook beaches
+  - Match: score 8 via coastal-in-title, kw:beach+sand, geo:766m, w>=1000, landscape
 
 ## Beach D
 
@@ -188,7 +188,7 @@
   - 1600×964px, 156 KB, shot 828 m from the spot
   - Description: Surfer on Sandy Hook bay
   - Match: score 9 via coastal-in-title, kw:surf+surfer+surfing+sea, geo:828m, w>=1000, landscape
-- **`us-nj-beach-d-3.jpg`** — “Clams on Sandy Hook beaches - panoramio” by febb, Wikimedia Commons, CC BY-SA 3.0
+- **`us-nj-beach-d-3.jpg`** ✗ **not a coastal photo** — “Clams on Sandy Hook beaches - panoramio” by febb, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Clams_on_Sandy_Hook_beaches_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: febb — https://web.archive.org/web/20161010063936/http://www.panoramio.com/user/1229496?with_photo_id=9245732
@@ -259,7 +259,7 @@
 
 `osm:node/357717358` · 39.9912456, -74.0610879
 
-- **`us-nj-chadwick-beach-1.jpg`** — “Bayside Park, Brick Township, NJ, Dec. 2024” by Mr. Matté, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nj-chadwick-beach-1.jpg`** ✗ **not a coastal photo** — “Bayside Park, Brick Township, NJ, Dec. 2024” by Mr. Matté, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Bayside_Park,_Brick_Township,_NJ,_Dec._2024.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Mr. Matté — //commons.wikimedia.org/wiki/User:Mr._Matt%C3%A9
@@ -267,7 +267,7 @@
   - 1600×966px, 663 KB, shot 2041 m from the spot
   - Description: Photo of Bayside Park in Brick Township , New Jersey . Photo taken from New Jersey Route 35 (West Central Avenue) looking southwest.
   - Match: score 7 via coastal-in-title, kw:ocean+bay, geo:2041m, w>=1000, landscape
-- **`us-nj-chadwick-beach-2.jpg`** — “Brick Beach I, NJ, Dec. 2024” by Mr. Matté, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nj-chadwick-beach-2.jpg`** ✗ **not a coastal photo** — “Brick Beach I, NJ, Dec. 2024” by Mr. Matté, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Brick_Beach_I,_NJ,_Dec._2024.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Mr. Matté — //commons.wikimedia.org/wiki/User:Mr._Matt%C3%A9
@@ -275,7 +275,7 @@
   - 1600×1252px, 673 KB, shot 2643 m from the spot
   - Description: Photo of Brick Beach I in Brick Township , New Jersey . Photo taken from northbound New Jersey Route 35 (Ocean Avenue) looking east-northeast.
   - Match: score 6.5 via coastal-in-title, kw:beach+ocean, geo:2643m, w>=1000
-- **`us-nj-chadwick-beach-3.jpg`** — “Ocean County Library, Lavallette, NJ branch, Dec. 2024” by Mr. Matté, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nj-chadwick-beach-3.jpg`** ✗ **not a coastal photo** — “Ocean County Library, Lavallette, NJ branch, Dec. 2024” by Mr. Matté, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Ocean_County_Library,_Lavallette,_NJ_branch,_Dec._2024.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Mr. Matté — //commons.wikimedia.org/wiki/User:Mr._Matt%C3%A9
@@ -324,7 +324,7 @@
   - 1600×1200px, 695 KB, shot 15326122 m from the spot
   - Description: Seventy-Five Mile Beach
   - Match: score 12.5 via coastal-in-title, name:five+mile, kw:beach, geo:15326122m, w>=1000, landscape
-- **`us-nj-five-mile-beach-2.jpg`** — “Battle of Turtle Gut Inlet Memorial Park” by Zeete, Wikimedia Commons, CC BY-SA 3.0
+- **`us-nj-five-mile-beach-2.jpg`** ✗ **not a coastal photo** — “Battle of Turtle Gut Inlet Memorial Park” by Zeete, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Battle_of_Turtle_Gut_Inlet_Memorial_Park.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Zeete — //commons.wikimedia.org/wiki/User:Zeete
@@ -332,7 +332,7 @@
   - 1600×1281px, 483 KB, shot 989 m from the spot
   - Description: Park in memory of the Battle of Turtle Gut Inlet in Wildwood Crest , New Jersey .
   - Match: score 6 via coastal-in-title, kw:inlet, geo:989m, w>=1000
-- **`us-nj-five-mile-beach-3.jpg`** — “Wildwood Crest “Shore is Beautiful” Sign” by Plantsmushrooms, Wikimedia Commons, CC BY 4.0
+- **`us-nj-five-mile-beach-3.jpg`** ✗ **not a coastal photo** — “Wildwood Crest “Shore is Beautiful” Sign” by Plantsmushrooms, Wikimedia Commons, CC BY 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Wildwood_Crest_%E2%80%9CShore_is_Beautiful%E2%80%9D_Sign.jpg
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Plantsmushrooms
@@ -345,23 +345,7 @@
 
 `osm:relation/6363217` · 40.4587439, -73.9913691 · beach type: **sandy** (OpenStreetMap surface=sand) · access: yes · site: https://nudebeachmap.com/places/gunnison-beach/
 
-- **`us-nj-gunnison-beach-1.jpg`** — “2024-09-13 14 02 40 View east along a trail from Atlantic Drive to the beach between Fishing Beach and Gunnison Beach within the Sandy Hook unit of Gateway National Recreation Area in Middletown Township, Monmouth County, New Jersey” by Famartin, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:2024-09-13_14_02_40_View_east_along_a_trail_from_Atlantic_Drive_to_the_beach_between_Fishing_Beach_and_Gunnison_Beach_within_the_Sandy_Hook_unit_of_Gateway_National_Recreation_Area_in_Middletown_Township,_Monmouth_County,_New_Jersey.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
-  - Dated: 2024-09-13 14:02:40
-  - 1600×1200px, 1669 KB, shot 873 m from the spot
-  - Description: View east along a trail from Atlantic Drive to the beach between Fishing Beach and Gunnison Beach within the Sandy Hook unit of Gateway National Recreation Area in Middletown Township, Monmouth County, New Jersey
-  - Match: score 12 via coastal-in-title, name:gunnison, kw:beach+sand, geo:873m, w>=1000, landscape
-- **`us-nj-gunnison-beach-2.jpg`** — “2024-09-13 14 03 11 View east along a trail from Atlantic Drive to the beach between Fishing Beach and Gunnison Beach within the Sandy Hook unit of Gateway National Recreation Area in Middletown Township, Monmouth County, New Jersey” by Famartin, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:2024-09-13_14_03_11_View_east_along_a_trail_from_Atlantic_Drive_to_the_beach_between_Fishing_Beach_and_Gunnison_Beach_within_the_Sandy_Hook_unit_of_Gateway_National_Recreation_Area_in_Middletown_Township,_Monmouth_County,_New_Jersey.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
-  - Dated: 2024-09-13 14:03:11
-  - 1600×1200px, 1604 KB, shot 868 m from the spot
-  - Description: View east along a trail from Atlantic Drive to the beach between Fishing Beach and Gunnison Beach within the Sandy Hook unit of Gateway National Recreation Area in Middletown Township, Monmouth County, New Jersey
-  - Match: score 12 via coastal-in-title, name:gunnison, kw:beach+sand, geo:868m, w>=1000, landscape
-- **`us-nj-gunnison-beach-3.jpg`** — “2024-09-13 14 07 54 View east along a trail from Atlantic Drive to the beach between Fishing Beach and Gunnison Beach within the Sandy Hook unit of Gateway National Recreation Area in Middletown Township, Monmouth County, New Jersey” by Famartin, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nj-gunnison-beach-1.jpg`** — “2024-09-13 14 07 54 View east along a trail from Atlantic Drive to the beach between Fishing Beach and Gunnison Beach within the Sandy Hook unit of Gateway National Recreation Area in Middletown Township, Monmouth County, New Jersey” by Famartin, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:2024-09-13_14_07_54_View_east_along_a_trail_from_Atlantic_Drive_to_the_beach_between_Fishing_Beach_and_Gunnison_Beach_within_the_Sandy_Hook_unit_of_Gateway_National_Recreation_Area_in_Middletown_Township,_Monmouth_County,_New_Jersey.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
@@ -369,6 +353,22 @@
   - 1600×1200px, 1151 KB, shot 834 m from the spot
   - Description: View east along a trail from Atlantic Drive to the beach between Fishing Beach and Gunnison Beach within the Sandy Hook unit of Gateway National Recreation Area in Middletown Township, Monmouth County, New Jersey
   - Match: score 12 via coastal-in-title, name:gunnison, kw:beach+sand, geo:834m, w>=1000, landscape
+- **`us-nj-gunnison-beach-2.jpg`** ✗ **not a coastal photo** — “2024-09-13 14 02 40 View east along a trail from Atlantic Drive to the beach between Fishing Beach and Gunnison Beach within the Sandy Hook unit of Gateway National Recreation Area in Middletown Township, Monmouth County, New Jersey” by Famartin, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:2024-09-13_14_02_40_View_east_along_a_trail_from_Atlantic_Drive_to_the_beach_between_Fishing_Beach_and_Gunnison_Beach_within_the_Sandy_Hook_unit_of_Gateway_National_Recreation_Area_in_Middletown_Township,_Monmouth_County,_New_Jersey.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
+  - Dated: 2024-09-13 14:02:40
+  - 1600×1200px, 1669 KB, shot 873 m from the spot
+  - Description: View east along a trail from Atlantic Drive to the beach between Fishing Beach and Gunnison Beach within the Sandy Hook unit of Gateway National Recreation Area in Middletown Township, Monmouth County, New Jersey
+  - Match: score 12 via coastal-in-title, name:gunnison, kw:beach+sand, geo:873m, w>=1000, landscape
+- **`us-nj-gunnison-beach-3.jpg`** ✗ **not a coastal photo** — “2024-09-13 14 03 11 View east along a trail from Atlantic Drive to the beach between Fishing Beach and Gunnison Beach within the Sandy Hook unit of Gateway National Recreation Area in Middletown Township, Monmouth County, New Jersey” by Famartin, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:2024-09-13_14_03_11_View_east_along_a_trail_from_Atlantic_Drive_to_the_beach_between_Fishing_Beach_and_Gunnison_Beach_within_the_Sandy_Hook_unit_of_Gateway_National_Recreation_Area_in_Middletown_Township,_Monmouth_County,_New_Jersey.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
+  - Dated: 2024-09-13 14:03:11
+  - 1600×1200px, 1604 KB, shot 868 m from the spot
+  - Description: View east along a trail from Atlantic Drive to the beach between Fishing Beach and Gunnison Beach within the Sandy Hook unit of Gateway National Recreation Area in Middletown Township, Monmouth County, New Jersey
+  - Match: score 12 via coastal-in-title, name:gunnison, kw:beach+sand, geo:868m, w>=1000, landscape
 
 ## Highlands Beach
 
@@ -390,7 +390,7 @@
   - 1600×1170px, 209 KB
   - Description: Title: Atlantic Highlands, N.J.: view from Leslie's Beach - bathers, diving board, and jetty Abstract/medium: 1 photographic print.
   - Match: score 10 via coastal-in-title, name:highlands, kw:beach+jetty, w>=1000, landscape
-- **`us-nj-highlands-beach-3.jpg`** — “Brighterhighbridgenj” by Tinton5, Wikimedia Commons, CC BY-SA 3.0
+- **`us-nj-highlands-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Brighterhighbridgenj” by Tinton5, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Brighterhighbridgenj.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Tinton5 — //commons.wikimedia.org/w/index.php?title=User:Tinton5&amp;action=edit&amp;redlink=1
@@ -461,15 +461,7 @@
 
 `osm:node/5416306414` · 40.2328413, -73.9966327
 
-- **`us-nj-loch-arbour-village-beach-club-1.jpg`** — “Deal Lake and Loch Arbour, NJ from Ocean Avenue, April 2026” by Mr. Matté, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Deal_Lake_and_Loch_Arbour,_NJ_from_Ocean_Avenue,_April_2026.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Mr. Matté — //commons.wikimedia.org/wiki/User:Mr._Matt%C3%A9
-  - Dated: 2026-04-04 13:35:22
-  - 1600×1227px, 444 KB, shot 377 m from the spot
-  - Description: Photo of Deal Lake in Asbury Park , New Jersey . Photo taken from Deal Lake Drive between Kingsley Street and Ocean Avenue looking west-northwest across the lake towards Loch Arbour .
-  - Match: score 15.5 via coastal-in-title, name:loch+arbour, kw:ocean, geo:377m, w>=1000, landscape
-- **`us-nj-loch-arbour-village-beach-club-2.jpg`** — “Loch Arbour, NJ, USA - panoramio” by dora isabel, Wikimedia Commons, CC BY-SA 3.0
+- **`us-nj-loch-arbour-village-beach-club-1.jpg`** — “Loch Arbour, NJ, USA - panoramio” by dora isabel, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Loch_Arbour,_NJ,_USA_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: dora isabel — https://web.archive.org/web/20161017173525/http://www.panoramio.com/user/964549?with_photo_id=44533796
@@ -477,12 +469,20 @@
   - 1600×1200px, 310 KB, shot 164 m from the spot
   - Description: Loch Arbour, NJ, USA
   - Match: score 13.5 via name:loch+arbour, kw:beach, geo:164m, w>=1000, landscape
+- **`us-nj-loch-arbour-village-beach-club-2.jpg`** ⚠︎ *context, not the coast itself* — “Deal Lake and Loch Arbour, NJ from Ocean Avenue, April 2026” by Mr. Matté, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Deal_Lake_and_Loch_Arbour,_NJ_from_Ocean_Avenue,_April_2026.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Mr. Matté — //commons.wikimedia.org/wiki/User:Mr._Matt%C3%A9
+  - Dated: 2026-04-04 13:35:22
+  - 1600×1227px, 444 KB, shot 377 m from the spot
+  - Description: Photo of Deal Lake in Asbury Park , New Jersey . Photo taken from Deal Lake Drive between Kingsley Street and Ocean Avenue looking west-northwest across the lake towards Loch Arbour .
+  - Match: score 15.5 via coastal-in-title, name:loch+arbour, kw:ocean, geo:377m, w>=1000, landscape
 
 ## Malibu Beach
 
 `osm:relation/11048143` · 39.3102657, -74.5484172 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-nj-malibu-beach-1.jpg`** — “Least Sandpiper (Calidris minutilla) - Breeding plumage - Malibu Beach WMA - Ocean City - New Jersey - USA” by Needsmoreritalin, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nj-malibu-beach-1.jpg`** ✗ **not a coastal photo** — “Least Sandpiper (Calidris minutilla) - Breeding plumage - Malibu Beach WMA - Ocean City - New Jersey - USA” by Needsmoreritalin, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Least_Sandpiper_(Calidris_minutilla)_-_Breeding_plumage_-_Malibu_Beach_WMA_-_Ocean_City_-_New_Jersey_-_USA.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Needsmoreritalin — //commons.wikimedia.org/wiki/User:Needsmoreritalin
@@ -490,7 +490,7 @@
   - 1600×1067px, 393 KB, shot 859 m from the spot
   - Description: A breeding plumage Least Sandpiper at Malibu Beach Wildlife Management Area, NJ.
   - Match: score 13 via coastal-in-title, name:malibu, kw:beach+ocean+sand, geo:859m, w>=1000, landscape
-- **`us-nj-malibu-beach-2.jpg`** — “Malibu Beach Wildlife Management Area” by Hurricanehink, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nj-malibu-beach-2.jpg`** ✗ **not a coastal photo** — “Malibu Beach Wildlife Management Area” by Hurricanehink, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Malibu_Beach_Wildlife_Management_Area.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Hurricanehink — //commons.wikimedia.org/wiki/User:Hurricanehink
@@ -498,7 +498,7 @@
   - 1600×1732px, 913 KB, shot 841 m from the spot
   - Description: Sign for the Malibu Beach Wildlife Management Area, located in Egg Harbor Township, New Jersey
   - Match: score 10 via coastal-in-title, name:malibu, kw:beach, geo:841m, w>=1000
-- **`us-nj-malibu-beach-3.jpg`** — “Seaview Harbor sign” by Andrew Hink, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nj-malibu-beach-3.jpg`** ✗ **not a coastal photo** — “Seaview Harbor sign” by Andrew Hink, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Seaview_Harbor_sign.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Andrew Hink — //commons.wikimedia.org/wiki/User:Hurricanehink
@@ -561,15 +561,7 @@
 
 `osm:node/357727150` · 39.2465041, -74.6123795
 
-- **`us-nj-peck-beach-1.png`** — Ocean City beach - before and after — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Ocean_City_beach_-_before_and_after.png
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: United States Army Corps of Engineers
-  - Dated: 2013-06-06
-  - 1600×1058px, 651 KB
-  - Description: The Great Egg Harbor and Peck Beach, (Ocean City) project was first constructed in 1992 and has been periodically nourished over the years resulting in a wider beach. The project is designed to reduce damages from coastal storms. It is an aerial shot of the Ocean City boardwalk and beach. On the left side is before the beach nourishment project, and on the right is after the project is completed.
-  - Match: score 11 via coastal-in-title, name:peck, kw:beach+ocean+coast+coastal, w>=1000, landscape
-- **`us-nj-peck-beach-2.jpg`** — “Ocean City NJ beach looking south at 34th Street” by Dough4872, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nj-peck-beach-1.jpg`** — “Ocean City NJ beach looking south at 34th Street” by Dough4872, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Ocean_City_NJ_beach_looking_south_at_34th_Street.jpeg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Dough4872 — //commons.wikimedia.org/wiki/User:Dough4872
@@ -577,7 +569,7 @@
   - 1600×1200px, 627 KB, shot 452 m from the spot
   - Description: A view of the beach at Ocean City, New Jersey looking south at 34th Street
   - Match: score 8 via coastal-in-title, kw:beach+ocean, geo:452m, w>=1000, landscape
-- **`us-nj-peck-beach-3.jpg`** — “Ocean City NJ beach looking north at 34th Street” by Dough4872, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nj-peck-beach-2.jpg`** — “Ocean City NJ beach looking north at 34th Street” by Dough4872, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Ocean_City_NJ_beach_looking_north_at_34th_Street.jpeg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Dough4872 — //commons.wikimedia.org/wiki/User:Dough4872
@@ -585,12 +577,7 @@
   - 1600×1200px, 576 KB, shot 449 m from the spot
   - Description: A view of the beach at Ocean City, New Jersey looking north at 34th Street
   - Match: score 8 via coastal-in-title, kw:beach+ocean, geo:449m, w>=1000, landscape
-
-## Peck's Beach
-
-`osm:relation/11083077` · 39.2534226, -74.6008797 · beach type: **sandy** (OpenStreetMap surface=sand)
-
-- **`us-nj-peck-s-beach-1.png`** — Ocean City beach - before and after — Public domain (Wikimedia Commons), no attribution required
+- **`us-nj-peck-beach-3.png`** ⚠︎ *context, not the coast itself* — Ocean City beach - before and after — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Ocean_City_beach_-_before_and_after.png
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: United States Army Corps of Engineers
@@ -598,15 +585,12 @@
   - 1600×1058px, 651 KB
   - Description: The Great Egg Harbor and Peck Beach, (Ocean City) project was first constructed in 1992 and has been periodically nourished over the years resulting in a wider beach. The project is designed to reduce damages from coastal storms. It is an aerial shot of the Ocean City boardwalk and beach. On the left side is before the beach nourishment project, and on the right is after the project is completed.
   - Match: score 11 via coastal-in-title, name:peck, kw:beach+ocean+coast+coastal, w>=1000, landscape
-- **`us-nj-peck-s-beach-2.jpg`** — “Ocean City NJ boardwalk looking north at 23rd Street” by Dough4872, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Ocean_City_NJ_boardwalk_looking_north_at_23rd_Street.jpeg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Dough4872 — //commons.wikimedia.org/wiki/User:Dough4872
-  - Dated: 2023-08-09
-  - 1600×1200px, 551 KB, shot 1170 m from the spot
-  - Description: A view of the boardwalk in Ocean City, New Jersey looking north at 23rd Street
-  - Match: score 8 via coastal-in-title, kw:ocean+boardwalk, geo:1170m, w>=1000, landscape
-- **`us-nj-peck-s-beach-3.jpg`** — “Ocean City NJ beach looking south at 34th Street” by Dough4872, Wikimedia Commons, CC BY-SA 4.0
+
+## Peck's Beach
+
+`osm:relation/11083077` · 39.2534226, -74.6008797 · beach type: **sandy** (OpenStreetMap surface=sand)
+
+- **`us-nj-peck-s-beach-1.jpg`** — “Ocean City NJ beach looking south at 34th Street” by Dough4872, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Ocean_City_NJ_beach_looking_south_at_34th_Street.jpeg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Dough4872 — //commons.wikimedia.org/wiki/User:Dough4872
@@ -614,20 +598,28 @@
   - 1600×1200px, 627 KB, shot 802 m from the spot
   - Description: A view of the beach at Ocean City, New Jersey looking south at 34th Street
   - Match: score 8 via coastal-in-title, kw:beach+ocean, geo:802m, w>=1000, landscape
+- **`us-nj-peck-s-beach-2.png`** ⚠︎ *context, not the coast itself* — Ocean City beach - before and after — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Ocean_City_beach_-_before_and_after.png
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: United States Army Corps of Engineers
+  - Dated: 2013-06-06
+  - 1600×1058px, 651 KB
+  - Description: The Great Egg Harbor and Peck Beach, (Ocean City) project was first constructed in 1992 and has been periodically nourished over the years resulting in a wider beach. The project is designed to reduce damages from coastal storms. It is an aerial shot of the Ocean City boardwalk and beach. On the left side is before the beach nourishment project, and on the right is after the project is completed.
+  - Match: score 11 via coastal-in-title, name:peck, kw:beach+ocean+coast+coastal, w>=1000, landscape
+- **`us-nj-peck-s-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Ocean City NJ boardwalk looking north at 23rd Street” by Dough4872, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Ocean_City_NJ_boardwalk_looking_north_at_23rd_Street.jpeg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Dough4872 — //commons.wikimedia.org/wiki/User:Dough4872
+  - Dated: 2023-08-09
+  - 1600×1200px, 551 KB, shot 1170 m from the spot
+  - Description: A view of the boardwalk in Ocean City, New Jersey looking north at 23rd Street
+  - Match: score 8 via coastal-in-title, kw:ocean+boardwalk, geo:1170m, w>=1000, landscape
 
 ## Sandy Point Yacht Club Private Beach
 
 `osm:way/1416016451` · 40.0511889, -74.0778834 · beach type: **sandy** (OpenStreetMap surface=sand) · access: private
 
-- **`us-nj-sandy-point-yacht-club-private-beach-1.jpg`** — “Mantoloking Yacht Club, Mantoloking, NJ (1), Dec. 2024” by Mr. Matté, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Mantoloking_Yacht_Club,_Mantoloking,_NJ_(1),_Dec._2024.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Mr. Matté — //commons.wikimedia.org/wiki/User:Mr._Matt%C3%A9
-  - Dated: 2024-12-31 11:42:37
-  - 1600×1205px, 790 KB, shot 2635 m from the spot
-  - Description: Photo of the Mantoloking Yacht Club site in Mantoloking , New Jersey . Photo taken from Bay Avenue looking west along Lake Street.
-  - Match: score 11.5 via name:yacht+club, kw:bay, geo:2635m, w>=1000, landscape
-- **`us-nj-sandy-point-yacht-club-private-beach-2.jpg`** — “Beaverdam Creek downstream from Beaver Dam Bridge, NJ, Dec. 2024” by Mr. Matté, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nj-sandy-point-yacht-club-private-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Beaverdam Creek downstream from Beaver Dam Bridge, NJ, Dec. 2024” by Mr. Matté, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Beaverdam_Creek_downstream_from_Beaver_Dam_Bridge,_NJ,_Dec._2024.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Mr. Matté — //commons.wikimedia.org/wiki/User:Mr._Matt%C3%A9
@@ -635,7 +627,15 @@
   - 1600×1075px, 632 KB, shot 1056 m from the spot
   - Description: Photo of the Beaverdam Creek looking downstream from County Route 630 (Beaver Dam Road) on the border of Brick Township (right/south) and Point Pleasant (left/north) in Ocean County , New Jersey . Photo taken looking east-northeast.
   - Match: score 6 via kw:ocean+point, geo:1056m, w>=1000, landscape
-- **`us-nj-sandy-point-yacht-club-private-beach-3.jpg`** — “Community Park, Point Pleasant, NJ, Dec. 2024” by Mr. Matté, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nj-sandy-point-yacht-club-private-beach-2.jpg`** ✗ **not a coastal photo** — “Mantoloking Yacht Club, Mantoloking, NJ (1), Dec. 2024” by Mr. Matté, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Mantoloking_Yacht_Club,_Mantoloking,_NJ_(1),_Dec._2024.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Mr. Matté — //commons.wikimedia.org/wiki/User:Mr._Matt%C3%A9
+  - Dated: 2024-12-31 11:42:37
+  - 1600×1205px, 790 KB, shot 2635 m from the spot
+  - Description: Photo of the Mantoloking Yacht Club site in Mantoloking , New Jersey . Photo taken from Bay Avenue looking west along Lake Street.
+  - Match: score 11.5 via name:yacht+club, kw:bay, geo:2635m, w>=1000, landscape
+- **`us-nj-sandy-point-yacht-club-private-beach-3.jpg`** ✗ **not a coastal photo** — “Community Park, Point Pleasant, NJ, Dec. 2024” by Mr. Matté, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Community_Park,_Point_Pleasant,_NJ,_Dec._2024.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Mr. Matté — //commons.wikimedia.org/wiki/User:Mr._Matt%C3%A9
@@ -661,15 +661,7 @@
 
 `osm:node/13724967986` · 38.9299706, -74.9346542 · site: https://www.capemay.com/cape-may-beaches.html
 
-- **`us-nj-the-cove-1.jpg`** — The Cove Restaurant A — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:The_Cove_Restaurant_A.jpg
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: WhisperToMe — //commons.wikimedia.org/wiki/User:WhisperToMe
-  - Dated: 2020-09-29 09:17:38
-  - 1600×1200px, 575 KB, shot 39 m from the spot
-  - Description: The Cove Restaurant
-  - Match: score 11.5 via coastal-in-title, name:cove, kw:cove, geo:39m, w>=1000, landscape
-- **`us-nj-the-cove-2.jpg`** — “2024-09-13 14 42 50 Sand beach separating a tidal stream and marsh from the north end of Horseshoe Cove within the Sandy Hook unit of Gateway National Recreation Area in Middletown Township, Monmouth County, New Jersey” by Famartin, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nj-the-cove-1.jpg`** — “2024-09-13 14 42 50 Sand beach separating a tidal stream and marsh from the north end of Horseshoe Cove within the Sandy Hook unit of Gateway National Recreation Area in Middletown Township, Monmouth County, New Jersey” by Famartin, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:2024-09-13_14_42_50_Sand_beach_separating_a_tidal_stream_and_marsh_from_the_north_end_of_Horseshoe_Cove_within_the_Sandy_Hook_unit_of_Gateway_National_Recreation_Area_in_Middletown_Township,_Monmouth_County,_New_Jersey.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
@@ -677,7 +669,7 @@
   - 1600×1200px, 846 KB
   - Description: Sand beach separating a tidal stream and marsh from the north end of Horseshoe Cove within the Sandy Hook unit of Gateway National Recreation Area in Middletown Township, Monmouth County, New Jersey
   - Match: score 11 via coastal-in-title, name:cove, kw:beach+sand+mar+cove, w>=1000, landscape
-- **`us-nj-the-cove-3.jpg`** — “2024-09-13 14 46 11 Panoramic view across Horseshoe Cove and Sandy Hook Bay near the north end of Horseshoe Cove within the Sandy Hook unit of Gateway National Recreation Area in Middletown Township, Monmouth County, New Jersey” by Famartin, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nj-the-cove-2.jpg`** — “2024-09-13 14 46 11 Panoramic view across Horseshoe Cove and Sandy Hook Bay near the north end of Horseshoe Cove within the Sandy Hook unit of Gateway National Recreation Area in Middletown Township, Monmouth County, New Jersey” by Famartin, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:2024-09-13_14_46_11_Panoramic_view_across_Horseshoe_Cove_and_Sandy_Hook_Bay_near_the_north_end_of_Horseshoe_Cove_within_the_Sandy_Hook_unit_of_Gateway_National_Recreation_Area_in_Middletown_Township,_Monmouth_County,_New_Jersey.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
@@ -685,20 +677,20 @@
   - 1600×526px, 268 KB
   - Description: Panoramic view across Horseshoe Cove and Sandy Hook Bay near the north end of Horseshoe Cove within the Sandy Hook unit of Gateway National Recreation Area in Middletown Township, Monmouth County, New Jersey
   - Match: score 11 via coastal-in-title, name:cove, kw:beach+sand+bay+cove, w>=1000, landscape
+- **`us-nj-the-cove-3.jpg`** ✗ **not a coastal photo** — The Cove Restaurant A — CC0 (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:The_Cove_Restaurant_A.jpg
+  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
+  - Author: WhisperToMe — //commons.wikimedia.org/wiki/User:WhisperToMe
+  - Dated: 2020-09-29 09:17:38
+  - 1600×1200px, 575 KB, shot 39 m from the spot
+  - Description: The Cove Restaurant
+  - Match: score 11.5 via coastal-in-title, name:cove, kw:cove, geo:39m, w>=1000, landscape
 
 ## The Point 2 Beach
 
 `osm:way/871516014` · 39.3034607, -74.5369764 · beach type: **sandy** (OpenStreetMap surface=sand) · access: yes
 
-- **`us-nj-the-point-2-beach-1.jpg`** — “Least Sandpiper (Calidris minutilla) - Breeding plumage - Malibu Beach WMA - Ocean City - New Jersey - USA” by Needsmoreritalin, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Least_Sandpiper_(Calidris_minutilla)_-_Breeding_plumage_-_Malibu_Beach_WMA_-_Ocean_City_-_New_Jersey_-_USA.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Needsmoreritalin — //commons.wikimedia.org/wiki/User:Needsmoreritalin
-  - Dated: 2024-05-04 11:48:34
-  - 1600×1067px, 393 KB, shot 2007 m from the spot
-  - Description: A breeding plumage Least Sandpiper at Malibu Beach Wildlife Management Area, NJ.
-  - Match: score 8 via coastal-in-title, kw:beach+ocean+sand, geo:2007m, w>=1000, landscape
-- **`us-nj-the-point-2-beach-2.jpg`** — “Ocean City Parasailing 360 (43634912131)” by Eli Christman from Richmond, VA, USA, Wikimedia Commons, CC BY 2.0
+- **`us-nj-the-point-2-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Ocean City Parasailing 360 (43634912131)” by Eli Christman from Richmond, VA, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Ocean_City_Parasailing_360_(43634912131).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Eli Christman from Richmond, VA, USA — https://www.flickr.com/people/51625243@N06
@@ -706,7 +698,15 @@
   - 1600×825px, 180 KB, shot 2777 m from the spot
   - Description: If I didn't get sea sick from taking photos and lost my bearings, I could have probably seen my uncle's beach house. Elena and I both accomplished a goal we've been talking about for years. Parasailing! Pro tips: Go early with better parking and fewer people. you may get a longer ride. And use Ocean City Parasail. Great and personable customer service. They're really wonderful. <a href=" http://www.oceancityparasail.com " rel="noreferrer nofollow">www.oceancityparasail.com</a>
   - Match: score 8 via coastal-in-title, kw:beach+ocean+sea, geo:2777m, w>=1000, landscape
-- **`us-nj-the-point-2-beach-3.jpg`** — “Seaview Harbor sign” by Andrew Hink, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nj-the-point-2-beach-2.jpg`** ✗ **not a coastal photo** — “Least Sandpiper (Calidris minutilla) - Breeding plumage - Malibu Beach WMA - Ocean City - New Jersey - USA” by Needsmoreritalin, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Least_Sandpiper_(Calidris_minutilla)_-_Breeding_plumage_-_Malibu_Beach_WMA_-_Ocean_City_-_New_Jersey_-_USA.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Needsmoreritalin — //commons.wikimedia.org/wiki/User:Needsmoreritalin
+  - Dated: 2024-05-04 11:48:34
+  - 1600×1067px, 393 KB, shot 2007 m from the spot
+  - Description: A breeding plumage Least Sandpiper at Malibu Beach Wildlife Management Area, NJ.
+  - Match: score 8 via coastal-in-title, kw:beach+ocean+sand, geo:2007m, w>=1000, landscape
+- **`us-nj-the-point-2-beach-3.jpg`** ✗ **not a coastal photo** — “Seaview Harbor sign” by Andrew Hink, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Seaview_Harbor_sign.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Andrew Hink — //commons.wikimedia.org/wiki/User:Hurricanehink
@@ -727,7 +727,7 @@
   - 1600×1200px, 462 KB, shot 232 m from the spot
   - Description: A view of the beach at Atlantic City, New Jersey looking north at Chelsea Avenue
   - Match: score 9 via coastal-in-title, kw:beach+sea, geo:232m, w>=1000, landscape
-- **`us-nj-tropicana-beach-2.jpg`** — “Atlantic City boardwalk looking north at Brighton Avenue” by Dough4872, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nj-tropicana-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Atlantic City boardwalk looking north at Brighton Avenue” by Dough4872, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Atlantic_City_boardwalk_looking_north_at_Brighton_Avenue.jpeg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Dough4872 — //commons.wikimedia.org/wiki/User:Dough4872
@@ -735,7 +735,7 @@
   - 1600×1200px, 711 KB, shot 94 m from the spot
   - Description: A view of the boardwalk in Atlantic City, New Jersey looking north at Brighton Avenue
   - Match: score 7.5 via coastal-in-title, kw:boardwalk, geo:94m, w>=1000, landscape
-- **`us-nj-tropicana-beach-3.jpg`** — “Boardwalk Hall 01” by Farragutful, Wikimedia Commons, CC BY-SA 3.0
+- **`us-nj-tropicana-beach-3.jpg`** ✗ **not a coastal photo** — “Boardwalk Hall 01” by Farragutful, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Boardwalk_Hall_01.JPG
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Farragutful — //commons.wikimedia.org/wiki/User:Farragutful
@@ -748,7 +748,7 @@
 
 `osm:node/357731074` · 38.9484461, -74.8573917
 
-- **`us-nj-two-mile-beach-1.jpg`** — Coast Guard searches for one, good samaritans rescue two in Cape May, NJ 130404-G-NB914-003 — Public domain (Wikimedia Commons), no attribution required
+- **`us-nj-two-mile-beach-1.jpg`** ⚠︎ *context, not the coast itself* — Coast Guard searches for one, good samaritans rescue two in Cape May, NJ 130404-G-NB914-003 — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Coast_Guard_searches_for_one,_good_samaritans_rescue_two_in_Cape_May,_NJ_130404-G-NB914-003.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Petty Officer 3rd Class Cynthia Oldham
@@ -756,7 +756,7 @@
   - 1600×1200px, 798 KB, shot 2863 m from the spot
   - Description: Crew members from Coast Guard Station Cape May, N.J., transfer two boaters to emergency medical services personnel who were waiting on the station's pier, Thursday, April 4, 2013, after good samaritans aboard the fishing vessels Captain Brown and Sandra Lee rescued them from the water. The station crew members, along with an MH-65 Dolphin helicopter crew from Air Station Atlantic City, N.J., are continuing to search for one boater who is still missing. (U.S. Coast Guard photo by Lt. Scott Farr)
   - Match: score 12 via coastal-in-title, name:two, kw:sea+coast+sand+mar, geo:2863m, w>=1000, landscape
-- **`us-nj-two-mile-beach-2.jpg`** — Coast Guard searches for one, good samaritans rescue two in Cape May, NJ 130404-G-NB914-004 — Public domain (Wikimedia Commons), no attribution required
+- **`us-nj-two-mile-beach-2.jpg`** ⚠︎ *context, not the coast itself* — Coast Guard searches for one, good samaritans rescue two in Cape May, NJ 130404-G-NB914-004 — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Coast_Guard_searches_for_one,_good_samaritans_rescue_two_in_Cape_May,_NJ_130404-G-NB914-004.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Petty Officer 3rd Class Cynthia Oldham
@@ -764,7 +764,7 @@
   - 1600×1200px, 628 KB, shot 2863 m from the spot
   - Description: Crew members from Coast Guard Station Cape May, N.J., transfer two boaters to emergency medical services personnel who were waiting on the station's pier, Thursday, April 4, 2013, after good Samaritans aboard the fishing vessels Captain Brown and Sandra Lee rescued them from the water. The station crew members, along with an MH-65 Dolphin helicopter crew from Air Station Atlantic City, N.J., are continuing to search for one boater who is still missing. (U.S. Coast Guard photo by Lt. Scott Farr)
   - Match: score 12 via coastal-in-title, name:two, kw:sea+coast+sand+mar, geo:2863m, w>=1000, landscape
-- **`us-nj-two-mile-beach-3.jpg`** — Coast Guard searches for one, good samaritans rescue two in Cape May, NJ 130404-G-NB914-005 — Public domain (Wikimedia Commons), no attribution required
+- **`us-nj-two-mile-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Coast Guard searches for one, good samaritans rescue two in Cape May, NJ 130404-G-NB914-005 — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Coast_Guard_searches_for_one,_good_samaritans_rescue_two_in_Cape_May,_NJ_130404-G-NB914-005.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Petty Officer 3rd Class Cynthia Oldham
@@ -785,7 +785,7 @@
   - 1600×1200px, 113 KB
   - Description: Whale Beach, NSW, Australia
   - Match: score 10 via coastal-in-title, name:whale, kw:beach+sand, w>=1000, landscape
-- **`us-nj-whale-beach-2.jpg`** — “Barnacle Bill's Miniature Golf (Ortley Beach, New Jersey) P001” by Leonard J. DeFrancisci, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nj-whale-beach-2.jpg`** ✗ **not a coastal photo** — “Barnacle Bill's Miniature Golf (Ortley Beach, New Jersey) P001” by Leonard J. DeFrancisci, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Barnacle_Bill%27s_Miniature_Golf_(Ortley_Beach,_New_Jersey)_P001.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Leonard J. DeFrancisci — //commons.wikimedia.org/wiki/User:FieldMarine
@@ -793,7 +793,7 @@
   - 1600×1200px, 870 KB
   - Description: Miniature golf course at Barnacle Bill's Amusements, 1968 Route 35 North , Ortley Beach, New Jersey , United States on the Jersey Shore .
   - Match: score 10 via coastal-in-title, name:whale, kw:beach+shore, w>=1000, landscape
-- **`us-nj-whale-beach-3.jpg`** — “Barnacle Bill's Miniature Golf (Ortley Beach, New Jersey) P003” by Leonard J. DeFrancisci, Wikimedia Commons, CC BY-SA 4.0
+- **`us-nj-whale-beach-3.jpg`** ✗ **not a coastal photo** — “Barnacle Bill's Miniature Golf (Ortley Beach, New Jersey) P003” by Leonard J. DeFrancisci, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Barnacle_Bill%27s_Miniature_Golf_(Ortley_Beach,_New_Jersey)_P003.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Leonard J. DeFrancisci — //commons.wikimedia.org/wiki/User:FieldMarine

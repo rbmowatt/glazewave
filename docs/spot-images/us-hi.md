@@ -35,7 +35,7 @@
 
 `osm:relation/1616261` · 22.2247993, -159.4494051
 
-- **`us-hi-anini-beach-1.jpg`** — “Starr-130322-3740-Eleocharis radicans-habit-Anini Beach-Kauai (24914021340)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
+- **`us-hi-anini-beach-1.jpg`** ✗ **not a coastal photo** — “Starr-130322-3740-Eleocharis radicans-habit-Anini Beach-Kauai (24914021340)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
   - Source page: https://commons.wikimedia.org/wiki/File:Starr-130322-3740-Eleocharis_radicans-habit-Anini_Beach-Kauai_(24914021340).jpg
   - Licence: CC BY 3.0 us · attribution required
   - Author: Forest and Kim Starr — https://www.flickr.com/people/97499887@N06
@@ -43,7 +43,7 @@
   - 1600×1200px, 305 KB
   - Description: Eleocharis radicans (Rooted spikerush, radical fiber optic spikerush) Habit at Anini Beach, Kauai, Hawaii. March 22, 2013 #130322-3740 Image Use Policy
   - Match: score 10 via coastal-in-title, name:anini, kw:beach+mar, w>=1000, landscape
-- **`us-hi-anini-beach-2.jpg`** — “Starr-130322-3742-Eleocharis radicans-habit-Anini Beach-Kauai (24914024020)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
+- **`us-hi-anini-beach-2.jpg`** ✗ **not a coastal photo** — “Starr-130322-3742-Eleocharis radicans-habit-Anini Beach-Kauai (24914024020)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
   - Source page: https://commons.wikimedia.org/wiki/File:Starr-130322-3742-Eleocharis_radicans-habit-Anini_Beach-Kauai_(24914024020).jpg
   - Licence: CC BY 3.0 us · attribution required
   - Author: Forest and Kim Starr — https://www.flickr.com/people/97499887@N06
@@ -51,7 +51,7 @@
   - 1600×1200px, 466 KB
   - Description: Eleocharis radicans (Rooted spikerush, radical fiber optic spikerush) Habit at Anini Beach, Kauai, Hawaii. March 22, 2013 #130322-3742 Image Use Policy
   - Match: score 10 via coastal-in-title, name:anini, kw:beach+mar, w>=1000, landscape
-- **`us-hi-anini-beach-3.jpg`** — “Starr-130322-3746-Eleocharis radicans-habit-Anini Beach-Kauai (24582838923)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
+- **`us-hi-anini-beach-3.jpg`** ✗ **not a coastal photo** — “Starr-130322-3746-Eleocharis radicans-habit-Anini Beach-Kauai (24582838923)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
   - Source page: https://commons.wikimedia.org/wiki/File:Starr-130322-3746-Eleocharis_radicans-habit-Anini_Beach-Kauai_(24582838923).jpg
   - Licence: CC BY 3.0 us · attribution required
   - Author: Forest and Kim Starr — https://www.flickr.com/people/97499887@N06
@@ -85,15 +85,7 @@
 
 `osm:way/796367657` · 19.9334919, -155.8803366
 
-- **`us-hi-49-black-sand-beach-1.jpg`** — “Dead crab, 49 Black Sand Beach, Hawaii” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Dead_crab,_49_Black_Sand_Beach,_Hawaii.JPG
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Holly Cheng — //commons.wikimedia.org/wiki/User:Holly_Cheng
-  - Dated: 2015-08-11
-  - 1600×1200px, 682 KB, shot 46 m from the spot
-  - Description: Dead crab (species unidentified) at 49 Black Sand Beach, Puako Hawaii
-  - Match: score 17 via coastal-in-title, name:black+sand, kw:beach+sand, geo:46m, w>=1000, landscape
-- **`us-hi-49-black-sand-beach-2.jpg`** — “49 Black Sand Beach (1)” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-49-black-sand-beach-1.jpg`** — “49 Black Sand Beach (1)” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:49_Black_Sand_Beach_(1).JPG
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Holly Cheng — //commons.wikimedia.org/wiki/User:Holly_Cheng
@@ -101,7 +93,7 @@
   - 1600×1200px, 877 KB, shot 46 m from the spot
   - Description: 49 Black Sand Beach, Puako, Hawaii
   - Match: score 17 via coastal-in-title, name:black+sand, kw:beach+sand, geo:46m, w>=1000, landscape
-- **`us-hi-49-black-sand-beach-3.jpg`** — “49 Black Sand Beach (2)” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-49-black-sand-beach-2.jpg`** — “49 Black Sand Beach (2)” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:49_Black_Sand_Beach_(2).JPG
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Holly Cheng — //commons.wikimedia.org/wiki/User:Holly_Cheng
@@ -109,12 +101,20 @@
   - 1600×1200px, 945 KB, shot 46 m from the spot
   - Description: 49 Black Sand Beach, Puako, Hawaii
   - Match: score 17 via coastal-in-title, name:black+sand, kw:beach+sand, geo:46m, w>=1000, landscape
+- **`us-hi-49-black-sand-beach-3.jpg`** ✗ **not a coastal photo** — “Dead crab, 49 Black Sand Beach, Hawaii” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Dead_crab,_49_Black_Sand_Beach,_Hawaii.JPG
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Holly Cheng — //commons.wikimedia.org/wiki/User:Holly_Cheng
+  - Dated: 2015-08-11
+  - 1600×1200px, 682 KB, shot 46 m from the spot
+  - Description: Dead crab (species unidentified) at 49 Black Sand Beach, Puako Hawaii
+  - Match: score 17 via coastal-in-title, name:black+sand, kw:beach+sand, geo:46m, w>=1000, landscape
 
 ## Aki's Beach
 
 `osm:way/996197272` · 21.4684569, -158.2174789 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-hi-aki-s-beach-1.jpg`** — “Aki Beach resident - panoramio” by nick hoke, Wikimedia Commons, CC BY 3.0
+- **`us-hi-aki-s-beach-1.jpg`** ✗ **not a coastal photo** — “Aki Beach resident - panoramio” by nick hoke, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Aki_Beach_resident_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: nick hoke — https://web.archive.org/web/20161028155103/http://www.panoramio.com/user/5758309?with_photo_id=93762228
@@ -122,7 +122,7 @@
   - 1600×1200px, 946 KB, shot 31 m from the spot
   - Description: Aki Beach resident
   - Match: score 13 via coastal-in-title, name:aki, kw:beach+sea, geo:31m, w>=1000, landscape
-- **`us-hi-aki-s-beach-2.jpg`** — “Aki Beach - panoramio” by nick hoke, Wikimedia Commons, CC BY 3.0
+- **`us-hi-aki-s-beach-2.jpg`** ✗ **not a coastal photo** — “Aki Beach - panoramio” by nick hoke, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Aki_Beach_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: nick hoke — https://web.archive.org/web/20161028062548/http://www.panoramio.com/user/5758309?with_photo_id=94590526
@@ -130,7 +130,7 @@
   - 1600×1200px, 481 KB, shot 11 m from the spot
   - Description: Aki Beach
   - Match: score 11.5 via coastal-in-title, name:aki, kw:beach, geo:11m, w>=1000, landscape
-- **`us-hi-aki-s-beach-3.jpg`** — “Starr 030523-0011 Lycium sandwicense” by Forest & Kim Starr, Wikimedia Commons, CC BY 3.0
+- **`us-hi-aki-s-beach-3.jpg`** ✗ **not a coastal photo** — “Starr 030523-0011 Lycium sandwicense” by Forest & Kim Starr, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Starr_030523-0011_Lycium_sandwicense.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Forest & Kim Starr — http://www.hear.org/starr/
@@ -143,15 +143,7 @@
 
 `osm:way/179741971` · 21.2887903, -157.8507871 · beach type: **sandy** (OpenStreetMap surface=sand) · access: yes
 
-- **`us-hi-ala-moana-beach-1.jpg`** — “Checking out the ocean under the stars. (4914813215)” by Daniel Ramirez from Honolulu, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Checking_out_the_ocean_under_the_stars._(4914813215).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Daniel Ramirez from Honolulu, USA — https://www.flickr.com/people/21442511@N08
-  - Dated: 2010-08-16 21:25
-  - 1600×1063px, 189 KB, shot 215 m from the spot
-  - Description: Checking out the ocean under the stars.
-  - Match: score 17 via coastal-in-title, name:ala+moana, kw:beach+ocean, geo:215m, w>=1000, landscape
-- **`us-hi-ala-moana-beach-2.png`** — “SXB1 2013mar22” by Enemenemu, Wikimedia Commons, CC BY-SA 3.0
+- **`us-hi-ala-moana-beach-1.png`** — “SXB1 2013mar22” by Enemenemu, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:SXB1_2013mar22.png
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Enemenemu — //commons.wikimedia.org/wiki/User:Enemenemu
@@ -159,7 +151,7 @@
   - 1600×1200px, 1785 KB, shot 262 m from the spot
   - Description: Sea-Based X-Band Radar SBX-1 leaving Pearl Harbor on March 22, 2013
   - Match: score 16 via name:ala+moana, kw:beach+sea+mar, geo:262m, w>=1000, landscape
-- **`us-hi-ala-moana-beach-3.jpg`** — “Sunset @ Ala Moana Beach Park (6734874091)” by Daniel Ramirez from Honolulu, USA, Wikimedia Commons, CC BY 2.0
+- **`us-hi-ala-moana-beach-2.jpg`** — “Sunset @ Ala Moana Beach Park (6734874091)” by Daniel Ramirez from Honolulu, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sunset_@_Ala_Moana_Beach_Park_(6734874091).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Daniel Ramirez from Honolulu, USA — https://www.flickr.com/people/21442511@N08
@@ -167,6 +159,14 @@
   - 1600×1200px, 484 KB, shot 521 m from the spot
   - Description: Sunset @ Ala Moana Beach Park
   - Match: score 16 via coastal-in-title, name:ala+moana, kw:beach+sunset, geo:521m, w>=1000, landscape
+- **`us-hi-ala-moana-beach-3.jpg`** ✗ **not a coastal photo** — “Checking out the ocean under the stars. (4914813215)” by Daniel Ramirez from Honolulu, USA, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Checking_out_the_ocean_under_the_stars._(4914813215).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Daniel Ramirez from Honolulu, USA — https://www.flickr.com/people/21442511@N08
+  - Dated: 2010-08-16 21:25
+  - 1600×1063px, 189 KB, shot 215 m from the spot
+  - Description: Checking out the ocean under the stars.
+  - Match: score 17 via coastal-in-title, name:ala+moana, kw:beach+ocean, geo:215m, w>=1000, landscape
 
 ## Alan Davis Beach
 
@@ -267,7 +267,7 @@
   - 1600×1200px, 1011 KB
   - Description: Chenopodium oahuense (Aweoweo) Outplantings and Laysan Albatrosses at Turtle Beach Sand Island, Midway Atoll, Hawaii. March 26, 2015 #150326-1616 Image Use Policy
   - Match: score 11 via coastal-in-title, name:aweoweo, kw:beach+sand+mar, w>=1000, landscape
-- **`us-hi-aweoweo-beach-2.jpg`** — “Starr-150329-0242-Chenopodium oahuense-habit-Turtle Beach Sand Island-Midway Atoll (25244029166)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
+- **`us-hi-aweoweo-beach-2.jpg`** ✗ **not a coastal photo** — “Starr-150329-0242-Chenopodium oahuense-habit-Turtle Beach Sand Island-Midway Atoll (25244029166)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
   - Source page: https://commons.wikimedia.org/wiki/File:Starr-150329-0242-Chenopodium_oahuense-habit-Turtle_Beach_Sand_Island-Midway_Atoll_(25244029166).jpg
   - Licence: CC BY 3.0 us · attribution required
   - Author: Forest and Kim Starr — https://www.flickr.com/people/97499887@N06
@@ -275,7 +275,7 @@
   - 1600×1200px, 1098 KB
   - Description: Chenopodium oahuense (Aweoweo) Habit at Turtle Beach Sand Island, Midway Atoll, Hawaii. March 29, 2015 #150329-0242 Image Use Policy
   - Match: score 11 via coastal-in-title, name:aweoweo, kw:beach+sand+mar, w>=1000, landscape
-- **`us-hi-aweoweo-beach-3.jpg`** — “Starr-150329-0941-Chenopodium oahuense-outplantings and Laysan Albatrosses-Turtle Beach Sand Island-Midway Atoll (25244258256)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
+- **`us-hi-aweoweo-beach-3.jpg`** ✗ **not a coastal photo** — “Starr-150329-0941-Chenopodium oahuense-outplantings and Laysan Albatrosses-Turtle Beach Sand Island-Midway Atoll (25244258256)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
   - Source page: https://commons.wikimedia.org/wiki/File:Starr-150329-0941-Chenopodium_oahuense-outplantings_and_Laysan_Albatrosses-Turtle_Beach_Sand_Island-Midway_Atoll_(25244258256).jpg
   - Licence: CC BY 3.0 us · attribution required
   - Author: Forest and Kim Starr — https://www.flickr.com/people/97499887@N06
@@ -288,7 +288,7 @@
 
 `osm:way/358650609` · 21.8795991, -159.4718979 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-hi-baby-beach-1.jpg`** — “Baby fur seal at the most populated seal beach in Hawaii” by Crystal Stevenson, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-baby-beach-1.jpg`** ✗ **not a coastal photo** — “Baby fur seal at the most populated seal beach in Hawaii” by Crystal Stevenson, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Baby_fur_seal_at_the_most_populated_seal_beach_in_Hawaii.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Crystal Stevenson — //commons.wikimedia.org/w/index.php?title=User:Crystal_Stevenson&amp;action=edit&amp;redlink=1
@@ -296,7 +296,7 @@
   - 1600×1200px, 430 KB
   - Description: Baby fur seal at the most populated seal beach in Hawaii
   - Match: score 10 via coastal-in-title, name:baby, kw:beach+sea, w>=1000, landscape
-- **`us-hi-baby-beach-2.jpg`** — “Starr-210412-9278-Sesuvium portulacastrum-beach with nice shells and assorted limu possibly Caulerpa racemosa and Galaxaura fastigiata and others-Baby Beach Paia-Maui” by Forest and Kim Starr, Wikimedia Commons, CC BY 2.0
+- **`us-hi-baby-beach-2.jpg`** ✗ **not a coastal photo** — “Starr-210412-9278-Sesuvium portulacastrum-beach with nice shells and assorted limu possibly Caulerpa racemosa and Galaxaura fastigiata and others-Baby Beach Paia-Maui” by Forest and Kim Starr, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Starr-210412-9278-Sesuvium_portulacastrum-beach_with_nice_shells_and_assorted_limu_possibly_Caulerpa_racemosa_and_Galaxaura_fastigiata_and_others-Baby_Beach_Paia-Maui.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Forest and Kim Starr
@@ -304,7 +304,7 @@
   - 1600×1200px, 1484 KB
   - Description: Sesuvium portulacastrum (Akulikuli, sea purslane) Beach with nice shells and assorted limu possibly Caulerpa racemosa and Galaxaura fastigiata and others at Baby Beach Paia, Maui, Hawaii. April 12, 2021 210412-9278 - Image Use Policy
   - Match: score 10 via coastal-in-title, name:baby, kw:beach+sea, w>=1000, landscape
-- **`us-hi-baby-beach-3.jpg`** — “Starr-200722-7860-Cocos nucifera-closed Hyatt resort during Covid pond and birds being maintained baby duck-Kaanapali Beach Walk-Maui (50336237351)” by Forest and Kim Starr, Wikimedia Commons, CC BY 2.0
+- **`us-hi-baby-beach-3.jpg`** ✗ **not a coastal photo** — “Starr-200722-7860-Cocos nucifera-closed Hyatt resort during Covid pond and birds being maintained baby duck-Kaanapali Beach Walk-Maui (50336237351)” by Forest and Kim Starr, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Starr-200722-7860-Cocos_nucifera-closed_Hyatt_resort_during_Covid_pond_and_birds_being_maintained_baby_duck-Kaanapali_Beach_Walk-Maui_(50336237351).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Forest and Kim Starr — https://www.flickr.com/people/97499887@N06
@@ -317,7 +317,7 @@
 
 `osm:way/287216568` · 20.8823469, -156.6863725 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-hi-baby-beach-216568-1.jpg`** — “Baby fur seal at the most populated seal beach in Hawaii” by Crystal Stevenson, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-baby-beach-216568-1.jpg`** ✗ **not a coastal photo** — “Baby fur seal at the most populated seal beach in Hawaii” by Crystal Stevenson, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Baby_fur_seal_at_the_most_populated_seal_beach_in_Hawaii.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Crystal Stevenson — //commons.wikimedia.org/w/index.php?title=User:Crystal_Stevenson&amp;action=edit&amp;redlink=1
@@ -325,7 +325,7 @@
   - 1600×1200px, 430 KB
   - Description: Baby fur seal at the most populated seal beach in Hawaii
   - Match: score 10 via coastal-in-title, name:baby, kw:beach+sea, w>=1000, landscape
-- **`us-hi-baby-beach-216568-2.jpg`** — “Starr-210412-9278-Sesuvium portulacastrum-beach with nice shells and assorted limu possibly Caulerpa racemosa and Galaxaura fastigiata and others-Baby Beach Paia-Maui” by Forest and Kim Starr, Wikimedia Commons, CC BY 2.0
+- **`us-hi-baby-beach-216568-2.jpg`** ✗ **not a coastal photo** — “Starr-210412-9278-Sesuvium portulacastrum-beach with nice shells and assorted limu possibly Caulerpa racemosa and Galaxaura fastigiata and others-Baby Beach Paia-Maui” by Forest and Kim Starr, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Starr-210412-9278-Sesuvium_portulacastrum-beach_with_nice_shells_and_assorted_limu_possibly_Caulerpa_racemosa_and_Galaxaura_fastigiata_and_others-Baby_Beach_Paia-Maui.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Forest and Kim Starr
@@ -333,7 +333,7 @@
   - 1600×1200px, 1484 KB
   - Description: Sesuvium portulacastrum (Akulikuli, sea purslane) Beach with nice shells and assorted limu possibly Caulerpa racemosa and Galaxaura fastigiata and others at Baby Beach Paia, Maui, Hawaii. April 12, 2021 210412-9278 - Image Use Policy
   - Match: score 10 via coastal-in-title, name:baby, kw:beach+sea, w>=1000, landscape
-- **`us-hi-baby-beach-216568-3.jpg`** — “Starr-200722-7860-Cocos nucifera-closed Hyatt resort during Covid pond and birds being maintained baby duck-Kaanapali Beach Walk-Maui (50336237351)” by Forest and Kim Starr, Wikimedia Commons, CC BY 2.0
+- **`us-hi-baby-beach-216568-3.jpg`** ✗ **not a coastal photo** — “Starr-200722-7860-Cocos nucifera-closed Hyatt resort during Covid pond and birds being maintained baby duck-Kaanapali Beach Walk-Maui (50336237351)” by Forest and Kim Starr, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Starr-200722-7860-Cocos_nucifera-closed_Hyatt_resort_during_Covid_pond_and_birds_being_maintained_baby_duck-Kaanapali_Beach_Walk-Maui_(50336237351).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Forest and Kim Starr — https://www.flickr.com/people/97499887@N06
@@ -375,7 +375,7 @@
 
 `osm:relation/1576102` · 22.0683788, -159.7765662
 
-- **`us-hi-barking-sands-beach-1.jpg`** — “Polihale Beach (327947733)” by Bryce Edwards from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
+- **`us-hi-barking-sands-beach-1.jpg`** ✗ **not a coastal photo** — “Polihale Beach (327947733)” by Bryce Edwards from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Polihale_Beach_(327947733).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Bryce Edwards from San Jose, CA, USA — https://www.flickr.com/people/98185064@N00
@@ -404,7 +404,7 @@
   - 1600×871px, 588 KB, shot 302 m from the spot
   - Description: One of the most outstanding beaches in Maui. Big Beach is well over a half a mile long, and is also uncharacteristically wide by Maui standards. That means loads of real estate to stake out your claim, and this beach, while always drawing lots of people – is never so crowded as to be packed. Big Beach is not the official name of this beach – but it is the name which it is most well known by. Other names for this beach are: Makena Beach and Oneloa Beach Big Beach has a significant on-shore break that can be downright brutal when there is a large south swell. This is never a beach that is safe f
   - Match: score 14 via coastal-in-title, name:big, kw:beach+shore+break+swell, geo:302m, w>=1000, landscape
-- **`us-hi-big-beach-3.jpg`** — “Current and Shorebreak warning, Makena Big Beach Maui Hawaii (44826079675)” by dronepicr, Wikimedia Commons, CC BY 2.0
+- **`us-hi-big-beach-3.jpg`** ✗ **not a coastal photo** — “Current and Shorebreak warning, Makena Big Beach Maui Hawaii (44826079675)” by dronepicr, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Current_and_Shorebreak_warning,_Makena_Big_Beach_Maui_Hawaii_(44826079675).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: dronepicr — https://www.flickr.com/people/132646954@N02
@@ -454,15 +454,7 @@
   - 1600×973px, 966 KB, shot 112 m from the spot
   - Description: Blacksand beach in the Waiʻanapanapa State Park located at the end of Waiʻanapanapa Road off Hana Highway
   - Match: score 13 via coastal-in-title, name:blacksand, kw:beach+sand, geo:112m, w>=1000, landscape
-- **`us-hi-blacksand-beach-2.jpg`** — “Garbage Black sand beach Maui Hawaii Road to Hana (45690820912)” by dronepicr, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Garbage_Black_sand_beach_Maui_Hawaii_Road_to_Hana_(45690820912).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: dronepicr — https://www.flickr.com/people/132646954@N02
-  - Dated: 2018-08-12 17:34
-  - 1600×1067px, 843 KB, shot 14 m from the spot
-  - Description: Garbage Black sand beach Maui Hawaii Road to Hana
-  - Match: score 10 via coastal-in-title, kw:beach+sand+mar, geo:14m, w>=1000, landscape
-- **`us-hi-blacksand-beach-3.jpg`** — “Sea Cave (49611302206)” by Kirt Edblom from Albany, Oregon, United States, Wikimedia Commons, CC BY-SA 2.0
+- **`us-hi-blacksand-beach-2.jpg`** — “Sea Cave (49611302206)” by Kirt Edblom from Albany, Oregon, United States, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sea_Cave_(49611302206).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Kirt Edblom from Albany, Oregon, United States — https://www.flickr.com/people/27190564@N02
@@ -470,20 +462,20 @@
   - 1600×1067px, 671 KB, shot 37 m from the spot
   - Description: One of the sea caves at Waiʻānapanapa State Park located at the end of Honokalani Beach (Black sand beach). Published at: <a href=" https://www.skyscrapercity.com/threads/the-islands-of-hawaii-open-thread.1592018/page-597#post-178119474 " rel="noreferrer nofollow">www.skyscrapercity.com/threads/the-islands-of-hawaii-open...</a>
   - Match: score 10 via coastal-in-title, kw:beach+sea+sand, geo:37m, w>=1000, landscape
+- **`us-hi-blacksand-beach-3.jpg`** ✗ **not a coastal photo** — “Garbage Black sand beach Maui Hawaii Road to Hana (45690820912)” by dronepicr, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Garbage_Black_sand_beach_Maui_Hawaii_Road_to_Hana_(45690820912).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: dronepicr — https://www.flickr.com/people/132646954@N02
+  - Dated: 2018-08-12 17:34
+  - 1600×1067px, 843 KB, shot 14 m from the spot
+  - Description: Garbage Black sand beach Maui Hawaii Road to Hana
+  - Match: score 10 via coastal-in-title, kw:beach+sand+mar, geo:14m, w>=1000, landscape
 
 ## Brennecke Beach
 
 `osm:relation/14880248` · 21.8730469, -159.4513348 · lifeguard: no
 
-- **`us-hi-brennecke-beach-1.jpg`** — “2 13 Brennekes and Poipu Beach 2018-02-13 004-LR (40000681085)” by James Abbott from New Westminster, B.C., Canada, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:2_13_Brennekes_and_Poipu_Beach_2018-02-13_004-LR_(40000681085).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: James Abbott from New Westminster, B.C., Canada — https://www.flickr.com/people/64667184@N02
-  - Dated: Taken on 13 February 2018, 17:37
-  - 1600×1067px, 601 KB, shot 17 m from the spot
-  - Description: 2 13 Brennekes and Poipu Beach 2018-02-13 004-LR
-  - Match: score 9 via coastal-in-title, kw:beach+sand, geo:17m, w>=1000, landscape
-- **`us-hi-brennecke-beach-2.jpg`** — “Poipu Coast, Koloa (503223) (17190937522)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
+- **`us-hi-brennecke-beach-1.jpg`** — “Poipu Coast, Koloa (503223) (17190937522)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Poipu_Coast,_Koloa_(503223)_(17190937522).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Robert Linsdell from St. Andrews, Canada — https://www.flickr.com/people/92487715@N03
@@ -491,7 +483,7 @@
   - 1600×901px, 504 KB, shot 180 m from the spot
   - Description: Poipu Coast, Koloa, Kauai, Hawaii, United States
   - Match: score 9 via coastal-in-title, kw:beach+coast, geo:180m, w>=1000, landscape
-- **`us-hi-brennecke-beach-3.jpg`** — “Poipu Coast, Koloa (503061) (16846345007)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
+- **`us-hi-brennecke-beach-2.jpg`** — “Poipu Coast, Koloa (503061) (16846345007)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Poipu_Coast,_Koloa_(503061)_(16846345007).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Robert Linsdell from St. Andrews, Canada — https://www.flickr.com/people/92487715@N03
@@ -499,6 +491,14 @@
   - 1600×900px, 531 KB, shot 180 m from the spot
   - Description: Poipu Coast, Koloa, Kauai, Hawaii, United States
   - Match: score 9 via coastal-in-title, kw:beach+coast, geo:180m, w>=1000, landscape
+- **`us-hi-brennecke-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “2 13 Brennekes and Poipu Beach 2018-02-13 004-LR (40000681085)” by James Abbott from New Westminster, B.C., Canada, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:2_13_Brennekes_and_Poipu_Beach_2018-02-13_004-LR_(40000681085).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: James Abbott from New Westminster, B.C., Canada — https://www.flickr.com/people/64667184@N02
+  - Dated: Taken on 13 February 2018, 17:37
+  - 1600×1067px, 601 KB, shot 17 m from the spot
+  - Description: 2 13 Brennekes and Poipu Beach 2018-02-13 004-LR
+  - Match: score 9 via coastal-in-title, kw:beach+sand, geo:17m, w>=1000, landscape
 
 ## Chuns Reef Beach
 
@@ -541,7 +541,7 @@
   - 1600×1031px, 1038 KB, shot 697 m from the spot
   - Description: Algae Covered Rock
   - Match: score 9 via coastal-in-title, kw:beach+cove+rocks, geo:697m, w>=1000, landscape
-- **`us-hi-cromwell-s-beach-2.jpg`** — “Diamond Head Lighthouse (2853612051)” by Cliff from Arlington, Virginia, USA, Wikimedia Commons, CC BY 2.0
+- **`us-hi-cromwell-s-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Diamond Head Lighthouse (2853612051)” by Cliff from Arlington, Virginia, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Diamond_Head_Lighthouse_(2853612051).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Cliff from Arlington, Virginia, USA — https://www.flickr.com/people/28567825@N03
@@ -549,7 +549,7 @@
   - 1600×1066px, 363 KB, shot 860 m from the spot
   - Description: The commercially-powered light is backed up by a battery-powered light equipped to switch on in case of power outage. An electronic sensing device also monitors the main light and activates the backup light in case of any type of failure. The clocks automatically turn on the equipment at sunset and turn it off at sunrise. A photoelectric cell alarm control system was formerly installed, which caused a bell to ring in the base of the tower and also in the nearby dwelling when the light failed. The system was removed during the war years. Built 147 feet above sea level, Diamond Head Light can be
   - Match: score 9 via coastal-in-title, kw:sea+lighthouse+sunset+sunrise, geo:860m, w>=1000, landscape
-- **`us-hi-cromwell-s-beach-3.jpg`** — “Diamond Head Lighthouse (2853611809)” by Cliff from Arlington, Virginia, USA, Wikimedia Commons, CC BY 2.0
+- **`us-hi-cromwell-s-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Diamond Head Lighthouse (2853611809)” by Cliff from Arlington, Virginia, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Diamond_Head_Lighthouse_(2853611809).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Cliff from Arlington, Virginia, USA — https://www.flickr.com/people/28567825@N03
@@ -562,15 +562,7 @@
 
 `osm:way/201863713` · 22.1144661, -159.2964905
 
-- **`us-hi-donkey-beach-1.jpg`** — Ezels op het strand, vermoedelijk bij La Rochelle, RP-F-F01162-GM — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Ezels_op_het_strand,_vermoedelijk_bij_La_Rochelle,_RP-F-F01162-GM.jpg
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: Rijksmuseum
-  - Dated: ca. 1905 - ca. 1910
-  - 1600×1345px, 91 KB
-  - Description: Identificatie Titel(s): Ezels op het strand, vermoedelijk bij La Rochelle Objecttype: foto Objectnummer: RP-F-F01162-GM Omschrijving: Onderdeel van Fotoalbum van een Franse amateurfotograaf met bezienswaardigheden in Frankrijk, Zwitserland en Italië. Vervaardiging Vervaardiger: fotograaf: anoniem Plaats vervaardiging: La Rochelle Datering: ca. 1905 - ca. 1910 Fysieke kenmerken: daglichtgelatinezilverdruk Materiaal: papier fotopapier Techniek: daglichtgelatinezilverdruk Afmetingen: foto: h 70 mm × b 83 mm Onderwerp Wat: donkeys, beach (as place of recreation) Waar: La Rochelle Verwerving en rec
-  - Match: score 9.5 via coastal-in-title, name:donkey, kw:beach+pier, w>=1000
-- **`us-hi-donkey-beach-2.jpg`** — “Kauai Multiuse Path and Coast, Kapaa - panoramio (2)” by Bob Linsdell, Wikimedia Commons, CC BY 3.0
+- **`us-hi-donkey-beach-1.jpg`** — “Kauai Multiuse Path and Coast, Kapaa - panoramio (2)” by Bob Linsdell, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Kauai_Multiuse_Path_and_Coast,_Kapaa_-_panoramio_(2).jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Bob Linsdell — https://web.archive.org/web/20161102143045/http://www.panoramio.com/user/7508506?with_photo_id=117742850
@@ -578,7 +570,7 @@
   - 1600×900px, 666 KB, shot 2843 m from the spot
   - Description: Kauai Multiuse Path and Coast, Kapaa
   - Match: score 5.5 via coastal-in-title, kw:coast, geo:2843m, w>=1000, landscape
-- **`us-hi-donkey-beach-3.jpg`** — “Kealia Beach Kauai Hawaii (45554020174)” by dronepicr, Wikimedia Commons, CC BY 2.0
+- **`us-hi-donkey-beach-2.jpg`** — “Kealia Beach Kauai Hawaii (45554020174)” by dronepicr, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Kealia_Beach_Kauai_Hawaii_(45554020174).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: dronepicr — https://www.flickr.com/people/132646954@N02
@@ -586,6 +578,14 @@
   - 1600×1067px, 422 KB, shot 1964 m from the spot
   - Description: Kealia Beach Kauai Hawaii
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:1964m, w>=1000, landscape
+- **`us-hi-donkey-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Ezels op het strand, vermoedelijk bij La Rochelle, RP-F-F01162-GM — CC0 (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Ezels_op_het_strand,_vermoedelijk_bij_La_Rochelle,_RP-F-F01162-GM.jpg
+  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
+  - Author: Rijksmuseum
+  - Dated: ca. 1905 - ca. 1910
+  - 1600×1345px, 91 KB
+  - Description: Identificatie Titel(s): Ezels op het strand, vermoedelijk bij La Rochelle Objecttype: foto Objectnummer: RP-F-F01162-GM Omschrijving: Onderdeel van Fotoalbum van een Franse amateurfotograaf met bezienswaardigheden in Frankrijk, Zwitserland en Italië. Vervaardiging Vervaardiger: fotograaf: anoniem Plaats vervaardiging: La Rochelle Datering: ca. 1905 - ca. 1910 Fysieke kenmerken: daglichtgelatinezilverdruk Materiaal: papier fotopapier Techniek: daglichtgelatinezilverdruk Afmetingen: foto: h 70 mm × b 83 mm Onderwerp Wat: donkeys, beach (as place of recreation) Waar: La Rochelle Verwerving en rec
+  - Match: score 9.5 via coastal-in-title, name:donkey, kw:beach+pier, w>=1000
 
 ## Duke Paoa Kahanamoku Beach Park
 
@@ -678,23 +678,7 @@
 
 `osm:way/1256561089` · 21.3174343, -157.9582822 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-hi-fort-kamehameha-beach-1.jpg`** — “NAVFAC Hawaii Seabee Reenlists - Romero (40529261574)” by NAVFAC, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:NAVFAC_Hawaii_Seabee_Reenlists_-_Romero_(40529261574).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: NAVFAC — https://www.flickr.com/people/39845951@N05
-  - Dated: 2018-03-30 10:04
-  - 1600×1067px, 1866 KB, shot 646 m from the spot
-  - Description: PEARL HARBOR-HICKAM, Hawaii (March 30, 2018) Construction Electrician Second Class (Expeditionary Warfare) Johnathan Romero reenlisted, with assistance from Lt. Humberto Baeza, for four more years in the Navy, March 30, at Joint Base Pearl Harbor-Hickam. (U.S. Navy photo by SW2 (SCW) Kyle Kastlandersen, NAVFAC Hawaii Public Affairs/Released)
-  - Match: score 8 via coastal-in-title, kw:sea+mar, geo:646m, w>=1000, landscape
-- **`us-hi-fort-kamehameha-beach-2.jpg`** — “NAVFAC Hawaii Seabee Reenlists - Romero (40529263324)” by NAVFAC, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:NAVFAC_Hawaii_Seabee_Reenlists_-_Romero_(40529263324).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: NAVFAC — https://www.flickr.com/people/39845951@N05
-  - Dated: 2018-03-30 10:04
-  - 1600×2400px, 1918 KB, shot 643 m from the spot
-  - Description: PEARL HARBOR-HICKAM, Hawaii (March 30, 2018) Construction Electrician Second Class (Expeditionary Warfare) Johnathan Romero reenlisted, with assistance from Lt. Humberto Baeza, for four more years in the Navy, March 30, at Joint Base Pearl Harbor-Hickam. (U.S. Navy photo by SW2 (SCW) Kyle Kastlandersen, NAVFAC Hawaii Public Affairs/Released)
-  - Match: score 7.5 via coastal-in-title, kw:sea+mar, geo:643m, w>=1000
-- **`us-hi-fort-kamehameha-beach-3.jpg`** — “Hickam Coast, Honolulu (503259) (17072828388)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
+- **`us-hi-fort-kamehameha-beach-1.jpg`** — “Hickam Coast, Honolulu (503259) (17072828388)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hickam_Coast,_Honolulu_(503259)_(17072828388).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Robert Linsdell from St. Andrews, Canada — https://www.flickr.com/people/92487715@N03
@@ -702,6 +686,22 @@
   - 1600×899px, 521 KB, shot 848 m from the spot
   - Description: Hickam Coast, Honolulu, Oahu, Hawaii, United States
   - Match: score 6.5 via coastal-in-title, kw:coast, geo:848m, w>=1000, landscape
+- **`us-hi-fort-kamehameha-beach-2.jpg`** ✗ **not a coastal photo** — “NAVFAC Hawaii Seabee Reenlists - Romero (40529261574)” by NAVFAC, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:NAVFAC_Hawaii_Seabee_Reenlists_-_Romero_(40529261574).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: NAVFAC — https://www.flickr.com/people/39845951@N05
+  - Dated: 2018-03-30 10:04
+  - 1600×1067px, 1866 KB, shot 646 m from the spot
+  - Description: PEARL HARBOR-HICKAM, Hawaii (March 30, 2018) Construction Electrician Second Class (Expeditionary Warfare) Johnathan Romero reenlisted, with assistance from Lt. Humberto Baeza, for four more years in the Navy, March 30, at Joint Base Pearl Harbor-Hickam. (U.S. Navy photo by SW2 (SCW) Kyle Kastlandersen, NAVFAC Hawaii Public Affairs/Released)
+  - Match: score 8 via coastal-in-title, kw:sea+mar, geo:646m, w>=1000, landscape
+- **`us-hi-fort-kamehameha-beach-3.jpg`** ✗ **not a coastal photo** — “NAVFAC Hawaii Seabee Reenlists - Romero (40529263324)” by NAVFAC, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:NAVFAC_Hawaii_Seabee_Reenlists_-_Romero_(40529263324).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: NAVFAC — https://www.flickr.com/people/39845951@N05
+  - Dated: 2018-03-30 10:04
+  - 1600×2400px, 1918 KB, shot 643 m from the spot
+  - Description: PEARL HARBOR-HICKAM, Hawaii (March 30, 2018) Construction Electrician Second Class (Expeditionary Warfare) Johnathan Romero reenlisted, with assistance from Lt. Humberto Baeza, for four more years in the Navy, March 30, at Joint Base Pearl Harbor-Hickam. (U.S. Navy photo by SW2 (SCW) Kyle Kastlandersen, NAVFAC Hawaii Public Affairs/Released)
+  - Match: score 7.5 via coastal-in-title, kw:sea+mar, geo:643m, w>=1000
 
 ## Gillin's Beach
 
@@ -723,7 +723,7 @@
   - 1600×1200px, 1031 KB, shot 556 m from the spot
   - Description: The rock and sand of the beach looked like a scale model of alpine terrain… here at Maha'ulepo Beach
   - Match: score 8 via coastal-in-title, kw:beach+sand, geo:556m, w>=1000, landscape
-- **`us-hi-gillin-s-beach-3.jpg`** — “Don't Dream its Over (14270224672)” by Sheila Sund from Salem, United States, Wikimedia Commons, CC BY 2.0
+- **`us-hi-gillin-s-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Don't Dream its Over (14270224672)” by Sheila Sund from Salem, United States, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Don%27t_Dream_its_Over_(14270224672).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Sheila Sund from Salem, United States — https://www.flickr.com/people/90692748@N04
@@ -765,23 +765,7 @@
 
 `osm:way/112440704` · 22.2207429, -159.5655804
 
-- **`us-hi-ha-ena-beach-440704-1.jpg`** — “Nut on the Beach (8717286156)” by cogdogblog, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Nut_on_the_Beach_(8717286156).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: cogdogblog — https://www.flickr.com/people/37996646802@N01
-  - Dated: 2013-05-06 17:56:38
-  - 1600×1199px, 440 KB, shot 77 m from the spot
-  - Description: Hawaii at 5-0
-  - Match: score 11.5 via coastal-in-title, name:ena, kw:beach, geo:77m, w>=1000, landscape
-- **`us-hi-ha-ena-beach-440704-2.jpg`** — “Ha'ena Beach Dry Cave, Kuhio Hwy, Kilauea - panoramio” by Bob Linsdell, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Ha%27ena_Beach_Dry_Cave,_Kuhio_Hwy,_Kilauea_-_panoramio.jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: Bob Linsdell — https://web.archive.org/web/20161102003259/http://www.panoramio.com/user/7508506?with_photo_id=117742898
-  - Dated: 14 March 2015 (original upload date)
-  - 1600×901px, 823 KB, shot 166 m from the spot
-  - Description: Ha'ena Beach Dry Cave, Kuhio Hwy, Kilauea
-  - Match: score 11.5 via coastal-in-title, name:ena, kw:beach, geo:166m, w>=1000, landscape
-- **`us-hi-ha-ena-beach-440704-3.jpg`** — “2021-10-08 11 43 25 View north from Hāʻena Beach in Hāʻena, Kauai, Hawaii” by Famartin, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-ha-ena-beach-440704-1.jpg`** — “2021-10-08 11 43 25 View north from Hāʻena Beach in Hāʻena, Kauai, Hawaii” by Famartin, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:2021-10-08_11_43_25_View_north_from_H%C4%81%CA%BBena_Beach_in_H%C4%81%CA%BBena,_Kauai,_Hawaii.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
@@ -789,6 +773,22 @@
   - 1600×1200px, 665 KB, shot 76 m from the spot
   - Description: View north from Hāʻena Beach in Hāʻena, Kauai, Hawaii
   - Match: score 11.5 via coastal-in-title, name:ena, kw:beach, geo:76m, w>=1000, landscape
+- **`us-hi-ha-ena-beach-440704-2.jpg`** ⚠︎ *context, not the coast itself* — “Nut on the Beach (8717286156)” by cogdogblog, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Nut_on_the_Beach_(8717286156).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: cogdogblog — https://www.flickr.com/people/37996646802@N01
+  - Dated: 2013-05-06 17:56:38
+  - 1600×1199px, 440 KB, shot 77 m from the spot
+  - Description: Hawaii at 5-0
+  - Match: score 11.5 via coastal-in-title, name:ena, kw:beach, geo:77m, w>=1000, landscape
+- **`us-hi-ha-ena-beach-440704-3.jpg`** ✗ **not a coastal photo** — “Ha'ena Beach Dry Cave, Kuhio Hwy, Kilauea - panoramio” by Bob Linsdell, Wikimedia Commons, CC BY 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Ha%27ena_Beach_Dry_Cave,_Kuhio_Hwy,_Kilauea_-_panoramio.jpg
+  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
+  - Author: Bob Linsdell — https://web.archive.org/web/20161102003259/http://www.panoramio.com/user/7508506?with_photo_id=117742898
+  - Dated: 14 March 2015 (original upload date)
+  - 1600×901px, 823 KB, shot 166 m from the spot
+  - Description: Ha'ena Beach Dry Cave, Kuhio Hwy, Kilauea
+  - Match: score 11.5 via coastal-in-title, name:ena, kw:beach, geo:166m, w>=1000, landscape
 
 ## Hāʻula Beach
 
@@ -860,21 +860,21 @@
   - 1600×1200px, 845 KB
   - Description: Vigna marina (Beach pea, nanea) Habitat at Halawa Bay, Molokai, Hawaii. May 17, 2005 " rel="nofollow">#050517-1571 - <a href=" https://www.flickr.com/people/starr-environmental/ ">Image Use Policy</a>
   - Match: score 11 via coastal-in-title, name:halawa, kw:beach+mar+bay, w>=1000, landscape
-- **`us-hi-halawa-beach-2.jpg`** — “Starr-050517-1587-Vigna marina-habit-Halawa Bay-Molokai (24645418932)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
-  - Source page: https://commons.wikimedia.org/wiki/File:Starr-050517-1587-Vigna_marina-habit-Halawa_Bay-Molokai_(24645418932).jpg
-  - Licence: CC BY 3.0 us · attribution required
-  - Author: Forest and Kim Starr — https://www.flickr.com/people/97499887@N06
-  - Dated: 2005-06-17 13:45
-  - 1600×1200px, 1360 KB
-  - Description: Vigna marina (Beach pea, nanea) Habit at Halawa Bay, Molokai, Hawaii. May 17, 2005 " rel="nofollow">#050517-1587 - <a href=" https://www.flickr.com/people/starr-environmental/ ">Image Use Policy</a>
-  - Match: score 11 via coastal-in-title, name:halawa, kw:beach+mar+bay, w>=1000, landscape
-- **`us-hi-halawa-beach-3.jpg`** — “Starr-050517-1591-Vigna marina-habit-Halawa Bay-Molokai (24763227855)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
+- **`us-hi-halawa-beach-2.jpg`** — “Starr-050517-1591-Vigna marina-habit-Halawa Bay-Molokai (24763227855)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
   - Source page: https://commons.wikimedia.org/wiki/File:Starr-050517-1591-Vigna_marina-habit-Halawa_Bay-Molokai_(24763227855).jpg
   - Licence: CC BY 3.0 us · attribution required
   - Author: Forest and Kim Starr — https://www.flickr.com/people/97499887@N06
   - Dated: 2005-06-17 13:46
   - 1600×1200px, 957 KB
   - Description: Vigna marina (Beach pea, nanea) Habit at Halawa Bay, Molokai, Hawaii. May 17, 2005 " rel="nofollow">#050517-1591 - <a href=" https://www.flickr.com/people/starr-environmental/ ">Image Use Policy</a>
+  - Match: score 11 via coastal-in-title, name:halawa, kw:beach+mar+bay, w>=1000, landscape
+- **`us-hi-halawa-beach-3.jpg`** ✗ **not a coastal photo** — “Starr-050517-1587-Vigna marina-habit-Halawa Bay-Molokai (24645418932)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
+  - Source page: https://commons.wikimedia.org/wiki/File:Starr-050517-1587-Vigna_marina-habit-Halawa_Bay-Molokai_(24645418932).jpg
+  - Licence: CC BY 3.0 us · attribution required
+  - Author: Forest and Kim Starr — https://www.flickr.com/people/97499887@N06
+  - Dated: 2005-06-17 13:45
+  - 1600×1200px, 1360 KB
+  - Description: Vigna marina (Beach pea, nanea) Habit at Halawa Bay, Molokai, Hawaii. May 17, 2005 " rel="nofollow">#050517-1587 - <a href=" https://www.flickr.com/people/starr-environmental/ ">Image Use Policy</a>
   - Match: score 11 via coastal-in-title, name:halawa, kw:beach+mar+bay, w>=1000, landscape
 
 ## Haleʻiwa Beach
@@ -889,42 +889,26 @@
   - 1600×1200px, 619 KB, shot 89 m from the spot
   - Description: The sunset at Haleiwa on the North Shore of Oahu
   - Match: score 18 via coastal-in-title, name:hale+iwa, kw:beach+shore+sunset, geo:89m, w>=1000, landscape
-- **`us-hi-hale-iwa-beach-2.jpg`** — “Haleiwa Beach Park (27239919294)” by Thomas Woodtli from Zürich, Switzerland, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Haleiwa_Beach_Park_(27239919294).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Thomas Woodtli from Zürich, Switzerland — https://www.flickr.com/people/21876032@N02
-  - Dated: 2016-06-22 13:26
-  - 1600×1200px, 968 KB, shot 291 m from the spot
-  - Match: score 15.5 via coastal-in-title, name:hale+iwa, kw:beach, geo:291m, w>=1000, landscape
-- **`us-hi-hale-iwa-beach-3.jpg`** — “Haleiwa Beach (27239854774)” by Thomas Woodtli from Zürich, Switzerland, Wikimedia Commons, CC BY-SA 2.0
+- **`us-hi-hale-iwa-beach-2.jpg`** — “Haleiwa Beach (27239854774)” by Thomas Woodtli from Zürich, Switzerland, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Haleiwa_Beach_(27239854774).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Thomas Woodtli from Zürich, Switzerland — https://www.flickr.com/people/21876032@N02
   - Dated: 2016-06-22 13:24
   - 1600×1200px, 868 KB, shot 397 m from the spot
   - Match: score 15.5 via coastal-in-title, name:hale+iwa, kw:beach, geo:397m, w>=1000, landscape
+- **`us-hi-hale-iwa-beach-3.jpg`** ✗ **not a coastal photo** — “Haleiwa Beach Park (27239919294)” by Thomas Woodtli from Zürich, Switzerland, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Haleiwa_Beach_Park_(27239919294).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Thomas Woodtli from Zürich, Switzerland — https://www.flickr.com/people/21876032@N02
+  - Dated: 2016-06-22 13:26
+  - 1600×1200px, 968 KB, shot 291 m from the spot
+  - Match: score 15.5 via coastal-in-title, name:hale+iwa, kw:beach, geo:291m, w>=1000, landscape
 
 ## Haleiwa Alii Beach
 
 `osm:way/192241413` · 21.5943445, -158.1079725 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-hi-haleiwa-alii-beach-1.jpg`** — “Fishing On The Jetty (175020955)” by Terry Lucas, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Fishing_On_The_Jetty_(175020955).jpeg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: Terry Lucas — https://500px.com/tdlucas5000
-  - Dated: 9 September 2016, 16:31:12 (UTC)
-  - 1600×1000px, 729 KB, shot 467 m from the spot
-  - Description: 500px provided description: Lava mountains above Haleiwa harbor. Those people have got "the spot" to catch some breakfast or lunch. [#sea ,#mountains ,#clouds ,#coast ,#ocean ,#seascape ,#hawaii ,#photomatix ,#oahu ,#haleiwa ,#HDR]
-  - Match: score 13 via coastal-in-title, name:haleiwa, kw:ocean+sea+coast+jetty, geo:467m, w>=1000, landscape
-- **`us-hi-haleiwa-alii-beach-2.jpg`** — “Underwater housings, 35mm” by jai MANSSON, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Underwater_housings,_35mm.jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: jai MANSSON
-  - Dated: 2007-05-23 16:23:49
-  - 1600×900px, 538 KB, shot 71 m from the spot
-  - Description: Note the lightdays pads inside the ports. A little trick for keeping the dribble leaks under control. For the movie "Forgetting Sarah Marshall." Two Arri III cameras, crystal sync bases, magnesium layback mags. 400 ft loads, 120 fps max speed. Zeiss standard primes, with just enough room to tape on a pola or 85 filter. Waterproof to 30 feet on a good day. We shot a lot of Blue Crush on the yellow one, and have also used it at Jaws on Maui, in 60 foot surf. Housings by Aquatech. Photographed at Haleiwa Beach Park, Oahu, Hawaii, USA
-  - Match: score 12 via name:haleiwa, kw:beach+surf+mar, geo:71m, w>=1000, landscape
-- **`us-hi-haleiwa-alii-beach-3.jpg`** — “Subtropical Morning Showers (172796925)” by Terry Lucas, Wikimedia Commons, CC BY 3.0
+- **`us-hi-haleiwa-alii-beach-1.jpg`** — “Subtropical Morning Showers (172796925)” by Terry Lucas, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Subtropical_Morning_Showers_(172796925).jpeg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Terry Lucas — https://500px.com/tdlucas5000
@@ -932,6 +916,22 @@
   - 1600×1000px, 492 KB, shot 336 m from the spot
   - Description: 500px provided description: Some sporadic rain showers sending me a tiny rainbow for my viewing pleasure. Haleiwa, Oahu. [#rainbow ,#water ,#beach ,#ocean ,#summer ,#sand ,#seascape ,#hawaii ,#haleiwa ,#north shore]
   - Match: score 12 via name:haleiwa, kw:beach+ocean+sea+shore, geo:336m, w>=1000, landscape
+- **`us-hi-haleiwa-alii-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Fishing On The Jetty (175020955)” by Terry Lucas, Wikimedia Commons, CC BY 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Fishing_On_The_Jetty_(175020955).jpeg
+  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
+  - Author: Terry Lucas — https://500px.com/tdlucas5000
+  - Dated: 9 September 2016, 16:31:12 (UTC)
+  - 1600×1000px, 729 KB, shot 467 m from the spot
+  - Description: 500px provided description: Lava mountains above Haleiwa harbor. Those people have got "the spot" to catch some breakfast or lunch. [#sea ,#mountains ,#clouds ,#coast ,#ocean ,#seascape ,#hawaii ,#photomatix ,#oahu ,#haleiwa ,#HDR]
+  - Match: score 13 via coastal-in-title, name:haleiwa, kw:ocean+sea+coast+jetty, geo:467m, w>=1000, landscape
+- **`us-hi-haleiwa-alii-beach-3.jpg`** ✗ **not a coastal photo** — “Underwater housings, 35mm” by jai MANSSON, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Underwater_housings,_35mm.jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: jai MANSSON
+  - Dated: 2007-05-23 16:23:49
+  - 1600×900px, 538 KB, shot 71 m from the spot
+  - Description: Note the lightdays pads inside the ports. A little trick for keeping the dribble leaks under control. For the movie "Forgetting Sarah Marshall." Two Arri III cameras, crystal sync bases, magnesium layback mags. 400 ft loads, 120 fps max speed. Zeiss standard primes, with just enough room to tape on a pola or 85 filter. Waterproof to 30 feet on a good day. We shot a lot of Blue Crush on the yellow one, and have also used it at Jaws on Maui, in 60 foot surf. Housings by Aquatech. Photographed at Haleiwa Beach Park, Oahu, Hawaii, USA
+  - Match: score 12 via name:haleiwa, kw:beach+surf+mar, geo:71m, w>=1000, landscape
 
 ## Hamoa beach
 
@@ -1032,15 +1032,7 @@
   - 1600×902px, 818 KB, shot 13 m from the spot
   - Description: Hanakapiai Beach, Kalalau Trail, Napali Coast, Kapaa
   - Match: score 13 via coastal-in-title, name:hanakapi, kw:beach+coast, geo:13m, w>=1000, landscape
-- **`us-hi-hanakapi-ai-beach-2.jpg`** — “Hanakapiai Beach, Kalalau Trail, Napali Coast, Kapaa - panoramio (1)” by Bob Linsdell, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Hanakapiai_Beach,_Kalalau_Trail,_Napali_Coast,_Kapaa_-_panoramio_(1).jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: Bob Linsdell — https://web.archive.org/web/20161031221951/http://www.panoramio.com/user/7508506?with_photo_id=117742935
-  - Dated: 14 March 2015 (original upload date)
-  - 1600×1067px, 1129 KB, shot 146 m from the spot
-  - Description: Hanakapiai Beach, Kalalau Trail, Napali Coast, Kapaa
-  - Match: score 13 via coastal-in-title, name:hanakapi, kw:beach+coast, geo:146m, w>=1000, landscape
-- **`us-hi-hanakapi-ai-beach-3.jpg`** — “Hanakapiai Stream, Kalalau Trail, Napali Coast, Kapaa (502900) (16723036458)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
+- **`us-hi-hanakapi-ai-beach-2.jpg`** — “Hanakapiai Stream, Kalalau Trail, Napali Coast, Kapaa (502900) (16723036458)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hanakapiai_Stream,_Kalalau_Trail,_Napali_Coast,_Kapaa_(502900)_(16723036458).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Robert Linsdell from St. Andrews, Canada — https://www.flickr.com/people/92487715@N03
@@ -1048,6 +1040,14 @@
   - 1600×1067px, 1040 KB, shot 75 m from the spot
   - Description: Hanakapiai Stream, Kalalau Trail, Napali Coast, Kapaa, Kauai, Hawaii, United States
   - Match: score 13 via coastal-in-title, name:hanakapi, kw:beach+coast, geo:75m, w>=1000, landscape
+- **`us-hi-hanakapi-ai-beach-3.jpg`** ✗ **not a coastal photo** — “Hanakapiai Beach, Kalalau Trail, Napali Coast, Kapaa - panoramio (1)” by Bob Linsdell, Wikimedia Commons, CC BY 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Hanakapiai_Beach,_Kalalau_Trail,_Napali_Coast,_Kapaa_-_panoramio_(1).jpg
+  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
+  - Author: Bob Linsdell — https://web.archive.org/web/20161031221951/http://www.panoramio.com/user/7508506?with_photo_id=117742935
+  - Dated: 14 March 2015 (original upload date)
+  - 1600×1067px, 1129 KB, shot 146 m from the spot
+  - Description: Hanakapiai Beach, Kalalau Trail, Napali Coast, Kapaa
+  - Match: score 13 via coastal-in-title, name:hanakapi, kw:beach+coast, geo:146m, w>=1000, landscape
 
 ## Hanalei Beach
 
@@ -1061,15 +1061,7 @@
   - 1600×1201px, 988 KB, shot 842 m from the spot
   - Description: Sunset at Hanalei Beach, Kauai, Hawaii
   - Match: score 13 via coastal-in-title, name:hanalei, kw:beach+bay+sunset, geo:842m, w>=1000, landscape
-- **`us-hi-hanalei-beach-2.jpg`** — Hanalei Bay, Hanalei, United States (Unsplash) — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Hanalei_Bay,_Hanalei,_United_States_(Unsplash).jpg
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: Christian Joudrey cjoudrey — https://unsplash.com/@cjoudrey
-  - Dated: 2015-07-24
-  - 1600×1067px, 236 KB, shot 145 m from the spot
-  - Description: Hanalei Bay, Hanalei, United States
-  - Match: score 13 via coastal-in-title, name:hanalei, kw:pier+bay, geo:145m, w>=1000, landscape
-- **`us-hi-hanalei-beach-3.jpg`** — “Hanalei bay panorama” by Cymru.lass, Wikimedia Commons, CC BY-SA 3.0
+- **`us-hi-hanalei-beach-2.jpg`** — “Hanalei bay panorama” by Cymru.lass, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hanalei_bay_panorama.JPG
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Cymru.lass — //commons.wikimedia.org/wiki/User:Cymru.lass
@@ -1077,20 +1069,20 @@
   - 1600×352px, 199 KB, shot 419 m from the spot
   - Description: Panoramic shot of Hanalei Bay
   - Match: score 12 via coastal-in-title, name:hanalei, kw:beach+bay, geo:419m, w>=1000, landscape
+- **`us-hi-hanalei-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Hanalei Bay, Hanalei, United States (Unsplash) — CC0 (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Hanalei_Bay,_Hanalei,_United_States_(Unsplash).jpg
+  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
+  - Author: Christian Joudrey cjoudrey — https://unsplash.com/@cjoudrey
+  - Dated: 2015-07-24
+  - 1600×1067px, 236 KB, shot 145 m from the spot
+  - Description: Hanalei Bay, Hanalei, United States
+  - Match: score 13 via coastal-in-title, name:hanalei, kw:pier+bay, geo:145m, w>=1000, landscape
 
 ## Hapuna Beach
 
 `osm:way/108980119` · 19.9922527, -155.8256584 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-hi-hapuna-beach-1.jpg`** — “Skimboarder at hapuna beach” by Polihale, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Skimboarder_at_hapuna_beach.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Polihale — //commons.wikimedia.org/wiki/User:Polihale
-  - Dated: 2005-02-26
-  - 1600×1192px, 132 KB, shot 121 m from the spot
-  - Description: A young bodyboarder prepares to run into the waves at Hapuna Beach on the Big Island of Hawaii.
-  - Match: score 14 via coastal-in-title, name:hapuna, kw:beach+wave+waves+ocean, geo:121m, w>=1000, landscape
-- **`us-hi-hapuna-beach-2.jpg`** — “Hapuna-beach-aerial” by Polihale, Wikimedia Commons, CC BY-SA 3.0
+- **`us-hi-hapuna-beach-1.jpg`** — “Hapuna-beach-aerial” by Polihale, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hapuna-beach-aerial.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Polihale — //commons.wikimedia.org/wiki/User:Polihale
@@ -1098,7 +1090,7 @@
   - 1600×1066px, 424 KB, shot 264 m from the spot
   - Description: Aerial view of Hapuna Beach on the Big Island of Hawaii
   - Match: score 11.5 via coastal-in-title, name:hapuna, kw:beach, geo:264m, w>=1000, landscape
-- **`us-hi-hapuna-beach-3.jpg`** — “One of beaches - panoramio” by Vadim Manuylov, Wikimedia Commons, CC BY-SA 3.0
+- **`us-hi-hapuna-beach-2.jpg`** — “One of beaches - panoramio” by Vadim Manuylov, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:One_of_beaches_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Vadim Manuylov — https://web.archive.org/web/20161009235350/http://www.panoramio.com/user/462847?with_photo_id=3746733
@@ -1106,20 +1098,20 @@
   - 1600×1200px, 457 KB, shot 156 m from the spot
   - Description: One of beaches
   - Match: score 11.5 via coastal-in-title, name:hapuna, kw:beach, geo:156m, w>=1000, landscape
+- **`us-hi-hapuna-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Skimboarder at hapuna beach” by Polihale, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Skimboarder_at_hapuna_beach.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Polihale — //commons.wikimedia.org/wiki/User:Polihale
+  - Dated: 2005-02-26
+  - 1600×1192px, 132 KB, shot 121 m from the spot
+  - Description: A young bodyboarder prepares to run into the waves at Hapuna Beach on the Big Island of Hawaii.
+  - Match: score 14 via coastal-in-title, name:hapuna, kw:beach+wave+waves+ocean, geo:121m, w>=1000, landscape
 
 ## Hawaiian Electric Beach Park
 
 `osm:node/12206151932` · 21.3569082, -158.1307534
 
-- **`us-hi-hawaiian-electric-beach-park-1.jpg`** — “Oil-fired generators at Hawaiian Electric Kahe Power Plant in Kapolei on the Waianae Coast” by Tony Webster, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Oil-fired_generators_at_Hawaiian_Electric_Kahe_Power_Plant_in_Kapolei_on_the_Waianae_Coast.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Tony Webster
-  - Dated: 2020-01-31 16:14:13
-  - 1600×1200px, 679 KB, shot 37 m from the spot
-  - Description: The Hawaiian Electric Kahe Power Plant on the west coast shores of Oahu, Hawaii, in the city of Kapolei. The Kahe Power Plant is powered by oil. Hawaiian Electric Industries, Inc., also known as H-Power, HEI, or HECO, provides electricity services to almost all residents of Oahu, Maui, and the Big Island.
-  - Match: score 17 via coastal-in-title, name:hawaiian+electric, kw:coast+shore, geo:37m, w>=1000, landscape
-- **`us-hi-hawaiian-electric-beach-park-2.jpg`** — “Sunset Paradise Cove, Oahu - panoramio” by davidpinter, Wikimedia Commons, CC BY 3.0
+- **`us-hi-hawaiian-electric-beach-park-1.jpg`** — “Sunset Paradise Cove, Oahu - panoramio” by davidpinter, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sunset_Paradise_Cove,_Oahu_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: davidpinter — https://web.archive.org/web/20161110082338/http://www.panoramio.com/user/5519115?with_photo_id=47621820
@@ -1127,7 +1119,7 @@
   - 1600×1200px, 408 KB, shot 1554 m from the spot
   - Description: Sunset Paradise Cove, Oahu
   - Match: score 7 via coastal-in-title, kw:cove+sunset, geo:1554m, w>=1000, landscape
-- **`us-hi-hawaiian-electric-beach-park-3.jpg`** — “2016 Oahu 06” by Farragutful, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-hawaiian-electric-beach-park-2.jpg`** — “2016 Oahu 06” by Farragutful, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:2016_Oahu_06.JPG
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Farragutful — //commons.wikimedia.org/wiki/User:Farragutful
@@ -1135,28 +1127,20 @@
   - 1600×1200px, 369 KB, shot 1549 m from the spot
   - Description: Sunset at Paradise Cove in the Ko Olina resort area of Kapolei, Hawaii.
   - Match: score 6 via kw:coast+cove+lagoon+sunset, geo:1549m, w>=1000, landscape
+- **`us-hi-hawaiian-electric-beach-park-3.jpg`** ✗ **not a coastal photo** — “Oil-fired generators at Hawaiian Electric Kahe Power Plant in Kapolei on the Waianae Coast” by Tony Webster, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Oil-fired_generators_at_Hawaiian_Electric_Kahe_Power_Plant_in_Kapolei_on_the_Waianae_Coast.jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Tony Webster
+  - Dated: 2020-01-31 16:14:13
+  - 1600×1200px, 679 KB, shot 37 m from the spot
+  - Description: The Hawaiian Electric Kahe Power Plant on the west coast shores of Oahu, Hawaii, in the city of Kapolei. The Kahe Power Plant is powered by oil. Hawaiian Electric Industries, Inc., also known as H-Power, HEI, or HECO, provides electricity services to almost all residents of Oahu, Maui, and the Big Island.
+  - Match: score 17 via coastal-in-title, name:hawaiian+electric, kw:coast+shore, geo:37m, w>=1000, landscape
 
 ## Hickam Harbor Beach
 
 `osm:way/1255945874` · 21.3170033, -157.9509122 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-hi-hickam-harbor-beach-1.jpg`** — “NAVFAC Hawaii Seabee Reenlists - Romero (40529261574)” by NAVFAC, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:NAVFAC_Hawaii_Seabee_Reenlists_-_Romero_(40529261574).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: NAVFAC — https://www.flickr.com/people/39845951@N05
-  - Dated: 2018-03-30 10:04
-  - 1600×1067px, 1866 KB, shot 126 m from the spot
-  - Description: PEARL HARBOR-HICKAM, Hawaii (March 30, 2018) Construction Electrician Second Class (Expeditionary Warfare) Johnathan Romero reenlisted, with assistance from Lt. Humberto Baeza, for four more years in the Navy, March 30, at Joint Base Pearl Harbor-Hickam. (U.S. Navy photo by SW2 (SCW) Kyle Kastlandersen, NAVFAC Hawaii Public Affairs/Released)
-  - Match: score 17 via coastal-in-title, name:hickam+harbor, kw:sea+mar, geo:126m, w>=1000, landscape
-- **`us-hi-hickam-harbor-beach-2.jpg`** — “NAVFAC Hawaii Seabee Reenlists - Romero (40529263324)” by NAVFAC, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:NAVFAC_Hawaii_Seabee_Reenlists_-_Romero_(40529263324).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: NAVFAC — https://www.flickr.com/people/39845951@N05
-  - Dated: 2018-03-30 10:04
-  - 1600×2400px, 1918 KB, shot 128 m from the spot
-  - Description: PEARL HARBOR-HICKAM, Hawaii (March 30, 2018) Construction Electrician Second Class (Expeditionary Warfare) Johnathan Romero reenlisted, with assistance from Lt. Humberto Baeza, for four more years in the Navy, March 30, at Joint Base Pearl Harbor-Hickam. (U.S. Navy photo by SW2 (SCW) Kyle Kastlandersen, NAVFAC Hawaii Public Affairs/Released)
-  - Match: score 16.5 via coastal-in-title, name:hickam+harbor, kw:sea+mar, geo:128m, w>=1000
-- **`us-hi-hickam-harbor-beach-3.jpg`** — US Navy 050630-N-6775N-003 On lookers from the shoreline watch as the amphibious assault ship USS Peleliu (LHA 5) passes Hickam Air Force Base enroute to Pearl Harbor, Hawaii for a scheduled port visit — Public domain (Wikimedia Commons), no attribution required
+- **`us-hi-hickam-harbor-beach-1.jpg`** ⚠︎ *context, not the coast itself* — US Navy 050630-N-6775N-003 On lookers from the shoreline watch as the amphibious assault ship USS Peleliu (LHA 5) passes Hickam Air Force Base enroute to Pearl Harbor, Hawaii for a scheduled port visit — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:US_Navy_050630-N-6775N-003_On_lookers_from_the_shoreline_watch_as_the_amphibious_assault_ship_USS_Peleliu_(LHA_5)_passes_Hickam_Air_Force_Base_enroute_to_Pearl_Harbor,_Hawaii_for_a_scheduled_port_visit.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: U.S. Navy photo by Photographer's Mate 2nd Justin P. Nesbitt
@@ -1164,6 +1148,22 @@
   - 1600×1143px, 501 KB
   - Description: Pearl Harbor, Hawaii (June 30, 2005) - On lookers from the shoreline watch as the amphibious assault ship USS Peleliu (LHA 5) passes Hickam Air Force Base enroute to Pearl Harbor, Hawaii for a scheduled port visit. Sailors and Marines assigned to Peleliu completed amphibious training on the beaches of Pacific Missile Range Facility Kauai, Hawaii. The ship is also being used as part of the Navy's Opportune Lift program, which transports Sailors vehicles back to San Diego. U.S. Navy photo by Photographer's Mate 2nd Justin P. Nesbitt (RELEASED)
   - Match: score 15 via coastal-in-title, name:hickam+harbor, kw:beach+shore+shoreline+mar, w>=1000, landscape
+- **`us-hi-hickam-harbor-beach-2.jpg`** ✗ **not a coastal photo** — “NAVFAC Hawaii Seabee Reenlists - Romero (40529261574)” by NAVFAC, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:NAVFAC_Hawaii_Seabee_Reenlists_-_Romero_(40529261574).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: NAVFAC — https://www.flickr.com/people/39845951@N05
+  - Dated: 2018-03-30 10:04
+  - 1600×1067px, 1866 KB, shot 126 m from the spot
+  - Description: PEARL HARBOR-HICKAM, Hawaii (March 30, 2018) Construction Electrician Second Class (Expeditionary Warfare) Johnathan Romero reenlisted, with assistance from Lt. Humberto Baeza, for four more years in the Navy, March 30, at Joint Base Pearl Harbor-Hickam. (U.S. Navy photo by SW2 (SCW) Kyle Kastlandersen, NAVFAC Hawaii Public Affairs/Released)
+  - Match: score 17 via coastal-in-title, name:hickam+harbor, kw:sea+mar, geo:126m, w>=1000, landscape
+- **`us-hi-hickam-harbor-beach-3.jpg`** ✗ **not a coastal photo** — “NAVFAC Hawaii Seabee Reenlists - Romero (40529263324)” by NAVFAC, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:NAVFAC_Hawaii_Seabee_Reenlists_-_Romero_(40529263324).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: NAVFAC — https://www.flickr.com/people/39845951@N05
+  - Dated: 2018-03-30 10:04
+  - 1600×2400px, 1918 KB, shot 128 m from the spot
+  - Description: PEARL HARBOR-HICKAM, Hawaii (March 30, 2018) Construction Electrician Second Class (Expeditionary Warfare) Johnathan Romero reenlisted, with assistance from Lt. Humberto Baeza, for four more years in the Navy, March 30, at Joint Base Pearl Harbor-Hickam. (U.S. Navy photo by SW2 (SCW) Kyle Kastlandersen, NAVFAC Hawaii Public Affairs/Released)
+  - Match: score 16.5 via coastal-in-title, name:hickam+harbor, kw:sea+mar, geo:128m, w>=1000
 
 ## Hideaways Beach
 
@@ -1177,15 +1177,7 @@
   - 1600×1069px, 874 KB, shot 333 m from the spot
   - Description: Tropical way to Hideaways Beach Princeville Kauai Hawaii
   - Match: score 11.5 via coastal-in-title, name:hideaways, kw:beach, geo:333m, w>=1000, landscape
-- **`us-hi-hideaways-beach-2.jpg`** — “Tropical way Hideaways Beach Princeville Kauai Hawaii (45553896854)” by dronepicr, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Tropical_way_Hideaways_Beach_Princeville_Kauai_Hawaii_(45553896854).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: dronepicr — https://www.flickr.com/people/132646954@N02
-  - Dated: 2018-08-14 15:51
-  - 1600×1196px, 966 KB, shot 213 m from the spot
-  - Description: Tropical way Hideaways Beach Princeville Kauai Hawaii
-  - Match: score 11.5 via coastal-in-title, name:hideaways, kw:beach, geo:213m, w>=1000, landscape
-- **`us-hi-hideaways-beach-3.jpg`** — “Hideaways Beach Princeville Kauai Hawaii (46227180552)” by dronepicr, Wikimedia Commons, CC BY 2.0
+- **`us-hi-hideaways-beach-2.jpg`** — “Hideaways Beach Princeville Kauai Hawaii (46227180552)” by dronepicr, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hideaways_Beach_Princeville_Kauai_Hawaii_(46227180552).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: dronepicr — https://www.flickr.com/people/132646954@N02
@@ -1193,6 +1185,14 @@
   - 1600×1067px, 525 KB, shot 233 m from the spot
   - Description: Hideaways Beach Princeville Kauai Hawaii
   - Match: score 11.5 via coastal-in-title, name:hideaways, kw:beach, geo:233m, w>=1000, landscape
+- **`us-hi-hideaways-beach-3.jpg`** ✗ **not a coastal photo** — “Tropical way Hideaways Beach Princeville Kauai Hawaii (45553896854)” by dronepicr, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Tropical_way_Hideaways_Beach_Princeville_Kauai_Hawaii_(45553896854).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: dronepicr — https://www.flickr.com/people/132646954@N02
+  - Dated: 2018-08-14 15:51
+  - 1600×1196px, 966 KB, shot 213 m from the spot
+  - Description: Tropical way Hideaways Beach Princeville Kauai Hawaii
+  - Match: score 11.5 via coastal-in-title, name:hideaways, kw:beach, geo:213m, w>=1000, landscape
 
 ## Hoai Bay / Lawai Beach
 
@@ -1206,7 +1206,7 @@
   - 1600×742px, 328 KB, shot 1153 m from the spot
   - Description: Kukuiula Bay, Kauai Island, Hawaii
   - Match: score 8 via coastal-in-title, kw:ocean+bay, geo:1153m, w>=1000, landscape
-- **`us-hi-hoai-bay-lawai-beach-2.jpg`** — “Sea turtle herpes, also known as Chelonid Herpesvirus 5 (ChHV5) - 54188848256” by Symbiosis, Wikimedia Commons, CC BY 2.0
+- **`us-hi-hoai-bay-lawai-beach-2.jpg`** ✗ **not a coastal photo** — “Sea turtle herpes, also known as Chelonid Herpesvirus 5 (ChHV5) - 54188848256” by Symbiosis, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sea_turtle_herpes,_also_known_as_Chelonid_Herpesvirus_5_(ChHV5)_-_54188848256.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Symbiosis
@@ -1214,7 +1214,7 @@
   - 1600×1094px, 756 KB, shot 1556 m from the spot
   - Description: I typically don't post sad photos but I thought I would share these. While diving I came across three green sea turtles with really bad looking tumors. Reading up on the disease that causes these tumors I learned that it is often a fatal form of herpes that infects six of the the seven species of turtles. Known as "Chelonid Herpesvirus 5 (ChHV5)" it can cause turtles to lose vision and impacts their ability to swim and eat. I was watching the turtle with the tumors on both sides of his face struggle to eat without bumping into rocks. I saw a turtle with similar tumors under his flippers on the
   - Match: score 7 via coastal-in-title, kw:sea+rocks, geo:1556m, w>=1000, landscape
-- **`us-hi-hoai-bay-lawai-beach-3.jpg`** — “Sea turtle herpes, also known as Chelonid Herpesvirus 5 (ChHV5) - 54189288425” by Symbiosis, Wikimedia Commons, CC BY 2.0
+- **`us-hi-hoai-bay-lawai-beach-3.jpg`** ✗ **not a coastal photo** — “Sea turtle herpes, also known as Chelonid Herpesvirus 5 (ChHV5) - 54189288425” by Symbiosis, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sea_turtle_herpes,_also_known_as_Chelonid_Herpesvirus_5_(ChHV5)_-_54189288425.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Symbiosis
@@ -1227,23 +1227,7 @@
 
 `osm:way/687188253` · 19.6284846, -155.9882487
 
-- **`us-hi-honl-s-beach-1.jpg`** — “Kona Bay, Kailua-Kona (504491) (23531531739)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Kona_Bay,_Kailua-Kona_(504491)_(23531531739).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Robert Linsdell from St. Andrews, Canada — https://www.flickr.com/people/92487715@N03
-  - Dated: 2014-11-06 09:55
-  - 1600×900px, 712 KB, shot 164 m from the spot
-  - Description: Kona Bay, Kailua-Kona, Big Island, Hawaii, United States
-  - Match: score 7.5 via coastal-in-title, kw:bay, geo:164m, w>=1000, landscape
-- **`us-hi-honl-s-beach-2.jpg`** — “Kona Bay, Kailua-Kona (504490) (23899427215)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Kona_Bay,_Kailua-Kona_(504490)_(23899427215).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Robert Linsdell from St. Andrews, Canada — https://www.flickr.com/people/92487715@N03
-  - Dated: 2014-11-06 09:55
-  - 1600×901px, 472 KB, shot 164 m from the spot
-  - Description: Kona Bay, Kailua-Kona, Big Island, Hawaii, United States
-  - Match: score 7.5 via coastal-in-title, kw:bay, geo:164m, w>=1000, landscape
-- **`us-hi-honl-s-beach-3.jpg`** — “2021-10-09 07 13 37 Edge of the ocean at the Royal Kona Resort in Kailua-Kona, Hawaii County, Hawaii” by Famartin, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-honl-s-beach-1.jpg`** — “2021-10-09 07 13 37 Edge of the ocean at the Royal Kona Resort in Kailua-Kona, Hawaii County, Hawaii” by Famartin, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:2021-10-09_07_13_37_Edge_of_the_ocean_at_the_Royal_Kona_Resort_in_Kailua-Kona,_Hawaii_County,_Hawaii.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
@@ -1251,6 +1235,22 @@
   - 1600×1200px, 857 KB, shot 383 m from the spot
   - Description: Edge of the ocean at the Royal Kona Resort in Kailua-Kona, Hawaii County, Hawaii
   - Match: score 7.5 via coastal-in-title, kw:ocean, geo:383m, w>=1000, landscape
+- **`us-hi-honl-s-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Kona Bay, Kailua-Kona (504491) (23531531739)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Kona_Bay,_Kailua-Kona_(504491)_(23531531739).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Robert Linsdell from St. Andrews, Canada — https://www.flickr.com/people/92487715@N03
+  - Dated: 2014-11-06 09:55
+  - 1600×900px, 712 KB, shot 164 m from the spot
+  - Description: Kona Bay, Kailua-Kona, Big Island, Hawaii, United States
+  - Match: score 7.5 via coastal-in-title, kw:bay, geo:164m, w>=1000, landscape
+- **`us-hi-honl-s-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Kona Bay, Kailua-Kona (504490) (23899427215)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Kona_Bay,_Kailua-Kona_(504490)_(23899427215).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Robert Linsdell from St. Andrews, Canada — https://www.flickr.com/people/92487715@N03
+  - Dated: 2014-11-06 09:55
+  - 1600×901px, 472 KB, shot 164 m from the spot
+  - Description: Kona Bay, Kailua-Kona, Big Island, Hawaii, United States
+  - Match: score 7.5 via coastal-in-title, kw:bay, geo:164m, w>=1000, landscape
 
 ## Honokohau Harbor Beach
 
@@ -1285,23 +1285,7 @@
 
 `osm:way/415221480` · 20.9546068, -156.6867575 · beach type: **mixed (grass/sandy)** (OpenStreetMap surface=grass,_sand)
 
-- **`us-hi-honokowai-beach-park-1.jpg`** — “Honokowai BeachPark” by Travisthurston, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Honokowai_BeachPark.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Travisthurston — //commons.wikimedia.org/w/index.php?title=User:Travisthurston&amp;action=edit&amp;redlink=1
-  - Dated: 2008-10-01
-  - 1600×1182px, 305 KB, shot 99 m from the spot
-  - Description: A photo in Honokowai
-  - Match: score 11.5 via coastal-in-title, name:honokowai, kw:beach, geo:99m, w>=1000, landscape
-- **`us-hi-honokowai-beach-park-2.jpg`** — “Hawaiian Monk Seal - panoramio” by dwegner, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Hawaiian_Monk_Seal_-_panoramio.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: dwegner — https://web.archive.org/web/20161024204403/http://www.panoramio.com/user/553054?with_photo_id=84230802
-  - Dated: Taken on 29 December 2012
-  - 1600×1067px, 424 KB, shot 18 m from the spot
-  - Description: Hawaiian Monk Seal
-  - Match: score 11.5 via coastal-in-title, name:honokowai, kw:sea, geo:18m, w>=1000, landscape
-- **`us-hi-honokowai-beach-park-3.jpg`** — “Coming up on sunset (2958255951)” by Shawn from Airdrie, Canada, Wikimedia Commons, CC BY-SA 2.0
+- **`us-hi-honokowai-beach-park-1.jpg`** — “Coming up on sunset (2958255951)” by Shawn from Airdrie, Canada, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Coming_up_on_sunset_(2958255951).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Shawn from Airdrie, Canada — https://www.flickr.com/people/44389375@N00
@@ -1309,28 +1293,28 @@
   - 1600×1067px, 197 KB, shot 55 m from the spot
   - Description: Coming up on sunset
   - Match: score 11 via name:honokowai, kw:beach+sunset, geo:55m, w>=1000, landscape
+- **`us-hi-honokowai-beach-park-2.jpg`** ✗ **not a coastal photo** — “Honokowai BeachPark” by Travisthurston, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Honokowai_BeachPark.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Travisthurston — //commons.wikimedia.org/w/index.php?title=User:Travisthurston&amp;action=edit&amp;redlink=1
+  - Dated: 2008-10-01
+  - 1600×1182px, 305 KB, shot 99 m from the spot
+  - Description: A photo in Honokowai
+  - Match: score 11.5 via coastal-in-title, name:honokowai, kw:beach, geo:99m, w>=1000, landscape
+- **`us-hi-honokowai-beach-park-3.jpg`** ✗ **not a coastal photo** — “Hawaiian Monk Seal - panoramio” by dwegner, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Hawaiian_Monk_Seal_-_panoramio.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: dwegner — https://web.archive.org/web/20161024204403/http://www.panoramio.com/user/553054?with_photo_id=84230802
+  - Dated: Taken on 29 December 2012
+  - 1600×1067px, 424 KB, shot 18 m from the spot
+  - Description: Hawaiian Monk Seal
+  - Match: score 11.5 via coastal-in-title, name:honokowai, kw:sea, geo:18m, w>=1000, landscape
 
 ## Honoli‘i
 
 `osm:node/3659137147` · 19.7554894, -155.0906552
 
-- **`us-hi-honoli-i-1.jpg`** — “BEAUTIFUL HONOLI'I BEACH PARK (EXPLORE, 05-24-2026). - Flickr - Salty Lens (Jonny)” by Salty Lens (Jonny), Wikimedia Commons, CC BY 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:BEAUTIFUL_HONOLI%27I_BEACH_PARK_(EXPLORE,_05-24-2026)._-_Flickr_-_Salty_Lens_(Jonny).jpg
-  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
-  - Author: Salty Lens (Jonny) — https://www.flickr.com/people/57115266@N03
-  - Dated: Taken on 19 May 2026, 11:31
-  - 1600×1069px, 847 KB, shot 81 m from the spot
-  - Description: Hilo, Hawai'i, Oahu Honoli’i is such a well maintained beach park with talented surfers and nice waves. Leica M240 | Leica Apo-Summicron-M 35mm f/2
-  - Match: score 14 via coastal-in-title, name:honoli, kw:beach+surf+surfer+wave, geo:81m, w>=1000, landscape
-- **`us-hi-honoli-i-2.jpg`** — “Honoli´i Beach, North of Hilo (52943934474)” by Šarūnas Burdulis, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Honoli%C2%B4i_Beach,_North_of_Hilo_(52943934474).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Šarūnas Burdulis — https://www.flickr.com/people/24401970@N03
-  - Dated: Taken on 18 April 2023, 15:04
-  - 1600×1198px, 575 KB, shot 155 m from the spot
-  - Description: Honoli´i Beach, North of Hilo
-  - Match: score 11.5 via coastal-in-title, name:honoli, kw:beach, geo:155m, w>=1000, landscape
-- **`us-hi-honoli-i-3.jpg`** — “Green Bay, Big Island (20432528184)” by Paolo Salmaso from Zürich, Switzerland, Wikimedia Commons, CC BY 2.0
+- **`us-hi-honoli-i-1.jpg`** — “Green Bay, Big Island (20432528184)” by Paolo Salmaso from Zürich, Switzerland, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Green_Bay,_Big_Island_(20432528184).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paolo Salmaso from Zürich, Switzerland — https://www.flickr.com/people/40893435@N08
@@ -1338,6 +1322,22 @@
   - 1600×911px, 963 KB, shot 493 m from the spot
   - Description: Green Bay, Big Island
   - Match: score 8 via coastal-in-title, kw:beach+bay, geo:493m, w>=1000, landscape
+- **`us-hi-honoli-i-2.jpg`** ⚠︎ *context, not the coast itself* — “BEAUTIFUL HONOLI'I BEACH PARK (EXPLORE, 05-24-2026). - Flickr - Salty Lens (Jonny)” by Salty Lens (Jonny), Wikimedia Commons, CC BY 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:BEAUTIFUL_HONOLI%27I_BEACH_PARK_(EXPLORE,_05-24-2026)._-_Flickr_-_Salty_Lens_(Jonny).jpg
+  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
+  - Author: Salty Lens (Jonny) — https://www.flickr.com/people/57115266@N03
+  - Dated: Taken on 19 May 2026, 11:31
+  - 1600×1069px, 847 KB, shot 81 m from the spot
+  - Description: Hilo, Hawai'i, Oahu Honoli’i is such a well maintained beach park with talented surfers and nice waves. Leica M240 | Leica Apo-Summicron-M 35mm f/2
+  - Match: score 14 via coastal-in-title, name:honoli, kw:beach+surf+surfer+wave, geo:81m, w>=1000, landscape
+- **`us-hi-honoli-i-3.jpg`** ✗ **not a coastal photo** — “Honoli´i Beach, North of Hilo (52943934474)” by Šarūnas Burdulis, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Honoli%C2%B4i_Beach,_North_of_Hilo_(52943934474).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Šarūnas Burdulis — https://www.flickr.com/people/24401970@N03
+  - Dated: Taken on 18 April 2023, 15:04
+  - 1600×1198px, 575 KB, shot 155 m from the spot
+  - Description: Honoli´i Beach, North of Hilo
+  - Match: score 11.5 via coastal-in-title, name:honoli, kw:beach, geo:155m, w>=1000, landscape
 
 ## Honopū Beach
 
@@ -1401,7 +1401,7 @@
 
 `osm:node/11293954906` · 21.2629119, -157.7837667
 
-- **`us-hi-hunakai-beach-1.jpg`** — “Starr-020127-0041-Ipomoea imperati-weeding-Keopuolani dune-Maui (23918246884)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
+- **`us-hi-hunakai-beach-1.jpg`** ✗ **not a coastal photo** — “Starr-020127-0041-Ipomoea imperati-weeding-Keopuolani dune-Maui (23918246884)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
   - Source page: https://commons.wikimedia.org/wiki/File:Starr-020127-0041-Ipomoea_imperati-weeding-Keopuolani_dune-Maui_(23918246884).jpg
   - Licence: CC BY 3.0 us · attribution required
   - Author: Forest and Kim Starr — https://www.flickr.com/people/97499887@N06
@@ -1409,7 +1409,7 @@
   - 1600×1200px, 415 KB
   - Description: Ipomoea imperati (Hunakai, beach morning glory) Weeding at Keopuolani dune, Maui, Hawaii. January 27, 2002 >#020127-0041 Image Use Policy Also known as Ipomoea stolonifera.
   - Match: score 10 via coastal-in-title, name:hunakai, kw:beach+dune, w>=1000, landscape
-- **`us-hi-hunakai-beach-2.jpg`** — “Starr 060216-5992 Scaevola coriacea” by Forest & Kim Starr, Wikimedia Commons, CC BY 3.0
+- **`us-hi-hunakai-beach-2.jpg`** ✗ **not a coastal photo** — “Starr 060216-5992 Scaevola coriacea” by Forest & Kim Starr, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Starr_060216-5992_Scaevola_coriacea.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Forest & Kim Starr — http://www.starrenvironmental.com/
@@ -1417,7 +1417,7 @@
   - 1600×1200px, 1210 KB
   - Description: Scaevola coriacea (habit with hunakai Ipomoea imperati and popolo Solanum americanum ). Location: Maui, Kanaha Beach
   - Match: score 6.5 via name:hunakai, kw:beach, w>=1000, landscape
-- **`us-hi-hunakai-beach-3.jpg`** — “Starr-091112-9594-Ipomoea imperati-aerial view-Keopuolani Park-Maui (24871700142)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
+- **`us-hi-hunakai-beach-3.jpg`** ✗ **not a coastal photo** — “Starr-091112-9594-Ipomoea imperati-aerial view-Keopuolani Park-Maui (24871700142)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
   - Source page: https://commons.wikimedia.org/wiki/File:Starr-091112-9594-Ipomoea_imperati-aerial_view-Keopuolani_Park-Maui_(24871700142).jpg
   - Licence: CC BY 3.0 us · attribution required
   - Author: Forest and Kim Starr — https://www.flickr.com/people/97499887@N06
@@ -1496,15 +1496,7 @@
   - 1600×1190px, 203 KB, shot 357 m from the spot
   - Description: Crouching Lion from Kahana Bay Beach Park
   - Match: score 13 via coastal-in-title, name:kahana, kw:beach+bay, geo:357m, w>=1000, landscape
-- **`us-hi-kahana-bay-beach-2.jpg`** — Vessel in Hawaii (11465748706) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Vessel_in_Hawaii_(11465748706).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: NOAA Marine Debris Program — https://www.flickr.com/people/78725676@N06
-  - Dated: 2012-12-01 11:10
-  - 1600×1195px, 1079 KB, shot 843 m from the spot
-  - Description: Small vessel, broken apart on rocky shoreline in Kahana Bay, Oahu, HI. Photo credit: Hawaii Dept. of Land and Natural Resources. November 2012.
-  - Match: score 11 via name:kahana, kw:shore+shoreline+mar+bay, geo:843m, w>=1000, landscape
-- **`us-hi-kahana-bay-beach-3.jpg`** — “Storm Surf (51984406)” by Andreas Winter, Wikimedia Commons, CC BY 3.0
+- **`us-hi-kahana-bay-beach-2.jpg`** — “Storm Surf (51984406)” by Andreas Winter, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Storm_Surf_(51984406).jpeg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Andreas Winter — https://500px.com/andreaswinter
@@ -1512,20 +1504,20 @@
   - 1600×1067px, 108 KB, shot 3400 m from the spot
   - Description: 500px provided description: Storm Surf [#surfing ,#hawaii ,#storm ,#pipeline ,#oahu ,#north shore]
   - Match: score 7 via coastal-in-title, kw:surf+surfing+shore, geo:3400m, w>=1000, landscape
+- **`us-hi-kahana-bay-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Vessel in Hawaii (11465748706) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Vessel_in_Hawaii_(11465748706).jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: NOAA Marine Debris Program — https://www.flickr.com/people/78725676@N06
+  - Dated: 2012-12-01 11:10
+  - 1600×1195px, 1079 KB, shot 843 m from the spot
+  - Description: Small vessel, broken apart on rocky shoreline in Kahana Bay, Oahu, HI. Photo credit: Hawaii Dept. of Land and Natural Resources. November 2012.
+  - Match: score 11 via name:kahana, kw:shore+shoreline+mar+bay, geo:843m, w>=1000, landscape
 
 ## Kahe Point
 
 `osm:way/904070566` · 21.3547444, -158.1303257 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-hi-kahe-point-1.jpg`** — “Oil-fired generators at Hawaiian Electric Kahe Power Plant in Kapolei on the Waianae Coast” by Tony Webster, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Oil-fired_generators_at_Hawaiian_Electric_Kahe_Power_Plant_in_Kapolei_on_the_Waianae_Coast.jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Tony Webster
-  - Dated: 2020-01-31 16:14:13
-  - 1600×1200px, 679 KB, shot 248 m from the spot
-  - Description: The Hawaiian Electric Kahe Power Plant on the west coast shores of Oahu, Hawaii, in the city of Kapolei. The Kahe Power Plant is powered by oil. Hawaiian Electric Industries, Inc., also known as H-Power, HEI, or HECO, provides electricity services to almost all residents of Oahu, Maui, and the Big Island.
-  - Match: score 13 via coastal-in-title, name:kahe, kw:coast+shore, geo:248m, w>=1000, landscape
-- **`us-hi-kahe-point-2.jpg`** — “Sunset Paradise Cove, Oahu - panoramio” by davidpinter, Wikimedia Commons, CC BY 3.0
+- **`us-hi-kahe-point-1.jpg`** — “Sunset Paradise Cove, Oahu - panoramio” by davidpinter, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sunset_Paradise_Cove,_Oahu_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: davidpinter — https://web.archive.org/web/20161110082338/http://www.panoramio.com/user/5519115?with_photo_id=47621820
@@ -1533,7 +1525,7 @@
   - 1600×1200px, 408 KB, shot 1309 m from the spot
   - Description: Sunset Paradise Cove, Oahu
   - Match: score 7 via coastal-in-title, kw:cove+sunset, geo:1309m, w>=1000, landscape
-- **`us-hi-kahe-point-3.jpg`** — “2016 Oahu 06” by Farragutful, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-kahe-point-2.jpg`** — “2016 Oahu 06” by Farragutful, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:2016_Oahu_06.JPG
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Farragutful — //commons.wikimedia.org/wiki/User:Farragutful
@@ -1541,12 +1533,20 @@
   - 1600×1200px, 369 KB, shot 1305 m from the spot
   - Description: Sunset at Paradise Cove in the Ko Olina resort area of Kapolei, Hawaii.
   - Match: score 6 via kw:coast+cove+lagoon+sunset, geo:1305m, w>=1000, landscape
+- **`us-hi-kahe-point-3.jpg`** ✗ **not a coastal photo** — “Oil-fired generators at Hawaiian Electric Kahe Power Plant in Kapolei on the Waianae Coast” by Tony Webster, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Oil-fired_generators_at_Hawaiian_Electric_Kahe_Power_Plant_in_Kapolei_on_the_Waianae_Coast.jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Tony Webster
+  - Dated: 2020-01-31 16:14:13
+  - 1600×1200px, 679 KB, shot 248 m from the spot
+  - Description: The Hawaiian Electric Kahe Power Plant on the west coast shores of Oahu, Hawaii, in the city of Kapolei. The Kahe Power Plant is powered by oil. Hawaiian Electric Industries, Inc., also known as H-Power, HEI, or HECO, provides electricity services to almost all residents of Oahu, Maui, and the Big Island.
+  - Match: score 13 via coastal-in-title, name:kahe, kw:coast+shore, geo:248m, w>=1000, landscape
 
 ## Kahekili Beach
 
 `osm:way/173089926` · 20.9360435, -156.6936108 · beach type: **sandy** (OpenStreetMap surface=sand) · access: yes
 
-- **`us-hi-kahekili-beach-1.jpg`** — “Starr-170321-0570-Cocos nucifera-view park walk and beach-Kahekili or Airport Beach Kaanapali-Maui (34108160895)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
+- **`us-hi-kahekili-beach-1.jpg`** ✗ **not a coastal photo** — “Starr-170321-0570-Cocos nucifera-view park walk and beach-Kahekili or Airport Beach Kaanapali-Maui (34108160895)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
   - Source page: https://commons.wikimedia.org/wiki/File:Starr-170321-0570-Cocos_nucifera-view_park_walk_and_beach-Kahekili_or_Airport_Beach_Kaanapali-Maui_(34108160895).jpg
   - Licence: CC BY 3.0 us · attribution required
   - Author: Forest and Kim Starr — https://www.flickr.com/people/97499887@N06
@@ -1554,7 +1554,7 @@
   - 1600×1200px, 745 KB
   - Description: Cocos nucifera (Coconut palm, niu) View park walk and beach at Kahekili or Airport Beach Kaanapali, Maui, Hawaii. March 21, 2017 #170321-0570 Image Use Policy
   - Match: score 10 via coastal-in-title, name:kahekili, kw:beach+mar, w>=1000, landscape
-- **`us-hi-kahekili-beach-2.jpg`** — “Starr-170321-0571-Cocos nucifera-view park walk and beach-Kahekili or Airport Beach Kaanapali-Maui (34067252036)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
+- **`us-hi-kahekili-beach-2.jpg`** ✗ **not a coastal photo** — “Starr-170321-0571-Cocos nucifera-view park walk and beach-Kahekili or Airport Beach Kaanapali-Maui (34067252036)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
   - Source page: https://commons.wikimedia.org/wiki/File:Starr-170321-0571-Cocos_nucifera-view_park_walk_and_beach-Kahekili_or_Airport_Beach_Kaanapali-Maui_(34067252036).jpg
   - Licence: CC BY 3.0 us · attribution required
   - Author: Forest and Kim Starr — https://www.flickr.com/people/97499887@N06
@@ -1562,7 +1562,7 @@
   - 1600×1200px, 664 KB
   - Description: Cocos nucifera (Coconut palm, niu) View park walk and beach at Kahekili or Airport Beach Kaanapali, Maui, Hawaii. March 21, 2017 #170321-0571 Image Use Policy
   - Match: score 10 via coastal-in-title, name:kahekili, kw:beach+mar, w>=1000, landscape
-- **`us-hi-kahekili-beach-3.jpg`** — “Starr-170321-0572-Cocos nucifera-panoram park walk and beach-Kahekili or Airport Beach Kaanapali Walk-Maui (33723098790)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
+- **`us-hi-kahekili-beach-3.jpg`** ✗ **not a coastal photo** — “Starr-170321-0572-Cocos nucifera-panoram park walk and beach-Kahekili or Airport Beach Kaanapali Walk-Maui (33723098790)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
   - Source page: https://commons.wikimedia.org/wiki/File:Starr-170321-0572-Cocos_nucifera-panoram_park_walk_and_beach-Kahekili_or_Airport_Beach_Kaanapali_Walk-Maui_(33723098790).jpg
   - Licence: CC BY 3.0 us · attribution required
   - Author: Forest and Kim Starr — https://www.flickr.com/people/97499887@N06
@@ -1583,15 +1583,7 @@
   - 1600×1200px, 798 KB
   - Description: Casuarina equisetifolia (Ironwood) Habit view stream reaching ocean and Quarry or Kahili Beach at Rock Quarry Beach Mokolea Pt Kilauea Pt NWR, Kauai, Hawaii. March 19, 2013 #130319-2916 Image Use Policy
   - Match: score 11 via coastal-in-title, name:kahili, kw:beach+ocean+mar, w>=1000, landscape
-- **`us-hi-kahili-beach-2.jpg`** — “Kilauea Point Lighthouse (7424363988)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Kilauea_Point_Lighthouse_(7424363988).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Chris Hunkeler from Carlsbad, California, USA — https://www.flickr.com/people/14913305@N00
-  - Dated: 2012-05-15 15:20
-  - 1600×1065px, 1009 KB, shot 2122 m from the spot
-  - Description: The <a href=" http://www.fws.gov/kilaueapoint/lighthouse.html " rel="nofollow">lighthouse</a> was built in 1913 and operated for 62 years.
-  - Match: score 8 via coastal-in-title, kw:sea+point+lighthouse+cliff, geo:2122m, w>=1000, landscape
-- **`us-hi-kahili-beach-3.jpg`** — “The waves of the Kauai coast” by Aaron Lucas, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-kahili-beach-2.jpg`** — “The waves of the Kauai coast” by Aaron Lucas, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:The_waves_of_the_Kauai_coast.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Aaron Lucas
@@ -1599,6 +1591,14 @@
   - 1600×1200px, 911 KB, shot 2414 m from the spot
   - Description: Taken from the Kilauea Point National Wildlife Refuge in Kauai, Hawaii. The waves produced a beautiful crystal-like view on top of the deep teal-blue waters of Kauai coastline. The sun was peeking in and out from the clouds around the time I took this photo. The cliffs on the other side have hundred of birds, just a few of them can be seen as white dots in the greenery at the top center.
   - Match: score 8 via coastal-in-title, kw:wave+waves+coast+coastline, geo:2414m, w>=1000, landscape
+- **`us-hi-kahili-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Kilauea Point Lighthouse (7424363988)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Kilauea_Point_Lighthouse_(7424363988).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Chris Hunkeler from Carlsbad, California, USA — https://www.flickr.com/people/14913305@N00
+  - Dated: 2012-05-15 15:20
+  - 1600×1065px, 1009 KB, shot 2122 m from the spot
+  - Description: The <a href=" http://www.fws.gov/kilaueapoint/lighthouse.html " rel="nofollow">lighthouse</a> was built in 1913 and operated for 62 years.
+  - Match: score 8 via coastal-in-title, kw:sea+point+lighthouse+cliff, geo:2122m, w>=1000, landscape
 
 ## Kahuku Beach
 
@@ -1620,7 +1620,7 @@
   - 1600×1067px, 1517 KB, shot 879 m from the spot
   - Description: Moku‘auia Beach at Malaekahana Beach Campground in Kahuku, Oahu, Hawaii.
   - Match: score 12 via coastal-in-title, name:kahuku, kw:beach+shore, geo:879m, w>=1000, landscape
-- **`us-hi-kahuku-beach-3.jpg`** — “Banyan Tree. Kawela Bay Beach Park, Kahuku (503556) (19941205378)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
+- **`us-hi-kahuku-beach-3.jpg`** ✗ **not a coastal photo** — “Banyan Tree. Kawela Bay Beach Park, Kahuku (503556) (19941205378)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Banyan_Tree._Kawela_Bay_Beach_Park,_Kahuku_(503556)_(19941205378).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Robert Linsdell from St. Andrews, Canada — https://www.flickr.com/people/92487715@N03
@@ -1633,7 +1633,7 @@
 
 `osm:way/1347694895` · 19.8313243, -155.9869093 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-hi-kahuwai-beach-1.jpg`** — “Tide pools, Four Seasons Hualalai” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-kahuwai-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Tide pools, Four Seasons Hualalai” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Tide_pools,_Four_Seasons_Hualalai.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Holly Cheng — //commons.wikimedia.org/wiki/User:Holly_Cheng
@@ -1641,7 +1641,7 @@
   - 1600×900px, 696 KB, shot 523 m from the spot
   - Description: Two girls walk near tide pools on the Four Seasons Resort Hualalai in Kaupulehu, Hawaii
   - Match: score 9 via coastal-in-title, kw:beach+sea+tide, geo:523m, w>=1000, landscape
-- **`us-hi-kahuwai-beach-2.jpg`** — “King's Pond, Four Seasons Hualalai (1)” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-kahuwai-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “King's Pond, Four Seasons Hualalai (1)” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:King%27s_Pond,_Four_Seasons_Hualalai_(1).jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Holly Cheng — //commons.wikimedia.org/wiki/User:Holly_Cheng
@@ -1649,7 +1649,7 @@
   - 1600×900px, 523 KB, shot 399 m from the spot
   - Description: Brackish pond on the grounds of the Four Seasons Resort Hualalai where guests can go snorkeling
   - Match: score 7.5 via coastal-in-title, kw:sea, geo:399m, w>=1000, landscape
-- **`us-hi-kahuwai-beach-3.jpg`** — “King's Pond, Four Seasons Hualalai (2)” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-kahuwai-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “King's Pond, Four Seasons Hualalai (2)” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:King%27s_Pond,_Four_Seasons_Hualalai_(2).jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Holly Cheng — //commons.wikimedia.org/wiki/User:Holly_Cheng
@@ -1794,7 +1794,7 @@
   - 1600×1060px, 339 KB, shot 42 m from the spot
   - Description: South Shore Oahu, Hawaii
   - Match: score 13 via coastal-in-title, name:kaimana, kw:beach+shore, geo:42m, w>=1000, landscape
-- **`us-hi-kaimana-beach-3.jpg`** — “Monk Seal Before Leaving November 2 2019” by Eqpk, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-kaimana-beach-3.jpg`** ✗ **not a coastal photo** — “Monk Seal Before Leaving November 2 2019” by Eqpk, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Monk_Seal_Before_Leaving_November_2_2019.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Eqpk — //commons.wikimedia.org/w/index.php?title=User:Eqpk&amp;action=edit&amp;redlink=1
@@ -1910,7 +1910,7 @@
   - 1600×1067px, 605 KB, shot 240 m from the spot
   - Description: White Sand Kepuhi Beach, West End, Molokai, Hawaii
   - Match: score 10 via coastal-in-title, kw:beach+wave+waves+ocean, geo:240m, w>=1000, landscape
-- **`us-hi-kalani-beach-3.jpg`** — “White Sand Kepuhi Beach, West End, Molokai, Hawaii - panoramio (5)” by Rose_Braverman, Wikimedia Commons, CC BY 3.0
+- **`us-hi-kalani-beach-3.jpg`** ✗ **not a coastal photo** — “White Sand Kepuhi Beach, West End, Molokai, Hawaii - panoramio (5)” by Rose_Braverman, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:White_Sand_Kepuhi_Beach,_West_End,_Molokai,_Hawaii_-_panoramio_(5).jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Rose_Braverman — https://web.archive.org/web/20161025131956/http://www.panoramio.com/user/6347312?with_photo_id=88007920
@@ -1923,7 +1923,7 @@
 
 `osm:relation/1581352` · 22.2166079, -159.4275429
 
-- **`us-hi-kalihiwai-beach-1.jpg`** — “Surfboard Leanto (8727099697)” by cogdogblog, Wikimedia Commons, CC BY 2.0
+- **`us-hi-kalihiwai-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Surfboard Leanto (8727099697)” by cogdogblog, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Surfboard_Leanto_(8727099697).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: cogdogblog — https://www.flickr.com/people/37996646802@N01
@@ -1931,7 +1931,7 @@
   - 1600×1200px, 601 KB, shot 178 m from the spot
   - Description: Kalihiwai Beach
   - Match: score 14 via coastal-in-title, name:kalihiwai, kw:beach+surf+surfing, geo:178m, w>=1000, landscape
-- **`us-hi-kalihiwai-beach-2.jpg`** — “Surf vs Coconut (8727097111)” by cogdogblog, Wikimedia Commons, CC BY 2.0
+- **`us-hi-kalihiwai-beach-2.jpg`** ✗ **not a coastal photo** — “Surf vs Coconut (8727097111)” by cogdogblog, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Surf_vs_Coconut_(8727097111).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: cogdogblog — https://www.flickr.com/people/37996646802@N01
@@ -1939,7 +1939,7 @@
   - 1600×1198px, 864 KB, shot 190 m from the spot
   - Description: Kalihiwai Beach
   - Match: score 13 via coastal-in-title, name:kalihiwai, kw:beach+surf, geo:190m, w>=1000, landscape
-- **`us-hi-kalihiwai-beach-3.jpg`** — 2013-365-130 Beach Glory (8728217100) — CC0 (Wikimedia Commons), no attribution required
+- **`us-hi-kalihiwai-beach-3.jpg`** ✗ **not a coastal photo** — 2013-365-130 Beach Glory (8728217100) — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:2013-365-130_Beach_Glory_(8728217100).jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: cogdogblog — https://www.flickr.com/people/37996646802@N01
@@ -1981,7 +1981,7 @@
 
 `osm:way/678711674` · 21.8387096, -160.2443424
 
-- **`us-hi-kamalino-beach-1.jpg`** — Hawaiian Islands, Hale, Niihau, 1885, taken by Francis Sinclair — Public domain (Wikimedia Commons), no attribution required
+- **`us-hi-kamalino-beach-1.jpg`** ✗ **not a coastal photo** — Hawaiian Islands, Hale, Niihau, 1885, taken by Francis Sinclair — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Hawaiian_Islands,_Hale,_Niihau,_1885,_taken_by_Francis_Sinclair.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Francis Sinclair (1833-1916)
@@ -1994,7 +1994,7 @@
 
 `osm:way/856027718` · 18.9719088, -155.6016651 · access: no
 
-- **`us-hi-kamilo-1.jpg`** — “Plastic Beaches” by Jennyvids, Wikimedia Commons, CC BY 2.0
+- **`us-hi-kamilo-1.jpg`** ✗ **not a coastal photo** — “Plastic Beaches” by Jennyvids, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Plastic_Beaches.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Jennyvids
@@ -2002,7 +2002,7 @@
   - 1600×1200px, 529 KB
   - Description: These are Japanese surveying stakes that the artist Noni Sanford regularly finds washed up on the beach near Kamilo Point on the Big Island of Hawaii.
   - Match: score 11 via coastal-in-title, name:kamilo, kw:beach+mar+point, w>=1000, landscape
-- **`us-hi-kamilo-2.jpg`** — “Kamilo Beach, Hawaii, DSCN0114” by gabriella levine, Wikimedia Commons, CC BY-SA 2.0
+- **`us-hi-kamilo-2.jpg`** ✗ **not a coastal photo** — “Kamilo Beach, Hawaii, DSCN0114” by gabriella levine, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Kamilo_Beach,_Hawaii,_DSCN0114.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: gabriella levine
@@ -2010,7 +2010,7 @@
   - 1600×1200px, 591 KB
   - Description: Trash from Kamilo Beach, Hawaii
   - Match: score 10 via coastal-in-title, name:kamilo, kw:beach+mar, w>=1000, landscape
-- **`us-hi-kamilo-3.jpg`** — “Plastiglomerat, Kamilo Beach, Hawaii, USA” by Ra'ike (Wikipedia), Wikimedia Commons, CC BY-SA 3.0 de
+- **`us-hi-kamilo-3.jpg`** ✗ **not a coastal photo** — “Plastiglomerat, Kamilo Beach, Hawaii, USA” by Ra'ike (Wikipedia), Wikimedia Commons, CC BY-SA 3.0 de
   - Source page: https://commons.wikimedia.org/wiki/File:Plastiglomerat,_Kamilo_Beach,_Hawaii,_USA.JPG
   - Licence: CC BY-SA 3.0 de · attribution required · **share-alike**
   - Author: Ra'ike (Wikipedia) — //commons.wikimedia.org/wiki/User:Ra%27ike
@@ -2300,7 +2300,7 @@
   - 1600×900px, 475 KB, shot 690 m from the spot
   - Description: Kealakekua Bay, Captain Cook, Big Island, Hawaii, United States
   - Match: score 6.5 via coastal-in-title, kw:bay, geo:690m, w>=1000, landscape
-- **`us-hi-ke-ei-beach-3.jpg`** — “Polynesian double-hulled voyaging canoes sheltering in Kealakekua Bay, Hawaii - panoramio” by Peter Gill / UK, Wikimedia Commons, CC BY 3.0
+- **`us-hi-ke-ei-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Polynesian double-hulled voyaging canoes sheltering in Kealakekua Bay, Hawaii - panoramio” by Peter Gill / UK, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Polynesian_double-hulled_voyaging_canoes_sheltering_in_Kealakekua_Bay,_Hawaii_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Peter Gill / UK — https://web.archive.org/web/20161013070541/http://www.panoramio.com/user/2532373?with_photo_id=16828394
@@ -2329,7 +2329,7 @@
   - 1600×900px, 475 KB, shot 677 m from the spot
   - Description: Kealakekua Bay, Captain Cook, Big Island, Hawaii, United States
   - Match: score 6.5 via coastal-in-title, kw:bay, geo:677m, w>=1000, landscape
-- **`us-hi-ke-ei-beach-801193-3.jpg`** — “Polynesian double-hulled voyaging canoes sheltering in Kealakekua Bay, Hawaii - panoramio” by Peter Gill / UK, Wikimedia Commons, CC BY 3.0
+- **`us-hi-ke-ei-beach-801193-3.jpg`** ⚠︎ *context, not the coast itself* — “Polynesian double-hulled voyaging canoes sheltering in Kealakekua Bay, Hawaii - panoramio” by Peter Gill / UK, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Polynesian_double-hulled_voyaging_canoes_sheltering_in_Kealakekua_Bay,_Hawaii_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Peter Gill / UK — https://web.archive.org/web/20161013070541/http://www.panoramio.com/user/2532373?with_photo_id=16828394
@@ -2358,7 +2358,7 @@
   - 1600×1200px, 1142 KB, shot 3898 m from the spot
   - Description: makaha beach; surf, sand, sky
   - Match: score 7 via coastal-in-title, kw:beach+surf+sand, geo:3898m, w>=1000, landscape
-- **`us-hi-keaau-beach-3.jpg`** — “Aki Beach resident - panoramio” by nick hoke, Wikimedia Commons, CC BY 3.0
+- **`us-hi-keaau-beach-3.jpg`** ✗ **not a coastal photo** — “Aki Beach resident - panoramio” by nick hoke, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Aki_Beach_resident_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: nick hoke — https://web.archive.org/web/20161028155103/http://www.panoramio.com/user/5758309?with_photo_id=93762228
@@ -2400,7 +2400,7 @@
 
 `osm:way/678708970` · 21.9993227, -160.0801
 
-- **`us-hi-keamano-beach-1.jpg`** — “Niihau-Trash-Beach” by Polihale, Wikimedia Commons, CC BY-SA 3.0
+- **`us-hi-keamano-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Niihau-Trash-Beach” by Polihale, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Niihau-Trash-Beach.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Polihale — //commons.wikimedia.org/wiki/User:Polihale
@@ -2442,23 +2442,7 @@
 
 `osm:way/112440155` · 22.2221403, -159.5796031
 
-- **`us-hi-ke-e-beach-1.jpg`** — “Montipora flabellata-tidepool” by Peterwchen, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Montipora_flabellata-tidepool.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Peterwchen — //commons.wikimedia.org/wiki/User:Peterwchen
-  - Dated: Taken on 31 May 2014, 12:46:21
-  - 1600×1200px, 412 KB, shot 315 m from the spot
-  - Description: Blue rice coral at Kēʻē Beach
-  - Match: score 9 via coastal-in-title, kw:beach+tide, geo:315m, w>=1000, landscape
-- **`us-hi-ke-e-beach-2.jpg`** — “Pocillopora meandrina-tidepool” by Peterwchen, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Pocillopora_meandrina-tidepool.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Peterwchen — //commons.wikimedia.org/wiki/User:Peterwchen
-  - Dated: Taken on 31 May 2014, 12:48:35
-  - 1600×1200px, 338 KB, shot 315 m from the spot
-  - Description: Cauliflower coral in a tidepool at Kēʻē Beach , Hawaii
-  - Match: score 9 via coastal-in-title, kw:beach+tide, geo:315m, w>=1000, landscape
-- **`us-hi-ke-e-beach-3.jpg`** — “Ke'e (4113415477)” by Matt MacGillivray from Toronto, Canada, Wikimedia Commons, CC BY 2.0
+- **`us-hi-ke-e-beach-1.jpg`** — “Ke'e (4113415477)” by Matt MacGillivray from Toronto, Canada, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Ke%27e_(4113415477).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Matt MacGillivray from Toronto, Canada — https://www.flickr.com/people/58575431@N00
@@ -2466,6 +2450,22 @@
   - 1600×1065px, 282 KB, shot 291 m from the spot
   - Description: At the absolute end of the road on the north coast of kauai, at the edge of the napali coast lies ke'e beach. A very short stretch of the most beautiful and rugged coastline I have ever seen. With waves well over my head crashing into a reef a short distance off shore, you can swim in a small relatively protected cove. The cove boasts fairly strong currents even 20 feet from shore, so it's wise to not venture far. For those who stay to enjoy the beach, take a walk down the beach just before sunset, turn around and absorb the sheer awesomeness of the napali coast.
   - Match: score 8 via kw:beach+wave+waves+coast, geo:291m, w>=1000, landscape
+- **`us-hi-ke-e-beach-2.jpg`** ✗ **not a coastal photo** — “Montipora flabellata-tidepool” by Peterwchen, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Montipora_flabellata-tidepool.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Peterwchen — //commons.wikimedia.org/wiki/User:Peterwchen
+  - Dated: Taken on 31 May 2014, 12:46:21
+  - 1600×1200px, 412 KB, shot 315 m from the spot
+  - Description: Blue rice coral at Kēʻē Beach
+  - Match: score 9 via coastal-in-title, kw:beach+tide, geo:315m, w>=1000, landscape
+- **`us-hi-ke-e-beach-3.jpg`** ✗ **not a coastal photo** — “Pocillopora meandrina-tidepool” by Peterwchen, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Pocillopora_meandrina-tidepool.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Peterwchen — //commons.wikimedia.org/wiki/User:Peterwchen
+  - Dated: Taken on 31 May 2014, 12:48:35
+  - 1600×1200px, 338 KB, shot 315 m from the spot
+  - Description: Cauliflower coral in a tidepool at Kēʻē Beach , Hawaii
+  - Match: score 9 via coastal-in-title, kw:beach+tide, geo:315m, w>=1000, landscape
 
 ## Keka'a Beach
 
@@ -2479,7 +2479,7 @@
   - 1600×1067px, 730 KB, shot 90 m from the spot
   - Description: Just after sunrise in the coast of Maui. I bought a variable neutral density filter before traveling to Hawaii. I managed to get up early, hopped in the car, and drove a couple of miles unitl I found a spot wirh rocks. Played all morning with the variable ND filter. This is a 15 second exposure. The clouds are a bit overexposed, but I like the colors and feel of the place. ISO 100, 19mm, f20, 15sec. Processed in ACR twice, once to try to recover some of hte details on the bright clouds and a second time to lighten the foreground a bit. Then used Nik Viveza to brighten the tree and rocks a bit.
   - Match: score 8 via kw:beach+coast+cove+sunrise, geo:90m, w>=1000, landscape
-- **`us-hi-keka-a-beach-2.jpg`** — Sea Turtle.Maui. (11106650976) — CC0 (Wikimedia Commons), no attribution required
+- **`us-hi-keka-a-beach-2.jpg`** ✗ **not a coastal photo** — Sea Turtle.Maui. (11106650976) — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Sea_Turtle.Maui._(11106650976).jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Bernard Spragg. NZ from Christchurch, New Zealand — https://www.flickr.com/people/88123769@N02
@@ -2487,7 +2487,7 @@
   - 1600×1027px, 1074 KB, shot 1964 m from the spot
   - Description: Green turtles are found throughout the world, occurring primarily in tropical, and to a lesser extent, subtropical waters. The Hawaiian green turtle is genetically distinct from the other green sea turtle populations, nesting primarily in the French Frigate Shoals of the Northwestern Hawaiian Islands and feeding in the coastal areas of the main Hawaiian Islands. This species was in a steep decline as of the 1970s because of direct harvest of both turtles and eggs by humans. The population has grown steadily over the last thirty years after protection began in 1978. Greens are the most common s
   - Match: score 8 via coastal-in-title, kw:sea+coast+coastal+mar, geo:1964m, w>=1000, landscape
-- **`us-hi-keka-a-beach-3.jpg`** — Green sea turtle. (14167623264) — CC0 (Wikimedia Commons), no attribution required
+- **`us-hi-keka-a-beach-3.jpg`** ✗ **not a coastal photo** — Green sea turtle. (14167623264) — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Green_sea_turtle._(14167623264).jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Bernard Spragg. NZ from Christchurch, New Zealand — https://www.flickr.com/people/88123769@N02
@@ -2566,14 +2566,7 @@
   - 1600×1200px, 545 KB, shot 223 m from the spot
   - Description: Poipu, Kauai, Hawaii
   - Match: score 13 via coastal-in-title, name:kiahuna, kw:beach+sunset, geo:223m, w>=1000, landscape
-- **`us-hi-kiahuna-beach-2.jpg`** — “Endangered Monk Seal resting on the sand near Poipu Beach, Kauai.” by Olssonf, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Endangered_Monk_Seal_resting_on_the_sand_near_Poipu_Beach,_Kauai..jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Olssonf — //commons.wikimedia.org/w/index.php?title=User:Olssonf&amp;action=edit&amp;redlink=1
-  - 1600×844px, 450 KB, shot 156 m from the spot
-  - Description: Endangered Monk Seal resting on the sand near Poipu Beach, Kauai.
-  - Match: score 10 via coastal-in-title, kw:beach+sea+sand, geo:156m, w>=1000, landscape
-- **`us-hi-kiahuna-beach-3.jpg`** — “Poipu Beach sunset Kauai Hawaii (46227660402)” by dronepicr, Wikimedia Commons, CC BY 2.0
+- **`us-hi-kiahuna-beach-2.jpg`** — “Poipu Beach sunset Kauai Hawaii (46227660402)” by dronepicr, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Poipu_Beach_sunset_Kauai_Hawaii_(46227660402).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: dronepicr — https://www.flickr.com/people/132646954@N02
@@ -2581,6 +2574,13 @@
   - 1600×1067px, 318 KB, shot 278 m from the spot
   - Description: Poipu Beach sunset Kauai Hawaii
   - Match: score 9 via coastal-in-title, kw:beach+sunset, geo:278m, w>=1000, landscape
+- **`us-hi-kiahuna-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Endangered Monk Seal resting on the sand near Poipu Beach, Kauai.” by Olssonf, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Endangered_Monk_Seal_resting_on_the_sand_near_Poipu_Beach,_Kauai..jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Olssonf — //commons.wikimedia.org/w/index.php?title=User:Olssonf&amp;action=edit&amp;redlink=1
+  - 1600×844px, 450 KB, shot 156 m from the spot
+  - Description: Endangered Monk Seal resting on the sand near Poipu Beach, Kauai.
+  - Match: score 10 via coastal-in-title, kw:beach+sea+sand, geo:156m, w>=1000, landscape
 
 ## Kikaua Point Beach
 
@@ -2615,15 +2615,7 @@
 
 `osm:way/228845811` · 21.3282103, -158.1222844 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-hi-ko-olina-1.jpg`** — “Longboards - Marriott's Ko Olina Beach Club” by Farragutful, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Longboards_-_Marriott%27s_Ko_Olina_Beach_Club.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Farragutful — //commons.wikimedia.org/wiki/User:Farragutful
-  - Dated: Taken on 15 January 2022 15:48:13
-  - 1600×1067px, 945 KB, shot 335 m from the spot
-  - Description: Longboards, an outdoor restaurant, at Marriott's Ko Olina Beach Club in Ko Olina , Hawaii
-  - Match: score 14 via coastal-in-title, name:olina, kw:beach+mar+longboard, geo:335m, w>=1000, landscape
-- **`us-hi-ko-olina-2.jpg`** — “Ko Olina Lagoon (137451511)” by Howard Cheng, Wikimedia Commons, CC BY-SA 3.0
+- **`us-hi-ko-olina-1.jpg`** — “Ko Olina Lagoon (137451511)” by Howard Cheng, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Ko_Olina_Lagoon_(137451511).jpeg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Howard Cheng — https://500px.com/howcheng
@@ -2631,7 +2623,7 @@
   - 1600×441px, 163 KB, shot 229 m from the spot
   - Description: 500px provided description: Panoramic view of Ko Olina lagoon 1, adjacent to Disney Aulani Resort [#Beach ,#Hawaii ,#Lagoon]
   - Match: score 13 via coastal-in-title, name:olina, kw:beach+lagoon, geo:229m, w>=1000, landscape
-- **`us-hi-ko-olina-3.jpg`** — “Ko Olina Lagoon 3” by Farragutful, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-ko-olina-2.jpg`** — “Ko Olina Lagoon 3” by Farragutful, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Ko_Olina_Lagoon_3.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Farragutful — //commons.wikimedia.org/wiki/User:Farragutful
@@ -2639,6 +2631,14 @@
   - 1600×1200px, 931 KB, shot 405 m from the spot
   - Description: Lagoon 3 in front of the Marriott Ko Olina Beach Club in Hawaii.
   - Match: score 13 via coastal-in-title, name:olina, kw:beach+mar+lagoon, geo:405m, w>=1000, landscape
+- **`us-hi-ko-olina-3.jpg`** ✗ **not a coastal photo** — “Longboards - Marriott's Ko Olina Beach Club” by Farragutful, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Longboards_-_Marriott%27s_Ko_Olina_Beach_Club.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Farragutful — //commons.wikimedia.org/wiki/User:Farragutful
+  - Dated: Taken on 15 January 2022 15:48:13
+  - 1600×1067px, 945 KB, shot 335 m from the spot
+  - Description: Longboards, an outdoor restaurant, at Marriott's Ko Olina Beach Club in Ko Olina , Hawaii
+  - Match: score 14 via coastal-in-title, name:olina, kw:beach+mar+longboard, geo:335m, w>=1000, landscape
 
 ## Kōkī Beach
 
@@ -2760,7 +2760,7 @@
 
 `osm:way/830516795` · 19.8287131, -155.9916707 · beach type: **sandy** (OpenStreetMap surface=sand) · access: permissive
 
-- **`us-hi-kumukea-beach-1.jpg`** — “Tide pools, Four Seasons Hualalai” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-kumukea-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Tide pools, Four Seasons Hualalai” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Tide_pools,_Four_Seasons_Hualalai.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Holly Cheng — //commons.wikimedia.org/wiki/User:Holly_Cheng
@@ -2768,15 +2768,7 @@
   - 1600×900px, 696 KB, shot 73 m from the spot
   - Description: Two girls walk near tide pools on the Four Seasons Resort Hualalai in Kaupulehu, Hawaii
   - Match: score 10 via coastal-in-title, kw:beach+sea+tide, geo:73m, w>=1000, landscape
-- **`us-hi-kumukea-beach-2.jpg`** — “Infinity pool, Four Seasons Hualalai” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Infinity_pool,_Four_Seasons_Hualalai.JPG
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Holly Cheng — //commons.wikimedia.org/wiki/User:Holly_Cheng
-  - Dated: 2015-08-09
-  - 1600×1200px, 666 KB, shot 34 m from the spot
-  - Description: Children swimming in the infinity pool at Four Seasons Resort Hualalai in Kaupulehu, Hawaii
-  - Match: score 7.5 via coastal-in-title, kw:sea, geo:34m, w>=1000, landscape
-- **`us-hi-kumukea-beach-3.jpg`** — “King's Pond, Four Seasons Hualalai (1)” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-kumukea-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “King's Pond, Four Seasons Hualalai (1)” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:King%27s_Pond,_Four_Seasons_Hualalai_(1).jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Holly Cheng — //commons.wikimedia.org/wiki/User:Holly_Cheng
@@ -2784,12 +2776,20 @@
   - 1600×900px, 523 KB, shot 187 m from the spot
   - Description: Brackish pond on the grounds of the Four Seasons Resort Hualalai where guests can go snorkeling
   - Match: score 7.5 via coastal-in-title, kw:sea, geo:187m, w>=1000, landscape
+- **`us-hi-kumukea-beach-3.jpg`** ✗ **not a coastal photo** — “Infinity pool, Four Seasons Hualalai” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Infinity_pool,_Four_Seasons_Hualalai.JPG
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Holly Cheng — //commons.wikimedia.org/wiki/User:Holly_Cheng
+  - Dated: 2015-08-09
+  - 1600×1200px, 666 KB, shot 34 m from the spot
+  - Description: Children swimming in the infinity pool at Four Seasons Resort Hualalai in Kaupulehu, Hawaii
+  - Match: score 7.5 via coastal-in-title, kw:sea, geo:34m, w>=1000, landscape
 
 ## Lagoon Beach
 
 `osm:way/145181568` · 19.9257537, -155.8876194 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-hi-lagoon-beach-1.jpg`** — “Hilton Waikoloa Lagoon (53312032832)” by Raita Futo from Tokyo, Japan, Wikimedia Commons, CC BY 2.0
+- **`us-hi-lagoon-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Hilton Waikoloa Lagoon (53312032832)” by Raita Futo from Tokyo, Japan, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hilton_Waikoloa_Lagoon_(53312032832).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Raita Futo from Tokyo, Japan — https://www.flickr.com/people/128275472@N07
@@ -2797,7 +2797,7 @@
   - 1600×1067px, 752 KB, shot 118 m from the spot
   - Description: ハワイ島 ヒルトン・ワイコロア・ビレッジ
   - Match: score 11.5 via coastal-in-title, name:lagoon, kw:lagoon, geo:118m, w>=1000, landscape
-- **`us-hi-lagoon-beach-2.jpg`** — “Waikoloa Lagoon (53312899811)” by Raita Futo from Tokyo, Japan, Wikimedia Commons, CC BY 2.0
+- **`us-hi-lagoon-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Waikoloa Lagoon (53312899811)” by Raita Futo from Tokyo, Japan, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Waikoloa_Lagoon_(53312899811).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Raita Futo from Tokyo, Japan — https://www.flickr.com/people/128275472@N07
@@ -2805,7 +2805,7 @@
   - 1600×1067px, 747 KB, shot 118 m from the spot
   - Description: ハワイ島 ヒルトン・ワイコロア・ビレッジ
   - Match: score 11.5 via coastal-in-title, name:lagoon, kw:lagoon, geo:118m, w>=1000, landscape
-- **`us-hi-lagoon-beach-3.jpg`** — US Navy 030601-N-0106C-003 Members of the Honolulu Pearl Canoe Club (HPCC) take their koa wood canoe, locally known as a Honaunau, into the waters of Keehi Lagoon in preparation for competition against other canoe teams — Public domain (Wikimedia Commons), no attribution required
+- **`us-hi-lagoon-beach-3.jpg`** ⚠︎ *context, not the coast itself* — US Navy 030601-N-0106C-003 Members of the Honolulu Pearl Canoe Club (HPCC) take their koa wood canoe, locally known as a Honaunau, into the waters of Keehi Lagoon in preparation for competition against other canoe teams — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:US_Navy_030601-N-0106C-003_Members_of_the_Honolulu_Pearl_Canoe_Club_(HPCC)_take_their_koa_wood_canoe,_locally_known_as_a_Honaunau,_into_the_waters_of_Keehi_Lagoon_in_preparation_for_competition_against_other_canoe_teams.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: U.S. Navy photo by Journalist 1st Class Daniel J. Calderon
@@ -2818,23 +2818,7 @@
 
 `osm:way/203015602` · 21.3917353, -157.7155045 · beach type: **sandy** (OpenStreetMap surface=sand) · access: yes
 
-- **`us-hi-lanikai-beach-1.jpg`** — “Hawaiian Monk Seal Sleeping on Beach” by Ashley98lee, Wikimedia Commons, CC BY 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Hawaiian_Monk_Seal_Sleeping_on_Beach.jpg
-  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
-  - Author: Ashley98lee — //commons.wikimedia.org/w/index.php?title=User:Ashley98lee&amp;action=edit&amp;redlink=1
-  - Dated: 2025-04-03 17:32:25
-  - 1600×1067px, 492 KB, shot 72 m from the spot
-  - Description: A Hawaiian monk seal sleeping on Lanikai Beach in Oahu.
-  - Match: score 13 via coastal-in-title, name:lanikai, kw:beach+sea, geo:72m, w>=1000, landscape
-- **`us-hi-lanikai-beach-2.jpg`** — “Hawaiian Monk Seal on Lanikai Beach” by Ashley98lee, Wikimedia Commons, CC BY 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Hawaiian_Monk_Seal_on_Lanikai_Beach.jpg
-  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
-  - Author: Ashley98lee — //commons.wikimedia.org/w/index.php?title=User:Ashley98lee&amp;action=edit&amp;redlink=1
-  - Dated: 2025-04-03 17:32:31
-  - 1600×2400px, 701 KB, shot 72 m from the spot
-  - Description: A Hawaiian monk seal sleeping on Lanikai Beach in Oahu.
-  - Match: score 12.5 via coastal-in-title, name:lanikai, kw:beach+sea, geo:72m, w>=1000
-- **`us-hi-lanikai-beach-3.jpg`** — “Kailua Beach (27551237660)” by Thomas Woodtli from Zürich, Switzerland, Wikimedia Commons, CC BY-SA 2.0
+- **`us-hi-lanikai-beach-1.jpg`** — “Kailua Beach (27551237660)” by Thomas Woodtli from Zürich, Switzerland, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Kailua_Beach_(27551237660).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Thomas Woodtli from Zürich, Switzerland — https://www.flickr.com/people/21876032@N02
@@ -2842,6 +2826,22 @@
   - 1600×1200px, 634 KB, shot 405 m from the spot
   - Description: Image of the view southeast of Lanikai Beach taken from the Ka'iwa Ridge Trail, a trail leading to historic military pillbox (bunker) installations and a high vantage point.
   - Match: score 12 via coastal-in-title, name:lanikai, kw:beach+point, geo:405m, w>=1000, landscape
+- **`us-hi-lanikai-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Hawaiian Monk Seal on Lanikai Beach” by Ashley98lee, Wikimedia Commons, CC BY 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Hawaiian_Monk_Seal_on_Lanikai_Beach.jpg
+  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
+  - Author: Ashley98lee — //commons.wikimedia.org/w/index.php?title=User:Ashley98lee&amp;action=edit&amp;redlink=1
+  - Dated: 2025-04-03 17:32:31
+  - 1600×2400px, 701 KB, shot 72 m from the spot
+  - Description: A Hawaiian monk seal sleeping on Lanikai Beach in Oahu.
+  - Match: score 12.5 via coastal-in-title, name:lanikai, kw:beach+sea, geo:72m, w>=1000
+- **`us-hi-lanikai-beach-3.jpg`** ✗ **not a coastal photo** — “Hawaiian Monk Seal Sleeping on Beach” by Ashley98lee, Wikimedia Commons, CC BY 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Hawaiian_Monk_Seal_Sleeping_on_Beach.jpg
+  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
+  - Author: Ashley98lee — //commons.wikimedia.org/w/index.php?title=User:Ashley98lee&amp;action=edit&amp;redlink=1
+  - Dated: 2025-04-03 17:32:25
+  - 1600×1067px, 492 KB, shot 72 m from the spot
+  - Description: A Hawaiian monk seal sleeping on Lanikai Beach in Oahu.
+  - Match: score 13 via coastal-in-title, name:lanikai, kw:beach+sea, geo:72m, w>=1000, landscape
 
 ## Larsen's Beach
 
@@ -2913,15 +2913,7 @@
   - 1600×1200px, 591 KB
   - Description: Allerton Garden, Kauai, Hawaii - Lawai Bay.
   - Match: score 10 via coastal-in-title, name:lawai, kw:beach+bay, w>=1000, landscape
-- **`us-hi-lawai-beach-2.jpg`** — 'Lawai Beach' by D. Howard Hitchcock, 1929 — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:%27Lawai_Beach%27_by_D._Howard_Hitchcock,_1929.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: D. Howard Hitchcock
-  - Dated: 1929
-  - 1600×1187px, 901 KB
-  - Description: Lawai Beach by D. Howard Hitchcock, 1929
-  - Match: score 8.5 via coastal-in-title, name:lawai, kw:beach, w>=1000, landscape
-- **`us-hi-lawai-beach-3.jpg`** — “If you could own this ocean front property” by Thank You (23 Millions+) views, Wikimedia Commons, CC BY 2.0
+- **`us-hi-lawai-beach-2.jpg`** — “If you could own this ocean front property” by Thank You (23 Millions+) views, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:If_you_could_own_this_ocean_front_property.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Thank You (23 Millions+) views
@@ -2929,6 +2921,14 @@
   - 1600×742px, 328 KB, shot 1295 m from the spot
   - Description: Kukuiula Bay, Kauai Island, Hawaii
   - Match: score 7 via coastal-in-title, kw:ocean+bay, geo:1295m, w>=1000, landscape
+- **`us-hi-lawai-beach-3.jpg`** ✗ **not a coastal photo** — 'Lawai Beach' by D. Howard Hitchcock, 1929 — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:%27Lawai_Beach%27_by_D._Howard_Hitchcock,_1929.jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: D. Howard Hitchcock
+  - Dated: 1929
+  - 1600×1187px, 901 KB
+  - Description: Lawai Beach by D. Howard Hitchcock, 1929
+  - Match: score 8.5 via coastal-in-title, name:lawai, kw:beach, w>=1000, landscape
 
 ## Lē'ahi Beach
 
@@ -3000,14 +3000,14 @@
   - 1600×1067px, 404 KB, shot 7990669 m from the spot
   - Description: Lighthouse Beach, below Sugarloaf Point Lighthouse
   - Match: score 11 via coastal-in-title, name:lighthouse, kw:beach+point+lighthouse, geo:7990669m, w>=1000, landscape
-- **`us-hi-lighthouse-beach-2.jpg`** — Ben's Chair, Lighthouse Beach Port Macquarie — CC0 (Wikimedia Commons), no attribution required
+- **`us-hi-lighthouse-beach-2.jpg`** ⚠︎ *context, not the coast itself* — Ben's Chair, Lighthouse Beach Port Macquarie — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Ben%27s_Chair,_Lighthouse_Beach_Port_Macquarie.JPG
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Marshypoo — //commons.wikimedia.org/w/index.php?title=User:Marshypoo&amp;action=edit&amp;redlink=1
   - 1600×1200px, 470 KB
   - Description: sunrise at Lighthouse Beach Port Macquarie
   - Match: score 11 via coastal-in-title, name:lighthouse, kw:beach+point+lighthouse+sunrise, w>=1000, landscape
-- **`us-hi-lighthouse-beach-3.jpg`** — “Burnham-on-Sea , Low Lighthouse ^ Beach - geograph.org.uk - 4424609” by Lewis Clarke, Wikimedia Commons, CC BY-SA 2.0
+- **`us-hi-lighthouse-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Burnham-on-Sea , Low Lighthouse ^ Beach - geograph.org.uk - 4424609” by Lewis Clarke, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Burnham-on-Sea_,_Low_Lighthouse_%5E_Beach_-_geograph.org.uk_-_4424609.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Lewis Clarke — https://www.geograph.org.uk/profile/11775
@@ -3086,15 +3086,7 @@
   - 1600×1200px, 844 KB, shot 79 m from the spot
   - Description: Haleiwa Beach, Oahu, Hawaii.
   - Match: score 11.5 via coastal-in-title, name:maeaea, kw:beach, geo:79m, w>=1000, landscape
-- **`us-hi-maeaea-beach-2.jpg`** — “Fishing On The Jetty (175020955)” by Terry Lucas, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Fishing_On_The_Jetty_(175020955).jpeg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: Terry Lucas — https://500px.com/tdlucas5000
-  - Dated: 9 September 2016, 16:31:12 (UTC)
-  - 1600×1000px, 729 KB, shot 355 m from the spot
-  - Description: 500px provided description: Lava mountains above Haleiwa harbor. Those people have got "the spot" to catch some breakfast or lunch. [#sea ,#mountains ,#clouds ,#coast ,#ocean ,#seascape ,#hawaii ,#photomatix ,#oahu ,#haleiwa ,#HDR]
-  - Match: score 10 via coastal-in-title, kw:ocean+sea+coast+jetty, geo:355m, w>=1000, landscape
-- **`us-hi-maeaea-beach-3.jpg`** — “Hard Shore (4909989524)” by Daniel Ramirez from Honolulu, USA, Wikimedia Commons, CC BY 2.0
+- **`us-hi-maeaea-beach-2.jpg`** — “Hard Shore (4909989524)” by Daniel Ramirez from Honolulu, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Hard_Shore_(4909989524).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Daniel Ramirez from Honolulu, USA — https://www.flickr.com/people/21442511@N08
@@ -3102,6 +3094,14 @@
   - 1600×1013px, 657 KB, shot 539 m from the spot
   - Description: Hard rocks on the shore near Puaena Point
   - Match: score 9 via coastal-in-title, kw:shore+point+rocks, geo:539m, w>=1000, landscape
+- **`us-hi-maeaea-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Fishing On The Jetty (175020955)” by Terry Lucas, Wikimedia Commons, CC BY 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Fishing_On_The_Jetty_(175020955).jpeg
+  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
+  - Author: Terry Lucas — https://500px.com/tdlucas5000
+  - Dated: 9 September 2016, 16:31:12 (UTC)
+  - 1600×1000px, 729 KB, shot 355 m from the spot
+  - Description: 500px provided description: Lava mountains above Haleiwa harbor. Those people have got "the spot" to catch some breakfast or lunch. [#sea ,#mountains ,#clouds ,#coast ,#ocean ,#seascape ,#hawaii ,#photomatix ,#oahu ,#haleiwa ,#HDR]
+  - Match: score 10 via coastal-in-title, kw:ocean+sea+coast+jetty, geo:355m, w>=1000, landscape
 
 ## Magic Island lagoon
 
@@ -3157,15 +3157,7 @@
 
 `osm:way/386560911` · 19.7823254, -156.0374103
 
-- **`us-hi-mahaiula-beach-1.jpg`** — “Mahaiula Beach (17135522144)” by mail_collector, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Mahaiula_Beach_(17135522144).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: mail_collector — https://www.flickr.com/people/91272573@N05
-  - Dated: 2015-05-17 00:05
-  - 1600×1143px, 652 KB
-  - Description: Mahaiula Beach
-  - Match: score 10 via coastal-in-title, name:mahaiula, kw:beach+sunset, w>=1000, landscape
-- **`us-hi-mahaiula-beach-2.jpg`** — “Mahai'ula Bay Beach, Kailua-Kona - panoramio (2)” by Bob Linsdell, Wikimedia Commons, CC BY 3.0
+- **`us-hi-mahaiula-beach-1.jpg`** — “Mahai'ula Bay Beach, Kailua-Kona - panoramio (2)” by Bob Linsdell, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Mahai%27ula_Bay_Beach,_Kailua-Kona_-_panoramio_(2).jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Bob Linsdell — https://web.archive.org/web/20161031042403/http://www.panoramio.com/user/7508506?with_photo_id=126660549
@@ -3173,7 +3165,7 @@
   - 1600×900px, 689 KB, shot 108 m from the spot
   - Description: Mahai'ula Bay Beach, Kailua-Kona
   - Match: score 9 via coastal-in-title, kw:beach+bay, geo:108m, w>=1000, landscape
-- **`us-hi-mahaiula-beach-3.jpg`** — “Mahai'ula Bay Beach, Kailua-Kona (504671) (23874190280)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
+- **`us-hi-mahaiula-beach-2.jpg`** — “Mahai'ula Bay Beach, Kailua-Kona (504671) (23874190280)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Mahai%27ula_Bay_Beach,_Kailua-Kona_(504671)_(23874190280).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Robert Linsdell from St. Andrews, Canada — https://www.flickr.com/people/92487715@N03
@@ -3181,28 +3173,20 @@
   - 1600×1067px, 818 KB, shot 132 m from the spot
   - Description: Mahai'ula Bay Beach, Kailua-Kona, Big Island, Hawaii, United States
   - Match: score 9 via coastal-in-title, kw:beach+bay, geo:132m, w>=1000, landscape
+- **`us-hi-mahaiula-beach-3.jpg`** ✗ **not a coastal photo** — “Mahaiula Beach (17135522144)” by mail_collector, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Mahaiula_Beach_(17135522144).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: mail_collector — https://www.flickr.com/people/91272573@N05
+  - Dated: 2015-05-17 00:05
+  - 1600×1143px, 652 KB
+  - Description: Mahaiula Beach
+  - Match: score 10 via coastal-in-title, name:mahaiula, kw:beach+sunset, w>=1000, landscape
 
 ## Mākaha Beach
 
 `osm:way/904924438` · 21.4770473, -158.2215132 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-hi-makaha-beach-1.jpg`** — Near Pūpūkea Beach Park, Oahu — CC0 (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Near_P%C5%ABp%C5%ABkea_Beach_Park,_Oahu.jpg
-  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
-  - Author: The Eloquent Peasant — //commons.wikimedia.org/wiki/User:The_Eloquent_Peasant
-  - Dated: 2021-10-31 17:20:53
-  - 1600×1200px, 868 KB
-  - Description: Makaha, Oahu
-  - Match: score 8.5 via coastal-in-title, name:makaha, kw:beach, w>=1000, landscape
-- **`us-hi-makaha-beach-2.jpg`** — “Beach in Waianae, Hawaii” by The Eloquent Peasant, Wikimedia Commons, CC BY 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Beach_in_Waianae,_Hawaii.jpg
-  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
-  - Author: The Eloquent Peasant — //commons.wikimedia.org/wiki/User:The_Eloquent_Peasant
-  - Dated: 2021-11-05 04:48:52
-  - 1600×933px, 610 KB
-  - Description: Beach in Makaha, Hawaii
-  - Match: score 8.5 via coastal-in-title, name:makaha, kw:beach, w>=1000, landscape
-- **`us-hi-makaha-beach-3.jpg`** — “Green-Sea-Turtle-Mākaha-Beach-Park” by Nicolai Edgar Andersen, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-makaha-beach-1.jpg`** — “Green-Sea-Turtle-Mākaha-Beach-Park” by Nicolai Edgar Andersen, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Green-Sea-Turtle-M%C4%81kaha-Beach-Park.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Nicolai Edgar Andersen — //commons.wikimedia.org/w/index.php?title=User:Niceley&amp;action=edit&amp;redlink=1
@@ -3210,6 +3194,22 @@
   - 1600×1200px, 450 KB, shot 782 m from the spot
   - Description: Green sea turtle at Mākaha Beach Park, 2014.
   - Match: score 8 via coastal-in-title, kw:beach+sea, geo:782m, w>=1000, landscape
+- **`us-hi-makaha-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Beach in Waianae, Hawaii” by The Eloquent Peasant, Wikimedia Commons, CC BY 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Beach_in_Waianae,_Hawaii.jpg
+  - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
+  - Author: The Eloquent Peasant — //commons.wikimedia.org/wiki/User:The_Eloquent_Peasant
+  - Dated: 2021-11-05 04:48:52
+  - 1600×933px, 610 KB
+  - Description: Beach in Makaha, Hawaii
+  - Match: score 8.5 via coastal-in-title, name:makaha, kw:beach, w>=1000, landscape
+- **`us-hi-makaha-beach-3.jpg`** ✗ **not a coastal photo** — Near Pūpūkea Beach Park, Oahu — CC0 (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Near_P%C5%ABp%C5%ABkea_Beach_Park,_Oahu.jpg
+  - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
+  - Author: The Eloquent Peasant — //commons.wikimedia.org/wiki/User:The_Eloquent_Peasant
+  - Dated: 2021-10-31 17:20:53
+  - 1600×1200px, 868 KB
+  - Description: Makaha, Oahu
+  - Match: score 8.5 via coastal-in-title, name:makaha, kw:beach, w>=1000, landscape
 
 ## Makalawena Beach
 
@@ -3344,15 +3344,7 @@
 
 `osm:way/904931359` · 21.5316579, -158.2300093 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-hi-makua-beach-1.jpg`** — LARC-V-Kaneohe-bay-19840131-2 — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:LARC-V-Kaneohe-bay-19840131-2.jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: SGT DEWEY, USMC
-  - Dated: 1984-01-31
-  - 1600×1049px, 492 KB
-  - Description: Navy beachmasters come ashore at Makua Valley Beach aboard an amphibious resupply cargo lighter (LARC V) during Operation KERNAL BLITZ. Location: KANEOHE BAY, HAWAII (HI) UNITED STATES OF AMERICA (USA)
-  - Match: score 11 via coastal-in-title, name:makua, kw:beach+shore+mar+bay, w>=1000, landscape
-- **`us-hi-makua-beach-2.jpg`** — “Waves (5889049744)” by InSapphoWeTrust from Los Angeles, California, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-hi-makua-beach-1.jpg`** — “Waves (5889049744)” by InSapphoWeTrust from Los Angeles, California, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Waves_(5889049744).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: InSapphoWeTrust from Los Angeles, California, USA — https://www.flickr.com/people/56619626@N05
@@ -3360,7 +3352,7 @@
   - 1600×1063px, 475 KB, shot 2089 m from the spot
   - Description: This beach park is at the western extremes of Oahu, just northwest of Waianae, past a row of squatters.
   - Match: score 8 via coastal-in-title, kw:beach+wave+waves, geo:2089m, w>=1000, landscape
-- **`us-hi-makua-beach-3.jpg`** — “Beach Break Honolulu - panoramio” by harley photo, Wikimedia Commons, CC BY-SA 3.0
+- **`us-hi-makua-beach-2.jpg`** — “Beach Break Honolulu - panoramio” by harley photo, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Beach_Break_Honolulu_-_panoramio.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: harley photo — https://web.archive.org/web/20161010042258/http://www.panoramio.com/user/961561?with_photo_id=6593813
@@ -3368,6 +3360,14 @@
   - 1600×1200px, 554 KB, shot 2306 m from the spot
   - Description: Beach Break
   - Match: score 7 via coastal-in-title, kw:beach+break, geo:2306m, w>=1000, landscape
+- **`us-hi-makua-beach-3.jpg`** ✗ **not a coastal photo** — LARC-V-Kaneohe-bay-19840131-2 — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:LARC-V-Kaneohe-bay-19840131-2.jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: SGT DEWEY, USMC
+  - Dated: 1984-01-31
+  - 1600×1049px, 492 KB
+  - Description: Navy beachmasters come ashore at Makua Valley Beach aboard an amphibious resupply cargo lighter (LARC V) during Operation KERNAL BLITZ. Location: KANEOHE BAY, HAWAII (HI) UNITED STATES OF AMERICA (USA)
+  - Match: score 11 via coastal-in-title, name:makua, kw:beach+shore+mar+bay, w>=1000, landscape
 
 ## Mauna Kea Beach
 
@@ -3402,15 +3402,7 @@
 
 `osm:way/239831563` · 19.9421884, -155.8726108 · beach type: **sandy** (OpenStreetMap surface=sand) · access: yes
 
-- **`us-hi-mauna-lani-beach-1.jpg`** — “Dead crab, 49 Black Sand Beach, Hawaii” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Dead_crab,_49_Black_Sand_Beach,_Hawaii.JPG
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Holly Cheng — //commons.wikimedia.org/wiki/User:Holly_Cheng
-  - Dated: 2015-08-11
-  - 1600×1200px, 682 KB, shot 1277 m from the spot
-  - Description: Dead crab (species unidentified) at 49 Black Sand Beach, Puako Hawaii
-  - Match: score 7 via coastal-in-title, kw:beach+sand, geo:1277m, w>=1000, landscape
-- **`us-hi-mauna-lani-beach-2.jpg`** — “49 Black Sand Beach (1)” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-mauna-lani-beach-1.jpg`** — “49 Black Sand Beach (1)” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:49_Black_Sand_Beach_(1).JPG
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Holly Cheng — //commons.wikimedia.org/wiki/User:Holly_Cheng
@@ -3418,13 +3410,21 @@
   - 1600×1200px, 877 KB, shot 1277 m from the spot
   - Description: 49 Black Sand Beach, Puako, Hawaii
   - Match: score 7 via coastal-in-title, kw:beach+sand, geo:1277m, w>=1000, landscape
-- **`us-hi-mauna-lani-beach-3.jpg`** — “49 Black Sand Beach (2)” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-mauna-lani-beach-2.jpg`** — “49 Black Sand Beach (2)” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:49_Black_Sand_Beach_(2).JPG
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Holly Cheng — //commons.wikimedia.org/wiki/User:Holly_Cheng
   - Dated: 2015-08-11
   - 1600×1200px, 945 KB, shot 1277 m from the spot
   - Description: 49 Black Sand Beach, Puako, Hawaii
+  - Match: score 7 via coastal-in-title, kw:beach+sand, geo:1277m, w>=1000, landscape
+- **`us-hi-mauna-lani-beach-3.jpg`** ✗ **not a coastal photo** — “Dead crab, 49 Black Sand Beach, Hawaii” by Holly Cheng, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Dead_crab,_49_Black_Sand_Beach,_Hawaii.JPG
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Holly Cheng — //commons.wikimedia.org/wiki/User:Holly_Cheng
+  - Dated: 2015-08-11
+  - 1600×1200px, 682 KB, shot 1277 m from the spot
+  - Description: Dead crab (species unidentified) at 49 Black Sand Beach, Puako Hawaii
   - Match: score 7 via coastal-in-title, kw:beach+sand, geo:1277m, w>=1000, landscape
 
 ## Mauumae Beach
@@ -3613,7 +3613,7 @@
   - 1600×2408px, 457 KB, shot 264 m from the spot
   - Description: Some boys surfing in the water... A lovely sight, especially in early January!
   - Match: score 9.5 via coastal-in-title, kw:surf+surfing+coast+shore, geo:264m, w>=1000
-- **`us-hi-nanakuli-beach-park-2.jpg`** — “Go Faster - Flickr - tdlucas5000” by tdlucas5000 from Lakewood Ca., United States, Wikimedia Commons, CC BY 2.0
+- **`us-hi-nanakuli-beach-park-2.jpg`** ✗ **not a coastal photo** — “Go Faster - Flickr - tdlucas5000” by tdlucas5000 from Lakewood Ca., United States, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Go_Faster_-_Flickr_-_tdlucas5000.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: tdlucas5000 from Lakewood Ca., United States — https://www.flickr.com/people/27656017@N02
@@ -3621,7 +3621,7 @@
   - 1600×828px, 269 KB, shot 356 m from the spot
   - Description: Spinner Dolphins lined up to surf the bow wave. Somewhere on the West side of Oahu.
   - Match: score 7 via kw:surf+wave, geo:356m, w>=1000, landscape
-- **`us-hi-nanakuli-beach-park-3.jpg`** — “Oil-fired generators at Hawaiian Electric Kahe Power Plant in Kapolei on the Waianae Coast” by Tony Webster, Wikimedia Commons, CC BY 2.0
+- **`us-hi-nanakuli-beach-park-3.jpg`** ✗ **not a coastal photo** — “Oil-fired generators at Hawaiian Electric Kahe Power Plant in Kapolei on the Waianae Coast” by Tony Webster, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Oil-fired_generators_at_Hawaiian_Electric_Kahe_Power_Plant_in_Kapolei_on_the_Waianae_Coast.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Tony Webster
@@ -3679,7 +3679,7 @@
   - 1600×1200px, 330 KB, shot 2607 m from the spot
   - Description: Paia Beach Maui
   - Match: score 9.5 via coastal-in-title, name:paia, kw:beach, geo:2607m, w>=1000, landscape
-- **`us-hi-north-paia-beach-3.jpg`** — “Paia Beach Maui - panoramio (14)” by Michelle Maria, Wikimedia Commons, CC BY 3.0
+- **`us-hi-north-paia-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Paia Beach Maui - panoramio (14)” by Michelle Maria, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Paia_Beach_Maui_-_panoramio_(14).jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Michelle Maria — https://web.archive.org/web/20161024155925/http://www.panoramio.com/user/7406641?with_photo_id=86349053
@@ -3721,7 +3721,7 @@
 
 `osm:way/583044500` · 19.7050642, -156.048022 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-hi-ooma-beach-1.jpg`** — “Tree and rainbow” by Relativity, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-ooma-beach-1.jpg`** ✗ **not a coastal photo** — “Tree and rainbow” by Relativity, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Tree_and_rainbow.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Relativity — //commons.wikimedia.org/wiki/User:Relativity
@@ -3808,7 +3808,7 @@
   - 1600×1200px, 1057 KB, shot 1346 m from the spot
   - Description: View southwest towards the Pacific Ocean from the outer walls of Russian Fort Elizabeth within Russian Fort Elizabeth State Historical Park in Pakala Village, Kauai, Hawaii
   - Match: score 9.5 via coastal-in-title, name:pakala, kw:ocean, geo:1346m, w>=1000, landscape
-- **`us-hi-pakala-beach-3.jpg`** — “2021-10-07 10 00 53 View south towards the Pacific Ocean from the outer walls of Russian Fort Elizabeth within Russian Fort Elizabeth State Historical Park in Pakala Village, Kauai, Hawaii” by Famartin, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-pakala-beach-3.jpg`** ✗ **not a coastal photo** — “2021-10-07 10 00 53 View south towards the Pacific Ocean from the outer walls of Russian Fort Elizabeth within Russian Fort Elizabeth State Historical Park in Pakala Village, Kauai, Hawaii” by Famartin, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:2021-10-07_10_00_53_View_south_towards_the_Pacific_Ocean_from_the_outer_walls_of_Russian_Fort_Elizabeth_within_Russian_Fort_Elizabeth_State_Historical_Park_in_Pakala_Village,_Kauai,_Hawaii.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
@@ -3895,7 +3895,7 @@
   - 1600×1067px, 1481 KB, shot 164072 m from the spot
   - Description: The black sand beach in Wai'anapanapa State Park is really a black pebble beach, but it is pretty cool. The waves make a crackling sound when they go back. Here I played around with my new Fader II filter, a variable neutral density filter I got just before the trip.I like what it does to the water. ISO 100, 19mm, f20, 0.6sec. I processed the raw file 3 times in ACR, one exposed for the water, one for the land and one for the sky, and blended them with the brush in PS. This allowed me to bring out detail in the rocks without blowing out the sky and the waves.
   - Match: score 7 via coastal-in-title, kw:beach+wave+waves+sand, geo:164072m, w>=1000, landscape
-- **`us-hi-pebbles-beach-3.jpg`** — “Starr-120513-9482-Tournefortia argentea-habitat and boulder beach-Waihee Coastal Preserve-Maui (24512068164)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
+- **`us-hi-pebbles-beach-3.jpg`** ✗ **not a coastal photo** — “Starr-120513-9482-Tournefortia argentea-habitat and boulder beach-Waihee Coastal Preserve-Maui (24512068164)” by Forest and Kim Starr, Wikimedia Commons, CC BY 3.0 us
   - Source page: https://commons.wikimedia.org/wiki/File:Starr-120513-9482-Tournefortia_argentea-habitat_and_boulder_beach-Waihee_Coastal_Preserve-Maui_(24512068164).jpg
   - Licence: CC BY 3.0 us · attribution required
   - Author: Forest and Kim Starr — https://www.flickr.com/people/97499887@N06
@@ -3950,15 +3950,7 @@
 
 `osm:relation/9146697` · 22.0874059, -159.7567253
 
-- **`us-hi-polihale-beach-1.jpg`** — “Polihale Beach (327947733)” by Bryce Edwards from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Polihale_Beach_(327947733).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Bryce Edwards from San Jose, CA, USA — https://www.flickr.com/people/98185064@N00
-  - Dated: 2006-12-18 19:00
-  - 1600×1200px, 910 KB, shot 68 m from the spot
-  - Description: Polihale Beach
-  - Match: score 11.5 via coastal-in-title, name:polihale, kw:beach, geo:68m, w>=1000, landscape
-- **`us-hi-polihale-beach-2.jpg`** — “Dolphins on the Na Pali Coast (34580324803)” by Sheila Sund from Salem, United States, Wikimedia Commons, CC BY 2.0
+- **`us-hi-polihale-beach-1.jpg`** — “Dolphins on the Na Pali Coast (34580324803)” by Sheila Sund from Salem, United States, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Dolphins_on_the_Na_Pali_Coast_(34580324803).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Sheila Sund from Salem, United States — https://www.flickr.com/people/90692748@N04
@@ -3966,7 +3958,7 @@
   - 1600×2240px, 3735 KB, shot 1574 m from the spot
   - Description: From a recent Hawaii trip (where I took amazingly few pictures - a combination of adventures not conducive to cameras and less than optimum weather/lighting. Pods of dolphins swam with us several times on our boat trip up the Na Pali coast, but it took some generous sliding to break through the harsh lighting. HSS!
   - Match: score 10.5 via coastal-in-title, name:polihale, kw:coast+break, geo:1574m, w>=1000
-- **`us-hi-polihale-beach-3.jpg`** — “Na Pali coast Kauai 2” by The original uploader was Aion at English Wikipedia, Wikimedia Commons, CC BY-SA 3.0
+- **`us-hi-polihale-beach-2.jpg`** — “Na Pali coast Kauai 2” by The original uploader was Aion at English Wikipedia, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Na_Pali_coast_Kauai_2.jpg
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: The original uploader was Aion at English Wikipedia — https://en.wikipedia.org/wiki/User:Aion
@@ -3974,6 +3966,14 @@
   - 1600×1126px, 39 KB
   - Description: Aerial photo of the Na Pali Coast in Kaua‘i , Hawaii taken from a helicopter ( additional image available). The Na Pali Coast extends from Ke'e Beach to Polihale State Park . There is a trail connecting the two beaches, but some of it is so treacherous that permits are required. Photo taken by Barbara Alfors in May 2001.
   - Match: score 10 via coastal-in-title, name:polihale, kw:beach+coast, w>=1000, landscape
+- **`us-hi-polihale-beach-3.jpg`** ✗ **not a coastal photo** — “Polihale Beach (327947733)” by Bryce Edwards from San Jose, CA, USA, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Polihale_Beach_(327947733).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Bryce Edwards from San Jose, CA, USA — https://www.flickr.com/people/98185064@N00
+  - Dated: 2006-12-18 19:00
+  - 1600×1200px, 910 KB, shot 68 m from the spot
+  - Description: Polihale Beach
+  - Match: score 11.5 via coastal-in-title, name:polihale, kw:beach, geo:68m, w>=1000, landscape
 
 ## Polo Beach
 
@@ -4066,23 +4066,7 @@
 
 `osm:way/209294812` · 20.202699, -155.7294718
 
-- **`us-hi-pololu-beach-1.jpg`** — “Ground Cover, Pololu Valley (31829985675)” by David Baron from San Francisco, California, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Ground_Cover,_Pololu_Valley_(31829985675).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: David Baron from San Francisco, California, USA — https://www.flickr.com/people/14869313@N00
-  - Dated: 2016-12-13 00:07
-  - 1600×1071px, 494 KB, shot 279 m from the spot
-  - Description: (dsc07065)
-  - Match: score 11.5 via coastal-in-title, name:pololu, kw:cove, geo:279m, w>=1000, landscape
-- **`us-hi-pololu-beach-2.jpg`** — “Ground Cover, Pololu Valley (31020408993)” by David Baron from San Francisco, California, USA, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Ground_Cover,_Pololu_Valley_(31020408993).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: David Baron from San Francisco, California, USA — https://www.flickr.com/people/14869313@N00
-  - Dated: 2016-12-13 00:27
-  - 1600×1071px, 519 KB, shot 265 m from the spot
-  - Description: (dsc07090)
-  - Match: score 11.5 via coastal-in-title, name:pololu, kw:cove, geo:265m, w>=1000, landscape
-- **`us-hi-pololu-beach-3.jpg`** — “Surf off Pololu Valley, Kohala Forest Reserve DSC 0011 (32674109547)” by Bill Abbott, Wikimedia Commons, CC BY-SA 2.0
+- **`us-hi-pololu-beach-1.jpg`** — “Surf off Pololu Valley, Kohala Forest Reserve DSC 0011 (32674109547)” by Bill Abbott, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Surf_off_Pololu_Valley,_Kohala_Forest_Reserve_DSC_0011_(32674109547).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Bill Abbott — https://www.flickr.com/people/9998127@N06
@@ -4090,6 +4074,22 @@
   - 1600×1064px, 732 KB, shot 246 m from the spot
   - Description: Surf off Pololu Valley, Kohala Forest Reserve DSC_0011
   - Match: score 11.5 via coastal-in-title, name:pololu, kw:surf, geo:246m, w>=1000, landscape
+- **`us-hi-pololu-beach-2.jpg`** ✗ **not a coastal photo** — “Ground Cover, Pololu Valley (31829985675)” by David Baron from San Francisco, California, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Ground_Cover,_Pololu_Valley_(31829985675).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: David Baron from San Francisco, California, USA — https://www.flickr.com/people/14869313@N00
+  - Dated: 2016-12-13 00:07
+  - 1600×1071px, 494 KB, shot 279 m from the spot
+  - Description: (dsc07065)
+  - Match: score 11.5 via coastal-in-title, name:pololu, kw:cove, geo:279m, w>=1000, landscape
+- **`us-hi-pololu-beach-3.jpg`** ✗ **not a coastal photo** — “Ground Cover, Pololu Valley (31020408993)” by David Baron from San Francisco, California, USA, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Ground_Cover,_Pololu_Valley_(31020408993).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: David Baron from San Francisco, California, USA — https://www.flickr.com/people/14869313@N00
+  - Dated: 2016-12-13 00:27
+  - 1600×1071px, 519 KB, shot 265 m from the spot
+  - Description: (dsc07090)
+  - Match: score 11.5 via coastal-in-title, name:pololu, kw:cove, geo:265m, w>=1000, landscape
 
 ## Pounders Beach
 
@@ -4132,7 +4132,7 @@
   - 1600×1067px, 368 KB, shot 156 m from the spot
   - Description: Sunset Puu Poa beach Princeville Kauai Hawaii
   - Match: score 13 via coastal-in-title, name:poa, kw:beach+sunset, geo:156m, w>=1000, landscape
-- **`us-hi-pu-u-poa-beach-2.jpg`** — “St Regis beach Princeville Kauai, Hawaii (46227285892)” by dronepicr, Wikimedia Commons, CC BY 2.0
+- **`us-hi-pu-u-poa-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “St Regis beach Princeville Kauai, Hawaii (46227285892)” by dronepicr, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:St_Regis_beach_Princeville_Kauai,_Hawaii_(46227285892).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: dronepicr — https://www.flickr.com/people/132646954@N02
@@ -4140,7 +4140,7 @@
   - 1600×1067px, 533 KB, shot 133 m from the spot
   - Description: St Regis beach Princeville Kauai, Hawaii
   - Match: score 11.5 via coastal-in-title, name:poa, kw:beach, geo:133m, w>=1000, landscape
-- **`us-hi-pu-u-poa-beach-3.jpg`** — “Puu Poa Beach St Regis Princeville Kauai, Hawaii (31338836047)” by dronepicr, Wikimedia Commons, CC BY 2.0
+- **`us-hi-pu-u-poa-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Puu Poa Beach St Regis Princeville Kauai, Hawaii (31338836047)” by dronepicr, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Puu_Poa_Beach_St_Regis_Princeville_Kauai,_Hawaii_(31338836047).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: dronepicr — https://www.flickr.com/people/132646954@N02
@@ -4161,15 +4161,7 @@
   - 1600×1200px, 619 KB, shot 2818 m from the spot
   - Description: The sunset at Haleiwa on the North Shore of Oahu
   - Match: score 8 via coastal-in-title, kw:beach+shore+sunset, geo:2818m, w>=1000, landscape
-- **`us-hi-pu-uiki-beach-2.jpg`** — Green Sea Turtle (51178341550) — Public domain (Wikimedia Commons), no attribution required
-  - Source page: https://commons.wikimedia.org/wiki/File:Green_Sea_Turtle_(51178341550).jpg
-  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
-  - Author: USFWS Pacific — https://www.flickr.com/people/usfwspacific/
-  - Dated: Taken on 6 June 2016, 11:52:39
-  - 1600×1200px, 1017 KB, shot 2991 m from the spot
-  - Description: A green sea turtle bask in the sun along a beach on O‘ahu. Photo by Dr. Sheldon Plentovich/USFWS.
-  - Match: score 7 via coastal-in-title, kw:beach+sea, geo:2991m, w>=1000, landscape
-- **`us-hi-pu-uiki-beach-3.jpg`** — “Oahu North Shore (23572156864)” by See1,Do1,Teach1, Wikimedia Commons, CC BY 2.0
+- **`us-hi-pu-uiki-beach-2.jpg`** — “Oahu North Shore (23572156864)” by See1,Do1,Teach1, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Oahu_North_Shore_(23572156864).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: See1,Do1,Teach1 — https://www.flickr.com/people/23786473@N02
@@ -4177,6 +4169,14 @@
   - 1600×911px, 843 KB, shot 1395 m from the spot
   - Description: Oahu North Shore
   - Match: score 5.5 via coastal-in-title, kw:shore, geo:1395m, w>=1000, landscape
+- **`us-hi-pu-uiki-beach-3.jpg`** ✗ **not a coastal photo** — Green Sea Turtle (51178341550) — Public domain (Wikimedia Commons), no attribution required
+  - Source page: https://commons.wikimedia.org/wiki/File:Green_Sea_Turtle_(51178341550).jpg
+  - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
+  - Author: USFWS Pacific — https://www.flickr.com/people/usfwspacific/
+  - Dated: Taken on 6 June 2016, 11:52:39
+  - 1600×1200px, 1017 KB, shot 2991 m from the spot
+  - Description: A green sea turtle bask in the sun along a beach on O‘ahu. Photo by Dr. Sheldon Plentovich/USFWS.
+  - Match: score 7 via coastal-in-title, kw:beach+sea, geo:2991m, w>=1000, landscape
 
 ## Punalau Beach
 
@@ -4219,7 +4219,7 @@
   - 1600×846px, 326 KB, shot 51 m from the spot
   - Description: Three green sea turtles relaxing at sunset on Black Sand Beach on the Big Island of Hawaii.
   - Match: score 22 via coastal-in-title, name:punalu+black+sand, kw:beach+sea+sand+sunset, geo:51m, w>=1000, landscape
-- **`us-hi-punalu-u-black-sand-beach-2.jpg`** — “Sea Turtle at Punalu'u Black Sand Beach in Hawaii” by Aren Elliott, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-punalu-u-black-sand-beach-2.jpg`** ✗ **not a coastal photo** — “Sea Turtle at Punalu'u Black Sand Beach in Hawaii” by Aren Elliott, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sea_Turtle_at_Punalu%27u_Black_Sand_Beach_in_Hawaii.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Aren Elliott — //commons.wikimedia.org/w/index.php?title=User:Aren_Elliott&amp;action=edit&amp;redlink=1
@@ -4227,7 +4227,7 @@
   - 1600×1200px, 1178 KB, shot 47 m from the spot
   - Description: A sea turtle soaks the sun at Punalu'u black sand beach in Hawaii.
   - Match: score 22 via coastal-in-title, name:punalu+black+sand, kw:beach+sea+sand, geo:47m, w>=1000, landscape
-- **`us-hi-punalu-u-black-sand-beach-3.jpg`** — “2021-10-09 16 36 53 A green sea turtle on Punaluʻu Black Sand Beach in Punaluʻu, Hawaii County, Hawaii” by Famartin, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-punalu-u-black-sand-beach-3.jpg`** ✗ **not a coastal photo** — “2021-10-09 16 36 53 A green sea turtle on Punaluʻu Black Sand Beach in Punaluʻu, Hawaii County, Hawaii” by Famartin, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:2021-10-09_16_36_53_A_green_sea_turtle_on_Punalu%CA%BBu_Black_Sand_Beach_in_Punalu%CA%BBu,_Hawaii_County,_Hawaii.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
@@ -4240,15 +4240,7 @@
 
 `osm:way/218679861` · 21.2693132, -157.8229135 · beach type: **sandy** (OpenStreetMap surface=sand) · access: yes
 
-- **`us-hi-queen-kapi-olani-beach-1.jpg`** — “Waikiki Beach, Honolulu (503674) (20490904700)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Waikiki_Beach,_Honolulu_(503674)_(20490904700).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Robert Linsdell from St. Andrews, Canada — https://www.flickr.com/people/92487715@N03
-  - Dated: Taken on 27 October 2014, 17:36
-  - 1600×1066px, 783 KB, shot 115 m from the spot
-  - Description: Waikiki Beach, Honolulu, Oahu, Hawaii, United States
-  - Match: score 15.5 via coastal-in-title, name:kapi+olani, kw:beach, geo:115m, w>=1000, landscape
-- **`us-hi-queen-kapi-olani-beach-2.jpg`** — “South Shore Oahu, Hawaii - panoramio (17)” by davidpinter, Wikimedia Commons, CC BY 3.0
+- **`us-hi-queen-kapi-olani-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “South Shore Oahu, Hawaii - panoramio (17)” by davidpinter, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:South_Shore_Oahu,_Hawaii_-_panoramio_(17).jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: davidpinter — https://web.archive.org/web/20161024130708/http://www.panoramio.com/user/5519115?with_photo_id=83720799
@@ -4256,7 +4248,7 @@
   - 1600×1060px, 390 KB, shot 99 m from the spot
   - Description: South Shore Oahu, Hawaii
   - Match: score 13 via coastal-in-title, name:queen, kw:beach+shore, geo:99m, w>=1000, landscape
-- **`us-hi-queen-kapi-olani-beach-3.jpg`** — “South Shore Oahu, Hawaii - panoramio (19)” by davidpinter, Wikimedia Commons, CC BY 3.0
+- **`us-hi-queen-kapi-olani-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “South Shore Oahu, Hawaii - panoramio (19)” by davidpinter, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:South_Shore_Oahu,_Hawaii_-_panoramio_(19).jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: davidpinter — https://web.archive.org/web/20161025065908/http://www.panoramio.com/user/5519115?with_photo_id=83720841
@@ -4264,6 +4256,14 @@
   - 1600×1060px, 573 KB, shot 86 m from the spot
   - Description: South Shore Oahu, Hawaii
   - Match: score 13 via coastal-in-title, name:queen, kw:beach+shore, geo:86m, w>=1000, landscape
+- **`us-hi-queen-kapi-olani-beach-3.jpg`** ✗ **not a coastal photo** — “Waikiki Beach, Honolulu (503674) (20490904700)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Waikiki_Beach,_Honolulu_(503674)_(20490904700).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Robert Linsdell from St. Andrews, Canada — https://www.flickr.com/people/92487715@N03
+  - Dated: Taken on 27 October 2014, 17:36
+  - 1600×1066px, 783 KB, shot 115 m from the spot
+  - Description: Waikiki Beach, Honolulu, Oahu, Hawaii, United States
+  - Match: score 15.5 via coastal-in-title, name:kapi+olani, kw:beach, geo:115m, w>=1000, landscape
 
 ## Red Sand Beach
 
@@ -4314,7 +4314,7 @@
   - 1600×1067px, 340 KB, shot 128 m from the spot
   - Description: Cessna 182L Skylane (N3323R) on short final to land at Port Allen airport after dropping a couple of skydivers
   - Match: score 13.5 via name:salt+pond, kw:beach, geo:128m, w>=1000, landscape
-- **`us-hi-salt-pond-beach-3.jpg`** — “2 6 Salt Pond 2018-02-06 058-LR (40624455182)” by James Abbott from New Westminster, B.C., Canada, Wikimedia Commons, CC BY 2.0
+- **`us-hi-salt-pond-beach-3.jpg`** ✗ **not a coastal photo** — “2 6 Salt Pond 2018-02-06 058-LR (40624455182)” by James Abbott from New Westminster, B.C., Canada, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:2_6_Salt_Pond_2018-02-06_058-LR_(40624455182).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: James Abbott from New Westminster, B.C., Canada — https://www.flickr.com/people/64667184@N02
@@ -4530,7 +4530,7 @@
 
 `osm:node/11221002545` · 21.5573689, -157.8538257
 
-- **`us-hi-swanzy-beach-1.jpg`** — “Red-crested cardinal swanzy beach park DSC 1326-topaz-denoiseraw” by lwolfartist, Wikimedia Commons, CC BY 2.0
+- **`us-hi-swanzy-beach-1.jpg`** ✗ **not a coastal photo** — “Red-crested cardinal swanzy beach park DSC 1326-topaz-denoiseraw” by lwolfartist, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Red-crested_cardinal_swanzy_beach_park_DSC_1326-topaz-denoiseraw.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: lwolfartist
@@ -4538,7 +4538,7 @@
   - 1600×1280px, 362 KB
   - Description: Paroaria coronata
   - Match: score 8 via coastal-in-title, name:swanzy, kw:beach, w>=1000
-- **`us-hi-swanzy-beach-2.jpg`** — “Red-crested cardinal swanzy beach park DSC 1333-topaz-denoiseraw” by lwolfartist, Wikimedia Commons, CC BY 2.0
+- **`us-hi-swanzy-beach-2.jpg`** ✗ **not a coastal photo** — “Red-crested cardinal swanzy beach park DSC 1333-topaz-denoiseraw” by lwolfartist, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Red-crested_cardinal_swanzy_beach_park_DSC_1333-topaz-denoiseraw.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: lwolfartist
@@ -4546,7 +4546,7 @@
   - 1600×1280px, 530 KB
   - Description: Paroaria coronata
   - Match: score 8 via coastal-in-title, name:swanzy, kw:beach, w>=1000
-- **`us-hi-swanzy-beach-3.jpg`** — “Red-crested cardinal swanzy beach park DSC 1346-topaz-denoiseraw” by lwolfartist, Wikimedia Commons, CC BY 2.0
+- **`us-hi-swanzy-beach-3.jpg`** ✗ **not a coastal photo** — “Red-crested cardinal swanzy beach park DSC 1346-topaz-denoiseraw” by lwolfartist, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Red-crested_cardinal_swanzy_beach_park_DSC_1346-topaz-denoiseraw.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: lwolfartist
@@ -4567,15 +4567,7 @@
   - 1600×897px, 1006 KB, shot 221048 m from the spot
   - Description: Waianapanapa State Park Maui’s famous black sand beach, named Honokalani and located in Waianapanapa State Park about three miles north of the town of Hana, is more than just a beach. It was historically a very important place for Hawaiians, and there are various Hawaiian legends about this place – it is deemed as sacred by the Hawaiian people. The park itself comprises of 122 acres, encompassing the beach, lava caves, wind-twisted foliage, Hawaii’s largest known heiau (temple), stone arches, and blow holes. The park is very interesting to hike through, and there are even a few wet, spring-fed
   - Match: score 10 via coastal-in-title, name:temple, kw:beach+sand, geo:221048m, w>=1000, landscape
-- **`us-hi-temple-beach-2.jpg`** — “Temple Beach, Laie” by Rwat14, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Temple_Beach,_Laie.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Rwat14 — //commons.wikimedia.org/w/index.php?title=User:Rwat14&amp;action=edit&amp;redlink=1
-  - Dated: 2022-02-15 18:03:24
-  - 1600×1200px, 87 KB
-  - Description: Laie Point , a focal point of the Laie community, from the viewpoint of Temple Beach, Laie HI
-  - Match: score 10 via coastal-in-title, name:temple, kw:beach+point, w>=1000, landscape
-- **`us-hi-temple-beach-3.jpg`** — “Maka O Hule Heiau on the hill, Hawaii, 2006” by Mark Kortum, Wikimedia Commons, CC BY-SA 2.0
+- **`us-hi-temple-beach-2.jpg`** — “Maka O Hule Heiau on the hill, Hawaii, 2006” by Mark Kortum, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Maka_O_Hule_Heiau_on_the_hill,_Hawaii,_2006.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Mark Kortum — https://www.flickr.com/people/63637045@N07
@@ -4583,6 +4575,14 @@
   - 1600×800px, 508 KB
   - Description: Maka O Hule Heiau (Navigation Heiau) on the hill Sometimes erroneously referred to as “the Stonehenge of Hawaii”, this one of a kind temple is actually thought to be an observatory for spotting the far-flung islands of the Polynesian Archipelago using the alignments of the standing stones with stars. The site is reached via a short, easy stroll long the dirt road leading north, away from Mahukona Beach Park on the Kohala Coastline. Lovely vistas along deep, cerulean ocean and crystal clear coves lead to a short scramble up an obvious dirt trail to the heiau. Ancient Polynesians had a system of
   - Match: score 9 via name:temple, kw:beach+ocean+coast+coastline, w>=1000, landscape
+- **`us-hi-temple-beach-3.jpg`** ✗ **not a coastal photo** — “Temple Beach, Laie” by Rwat14, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Temple_Beach,_Laie.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Rwat14 — //commons.wikimedia.org/w/index.php?title=User:Rwat14&amp;action=edit&amp;redlink=1
+  - Dated: 2022-02-15 18:03:24
+  - 1600×1200px, 87 KB
+  - Description: Laie Point , a focal point of the Laie community, from the viewpoint of Temple Beach, Laie HI
+  - Match: score 10 via coastal-in-title, name:temple, kw:beach+point, w>=1000, landscape
 
 ## Three Tables
 
@@ -4783,15 +4783,7 @@
 
 `osm:way/340758318` · 20.9092325, -156.4247613
 
-- **`us-hi-vor-beach-1.jpg`** — “Kanaha Beach Park, Kahului Maui - panoramio” by JeanTessmer, Wikimedia Commons, CC BY 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Kanaha_Beach_Park,_Kahului_Maui_-_panoramio.jpg
-  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
-  - Author: JeanTessmer — https://web.archive.org/web/20161021040109/http://www.panoramio.com/user/6457267?with_photo_id=61916117
-  - Dated: 9 November 2011 (original upload date)
-  - 1600×1200px, 669 KB, shot 1514 m from the spot
-  - Description: Kanaha Beach Park, Kahului Maui
-  - Match: score 8 via coastal-in-title, kw:beach+surf+surfing, geo:1514m, w>=1000, landscape
-- **`us-hi-vor-beach-2.jpg`** — “Wing Surfers” by Kirt Edblom, Wikimedia Commons, CC BY-SA 2.0
+- **`us-hi-vor-beach-1.jpg`** — “Wing Surfers” by Kirt Edblom, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Wing_Surfers.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Kirt Edblom
@@ -4799,7 +4791,15 @@
   - 1600×1068px, 563 KB, shot 1447 m from the spot
   - Description: Wing surfing is the sport of riding a foil board - or a standard SUP - while carrying a hand-held inflatable sail. ... It's all about carving around, having fun, and bringing the wind element to water sports enthusiasts that have only experienced wave riding and have never sailed before.
   - Match: score 8 via coastal-in-title, kw:surf+surfer+surfing+wave, geo:1447m, w>=1000, landscape
-- **`us-hi-vor-beach-3.jpg`** — “Just Chilling (50883431342)” by Kirt Edblom from Albany, Oregon, United States, Wikimedia Commons, CC BY-SA 2.0
+- **`us-hi-vor-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Kanaha Beach Park, Kahului Maui - panoramio” by JeanTessmer, Wikimedia Commons, CC BY 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Kanaha_Beach_Park,_Kahului_Maui_-_panoramio.jpg
+  - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
+  - Author: JeanTessmer — https://web.archive.org/web/20161021040109/http://www.panoramio.com/user/6457267?with_photo_id=61916117
+  - Dated: 9 November 2011 (original upload date)
+  - 1600×1200px, 669 KB, shot 1514 m from the spot
+  - Description: Kanaha Beach Park, Kahului Maui
+  - Match: score 8 via coastal-in-title, kw:beach+surf+surfing, geo:1514m, w>=1000, landscape
+- **`us-hi-vor-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Just Chilling (50883431342)” by Kirt Edblom from Albany, Oregon, United States, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Just_Chilling_(50883431342).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Kirt Edblom from Albany, Oregon, United States — https://www.flickr.com/people/27190564@N02
@@ -4820,7 +4820,7 @@
   - 1600×1200px, 608 KB, shot 1598 m from the spot
   - Description: Secret Beach, Kauai
   - Match: score 7 via coastal-in-title, kw:beach+wave, geo:1598m, w>=1000, landscape
-- **`us-hi-waiakalua-beach-2.jpg`** — “Kilauea Point Lighthouse (7424363988)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-hi-waiakalua-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Kilauea Point Lighthouse (7424363988)” by Chris Hunkeler from Carlsbad, California, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Kilauea_Point_Lighthouse_(7424363988).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Chris Hunkeler from Carlsbad, California, USA — https://www.flickr.com/people/14913305@N00
@@ -4828,7 +4828,7 @@
   - 1600×1065px, 1009 KB, shot 3226 m from the spot
   - Description: The <a href=" http://www.fws.gov/kilaueapoint/lighthouse.html " rel="nofollow">lighthouse</a> was built in 1913 and operated for 62 years.
   - Match: score 7 via coastal-in-title, kw:sea+point+lighthouse+cliff, geo:3226m, w>=1000, landscape
-- **`us-hi-waiakalua-beach-3.jpg`** — “Kilauea Lighthouse (3430089305)” by Christopher from Salem, OR, USA, Wikimedia Commons, CC BY-SA 2.0
+- **`us-hi-waiakalua-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Kilauea Lighthouse (3430089305)” by Christopher from Salem, OR, USA, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Kilauea_Lighthouse_(3430089305).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Christopher from Salem, OR, USA — https://www.flickr.com/people/17813892@N00
@@ -4849,7 +4849,7 @@
   - 1600×1067px, 196 KB, shot 283 m from the spot
   - Description: Kāhala Beach, Honolulu, United States
   - Match: score 11.5 via coastal-in-title, name:waialae, kw:beach, geo:283m, w>=1000, landscape
-- **`us-hi-waialae-beach-2.jpg`** — “H1 Freeway-Kalanianaole Highway towards Hanuama Bay (23088372623)” by Daniel Ramirez from Honolulu, USA, Wikimedia Commons, CC BY 2.0
+- **`us-hi-waialae-beach-2.jpg`** ✗ **not a coastal photo** — “H1 Freeway-Kalanianaole Highway towards Hanuama Bay (23088372623)” by Daniel Ramirez from Honolulu, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:H1_Freeway-Kalanianaole_Highway_towards_Hanuama_Bay_(23088372623).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Daniel Ramirez from Honolulu, USA — https://www.flickr.com/people/21442511@N08
@@ -4870,15 +4870,7 @@
   - 1600×1067px, 113 KB
   - Description: Picture of Waialea Bay (69 beach).
   - Match: score 10 via coastal-in-title, name:waialea, kw:beach+bay, w>=1000, landscape
-- **`us-hi-waialea-beach-2.jpg`** — “Skimboarder at hapuna beach” by Polihale, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Skimboarder_at_hapuna_beach.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Polihale — //commons.wikimedia.org/wiki/User:Polihale
-  - Dated: 2005-02-26
-  - 1600×1192px, 132 KB, shot 1229 m from the spot
-  - Description: A young bodyboarder prepares to run into the waves at Hapuna Beach on the Big Island of Hawaii.
-  - Match: score 8 via coastal-in-title, kw:beach+wave+waves+ocean, geo:1229m, w>=1000, landscape
-- **`us-hi-waialea-beach-3.jpg`** — “Beach 67 - panoramio” by This file was created by Thomas Tunsch . It is not in the public domain and use of this file outside of the…, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-waialea-beach-2.jpg`** — “Beach 67 - panoramio” by This file was created by Thomas Tunsch . It is not in the public domain and use of this file outside of the…, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Beach_67_-_panoramio.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: This file was created by Thomas Tunsch . It is not in the public domain and use of this file outside of the… — //commons.wikimedia.org/wiki/User:ThT
@@ -4886,6 +4878,14 @@
   - 1600×1060px, 452 KB, shot 350 m from the spot
   - Description: Beach 67
   - Match: score 7.5 via coastal-in-title, kw:beach, geo:350m, w>=1000, landscape
+- **`us-hi-waialea-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Skimboarder at hapuna beach” by Polihale, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Skimboarder_at_hapuna_beach.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Polihale — //commons.wikimedia.org/wiki/User:Polihale
+  - Dated: 2005-02-26
+  - 1600×1192px, 132 KB, shot 1229 m from the spot
+  - Description: A young bodyboarder prepares to run into the waves at Hapuna Beach on the Big Island of Hawaii.
+  - Match: score 8 via coastal-in-title, kw:beach+wave+waves+ocean, geo:1229m, w>=1000, landscape
 
 ## Waialee Beach
 
@@ -4899,15 +4899,7 @@
   - 1600×1067px, 425 KB, shot 1057 m from the spot
   - Description: North Shore Walk - Sunset Point
   - Match: score 9 via coastal-in-title, kw:shore+point+sunset, geo:1057m, w>=1000, landscape
-- **`us-hi-waialee-beach-2.jpg`** — “North Shore Walk - Kauanala Beach (13946196704)” by Daniel Ramirez from Honolulu, USA, Wikimedia Commons, CC BY 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:North_Shore_Walk_-_Kauanala_Beach_(13946196704).jpg
-  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
-  - Author: Daniel Ramirez from Honolulu, USA — https://www.flickr.com/people/21442511@N08
-  - Dated: 2013-12-13 08:56
-  - 1600×1067px, 617 KB, shot 304 m from the spot
-  - Description: Cute little crab.
-  - Match: score 9 via coastal-in-title, kw:beach+shore, geo:304m, w>=1000, landscape
-- **`us-hi-waialee-beach-3.jpg`** — “North Shore Walk - Kauanala Beach (13922654306)” by Daniel Ramirez from Honolulu, USA, Wikimedia Commons, CC BY 2.0
+- **`us-hi-waialee-beach-2.jpg`** — “North Shore Walk - Kauanala Beach (13922654306)” by Daniel Ramirez from Honolulu, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:North_Shore_Walk_-_Kauanala_Beach_(13922654306).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Daniel Ramirez from Honolulu, USA — https://www.flickr.com/people/21442511@N08
@@ -4915,12 +4907,20 @@
   - 1600×1066px, 658 KB, shot 202 m from the spot
   - Description: North Shore Walk - Kauanala Beach
   - Match: score 9 via coastal-in-title, kw:beach+shore, geo:202m, w>=1000, landscape
+- **`us-hi-waialee-beach-3.jpg`** ✗ **not a coastal photo** — “North Shore Walk - Kauanala Beach (13946196704)” by Daniel Ramirez from Honolulu, USA, Wikimedia Commons, CC BY 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:North_Shore_Walk_-_Kauanala_Beach_(13946196704).jpg
+  - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
+  - Author: Daniel Ramirez from Honolulu, USA — https://www.flickr.com/people/21442511@N08
+  - Dated: 2013-12-13 08:56
+  - 1600×1067px, 617 KB, shot 304 m from the spot
+  - Description: Cute little crab.
+  - Match: score 9 via coastal-in-title, kw:beach+shore, geo:304m, w>=1000, landscape
 
 ## Waiapua'a
 
 `osm:way/229841214` · 21.9934068, -159.7673505
 
-- **`us-hi-waiapua-a-1.jpg`** — AegisAshore DeckHouseComplex in Hawaii — Public domain (Wikimedia Commons), no attribution required
+- **`us-hi-waiapua-a-1.jpg`** ✗ **not a coastal photo** — AegisAshore DeckHouseComplex in Hawaii — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:AegisAshore_DeckHouseComplex_in_Hawaii.jpg
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Missile Defense Agency - United States Department of Defense
@@ -4928,7 +4928,7 @@
   - 1600×1200px, 384 KB, shot 1327 m from the spot
   - Description: The deckhouse for the Aegis Ashore system at the Pacific Missile Range Facility. This is the test asset for the Aegis Ashore system that will be emplaced in Romania and Poland.
   - Match: score 7 via coastal-in-title, kw:shore+sand, geo:1327m, w>=1000, landscape
-- **`us-hi-waiapua-a-2.jpg`** — “Na Pali Coast Spinner dolphins Kauai, Hawaii (46227668322)” by dronepicr, Wikimedia Commons, CC BY 2.0
+- **`us-hi-waiapua-a-2.jpg`** ✗ **not a coastal photo** — “Na Pali Coast Spinner dolphins Kauai, Hawaii (46227668322)” by dronepicr, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Na_Pali_Coast_Spinner_dolphins_Kauai,_Hawaii_(46227668322).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: dronepicr — https://www.flickr.com/people/132646954@N02
@@ -4936,7 +4936,7 @@
   - 1600×1067px, 415 KB, shot 618 m from the spot
   - Description: Na Pali Coast Spinner dolphins Kauai, Hawaii
   - Match: score 6.5 via coastal-in-title, kw:coast, geo:618m, w>=1000, landscape
-- **`us-hi-waiapua-a-3.jpg`** — “2021 04 16 napali-sail 033a” by Nfrastructure, Wikimedia Commons, CC BY 2.0
+- **`us-hi-waiapua-a-3.jpg`** ✗ **not a coastal photo** — “2021 04 16 napali-sail 033a” by Nfrastructure, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:2021_04_16_napali-sail_033a.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Nfrastructure
@@ -4949,7 +4949,7 @@
 
 `osm:way/218679862` · 21.2740616, -157.8262825 · beach type: **sandy** (OpenStreetMap surface=sand) · access: yes
 
-- **`us-hi-waikiki-beach-1.jpg`** — “Lots of surfers in the water at Waikiki Beach with cloudy sky and Sheraton Waikiki Beach Resort in the background at Honolulu, Hawaii, United States of America, Summer, 2006” by Antonio Salsedo, Wikimedia Commons, CC BY 3.0
+- **`us-hi-waikiki-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Lots of surfers in the water at Waikiki Beach with cloudy sky and Sheraton Waikiki Beach Resort in the background at Honolulu, Hawaii, United States of America, Summer, 2006” by Antonio Salsedo, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Lots_of_surfers_in_the_water_at_Waikiki_Beach_with_cloudy_sky_and_Sheraton_Waikiki_Beach_Resort_in_the_background_at_Honolulu,_Hawaii,_United_States_of_America,_Summer,_2006.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Antonio Salsedo — https://web.archive.org/web/20161011180552/http://www.panoramio.com/user/1609424?with_photo_id=9331926
@@ -4957,7 +4957,7 @@
   - 1600×1200px, 666 KB, shot 108 m from the spot
   - Description: waikiki beach
   - Match: score 14 via coastal-in-title, name:waikiki, kw:beach+surf+surfer+surfing, geo:108m, w>=1000, landscape
-- **`us-hi-waikiki-beach-2.jpg`** — “Surfboards in Waikiki” by Cristo Vlahos, Wikimedia Commons, CC BY-SA 3.0
+- **`us-hi-waikiki-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Surfboards in Waikiki” by Cristo Vlahos, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Surfboards_in_Waikiki.JPG
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Cristo Vlahos — //commons.wikimedia.org/w/index.php?title=User:Cristo_Vlahos&amp;action=edit&amp;redlink=1
@@ -4965,7 +4965,7 @@
   - 1600×1200px, 882 KB, shot 165 m from the spot
   - Description: Surfboards in Waikiki, Hawaii
   - Match: score 14 via coastal-in-title, name:waikiki, kw:beach+surf+surfing, geo:165m, w>=1000, landscape
-- **`us-hi-waikiki-beach-3.jpg`** — “Waikiki Beach (15601228789)” by Prayitno / Thank you for (12 millions +) view from Los Angeles, USA, Wikimedia Commons, CC BY 2.0
+- **`us-hi-waikiki-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Waikiki Beach (15601228789)” by Prayitno / Thank you for (12 millions +) view from Los Angeles, USA, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Waikiki_Beach_(15601228789).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Prayitno / Thank you for (12 millions +) view from Los Angeles, USA — https://www.flickr.com/people/34128007@N04
@@ -4986,15 +4986,7 @@
   - 1600×1200px, 223 KB
   - Description: Coconut palms along Anaehoomalu Bay
   - Match: score 10 via coastal-in-title, name:waikoloa, kw:beach+bay, w>=1000, landscape
-- **`us-hi-waikoloa-beach-2.jpg`** — “Anaehoomalu Bay Aerial” by Polihale, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Anaehoomalu_Bay_Aerial.jpg
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: Polihale — //commons.wikimedia.org/wiki/User:Polihale
-  - Dated: 2005-02-25
-  - 1600×1149px, 543 KB
-  - Description: Aerial view of Anaehoomalu Bay on the Big Island of Hawaii
-  - Match: score 10 via coastal-in-title, name:waikoloa, kw:beach+bay, w>=1000, landscape
-- **`us-hi-waikoloa-beach-3.jpg`** — “View of Anaeho'omalu Bay” by AlaskaDave, Wikimedia Commons, CC BY-SA 3.0
+- **`us-hi-waikoloa-beach-2.jpg`** — “View of Anaeho'omalu Bay” by AlaskaDave, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:View_of_Anaeho%27omalu_Bay.JPG
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: AlaskaDave — //commons.wikimedia.org/w/index.php?title=User:AlaskaDave&amp;action=edit&amp;redlink=1
@@ -5002,6 +4994,14 @@
   - 1600×1200px, 702 KB, shot 94790 m from the spot
   - Description: View of Anaeho'omalu Bay from left of the fishponds
   - Match: score 10 via coastal-in-title, name:waikoloa, kw:beach+bay, geo:94790m, w>=1000, landscape
+- **`us-hi-waikoloa-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Anaehoomalu Bay Aerial” by Polihale, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Anaehoomalu_Bay_Aerial.jpg
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: Polihale — //commons.wikimedia.org/wiki/User:Polihale
+  - Dated: 2005-02-25
+  - 1600×1149px, 543 KB
+  - Description: Aerial view of Anaehoomalu Bay on the Big Island of Hawaii
+  - Match: score 10 via coastal-in-title, name:waikoloa, kw:beach+bay, w>=1000, landscape
 
 ## Wailua Beach
 
@@ -5036,7 +5036,7 @@
 
 `osm:way/413420356` · 21.3363025, -157.6959352 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-hi-waimanalo-beach-1.jpg`** — “Sand Crab at Waimanalo Beach, July 2010 - panoramio” by Kevin.Daniels, Wikimedia Commons, CC BY 3.0
+- **`us-hi-waimanalo-beach-1.jpg`** ✗ **not a coastal photo** — “Sand Crab at Waimanalo Beach, July 2010 - panoramio” by Kevin.Daniels, Wikimedia Commons, CC BY 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:Sand_Crab_at_Waimanalo_Beach,_July_2010_-_panoramio.jpg
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Kevin.Daniels — https://web.archive.org/web/20161017082918/http://www.panoramio.com/user/5035009?with_photo_id=46100835
@@ -5044,7 +5044,7 @@
   - 1600×1067px, 341 KB, shot 914 m from the spot
   - Description: Sand Crab at Waimanalo Beach, July 2010
   - Match: score 12 via coastal-in-title, name:waimanalo, kw:beach+sand, geo:914m, w>=1000, landscape
-- **`us-hi-waimanalo-beach-2.jpg`** — “Waimanalo Bay State Recreation Area, Waimanalo (503385) (19105968938)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
+- **`us-hi-waimanalo-beach-2.jpg`** ✗ **not a coastal photo** — “Waimanalo Bay State Recreation Area, Waimanalo (503385) (19105968938)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Waimanalo_Bay_State_Recreation_Area,_Waimanalo_(503385)_(19105968938).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Robert Linsdell from St. Andrews, Canada — https://www.flickr.com/people/92487715@N03
@@ -5052,7 +5052,7 @@
   - 1600×857px, 792 KB, shot 1127 m from the spot
   - Description: Waimanalo Bay State Recreation Area, Waimanalo, Oahu, Hawaii, United States
   - Match: score 12 via coastal-in-title, name:waimanalo, kw:beach+bay, geo:1127m, w>=1000, landscape
-- **`us-hi-waimanalo-beach-3.jpg`** — “Waimanalo Bay State Recreation Area, Waimanalo (503404) (19235005310)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
+- **`us-hi-waimanalo-beach-3.jpg`** ✗ **not a coastal photo** — “Waimanalo Bay State Recreation Area, Waimanalo (503404) (19235005310)” by Robert Linsdell from St. Andrews, Canada, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Waimanalo_Bay_State_Recreation_Area,_Waimanalo_(503404)_(19235005310).jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Robert Linsdell from St. Andrews, Canada — https://www.flickr.com/people/92487715@N03
@@ -5131,7 +5131,7 @@
   - 1600×900px, 548 KB
   - Description: Waipu Cove, Whangarei District, New Zealand
   - Match: score 8.5 via coastal-in-title, name:waipu, kw:cove, w>=1000, landscape
-- **`us-hi-waipu-2.jpg`** — “Cove rd waipu” by Sgroey, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-waipu-2.jpg`** ✗ **not a coastal photo** — “Cove rd waipu” by Sgroey, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Cove_rd_waipu.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Sgroey — //commons.wikimedia.org/wiki/User:Sgroey
@@ -5144,7 +5144,7 @@
 
 `osm:way/583044499` · 19.7156923, -156.0493838 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`us-hi-wawaloli-beach-1.jpg`** — “Tree and rainbow” by Relativity, Wikimedia Commons, CC BY-SA 4.0
+- **`us-hi-wawaloli-beach-1.jpg`** ✗ **not a coastal photo** — “Tree and rainbow” by Relativity, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Tree_and_rainbow.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Relativity — //commons.wikimedia.org/wiki/User:Relativity
@@ -5173,7 +5173,7 @@
   - 1600×1200px, 1163 KB, shot 241 m from the spot
   - Description: Kauai, Hawaii
   - Match: score 13 via coastal-in-title, name:wyllie, kw:beach+shore, geo:241m, w>=1000, landscape
-- **`us-hi-wyllie-s-beach-3.jpg`** — On the beach in Hawaii (Unsplash) — CC0 (Wikimedia Commons), no attribution required
+- **`us-hi-wyllie-s-beach-3.jpg`** ⚠︎ *context, not the coast itself* — On the beach in Hawaii (Unsplash) — CC0 (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:On_the_beach_in_Hawaii_(Unsplash).jpg
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Adrian Benea adrianbenea — https://unsplash.com/@adrianbenea

@@ -48,15 +48,7 @@
 
 `osm:node/13468833248` · 28.7131513, -111.913116 · beach type: **sandy** (OpenStreetMap surface=sand) · lifeguard: no
 
-- **`mx-son-playa-de-las-dunas-1.jpg`** — “Mar, dunas y él (6807479298)” by Judith Garcia from MX, Wikimedia Commons, CC BY-SA 2.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Mar,_dunas_y_%C3%A9l_(6807479298).jpg
-  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
-  - Author: Judith Garcia from MX — https://www.flickr.com/people/49911079@N00
-  - Dated: 2012-03-04 13:47
-  - 1600×2400px, 663 KB, shot 3325 m from the spot
-  - Description: Bahía de Kino, Sonora.
-  - Match: score 7.5 via name:dunas, kw:playa+mar, geo:3325m, w>=1000
-- **`mx-son-playa-de-las-dunas-2.jpg`** — “El niño que admiraba el mar (6953589381)” by Judith Garcia from MX, Wikimedia Commons, CC BY-SA 2.0
+- **`mx-son-playa-de-las-dunas-1.jpg`** — “El niño que admiraba el mar (6953589381)” by Judith Garcia from MX, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:El_ni%C3%B1o_que_admiraba_el_mar_(6953589381).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Judith Garcia from MX — https://www.flickr.com/people/49911079@N00
@@ -64,7 +56,15 @@
   - 1600×1067px, 535 KB, shot 3325 m from the spot
   - Description: Bahía de Kino, Sonora.
   - Match: score 6 via coastal-in-title, kw:playa+mar, geo:3325m, w>=1000, landscape
-- **`mx-son-playa-de-las-dunas-3.jpg`** — “Mutantes” by Dr tres, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-son-playa-de-las-dunas-2.jpg`** ✗ **not a coastal photo** — “Mar, dunas y él (6807479298)” by Judith Garcia from MX, Wikimedia Commons, CC BY-SA 2.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Mar,_dunas_y_%C3%A9l_(6807479298).jpg
+  - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
+  - Author: Judith Garcia from MX — https://www.flickr.com/people/49911079@N00
+  - Dated: 2012-03-04 13:47
+  - 1600×2400px, 663 KB, shot 3325 m from the spot
+  - Description: Bahía de Kino, Sonora.
+  - Match: score 7.5 via name:dunas, kw:playa+mar, geo:3325m, w>=1000
+- **`mx-son-playa-de-las-dunas-3.jpg`** ✗ **not a coastal photo** — “Mutantes” by Dr tres, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Mutantes.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Dr tres — //commons.wikimedia.org/w/index.php?title=User:Dr_tres&amp;action=edit&amp;redlink=1
@@ -85,7 +85,7 @@
   - 1600×1067px, 535 KB, shot 2911 m from the spot
   - Description: Bahía de Kino, Sonora.
   - Match: score 7 via coastal-in-title, kw:playa+mar, geo:2911m, w>=1000, landscape
-- **`mx-son-playa-de-patos-2.jpg`** — “Mutantes” by Dr tres, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-son-playa-de-patos-2.jpg`** ✗ **not a coastal photo** — “Mutantes” by Dr tres, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Mutantes.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Dr tres — //commons.wikimedia.org/w/index.php?title=User:Dr_tres&amp;action=edit&amp;redlink=1
@@ -93,7 +93,7 @@
   - 1600×1195px, 1052 KB, shot 4801 m from the spot
   - Description: Horizonte al Mar de Cortés, apreciado desde la Playa de San Nicolás a 37 km de Bahía de Kino en el Municipio de Hermosillo, Sonora, México.
   - Match: score 5 via kw:sea+playa+mar+seascape, geo:4801m, w>=1000, landscape
-- **`mx-son-playa-de-patos-3.jpg`** — “Manglares en Marisma de Palafox” by Explorakino, Wikimedia Commons, CC BY 4.0
+- **`mx-son-playa-de-patos-3.jpg`** ✗ **not a coastal photo** — “Manglares en Marisma de Palafox” by Explorakino, Wikimedia Commons, CC BY 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Manglares_en_Marisma_de_Palafox.jpg
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Explorakino — //commons.wikimedia.org/w/index.php?title=User:Explorakino&amp;action=edit&amp;redlink=1
@@ -151,7 +151,7 @@
   - 1600×1200px, 730 KB, shot 412 m from the spot
   - Description: Bahía de San Carlos, en el muinicipio de Guyamas en el estado de Sonora. Marzo 2025.
   - Match: score 8 via coastal-in-title, kw:playa+mar, geo:412m, w>=1000, landscape
-- **`mx-son-playa-incluyente-3.jpg`** — “Perro en playa 05” by WendyAvilesR, Wikimedia Commons, CC BY 4.0
+- **`mx-son-playa-incluyente-3.jpg`** ✗ **not a coastal photo** — “Perro en playa 05” by WendyAvilesR, Wikimedia Commons, CC BY 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Perro_en_playa_05.jpg
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: WendyAvilesR — //commons.wikimedia.org/w/index.php?title=User:WendyAvilesR&amp;action=edit&amp;redlink=1
@@ -164,15 +164,7 @@
 
 `osm:node/13452813776` · 28.7223589, -111.9235384
 
-- **`mx-son-playa-media-luna-1.jpg`** — “Mutantes” by Dr tres, Wikimedia Commons, CC BY-SA 4.0
-  - Source page: https://commons.wikimedia.org/wiki/File:Mutantes.jpg
-  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
-  - Author: Dr tres — //commons.wikimedia.org/w/index.php?title=User:Dr_tres&amp;action=edit&amp;redlink=1
-  - Dated: 2011-04-03 10:22:46
-  - 1600×1195px, 1052 KB, shot 74 m from the spot
-  - Description: Horizonte al Mar de Cortés, apreciado desde la Playa de San Nicolás a 37 km de Bahía de Kino en el Municipio de Hermosillo, Sonora, México.
-  - Match: score 8 via kw:sea+playa+mar+seascape, geo:74m, w>=1000, landscape
-- **`mx-son-playa-media-luna-2.jpg`** — “El niño que admiraba el mar (6953589381)” by Judith Garcia from MX, Wikimedia Commons, CC BY-SA 2.0
+- **`mx-son-playa-media-luna-1.jpg`** — “El niño que admiraba el mar (6953589381)” by Judith Garcia from MX, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:El_ni%C3%B1o_que_admiraba_el_mar_(6953589381).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Judith Garcia from MX — https://www.flickr.com/people/49911079@N00
@@ -180,6 +172,14 @@
   - 1600×1067px, 535 KB, shot 1994 m from the spot
   - Description: Bahía de Kino, Sonora.
   - Match: score 7 via coastal-in-title, kw:playa+mar, geo:1994m, w>=1000, landscape
+- **`mx-son-playa-media-luna-2.jpg`** ✗ **not a coastal photo** — “Mutantes” by Dr tres, Wikimedia Commons, CC BY-SA 4.0
+  - Source page: https://commons.wikimedia.org/wiki/File:Mutantes.jpg
+  - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
+  - Author: Dr tres — //commons.wikimedia.org/w/index.php?title=User:Dr_tres&amp;action=edit&amp;redlink=1
+  - Dated: 2011-04-03 10:22:46
+  - 1600×1195px, 1052 KB, shot 74 m from the spot
+  - Description: Horizonte al Mar de Cortés, apreciado desde la Playa de San Nicolás a 37 km de Bahía de Kino en el Municipio de Hermosillo, Sonora, México.
+  - Match: score 8 via kw:sea+playa+mar+seascape, geo:74m, w>=1000, landscape
 
 ## Playa Santa María del Mar
 
@@ -193,7 +193,7 @@
   - 1600×1067px, 535 KB, shot 1623 m from the spot
   - Description: Bahía de Kino, Sonora.
   - Match: score 11 via coastal-in-title, name:mar, kw:playa+mar, geo:1623m, w>=1000, landscape
-- **`mx-son-playa-santa-maria-del-mar-2.jpg`** — “Mutantes” by Dr tres, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-son-playa-santa-maria-del-mar-2.jpg`** ✗ **not a coastal photo** — “Mutantes” by Dr tres, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Mutantes.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Dr tres — //commons.wikimedia.org/w/index.php?title=User:Dr_tres&amp;action=edit&amp;redlink=1
@@ -201,7 +201,7 @@
   - 1600×1195px, 1052 KB, shot 3450 m from the spot
   - Description: Horizonte al Mar de Cortés, apreciado desde la Playa de San Nicolás a 37 km de Bahía de Kino en el Municipio de Hermosillo, Sonora, México.
   - Match: score 9 via name:mar, kw:sea+playa+mar+seascape, geo:3450m, w>=1000, landscape
-- **`mx-son-playa-santa-maria-del-mar-3.jpg`** — “Mar, dunas y él (6807479298)” by Judith Garcia from MX, Wikimedia Commons, CC BY-SA 2.0
+- **`mx-son-playa-santa-maria-del-mar-3.jpg`** ✗ **not a coastal photo** — “Mar, dunas y él (6807479298)” by Judith Garcia from MX, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Mar,_dunas_y_%C3%A9l_(6807479298).jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Judith Garcia from MX — https://www.flickr.com/people/49911079@N00
@@ -227,7 +227,7 @@
 
 `osm:way/199050662` · 31.3223585, -113.5807595 · beach type: **sandy** (OpenStreetMap surface=sand)
 
-- **`mx-son-sandy-beach-1.jpg`** — “Puerto Peñasco Rocky Point 1” by Nicholas Hartmann, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-son-sandy-beach-1.jpg`** ⚠︎ *context, not the coast itself* — “Puerto Peñasco Rocky Point 1” by Nicholas Hartmann, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Puerto_Pe%C3%B1asco_Rocky_Point_1.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Nicholas Hartmann — //commons.wikimedia.org/wiki/User:Nhartmannphotos
@@ -235,7 +235,7 @@
   - 1600×1200px, 562 KB, shot 1402 m from the spot
   - Description: View of the beach from Las Palomas condominiums in Puerto Peñasco (Rocky Point), Sonora, Mexico
   - Match: score 5 via kw:beach+point, geo:1402m, w>=1000, landscape
-- **`mx-son-sandy-beach-2.jpg`** — “Puerto Peñasco Rocky Point 2” by Nicholas Hartmann, Wikimedia Commons, CC BY-SA 4.0
+- **`mx-son-sandy-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Puerto Peñasco Rocky Point 2” by Nicholas Hartmann, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Puerto_Pe%C3%B1asco_Rocky_Point_2.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Nicholas Hartmann — //commons.wikimedia.org/wiki/User:Nhartmannphotos

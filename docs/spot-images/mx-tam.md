@@ -6,7 +6,7 @@
 
 `osm:relation/16828803` · 23.7812807, -97.7355505
 
-- **`mx-tam-playa-la-pesca-1.jpg`** — “La vida del niño pescador en su grandioso mundo natural” by Marcos j. urquia aure, Wikimedia Commons, CC BY-SA 3.0
+- **`mx-tam-playa-la-pesca-1.jpg`** ⚠︎ *context, not the coast itself* — “La vida del niño pescador en su grandioso mundo natural” by Marcos j. urquia aure, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:La_vida_del_ni%C3%B1o_pescador_en_su_grandioso_mundo_natural.JPG
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Marcos j. urquia aure — //commons.wikimedia.org/w/index.php?title=User:Marcos_j._urquia_aure&amp;action=edit&amp;redlink=1
@@ -14,7 +14,7 @@
   - 1600×1200px, 756 KB
   - Description: esta foto la tome en puerto maya estado aragua, me centre en los niños que van caminando luego de entretenerse jugando en la playa con cajas de anime imitando tablas de surf. se observa todo lo que rodea su infancia, con su principal actividad economica que es la pesca.
   - Match: score 9 via name:pesca, kw:beach+surf+playa, w>=1000, landscape
-- **`mx-tam-playa-la-pesca-2.jpg`** — “Casting a fishing line at Ciutat Jardí beach, Palma, January 2018” by Sergi Coll, Wikimedia Commons, CC BY 2.0
+- **`mx-tam-playa-la-pesca-2.jpg`** ⚠︎ *context, not the coast itself* — “Casting a fishing line at Ciutat Jardí beach, Palma, January 2018” by Sergi Coll, Wikimedia Commons, CC BY 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Casting_a_fishing_line_at_Ciutat_Jard%C3%AD_beach,_Palma,_January_2018.jpg
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Sergi Coll

@@ -6,23 +6,7 @@
 
 `osm:way/1476923120` · 18.3007421, -93.8451875
 
-- **`mx-tab-playa-acapulquito-sanchez-magallanes-1.jpg`** — “CoastRoadSanMag01” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:CoastRoadSanMag01.JPG
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: AlejandroLinaresGarcia — //commons.wikimedia.org/wiki/User:AlejandroLinaresGarcia
-  - Dated: 2011-12-24
-  - 1600×1071px, 700 KB, shot 4024 m from the spot
-  - Description: Coastal road east of Sanchez Magallanes, Tabasco
-  - Match: score 14 via coastal-in-title, name:sanchez+magallanes, kw:coast+coastal, geo:4024m, w>=1000, landscape
-- **`mx-tab-playa-acapulquito-sanchez-magallanes-2.jpg`** — “SanchezMagallanes09” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 3.0
-  - Source page: https://commons.wikimedia.org/wiki/File:SanchezMagallanes09.JPG
-  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
-  - Author: AlejandroLinaresGarcia — //commons.wikimedia.org/wiki/User:AlejandroLinaresGarcia
-  - Dated: 2011-12-24
-  - 1600×1071px, 498 KB, shot 78 m from the spot
-  - Description: Gulf front by Sanchez Magallanes, Tabasco
-  - Match: score 13.5 via name:sanchez+magallanes, kw:beach, geo:78m, w>=1000, landscape
-- **`mx-tab-playa-acapulquito-sanchez-magallanes-3.jpg`** — “SanchezMagallanes12” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 3.0
+- **`mx-tab-playa-acapulquito-sanchez-magallanes-1.jpg`** — “SanchezMagallanes12” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 3.0
   - Source page: https://commons.wikimedia.org/wiki/File:SanchezMagallanes12.JPG
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: AlejandroLinaresGarcia — //commons.wikimedia.org/wiki/User:AlejandroLinaresGarcia
@@ -30,6 +14,22 @@
   - 1600×1071px, 446 KB, shot 306 m from the spot
   - Description: Gulf ocean by Sanchez Magallanes, Tabasco
   - Match: score 13.5 via name:sanchez+magallanes, kw:ocean, geo:306m, w>=1000, landscape
+- **`mx-tab-playa-acapulquito-sanchez-magallanes-2.jpg`** ✗ **not a coastal photo** — “CoastRoadSanMag01” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:CoastRoadSanMag01.JPG
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: AlejandroLinaresGarcia — //commons.wikimedia.org/wiki/User:AlejandroLinaresGarcia
+  - Dated: 2011-12-24
+  - 1600×1071px, 700 KB, shot 4024 m from the spot
+  - Description: Coastal road east of Sanchez Magallanes, Tabasco
+  - Match: score 14 via coastal-in-title, name:sanchez+magallanes, kw:coast+coastal, geo:4024m, w>=1000, landscape
+- **`mx-tab-playa-acapulquito-sanchez-magallanes-3.jpg`** ✗ **not a coastal photo** — “SanchezMagallanes09” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 3.0
+  - Source page: https://commons.wikimedia.org/wiki/File:SanchezMagallanes09.JPG
+  - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
+  - Author: AlejandroLinaresGarcia — //commons.wikimedia.org/wiki/User:AlejandroLinaresGarcia
+  - Dated: 2011-12-24
+  - 1600×1071px, 498 KB, shot 78 m from the spot
+  - Description: Gulf front by Sanchez Magallanes, Tabasco
+  - Match: score 13.5 via name:sanchez+magallanes, kw:beach, geo:78m, w>=1000, landscape
 
 ## Playa Varadero
 
