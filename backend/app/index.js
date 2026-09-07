@@ -71,7 +71,13 @@ app.use('/api/shaper', authWrites, shaperRouter);
 app.use('/api/spot', authWrites, spotRouter);
 app.use('/api/sc', conditionsRouter);
 app.use('/api/image', authWrites, imageRouter);
-app.use('/api/user_board', cognitoAuthMiddleware, userBoardRouter);
+/*
+ * Reads here are open for the same reason the session ones are: a board is
+ * shareable when its owner marks it public, and the router scopes every read to
+ * owner-or-public. It was behind cognitoAuthMiddleware outright, which is what
+ * made /board/:id sign-in-only however the toggle was set.
+ */
+app.use('/api/user_board', authWrites, userBoardRouter);
 app.use('/api/es', cognitoAuthMiddleware, esRouter);
 
 

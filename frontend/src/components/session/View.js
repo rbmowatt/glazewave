@@ -86,22 +86,27 @@ class SessionView extends Component {
     this.onDrop = this.onDrop.bind(this);
   }
 
+  /*
+   * A public session opens from a shared link, so the session and its images
+   * load with or without an account - the API scopes both to owner-or-public
+   * and answers 404 for anything else. The board list does not load: it is the
+   * picker's options, it is only reachable as your own, and a 401 anywhere
+   * trips the signOut in App.js.
+   */
   componentDidMount() {
+    this.props.loadSession(this.props.session, {
+      id: this.props.match.params.id,
+      withs: withs.session,
+    });
+    this.props.loadSessionImages(this.props.session, {
+      wheres: { session_id: this.props.match.params.id },
+    });
     if (this.props.session.isLoggedIn) {
       this.props.loadBoards(this.props.session, {
         orderBy: "name_ASC",
         limit: 50,
         wheres: { user_id: this.props.session.user.id },
       });
-      this.props.loadSession(this.props.session, {
-        id: this.props.match.params.id,
-        withs: withs.session,
-      });
-      this.props.loadSessionImages(this.props.session, {
-        wheres: { session_id: this.props.match.params.id },
-      });
-    } else {
-      this.props.history.push("/session");
     }
   }
 
@@ -267,7 +272,11 @@ class SessionView extends Component {
 
   render() {
     const session = this.props.current_session;
-    const isOwner = this.props.session.user.id === session.user_id;
+    // DEFAULT_SESSION carries no user key, so reading .id off it threw before
+    // componentDidMount could redirect - an anonymous visit rendered once and
+    // hit the ErrorBoundary rather than the page.
+    const viewer = this.props.session.user || {};
+    const isOwner = Boolean(viewer.id) && viewer.id === session.user_id;
     // The reducer cannot know which session it is holding images for, so the
     // stand-in it supplies is generic until here.
     const galleryItems = this.props.session_images.map((image) =>
@@ -354,23 +363,25 @@ class SessionView extends Component {
                       </div>
                     </div>
                     <div className="row preview">
-                      <FontAwesomeIcon
-                        size="lg"
-                        alt="delete user"
-                        style={{
-                          marginLeft: ".5em",
-                          float: "left",
-                          cursor: "pointer",
-                          position: "absolute",
-                          top: "1em",
-                          zIndex: "999",
-                          color: "white",
-                          left: "1em",
-                        }}
-                        icon={faTrash}
-                        onClick={this.deleteImage}
-                        value={this.state.imageIndex}
-                      />
+                      {isOwner && (
+                        <FontAwesomeIcon
+                          size="lg"
+                          alt="delete user"
+                          style={{
+                            marginLeft: ".5em",
+                            float: "left",
+                            cursor: "pointer",
+                            position: "absolute",
+                            top: "1em",
+                            zIndex: "999",
+                            color: "white",
+                            left: "1em",
+                          }}
+                          icon={faTrash}
+                          onClick={this.deleteImage}
+                          value={this.state.imageIndex}
+                        />
+                      )}
                       {isOwner && (
                         <ImageUploader
                           key={this.state.uploaderInstance}

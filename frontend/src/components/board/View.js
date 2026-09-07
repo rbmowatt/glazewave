@@ -89,16 +89,25 @@ class BoardView extends Component {
 		this.onDrop = this.onDrop.bind(this);
 	}
 
+	/*
+	 * A board marked public opens from a shared link. The board, the sessions
+	 * it was ridden in and its images all scope to owner-or-public server-side,
+	 * so they load either way; the catalog lists behind the two type-aheads do
+	 * not, because they only feed controls a non-owner cannot use.
+	 */
 	componentDidMount() {
+		this.props.loadBoard(this.props.session, {
+			id: this.props.match.params.id,
+			withs: relations.selected_board,
+		});
+		this.props.loadSessions(this.props.session, {
+			wheres: { board_id: this.props.match.params.id },
+			withs: relations.user_session,
+		});
+		this.props.loadBoardImages(this.props.session, {
+			wheres: { user_board_id: this.props.match.params.id },
+		});
 		if (this.props.session.isLoggedIn) {
-			this.props.loadBoard(this.props.session, {
-				id: this.props.match.params.id,
-				withs: relations.selected_board,
-			});
-			this.props.loadSessions(this.props.session, {
-				wheres: { board_id: this.props.match.params.id },
-				withs: relations.user_session,
-			});
 			this.props.loadBoards(this.props.session, {
 				limit: 1000,
 				withs: relations.boards,
@@ -106,10 +115,7 @@ class BoardView extends Component {
 			this.props.loadShapers(this.props.session, {
 				withs: relations.shapers,
 			});
-			this.props.loadBoardImages(this.props.session, {
-				wheres: { user_board_id: this.props.match.params.id },
-			});
-		} else this.props.history.push("/board");
+		}
 	}
 
 	// BoardSelect keys on id and labels on name. A size is its own label, so
@@ -235,7 +241,10 @@ class BoardView extends Component {
 
 	render() {
 		const { board } = this.props;
-		let isOwner = this.props.board.user_id === this.props.session.user.id;
+		// DEFAULT_SESSION carries no user key, so reading .id off it threw on an
+		// anonymous visit before componentDidMount could redirect.
+		const viewer = this.props.session.user || {};
+		const isOwner = Boolean(viewer.id) && this.props.board.user_id === viewer.id;
 		// The reducer cannot know which board it is holding images for, so the
 		// stand-in it supplies is generic until here.
 		const galleryItems = this.props.images.map((image) =>
@@ -282,23 +291,26 @@ class BoardView extends Component {
 							</div>
 							<div className="row">
 								<div className="preview col-6">
-									<FontAwesomeIcon
-										size="lg"
-										alt="delete user"
-										style={{
-											marginLeft: ".5em",
-											float: "left",
-											cursor: "pointer",
-											position: "absolute",
-											top: "1em",
-											zIndex: "999",
-											color: "white",
-											left: "1em",
-										}}
-										icon={faTrash}
-										onClick={this.deleteImage}
-										value={this.state.imageIndex}
-									/>
+									{isOwner && (
+										<FontAwesomeIcon
+											size="lg"
+											alt="delete user"
+											style={{
+												marginLeft: ".5em",
+												float: "left",
+												cursor: "pointer",
+												position: "absolute",
+												top: "1em",
+												zIndex: "999",
+												color: "white",
+												left: "1em",
+											}}
+											icon={faTrash}
+											onClick={this.deleteImage}
+											value={this.state.imageIndex}
+										/>
+									)}
+									{isOwner && (
 									<ImageUploader
 										key={this.state.uploaderInstance}
 										withIcon={false}
@@ -324,6 +336,7 @@ class BoardView extends Component {
 											left: "3em",
 										}}
 									/>
+									)}
 									<div>
 										<ImageGallery
 											items={galleryItems}

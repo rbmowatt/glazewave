@@ -5,7 +5,7 @@ import { cognitoConfig } from '../../config/cognito.js'
 import { clearSession, setSessionCookie } from './session';
 import { SET_SESSION } from './../../actions/types';
 import apiConfig from '../../config/api.js';
-import {logInUser, loadUser} from './../../actions/user';
+import {loadUser} from './../../actions/user';
 import store from './../../store/index'
 import TokenStorage from './../utils/token_storage';
 import { startDemoSession, isDemoSession, storedSession } from './demo';

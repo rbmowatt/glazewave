@@ -8,9 +8,11 @@ const EntityType = 'UserBoard';
 const router = new Router();
 
 /*
- * The router is behind cognitoAuthMiddleware, which answers "is this anyone at
- * all". It never answered "is this row yours", so any signed-in rider could
- * read every other rider's private boards by asking for them.
+ * The router used to be behind cognitoAuthMiddleware, which answers "is this
+ * anyone at all" and never "is this row yours" - so any signed-in rider could
+ * read every other rider's private boards by asking for them. Writes are still
+ * gated; the reads are scoped instead, which is also what lets a board marked
+ * public open from a shared link with no account.
  */
 router.get('/', function (req, res) {
   BaseService.make().where( scopedParser(req) )
