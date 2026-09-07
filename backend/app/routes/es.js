@@ -1,9 +1,7 @@
 const { Router } = require('express');
 const express = require('express');
-const NodeCache = require('node-cache');
 const { Client } = require('@elastic/elasticsearch');
 const elasticConfig = require('./../config/elastic');
-const UserService = require('./../services/UserService');
 
 // The browser never learns the real index names. It asks for a logical key and
 // this map resolves it, so a rename in backend/.env cannot strand a frontend
@@ -18,11 +16,6 @@ const INDEXES = {
 const MAX_SEARCHES = 12;
 const MAX_BODY = '256kb';
 
-// Cognito hands us a username; every indexed document is scoped by the MySQL
-// users.id. Without this the scope lookup costs a DB round-trip per keystroke
-// in the facet inputs.
-const userIdCache = new NodeCache({ stdTTL: 300 });
-
 const client = new Client({ node: elasticConfig.host });
 const router = new Router();
 
@@ -34,15 +27,6 @@ router.use(
     limit: MAX_BODY,
   })
 );
-
-async function resolveUserId(username) {
-  const cached = userIdCache.get(username);
-  if (cached !== undefined) return cached;
-  const rows = await UserService.make().where({ wheres: { username }, limit: 1 });
-  if (!rows || !rows.length) return null;
-  userIdCache.set(username, rows[0].id);
-  return rows[0].id;
-}
 
 // The client builds its own filters in the browser, so they are advisory at
 // best - devtools can replace them. The caller's whole query becomes a `must`
@@ -112,7 +96,10 @@ router.post('/:index/_msearch', async function (req, res) {
   }
 
   try {
-    const userId = await resolveUserId(req.user.username);
+    // Resolved once per request by the viewer middleware, which caches the
+    // username to users.id lookup - this used to be a DB round-trip per
+    // keystroke in the facet inputs.
+    const userId = req.viewer ? req.viewer.id : null;
     if (userId === null) {
       return res.status(403).send({ message: 'No account for this token.' });
     }
@@ -145,7 +132,10 @@ router.post('/:index/_search', async function (req, res) {
   }
 
   try {
-    const userId = await resolveUserId(req.user.username);
+    // Resolved once per request by the viewer middleware, which caches the
+    // username to users.id lookup - this used to be a DB round-trip per
+    // keystroke in the facet inputs.
+    const userId = req.viewer ? req.viewer.id : null;
     if (userId === null) {
       return res.status(403).send({ message: 'No account for this token.' });
     }

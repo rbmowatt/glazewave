@@ -34,7 +34,7 @@ class EditUser extends React.Component{
             axios.get(apiConfig.host + apiConfig.port + `/api/user/${this.state.id}`, authHeaders()).then(data => {
                 this.setState({ user: data.data });
             })
-            .catch(error=>this.props.history.push('/user'));
+            .catch(error=>this.props.history.push('/user/dashboard'));
         }
     }
 
@@ -44,7 +44,7 @@ class EditUser extends React.Component{
         axios.put(apiConfig.host + apiConfig.port + `/api/user/${this.state.id}`, this.state.values, authHeaders()).then(data => {
             this.setState({ submitSuccess: true, loading: false })
             setTimeout(() => {
-                this.props.history.push('/user');
+                this.props.history.push('/user/dashboard');
             }, 1500)
         })
         .catch(
@@ -63,9 +63,10 @@ class EditUser extends React.Component{
         this.setValues({ [e.currentTarget.id]: e.currentTarget.value })
     }
 
+    // The user index is gone, and this page is only ever your own row now.
     returnToIndex = e =>
     {
-      this.props.history.push('/user');
+      this.props.history.push('/user/dashboard');
     }
 
     render() {

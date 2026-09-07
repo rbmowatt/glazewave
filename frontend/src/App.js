@@ -12,9 +12,7 @@ import Page404 from './components/home/Page404';
 import Home from './components/home/Home';
 import Login from './components/home/Login';
 import Demo from './components/home/Demo';
-import UserIndex from './components/user/UserIndex';
 
-import CreateUser from './components/user/Create';
 import EditUser from './components/user/Edit';
 import UserDashboard from './components/user/Dashboard';
 import SessionIndex from './components/session/SessionIndex';
@@ -81,8 +79,9 @@ class App extends React.Component{
           <Route path={'/demo'} exact component={Demo} />
           <Route path={'/logout'} exact component={Home} />
           
-          <PrivateRoute path={'/user'} exact component={UserIndex} session={this.props.session} />
-          <PrivateRoute path={'/user/create'} exact component={CreateUser} session={this.props.session} />
+          {/* /user and /user/create are gone with GET and POST /api/user.
+              The list handed out every rider's email and its role check read
+              `if (false)`; an account is created by Cognito, not by this page. */}
           <PrivateRoute path={'/user/dashboard'} exact component={UserDashboard} session={this.props.session} />
           <PrivateRoute path={'/user/edit/:id'} exact component={EditUser} session={this.props.session}  />
           

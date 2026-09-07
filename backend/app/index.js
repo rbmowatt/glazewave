@@ -23,6 +23,7 @@ const spotRouter = require('./routes/spot');
 const esRouter = require('./routes/es');
 const cognitoAuthMiddleware = cognitoAuth.getVerifyMiddleware();
 const queryParser = require('./middleware/QueryParser');
+const viewer = require('./middleware/Viewer');
 
 /*
  * Every CRUD router below used to be mounted bare, so POST, PUT and DELETE on
@@ -32,12 +33,16 @@ const queryParser = require('./middleware/QueryParser');
  *
  * The reads have to stay open. BoardPicker asks for a session before the
  * Cognito token has rehydrated and reads the board off that payload rather
- * than 401ing, and lib/utils/cognito.js calls /api/user/firstOrNew during
- * login with a bare axios.get that carries no Authorization header at all.
- * Gate the verbs, not the router.
+ * than 401ing, and a public session is meant to open from a shared link with
+ * no account at all. Gate the verbs, not the router - and scope the reads.
+ * (/api/user/firstOrNew used to be the other reason. It carries its token
+ * now, because it always had one in hand.)
  *
- * A valid token is not the same as owning the row: nothing here checks that
- * the session you are editing is yours. That still has to be done per route.
+ * A valid token is not the same as owning the row. The READS are scoped now -
+ * viewer below resolves the caller without refusing anyone, and the session,
+ * user_board and image routes AND owner-or-public onto every query. The WRITES
+ * still are not: PUT and DELETE on a session or a board check that you are
+ * someone, not that the row is yours. That is the next pass.
  */
 const WRITE_METHODS = ['POST', 'PUT', 'PATCH', 'DELETE'];
 const authWrites = (req, res, next) =>
@@ -47,6 +52,8 @@ const authWrites = (req, res, next) =>
 
 
 app.use(queryParser);
+// After queryParser, because it hangs the resolved viewer on req.parser too.
+app.use(viewer);
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

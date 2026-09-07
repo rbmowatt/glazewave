@@ -94,7 +94,14 @@ const getCognitoSession = (dispatch) => {
       if (claims.email) params.set('email', claims.email);
       if (claims.given_name) params.set('first_name', claims.given_name);
       if (claims.family_name) params.set('last_name', claims.family_name);
-      axios.get( apiConfig.host + apiConfig.port + `/api/user/firstOrNew?` + params.toString()
+      /*
+       * firstOrNew verifies the token and matches it against the username in
+       * the query string, so this call has to carry the header. It always
+       * could: getSession has already resolved result.accessToken by here, and
+       * formatSessionObject below reads the same jwtToken.
+       */
+      axios.get( apiConfig.host + apiConfig.port + `/api/user/firstOrNew?` + params.toString(),
+        { headers: { Authorization: `Bearer ${result.accessToken.jwtToken}` } }
         ).then(data => {
         const session = formatSessionObject(data.data.id, result);
         TokenStorage.setToken({access_token : session.jwt, refresh_token : null});
