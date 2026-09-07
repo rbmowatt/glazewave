@@ -20,12 +20,12 @@ class LocationService  extends BaseService {
     // is not set", thrown from placeDetails and swallowed by the route.
     //
     // The id now arrives from either the Google autocomplete or the nearest-spot
-    // picker, so surfline_spots is checked before Google. There is nothing in
-    // the string to branch on: the seeded ids do NOT carry the <source>: prefix
-    // the contribution migration documents - they are slug + OSM ref, e.g.
-    // playa-cerritos-n13722001282 - and only SurflineSpotService.create writes a
-    // prefixed one. So the lookup has to be a real read. It costs one indexed
-    // PK hit, and only the first time a place is used.
+    // picker, so surfline_spots is checked before Google. Do not branch on the
+    // shape of the string to skip a lookup: the current seed is entirely
+    // prefixed (osm:way/, osm:node/, osm:relation/) but an older one wrote slug
+    // + OSM ref instead, e.g. playa-cerritos-n13722001282, and any box seeded
+    // before that change still holds those. The read is what makes both work.
+    // It costs one indexed PK hit, and only the first time a place is used.
     async resolve (locationId)
     {
         const existing = await BaseModel.findByPk(locationId);
