@@ -5,7 +5,12 @@ import MainContainer from "./../layout/MainContainer";
 import UserBoardRequests from "./../../requests/UserBoardRequests";
 import UserSessionRequests from "./../../requests/SessionRequests";
 import { UserSessionsLoaded } from "./../../actions/user_session";
-import { UserBoardsLoaded } from "./../../actions/user_board";
+import {
+	UserBoardsLoaded,
+	UserBoardCreatedCleared,
+} from "./../../actions/user_board";
+import Modal from "./../layout/Modal";
+import CreateUserBoard from "./../board/CreateUserBoard";
 import ProfileCard from "./ProfileCard";
 import RatingTrend from "./RatingTrend";
 import NearestSpots from "./../reports/surfline/NearestSpots";
@@ -45,6 +50,7 @@ const mapDispachToProps = (dispatch) => {
 					},
 				})
 			),
+		clearCreatedBoard: () => dispatch(UserBoardCreatedCleared()),
 		loadSessions: (request, session) =>
 			dispatch(
 				request.get({
@@ -60,6 +66,31 @@ const mapDispachToProps = (dispatch) => {
 };
 
 class UserDashboard extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = { showBoardModal: false };
+	}
+
+	showBoardModal = () => {
+		this.setState({ showBoardModal: true });
+	};
+
+	hideBoardModal = (e = false) => {
+		if (e && e.preventDefault) e.preventDefault();
+		this.setState({ showBoardModal: false });
+	};
+
+	/*
+	createUserBoard already pushes the new board into user_boards.data, so
+	NewestBoards repaints on its own and the dashboard has nothing to refetch.
+	The created flag does have to be cleared: BoardPicker fires onChange off it
+	and would reassign a session board the next time one mounts.
+	*/
+	boardCreated = () => {
+		this.props.clearCreatedBoard();
+		this.setState({ showBoardModal: false });
+	};
+
 	componentDidMount() {
 		if (this.props.session.isLoggedIn) {
 			this.props.loadBoards(
@@ -82,6 +113,7 @@ class UserDashboard extends React.Component {
 						<ProfileCard
 							boardCount={boards.length}
 							spotCount={averages.distinct_spots || 0}
+							onAddBoard={this.showBoardModal}
 						/>
 					</aside>
 
@@ -105,9 +137,20 @@ class UserDashboard extends React.Component {
 						<NewestBoards
 							boards={boards}
 							limit={DASHBOARD_LIST_LIMIT}
+							onAddBoard={this.showBoardModal}
 						/>
 					</div>
 				</div>
+				<Modal
+					show={this.state.showBoardModal}
+					handleClose={this.hideBoardModal}
+				>
+					<CreateUserBoard
+						onSuccess={this.hideBoardModal}
+						onSubmissionComplete={this.boardCreated}
+						close={this.hideBoardModal}
+					/>
+				</Modal>
 			</MainContainer>
 		);
 	}

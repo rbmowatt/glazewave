@@ -163,7 +163,7 @@ class ProfileCard extends React.Component {
                 <div className="d-flex flex-column" style={{ gap: '9px' }}>
                     <div className="gw-eyebrow">Actions</div>
                     <Link className="gw-btn gw-btn-primary" to={'/session/create'}>Log a session</Link>
-                    <Link className="gw-btn" to={'/board/create'}>Add a board</Link>
+                    <button type="button" className="gw-btn" onClick={this.props.onAddBoard}>Add a board</button>
                     <div className="gw-uploader">
                         <ImageUploader
                             key={this.state.uploaderInstance}

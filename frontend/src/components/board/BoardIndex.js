@@ -65,7 +65,9 @@ class BoardIndex extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			show: false,//toggle for modal
+			// /board/create redirects here carrying this flag, so a bookmark or an
+			// old link still lands on the create form rather than the bare index.
+			show: !!(props.location && props.location.state && props.location.state.createBoard),//toggle for modal
 			selectedSortOrder: DEFAULT_SORT,
 			showAll: 0,//whether we are are showing only user boards or all public boards
 			filters: [{ match: { user_id: props.userSession.user.id } }],//a set of default filters to be sent to elastic

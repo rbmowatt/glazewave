@@ -16,7 +16,9 @@ export const NewestBoards = (props) => {
 				<div className="gw-empty">
 					NO BOARDS YET
 					<br />
-					<Link className="gw-link" to={'/board/create'}>ADD YOUR FIRST BOARD &rarr;</Link>
+					<button type="button" className="gw-link" onClick={props.onAddBoard}>
+						ADD YOUR FIRST BOARD &rarr;
+					</button>
 				</div>
 			) : (
 				<div className="gw-list">

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import './App.css';
 // Must stay after App.css: App.css @imports bootstrap, and the reskin
 // overrides it by source order rather than by specificity.
@@ -22,7 +22,6 @@ import CreateSession from './components/session/Create';
 
 import SessionView from './components/session/View';
 import BoardIndex from './components/board/BoardIndex';
-import CreateUserBoard from './components/board/CreateUserBoard';
 import BoardView from './components/board/View';
 
 import { withRouter } from "react-router";
@@ -93,7 +92,7 @@ class App extends React.Component{
           <Route  path={'/session/:id'} exact component={SessionView } />
 
           <Route  path={'/board'} exact component={BoardIndex } />
-          <PrivateRoute path={'/board/create'} exact component={CreateUserBoard} session={this.props.session} />
+          <Route path={'/board/create'} exact render={() => <Redirect to={{ pathname: '/board', state: { createBoard: true } }} />} />
           <Route  path={'/board/:id'} exact component={BoardView }/>
 
           <Route component={Page404} />
