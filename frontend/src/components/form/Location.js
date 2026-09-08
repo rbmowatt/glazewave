@@ -218,6 +218,15 @@ class Location extends Component {
         }
     }
 
+    /*
+     * The coordinates, for callers that want the point rather than the id the
+     * session form saves. Both select paths end here, so a spot chip and a
+     * Google suggestion emit the same shape.
+     */
+    emitLocation = (lat, lon, name) => {
+        if (this.props.onLocation) this.props.onLocation({lat, lon, name});
+    }
+
     handleSelectResult = (result) => {
         if (result.kind === 'spot') return this.handleSelectSpot(result.spot);
         return this.handleSelectSuggest(result.suggestion);
@@ -244,6 +253,11 @@ class Location extends Component {
         // session title from it and "Ocean Grove Beach" is a title where
         // "Ocean Grove Beach, Ocean Grove, NJ 07756, USA" is not.
         this.props.onChange('location_name', place.displayName || place.formattedAddress);
+        this.emitLocation(
+            place.location.lat(),
+            place.location.lng(),
+            place.displayName || place.formattedAddress
+        );
         this.setState(
             {lat: place.location.lat(), lng: place.location.lng()},
             this.fetchConditions
@@ -277,6 +291,7 @@ class Location extends Component {
         });
         this.props.onChange('location_id', spot.id);
         this.props.onChange('location_name', spot.name);
+        this.emitLocation(lat, lng, spot.name);
         this.setState({lat, lng}, this.fetchConditions);
     }
 

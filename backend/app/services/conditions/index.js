@@ -54,11 +54,15 @@ const WAVE_OUTPUT = [
 ];
 
 /*
- * A spot further away than this is not where anyone surfed, so it is only
- * worth borrowing coordinates from when the session's own point produced
- * nothing at all.
+ * Only consulted when the session's own point produced no wave data at all, so
+ * this is the distance past which borrowing is worse than reporting nothing.
+ *
+ * 25km was too tight for the seed's actual density. From La Paz the nearest
+ * seeded spot is 44km, and the bay returns four null wave fields, so the
+ * borrow never fired at the one place the fallback was written for and the
+ * report rendered wind, water and pressure alone.
  */
-const FALLBACK_RADIUS_M = 25000;
+const FALLBACK_RADIUS_M = 100000;
 
 const C_TO_F = (c) => (c * 9 / 5) + 32;
 const M_TO_FT = 3.28084;

@@ -7,6 +7,11 @@ import cache from './../../../lib/utils/cache';
 
 const CACHE_KEY = 'nrspt2';
 
+// setWithExpiry adds this to Date.now() in milliseconds, so the 36000 that was
+// here was a 36-second cache, not the ten hours it reads as. Every dashboard
+// mount past half a minute re-ran geolocation and re-hit /api/spot/nearest.
+const CACHE_TTL_MS = 10 * 60 * 60 * 1000;
+
 const mapStateToProps = (state) => {
   return {
     session: state.session,
@@ -30,23 +35,53 @@ class NearestSpots extends React.Component {
   }
 
   componentDidMount() {
-    const setState = this.setState;
-    if (this.props.session.isLoggedIn) {
-      const cachedHits = cache.getWithExpiry(CACHE_KEY);
-      if (cachedHits) {
-        this.setState({ spots: JSON.parse(cachedHits) });
-      }
-      else {
-        safeLocate(defaultOptions, function (err, location) {
-          if (err) return;
-          getSpots(location.coords.latitude, location.coords.longitude).then(spots => {
-            setState({ spots: spots })
-            cache.setWithExpiry(CACHE_KEY, JSON.stringify(spots), 36000);
-          })
-            .catch(() => { })
-        });
-      }
+    this.load();
+  }
+
+  componentDidUpdate(prevProps) {
+    const was = prevProps.pin;
+    const now = this.props.pin;
+    const same = (!was && !now) ||
+      (was && now && was.lat === now.lat && was.lon === now.lon);
+    if (!same) this.load();
+  }
+
+  componentWillUnmount() {
+    this.unmounted = true;
+  }
+
+  load() {
+    if (!this.props.session.isLoggedIn) return;
+
+    const { pin } = this.props;
+    if (pin) {
+      // Not cached. The cache key is the located position, and a pin is
+      // deliberate enough that a stale list is worse than a request.
+      this.fetch(pin.lat, pin.lon);
+      return;
     }
+
+    const cachedHits = cache.getWithExpiry(CACHE_KEY);
+    if (cachedHits) {
+      this.setState({ spots: JSON.parse(cachedHits) });
+      return;
+    }
+
+    const fetchFor = (lat, lon) => this.fetch(lat, lon, true);
+    safeLocate(defaultOptions, function (err, location) {
+      if (err) return;
+      fetchFor(location.coords.latitude, location.coords.longitude);
+    });
+  }
+
+  fetch(lat, lon, store = false) {
+    getSpots(lat, lon)
+      .then(spots => {
+        if (this.unmounted) return;
+        this.setState({ spots: spots });
+        if (store) cache.setWithExpiry(CACHE_KEY, JSON.stringify(spots), CACHE_TTL_MS);
+      })
+      .catch(() => { })
   }
 
   render() {

@@ -39,24 +39,63 @@ class Report extends React.Component {
   }
 
   componentDidMount() {
-    if (this.props.session.isLoggedIn) {
-      if (this.props.conditions.data.wave_period) {
-        this.setState({ data: this.props.conditions.data });
-      }
-      else {
-        const setState = this.setState;
-        const sgLoaded = this.props.conditionsLoaded;
-        safeLocate(defaultOptions, function (err, location) {
-          if (err) return;
-          getSessionData(location.coords.latitude, location.coords.longitude).then(data => {
-            if (!data) return;
-            sgLoaded(data);
-            setState({ data: data });
-          })
-            .catch(() => { })
-        });
-      }
+    this.load();
+  }
+
+  /*
+   * A pin change is the only prop change worth reacting to. Comparing the
+   * objects would refetch on every dashboard render, since the parent builds a
+   * fresh one each time it reads localStorage.
+   */
+  componentDidUpdate(prevProps) {
+    const was = prevProps.pin;
+    const now = this.props.pin;
+    const same = (!was && !now) ||
+      (was && now && was.lat === now.lat && was.lon === now.lon);
+    if (!same) this.load();
+  }
+
+  componentWillUnmount() {
+    this.unmounted = true;
+  }
+
+  load() {
+    if (!this.props.session.isLoggedIn) return;
+
+    const { pin } = this.props;
+    if (pin) {
+      // The store holds whatever the last position resolved to, so it cannot
+      // answer for a pin. Fetching unconditionally also means re-picking the
+      // same spot refreshes the hour rather than repainting a stale one.
+      this.setState({ location: pin.name });
+      this.fetch(pin.lat, pin.lon);
+      return;
     }
+
+    this.setState({ location: '' });
+    if (this.props.conditions.data.wave_period) {
+      this.setState({ data: this.props.conditions.data });
+      return;
+    }
+
+    const fetchFor = (lat, lon) => this.fetch(lat, lon, true);
+    safeLocate(defaultOptions, function (err, location) {
+      if (err) return;
+      fetchFor(location.coords.latitude, location.coords.longitude);
+    });
+  }
+
+  fetch(lat, lon, share = false) {
+    getSessionData(lat, lon)
+      .then(data => {
+        if (!data || this.unmounted) return;
+        // Only the located position goes into the store: the session form
+        // reads it as a starting point, and a pinned coast is not where the
+        // surfer is.
+        if (share) this.props.conditionsLoaded(data);
+        this.setState({ data: data });
+      })
+      .catch(() => { });
   }
 
   render() {

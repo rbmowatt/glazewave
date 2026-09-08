@@ -1,0 +1,41 @@
+.gw-locpick {
+	margin-top: 10px;
+}
+
+.gw-locpick-set {
+	display: flex;
+	gap: 14px;
+}
+
+.gw-locpick-link {
+	background: none;
+	border: 0;
+	padding: 0;
+	font-family: var(--gw-mono);
+	font-size: 10px;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--gw-dim);
+	cursor: pointer;
+}
+
+.gw-locpick-link:hover {
+	color: var(--gw-accent);
+}
+
+/* The suggestion list is positioned absolutely against .location-field-input
+   and the sidebar column is narrow, so without a stacking context here the
+   overlay is painted under the panel below it. */
+.gw-locpick-open {
+	position: relative;
+	z-index: 20;
+}
+
+.gw-locpick-open label {
+	font-family: var(--gw-mono);
+	font-size: 10px;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	color: var(--gw-dim);
+	margin-bottom: 4px;
+}

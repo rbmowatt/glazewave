@@ -16,6 +16,8 @@ import ProfileCard from "./ProfileCard";
 import RatingTrend from "./RatingTrend";
 import NearestSpots from "./../reports/surfline/NearestSpots";
 import Report from "./../reports/conditions/Report";
+import LocationPicker from "./../reports/LocationPicker";
+import { readViewLocation } from "./../../lib/utils/viewLocation";
 import Conditions from "./../session/Conditions";
 import { LatestSessions } from "./../session/LatestSessions";
 import { NewestBoards } from "./../board/NewestBoards";
@@ -69,8 +71,18 @@ const mapDispachToProps = (dispatch) => {
 class UserDashboard extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = { showBoardModal: false, showSessionModal: false };
+		this.state = {
+			showBoardModal: false,
+			showSessionModal: false,
+			// Read once here rather than in each widget, so the report and the
+			// spot list cannot disagree about where they are answering for.
+			pin: readViewLocation(),
+		};
 	}
+
+	setPin = (pin) => {
+		this.setState({ pin: pin });
+	};
 
 	showBoardModal = () => {
 		this.setState({ showBoardModal: true });
@@ -144,9 +156,10 @@ class UserDashboard extends React.Component {
 					</section>
 
 					<aside className="gw-col">
-						<Report />
+						<Report pin={this.state.pin} />
+						<LocationPicker pin={this.state.pin} onChange={this.setPin} />
 						<hr className="gw-rule" />
-						<NearestSpots />
+						<NearestSpots pin={this.state.pin} />
 					</aside>
 
 					<div className="gw-dashboard-lists">
