@@ -15,10 +15,12 @@ const DEBOUNCE_MS = 180;
 // which reads as a broken field. Matches MIN_QUERY_LENGTH on the route.
 const MIN_QUERY_LENGTH = 2;
 
-// Tighter than the 50km /api/spot/nearest default. These are chips you tap
-// without reading, so a spot an hour up the coast is a wrong answer, not a
-// choice.
-const NEARBY_RADIUS_M = 25000;
+// Wider than the 50km /api/spot/nearest default, not tighter. The seed is
+// sparse outside dense coast: from La Paz the two nearest spots sit at 44km and
+// 47km, so the old 25km ceiling returned an empty array and the chip row never
+// rendered at all. Each chip prints its own distance, so a far one reads as far
+// rather than as a wrong answer.
+const NEARBY_RADIUS_M = 100000;
 const NEARBY_LIMIT = 4;
 
 // distance_m is road metres when the server had a road ranking for these
