@@ -22,12 +22,18 @@
  */
 'use strict';
 
+const crypto = require('crypto');
 const fs = require('fs');
 const os = require('os');
 const path = require('path');
 const { execFileSync } = require('child_process');
 
 const OUT = path.join(__dirname, '../../data/coastline.bin');
+const MANIFEST = path.join(__dirname, '../../data/coastline.manifest.json');
+// The bucket policy already serves this prefix public-read, so the box fetches
+// it over plain https with no credentials and no SDK.
+const URL_BASE = process.env.COASTLINE_URL_BASE
+  || 'https://glazewave-uploads-124666675445.s3.amazonaws.com/data';
 const CACHE_ROOT = process.env.GLAZEWAVE_CACHE
   || path.join(os.homedir(), '.cache', 'glazewave');
 const GSHHG = process.env.GSHHG_BIN || path.join(CACHE_ROOT, 'gshhs_h.b');
@@ -173,8 +179,29 @@ const run = async () => {
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
   fs.writeFileSync(OUT, Buffer.concat([header, data, index]));
   const bytes = fs.statSync(OUT).size;
+
+  /*
+   * Written here rather than by hand, because the manifest is what the deploy
+   * trusts: a hash that does not match the file it names sends every box into
+   * a download loop that can never succeed.
+   */
+  const previous = fs.existsSync(MANIFEST)
+    ? JSON.parse(fs.readFileSync(MANIFEST, 'utf8'))
+    : {};
+  fs.writeFileSync(MANIFEST, JSON.stringify({
+    url: previous.url || `${URL_BASE}/coastline.bin`,
+    sha256: crypto.createHash('sha256').update(fs.readFileSync(OUT)).digest('hex'),
+    bytes: bytes,
+    segments: segs.length,
+    cells: keys.length,
+    built: new Date().toISOString().slice(0, 10),
+    source: 'GSHHG 2.3.7 gshhs_h.b, level 1, LGPL, Wessel and Smith',
+    regions: BOXES.map((b) => b.name),
+  }, null, 2) + '\n');
+
   console.log(`wrote ${OUT}`);
   console.log(`${keys.length} cells, ${(bytes / 1048576).toFixed(2)} MB`);
+  console.log('manifest updated; upload the .bin before deploying it');
 };
 
 run().catch((e) => { console.error(e.message); process.exit(1); });

@@ -65,6 +65,11 @@ let cellDeg = 1;
 
 const open = () => {
     if (fd !== null) return;
+    if (!fs.existsSync(FILE)) {
+        // Not committed: it is 2.6MB and regenerating it writes a different
+        // file. `npm run coastline:fetch` pulls the one the manifest names.
+        throw new Error(`${FILE} is missing; run npm run coastline:fetch`);
+    }
     fd = fs.openSync(FILE, 'r');
     const header = Buffer.alloc(HEADER_BYTES);
     fs.readSync(fd, header, 0, HEADER_BYTES, 0);
