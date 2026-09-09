@@ -5,11 +5,23 @@ const s3Config = require('./../config/s3');
 
 const BaseModel = db.SpotImage;
 
-// One stored object per width under the hash prefix. 400 is the picker chip and
-// the search row, 800 the card, 1600 the hero. Every source file is exactly
-// 1600 wide, so nothing is ever upscaled.
-const WIDTHS = [400, 800, 1600];
+// 400 is the picker chip and the search row, 800 the card, 1600 the hero.
+//
+// Which of these actually exist for a given image is derived from its stored
+// width, not listed in a column, and this has to stay in step with
+// build_spot_derivatives.py: a rung only exists when it is smaller than the
+// source, plus the source itself capped at TOP. Sources run from 600 to 1920,
+// so a 640px photo has 400 and 640 and nothing else. Emitting a srcset entry
+// for a key that was never built is a 403 in the browser, not a fallback.
+const LADDER = [400, 800, 1600];
+const TOP = 1600;
 const DEFAULT_WIDTH = 800;
+
+function widthsFor(sourceWidth) {
+  const w = Number(sourceWidth) || TOP;
+  return [...new Set([...LADDER.filter((n) => n < w), Math.min(w, TOP)])]
+    .sort((a, b) => a - b);
+}
 
 class SpotImageService extends BaseService {
 
@@ -80,17 +92,28 @@ class SpotImageService extends BaseService {
         const image = DisplayScope.publicImage(row, s3Config.publicRoot);
         if (!image) return null;
 
-        const w = WIDTHS.includes(Number(width)) ? Number(width) : DEFAULT_WIDTH;
+        const available = widthsFor(row.width);
+        // Ask for 1600 of a 640px photo and you get 640, because that is the
+        // largest rung that was built. Never round up to a key that is not there.
+        const asked = Number(width) || DEFAULT_WIDTH;
+        const w = available.filter((n) => n <= asked).pop() || available[0];
+
         if (row.storage === 'mirrored' && row.name) {
             image.url = `${s3Config.publicRoot}${row.name}${w}.jpg`;
-            image.srcset = WIDTHS
+            image.srcset = available
                 .map((n) => `${s3Config.publicRoot}${row.name}${n}.jpg ${n}w`)
                 .join(', ');
         }
+        image.width = w;
+        image.height = row.height && row.width
+            ? Math.round((row.height * w) / row.width)
+            : null;
         image.subject = row.subject;
         return image;
     }
 }
 
 module.exports = SpotImageService;
-module.exports.WIDTHS = WIDTHS;
+module.exports.LADDER = LADDER;
+module.exports.TOP = TOP;
+module.exports.widthsFor = widthsFor;

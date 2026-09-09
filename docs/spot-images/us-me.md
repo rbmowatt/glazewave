@@ -19,7 +19,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Mat Fascione — https://www.geograph.org.uk/profile/11776
   - Dated: 2019-07-26
-  - 1600×1119px, 204 KB, shot 4801478 m from the spot
+  - 1024×716px, 204 KB, shot 4801478 m from the spot
   - Description: St Andrews beach and shoreline
   - Match: score 11 via coastal-in-title, name:andrews, kw:beach+shore+shoreline, geo:4801478m, w>=1000, landscape
 
@@ -32,7 +32,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Uschoen — //commons.wikimedia.org/wiki/User:Uschoen
   - Dated: 2024-07-14 14:53:02
-  - 1600×1065px, 615 KB, shot 1374 m from the spot
+  - 1920×1279px, 615 KB, shot 1374 m from the spot
   - Description: Gooch's Beach, Kennebunk ME, in Summer
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:1374m, w>=1000, landscape
 
@@ -45,7 +45,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2018-01-19 13:35
-  - 1600×454px, 215 KB, shot 186 m from the spot
+  - 1920×545px, 215 KB, shot 186 m from the spot
   - Description: As part of my quest to find a snowy owl that had been reported to be in this area I stopped by this beach in Biddeford Pool, Maine. this is a five image panorama merged in Lightroom and converted to BW with Silver Efex Pro.
   - Match: score 15.5 via coastal-in-title, name:biddeford+pool, kw:beach, geo:186m, w>=1000, landscape
 - **`us-me-biddeford-pool-beach-2.jpg`** — “Biddeford Pool (25981103638)” by Paul VanDerWerf from Brunswick, Maine, USA, Wikimedia Commons, CC BY 2.0
@@ -53,7 +53,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2018-01-19 12:31
-  - 1600×1066px, 1009 KB, shot 1350 m from the spot
+  - 1400×933px, 1009 KB, shot 1350 m from the spot
   - Description: An ocean front view taken in Biddeford Pool, Maine looking out at Saco Bay. This is a five image HDR merged with Lightroom. Biddeford Pool is the site of Maine's first recorded permanent settlement, then called Winter Harbor (not to be confused with present-day Winter Harbor, Maine). In the winter of 1616-1617, Richard Vines, a physician, resided here as part of the colonization efforts of Sir Ferdinando Gorges, lord proprietor of Maine. An early village developed on the north side. In 1688, Fort Mary was built near the pool's entrance. [Wikipedia]
   - Match: score 14 via name:biddeford+pool, kw:ocean+mar+bay, geo:1350m, w>=1000, landscape
 - **`us-me-biddeford-pool-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Wood Island Light (26122088258)” by Paul VanDerWerf from Brunswick, Maine, USA, Wikimedia Commons, CC BY 2.0
@@ -61,7 +61,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2018-01-19 12:45
-  - 1600×1101px, 1324 KB, shot 2332 m from the spot
+  - 1400×963px, 1324 KB, shot 2332 m from the spot
   - Description: Wood Island Light is an active lighthouse on the eastern edge of Wood Island in Saco Bay, on the southern coast of Maine. The light is just outside the entrance to Biddeford Pool and the end of the Saco River. The lighthouse is a 47-foot (14 m) tall conical white tower constructed of granite rubble. The light itself sits 71 feet (22 m) above mean high water. It currently is automated and has an alternating green and white beacon every 10 seconds. Wood Island Light is Maine's second oldest lighthouse (after Portland Head Light) and the nation's eleventh oldest. It was added to the National Regi
   - Match: score 14 via name:biddeford+pool, kw:coast+bay+lighthouse, geo:2332m, w>=1000, landscape
 
@@ -74,7 +74,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Mick Garratt — https://www.geograph.org.uk/profile/343
   - Dated: 2007-08-14
-  - 1600×1068px, 92 KB, shot 4459126 m from the spot
+  - 640×427px, 92 KB, shot 4459126 m from the spot
   - Description: Big Sand Beach From Ceann a'Chreagain
   - Match: score 11 via coastal-in-title, name:big, kw:beach+coast+sand, geo:4459126m, w>=1000, landscape
 - **`us-me-big-beach-2.jpg`** — “Big Sand Beach - geograph.org.uk - 7463” by Anne Burgess, Wikimedia Commons, CC BY-SA 2.0
@@ -82,7 +82,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Anne Burgess — https://www.geograph.org.uk/profile/139
   - Dated: 1971-09
-  - 1600×795px, 114 KB, shot 4459176 m from the spot
+  - 640×318px, 114 KB, shot 4459176 m from the spot
   - Description: Big Sand Beach.
   - Match: score 10 via coastal-in-title, name:big, kw:beach+sand, geo:4459176m, w>=1000, landscape
 - **`us-me-big-beach-3.jpg`** — “Big Sand Beach With Torridon Mountains Beyond - geograph.org.uk - 219091” by Iain Thompson, Wikimedia Commons, CC BY-SA 2.0
@@ -90,7 +90,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Iain Thompson — https://www.geograph.org.uk/profile/2610
   - Dated: 2006-07-30
-  - 1600×1200px, 148 KB
+  - 640×480px, 148 KB
   - Description: Big Sand Beach With Torridon Mountains Beyond.
   - Match: score 10 via coastal-in-title, name:big, kw:beach+sand, w>=1000, landscape
 
@@ -103,7 +103,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: King of Hearts — //commons.wikimedia.org/wiki/User:King_of_Hearts
   - Dated: 2021-10-09 07:19:46
-  - 1600×1068px, 736 KB, shot 39 m from the spot
+  - 1920×1282px, 736 KB, shot 39 m from the spot
   - Description: Boulder Beach, Acadia National Park , Maine .
   - Match: score 14 via coastal-in-title, name:boulder, kw:beach+coast+sunrise, geo:39m, w>=1000, landscape
 - **`us-me-boulder-beach-2.jpg`** — “Boulder Beach Acadia October 2021 003” by King of Hearts, Wikimedia Commons, CC BY-SA 4.0
@@ -111,7 +111,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: King of Hearts — //commons.wikimedia.org/wiki/User:King_of_Hearts
   - Dated: 2021-10-09 07:25:04
-  - 1600×1067px, 653 KB, shot 42 m from the spot
+  - 1920×1280px, 653 KB, shot 42 m from the spot
   - Description: Boulder Beach, Acadia National Park , Maine .
   - Match: score 14 via coastal-in-title, name:boulder, kw:beach+coast+sunrise, geo:42m, w>=1000, landscape
 - **`us-me-boulder-beach-3.jpg`** — “2017-07-27 08 34 27 View north from an overlook along the Park Loop Road between Monument Cove and Boulder Beach within Acadia National Park, in Bar Harbor, Hancock County, Maine” by Famartin, Wikimedia Commons, CC BY-SA 4.0
@@ -119,7 +119,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
   - Dated: 2017-07-27 08:34:27
-  - 1600×1200px, 685 KB, shot 161 m from the spot
+  - 1920×1440px, 685 KB, shot 161 m from the spot
   - Description: View north from an overlook along the Park Loop Road between Monument Cove and Boulder Beach within Acadia National Park, in Bar Harbor, Hancock County, Maine
   - Match: score 13 via coastal-in-title, name:boulder, kw:beach+cove, geo:161m, w>=1000, landscape
 
@@ -132,7 +132,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: EgorovaSvetlana — //commons.wikimedia.org/wiki/User:EgorovaSvetlana
   - Dated: 2005-12-27 12:46:01
-  - 1600×1200px, 218 KB
+  - 1920×1440px, 218 KB
   - Description: Surfer Cape Neddick York Maine view from Long Sands Beach
   - Match: score 15 via coastal-in-title, name:cape+neddick, kw:beach+surf+surfer+sand, w>=1000, landscape
 - **`us-me-cape-neddick-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Snowy Oceanside Sunrise” by Eric Kilby, Wikimedia Commons, CC BY-SA 4.0
@@ -140,7 +140,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Eric Kilby
   - Dated: Taken on 9 December 2025, 08:05:11
-  - 1600×900px, 455 KB, shot 2203 m from the spot
+  - 1920×1080px, 455 KB, shot 2203 m from the spot
   - Description: Nubble Lighthouse. Boon Island light also visible on the horizon to the left.
   - Match: score 16 via coastal-in-title, name:cape+neddick, kw:ocean+lighthouse+sunrise, geo:2203m, w>=1000, landscape
 - **`us-me-cape-neddick-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Nubble Lighthouse Sunrise” by Eric Kilby, Wikimedia Commons, CC BY-SA 4.0
@@ -148,7 +148,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Eric Kilby
   - Dated: Taken on 9 December 2025, 07:47:30
-  - 1600×2133px, 721 KB, shot 2204 m from the spot
+  - 1920×2560px, 721 KB, shot 2204 m from the spot
   - Description: Nubble Lighthouse
   - Match: score 14.5 via coastal-in-title, name:cape+neddick, kw:lighthouse+sunrise, geo:2204m, w>=1000
 
@@ -161,7 +161,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: EgorovaSvetlana — //commons.wikimedia.org/wiki/User:EgorovaSvetlana
   - Dated: 2005-12-27 12:46:01
-  - 1600×1200px, 218 KB
+  - 1920×1440px, 218 KB
   - Description: Surfer Cape Neddick York Maine view from Long Sands Beach
   - Match: score 15 via coastal-in-title, name:cape+neddick, kw:beach+surf+surfer+sand, w>=1000, landscape
 - **`us-me-cape-neddick-beach-222948-2.jpg`** ⚠︎ *context, not the coast itself* — “Snowy Oceanside Sunrise” by Eric Kilby, Wikimedia Commons, CC BY-SA 4.0
@@ -169,7 +169,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Eric Kilby
   - Dated: Taken on 9 December 2025, 08:05:11
-  - 1600×900px, 455 KB, shot 2561 m from the spot
+  - 1920×1080px, 455 KB, shot 2561 m from the spot
   - Description: Nubble Lighthouse. Boon Island light also visible on the horizon to the left.
   - Match: score 16 via coastal-in-title, name:cape+neddick, kw:ocean+lighthouse+sunrise, geo:2561m, w>=1000, landscape
 - **`us-me-cape-neddick-beach-222948-3.jpg`** ⚠︎ *context, not the coast itself* — “Nubble Lighthouse Sunrise” by Eric Kilby, Wikimedia Commons, CC BY-SA 4.0
@@ -177,7 +177,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Eric Kilby
   - Dated: Taken on 9 December 2025, 07:47:30
-  - 1600×2133px, 721 KB, shot 2561 m from the spot
+  - 1920×2560px, 721 KB, shot 2561 m from the spot
   - Description: Nubble Lighthouse
   - Match: score 14.5 via coastal-in-title, name:cape+neddick, kw:lighthouse+sunrise, geo:2561m, w>=1000
 
@@ -190,7 +190,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Uschoen — //commons.wikimedia.org/wiki/User:Uschoen
   - Dated: 2024-07-14 14:53:02
-  - 1600×1065px, 615 KB, shot 631 m from the spot
+  - 1920×1279px, 615 KB, shot 631 m from the spot
   - Description: Gooch's Beach, Kennebunk ME, in Summer
   - Match: score 6.5 via coastal-in-title, kw:beach, geo:631m, w>=1000, landscape
 
@@ -203,7 +203,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Joe Mabel — //commons.wikimedia.org/wiki/User:Jmabel
   - Dated: Taken on 26 April 2019
-  - 1600×1063px, 561 KB
+  - 1920×1275px, 561 KB
   - Description: Crescent Beach (left) and Cannon Beach, Oregon, U.S. Haystack Rock and other offshore rock formations seen from Ecola Point, Ecola State Park.
   - Match: score 11 via coastal-in-title, name:crescent, kw:beach+sea+shore+point, w>=1000, landscape
 - **`us-me-crescent-beach-2.jpg`** — Crescent Beach State Park 03 — Public domain (Wikimedia Commons), no attribution required
@@ -211,7 +211,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Sean Dudley
   - Dated: 2023-10-03 09:41:53
-  - 1600×899px, 324 KB
+  - 1920×1079px, 324 KB
   - Description: I took this on a trip I took in October 2023.
   - Match: score 8.5 via coastal-in-title, name:crescent, kw:beach, w>=1000, landscape
 
@@ -224,7 +224,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Joe Mabel — //commons.wikimedia.org/wiki/User:Jmabel
   - Dated: Taken on 26 April 2019
-  - 1600×1063px, 561 KB
+  - 1920×1275px, 561 KB
   - Description: Crescent Beach (left) and Cannon Beach, Oregon, U.S. Haystack Rock and other offshore rock formations seen from Ecola Point, Ecola State Park.
   - Match: score 11 via coastal-in-title, name:crescent, kw:beach+sea+shore+point, w>=1000, landscape
 - **`us-me-crescent-beach-445354-2.jpg`** — Crescent Beach State Park 02 — Public domain (Wikimedia Commons), no attribution required
@@ -232,7 +232,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Sean Dudley
   - Dated: 2023-10-03 09:41:53
-  - 1600×899px, 451 KB
+  - 1920×1079px, 451 KB
   - Description: I took this on a trip I took in October 2023.
   - Match: score 8.5 via coastal-in-title, name:crescent, kw:beach, w>=1000, landscape
 
@@ -245,7 +245,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Joe Mabel — //commons.wikimedia.org/wiki/User:Jmabel
   - Dated: Taken on 26 April 2019
-  - 1600×1063px, 561 KB
+  - 1920×1275px, 561 KB
   - Description: Crescent Beach (left) and Cannon Beach, Oregon, U.S. Haystack Rock and other offshore rock formations seen from Ecola Point, Ecola State Park.
   - Match: score 11 via coastal-in-title, name:crescent, kw:beach+sea+shore+point, w>=1000, landscape
 
@@ -258,7 +258,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Jules Verne Times Two — //commons.wikimedia.org/wiki/User:Julesvernex2
   - Dated: 2022-07-25 10:22:43
-  - 1600×1067px, 528 KB, shot 1621 m from the spot
+  - 1920×1280px, 528 KB, shot 1621 m from the spot
   - Description: Parson's Beach, Kennebunk, Maine, US (PPL1-Corrected)
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:1621m, w>=1000, landscape
 
@@ -271,7 +271,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Gail Frederick from Denton, Texas, USA — https://www.flickr.com/people/71365354@N00
   - Dated: 2019-08-01 19:16
-  - 1600×900px, 543 KB, shot 996 m from the spot
+  - 1920×1080px, 543 KB, shot 996 m from the spot
   - Description: Sunset Sail in Casco Bay
   - Match: score 9 via coastal-in-title, kw:bay+lighthouse+sunset, geo:996m, w>=1000, landscape
 - **`us-me-devil-s-bathing-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Calm Winter Lighthouse (54238364103)” by Eric Kilby from Somerville, MA, USA, Wikimedia Commons, CC BY-SA 2.0
@@ -279,7 +279,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Eric Kilby from Somerville, MA, USA — https://www.flickr.com/people/8749778@N06
   - Dated: Taken on 28 December 2024, 14:47
-  - 1600×900px, 236 KB, shot 1015 m from the spot
+  - 1920×1080px, 236 KB, shot 1015 m from the spot
   - Description: Portland Head Light, viewed from the reverse direction of the popular viewpoint. Long exposure to smooth out the water and accentuate the streakiness of the clouds.
   - Match: score 9 via coastal-in-title, kw:sea+point+lighthouse+seascape, geo:1015m, w>=1000, landscape
 - **`us-me-devil-s-bathing-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Portland Head Light (22722128439)” by Paul VanDerWerf from Brunswick, Maine, USA, Wikimedia Commons, CC BY 2.0
@@ -287,7 +287,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2015-11-15 16:58
-  - 1600×1066px, 1107 KB, shot 1223 m from the spot
+  - 1400×933px, 1107 KB, shot 1223 m from the spot
   - Description: I will add another to the encyclopedic mass of photos of this light house. It is located in Cape Elizabeth south of Portland, Maine. We had out of state visitors we were entertaining. In the distance is Ram Island Light Portland Head Light is an historic lighthouse in Cape Elizabeth, Maine. The light station sits on a head of land at the entrance of the primary shipping channel into Portland Harbor, which is within Casco Bay in the Gulf of Maine. Completed in 1791, it is the oldest lighthouse in the state of Maine. The light station is automated, and the tower, beacon, and foghorn are maintain
   - Match: score 6 via kw:mar+bay+lighthouse, geo:1223m, w>=1000, landscape
 
@@ -300,7 +300,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: U. S. Fish and Wildlife Service - Northeast Region — https://www.flickr.com/people/43322816@N08
   - Dated: 2014-08-13 22:20:52
-  - 1600×1200px, 218 KB, shot 2179 m from the spot
+  - 800×600px, 218 KB, shot 2179 m from the spot
   - Description: This Hurricane Sandy recovery project repaired damages to a section of boardwalk on the Carson Trail at Rachel Carson National Wildlife Refuge (ME). More project details: http://www.fws.gov/hurricane/sandy/projects/RachelCarson.html Photo credit: Karrie Schwaab/USFWS Like us on Facebook: Follow us on Twitter:
   - Match: score 8 via coastal-in-title, kw:sand+cove+boardwalk, geo:2179m, w>=1000, landscape
 - **`us-me-drakes-island-beach-2.jpg`** ⚠︎ *context, not the coast itself* — Before Carson Trail boardwalk restoration - smaller platform (15872693897) — Public domain (Wikimedia Commons), no attribution required
@@ -308,7 +308,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: U.S. Fish and Wildlife Service Northeast Region — https://www.flickr.com/people/43322816@N08
   - Dated: 2014-08-18 00:00
-  - 1600×1200px, 44 KB, shot 2179 m from the spot
+  - 640×480px, 44 KB, shot 2179 m from the spot
   - Description: This Hurricane Sandy recovery project repaired damages to a section of boardwalk on the Carson Trail at Rachel Carson National Wildlife Refuge (ME). More project details: <a href=" http://www.fws.gov/hurricane/sandy/projects/RachelCarson.html " rel="nofollow">www.fws.gov/hurricane/sandy/projects/RachelCarson.html</a> Photo credit: Karrie Schwaab/USFWS Like us on Facebook: <a href=" http://facebook.com/usfwsnortheast " rel="nofollow">facebook.com/usfwsnortheast</a> Follow us on Twitter: <a href=" https://twitter.com/usfwsnortheast " rel="nofollow">twitter.com/usfwsnortheast</a>
   - Match: score 8 via coastal-in-title, kw:sand+cove+boardwalk, geo:2179m, w>=1000, landscape
 
@@ -321,7 +321,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Kaushik A C — //commons.wikimedia.org/w/index.php?title=User:Kaushikac&amp;action=edit&amp;redlink=1
   - Dated: Taken on 1 September 2012, 19:43:16
-  - 1600×1067px, 854 KB, shot 2196 m from the spot
+  - 1920×1280px, 854 KB, shot 2196 m from the spot
   - Description: Marshall Point Light Station
   - Match: score 8 via coastal-in-title, kw:mar+point+lighthouse+sunset, geo:2196m, w>=1000, landscape
 - **`us-me-drift-inn-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Marshall Point Lighthouse (8171173015)” by Gabriel Millos, Wikimedia Commons, CC BY-SA 2.0
@@ -329,7 +329,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Gabriel Millos — https://www.flickr.com/people/29198100@N00
   - Dated: 2012-07-24 16:13
-  - 1600×1067px, 421 KB, shot 2157 m from the spot
+  - 1920×1280px, 421 KB, shot 2157 m from the spot
   - Description: Marshall Point Lighthouse
   - Match: score 8 via coastal-in-title, kw:mar+point+lighthouse, geo:2157m, w>=1000, landscape
 - **`us-me-drift-inn-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Maine-00024 - Marshall Point Lighthouse” by Dennis G. Jarvis, Wikimedia Commons, CC BY-SA 2.0
@@ -337,7 +337,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Dennis G. Jarvis — https://www.wikidata.org/wiki/Q122977591
   - Dated: 2022-10-01 08:21:03
-  - 1600×1067px, 604 KB, shot 2068 m from the spot
+  - 1920×1280px, 604 KB, shot 2068 m from the spot
   - Description: n 1857, work began on the present tower. The lower half of the twenty-four-foot-tall, cylindrical tower was built of granite, and the upper half of brick. The lantern was made of cast iron and housed a fifth-order Fresnel lens showing a fixed white light. The lighthouse was featured in the movie Forest Gump featuring Tom Hanks, concluded his cross-country run on the runway of Marshall Point Lighthouse.
   - Match: score 8 via coastal-in-title, kw:mar+point+lighthouse, geo:2068m, w>=1000, landscape
 
@@ -350,7 +350,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2017-09-05 16:44
-  - 1600×1280px, 1003 KB, shot 534 m from the spot
+  - 1300×1040px, 1003 KB, shot 534 m from the spot
   - Description: A small flock of sanderlings seen on the sand beach of Reid State Park in Georgetown, Maine. It is fascinating to watch them run back and forth just in front of the surf line all the while probing the sand for food. The Sanderling’s black legs blur as it runs back and forth on the beach, picking or probing for tiny prey in the wet sand left by receding waves. Sanderlings are medium-sized “peep” sandpipers recognizable by their pale nonbreeding plumage, black legs and bill, and obsessive wave-chasing habits. Learn this species, and you’ll have an aid in sorting out less common shorebirds. These
   - Match: score 8.5 via coastal-in-title, kw:beach+surf+wave+waves, geo:534m, w>=1000
 - **`us-me-east-beach-2.jpg`** — “Indian Point Beach (39775868534)” by Paul VanDerWerf from Brunswick, Maine, USA, Wikimedia Commons, CC BY 2.0
@@ -358,7 +358,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2018-02-24 14:55
-  - 1600×587px, 238 KB, shot 3668 m from the spot
+  - 1920×705px, 238 KB, shot 3668 m from the spot
   - Description: This is a panorama from six photos taken at a beautiful sand beach on Indian Point located in Georgetown, Maine. It is a private beach owned by the Indian Point Association of owners.
   - Match: score 7 via coastal-in-title, kw:beach+sand+point, geo:3668m, w>=1000, landscape
 - **`us-me-east-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Barefoot On The Beach (26534740893)” by Paul VanDerWerf from Brunswick, Maine, USA, Wikimedia Commons, CC BY 2.0
@@ -366,7 +366,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2016-05-20 19:55
-  - 1600×1395px, 748 KB, shot 448 m from the spot
+  - 1193×1040px, 748 KB, shot 448 m from the spot
   - Description: Taken at Reid State Park in Georgetown Maine. The tide was out and there was lots of reflective area on the wet sand. This couple were enjoying walking on the sand with their shoes in hand. Processed in Silver Efex Pro after Lightroom.
   - Match: score 8.5 via coastal-in-title, kw:beach+sand+tide, geo:448m, w>=1000
 
@@ -379,7 +379,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: EgorovaSvetlana — //commons.wikimedia.org/wiki/User:EgorovaSvetlana
   - Dated: 2005-12-24 10:30:46
-  - 1600×1200px, 194 KB
+  - 1920×1440px, 194 KB
   - Description: Footbridge Beach Ogunquit’s Atlantic waterfront New England
   - Match: score 8.5 via coastal-in-title, name:footbridge, kw:beach, w>=1000, landscape
 
@@ -392,7 +392,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: InAweofGod'sCreation — https://www.flickr.com/people/36783643@N05
   - Dated: 2004-05-30 12:57
-  - 1600×1069px, 1137 KB, shot 4450 m from the spot
+  - 1497×1000px, 1137 KB, shot 4450 m from the spot
   - Description: Goose Rocks Beach
   - Match: score 10 via coastal-in-title, name:rocks, kw:beach+rocks, geo:4450m, w>=1000, landscape
 - **`us-me-fortunes-rocks-beach-2.jpg`** — “Beach At Biddeford Pool (39155996754)” by Paul VanDerWerf from Brunswick, Maine, USA, Wikimedia Commons, CC BY 2.0
@@ -400,7 +400,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2018-01-19 13:35
-  - 1600×454px, 215 KB, shot 2097 m from the spot
+  - 1920×545px, 215 KB, shot 2097 m from the spot
   - Description: As part of my quest to find a snowy owl that had been reported to be in this area I stopped by this beach in Biddeford Pool, Maine. this is a five image panorama merged in Lightroom and converted to BW with Silver Efex Pro.
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:2097m, w>=1000, landscape
 
@@ -413,7 +413,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2018-01-19 12:31
-  - 1600×1066px, 1009 KB, shot 3731 m from the spot
+  - 1400×933px, 1009 KB, shot 3731 m from the spot
   - Description: An ocean front view taken in Biddeford Pool, Maine looking out at Saco Bay. This is a five image HDR merged with Lightroom. Biddeford Pool is the site of Maine's first recorded permanent settlement, then called Winter Harbor (not to be confused with present-day Winter Harbor, Maine). In the winter of 1616-1617, Richard Vines, a physician, resided here as part of the colonization efforts of Sir Ferdinando Gorges, lord proprietor of Maine. An early village developed on the north side. In 1688, Fort Mary was built near the pool's entrance. [Wikipedia]
   - Match: score 5 via kw:ocean+mar+bay, geo:3731m, w>=1000, landscape
 - **`us-me-freddy-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “End Of the Season - panoramio” by South Shore Boy, Wikimedia Commons, CC BY-SA 3.0
@@ -421,7 +421,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: South Shore Boy — https://web.archive.org/web/20161017021018/http://www.panoramio.com/user/3496074?with_photo_id=46405670
   - Dated: Taken on 9 October 2007
-  - 1600×1071px, 417 KB, shot 304 m from the spot
+  - 1920×1285px, 417 KB, shot 304 m from the spot
   - Description: End Of the Season
   - Match: score 7.5 via coastal-in-title, kw:sea, geo:304m, w>=1000, landscape
 - **`us-me-freddy-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Wood Island Light (26122088258)” by Paul VanDerWerf from Brunswick, Maine, USA, Wikimedia Commons, CC BY 2.0
@@ -429,7 +429,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2018-01-19 12:45
-  - 1600×1101px, 1324 KB, shot 4091 m from the spot
+  - 1400×963px, 1324 KB, shot 4091 m from the spot
   - Description: Wood Island Light is an active lighthouse on the eastern edge of Wood Island in Saco Bay, on the southern coast of Maine. The light is just outside the entrance to Biddeford Pool and the end of the Saco River. The lighthouse is a 47-foot (14 m) tall conical white tower constructed of granite rubble. The light itself sits 71 feet (22 m) above mean high water. It currently is automated and has an alternating green and white beacon every 10 seconds. Wood Island Light is Maine's second oldest lighthouse (after Portland Head Light) and the nation's eleventh oldest. It was added to the National Regi
   - Match: score 5 via kw:coast+bay+lighthouse, geo:4091m, w>=1000, landscape
 
@@ -442,7 +442,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Uschoen — //commons.wikimedia.org/wiki/User:Uschoen
   - Dated: 2024-07-14 14:53:02
-  - 1600×1065px, 615 KB, shot 166 m from the spot
+  - 1920×1279px, 615 KB, shot 166 m from the spot
   - Description: Gooch's Beach, Kennebunk ME, in Summer
   - Match: score 7.5 via coastal-in-title, kw:beach, geo:166m, w>=1000, landscape
 
@@ -455,7 +455,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Swampmom54 — //commons.wikimedia.org/w/index.php?title=User:Swampmom54&amp;action=edit&amp;redlink=1
   - Dated: 1974
-  - 1600×2358px, 1453 KB, shot 154 m from the spot
+  - 1028×1515px, 1453 KB, shot 154 m from the spot
   - Description: Harry Goodridge and André the Seal in 1974
   - Match: score 7 via coastal-in-title, kw:sea, geo:154m, w>=1000
 - **`us-me-goodie-s-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “MaineOct2010 002 (5085681125)” by Paul VanDerWerf from Brunswick, Maine, USA, Wikimedia Commons, CC BY 2.0
@@ -463,7 +463,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2010-10-13 15:06
-  - 1600×1067px, 679 KB, shot 205 m from the spot
+  - 1920×1280px, 679 KB, shot 205 m from the spot
   - Description: A picnic at Rockport harbor. Thanksgiving sandwiches from The Market Basket.
   - Match: score 7 via kw:sand+mar, geo:205m, w>=1000, landscape
 
@@ -476,7 +476,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2018-10-16 12:29
-  - 1600×1000px, 1177 KB, shot 833 m from the spot
+  - 1400×875px, 1177 KB, shot 833 m from the spot
   - Description: This photo was taken along the rocky shore of Linekin Bay in East Boothbay, Maine.
   - Match: score 9 via coastal-in-title, kw:shore+bay+tide, geo:833m, w>=1000, landscape
 - **`us-me-grimes-cove-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Ram Island Lighthouse - Flickr - Me in ME” by Paul VanDerWerf from Brunswick, Maine, USA, Wikimedia Commons, CC BY 2.0
@@ -484,7 +484,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: Taken on 14 September 2024, 06:54
-  - 1600×983px, 527 KB, shot 1344 m from the spot
+  - 1920×1179px, 527 KB, shot 1344 m from the spot
   - Description: I took this just a few minutes after sunrise while on a boat tour of lighthouses near Boothbay Harbor, Maine. The last time I was on this tour, there was a long catwalk from the lighthouse to the keeper's house. Below is a piece from the Boothbay Register newspaper. The Jan. 10, 2023 storm that blasted the Maine coast took a piece of Boothbay region maritime history. The storm destroyed the lighthouse walkway at the 1883 Ram Island Light Station and damaged the island’s landing area. The 214-foot walkway, a reconstruction of the original, was installed in 2002 to connect the five-acre island t
   - Match: score 8 via coastal-in-title, kw:coast+mar+bay+lighthouse, geo:1344m, w>=1000, landscape
 - **`us-me-grimes-cove-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Ram Island Light (31725315116)” by Paul VanDerWerf from Brunswick, Maine, USA, Wikimedia Commons, CC BY 2.0
@@ -492,7 +492,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2016-09-03 06:31
-  - 1600×361px, 186 KB, shot 1032 m from the spot
+  - 1920×433px, 186 KB, shot 1032 m from the spot
   - Description: A five image panorama merged in Lightroom 6. Ram Island Light is a lighthouse located just offshore of Ram Island, marking the eastern entrance to Boothbay Harbor, Maine, and the west side of the mouth of the Damariscotta River. It was built in 1883 and automated in 1965. It was listed on the National Register of Historic Places as Ram Island Light Station on January 21, 1988. The tower consists of an ashlar granite base, from which the main brick tower rises to a polygonal lantern house. The lantern house is surrounded by an iron walkway and railing, and is capped by a ventilator. It now hous
   - Match: score 7 via kw:shore+mar+bay+lighthouse, geo:1032m, w>=1000, landscape
 
@@ -505,7 +505,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2014-09-13 11:39
-  - 1600×1066px, 998 KB, shot 1623 m from the spot
+  - 1400×933px, 998 KB, shot 1623 m from the spot
   - Description: The cloudy sky was the object of the two photos I posted today. Reid State Park bears the distinct honor as being Maine’s first State-owned Saltwater Beach. In 1946, prosperous businessman and Georgetown resident Walter E. Reid donated land to the State of Maine to be preserved forever, and a few years later Reid State Park became a reality. Today, thousands of visitors enjoy the park’s long, wide sand beaches like Mile and Half Mile, which are rare in Maine. Enjoyed as a recreational resource, the beaches are also essential nesting areas for endangered least terns and piping plovers and resti
   - Match: score 13 via name:half+mile, kw:beach+sand, geo:1623m, w>=1000, landscape
 - **`us-me-half-mile-beach-2.jpg`** — “Indian Point Beach (39775868534)” by Paul VanDerWerf from Brunswick, Maine, USA, Wikimedia Commons, CC BY 2.0
@@ -513,7 +513,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2018-02-24 14:55
-  - 1600×587px, 238 KB, shot 1617 m from the spot
+  - 1920×705px, 238 KB, shot 1617 m from the spot
   - Description: This is a panorama from six photos taken at a beautiful sand beach on Indian Point located in Georgetown, Maine. It is a private beach owned by the Indian Point Association of owners.
   - Match: score 8 via coastal-in-title, kw:beach+sand+point, geo:1617m, w>=1000, landscape
 - **`us-me-half-mile-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Sasanoa River (27062022229)” by Paul VanDerWerf from Brunswick, Maine, USA, Wikimedia Commons, CC BY 2.0
@@ -521,7 +521,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2017-12-03 15:57
-  - 1600×1090px, 1119 KB, shot 3760 m from the spot
+  - 1464×997px, 1119 KB, shot 3760 m from the spot
   - Description: An evening photo at near low tide and a bit of pink from the setting sun. The Sasanoa River is an 8.6-mile-long (13.8 km)[1] tidal channel in the Midcoast region of Maine, connecting the Kennebec River with the Sheepscot River. [Wikipedia]
   - Match: score 8 via name:mile, kw:coast+tide, geo:3760m, w>=1000, landscape
 
@@ -534,7 +534,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Tichnor Brothers, Publisher
   - Dated: between circa 1930 and circa 1945 date Q
-  - 1600×1021px, 1085 KB
+  - 1920×1226px, 1085 KB
   - Description: Title: Surf at sand beach, Great Head, Bar Harbor, Maine Subjects: Seas Places: Maine > Hancock (county) > Mount Desert Island (island) > Bar Harbor Notes: Title from item. Extent: 1 print (postcard) : linen texture, color ; 3 1/2 x 5 1/2 in. Accession #: 06_10_003167
   - Match: score 11 via coastal-in-title, name:harbor, kw:beach+surf+sea+sand, w>=1000, landscape
 - **`us-me-harbor-beach-2.jpg`** — “Beach In York Maine (13846053464)” by Paul VanDerWerf from Brunswick, Maine, USA, Wikimedia Commons, CC BY 2.0
@@ -542,7 +542,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: Taken on 12 April 2014, 17:21
-  - 1600×1066px, 380 KB
+  - 1400×933px, 380 KB
   - Description: York is a town in York County, Maine, United States, near the southern tip of the state. The population in the 2010 census was 12,529. Situated beside the Atlantic Ocean on the Gulf of Maine, York is a well-known summer resort. It is home to three 18-hole golf clubs, four sandy beaches, and Mount Agamenticus. It includes the villages of York Village, York Harbor, York Beach and Cape Neddick. (Wikipedia)
   - Match: score 11 via coastal-in-title, name:harbor, kw:beach+ocean+sand, w>=1000, landscape
 - **`us-me-harbor-beach-3.jpg`** — “Newport Cove - Bar Harbor, Maine, USA - September 27, 2023 02” by Giorgio Galeotti, Wikimedia Commons, CC BY-SA 4.0
@@ -550,7 +550,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Giorgio Galeotti — //commons.wikimedia.org/wiki/User:GiorgioGaleotti
   - Dated: 2023-09-27 15:39:55
-  - 1600×1067px, 599 KB, shot 237736 m from the spot
+  - 1920×1280px, 599 KB, shot 237736 m from the spot
   - Description: Newport Cove - Bar Harbor, Maine, USA
   - Match: score 11 via coastal-in-title, name:harbor, kw:beach+sand+cove, geo:237736m, w>=1000, landscape
 
@@ -563,7 +563,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Neil Aitkenhead — https://web.archive.org/web/20161021172556/http://www.panoramio.com/user/3399910?with_photo_id=53960572
   - Dated: Taken on 4 June 2011
-  - 1600×1065px, 294 KB, shot 4467707 m from the spot
+  - 1920×1278px, 294 KB, shot 4467707 m from the spot
   - Description: Local Hero Beach
   - Match: score 8.5 via coastal-in-title, name:hero, kw:beach, geo:4467707m, w>=1000, landscape
 
@@ -576,7 +576,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Eric Kilby
   - Dated: Taken on 24 November 2022, 17:25:32
-  - 1600×1067px, 343 KB, shot 275 m from the spot
+  - 1920×1280px, 343 KB, shot 275 m from the spot
   - Description: Higgins Beach
   - Match: score 14 via coastal-in-title, name:higgins, kw:beach+sea+tide+seascape, geo:275m, w>=1000, landscape
 - **`us-me-higgins-beach-2.jpg`** — “Rocks and Cotton Candy Sky - Higgins Beach” by Eric Kilby, Wikimedia Commons, CC BY-SA 2.0
@@ -584,7 +584,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Eric Kilby
   - Dated: Taken on 24 November 2022, 17:23:10
-  - 1600×887px, 231 KB, shot 275 m from the spot
+  - 1920×1064px, 231 KB, shot 275 m from the spot
   - Description: Higgins Beach
   - Match: score 14 via coastal-in-title, name:higgins, kw:beach+sea+coast+seascape, geo:275m, w>=1000, landscape
 - **`us-me-higgins-beach-3.jpg`** — “Higgins Beach Bayview Avenue Scarborough ME August 2025 01” by Artaxerxes, Wikimedia Commons, CC BY 4.0
@@ -592,7 +592,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Artaxerxes — //commons.wikimedia.org/wiki/User:Artaxerxes
   - Dated: 2025-08-31 15:16:13
-  - 1600×2133px, 591 KB, shot 140 m from the spot
+  - 1920×2560px, 591 KB, shot 140 m from the spot
   - Description: Higgins Beach at Bayview Avenue in Scarborough, Maine.
   - Match: score 13.5 via coastal-in-title, name:higgins, kw:beach+sea+shore+bay, geo:140m, w>=1000
 
@@ -605,7 +605,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2015-11-13 11:52
-  - 1600×1280px, 903 KB, shot 888 m from the spot
+  - 1300×1040px, 903 KB, shot 888 m from the spot
   - Description: Recently taken at Popham Beach State Park. Lots of great waves and spray. There was lots of glare off the water that seems less intrusive in this BW done in Lightroom 5.
   - Match: score 8.5 via coastal-in-title, kw:beach+surf+wave+waves, geo:888m, w>=1000
 - **`us-me-hunnewell-beach-2.jpg`** — “Surf (25138358805)” by Paul VanDerWerf from Brunswick, Maine, USA, Wikimedia Commons, CC BY 2.0
@@ -613,7 +613,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2016-02-19 10:21
-  - 1600×1066px, 1198 KB, shot 888 m from the spot
+  - 1400×933px, 1198 KB, shot 888 m from the spot
   - Description: Taken this morning at Popham Beach State Park.
   - Match: score 8 via coastal-in-title, kw:beach+surf, geo:888m, w>=1000, landscape
 - **`us-me-hunnewell-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Horses On The Beach (22955821855)” by Paul VanDerWerf from Brunswick, Maine, USA, Wikimedia Commons, CC BY 2.0
@@ -621,7 +621,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2015-11-05 12:04
-  - 1600×1143px, 1089 KB, shot 953 m from the spot
+  - 1400×1000px, 1089 KB, shot 953 m from the spot
   - Description: On a recent unseasonably warm day, a mom and daughter rode horses on the beach at Popham Beach State Park. I was hoping for some more action but I am not sure they even broke into a trot. Still a rather idyllic activity. At the left is an outline of a lighthouse--I think on Seguin Island. The tide was out far enough that people could climb on the rocks as at the center above. Horses are allowed from October 1 until April at this state beach.
   - Match: score 9 via coastal-in-title, kw:beach+sea+lighthouse+tide, geo:953m, w>=1000, landscape
 
@@ -634,7 +634,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
   - Dated: 2017-07-27 09:02:12
-  - 1600×1200px, 915 KB, shot 702 m from the spot
+  - 1920×1440px, 915 KB, shot 702 m from the spot
   - Description: View south-southwest from the Little Hunters Beach Overlook within Acadia National Park, in Mount Desert, Hancock County, Maine
   - Match: score 10.5 via coastal-in-title, name:hunters, kw:beach, geo:702m, w>=1000, landscape
 - **`us-me-hunters-beach-2.jpg`** — “Cranberry Isles Hunters Beach Overlook Cadillac Mountain Acadia National Park” by EgorovaSvetlana, Wikimedia Commons, CC BY-SA 4.0
@@ -642,7 +642,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: EgorovaSvetlana — //commons.wikimedia.org/wiki/User:EgorovaSvetlana
   - Dated: 2010-08-23 10:10:51
-  - 1600×1200px, 398 KB
+  - 1920×1440px, 398 KB
   - Description: Cranberry Isles Hunters Beach Overlook Cadillac Mountain in Acadia National Park
   - Match: score 8.5 via coastal-in-title, name:hunters, kw:beach, w>=1000, landscape
 - **`us-me-hunters-beach-3.jpg`** — “2017-07-27 08 55 51 View east along the coast from the Park Loop Road between Otter Cove and Western Point within Acadia National Park, in Mount Desert, Hancock County, Maine” by Famartin, Wikimedia Commons, CC BY-SA 4.0
@@ -650,7 +650,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
   - Dated: 2017-07-27 08:55:51
-  - 1600×2133px, 1482 KB, shot 1494 m from the spot
+  - 1920×2560px, 1482 KB, shot 1494 m from the spot
   - Description: View east along the coast from the Park Loop Road between Otter Cove and Western Point within Acadia National Park, in Mount Desert, Hancock County, Maine
   - Match: score 7.5 via coastal-in-title, kw:coast+cove+point, geo:1494m, w>=1000
 
@@ -663,7 +663,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2016-09-13 15:45
-  - 1600×1134px, 923 KB
+  - 1400×992px, 923 KB
   - Description: Taken at the beach near Laudholm Farm in Wells, Maine. I wish I could say I saw this when I took the image but I did not notice there is the image of the sanderling flying, a reflection in the wet sand and a shadow on the sand as well.
   - Match: score 8 via name:laudholm, kw:beach+sand, w>=1000, landscape
 
@@ -676,7 +676,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Amaury Laporte
   - Dated: 2024-06-09 17:15:35
-  - 1600×1067px, 783 KB
+  - 1920×1280px, 783 KB
   - Description: 2024 in Maine
   - Match: score 10 via coastal-in-title, name:little, kw:beach+sand, w>=1000, landscape
 - **`us-me-little-beach-2.jpg`** — “Sand Beach Landscape 3 - Little Girl in Pink” by Amaury Laporte, Wikimedia Commons, CC BY 2.0
@@ -684,7 +684,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Amaury Laporte
   - Dated: 2024-06-09 17:15:49
-  - 1600×1067px, 838 KB
+  - 1920×1280px, 838 KB
   - Description: 2024 in Maine
   - Match: score 10 via coastal-in-title, name:little, kw:beach+sand, w>=1000, landscape
 - **`us-me-little-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Qgunquit-beach-high-tide” by Captain-tucker, Wikimedia Commons, CC BY-SA 3.0
@@ -692,7 +692,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Captain-tucker — //commons.wikimedia.org/wiki/User:Captain-tucker
   - Dated: 2008-07-26
-  - 1600×1200px, 599 KB, shot 361 m from the spot
+  - 1920×1440px, 599 KB, shot 361 m from the spot
   - Description: Ogunquit Beach at high tide, taken from the Marginal Way.
   - Match: score 10 via coastal-in-title, kw:beach+mar+tide, geo:361m, w>=1000, landscape
 
@@ -705,7 +705,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Amaury Laporte
   - Dated: 2024-06-09 17:15:35
-  - 1600×1067px, 783 KB
+  - 1920×1280px, 783 KB
   - Description: 2024 in Maine
   - Match: score 10 via coastal-in-title, name:little, kw:beach+sand, w>=1000, landscape
 - **`us-me-little-beach-226547-2.jpg`** — “Sand Beach Landscape 3 - Little Girl in Pink” by Amaury Laporte, Wikimedia Commons, CC BY 2.0
@@ -713,7 +713,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Amaury Laporte
   - Dated: 2024-06-09 17:15:49
-  - 1600×1067px, 838 KB
+  - 1920×1280px, 838 KB
   - Description: 2024 in Maine
   - Match: score 10 via coastal-in-title, name:little, kw:beach+sand, w>=1000, landscape
 - **`us-me-little-beach-226547-3.jpg`** — “Sand Beach Landscape 4 - Little Girl in Pink” by Amaury Laporte, Wikimedia Commons, CC BY 2.0
@@ -721,7 +721,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Amaury Laporte
   - Dated: 2024-06-09 17:15:52
-  - 1600×1067px, 759 KB
+  - 1920×1280px, 759 KB
   - Description: 2024 in Maine
   - Match: score 10 via coastal-in-title, name:little, kw:beach+sand, w>=1000, landscape
 
@@ -734,7 +734,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
   - Dated: 2017-07-27 09:02:12
-  - 1600×1200px, 915 KB, shot 193 m from the spot
+  - 1920×1440px, 915 KB, shot 193 m from the spot
   - Description: View south-southwest from the Little Hunters Beach Overlook within Acadia National Park, in Mount Desert, Hancock County, Maine
   - Match: score 15.5 via coastal-in-title, name:little+hunters, kw:beach, geo:193m, w>=1000, landscape
 - **`us-me-little-hunters-beach-2.jpg`** — “2017-07-27 08 56 21 View east-southeast through the trees towards the rocky coast from the Park Loop Road between Otter Cove and Western Point within Acadia National Park, in Mount Desert, Hancock County, Maine” by Famartin, Wikimedia Commons, CC BY-SA 4.0
@@ -742,7 +742,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
   - Dated: 2017-07-27 08:56:21
-  - 1600×1200px, 1175 KB, shot 1177 m from the spot
+  - 1920×1440px, 1175 KB, shot 1177 m from the spot
   - Description: View east-southeast through the trees towards the rocky coast from the Park Loop Road between Otter Cove and Western Point within Acadia National Park, in Mount Desert, Hancock County, Maine
   - Match: score 9 via coastal-in-title, kw:coast+cove+point, geo:1177m, w>=1000, landscape
 - **`us-me-little-hunters-beach-3.jpg`** — “2017-07-27 08 55 51 View east along the coast from the Park Loop Road between Otter Cove and Western Point within Acadia National Park, in Mount Desert, Hancock County, Maine” by Famartin, Wikimedia Commons, CC BY-SA 4.0
@@ -750,7 +750,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
   - Dated: 2017-07-27 08:55:51
-  - 1600×2133px, 1482 KB, shot 1163 m from the spot
+  - 1920×2560px, 1482 KB, shot 1163 m from the spot
   - Description: View east along the coast from the Park Loop Road between Otter Cove and Western Point within Acadia National Park, in Mount Desert, Hancock County, Maine
   - Match: score 8.5 via coastal-in-title, kw:coast+cove+point, geo:1163m, w>=1000
 
@@ -763,7 +763,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Jules Verne Times Two — //commons.wikimedia.org/wiki/User:Julesvernex2
   - Dated: 2022-07-25 10:22:43
-  - 1600×1067px, 528 KB, shot 1662 m from the spot
+  - 1920×1280px, 528 KB, shot 1662 m from the spot
   - Description: Parson's Beach, Kennebunk, Maine, US (PPL1-Corrected)
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:1662m, w>=1000, landscape
 - **`us-me-little-mother-s-beach-2.jpg`** — “Gooch's Beach - Kennebunk ME” by Uschoen, Wikimedia Commons, CC BY 4.0
@@ -771,7 +771,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Uschoen — //commons.wikimedia.org/wiki/User:Uschoen
   - Dated: 2024-07-14 14:53:02
-  - 1600×1065px, 615 KB, shot 1304 m from the spot
+  - 1920×1279px, 615 KB, shot 1304 m from the spot
   - Description: Gooch's Beach, Kennebunk ME, in Summer
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:1304m, w>=1000, landscape
 
@@ -784,7 +784,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: EgorovaSvetlana — //commons.wikimedia.org/wiki/User:EgorovaSvetlana
   - Dated: 2005-12-27 12:46:01
-  - 1600×1200px, 218 KB
+  - 1920×1440px, 218 KB
   - Description: Surfer Cape Neddick York Maine view from Long Sands Beach
   - Match: score 15 via coastal-in-title, name:long+sands, kw:beach+surf+surfer+sand, w>=1000, landscape
 - **`us-me-long-sands-2.jpg`** — “Blue Long Sands” by Fairlee Designs, Wikimedia Commons, CC BY-SA 4.0
@@ -792,7 +792,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Fairlee Designs — //commons.wikimedia.org/w/index.php?title=User:Fairlee_Designs&amp;action=edit&amp;redlink=1
   - Dated: 2011-10-04 19:25:43
-  - 1600×2133px, 1077 KB
+  - 1920×2560px, 1077 KB
   - Description: Photograph of Long Sands Beach in York Beach, Maine, USA
   - Match: score 14.5 via coastal-in-title, name:long+sands, kw:beach+ocean+sand, w>=1000
 
@@ -805,7 +805,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: David Stanley — https://www.panoramio.com/user/1903279?with_photo_id=134015166
   - Dated: Taken on 16 September 2016
-  - 1600×1200px, 146 KB, shot 15516891 m from the spot
+  - 1024×768px, 146 KB, shot 15516891 m from the spot
   - Description: Middle Beach Middle Beach on the east coast of Lord Howe Island, NSW, Australia, is best accessed at low tide. There's a stairway at each end of the beach.
   - Match: score 11 via coastal-in-title, name:middle, kw:beach+coast+tide, geo:15516891m, w>=1000, landscape
 - **`us-me-middle-beach-2.jpg`** — “2017-07-27 08 10 43 View east-southeast from the middle of Sand Beach within Acadia National Park in Bar Harbor, Hancock County, Maine” by Famartin, Wikimedia Commons, CC BY-SA 4.0
@@ -813,7 +813,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
   - Dated: 2017-07-27 08:10:43
-  - 1600×1180px, 621 KB, shot 215150 m from the spot
+  - 1920×1416px, 621 KB, shot 215150 m from the spot
   - Description: View east-southeast from the middle of Sand Beach within Acadia National Park in Bar Harbor, Hancock County, Maine
   - Match: score 10 via coastal-in-title, name:middle, kw:beach+sand, geo:215150m, w>=1000, landscape
 - **`us-me-middle-beach-3.jpg`** — “2017-07-27 08 10 49 View south from the middle of Sand Beach within Acadia National Park in Bar Harbor, Hancock County, Maine” by Famartin, Wikimedia Commons, CC BY-SA 4.0
@@ -821,7 +821,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
   - Dated: 2017-07-27 08:10:49
-  - 1600×1193px, 496 KB, shot 215148 m from the spot
+  - 1920×1431px, 496 KB, shot 215148 m from the spot
   - Description: View south from the middle of Sand Beach within Acadia National Park in Bar Harbor, Hancock County, Maine
   - Match: score 10 via coastal-in-title, name:middle, kw:beach+sand, geo:215148m, w>=1000, landscape
 
@@ -834,7 +834,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: David Stanley — https://www.panoramio.com/user/1903279?with_photo_id=134015166
   - Dated: Taken on 16 September 2016
-  - 1600×1200px, 146 KB, shot 15527487 m from the spot
+  - 1024×768px, 146 KB, shot 15527487 m from the spot
   - Description: Middle Beach Middle Beach on the east coast of Lord Howe Island, NSW, Australia, is best accessed at low tide. There's a stairway at each end of the beach.
   - Match: score 11 via coastal-in-title, name:middle, kw:beach+coast+tide, geo:15527487m, w>=1000, landscape
 - **`us-me-middle-beach-676138-2.jpg`** — “2017-07-27 08 10 43 View east-southeast from the middle of Sand Beach within Acadia National Park in Bar Harbor, Hancock County, Maine” by Famartin, Wikimedia Commons, CC BY-SA 4.0
@@ -842,7 +842,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
   - Dated: 2017-07-27 08:10:43
-  - 1600×1180px, 621 KB, shot 200754 m from the spot
+  - 1920×1416px, 621 KB, shot 200754 m from the spot
   - Description: View east-southeast from the middle of Sand Beach within Acadia National Park in Bar Harbor, Hancock County, Maine
   - Match: score 10 via coastal-in-title, name:middle, kw:beach+sand, geo:200754m, w>=1000, landscape
 - **`us-me-middle-beach-676138-3.jpg`** — “2017-07-27 08 10 49 View south from the middle of Sand Beach within Acadia National Park in Bar Harbor, Hancock County, Maine” by Famartin, Wikimedia Commons, CC BY-SA 4.0
@@ -850,7 +850,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
   - Dated: 2017-07-27 08:10:49
-  - 1600×1193px, 496 KB, shot 200751 m from the spot
+  - 1920×1431px, 496 KB, shot 200751 m from the spot
   - Description: View south from the middle of Sand Beach within Acadia National Park in Bar Harbor, Hancock County, Maine
   - Match: score 10 via coastal-in-title, name:middle, kw:beach+sand, geo:200751m, w>=1000, landscape
 
@@ -863,7 +863,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: David Stanley — https://www.panoramio.com/user/1903279?with_photo_id=134015166
   - Dated: Taken on 16 September 2016
-  - 1600×1200px, 146 KB, shot 15685737 m from the spot
+  - 1024×768px, 146 KB, shot 15685737 m from the spot
   - Description: Middle Beach Middle Beach on the east coast of Lord Howe Island, NSW, Australia, is best accessed at low tide. There's a stairway at each end of the beach.
   - Match: score 11 via coastal-in-title, name:middle, kw:beach+coast+tide, geo:15685737m, w>=1000, landscape
 - **`us-me-middle-beach-226545-2.jpg`** — “2017-07-27 08 10 43 View east-southeast from the middle of Sand Beach within Acadia National Park in Bar Harbor, Hancock County, Maine” by Famartin, Wikimedia Commons, CC BY-SA 4.0
@@ -871,7 +871,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
   - Dated: 2017-07-27 08:10:43
-  - 1600×1180px, 621 KB, shot 28659 m from the spot
+  - 1920×1416px, 621 KB, shot 28659 m from the spot
   - Description: View east-southeast from the middle of Sand Beach within Acadia National Park in Bar Harbor, Hancock County, Maine
   - Match: score 10 via coastal-in-title, name:middle, kw:beach+sand, geo:28659m, w>=1000, landscape
 - **`us-me-middle-beach-226545-3.jpg`** — “2017-07-27 08 10 49 View south from the middle of Sand Beach within Acadia National Park in Bar Harbor, Hancock County, Maine” by Famartin, Wikimedia Commons, CC BY-SA 4.0
@@ -879,7 +879,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Famartin — //commons.wikimedia.org/wiki/User:Famartin
   - Dated: 2017-07-27 08:10:49
-  - 1600×1193px, 496 KB, shot 28663 m from the spot
+  - 1920×1431px, 496 KB, shot 28663 m from the spot
   - Description: View south from the middle of Sand Beach within Acadia National Park in Bar Harbor, Hancock County, Maine
   - Match: score 10 via coastal-in-title, name:middle, kw:beach+sand, geo:28663m, w>=1000, landscape
 
@@ -892,7 +892,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2014-09-13 11:39
-  - 1600×1066px, 998 KB, shot 508 m from the spot
+  - 1400×933px, 998 KB, shot 508 m from the spot
   - Description: The cloudy sky was the object of the two photos I posted today. Reid State Park bears the distinct honor as being Maine’s first State-owned Saltwater Beach. In 1946, prosperous businessman and Georgetown resident Walter E. Reid donated land to the State of Maine to be preserved forever, and a few years later Reid State Park became a reality. Today, thousands of visitors enjoy the park’s long, wide sand beaches like Mile and Half Mile, which are rare in Maine. Enjoyed as a recreational resource, the beaches are also essential nesting areas for endangered least terns and piping plovers and resti
   - Match: score 10 via name:mile, kw:beach+sand, geo:508m, w>=1000, landscape
 - **`us-me-mile-beach-2.jpg`** — Ninety Mile Beach Victoria Western end — CC0 (Wikimedia Commons), no attribution required
@@ -900,7 +900,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: BB Aussie Fab — //commons.wikimedia.org/w/index.php?title=User:BB_Aussie_Fab&amp;action=edit&amp;redlink=1
   - Dated: 2012-04-11
-  - 1600×1200px, 535 KB
+  - 1920×1440px, 535 KB
   - Description: The western most point of Ninety Mile Beach, Victoria, Australia.
   - Match: score 10 via coastal-in-title, name:mile, kw:beach+point, w>=1000, landscape
 - **`us-me-mile-beach-3.jpg`** — “Sanderlings (36685537850)” by Paul VanDerWerf from Brunswick, Maine, USA, Wikimedia Commons, CC BY 2.0
@@ -908,7 +908,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Paul VanDerWerf from Brunswick, Maine, USA — https://www.flickr.com/people/12357841@N02
   - Dated: 2017-09-05 16:44
-  - 1600×1280px, 1003 KB, shot 424 m from the spot
+  - 1300×1040px, 1003 KB, shot 424 m from the spot
   - Description: A small flock of sanderlings seen on the sand beach of Reid State Park in Georgetown, Maine. It is fascinating to watch them run back and forth just in front of the surf line all the while probing the sand for food. The Sanderling’s black legs blur as it runs back and forth on the beach, picking or probing for tiny prey in the wet sand left by receding waves. Sanderlings are medium-sized “peep” sandpipers recognizable by their pale nonbreeding plumage, black legs and bill, and obsessive wave-chasing habits. Learn this species, and you’ll have an aid in sorting out less common shorebirds. These
   - Match: score 8.5 via coastal-in-title, kw:beach+surf+wave+waves, geo:424m, w>=1000
 
@@ -921,7 +921,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: David Straight davidstraight — https://unsplash.com/@davidstraight
   - Dated: 2016-08-14
-  - 1600×1067px, 592 KB, shot 157 m from the spot
+  - 1920×1280px, 592 KB, shot 157 m from the spot
   - Description: Moody Beach, Wells, United States
   - Match: score 11.5 via coastal-in-title, name:moody, kw:beach, geo:157m, w>=1000, landscape
 - **`us-me-moody-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Moody Beach Ogunquit IMG 2227 FRD” by Fred Hsu on en.wikipedia, Wikimedia Commons, CC BY-SA 3.0
@@ -929,7 +929,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Fred Hsu on en.wikipedia — https://en.wikipedia.org/wiki/User:Fred_Hsu
   - Dated: 2017-09-14
-  - 1600×1200px, 685 KB
+  - 1920×1440px, 685 KB
   - Description: Moody Beach in September
   - Match: score 10 via coastal-in-title, name:moody, kw:beach+sand, w>=1000, landscape
 - **`us-me-moody-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Beach and cottages at Moody Beach, Maine (68247) — Public domain (Wikimedia Commons), no attribution required
@@ -937,7 +937,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Tichnor Brothers, Publisher
   - Dated: between circa 1930 and circa 1945 date Q
-  - 1600×1018px, 1099 KB
+  - 1920×1222px, 1099 KB
   - Description: Title: Beach and cottages at Moody Beach, Maine Subjects: Beaches; Cabins Places: Maine > York (county) > Moody Beach Notes: Title from item. Extent: 1 print (postcard) : linen texture, color ; 3 1/2 x 5 1/2 in. Accession #: 06_10_003448
   - Match: score 8.5 via coastal-in-title, name:moody, kw:beach, w>=1000, landscape
 
@@ -950,7 +950,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Jules Verne Times Two — //commons.wikimedia.org/wiki/User:Julesvernex2
   - Dated: 2022-07-25 10:22:43
-  - 1600×1067px, 528 KB, shot 1510 m from the spot
+  - 1920×1280px, 528 KB, shot 1510 m from the spot
   - Description: Parson's Beach, Kennebunk, Maine, US (PPL1-Corrected)
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:1510m, w>=1000, landscape
 - **`us-me-mothers-beach-2.jpg`** — “Gooch's Beach - Kennebunk ME” by Uschoen, Wikimedia Commons, CC BY 4.0
@@ -958,7 +958,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Uschoen — //commons.wikimedia.org/wiki/User:Uschoen
   - Dated: 2024-07-14 14:53:02
-  - 1600×1065px, 615 KB, shot 1467 m from the spot
+  - 1920×1279px, 615 KB, shot 1467 m from the spot
   - Description: Gooch's Beach, Kennebunk ME, in Summer
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:1467m, w>=1000, landscape
 
@@ -971,7 +971,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Jules Verne Times Two — //commons.wikimedia.org/wiki/User:Julesvernex2
   - Dated: 2022-07-25 10:22:43
-  - 1600×1067px, 528 KB, shot 364 m from the spot
+  - 1920×1280px, 528 KB, shot 364 m from the spot
   - Description: Parson's Beach, Kennebunk, Maine, US (PPL1-Corrected)
   - Match: score 7.5 via coastal-in-title, kw:beach, geo:364m, w>=1000, landscape
 
@@ -984,7 +984,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Tichnor Brothers, Publisher
   - Dated: between circa 1930 and circa 1945 date Q
-  - 1600×1004px, 982 KB
+  - 1920×1205px, 982 KB
   - Description: Title: Sand dunes, Ogunquit, Maine Subjects: Beaches Places: Maine > York (county) > Ogunquit Notes: Title from item. Extent: 1 print (postcard) : linen texture, color ; 3 1/2 x 5 1/2 in. Accession #: 06_10_003586
   - Match: score 15 via coastal-in-title, name:sand+dune, kw:beach+sand+dune, w>=1000, landscape
 - **`us-me-sand-dune-beach-2.jpg`** — Sand dunes, Ogunquit, Maine (70177) — Public domain (Wikimedia Commons), no attribution required
@@ -992,7 +992,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Tichnor Brothers, Publisher
   - Dated: between circa 1930 and circa 1945 date Q
-  - 1600×1015px, 926 KB
+  - 1920×1218px, 926 KB
   - Description: Title: Sand dunes, Ogunquit, Maine Subjects: Beaches Places: Maine > York (county) > Ogunquit Notes: Title from item. Extent: 1 print (postcard) : linen texture, color ; 3 1/2 x 5 1/2 in. Accession #: 06_10_003567
   - Match: score 15 via coastal-in-title, name:sand+dune, kw:beach+sand+dune, w>=1000, landscape
 - **`us-me-sand-dune-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Winslow Homer - Sand and Sky — Public domain (Wikimedia Commons), no attribution required
@@ -1000,7 +1000,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Winslow Homer — https://en.wikipedia.org/wiki/en:Winslow_Homer
   - Dated: 1887 date QS:P571,+1887-00-00T00:00:00Z/
-  - 1600×1125px, 1002 KB
+  - 1920×1350px, 1002 KB
   - Match: score 15 via coastal-in-title, name:sand+dune, kw:beach+sand+dune, w>=1000, landscape
 
 ## Scarborough Beach
@@ -1012,7 +1012,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Artaxerxes — //commons.wikimedia.org/wiki/User:Artaxerxes
   - Dated: 2025-08-31 15:16:13
-  - 1600×2133px, 591 KB, shot 3245 m from the spot
+  - 1920×2560px, 591 KB, shot 3245 m from the spot
   - Description: Higgins Beach at Bayview Avenue in Scarborough, Maine.
   - Match: score 10.5 via coastal-in-title, name:scarborough, kw:beach+sea+shore+bay, geo:3245m, w>=1000
 - **`us-me-scarborough-beach-2.jpg`** — “Higgins Beach Bayview Avenue Scarborough ME August 2025 03” by Artaxerxes, Wikimedia Commons, CC BY 4.0
@@ -1020,7 +1020,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Artaxerxes — //commons.wikimedia.org/wiki/User:Artaxerxes
   - Dated: 2025-08-31 15:16:40
-  - 1600×2133px, 765 KB, shot 3245 m from the spot
+  - 1920×2560px, 765 KB, shot 3245 m from the spot
   - Description: Higgins Beach at Bayview Avenue in Scarborough, Maine.
   - Match: score 10.5 via coastal-in-title, name:scarborough, kw:beach+sea+shore+bay, geo:3245m, w>=1000
 - **`us-me-scarborough-beach-3.jpg`** — “Higgins Beach Bayview Avenue Scarborough ME August 2025 04” by Artaxerxes, Wikimedia Commons, CC BY 4.0
@@ -1028,7 +1028,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Artaxerxes — //commons.wikimedia.org/wiki/User:Artaxerxes
   - Dated: 2025-08-31 15:16:55
-  - 1600×2133px, 672 KB, shot 3245 m from the spot
+  - 1920×2560px, 672 KB, shot 3245 m from the spot
   - Description: Higgins Beach at Bayview Avenue in Scarborough, Maine.
   - Match: score 10.5 via coastal-in-title, name:scarborough, kw:beach+sea+shore+bay, geo:3245m, w>=1000
 
@@ -1041,7 +1041,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Nancy — https://www.flickr.com/photos/36783643@N05
   - Dated: 2005-01-30 12:50
-  - 1600×1200px, 562 KB, shot 82 m from the spot
+  - 1920×1440px, 562 KB, shot 82 m from the spot
   - Description: Kittery Point, Maine. The southernmost town in the state. Kittery Point is a census-designated place (CDP) in the town of Kittery, York County, Maine, United States. The population was 1,135 at the 2000 census. *Located beside the Atlantic, it is home to Fort McClary State Historic Site and, on Gerrish Island, Fort Foster Park. Cutts Island is home to Seapoint Beach and the Brave Boat Harbor Division of the Rachel Carson National Wildlife Refuge . Credits en.wikipedia.org/wiki/Kittery_Point,_Maine
   - Match: score 12 via name:seapoint, kw:beach+sea+coast+point, geo:82m, w>=1000, landscape
 - **`us-me-seapoint-beach-2.jpg`** — “Seapoint” by Crys83, Wikimedia Commons, CC BY-SA 4.0
@@ -1049,7 +1049,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Crys83 — //commons.wikimedia.org/w/index.php?title=User:Crys83&amp;action=edit&amp;redlink=1
   - Dated: Taken on 19 April 2014, 09:28:13
-  - 1600×1200px, 748 KB
+  - 1920×1440px, 748 KB
   - Description: Seapoint
   - Match: score 11 via coastal-in-title, name:seapoint, kw:sea+point+tide+rocks, w>=1000, landscape
 
@@ -1062,7 +1062,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Fred Hsu on en.wikipedia — https://en.wikipedia.org/wiki/User:Fred_Hsu
   - Dated: 2017-09-14
-  - 1600×1200px, 802 KB
+  - 1920×1440px, 802 KB
   - Description: Short Sands Beach at York Beach in September
   - Match: score 14 via coastal-in-title, name:short+sands, kw:beach+sand, w>=1000, landscape
 - **`us-me-short-sands-beach-2.jpg`** — “Short Sands Beach at York Beach IMG 1978 FRD” by Fred Hsu on en.wikipedia, Wikimedia Commons, CC BY-SA 3.0
@@ -1070,7 +1070,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Fred Hsu on en.wikipedia — https://en.wikipedia.org/wiki/User:Fred_Hsu
   - Dated: 2017-09-14
-  - 1600×1200px, 667 KB
+  - 1920×1440px, 667 KB
   - Description: Short Sands Beach at York Beach in September
   - Match: score 14 via coastal-in-title, name:short+sands, kw:beach+sand, w>=1000, landscape
 
@@ -1083,7 +1083,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: U.S. Navy
   - Dated: 1 November 1944
-  - 1600×1241px, 571 KB, shot 3803 m from the spot
+  - 1920×1490px, 571 KB, shot 3803 m from the spot
   - Description: The U.S. Navy battleship USS Texas (BB-35) underway at sea in Casco Bay, Maine (USA), on 1 November 1944. She is painted in Camouflage Measure 31A, Design 8B. The photo was taken by a blimpo from squadron ZP-11.
   - Match: score 5.5 via coastal-in-title, kw:sea+bay, geo:3803m, w>=1000
 
@@ -1096,7 +1096,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: U. S. Fish and Wildlife Service - Northeast Region — https://www.flickr.com/people/43322816@N08
   - Dated: 2012-10-30 12:24:08
-  - 1600×1200px, 34 KB, shot 2788 m from the spot
+  - 640×480px, 34 KB, shot 2788 m from the spot
   - Description: Overwash at the sea wall at Wells Beach. Credit: USFWS Stay informed
   - Match: score 12 via coastal-in-title, name:wells, kw:beach+sea+sand, geo:2788m, w>=1000, landscape
 - **`us-me-wells-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Wells Beach, Maine” by Smela07, Wikimedia Commons, CC BY-SA 4.0
@@ -1104,7 +1104,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Smela07 — //commons.wikimedia.org/w/index.php?title=User:Smela07&amp;action=edit&amp;redlink=1
   - Dated: 2019-05-18 17:41:29
-  - 1600×1200px, 511 KB
+  - 1920×1440px, 511 KB
   - Description: Shoreline of Wells Beach, Maine, USA
   - Match: score 11 via coastal-in-title, name:wells, kw:beach+shore+shoreline, w>=1000, landscape
 - **`us-me-wells-beach-3.jpg`** ⚠︎ *context, not the coast itself* — August 9, 2011 Sunrise zooplankton tow (6027868534) — Public domain (Wikimedia Commons), no attribution required
@@ -1112,7 +1112,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: USEPA Environmental-Protection-Agency — https://www.flickr.com/people/24400159@N05
   - Dated: 2011-08-09 06:05
-  - 1600×1065px, 319 KB, shot 1568 m from the spot
+  - 1920×1278px, 319 KB, shot 1568 m from the spot
   - Description: Out near the mouth of the Webhannet River, Wells Maine. On this survey EPA partnered with the Maine Department of Environmental Protection, biologists from the University of New England, and the Wells National Estuarine Research Reserves. The biologists from each program have been working to better catalog species of larval fish (just hatched they can't swim yet) present particularly near the mouths of the Webhannet and Saco Rivers, in the estuaries where the salt water from the ocean and the fresh water from the river meet. The Bold is helping them collect zooplankton further offshore to comp
   - Match: score 10 via name:wells, kw:ocean+sea+shore+sunrise, geo:1568m, w>=1000, landscape
 

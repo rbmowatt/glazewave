@@ -11,14 +11,14 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Hope Alexander — https://www.wikidata.org/wiki/Q60311464
   - Dated: June 1973 date QS:P571,+1973-06-00T00:00
-  - 1600×1086px, 358 KB
+  - 1920×1303px, 358 KB
   - Match: score 10 via coastal-in-title, name:atlantic, kw:beach+mar, w>=1000, landscape
 - **`us-ri-atlantic-beach-2.jpg`** — “Atlantic Beach in Florida” by Olga Ernst, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Atlantic_Beach_in_Florida.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Olga Ernst — //commons.wikimedia.org/wiki/User:Olga_Ernst
   - Dated: 2026-01-15
-  - 1600×1060px, 177 KB
+  - 1920×1272px, 177 KB
   - Description: Atlantic Beach, Duval County in Florida
   - Match: score 8.5 via coastal-in-title, name:atlantic, kw:beach, w>=1000, landscape
 - **`us-ri-atlantic-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Atlantic Beach Amusement Center at night, Atlantic Beach, R.I (87483) — Public domain (Wikimedia Commons), no attribution required
@@ -26,7 +26,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Westerly News Co., Westerly, R.I
   - Dated: between circa 1930 and circa 1945 date Q
-  - 1600×1013px, 1223 KB
+  - 1920×1215px, 1223 KB
   - Description: Title: Atlantic Beach Amusement Center at night, Atlantic Beach, R.I. Subjects: Amusement parks Places: Rhode Island > Washington (county) > Westerly Notes: Title from item. Extent: 1 print (postcard) : linen texture, color ; 3 1/2 x 5 1/2 in. Accession #: 06_10_001900
   - Match: score 8.5 via coastal-in-title, name:atlantic, kw:beach, w>=1000, landscape
 
@@ -39,14 +39,14 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Hope Alexander — https://www.wikidata.org/wiki/Q60311464
   - Dated: June 1973 date QS:P571,+1973-06-00T00:00
-  - 1600×1086px, 358 KB
+  - 1920×1303px, 358 KB
   - Match: score 10 via coastal-in-title, name:atlantic, kw:beach+mar, w>=1000, landscape
 - **`us-ri-atlantic-beach-832696-2.jpg`** — “Atlantic Beach in Florida” by Olga Ernst, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Atlantic_Beach_in_Florida.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Olga Ernst — //commons.wikimedia.org/wiki/User:Olga_Ernst
   - Dated: 2026-01-15
-  - 1600×1060px, 177 KB
+  - 1920×1272px, 177 KB
   - Description: Atlantic Beach, Duval County in Florida
   - Match: score 8.5 via coastal-in-title, name:atlantic, kw:beach, w>=1000, landscape
 - **`us-ri-atlantic-beach-832696-3.jpg`** ⚠︎ *context, not the coast itself* — Atlantic Beach Amusement Center at night, Atlantic Beach, R.I (87483) — Public domain (Wikimedia Commons), no attribution required
@@ -54,7 +54,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Westerly News Co., Westerly, R.I
   - Dated: between circa 1930 and circa 1945 date Q
-  - 1600×1013px, 1223 KB
+  - 1920×1215px, 1223 KB
   - Description: Title: Atlantic Beach Amusement Center at night, Atlantic Beach, R.I. Subjects: Amusement parks Places: Rhode Island > Washington (county) > Westerly Notes: Title from item. Extent: 1 print (postcard) : linen texture, color ; 3 1/2 x 5 1/2 in. Accession #: 06_10_001900
   - Match: score 8.5 via coastal-in-title, name:atlantic, kw:beach, w>=1000, landscape
 
@@ -67,14 +67,14 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Hope Alexander — https://www.wikidata.org/wiki/Q60311464
   - Dated: June 1973 date QS:P571,+1973-06-00T00:00
-  - 1600×1086px, 358 KB
+  - 1920×1303px, 358 KB
   - Match: score 10 via coastal-in-title, name:atlantic, kw:beach+mar, w>=1000, landscape
 - **`us-ri-atlantic-beach-832700-2.jpg`** — “Atlantic Beach in Florida” by Olga Ernst, Wikimedia Commons, CC BY-SA 4.0
   - Source page: https://commons.wikimedia.org/wiki/File:Atlantic_Beach_in_Florida.jpg
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Olga Ernst — //commons.wikimedia.org/wiki/User:Olga_Ernst
   - Dated: 2026-01-15
-  - 1600×1060px, 177 KB
+  - 1920×1272px, 177 KB
   - Description: Atlantic Beach, Duval County in Florida
   - Match: score 8.5 via coastal-in-title, name:atlantic, kw:beach, w>=1000, landscape
 - **`us-ri-atlantic-beach-832700-3.jpg`** ⚠︎ *context, not the coast itself* — Atlantic Beach Amusement Center at night, Atlantic Beach, R.I (87483) — Public domain (Wikimedia Commons), no attribution required
@@ -82,7 +82,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Westerly News Co., Westerly, R.I
   - Dated: between circa 1930 and circa 1945 date Q
-  - 1600×1013px, 1223 KB
+  - 1920×1215px, 1223 KB
   - Description: Title: Atlantic Beach Amusement Center at night, Atlantic Beach, R.I. Subjects: Amusement parks Places: Rhode Island > Washington (county) > Westerly Notes: Title from item. Extent: 1 print (postcard) : linen texture, color ; 3 1/2 x 5 1/2 in. Accession #: 06_10_001900
   - Match: score 8.5 via coastal-in-title, name:atlantic, kw:beach, w>=1000, landscape
 
@@ -95,7 +95,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Sam Wheeler mrsamwheeler — https://unsplash.com/@mrsamwheeler
   - Dated: 2015-10-05
-  - 1600×1060px, 367 KB, shot 797 m from the spot
+  - 1920×1272px, 367 KB, shot 797 m from the spot
   - Description: New Shoreham, United States
   - Match: score 8 via coastal-in-title, kw:shore+sunset, geo:797m, w>=1000, landscape
 - **`us-ri-baby-beach-2.png`** ⚠︎ *context, not the coast itself* — Block Island Southeast Lighthouse tower — CC0 (Wikimedia Commons), no attribution required
@@ -103,7 +103,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Waz8 — //commons.wikimedia.org/wiki/User:Waz8
   - Dated: 2012-06-15
-  - 1600×2350px, 4813 KB, shot 2870 m from the spot
+  - 1626×2388px, 4813 KB, shot 2870 m from the spot
   - Description: Southeast Lighthouse tower on Block Island, New Shoreham, RI
   - Match: score 6.5 via coastal-in-title, kw:shore+lighthouse, geo:2870m, w>=1000
 
@@ -116,7 +116,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Swampyank — //commons.wikimedia.org/wiki/User:Swampyank
   - Dated: 2012-11-03 16:24:26
-  - 1600×1200px, 614 KB
+  - 1920×1440px, 614 KB
   - Description: Bailey's Beach in Newport Rhode Island RI after Hurricane Sandy. Off Ocean Drive.
   - Match: score 11 via coastal-in-title, name:bailey, kw:beach+ocean+sand, w>=1000, landscape
 - **`us-ri-bailey-beach-2.jpg`** — “Sunset at Bailey's Beach The Cliff Walk Newport Rhode Island” by EgorovaSvetlana, Wikimedia Commons, CC BY-SA 4.0
@@ -124,7 +124,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: EgorovaSvetlana — //commons.wikimedia.org/wiki/User:EgorovaSvetlana
   - Dated: 2011-08-22 16:22:51
-  - 1600×1200px, 712 KB
+  - 1920×1440px, 712 KB
   - Description: Sunset at Bailey Beach The Cliff Walk Newport Rhode Island
   - Match: score 11 via coastal-in-title, name:bailey, kw:beach+cliff+sunset, w>=1000, landscape
 - **`us-ri-bailey-beach-3.jpg`** — Childe Hassam - Bailey's Beach, Newport, R.I. - 1936.243 - Art Institute of Chicago — Public domain (Wikimedia Commons), no attribution required
@@ -132,7 +132,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Childe Hassam — https://en.wikipedia.org/wiki/en:Childe_Hassam
   - Dated: 1901
-  - 1600×1477px, 1292 KB
+  - 1920×1772px, 1292 KB
   - Match: score 10.5 via coastal-in-title, name:bailey, kw:beach+sea+seascape, w>=1000
 
 ## Ballard's Beach
@@ -144,7 +144,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Oakes Photo Company
   - Dated: circa 1909 date QS:P571,+1909-00-00T00:0
-  - 1600×1013px, 38 KB
+  - 640×405px, 38 KB
   - Description: Caption on image: Ballard Beach. Oakes Photo Co. Postmarked May 26, 1909, from Seattle; one-cent stamp. Handwritten on verso: May 24 '09. Dear Lou: At last I have come out of my stupid humor. Hope it will never happen again. Went to the Farm Sunday and had the time of my life. Allie is here now. (I mean down to Ethel's - She is going to finish the 8th Gr.) With Love to all From Iva. W. Don't forget to come up, Huh? Addressed to Miss Louise [...] in Ballard, Wash. Subjects (LCTGM): Beaches--Washington (State)--Seattle; Bodies of water--Washington (State)--Seattle
   - Match: score 11 via coastal-in-title, name:ballard, kw:beach+sea+mar+bay, w>=1000, landscape
 - **`us-ri-ballard-s-beach-2.jpg`** — New Shoreham sunset. (Unsplash) — CC0 (Wikimedia Commons), no attribution required
@@ -152,7 +152,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Sam Wheeler mrsamwheeler — https://unsplash.com/@mrsamwheeler
   - Dated: 2015-10-05
-  - 1600×1060px, 367 KB, shot 380 m from the spot
+  - 1920×1272px, 367 KB, shot 380 m from the spot
   - Description: New Shoreham, United States
   - Match: score 9 via coastal-in-title, kw:shore+sunset, geo:380m, w>=1000, landscape
 - **`us-ri-ballard-s-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Swimmers at Ballard Beach, Seattle, ca 1913 (MOHAI 627) — Public domain (Wikimedia Commons), no attribution required
@@ -160,7 +160,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Carl Henry Moen — https://www.wikidata.org/wiki/Q102399164
   - Dated: circa 1913 date QS:P571,+1913-00-00T00:0
-  - 1600×1173px, 35 KB
+  - 640×469px, 35 KB
   - Description: Carl Henry Moen was born in Seattle in 1892 to Norwegian immigrant parents. His family moved several times as he was growing up, but settled in Ballard when he was nine years old. He helped harvest and sell the produce, milk, and poultry his family raised, and also was a messenger for Western Union, dug clams, and worked for Bemis Bag Co. Eventually he left home and began a 30-year career as a sailor, crossing the Pacific Ocean over 200 times. Moen bought his first camera in 1909; it was a 5x7 view camera that used glass plate negatives. A bedroom closet in the Moen house served as his darkroo
   - Match: score 11 via coastal-in-title, name:ballard, kw:beach+ocean+sea, w>=1000, landscape
 
@@ -173,7 +173,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Juliancolton — //commons.wikimedia.org/wiki/User:Juliancolton
   - Dated: 2010-08-04
-  - 1600×1071px, 476 KB, shot 293 m from the spot
+  - 1920×1285px, 476 KB, shot 293 m from the spot
   - Description: The Newport, Rhode Island Cliff Walk.
   - Match: score 7.5 via coastal-in-title, kw:cliff, geo:293m, w>=1000, landscape
 - **`us-ri-belmont-beach-2.jpg`** — “Newport, View from Cliff Walk” by Ad Meskens, Wikimedia Commons, CC BY-SA 3.0
@@ -181,7 +181,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Ad Meskens — //commons.wikimedia.org/wiki/User:Ad_Meskens
   - Dated: 2012-04-04
-  - 1600×639px, 198 KB, shot 190 m from the spot
+  - 1920×767px, 198 KB, shot 190 m from the spot
   - Description: View from Cliff Walk, Newport, RI.
   - Match: score 7.5 via coastal-in-title, kw:cliff, geo:190m, w>=1000, landscape
 - **`us-ri-belmont-beach-3.jpg`** — “Cliff Walk - Newport, Rhode Island, USA - August 15, 2015 02” by Giorgio Galeotti, Wikimedia Commons, CC BY 4.0
@@ -189,7 +189,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Giorgio Galeotti — //commons.wikimedia.org/wiki/User:GiorgioGaleotti
   - Dated: 2015-08-15 22:48:19
-  - 1600×1068px, 539 KB, shot 319 m from the spot
+  - 1920×1282px, 539 KB, shot 319 m from the spot
   - Description: Cliff Walk - Newport, Rhode Island, USA
   - Match: score 7.5 via coastal-in-title, kw:cliff, geo:319m, w>=1000, landscape
 
@@ -202,7 +202,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: ajay_suresh — https://www.flickr.com/people/83136374@N05
   - Dated: 2024-06-08 11:59
-  - 1600×900px, 494 KB, shot 614 m from the spot
+  - 1920×1080px, 494 KB, shot 614 m from the spot
   - Description: Narragansett, Rhode Island
   - Match: score 14.5 via coastal-in-title, name:roger+wheeler, kw:beach, geo:614m, w>=1000, landscape
 
@@ -215,7 +215,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: The original uploader was Fabiform at English Wikipedia — https://en.wikipedia.org/wiki/User:Fabiform
   - Dated: 31 January 2004 (original upload date)
-  - 1600×1081px, 102 KB
+  - 768×519px, 102 KB
   - Description: Charlestown Beach, near St Austell , Cornwall , England . Taken by fabiform
   - Match: score 8.5 via coastal-in-title, name:charlestown, kw:beach, w>=1000, landscape
 - **`us-ri-charlestown-beach-2.jpg`** — “Charlestown Beach St Austell Cornwall” by The original uploader was Fabiform at English Wikipedia, Wikimedia Commons, CC BY-SA 3.0
@@ -223,7 +223,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: The original uploader was Fabiform at English Wikipedia — https://en.wikipedia.org/wiki/User:Fabiform
   - Dated: 31 January 2004 (original upload date)
-  - 1600×1081px, 81 KB
+  - 768×519px, 81 KB
   - Description: Charlestown Beach, near St Austell , Cornwall , England . Taken by fabiform
   - Match: score 8.5 via coastal-in-title, name:charlestown, kw:beach, w>=1000, landscape
 
@@ -236,7 +236,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Luke Campbell — https://web.archive.org/web/20161101084639/http://www.panoramio.com/user/6690887?with_photo_id=112229837
   - Dated: Taken on 26 September 2014
-  - 1600×1064px, 706 KB, shot 1395 m from the spot
+  - 1920×1277px, 706 KB, shot 1395 m from the spot
   - Description: Beach Sunset
   - Match: score 7 via coastal-in-title, kw:beach+sunset, geo:1395m, w>=1000, landscape
 - **`us-ri-conochet-club-beach-2.jpg`** — “Waves at Narragansett - panoramio” by Luke Campbell, Wikimedia Commons, CC BY-SA 3.0
@@ -244,7 +244,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Luke Campbell — https://web.archive.org/web/20161102183016/http://www.panoramio.com/user/6690887?with_photo_id=112229823
   - Dated: Taken on 26 September 2014
-  - 1600×1064px, 497 KB, shot 1373 m from the spot
+  - 1920×1277px, 497 KB, shot 1373 m from the spot
   - Description: Waves at Narragansett
   - Match: score 7 via coastal-in-title, kw:wave+waves, geo:1373m, w>=1000, landscape
 - **`us-ri-conochet-club-beach-3.jpg`** — “Shore of Newport, RI” by Darkshaed, Wikimedia Commons, CC BY-SA 4.0
@@ -252,7 +252,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Darkshaed — //commons.wikimedia.org/w/index.php?title=User:Darkshaed&amp;action=edit&amp;redlink=1
   - Dated: 2011-01-08 17:28:23
-  - 1600×902px, 595 KB, shot 1769 m from the spot
+  - 1920×1082px, 595 KB, shot 1769 m from the spot
   - Description: The rocky shore of Newport, Rhode Island in January.
   - Match: score 7 via coastal-in-title, kw:shore+point, geo:1769m, w>=1000, landscape
 
@@ -265,7 +265,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Joe Mabel — //commons.wikimedia.org/wiki/User:Jmabel
   - Dated: Taken on 26 April 2019
-  - 1600×1063px, 561 KB
+  - 1920×1275px, 561 KB
   - Description: Crescent Beach (left) and Cannon Beach, Oregon, U.S. Haystack Rock and other offshore rock formations seen from Ecola Point, Ecola State Park.
   - Match: score 11 via coastal-in-title, name:crescent, kw:beach+sea+shore+point, w>=1000, landscape
 - **`us-ri-crescent-beach-2.jpg`** — “Crescent Beach, Nova Scotia” by Madereugeneandrew, Wikimedia Commons, CC BY-SA 4.0
@@ -273,7 +273,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Madereugeneandrew — //commons.wikimedia.org/w/index.php?title=User:Madereugeneandrew&amp;action=edit&amp;redlink=1
   - Dated: 2011-06-11 08:14:06
-  - 1600×363px, 110 KB, shot 675317 m from the spot
+  - 1920×435px, 110 KB, shot 675317 m from the spot
   - Description: Crescent Beach is a two kilometer ribbon of sand especially popular with walkers.
   - Match: score 10 via coastal-in-title, name:crescent, kw:beach+sand, geo:675317m, w>=1000, landscape
 - **`us-ri-crescent-beach-3.jpg`** — “2016 Crystal Crescent Beach 1” by Ben MacLeod, Wikimedia Commons, CC BY-SA 4.0
@@ -281,7 +281,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Ben MacLeod — //commons.wikimedia.org/wiki/User:Ben_MacLeod
   - Dated: 2016-06-18 03:55:00
-  - 1600×1200px, 712 KB
+  - 1920×1440px, 712 KB
   - Description: Crystal Crescent Beach near Halifax, Nova Scotia.
   - Match: score 10 via coastal-in-title, name:crescent, kw:beach+point, w>=1000, landscape
 
@@ -294,7 +294,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Luke Campbell — https://web.archive.org/web/20161101084639/http://www.panoramio.com/user/6690887?with_photo_id=112229837
   - Dated: Taken on 26 September 2014
-  - 1600×1064px, 706 KB, shot 1570 m from the spot
+  - 1920×1277px, 706 KB, shot 1570 m from the spot
   - Description: Beach Sunset
   - Match: score 7 via coastal-in-title, kw:beach+sunset, geo:1570m, w>=1000, landscape
 - **`us-ri-dunes-club-beach-2.jpg`** — “Waves at Narragansett - panoramio” by Luke Campbell, Wikimedia Commons, CC BY-SA 3.0
@@ -302,7 +302,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Luke Campbell — https://web.archive.org/web/20161102183016/http://www.panoramio.com/user/6690887?with_photo_id=112229823
   - Dated: Taken on 26 September 2014
-  - 1600×1064px, 497 KB, shot 1548 m from the spot
+  - 1920×1277px, 497 KB, shot 1548 m from the spot
   - Description: Waves at Narragansett
   - Match: score 7 via coastal-in-title, kw:wave+waves, geo:1548m, w>=1000, landscape
 - **`us-ri-dunes-club-beach-3.jpg`** — “Shore of Newport, RI” by Darkshaed, Wikimedia Commons, CC BY-SA 4.0
@@ -310,7 +310,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Darkshaed — //commons.wikimedia.org/w/index.php?title=User:Darkshaed&amp;action=edit&amp;redlink=1
   - Dated: 2011-01-08 17:28:23
-  - 1600×902px, 595 KB, shot 1934 m from the spot
+  - 1920×1082px, 595 KB, shot 1934 m from the spot
   - Description: The rocky shore of Newport, Rhode Island in January.
   - Match: score 7 via coastal-in-title, kw:shore+point, geo:1934m, w>=1000, landscape
 
@@ -323,7 +323,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: LaesaMajestas — //commons.wikimedia.org/wiki/User:LaesaMajestas
   - Dated: 2007-12-25 13:06:17
-  - 1600×1200px, 713 KB
+  - 1920×1440px, 713 KB
   - Description: View of East Matunuck beach from the rocky stretch along the beach's western shore.
   - Match: score 7 via coastal-in-title, kw:beach+coast+shore, w>=1000, landscape
 - **`us-ri-east-beach-2.jpg`** — “Fogland Beach, Tiverton looking east” by Beyond My Ken, Wikimedia Commons, CC BY-SA 4.0
@@ -331,7 +331,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Beyond My Ken — //commons.wikimedia.org/wiki/User:Beyond_My_Ken
   - Dated: 2021-04-04
-  - 1600×1038px, 653 KB
+  - 1920×1246px, 653 KB
   - Description: Fogland Beach is a narrow strip of land which connects Tiverton, Rhode Island to Fogland Point, 35 acres (14 ha) of land which projects out into the Sakonnet River. The beach itself – one of two in Tiverton, along with Grinnel's Beach – is on the south side of the neck, while a cove called Fogland with a rocky beach is on the north side. The road which runs down the neck is called 3 Rod Way.
   - Match: score 7 via coastal-in-title, kw:beach+cove+point, w>=1000, landscape
 
@@ -344,7 +344,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: LaesaMajestas — //commons.wikimedia.org/wiki/User:LaesaMajestas
   - Dated: 2007-12-25 13:06:17
-  - 1600×1200px, 713 KB
+  - 1920×1440px, 713 KB
   - Description: View of East Matunuck beach from the rocky stretch along the beach's western shore.
   - Match: score 7 via coastal-in-title, kw:beach+coast+shore, w>=1000, landscape
 - **`us-ri-east-beach-832705-2.jpg`** — “Fogland Beach, Tiverton looking east” by Beyond My Ken, Wikimedia Commons, CC BY-SA 4.0
@@ -352,7 +352,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Beyond My Ken — //commons.wikimedia.org/wiki/User:Beyond_My_Ken
   - Dated: 2021-04-04
-  - 1600×1038px, 653 KB, shot 58805 m from the spot
+  - 1920×1246px, 653 KB, shot 58805 m from the spot
   - Description: Fogland Beach is a narrow strip of land which connects Tiverton, Rhode Island to Fogland Point, 35 acres (14 ha) of land which projects out into the Sakonnet River. The beach itself – one of two in Tiverton, along with Grinnel's Beach – is on the south side of the neck, while a cove called Fogland with a rocky beach is on the north side. The road which runs down the neck is called 3 Rod Way.
   - Match: score 7 via coastal-in-title, kw:beach+cove+point, geo:58805m, w>=1000, landscape
 
@@ -365,7 +365,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: LaesaMajestas — //commons.wikimedia.org/wiki/User:LaesaMajestas
   - Dated: 2007-12-25 13:06:17
-  - 1600×1200px, 713 KB
+  - 1920×1440px, 713 KB
   - Description: View of East Matunuck beach from the rocky stretch along the beach's western shore.
   - Match: score 11 via coastal-in-title, name:matunuck, kw:beach+coast+shore, w>=1000, landscape
 - **`us-ri-east-matunuck-state-beach-2.jpg`** — “A view of East Matunuck State Beach looking west from the beginning of the completely public portion of the beach.” by Paul C. Anagnostopoulos, Wikimedia Commons, CC BY-SA 4.0
@@ -373,7 +373,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Paul C. Anagnostopoulos — //commons.wikimedia.org/w/index.php?title=User:Paul_C._Anagnostopoulos&amp;action=edit&amp;redlink=1
   - Dated: 2024-08-15
-  - 1600×1200px, 843 KB
+  - 1920×1440px, 843 KB
   - Description: This view shows the beach pavilion at the web end, along with the series of lifeguard chairs.
   - Match: score 10 via coastal-in-title, name:matunuck, kw:beach+coast, w>=1000, landscape
 - **`us-ri-east-matunuck-state-beach-3.jpg`** — “East-Matunuck-2” by Paul C. Anagnostopoulos, Wikimedia Commons, CC BY-SA 4.0
@@ -381,7 +381,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Paul C. Anagnostopoulos — //commons.wikimedia.org/w/index.php?title=User:Paul_C._Anagnostopoulos&amp;action=edit&amp;redlink=1
   - Dated: 2024-08-15
-  - 1600×1200px, 571 KB
+  - 1920×1440px, 571 KB
   - Description: View of East Matunuck State Beach from the east end by the breakwater. It shows the houses along the first part of the beach and the public pavilion in the distance.
   - Match: score 9 via name:matunuck, kw:beach+coast+break, w>=1000, landscape
 
@@ -394,7 +394,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Alistair Cunningham — https://web.archive.org/web/20161011161743/http://www.panoramio.com/user/444629?with_photo_id=2546293
   - Dated: Taken on 23 April 2001
-  - 1600×1200px, 225 KB, shot 435 m from the spot
+  - 1024×768px, 225 KB, shot 435 m from the spot
   - Description: Newport
   - Match: score 8.5 via name:easton, kw:beach, geo:435m, w>=1000, landscape
 - **`us-ri-easton-s-beach-2.jpg`** — “Easton Beach - Panorama 2” by Amit Chattopadhyay, Wikimedia Commons, CC BY 2.0
@@ -402,7 +402,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Amit Chattopadhyay — https://www.flickr.com/photos/16017800@N00
   - Dated: 2009-07-05 12:43:12
-  - 1600×477px, 331 KB
+  - 1920×572px, 331 KB
   - Description: A panoramic view of Easton Beach, Rhode Island.
   - Match: score 8.5 via coastal-in-title, name:easton, kw:beach, w>=1000, landscape
 
@@ -415,7 +415,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Juliancolton — //commons.wikimedia.org/wiki/User:Juliancolton
   - Dated: 2010-08-04
-  - 1600×1071px, 579 KB, shot 2950 m from the spot
+  - 1920×1285px, 579 KB, shot 2950 m from the spot
   - Description: Sam's Snack Bar on Misquamicut Beach, Rhode Island .
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:2950m, w>=1000, landscape
 
@@ -428,7 +428,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Sam Wheeler mrsamwheeler — https://unsplash.com/@mrsamwheeler
   - Dated: 2015-10-05
-  - 1600×1060px, 367 KB, shot 1336 m from the spot
+  - 1920×1272px, 367 KB, shot 1336 m from the spot
   - Description: New Shoreham, United States
   - Match: score 7 via coastal-in-title, kw:shore+sunset, geo:1336m, w>=1000, landscape
 
@@ -441,7 +441,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Giorgio Galeotti — //commons.wikimedia.org/wiki/User:GiorgioGaleotti
   - Dated: 2023-10-01 19:52:07
-  - 1600×702px, 132 KB, shot 101 m from the spot
+  - 1920×842px, 132 KB, shot 101 m from the spot
   - Description: Gooseberry Beach - Newport, Rhode Island, USA
   - Match: score 11.5 via coastal-in-title, name:gooseberry, kw:beach, geo:101m, w>=1000, landscape
 - **`us-ri-gooseberry-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Waterfront Mansion Ocean Avenue Newport Rhode Island and Hobie 16 Sailing Catamaran View from Gooseberry Beach” by EgorovaSvetlana, Wikimedia Commons, CC BY-SA 4.0
@@ -449,7 +449,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: EgorovaSvetlana — //commons.wikimedia.org/wiki/User:EgorovaSvetlana
   - Dated: 2011-08-22 13:40:09
-  - 1600×1174px, 493 KB
+  - 1920×1409px, 493 KB
   - Description: Waterfront Mansion Ocean Avenue Newport Rhode Island and Hobie 16 Sailing Catamaran View from Gooseberry Beach
   - Match: score 11 via coastal-in-title, name:gooseberry, kw:beach+ocean+mar, w>=1000, landscape
 
@@ -462,7 +462,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Giorgio Galeotti — //commons.wikimedia.org/wiki/User:GiorgioGaleotti
   - Dated: 2023-10-01 19:52:07
-  - 1600×702px, 132 KB, shot 283 m from the spot
+  - 1920×842px, 132 KB, shot 283 m from the spot
   - Description: Gooseberry Beach - Newport, Rhode Island, USA
   - Match: score 7.5 via coastal-in-title, kw:beach, geo:283m, w>=1000, landscape
 
@@ -475,7 +475,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Beyond My Ken — //commons.wikimedia.org/wiki/User:Beyond_My_Ken
   - Dated: 2021-04-06
-  - 1600×938px, 671 KB, shot 294 m from the spot
+  - 1920×1125px, 671 KB, shot 294 m from the spot
   - Description: Lloyd's Beach , Little Compton, Rhode Island.
   - Match: score 11.5 via coastal-in-title, name:lloyd, kw:beach, geo:294m, w>=1000, landscape
 
@@ -488,7 +488,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Matthew Dwyer — //commons.wikimedia.org/w/index.php?title=User:Mattyd820&amp;action=edit&amp;redlink=1
   - Dated: 2018-12-29 04:46:03
-  - 1600×1067px, 395 KB
+  - 1920×1280px, 395 KB
   - Description: This long-exposure photo taken from Camp Cronin Fishing Area shows the swells of the Atlantic as they crash against the rocky coast.
   - Match: score 9 via name:long, kw:beach+coast+point+swell, w>=1000, landscape
 - **`us-ri-long-point-2.jpg`** — “MVY-Oct2012-032 HD” by Gary Brownell, Wikimedia Commons, CC BY-SA 2.0
@@ -496,7 +496,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Gary Brownell
   - Dated: 2012-10-05 14:03:45
-  - 1600×900px, 746 KB, shot 478 m from the spot
+  - 1920×1080px, 746 KB, shot 478 m from the spot
   - Description: Gay Head Lighthouse. Martha's Vineyard visit.
   - Match: score 6 via kw:mar+lighthouse, geo:478m, w>=1000, landscape
 - **`us-ri-long-point-3.jpg`** — “MVY-Oct2012-032 HD (cropped)” by Gary Brownell, Wikimedia Commons, CC BY-SA 2.0
@@ -504,7 +504,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Gary Brownell
   - Dated: 2012-10-05 14:03:45
-  - 1600×229px, 104 KB, shot 478 m from the spot
+  - 1920×274px, 104 KB, shot 478 m from the spot
   - Description: Gay Head Lighthouse. Martha's Vineyard visit.
   - Match: score 6 via kw:mar+lighthouse, geo:478m, w>=1000, landscape
 
@@ -517,7 +517,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Rockerboo — https://500px.com/rockerBOO
   - Dated: 27 September 2014, 10:26:49
-  - 1600×1063px, 622 KB, shot 1425 m from the spot
+  - 1920×1276px, 622 KB, shot 1425 m from the spot
   - Description: 500px provided description: Block Island Beach [#beach ,#sand ,#block island]
   - Match: score 7 via coastal-in-title, kw:beach+sand, geo:1425m, w>=1000, landscape
 - **`us-ri-mansion-beach-2.jpg`** — New Shoreham sunset. (Unsplash) — CC0 (Wikimedia Commons), no attribution required
@@ -525,7 +525,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Sam Wheeler mrsamwheeler — https://unsplash.com/@mrsamwheeler
   - Dated: 2015-10-05
-  - 1600×1060px, 367 KB, shot 3321 m from the spot
+  - 1920×1272px, 367 KB, shot 3321 m from the spot
   - Description: New Shoreham, United States
   - Match: score 6 via coastal-in-title, kw:shore+sunset, geo:3321m, w>=1000, landscape
 - **`us-ri-mansion-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Waterfront Mansion Ocean Avenue Newport Rhode Island and Hobie 16 Sailing Catamaran View from Gooseberry Beach” by EgorovaSvetlana, Wikimedia Commons, CC BY-SA 4.0
@@ -533,7 +533,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: EgorovaSvetlana — //commons.wikimedia.org/wiki/User:EgorovaSvetlana
   - Dated: 2011-08-22 13:40:09
-  - 1600×1174px, 493 KB
+  - 1920×1409px, 493 KB
   - Description: Waterfront Mansion Ocean Avenue Newport Rhode Island and Hobie 16 Sailing Catamaran View from Gooseberry Beach
   - Match: score 11 via coastal-in-title, name:mansion, kw:beach+ocean+mar, w>=1000, landscape
 
@@ -546,7 +546,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: LaesaMajestas — //commons.wikimedia.org/wiki/User:LaesaMajestas
   - Dated: 2007-12-25 13:06:17
-  - 1600×1200px, 713 KB
+  - 1920×1440px, 713 KB
   - Description: View of East Matunuck beach from the rocky stretch along the beach's western shore.
   - Match: score 11 via coastal-in-title, name:matunuck, kw:beach+coast+shore, w>=1000, landscape
 - **`us-ri-matunuck-beach-2.jpg`** — “A view of East Matunuck State Beach looking west from the beginning of the completely public portion of the beach.” by Paul C. Anagnostopoulos, Wikimedia Commons, CC BY-SA 4.0
@@ -554,7 +554,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Paul C. Anagnostopoulos — //commons.wikimedia.org/w/index.php?title=User:Paul_C._Anagnostopoulos&amp;action=edit&amp;redlink=1
   - Dated: 2024-08-15
-  - 1600×1200px, 843 KB
+  - 1920×1440px, 843 KB
   - Description: This view shows the beach pavilion at the web end, along with the series of lifeguard chairs.
   - Match: score 10 via coastal-in-title, name:matunuck, kw:beach+coast, w>=1000, landscape
 - **`us-ri-matunuck-beach-3.jpg`** — “East-Matunuck-2” by Paul C. Anagnostopoulos, Wikimedia Commons, CC BY-SA 4.0
@@ -562,7 +562,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Paul C. Anagnostopoulos — //commons.wikimedia.org/w/index.php?title=User:Paul_C._Anagnostopoulos&amp;action=edit&amp;redlink=1
   - Dated: 2024-08-15
-  - 1600×1200px, 571 KB
+  - 1920×1440px, 571 KB
   - Description: View of East Matunuck State Beach from the east end by the breakwater. It shows the houses along the first part of the beach and the public pavilion in the distance.
   - Match: score 9 via name:matunuck, kw:beach+coast+break, w>=1000, landscape
 
@@ -575,7 +575,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Juliancolton — //commons.wikimedia.org/wiki/User:Juliancolton
   - Dated: 2010-08-06
-  - 1600×1071px, 533 KB, shot 45 m from the spot
+  - 1920×1285px, 533 KB, shot 45 m from the spot
   - Description: Bird's-eye view of Misquamicut Beach, Rhode Island during peak tourist season.
   - Match: score 13 via coastal-in-title, name:misquamicut, kw:beach+sea, geo:45m, w>=1000, landscape
 - **`us-ri-misquamicut-fire-district-beach-2.jpg`** — Sunrise on Misquamicut Beach, RI, 2010-08-02 — Public domain (Wikimedia Commons), no attribution required
@@ -583,7 +583,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Juliancolton — //commons.wikimedia.org/wiki/User:Juliancolton
   - Dated: 2010-08-02
-  - 1600×1071px, 389 KB, shot 77 m from the spot
+  - 1920×1285px, 389 KB, shot 77 m from the spot
   - Description: Sunrise on Misquamicut Beach, Rhode Island .
   - Match: score 13 via coastal-in-title, name:misquamicut, kw:beach+sunrise, geo:77m, w>=1000, landscape
 - **`us-ri-misquamicut-fire-district-beach-3.jpg`** — Surfcasting on a foggy morning at Misquamicut Beach, RI — Public domain (Wikimedia Commons), no attribution required
@@ -591,7 +591,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Juliancolton — //commons.wikimedia.org/wiki/User:Juliancolton
   - Dated: 2010-08-04
-  - 1600×1071px, 410 KB, shot 194 m from the spot
+  - 1920×1285px, 410 KB, shot 194 m from the spot
   - Description: Two fishermen surfcasting at Misquamicut Beach, Rhode Island on a foggy and overcast morning.
   - Match: score 13 via coastal-in-title, name:misquamicut, kw:beach+surf, geo:194m, w>=1000, landscape
 
@@ -604,7 +604,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Juliancolton — //commons.wikimedia.org/wiki/User:Juliancolton
   - Dated: 2010-08-04
-  - 1600×1071px, 410 KB, shot 1059 m from the spot
+  - 1920×1285px, 410 KB, shot 1059 m from the spot
   - Description: Two fishermen surfcasting at Misquamicut Beach, Rhode Island on a foggy and overcast morning.
   - Match: score 12 via coastal-in-title, name:misquamicut, kw:beach+surf, geo:1059m, w>=1000, landscape
 - **`us-ri-misquamicut-state-beach-2.jpg`** — Misquamicut State Beach — Public domain (Wikimedia Commons), no attribution required
@@ -612,7 +612,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Juliancolton — //commons.wikimedia.org/wiki/User:Juliancolton
   - Dated: 2010-08-06
-  - 1600×1047px, 497 KB, shot 216 m from the spot
+  - 1920×1256px, 497 KB, shot 216 m from the spot
   - Description: The state beach at Misquamicut Beach, Rhode Island.
   - Match: score 11.5 via coastal-in-title, name:misquamicut, kw:beach, geo:216m, w>=1000, landscape
 - **`us-ri-misquamicut-state-beach-3.jpg`** — Entrance to Misquamicut Beach, RI from road — Public domain (Wikimedia Commons), no attribution required
@@ -620,7 +620,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Juliancolton — //commons.wikimedia.org/wiki/User:Juliancolton
   - Dated: 2010-08-06
-  - 1600×1071px, 543 KB, shot 216 m from the spot
+  - 1920×1285px, 543 KB, shot 216 m from the spot
   - Description: Entrance to Misquamicut Beach, Rhode Island beside a lifeguard tower.
   - Match: score 11.5 via coastal-in-title, name:misquamicut, kw:beach, geo:216m, w>=1000, landscape
 
@@ -633,7 +633,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Waz8 — //commons.wikimedia.org/wiki/User:Waz8
   - Dated: 2012-06-15 15:14:13
-  - 1600×1195px, 696 KB, shot 608 m from the spot
+  - 1920×1434px, 696 KB, shot 608 m from the spot
   - Description: Mohegan Bluffs viewed from the beach on Block Island, New Shoreham, RI
   - Match: score 10 via name:bluffs, kw:beach+shore, geo:608m, w>=1000, landscape
 - **`us-ri-monhegan-bluffs-beach-2.jpg`** — Mohegan Bluffs - 1, Block Island, RI — CC0 (Wikimedia Commons), no attribution required
@@ -641,7 +641,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Waz8 — //commons.wikimedia.org/wiki/User:Waz8
   - Dated: 2012-06-15 15:09:20
-  - 1600×1195px, 741 KB, shot 601 m from the spot
+  - 1920×1434px, 741 KB, shot 601 m from the spot
   - Description: Mohegan Bluffs viewed from the side on Block Island, New Shoreham, RI
   - Match: score 8.5 via name:bluffs, kw:shore, geo:601m, w>=1000, landscape
 - **`us-ri-monhegan-bluffs-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Southeast Light, Block Island, RI (8686855115)” by Timothy Burling from Fall River, Massachusetts, USA, Wikimedia Commons, CC BY 2.0
@@ -649,7 +649,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Timothy Burling from Fall River, Massachusetts, USA — https://www.flickr.com/people/64802517@N04
   - Dated: 2013-04-27 13:51
-  - 1600×1068px, 640 KB, shot 924 m from the spot
+  - 1920×1282px, 640 KB, shot 924 m from the spot
   - Description: Block Island Southeast Light is a lighthouse located on Mohegan Bluffs at the southeastern corner of Block Island, Rhode Island. It was designated a U.S. National Historic Landmark in 1997. Although Congress appropriated $9,000 to build this light in 1856, the funds were used to build a new Block Island North Light after the old one was washed away in a storm. This light was finally built in 1875. The original optic was a first order Fresnel lens standing about 12 feet (3.7 m) tall with four circular wicks burning whale oil. The whale oil was replaced by kerosene in 1880 and the lens was modif
   - Match: score 10 via name:bluffs, kw:mar+lighthouse, geo:924m, w>=1000, landscape
 
@@ -662,7 +662,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: ajay_suresh — https://www.flickr.com/people/83136374@N05
   - Dated: 2024-06-09 18:39
-  - 1600×900px, 691 KB, shot 540 m from the spot
+  - 1920×1080px, 691 KB, shot 540 m from the spot
   - Description: Narragansett Town Beach
   - Match: score 12.5 via name:narragansett+town, kw:beach, geo:540m, w>=1000, landscape
 - **`us-ri-narragansett-town-beach-2.jpg`** — “Beach Sunset - panoramio (1)” by Luke Campbell, Wikimedia Commons, CC BY-SA 3.0
@@ -670,7 +670,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Luke Campbell — https://web.archive.org/web/20161101084639/http://www.panoramio.com/user/6690887?with_photo_id=112229837
   - Dated: Taken on 26 September 2014
-  - 1600×1064px, 706 KB, shot 686 m from the spot
+  - 1920×1277px, 706 KB, shot 686 m from the spot
   - Description: Beach Sunset
   - Match: score 12 via coastal-in-title, name:narragansett, kw:beach+sunset, geo:686m, w>=1000, landscape
 - **`us-ri-narragansett-town-beach-3.jpg`** — “Waves at Narragansett - panoramio” by Luke Campbell, Wikimedia Commons, CC BY-SA 3.0
@@ -678,7 +678,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Luke Campbell — https://web.archive.org/web/20161102183016/http://www.panoramio.com/user/6690887?with_photo_id=112229823
   - Dated: Taken on 26 September 2014
-  - 1600×1064px, 497 KB, shot 659 m from the spot
+  - 1920×1277px, 497 KB, shot 659 m from the spot
   - Description: Waves at Narragansett
   - Match: score 12 via coastal-in-title, name:narragansett, kw:wave+waves, geo:659m, w>=1000, landscape
 
@@ -691,7 +691,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Elizabeth D. Boepple — //commons.wikimedia.org/w/index.php?title=User:Eboepple&amp;action=edit&amp;redlink=1
   - Dated: Taken on 9 September 2013, 09:26:23
-  - 1600×1067px, 500 KB, shot 365 m from the spot
+  - 1920×1280px, 500 KB, shot 365 m from the spot
   - Description: Block Island North Light, Sandy Point, off the northern end of Corn Neck Rd. New Shoreham
   - Match: score 12 via name:light, kw:shore+sand+point, geo:365m, w>=1000, landscape
 - **`us-ri-north-light-beach-2.jpg`** ⚠︎ *context, not the coast itself* — Plum Beach Light — Public domain (Wikimedia Commons), no attribution required
@@ -699,7 +699,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Cory Mendenhall, U.S. Coast Guard
   - Dated: 2014-03-13 20:00:00
-  - 1600×1136px, 506 KB
+  - 1920×1363px, 506 KB
   - Description: This painting was created with watercolor and depicts the Plum Beach Light, which was constructed in 1899 in Narragansett Bay, R.I. The light was maintained by the U.S. Coast Guard until deactivated in 1941. The light still stands today and is registered by the Coast Guard as a private aid to navigation. The painting's purpose is to represent the beauty and history of New England lighthouses and further the artist's skill with the watercolor medium. (U.S. Coast Guard Art by Petty Officer 2nd Class Cory Mendenhall/Released)
   - Match: score 11 via coastal-in-title, name:light, kw:beach+coast+bay+lighthouse, w>=1000, landscape
 - **`us-ri-north-light-beach-3.png`** ⚠︎ *context, not the coast itself* — Block Island North Light - left rear — CC0 (Wikimedia Commons), no attribution required
@@ -707,7 +707,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Waz8 — //commons.wikimedia.org/wiki/User:Waz8
   - Dated: 2017-06-24
-  - 1600×1072px, 2886 KB, shot 365 m from the spot
+  - 1920×1286px, 2886 KB, shot 365 m from the spot
   - Description: Block Island North Light, New Shoreham, Rhode Island, viewed from the rear to the left
   - Match: score 9.5 via name:light, kw:shore, geo:365m, w>=1000, landscape
 
@@ -720,7 +720,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Timothy Burling from Fall River, Massachusetts, USA — https://www.flickr.com/people/64802517@N04
   - Dated: 2013-06-29 14:45
-  - 1600×1067px, 332 KB, shot 678 m from the spot
+  - 1920×1280px, 332 KB, shot 678 m from the spot
   - Description: Watch Hill LIghthouse, Westerly, RI
   - Match: score 10.5 via coastal-in-title, name:house, kw:lighthouse, geo:678m, w>=1000, landscape
 - **`us-ri-ocean-house-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Foggy Watch Hill Cove sunrise” by Juliancolton, Wikimedia Commons, CC BY-SA 4.0
@@ -728,7 +728,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Juliancolton — //commons.wikimedia.org/wiki/User:Juliancolton
   - Dated: 2016-07-18 06:09:07
-  - 1600×1067px, 141 KB, shot 718 m from the spot
+  - 1920×1280px, 141 KB, shot 718 m from the spot
   - Description: Sailboats rest on a floating dock in Watch Hill Cove, Watch Hill, Rhode Island , as the morning sun burns away the fog.
   - Match: score 8 via coastal-in-title, kw:cove+sunrise, geo:718m, w>=1000, landscape
 
@@ -741,7 +741,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Jack Bain
   - Dated: 1964 date QS:P571,+1964-00-00T00:00:00Z/
-  - 1600×1078px, 756 KB
+  - 1920×1294px, 756 KB
   - Description: Pebbly Beach is a small beach south of Port Douglas in North Queensland. While this photograph does not show it, it is generally covered in small shingles and pebbles.
   - Match: score 10 via coastal-in-title, name:pebbly, kw:beach+cove, w>=1000, landscape
 - **`us-ri-pebbly-beach-2.jpg`** — “Pebbly Beach, Queensland, 2025, 02” by Chris Olszewski, Wikimedia Commons, CC BY-SA 4.0
@@ -749,7 +749,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Chris Olszewski — //commons.wikimedia.org/wiki/User:Kgbo
   - Dated: 2025-03-07 18:27:16
-  - 1600×1200px, 993 KB
+  - 1920×1440px, 993 KB
   - Description: Pebbly Beach, Oak Beach, Queensland, 2025
   - Match: score 10 via coastal-in-title, name:pebbly, kw:beach+mar, w>=1000, landscape
 
@@ -762,7 +762,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Giorgio Galeotti — //commons.wikimedia.org/wiki/User:GiorgioGaleotti
   - Dated: 2015-08-15 23:23:59
-  - 1600×1068px, 500 KB, shot 712 m from the spot
+  - 1920×1281px, 500 KB, shot 712 m from the spot
   - Description: Rocks - Cliff Walk, Newport, Rhode Island, USA
   - Match: score 8 via coastal-in-title, kw:cliff+rocks, geo:712m, w>=1000, landscape
 - **`us-ri-rejects-beach-2.jpg`** — “Rocks - Cliff Walk, Newport, Rhode Island, USA - August 15, 2015 02” by Giorgio Galeotti, Wikimedia Commons, CC BY 4.0
@@ -770,7 +770,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Giorgio Galeotti — //commons.wikimedia.org/wiki/User:GiorgioGaleotti
   - Dated: 2015-08-15 23:23:59
-  - 1600×1068px, 561 KB, shot 712 m from the spot
+  - 1920×1281px, 561 KB, shot 712 m from the spot
   - Description: Rocks - Cliff Walk, Newport, Rhode Island, USA
   - Match: score 8 via coastal-in-title, kw:cliff+rocks, geo:712m, w>=1000, landscape
 
@@ -783,7 +783,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: U. S. Fish and Wildlife Service - Northeast Region — https://www.flickr.com/people/43322816@N08
   - Dated: 2012-11-04 13:21:15
-  - 1600×1067px, 408 KB, shot 304 m from the spot
+  - 1920×1280px, 408 KB, shot 304 m from the spot
   - Description: Debris on Moonstone Beach at Trustom Pond NWR deposited by storm Sandy. Photo credit: Greg Thompson/USFWS Stay informed http://www.facebook.com/usfwsnortheast https://twitter.com/usfwsnortheast
   - Match: score 9 via coastal-in-title, kw:beach+sand, geo:304m, w>=1000, landscape
 - **`us-ri-roy-carpenter-s-beach-2.jpg`** ⚠︎ *context, not the coast itself* — Roy Carpenter's Camp Grounds and Beach from the Air, Matunuck, R.I (73260) — Public domain (Wikimedia Commons), no attribution required
@@ -791,7 +791,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: "Tichnor Quality Views", Reg,U.S.Pat.Off., Made Only by Tichnor Bros., Inc., Boston, Mass
   - Dated: between circa 1930 and circa 1945 date Q
-  - 1600×1026px, 1254 KB
+  - 1920×1231px, 1254 KB
   - Description: Title: Roy Carpenter's Camp Grounds and Beach from the Air, Matunuck, R.I. Subjects: Beaches Places: Rhode Island > Washington (county) > Perryville Notes: Title from item. Extent: 1 print (postcard) : linen texture, color ; 3 1/2 x 5 1/2 in. Accession #: 06_10_001910
   - Match: score 12.5 via coastal-in-title, name:roy+carpenter, kw:beach, w>=1000, landscape
 
@@ -804,7 +804,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Ted Kerwin — https://www.flickr.com/people/52111934@N00
   - Dated: 2007-11-24 15:18
-  - 1600×1200px, 1038 KB, shot 3035 m from the spot
+  - 1920×1440px, 1038 KB, shot 3035 m from the spot
   - Description: Point Judith Lighthouse shoreline
   - Match: score 7 via coastal-in-title, kw:shore+shoreline+point+lighthouse, geo:3035m, w>=1000, landscape
 - **`us-ri-salty-brine-state-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Salty Brine State Beach (53844731481)” by ajay_suresh, Wikimedia Commons, CC BY 2.0
@@ -812,7 +812,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: ajay_suresh — https://www.flickr.com/people/83136374@N05
   - Dated: 2024-06-09 10:18
-  - 1600×1200px, 720 KB, shot 105 m from the spot
+  - 1920×1440px, 720 KB, shot 105 m from the spot
   - Description: Narragansett, Rhode Island
   - Match: score 15.5 via coastal-in-title, name:salty+brine, kw:beach, geo:105m, w>=1000, landscape
 - **`us-ri-salty-brine-state-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Roger Wheeler State Beach (53844731671)” by ajay_suresh, Wikimedia Commons, CC BY 2.0
@@ -820,7 +820,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: ajay_suresh — https://www.flickr.com/people/83136374@N05
   - Dated: 2024-06-08 11:59
-  - 1600×900px, 494 KB, shot 1080 m from the spot
+  - 1920×1080px, 494 KB, shot 1080 m from the spot
   - Description: Narragansett, Rhode Island
   - Match: score 6.5 via coastal-in-title, kw:beach, geo:1080m, w>=1000, landscape
 
@@ -833,7 +833,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Swampyank — //commons.wikimedia.org/wiki/User:Swampyank
   - Dated: 2012-11-03 16:24:26
-  - 1600×1200px, 614 KB
+  - 1920×1440px, 614 KB
   - Description: Bailey's Beach in Newport Rhode Island RI after Hurricane Sandy. Off Ocean Drive.
   - Match: score 11 via coastal-in-title, name:sandy, kw:beach+ocean+sand, w>=1000, landscape
 
@@ -846,7 +846,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Wheeler Cowperthwaite
   - Dated: 2021-09-10 17:24:53
-  - 1600×1200px, 377 KB, shot 120 m from the spot
+  - 1920×1440px, 377 KB, shot 120 m from the spot
   - Description: Photos and videos from Scarborough State Beach in Rhode Island on Sept. 10, 2021.
   - Match: score 11.5 via coastal-in-title, name:scarborough, kw:beach, geo:120m, w>=1000, landscape
 - **`us-ri-scarborough-south-state-beach-2.jpg`** — “9-10-2021 Scarborough State Beach - 002” by Wheeler Cowperthwaite, Wikimedia Commons, CC BY 2.0
@@ -854,7 +854,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Wheeler Cowperthwaite
   - Dated: 2021-09-10 17:24:54
-  - 1600×1200px, 400 KB, shot 120 m from the spot
+  - 1920×1440px, 400 KB, shot 120 m from the spot
   - Description: Photos and videos from Scarborough State Beach in Rhode Island on Sept. 10, 2021.
   - Match: score 11.5 via coastal-in-title, name:scarborough, kw:beach, geo:120m, w>=1000, landscape
 - **`us-ri-scarborough-south-state-beach-3.jpg`** — “9-10-2021 Scarborough State Beach - 003” by Wheeler Cowperthwaite, Wikimedia Commons, CC BY 2.0
@@ -862,7 +862,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Wheeler Cowperthwaite
   - Dated: 2021-09-10 17:24:54
-  - 1600×1200px, 385 KB, shot 120 m from the spot
+  - 1920×1440px, 385 KB, shot 120 m from the spot
   - Description: Photos and videos from Scarborough State Beach in Rhode Island on Sept. 10, 2021.
   - Match: score 11.5 via coastal-in-title, name:scarborough, kw:beach, geo:120m, w>=1000, landscape
 
@@ -875,7 +875,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Sam Wheeler mrsamwheeler — https://unsplash.com/@mrsamwheeler
   - Dated: 2015-10-05
-  - 1600×1060px, 367 KB, shot 2449 m from the spot
+  - 1920×1272px, 367 KB, shot 2449 m from the spot
   - Description: New Shoreham, United States
   - Match: score 7 via coastal-in-title, kw:shore+sunset, geo:2449m, w>=1000, landscape
 - **`us-ri-scotch-beach-2.jpg`** — “Block Island Beach (96586991)” by Rockerboo, Wikimedia Commons, CC BY-SA 3.0
@@ -883,7 +883,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Rockerboo — https://500px.com/rockerBOO
   - Dated: 27 September 2014, 10:26:49
-  - 1600×1063px, 622 KB, shot 2450 m from the spot
+  - 1920×1276px, 622 KB, shot 2450 m from the spot
   - Description: 500px provided description: Block Island Beach [#beach ,#sand ,#block island]
   - Match: score 7 via coastal-in-title, kw:beach+sand, geo:2450m, w>=1000, landscape
 - **`us-ri-scotch-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Block Island North Lighthousse” by Elizabeth D. Boepple, Wikimedia Commons, CC BY-SA 3.0
@@ -891,7 +891,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Elizabeth D. Boepple — //commons.wikimedia.org/w/index.php?title=User:Eboepple&amp;action=edit&amp;redlink=1
   - Dated: Taken on 9 September 2013, 09:26:23
-  - 1600×1067px, 500 KB, shot 3900 m from the spot
+  - 1920×1280px, 500 KB, shot 3900 m from the spot
   - Description: Block Island North Light, Sandy Point, off the northern end of Corn Neck Rd. New Shoreham
   - Match: score 5 via kw:shore+sand+point, geo:3900m, w>=1000, landscape
 
@@ -904,7 +904,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Juliancolton — //commons.wikimedia.org/wiki/User:Juliancolton
   - Dated: 2010-08-04
-  - 1600×1071px, 410 KB, shot 3995 m from the spot
+  - 1920×1285px, 410 KB, shot 3995 m from the spot
   - Description: Two fishermen surfcasting at Misquamicut Beach, Rhode Island on a foggy and overcast morning.
   - Match: score 6 via coastal-in-title, kw:beach+surf, geo:3995m, w>=1000, landscape
 - **`us-ri-seaside-beach-club-beach-2.jpg`** — Misquamicut Beach, RI 2010-08-06 — Public domain (Wikimedia Commons), no attribution required
@@ -912,7 +912,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Juliancolton — //commons.wikimedia.org/wiki/User:Juliancolton
   - Dated: 2010-08-06
-  - 1600×1071px, 533 KB, shot 4231 m from the spot
+  - 1920×1285px, 533 KB, shot 4231 m from the spot
   - Description: Bird's-eye view of Misquamicut Beach, Rhode Island during peak tourist season.
   - Match: score 6 via coastal-in-title, kw:beach+sea, geo:4231m, w>=1000, landscape
 - **`us-ri-seaside-beach-club-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Sam's Snack Bar, Misquamicut Beach, RI — Public domain (Wikimedia Commons), no attribution required
@@ -920,7 +920,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Juliancolton — //commons.wikimedia.org/wiki/User:Juliancolton
   - Dated: 2010-08-04
-  - 1600×1071px, 579 KB, shot 2431 m from the spot
+  - 1920×1285px, 579 KB, shot 2431 m from the spot
   - Description: Sam's Snack Bar on Misquamicut Beach, Rhode Island .
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:2431m, w>=1000, landscape
 
@@ -933,14 +933,14 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Hope Alexander — https://www.wikidata.org/wiki/Q60311464
   - Dated: June 1973 date QS:P571,+1973-06-00T00:00
-  - 1600×1078px, 400 KB
+  - 1920×1294px, 400 KB
   - Match: score 11 via coastal-in-title, name:surf, kw:beach+surf+wave+waves, w>=1000, landscape
 - **`us-ri-surf-beach-2.jpg`** — Surfcasting on a foggy morning at Misquamicut Beach, RI — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Surfcasting_on_a_foggy_morning_at_Misquamicut_Beach,_RI.JPG
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Juliancolton — //commons.wikimedia.org/wiki/User:Juliancolton
   - Dated: 2010-08-04
-  - 1600×1071px, 410 KB, shot 26668 m from the spot
+  - 1920×1285px, 410 KB, shot 26668 m from the spot
   - Description: Two fishermen surfcasting at Misquamicut Beach, Rhode Island on a foggy and overcast morning.
   - Match: score 10 via coastal-in-title, name:surf, kw:beach+surf, geo:26668m, w>=1000, landscape
 - **`us-ri-surf-beach-3.jpg`** — New Shoreham sunset. (Unsplash) — CC0 (Wikimedia Commons), no attribution required
@@ -948,7 +948,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Sam Wheeler mrsamwheeler — https://unsplash.com/@mrsamwheeler
   - Dated: 2015-10-05
-  - 1600×1060px, 367 KB, shot 436 m from the spot
+  - 1920×1272px, 367 KB, shot 436 m from the spot
   - Description: New Shoreham, United States
   - Match: score 8 via coastal-in-title, kw:shore+sunset, geo:436m, w>=1000, landscape
 
@@ -961,7 +961,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: David Medcalf — https://www.geograph.org.uk/profile/180
   - Dated: 2008-07-07
-  - 1600×1200px, 62 KB, shot 5012859 m from the spot
+  - 640×480px, 62 KB, shot 5012859 m from the spot
   - Description: Surf and surfers off Porthmeor Beach Taken from The Island.
   - Match: score 11 via coastal-in-title, name:surfer, kw:beach+surf+surfer, geo:5012859m, w>=1000, landscape
 - **`us-ri-surfer-s-beach-2.jpg`** — “Southport Surf Life Savers at Main Beach, Queensland 01” by Kgbo, Wikimedia Commons, CC BY-SA 4.0
@@ -969,7 +969,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Kgbo — //commons.wikimedia.org/wiki/User:Kgbo
   - Dated: 2019-02-17 12:59:56
-  - 1600×1200px, 419 KB, shot 15724934 m from the spot
+  - 1920×1440px, 419 KB, shot 15724934 m from the spot
   - Description: Southport Surf Life Savers at Main Beach, Queensland
   - Match: score 11 via coastal-in-title, name:surfer, kw:beach+surf+surfer, geo:15724934m, w>=1000, landscape
 - **`us-ri-surfer-s-beach-3.jpg`** — “Southport Surf Life Savers at Main Beach, Queensland 02” by Kgbo, Wikimedia Commons, CC BY-SA 4.0
@@ -977,7 +977,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Kgbo — //commons.wikimedia.org/wiki/User:Kgbo
   - Dated: 2019-02-17 13:00:12
-  - 1600×1200px, 476 KB, shot 15724943 m from the spot
+  - 1920×1440px, 476 KB, shot 15724943 m from the spot
   - Description: Southport Surf Life Savers at Main Beach, Queensland
   - Match: score 11 via coastal-in-title, name:surfer, kw:beach+surf+surfer, geo:15724943m, w>=1000, landscape
 
@@ -990,7 +990,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Lis Burke — https://www.geograph.org.uk/profile/829
   - Dated: 2009-09-05
-  - 1600×1200px, 102 KB, shot 5044996 m from the spot
+  - 640×480px, 102 KB, shot 5044996 m from the spot
   - Description: Surfer in Lunan Bay A brisk breeze is blowing spray away from the tops of the breaking waves at the southern end of Lunan Bay.
   - Match: score 15 via coastal-in-title, name:surfer+end, kw:surf+surfer+surfing+wave, geo:5044996m, w>=1000, landscape
 - **`us-ri-surfer-s-end-2.jpg`** — The end of a surfing day (Unsplash) — CC0 (Wikimedia Commons), no attribution required
@@ -998,7 +998,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Martin Schmidli tinsu — https://unsplash.com/@tinsu
   - Dated: 2014-10-07
-  - 1600×1067px, 236 KB
+  - 1920×1280px, 236 KB
   - Description: Spain
   - Match: score 15 via coastal-in-title, name:surfer+end, kw:surf+surfer+surfing+sunset, w>=1000, landscape
 - **`us-ri-surfer-s-end-3.jpg`** — “Surfer (34140814)” by Celia Almaraz Ruiz, Wikimedia Commons, CC BY 3.0
@@ -1006,7 +1006,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Celia Almaraz Ruiz — https://500px.com/CeliaAlmarazRuiz
   - Dated: 13 April 2013, 21:37:00 (UTC)
-  - 1600×1066px, 387 KB, shot 5589200 m from the spot
+  - 1920×1280px, 387 KB, shot 5589200 m from the spot
   - Description: 500px provided description: This surfer ended up his session. The waves were not so good... But never is a bad time to have some fun in the beach :) [#landscape ,#sea ,#sunset ,#water ,#sun ,#rocks ,#natural ,#love ,#sport ,#surf ,#photography ,#pure ,#follow ,#Beach ,#celiamonkeys]
   - Match: score 15 via coastal-in-title, name:surfer+end, kw:beach+surf+surfer+wave, geo:5589200m, w>=1000, landscape
 
@@ -1019,7 +1019,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Zhengan — //commons.wikimedia.org/wiki/User:Zhengan
   - Dated: 2016-08-21 15:50:56
-  - 1600×1067px, 440 KB
+  - 1920×1280px, 440 KB
   - Description: Cliffs at Tappens Beach, Little Compton, RI
   - Match: score 11 via coastal-in-title, name:tappens, kw:beach+cliff+sunset, w>=1000, landscape
 - **`us-ri-tappens-beach-2.jpg`** — “Tappens Beach” by Zhengan, Wikimedia Commons, CC BY-SA 4.0
@@ -1027,7 +1027,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Zhengan — //commons.wikimedia.org/wiki/User:Zhengan
   - Dated: 2016-08-21 10:19:51
-  - 1600×1067px, 499 KB
+  - 1920×1280px, 499 KB
   - Description: Tappens Beach, Little Compton, RI
   - Match: score 8.5 via coastal-in-title, name:tappens, kw:beach, w>=1000, landscape
 - **`us-ri-tappens-beach-3.jpg`** — “Lloyd's Beach, Little Compton” by Beyond My Ken, Wikimedia Commons, CC BY-SA 4.0
@@ -1035,7 +1035,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Beyond My Ken — //commons.wikimedia.org/wiki/User:Beyond_My_Ken
   - Dated: 2021-04-06
-  - 1600×938px, 671 KB, shot 1439 m from the spot
+  - 1920×1125px, 671 KB, shot 1439 m from the spot
   - Description: Lloyd's Beach , Little Compton, Rhode Island.
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:1439m, w>=1000, landscape
 
@@ -1048,7 +1048,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Sam Wheeler mrsamwheeler — https://unsplash.com/@mrsamwheeler
   - Dated: 2015-10-05
-  - 1600×1060px, 367 KB, shot 2834 m from the spot
+  - 1920×1272px, 367 KB, shot 2834 m from the spot
   - Description: New Shoreham, United States
   - Match: score 7 via coastal-in-title, kw:shore+sunset, geo:2834m, w>=1000, landscape
 - **`us-ri-vaill-beach-2.png`** ⚠︎ *context, not the coast itself* — Block Island Southeast Lighthouse tower — CC0 (Wikimedia Commons), no attribution required
@@ -1056,7 +1056,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Waz8 — //commons.wikimedia.org/wiki/User:Waz8
   - Dated: 2012-06-15
-  - 1600×2350px, 4813 KB, shot 1701 m from the spot
+  - 1626×2388px, 4813 KB, shot 1701 m from the spot
   - Description: Southeast Lighthouse tower on Block Island, New Shoreham, RI
   - Match: score 6.5 via coastal-in-title, kw:shore+lighthouse, geo:1701m, w>=1000
 
@@ -1069,7 +1069,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Beyond My Ken — //commons.wikimedia.org/wiki/User:Beyond_My_Ken
   - Dated: 2021-04-06
-  - 1600×938px, 671 KB, shot 1703 m from the spot
+  - 1920×1125px, 671 KB, shot 1703 m from the spot
   - Description: Lloyd's Beach , Little Compton, Rhode Island.
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:1703m, w>=1000, landscape
 
@@ -1082,7 +1082,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Juliancolton — //commons.wikimedia.org/wiki/User:Juliancolton
   - Dated: 2010-08-04
-  - 1600×1071px, 410 KB, shot 2073 m from the spot
+  - 1920×1285px, 410 KB, shot 2073 m from the spot
   - Description: Two fishermen surfcasting at Misquamicut Beach, Rhode Island on a foggy and overcast morning.
   - Match: score 7 via coastal-in-title, kw:beach+surf, geo:2073m, w>=1000, landscape
 - **`us-ri-westerly-town-beach-2.jpg`** — Sunrise on Misquamicut Beach, RI, 2010-08-02 — Public domain (Wikimedia Commons), no attribution required
@@ -1090,7 +1090,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Juliancolton — //commons.wikimedia.org/wiki/User:Juliancolton
   - Dated: 2010-08-02
-  - 1600×1071px, 389 KB, shot 2342 m from the spot
+  - 1920×1285px, 389 KB, shot 2342 m from the spot
   - Description: Sunrise on Misquamicut Beach, Rhode Island .
   - Match: score 7 via coastal-in-title, kw:beach+sunrise, geo:2342m, w>=1000, landscape
 
@@ -1103,7 +1103,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Juliancolton — //commons.wikimedia.org/wiki/User:Juliancolton
   - Dated: 2010-08-04
-  - 1600×1071px, 410 KB, shot 3583 m from the spot
+  - 1920×1285px, 410 KB, shot 3583 m from the spot
   - Description: Two fishermen surfcasting at Misquamicut Beach, Rhode Island on a foggy and overcast morning.
   - Match: score 6 via coastal-in-title, kw:beach+surf, geo:3583m, w>=1000, landscape
 - **`us-ri-westerly-town-beach-832701-2.jpg`** — Sunrise on Misquamicut Beach, RI, 2010-08-02 — Public domain (Wikimedia Commons), no attribution required
@@ -1111,7 +1111,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Juliancolton — //commons.wikimedia.org/wiki/User:Juliancolton
   - Dated: 2010-08-02
-  - 1600×1071px, 389 KB, shot 3853 m from the spot
+  - 1920×1285px, 389 KB, shot 3853 m from the spot
   - Description: Sunrise on Misquamicut Beach, Rhode Island .
   - Match: score 6 via coastal-in-title, kw:beach+sunrise, geo:3853m, w>=1000, landscape
 

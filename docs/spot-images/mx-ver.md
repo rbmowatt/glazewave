@@ -11,7 +11,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: ed_devilinside — https://web.archive.org/web/20161017072043/http://www.panoramio.com/user/3728416?with_photo_id=46991133
   - Dated: 3 January 2010 (according to Exif data)
-  - 1600×1200px, 302 KB, shot 452 m from the spot
+  - 1920×1440px, 302 KB, shot 452 m from the spot
   - Description: Playa de Costa de Oro
   - Match: score 16 via coastal-in-title, name:arroyo+liza, kw:beach+playa, geo:452m, w>=1000, landscape
 - **`mx-ver-playa-arroyo-de-la-liza-2.jpg`** — “Costa de Oro vista hacia Roca Partida - panoramio” by ed_devilinside, Wikimedia Commons, CC BY-SA 3.0
@@ -19,7 +19,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: ed_devilinside — https://web.archive.org/web/20161017192549/http://www.panoramio.com/user/3728416?with_photo_id=46991128
   - Dated: 3 January 2010 (according to Exif data)
-  - 1600×1200px, 352 KB, shot 387 m from the spot
+  - 1920×1440px, 352 KB, shot 387 m from the spot
   - Description: Costa de Oro vista hacia Roca Partida
   - Match: score 13.5 via name:arroyo+liza, kw:beach, geo:387m, w>=1000, landscape
 - **`mx-ver-playa-arroyo-de-la-liza-3.jpg`** — “ArroyodelOro05” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 3.0
@@ -27,7 +27,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: AlejandroLinaresGarcia — //commons.wikimedia.org/wiki/User:AlejandroLinaresGarcia
   - Dated: 2014-04-16 09:07:10
-  - 1600×1064px, 307 KB, shot 679 m from the spot
+  - 1920×1277px, 307 KB, shot 679 m from the spot
   - Description: Beach at Arroyo del Oro, San Andrés Tuxtla, Veracruz, Mexico
   - Match: score 8.5 via name:arroyo, kw:beach, geo:679m, w>=1000, landscape
 
@@ -40,7 +40,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: AlejandroLinaresGarcia — //commons.wikimedia.org/wiki/User:AlejandroLinaresGarcia
   - Dated: 2014-04-16 11:00:10
-  - 1600×1064px, 571 KB, shot 342 m from the spot
+  - 1920×1277px, 571 KB, shot 342 m from the spot
   - Description: Rocks of jetty at Puerto de Balzapote, Veracruz
   - Match: score 11 via name:balzapote, kw:jetty+rocks, geo:342m, w>=1000, landscape
 - **`mx-ver-playa-balzapote-2.jpg`** — “Playa en Balzapote” by Koffermejia, Wikimedia Commons, CC BY-SA 4.0
@@ -48,7 +48,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Koffermejia — //commons.wikimedia.org/wiki/User:Koffermejia
   - Dated: 2016-03-21 14:02:46
-  - 1600×833px, 396 KB
+  - 1920×1000px, 396 KB
   - Description: Comunidad de San Andrés Tuxtla
   - Match: score 10 via coastal-in-title, name:balzapote, kw:beach+playa, w>=1000, landscape
 - **`mx-ver-playa-balzapote-3.jpg`** — “Balzapote02” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 3.0
@@ -56,7 +56,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: AlejandroLinaresGarcia — //commons.wikimedia.org/wiki/User:AlejandroLinaresGarcia
   - Dated: 2014-04-16 10:52:29
-  - 1600×1064px, 297 KB, shot 292 m from the spot
+  - 1920×1277px, 297 KB, shot 292 m from the spot
   - Description: Rock outcropping in the bay of Puerto de Balzapote, Veracruz
   - Match: score 9.5 via name:balzapote, kw:bay, geo:292m, w>=1000, landscape
 
@@ -69,7 +69,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: ed_devilinside — https://web.archive.org/web/20161017072043/http://www.panoramio.com/user/3728416?with_photo_id=46991133
   - Dated: 3 January 2010 (according to Exif data)
-  - 1600×1200px, 302 KB, shot 385 m from the spot
+  - 1920×1440px, 302 KB, shot 385 m from the spot
   - Description: Playa de Costa de Oro
   - Match: score 17 via coastal-in-title, name:costa+oro, kw:beach+playa, geo:385m, w>=1000, landscape
 - **`mx-ver-playa-costa-de-oro-2.jpg`** — “Roca Partida desde Playa Toro Prieto - panoramio” by ed_devilinside, Wikimedia Commons, CC BY-SA 3.0
@@ -77,7 +77,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: ed_devilinside — https://web.archive.org/web/20161017194435/http://www.panoramio.com/user/3728416?with_photo_id=46991161
   - Dated: Taken on 3 January 2010
-  - 1600×1200px, 295 KB, shot 4483 m from the spot
+  - 1920×1440px, 295 KB, shot 4483 m from the spot
   - Description: Roca Partida desde Playa Toro Prieto
   - Match: score 14 via coastal-in-title, name:costa+oro, kw:beach+playa, geo:4483m, w>=1000, landscape
 - **`mx-ver-playa-costa-de-oro-3.jpg`** — “Costa de Oro Vista hacia Arroyo de Lisa - panoramio” by ed_devilinside, Wikimedia Commons, CC BY-SA 3.0
@@ -85,7 +85,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: ed_devilinside — https://web.archive.org/web/20161017072047/http://www.panoramio.com/user/3728416?with_photo_id=46991136
   - Dated: 3 January 2010 (according to Exif data)
-  - 1600×1200px, 363 KB, shot 294 m from the spot
+  - 1920×1440px, 363 KB, shot 294 m from the spot
   - Description: Costa de Oro Vista hacia Arroyo de Lisa
   - Match: score 13.5 via name:costa+oro, kw:beach, geo:294m, w>=1000, landscape
 
@@ -98,7 +98,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: MILOAM — //commons.wikimedia.org/w/index.php?title=User:MILOAM&amp;action=edit&amp;redlink=1
   - Dated: 2023-10-08 12:38:30
-  - 1600×1639px, 444 KB, shot 1009 m from the spot
+  - 1920×1966px, 444 KB, shot 1009 m from the spot
   - Description: imagen tomada desde la playa hacia el mar
   - Match: score 11.5 via coastal-in-title, name:chachalacas, kw:playa+mar, geo:1009m, w>=1000
 - **`mx-ver-playa-de-chachalacas-2.jpg`** — “Playa Chachalacas 03” by Mdialuna95, Wikimedia Commons, CC BY 4.0
@@ -106,7 +106,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Mdialuna95 — //commons.wikimedia.org/w/index.php?title=User:Mdialuna95&amp;action=edit&amp;redlink=1
   - Dated: 2024-12-31 14:13:24
-  - 1600×2133px, 868 KB, shot 889 m from the spot
+  - 1920×2560px, 868 KB, shot 889 m from the spot
   - Description: Playa Chachalacas, Veracruz
   - Match: score 11.5 via coastal-in-title, name:chachalacas, kw:beach+playa, geo:889m, w>=1000
 - **`mx-ver-playa-de-chachalacas-3.jpg`** — “Playa Chachalacas 01” by Mdialuna95, Wikimedia Commons, CC BY 4.0
@@ -114,7 +114,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Mdialuna95 — //commons.wikimedia.org/w/index.php?title=User:Mdialuna95&amp;action=edit&amp;redlink=1
   - Dated: 2024-12-31 14:02:00
-  - 1600×2133px, 584 KB, shot 1240 m from the spot
+  - 1920×2560px, 584 KB, shot 1240 m from the spot
   - Description: Playa Chachalacas, Veracruz
   - Match: score 10.5 via coastal-in-title, name:chachalacas, kw:beach+playa, geo:1240m, w>=1000
 
@@ -127,7 +127,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: ed_devilinside — https://web.archive.org/web/20161013180642/http://www.panoramio.com/user/3728416?with_photo_id=28393095
   - Dated: 28 November 2008 (according to Exif data
-  - 1600×1200px, 293 KB, shot 596 m from the spot
+  - 1920×1440px, 293 KB, shot 596 m from the spot
   - Description: Playa La Mancha
   - Match: score 12 via coastal-in-title, name:mancha, kw:beach+playa, geo:596m, w>=1000, landscape
 
@@ -140,7 +140,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Adam Jones from Kelowna, BC, Canada — https://www.flickr.com/people/41000732@N04
   - Dated: 2014-12-19 14:19
-  - 1600×1200px, 793 KB, shot 753 m from the spot
+  - 1920×1440px, 793 KB, shot 753 m from the spot
   - Description: Beach Scene at Villa Rica - Veracruz - Mexico - 01
   - Match: score 14.5 via coastal-in-title, name:villa+rica, kw:beach, geo:753m, w>=1000, landscape
 - **`mx-ver-playa-de-villa-rica-2.jpg`** — “Panorama of Beach at Villa Rica - Veracruz - Mexico (15873925077)” by Adam Jones from Kelowna, BC, Canada, Wikimedia Commons, CC BY-SA 2.0
@@ -148,7 +148,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Adam Jones from Kelowna, BC, Canada — https://www.flickr.com/people/41000732@N04
   - Dated: 2014-12-19 14:25
-  - 1600×352px, 150 KB, shot 614 m from the spot
+  - 1920×422px, 150 KB, shot 614 m from the spot
   - Description: Panorama of Beach at Villa Rica - Veracruz - Mexico
   - Match: score 14.5 via coastal-in-title, name:villa+rica, kw:beach, geo:614m, w>=1000, landscape
 - **`mx-ver-playa-de-villa-rica-3.jpg`** ⚠︎ *context, not the coast itself* — “Beach Scene at Villa Rica - Veracruz - Mexico - 03 (15872274628)” by Adam Jones from Kelowna, BC, Canada, Wikimedia Commons, CC BY-SA 2.0
@@ -156,7 +156,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Adam Jones from Kelowna, BC, Canada — https://www.flickr.com/people/41000732@N04
   - Dated: 2014-12-19 14:26
-  - 1600×1200px, 880 KB, shot 602 m from the spot
+  - 1920×1440px, 880 KB, shot 602 m from the spot
   - Description: Beach Scene at Villa Rica - Veracruz - Mexico - 03
   - Match: score 14.5 via coastal-in-title, name:villa+rica, kw:beach, geo:602m, w>=1000, landscape
 
@@ -169,7 +169,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Luis Alvaz — //commons.wikimedia.org/wiki/User:Luisalvaz
   - Dated: 2019-01-05 18:09:49
-  - 1600×1200px, 293 KB
+  - 1920×1440px, 293 KB
   - Description: Gaviotas en una playa de Veracruz
   - Match: score 10 via coastal-in-title, name:gaviota, kw:beach+playa, w>=1000, landscape
 
@@ -182,7 +182,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: ed_devilinside — https://web.archive.org/web/20161017072043/http://www.panoramio.com/user/3728416?with_photo_id=46991133
   - Dated: 3 January 2010 (according to Exif data)
-  - 1600×1200px, 302 KB, shot 2815 m from the spot
+  - 1920×1440px, 302 KB, shot 2815 m from the spot
   - Description: Playa de Costa de Oro
   - Match: score 7 via coastal-in-title, kw:beach+playa, geo:2815m, w>=1000, landscape
 
@@ -195,7 +195,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: YoPoio — https://web.archive.org/web/20161013143455/http://www.panoramio.com/user/24052?with_photo_id=23928491
   - Dated: 5 January 2007 (according to Exif data)
-  - 1600×1200px, 540 KB, shot 805 m from the spot
+  - 1920×1440px, 540 KB, shot 805 m from the spot
   - Description: Puente Inconcluso para ir a Playa Hermosa sobre el Canal "El chijol"
   - Match: score 10.5 via coastal-in-title, name:hermosa, kw:playa, geo:805m, w>=1000, landscape
 
@@ -208,7 +208,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Donajiv — //commons.wikimedia.org/w/index.php?title=User:Donajiv&amp;action=edit&amp;redlink=1
   - Dated: 2026-02-02 16:29:42
-  - 1600×1200px, 418 KB, shot 83 m from the spot
+  - 1920×1440px, 418 KB, shot 83 m from the spot
   - Description: foto de playa en dia nublado
   - Match: score 7.5 via coastal-in-title, kw:playa, geo:83m, w>=1000, landscape
 - **`mx-ver-playa-la-bamba-2.jpg`** ⚠︎ *context, not the coast itself* — “Playa La Bamba, Veracruz” by Chivista, Wikimedia Commons, CC BY-SA 4.0
@@ -216,7 +216,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Chivista — //commons.wikimedia.org/wiki/User:Chivista
   - Dated: 2009-02-20 00:14:50
-  - 1600×1200px, 450 KB
+  - 1920×1440px, 450 KB
   - Description: La Bamba Beach in Veracruz (city)
   - Match: score 10 via coastal-in-title, name:bamba, kw:beach+playa, w>=1000, landscape
 
@@ -229,7 +229,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Amaro Oviedo — //commons.wikimedia.org/w/index.php?title=User:Amaro_Oviedo&amp;action=edit&amp;redlink=1
   - Dated: 2023-09-27
-  - 1600×2133px, 164 KB
+  - 960×1280px, 164 KB
   - Description: Esta playa es un buen lugar para pasar el rato para refrescarte o simplemente admirar el paisaje
   - Match: score 10.5 via coastal-in-title, name:maracaibo, kw:beach+playa+mar, w>=1000
 
@@ -242,7 +242,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: ed_devilinside — https://web.archive.org/web/20161016180609/http://www.panoramio.com/user/3728416?with_photo_id=48134398
   - Dated: 1 January 2001 (according to Exif data)
-  - 1600×1200px, 325 KB, shot 109 m from the spot
+  - 1280×960px, 325 KB, shot 109 m from the spot
   - Description: Playa de Mocambo
   - Match: score 13 via coastal-in-title, name:mocambo, kw:beach+playa, geo:109m, w>=1000, landscape
 - **`mx-ver-playa-mocambo-2.jpg`** — “Atardecer en playa Mocambo, Veracruz” by Ehécatl Cabrera, Wikimedia Commons, CC BY-SA 4.0
@@ -250,7 +250,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Ehécatl Cabrera — //commons.wikimedia.org/w/index.php?title=User:Ehecatl-c&amp;action=edit&amp;redlink=1
   - Dated: 2023-07-04 20:19:31
-  - 1600×1067px, 321 KB
+  - 1920×1280px, 321 KB
   - Description: Atardecer en playa Mocambo, Veracruz
   - Match: score 11 via coastal-in-title, name:mocambo, kw:beach+playa+sunset, w>=1000, landscape
 - **`mx-ver-playa-mocambo-3.jpg`** ⚠︎ *context, not the coast itself* — “Playa - panoramio (9)” by Emiliano Vazquez, Wikimedia Commons, CC BY-SA 3.0
@@ -258,7 +258,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Emiliano Vazquez — https://web.archive.org/web/20161025003147/http://www.panoramio.com/user/6303893?with_photo_id=77468333
   - Dated: Taken on 10 April 2011
-  - 1600×899px, 334 KB, shot 482 m from the spot
+  - 1920×1079px, 334 KB, shot 482 m from the spot
   - Description: Playa
   - Match: score 6.5 via coastal-in-title, kw:playa, geo:482m, w>=1000, landscape
 
@@ -271,7 +271,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: ed_devilinside — https://web.archive.org/web/20161016180609/http://www.panoramio.com/user/3728416?with_photo_id=48134398
   - Dated: 1 January 2001 (according to Exif data)
-  - 1600×1200px, 325 KB, shot 1943 m from the spot
+  - 1280×960px, 325 KB, shot 1943 m from the spot
   - Description: Playa de Mocambo
   - Match: score 7 via coastal-in-title, kw:beach+playa, geo:1943m, w>=1000, landscape
 - **`mx-ver-playa-penacho-del-indio-2.jpg`** — Playa de veracruz — CC0 (Wikimedia Commons), no attribution required
@@ -279,7 +279,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Donajiv — //commons.wikimedia.org/w/index.php?title=User:Donajiv&amp;action=edit&amp;redlink=1
   - Dated: 2026-02-02 16:29:42
-  - 1600×1200px, 418 KB, shot 1761 m from the spot
+  - 1920×1440px, 418 KB, shot 1761 m from the spot
   - Description: foto de playa en dia nublado
   - Match: score 5.5 via coastal-in-title, kw:playa, geo:1761m, w>=1000, landscape
 
@@ -292,7 +292,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: WendyAvilesR — //commons.wikimedia.org/w/index.php?title=User:WendyAvilesR&amp;action=edit&amp;redlink=1
   - Dated: 2024-07-29 07:49:19
-  - 1600×2133px, 597 KB, shot 992437 m from the spot
+  - 1920×2560px, 597 KB, shot 992437 m from the spot
   - Description: Ubicada en la Riviera Nayarita, esta playa tiene alrededor mde 50 años y es muy fecuentada por personas que practican surf. Este espacio se reconoce tambié como santuario de la tortuga Golfina
   - Match: score 9.5 via coastal-in-title, name:tortuga, kw:surf+playa, geo:992437m, w>=1000
 - **`mx-ver-playa-tortuga-2.jpg`** ⚠︎ *context, not the coast itself* — “Playa San Pancho 02” by WendyAvilesR, Wikimedia Commons, CC BY 4.0
@@ -300,7 +300,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: WendyAvilesR — //commons.wikimedia.org/w/index.php?title=User:WendyAvilesR&amp;action=edit&amp;redlink=1
   - Dated: 2024-07-29 07:48:35
-  - 1600×2133px, 1040 KB, shot 992406 m from the spot
+  - 1920×2560px, 1040 KB, shot 992406 m from the spot
   - Description: Ubicada en la Riviera Nayarita, esta playa tiene alrededor mde 50 años y es muy fecuentada por personas que practican surf. Este espacio se reconoce tambié como santuario de la tortuga Golfina
   - Match: score 9.5 via coastal-in-title, name:tortuga, kw:surf+playa, geo:992406m, w>=1000
 
@@ -313,7 +313,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: ed_devilinside — https://web.archive.org/web/20161016180609/http://www.panoramio.com/user/3728416?with_photo_id=48134398
   - Dated: 1 January 2001 (according to Exif data)
-  - 1600×1200px, 325 KB, shot 1201 m from the spot
+  - 1280×960px, 325 KB, shot 1201 m from the spot
   - Description: Playa de Mocambo
   - Match: score 7 via coastal-in-title, kw:beach+playa, geo:1201m, w>=1000, landscape
 - **`mx-ver-playa-tumbao-2.jpg`** ⚠︎ *context, not the coast itself* — “Playa - panoramio (9)” by Emiliano Vazquez, Wikimedia Commons, CC BY-SA 3.0
@@ -321,7 +321,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Emiliano Vazquez — https://web.archive.org/web/20161025003147/http://www.panoramio.com/user/6303893?with_photo_id=77468333
   - Dated: Taken on 10 April 2011
-  - 1600×899px, 334 KB, shot 720 m from the spot
+  - 1920×1079px, 334 KB, shot 720 m from the spot
   - Description: Playa
   - Match: score 6.5 via coastal-in-title, kw:playa, geo:720m, w>=1000, landscape
 
@@ -334,7 +334,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: ed_devilinside — https://web.archive.org/web/20161016180609/http://www.panoramio.com/user/3728416?with_photo_id=48134398
   - Dated: 1 January 2001 (according to Exif data)
-  - 1600×1200px, 325 KB, shot 2930 m from the spot
+  - 1280×960px, 325 KB, shot 2930 m from the spot
   - Description: Playa de Mocambo
   - Match: score 7 via coastal-in-title, kw:beach+playa, geo:2930m, w>=1000, landscape
 - **`mx-ver-playa-vicente-fox-2.jpg`** ⚠︎ *context, not the coast itself* — “Playa - panoramio (9)” by Emiliano Vazquez, Wikimedia Commons, CC BY-SA 3.0
@@ -342,7 +342,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Emiliano Vazquez — https://web.archive.org/web/20161025003147/http://www.panoramio.com/user/6303893?with_photo_id=77468333
   - Dated: Taken on 10 April 2011
-  - 1600×899px, 334 KB, shot 2551 m from the spot
+  - 1920×1079px, 334 KB, shot 2551 m from the spot
   - Description: Playa
   - Match: score 5.5 via coastal-in-title, kw:playa, geo:2551m, w>=1000, landscape
 

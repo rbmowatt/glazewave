@@ -11,7 +11,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Alfonzo Buscemi — https://web.archive.org/web/20161028161156/http://www.panoramio.com/user/5107822?with_photo_id=104506464
   - Dated: 17 March 2014 (original upload date)
-  - 1600×795px, 399 KB, shot 605 m from the spot
+  - 1200×596px, 399 KB, shot 605 m from the spot
   - Description: All beaches end somewhere...near Maroma
   - Match: score 8 via coastal-in-title, kw:beach+mar, geo:605m, w>=1000, landscape
 
@@ -24,7 +24,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Ken Thomas — //commons.wikimedia.org/wiki/User:Ken_Thomas
   - Dated: 2 February 2008, 12:42 −06:00
-  - 1600×1200px, 580 KB, shot 3611 m from the spot
+  - 1920×1440px, 580 KB, shot 3611 m from the spot
   - Description: Looking southwest down the windward (eastern) shore towards the Punta Sur (South Point) lighthouse. Photo taken with a Panasonic Lumix DMC-FZ50 on the island of Cozumel in Quintana Roo , Mexico .
   - Match: score 5 via kw:beach+shore+point+lighthouse, geo:3611m, w>=1000, landscape
 - **`mx-roo-la-playa-mas-hermosa-2.jpg`** — “Punta sur Cozumel Mexico (21201951090)” by dronepicr, Wikimedia Commons, CC BY 2.0
@@ -32,7 +32,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: dronepicr — https://www.flickr.com/people/132646954@N02
   - Dated: 2015-07-10 14:58
-  - 1600×1200px, 707 KB, shot 4621 m from the spot
+  - 1920×1440px, 707 KB, shot 4621 m from the spot
   - Description: Punta sur Cozumel Mexico
   - Match: score 5 via kw:beach+sand+rocks, geo:4621m, w>=1000, landscape
 
@@ -45,7 +45,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Serge Melki from Indianapolis, USA — https://www.flickr.com/people/67958110@N00
   - Dated: 2010-01-17 07:30
-  - 1600×488px, 201 KB, shot 283 m from the spot
+  - 1920×585px, 201 KB, shot 283 m from the spot
   - Description: Pano made of 6 shots. this is side to side of the bay. taken around 6:40am better geotag [?]
   - Match: score 13 via coastal-in-title, name:akumal, kw:beach+bay, geo:283m, w>=1000, landscape
 
@@ -58,7 +58,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Alfonzo Buscemi — https://web.archive.org/web/20161102035535/http://www.panoramio.com/user/5107822?with_photo_id=115225072
   - Dated: 29 December 2014 (original upload date)
-  - 1600×1063px, 847 KB, shot 432 m from the spot
+  - 1920×1276px, 847 KB, shot 432 m from the spot
   - Description: Relentless Sea
   - Match: score 8 via coastal-in-title, kw:beach+sea, geo:432m, w>=1000, landscape
 - **`mx-roo-playa-amansala-2.jpg`** — “Tulum Shore” by Eden, Janine and Jim from New York City, Wikimedia Commons, CC BY 2.0
@@ -66,7 +66,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Eden, Janine and Jim from New York City — https://www.flickr.com/people/10485077@N06
   - Dated: 22 June 2024, 14:05:42 (according to Exi
-  - 1600×900px, 543 KB, shot 1398 m from the spot
+  - 1920×1080px, 543 KB, shot 1398 m from the spot
   - Description: Tulum, Quintana Roo, Mexico
   - Match: score 7 via coastal-in-title, kw:beach+shore, geo:1398m, w>=1000, landscape
 - **`mx-roo-playa-amansala-3.jpg`** ⚠︎ *context, not the coast itself* — “Eden & Janine in the Surf, Tulum QR” by edenpictures, Wikimedia Commons, CC BY 2.0
@@ -74,7 +74,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: edenpictures
   - Dated: 2024-06-22 13:22:19
-  - 1600×900px, 412 KB, shot 1398 m from the spot
+  - 1920×1080px, 412 KB, shot 1398 m from the spot
   - Description: Tulum, Quintana Roo, Mexico
   - Match: score 7 via coastal-in-title, kw:beach+surf, geo:1398m, w>=1000, landscape
 
@@ -87,7 +87,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Eric Johnson — https://500px.com/ericrjohnson
   - Dated: before 11 July 2017, 19:49:12 (UTC)
-  - 1600×1000px, 485 KB, shot 504 m from the spot
+  - 1920×1200px, 485 KB, shot 504 m from the spot
   - Description: 500px provided description: Sunrise over the ocean in Canc?n, Mexico. [#sky ,#sunrise ,#sea ,#water ,#mexico ,#beach ,#cancun ,#travel ,#blue ,#sun ,#light ,#clouds ,#coast ,#ocean ,#waves ,#beautiful ,#evening ,#green ,#sand ,#pink ,#wave ,#seascape ,#dawn ,#surf ,#seashore ,#outdoors ,#riviera maya ,#quintana roo ,#no person]
   - Match: score 7 via kw:beach+surf+wave+waves, geo:504m, w>=1000, landscape
 - **`mx-roo-playa-ballenas-2.jpg`** — “Cancún Sunrise I (206474867)” by Eric Johnson, Wikimedia Commons, CC BY-SA 3.0
@@ -95,7 +95,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Eric Johnson — https://500px.com/ericrjohnson
   - Dated: before 5 April 2017, 18:29:24
-  - 1600×1066px, 409 KB, shot 496 m from the spot
+  - 1920×1280px, 409 KB, shot 496 m from the spot
   - Description: 500px provided description: Sunrise over the sea from the beach in Canc?n, Mexico. A line of buoys and floats to the left. [#sky ,#sunrise ,#sea ,#water ,#mexico ,#beach ,#cancun ,#travel ,#blue ,#sun ,#light ,#coast ,#ocean ,#waves ,#green ,#sand ,#seascape]
   - Match: score 7 via kw:beach+wave+waves+ocean, geo:496m, w>=1000, landscape
 - **`mx-roo-playa-ballenas-3.jpg`** — “Sunset on Ocean - Coucher de soleil sur l'océan (11355833124)” by Grand Parc - Bordeaux, France from France, Wikimedia Commons, CC BY 2.0
@@ -103,7 +103,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Grand Parc - Bordeaux, France from France — https://www.flickr.com/people/80641068@N07
   - Dated: 2013-12-11 18:24
-  - 1600×489px, 206 KB
+  - 1920×587px, 206 KB
   - Description: La côte basque ou Euskal Kostaldea en basque désigne le littoral compris entre l'embouchure de l'Adour à Anglet (France) et Muskiz à l'ouest de Bilbao (Espagne). Elle est baignée par la mer Cantabrique. Contrairement à la côte landaise c'est une côte rocheuse et découpée (surtout du côté espagnol) où se succèdent de prestigieuses stations balnéaires (Biarritz, Saint-Jean-de-Luz, Saint Sébastien, Zarautz, Lekeitio et Getxo). Une différence nette s'observe entre la partie espagnole et française: cette dernière s'étend d'Anglet à l'embouchure de la Bidassoa. Elle est relativement basse et rectili
   - Match: score 6 via coastal-in-title, kw:ocean+sunset, w>=1000, landscape
 
@@ -116,7 +116,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Ken Thomas — //commons.wikimedia.org/wiki/User:Ken_Thomas
   - Dated: 2 February 2008, 13:07 −06:00
-  - 1600×1000px, 740 KB, shot 3300 m from the spot
+  - 1920×1200px, 740 KB, shot 3300 m from the spot
   - Description: Waves and tides have created a void in this exposed reef on the windward (eastern) shoreline. Photo taken with a Panasonic Lumix DMC-FZ50 on the island of Cozumel in Quintana Roo , Mexico .
   - Match: score 7 via coastal-in-title, kw:beach+wave+waves+shore, geo:3300m, w>=1000, landscape
 - **`mx-roo-playa-bonita-2.jpg`** — Cozumel Windward Sunrise-27527 — Public domain (Wikimedia Commons), no attribution required
@@ -124,7 +124,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Ken Thomas — //commons.wikimedia.org/wiki/User:Ken_Thomas
   - Dated: 3 February 2008, 06:25 −06:00
-  - 1600×1200px, 454 KB, shot 2587 m from the spot
+  - 1920×1440px, 454 KB, shot 2587 m from the spot
   - Description: Waves break on the beach as the sun rises over the windward (eastern) shore. Photo taken with a Panasonic Lumix DMC-FZ50 on the island of Cozumel in Quintana Roo , Mexico .
   - Match: score 6 via kw:beach+wave+waves+shore, geo:2587m, w>=1000, landscape
 - **`mx-roo-playa-bonita-3.jpg`** — Cozumel Windward Sunrise Pano-27527 — Public domain (Wikimedia Commons), no attribution required
@@ -132,7 +132,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Ken Thomas — //commons.wikimedia.org/wiki/User:Ken_Thomas
   - Dated: 3 February 2008, 06:33 −06:00
-  - 1600×280px, 152 KB, shot 2566 m from the spot
+  - 1920×336px, 152 KB, shot 2566 m from the spot
   - Description: Sunrise over the beach on the windward (eastern) shore of Cozumel in Quintana Roo , Mexico . Panoramic image compiled with Autostitch from eighteen individual photographs, each taken with a Panasonic Lumix DMC-FZ50 mounted to a Panosaurus tripod head .
   - Match: score 6 via kw:beach+shore+sunrise, geo:2566m, w>=1000, landscape
 
@@ -145,7 +145,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Ken Thomas — //commons.wikimedia.org/wiki/User:Ken_Thomas
   - Dated: 2 February 2008, 13:07 −06:00
-  - 1600×1000px, 740 KB, shot 2540 m from the spot
+  - 1920×1200px, 740 KB, shot 2540 m from the spot
   - Description: Waves and tides have created a void in this exposed reef on the windward (eastern) shoreline. Photo taken with a Panasonic Lumix DMC-FZ50 on the island of Cozumel in Quintana Roo , Mexico .
   - Match: score 8 via coastal-in-title, kw:beach+wave+waves+shore, geo:2540m, w>=1000, landscape
 - **`mx-roo-playa-bosh-2.jpg`** — “Playa El Mirador - Cozumel, Mexico” by Jon Kolbert, Wikimedia Commons, CC BY-SA 4.0
@@ -153,7 +153,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Jon Kolbert — //commons.wikimedia.org/wiki/User:Jon_Kolbert
   - Dated: 2018-08-07 16:49:19
-  - 1600×1067px, 602 KB, shot 2630 m from the spot
+  - 1920×1280px, 602 KB, shot 2630 m from the spot
   - Description: View of the beach at Playa El Mirador in Cozumel, Mexico
   - Match: score 7 via coastal-in-title, kw:beach+playa, geo:2630m, w>=1000, landscape
 - **`mx-roo-playa-bosh-3.jpg`** — “Punta sur Cozumel Mexico (21201951090)” by dronepicr, Wikimedia Commons, CC BY 2.0
@@ -161,7 +161,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: dronepicr — https://www.flickr.com/people/132646954@N02
   - Dated: 2015-07-10 14:58
-  - 1600×1200px, 707 KB, shot 1736 m from the spot
+  - 1920×1440px, 707 KB, shot 1736 m from the spot
   - Description: Punta sur Cozumel Mexico
   - Match: score 6 via kw:beach+sand+rocks, geo:1736m, w>=1000, landscape
 
@@ -174,7 +174,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Sahid Martin Robles Bello — https://500px.com/Nyar
   - Dated: 19 July 2016, 23:24:02 (UTC)
-  - 1600×1068px, 491 KB, shot 304 m from the spot
+  - 1798×1200px, 491 KB, shot 304 m from the spot
   - Description: 500px provided description: No actual seashells, sadly. [#sky ,#sea ,#sunset ,#water ,#mexico ,#beach ,#cancun ,#travel ,#blue ,#sun ,#clouds ,#ocean ,#summer ,#s]
   - Match: score 10 via coastal-in-title, kw:beach+ocean+sea+pier, geo:304m, w>=1000, landscape
 - **`mx-roo-playa-caracol-2.jpg`** ⚠︎ *context, not the coast itself* — “Cancún, Playa Caracol - panoramio” by Николай Максимович, Wikimedia Commons, CC BY 3.0
@@ -182,7 +182,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Николай Максимович — https://web.archive.org/web/20161023163802/http://www.panoramio.com/user/4147970?with_photo_id=69548257
   - Dated: Taken on 4 March 2012
-  - 1600×1601px, 486 KB, shot 94 m from the spot
+  - 1920×1921px, 486 KB, shot 94 m from the spot
   - Description: Cancún, Playa Caracol
   - Match: score 12.5 via coastal-in-title, name:caracol, kw:beach+playa, geo:94m, w>=1000
 - **`mx-roo-playa-caracol-3.jpg`** ⚠︎ *context, not the coast itself* — “Playa Caracol - panoramio” by Николай Максимович, Wikimedia Commons, CC BY 3.0
@@ -190,7 +190,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Николай Максимович — https://web.archive.org/web/20161023163805/http://www.panoramio.com/user/4147970?with_photo_id=69548258
   - Dated: Taken on 4 March 2012
-  - 1600×1604px, 413 KB, shot 131 m from the spot
+  - 1920×1925px, 413 KB, shot 131 m from the spot
   - Description: Playa Caracol
   - Match: score 12.5 via coastal-in-title, name:caracol, kw:beach+playa, geo:131m, w>=1000
 
@@ -203,7 +203,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Dameon Hudson — https://web.archive.org/web/20161014002003/http://www.panoramio.com/user/3187235?with_photo_id=29801086
   - Dated: Taken on 3 July 2009
-  - 1600×809px, 1205 KB, shot 69 m from the spot
+  - 1759×889px, 1205 KB, shot 69 m from the spot
   - Description: Mom as she walks along the beach.
   - Match: score 15.5 via coastal-in-title, name:chac+mool, kw:beach, geo:69m, w>=1000, landscape
 - **`mx-roo-playa-chac-mool-2.jpg`** — “Cancun, Mexico (38614407175)” by Pedro Szekely from Los Angeles, USA, Wikimedia Commons, CC BY-SA 2.0
@@ -211,7 +211,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Pedro Szekely from Los Angeles, USA — https://www.flickr.com/people/43355249@N00
   - Dated: 2017-12-31 13:27
-  - 1600×1067px, 664 KB, shot 117 m from the spot
+  - 1920×1281px, 664 KB, shot 117 m from the spot
   - Description: Cancun, Mexico
   - Match: score 13.5 via name:chac+mool, kw:beach, geo:117m, w>=1000, landscape
 - **`mx-roo-playa-chac-mool-3.jpg`** ⚠︎ *context, not the coast itself* — “Bay View Grand Condos - panoramio” by Dameon Hudson, Wikimedia Commons, CC BY 3.0
@@ -219,7 +219,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Dameon Hudson — https://web.archive.org/web/20161013142701/http://www.panoramio.com/user/3187235?with_photo_id=29878437
   - Dated: 14 December 2009 (original upload date)
-  - 1600×1107px, 1435 KB, shot 150 m from the spot
+  - 1439×996px, 1435 KB, shot 150 m from the spot
   - Description: Bay View Grand Condos
   - Match: score 17 via coastal-in-title, name:chac+mool, kw:beach+bay, geo:150m, w>=1000, landscape
 
@@ -232,7 +232,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: vsvbg — https://web.archive.org/web/20161019150547/http://www.panoramio.com/user/5027594?with_photo_id=67048924
   - Dated: Taken on 7 December 2011
-  - 1600×1063px, 717 KB, shot 27 m from the spot
+  - 1920×1275px, 717 KB, shot 27 m from the spot
   - Description: Beach
   - Match: score 11.5 via coastal-in-title, name:tulum, kw:beach, geo:27m, w>=1000, landscape
 - **`mx-roo-playa-de-tulum-2.jpg`** ⚠︎ *context, not the coast itself* — “Tulum-Seaside-2010” by Bjørn Christian Tørrissen, Wikimedia Commons, CC BY-SA 3.0
@@ -240,7 +240,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Bjørn Christian Tørrissen — //commons.wikimedia.org/wiki/User:Uspn
   - Dated: 2010-12-14
-  - 1600×972px, 553 KB, shot 38 m from the spot
+  - 1920×1167px, 553 KB, shot 38 m from the spot
   - Description: The largest building of the Tulum complex, the guard tower nicknamed El Castillo, in the front and Templo del Dios del Viento (Temple of the Wind God) in the back. They appear particularly impressive when seen from the sea, on top of the cliffs. The picturesque beach below is also a breeding ground for sea turtles.
   - Match: score 14 via coastal-in-title, name:tulum, kw:beach+sea+cliff, geo:38m, w>=1000, landscape
 
@@ -253,7 +253,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: David Stanley from Nanaimo, Canada — https://www.flickr.com/people/79721788@N00
   - Dated: 12 January 2014, 11:13 (according to Exi
-  - 1600×1200px, 145 KB, shot 96 m from the spot
+  - 1024×768px, 145 KB, shot 96 m from the spot
   - Description: Playa Delfines is the most popular resort-free beach at Cancun, Mexico.
   - Match: score 13 via coastal-in-title, name:delfines, kw:beach+playa, geo:96m, w>=1000, landscape
 - **`mx-roo-playa-delfines-2.jpg`** ⚠︎ *context, not the coast itself* — “PLAYA DELFINES 02 - 01 ENE 2013 - panoramio” by ERVIN ESCOBAR, Wikimedia Commons, CC BY-SA 3.0
@@ -261,7 +261,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: ERVIN ESCOBAR — https://web.archive.org/web/20161028125917/http://www.panoramio.com/user/5726193?with_photo_id=92683377
   - Dated: Taken on 1 January 2013
-  - 1600×1200px, 334 KB, shot 204 m from the spot
+  - 1920×1440px, 334 KB, shot 204 m from the spot
   - Description: PLAYA DELFINES 02 - 01 ENE 2013
   - Match: score 13 via coastal-in-title, name:delfines, kw:beach+playa, geo:204m, w>=1000, landscape
 
@@ -274,7 +274,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Stuart Loxton — https://500px.com/stuartloxton
   - Dated: 11 June 2013, 17:32:27 (UTC)
-  - 1600×692px, 205 KB, shot 595 m from the spot
+  - 1920×831px, 205 KB, shot 595 m from the spot
   - Description: 500px provided description: Looking out across to Cancun [#landscape ,#sea ,#mexico ,#beach]
   - Match: score 8 via coastal-in-title, kw:beach+sea, geo:595m, w>=1000, landscape
 - **`mx-roo-playa-el-nino-2.jpg`** ⚠︎ *context, not the coast itself* — “View of Villa del Palmar Cancun from the ferry (8952698584)” by Kirt Edblom from Albany, Oregon, United States, Wikimedia Commons, CC BY-SA 2.0
@@ -282,7 +282,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Kirt Edblom from Albany, Oregon, United States — https://www.flickr.com/people/27190564@N02
   - Dated: 2012-07-16 15:47
-  - 1600×1200px, 546 KB, shot 540 m from the spot
+  - 1920×1440px, 546 KB, shot 540 m from the spot
   - Description: Villa Del Palmar Cancun, Mexico 2012
   - Match: score 6.5 via coastal-in-title, kw:mar, geo:540m, w>=1000, landscape
 
@@ -295,7 +295,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Own work
   - Dated: 2023-10-18 14:40:18
-  - 1600×900px, 497 KB, shot 105 m from the spot
+  - 1920×1080px, 497 KB, shot 105 m from the spot
   - Description: Aerial view of the Caribbean Sea from Gaviota Azul Beach, Cancun, Quintana Roo, Mexico.
   - Match: score 18 via coastal-in-title, name:gaviota+azul, kw:beach+sea+playa, geo:105m, w>=1000, landscape
 - **`mx-roo-playa-gaviota-azul-2.jpg`** ⚠︎ *context, not the coast itself* — “Cancún - Playa Gaviota Azul - Laguna Cancún y Nichupté” by Own work, Wikimedia Commons, CC BY-SA 4.0
@@ -303,7 +303,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Own work
   - Dated: 2023-10-18 14:43:16
-  - 1600×900px, 758 KB, shot 82 m from the spot
+  - 1920×1080px, 758 KB, shot 82 m from the spot
   - Description: Aerial view of Cancun Lagoon and Nichupte Lagoon from Gaviota Azul Beach, Cancun, Quintana Roo, Mexico.
   - Match: score 18 via coastal-in-title, name:gaviota+azul, kw:beach+playa+lagoon, geo:82m, w>=1000, landscape
 
@@ -316,7 +316,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Tobias Spitaler — https://500px.com/Tobiass7
   - Dated: 23 June 2017, 06:36:15 (UTC)
-  - 1600×1066px, 451 KB, shot 2623 m from the spot
+  - 1920×1280px, 451 KB, shot 2623 m from the spot
   - Description: 500px provided description: sunset [#sea ,#sunset ,#mexico]
   - Match: score 5 via kw:sea+sunset, geo:2623m, w>=1000, landscape
 
@@ -329,7 +329,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: ERVIN ESCOBAR — https://web.archive.org/web/20161024104857/http://www.panoramio.com/user/5726193?with_photo_id=84087442
   - Dated: 29 December 2012 (according to Exif data
-  - 1600×1200px, 598 KB, shot 531 m from the spot
+  - 1920×1440px, 598 KB, shot 531 m from the spot
   - Description: PLAYA LANGOSTA CANCUN
   - Match: score 12 via coastal-in-title, name:langosta, kw:beach+playa, geo:531m, w>=1000, landscape
 - **`mx-roo-playa-langosta-2.jpg`** — “The dock at VCI. - panoramio” by Alfonzo Buscemi, Wikimedia Commons, CC BY 3.0
@@ -345,7 +345,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Ncysea — //commons.wikimedia.org/wiki/User:Ncysea
   - Dated: 2021-06-17 22:11:57
-  - 1600×1200px, 914 KB, shot 160 m from the spot
+  - 1920×1440px, 914 KB, shot 160 m from the spot
   - Description: Beach of Cancún, Q ROO, Mexico at night
   - Match: score 7.5 via coastal-in-title, kw:beach, geo:160m, w>=1000, landscape
 
@@ -358,7 +358,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Clem Onojeghuo clemono2 — https://unsplash.com/@clemono2
   - Dated: 2016-07-18
-  - 1600×1160px, 595 KB, shot 3501 m from the spot
+  - 1920×1392px, 595 KB, shot 3501 m from the spot
   - Description: Cozumel, Mexico
   - Match: score 6 via coastal-in-title, kw:beach+ocean, geo:3501m, w>=1000, landscape
 - **`mx-roo-playa-mezcalitos-2.jpg`** — “Sunset (229437537)” by Tobias Spitaler, Wikimedia Commons, CC BY 3.0
@@ -366,7 +366,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Tobias Spitaler — https://500px.com/Tobiass7
   - Dated: 23 June 2017, 06:36:15 (UTC)
-  - 1600×1066px, 451 KB, shot 2607 m from the spot
+  - 1920×1280px, 451 KB, shot 2607 m from the spot
   - Description: 500px provided description: sunset [#sea ,#sunset ,#mexico]
   - Match: score 5 via kw:sea+sunset, geo:2607m, w>=1000, landscape
 
@@ -379,7 +379,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: ChavadorPaz — //commons.wikimedia.org/w/index.php?title=User:ChavadorPaz&amp;action=edit&amp;redlink=1
   - Dated: 2017-08-18
-  - 1600×1200px, 428 KB
+  - 1920×1440px, 428 KB
   - Description: La playa Zicatela ubicada al oriente de Puerto Escondido, Oaxaca, la playa es famosa por la práctica del surfing ya que año con año se realizan torneos nacionales e internacionales.
   - Match: score 9 via name:oriente, kw:surf+surfing+playa, w>=1000, landscape
 - **`mx-roo-playa-oriente-2.jpg`** — Ocean so blue (Unsplash L hK813fu9k) — CC0 (Wikimedia Commons), no attribution required
@@ -387,7 +387,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Clem Onojeghuo clemono2 — https://unsplash.com/@clemono2
   - Dated: 2016-07-18
-  - 1600×1160px, 595 KB, shot 3362 m from the spot
+  - 1920×1392px, 595 KB, shot 3362 m from the spot
   - Description: Cozumel, Mexico
   - Match: score 6 via coastal-in-title, kw:beach+ocean, geo:3362m, w>=1000, landscape
 - **`mx-roo-playa-oriente-3.jpg`** — Cozumel Coconuts-27527 — Public domain (Wikimedia Commons), no attribution required
@@ -395,7 +395,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Ken Thomas — //commons.wikimedia.org/wiki/User:Ken_Thomas
   - Dated: 2 February 2008, 13:45 −06:00
-  - 1600×1200px, 708 KB, shot 4810 m from the spot
+  - 1920×1440px, 708 KB, shot 4810 m from the spot
   - Description: The view looking south down the windward (eastern) shore from atop the cliffs at Coconuts Bar & Grill . Photo taken with a Panasonic Lumix DMC-FZ50 on the island of Cozumel in Quintana Roo , Mexico .
   - Match: score 5 via kw:beach+shore+cliff, geo:4810m, w>=1000, landscape
 
@@ -408,7 +408,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Николай Максимович — https://web.archive.org/web/20161023172055/http://www.panoramio.com/user/4147970?with_photo_id=69599118
   - Dated: Taken on 13 March 2012
-  - 1600×1598px, 856 KB, shot 727 m from the spot
+  - 1920×1918px, 856 KB, shot 727 m from the spot
   - Description: Playa Palancab. Cozumel
   - Match: score 7.5 via coastal-in-title, kw:beach+playa, geo:727m, w>=1000
 - **`mx-roo-playa-palancar-2.jpg`** ⚠︎ *context, not the coast itself* — “Playa Palancab. Cozumel - panoramio” by Николай Максимович, Wikimedia Commons, CC BY 3.0
@@ -416,7 +416,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Николай Максимович — https://web.archive.org/web/20161022051212/http://www.panoramio.com/user/4147970?with_photo_id=69599120
   - Dated: Taken on 13 March 2012
-  - 1600×1600px, 755 KB, shot 739 m from the spot
+  - 1920×1920px, 755 KB, shot 739 m from the spot
   - Description: Playa Palancab. Cozumel
   - Match: score 7.5 via coastal-in-title, kw:beach+playa, geo:739m, w>=1000
 - **`mx-roo-playa-palancar-3.jpg`** ⚠︎ *context, not the coast itself* — “Playa Palancab. Cozumel - panoramio (1)” by Николай Максимович, Wikimedia Commons, CC BY 3.0
@@ -424,7 +424,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Николай Максимович — https://web.archive.org/web/20161023172053/http://www.panoramio.com/user/4147970?with_photo_id=69599115
   - Dated: Taken on 13 March 2012
-  - 1600×1600px, 934 KB, shot 756 m from the spot
+  - 1920×1920px, 934 KB, shot 756 m from the spot
   - Description: Playa Palancab. Cozumel
   - Match: score 7.5 via coastal-in-title, kw:beach+playa, geo:756m, w>=1000
 
@@ -437,7 +437,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Николай Максимович — https://web.archive.org/web/20161026224511/http://www.panoramio.com/user/4147970?with_photo_id=71732859
   - Dated: Taken on 13 March 2012
-  - 1600×1603px, 684 KB, shot 361 m from the spot
+  - 1920×1924px, 684 KB, shot 361 m from the spot
   - Description: Playa Palancab. Cozumel
   - Match: score 8.5 via coastal-in-title, kw:beach+playa, geo:361m, w>=1000
 - **`mx-roo-playa-palancar-762823-2.jpg`** ⚠︎ *context, not the coast itself* — “Playa Palancab. Cozumel - panoramio” by Николай Максимович, Wikimedia Commons, CC BY 3.0
@@ -445,7 +445,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Николай Максимович — https://web.archive.org/web/20161022051212/http://www.panoramio.com/user/4147970?with_photo_id=69599120
   - Dated: Taken on 13 March 2012
-  - 1600×1600px, 755 KB, shot 391 m from the spot
+  - 1920×1920px, 755 KB, shot 391 m from the spot
   - Description: Playa Palancab. Cozumel
   - Match: score 8.5 via coastal-in-title, kw:beach+playa, geo:391m, w>=1000
 - **`mx-roo-playa-palancar-762823-3.jpg`** ⚠︎ *context, not the coast itself* — “Playa Palancab. Cozumel - panoramio (1)” by Николай Максимович, Wikimedia Commons, CC BY 3.0
@@ -453,7 +453,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Николай Максимович — https://web.archive.org/web/20161023172053/http://www.panoramio.com/user/4147970?with_photo_id=69599115
   - Dated: Taken on 13 March 2012
-  - 1600×1600px, 934 KB, shot 371 m from the spot
+  - 1920×1920px, 934 KB, shot 371 m from the spot
   - Description: Playa Palancab. Cozumel
   - Match: score 8.5 via coastal-in-title, kw:beach+playa, geo:371m, w>=1000
 
@@ -466,7 +466,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Николай Максимович — https://web.archive.org/web/20161026224511/http://www.panoramio.com/user/4147970?with_photo_id=71732859
   - Dated: Taken on 13 March 2012
-  - 1600×1603px, 684 KB, shot 1160 m from the spot
+  - 1920×1924px, 684 KB, shot 1160 m from the spot
   - Description: Playa Palancab. Cozumel
   - Match: score 7.5 via coastal-in-title, kw:beach+playa, geo:1160m, w>=1000
 - **`mx-roo-playa-palancar-reef-2.jpg`** ⚠︎ *context, not the coast itself* — “Playa Palancab. Cozumel - panoramio” by Николай Максимович, Wikimedia Commons, CC BY 3.0
@@ -474,7 +474,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Николай Максимович — https://web.archive.org/web/20161022051212/http://www.panoramio.com/user/4147970?with_photo_id=69599120
   - Dated: Taken on 13 March 2012
-  - 1600×1600px, 755 KB, shot 1189 m from the spot
+  - 1920×1920px, 755 KB, shot 1189 m from the spot
   - Description: Playa Palancab. Cozumel
   - Match: score 7.5 via coastal-in-title, kw:beach+playa, geo:1189m, w>=1000
 - **`mx-roo-playa-palancar-reef-3.jpg`** ⚠︎ *context, not the coast itself* — “Playa Palancab. Cozumel - panoramio (1)” by Николай Максимович, Wikimedia Commons, CC BY 3.0
@@ -482,7 +482,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Николай Максимович — https://web.archive.org/web/20161023172053/http://www.panoramio.com/user/4147970?with_photo_id=69599115
   - Dated: Taken on 13 March 2012
-  - 1600×1600px, 934 KB, shot 1170 m from the spot
+  - 1920×1920px, 934 KB, shot 1170 m from the spot
   - Description: Playa Palancab. Cozumel
   - Match: score 7.5 via coastal-in-title, kw:beach+playa, geo:1170m, w>=1000
 
@@ -495,7 +495,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Giorgio Galeotti — //commons.wikimedia.org/wiki/User:GiorgioGaleotti
   - Dated: 2014-08-17 19:40:28
-  - 1600×316px, 101 KB, shot 340 m from the spot
+  - 1920×379px, 101 KB, shot 340 m from the spot
   - Description: Playa Paraiso - Xelhà, Quintana Roo, Mexico
   - Match: score 13 via coastal-in-title, name:paraiso, kw:beach+playa, geo:340m, w>=1000, landscape
 - **`mx-roo-playa-paraiso-2.jpg`** — “Playa Paraiso - Xelhà, Quintana Roo, Mexico - August 17, 2014 02” by Giorgio Galeotti, Wikimedia Commons, CC BY 4.0
@@ -503,7 +503,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Giorgio Galeotti — //commons.wikimedia.org/wiki/User:GiorgioGaleotti
   - Dated: 2014-08-17 22:36:58
-  - 1600×1067px, 418 KB, shot 663 m from the spot
+  - 1920×1280px, 418 KB, shot 663 m from the spot
   - Description: Playa Paraiso - Xelhà, Quintana Roo, Mexico
   - Match: score 12 via coastal-in-title, name:paraiso, kw:beach+playa, geo:663m, w>=1000, landscape
 - **`mx-roo-playa-paraiso-3.jpg`** ⚠︎ *context, not the coast itself* — “Playa de Valdevaqueros” by Susiypunto, Wikimedia Commons, CC BY-SA 3.0
@@ -511,7 +511,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Susiypunto — //commons.wikimedia.org/w/index.php?title=User:Susiypunto&amp;action=edit&amp;redlink=1
   - Dated: 2012-07-29
-  - 1600×1067px, 365 KB
+  - 1920×1280px, 365 KB
   - Description: Playa virgen de Valdevaqueros, paraiso del Kite Surf
   - Match: score 10 via coastal-in-title, name:paraiso, kw:surf+playa, w>=1000, landscape
 
@@ -524,7 +524,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Ken Thomas — //commons.wikimedia.org/wiki/User:Ken_Thomas
   - Dated: 2 February 2008, 13:45 −06:00
-  - 1600×1200px, 708 KB, shot 2623 m from the spot
+  - 1920×1440px, 708 KB, shot 2623 m from the spot
   - Description: The view looking south down the windward (eastern) shore from atop the cliffs at Coconuts Bar & Grill . Photo taken with a Panasonic Lumix DMC-FZ50 on the island of Cozumel in Quintana Roo , Mexico .
   - Match: score 6 via kw:beach+shore+cliff, geo:2623m, w>=1000, landscape
 - **`mx-roo-playa-punta-morena-2.jpg`** — Ocean so blue (Unsplash L hK813fu9k) — CC0 (Wikimedia Commons), no attribution required
@@ -532,7 +532,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Clem Onojeghuo clemono2 — https://unsplash.com/@clemono2
   - Dated: 2016-07-18
-  - 1600×1160px, 595 KB, shot 3473 m from the spot
+  - 1920×1392px, 595 KB, shot 3473 m from the spot
   - Description: Cozumel, Mexico
   - Match: score 6 via coastal-in-title, kw:beach+ocean, geo:3473m, w>=1000, landscape
 
@@ -545,7 +545,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Adam Jones from Kelowna, BC, Canada — https://www.flickr.com/people/41000732@N04
   - Dated: 2016-12-25 10:24
-  - 1600×1200px, 650 KB
+  - 1920×1440px, 650 KB
   - Description: Surfers and Swimmers - Maderas Beach - North of San Juan del Sur - Nicaragua
   - Match: score 15 via coastal-in-title, name:san+juan, kw:beach+surf+surfer+surfing, w>=1000, landscape
 - **`mx-roo-playa-san-juan-2.jpg`** ⚠︎ *context, not the coast itself* — “Surfers Head for the Beach - Maderas Beach - North of San Juan del Sur - Nicaragua (31081035963) (2)” by Adam Jones from Kelowna, BC, Canada, Wikimedia Commons, CC BY-SA 2.0
@@ -553,7 +553,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Adam Jones from Kelowna, BC, Canada — https://www.flickr.com/people/41000732@N04
   - Dated: 2016-12-25 10:04
-  - 1600×1200px, 669 KB
+  - 1920×1440px, 669 KB
   - Description: Surfers Head for the Beach - Maderas Beach - North of San Juan del Sur - Nicaragua
   - Match: score 15 via coastal-in-title, name:san+juan, kw:beach+surf+surfer+surfing, w>=1000, landscape
 - **`mx-roo-playa-san-juan-3.jpg`** ⚠︎ *context, not the coast itself* — “Women Surfers-in-Training - Playa Hermosa - South of San Juan del Sur - Nicaragua (31060198224) (2)” by Adam Jones from Kelowna, BC, Canada, Wikimedia Commons, CC BY-SA 2.0
@@ -561,7 +561,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Adam Jones from Kelowna, BC, Canada — https://www.flickr.com/people/41000732@N04
   - Dated: 2016-12-26 11:41
-  - 1600×1200px, 570 KB
+  - 1920×1440px, 570 KB
   - Description: Women Surfers-in-Training - Playa Hermosa - South of San Juan del Sur - Nicaragua
   - Match: score 15 via coastal-in-title, name:san+juan, kw:beach+surf+surfer+surfing, w>=1000, landscape
 
@@ -574,7 +574,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Ken Thomas — //commons.wikimedia.org/wiki/User:Ken_Thomas
   - Dated: 2 February 2008, 13:45 −06:00
-  - 1600×1200px, 708 KB, shot 2066 m from the spot
+  - 1920×1440px, 708 KB, shot 2066 m from the spot
   - Description: The view looking south down the windward (eastern) shore from atop the cliffs at Coconuts Bar & Grill . Photo taken with a Panasonic Lumix DMC-FZ50 on the island of Cozumel in Quintana Roo , Mexico .
   - Match: score 6 via kw:beach+shore+cliff, geo:2066m, w>=1000, landscape
 
@@ -587,7 +587,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Alfonzo Buscemi — https://web.archive.org/web/20161016120550/http://www.panoramio.com/user/5107822?with_photo_id=48258019
   - Dated: 17 February 2011 (original upload date)
-  - 1600×1063px, 455 KB, shot 198 m from the spot
+  - 1920×1275px, 455 KB, shot 198 m from the spot
   - Description: days end
   - Match: score 5.5 via kw:beach, geo:198m, w>=1000, landscape
 
@@ -600,7 +600,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Alfonzo Buscemi — https://web.archive.org/web/20161016120550/http://www.panoramio.com/user/5107822?with_photo_id=48258019
   - Dated: 17 February 2011 (original upload date)
-  - 1600×1063px, 455 KB, shot 205 m from the spot
+  - 1920×1275px, 455 KB, shot 205 m from the spot
   - Description: days end
   - Match: score 5.5 via kw:beach, geo:205m, w>=1000, landscape
 
@@ -613,7 +613,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Wasquewhat — //commons.wikimedia.org/w/index.php?title=User:Wasquewhat&amp;action=edit&amp;redlink=1
   - Dated: 2017-08-25 18:55:56
-  - 1600×350px, 220 KB
+  - 1920×420px, 220 KB
   - Description: Xpu-Ha,Mexico,beach
   - Match: score 6.5 via name:xpu, kw:beach, w>=1000, landscape
 - **`mx-roo-playa-xpu-ha-2.jpg`** — “Hawaii Beach” by Maryifezue, Wikimedia Commons, CC BY-SA 4.0
@@ -621,7 +621,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Maryifezue — //commons.wikimedia.org/w/index.php?title=User:Maryifezue&amp;action=edit&amp;redlink=1
   - Dated: 2020-01-16 13:51:29
-  - 1600×1200px, 480 KB, shot 1855 m from the spot
+  - 1920×1440px, 480 KB, shot 1855 m from the spot
   - Description: Beach in Hawaii
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:1855m, w>=1000, landscape
 
@@ -634,7 +634,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: dronepicr — https://www.flickr.com/people/132646954@N02
   - Dated: 2018-04-06 17:52
-  - 1600×899px, 372 KB, shot 1053 m from the spot
+  - 1920×1079px, 372 KB, shot 1053 m from the spot
   - Description: Caribbean Sea in Mexico
   - Match: score 8 via coastal-in-title, kw:beach+sea, geo:1053m, w>=1000, landscape
 - **`mx-roo-punta-cocos-2.jpg`** — “Aerial of the Beaches of Isla Holbox (29725030548)” by dronepicr, Wikimedia Commons, CC BY 2.0
@@ -642,7 +642,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: dronepicr — https://www.flickr.com/people/132646954@N02
   - Dated: 2018-04-06 17:59
-  - 1600×900px, 482 KB, shot 978 m from the spot
+  - 1920×1080px, 482 KB, shot 978 m from the spot
   - Description: Caribbean Sea in Mexico
   - Match: score 8 via coastal-in-title, kw:beach+sea, geo:978m, w>=1000, landscape
 - **`mx-roo-punta-cocos-3.jpg`** — “Palms, Beach and the Sea (5307721736)” by Šarūnas Burdulis from USA, Wikimedia Commons, CC BY-SA 2.0
@@ -650,7 +650,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Šarūnas Burdulis from USA — https://www.flickr.com/people/24401970@N03
   - Dated: 2010-08-14 13:40
-  - 1600×1200px, 430 KB, shot 1848 m from the spot
+  - 1024×768px, 430 KB, shot 1848 m from the spot
   - Description: Palms, Beach and the Sea
   - Match: score 8 via coastal-in-title, kw:beach+sea+sand, geo:1848m, w>=1000, landscape
 
@@ -663,7 +663,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Eduardo Ysla — https://web.archive.org/web/20161011230653/http://www.panoramio.com/user/1551635?with_photo_id=8928715
   - Dated: Taken on 3 January 2008
-  - 1600×1066px, 424 KB, shot 472 m from the spot
+  - 1920×1279px, 424 KB, shot 472 m from the spot
   - Description: Playa Pinos (5 mins de Playa del Carmen), Quintana Roo, México
   - Match: score 8 via coastal-in-title, kw:beach+playa, geo:472m, w>=1000, landscape
 - **`mx-roo-punta-esmeralda-2.jpg`** — “Stranden ved Playa Del Carmen” by Alexander J, Wikimedia Commons, CC BY-SA 3.0
@@ -671,7 +671,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Alexander J — //commons.wikimedia.org/w/index.php?title=User:Ajuul&amp;action=edit&amp;redlink=1
   - Dated: 2011-12-26 14:38:43
-  - 1600×1195px, 799 KB, shot 1011 m from the spot
+  - 1920×1434px, 799 KB, shot 1011 m from the spot
   - Description: Stranden i Playa Del Carmen
   - Match: score 6.5 via coastal-in-title, kw:playa, geo:1011m, w>=1000, landscape
 - **`mx-roo-punta-esmeralda-3.jpg`** — “Lifeguards, on the playa - panoramio” by Alfonzo Buscemi, Wikimedia Commons, CC BY 3.0
@@ -679,7 +679,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Alfonzo Buscemi — https://web.archive.org/web/20161101045204/http://www.panoramio.com/user/5107822?with_photo_id=114112815
   - Dated: 21 November 2014 (original upload date)
-  - 1600×1200px, 865 KB, shot 1170 m from the spot
+  - 1920×1439px, 865 KB, shot 1170 m from the spot
   - Description: Lifeguards, on the playa
   - Match: score 6.5 via coastal-in-title, kw:playa, geo:1170m, w>=1000, landscape
 
@@ -692,7 +692,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Ken Thomas — //commons.wikimedia.org/wiki/User:Ken_Thomas
   - Dated: 2 February 2008, 13:45 −06:00
-  - 1600×1200px, 708 KB, shot 2189 m from the spot
+  - 1920×1440px, 708 KB, shot 2189 m from the spot
   - Description: The view looking south down the windward (eastern) shore from atop the cliffs at Coconuts Bar & Grill . Photo taken with a Panasonic Lumix DMC-FZ50 on the island of Cozumel in Quintana Roo , Mexico .
   - Match: score 6 via kw:beach+shore+cliff, geo:2189m, w>=1000, landscape
 - **`mx-roo-punta-morena-2.jpg`** — Ocean so blue (Unsplash L hK813fu9k) — CC0 (Wikimedia Commons), no attribution required
@@ -700,7 +700,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Clem Onojeghuo clemono2 — https://unsplash.com/@clemono2
   - Dated: 2016-07-18
-  - 1600×1160px, 595 KB, shot 3668 m from the spot
+  - 1920×1392px, 595 KB, shot 3668 m from the spot
   - Description: Cozumel, Mexico
   - Match: score 6 via coastal-in-title, kw:beach+ocean, geo:3668m, w>=1000, landscape
 - **`mx-roo-punta-morena-3.jpg`** — “El Mirador (9504463382)” by KSI Photography, Wikimedia Commons, CC BY 2.0
@@ -708,7 +708,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: KSI Photography — https://www.flickr.com/people/24491169@N05
   - Dated: 2013-08-07 12:17
-  - 1600×1060px, 500 KB, shot 27 m from the spot
+  - 1920×1272px, 500 KB, shot 27 m from the spot
   - Description: El Mirador
   - Match: score 5.5 via kw:beach, geo:27m, w>=1000, landscape
 
@@ -721,7 +721,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: diego_cue — https://web.archive.org/web/20161102182151/http://www.panoramio.com/user/156183?with_photo_id=109609589
   - Dated: Taken on 19 July 2014
-  - 1600×1067px, 430 KB, shot 9560 m from the spot
+  - 1920×1280px, 430 KB, shot 9560 m from the spot
   - Description: Playa Xcacel - Mexico
   - Match: score 10 via coastal-in-title, name:xcacel, kw:beach+playa, geo:9560m, w>=1000, landscape
 - **`mx-roo-xcacel-beach-2.jpg`** — “Playa Xcacel - Mexico - panoramio (1)” by diego_cue, Wikimedia Commons, CC BY-SA 3.0
@@ -729,7 +729,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: diego_cue — https://web.archive.org/web/20161031150820/http://www.panoramio.com/user/156183?with_photo_id=109609618
   - Dated: Taken on 19 July 2014
-  - 1600×1067px, 346 KB, shot 9937 m from the spot
+  - 1920×1280px, 346 KB, shot 9937 m from the spot
   - Description: Playa Xcacel - Mexico
   - Match: score 10 via coastal-in-title, name:xcacel, kw:beach+playa, geo:9937m, w>=1000, landscape
 - **`mx-roo-xcacel-beach-3.jpg`** — “Beach Xelha - panoramio” by René Bongard, Wikimedia Commons, CC BY-SA 3.0
@@ -737,7 +737,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: René Bongard — https://web.archive.org/web/20161013091700/http://www.panoramio.com/user/419593?with_photo_id=17811342
   - Dated: Taken on 4 January 2009
-  - 1600×1200px, 750 KB, shot 2312 m from the spot
+  - 1920×1440px, 750 KB, shot 2312 m from the spot
   - Description: beach Xelha
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:2312m, w>=1000, landscape
 

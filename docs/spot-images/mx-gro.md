@@ -11,7 +11,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: eurimaco — https://web.archive.org/web/20161102220356/http://www.panoramio.com/user/913461?with_photo_id=101439382
   - Dated: 6 January 2014 (original upload date)
-  - 1600×1200px, 699 KB, shot 1388 m from the spot
+  - 1920×1440px, 699 KB, shot 1388 m from the spot
   - Description: Playa Coral, Isla Ixtapa
   - Match: score 7 via coastal-in-title, kw:beach+playa, geo:1388m, w>=1000, landscape
 - **`mx-gro-playa-azul-grand-2.jpg`** — “Mar de Ixtapa” by PacayPaco, Wikimedia Commons, CC BY-SA 4.0
@@ -19,7 +19,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: PacayPaco — //commons.wikimedia.org/w/index.php?title=User:PacayPaco&amp;action=edit&amp;redlink=1
   - Dated: 2021-09-28 18:47:54
-  - 1600×1200px, 409 KB, shot 4059 m from the spot
+  - 1920×1440px, 409 KB, shot 4059 m from the spot
   - Description: Paisaje de olas del mar rompiendo en la orilla con fondo de islas de Ixtapa, Zihuatanejo, México.
   - Match: score 7 via coastal-in-title, kw:beach+wave+waves+mar, geo:4059m, w>=1000, landscape
 - **`mx-gro-playa-azul-grand-3.jpg`** — “Atardecer en la playa de Ixtapa” by PacayPaco, Wikimedia Commons, CC BY-SA 4.0
@@ -27,7 +27,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: PacayPaco — //commons.wikimedia.org/w/index.php?title=User:PacayPaco&amp;action=edit&amp;redlink=1
   - Dated: 2021-10-01 19:51:26
-  - 1600×1200px, 563 KB, shot 3733 m from the spot
+  - 1920×1440px, 563 KB, shot 3733 m from the spot
   - Description: Atardecer en la playa de Ixtapa, Zihuatanejo, México
   - Match: score 7 via coastal-in-title, kw:beach+playa+sunset, geo:3733m, w>=1000, landscape
 
@@ -40,7 +40,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: eurimaco — https://web.archive.org/web/20161102220356/http://www.panoramio.com/user/913461?with_photo_id=101439382
   - Dated: 6 January 2014 (original upload date)
-  - 1600×1200px, 699 KB, shot 1421 m from the spot
+  - 1920×1440px, 699 KB, shot 1421 m from the spot
   - Description: Playa Coral, Isla Ixtapa
   - Match: score 7 via coastal-in-title, kw:beach+playa, geo:1421m, w>=1000, landscape
 - **`mx-gro-playa-azul-grand-156510-2.jpg`** — “Mar de Ixtapa” by PacayPaco, Wikimedia Commons, CC BY-SA 4.0
@@ -48,7 +48,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: PacayPaco — //commons.wikimedia.org/w/index.php?title=User:PacayPaco&amp;action=edit&amp;redlink=1
   - Dated: 2021-09-28 18:47:54
-  - 1600×1200px, 409 KB, shot 4010 m from the spot
+  - 1920×1440px, 409 KB, shot 4010 m from the spot
   - Description: Paisaje de olas del mar rompiendo en la orilla con fondo de islas de Ixtapa, Zihuatanejo, México.
   - Match: score 7 via coastal-in-title, kw:beach+wave+waves+mar, geo:4010m, w>=1000, landscape
 - **`mx-gro-playa-azul-grand-156510-3.jpg`** — “Atardecer en la playa de Ixtapa” by PacayPaco, Wikimedia Commons, CC BY-SA 4.0
@@ -56,7 +56,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: PacayPaco — //commons.wikimedia.org/w/index.php?title=User:PacayPaco&amp;action=edit&amp;redlink=1
   - Dated: 2021-10-01 19:51:26
-  - 1600×1200px, 563 KB, shot 3684 m from the spot
+  - 1920×1440px, 563 KB, shot 3684 m from the spot
   - Description: Atardecer en la playa de Ixtapa, Zihuatanejo, México
   - Match: score 7 via coastal-in-title, kw:beach+playa+sunset, geo:3684m, w>=1000, landscape
 
@@ -69,7 +69,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Varranzl — //commons.wikimedia.org/w/index.php?title=User:Varranzl&amp;action=edit&amp;redlink=1
   - Dated: 2021-08-10 13:21:44
-  - 1600×1197px, 1233 KB, shot 8858370 m from the spot
+  - 1920×1436px, 1233 KB, shot 8858370 m from the spot
   - Description: Foto tomada en una playa natural en Vilela de Nemiña, termino municipal de Muxía en Coruña. Playa pintoresca, rodeada de montañas y parajes naturales. Con arena blanca y rocas. Zona con oleaje , zona surf.
   - Match: score 10 via coastal-in-title, name:blanca, kw:surf+playa, geo:8858370m, w>=1000, landscape
 - **`mx-gro-playa-blanca-2.jpg`** ⚠︎ *context, not the coast itself* — “Postal de Lota” by Dreamlista, Wikimedia Commons, CC BY 4.0
@@ -77,7 +77,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Dreamlista — //commons.wikimedia.org/w/index.php?title=User:Dreamlista&amp;action=edit&amp;redlink=1
   - Dated: 2013-12-29
-  - 1600×1200px, 402 KB, shot 6762133 m from the spot
+  - 1920×1440px, 402 KB, shot 6762133 m from the spot
   - Description: Fotografía panorámica capturada desde la zona norte de la ciudad de Lota. Se aprecia en la imagen las torres que utilizaban los mineros del carbón. a su vez el sector morro en donde se realizan campeonatos de surf, en conjunto con playa blanca siendo el centro geográfico de Chile.
   - Match: score 8 via name:blanca, kw:surf+playa, geo:6762133m, w>=1000, landscape
 - **`mx-gro-playa-blanca-3.jpg`** ⚠︎ *context, not the coast itself* — “Playa Barra de Potosí (5722596569)” by Jim Grandy, Wikimedia Commons, CC BY 2.0
@@ -85,7 +85,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Jim Grandy — https://www.flickr.com/people/76128899@N00
   - Dated: 2002-10-14 09:50
-  - 1600×1143px, 264 KB, shot 4627 m from the spot
+  - 1838×1313px, 264 KB, shot 4627 m from the spot
   - Description: Boats on the beach at Playa Barra de Potosí near Zihuatanejo, Mexico
   - Match: score 6 via coastal-in-title, kw:beach+playa, geo:4627m, w>=1000, landscape
 
@@ -98,7 +98,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: AlejandroLinaresGarcia — //commons.wikimedia.org/wiki/User:AlejandroLinaresGarcia
   - Dated: 2012-04-03
-  - 1600×1071px, 564 KB, shot 861 m from the spot
+  - 1920×1285px, 564 KB, shot 861 m from the spot
   - Description: Beach view of La Bocana, Marquelia, Guerrero
   - Match: score 11 via name:bocana, kw:beach+playa+mar, geo:861m, w>=1000, landscape
 - **`mx-gro-playa-la-bocana-2.jpg`** — “Bocana10” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 3.0
@@ -106,7 +106,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: AlejandroLinaresGarcia — //commons.wikimedia.org/wiki/User:AlejandroLinaresGarcia
   - Dated: 2012-04-03
-  - 1600×1071px, 506 KB, shot 896 m from the spot
+  - 1920×1285px, 506 KB, shot 896 m from the spot
   - Description: Beach view at La Bocana, Marquelia, Guerrero
   - Match: score 11 via name:bocana, kw:beach+playa+mar, geo:896m, w>=1000, landscape
 - **`mx-gro-playa-la-bocana-3.jpg`** — “Bocana09” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 3.0
@@ -114,7 +114,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: AlejandroLinaresGarcia — //commons.wikimedia.org/wiki/User:AlejandroLinaresGarcia
   - Dated: 2012-04-03
-  - 1600×1071px, 487 KB, shot 896 m from the spot
+  - 1920×1285px, 487 KB, shot 896 m from the spot
   - Description: Beach view at La Bocana, Marquelia, Guerrero
   - Match: score 11 via name:bocana, kw:beach+playa+mar, geo:896m, w>=1000, landscape
 
@@ -127,7 +127,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Wiper México — https://web.archive.org/web/20161029123937/http://www.panoramio.com/user/568665?with_photo_id=102094103
   - Dated: Taken on 8 January 2014
-  - 1600×1200px, 577 KB, shot 415 m from the spot
+  - 1920×1440px, 577 KB, shot 415 m from the spot
   - Description: Atardecer en Playa Larga, Guerrero.
   - Match: score 12 via coastal-in-title, name:larga, kw:playa+sunset, geo:415m, w>=1000, landscape
 - **`mx-gro-playa-larga-2.jpg`** ⚠︎ *context, not the coast itself* — “Panorama Paradise Beach” by Stimoroll, Wikimedia Commons, CC BY-SA 4.0
@@ -135,7 +135,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Stimoroll — //commons.wikimedia.org/wiki/User:Stimoroll
   - Dated: 2014-06-04 02:28:54
-  - 1600×364px, 219 KB, shot 11909743 m from the spot
+  - 1920×436px, 219 KB, shot 11909743 m from the spot
   - Description: Panorama of Paradise Beach in Kampos on the island of Kos, Dodecanese, South Aegean Region, Greece, on 4 June 2014. The panoramic photograph shows a wide beach on the Aegean Sea, with the shoreline, beach umbrellas, sun loungers, wooden walkways or access paths, tourist facilities and a view of turquoise water and the rocky coast of Kos. The frame includes waves at the shore, beach leisure infrastructure, mountains and rocky hills in the background, a small island or rock formation at sea, a sailboat, cloudy sky and a broad coastal landscape. The image documents the landscape of the tourist be
   - Match: score 7 via coastal-in-title, kw:beach+wave+waves+sea, geo:11909743m, w>=1000, landscape
 
@@ -148,7 +148,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Mitrush — //commons.wikimedia.org/wiki/User:Mitrush
   - Dated: 03/09/05
-  - 1600×1186px, 345 KB
+  - 1024×759px, 345 KB
   - Description: Playa Majahua en la Bahía de Puerto Marqués en Acapulco , Guerrero , México .
   - Match: score 11 via coastal-in-title, name:majahua, kw:beach+playa+mar, w>=1000, landscape
 - **`mx-gro-playa-majahua-2.jpg`** ⚠︎ *context, not the coast itself* — IslaIxtapaCoralBeach2 — Public domain (Wikimedia Commons), no attribution required
@@ -164,7 +164,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: AlejandroLinaresGarcia — //commons.wikimedia.org/wiki/User:AlejandroLinaresGarcia
   - Dated: 2010-12-25
-  - 1600×1071px, 585 KB, shot 1942 m from the spot
+  - 1920×1285px, 585 KB, shot 1942 m from the spot
   - Description: Playa Principal beach in Zihuatanejo, Mexico
   - Match: score 7 via coastal-in-title, kw:beach+playa, geo:1942m, w>=1000, landscape
 
@@ -177,7 +177,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: MaFernandaTj — //commons.wikimedia.org/wiki/User:MaFernandaTj
   - Dated: 2012-07-24 17:54:31
-  - 1600×901px, 344 KB
+  - 1920×1081px, 344 KB
   - Description: Pie de la Cuesta beach in Acapulco Guerrero, México.
   - Match: score 14 via coastal-in-title, name:pie+cuesta, kw:beach+playa, w>=1000, landscape
 - **`mx-gro-playa-pie-de-la-cuesta-2.jpg`** — “Pie de la Cuesta en Acapulco, México” by Esparta Palma from Ciudad de Mexico, Distrito Federal, Mexico, Wikimedia Commons, CC BY 2.0
@@ -185,7 +185,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Esparta Palma from Ciudad de Mexico, Distrito Federal, Mexico — https://www.flickr.com/people/66208256@N00
   - Dated: 2009-01-05 19:09
-  - 1600×1066px, 316 KB, shot 2233 m from the spot
+  - 1920×1279px, 316 KB, shot 2233 m from the spot
   - Description: (Descripción original en Flickr) Pie de la Cuesta, Acapulco, México [][?] No edition. Process (RAW-> JPEG) completely with opensource software: Xubuntu 8.10 + UFRaw Time elapsed: 115 days @Explore 20090220 Highest position: #198 on Sunday, February 22, 2009 Gracias! Thank You!
   - Match: score 13 via name:pie+cuesta, kw:beach+sunset, geo:2233m, w>=1000, landscape
 - **`mx-gro-playa-pie-de-la-cuesta-3.jpg`** — “Pie Cuesta” by Gio Canto, Wikimedia Commons, CC BY-SA 4.0
@@ -193,7 +193,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Gio Canto — //commons.wikimedia.org/wiki/User:Gio_Antonio
   - Dated: 2023-07-14 18:22:51
-  - 1600×900px, 619 KB, shot 1422 m from the spot
+  - 1920×1080px, 619 KB, shot 1422 m from the spot
   - Description: This photo depicts a beach in Pie de la Cuesta in the year 2023, during sunset.
   - Match: score 13 via name:pie+cuesta, kw:beach+sunset, geo:1422m, w>=1000, landscape
 
@@ -206,7 +206,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Ivan Hernández from Toronto, Canada — https://www.flickr.com/people/20605823@N00
   - Dated: Taken on 15 November 2005, 19:01
-  - 1600×1200px, 217 KB
+  - 1920×1440px, 217 KB
   - Description: Ocaso en Playa Revolcadero ( Acapulco , Guerrero , México ).
   - Match: score 11 via coastal-in-title, name:revolcadero, kw:beach+playa+sunset, w>=1000, landscape
 - **`mx-gro-playa-revolcadero-2.jpg`** ⚠︎ *context, not the coast itself* — “Playa Revolcadero, Acapulco, Guerrero- Revolcadero Beach, Acapulco, Guerrero (22700423344)” by Comisión Mexicana de Filmaciones from México D. F., México, Wikimedia Commons, CC BY-SA 2.0
@@ -214,7 +214,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Comisión Mexicana de Filmaciones from México D. F., México — https://www.flickr.com/people/58157206@N02
   - Dated: 2000-03-09 20:46
-  - 1600×1067px, 403 KB
+  - 1920×1280px, 403 KB
   - Description: Playa Revolcadero, Acapulco, Guerrero/ Revolcadero Beach, Acapulco, Guerrero
   - Match: score 10 via coastal-in-title, name:revolcadero, kw:beach+playa, w>=1000, landscape
 - **`mx-gro-playa-revolcadero-3.jpg`** ⚠︎ *context, not the coast itself* — “Playa Barra Vieja, Acapulco, Guerrero- Barra Vieja Beach, Acapulco, Guerrero (24613860289)” by Comisión Mexicana de Filmaciones from México D. F., México, Wikimedia Commons, CC BY-SA 2.0
@@ -222,7 +222,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Comisión Mexicana de Filmaciones from México D. F., México — https://www.flickr.com/people/58157206@N02
   - Dated: 2014-08-13 15:50
-  - 1600×2241px, 1094 KB
+  - 1920×2689px, 1094 KB
   - Description: Playa Barra Vieja, Acapulco, Guerrero/ Barra Vieja Beach, Acapulco, Guerrero
   - Match: score 9.5 via coastal-in-title, name:revolcadero, kw:beach+playa, w>=1000
 
@@ -235,7 +235,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: AlejandroLinaresGarcia — //commons.wikimedia.org/wiki/User:AlejandroLinaresGarcia
   - Dated: 2010-12-30
-  - 1600×1071px, 670 KB, shot 24 m from the spot
+  - 1920×1285px, 670 KB, shot 24 m from the spot
   - Description: Tlacopanocha Beach looking towards the malecón in Acapulco, Mexico
   - Match: score 11.5 via coastal-in-title, name:tlacopanocha, kw:beach, geo:24m, w>=1000, landscape
 - **`mx-gro-playa-tlacopanocha-2.jpg`** ⚠︎ *context, not the coast itself* — “MaleconFromTlacopanocha” by AlejandroLinaresGarcia, Wikimedia Commons, CC BY-SA 4.0
@@ -243,7 +243,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: AlejandroLinaresGarcia — //commons.wikimedia.org/wiki/User:AlejandroLinaresGarcia
   - Dated: 2010-12-30
-  - 1600×1071px, 594 KB, shot 4 m from the spot
+  - 1920×1285px, 594 KB, shot 4 m from the spot
   - Description: The boardwalk or malecon of Acapulco from Tlacopanocha Beach
   - Match: score 11 via name:tlacopanocha, kw:beach+boardwalk, geo:4m, w>=1000, landscape
 
