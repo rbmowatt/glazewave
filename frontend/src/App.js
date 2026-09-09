@@ -19,6 +19,7 @@ import SessionIndex from './components/session/SessionIndex';
 
 import SessionView from './components/session/View';
 import BoardIndex from './components/board/BoardIndex';
+import TopRated from './components/board/TopRated';
 import BoardView from './components/board/View';
 
 import { withRouter } from "react-router";
@@ -91,6 +92,8 @@ class App extends React.Component{
 
           <Route  path={'/board'} exact component={BoardIndex } />
           <Route path={'/board/create'} exact render={() => <Redirect to={{ pathname: '/board', state: { createBoard: true } }} />} />
+          {/* Above /board/:id, or the router matches "top-rated" as a board id. */}
+          <Route  path={'/board/top-rated'} exact component={TopRated } />
           <Route  path={'/board/:id'} exact component={BoardView }/>
 
           <Route component={Page404} />

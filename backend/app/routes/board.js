@@ -37,6 +37,50 @@ router.get('/:id/images', function (req, res) {
     });
 });
 
+/*
+ * Both of these are literal paths on a router that also has /:id, so they have
+ * to be declared above it or Express matches them as a board id and answers
+ * 500 from a findByPk on the string "ratings".
+ */
+
+// The list view's batch. It renders through ReactiveSearch against the
+// user_boards index, which deliberately carries no score, so the page's
+// board ids come back here in one request rather than one per card.
+router.get('/ratings', function (req, res) {
+  const ids = String(req.query.ids || '')
+    .split(',')
+    .map((id) => parseInt(id, 10))
+    .filter((id) => Number.isInteger(id) && id > 0);
+
+  if (!ids.length) return res.send([]);
+
+  BoardRatingService.make().publicForMany(ids)
+    .then(data => {
+      res.send(data);
+    })
+    .catch(err => {
+      console.error('GET /api/board/ratings failed:', err);
+      res.status(500).send({
+        message: "Error retrieving ratings for " + EntityType + "."
+      });
+    });
+});
+
+// Best rated models, filtered to those with enough riders to have a score.
+router.get('/top-rated', function (req, res) {
+  BoardRatingService.make().topRated({limit: req.query.limit})
+    .then(data => {
+      res.send(data);
+    })
+    .catch(err => {
+      console.error('GET /api/board/top-rated failed:', err);
+      res.status(500).send({
+        message: "Error retrieving top rated " + EntityType + "s."
+      });
+    });
+});
+
+
 // The community score for a model, which is not the rider's own rating: that
 // one lives on their user_boards row and is written through
 // PUT /api/user_board/:id. This router is deliberately unauthenticated, and a

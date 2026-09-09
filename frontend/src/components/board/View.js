@@ -19,8 +19,10 @@ import OwnerBadge from "./../layout/OwnerBadge";
 import TypeAheadInput from "./../form/TypeAheadInput";
 import { matchSuggestions } from "./../../lib/utils/suggest";
 import BoardSelect from "./forms/BoardSelect";
+import CommunityScore from "./CommunityScore";
 import { sizes } from "./data/board_sizes";
 import { loadBoards } from "./../../actions/board";
+import { loadBoardRating } from "./../../actions/board_rating";
 import { loadShapers } from "./../../actions/shaper";
 import { loadUserSessions } from "./../../actions/user_session";
 import {
@@ -38,6 +40,7 @@ const mapStateToProps = (state) => {
 		boards: state.boards.data,
 		shapers: state.shapers.data,
 		images: state.user_board_images,
+		boardRatings: state.board_ratings.byBoard,
 	};
 };
 
@@ -50,6 +53,7 @@ const mapDispachToProps = (dispatch) => {
 		loadShapers: (session, params) =>
 			dispatch(loadShapers(session, params)),
 		loadBoards: (session, params) => dispatch(loadBoards(session, params)),
+		loadRating: (session, id) => dispatch(loadBoardRating(session, id)),
 		editUserBoard: (session, params) =>
 			dispatch(updateUserBoard(session, params)),
 		loadBoardImages: (session, params) =>
@@ -95,6 +99,24 @@ class BoardView extends Component {
 	 * so they load either way; the catalog lists behind the two type-aheads do
 	 * not, because they only feed controls a non-owner cannot use.
 	 */
+	/*
+	 * The community score keys on the catalog model, and board_id only exists
+	 * once the board itself has loaded - so this cannot ride along in
+	 * componentDidMount the way the other four requests do.
+	 *
+	 * requestedRating rather than a store check: a failed request never fills
+	 * the store, and componentDidUpdate would re-fire it on every render.
+	 */
+	requestedRating = null;
+
+	componentDidUpdate() {
+		const board = this.props.board || {};
+		if (!board.board_id) return;
+		if (this.requestedRating === board.board_id) return;
+		this.requestedRating = board.board_id;
+		this.props.loadRating(this.props.session, board.board_id);
+	}
+
 	componentDidMount() {
 		this.props.loadBoard(this.props.session, {
 			id: this.props.match.params.id,
@@ -357,6 +379,23 @@ class BoardView extends Component {
 											size="1x"
 											static={!isOwner}
 										/>
+										<div className="gw-community-label">
+											{isOwner ? "Your rating" : "Owner's rating"}
+										</div>
+									</div>
+									{/* The model's score across every rider who
+									    owns one, which is the number this
+									    rider's own stars are worth comparing
+									    against. Absent until board_id lands. */}
+									<div className="detail-line gw-community-line">
+										<CommunityScore
+											rating={(this.props.boardRatings || {})[board.board_id]}
+										/>
+										{board.Board && board.Board.model && (
+											<div className="gw-community-model">
+												{board.Board.model}
+											</div>
+										)}
 									</div>
 									<div className="detail-line">
 										<div>

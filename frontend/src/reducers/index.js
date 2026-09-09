@@ -6,6 +6,7 @@ import user_sessions from './user_sessions';
 import user from './user';
 import api from './api';
 import boards from './boards';
+import board_ratings from './board_ratings';
 import session_images from './session_images';
 import user_board_images from './user_board_images';
 import shapers from './shapers';
@@ -14,6 +15,7 @@ import conditions from './conditions';
 export default combineReducers({
   api,
   boards,
+  board_ratings,
   session_images,
   shapers,
   user_board,
