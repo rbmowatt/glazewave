@@ -68,6 +68,33 @@ Because the documents are denormalized, **search results are served from Elastic
 
 Aggregations are separate: `UserService.getUserAverages` runs its own `aggs` query for the per-user condition averages and rating trend. The aggregated fields are mapped `float` explicitly — dynamic mapping can infer `string` from the first document and break the aggregation permanently.
 
+### Conditions, and borrowed readings
+
+`app/services/conditions/index.js` resolves the seven condition values from
+Open-Meteo for a point and a UTC hour. When the point's own marine cell has no
+wave data it borrows the nearest seeded spot within `FALLBACK_RADIUS_M` and
+answers from there instead.
+
+Blankness is judged on the four wave fields alone. Sea surface temperature comes
+off a different grid, so a cell can carry one without the other — La Paz bay
+returns 89.8F with all four wave fields null, and counting that temperature as
+data kept the fallback from ever firing at the one place it was written for.
+
+A borrowed reading is **labelled, not disguised**. `borrowed_m` rides on the
+`/api/sc` payload and is stored on `session_data`, so a session logged at a
+bayside beach shows "nearest reading, 42.7 km away" rather than passing another
+beach's swell off as its own. The distance is served rather than computed
+client-side, because `/api/spot/nearest` reorders by OSRM road distance once it
+has a ranking for the origin: the same La Paz-to-Tecolote pair is 42.7km of
+ocean and 65.1km of driving, and two panels showing different numbers for one
+pair reads as a bug. `RoadDistance.js` refuses to mix road and straight-line
+metres inside one response for the same reason.
+
+`FALLBACK_RADIUS_M` and the create-session chip radius are both 100km. They were
+25km, written for the density of the Jersey coast, and both went silent in La
+Paz where the nearest seeded spot is 44km away. Baja spacing is the calibration
+case now, not New Jersey.
+
 ### Auth — AWS Cognito
 
 JWT-based authentication with full JWK verification:
@@ -84,7 +111,8 @@ JWT-based authentication with full JWK verification:
 - **Session Tracking** — log surfing sessions with board, location, rating, conditions, and photos
 - **Board Management** — track boards by manufacturer, model, shaper, and rating
 - **Location Discovery** — Google Places for freeform location lookup; a seeded spot table for nearest-beach matching
-- **Conditions** — Open-Meteo forecast, marine and archive endpoints, resolved to the session's own date and coordinates so a backdated session gets the conditions from when it actually happened
+- **Report location pin** — the dashboard normally reports on the browser's own position; a pin overrides it so you can look at another coast, and the create-session form follows the pin rather than the machine
+- **Conditions** — Open-Meteo forecast, marine and archive endpoints, resolved to the session's own date and coordinates so a backdated session gets the conditions from when it actually happened, and labelled when the reading had to be borrowed from a nearby spot
 - **Image Uploads** — S3-backed with automatic resize via multer-sharp-s3
 - **Search** — Elasticsearch-powered faceted search across sessions and boards
 - **Auth** — AWS Cognito with admin-created users and group-based access
@@ -125,6 +153,113 @@ user:<uuid>
 
 This is what makes the licensing tractable: attribution is scoped to the rows that actually need it, and it can be retired when none remain.
 
+### Capturing spots from places people pick
+
+The seed has holes it cannot close on its own. Long Beach Island, an entire
+barrier island of real breaks, has **no seeded spot at all** — from Harvey Cedars
+the nearest is Chadwick Beach, 33km by air and 64km by road — because OSM does
+not name those beaches. So a place picked in the location field becomes a spot
+the first time a session is logged at it.
+
+`LocationService.promote()` runs inside `resolve()`, which every session save
+already awaits. A Google place that clears the coastal check below is written to
+`surfline_spots` with `source = 'user'` and `created_by`, and from then on it
+answers `/api/spot/nearest` and the search for everybody. Promotion is
+idempotent, silent on failure and never blocks a session save.
+
+**The gate is not optional.** Without it, one session logged at a home address
+puts that address in front of every user, permanently, on the first use.
+
+### The coastal check
+
+`app/services/Coastline.js` answers whether a point sits on land that touches
+open ocean, using the same two tests `build_spot_seed.js` applies — within
+`COAST_MAX_M` of level-1 shoreline, and at least `OPEN_BINS_MIN` of a 72-bearing
+sweep reaching `HORIZON_M` from a probe `OFFSHORE_M` seaward. Captured spots
+have to clear the same bar as seeded ones or the table stops meaning one thing.
+
+```
+GET /api/spot/coastal?lat=&lon=  ->  { coastal, known, shoreline_m, open }
+```
+
+**One deliberate difference from the seed.** The seed probes seaward of the
+single nearest shoreline segment. That is correct for named beach features,
+whose point sits on the beach. It is wrong for geocoded addresses, whose point
+sits mid-street: on a barrier island the nearest shoreline to a street is often
+the bay, the probe lands in enclosed water and every bearing is blocked. East
+83rd Street in Harvey Cedars is 265m from ocean shoreline and scores **0 of 72**
+under the seed's rule. `Coastline.js` probes the eight nearest candidates and
+keeps the best, which scores it 37. Measured verdicts:
+
+| point | shoreline | open | verdict |
+|---|---|---|---|
+| East 83rd St, Harvey Cedars NJ | 404m | 37/72 | pass |
+| Ship Bottom, LBI | 192m | 36/72 | pass |
+| Chadwick Beach (seeded) | 149m | 34/72 | pass |
+| Playa El Tecolote (seeded) | 343m | 13/72 | pass |
+| El muertito (seeded) | 872m | 17/72 | pass |
+| East 83rd St, Manhattan | 868m | 0/72 | fail |
+| Times Square | — | 0/72 | fail |
+| Newark, Toms River | — | 0/72 | fail |
+| Denver | — | 0/72 | unknown |
+
+Tecolote passing at 13 is the floor a real spot sits on, so `OPEN_BINS_MIN`
+cannot be raised much. `COAST_MAX_M` at 1000 is what keeps Manhattan out; at
+1500 it passes with 25/72 off the East River.
+
+`known: false` means no shoreline data within reach — a coast outside the
+extracted boxes, or somewhere inland. Both refuse. A real spot in Portugal stays
+unusable until a box is added and the extract regenerated, which is deliberate:
+promotion is on first use, so a guess puts a wrong row in front of everyone.
+
+The check runs when a location is **pinned**, not when the session form opens,
+and the verdict is stored on the pin. Opening the form costs no request, and the
+picker can say why a place was refused instead of silently offering no chip.
+
+### The coastline extract
+
+`data/coastline.bin` is the level-1 shoreline for the regions the seed covers:
+172,695 segments in 586 one-degree cells, **2.64MB**.
+
+```bash
+cd backend
+npm run coastline:build   # pulls GSHHG, writes the .bin and updates the manifest
+npm run coastline:fetch   # downloads the .bin the manifest names, verifying sha256
+```
+
+Three decisions worth not relitigating:
+
+**GSHHG is not read at runtime.** `gshhs_f.b` is 96MB and the seed script reads
+it with `fs.readFileSync`, which is right for a script that exits and wrong for a
+long-lived API. The box idles near 320MB available with 400MB of swap already in
+use. The service reads cells from the extract through a file descriptor with a
+24-cell LRU instead; RSS running the real classify is 59MB, which is baseline
+node.
+
+**High resolution, not full.** Full is 1.22M segments and 18.6MB across these
+regions against 173k and 2.64MB for high, and the two return identical verdicts
+on every point in the table above. A 1000m proximity test cannot tell 200m of
+coastline detail apart.
+
+**Not committed.** Regenerating writes a different file, so committing it would
+put a fresh 2.6MB copy in git history every time a coast is added. It lives in
+the uploads bucket, which the bucket policy already serves public-read, so the
+fetch needs no credentials and no SDK. `data/coastline.manifest.json` **is**
+committed and is what pins the deploy: the hash in the repo is the extract the
+code in the repo was tested against. `build_coastline.js` writes that manifest
+itself, because a hash that does not match the file it names sends every box
+into a download loop that cannot succeed.
+
+Adding a coast is three steps that can drift apart — regenerate, upload, commit
+the manifest. Commit the manifest without uploading and every box fails its next
+deploy. No `--acl` on the upload; the bucket is `BucketOwnerEnforced` and any
+`x-amz-acl` header returns 400 `AccessControlListNotSupported`:
+
+```bash
+aws s3 cp backend/data/coastline.bin \
+  s3://glazewave-uploads-<account>/data/coastline.bin --profile glazewave
+```
+
 ### Attribution
 
 `frontend/src/components/layout/Attribution.js` renders the required credit and is a licence obligation, not decoration:
@@ -132,7 +267,15 @@ This is what makes the licensing tractable: attribution is scoped to the rows th
 - Spot rows come from **OpenStreetMap contributors** under **ODbL**
 - Conditions come from **Open-Meteo** under **CC BY 4.0**
 
-GSHHG (LGPL) is used as a build-time filter only; no GSHHG geometry is written into the seed.
+**GSHHG (LGPL) is no longer build-time only.** It was, while it only filtered the
+seed. The coastal check that gates captured spots needs the same shoreline at
+request time, so a level-1 extract now ships as a runtime artifact
+(`data/coastline.bin`, see below) and is redistributed from the uploads bucket.
+No GSHHG geometry is written into `surfline_spots` — spot coordinates still come
+from OSM, Wikidata or Google — but the extract itself is a derived work and
+carries GSHHG's terms with it. `data/coastline.manifest.json` records the source
+release and licence, and the credit belongs next to the two above rather than in
+a build script's header comment.
 
 Field names are not protected, but the data behind them has to be OSM, Wikidata or contributed — never copied from a proprietary atlas. Google Places is not an alternative source here: its terms forbid persisting place data and forbid using it to build a competing database.
 
@@ -271,6 +414,21 @@ cd frontend
 NODE_OPTIONS=--openssl-legacy-provider npx react-scripts build
 ```
 
+The shoreline extract is fetched, not pulled, so it needs its own step **before**
+the restart — the service opens the file on first use and a box that skipped this
+refuses every pin instead of answering:
+
+```bash
+cd /opt/glazewave && git pull
+cd /opt/glazewave/backend && npm run coastline:fetch
+sudo systemctl restart glazewave-api
+```
+
+`coastline:fetch` is a no-op when the local hash already matches the manifest, so
+it is safe on every deploy rather than only the ones that change it. It writes to
+`.part` and renames only after the hash verifies, so a truncated download never
+becomes the file the API opens.
+
 Express builds its route table once at boot, so a `git pull` without a restart keeps
 serving the old router and a new endpoint returns Express's own `Cannot GET` page —
 which looks identical to a route that never got merged.
@@ -293,8 +451,9 @@ glazewave/
 │   │   ├── lib/             # Cognito JWT verification, demo token
 │   │   ├── config/          # Environment-driven configs
 │   │   ├── migrations/      # Sequelize migrations
-│   │   └── scripts/         # ES sync/backfill, spot seed, board and demo imports
-│   ├── data/                # Generated spot seed (surfline_spots.json)
+│   │   └── scripts/         # ES sync/backfill, spot seed, coastline build/fetch, board and demo imports
+│   ├── data/                # Generated spot seed (surfline_spots.json), coastline manifest;
+│   │                        #   coastline.bin is fetched here at deploy, not committed
 │   ├── bin/                 # Server entry point
 │   └── package.json
 ├── frontend/
@@ -303,7 +462,7 @@ glazewave/
 │   │   ├── reducers/        # Redux reducers
 │   │   ├── requests/        # BaseRequest + API request classes
 │   │   ├── middleware/      # Redux API middleware (auth, loading, dispatch)
-│   │   ├── lib/utils/       # Cognito, geolocation, cache, token storage
+│   │   ├── lib/utils/       # Cognito, geolocation, view-location pin, spots, distance, cache, token storage
 │   │   └── config/          # API, S3, Cognito, Google configs
 │   └── package.json
 ├── elastic/
@@ -326,6 +485,11 @@ glazewave/
 - [ ] Implement backend ACL (currently Cognito auth only, no role-based access)
 - [ ] `surfline_spots.geo` GEOMETRY holds inverted coordinates from the parked Surfline import; nothing reads it, and fixing the import plus a backfill comes before anything does
 - [ ] Open-Meteo marine returns nulls for La Paz — the model has no coverage at that point, so `swell_period` and `wave_period` come back null with heights at 0.0
+- [ ] A promoted spot keeps the Google place id as its primary key, so it does not follow the documented `<source>:<native id>` convention the way `POST /api/spot` does with `user:<uuid>`. Keeping the Google id is what lets the chip resolve to the location row that already exists; giving it a `user:` id would mean one physical place with two identities and a duplicate location row on selection. Decide which before contributed and captured spots have to be reconciled
+- [ ] The coastal check only answers inside the boxes in `build_coastline.js` — currently the US and Mexican coasts. Anywhere else reads `known: false` and refuses, so a real spot there cannot be captured until the box is added and the extract regenerated and uploaded
+- [ ] `LocationService.promote()` runs on every session save at a place, including ones already promoted. It returns after one indexed primary-key hit, but it is a hit
+- [ ] Sessions logged between the `FALLBACK_RADIUS_M` widening and the `borrowed_m` migration carry borrowed conditions with a null `borrowed_m`, so they show numbers with no label. Backfilling would have to be straight-line, which is the mismatch `borrowed_m` exists to avoid
+- [ ] GSHHG geometry is now redistributed rather than build-time only, so the LGPL credit belongs in `Attribution.js` alongside OSM and Open-Meteo
 
 ---
 
