@@ -107,9 +107,11 @@ class UserDashboard extends React.Component {
 	};
 
 	/*
-	createUserBoard already pushes the new board into user_boards.data, so
-	NewestBoards repaints on its own and the dashboard has nothing to refetch.
-	The created flag does have to be cleared: BoardPicker fires onChange off it
+	USER_BOARD_CREATED concats onto a list loaded created_at_DESC, so the new
+	board lands last and slice(0, 3) never reaches it. POST /api/user_board
+	also answers with the bare row - no Board, no UserBoardImage - so the card
+	would render without its model name or photo. Refetching fixes both.
+	The created flag still has to be cleared: BoardPicker fires onChange off it
 	and would reassign a session board the next time one mounts.
 	*/
 	boardCreated = () => {
@@ -118,6 +120,7 @@ class UserDashboard extends React.Component {
 			showBoardModal: false,
 			boardFormKey: this.state.boardFormKey + 1,
 		});
+		this.refreshBoards();
 	};
 
 	showSessionModal = () => {
@@ -131,27 +134,39 @@ class UserDashboard extends React.Component {
 
 	/*
 	Create clears user_sessions.created itself before it calls back, so unlike
-	the board modal there is nothing left to clean up here. The new session is
-	already in user_sessions.data, so LatestSessions repaints on its own.
+	the board modal there is nothing left to clean up here. The list still has
+	to be refetched: USER_SESSION_CREATED concats onto a list loaded
+	created_at_DESC, so the new session sorts last and slice(0, 3) never shows
+	it, and POST /api/session answers with the bare row - no Location,
+	UserBoard or SessionImages for the card's meta line and thumbnail.
 	*/
 	sessionCreated = () => {
 		this.setState({
 			showSessionModal: false,
 			sessionFormKey: this.state.sessionFormKey + 1,
 		});
+		this.refreshSessions();
+	};
+
+	refreshBoards = () => {
+		if (!this.props.session.isLoggedIn) return;
+		this.props.loadBoards(
+			new UserBoardRequests(this.props.session),
+			this.props.session
+		);
+	};
+
+	refreshSessions = () => {
+		if (!this.props.session.isLoggedIn) return;
+		this.props.loadSessions(
+			new UserSessionRequests(this.props.session),
+			this.props.session
+		);
 	};
 
 	componentDidMount() {
-		if (this.props.session.isLoggedIn) {
-			this.props.loadBoards(
-				new UserBoardRequests(this.props.session),
-				this.props.session
-			);
-			this.props.loadSessions(
-				new UserSessionRequests(this.props.session),
-				this.props.session
-			);
-		}
+		this.refreshBoards();
+		this.refreshSessions();
 	}
 
 	render() {
