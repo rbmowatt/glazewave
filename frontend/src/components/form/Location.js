@@ -121,6 +121,10 @@ class Location extends Component {
         if (lat === null || lat === undefined) return;
 
         this.props.onChange('conditionsError', null);
+        // The point asked about, which the payload cannot supply: its lat/lon
+        // is the point that answered, and those differ whenever the backend
+        // borrowed a nearby spot.
+        this.props.onChange('conditionsOrigin', {lat, lon: lng});
         getSessionData(lat, lng, this.props.at)
             .then(data => {
                 if (this.unmounted) return;

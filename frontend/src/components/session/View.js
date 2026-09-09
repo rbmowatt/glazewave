@@ -477,7 +477,15 @@ class SessionView extends Component {
                       </div>
                       {session.SessionDatum && (
                         <div className="detail-line">
-                          <Conditions session={session} />
+                          <Conditions
+                            session={session}
+                            origin={
+                              session.Location && {
+                                lat: session.Location.lat,
+                                lon: session.Location.lng,
+                              }
+                            }
+                          />
                         </div>
                       )}
                       <div className="card">

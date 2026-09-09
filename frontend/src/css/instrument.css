@@ -1506,3 +1506,16 @@ input.gw-title-field:focus {
 	padding: 6px;
 	box-shadow: none;
 }
+
+/* Says the seven values came from the nearest seeded spot rather than the
+   place on the session, which happens wherever open-meteo's wave model has no
+   coverage. Without it a borrowed reading is indistinguishable from a local
+   one, and the averages built on it drift with nothing on screen to say why. */
+.gw-borrowed {
+	font-family: var(--gw-mono);
+	font-size: 10px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--gw-faint);
+	margin-top: 10px;
+}

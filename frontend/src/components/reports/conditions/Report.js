@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { safeLocate, defaultOptions } from './../../../lib/utils/geolocator';
 import { ConditionsLoaded } from './../../../actions/conditions';
 import { getSessionData } from './helpers/session';
+import { borrowedMetres, asKm } from './../../../lib/utils/distance';
 
 const mapStateToProps = (state) => {
   return {
@@ -33,7 +34,10 @@ class Report extends React.Component {
     super();
     this.state = {
       data: {},
-      location: ''
+      location: '',
+      // The point asked about. The payload's lat/lon is the point that
+      // answered, and the two differ when the backend borrowed a spot.
+      origin: null
     }
     this.setState = this.setState.bind(this);
   }
@@ -89,6 +93,11 @@ class Report extends React.Component {
     getSessionData(lat, lon)
       .then(data => {
         if (!data || this.unmounted) return;
+        // Set with the data, not before the request. A failed lookup would
+        // otherwise leave the previous position's values next to the new
+        // origin, and the note would measure a distance between two points
+        // that never went together.
+        this.setState({ origin: { lat, lon } });
         // Only the located position goes into the store: the session form
         // reads it as a starting point, and a pinned coast is not where the
         // surfer is.
@@ -99,8 +108,9 @@ class Report extends React.Component {
   }
 
   render() {
-    const { data, location } = this.state;
+    const { data, location, origin } = this.state;
     const rows = ROWS.filter(row => data[row.key] !== null && data[row.key] !== undefined);
+    const borrowed = borrowedMetres(origin, data);
     return (
       <div>
         <div className="gw-eyebrow">Local report</div>
@@ -116,6 +126,9 @@ class Report extends React.Component {
               </div>
             ))}
           </div>
+        )}
+        {borrowed && (
+          <div className="gw-borrowed">Nearest reading, {asKm(borrowed)} away</div>
         )}
         {/* Open-Meteo is CC BY 4.0; the backend service comment says so too. */}
         <div className="gw-attribution">WEATHER DATA BY OPEN-METEO.COM</div>

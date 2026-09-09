@@ -1,4 +1,5 @@
 import React from 'react';
+import { borrowedMetres, asKm } from './../../lib/utils/distance';
 
 /*
  * Units are fixed by backend/app/services/conditions: heights are converted to
@@ -42,6 +43,13 @@ const Conditions = props => {
         );
     }
 
+    /*
+     * Only the callers that know which point was asked about pass an origin.
+     * The dashboard's lifetime averages have no single origin, so they get no
+     * note rather than a wrong one.
+     */
+    const borrowed = borrowedMetres(props.origin, values);
+
     return (
         <div>
             {props.title !== null && <div className="gw-eyebrow mb-3">{props.title || 'Conditions'}</div>}
@@ -56,6 +64,11 @@ const Conditions = props => {
                     </div>
                 ))}
             </div>
+            {borrowed && (
+                <div className="gw-borrowed">
+                    Nearest reading, {asKm(borrowed)} away
+                </div>
+            )}
         </div>
     );
 };
