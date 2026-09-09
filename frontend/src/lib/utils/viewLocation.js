@@ -27,6 +27,10 @@ export const readViewLocation = () => {
             return null;
         }
         return {
+            // Either a surfline_spots primary key or a Google place id.
+            // LocationService.resolve() takes both, so a session can be logged
+            // against a pin that has never been seeded.
+            id: parsed.id || null,
             lat: Number(parsed.lat),
             lon: Number(parsed.lon),
             name: parsed.name || ''
@@ -57,6 +61,7 @@ const announce = (location) => {
 export const writeViewLocation = (location) => {
     try {
         window.localStorage.setItem(KEY, JSON.stringify({
+            id: location.id || null,
             lat: Number(location.lat),
             lon: Number(location.lon),
             name: location.name || ''
@@ -69,6 +74,7 @@ export const writeViewLocation = (location) => {
     // way, and a listener that ignored a failed write would disagree with the
     // panels for the rest of the session.
     announce(readViewLocation() || {
+        id: location.id || null,
         lat: Number(location.lat),
         lon: Number(location.lon),
         name: location.name || ''

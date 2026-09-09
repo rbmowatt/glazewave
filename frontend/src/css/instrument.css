@@ -904,21 +904,16 @@ div.details div.privacy input[type="radio"] {
 	margin: 0;
 }
 /*
- * One label treatment for everything in the modal. The nearby-spot chips and
- * the conditions block were written as dashboard widgets and brought their own
- * eyebrow rules in with them, so the form was showing three sizes and three
- * colors of what reads as the same thing.
+ * Color only. Every metric for these - size, padding, margin - lives in the
+ * second modal block further down this file, whose selectors carry an
+ * attribute and therefore outrank anything written here. Adding a size to this
+ * block looks like it works and does nothing.
  */
 .modal .modal-main label,
-.modal .modal-main strong,
-.modal .modal-main .gw-eyebrow,
-.modal .modal-main .location-nearby-label {
+.modal .modal-main strong {
 	font-family: var(--gw-mono);
-	font-size: 10px !important;
-	letter-spacing: 0.16em;
 	text-transform: uppercase;
 	color: var(--gw-dim);
-	margin-bottom: 6px;
 }
 /* index.css forces .form-control white with !important for the inline
    editors, which is why these need it back. */
@@ -928,12 +923,6 @@ div.details div.privacy input[type="radio"] {
 	background: var(--gw-raised) !important;
 	border: 1px solid var(--gw-edge-strong) !important;
 	color: var(--gw-text) !important;
-	border-radius: 0;
-	/* height:auto because bootstrap's calc() height ignores the padding below
-	   and leaves datetime-local a different size from its text neighbours. */
-	height: auto;
-	padding: 9px 12px;
-	font-size: 13px;
 }
 
 /*
@@ -1447,7 +1436,19 @@ input.gw-title-field:focus {
 
 /* The addons' own label is a plain styled span; this pulls it onto the same
    mono eyebrow the rest of the app uses so it matches .gw-field-label. */
-.modal .modal-main label {
+/*
+ * This block and the one in the create-modal section above both style the same
+ * elements. These selectors carry an attribute, so they win on specificity no
+ * matter which is written first, which is why every metric belongs here and
+ * only paint belongs up there.
+ *
+ * The chip row and the conditions block came in as dashboard widgets carrying
+ * their own eyebrow rules, so the form was showing three sizes and three colors
+ * of what reads as one thing. They join the labels here.
+ */
+.modal .modal-main label,
+.modal .modal-main .gw-eyebrow,
+.modal .modal-main .location-nearby-label {
 	display: block;
 	font-family: var(--gw-mono);
 	font-size: 10px;
@@ -1468,9 +1469,52 @@ input.gw-title-field:focus {
 	display: block;
 	width: 100%;
 	font-size: 13px;
-	padding: 8px 10px;
-	margin: 0;
+	padding: 9px 12px;
+	/*
+	 * The gap that groups a label with its own field. `margin: 0` here beat
+	 * `.session-form .form-control { margin-bottom: 18px }` on specificity, so
+	 * every label sat flush against the bottom border of the field above it and
+	 * 6px from the field below - equidistant, which reads as belonging to
+	 * neither.
+	 */
+	margin: 0 0 18px;
 	border-radius: 0;
+	/* bootstrap's calc() height ignores the padding above. line-height has to
+	   be pinned with it: left to normal, datetime-local lays its spinner out
+	   two pixels taller than a plain text input and the row of fields steps. */
+	height: auto;
+	line-height: 1.5;
+}
+
+/*
+ * Chrome lays the datetime-local editor out from its own shadow content, which
+ * ignores line-height and finishes 2px taller than a text input at the same
+ * font size. Padding compensates so the column of fields does not step. Engines
+ * that size it like a text input will render this field 2px short instead,
+ * which is the smaller of the two wrongs and only visible side by side.
+ */
+.modal .modal-main input[type="datetime-local"] {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+/*
+ * bootstrap ships .mb-3 as !important, so the conditions eyebrow kept a 16px
+ * gap to its own content while every other label in the form sat at 6px. The
+ * class is on the shared component, which the dashboard renders too, so it is
+ * answered here rather than by editing markup the dashboard also uses.
+ */
+.modal .modal-main .gw-eyebrow.mb-3 {
+	margin-bottom: 6px !important;
+}
+
+/*
+ * The location field owns the spacing below itself, because the chip row and
+ * the suggestion list sit between the input and the next label. Without this
+ * the input's own 18px stacks with the wrapper's and opens a double gap.
+ */
+.modal .modal-main .location-field .form-control {
+	margin-bottom: 0;
 }
 
 /* The addons render the submit as a styled-components button with no class of

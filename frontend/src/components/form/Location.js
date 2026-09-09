@@ -43,6 +43,9 @@ class Location extends Component {
         results : [],
         open : false,
         nearby : [],
+        // The dashboard pin, offered as its own chip. Kept separate from
+        // nearby so it stays first and survives the spot list coming back empty.
+        pin : null,
         coords : null,
         lat : null,
         lng : null
@@ -59,8 +62,11 @@ class Location extends Component {
                 // suggestion, so a pin moving behind an in-progress form must
                 // not replace it.
                 if (this.state.location_id) return;
-                if (pin) return this.loadNearbySpots(pin.lat, pin.lon);
-                this.setState({nearby: [], coords: null});
+                if (pin) {
+                    this.setState({pin});
+                    return this.loadNearbySpots(pin.lat, pin.lon);
+                }
+                this.setState({nearby: [], coords: null, pin: null});
                 this.locateNearbySpots();
             });
         }
@@ -78,7 +84,10 @@ class Location extends Component {
      */
     locateNearbySpots = () => {
         const pin = readViewLocation();
-        if (pin) return this.loadNearbySpots(pin.lat, pin.lon);
+        if (pin) {
+            this.setState({pin});
+            return this.loadNearbySpots(pin.lat, pin.lon);
+        }
 
         /*
          * navigator.geolocation, not the geolocator package the report widgets
@@ -242,8 +251,8 @@ class Location extends Component {
      * session form saves. Both select paths end here, so a spot chip and a
      * Google suggestion emit the same shape.
      */
-    emitLocation = (lat, lon, name) => {
-        if (this.props.onLocation) this.props.onLocation({lat, lon, name});
+    emitLocation = (id, lat, lon, name) => {
+        if (this.props.onLocation) this.props.onLocation({id, lat, lon, name});
     }
 
     handleSelectResult = (result) => {
@@ -273,6 +282,7 @@ class Location extends Component {
         // "Ocean Grove Beach, Ocean Grove, NJ 07756, USA" is not.
         this.props.onChange('location_name', place.displayName || place.formattedAddress);
         this.emitLocation(
+            place.id,
             place.location.lat(),
             place.location.lng(),
             place.displayName || place.formattedAddress
@@ -284,10 +294,11 @@ class Location extends Component {
     }
 
     /*
-     * A spot id is a surfline_spots primary key, not a Google place id, and it
-     * lands in sessions.location_id the same way one does. LocationService
-     * reads that table before it calls Google, so nothing on this path needs a
-     * key or a billed details request.
+     * Takes a seeded spot and the pinned-location chip alike, so the id here is
+     * a surfline_spots primary key OR a Google place id. Both land in
+     * sessions.location_id the same way: LocationService reads the spot table
+     * before it calls Google, so a seeded id needs no key and no billed details
+     * request, and a place id falls through to the lookup that does.
      */
     handleSelectSpot = (spot) => {
         // Anything typed before the chip was tapped opened an autocomplete
@@ -310,7 +321,7 @@ class Location extends Component {
         });
         this.props.onChange('location_id', spot.id);
         this.props.onChange('location_name', spot.name);
-        this.emitLocation(lat, lng, spot.name);
+        this.emitLocation(spot.id, lat, lng, spot.name);
         this.setState({lat, lng}, this.fetchConditions);
     }
 
@@ -330,7 +341,21 @@ class Location extends Component {
     }
 
     render() {
-        const {value, search, open, loadError, nearby, location_id, results} = this.state
+        const {value, search, open, loadError, nearby, pin, location_id, results} = this.state
+
+        /*
+         * The pinned place leads, whether or not it is a seeded spot. That is
+         * how an address typed into the dashboard picker becomes a session
+         * location and starts accumulating readings, rather than being
+         * unreachable because the Overpass seed never heard of it.
+         *
+         * Deduped by id: a pin that IS a seeded spot would otherwise appear
+         * twice, once as itself and once as the nearest thing to itself.
+         */
+        const chips = pin && pin.id
+            ? [{id: pin.id, name: pin.name, lat: pin.lat, lon: pin.lon, distance_m: null}]
+                .concat(nearby.filter(spot => String(spot.id) !== String(pin.id)))
+            : nearby
         const { fieldProps, fieldState, id, name, label, hint } = this.props
 
         const {
@@ -418,11 +443,13 @@ class Location extends Component {
               )}
             </div>
 
-            {nearby.length > 0 && !location_id && !search && (
+            {chips.length > 0 && !location_id && !search && (
               <div className="location-nearby">
-                <div className="location-nearby-label">Spots near you</div>
+                <div className="location-nearby-label">
+                  {pin ? 'Spots near your location' : 'Spots near you'}
+                </div>
                 <div className="location-nearby-chips">
-                  {nearby.map(spot => (
+                  {chips.map(spot => (
                     <button
                       key={spot.id}
                       /* Bare buttons submit the react-advanced-form Form. */
