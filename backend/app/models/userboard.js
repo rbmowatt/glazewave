@@ -1,6 +1,7 @@
 'use strict';
 const {getUserBoardQueue, getClient} = require('./../services/queue/BetterQueue')
 const cascade = require('./../services/elastic/Cascade')
+const boardRating = require('./../services/rating/BoardRating')
 
 const userBoardUpsertCallback = async (board, options) => {
   getUserBoardQueue().push(board).on('finish', function (result) {
@@ -25,6 +26,20 @@ const userBoardUpdateCallback = async (board, options) => {
   }
 }
 
+/*
+ * A rating changed, or this board now points at a different catalog model.
+ * Either one moves a model's community score, and repointing moves two of
+ * them - the model that lost the rating and the model that gained it.
+ *
+ * previous() is the only way to reach the model it used to point at, and only
+ * from inside this hook: afterUpdate runs before changed() is reset, and once
+ * it returns the prior value is gone.
+ */
+const ratingRecomputeCallback = async (board, options) => {
+  if (!cascade.changedAny(options, board, ['rating', 'board_id'])) return
+  await boardRating.recompute([board.board_id, board.previous('board_id')])
+}
+
 module.exports = (sequelize, DataTypes) => {
   const UserBoard = sequelize.define('UserBoard', {
     id: {
@@ -44,6 +59,13 @@ module.exports = (sequelize, DataTypes) => {
    UserBoard.addHook('afterCreate', userBoardUpsertCallback )
    UserBoard.addHook('afterUpdate', userBoardUpdateCallback )
    /*
+    * No changed-column check on create: afterCreate reports every column as
+    * changed anyway, and a board can arrive already rated - POST /api/user_board
+    * passes the whole body through.
+    */
+   UserBoard.addHook('afterCreate', (board) => boardRating.recompute([board.board_id]))
+   UserBoard.addHook('afterUpdate', ratingRecomputeCallback )
+   /*
     * The sessions survive the board, and their documents keep its name and
     * model until something rewrites them.
     *
@@ -59,6 +81,10 @@ module.exports = (sequelize, DataTypes) => {
    UserBoard.addHook('afterDestroy', async (board, options) => {
     getClient().delete({id : board.id, index : process.env.ELASTIC_USER_BOARDS_INDEX})
     cascade.queueSessions(options.cascadeSessionIds || [])
+    // The instance keeps its own column values after the row is gone. Only
+    // sessions.board_id was cleared by the delete, and that is a different
+    // table, so the catalog model is still reachable from here.
+    await boardRating.recompute([board.board_id])
   })
 
   UserBoard.associate = function(models) {

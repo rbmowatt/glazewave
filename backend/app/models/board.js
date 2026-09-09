@@ -54,6 +54,7 @@ module.exports = (sequelize, DataTypes) => {
     Board.belongsTo(models.Manufacturer);
     Board.belongsTo(models.Shaper);
     Board.hasMany(models.BoardImage, {foreignKey: 'board_id'});
+    Board.hasOne(models.BoardRating, {foreignKey: 'board_id'});
     Board.hasMany(models.BoardModelSource, {foreignKey: 'board_id'});
   };
   return Board;

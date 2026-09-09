@@ -1,6 +1,7 @@
 const { Router } = require('express');
 const BaseService = require('./../services/BoardService');
 const BoardImageService = require('./../services/BoardImageService');
+const BoardRatingService = require('./../services/BoardRatingService');
 const EntityType = 'Board';
 
 const router = new Router();
@@ -35,6 +36,24 @@ router.get('/:id/images', function (req, res) {
       });
     });
 });
+
+// The community score for a model, which is not the rider's own rating: that
+// one lives on their user_boards row and is written through
+// PUT /api/user_board/:id. This router is deliberately unauthenticated, and a
+// score is public by definition, so nothing here is scoped to a viewer.
+router.get('/:id/rating', function (req, res) {
+  BoardRatingService.make().publicFor(req.params.id)
+    .then(data => {
+      res.send(data);
+    })
+    .catch(err => {
+      console.error(`GET /api/board/${req.params.id}/rating failed:`, err);
+      res.status(500).send({
+        message: "Error retrieving rating for " + EntityType + " with id=" + req.params.id
+      });
+    });
+});
+
 
 router.get('/:id', function (req, res) {
   req.parser.id = req.params.id;
