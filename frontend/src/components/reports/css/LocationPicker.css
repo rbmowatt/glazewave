@@ -39,3 +39,12 @@
 	color: var(--gw-dim);
 	margin-bottom: 4px;
 }
+
+/* Why a pinned place is not offered as a session location. Wraps rather than
+   truncates: the place name is in it, and a clipped name reads as a bug. */
+.gw-locpick-note {
+	margin-top: 8px;
+	font-size: 11px;
+	line-height: 1.5;
+	color: var(--gw-faint);
+}

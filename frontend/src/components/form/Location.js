@@ -352,7 +352,7 @@ class Location extends Component {
          * Deduped by id: a pin that IS a seeded spot would otherwise appear
          * twice, once as itself and once as the nearest thing to itself.
          */
-        const chips = pin && pin.id
+        const chips = pin && pin.id && pin.coastal
             ? [{id: pin.id, name: pin.name, lat: pin.lat, lon: pin.lon, distance_m: null}]
                 .concat(nearby.filter(spot => String(spot.id) !== String(pin.id)))
             : nearby

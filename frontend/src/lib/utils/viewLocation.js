@@ -33,7 +33,11 @@ export const readViewLocation = () => {
             id: parsed.id || null,
             lat: Number(parsed.lat),
             lon: Number(parsed.lon),
-            name: parsed.name || ''
+            name: parsed.name || '',
+            // Decided once when the pin was set, so opening the session form
+            // costs no request. A pin stored before this existed reads false
+            // and simply offers no chip until it is picked again.
+            coastal: parsed.coastal === true
         };
     } catch (err) {
         return null;
@@ -64,7 +68,8 @@ export const writeViewLocation = (location) => {
             id: location.id || null,
             lat: Number(location.lat),
             lon: Number(location.lon),
-            name: location.name || ''
+            name: location.name || '',
+            coastal: location.coastal === true
         }));
     } catch (err) {
         // The pin still applies for this page load, it just will not survive
@@ -77,7 +82,8 @@ export const writeViewLocation = (location) => {
         id: location.id || null,
         lat: Number(location.lat),
         lon: Number(location.lon),
-        name: location.name || ''
+        name: location.name || '',
+        coastal: location.coastal === true
     });
 };
 

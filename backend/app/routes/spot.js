@@ -1,6 +1,7 @@
 const { Router } = require('express');
 const cognitoAuth = require('./../lib/cognitoAuth');
 const BaseService = require('./../services/SurflineSpotService');
+const coastline = require('./../services/Coastline');
 const EntityType = 'Spot';
 
 const router = new Router();
@@ -68,6 +69,38 @@ router.get('/nearest', function (req, res) {
           err.message || "Some error occurred while retrieving " + EntityType + "."
       });
     });
+});
+
+/*
+ * Is this point on land that touches open ocean.
+ *
+ * Answered here rather than at session-save time so the picker can say why a
+ * place was refused while the surfer is still looking at it, and so the
+ * create-session chips cost no request at all - the verdict rides on the pin.
+ *
+ * known:false means there is no shoreline data within reach: a coast outside
+ * the boxes in scripts/build_coastline.js, or a point far inland. Both refuse.
+ */
+router.get('/coastal', function (req, res) {
+  const lat = Number.parseFloat(req.query.lat);
+  const lon = Number.parseFloat(req.query.lon);
+
+  if (!Number.isFinite(lat) || lat < -90 || lat > 90 ||
+      !Number.isFinite(lon) || lon < -180 || lon > 180) {
+    res.status(400).send({
+      message: "lat and lon are required and must be valid coordinates."
+    });
+    return;
+  }
+
+  try {
+    res.send(coastline.classify(lat, lon));
+  } catch (err) {
+    // A missing or truncated coastline.bin must not take the route down with
+    // it. Unknown reads the same as inland to every caller, which fails closed.
+    console.error('coastal lookup failed:', err.message);
+    res.send({ coastal: false, known: false, shoreline_m: null, open: 0 });
+  }
 });
 
 /*

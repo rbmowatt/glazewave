@@ -35,4 +35,19 @@ export const searchSpots = (q, { lat, lon, limit = 8 } = {}) => {
     .then((res) => res.data.spots);
 };
 
+/*
+ * Whether a point sits on land that touches open ocean, answered from the
+ * committed coastline extract rather than from anything the browser knows.
+ *
+ * known:false means the extract has no shoreline within reach - a coast outside
+ * the boxes in build_coastline.js, or somewhere inland. Callers refuse both,
+ * so a real spot in a region that has not been extracted stays unusable until
+ * the box is added and the file regenerated. That is deliberate: promotion is
+ * on first use, so a guess here puts a wrong row in front of every user.
+ */
+export const checkCoastal = (lat, lon) =>
+  axios
+    .get(`${base()}/api/spot/coastal`, { params: { lat, lon } })
+    .then((res) => res.data);
+
 export default getSpots;
