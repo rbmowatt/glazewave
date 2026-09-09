@@ -5,6 +5,7 @@ import { safeLocate, defaultOptions } from './../../../lib/utils/geolocator';
 import getSpots from './../../../lib/utils/spots';
 import cache from './../../../lib/utils/cache';
 import { asKm } from './../../../lib/utils/distance';
+import { readViewLocation, onViewLocationChange } from './../../../lib/utils/viewLocation';
 
 const CACHE_KEY = 'nrspt2';
 
@@ -24,31 +25,32 @@ class NearestSpots extends React.Component {
     super();
     this.state = {
       spots: [],
-      selected: ''
+      selected: '',
+      // Owned here for the same reason as in the conditions report: this list
+      // renders on the board and session indexes, which know nothing about
+      // the pin and were falling back to the browser fix.
+      pin: null
     }
     this.setState = this.setState.bind(this);
   }
 
   componentDidMount() {
-    this.load();
-  }
-
-  componentDidUpdate(prevProps) {
-    const was = prevProps.pin;
-    const now = this.props.pin;
-    const same = (!was && !now) ||
-      (was && now && was.lat === now.lat && was.lon === now.lon);
-    if (!same) this.load();
+    this.setState({ pin: readViewLocation() }, () => this.load());
+    this.unsubscribe = onViewLocationChange((pin) => {
+      if (this.unmounted) return;
+      this.setState({ pin }, () => this.load());
+    });
   }
 
   componentWillUnmount() {
+    if (this.unsubscribe) this.unsubscribe();
     this.unmounted = true;
   }
 
   load() {
     if (!this.props.session.isLoggedIn) return;
 
-    const { pin } = this.props;
+    const { pin } = this.state;
     if (pin) {
       // Not cached. The cache key is the located position, and a pin is
       // deliberate enough that a stale list is worse than a request.

@@ -175,10 +175,14 @@ class UserDashboard extends React.Component {
 					</section>
 
 					<aside className="gw-col">
-						<Report pin={this.state.pin} />
+						{/* Both read the pin themselves and subscribe to it, so they
+						    behave the same here as on the board and session indexes.
+						    Only the picker needs it as a prop, to label its own
+						    buttons. */}
+						<Report />
 						<LocationPicker pin={this.state.pin} onChange={this.setPin} />
 						<hr className="gw-rule" />
-						<NearestSpots pin={this.state.pin} />
+						<NearestSpots />
 					</aside>
 
 					<div className="gw-dashboard-lists">

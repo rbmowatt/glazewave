@@ -4,6 +4,7 @@ import { safeLocate, defaultOptions } from './../../../lib/utils/geolocator';
 import { ConditionsLoaded } from './../../../actions/conditions';
 import { getSessionData } from './helpers/session';
 import { asKm } from './../../../lib/utils/distance';
+import { readViewLocation, onViewLocationChange } from './../../../lib/utils/viewLocation';
 
 const mapStateToProps = (state) => {
   return {
@@ -34,36 +35,35 @@ class Report extends React.Component {
     super();
     this.state = {
       data: {},
-      location: ''
+      location: '',
+      /*
+       * Owned here rather than handed down. This widget renders on the board
+       * and session indexes too, and those pages have no reason to know the
+       * pin exists - passing it as a prop meant they quietly reverted to the
+       * browser fix while the dashboard honoured it.
+       */
+      pin: null
     }
     this.setState = this.setState.bind(this);
   }
 
   componentDidMount() {
-    this.load();
-  }
-
-  /*
-   * A pin change is the only prop change worth reacting to. Comparing the
-   * objects would refetch on every dashboard render, since the parent builds a
-   * fresh one each time it reads localStorage.
-   */
-  componentDidUpdate(prevProps) {
-    const was = prevProps.pin;
-    const now = this.props.pin;
-    const same = (!was && !now) ||
-      (was && now && was.lat === now.lat && was.lon === now.lon);
-    if (!same) this.load();
+    this.setState({ pin: readViewLocation() }, () => this.load());
+    this.unsubscribe = onViewLocationChange((pin) => {
+      if (this.unmounted) return;
+      this.setState({ pin }, () => this.load());
+    });
   }
 
   componentWillUnmount() {
+    if (this.unsubscribe) this.unsubscribe();
     this.unmounted = true;
   }
 
   load() {
     if (!this.props.session.isLoggedIn) return;
 
-    const { pin } = this.props;
+    const { pin } = this.state;
     if (pin) {
       // The store holds whatever the last position resolved to, so it cannot
       // answer for a pin. Fetching unconditionally also means re-picking the
