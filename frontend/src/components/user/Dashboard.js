@@ -74,6 +74,19 @@ class UserDashboard extends React.Component {
 		this.state = {
 			showBoardModal: false,
 			showSessionModal: false,
+			/*
+			 * Modal only toggles a CSS class, so everything inside it stays
+			 * mounted for the life of the dashboard and keeps its state. These
+			 * are remount keys: bumping one after a create throws the finished
+			 * form away, which is the only thing that clears the location,
+			 * title, board, conditions and picked photos in one go.
+			 *
+			 * Bumped on create and not on open, so closing a half-filled form
+			 * by accident still does not lose it - the same reason neither of
+			 * these modals passes handleClose.
+			 */
+			sessionFormKey: 0,
+			boardFormKey: 0,
 			// Read once here rather than in each widget, so the report and the
 			// spot list cannot disagree about where they are answering for.
 			pin: readViewLocation(),
@@ -101,7 +114,10 @@ class UserDashboard extends React.Component {
 	*/
 	boardCreated = () => {
 		this.props.clearCreatedBoard();
-		this.setState({ showBoardModal: false });
+		this.setState({
+			showBoardModal: false,
+			boardFormKey: this.state.boardFormKey + 1,
+		});
 	};
 
 	showSessionModal = () => {
@@ -119,7 +135,10 @@ class UserDashboard extends React.Component {
 	already in user_sessions.data, so LatestSessions repaints on its own.
 	*/
 	sessionCreated = () => {
-		this.setState({ showSessionModal: false });
+		this.setState({
+			showSessionModal: false,
+			sessionFormKey: this.state.sessionFormKey + 1,
+		});
 	};
 
 	componentDidMount() {
@@ -180,6 +199,7 @@ class UserDashboard extends React.Component {
 					handleClose={this.hideBoardModal}
 				>
 					<CreateUserBoard
+						key={this.state.boardFormKey}
 						onSuccess={this.hideBoardModal}
 						onSubmissionComplete={this.boardCreated}
 						close={this.hideBoardModal}
@@ -189,6 +209,7 @@ class UserDashboard extends React.Component {
 				    enough that a stray backdrop click should not throw it away. */}
 				<Modal show={this.state.showSessionModal}>
 					<CreateSession
+						key={this.state.sessionFormKey}
 						onSuccess={this.hideSessionModal}
 						onSubmissionComplete={this.sessionCreated}
 						close={this.hideSessionModal}
