@@ -131,6 +131,19 @@ const clearSql = (scoped) => `
    WHERE board_id NOT IN (SELECT board_id FROM (${modelMeans(scoped)}) AS models)
      ${scoped ? 'AND board_id IN (:boardIds)' : ''}`;
 
+/*
+ * Sequelize 5 does not answer with one shape here. An INSERT resolves to
+ * [insertId, affectedRows] - a number - while a DELETE resolves to
+ * [results, metadata] where metadata is the driver's OkPacket. The same
+ * destructure therefore yields a number in one case and an object in the
+ * other, which is how "[object Object] cleared" reached a log line.
+ */
+const affected = (result) => {
+  const meta = Array.isArray(result) ? result[1] : result;
+  if (typeof meta === 'number') return meta;
+  return meta && typeof meta.affectedRows === 'number' ? meta.affectedRows : 0;
+};
+
 async function run(boardIds) {
   const scoped = boardIds !== null;
   const replacements = { smoothing: SMOOTHING_RIDERS, seedLike: SEED_LIKE };
@@ -142,17 +155,17 @@ async function run(boardIds) {
   // toward and nothing to write. Still clear, or a row survives the removal
   // of the last rating in the database.
   if (mean === null) {
-    const [, cleared] = await db.query(clearSql(scoped), { replacements });
-    return { written: 0, cleared: cleared || 0 };
+    const cleared = affected(await db.query(clearSql(scoped), { replacements }));
+    return { written: 0, cleared: cleared };
   }
 
   replacements.catalogMean = mean;
   // Affected rows, not rows written: MySQL counts an ON DUPLICATE KEY UPDATE
   // that changed a row as 2 and an insert as 1, so this over-reports whenever
   // a score moved rather than appeared. It is a log line, not a total.
-  const [, written] = await db.query(upsertSql(scoped), { replacements });
-  const [, cleared] = await db.query(clearSql(scoped), { replacements });
-  return { written: written || 0, cleared: cleared || 0 };
+  const written = affected(await db.query(upsertSql(scoped), { replacements }));
+  const cleared = affected(await db.query(clearSql(scoped), { replacements }));
+  return { written: written, cleared: cleared };
 }
 
 /*
