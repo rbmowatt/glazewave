@@ -13,16 +13,10 @@ module.exports = (sequelize, DataTypes) => {
     is_public: DataTypes.BOOLEAN,
     is_default: DataTypes.BOOLEAN,
     notes: DataTypes.TEXT
-  },  {underscored: true, tableName: 'session_images'});;
+  },  {underscored: true, tableName: 'session_images'});
   SessionImage.associate = function(models) {
     SessionImage.belongsTo(models.User);
     SessionImage.belongsTo(models.Session);
   };
-  SessionImage.addScope('session_public'),
-  {
-    include: [
-      { model: 'sessions' , where: { is_public : true } }
-    ]
-  }
   return SessionImage;
 };

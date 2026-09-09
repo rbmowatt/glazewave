@@ -11,11 +11,15 @@
 // Usage:
 //   node app/scripts/import_boards.js --report-makers
 //   node app/scripts/import_boards.js --dry-run
-//   node app/scripts/import_boards.js --file data/board_catalog.json
+//   node app/scripts/import_boards.js --file=data/board_catalog.json
 //
 // Input is the harvester's own JSON: an array of records with at least
 // record_type, maker and model. Records whose record_type is not 'model' are
 // stock listings from retailer feeds, not catalog entries, and are skipped.
+//
+// --file takes a comma-separated list because the harvest output is a
+// generated file that gets overwritten by the next run, and the hand-compiled
+// historical rows have to survive that.
 
 require('dotenv').config();
 const fs = require('fs');
@@ -23,7 +27,7 @@ const path = require('path');
 const crypto = require('crypto');
 const db = require('./../models');
 const DisplayScope = require('./../services/rights/DisplayScope');
-const { getUserBoardQueue } = require('./../services/queue/BetterQueue');
+const cascade = require('./../services/elastic/Cascade');
 
 const args = process.argv.slice(2);
 const flag = (name, fallback) => {
@@ -34,9 +38,13 @@ const DRY_RUN = args.includes('--dry-run');
 // NOT data/boards.json - that name is taken by the 200-row fixture the boards
 // seeder loads, and pointing this at it silently imports nothing, because
 // fixture rows carry manufacturer_id rather than a maker name.
-const FILE = flag('file', 'data/board_catalog.json');
+const FILES = flag('file', 'data/board_catalog.json,data/board_registry.json')
+  .split(',')
+  .map((f) => f.trim())
+  .filter(Boolean);
 
 const {
+  slugify,
   makerSlugOf,
   nearDuplicateMakers,
   merge,
@@ -45,7 +53,7 @@ const {
 async function lookups() {
   const [licenses, sources] = await Promise.all([
     db.ImageLicense.findAll({ raw: true }),
-    db.BoardSource.findAll({ raw: true }),
+    db.ContentSource.findAll({ raw: true }),
   ]);
   return {
     licenseByCode: new Map(licenses.map((l) => [l.code, l])),
@@ -78,8 +86,46 @@ async function resolveManufacturer(board, cache) {
   return row;
 }
 
+/*
+ * The designer as an entity, resolved the same way a maker is. Returns null
+ * rather than creating a row when the record carries no designer, which is
+ * every record in the current harvest - Shopify products.json has no such
+ * field. Guarding here is what stops a future source with an empty string in
+ * that column filling the table with one blank shaper.
+ *
+ * slugify, not makerSlugOf: the maker version strips a trailing "Surfboards"
+ * or "Designs", which is right for a label and wrong for a person - it would
+ * turn Slater Designs into "slater".
+ */
+async function resolveShaper(board, cache) {
+  const name = String(board.designer || '').trim();
+  if (!name) return null;
+
+  const slug = slugify(name);
+  if (!slug) return null;
+  if (cache.has(slug)) return cache.get(slug);
+
+  let row = await db.Shaper.findOne({ where: { slug: slug } });
+  if (!row) {
+    // A shaper typed in by a person will not have a slug yet, so match the
+    // name before creating a duplicate alongside them.
+    row = await db.Shaper.findOne({ where: { name: name } });
+  }
+  if (!row) {
+    row = await db.Shaper.create({ name: name, slug: slug, aliases: [name] });
+  } else {
+    const aliases = new Set([...(row.aliases || []), name]);
+    row.slug = row.slug || slug;
+    row.aliases = [...aliases];
+    await row.save();
+  }
+  cache.set(slug, row);
+  return row;
+}
+
 async function importBoard(board, refs, stats) {
   const maker = await resolveManufacturer(board, refs.makerCache);
+  const shaper = await resolveShaper(board, refs.shaperCache);
 
   let row = await db.Board.findOne({ where: { canonical_key: board.canonical_key } });
 
@@ -91,6 +137,8 @@ async function importBoard(board, refs, stats) {
     row.set({
       manufacturer_id: maker.id,
       slug: row.slug || board.slug,
+      // A harvest with no designer must not unassign one that is already set.
+      shaper_id: shaper ? shaper.id : row.shaper_id,
       designer: board.designer ?? row.designer,
       category: board.category ?? row.category,
       discontinued: board.discontinued,
@@ -103,10 +151,14 @@ async function importBoard(board, refs, stats) {
       volume_l: board.volume_l ?? row.volume_l,
     });
     if (row.changed()) stats.updated += 1;
-    await row.save();
+    // Hooks off: Board's afterUpdate cascades a reindex per row, which over a
+    // ten thousand row catalog is two queries each for the same answer the
+    // single bulk walk below gets once.
+    await row.save({ hooks: false });
   } else {
     row = await db.Board.create({
       manufacturer_id: maker.id,
+      shaper_id: shaper ? shaper.id : null,
       model: board.model,
       slug: board.slug,
       canonical_key: board.canonical_key,
@@ -174,11 +226,16 @@ async function importBoard(board, refs, stats) {
 }
 
 async function main() {
-  const file = path.isAbsolute(FILE) ? FILE : path.join(process.cwd(), FILE);
-  const records = JSON.parse(fs.readFileSync(file, 'utf8'));
+  const files = FILES.map((f) => (path.isAbsolute(f) ? f : path.join(process.cwd(), f)));
+  const records = [];
+  for (const file of files) {
+    const rows = JSON.parse(fs.readFileSync(file, 'utf8'));
+    console.log(`${path.basename(file)}: ${rows.length} records`);
+    records.push(...rows);
+  }
 
   // Optional curated map of maker-slug variants, e.g. { "sharpeye": "sharp-eye" }.
-  const aliasFile = path.join(path.dirname(file), 'maker_aliases.json');
+  const aliasFile = path.join(path.dirname(files[0]), 'maker_aliases.json');
   const makerAliases = fs.existsSync(aliasFile)
     ? JSON.parse(fs.readFileSync(aliasFile, 'utf8'))
     : {};
@@ -205,9 +262,9 @@ async function main() {
     return;
   }
 
-  const refs = { ...(await lookups()), makerCache: new Map() };
+  const refs = { ...(await lookups()), makerCache: new Map(), shaperCache: new Map() };
   if (refs.sourceByKey.size === 0) {
-    throw new Error('board_sources is empty - run the seeders before importing');
+    throw new Error('content_sources is empty - run the seeders before importing');
   }
 
   const stats = {
@@ -220,13 +277,11 @@ async function main() {
     touched.push(await importBoard(board, refs, stats));
   }
 
-  // user_boards documents denormalize boards.model and manufacturers.name, and
-  // nothing reindexes them when the catalog changes - the hook only fires on a
-  // UserBoard save. Without this an import leaves the index disagreeing with
-  // MySQL for every board somebody owns.
-  const affected = await db.UserBoard.findAll({ where: { board_id: touched }, raw: true });
-  for (const ub of affected) getUserBoardQueue().push(ub);
-  console.log(`queued ${affected.length} user_boards for reindex`);
+  // Both documents denormalize boards.model and manufacturers.name - the
+  // user_board directly, the session through the user_board it was ridden on.
+  // Without this an import leaves the index disagreeing with MySQL for every
+  // board somebody owns, and for every session they logged on one.
+  await cascade.boardChanged(touched.filter(Boolean));
 
   console.log(JSON.stringify({
     ...stats,

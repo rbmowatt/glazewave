@@ -12,6 +12,11 @@
     "sync-elastic": "node app/scripts/sync_elastic.js",
     "spots:probe": "node app/scripts/probe_spot_sources.js",
     "spots:seed-file": "node app/scripts/build_spot_seed.js",
+    "spots:images": "node app/scripts/harvest_spot_images.js --stage=all",
+    "spots:images-tags": "node app/scripts/harvest_spot_images.js --stage=tags",
+    "spots:images-meta": "node app/scripts/harvest_spot_images.js --stage=meta",
+    "spots:images-fetch": "node app/scripts/harvest_spot_images.js --stage=download",
+    "spots:images-docs": "node app/scripts/harvest_spot_images.js --stage=docs",
     "sync-surfline": "node app/scripts/import_surfline.js",
     "test-queue": "node app/services/queue/BetterQueue.js",
     "test-elastic": "node app/scripts/elastic/test.js",
@@ -20,7 +25,9 @@
     "boards:import": "node app/scripts/import_boards.js",
     "boards:makers": "node app/scripts/import_boards.js --report-makers",
     "boards:dry-run": "node app/scripts/import_boards.js --dry-run",
-    "demo:seed": "node app/scripts/demo_seed.js"
+    "demo:seed": "node app/scripts/demo_seed.js",
+    "coastline:build": "node app/scripts/build_coastline.js",
+    "coastline:fetch": "node app/scripts/fetch_coastline.js"
   },
   "dependencies": {
     "@elastic/elasticsearch": "~7.17.0",

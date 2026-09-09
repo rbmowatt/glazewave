@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {underscored: true, tableName: 'image_licenses'});
   ImageLicense.associate = function(models) {
     ImageLicense.hasMany(models.BoardImage, {foreignKey: 'license_id'});
-    ImageLicense.hasMany(models.BoardSource, {foreignKey: 'default_license_id'});
+    ImageLicense.hasMany(models.ContentSource, {foreignKey: 'default_license_id'});
   };
   return ImageLicense;
 };

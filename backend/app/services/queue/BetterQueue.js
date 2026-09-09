@@ -54,9 +54,12 @@ const makeHandler = (sql, indexEnvKey) => (rows, cb) => {
         });
 };
 
-// Both queues hold writes this long before flushing, so it is also how stale
-// an index view can be right after an edit. Boards used to sit at 50s, which
-// read as "the edit did not save".
+// batchDelay is an idle window and it RESTARTS on every push, so on its own a
+// steady stream of edits would never flush. batchDelayTimeout is the real
+// ceiling: measured against better-queue, a lone edit flushes at ~1.0s and a
+// push every 300ms flushes at ~2.5s, never the 5s below. That, plus the
+// index's own refresh interval, is how far behind a search can be right after
+// a write. Boards used to sit at 50s, which read as "the edit did not save".
 const BATCH_DELAY_MS = 5000;
 
 // Memoized. The model hooks call these on every save, and each call used to

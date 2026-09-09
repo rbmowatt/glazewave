@@ -5,3 +5,19 @@ node_modules
 
 CLAUDE.md
 TODO.md
+
+# 2.5GB of harvested spot photos; rebuild with `npm run spots:images`
+backend/data/spot-images/
+
+# hard links into spot-images/, rebuilt by sort_spot_images.py
+backend/data/spot-images-by-subject/
+
+# 76MB of review contact sheets, rebuilt by build_contact_sheets.py
+backend/data/contact-sheets/
+
+# derived 400/800/1600 renditions; rebuilt by build_spot_derivatives.py, synced to S3
+backend/data/spot-images-cdn/
+
+# 2.6MB shoreline extract, rebuilt by build_coastline.js and fetched from S3 at
+# deploy. data/coastline.manifest.json records the hash the code expects.
+backend/data/coastline.bin

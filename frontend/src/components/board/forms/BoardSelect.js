@@ -33,10 +33,12 @@ class BoardSelect extends React.Component {
 		this.setState({ open: false, active: -1 });
 	};
 
+	// Compared as strings: board ids are integers but board sizes are the label
+	// itself ("5'10"), and Number() turns every one of those into NaN.
 	selectedIndex = () => {
-		const id = Number(this.props.value);
-		if (!id) return -1;
-		return this.props.options.findIndex((o) => Number(o.id) === id);
+		const value = this.props.value;
+		if (value === null || value === undefined || value === "") return -1;
+		return this.props.options.findIndex((o) => String(o.id) === String(value));
 	};
 
 	selectedLabel = () => {
@@ -57,7 +59,7 @@ class BoardSelect extends React.Component {
 	choose = (option) => {
 		this.close();
 		if (this.buttonRef) this.buttonRef.focus();
-		if (Number(option.id) === Number(this.props.value)) return;
+		if (String(option.id) === String(this.props.value)) return;
 		this.props.onChange(option.id);
 	};
 

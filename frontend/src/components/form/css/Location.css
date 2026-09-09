@@ -28,12 +28,16 @@
   margin-top: 0.5rem;
 }
 
+/*
+ * Metrics live with the other labels, in the modal block of instrument.css.
+ * Only the dashboard picker, which has no such block, is styled from here.
+ */
 .location-nearby-label {
   font-family: var(--gw-mono);
   font-size: 0.65rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--gw-faint);
+  color: var(--gw-dim);
   margin-bottom: 0.35rem;
 }
 

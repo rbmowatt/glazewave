@@ -13,10 +13,13 @@ const ISSUER = `https://cognito-idp.${cognitoConfig.region}.amazonaws.com/${cogn
 
 class AuthError extends Error {}
 
-// Get the middleware function that will verify the incoming request
-function _getVerifyMiddleware () {
-  // Fetch the JWKS data used to verify the signature of incoming JWT tokens
-  const pemsDownloadProm = _init()
+// Memoized. The verify middleware and the optional viewer lookup both need the
+// keys, and a second call here would start a second JWKS download at boot.
+let pemsDownloadProm = null
+
+function _getPems () {
+  if (pemsDownloadProm) return pemsDownloadProm
+  pemsDownloadProm = _init()
     .catch((err) => {
       // Failed to get the JWKS data - all subsequent auth requests will fail
       console.error(err)
@@ -28,9 +31,24 @@ function _getVerifyMiddleware () {
       if (demoPem) return { [demoToken.KID]: demoPem }
       return { err }
     })
+  return pemsDownloadProm
+}
+
+// Get the middleware function that will verify the incoming request
+function _getVerifyMiddleware () {
+  const pems = _getPems()
   return function (req, res, next) {
-    _verifyMiddleWare(pemsDownloadProm, req, res, next)
+    _verifyMiddleWare(pems, req, res, next)
   }
+}
+
+// Verify an Authorization header and resolve its claims, writing nothing to the
+// response. Rejects with AuthError when the caller is at fault and with a plain
+// Error when the JWKS download failed: an optional-auth path has to tell "no
+// usable token" from "cannot check tokens at all", because the first is an
+// anonymous visitor and the second would silently downgrade a signed-in one.
+function _verify (auth) {
+  return _getPems().then((pems) => _verifyProm(pems, auth))
 }
 
 // One time initialisation to download the JWK keys and convert to PEM format. Returns a promise.
@@ -168,3 +186,5 @@ function _verifyProm (pems, auth) {
 }
 
 exports.getVerifyMiddleware = _getVerifyMiddleware
+exports.verify = _verify
+exports.AuthError = AuthError

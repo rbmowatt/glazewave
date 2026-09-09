@@ -8,6 +8,7 @@ import messages from "./validation-messages";
 import ImageUploader from "react-images-upload";
 import { loadShapers } from "./../../../actions/shaper";
 import { loadBoards } from "./../../../actions/board";
+import { matchSuggestions } from "./../../../lib/utils/suggest";
 
 const mapStateToProps = (state) => {
 	return {
@@ -63,34 +64,20 @@ class UserBoardForm extends React.Component {
 		}
 	}
 
-	getBoardSuggestions = (value) => {
-		if (!value) {
-			return this.props.boards.filter(
-				(entity) => entity.manufacturer_id === this.state.manufacturer_id
-			);
-		}
-		const inputValue = value.trim().toLowerCase();
-		const inputLength = inputValue.length;
-		return inputLength === 0
-			? []
-			: this.props.boards.filter(
-					(entity) =>
-						entity.model.toLowerCase().slice(0, inputLength) === inputValue &&
-						entity.manufacturer_id === this.state.manufacturer_id
-			  );
+	// onBlur writes the raw text when it matches nothing, so the selected shaper
+	// is not always the number the catalog rows carry.
+	boardsForShaper = () => {
+		const shaperId = Number(this.state.manufacturer_id);
+		return this.props.boards.filter(
+			(entity) => Number(entity.manufacturer_id) === shaperId
+		);
 	};
 
-	getShaperSuggestions = (value) => {
-		if (!value) return this.props.shapers;
-		const inputValue = value.trim().toLowerCase();
-		const inputLength = inputValue.length;
-		return inputLength === 0
-			? []
-			: this.props.shapers.filter(
-					(entity) =>
-						entity.name.toLowerCase().slice(0, inputLength) === inputValue
-			  );
-	};
+	getBoardSuggestions = (value) =>
+		matchSuggestions(this.boardsForShaper(), "model", value);
+
+	getShaperSuggestions = (value) =>
+		matchSuggestions(this.props.shapers, "name", value);
 
 	render() {
 		return (
@@ -141,17 +128,23 @@ class UserBoardForm extends React.Component {
 								className="form-control"
 								placeholder="Defaults to shaper + model"
 							/>
-							<ImageUploader
-								withIcon={false}
-								buttonText="Choose images"
-								onChange={this.props.onDrop}
-								imgExtension={[".jpg", ".jpeg", ".png", ".gif"]}
-								/* the library's default label hardcodes its own extension list,
-								   so it keeps saying jpg|gif|png unless it is passed in */
-								label="Max file size: 5mb, accepted: jpg|jpeg|png|gif"
-								maxFileSize={5242880}
-								withPreview={true}
-							/>
+							<div className="gw-field">
+								<label className="gw-field-label">Photos</label>
+								<div className="gw-uploader gw-uploader-drop">
+									<ImageUploader
+										withIcon={false}
+										buttonText="Choose images"
+										onChange={this.props.onDrop}
+										imgExtension={[".jpg", ".jpeg", ".png", ".gif"]}
+										/* the library's default label hardcodes its own extension
+										   list, so it keeps saying jpg|gif|png unless it is
+										   passed in */
+										label="Max file size: 5mb, accepted: jpg|jpeg|png|gif"
+										maxFileSize={5242880}
+										withPreview={true}
+									/>
+								</div>
+							</div>
 						</div>
 						<div className="col-12">
 							<Input

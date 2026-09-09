@@ -29,17 +29,6 @@ export const UserLoaded = data => ({
   });
 
 
-  export const logInUser = ( session, args )=>
-  {
-    return function(dispatch, getState)
-    {
-      const params = {...args, ...{onSuccess : (data)=>{ return UserLoaded(data)} }}
-      dispatch(
-        new UserRequests(session).get(params)
-      )
-    }
-  }
-
 
   export const loadUser = ( session, args )=>
   {

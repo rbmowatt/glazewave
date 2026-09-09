@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom';
 import ImageUploader from 'react-images-upload';
 import { RIEInput } from '@attently/riek';
 import moment from 'moment';
 import UserRequests from './../../requests/UserRequests';
 import { s3Conf } from './../../config/s3';
+import Modal from './../layout/Modal';
 import { loadUser, updateUser, updateUserImage, loadUserAverages } from './../../actions/user';
 
 const mapStateToProps = state => {
@@ -27,8 +27,12 @@ class ProfileCard extends React.Component {
         this.state = {
             board_id: null,
             manufacturer_id: null,
-            uploaderInstance: 1
+            uploaderInstance: 1,
+            uploadError: null,
+            showImage: false
         };
+        this.showImage = this.showImage.bind(this);
+        this.hideImage = this.hideImage.bind(this);
         this.onDrop = this.onDrop.bind(this);
         this.saveField = this.saveField.bind(this);
     }
@@ -40,6 +44,9 @@ class ProfileCard extends React.Component {
         }
     }
 
+    showImage() { this.setState({ showImage: true }); }
+    hideImage() { this.setState({ showImage: false }); }
+
     // riek hands back {[propName]: value}, which is already the PUT body.
     saveField(data) {
         this.props.updateUser(this.props.session, {
@@ -48,13 +55,24 @@ class ProfileCard extends React.Component {
         });
     }
 
+    /*
+    react-images-upload fires onChange with an empty array when it rejects
+    everything you picked, because singleImage rebuilds files as a fresh [] and
+    its componentDidUpdate only compares references. Posting that sent a body
+    carrying user_id and no photo, and /api/user/images answered 400 "No photo
+    was uploaded" with nothing on screen to say the file was refused.
+    */
     onDrop(pictureFiles, pictureDataURLs) {
+        if (!pictureFiles.length) {
+            this.setState({ uploadError: 'That file was not accepted. Use a jpg, jpeg, png or gif under 5MB.' });
+            return;
+        }
         const formData = UserRequests.createFormRequest({ user_id: this.props.session.user.id });
         pictureFiles.forEach((file, i) => {
             formData.append('photo', file)
         })
         this.props.updateImage(this.props.session, { data: formData });
-        this.setState({ uploaderInstance: this.state.uploaderInstance + 1 })
+        this.setState({ uploadError: null, uploaderInstance: this.state.uploaderInstance + 1 })
     }
 
     render() {
@@ -73,7 +91,12 @@ class ProfileCard extends React.Component {
         return (
             <React.Fragment>
                 <div className="gw-profile-head">
-                    <img className="gw-profile-img" src={image} alt="" />
+                    <img
+                        className="gw-profile-img"
+                        src={image}
+                        alt=""
+                        onClick={this.showImage}
+                    />
                     <div>
                         <div className="gw-profile-name gw-inline-edit">
                             <RIEInput
@@ -138,22 +161,42 @@ class ProfileCard extends React.Component {
 
                 <div className="d-flex flex-column" style={{ gap: '9px' }}>
                     <div className="gw-eyebrow">Actions</div>
-                    <Link className="gw-btn gw-btn-primary" to={'/session/create'}>Log a session</Link>
-                    <Link className="gw-btn" to={'/board/create'}>Add a board</Link>
+                    <button type="button" className="gw-btn gw-btn-primary" onClick={this.props.onLogSession}>Log a session</button>
+                    <button type="button" className="gw-btn" onClick={this.props.onAddBoard}>Add a board</button>
                     <div className="gw-uploader">
                         <ImageUploader
                             key={this.state.uploaderInstance}
                             withIcon={false}
                             buttonText='Update profile photo'
                             onChange={this.onDrop}
-                            imgExtension={['.jpg', '.gif', '.png', '.gif']}
+                            imgExtension={['.jpg', '.jpeg', '.png', '.gif']}
                             maxFileSize={5242880}
                             label=''
                             withPreview={false}
                             singleImage={true}
                         />
+                        {this.state.uploadError && (
+                            <div className="gw-uploader-error">{this.state.uploadError}</div>
+                        )}
                     </div>
                 </div>
+                <Modal
+                    show={this.state.showImage}
+                    handleClose={this.hideImage}
+                    className="gw-lightbox"
+                >
+                    <div className="gw-lightbox-body">
+                        <button
+                            type="button"
+                            className="gw-lightbox-close"
+                            onClick={this.hideImage}
+                            aria-label="Close"
+                        >
+                            &times;
+                        </button>
+                        <img src={image} alt="" />
+                    </div>
+                </Modal>
             </React.Fragment>
         )
     }

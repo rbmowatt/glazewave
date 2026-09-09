@@ -1,4 +1,5 @@
 import React from 'react';
+import { asKm } from './../../lib/utils/distance';
 
 /*
  * Units are fixed by backend/app/services/conditions: heights are converted to
@@ -42,6 +43,16 @@ const Conditions = props => {
         );
     }
 
+    /*
+     * Set only when the backend had no wave data at the session's own place and
+     * borrowed the nearest seeded spot. Read rather than computed from the two
+     * coordinate pairs: this is OSRM's road distance where one was available,
+     * and it has to agree with the number the nearest-spots list shows for the
+     * same pair. Aggregates like the dashboard averages carry no such field, so
+     * they show no note.
+     */
+    const borrowed = values.borrowed_m;
+
     return (
         <div>
             {props.title !== null && <div className="gw-eyebrow mb-3">{props.title || 'Conditions'}</div>}
@@ -56,6 +67,11 @@ const Conditions = props => {
                     </div>
                 ))}
             </div>
+            {borrowed && (
+                <div className="gw-borrowed">
+                    Nearest reading, {asKm(borrowed)} away
+                </div>
+            )}
         </div>
     );
 };

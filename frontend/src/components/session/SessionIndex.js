@@ -10,11 +10,13 @@ import SessionCard from "./SessionCard";
 import {
   loadUserSessions,
   deleteUserSession,
+  updateUserSession,
   UserSessionsCleared,
 } from "./../../actions/user_session";
 import Create from "./Create";
 import Modal from "./../layout/Modal";
 import ScopePicker from "./../layout/ScopePicker";
+import { scopeFromSearch, searchWithScope } from './../../lib/utils/scope';
 import NearestSpots from "./../reports/surfline/NearestSpots";
 import Report from "./../reports/conditions/Report";
 import {
@@ -47,32 +49,38 @@ const mapDispachToProps = (dispatch) => {
   return {
     loadSessions: (session, params) => dispatch(loadUserSessions(session, params)),
     deleteSession: (session, id) => dispatch(deleteUserSession(session, id)),
+    updateSession: (session, params) => dispatch(updateUserSession(session, params)),
     clearSessions: () => dispatch(UserSessionsCleared()),
   };
 };
 
 const relations = {
-  user_session: ["UserBoard", "Location", "SessionImage", "SessionData"],
+  user_session: ["UserBoard", "Location", "SessionImage", "SessionData", "User"],
 };
 
 class SessionIndex extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: false,//whether modal is showing or not
+      // /session/create redirects here carrying this flag, so a bookmark or an
+      // old link still lands on the create form rather than the bare index.
+      show: !!(props.location && props.location.state && props.location.state.createSession),//whether modal is showing or not
       selectedSortOrder: DEFAULT_SORT,
-      showAll: 0,//whether or not we are showing user + public sessiions
-      esFilters: []//an array of filters to be added to any ES queries
+      showAll: scopeFromSearch(props.location && props.location.search),//whether or not we are showing user + public sessiions
+      esFilters: []//an array of filters to be added to any ES queries, filled by the componentDidMount scope seed
     };
     this.deleteSession = this.deleteSession.bind(this);
     this.editSession = this.editSession.bind(this);
     this.viewSession = this.viewSession.bind(this);
     this.showModal = this.showModal.bind(this);
+    this.rateSession = this.rateSession.bind(this);
   }
 
   componentDidMount() {
-    //set the initial scope to private
-    this.setScope({nextValue : 0});
+    // esFilters starts empty because the user id is not known until props are
+    // in hand. Seeding from state rather than a literal 0 is what lets a return
+    // from a session page keep the scope the URL is still carrying.
+    this.setScope({ nextValue: this.state.showAll });
   }
 
   componentWillUnmount() {
@@ -96,6 +104,15 @@ class SessionIndex extends Component {
         },
       ],
     });
+  }
+
+  /*
+  The list is rendered from redux, not from the Elasticsearch hit, so the row
+  redraws off the PUT response. The reindex the model's afterUpdate hook queues
+  is what a later query sees; it is not what updates this row.
+  */
+  rateSession(id, rating) {
+    this.props.updateSession(this.props.session, { id: id, data: { rating: rating } });
   }
 
   editSession(sessionId) {
@@ -141,12 +158,20 @@ class SessionIndex extends Component {
   };
 
   setScope = (e) => {
+    const showAll = parseInt(e.nextValue) === 1 ? 1 : 0;
     const scopes = [{ match: { user_id: this.props.session.user.id } }];
-    if (e.nextValue && parseInt(e.nextValue) === 1) {
+    if (showAll === 1) {
       const isPublic = { match: { is_public: 1 } };
       scopes.push(isPublic);
     }
-    this.setState({ esFilters: scopes, showAll: parseInt(e.nextValue) });
+    // replace, not push: the scope is a view of this page, not a step back to
+    // it. goBack() from a session still lands on the list as it was left.
+    this.props.history.replace({
+      pathname: this.props.location.pathname,
+      search: searchWithScope(this.props.location.search, showAll),
+      state: this.props.location.state,
+    });
+    this.setState({ esFilters: scopes, showAll: showAll });
   };
 
   // ReactiveSearch decides whether to re-run a component's defaultQuery by
@@ -159,6 +184,30 @@ class SessionIndex extends Component {
       bool: { should: filters },
     },
   });
+
+  /*
+  Elasticsearch picks which sessions are on the page; MySQL orders them.
+  elasticResultHandler hands the hit ids to /api/session and order_by does the
+  sorting, so the order a fetch returns is always current. Nothing refetches
+  after an inline rating though, and the row would sit in its old slot until
+  something else did. Ratings are INTEGER, so this repeats the comparison the
+  server just made rather than approximating it.
+
+  Which page a session belongs on still comes from the index, and that is
+  roughly a second behind a write. A rating that should jump a session onto
+  page one gets there on the next query, not this render.
+  */
+  sortedSessions = () => {
+    const sessions = this.props.sessions || [];
+    const order = this.state.selectedSortOrder || DEFAULT_SORT;
+    const cut = order.lastIndexOf("_");
+    if (cut === -1) return sessions;
+    if (order.slice(0, cut) !== "rating") return sessions;
+    const direction = order.slice(cut + 1).toLowerCase() === "asc" ? 1 : -1;
+    return sessions
+      .slice()
+      .sort((a, b) => ((Number(a.rating) || 0) - (Number(b.rating) || 0)) * direction);
+  };
 
   render() {
     const showModal = this.showModal;
@@ -302,8 +351,7 @@ class SessionIndex extends Component {
                   paginationAt="both"
                   render={({ data }) => (
                     <div className="gw-list">
-                      {this.props.sessions &&
-                        this.props.sessions.map((session) => (
+                      {this.sortedSessions().map((session) => (
                           <SessionCard
                             detailed
                             isOwner={session.user_id === this.props.session.user.id}
@@ -312,6 +360,7 @@ class SessionIndex extends Component {
                             deleteSession={this.deleteSession}
                             viewSession={this.viewSession}
                             editSession={this.editSession}
+                            onRate={this.rateSession}
                           />
                         ))}
                     </div>

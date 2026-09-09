@@ -5,11 +5,19 @@ import MainContainer from "./../layout/MainContainer";
 import UserBoardRequests from "./../../requests/UserBoardRequests";
 import UserSessionRequests from "./../../requests/SessionRequests";
 import { UserSessionsLoaded } from "./../../actions/user_session";
-import { UserBoardsLoaded } from "./../../actions/user_board";
+import {
+	UserBoardsLoaded,
+	UserBoardCreatedCleared,
+} from "./../../actions/user_board";
+import Modal from "./../layout/Modal";
+import CreateUserBoard from "./../board/CreateUserBoard";
+import CreateSession from "./../session/Create";
 import ProfileCard from "./ProfileCard";
 import RatingTrend from "./RatingTrend";
 import NearestSpots from "./../reports/surfline/NearestSpots";
 import Report from "./../reports/conditions/Report";
+import LocationPicker from "./../reports/LocationPicker";
+import { readViewLocation } from "./../../lib/utils/viewLocation";
 import Conditions from "./../session/Conditions";
 import { LatestSessions } from "./../session/LatestSessions";
 import { NewestBoards } from "./../board/NewestBoards";
@@ -45,6 +53,7 @@ const mapDispachToProps = (dispatch) => {
 					},
 				})
 			),
+		clearCreatedBoard: () => dispatch(UserBoardCreatedCleared()),
 		loadSessions: (request, session) =>
 			dispatch(
 				request.get({
@@ -60,6 +69,59 @@ const mapDispachToProps = (dispatch) => {
 };
 
 class UserDashboard extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			showBoardModal: false,
+			showSessionModal: false,
+			// Read once here rather than in each widget, so the report and the
+			// spot list cannot disagree about where they are answering for.
+			pin: readViewLocation(),
+		};
+	}
+
+	setPin = (pin) => {
+		this.setState({ pin: pin });
+	};
+
+	showBoardModal = () => {
+		this.setState({ showBoardModal: true });
+	};
+
+	hideBoardModal = (e = false) => {
+		if (e && e.preventDefault) e.preventDefault();
+		this.setState({ showBoardModal: false });
+	};
+
+	/*
+	createUserBoard already pushes the new board into user_boards.data, so
+	NewestBoards repaints on its own and the dashboard has nothing to refetch.
+	The created flag does have to be cleared: BoardPicker fires onChange off it
+	and would reassign a session board the next time one mounts.
+	*/
+	boardCreated = () => {
+		this.props.clearCreatedBoard();
+		this.setState({ showBoardModal: false });
+	};
+
+	showSessionModal = () => {
+		this.setState({ showSessionModal: true });
+	};
+
+	hideSessionModal = (e = false) => {
+		if (e && e.preventDefault) e.preventDefault();
+		this.setState({ showSessionModal: false });
+	};
+
+	/*
+	Create clears user_sessions.created itself before it calls back, so unlike
+	the board modal there is nothing left to clean up here. The new session is
+	already in user_sessions.data, so LatestSessions repaints on its own.
+	*/
+	sessionCreated = () => {
+		this.setState({ showSessionModal: false });
+	};
+
 	componentDidMount() {
 		if (this.props.session.isLoggedIn) {
 			this.props.loadBoards(
@@ -82,6 +144,8 @@ class UserDashboard extends React.Component {
 						<ProfileCard
 							boardCount={boards.length}
 							spotCount={averages.distinct_spots || 0}
+							onAddBoard={this.showBoardModal}
+							onLogSession={this.showSessionModal}
 						/>
 					</aside>
 
@@ -92,22 +156,44 @@ class UserDashboard extends React.Component {
 					</section>
 
 					<aside className="gw-col">
-						<Report />
+						<Report pin={this.state.pin} />
+						<LocationPicker pin={this.state.pin} onChange={this.setPin} />
 						<hr className="gw-rule" />
-						<NearestSpots />
+						<NearestSpots pin={this.state.pin} />
 					</aside>
 
 					<div className="gw-dashboard-lists">
 						<LatestSessions
 							sessions={user_sessions}
 							limit={DASHBOARD_LIST_LIMIT}
+							onLogSession={this.showSessionModal}
 						/>
 						<NewestBoards
 							boards={boards}
 							limit={DASHBOARD_LIST_LIMIT}
+							onAddBoard={this.showBoardModal}
 						/>
 					</div>
 				</div>
+				<Modal
+					show={this.state.showBoardModal}
+					handleClose={this.hideBoardModal}
+				>
+					<CreateUserBoard
+						onSuccess={this.hideBoardModal}
+						onSubmissionComplete={this.boardCreated}
+						close={this.hideBoardModal}
+					/>
+				</Modal>
+				{/* No handleClose, matching SessionIndex: the session form is long
+				    enough that a stray backdrop click should not throw it away. */}
+				<Modal show={this.state.showSessionModal}>
+					<CreateSession
+						onSuccess={this.hideSessionModal}
+						onSubmissionComplete={this.sessionCreated}
+						close={this.hideSessionModal}
+					/>
+				</Modal>
 			</MainContainer>
 		);
 	}

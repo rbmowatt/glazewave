@@ -11,7 +11,7 @@ module.exports = {
     return queryInterface.sequelize.query(`
       UPDATE board_images bi
         JOIN image_licenses l ON l.code = 'user-contributed'
-        JOIN board_sources s ON s.source_key = 'user'
+        JOIN content_sources s ON s.source_key = 'user'
          SET bi.license_id = l.id,
              bi.source_id = s.id,
              bi.display_scope = 'public',

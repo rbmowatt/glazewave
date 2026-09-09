@@ -6,6 +6,8 @@ import { s3Conf } from './../../config/s3';
 import { sessionPlaceholder } from './../../lib/utils/placeholder';
 import moment from 'moment'
 import { withRouter } from "react-router";
+import StarBar from './../layout/StarBar';
+import OwnerBadge from './../layout/OwnerBadge';
 
 const HIGH_RATING = 8;
 
@@ -43,6 +45,7 @@ const SessionCard = props => {
     ].filter(Boolean).join(" · ");
 
     const rating = Number(session.rating) || 0;
+    const canRate = Boolean(props.isOwner && props.onRate);
     const isPublic = Number(session.is_public) === 1;
     const cells = props.detailed ? stats(session.SessionDatum) : [];
 
@@ -59,6 +62,7 @@ const SessionCard = props => {
                     }
                 </div>
                 <div className="gw-row-meta">{meta}</div>
+                <OwnerBadge user={session.User} />
                 {cells.length > 0 &&
                     <div className="gw-row-stats">
                         {cells.map(cell => <div key={cell}>{cell}</div>)}
@@ -82,7 +86,19 @@ const SessionCard = props => {
                     <div className={`gw-row-rating${rating >= HIGH_RATING ? ' is-high' : ''}`}>
                         {rating ? rating.toFixed(1) : "--"}
                     </div>
-                    <div className="gw-row-score-label">Rating</div>
+                    {canRate ? (
+                        // Everything else in the row navigates to the session,
+                        // so the stars have to keep their click to themselves.
+                        <div className="gw-row-stars" onClick={(e) => e.stopPropagation()}>
+                            <StarBar
+                                stars={rating}
+                                size="xs"
+                                onClick={({ rating: picked }) => props.onRate(session.id, picked)}
+                            />
+                        </div>
+                    ) : (
+                        <div className="gw-row-score-label">Rating</div>
+                    )}
                 </div>
             ) : (
                 <div className={`gw-row-rating${rating >= HIGH_RATING ? ' is-high' : ''}`} onClick={open}>

@@ -4,6 +4,8 @@ import { createField, fieldPresets } from 'react-advanced-form'
 import { getSessionData} from './../reports/conditions/helpers/session';
 import { loadPlaces } from './../../lib/utils/googleMaps';
 import getSpots, { searchSpots } from './../../lib/utils/spots';
+import { asKm } from './../../lib/utils/distance';
+import { readViewLocation, onViewLocationChange } from './../../lib/utils/viewLocation';
 
 // The spot search is a local query and free, so this is latency tuning rather
 // than cost control. Google only runs when the spot table came back empty, and
@@ -15,15 +17,13 @@ const DEBOUNCE_MS = 180;
 // which reads as a broken field. Matches MIN_QUERY_LENGTH on the route.
 const MIN_QUERY_LENGTH = 2;
 
-// Tighter than the 50km /api/spot/nearest default. These are chips you tap
-// without reading, so a spot an hour up the coast is a wrong answer, not a
-// choice.
-const NEARBY_RADIUS_M = 25000;
+// Wider than the 50km /api/spot/nearest default, not tighter. The seed is
+// sparse outside dense coast: from La Paz the two nearest spots sit at 44km and
+// 47km, so the old 25km ceiling returned an empty array and the chip row never
+// rendered at all. Each chip prints its own distance, so a far one reads as far
+// rather than as a wrong answer.
+const NEARBY_RADIUS_M = 100000;
 const NEARBY_LIMIT = 4;
-
-// distance_m comes straight from ST_Distance_Sphere in SurflineSpotService.
-const asKm = (metres) =>
-    metres === null || metres === undefined ? null : `${(metres / 1000).toFixed(1)} km`;
 
 class Location extends Component {
     // Responses can land out of order. Only the newest request may write to
@@ -43,6 +43,9 @@ class Location extends Component {
         results : [],
         open : false,
         nearby : [],
+        // The dashboard pin, offered as its own chip. Kept separate from
+        // nearby so it stays first and survives the spot list coming back empty.
+        pin : null,
         coords : null,
         lat : null,
         lng : null
@@ -52,46 +55,74 @@ class Location extends Component {
         loadPlaces()
             .then(places => this.setState({places}))
             .catch(err => this.setState({loadError: err.message}));
-        if (this.props.prefillNearby) this.locateNearbySpots();
+        if (this.props.prefillNearby) {
+            this.locateNearbySpots();
+            this.unsubscribe = onViewLocationChange((pin) => {
+                // A spot already chosen is the surfer's answer, not a stale
+                // suggestion, so a pin moving behind an in-progress form must
+                // not replace it.
+                if (this.state.location_id) return;
+                if (pin) {
+                    this.setState({pin});
+                    return this.loadNearbySpots(pin.lat, pin.lon);
+                }
+                this.setState({nearby: [], coords: null, pin: null});
+                this.locateNearbySpots();
+            });
+        }
     }
 
     /*
-     * navigator.geolocation, not the geolocator package the report widgets use.
-     * Google is not involved in this half at all - the browser supplies the
-     * coords and /api/spot/nearest answers from MySQL - so these chips work with
-     * REACT_APP_GOOGLE_API_KEY unset, which is the state the app ships in.
+     * The dashboard pin wins over the browser fix. Someone reporting on another
+     * coast is almost always about to log a session there, and offering the
+     * spots around the machine instead is the wrong list twice over: wrong
+     * chips, and a search ranked from the wrong origin.
      *
-     * Every failure is silent on purpose. A denied permission, a timeout and an
-     * empty radius are all the same outcome here: no chips, and the autocomplete
-     * below is still the way in.
+     * A pin that is itself a seeded spot comes back as its own first chip, at
+     * roughly zero distance, because /api/spot/nearest measures from the point
+     * it is given and that point is the spot.
      */
     locateNearbySpots = () => {
+        const pin = readViewLocation();
+        if (pin) {
+            this.setState({pin});
+            return this.loadNearbySpots(pin.lat, pin.lon);
+        }
+
+        /*
+         * navigator.geolocation, not the geolocator package the report widgets
+         * use. Google is not involved in this half at all - the browser
+         * supplies the coords and /api/spot/nearest answers from MySQL - so
+         * these chips work with REACT_APP_GOOGLE_API_KEY unset, which is the
+         * state the app ships in.
+         *
+         * Every failure is silent on purpose. A denied permission, a timeout
+         * and an empty radius are all the same outcome here: no chips, and the
+         * autocomplete below is still the way in.
+         */
         if (!navigator.geolocation) return;
         navigator.geolocation.getCurrentPosition(
             (position) => {
-                if (this.unmounted) return;
-                // Kept for the search ranking too, so a denied permission
-                // costs the ordering and nothing else.
-                this.setState({
-                    coords: {
-                        lat: position.coords.latitude,
-                        lon: position.coords.longitude
-                    }
-                });
-                getSpots(
+                this.loadNearbySpots(
                     position.coords.latitude,
-                    position.coords.longitude,
-                    NEARBY_RADIUS_M,
-                    NEARBY_LIMIT
-                )
-                    .then(spots => {
-                        if (!this.unmounted) this.setState({nearby: spots});
-                    })
-                    .catch(() => {});
+                    position.coords.longitude
+                );
             },
             () => {},
             {enableHighAccuracy: true, timeout: 10000, maximumAge: 300000}
         );
+    }
+
+    loadNearbySpots = (lat, lon) => {
+        if (this.unmounted) return;
+        // Held for the search ranking too, so a denied permission costs the
+        // ordering and nothing else.
+        this.setState({coords: {lat, lon}});
+        getSpots(lat, lon, NEARBY_RADIUS_M, NEARBY_LIMIT)
+            .then(spots => {
+                if (!this.unmounted) this.setState({nearby: spots});
+            })
+            .catch(() => {});
     }
 
     // The conditions belong to an hour, not just a place, so moving the
@@ -102,6 +133,7 @@ class Location extends Component {
 
     componentWillUnmount() {
         clearTimeout(this.debounce);
+        if (this.unsubscribe) this.unsubscribe();
         this.unmounted = true;
     }
 
@@ -214,6 +246,15 @@ class Location extends Component {
         }
     }
 
+    /*
+     * The coordinates, for callers that want the point rather than the id the
+     * session form saves. Both select paths end here, so a spot chip and a
+     * Google suggestion emit the same shape.
+     */
+    emitLocation = (id, lat, lon, name) => {
+        if (this.props.onLocation) this.props.onLocation({id, lat, lon, name});
+    }
+
     handleSelectResult = (result) => {
         if (result.kind === 'spot') return this.handleSelectSpot(result.spot);
         return this.handleSelectSuggest(result.suggestion);
@@ -240,6 +281,12 @@ class Location extends Component {
         // session title from it and "Ocean Grove Beach" is a title where
         // "Ocean Grove Beach, Ocean Grove, NJ 07756, USA" is not.
         this.props.onChange('location_name', place.displayName || place.formattedAddress);
+        this.emitLocation(
+            place.id,
+            place.location.lat(),
+            place.location.lng(),
+            place.displayName || place.formattedAddress
+        );
         this.setState(
             {lat: place.location.lat(), lng: place.location.lng()},
             this.fetchConditions
@@ -247,10 +294,11 @@ class Location extends Component {
     }
 
     /*
-     * A spot id is a surfline_spots primary key, not a Google place id, and it
-     * lands in sessions.location_id the same way one does. LocationService
-     * reads that table before it calls Google, so nothing on this path needs a
-     * key or a billed details request.
+     * Takes a seeded spot and the pinned-location chip alike, so the id here is
+     * a surfline_spots primary key OR a Google place id. Both land in
+     * sessions.location_id the same way: LocationService reads the spot table
+     * before it calls Google, so a seeded id needs no key and no billed details
+     * request, and a place id falls through to the lookup that does.
      */
     handleSelectSpot = (spot) => {
         // Anything typed before the chip was tapped opened an autocomplete
@@ -273,6 +321,7 @@ class Location extends Component {
         });
         this.props.onChange('location_id', spot.id);
         this.props.onChange('location_name', spot.name);
+        this.emitLocation(spot.id, lat, lng, spot.name);
         this.setState({lat, lng}, this.fetchConditions);
     }
 
@@ -292,7 +341,21 @@ class Location extends Component {
     }
 
     render() {
-        const {value, search, open, loadError, nearby, location_id, results} = this.state
+        const {value, search, open, loadError, nearby, pin, location_id, results} = this.state
+
+        /*
+         * The pinned place leads, whether or not it is a seeded spot. That is
+         * how an address typed into the dashboard picker becomes a session
+         * location and starts accumulating readings, rather than being
+         * unreachable because the Overpass seed never heard of it.
+         *
+         * Deduped by id: a pin that IS a seeded spot would otherwise appear
+         * twice, once as itself and once as the nearest thing to itself.
+         */
+        const chips = pin && pin.id && pin.coastal
+            ? [{id: pin.id, name: pin.name, lat: pin.lat, lon: pin.lon, distance_m: null}]
+                .concat(nearby.filter(spot => String(spot.id) !== String(pin.id)))
+            : nearby
         const { fieldProps, fieldState, id, name, label, hint } = this.props
 
         const {
@@ -380,11 +443,13 @@ class Location extends Component {
               )}
             </div>
 
-            {nearby.length > 0 && !location_id && !search && (
+            {chips.length > 0 && !location_id && !search && (
               <div className="location-nearby">
-                <div className="location-nearby-label">Spots near you</div>
+                <div className="location-nearby-label">
+                  {pin ? 'Spots near your location' : 'Spots near you'}
+                </div>
                 <div className="location-nearby-chips">
-                  {nearby.map(spot => (
+                  {chips.map(spot => (
                     <button
                       key={spot.id}
                       /* Bare buttons submit the react-advanced-form Form. */

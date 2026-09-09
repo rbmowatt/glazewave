@@ -22,9 +22,20 @@ const user_boards = (state = initialState, action) => {
       newState = {...state, ...{data : filteredBoards}}
       return newState;
     case USER_BOARD_UPDATED :
-      newState = {...state, ...{selected : 
-        {...state.selected, ...action.payload}
-      }}
+      // The index renders from data, not from selected, so a rating changed
+      // inline there redrew nothing until this merged both. It merges rather
+      // than replaces because the PUT answers with the user_boards row alone:
+      // overwriting would drop the Board, Manufacturer and UserBoardImages the
+      // row needs to render.
+      newState = {...state,
+        selected : {...state.selected, ...action.payload},
+        data : (action.payload && action.payload.id)
+          ? state.data.map((row) =>
+              Number(row.id) === Number(action.payload.id)
+                ? {...row, ...action.payload}
+                : row)
+          : state.data
+      }
       return newState;
     case USER_BOARDS_CLEARED :
       return initialState;

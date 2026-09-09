@@ -8,6 +8,7 @@ import BoardCard from "./../board/BoardCard";
 import {
 	loadUserBoards,
 	deleteUserBoard,
+	updateUserBoard,
 	UserBoardsCleared,
 	UserBoardCreatedCleared,
 } from "./../../actions/user_board";
@@ -25,6 +26,7 @@ import {
 	ReactiveList
 } from "@appbaseio/reactivesearch";
 import { refresh } from './../../lib/utils/cognito';
+import { scopeFromSearch, searchWithScope } from './../../lib/utils/scope';
 
 
 const DEFAULT_SORT = "created_at_DESC";
@@ -50,28 +52,42 @@ const mapDispachToProps = (dispatch) => {
 	return {
 		loadBoards: (userSession, params) =>dispatch(loadUserBoards(userSession, params)),
 		deleteBoard: (userSession, id) =>dispatch(deleteUserBoard(userSession, id)),
+		updateBoard: (userSession, params) => dispatch(updateUserBoard(userSession, params)),
 		clearBoards: () => dispatch(UserBoardsCleared()),
 		clearCreatedBoard: () => dispatch(UserBoardCreatedCleared()),
 	};
 };
 
 const relations = {
-	user_board: ["Board.Manufacturer", "UserBoardImage"],
+	user_board: ["Board.Manufacturer", "UserBoardImage", "User"],
 };
 
 class BoardIndex extends Component {
 	constructor(props) {
 		super(props);
+		const showAll = scopeFromSearch(props.location && props.location.search);
 		this.state = {
-			show: false,//toggle for modal
+			// /board/create redirects here carrying this flag, so a bookmark or an
+			// old link still lands on the create form rather than the bare index.
+			show: !!(props.location && props.location.state && props.location.state.createBoard),//toggle for modal
 			selectedSortOrder: DEFAULT_SORT,
-			showAll: 0,//whether we are are showing only user boards or all public boards
-			filters: [{ match: { user_id: props.userSession.user.id } }],//a set of default filters to be sent to elastic
+			showAll: showAll,//whether we are are showing only user boards or all public boards
+			filters: BoardIndex.scopeFilters(props.userSession.user.id, showAll),//a set of default filters to be sent to elastic
 			mlVal : []
 		};
 		this.deleteBoard = this.deleteBoard.bind(this);
 		this.editBoard = this.editBoard.bind(this);
 		this.viewBoard = this.viewBoard.bind(this);
+		this.rateBoard = this.rateBoard.bind(this);
+	}
+
+	/*
+	The rating lives on user_boards, so this only ever touches the rider's own
+	row. The catalog Board it points at is not in the payload and is never
+	written from here.
+	*/
+	rateBoard(id, rating) {
+		this.props.updateBoard(this.props.userSession, { id: id, data: { rating: rating } });
 	}
 
 	componentDidMount() {
@@ -131,13 +147,28 @@ class BoardIndex extends Component {
 	/**
 	 * Will set some additional filters on elaticsearch
 	 */
-	setScope = (e) => {
-		const scopes = [{ match: { user_id: this.props.userSession.user.id } }]; //we always want to match against user id
-		if (parseInt(e.nextValue) === 1) {
-			const isPublic = { match: { is_public: 1 } }; //user also wants to see all public boards
-			scopes.push(isPublic);
+	static scopeFilters(userId, showAll) {
+		const scopes = [{ match: { user_id: userId } }]; //we always want to match against user id
+		if (parseInt(showAll) === 1) {
+			scopes.push({ match: { is_public: 1 } }); //user also wants to see all public boards
 		}
-		this.setState({ filters: scopes, showAll: parseInt(e.nextValue), mlVal : [] });
+		return scopes;
+	}
+
+	setScope = (e) => {
+		const showAll = parseInt(e.nextValue);
+		// replace, not push: the scope is a view of this page, not a step back
+		// to it. goBack() from a board still lands on the list as it was left.
+		this.props.history.replace({
+			pathname: this.props.location.pathname,
+			search: searchWithScope(this.props.location.search, showAll),
+			state: this.props.location.state,
+		});
+		this.setState({
+			filters: BoardIndex.scopeFilters(this.props.userSession.user.id, showAll),
+			showAll: showAll,
+			mlVal: [],
+		});
 	};
 
 	// ReactiveSearch decides whether to re-run a component's defaultQuery by
@@ -150,6 +181,29 @@ class BoardIndex extends Component {
 			bool: { should: filters },
 		},
 	});
+
+	/*
+	Elasticsearch picks which boards are on the page; MySQL orders them.
+	elasticResultHandler hands the hit ids to /api/user_board and order_by does
+	the sorting, so a fetch is always current. Nothing refetches after an inline
+	rating though, and the row would sit in its old slot until something else
+	did. Ratings are INTEGER, so this repeats the comparison the server just
+	made rather than approximating it.
+
+	Which page a board belongs on still comes from the index, which is about a
+	second behind a write.
+	*/
+	sortedBoards = () => {
+		const boards = this.props.boards || [];
+		const order = this.state.selectedSortOrder || DEFAULT_SORT;
+		const cut = order.lastIndexOf("_");
+		if (cut === -1) return boards;
+		if (order.slice(0, cut) !== "rating") return boards;
+		const direction = order.slice(cut + 1).toLowerCase() === "asc" ? 1 : -1;
+		return boards
+			.slice()
+			.sort((a, b) => ((Number(a.rating) || 0) - (Number(b.rating) || 0)) * direction);
+	};
 
 	/**
 	 * We need to keep track of sort order so that when we ask API to hydrrate items
@@ -332,8 +386,7 @@ class BoardIndex extends Component {
 									paginationAt="both"
 									render={({ data }) => (
 										<div className="gw-list">
-											{this.props.boards &&
-												this.props.boards.map((board) => (
+											{this.sortedBoards().map((board) => (
 													<BoardCard
 														detailed
 														board={board}
@@ -342,6 +395,7 @@ class BoardIndex extends Component {
 														viewBoard={this.boardCreated}
 														editBoard={this.editBoard}
 														isOwner={board.user_id === this.props.userSession.user.id}
+														onRate={this.rateBoard}
 													/>
 												))}
 										</div>

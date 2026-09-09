@@ -1,5 +1,6 @@
 const db = require("../models");
 const Op = db.Sequelize.Op;
+const { ownedOrPublic } = require("./rights/Visibility");
 
 // Cache model descriptions so we only hit the DB once per model
 const describeCache = new Map();
@@ -37,6 +38,22 @@ class BaseService {
     const options = {include: withs};
     if(selects.length) options.attributes = selects;
     return this.BaseModel.findByPk( id, options);
+  }
+
+  /**
+   * find(), narrowed to what the caller is allowed to see.
+   *
+   * Resolves null for a row that exists but is neither theirs nor public, so a
+   * private id answers exactly like a missing one and cannot be probed for.
+   * Ownership is the row's own user_id; models without one (locations, boards,
+   * manufacturers) are catalog data and do not come through here.
+   */
+  async findVisible({id, withs, viewer, column = 'user_id'})
+  {
+    return this.BaseModel.findOne({
+      where: { [Op.and]: [{ id: id }, ownedOrPublic(viewer, column)] },
+      include: withs,
+    });
   }
 
   async create(params, callback = null)

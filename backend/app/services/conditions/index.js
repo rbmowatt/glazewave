@@ -54,11 +54,15 @@ const WAVE_OUTPUT = [
 ];
 
 /*
- * A spot further away than this is not where anyone surfed, so it is only
- * worth borrowing coordinates from when the session's own point produced
- * nothing at all.
+ * Only consulted when the session's own point produced no wave data at all, so
+ * this is the distance past which borrowing is worse than reporting nothing.
+ *
+ * 25km was too tight for the seed's actual density. From La Paz the nearest
+ * seeded spot is 44km, and the bay returns four null wave fields, so the
+ * borrow never fired at the one place the fallback was written for and the
+ * report rendered wind, water and pressure alone.
  */
-const FALLBACK_RADIUS_M = 25000;
+const FALLBACK_RADIUS_M = 100000;
 
 const C_TO_F = (c) => (c * 9 / 5) + 32;
 const M_TO_FT = 3.28084;
@@ -222,10 +226,19 @@ const resolve = async ({ lat, lon, at }) => {
     const resolvedFor = new Date(hour.getTime());
 
     const own = await resolveAt(ownLat, ownLon, hour);
-    const stamp = (conditions, usedLat, usedLon) =>
+    /*
+     * borrowed_m is the distance the reading travelled, and it comes from
+     * nearest() rather than being computed here so the number matches the one
+     * the nearest-spots list prints for the same pair. That is road metres
+     * once OSRM has a ranking for the origin and straight-line until then, and
+     * the two differ by a lot: a La Paz point is 42.7km from Playa El Tecolote
+     * across the water and 65.1km by road.
+     */
+    const stamp = (conditions, usedLat, usedLon, borrowedM = null) =>
         Object.assign({}, conditions, {
             lat: String(usedLat),
             lon: String(usedLon),
+            borrowed_m: borrowedM,
             resolved_for: resolvedFor,
             resolved_at: new Date(),
         });
@@ -250,7 +263,7 @@ const resolve = async ({ lat, lon, at }) => {
     const borrowed = await resolveAt(spotLat, spotLon, hour);
     if (isBlank(borrowed)) return blank;
 
-    return stamp(borrowed, spotLat, spotLon);
+    return stamp(borrowed, spotLat, spotLon, spots[0].distance_m);
 };
 
 module.exports = resolve;

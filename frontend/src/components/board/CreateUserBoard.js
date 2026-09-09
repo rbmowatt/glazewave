@@ -92,7 +92,7 @@ class CreateUserBoard extends React.Component {
 					<h2>{TITLE}</h2>
 					{!submitSuccess && (
 						<div className="alert alert-info" role="alert">
-							Fill the form below to create a new post
+							Fill the form below to add a board to your quiver
 						</div>
 					)}
 					{submitSuccess && (

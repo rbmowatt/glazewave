@@ -2,12 +2,20 @@ const { Router } = require('express');
 let upload = require('./../services/images/upload');
 const BaseService = require('./../services/UserBoardService');
 const ImageService  = require('./../services/ImageService');
+const { scopedParser } = require('./../services/rights/Visibility');
 const EntityType = 'UserBoard';
 
 const router = new Router();
 
+/*
+ * The router used to be behind cognitoAuthMiddleware, which answers "is this
+ * anyone at all" and never "is this row yours" - so any signed-in rider could
+ * read every other rider's private boards by asking for them. Writes are still
+ * gated; the reads are scoped instead, which is also what lets a board marked
+ * public open from a shared link with no account.
+ */
 router.get('/', function (req, res) {
-  BaseService.make().where( req.parser)
+  BaseService.make().where( scopedParser(req) )
     .then(data => {
       res.send(data);
     })
@@ -20,7 +28,7 @@ router.get('/', function (req, res) {
 });
 
 router.get('/images', function (req, res) {
-  ImageService.make("UserBoardImage").where( req.parser )
+  ImageService.make("UserBoardImage").whereVisible( req.parser, req.viewer )
     .then(data => {
       res.send(data);
     })
@@ -34,8 +42,13 @@ router.get('/images', function (req, res) {
 
 router.get('/:id', function (req, res) {
   req.parser.id = req.params.id;
-  BaseService.make().find(req.parser)
+  BaseService.make().findVisible({id: req.params.id, withs: req.parser.withs, viewer: req.viewer})
     .then(data => {
+      if (!data) {
+        return res.status(404).send({
+          message: `Cannot find ${EntityType} with id=${req.params.id}.`
+        });
+      }
       res.send(data);
     })
     .catch(err => {

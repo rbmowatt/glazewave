@@ -1,0 +1,10 @@
+{
+  "url": "https://glazewave-uploads-124666675445.s3.amazonaws.com/data/coastline.bin",
+  "sha256": "bd83c62c8932a2738bb01ce9ab987b5759aac02585bf8c40723c1c706dd9e906",
+  "bytes": 2770184,
+  "segments": 172695,
+  "cells": 586,
+  "built": "2026-09-09",
+  "source": "GSHHG 2.3.7 gshhs_h.b, level 1, LGPL, Wessel and Smith",
+  "regions": ["conus", "alaska", "aleutians", "hawaii", "mexico"]
+}

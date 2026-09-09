@@ -2,12 +2,19 @@ const { Router } = require('express');
 let upload = require('./../services/images/upload');
 const BaseService = require('./../services/SessionService');
 const ImageService  = require('./../services/ImageService');
+const { scopedParser } = require('./../services/rights/Visibility');
 const EntityType = 'Session';
 
 const router = new Router();
 
+/*
+ * Open to anonymous callers on purpose - a public session opens from a shared
+ * link and App.js routes /session/:id without PrivateRoute. scopedParser is
+ * what keeps "open" from meaning "everyone's rows": the caller's filters are
+ * ANDed with owner-or-public, which they cannot widen from the query string.
+ */
 router.get('/', function (req, res) {
-  BaseService.make().where( req.parser )
+  BaseService.make().where( scopedParser(req) )
     .then(data => {
       res.send(data);
     })
@@ -20,7 +27,7 @@ router.get('/', function (req, res) {
 });
 
 router.get('/images', function (req, res) {
-  ImageService.make('SessionImage').where( req.parser )
+  ImageService.make('SessionImage').whereVisible( req.parser, req.viewer )
     .then(data => {
       res.send(data);
     })
@@ -58,8 +65,15 @@ router.post('/images', upload({destinationPath : 'user_sessions'}).array('photo'
 
 router.get('/:id', function (req, res) {
   req.parser.id = req.params.id;
-  BaseService.make().find(req.parser)
+  BaseService.make().findVisible({id: req.params.id, withs: req.parser.withs, viewer: req.viewer})
     .then(data => {
+      // A private session answers exactly like a missing one, so an id cannot
+      // be probed for existence.
+      if (!data) {
+        return res.status(404).send({
+          message: `Cannot find ${EntityType} with id=${req.params.id}.`
+        });
+      }
       res.send(data);
     })
     .catch(err => {

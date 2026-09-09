@@ -36,6 +36,10 @@ module.exports = (sequelize, DataTypes) => {
 
   Session.associate = function(models) {
     Session.belongsTo(models.UserBoard,  {foreignKey: 'board_id', targetKey: 'id'});
+    // User.hasMany(Session) alone only builds the association on User, so a
+    // session could not be fetched with its owner. The rider's name and photo
+    // on a public session row need this side.
+    Session.belongsTo(models.User);
     Session.belongsTo(models.Location);
     Session.hasMany(models.SessionImage);
     Session.hasOne(models.SessionData);

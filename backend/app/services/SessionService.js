@@ -115,6 +115,7 @@ class SessionService  extends BaseService {
         if (resetManual) existing.manual_fields = null;
         existing.lat = resolved.lat;
         existing.lon = resolved.lon;
+        existing.borrowed_m = resolved.borrowed_m;
         existing.resolved_for = resolved.resolved_for;
         existing.resolved_at = resolved.resolved_at;
         return existing.save();
@@ -130,7 +131,10 @@ class SessionService  extends BaseService {
     async ensureLocation(params)
     {
         if(!params.location_id) return null;
-        return LocationService.make().resolve(params.location_id);
+        // user_id rides along so a place promoted into surfline_spots records
+        // who put it there. Without it a bad row is anonymous and the only way
+        // to undo a batch is to diff against the seed file.
+        return LocationService.make().resolve(params.location_id, params.user_id);
     }
 }
 

@@ -6,8 +6,10 @@
 // Ranked worst to best. A year only overwrites one that ranks lower, so an EOS
 // yearIntroduced column beats a regex over Shopify marketing copy, and
 // 'boilerplate' - the brand founding year lifted out of house copy - never wins
-// anything.
-const YEAR_RANK = { boilerplate: 0, mentioned: 1, title: 2, stated: 3, field: 4 };
+// anything. 'secondary' is a compiled reference work asserting a year with no
+// citation behind it, so it beats a year scraped out of a model name and loses
+// to anything a primary source said.
+const YEAR_RANK = { boilerplate: 0, mentioned: 1, title: 2, secondary: 3, stated: 4, field: 5 };
 
 // Which source to believe per field when the same model arrives from several.
 // EOS is the historical authority; the brand stores describe what is being sold

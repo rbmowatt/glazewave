@@ -54,6 +54,25 @@
 	padding: 0 !important;
 	max-height: 240px;
 	overflow-y: auto;
+	/* Firefox, and Chrome 121+. The ::-webkit- rules below cover Safari and
+	   everything older. :root sets color-scheme: dark, so an unstyled bar is
+	   already dark; this is only about making it thin and quiet. */
+	scrollbar-width: thin;
+	scrollbar-color: var(--gw-edge-strong) transparent;
+}
+.gw-index-facets .gw-facet-list::-webkit-scrollbar { width: 8px; }
+.gw-index-facets .gw-facet-list::-webkit-scrollbar-track { background: transparent; }
+.gw-index-facets .gw-facet-list::-webkit-scrollbar-thumb {
+	/* The transparent border plus content-box clip is what draws a 4px thumb
+	   inside an 8px track: the track has to stay wide enough to grab. */
+	background: var(--gw-edge-strong);
+	background-clip: content-box;
+	border: 2px solid transparent;
+	border-radius: 4px;
+}
+.gw-index-facets .gw-facet-list::-webkit-scrollbar-thumb:hover {
+	background: var(--gw-edge-hover);
+	background-clip: content-box;
 }
 .gw-index-facets .gw-facet-list li {
 	display: flex;
@@ -78,7 +97,12 @@
 	align-items: center !important;
 	gap: 9px;
 	width: 100%;
-	padding: 5px 0 !important;
+	/* The count used to render under the scrollbar. The inset is on the label
+	   rather than on the scrolling list so it does not depend on where the
+	   browser draws the bar: a classic scrollbar has already narrowed the
+	   content box by the time this applies, an overlay one draws over the gap,
+	   and both facet lists get it so the short one lines up with the tall. */
+	padding: 5px 10px 5px 0 !important;
 	margin: 0 !important;
 	font-size: 12px !important;
 	line-height: 1.4;

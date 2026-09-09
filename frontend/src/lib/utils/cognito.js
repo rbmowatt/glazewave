@@ -5,7 +5,7 @@ import { cognitoConfig } from '../../config/cognito.js'
 import { clearSession, setSessionCookie } from './session';
 import { SET_SESSION } from './../../actions/types';
 import apiConfig from '../../config/api.js';
-import {logInUser, loadUser} from './../../actions/user';
+import {loadUser} from './../../actions/user';
 import store from './../../store/index'
 import TokenStorage from './../utils/token_storage';
 import { startDemoSession, isDemoSession, storedSession } from './demo';
@@ -94,12 +94,22 @@ const getCognitoSession = (dispatch) => {
       if (claims.email) params.set('email', claims.email);
       if (claims.given_name) params.set('first_name', claims.given_name);
       if (claims.family_name) params.set('last_name', claims.family_name);
-      axios.get( apiConfig.host + apiConfig.port + `/api/user/firstOrNew?` + params.toString()
+      /*
+       * firstOrNew verifies the token and matches it against the username in
+       * the query string, so this call has to carry the header. It always
+       * could: getSession has already resolved result.accessToken by here, and
+       * formatSessionObject below reads the same jwtToken.
+       */
+      axios.get( apiConfig.host + apiConfig.port + `/api/user/firstOrNew?` + params.toString(),
+        { headers: { Authorization: `Bearer ${result.accessToken.jwtToken}` } }
         ).then(data => {
         const session = formatSessionObject(data.data.id, result);
         TokenStorage.setToken({access_token : session.jwt, refresh_token : null});
         session.user = {...session.user, ...data.data[0]};
-        dispatch(loadUser(session, {wheres : {email : result.idToken.payload.email}}));
+        // loadUser goes through getOne(), which builds /api/user/:id and never
+        // looks at wheres, so the email filter here was requesting
+        // /api/user/null and writing null over the store's user record.
+        dispatch(loadUser(session, {id : data.data.id}));
         resolve(session);
       });     
     })

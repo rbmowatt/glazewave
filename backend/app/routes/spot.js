@@ -1,6 +1,7 @@
 const { Router } = require('express');
 const cognitoAuth = require('./../lib/cognitoAuth');
 const BaseService = require('./../services/SurflineSpotService');
+const coastline = require('./../services/Coastline');
 const EntityType = 'Spot';
 
 const router = new Router();
@@ -15,6 +16,20 @@ const MAX_SEARCH_LIMIT = 25;
 // One character matches most of the table and ranks it by distance, which
 // reads as a broken field rather than a search.
 const MIN_QUERY_LENGTH = 2;
+
+/*
+ * limit is one of QueryParser's reserved keys and it deletes those off
+ * req.query before any router runs, so req.query.limit is always undefined
+ * here and both routes served their default no matter what the caller asked
+ * for. The raw URL still carries it. lat, lon, radius and q are unreserved
+ * and survive, so only limit needs this.
+ */
+const rawParam = (req, name) => {
+  const mark = req.originalUrl.indexOf('?');
+  if (mark === -1) return undefined;
+  const value = new URLSearchParams(req.originalUrl.slice(mark + 1)).get(name);
+  return value === null ? undefined : value;
+};
 
 const clamp = (value, fallback, max) => {
   const parsed = Number.parseInt(value, 10);
@@ -43,7 +58,7 @@ router.get('/nearest', function (req, res) {
     lat: lat,
     lon: lon,
     radius: clamp(req.query.radius, DEFAULT_RADIUS_M, MAX_RADIUS_M),
-    limit: clamp(req.query.limit, DEFAULT_LIMIT, MAX_LIMIT),
+    limit: clamp(rawParam(req, 'limit'), DEFAULT_LIMIT, MAX_LIMIT),
   })
     .then(spots => {
       res.send({ spots: spots });
@@ -54,6 +69,38 @@ router.get('/nearest', function (req, res) {
           err.message || "Some error occurred while retrieving " + EntityType + "."
       });
     });
+});
+
+/*
+ * Is this point on land that touches open ocean.
+ *
+ * Answered here rather than at session-save time so the picker can say why a
+ * place was refused while the surfer is still looking at it, and so the
+ * create-session chips cost no request at all - the verdict rides on the pin.
+ *
+ * known:false means there is no shoreline data within reach: a coast outside
+ * the boxes in scripts/build_coastline.js, or a point far inland. Both refuse.
+ */
+router.get('/coastal', function (req, res) {
+  const lat = Number.parseFloat(req.query.lat);
+  const lon = Number.parseFloat(req.query.lon);
+
+  if (!Number.isFinite(lat) || lat < -90 || lat > 90 ||
+      !Number.isFinite(lon) || lon < -180 || lon > 180) {
+    res.status(400).send({
+      message: "lat and lon are required and must be valid coordinates."
+    });
+    return;
+  }
+
+  try {
+    res.send(coastline.classify(lat, lon));
+  } catch (err) {
+    // A missing or truncated coastline.bin must not take the route down with
+    // it. Unknown reads the same as inland to every caller, which fails closed.
+    console.error('coastal lookup failed:', err.message);
+    res.send({ coastal: false, known: false, shoreline_m: null, open: 0 });
+  }
 });
 
 /*
@@ -85,7 +132,7 @@ router.get('/search', function (req, res) {
     q: q,
     lat: hasOrigin ? lat : null,
     lon: hasOrigin ? lon : null,
-    limit: clamp(req.query.limit, DEFAULT_SEARCH_LIMIT, MAX_SEARCH_LIMIT),
+    limit: clamp(rawParam(req, 'limit'), DEFAULT_SEARCH_LIMIT, MAX_SEARCH_LIMIT),
   })
     .then(spots => {
       res.send({ spots: spots });

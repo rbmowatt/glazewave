@@ -4,8 +4,22 @@ const EntityType = 'Location';
 
 const router = new Router();
 
+/*
+ * user_id came off the query string, so ?user_id=3 returned rider 3's private
+ * photos to anybody. It comes off the verified token now and the query param
+ * is ignored; is_public still chooses between "mine" and "mine plus public",
+ * which narrows and cannot widen.
+ *
+ * Nothing in the frontend calls this route. It is fixed rather than deleted
+ * because it is mounted and reachable either way.
+ */
 router.get('/', function (req, res) {
-  BaseService.make().getAll(req.parser)
+  if (!req.viewer) {
+    return res.status(401).send({ message: 'Sign in to list images.' });
+  }
+  BaseService.make().getAll({
+    wheres: { user_id: req.viewer.id, is_public: req.parser.wheres.is_public }
+  })
     .then(data => {
       res.send(data[0]);
     })

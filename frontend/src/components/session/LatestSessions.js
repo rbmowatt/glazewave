@@ -16,7 +16,9 @@ export const LatestSessions = props => {
                 <div className="gw-empty">
                     NOTHING LOGGED YET
                     <br />
-                    <Link className="gw-link" to={'/session/create'}>LOG YOUR FIRST SESSION &rarr;</Link>
+                    <button type="button" className="gw-link" onClick={props.onLogSession}>
+                        LOG YOUR FIRST SESSION &rarr;
+                    </button>
                 </div>
             ) : (
                 <div className="gw-list">

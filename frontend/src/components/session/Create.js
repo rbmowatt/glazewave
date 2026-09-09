@@ -40,7 +40,9 @@ class Create extends React.Component{
     }
   
     componentDidMount(){
-        if (!this.props.session.isLoggedIn) {
+        // Mounted inside a Modal now, which renders its children whether or not
+        // it is open, so this runs on pages that never show the form.
+        if (!this.props.session.isLoggedIn && this.props.onSubmissionComplete) {
             this.props.onSubmissionComplete()
         }
     }

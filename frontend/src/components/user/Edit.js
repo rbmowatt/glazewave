@@ -2,6 +2,7 @@ import * as React from 'react';
 import { connect } from 'react-redux'
 import axios from 'axios';
 import apiConfig from '../../config/api.js';
+import authHeaders from './../../lib/utils/authHeaders';
 import  MainContainer  from './../layout/MainContainer';
 import {FormCard} from './../layout/FormCard';
 import {UserForm} from './UserForm';
@@ -30,20 +31,20 @@ class EditUser extends React.Component{
         if (this.props.session.isLoggedIn) {
             
             
-            axios.get(apiConfig.host + apiConfig.port + `/api/user/${this.state.id}`, this.props.session.headers).then(data => {
+            axios.get(apiConfig.host + apiConfig.port + `/api/user/${this.state.id}`, authHeaders()).then(data => {
                 this.setState({ user: data.data });
             })
-            .catch(error=>this.props.history.push('/user'));
+            .catch(error=>this.props.history.push('/user/dashboard'));
         }
     }
 
     processFormSubmission = async (e) => {
         e.preventDefault();
         this.setState({ loading: true });
-        axios.put(apiConfig.host + apiConfig.port + `/api/user/${this.state.id}`, this.state.values, this.props.session.headers).then(data => {
+        axios.put(apiConfig.host + apiConfig.port + `/api/user/${this.state.id}`, this.state.values, authHeaders()).then(data => {
             this.setState({ submitSuccess: true, loading: false })
             setTimeout(() => {
-                this.props.history.push('/user');
+                this.props.history.push('/user/dashboard');
             }, 1500)
         })
         .catch(
@@ -62,9 +63,10 @@ class EditUser extends React.Component{
         this.setValues({ [e.currentTarget.id]: e.currentTarget.value })
     }
 
+    // The user index is gone, and this page is only ever your own row now.
     returnToIndex = e =>
     {
-      this.props.history.push('/user');
+      this.props.history.push('/user/dashboard');
     }
 
     render() {

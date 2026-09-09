@@ -4,6 +4,16 @@ services implementing BaseService.js to use
 */
 const db = require("./../models");
 
+/*
+Columns a model is allowed to expose when it rides along as a relation. Anything
+listed here is filtered on every `with[]`, at any nesting depth. Public boards
+and sessions carry their owner now, and users table holds the rider's email;
+without this the first `with[]=User` would have handed it to every visitor.
+*/
+const RELATION_ATTRIBUTES = {
+  User: ['id', 'username', 'first_name', 'profile_img'],
+};
+
 const QueryParser = function (req, res, next) {
     //these keys are resrved and should not be expected to pass through or be assigned inconsistent values
     const reservedKeys = ['with', 'page', 'limit', 'order_by', 'in', 'page'];
@@ -60,7 +70,7 @@ Recursive so as to allow nesting
         if(withs.split('.').length === 1)
         {
           //it's a single with with no children, just return
-            result.push({model : db[withs]});
+            result.push(relation(withs));
             return result;
         }
         //turn it into an array to satisfy the forEach below
@@ -70,18 +80,23 @@ Recursive so as to allow nesting
         if(w.split('.').length > 1)
         {
             //it has a child so we're going to have to handle this one then recurse
-            let table = db[w.split('.')[0]];
-            const cr = {model : table}
+            const cr = relation(w.split('.')[0]);
             const remaining = w.substring(w.indexOf('.')+1)
             cr.include = parseWiths(remaining);
             result.push(cr);
         }
         else{
-            let table = db[w];
-            result.push({model : table });
+            result.push(relation(w));
         }
       })
       return result;
+  }
+
+  const relation = ( name ) =>
+  {
+    const include = { model : db[name] };
+    if(RELATION_ATTRIBUTES[name]) include.attributes = RELATION_ATTRIBUTES[name];
+    return include;
   }
 
   module.exports = QueryParser;

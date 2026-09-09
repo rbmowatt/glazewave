@@ -48,6 +48,11 @@ module.exports = (sequelize, DataTypes) => {
     // rather than the Google place on the session.
     lat: DataTypes.STRING,
     lon: DataTypes.STRING,
+    // How far that point is from the session's own place, null when the
+    // reading is the place itself. Stored rather than derived from the two
+    // coordinate pairs because it carries OSRM's road distance when one was
+    // available, which no arithmetic here can reproduce.
+    borrowed_m: DataTypes.DOUBLE,
     created_at: {
       allowNull: false,
       type: DataTypes.DATE,

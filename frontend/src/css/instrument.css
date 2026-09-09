@@ -147,6 +147,10 @@ nav.navbar .nav-link.active {
 	border-radius: 50%;
 	background: var(--gw-edge);
 	border: 1px solid var(--gw-edge-strong);
+	/* The same class covers the placeholder span and the <img>, so the image
+	   needs both of these or a non-square photo renders stretched. */
+	object-fit: cover;
+	flex-shrink: 0;
 }
 .white-txt { color: var(--gw-faint); }
 
@@ -515,6 +519,45 @@ div.details div.privacy input[type="radio"] {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+/* ---------- owner badge ---------- */
+
+/* Sized off .gw-nav-avatar rather than sharing it: the navbar circle is 28px
+   and swamps a list row. Same object-fit rule though, because the same class
+   covers both the <img> and the empty-state <span>. */
+.gw-owner {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	margin-top: 6px;
+	min-width: 0;
+}
+.gw-owner-avatar {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background: var(--gw-edge);
+	border: 1px solid var(--gw-edge-strong);
+	object-fit: cover;
+	flex-shrink: 0;
+}
+.gw-owner-name {
+	font-family: var(--gw-mono);
+	font-size: 10px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--gw-dim);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* The detail pages sit under a title rather than in a dense row, so the badge
+   gets room to breathe and a slightly larger circle. */
+.session-title .gw-owner,
+.gw-title-block .gw-owner { margin-top: 10px; }
+.session-title .gw-owner-avatar,
+.gw-title-block .gw-owner-avatar { width: 22px; height: 22px; }
+
 .gw-row-rating {
 	font-family: var(--gw-mono);
 	font-size: 15px;
@@ -860,11 +903,15 @@ div.details div.privacy input[type="radio"] {
 	border: 0;
 	margin: 0;
 }
+/*
+ * Color only. Every metric for these - size, padding, margin - lives in the
+ * second modal block further down this file, whose selectors carry an
+ * attribute and therefore outrank anything written here. Adding a size to this
+ * block looks like it works and does nothing.
+ */
 .modal .modal-main label,
 .modal .modal-main strong {
 	font-family: var(--gw-mono);
-	font-size: 10px !important;
-	letter-spacing: 0.16em;
 	text-transform: uppercase;
 	color: var(--gw-dim);
 }
@@ -876,7 +923,27 @@ div.details div.privacy input[type="radio"] {
 	background: var(--gw-raised) !important;
 	border: 1px solid var(--gw-edge-strong) !important;
 	color: var(--gw-text) !important;
+}
+
+/*
+ * .gw-trend-empty is a dashboard panel filler: 64px of vertical padding so an
+ * empty widget still occupies its column. Between two form fields that is a
+ * hole, which is what put the conditions block half a screen below its label.
+ */
+.modal .modal-main .gw-trend-empty {
+	padding: 16px 0;
+	text-align: left;
+}
+
+/*
+ * Every control in this app is square, so a pill chip is the one round thing
+ * on screen and reads as borrowed from somewhere else. Metrics match the
+ * fields above them rather than being their own size.
+ */
+.modal .modal-main .location-nearby-chip {
 	border-radius: 0;
+	padding: 7px 12px;
+	font-size: 13px;
 }
 .modal .modal-main ::placeholder { color: var(--gw-faint) !important; }
 .modal .modal-main .btn {
@@ -1202,3 +1269,332 @@ input.gw-title-field:focus {
 .session-form .form-control { margin-bottom: 18px; }
 .session-form .location-field { margin-bottom: 18px; }
 .session-form .location-field .form-control { margin-bottom: 0; }
+
+.gw-uploader-error {
+	font-size: 11px;
+	line-height: 1.4;
+	color: #e08a7a;
+	margin-top: 6px;
+}
+
+/* ---------- image gallery ---------- */
+
+/*
+ * react-image-gallery ships light-theme defaults: a #337ab7 4px border on the
+ * active thumbnail and a strip whose height came from Nav.css's bare `nav`
+ * rule. With that rule gone the strip is sized by the thumbnails themselves,
+ * so the padding here is what centers them.
+ */
+.image-gallery-slide-wrapper {
+	background: var(--gw-ground);
+	border: 1px solid var(--gw-edge);
+	padding: 8px;
+}
+.image-gallery-slide .image-gallery-image { display: block; }
+
+.image-gallery-thumbnails { padding: 12px 0; overflow-x: auto; }
+.image-gallery-thumbnails-container { line-height: 0; }
+
+.image-gallery-thumbnail {
+	width: 84px;
+	border: 1px solid var(--gw-edge-strong);
+	vertical-align: middle;
+	opacity: 0.55;
+	transition: opacity 0.2s ease-out, border-color 0.2s ease-out;
+}
+.image-gallery-thumbnail + .image-gallery-thumbnail { margin-left: 6px; }
+.image-gallery-thumbnail:hover {
+	border: 1px solid var(--gw-edge-hover);
+	opacity: 1;
+}
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus {
+	border: 1px solid var(--gw-accent);
+	opacity: 1;
+}
+
+.image-gallery-icon:focus { outline: none; }
+.image-gallery-icon:hover { color: var(--gw-accent); }
+.image-gallery-fullscreen-button,
+.image-gallery-play-button { padding: 12px; }
+.image-gallery-fullscreen-button .image-gallery-svg,
+.image-gallery-play-button .image-gallery-svg { height: 20px; width: 20px; }
+
+.image-gallery-bullets .image-gallery-bullet {
+	box-shadow: none;
+	padding: 3px;
+	border-color: rgba(230, 237, 240, 0.65);
+}
+.image-gallery-bullets .image-gallery-bullet:hover,
+.image-gallery-bullets .image-gallery-bullet:focus,
+.image-gallery-bullets .image-gallery-bullet.active {
+	background: var(--gw-accent);
+	border-color: var(--gw-accent);
+	transform: none;
+}
+
+.image-gallery-index {
+	top: 8px;
+	right: 8px;
+	background: rgba(7, 9, 11, 0.72);
+	font-family: var(--gw-mono);
+	font-size: 11px;
+	letter-spacing: 0.08em;
+	padding: 5px 9px;
+}
+
+/* ---------- profile photo lightbox ---------- */
+
+.gw-profile-img { cursor: pointer; }
+.gw-profile-img:hover { border-color: var(--gw-accent); }
+
+/* .modal .modal-main pins a 620px form width; the lightbox is sized by the
+   photo instead, and overflow has to stay visible or the close button that
+   sits outside the corner is clipped. */
+.modal.gw-lightbox .modal-main {
+	width: auto;
+	background: var(--gw-panel);
+	border: 1px solid var(--gw-edge-strong);
+	padding: 10px;
+	overflow: visible;
+}
+.gw-lightbox-body { position: relative; line-height: 0; }
+.gw-lightbox-body img {
+	display: block;
+	max-width: calc(100vw - 88px);
+	max-height: calc(100vh - 120px);
+	object-fit: contain;
+}
+.gw-lightbox-close {
+	position: absolute;
+	top: -13px;
+	right: -13px;
+	width: 26px;
+	height: 26px;
+	line-height: 1;
+	padding: 0;
+	background: var(--gw-panel);
+	border: 1px solid var(--gw-edge-strong);
+	color: var(--gw-muted);
+	font-size: 17px;
+	cursor: pointer;
+}
+.gw-lightbox-close:hover {
+	color: var(--gw-text);
+	border-color: var(--gw-edge-hover);
+}
+
+/* ---------- inline rating on the sessions index ---------- */
+
+.gw-row-stars {
+	display: flex;
+	justify-content: flex-end;
+	gap: 1px;
+	margin-top: 5px;
+}
+.gw-row-stars svg { cursor: pointer; }
+
+/* ---------- create modals ---------- */
+
+/*
+ * react-advanced-form-addons renders its fields and its submit button through
+ * styled-components, which injects at runtime and therefore lands after this
+ * file in the cascade. Everything below is a descendant selector for that
+ * reason: matching their specificity would lose on source order.
+ */
+
+.modal .modal-main h2 {
+	font-size: 21px;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+	margin: 0 0 14px;
+}
+
+/* Bootstrap's alert-info is a slab of cyan. This is a caption, not an alarm. */
+.modal .modal-main .alert-info {
+	background: transparent;
+	border: 0;
+	border-left: 2px solid var(--gw-edge-strong);
+	border-radius: 0;
+	color: var(--gw-dim);
+	font-size: 12px;
+	padding: 2px 0 2px 12px;
+	margin: 0 0 20px;
+}
+
+/* FormCard nests .row inside .container inside another .row, all inside a
+   fixed 620px panel. The rows' -15px margins escape and put a horizontal
+   scrollbar across the bottom of the modal. Flattening the grid here also
+   lines the heading, the fields and the uploader up on one left edge, which
+   the nested columns' padding was breaking. */
+.modal .modal-main .row { margin-left: 0; margin-right: 0; }
+.modal .modal-main .container { padding-left: 0; padding-right: 0; }
+.modal .modal-main [class^="col-"],
+.modal .modal-main [class*=" col-"] { padding-left: 0; padding-right: 0; }
+
+.modal .modal-main .gw-field { margin-bottom: 16px; }
+
+/* The addons' own label is a plain styled span; this pulls it onto the same
+   mono eyebrow the rest of the app uses so it matches .gw-field-label. */
+/*
+ * This block and the one in the create-modal section above both style the same
+ * elements. These selectors carry an attribute, so they win on specificity no
+ * matter which is written first, which is why every metric belongs here and
+ * only paint belongs up there.
+ *
+ * The chip row and the conditions block came in as dashboard widgets carrying
+ * their own eyebrow rules, so the form was showing three sizes and three colors
+ * of what reads as one thing. They join the labels here.
+ */
+.modal .modal-main label,
+.modal .modal-main .gw-eyebrow,
+.modal .modal-main .location-nearby-label {
+	display: block;
+	font-family: var(--gw-mono);
+	font-size: 10px;
+	line-height: 1.4;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	color: var(--gw-dim);
+	font-weight: 400;
+	margin-bottom: 6px;
+}
+
+.modal .modal-main input[type="text"],
+.modal .modal-main input[type="email"],
+.modal .modal-main input[type="number"],
+.modal .modal-main input[type="datetime-local"],
+.modal .modal-main .form-control,
+.modal .modal-main textarea {
+	display: block;
+	width: 100%;
+	font-size: 13px;
+	padding: 9px 12px;
+	/*
+	 * The gap that groups a label with its own field. `margin: 0` here beat
+	 * `.session-form .form-control { margin-bottom: 18px }` on specificity, so
+	 * every label sat flush against the bottom border of the field above it and
+	 * 6px from the field below - equidistant, which reads as belonging to
+	 * neither.
+	 */
+	margin: 0 0 18px;
+	border-radius: 0;
+	/* bootstrap's calc() height ignores the padding above. line-height has to
+	   be pinned with it: left to normal, datetime-local lays its spinner out
+	   two pixels taller than a plain text input and the row of fields steps. */
+	height: auto;
+	line-height: 1.5;
+}
+
+/*
+ * Chrome lays the datetime-local editor out from its own shadow content, which
+ * ignores line-height and finishes 2px taller than a text input at the same
+ * font size. Padding compensates so the column of fields does not step. Engines
+ * that size it like a text input will render this field 2px short instead,
+ * which is the smaller of the two wrongs and only visible side by side.
+ */
+.modal .modal-main input[type="datetime-local"] {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+/*
+ * bootstrap ships .mb-3 as !important, so the conditions eyebrow kept a 16px
+ * gap to its own content while every other label in the form sat at 6px. The
+ * class is on the shared component, which the dashboard renders too, so it is
+ * answered here rather than by editing markup the dashboard also uses.
+ */
+.modal .modal-main .gw-eyebrow.mb-3 {
+	margin-bottom: 6px !important;
+}
+
+/*
+ * The location field owns the spacing below itself, because the chip row and
+ * the suggestion list sit between the input and the next label. Without this
+ * the input's own 18px stacks with the wrapper's and opens a double gap.
+ */
+.modal .modal-main .location-field .form-control {
+	margin-bottom: 0;
+}
+
+/* The addons render the submit as a styled-components button with no class of
+   ours on it, which is why it came out light on a dark panel. */
+.modal .modal-main button[type="submit"] {
+	background: var(--gw-accent);
+	border: 1px solid var(--gw-accent);
+	border-radius: 0;
+	color: var(--gw-ground);
+	font-family: var(--gw-mono);
+	font-size: 11px;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 10px 18px;
+	box-shadow: none;
+}
+.modal .modal-main button[type="submit"]:hover {
+	background: var(--gw-accent-hover);
+	border-color: var(--gw-accent-hover);
+	color: var(--gw-ground);
+}
+
+/* react-images-upload draws no container of its own, so the picker read as a
+   stray blue link under a line of grey text. */
+.gw-uploader-drop .fileContainer {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 18px 14px;
+	background: var(--gw-raised);
+	border: 1px dashed var(--gw-edge-strong);
+	border-radius: 0;
+	box-shadow: none;
+	text-align: center;
+}
+.gw-uploader-drop .fileContainer:hover { border-color: var(--gw-edge-hover); }
+.gw-uploader-drop .fileContainer p {
+	font-family: var(--gw-mono);
+	font-size: 10px;
+	letter-spacing: 0.08em;
+	color: var(--gw-faint);
+	margin: 0 0 10px;
+}
+.gw-uploader-drop .fileContainer .chooseFileButton {
+	display: inline-block;
+	width: auto;
+	background: none !important;
+	border: 1px solid var(--gw-edge-strong) !important;
+	border-radius: 0 !important;
+	color: var(--gw-muted) !important;
+	font-family: var(--gw-mono);
+	font-size: 11px !important;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	padding: 8px 16px !important;
+	margin: 0 !important;
+}
+.gw-uploader-drop .fileContainer .chooseFileButton:hover {
+	border-color: var(--gw-accent) !important;
+	color: var(--gw-text) !important;
+}
+.gw-uploader-drop .fileContainer .uploadPicturesWrapper { margin-top: 12px; }
+.gw-uploader-drop .fileContainer .uploadPictureContainer {
+	background: var(--gw-panel);
+	border: 1px solid var(--gw-edge-strong);
+	border-radius: 0;
+	padding: 6px;
+	box-shadow: none;
+}
+
+/* Says the seven values came from the nearest seeded spot rather than the
+   place on the session, which happens wherever open-meteo's wave model has no
+   coverage. Without it a borrowed reading is indistinguishable from a local
+   one, and the averages built on it drift with nothing on screen to say why. */
+.gw-borrowed {
+	font-family: var(--gw-mono);
+	font-size: 10px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--gw-faint);
+	margin-top: 10px;
+}

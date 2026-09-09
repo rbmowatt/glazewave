@@ -9,14 +9,17 @@ import { Form } from "react-advanced-form";
 import { RIEInput, RIETextArea } from "@attently/riek";
 import SessionCard from "./../session/SessionCard";
 import MainContainer from "./../layout/MainContainer";
+import PrivacyToggle from "./../layout/PrivacyToggle";
 import StarBar from "./../layout/StarBar";
 import UserBoardRequests from "./../../requests/UserBoardRequests";
 import ImageUploader from "react-images-upload";
 import ImageGallery from "react-image-gallery";
 import { boardPlaceholder } from "./../../lib/utils/placeholder";
+import OwnerBadge from "./../layout/OwnerBadge";
 import TypeAheadInput from "./../form/TypeAheadInput";
+import { matchSuggestions } from "./../../lib/utils/suggest";
+import BoardSelect from "./forms/BoardSelect";
 import { sizes } from "./data/board_sizes";
-import InlineEdit, { InputType } from "riec";
 import { loadBoards } from "./../../actions/board";
 import { loadShapers } from "./../../actions/shaper";
 import { loadUserSessions } from "./../../actions/user_session";
@@ -59,11 +62,12 @@ const mapDispachToProps = (dispatch) => {
 };
 
 const relations = {
-	user_session: ["Location", "SessionImage"],
+	user_session: ["Location", "SessionImage", "User"],
 	selected_board: [
 		"Board.Manufacturer",
 		"Session.SessionImage",
 		"Session.UserBoard",
+		"User",
 	],
 	shapers: ["Board"],
 	boards: ["Manufacturer"],
@@ -85,16 +89,25 @@ class BoardView extends Component {
 		this.onDrop = this.onDrop.bind(this);
 	}
 
+	/*
+	 * A board marked public opens from a shared link. The board, the sessions
+	 * it was ridden in and its images all scope to owner-or-public server-side,
+	 * so they load either way; the catalog lists behind the two type-aheads do
+	 * not, because they only feed controls a non-owner cannot use.
+	 */
 	componentDidMount() {
+		this.props.loadBoard(this.props.session, {
+			id: this.props.match.params.id,
+			withs: relations.selected_board,
+		});
+		this.props.loadSessions(this.props.session, {
+			wheres: { board_id: this.props.match.params.id },
+			withs: relations.user_session,
+		});
+		this.props.loadBoardImages(this.props.session, {
+			wheres: { user_board_id: this.props.match.params.id },
+		});
 		if (this.props.session.isLoggedIn) {
-			this.props.loadBoard(this.props.session, {
-				id: this.props.match.params.id,
-				withs: relations.selected_board,
-			});
-			this.props.loadSessions(this.props.session, {
-				wheres: { board_id: this.props.match.params.id },
-				withs: relations.user_session,
-			});
 			this.props.loadBoards(this.props.session, {
 				limit: 1000,
 				withs: relations.boards,
@@ -102,17 +115,12 @@ class BoardView extends Component {
 			this.props.loadShapers(this.props.session, {
 				withs: relations.shapers,
 			});
-			this.props.loadBoardImages(this.props.session, {
-				wheres: { user_board_id: this.props.match.params.id },
-			});
-		} else this.props.history.push("/board");
+		}
 	}
 
-	prepBoardSizeOptions = (sizes) => {
-		const filteredSizes = [];
-		sizes.forEach((size) => filteredSizes.push({ id: size }));
-		return filteredSizes;
-	};
+	// BoardSelect keys on id and labels on name. A size is its own label, so
+	// both carry the same string.
+	prepBoardSizeOptions = (sizes) => sizes.map((size) => ({ id: size, name: size }));
 
 	onTypeAheadSelected = (propertyName, newValue) => {
 		const data = {};
@@ -142,51 +150,48 @@ class BoardView extends Component {
 		}
 	};
 
-	getShaperSuggestions = (value, reason) => {
-		//if its empty or just focused let's show everything
-		if (!value || reason === "type_ahead_focused")
-			return this.props.shapers;
+	getShaperSuggestions = (value) =>
+		matchSuggestions(this.props.shapers, "name", value);
 
-		const inputValue = value.trim().toLowerCase();
-		const inputLength = inputValue.length;
-		return inputLength === 0
-			? []
-			: this.props.shapers.filter(
-					(entity) =>
-						entity.name.toLowerCase().slice(0, inputLength) ===
-						inputValue
-			  );
+	// The page opens with manufacturer_id empty because the shaper is not a
+	// column on user_boards; it has to come off the catalog row the board
+	// points at until the picker sets one.
+	getBoardSuggestions = (value) => {
+		const shaperId = Number(
+			this.state.manufacturer_id === ""
+				? this.props.board.Board.manufacturer_id
+				: this.state.manufacturer_id
+		);
+		const boards = this.props.boards.filter(
+			(entity) => Number(entity.manufacturer_id) === shaperId
+		);
+		return matchSuggestions(boards, "model", value);
 	};
 
-	getBoardSuggestions = (value, reason) => {
-		//if its empty or just focused let's show everything
-		if (!value || reason === "type_ahead_focused") {
-			const shaperId =
-				this.state.manufacturer_id === ""
-					? this.props.board.Board.manufacturer_id
-					: this.state.manufacturer_id;
-			return this.props.boards.filter(
-				(entity) => entity.manufacturer_id === shaperId
-			);
-		}
-		const inputValue = value.trim().toLowerCase();
-		const inputLength = inputValue.length;
-		return inputLength === 0
-			? []
-			: this.props.boards.filter(
-					(entity) =>
-						entity.model.toLowerCase().slice(0, inputLength) ===
-							inputValue &&
-						entity.manufacturer_id === this.state.manufacturer_id
-			  );
-	};
-
+	/*
+	Every edit on this page lands on user_boards through PUT /api/user_board/:id.
+	The catalog row the board points at is reached through board.Board and is
+	never in this payload: changing the shaper or the model repoints board_id,
+	it does not rewrite the model everyone else sees.
+	*/
 	submitUpdate = (data) => {
 		this.props.editUserBoard(this.props.session, {
 			id: this.props.match.params.id,
 			data: data,
 		});
 		this.setState(data);
+	};
+
+	// The API sends is_public back as a MySQL tinyint, so it arrives as 1/0 on
+	// some paths and true/false on others. Strict === true misses the tinyint.
+	isPublic = () => Number(this.props.board.is_public) === 1;
+
+	// Compared against the stored record rather than local state, so a second
+	// click is not swallowed by a guard reading a value the toggle never wrote.
+	onPrivacyChange = (e) => {
+		const next = parseInt(e.nextValue, 10) === 1;
+		if (next === this.isPublic()) return;
+		this.submitUpdate({ is_public: next ? 1 : 0 });
 	};
 
 	returnToIndex = (e) => {
@@ -236,7 +241,10 @@ class BoardView extends Component {
 
 	render() {
 		const { board } = this.props;
-		let isOwner = this.props.board.user_id === this.props.session.user.id;
+		// DEFAULT_SESSION carries no user key, so reading .id off it threw on an
+		// anonymous visit before componentDidMount could redirect.
+		const viewer = this.props.session.user || {};
+		const isOwner = Boolean(viewer.id) && this.props.board.user_id === viewer.id;
 		// The reducer cannot know which board it is holding images for, so the
 		// stand-in it supplies is generic until here.
 		const galleryItems = this.props.images.map((image) =>
@@ -268,28 +276,41 @@ class BoardView extends Component {
 										editProps={{ disabled: !isOwner }}
 										className="gw-title-field"
 									/>
+									<OwnerBadge user={board.User} label="Ridden by" />
 								</div>
-								<div className="col-6"></div>
+								<div className="col-6">
+									{isOwner && (
+										<div className="privacy text-right">
+											<PrivacyToggle
+												value={this.isPublic() ? "1" : "0"}
+												onChange={this.onPrivacyChange}
+											/>
+										</div>
+									)}
+								</div>
 							</div>
 							<div className="row">
 								<div className="preview col-6">
-									<FontAwesomeIcon
-										size="lg"
-										alt="delete user"
-										style={{
-											marginLeft: ".5em",
-											float: "left",
-											cursor: "pointer",
-											position: "absolute",
-											top: "1em",
-											zIndex: "999",
-											color: "white",
-											left: "1em",
-										}}
-										icon={faTrash}
-										onClick={this.deleteImage}
-										value={this.state.imageIndex}
-									/>
+									{isOwner && (
+										<FontAwesomeIcon
+											size="lg"
+											alt="delete user"
+											style={{
+												marginLeft: ".5em",
+												float: "left",
+												cursor: "pointer",
+												position: "absolute",
+												top: "1em",
+												zIndex: "999",
+												color: "white",
+												left: "1em",
+											}}
+											icon={faTrash}
+											onClick={this.deleteImage}
+											value={this.state.imageIndex}
+										/>
+									)}
+									{isOwner && (
 									<ImageUploader
 										key={this.state.uploaderInstance}
 										withIcon={false}
@@ -315,6 +336,7 @@ class BoardView extends Component {
 											left: "3em",
 										}}
 									/>
+									)}
 									<div>
 										<ImageGallery
 											items={galleryItems}
@@ -337,26 +359,22 @@ class BoardView extends Component {
 										/>
 									</div>
 									<div className="detail-line">
-										<strong>Size:</strong>
-										&nbsp;
-										<InlineEdit
-											type={InputType.Select}
-											value={
-												board.size || "Select A Size"
-											}
-											onChange={(data) => {
-												this.submitUpdate({
-													size: data,
-												});
-											}}
-											options={
-												this.state.boardSizeOptions
-											}
-											valueKey="id"
-											labelKey="id"
-											editClass="form-control"
-											isDisabled={0}
-										/>
+										<div>
+											<strong>Size:</strong>
+										</div>
+										{/* riec rendered this as bare text that
+										    swapped for the OS select on click,
+										    and isDisabled={0} let anyone change
+										    a board that was not theirs. */}
+										<div className="board-size-select">
+											<BoardSelect
+												value={board.size}
+												options={this.state.boardSizeOptions}
+												onChange={(size) => this.submitUpdate({ size: size })}
+												disabled={!isOwner}
+												placeholder="None"
+											/>
+										</div>
 									</div>
 									<div className="detail-line">
 										<div>
