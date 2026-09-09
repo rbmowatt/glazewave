@@ -21,8 +21,7 @@ const Navbar = props =>{
           <div className="collapse navbar-collapse" id="navbarCollapse">
               <div className="navbar-nav align-items-center">
                 <a className="gw-brand mr-4" href="/">
-                  <span className="gw-brand-mark" />
-                  <span>glazewave</span>
+                  <img src="/img/glazewave_lockup.png" alt="Glazewave" />
                 </a>
                 {isLoggedIn &&
                   <NavLink className="nav-link" activeClassName="active" to={'/user/dashboard'}>Dashboard</NavLink>

@@ -100,22 +100,28 @@ nav.navbar {
 .gw-brand {
 	display: flex;
 	align-items: center;
-	gap: 9px;
-	font-size: 15px;
-	font-weight: 700;
-	letter-spacing: 0.13em;
-	text-transform: uppercase;
-	color: var(--gw-text);
-}
-.gw-brand:hover { color: var(--gw-text); }
-
-.gw-brand-mark {
-	width: 11px;
-	height: 11px;
-	background: var(--gw-accent);
-	border-radius: 2px;
 	flex-shrink: 0;
 }
+
+/* The lockup PNG is 707x96 with a transparent cut, so it needs a height and an
+   auto width; a fixed width squashes it on the collapsed mobile navbar. */
+.gw-brand img {
+	height: 30px;
+	width: auto;
+	display: block;
+}
+
+@media (max-width: 767px) {
+	.gw-brand img { height: 26px; }
+}
+
+/* The session card puts the brand in a right-aligned col-5, so the lockup has
+   to sit at the end of the line rather than fill it. */
+.gw-brand-inline {
+	display: inline-flex;
+	justify-content: flex-end;
+}
+.gw-brand-inline img { height: 22px; }
 
 nav.navbar .nav-link {
 	font-family: var(--gw-mono);
@@ -1697,4 +1703,13 @@ input.gw-title-field:focus {
 	color: var(--gw-muted);
 	border-left: 2px solid var(--gw-edge-strong);
 	padding-left: 10px;
+}
+
+/* Edit and trash level with the Public/Private tag rather than centered in the
+   row. The row is align-items:center, so this opts just these two out; the 2px
+   accounts for the tag's border and padding making its line taller than the
+   icons. Detailed rows only - the compact ones have no tag to line up with. */
+.gw-row-lg .gw-row-actions {
+	align-self: flex-start;
+	margin-top: 2px;
 }

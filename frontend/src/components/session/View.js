@@ -337,9 +337,8 @@ class SessionView extends Component {
                     )}
                   </div>
                   <div className="col-5" style={{textAlign: 'right'}} >
-                    <span className="gw-brand">
-                      <span className="gw-brand-mark" />
-                      <span>glazewave</span>
+                    <span className="gw-brand gw-brand-inline">
+                      <img src="/img/glazewave_lockup.png" alt="Glazewave" />
                     </span>
                   </div>
                 </div>
