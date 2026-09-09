@@ -25,6 +25,21 @@ const MIN_RIDERS = 3;
 const SMOOTHING_RIDERS = 5;
 
 /*
+ * demo_seed.js creates riders under this prefix so the feature has something
+ * to show while the demo account is the only real account. They are counted
+ * like anybody else - the point is to exercise the real aggregate - and
+ * seeded_riders is what lets the page admit they are there.
+ *
+ * The flag clears itself: remove the seeded riders, recompute, and the count
+ * goes to zero. Nothing has to remember to switch it off.
+ */
+const SEED_USERNAME_PREFIX = 'demo_peer_';
+
+// LIKE reads _ as a single-character wildcard, so the prefix has to be
+// escaped or 'demoXpeerX...' matches too.
+const SEED_LIKE = SEED_USERNAME_PREFIX.replace(/[_%]/g, '\\$&') + '%';
+
+/*
  * One vote per rider per model.
  *
  * The GROUP BY collapses a rider who owns three of the same model into one
@@ -41,12 +56,13 @@ const SMOOTHING_RIDERS = 5;
  */
 const riderMeans = (scoped) => `
   SELECT user_boards.board_id AS board_id,
-         AVG(user_boards.rating) AS rider_rating
+         AVG(user_boards.rating) AS rider_rating,
+         MAX(users.username LIKE :seedLike) AS seeded
     FROM user_boards
     JOIN boards ON boards.id = user_boards.board_id
+    JOIN users ON users.id = user_boards.user_id
    WHERE user_boards.rating IS NOT NULL
      AND user_boards.rating > 0
-     AND user_boards.user_id IS NOT NULL
      AND boards.canonical_key IS NOT NULL
      ${scoped ? 'AND user_boards.board_id IN (:boardIds)' : ''}
    GROUP BY user_boards.board_id, user_boards.user_id`;
@@ -54,7 +70,8 @@ const riderMeans = (scoped) => `
 const modelMeans = (scoped) => `
   SELECT board_id,
          AVG(rider_rating) AS rating_avg,
-         COUNT(*) AS rating_count
+         COUNT(*) AS rating_count,
+         SUM(seeded) AS seeded_riders
     FROM (${riderMeans(scoped)}) AS riders
    GROUP BY board_id`;
 
@@ -74,7 +91,7 @@ const modelMeans = (scoped) => `
 async function catalogMean() {
   const rows = await db.query(
     `SELECT AVG(rating_avg) AS catalog_mean FROM (${modelMeans(false)}) AS models`,
-    { type: QueryTypes.SELECT }
+    { type: QueryTypes.SELECT, replacements: { seedLike: SEED_LIKE } }
   );
   const value = rows.length ? rows[0].catalog_mean : null;
   return value === null || value === undefined ? null : Number(value);
@@ -82,10 +99,12 @@ async function catalogMean() {
 
 const upsertSql = (scoped) => `
   INSERT INTO board_ratings
-              (board_id, rating_avg, rating_count, ranking_score, created_at, updated_at)
+              (board_id, rating_avg, rating_count, seeded_riders, ranking_score,
+               created_at, updated_at)
   SELECT board_id,
          rating_avg,
          rating_count,
+         seeded_riders,
          (rating_count / (rating_count + :smoothing)) * rating_avg
            + (:smoothing / (rating_count + :smoothing)) * :catalogMean,
          NOW(),
@@ -94,6 +113,7 @@ const upsertSql = (scoped) => `
       ON DUPLICATE KEY UPDATE
          rating_avg = VALUES(rating_avg),
          rating_count = VALUES(rating_count),
+         seeded_riders = VALUES(seeded_riders),
          ranking_score = VALUES(ranking_score),
          updated_at = NOW()`;
 
@@ -113,7 +133,7 @@ const clearSql = (scoped) => `
 
 async function run(boardIds) {
   const scoped = boardIds !== null;
-  const replacements = { smoothing: SMOOTHING_RIDERS };
+  const replacements = { smoothing: SMOOTHING_RIDERS, seedLike: SEED_LIKE };
   if (scoped) replacements.boardIds = boardIds;
 
   const mean = await catalogMean();
@@ -161,6 +181,7 @@ async function recomputeAll() {
 module.exports = {
   MIN_RIDERS,
   SMOOTHING_RIDERS,
+  SEED_USERNAME_PREFIX,
   recompute,
   recomputeAll,
 };

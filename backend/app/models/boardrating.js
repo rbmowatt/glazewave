@@ -15,6 +15,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     rating_avg: DataTypes.DECIMAL(4, 2),
     rating_count: DataTypes.INTEGER,
+    seeded_riders: DataTypes.INTEGER,
     ranking_score: DataTypes.DECIMAL(6, 4),
   }, {underscored: true, tableName: 'board_ratings'});
 

@@ -32,6 +32,10 @@ class BoardRatingService extends BaseService {
                 riders: riders,
                 rating: riders >= MIN_RIDERS ? Number(row.rating_avg) : null,
                 min_riders: MIN_RIDERS,
+                // The disclosure travels with the number rather than living in
+                // a template, so a second caller cannot render the score
+                // without it and nobody has to remember to remove it later.
+                seeded: (Number(row.seeded_riders) || 0) > 0,
             };
         });
     }
@@ -39,7 +43,9 @@ class BoardRatingService extends BaseService {
     async publicFor(boardId)
     {
         const rows = await this.publicForMany([boardId]);
-        return rows.length ? rows[0] : { board_id: Number(boardId), riders: 0, rating: null, min_riders: MIN_RIDERS };
+        return rows.length
+            ? rows[0]
+            : { board_id: Number(boardId), riders: 0, rating: null, min_riders: MIN_RIDERS, seeded: false };
     }
 }
 
