@@ -1688,3 +1688,13 @@ input.gw-title-field:focus {
 	font-size: 11px;
 	letter-spacing: 0.08em;
 }
+
+/* The read-only demo. Sits where the action buttons would be, so the absence
+   is explained rather than looking like a broken panel. */
+.gw-demo-note {
+	font-size: 12px;
+	line-height: 1.5;
+	color: var(--gw-muted);
+	border-left: 2px solid var(--gw-edge-strong);
+	padding-left: 10px;
+}

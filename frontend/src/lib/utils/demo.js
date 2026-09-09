@@ -58,3 +58,11 @@ export const isDemoSession = () => {
   const session = storedSession();
   return !!(session && session.isDemo);
 };
+
+/*
+ * Every visitor signs into the same demo row, so its writes are refused server
+ * side by middleware/DemoReadOnly. This hides the controls that would hit that
+ * refusal - courtesy, not security: the token is in the browser and anyone can
+ * replay it with curl.
+ */
+export const isReadOnly = (session) => !!(session && session.isDemo);

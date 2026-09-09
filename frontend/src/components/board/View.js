@@ -20,6 +20,7 @@ import TypeAheadInput from "./../form/TypeAheadInput";
 import { matchSuggestions } from "./../../lib/utils/suggest";
 import BoardSelect from "./forms/BoardSelect";
 import CommunityScore from "./CommunityScore";
+import { isReadOnly } from "./../../lib/utils/demo";
 import { sizes } from "./data/board_sizes";
 import { loadBoards } from "./../../actions/board";
 import { loadBoardRating } from "./../../actions/board_rating";
@@ -266,7 +267,11 @@ class BoardView extends Component {
 		// DEFAULT_SESSION carries no user key, so reading .id off it threw on an
 		// anonymous visit before componentDidMount could redirect.
 		const viewer = this.props.session.user || {};
-		const isOwner = Boolean(viewer.id) && this.props.board.user_id === viewer.id;
+		// The demo signs in as the board's owner, so ownership alone would hand
+		// every visitor the edit controls on a shared account.
+		const isOwner = Boolean(viewer.id)
+			&& this.props.board.user_id === viewer.id
+			&& !isReadOnly(this.props.session);
 		// The reducer cannot know which board it is holding images for, so the
 		// stand-in it supplies is generic until here.
 		const galleryItems = this.props.images.map((image) =>

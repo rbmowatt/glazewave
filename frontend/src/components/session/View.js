@@ -1,4 +1,5 @@
 import "./css/Session.css";
+import { isReadOnly } from "./../../lib/utils/demo";
 import "react-datepicker/dist/react-datepicker.css";
 import _ from "lodash";
 import moment from "moment";
@@ -276,7 +277,9 @@ class SessionView extends Component {
     // componentDidMount could redirect - an anonymous visit rendered once and
     // hit the ErrorBoundary rather than the page.
     const viewer = this.props.session.user || {};
-    const isOwner = Boolean(viewer.id) && viewer.id === session.user_id;
+    // Same shared-account reason as the board view.
+    const isOwner = Boolean(viewer.id) && viewer.id === session.user_id
+        && !isReadOnly(this.props.session);
     // The reducer cannot know which session it is holding images for, so the
     // stand-in it supplies is generic until here.
     const galleryItems = this.props.session_images.map((image) =>

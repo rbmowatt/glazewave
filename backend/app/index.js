@@ -24,6 +24,7 @@ const esRouter = require('./routes/es');
 const cognitoAuthMiddleware = cognitoAuth.getVerifyMiddleware();
 const queryParser = require('./middleware/QueryParser');
 const viewer = require('./middleware/Viewer');
+const demoReadOnly = require('./middleware/DemoReadOnly');
 
 /*
  * Every CRUD router below used to be mounted bare, so POST, PUT and DELETE on
@@ -50,6 +51,15 @@ const authWrites = (req, res, next) =>
     ? cognitoAuthMiddleware(req, res, next)
     : next();
 
+/*
+ * Paired with authWrites on every CRUD router, which is exactly the set that
+ * needs it. /api/es is deliberately not in that set: its searches are POSTs
+ * that read, and refusing them would leave the demo with an empty board list
+ * rather than a read-only one. /api/demo is not either, or the login that
+ * mints the token would refuse itself.
+ */
+const guardedWrites = [authWrites, demoReadOnly];
+
 
 app.use(queryParser);
 // After queryParser, because it hangs the resolved viewer on req.parser too.
@@ -59,25 +69,30 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors({'origin': [cognitoConfig.signoutUri, appConfig.clientUrl ]}));
-app.use('/api/user', authWrites, userRouter);
+app.use('/api/user', guardedWrites, userRouter);
 app.use('/api/board', boardRouter);
-app.use('/api/city', authWrites, cityRouter);
-app.use('/api/cognito', cognitoAuthMiddleware, cognitoRouter);
+app.use('/api/city', guardedWrites, cityRouter);
+/*
+ * demoReadOnly here too: this router's PUT and DELETE take a username from the
+ * URL and sit behind "is this a valid token", so a demo token reached
+ * DELETE /api/cognito/:uname on any account it could name.
+ */
+app.use('/api/cognito', cognitoAuthMiddleware, demoReadOnly, cognitoRouter);
 app.use('/api/demo', demoRouter);
-app.use('/api/location', authWrites, locationRouter);
-app.use('/api/manufacturer', authWrites, manufacturerRouter);
-app.use('/api/session', authWrites, sessionRouter);
-app.use('/api/shaper', authWrites, shaperRouter);
-app.use('/api/spot', authWrites, spotRouter);
+app.use('/api/location', guardedWrites, locationRouter);
+app.use('/api/manufacturer', guardedWrites, manufacturerRouter);
+app.use('/api/session', guardedWrites, sessionRouter);
+app.use('/api/shaper', guardedWrites, shaperRouter);
+app.use('/api/spot', guardedWrites, spotRouter);
 app.use('/api/sc', conditionsRouter);
-app.use('/api/image', authWrites, imageRouter);
+app.use('/api/image', guardedWrites, imageRouter);
 /*
  * Reads here are open for the same reason the session ones are: a board is
  * shareable when its owner marks it public, and the router scopes every read to
  * owner-or-public. It was behind cognitoAuthMiddleware outright, which is what
  * made /board/:id sign-in-only however the toggle was set.
  */
-app.use('/api/user_board', authWrites, userBoardRouter);
+app.use('/api/user_board', guardedWrites, userBoardRouter);
 app.use('/api/es', cognitoAuthMiddleware, esRouter);
 
 

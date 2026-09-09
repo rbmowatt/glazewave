@@ -13,6 +13,7 @@ import {
 	UserBoardCreatedCleared,
 } from "./../../actions/user_board";
 import { loadBoardRatings } from "./../../actions/board_rating";
+import { isReadOnly } from "./../../lib/utils/demo";
 import elasticConfig from './../../config/elastic';
 import { esHeaders } from './../../lib/utils/elastic';
 import Modal from "./../layout/Modal";
@@ -427,7 +428,7 @@ class BoardIndex extends Component {
 														viewBoard={this.boardCreated}
 														editBoard={this.editBoard}
 														isOwner={board.user_id === this.props.userSession.user.id}
-														onRate={this.rateBoard}
+														onRate={isReadOnly(this.props.userSession) ? null : this.rateBoard}
 														communityRating={(this.props.boardRatings || {})[board.board_id]}
 													/>
 												))}
