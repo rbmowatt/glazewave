@@ -39,15 +39,6 @@ module.exports = {
         type: Sequelize.SMALLINT.UNSIGNED,
         allowNull: false,
       },
-      // How many of those riders are demo_peer_ accounts, seeded so the
-      // feature has something to show before real riders arrive. Non-zero is
-      // what makes the page admit it. Self-clearing: remove the seeded riders,
-      // recompute, and it goes to 0 with nothing to switch off by hand.
-      seeded_riders: {
-        type: Sequelize.SMALLINT.UNSIGNED,
-        allowNull: false,
-        defaultValue: 0,
-      },
       // rating_avg pulled toward the catalog mean by how few riders it rests
       // on. Order by this, display rating_avg - they disagree most for
       // exactly the models where the average is least trustworthy.
