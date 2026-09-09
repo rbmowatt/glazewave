@@ -903,13 +903,22 @@ div.details div.privacy input[type="radio"] {
 	border: 0;
 	margin: 0;
 }
+/*
+ * One label treatment for everything in the modal. The nearby-spot chips and
+ * the conditions block were written as dashboard widgets and brought their own
+ * eyebrow rules in with them, so the form was showing three sizes and three
+ * colors of what reads as the same thing.
+ */
 .modal .modal-main label,
-.modal .modal-main strong {
+.modal .modal-main strong,
+.modal .modal-main .gw-eyebrow,
+.modal .modal-main .location-nearby-label {
 	font-family: var(--gw-mono);
 	font-size: 10px !important;
 	letter-spacing: 0.16em;
 	text-transform: uppercase;
 	color: var(--gw-dim);
+	margin-bottom: 6px;
 }
 /* index.css forces .form-control white with !important for the inline
    editors, which is why these need it back. */
@@ -920,6 +929,32 @@ div.details div.privacy input[type="radio"] {
 	border: 1px solid var(--gw-edge-strong) !important;
 	color: var(--gw-text) !important;
 	border-radius: 0;
+	/* height:auto because bootstrap's calc() height ignores the padding below
+	   and leaves datetime-local a different size from its text neighbours. */
+	height: auto;
+	padding: 9px 12px;
+	font-size: 13px;
+}
+
+/*
+ * .gw-trend-empty is a dashboard panel filler: 64px of vertical padding so an
+ * empty widget still occupies its column. Between two form fields that is a
+ * hole, which is what put the conditions block half a screen below its label.
+ */
+.modal .modal-main .gw-trend-empty {
+	padding: 16px 0;
+	text-align: left;
+}
+
+/*
+ * Every control in this app is square, so a pill chip is the one round thing
+ * on screen and reads as borrowed from somewhere else. Metrics match the
+ * fields above them rather than being their own size.
+ */
+.modal .modal-main .location-nearby-chip {
+	border-radius: 0;
+	padding: 7px 12px;
+	font-size: 13px;
 }
 .modal .modal-main ::placeholder { color: var(--gw-faint) !important; }
 .modal .modal-main .btn {

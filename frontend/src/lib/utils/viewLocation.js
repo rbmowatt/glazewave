@@ -36,6 +36,24 @@ export const readViewLocation = () => {
     }
 };
 
+/*
+ * The create-session modal is mounted for the life of the dashboard, whether or
+ * not it is open, so its location field reads the pin once and would otherwise
+ * still be offering chips around the machine after the pin moved. The dashboard
+ * panels take the pin as a prop and need none of this; nothing mounted on
+ * demand does either.
+ */
+const listeners = new Set();
+
+export const onViewLocationChange = (fn) => {
+    listeners.add(fn);
+    return () => listeners.delete(fn);
+};
+
+const announce = (location) => {
+    listeners.forEach((fn) => fn(location));
+};
+
 export const writeViewLocation = (location) => {
     try {
         window.localStorage.setItem(KEY, JSON.stringify({
@@ -47,6 +65,14 @@ export const writeViewLocation = (location) => {
         // The pin still applies for this page load, it just will not survive
         // a reload.
     }
+    // Announced whether or not the write landed: the pin is in effect either
+    // way, and a listener that ignored a failed write would disagree with the
+    // panels for the rest of the session.
+    announce(readViewLocation() || {
+        lat: Number(location.lat),
+        lon: Number(location.lon),
+        name: location.name || ''
+    });
 };
 
 export const clearViewLocation = () => {
@@ -54,4 +80,5 @@ export const clearViewLocation = () => {
         window.localStorage.removeItem(KEY);
     } catch (err) {
     }
+    announce(null);
 };

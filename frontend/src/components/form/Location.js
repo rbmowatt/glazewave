@@ -5,6 +5,7 @@ import { getSessionData} from './../reports/conditions/helpers/session';
 import { loadPlaces } from './../../lib/utils/googleMaps';
 import getSpots, { searchSpots } from './../../lib/utils/spots';
 import { asKm } from './../../lib/utils/distance';
+import { readViewLocation, onViewLocationChange } from './../../lib/utils/viewLocation';
 
 // The spot search is a local query and free, so this is latency tuning rather
 // than cost control. Google only runs when the spot table came back empty, and
@@ -51,46 +52,68 @@ class Location extends Component {
         loadPlaces()
             .then(places => this.setState({places}))
             .catch(err => this.setState({loadError: err.message}));
-        if (this.props.prefillNearby) this.locateNearbySpots();
+        if (this.props.prefillNearby) {
+            this.locateNearbySpots();
+            this.unsubscribe = onViewLocationChange((pin) => {
+                // A spot already chosen is the surfer's answer, not a stale
+                // suggestion, so a pin moving behind an in-progress form must
+                // not replace it.
+                if (this.state.location_id) return;
+                if (pin) return this.loadNearbySpots(pin.lat, pin.lon);
+                this.setState({nearby: [], coords: null});
+                this.locateNearbySpots();
+            });
+        }
     }
 
     /*
-     * navigator.geolocation, not the geolocator package the report widgets use.
-     * Google is not involved in this half at all - the browser supplies the
-     * coords and /api/spot/nearest answers from MySQL - so these chips work with
-     * REACT_APP_GOOGLE_API_KEY unset, which is the state the app ships in.
+     * The dashboard pin wins over the browser fix. Someone reporting on another
+     * coast is almost always about to log a session there, and offering the
+     * spots around the machine instead is the wrong list twice over: wrong
+     * chips, and a search ranked from the wrong origin.
      *
-     * Every failure is silent on purpose. A denied permission, a timeout and an
-     * empty radius are all the same outcome here: no chips, and the autocomplete
-     * below is still the way in.
+     * A pin that is itself a seeded spot comes back as its own first chip, at
+     * roughly zero distance, because /api/spot/nearest measures from the point
+     * it is given and that point is the spot.
      */
     locateNearbySpots = () => {
+        const pin = readViewLocation();
+        if (pin) return this.loadNearbySpots(pin.lat, pin.lon);
+
+        /*
+         * navigator.geolocation, not the geolocator package the report widgets
+         * use. Google is not involved in this half at all - the browser
+         * supplies the coords and /api/spot/nearest answers from MySQL - so
+         * these chips work with REACT_APP_GOOGLE_API_KEY unset, which is the
+         * state the app ships in.
+         *
+         * Every failure is silent on purpose. A denied permission, a timeout
+         * and an empty radius are all the same outcome here: no chips, and the
+         * autocomplete below is still the way in.
+         */
         if (!navigator.geolocation) return;
         navigator.geolocation.getCurrentPosition(
             (position) => {
-                if (this.unmounted) return;
-                // Kept for the search ranking too, so a denied permission
-                // costs the ordering and nothing else.
-                this.setState({
-                    coords: {
-                        lat: position.coords.latitude,
-                        lon: position.coords.longitude
-                    }
-                });
-                getSpots(
+                this.loadNearbySpots(
                     position.coords.latitude,
-                    position.coords.longitude,
-                    NEARBY_RADIUS_M,
-                    NEARBY_LIMIT
-                )
-                    .then(spots => {
-                        if (!this.unmounted) this.setState({nearby: spots});
-                    })
-                    .catch(() => {});
+                    position.coords.longitude
+                );
             },
             () => {},
             {enableHighAccuracy: true, timeout: 10000, maximumAge: 300000}
         );
+    }
+
+    loadNearbySpots = (lat, lon) => {
+        if (this.unmounted) return;
+        // Held for the search ranking too, so a denied permission costs the
+        // ordering and nothing else.
+        this.setState({coords: {lat, lon}});
+        getSpots(lat, lon, NEARBY_RADIUS_M, NEARBY_LIMIT)
+            .then(spots => {
+                if (!this.unmounted) this.setState({nearby: spots});
+            })
+            .catch(() => {});
     }
 
     // The conditions belong to an hour, not just a place, so moving the
@@ -101,6 +124,7 @@ class Location extends Component {
 
     componentWillUnmount() {
         clearTimeout(this.debounce);
+        if (this.unsubscribe) this.unsubscribe();
         this.unmounted = true;
     }
 
