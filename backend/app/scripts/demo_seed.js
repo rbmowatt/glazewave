@@ -576,9 +576,20 @@ async function main () {
      * shrinkage prior is the mean of every model mean, so all of them are
      * slightly stale by the end of a run that added riders. One sweep fixes
      * the lot.
+     *
+     * Guarded, and this is not defensive habit: unguarded, a throw here exits
+     * before the elasticsearch backfill below and leaves the demo account with
+     * its sessions in MySQL and nothing in the index - which renders as a
+     * dashboard reading zero sessions on an account that has 142. Scores are
+     * optional and repairable with `npm run boards:ratings`; the index is what
+     * the app actually reads.
      */
-    const scores = await boardRating.recomputeAll();
-    console.log(`board ratings: ${scores.written} rows affected, ${scores.cleared} cleared`);
+    try {
+        const scores = await boardRating.recomputeAll();
+        console.log(`board ratings: ${scores.written} rows affected, ${scores.cleared} cleared`);
+    } catch (err) {
+        console.error(`board ratings: recompute failed, run boards:ratings after this - ${err.message}`);
+    }
 
     await db.sequelize.close();
 
