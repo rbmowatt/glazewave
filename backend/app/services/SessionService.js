@@ -115,6 +115,7 @@ class SessionService  extends BaseService {
         if (resetManual) existing.manual_fields = null;
         existing.lat = resolved.lat;
         existing.lon = resolved.lon;
+        existing.borrowed_m = resolved.borrowed_m;
         existing.resolved_for = resolved.resolved_for;
         existing.resolved_at = resolved.resolved_at;
         return existing.save();

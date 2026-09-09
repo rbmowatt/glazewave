@@ -226,10 +226,19 @@ const resolve = async ({ lat, lon, at }) => {
     const resolvedFor = new Date(hour.getTime());
 
     const own = await resolveAt(ownLat, ownLon, hour);
-    const stamp = (conditions, usedLat, usedLon) =>
+    /*
+     * borrowed_m is the distance the reading travelled, and it comes from
+     * nearest() rather than being computed here so the number matches the one
+     * the nearest-spots list prints for the same pair. That is road metres
+     * once OSRM has a ranking for the origin and straight-line until then, and
+     * the two differ by a lot: a La Paz point is 42.7km from Playa El Tecolote
+     * across the water and 65.1km by road.
+     */
+    const stamp = (conditions, usedLat, usedLon, borrowedM = null) =>
         Object.assign({}, conditions, {
             lat: String(usedLat),
             lon: String(usedLon),
+            borrowed_m: borrowedM,
             resolved_for: resolvedFor,
             resolved_at: new Date(),
         });
@@ -254,7 +263,7 @@ const resolve = async ({ lat, lon, at }) => {
     const borrowed = await resolveAt(spotLat, spotLon, hour);
     if (isBlank(borrowed)) return blank;
 
-    return stamp(borrowed, spotLat, spotLon);
+    return stamp(borrowed, spotLat, spotLon, spots[0].distance_m);
 };
 
 module.exports = resolve;

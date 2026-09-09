@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { safeLocate, defaultOptions } from './../../../lib/utils/geolocator';
 import getSpots from './../../../lib/utils/spots';
 import cache from './../../../lib/utils/cache';
+import { asKm } from './../../../lib/utils/distance';
 
 const CACHE_KEY = 'nrspt2';
 
@@ -17,12 +18,6 @@ const mapStateToProps = (state) => {
     session: state.session,
   };
 };
-
-// distance_m is road metres when the server had a road ranking for these
-// coordinates and straight-line metres when it did not, never a mix in one
-// response. Both are metres, so this formats either.
-const asKm = (metres) =>
-  metres === null || metres === undefined ? null : `${(metres / 1000).toFixed(1)} km`;
 
 class NearestSpots extends React.Component {
   constructor() {

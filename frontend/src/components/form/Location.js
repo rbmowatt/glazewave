@@ -4,6 +4,7 @@ import { createField, fieldPresets } from 'react-advanced-form'
 import { getSessionData} from './../reports/conditions/helpers/session';
 import { loadPlaces } from './../../lib/utils/googleMaps';
 import getSpots, { searchSpots } from './../../lib/utils/spots';
+import { asKm } from './../../lib/utils/distance';
 
 // The spot search is a local query and free, so this is latency tuning rather
 // than cost control. Google only runs when the spot table came back empty, and
@@ -22,12 +23,6 @@ const MIN_QUERY_LENGTH = 2;
 // rather than as a wrong answer.
 const NEARBY_RADIUS_M = 100000;
 const NEARBY_LIMIT = 4;
-
-// distance_m is road metres when the server had a road ranking for these
-// coordinates and straight-line metres when it did not, never a mix in one
-// response. Both are metres, so this formats either.
-const asKm = (metres) =>
-    metres === null || metres === undefined ? null : `${(metres / 1000).toFixed(1)} km`;
 
 class Location extends Component {
     // Responses can land out of order. Only the newest request may write to
@@ -121,10 +116,6 @@ class Location extends Component {
         if (lat === null || lat === undefined) return;
 
         this.props.onChange('conditionsError', null);
-        // The point asked about, which the payload cannot supply: its lat/lon
-        // is the point that answered, and those differ whenever the backend
-        // borrowed a nearby spot.
-        this.props.onChange('conditionsOrigin', {lat, lon: lng});
         getSessionData(lat, lng, this.props.at)
             .then(data => {
                 if (this.unmounted) return;

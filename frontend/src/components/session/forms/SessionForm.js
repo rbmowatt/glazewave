@@ -45,7 +45,6 @@ class SessionForm extends React.Component {
       // it is theirs and nothing overwrites it.
       titleTouched: false,
       conditions: {},
-      conditionsOrigin: null,
       conditionsError: null,
       session_local: moment().format(LOCAL_FORMAT),
     };
@@ -152,10 +151,7 @@ class SessionForm extends React.Component {
                   {this.state.conditionsError}
                 </small>
               )}
-              <Conditions
-                values={this.state.conditions}
-                origin={this.state.conditionsOrigin}
-              />
+              <Conditions values={this.state.conditions} />
             </div>
             <div className="col-12 clear-fix">
               <Input

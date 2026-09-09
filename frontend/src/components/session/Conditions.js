@@ -1,5 +1,5 @@
 import React from 'react';
-import { borrowedMetres, asKm } from './../../lib/utils/distance';
+import { asKm } from './../../lib/utils/distance';
 
 /*
  * Units are fixed by backend/app/services/conditions: heights are converted to
@@ -44,11 +44,14 @@ const Conditions = props => {
     }
 
     /*
-     * Only the callers that know which point was asked about pass an origin.
-     * The dashboard's lifetime averages have no single origin, so they get no
-     * note rather than a wrong one.
+     * Set only when the backend had no wave data at the session's own place and
+     * borrowed the nearest seeded spot. Read rather than computed from the two
+     * coordinate pairs: this is OSRM's road distance where one was available,
+     * and it has to agree with the number the nearest-spots list shows for the
+     * same pair. Aggregates like the dashboard averages carry no such field, so
+     * they show no note.
      */
-    const borrowed = borrowedMetres(props.origin, values);
+    const borrowed = values.borrowed_m;
 
     return (
         <div>
