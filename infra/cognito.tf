@@ -47,14 +47,22 @@ resource "aws_cognito_user_pool_client" "web" {
   allowed_oauth_scopes                 = ["email", "openid", "profile"]
   supported_identity_providers         = ["COGNITO"]
 
+  # The admin console shares this client. redirect_uri is matched by exact
+  # string, so the console builds its own from window.location.origin, so both
+  # spellings here - and the logout entries need the trailing slash, because
+  # logout_uri is matched the same way.
   callback_urls = [
     "https://${var.domain_name}/login",
     "http://localhost:3000/login",
+    "https://${var.domain_name}/admin/callback",
+    "http://localhost:5173/admin/callback",
   ]
 
   logout_urls = [
     "https://${var.domain_name}/logout",
     "http://localhost:3000/logout",
+    "https://${var.domain_name}/admin/",
+    "http://localhost:5173/admin/",
   ]
 
   explicit_auth_flows = [
