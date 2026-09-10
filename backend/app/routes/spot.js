@@ -1,6 +1,7 @@
 const { Router } = require('express');
 const cognitoAuth = require('./../lib/cognitoAuth');
 const BaseService = require('./../services/SurflineSpotService');
+const SpotImageService = require('./../services/SpotImageService');
 const coastline = require('./../services/Coastline');
 const EntityType = 'Spot';
 
@@ -16,6 +17,48 @@ const MAX_SEARCH_LIMIT = 25;
 // One character matches most of the table and ranks it by distance, which
 // reads as a broken field rather than a search.
 const MIN_QUERY_LENGTH = 2;
+
+// The picker chips and the search rows are thumbnails; 400 is the rung built
+// for them. The detail card asks for 800. A spot whose source photo is narrower
+// than either gets its own largest rung instead - SpotImageService never rounds
+// up to a key that was not built.
+const LIST_IMAGE_WIDTH = 400;
+const DETAIL_IMAGE_WIDTH = 800;
+
+// Everything the atlas fields are for, minus geo: that column holds the pair
+// reversed by the parked Surfline import and is read by nothing.
+const DETAIL_COLUMNS = [
+  'id', 'name', 'url', 'lat', 'lon', 'county', 'source', 'is_public',
+  'break_type', 'wave_direction', 'bottom', 'difficulty', 'hazards', 'notes',
+];
+
+/*
+ * One query for the whole page, never one per row: /nearest returns up to 50
+ * rows and /search up to 25, both unauthenticated, so a per-row lookup is 50
+ * round trips any stranger can ask for.
+ *
+ * A spot with no usable image gets no `image` key at all rather than a null
+ * one. 289 of the 1,611 seeded spots have no photograph and the frontend
+ * fallback keys off absence.
+ *
+ * Image trouble degrades to a list without photos rather than a 500. /nearest
+ * is what the create-session flow calls to find out where you are standing,
+ * and losing that because a licence row is missing would be the worse failure.
+ */
+const attachImages = async (spots, width) => {
+  if (!spots || !spots.length) return spots;
+  try {
+    const images = await SpotImageService.make()
+      .defaultsFor(spots.map((spot) => spot.id), width);
+    return spots.map((spot) => {
+      const image = images.get(spot.id);
+      return image ? { ...spot, image: image } : spot;
+    });
+  } catch (err) {
+    console.error('spot image attach failed:', err.message);
+    return spots;
+  }
+};
 
 /*
  * limit is one of QueryParser's reserved keys and it deletes those off
@@ -60,6 +103,7 @@ router.get('/nearest', function (req, res) {
     radius: clamp(req.query.radius, DEFAULT_RADIUS_M, MAX_RADIUS_M),
     limit: clamp(rawParam(req, 'limit'), DEFAULT_LIMIT, MAX_LIMIT),
   })
+    .then(spots => attachImages(spots, LIST_IMAGE_WIDTH))
     .then(spots => {
       res.send({ spots: spots });
     })
@@ -134,6 +178,7 @@ router.get('/search', function (req, res) {
     lon: hasOrigin ? lon : null,
     limit: clamp(rawParam(req, 'limit'), DEFAULT_SEARCH_LIMIT, MAX_SEARCH_LIMIT),
   })
+    .then(spots => attachImages(spots, LIST_IMAGE_WIDTH))
     .then(spots => {
       res.send({ spots: spots });
     })
@@ -165,6 +210,59 @@ router.post('/', cognitoAuth.getVerifyMiddleware(), function (req, res) {
       }
       console.error('POST /api/spot failed:', err);
       res.status(400).send({ message: err.message });
+    });
+});
+
+/*
+ * A single spot, with its default photograph and the credit that photograph's
+ * licence requires.
+ *
+ * Ids carry their provenance - osm:way/1036392284, osm:node/..., wd:Q7644300 -
+ * so every one of the 1,611 seeded ids contains a slash. A plain '/:id' matches
+ * one path segment and would never match a real spot; the wildcard is what
+ * lets the id go in the URL literally, with no percent-encoding for the caller
+ * to get wrong and no dependency on how nginx normalizes %2F.
+ *
+ * Declared last on purpose. Express matches in declaration order, and this
+ * pattern would otherwise swallow /nearest, /coastal and /search as ids.
+ */
+router.get('/:id(*)', function (req, res) {
+  const id = String(req.params.id || '').trim();
+  if (!id) {
+    res.status(404).send({ message: EntityType + " not found." });
+    return;
+  }
+
+  const width = Number.parseInt(rawParam(req, 'width'), 10) || DETAIL_IMAGE_WIDTH;
+
+  BaseService.make().find({ id: id, selects: DETAIL_COLUMNS })
+    .then(async spot => {
+      // is_public is NOT NULL DEFAULT true and create() sets it, so this
+      // excludes nothing today. It is here so a spot somebody later hides
+      // stops resolving by id without anyone having to remember this route.
+      if (!spot || spot.is_public === false) {
+        res.status(404).send({ message: EntityType + " not found." });
+        return;
+      }
+
+      let image = null;
+      try {
+        const images = await SpotImageService.make().publicFor(id, width);
+        image = images[0] || null;
+      } catch (err) {
+        console.error('spot image lookup failed:', err.message);
+      }
+
+      const body = spot.toJSON();
+      if (image) body.image = image;
+      res.send({ spot: body });
+    })
+    .catch(err => {
+      console.error('GET /api/spot/:id failed:', err);
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while retrieving " + EntityType + "."
+      });
     });
 });
 
