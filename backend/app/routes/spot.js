@@ -6,6 +6,7 @@ const coastline = require('./../services/Coastline');
 const AppSettings = require('./../services/AppSettings');
 const requireFeature = require('./../middleware/RequireFeature');
 const s3Config = require('./../config/s3');
+const SpotDescriptionService = require('./../services/SpotDescriptionService');
 const EntityType = 'Spot';
 
 const router = new Router();
@@ -240,6 +241,58 @@ router.get('/:id(*)/photos', requireFeature('spot_community_photos'), function (
     .catch(err => {
       console.error('GET /api/spot/:id/photos failed:', err);
       res.status(500).send({ message: "Some error occurred while retrieving photos." });
+    });
+});
+
+/*
+ * A rider rewrites the spot's description.
+ *
+ * No inline verifier: PUT is a write method, so the guardedWrites pair at the
+ * mount in index.js has already run cognitoAuthMiddleware and demoReadOnly -
+ * the token is valid and the demo account cannot reach this.
+ *
+ * requireFeature ahead of everything, so a switched-off feature answers 404
+ * without first demanding a token for a route that is not supposed to exist.
+ *
+ * Deliberately open to any signed-in rider rather than owner-gated: a spot has
+ * no owner, and created_by on a user-contributed one is provenance, not title
+ * to the text. Every edit is a revision, so a bad one is recoverable - which
+ * is the whole reason the history table exists.
+ */
+router.put('/:id(*)/description', requireFeature('spot_description_edits'), function (req, res) {
+  const id = String(req.params.id || '').trim();
+  if (!id) {
+    res.status(404).send({ message: EntityType + " not found." });
+    return;
+  }
+
+  if (!req.viewer) {
+    res.status(401).send({ message: 'Sign in first.' });
+    return;
+  }
+
+  SpotDescriptionService.make()
+    .write({ spotId: id, body: req.body.body, source: 'user', userId: req.viewer.id })
+    .then(revision => {
+      res.send({
+        description: {
+          body: revision.body,
+          source: revision.source,
+          updated_at: revision.created_at,
+        },
+      });
+    })
+    .catch(err => {
+      if (err.code === 'SPOT_NOT_FOUND') {
+        res.status(404).send({ message: EntityType + " not found." });
+        return;
+      }
+      if (err.code === 'DESCRIPTION_EMPTY' || err.code === 'DESCRIPTION_TOO_LONG') {
+        res.status(400).send({ message: err.message });
+        return;
+      }
+      console.error('PUT /api/spot/:id/description failed:', err);
+      res.status(500).send({ message: "Some error occurred while saving the description." });
     });
 });
 
