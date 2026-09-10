@@ -2,6 +2,7 @@
 
 const NodeCache = require('node-cache');
 const cognitoAuth = require('./../lib/cognitoAuth');
+const demoToken = require('./../lib/demoToken');
 const UserService = require('./../services/UserService');
 
 /*
@@ -20,7 +21,15 @@ const UserService = require('./../services/UserService');
  * req.tokenUsername is the verified Cognito username on its own. It is set even
  * when no users row exists yet, which is the state /api/user/firstOrNew is
  * called in and the one case req.viewer cannot describe.
+ *
+ * req.viewer.isAdmin rides along because this is the only middleware that runs
+ * on every request, reads included. Resolving it in the write-only auth path
+ * instead would leave admin-scoped reads with nothing to check.
  */
+
+// Matches the Cognito group in infra/cognito.tf. Membership arrives as a
+// cognito:groups claim on both the id and the access token.
+const ADMIN_GROUP = process.env.ADMIN_GROUP || 'admins';
 
 // Cognito hands us a username; every row is scoped by the MySQL users.id.
 // Without this the lookup costs a DB round-trip on every read.
@@ -39,6 +48,19 @@ async function resolveUserId(username) {
 // An access token carries `username`, an id token `cognito:username`. Both are
 // accepted by the verifier, so both have to be read here.
 const usernameFrom = (claims) => claims.username || claims['cognito:username'] || null;
+
+/*
+ * The kid test is not belt and braces. cognitoAuth merges the demo public key
+ * into the same pems map, deliberately, so a demo token walks every issuer and
+ * client_id check a Cognito one does - which means anything signed with the
+ * demo private key can also assert cognito:groups. Cognito will never mint
+ * that kid and demoToken.mint never sets that claim, but neither of those is
+ * something this check should depend on.
+ */
+const isAdminFrom = (claims) =>
+  claims.kid !== demoToken.KID &&
+  Array.isArray(claims['cognito:groups']) &&
+  claims['cognito:groups'].includes(ADMIN_GROUP);
 
 const viewerMiddleware = (req, res, next) => {
   const header = req.get('Authorization');
@@ -61,12 +83,13 @@ const viewerMiddleware = (req, res, next) => {
     .then(async (claims) => {
       const username = usernameFrom(claims);
       req.tokenUsername = username;
-      return { username: username, id: await resolveUserId(username) };
+      return { username: username, id: await resolveUserId(username), isAdmin: isAdminFrom(claims) };
     })
-    .then(({ id, username }) => {
+    .then(({ id, username, isAdmin }) => {
       // A verified token with no users row is not a viewer. It happens between
-      // the Cognito signup and the firstOrNew that creates the row.
-      req.viewer = id === null ? null : { id: id, username: username };
+      // the Cognito signup and the firstOrNew that creates the row. An admin
+      // in that state is not an admin either, which is the safe direction.
+      req.viewer = id === null ? null : { id: id, username: username, isAdmin: isAdmin };
       if (req.parser) req.parser.viewer = req.viewer;
       next();
     })

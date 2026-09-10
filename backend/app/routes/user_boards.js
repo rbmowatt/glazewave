@@ -3,6 +3,8 @@ let upload = require('./../services/images/upload');
 const BaseService = require('./../services/UserBoardService');
 const ImageService  = require('./../services/ImageService');
 const { scopedParser } = require('./../services/rights/Visibility');
+const requireOwner = require('./../middleware/RequireOwner');
+const requireParentOwner = require('./../middleware/OwnedUpload');
 const EntityType = 'UserBoard';
 
 const router = new Router();
@@ -59,12 +61,15 @@ router.get('/:id', function (req, res) {
 });
 
 
-router.post('/images', upload({destinationPath : 'user_boards'}).array('photo'), function (req, res) {
+router.post('/images',
+  upload({destinationPath : 'user_boards'}).array('photo'),
+  requireParentOwner({ field: 'user_board_id', find: (id) => BaseService.make().find({ id: id, withs: [] }) }),
+  function (req, res) {
   const imgs = [];
   if(req.files && req.files.length){
     req.files.forEach(file=>{
     imgs.push(new Promise((resolve, reject) => {
-      let imgObj = { user_id : req.body.user_id, user_board_id : req.body.user_board_id, name : file.key, is_public : 0, is_default : 1};
+      let imgObj = { user_id : req.viewer.id, user_board_id : req.body.user_board_id, name : file.key, is_public : 0, is_default : 1};
       ImageService.make('UserBoardImage').create(imgObj).then(
         data=> resolve(data)
       )
@@ -85,11 +90,16 @@ router.post('/images', upload({destinationPath : 'user_boards'}).array('photo'),
 
 
 router.post('/', upload({destinationPath : 'user_boards'}).single('photo'), function (req, res) {
-  // Validate request
-  BaseService.make().create(req.body)
+  // user_id came off the body. A board created against another rider's id
+  // carries a rating into their shelf, and that rating feeds the composite
+  // board_ratings score everybody sees.
+  if (!req.viewer) {
+    return res.status(401).send({ message: 'Sign in first.' });
+  }
+  BaseService.make().create(Object.assign({}, req.body, { user_id: req.viewer.id }))
     .then(data => {
       if(req.file && req.file.key){
-        const imgObj = { user_id : req.body.user_id, user_board_id : data.id, name : req.file.key, is_public : 0, is_default : 1};
+        const imgObj = { user_id : req.viewer.id, user_board_id : data.id, name : req.file.key, is_public : 0, is_default : 1};
           ImageService.make("UserBoardImage").create(imgObj)
       }
       res.send(data);
@@ -102,7 +112,15 @@ router.post('/', upload({destinationPath : 'user_boards'}).single('photo'), func
     });
 });
 
-router.put('/:id', upload({destinationPath : 'user_boards'}).single('photo'),function (req, res) {
+/*
+ * Ownership matters more here than it looks: a user_board's rating feeds the
+ * composite board_ratings score for that model, so an unowned edit moves a
+ * number shown to everyone, not just one rider's shelf.
+ */
+router.put('/:id',
+  requireOwner({ find: (id) => BaseService.make().find({ id: id, withs: [] }) }),
+  upload({destinationPath : 'user_boards'}).single('photo'),
+  function (req, res) {
   BaseService.make().update(req.params.id, req.body)
     .then(data => {
       // update() resolves the saved instance, so there is nothing to re-fetch
@@ -122,7 +140,9 @@ router.put('/:id', upload({destinationPath : 'user_boards'}).single('photo'),fun
     });
 });
 
-router.delete('/:id', function (req, res) {
+router.delete('/:id',
+  requireOwner({ find: (id) => BaseService.make().find({ id: id, withs: [] }) }),
+  function (req, res) {
   const id = req.params.id;
 
   BaseService.make().delete(id)
@@ -146,7 +166,9 @@ router.delete('/:id', function (req, res) {
 }); 
 
 
-router.delete('/images/:id', function (req, res) {
+router.delete('/images/:id',
+  requireOwner({ find: (id) => ImageService.make('UserBoardImage').find({ id: id, withs: [] }) }),
+  function (req, res) {
   const id = req.params.id;
 
   ImageService.make('UserBoardImage').delete(id)

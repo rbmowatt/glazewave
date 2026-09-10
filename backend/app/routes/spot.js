@@ -197,7 +197,11 @@ router.get('/search', function (req, res) {
  * still see where it was surfed.
  */
 router.post('/', cognitoAuth.getVerifyMiddleware(), function (req, res) {
-  BaseService.make().create({ ...req.body, created_by: req.body.created_by })
+  // created_by came off the request body, so the rider who added a spot was
+  // whoever the client said it was. req.viewer is null in the window between
+  // a Cognito signup and the firstOrNew that mints the users row, which is an
+  // unattributed spot rather than a rejected one.
+  BaseService.make().create({ ...req.body, created_by: req.viewer ? req.viewer.id : null })
     .then(spot => {
       res.status(201).send(spot);
     })

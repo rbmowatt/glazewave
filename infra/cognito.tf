@@ -62,3 +62,15 @@ resource "aws_cognito_user_pool_client" "web" {
     "ALLOW_REFRESH_TOKEN_AUTH",
   ]
 }
+
+# Membership arrives as a cognito:groups claim on both the id and the access
+# token, which is what middleware/Viewer.js reads. Nothing in the app writes
+# this group - add yourself with:
+#
+#   aws cognito-idp admin-add-user-to-group --user-pool-id <id> \
+#     --username <email> --group-name admins --profile glazewave
+resource "aws_cognito_user_pool_group" "admins" {
+  name         = "admins"
+  user_pool_id = aws_cognito_user_pool.main.id
+  description  = "Write access to catalog data and the Cognito admin routes"
+}

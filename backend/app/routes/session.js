@@ -3,6 +3,8 @@ let upload = require('./../services/images/upload');
 const BaseService = require('./../services/SessionService');
 const ImageService  = require('./../services/ImageService');
 const { scopedParser } = require('./../services/rights/Visibility');
+const requireOwner = require('./../middleware/RequireOwner');
+const requireParentOwner = require('./../middleware/OwnedUpload');
 const EntityType = 'Session';
 
 const router = new Router();
@@ -39,12 +41,17 @@ router.get('/images', function (req, res) {
     });
 });
 
-router.post('/images', upload({destinationPath : 'user_sessions'}).array('photo'), function (req, res) {
+router.post('/images',
+  upload({destinationPath : 'user_sessions'}).array('photo'),
+  requireParentOwner({ field: 'session_id', find: (id) => BaseService.make().find({ id: id, withs: [] }) }),
+  function (req, res) {
   const imgs = [];
   if(req.files && req.files.length){
     req.files.forEach(file=>{
     imgs.push(new Promise((resolve, reject) => {
-      let imgObj = { user_id : req.body.user_id, session_id : req.body.session_id, name : file.key, is_public : 0, is_default : 1};
+      // user_id off the token, not the form. It used to come from the
+      // multipart body, so the photo recorded whoever the client named.
+      let imgObj = { user_id : req.viewer.id, session_id : req.body.session_id, name : file.key, is_public : 0, is_default : 1};
       ImageService.make('SessionImage').create(imgObj).then(
         data=> resolve(data)
       )
@@ -92,15 +99,21 @@ router.post('/', upload({destinationPath : 'user_sessions'}).array('photo'), fun
     return;
   }
 
+  // user_id came off the body, so a rider could log a session onto somebody
+  // else's account - and the rows behind /api/user/:id/average with it.
+  if (!req.viewer) {
+    return res.status(401).send({ message: 'Sign in first.' });
+  }
+
   // req.body.conditions is ignored. The client still sends it because the form
   // shows a preview, but SessionService resolves and writes the real row from
   // the session's own location and date - a browser payload cannot be trusted
   // to agree with the timestamp it was saved beside.
-  BaseService.make().create(req.body)
+  BaseService.make().create(Object.assign({}, req.body, { user_id: req.viewer.id }))
     .then(data => {
       if(req.files && req.files.length){
         req.files.forEach(file=>{
-          let imgObj = { user_id : req.body.user_id, session_id : data.id, name : file.key, is_public : 0, is_default : 1};
+          let imgObj = { user_id : req.viewer.id, session_id : data.id, name : file.key, is_public : 0, is_default : 1};
           ImageService.make('SessionImage').create(imgObj)
         })
       }
@@ -115,7 +128,15 @@ router.post('/', upload({destinationPath : 'user_sessions'}).array('photo'), fun
     });
 });
 
-router.put('/:id', upload({destinationPath : 'user_sessions'}).single('photo'),function (req, res) {
+/*
+ * requireOwner ahead of the upload, not after it: multer pushes the photo into
+ * S3 as it parses the multipart body, so checking later stores a file for a
+ * request that is about to be refused.
+ */
+router.put('/:id',
+  requireOwner({ find: (id) => BaseService.make().find({ id: id, withs: [] }) }),
+  upload({destinationPath : 'user_sessions'}).single('photo'),
+  function (req, res) {
   BaseService.make().update(req.params.id, req.body)
     .then(data => {
       // update() resolves the saved instance, so there is nothing to re-fetch
@@ -140,7 +161,9 @@ router.put('/:id', upload({destinationPath : 'user_sessions'}).single('photo'),f
     });
 });
 
-router.delete('/:id', function (req, res) {
+router.delete('/:id',
+  requireOwner({ find: (id) => BaseService.make().find({ id: id, withs: [] }) }),
+  function (req, res) {
   const id = req.params.id;
 
   BaseService.make().delete(id)
@@ -162,7 +185,11 @@ router.delete('/:id', function (req, res) {
     });
 }); 
 
-router.delete('/images/:id', function (req, res) {
+// session_images carries its own user_id, so the photo is checked directly
+// rather than through the session it hangs off.
+router.delete('/images/:id',
+  requireOwner({ find: (id) => ImageService.make('SessionImage').find({ id: id, withs: [] }) }),
+  function (req, res) {
   const id = req.params.id;
 
   ImageService.make('SessionImage').delete(id)

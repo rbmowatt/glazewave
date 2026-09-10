@@ -25,6 +25,7 @@ const cognitoAuthMiddleware = cognitoAuth.getVerifyMiddleware();
 const queryParser = require('./middleware/QueryParser');
 const viewer = require('./middleware/Viewer');
 const demoReadOnly = require('./middleware/DemoReadOnly');
+const requireAdmin = require('./middleware/RequireAdmin');
 
 /*
  * Every CRUD router below used to be mounted bare, so POST, PUT and DELETE on
@@ -60,6 +61,20 @@ const authWrites = (req, res, next) =>
  */
 const guardedWrites = [authWrites, demoReadOnly];
 
+/*
+ * Catalog data - makers, shapers, cities, locations - has no owner, so
+ * ownership cannot gate it and "a valid token" was the whole check. Any signed
+ * in rider could rename or delete every manufacturer in the board catalog.
+ *
+ * Nothing in frontend/src writes to any of these: the board form picks from
+ * the lists and there is no create-a-maker flow, so admin-only writes cost the
+ * app nothing today.
+ */
+const adminWrites = (req, res, next) =>
+  WRITE_METHODS.includes(req.method) ? requireAdmin(req, res, next) : next();
+
+const catalogWrites = [authWrites, demoReadOnly, adminWrites];
+
 
 app.use(queryParser);
 // After queryParser, because it hangs the resolved viewer on req.parser too.
@@ -71,18 +86,27 @@ app.use(cookieParser());
 app.use(cors({'origin': [cognitoConfig.signoutUri, appConfig.clientUrl ]}));
 app.use('/api/user', guardedWrites, userRouter);
 app.use('/api/board', boardRouter);
-app.use('/api/city', guardedWrites, cityRouter);
+app.use('/api/city', catalogWrites, cityRouter);
 /*
- * demoReadOnly here too: this router's PUT and DELETE take a username from the
- * URL and sit behind "is this a valid token", so a demo token reached
- * DELETE /api/cognito/:uname on any account it could name.
+ * Every route in here is an admin action on the user pool - listUsers,
+ * adminCreateUser, adminUpdateUserAttributes, adminDeleteUser - and the whole
+ * router sat behind "is this a valid token". GET / returned every registered
+ * user with email and phone, and it is a read, so demoReadOnly never saw it.
+ *
+ * The calls fail at AWS today only because infra/iam.tf grants the instance
+ * role SSM and S3 and no cognito-idp at all. THAT is the thing keeping this
+ * safe, not the route table - so the IAM statement for AdminDisableUser must
+ * not land before this gate does.
+ *
+ * demoReadOnly is gone from here because requireAdmin subsumes it: a demo
+ * token is refused on its kid before its groups are even read.
  */
-app.use('/api/cognito', cognitoAuthMiddleware, demoReadOnly, cognitoRouter);
+app.use('/api/cognito', cognitoAuthMiddleware, requireAdmin, cognitoRouter);
 app.use('/api/demo', demoRouter);
-app.use('/api/location', guardedWrites, locationRouter);
-app.use('/api/manufacturer', guardedWrites, manufacturerRouter);
+app.use('/api/location', catalogWrites, locationRouter);
+app.use('/api/manufacturer', catalogWrites, manufacturerRouter);
 app.use('/api/session', guardedWrites, sessionRouter);
-app.use('/api/shaper', guardedWrites, shaperRouter);
+app.use('/api/shaper', catalogWrites, shaperRouter);
 app.use('/api/spot', guardedWrites, spotRouter);
 app.use('/api/sc', conditionsRouter);
 app.use('/api/image', guardedWrites, imageRouter);
