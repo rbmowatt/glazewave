@@ -93,11 +93,12 @@ router.get('/:id', function (req, res) {
 
 
 router.post('/', upload({destinationPath : 'user_sessions'}).array('photo'), function (req, res) {
+  // Same orphan as the 401 below, one branch earlier: multer is this route's
+  // first middleware, so a post with a photo and no title has already written
+  // the object by the time the validation runs.
   if (!req.body.title) {
-    res.status(400).send({
-      message: "Content can not be empty!"
-    });
-    return;
+    return discardUploads(req)
+      .then(() => res.status(400).send({ message: "Content can not be empty!" }));
   }
 
   // user_id came off the body, so a rider could log a session onto somebody
