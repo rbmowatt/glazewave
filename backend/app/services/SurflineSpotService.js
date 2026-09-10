@@ -133,6 +133,48 @@ class SurflineSpotService  extends BaseService {
     }
 
     /*
+     * Photographs riders have logged at this spot, newest first.
+     *
+     * sessions.location_id holds a surfline_spots primary key for any session
+     * logged against a seeded spot: the picker writes the spot id into that
+     * column and LocationService.resolve mints the matching locations row with
+     * the same id via createFromSpot. So this is a plain string match and needs
+     * no join table and no migration.
+     *
+     * VISIBILITY IS THE SESSION'S FLAG, NOT THE PHOTO'S. Every upload route
+     * writes session_images.is_public = 0 and nothing anywhere sets it to 1 -
+     * the privacy toggle on the session page updates the SESSION. Adding
+     * `AND si.is_public = 1` here returns zero rows for every spot on the
+     * planet, and reads as "nobody has posted photos here" rather than as a
+     * bug. ImageService.whereVisible makes the same choice for the same reason.
+     *
+     * The rider comes back with the photo so a tile can credit and link them;
+     * the columns are the same four QueryParser allows on a with[]=User, so
+     * this exposes nothing that a public session does not already carry.
+     */
+    async photos({ spotId, limit = 24 })
+    {
+        const query = `
+            SELECT si.id, si.name,
+                   s.id AS session_id, s.title AS session_title,
+                   s.session_date,
+                   u.id AS user_id, u.first_name, u.profile_img
+            FROM session_images si
+            JOIN sessions s ON s.id = si.session_id
+            LEFT JOIN users u ON u.id = s.user_id
+            WHERE s.location_id = :spotId
+              AND s.is_public = 1
+              AND si.name IS NOT NULL AND si.name <> ''
+            ORDER BY s.session_date DESC, si.id DESC
+            LIMIT :limit`;
+
+        return sequelize.query(query, {
+            type: QueryTypes.SELECT,
+            replacements: { spotId: String(spotId), limit: limit },
+        });
+    }
+
+    /*
      * Adds a spot somebody surfed. The seed data cannot cover the world - OSM
      * has two named spots in all of New Jersey - so this is how coverage grows
      * outside Europe, and it has to stay open to any signed-in user.

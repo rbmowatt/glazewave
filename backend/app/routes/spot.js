@@ -3,6 +3,9 @@ const cognitoAuth = require('./../lib/cognitoAuth');
 const BaseService = require('./../services/SurflineSpotService');
 const SpotImageService = require('./../services/SpotImageService');
 const coastline = require('./../services/Coastline');
+const AppSettings = require('./../services/AppSettings');
+const requireFeature = require('./../middleware/RequireFeature');
+const s3Config = require('./../config/s3');
 const EntityType = 'Spot';
 
 const router = new Router();
@@ -11,6 +14,8 @@ const DEFAULT_RADIUS_M = 50000;
 const MAX_RADIUS_M = 200000;
 const DEFAULT_LIMIT = 5;
 const MAX_LIMIT = 50;
+const DEFAULT_PHOTO_LIMIT = 24;
+const MAX_PHOTO_LIMIT = 60;
 const DEFAULT_SEARCH_LIMIT = 8;
 const MAX_SEARCH_LIMIT = 25;
 
@@ -192,6 +197,53 @@ router.get('/search', function (req, res) {
 });
 
 /*
+ * Photographs riders have logged here, for the spot page's community strip.
+ *
+ * Declared above /:id(*) like every other suffix route. Express backtracks a
+ * greedy wildcard, so /api/spot/osm:way/1036392284/photos reaches this handler
+ * with the slash intact - verified against express 4.22.2 rather than assumed.
+ *
+ * No pagination beyond the cap. This list grows without bound as sessions are
+ * logged and the answer is a link through to a filtered session index, not a
+ * cursor on an unauthenticated route.
+ */
+router.get('/:id(*)/photos', requireFeature('spot_community_photos'), function (req, res) {
+  const id = String(req.params.id || '').trim();
+  if (!id) {
+    res.status(404).send({ message: EntityType + " not found." });
+    return;
+  }
+
+  BaseService.make().photos({
+    spotId: id,
+    limit: clamp(rawParam(req, 'limit'), DEFAULT_PHOTO_LIMIT, MAX_PHOTO_LIMIT),
+  })
+    .then(rows => {
+      res.send({
+        photos: rows.map(row => ({
+          id: row.id,
+          // Built here rather than left to the client: SessionCard already
+          // concatenates the same root by hand, and two copies of that rule
+          // drift the moment a CDN lands in front of the bucket.
+          url: s3Config.publicRoot + row.name,
+          session: {
+            id: row.session_id,
+            title: row.session_title,
+            session_date: row.session_date,
+          },
+          user: row.user_id
+            ? { id: row.user_id, first_name: row.first_name, profile_img: row.profile_img }
+            : null,
+        })),
+      });
+    })
+    .catch(err => {
+      console.error('GET /api/spot/:id/photos failed:', err);
+      res.status(500).send({ message: "Some error occurred while retrieving photos." });
+    });
+});
+
+/*
  * Auth is applied per route rather than to the whole router: /nearest has to
  * stay open, because a signed-out visitor looking at a public session should
  * still see where it was surfed.
@@ -256,16 +308,37 @@ router.get('/:id(*)', function (req, res) {
         return;
       }
 
-      let image = null;
+      /*
+       * publicFor already loads every image row for the spot, ordered
+       * default-first, and this route used to throw away all but [0]. Sending
+       * the whole array is the gallery and costs no extra query.
+       *
+       * `image` stays alongside `images` because the picker chips, the search
+       * rows and the nearest list already ship against it.
+       */
+      let images = [];
       try {
-        const images = await SpotImageService.make().publicFor(id, width);
-        image = images[0] || null;
+        images = await SpotImageService.make().publicFor(id, width);
       } catch (err) {
         console.error('spot image lookup failed:', err.message);
       }
 
       const body = spot.toJSON();
-      if (image) body.image = image;
+      if (images.length) {
+        body.image = images[0];
+        body.images = images;
+      }
+
+      /*
+       * What the page is allowed to render, from the server. The flags gate
+       * their own routes as well - this block is so the page does not paint a
+       * section header for an endpoint that will answer 404.
+       *
+       * The detail route itself is never flagged: the page has to load in
+       * order to say the sections are off.
+       */
+      body.features = await AppSettings.all();
+
       res.send({ spot: body });
     })
     .catch(err => {
