@@ -107,6 +107,26 @@ const BOARDS = [
     },
 ];
 
+/*
+ * Seeded riders, so the community score has something to average while the
+ * demo account is the only real account. Their ratings sit deliberately off
+ * the demo user's own number for the same board: a composite that equals his
+ * rating demonstrates nothing.
+ *
+ * The log gets none on purpose. One rider is the state most boards will
+ * genuinely be in for a long time, and a demo that only shows the populated
+ * case hides the one you most need to have designed.
+ *
+ * board_ratings.seeded_riders counts these and the API returns seeded: true
+ * while any of them are in an average. Removing them and recomputing clears
+ * the flag with nothing to switch off by hand.
+ */
+const PEER_RATINGS = {
+    short: [7, 9, 8, 6, 9, 7],
+    mid: [7, 8],
+    log: [],
+};
+
 // Sessions per calendar month on the Jersey coast. September and October carry
 // the hurricane swell and the first nor'easters; July is knee high and warm.
 const NJ_PER_MONTH = {1: 6, 2: 5, 3: 8, 4: 9, 5: 8, 6: 5, 7: 4, 8: 6, 9: 12, 10: 13, 11: 11, 12: 7};
@@ -367,7 +387,12 @@ async function main () {
     const db = require('./../models');
     const SessionService = require('./../services/SessionService');
     const UserBoardService = require('./../services/UserBoardService');
+    const boardRating = require('./../services/rating/BoardRating');
     const rand = mulberry32(seed + 1);
+
+    // LIKE reads _ as a single-character wildcard, so the prefix is escaped
+    // before it becomes a pattern - unescaped it also matches 'demoXpeerX'.
+    const PEER_LIKE = boardRating.SEED_USERNAME_PREFIX.replace(/[_%]/g, '\\$&') + '%';
 
     const [user] = await db.User.findOrCreate({
         where: {username: DEMO_USERNAME},
@@ -395,6 +420,26 @@ async function main () {
         const boards = await db.UserBoard.findAll({where: {user_id: user.id}});
         for (const board of boards) await board.destroy();
         console.log(`reset: removed ${sessions.length} sessions and ${boards.length} boards`);
+
+        /*
+         * Boards before accounts: user_boards.user_id is ON DELETE SET NULL,
+         * so removing the account first orphans its board instead of deleting
+         * it - and an orphaned board keeps counting toward the community
+         * score with no owner left to trace it to.
+         */
+        const peerUsers = await db.User.findAll({
+            where: {username: {[db.Sequelize.Op.like]: PEER_LIKE}},
+        });
+        let peerBoards = 0;
+        for (const peer of peerUsers) {
+            const owned = await db.UserBoard.findAll({where: {user_id: peer.id}});
+            for (const board of owned) {
+                await board.destroy();
+                peerBoards++;
+            }
+            await peer.destroy();
+        }
+        console.log(`reset: removed ${peerUsers.length} seeded riders and ${peerBoards} of their boards`);
     }
 
     for (const spec of LOCATIONS) {
@@ -431,6 +476,48 @@ async function main () {
         });
         console.log(`board ${spec.slot}: ${spec.name} (${catalog.model}) -> id ${bySlot[spec.slot].id}`);
     }
+
+    /*
+     * Through the service like the demo user's own boards, so the rating hooks
+     * fire and the score is built by the code that will build it in
+     * production rather than by this script.
+     *
+     * is_public 0 keeps them out of every list and out of search: the ES proxy
+     * filters on `user_id = viewer OR is_public = 1` server side, so a private
+     * peer board is unreachable whatever the browser asks for. is_active 0
+     * because nothing should ever sign in as one.
+     */
+    let peerCount = 0;
+    for (const [slot, ratings] of Object.entries(PEER_RATINGS)) {
+        const spec = BOARDS.find((b) => b.slot === slot);
+        for (let i = 0; i < ratings.length; i++) {
+            const username = `${boardRating.SEED_USERNAME_PREFIX}${slot}_${i + 1}`;
+            const [peer] = await db.User.findOrCreate({
+                where: {username: username},
+                defaults: {
+                    username: username,
+                    first_name: 'Seeded',
+                    last_name: 'Rider',
+                    email: `${username}@glazewave.com`,
+                    is_active: 0,
+                    type_id: 1,
+                },
+            });
+            peerCount++;
+            const existing = await db.UserBoard.findOne({where: {user_id: peer.id}});
+            if (existing) continue;
+            await UserBoardService.make().create({
+                name: `${spec.model} (seeded rider ${i + 1})`,
+                size: spec.size,
+                rating: ratings[i],
+                user_id: peer.id,
+                board_id: bySlot[slot].board_id,
+                is_public: 0,
+            });
+        }
+    }
+    const seededModels = Object.keys(PEER_RATINGS).filter((slot) => PEER_RATINGS[slot].length);
+    console.log(`seeded riders: ${peerCount} across ${seededModels.length} models (${seededModels.join(', ')})`);
 
     /*
      * Resolved in a pass of its own so the board thresholds can be computed
@@ -483,6 +570,26 @@ async function main () {
         if (made % 20 === 0) console.log(`  ${made}/${planned.length}`);
     }
     console.log(`sessions: ${made} created`);
+
+    /*
+     * The hooks recomputed each model as its riders were created, but the
+     * shrinkage prior is the mean of every model mean, so all of them are
+     * slightly stale by the end of a run that added riders. One sweep fixes
+     * the lot.
+     *
+     * Guarded, and this is not defensive habit: unguarded, a throw here exits
+     * before the elasticsearch backfill below and leaves the demo account with
+     * its sessions in MySQL and nothing in the index - which renders as a
+     * dashboard reading zero sessions on an account that has 142. Scores are
+     * optional and repairable with `npm run boards:ratings`; the index is what
+     * the app actually reads.
+     */
+    try {
+        const scores = await boardRating.recomputeAll();
+        console.log(`board ratings: ${scores.written} rows affected, ${scores.cleared} cleared`);
+    } catch (err) {
+        console.error(`board ratings: recompute failed, run boards:ratings after this - ${err.message}`);
+    }
 
     await db.sequelize.close();
 

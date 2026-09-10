@@ -7,6 +7,7 @@ import UserRequests from './../../requests/UserRequests';
 import { s3Conf } from './../../config/s3';
 import Modal from './../layout/Modal';
 import { loadUser, updateUser, updateUserImage, loadUserAverages } from './../../actions/user';
+import { isReadOnly } from './../../lib/utils/demo';
 
 const mapStateToProps = state => {
     return { user: state.user.data, session: state.session, aggregations: state.user.averages }
@@ -161,6 +162,14 @@ class ProfileCard extends React.Component {
 
                 <div className="d-flex flex-column" style={{ gap: '9px' }}>
                     <div className="gw-eyebrow">Actions</div>
+                    {isReadOnly(this.props.session) ? (
+                        <div className="gw-demo-note">
+                            This is a shared demo account, so it is read-only.
+                            Everything you see here is somebody's real logged
+                            season. Sign up to log your own.
+                        </div>
+                    ) : (
+                    <React.Fragment>
                     <button type="button" className="gw-btn gw-btn-primary" onClick={this.props.onLogSession}>Log a session</button>
                     <button type="button" className="gw-btn" onClick={this.props.onAddBoard}>Add a board</button>
                     <div className="gw-uploader">
@@ -179,6 +188,8 @@ class ProfileCard extends React.Component {
                             <div className="gw-uploader-error">{this.state.uploadError}</div>
                         )}
                     </div>
+                    </React.Fragment>
+                    )}
                 </div>
                 <Modal
                     show={this.state.showImage}

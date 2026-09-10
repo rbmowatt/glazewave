@@ -11,7 +11,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: panza.rayada — https://web.archive.org/web/20161026180026/http://www.panoramio.com/user/44886?with_photo_id=75871778
   - Dated: Taken on 15 July 2012
-  - 1600×1067px, 409 KB, shot 238 m from the spot
+  - 1920×1280px, 409 KB, shot 238 m from the spot
   - Description: Atardecer en Maviri
   - Match: score 11 via name:maviri, kw:beach+sunset, geo:238m, w>=1000, landscape
 - **`mx-sin-el-maviri-2.jpg`** — “Playa Maviri, Los Mochis, Sinaloa” by Leonor Chaav, Wikimedia Commons, CC BY-SA 4.0
@@ -19,7 +19,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Leonor Chaav — //commons.wikimedia.org/w/index.php?title=User:Leonor_Chaav&amp;action=edit&amp;redlink=1
   - Dated: 2018-07-19
-  - 1600×1845px, 35 KB
+  - 718×828px, 35 KB
   - Description: Atardecer en la playa el Maviri en el estado de Sinaloa, México.
   - Match: score 10.5 via coastal-in-title, name:maviri, kw:beach+playa+sunset, w>=1000
 
@@ -32,7 +32,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Ana Beatriz Vega González — //commons.wikimedia.org/w/index.php?title=User:Ana_Beatriz_Vega_Gonz%C3%A1lez&amp;action=edit&amp;redlink=1
   - Dated: 2017-04-09 16:54:36
-  - 1600×1070px, 419 KB, shot 55 m from the spot
+  - 1920×1283px, 419 KB, shot 55 m from the spot
   - Description: Part where the Pacific Ocean and Gulf of California meet, viewed from Cerritos Beach, located in Mazatlan, Sinaloa, Mexico.
   - Match: score 14 via coastal-in-title, name:cerritos, kw:beach+ocean+playa, geo:55m, w>=1000, landscape
 - **`mx-sin-playa-cerritos-2.jpg`** — “Mazatlan, Sinaloa. Playa norte - panoramio (1)” by Lynx Burgos, Wikimedia Commons, CC BY-SA 3.0
@@ -40,7 +40,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Lynx Burgos — https://web.archive.org/web/20161101170416/http://www.panoramio.com/user/5807932?with_photo_id=119473883
   - Dated: Taken on 22 April 2014
-  - 1600×1200px, 572 KB, shot 116 m from the spot
+  - 1920×1440px, 572 KB, shot 116 m from the spot
   - Description: Mazatlan, Sinaloa. Playa norte
   - Match: score 9 via coastal-in-title, kw:beach+playa, geo:116m, w>=1000, landscape
 - **`mx-sin-playa-cerritos-3.jpg`** — “Mazatlán Coast” by Ms.12.ap, Wikimedia Commons, CC BY-SA 4.0
@@ -48,7 +48,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Ms.12.ap — //commons.wikimedia.org/w/index.php?title=User:Ms.12.ap&amp;action=edit&amp;redlink=1
   - Dated: 2014-11-09 08:43:25
-  - 1600×1195px, 734 KB, shot 1847 m from the spot
+  - 1920×1434px, 734 KB, shot 1847 m from the spot
   - Description: Peaceful and energetic sea in the coasts of Mazatán
   - Match: score 8 via coastal-in-title, kw:beach+sea+coast, geo:1847m, w>=1000, landscape
 
@@ -61,7 +61,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Ana Beatriz Vega González — //commons.wikimedia.org/w/index.php?title=User:Ana_Beatriz_Vega_Gonz%C3%A1lez&amp;action=edit&amp;redlink=1
   - Dated: 2017-04-09 16:54:36
-  - 1600×1070px, 419 KB, shot 4886 m from the spot
+  - 1920×1283px, 419 KB, shot 4886 m from the spot
   - Description: Part where the Pacific Ocean and Gulf of California meet, viewed from Cerritos Beach, located in Mazatlan, Sinaloa, Mexico.
   - Match: score 11 via coastal-in-title, name:cerritos, kw:beach+ocean+playa, geo:4886m, w>=1000, landscape
 - **`mx-sin-playa-cerritos-957716-2.jpg`** — “Playa Punta del Sabalo” by Gzzz, Wikimedia Commons, CC BY-SA 4.0
@@ -69,7 +69,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Gzzz — //commons.wikimedia.org/wiki/User:Gzzz
   - Dated: 2018-10-16 21:52:41
-  - 1600×1067px, 396 KB, shot 716 m from the spot
+  - 1920×1280px, 396 KB, shot 716 m from the spot
   - Description: The Punta del Sabalo beach, in Mazatlán (Sinaloa, Mexico).
   - Match: score 8 via coastal-in-title, kw:beach+playa, geo:716m, w>=1000, landscape
 - **`mx-sin-playa-cerritos-957716-3.jpg`** — “Mazatlán - panoramio” by eurimaco, Wikimedia Commons, CC BY-SA 3.0
@@ -77,7 +77,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: eurimaco — https://web.archive.org/web/20161028181334/http://www.panoramio.com/user/913461?with_photo_id=91443930
   - Dated: Taken on 1 June 2012
-  - 1600×1200px, 700 KB, shot 195 m from the spot
+  - 1920×1440px, 700 KB, shot 195 m from the spot
   - Description: Marina Mazatlán
   - Match: score 7 via kw:beach+mar, geo:195m, w>=1000, landscape
 
@@ -90,7 +90,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Lynx Burgos — https://web.archive.org/web/20161101170416/http://www.panoramio.com/user/5807932?with_photo_id=119473883
   - Dated: Taken on 22 April 2014
-  - 1600×1200px, 572 KB, shot 10994 m from the spot
+  - 1920×1440px, 572 KB, shot 10994 m from the spot
   - Description: Mazatlan, Sinaloa. Playa norte
   - Match: score 10 via coastal-in-title, name:norte, kw:beach+playa, geo:10994m, w>=1000, landscape
 - **`mx-sin-playa-norte-2.jpg`** — “Playas del norte España” by Varranzl, Wikimedia Commons, CC BY-SA 4.0
@@ -98,7 +98,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Varranzl — //commons.wikimedia.org/w/index.php?title=User:Varranzl&amp;action=edit&amp;redlink=1
   - Dated: 2021-08-10 13:21:44
-  - 1600×1197px, 1233 KB
+  - 1920×1436px, 1233 KB
   - Description: Foto tomada en una playa natural en Vilela de Nemiña, termino municipal de Muxía en Coruña. Playa pintoresca, rodeada de montañas y parajes naturales. Con arena blanca y rocas. Zona con oleaje , zona surf.
   - Match: score 10 via coastal-in-title, name:norte, kw:surf+playa, w>=1000, landscape
 - **`mx-sin-playa-norte-3.jpg`** — “Playa en Mazatlán 08” by Frank_am_Main, Wikimedia Commons, CC BY-SA 2.0
@@ -106,7 +106,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Frank_am_Main
   - Dated: 2008-06-28 20:30:13
-  - 1600×1067px, 176 KB, shot 939 m from the spot
+  - 1599×1066px, 176 KB, shot 939 m from the spot
   - Description: Beach in Mazatlán, Sinaloa.
   - Match: score 8 via coastal-in-title, kw:beach+playa, geo:939m, w>=1000, landscape
 
@@ -119,7 +119,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: David Stanley from Nanaimo, Canada — https://www.flickr.com/people/79721788@N00
   - Dated: 2015-12-13 11:17
-  - 1600×1200px, 146 KB, shot 83 m from the spot
+  - 1024×768px, 146 KB, shot 83 m from the spot
   - Description: A statue of Mexican composer Fernando Valadés faces Playa Olas Altas in Mazatlan, Sinaloa, Mexico.
   - Match: score 15.5 via coastal-in-title, name:olas+altas, kw:playa, geo:83m, w>=1000, landscape
 
@@ -132,7 +132,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: TravelingOtter
   - Dated: 2002-08-27 13:49:03
-  - 1600×1200px, 313 KB, shot 223 m from the spot
+  - 1024×768px, 313 KB, shot 223 m from the spot
   - Description: Taken from the coast road
   - Match: score 10 via coastal-in-title, kw:beach+coast+bay, geo:223m, w>=1000, landscape
 - **`mx-sin-playa-pinitos-2.jpg`** — “Playa en Mazatlán 39” by TravelingOtter, Wikimedia Commons, CC BY-SA 2.0
@@ -140,7 +140,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: TravelingOtter
   - Dated: 2002-08-27 13:48:53
-  - 1600×1200px, 283 KB, shot 223 m from the spot
+  - 1024×768px, 283 KB, shot 223 m from the spot
   - Description: Beach of Mazatlán, Sinaloa.
   - Match: score 9 via coastal-in-title, kw:beach+playa, geo:223m, w>=1000, landscape
 - **`mx-sin-playa-pinitos-3.jpg`** — Playa en Mazatlán 61 — Public domain (Wikimedia Commons), no attribution required
@@ -148,7 +148,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Dennis Sylvester Hurd
   - Dated: 2021-02-17 06:31:23
-  - 1600×900px, 270 KB, shot 629 m from the spot
+  - 1920×1080px, 270 KB, shot 629 m from the spot
   - Description: Beach of Mazatlán, Sinaloa.
   - Match: score 9 via coastal-in-title, kw:beach+playa+sunset, geo:629m, w>=1000, landscape
 
@@ -161,7 +161,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Gzzz — //commons.wikimedia.org/wiki/User:Gzzz
   - Dated: 2018-10-16 21:52:41
-  - 1600×1067px, 396 KB, shot 1701 m from the spot
+  - 1920×1280px, 396 KB, shot 1701 m from the spot
   - Description: The Punta del Sabalo beach, in Mazatlán (Sinaloa, Mexico).
   - Match: score 11 via coastal-in-title, name:sabalo, kw:beach+playa, geo:1701m, w>=1000, landscape
 - **`mx-sin-playa-sabalo-2.jpg`** — “Playa Mazatlan - panoramio” by Lynx Burgos, Wikimedia Commons, CC BY-SA 3.0
@@ -169,7 +169,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Lynx Burgos — https://web.archive.org/web/20161029133844/http://www.panoramio.com/user/5807932?with_photo_id=105163499
   - Dated: Taken on 30 November 2013
-  - 1600×213px, 93 KB, shot 216 m from the spot
+  - 1920×255px, 93 KB, shot 216 m from the spot
   - Description: Playa Mazatlan
   - Match: score 9 via coastal-in-title, kw:beach+playa, geo:216m, w>=1000, landscape
 - **`mx-sin-playa-sabalo-3.jpg`** — “Playa en Mazatlán 51” by Abel Pardo López, Wikimedia Commons, CC BY 2.0
@@ -177,7 +177,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Abel Pardo López
   - Dated: 2005-08-16
-  - 1600×1067px, 214 KB, shot 263 m from the spot
+  - 1536×1024px, 214 KB, shot 263 m from the spot
   - Description: Beach of Mazatlán, Sinaloa.
   - Match: score 9 via coastal-in-title, kw:beach+playa, geo:263m, w>=1000, landscape
 
@@ -190,7 +190,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Ana Beatriz Vega González — //commons.wikimedia.org/w/index.php?title=User:Ana_Beatriz_Vega_Gonz%C3%A1lez&amp;action=edit&amp;redlink=1
   - Dated: 2017-04-09 16:54:36
-  - 1600×1070px, 419 KB, shot 449 m from the spot
+  - 1920×1283px, 419 KB, shot 449 m from the spot
   - Description: Part where the Pacific Ocean and Gulf of California meet, viewed from Cerritos Beach, located in Mazatlan, Sinaloa, Mexico.
   - Match: score 13 via coastal-in-title, name:cerritos, kw:beach+ocean+playa, geo:449m, w>=1000, landscape
 - **`mx-sin-punta-cerritos-2.jpg`** — “Mazatlan, Sinaloa. Playa norte - panoramio (1)” by Lynx Burgos, Wikimedia Commons, CC BY-SA 3.0
@@ -198,7 +198,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Lynx Burgos — https://web.archive.org/web/20161101170416/http://www.panoramio.com/user/5807932?with_photo_id=119473883
   - Dated: Taken on 22 April 2014
-  - 1600×1200px, 572 KB, shot 516 m from the spot
+  - 1920×1440px, 572 KB, shot 516 m from the spot
   - Description: Mazatlan, Sinaloa. Playa norte
   - Match: score 8 via coastal-in-title, kw:beach+playa, geo:516m, w>=1000, landscape
 - **`mx-sin-punta-cerritos-3.jpg`** ⚠︎ *context, not the coast itself* — “Mazatlan, Sinaloa. Playa norte - panoramio” by Lynx Burgos, Wikimedia Commons, CC BY-SA 3.0
@@ -206,7 +206,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Lynx Burgos — https://web.archive.org/web/20161101170405/http://www.panoramio.com/user/5807932?with_photo_id=119473882
   - Dated: Taken on 22 April 2014
-  - 1600×1200px, 598 KB, shot 77 m from the spot
+  - 1920×1440px, 598 KB, shot 77 m from the spot
   - Description: Mazatlan, Sinaloa. Playa norte
   - Match: score 7.5 via coastal-in-title, kw:playa, geo:77m, w>=1000, landscape
 

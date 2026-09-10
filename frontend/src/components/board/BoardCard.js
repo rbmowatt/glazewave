@@ -7,6 +7,7 @@ import { boardPlaceholder } from "./../../lib/utils/placeholder";
 import { withRouter } from "react-router";
 import StarBar from "./../layout/StarBar";
 import OwnerBadge from "./../layout/OwnerBadge";
+import CommunityScore from "./CommunityScore";
 
 const HIGH_RATING = 8;
 
@@ -64,6 +65,14 @@ const BoardCard = (props) => {
 					}
 				</div>
 			}
+			{props.detailed && (
+				// The model's score, not this board's. Undefined until the
+				// page's ratings land, which CommunityScore renders as "--"
+				// rather than blank so the row does not resize under the eye.
+				<div className="gw-row-community" onClick={open}>
+					<CommunityScore rating={props.communityRating} compact />
+				</div>
+			)}
 			{props.detailed ? (
 				<div className="gw-row-score" onClick={open}>
 					<div className={`gw-row-rating${rating >= HIGH_RATING ? " is-high" : ""}`}>

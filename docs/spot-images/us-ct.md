@@ -11,7 +11,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Jllm06 — //commons.wikimedia.org/wiki/User:Jllm06
   - Dated: 2016-04-30 11:58:46
-  - 1600×1200px, 614 KB, shot 1060 m from the spot
+  - 1920×1440px, 614 KB, shot 1060 m from the spot
   - Description: Fishing pier at Calf Pasture Beach
   - Match: score 8 via coastal-in-title, kw:beach+pier, geo:1060m, w>=1000, landscape
 - **`us-ct-marvin-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Calf Pasture Beach - fishing pier sign” by Jllm06, Wikimedia Commons, CC BY-SA 4.0
@@ -19,7 +19,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Jllm06 — //commons.wikimedia.org/wiki/User:Jllm06
   - Dated: 2016-04-30 11:56:14
-  - 1600×1200px, 1136 KB, shot 983 m from the spot
+  - 1920×1440px, 1136 KB, shot 983 m from the spot
   - Description: Calf Pasture Beach, sign for Captain William Clark Fishing Pier
   - Match: score 8 via coastal-in-title, kw:beach+pier, geo:983m, w>=1000, landscape
 
@@ -32,7 +32,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: WorldIslandInfo.com — https://www.flickr.com/people/76074333@N00
   - Dated: 2010-08-29 09:50
-  - 1600×881px, 405 KB, shot 1974 m from the spot
+  - 1920×1057px, 405 KB, shot 1974 m from the spot
   - Description: Stamford Connecticut coast
   - Match: score 5.5 via coastal-in-title, kw:coast, geo:1974m, w>=1000, landscape
 
@@ -45,7 +45,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Geoffrey Booth, DiegeticShadow — //commons.wikimedia.org/w/index.php?title=User:DiegeticShadow&amp;action=edit&amp;redlink=1
   - Dated: 2001-10-09
-  - 1600×1200px, 68 KB, shot 455 m from the spot
+  - 1152×864px, 68 KB, shot 455 m from the spot
   - Description: Sunset at Short Beach, Connecticut.
   - Match: score 12 via coastal-in-title, name:short, kw:beach+sunset, geo:455m, w>=1000, landscape
 

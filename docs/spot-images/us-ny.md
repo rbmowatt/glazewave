@@ -11,7 +11,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: U. S. Fish and Wildlife Service - Northeast Region — https://www.flickr.com/people/43322816@N08
   - Dated: 2012-11-01 13:27:37
-  - 1600×1200px, 569 KB, shot 172 m from the spot
+  - 1920×1440px, 569 KB, shot 172 m from the spot
   - Description: Dune damage at Amagansett National Wildlife Refuge, part of the Long Island National Wildlife Refuge Complex. Photo credit: Todd Weston/USFWS LongIslandNationalWildlifeRefugeComplexHurricaneSandy For more project information http://www.fws.gov/hurricane/sandy/projects/LongIslandComplex.html Stay informed http://www.facebook.com/usfwsnortheast https://twitter.com/usfwsnortheast
   - Match: score 14 via coastal-in-title, name:amagansett, kw:beach+sand+dune, geo:172m, w>=1000, landscape
 - **`us-ny-amagansett-beach-2.jpg`** — Beach at Amagansett (11672013983) — Public domain (Wikimedia Commons), no attribution required
@@ -27,7 +27,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: U. S. Fish and Wildlife Service - Northeast Region — https://www.flickr.com/people/43322816@N08
   - Dated: 2011-06-29 14:19:27
-  - 1600×1200px, 561 KB, shot 172 m from the spot
+  - 1920×1440px, 561 KB, shot 172 m from the spot
   - Description: Dunes at Amagansett National Wildlife Refuge. Credit: USFWS
   - Match: score 13 via coastal-in-title, name:amagansett, kw:beach+dune, geo:172m, w>=1000, landscape
 
@@ -40,7 +40,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Agiorgio — //commons.wikimedia.org/wiki/User:Agiorgio
   - Dated: 2010-09-17
-  - 1600×1200px, 453 KB, shot 371 m from the spot
+  - 1920×1440px, 453 KB, shot 371 m from the spot
   - Description: A rock groyne at Atlantic Beach, New York.
   - Match: score 14 via coastal-in-title, name:atlantic, kw:beach+coast+jetty, geo:371m, w>=1000, landscape
 - **`us-ny-atlantic-beach-2.jpg`** — “Atlantic Beach New York beach view” by Agiorgio, Wikimedia Commons, CC BY-SA 3.0
@@ -48,7 +48,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Agiorgio — //commons.wikimedia.org/wiki/User:Agiorgio
   - Dated: 2010-08-14
-  - 1600×1200px, 690 KB, shot 443 m from the spot
+  - 1920×1440px, 690 KB, shot 443 m from the spot
   - Description: The beach in the village of Atlantic Beach on Long Island, NY. This photo was taken facing northwest. The boardwalk is visible on the right hand side of the photo.
   - Match: score 13 via coastal-in-title, name:atlantic, kw:beach+coast+boardwalk, geo:443m, w>=1000, landscape
 
@@ -61,7 +61,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: WorldIslandInfo.com — https://www.flickr.com/people/76074333@N00
   - Dated: 2007-11-14 13:31
-  - 1600×1200px, 590 KB, shot 666 m from the spot
+  - 1920×1440px, 590 KB, shot 666 m from the spot
   - Description: On the south shore of the most populous island of the United States. Courtesy www.Andrewdrury.com -- usable with attribution and link to www.Andrewdrury.com
   - Match: score 13 via coastal-in-title, name:cedar, kw:beach+ocean+shore, geo:666m, w>=1000, landscape
 - **`us-ny-cedar-beach-2.jpg`** — “Snowy Lonely Beach ” by Mauriedee, Wikimedia Commons, CC BY-SA 4.0
@@ -69,7 +69,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Mauriedee — //commons.wikimedia.org/wiki/User:Mauriedee
   - Dated: 2017-12-31
-  - 1600×1025px, 458 KB
+  - 1920×1230px, 458 KB
   - Description: 12-30-17 Cedar Beach LI NY
   - Match: score 10 via coastal-in-title, name:cedar, kw:beach+pier, w>=1000, landscape
 
@@ -82,7 +82,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: WorldIslandInfo.com — https://www.flickr.com/people/76074333@N00
   - Dated: 2007-11-14 13:31
-  - 1600×1200px, 590 KB, shot 1059 m from the spot
+  - 1920×1440px, 590 KB, shot 1059 m from the spot
   - Description: On the south shore of the most populous island of the United States. Courtesy www.Andrewdrury.com -- usable with attribution and link to www.Andrewdrury.com
   - Match: score 13 via coastal-in-title, name:cedar, kw:beach+ocean+shore, geo:1059m, w>=1000, landscape
 - **`us-ny-cedar-overlook-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Joe Pomarico” by JoePomarico, Wikimedia Commons, CC BY-SA 4.0
@@ -90,7 +90,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: JoePomarico — //commons.wikimedia.org/w/index.php?title=User:JoePomarico&amp;action=edit&amp;redlink=1
   - Dated: 2017-08-10
-  - 1600×1882px, 849 KB, shot 57 m from the spot
+  - 1920×2259px, 849 KB, shot 57 m from the spot
   - Description: Joe Pomarico painting on the beach.
   - Match: score 6.5 via kw:beach+mar, geo:57m, w>=1000
 
@@ -103,7 +103,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Amos Harari, www.eMixPix.com — https://www.emixpix.com/
   - Dated: 2006-08-12 17:04:19
-  - 1600×1071px, 664 KB, shot 1902 m from the spot
+  - 1920×1285px, 664 KB, shot 1902 m from the spot
   - Description: 2006 aerial shot showing the East Moriches (bottom) and Moriches (top) hamlets in Suffolk County, New York.
   - Match: score 5.5 via coastal-in-title, kw:inlet, geo:1902m, w>=1000, landscape
 
@@ -116,7 +116,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Agiorgio — //commons.wikimedia.org/wiki/User:Agiorgio
   - Dated: 2010-09-17
-  - 1600×1200px, 453 KB, shot 1780 m from the spot
+  - 1920×1440px, 453 KB, shot 1780 m from the spot
   - Description: A rock groyne at Atlantic Beach, New York.
   - Match: score 12 via coastal-in-title, name:atlantic, kw:beach+coast+jetty, geo:1780m, w>=1000, landscape
 
@@ -129,7 +129,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Quintin Soloviev — //commons.wikimedia.org/wiki/User:Quintinsoloviev
   - Dated: 2023-07-15 15:59:19
-  - 1600×1029px, 894 KB, shot 8 m from the spot
+  - 1920×1234px, 894 KB, shot 8 m from the spot
   - Description: Main Beach, East Hampton, NY
   - Match: score 11.5 via coastal-in-title, name:hampton, kw:beach, geo:8m, w>=1000, landscape
 - **`us-ny-east-hampton-beach-2.jpg`** — “Georgica Beach 20190914 065309-EFFECTS” by CaptJayRuffins, Wikimedia Commons, CC BY-SA 4.0
@@ -137,7 +137,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: CaptJayRuffins — //commons.wikimedia.org/wiki/User:CaptJayRuffins
   - Dated: 2019-09-14 06:53:09
-  - 1600×1198px, 765 KB, shot 2345 m from the spot
+  - 1920×1438px, 765 KB, shot 2345 m from the spot
   - Description: The beach line at Georgica beach in East Hampton on palindrome 91419
   - Match: score 9.5 via coastal-in-title, name:hampton, kw:beach, geo:2345m, w>=1000, landscape
 - **`us-ny-east-hampton-beach-3.jpg`** ⚠︎ *context, not the coast itself* — Winslow Homer - East Hampton Beach, Long Island (1874) — Public domain (Wikimedia Commons), no attribution required
@@ -145,7 +145,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Winslow Homer — https://en.wikipedia.org/wiki/en:Winslow_Homer
   - Dated: 1874 date QS:P571,+1874-00-00T00:00:00Z/
-  - 1600×738px, 539 KB
+  - 1920×886px, 539 KB
   - Match: score 8.5 via coastal-in-title, name:hampton, kw:beach, w>=1000, landscape
 
 ## Fort Tilden Beach
@@ -157,7 +157,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: яіску ѕнояе — https://www.flickr.com/people/69503658@N05
   - Dated: 2021-09-09 18:40
-  - 1600×1200px, 310 KB, shot 548 m from the spot
+  - 1280×960px, 310 KB, shot 548 m from the spot
   - Description: The Atlantic Ocean - Queens, NY
   - Match: score 14.5 via coastal-in-title, name:fort+tilden, kw:ocean, geo:548m, w>=1000, landscape
 
@@ -170,7 +170,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Sebastien Rigault — https://www.flickr.com/photos/sebjen/
   - Dated: 2016-03-10
-  - 1600×1200px, 729 KB, shot 998 m from the spot
+  - 1920×1440px, 729 KB, shot 998 m from the spot
   - Description: This is a sunny spectacular view of Gilgo Beach at West Babylon , Long Beach on Long Island , New York state, USA. This photo of Gilgo Beach on Long Island was taken in 2016 by Sebastien Rigault of Québec , Canada.
   - Match: score 12 via coastal-in-title, name:gilgo, kw:beach+mar, geo:998m, w>=1000, landscape
 - **`us-ny-gilgo-beach-2.jpg`** — “GilgoBeach1” by Derekakinnear, Wikimedia Commons, CC BY-SA 4.0
@@ -178,7 +178,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Derekakinnear — //commons.wikimedia.org/w/index.php?title=User:Derekakinnear&amp;action=edit&amp;redlink=1
   - Dated: 2014-10-06 03:16:56
-  - 1600×1015px, 81 KB
+  - 960×609px, 81 KB
   - Description: Atlantic Ocean from Babylon's Gilgo Beach
   - Match: score 10 via coastal-in-title, name:gilgo, kw:beach+ocean, w>=1000, landscape
 
@@ -191,7 +191,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 12 August 2018, 17:04:54
-  - 1600×1067px, 493 KB, shot 171 m from the spot
+  - 1920×1280px, 493 KB, shot 171 m from the spot
   - Description: Walking east along the crescent boardwalk of the main beach of Jacob Riis Park, east of Beach 169th Street in Rockaway, Queens.
   - Match: score 16 via name:jacob+riis, kw:beach+dune+boardwalk, geo:171m, w>=1000, landscape
 - **`us-ny-jacob-riis-park-beach-10-2.jpg`** — “Jacob Riis Park td (2018-08-12) 006” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -199,7 +199,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 12 August 2018, 17:05:24
-  - 1600×1067px, 619 KB, shot 171 m from the spot
+  - 1920×1280px, 619 KB, shot 171 m from the spot
   - Description: Walking east along the crescent boardwalk of the main beach of Jacob Riis Park, east of Beach 169th Street in Rockaway, Queens. Pictured are bicycle racks near Bay 13.
   - Match: score 16 via name:jacob+riis, kw:beach+bay+boardwalk, geo:171m, w>=1000, landscape
 - **`us-ny-jacob-riis-park-beach-10-3.jpg`** — “Jacob Riis Park td (2018-08-12) 011” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -207,7 +207,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 12 August 2018, 17:06:24
-  - 1600×1067px, 288 KB, shot 171 m from the spot
+  - 1920×1280px, 288 KB, shot 171 m from the spot
   - Description: The west end of the main beach of Jacob Riis Park, east of Beach 169th Street in Rockaway, Queens. Pictured is the beginning of the unique curve of the beach and boardwalk at Bay 12.
   - Match: score 16 via name:jacob+riis, kw:beach+bay+boardwalk, geo:171m, w>=1000, landscape
 
@@ -220,7 +220,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 12 August 2018, 17:04:54
-  - 1600×1067px, 493 KB, shot 109 m from the spot
+  - 1920×1280px, 493 KB, shot 109 m from the spot
   - Description: Walking east along the crescent boardwalk of the main beach of Jacob Riis Park, east of Beach 169th Street in Rockaway, Queens.
   - Match: score 16 via name:jacob+riis, kw:beach+dune+boardwalk, geo:109m, w>=1000, landscape
 - **`us-ny-jacob-riis-park-beach-11-2.jpg`** — “Jacob Riis Park td (2018-08-12) 006” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -228,7 +228,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 12 August 2018, 17:05:24
-  - 1600×1067px, 619 KB, shot 109 m from the spot
+  - 1920×1280px, 619 KB, shot 109 m from the spot
   - Description: Walking east along the crescent boardwalk of the main beach of Jacob Riis Park, east of Beach 169th Street in Rockaway, Queens. Pictured are bicycle racks near Bay 13.
   - Match: score 16 via name:jacob+riis, kw:beach+bay+boardwalk, geo:109m, w>=1000, landscape
 - **`us-ny-jacob-riis-park-beach-11-3.jpg`** — “Jacob Riis Park td (2018-08-12) 007” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -236,7 +236,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 12 August 2018, 17:05:47
-  - 1600×1067px, 379 KB, shot 109 m from the spot
+  - 1920×1280px, 379 KB, shot 109 m from the spot
   - Description: Walking east along the crescent boardwalk of the main beach of Jacob Riis Park, east of Beach 169th Street in Rockaway, Queens. Pictured is the beginning of the unique curve of the beach and boardwalk at Bay 12.
   - Match: score 16 via name:jacob+riis, kw:beach+bay+boardwalk, geo:109m, w>=1000, landscape
 
@@ -249,7 +249,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 12 August 2018, 17:04:54
-  - 1600×1067px, 493 KB, shot 83 m from the spot
+  - 1920×1280px, 493 KB, shot 83 m from the spot
   - Description: Walking east along the crescent boardwalk of the main beach of Jacob Riis Park, east of Beach 169th Street in Rockaway, Queens.
   - Match: score 16 via name:jacob+riis, kw:beach+dune+boardwalk, geo:83m, w>=1000, landscape
 - **`us-ny-jacob-riis-park-beach-12-2.jpg`** — “Jacob Riis Park td (2018-08-12) 006” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -257,7 +257,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 12 August 2018, 17:05:24
-  - 1600×1067px, 619 KB, shot 83 m from the spot
+  - 1920×1280px, 619 KB, shot 83 m from the spot
   - Description: Walking east along the crescent boardwalk of the main beach of Jacob Riis Park, east of Beach 169th Street in Rockaway, Queens. Pictured are bicycle racks near Bay 13.
   - Match: score 16 via name:jacob+riis, kw:beach+bay+boardwalk, geo:83m, w>=1000, landscape
 - **`us-ny-jacob-riis-park-beach-12-3.jpg`** — “Jacob Riis Park td (2018-08-12) 007” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -265,7 +265,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 12 August 2018, 17:05:47
-  - 1600×1067px, 379 KB, shot 83 m from the spot
+  - 1920×1280px, 379 KB, shot 83 m from the spot
   - Description: Walking east along the crescent boardwalk of the main beach of Jacob Riis Park, east of Beach 169th Street in Rockaway, Queens. Pictured is the beginning of the unique curve of the beach and boardwalk at Bay 12.
   - Match: score 16 via name:jacob+riis, kw:beach+bay+boardwalk, geo:83m, w>=1000, landscape
 
@@ -278,7 +278,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 12 August 2018, 17:04:54
-  - 1600×1067px, 493 KB, shot 98 m from the spot
+  - 1920×1280px, 493 KB, shot 98 m from the spot
   - Description: Walking east along the crescent boardwalk of the main beach of Jacob Riis Park, east of Beach 169th Street in Rockaway, Queens.
   - Match: score 16 via name:jacob+riis, kw:beach+dune+boardwalk, geo:98m, w>=1000, landscape
 - **`us-ny-jacob-riis-park-beach-13-2.jpg`** — “Jacob Riis Park td (2018-08-12) 006” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -286,7 +286,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 12 August 2018, 17:05:24
-  - 1600×1067px, 619 KB, shot 98 m from the spot
+  - 1920×1280px, 619 KB, shot 98 m from the spot
   - Description: Walking east along the crescent boardwalk of the main beach of Jacob Riis Park, east of Beach 169th Street in Rockaway, Queens. Pictured are bicycle racks near Bay 13.
   - Match: score 16 via name:jacob+riis, kw:beach+bay+boardwalk, geo:98m, w>=1000, landscape
 - **`us-ny-jacob-riis-park-beach-13-3.jpg`** — “Jacob Riis Park td (2018-08-12) 007” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -294,7 +294,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 12 August 2018, 17:05:47
-  - 1600×1067px, 379 KB, shot 98 m from the spot
+  - 1920×1280px, 379 KB, shot 98 m from the spot
   - Description: Walking east along the crescent boardwalk of the main beach of Jacob Riis Park, east of Beach 169th Street in Rockaway, Queens. Pictured is the beginning of the unique curve of the beach and boardwalk at Bay 12.
   - Match: score 16 via name:jacob+riis, kw:beach+bay+boardwalk, geo:98m, w>=1000, landscape
 
@@ -307,7 +307,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 3 August 2018, 19:27:20
-  - 1600×1067px, 384 KB, shot 867 m from the spot
+  - 1920×1280px, 384 KB, shot 867 m from the spot
   - Description: Looking south at the beach from the west side of the Jacob Riis Park bathhouse in Rockaway, Queens. Bay 4 is to the left; bay 5 is to the right.
   - Match: score 17 via coastal-in-title, name:jacob+riis, kw:beach+bay+boardwalk, geo:867m, w>=1000, landscape
 - **`us-ny-jacob-riis-park-beach-14-2.jpg`** — “Jacob Riis Park td (2018-08-12) 003” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -315,7 +315,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 12 August 2018, 17:04:54
-  - 1600×1067px, 493 KB, shot 164 m from the spot
+  - 1920×1280px, 493 KB, shot 164 m from the spot
   - Description: Walking east along the crescent boardwalk of the main beach of Jacob Riis Park, east of Beach 169th Street in Rockaway, Queens.
   - Match: score 16 via name:jacob+riis, kw:beach+dune+boardwalk, geo:164m, w>=1000, landscape
 - **`us-ny-jacob-riis-park-beach-14-3.jpg`** — “Jacob Riis Park td (2018-08-12) 006” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -323,7 +323,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 12 August 2018, 17:05:24
-  - 1600×1067px, 619 KB, shot 164 m from the spot
+  - 1920×1280px, 619 KB, shot 164 m from the spot
   - Description: Walking east along the crescent boardwalk of the main beach of Jacob Riis Park, east of Beach 169th Street in Rockaway, Queens. Pictured are bicycle racks near Bay 13.
   - Match: score 16 via name:jacob+riis, kw:beach+bay+boardwalk, geo:164m, w>=1000, landscape
 
@@ -336,7 +336,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 3 August 2018, 19:27:20
-  - 1600×1067px, 384 KB, shot 247 m from the spot
+  - 1920×1280px, 384 KB, shot 247 m from the spot
   - Description: Looking south at the beach from the west side of the Jacob Riis Park bathhouse in Rockaway, Queens. Bay 4 is to the left; bay 5 is to the right.
   - Match: score 18 via coastal-in-title, name:jacob+riis, kw:beach+bay+boardwalk, geo:247m, w>=1000, landscape
 - **`us-ny-jacob-riis-park-beach-3-2.jpg`** — “Jacob Riis Park td (2018-08-03) 086 - Bay 5 Beach” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -344,7 +344,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 3 August 2018, 19:28:57
-  - 1600×1067px, 492 KB, shot 351 m from the spot
+  - 1920×1280px, 492 KB, shot 351 m from the spot
   - Description: Looking south from the boardwalk towards the beach of Bay 5 at Jacob Riis Park, west of the bathhouse in Rockaway, Queens.
   - Match: score 18 via coastal-in-title, name:jacob+riis, kw:beach+bay+boardwalk, geo:351m, w>=1000, landscape
 - **`us-ny-jacob-riis-park-beach-3-3.jpg`** — “Jacob Riis Park td (2018-08-03) 089 - Bay 4 & 5 Beach” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -352,7 +352,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 3 August 2018, 19:29:34
-  - 1600×1067px, 317 KB, shot 351 m from the spot
+  - 1920×1280px, 317 KB, shot 351 m from the spot
   - Description: Looking southeast from the boardwalk towards the beach of Bay 4 (left-center) and Bay 5 (right) at Jacob Riis Park, west of the bathhouse in Rockaway, Queens.
   - Match: score 18 via coastal-in-title, name:jacob+riis, kw:beach+bay+boardwalk, geo:351m, w>=1000, landscape
 
@@ -365,7 +365,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 3 August 2018, 19:27:20
-  - 1600×1067px, 384 KB, shot 132 m from the spot
+  - 1920×1280px, 384 KB, shot 132 m from the spot
   - Description: Looking south at the beach from the west side of the Jacob Riis Park bathhouse in Rockaway, Queens. Bay 4 is to the left; bay 5 is to the right.
   - Match: score 18 via coastal-in-title, name:jacob+riis, kw:beach+bay+boardwalk, geo:132m, w>=1000, landscape
 - **`us-ny-jacob-riis-park-beach-4-2.jpg`** — “Jacob Riis Park td (2018-08-03) 089 - Bay 4 & 5 Beach” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -373,7 +373,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 3 August 2018, 19:29:34
-  - 1600×1067px, 317 KB, shot 167 m from the spot
+  - 1920×1280px, 317 KB, shot 167 m from the spot
   - Description: Looking southeast from the boardwalk towards the beach of Bay 4 (left-center) and Bay 5 (right) at Jacob Riis Park, west of the bathhouse in Rockaway, Queens.
   - Match: score 18 via coastal-in-title, name:jacob+riis, kw:beach+bay+boardwalk, geo:167m, w>=1000, landscape
 - **`us-ny-jacob-riis-park-beach-4-3.jpg`** — “Jacob Riis Park td (2019-06-04) 100” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -381,7 +381,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: 2019-06-04 17:47:15
-  - 1600×1067px, 145 KB, shot 132 m from the spot
+  - 1920×1280px, 145 KB, shot 132 m from the spot
   - Description: A lamppost on the boardwalk on the south side of the Jacob Riis Park bathhouse, at Bay 4 along the Atlantic Ocean at the west end of Rockaway Beach Boulevard in Rockaway, Queens.
   - Match: score 16 via name:jacob+riis, kw:beach+ocean+bay+boardwalk, geo:132m, w>=1000, landscape
 
@@ -394,7 +394,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 3 August 2018, 19:28:07
-  - 1600×1067px, 487 KB, shot 70 m from the spot
+  - 1920×1280px, 487 KB, shot 70 m from the spot
   - Description: Looking west down the boardwalk of Jacob Riis Park, west of the bathhouse and north of Bay 5 in Rockaway, Queens. Underneath the boardwalk is the seawall which protects the beach from erosion. In the distance is the Wise and Son clock.
   - Match: score 18 via coastal-in-title, name:jacob+riis, kw:beach+sea+bay+boardwalk, geo:70m, w>=1000, landscape
 - **`us-ny-jacob-riis-park-beach-5-2.jpg`** — “Jacob Riis Park td (2018-08-03) 082 - Boardwalk” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -402,7 +402,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 3 August 2018, 19:28:00
-  - 1600×1067px, 534 KB, shot 70 m from the spot
+  - 1920×1280px, 534 KB, shot 70 m from the spot
   - Description: The entrance to the boardwalk and beach of Jacob Riis Park, on the west side of the bathhouse at Bays 4 and 5 in Rockaway, Queens. The curve in the boardwalk is the transition between the original seawall that circumscribes the bathhouse, and the newer seawall built in 1937 which is located farther back.
   - Match: score 18 via coastal-in-title, name:jacob+riis, kw:beach+sea+bay+boardwalk, geo:70m, w>=1000, landscape
 - **`us-ny-jacob-riis-park-beach-5-3.jpg`** — “Jacob Riis Park td (2018-08-03) 081 - Boardwalk” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -410,7 +410,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 3 August 2018, 19:27:47
-  - 1600×1067px, 652 KB, shot 70 m from the spot
+  - 1920×1280px, 652 KB, shot 70 m from the spot
   - Description: A sign at the entrance to the boardwalk and beach of Jacob Riis Park, on the west side of the bathhouse at Bays 4 and 5 in Rockaway, Queens. The sign features a picture of the Wise and Son clock located on the boardwalk.
   - Match: score 18 via coastal-in-title, name:jacob+riis, kw:beach+bay+boardwalk, geo:70m, w>=1000, landscape
 
@@ -423,7 +423,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 3 August 2018, 19:32:19
-  - 1600×1067px, 468 KB, shot 64 m from the spot
+  - 1920×1280px, 468 KB, shot 64 m from the spot
   - Description: Looking west at the east end of the main beach of Jacob Riis Park in Rockaway, Queens. The beach opens up in a crescent shape towards the Atlantic Ocean.
   - Match: score 18 via coastal-in-title, name:jacob+riis, kw:beach+ocean+boardwalk+sunset, geo:64m, w>=1000, landscape
 - **`us-ny-jacob-riis-park-beach-6-2.jpg`** — “Jacob Riis Park td (2018-08-03) 096 - Boardwalk” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -431,7 +431,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 3 August 2018, 19:31:18
-  - 1600×1067px, 297 KB, shot 64 m from the spot
+  - 1920×1280px, 297 KB, shot 64 m from the spot
   - Description: Looking north from the boardwalk at an undeveloped section of grass at Jacob Riis Park, at the east end of the main beach in Rockaway, Queens.
   - Match: score 17 via coastal-in-title, name:jacob+riis, kw:beach+boardwalk, geo:64m, w>=1000, landscape
 - **`us-ny-jacob-riis-park-beach-6-3.jpg`** — “Jacob Riis Park td (2018-08-03) 098 - Boardwalk” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -439,7 +439,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 3 August 2018, 19:31:45
-  - 1600×1067px, 581 KB, shot 64 m from the spot
+  - 1920×1280px, 581 KB, shot 64 m from the spot
   - Description: Two showers on the boardwalk at the east end of the main beach of Jacob Riis Park in Rockaway, Queens. Looking south.
   - Match: score 17 via coastal-in-title, name:jacob+riis, kw:beach+boardwalk, geo:64m, w>=1000, landscape
 
@@ -452,7 +452,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 3 August 2018, 19:32:19
-  - 1600×1067px, 468 KB, shot 150 m from the spot
+  - 1920×1280px, 468 KB, shot 150 m from the spot
   - Description: Looking west at the east end of the main beach of Jacob Riis Park in Rockaway, Queens. The beach opens up in a crescent shape towards the Atlantic Ocean.
   - Match: score 18 via coastal-in-title, name:jacob+riis, kw:beach+ocean+boardwalk+sunset, geo:150m, w>=1000, landscape
 - **`us-ny-jacob-riis-park-beach-7-2.jpg`** — “Jacob Riis Park td (2018-08-03) 091 - Bay 5 Beach” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -460,7 +460,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 3 August 2018, 19:30:01
-  - 1600×1067px, 585 KB, shot 283 m from the spot
+  - 1920×1280px, 585 KB, shot 283 m from the spot
   - Description: Looking south from the boardwalk towards the beach of Bay 5 at Jacob Riis Park, west of the bathhouse in Rockaway, Queens. Note the empty lifeguard tower; it is 7:30 in the afternoon...night.
   - Match: score 18 via coastal-in-title, name:jacob+riis, kw:beach+bay+boardwalk, geo:283m, w>=1000, landscape
 - **`us-ny-jacob-riis-park-beach-7-3.jpg`** — “Jacob Riis Park td (2018-08-03) 090 - Bay 5 Beach” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -468,7 +468,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 3 August 2018, 19:29:51
-  - 1600×1067px, 450 KB, shot 283 m from the spot
+  - 1920×1280px, 450 KB, shot 283 m from the spot
   - Description: Looking south from the boardwalk towards the beach of Bay 5 at Jacob Riis Park, west of the bathhouse in Rockaway, Queens. Note the empty lifeguard tower; it is 7:30 in the afternoon...night.
   - Match: score 18 via coastal-in-title, name:jacob+riis, kw:beach+bay+boardwalk, geo:283m, w>=1000, landscape
 
@@ -481,7 +481,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 3 August 2018, 19:31:18
-  - 1600×1067px, 297 KB, shot 203 m from the spot
+  - 1920×1280px, 297 KB, shot 203 m from the spot
   - Description: Looking north from the boardwalk at an undeveloped section of grass at Jacob Riis Park, at the east end of the main beach in Rockaway, Queens.
   - Match: score 17 via coastal-in-title, name:jacob+riis, kw:beach+boardwalk, geo:203m, w>=1000, landscape
 - **`us-ny-jacob-riis-park-beach-8-2.jpg`** — “Jacob Riis Park td (2018-08-03) 097 - Wise and Son Clock” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -489,7 +489,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 3 August 2018, 19:31:34
-  - 1600×1067px, 333 KB, shot 203 m from the spot
+  - 1920×1280px, 333 KB, shot 203 m from the spot
   - Description: Looking west down the boardwalk at the Wise and Son Clock in Jacob Riis Park, north of Bay 5 between the main beach and bathhouse in Rockaway, Queens. This four-face clock was donated to the park in 1941. It originally used a single mechanism to operate.
   - Match: score 16 via name:jacob+riis, kw:beach+bay+boardwalk, geo:203m, w>=1000, landscape
 
@@ -502,7 +502,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: Taken on 12 August 2018, 17:13:10
-  - 1600×1067px, 415 KB, shot 147 m from the spot
+  - 1920×1280px, 415 KB, shot 147 m from the spot
   - Description: Walking east along the crescent boardwalk of the main beach of Jacob Riis Park, east of Beach 169th Street in Rockaway, Queens.
   - Match: score 15 via name:jacob+riis, kw:beach+boardwalk, geo:147m, w>=1000, landscape
 
@@ -515,7 +515,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Thom C
   - Dated: 2007-11-04 03:27:02
-  - 1600×1071px, 268 KB, shot 448 m from the spot
+  - 1920×1285px, 268 KB, shot 448 m from the spot
   - Description: High surf on Jones Beach in the Autumn of 2007 kicked up by Hurricane Noel’s remnants.
   - Match: score 12 via coastal-in-title, name:jones, kw:beach+surf, geo:448m, w>=1000, landscape
 - **`us-ny-jones-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Nikon at Jones Beach Theater” by ( R. Sullivan ), Wikimedia Commons, CC BY-SA 3.0
@@ -523,7 +523,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: ( R. Sullivan ) — //commons.wikimedia.org/w/index.php?title=User:Sullynyflhi&amp;action=edit&amp;redlink=1
   - Dated: Taken on 23 March 2007
-  - 1600×1113px, 453 KB, shot 715 m from the spot
+  - 1024×712px, 453 KB, shot 715 m from the spot
   - Description: The Nikon at Jones Beach Theater is located at Jones Beach State Park in Wantagh, New York , USA.
   - Match: score 12 via coastal-in-title, name:jones, kw:beach+mar, geo:715m, w>=1000, landscape
 - **`us-ny-jones-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Jones Beach East Bathhouse 2021a” by Antony-22, Wikimedia Commons, CC BY-SA 4.0
@@ -531,7 +531,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Antony-22 — //commons.wikimedia.org/wiki/User:Antony-22
   - Dated: 2021-08-07 14:35:17
-  - 1600×1067px, 639 KB, shot 155 m from the spot
+  - 1920×1280px, 639 KB, shot 155 m from the spot
   - Description: Jones Beach East Bathhouse in New York in 2021
   - Match: score 11.5 via coastal-in-title, name:jones, kw:beach, geo:155m, w>=1000, landscape
 
@@ -544,7 +544,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Agiorgio — //commons.wikimedia.org/wiki/User:Agiorgio
   - Dated: 2010-07-25
-  - 1600×1200px, 817 KB, shot 964 m from the spot
+  - 1920×1440px, 817 KB, shot 964 m from the spot
   - Description: Seaweed growing on a rock jetty at Lido West park on Long Island, NY. The rocks are continually soaked with salt water from the waves and sea spray, but are never submerged for long.
   - Match: score 13 via coastal-in-title, name:lido, kw:beach+wave+waves+ocean, geo:964m, w>=1000, landscape
 - **`us-ny-lido-beach-2.jpg`** — Lido Beach landing site (14848378290) — Public domain (Wikimedia Commons), no attribution required
@@ -552,7 +552,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: U. S. Fish and Wildlife Service - Northeast Region — https://www.flickr.com/people/43322816@N08
   - Dated: 2014-08-18 15:55:08
-  - 1600×1067px, 668 KB, shot 909 m from the spot
+  - 1920×1280px, 668 KB, shot 909 m from the spot
   - Description: During cleanup efforts, this small cove is where ships had to dock for debris removal Credit: Keith Shannon/USFWS Find out more about the trip at http://usfwsnortheast.wordpress.com/tag/hurricane-sandy-aerial-tour/ Stay up to date on Hurricane Sandy recovery and resiliency projects at https://www.fws.gov/hurricane/sandy/ Like us on Facebook http://facebook.com/usfwsnortheast Follow us of Twitter http://facebook.com/usfwsnortheast
   - Match: score 13 via coastal-in-title, name:lido, kw:beach+sand+cove, geo:909m, w>=1000, landscape
 - **`us-ny-lido-beach-3.jpg`** — Above the Lido Beach Wildlife Management Area (NY) (15035027875) — Public domain (Wikimedia Commons), no attribution required
@@ -560,7 +560,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: U. S. Fish and Wildlife Service - Northeast Region — https://www.flickr.com/people/43322816@N08
   - Dated: 2014-08-18 15:54:40
-  - 1600×1102px, 723 KB, shot 909 m from the spot
+  - 1920×1322px, 723 KB, shot 909 m from the spot
   - Description: Above the Lido Beach Wildlife Management Area. The remnants of a boardwalk once used by an adjacent school for environmental education can be seen on the left. Credit: Keith Shannon/USFWS Find out more about the trip at http://usfwsnortheast.wordpress.com/tag/hurricane-sandy-aerial-tour/ Stay up to date on Hurricane Sandy recovery and resiliency projects at https://www.fws.gov/hurricane/sandy/ Like us on Facebook http://facebook.com/usfwsnortheast Follow us of Twitter http://facebook.com/usfwsnortheast
   - Match: score 13 via coastal-in-title, name:lido, kw:beach+sand+cove+boardwalk, geo:909m, w>=1000, landscape
 
@@ -573,7 +573,7 @@
   - Licence: CC BY 2.5 (https://creativecommons.org/licenses/by/2.5/) · attribution required
   - Author: David Shankbone — https://en.wikipedia.org/wiki/en:David_Shankbone
   - Dated: 2006-09
-  - 1600×1200px, 341 KB
+  - 1920×1440px, 341 KB
   - Description: Lighthouse at Oriental Point by David Shankbone, New York City
   - Match: score 11 via coastal-in-title, name:lighthouse, kw:beach+point+lighthouse, w>=1000, landscape
 - **`us-ny-lighthouse-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “OrientPointLightHouse” by The original uploader was David Shankbone at English Wikipedia, Wikimedia Commons, CC BY 2.5
@@ -581,7 +581,7 @@
   - Licence: CC BY 2.5 (https://creativecommons.org/licenses/by/2.5/) · attribution required
   - Author: The original uploader was David Shankbone at English Wikipedia — https://en.wikipedia.org/wiki/User:David_Shankbone
   - Dated: 14 August 2006 (original upload date)
-  - 1600×1043px, 53 KB
+  - 1005×655px, 53 KB
   - Description: The author of this photo is me, David Shankbone. 13 August 2006. Orient Point Lighthouse, Hamptons, New York.
   - Match: score 11 via coastal-in-title, name:lighthouse, kw:beach+point+lighthouse, w>=1000, landscape
 - **`us-ny-lighthouse-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Beach 36th Street Edgemere td (2026-05-13) 31b - PS 106 Lighthouse” by Tdorante10, Wikimedia Commons, CC BY-SA 4.0
@@ -589,7 +589,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tdorante10 — //commons.wikimedia.org/wiki/User:Tdorante10
   - Dated: 2026-05-13 18:22:52
-  - 1600×900px, 554 KB
+  - 1920×1080px, 554 KB
   - Description: Looking east at Public School 106 Lighthouse Elementary School from the Far Rockaway-bound platform of the Beach 36th Street–Edgemere IND Rockaway Line station, at Beach 35th Street and Edgemere Avenue in Edgemere near Wavecrest, Rockaway, Queens. Located on the south side / seaside of the Rockaway Line near the beach, the school was built circa 1920s/1930 (it may be a C. B. J. Snyder design), at a time when the surrounding seaside waterfront was fully populated with bungalow houses. The entire surrounding area was razed by 1969 when the area was demarcated as the "Arverne Urban Renewal Area" 
   - Match: score 11 via coastal-in-title, name:lighthouse, kw:beach+wave+sea+mar, w>=1000, landscape
 
@@ -602,7 +602,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Figmig — //commons.wikimedia.org/w/index.php?title=User:Figmig&amp;action=edit&amp;redlink=1
   - Dated: Taken on 12 August 2012
-  - 1600×1070px, 347 KB, shot 343 m from the spot
+  - 1920×1284px, 347 KB, shot 343 m from the spot
   - Description: Fire Island Light Station
   - Match: score 11.5 via coastal-in-title, name:lighthouse, kw:lighthouse, geo:343m, w>=1000, landscape
 - **`us-ny-lighthouse-beach-613528-2.jpg`** ⚠︎ *context, not the coast itself* — “Fire Island Lighthouse 2” by Nicholas P. Errico, Wikimedia Commons, CC BY-SA 3.0
@@ -610,7 +610,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Nicholas P. Errico — //commons.wikimedia.org/w/index.php?title=User:Erric245&amp;action=edit&amp;redlink=1
   - Dated: Taken on 10 May 2012, 17:50:08
-  - 1600×1067px, 210 KB, shot 343 m from the spot
+  - 1920×1280px, 210 KB, shot 343 m from the spot
   - Description: Fire Island Light Station
   - Match: score 11.5 via coastal-in-title, name:lighthouse, kw:lighthouse, geo:343m, w>=1000, landscape
 
@@ -623,7 +623,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Figmig — //commons.wikimedia.org/w/index.php?title=User:Figmig&amp;action=edit&amp;redlink=1
   - Dated: Taken on 12 August 2012
-  - 1600×1070px, 347 KB, shot 366 m from the spot
+  - 1920×1284px, 347 KB, shot 366 m from the spot
   - Description: Fire Island Light Station
   - Match: score 11.5 via coastal-in-title, name:lighthouse, kw:lighthouse, geo:366m, w>=1000, landscape
 - **`us-ny-lighthouse-beach-613529-2.jpg`** ⚠︎ *context, not the coast itself* — “Fire Island Lighthouse 2” by Nicholas P. Errico, Wikimedia Commons, CC BY-SA 3.0
@@ -631,7 +631,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Nicholas P. Errico — //commons.wikimedia.org/w/index.php?title=User:Erric245&amp;action=edit&amp;redlink=1
   - Dated: Taken on 10 May 2012, 17:50:08
-  - 1600×1067px, 210 KB, shot 366 m from the spot
+  - 1920×1280px, 210 KB, shot 366 m from the spot
   - Description: Fire Island Light Station
   - Match: score 11.5 via coastal-in-title, name:lighthouse, kw:lighthouse, geo:366m, w>=1000, landscape
 
@@ -644,7 +644,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Caitlyn Mullooly — //commons.wikimedia.org/w/index.php?title=User:Camullooly&amp;action=edit&amp;redlink=1
   - Dated: 2014-03-22 19:01:44
-  - 1600×2133px, 491 KB, shot 85 m from the spot
+  - 1920×2560px, 491 KB, shot 85 m from the spot
   - Description: A truly picturesque moment captured on the beach just before spring sprung. It can be beautiful to watch a day end as the night begins.
   - Match: score 12.5 via coastal-in-title, name:long, kw:beach+sunset, geo:85m, w>=1000
 - **`us-ny-long-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Long Beach Boardwalk @ Riverside Boulevard entrance, 2024-07-07, New York 02” by Deans Charbal, Wikimedia Commons, CC BY-SA 4.0
@@ -652,7 +652,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Deans Charbal — //commons.wikimedia.org/wiki/User:Deansfa
   - Dated: 2024-07-07 13:40:41
-  - 1600×1200px, 604 KB, shot 414 m from the spot
+  - 1920×1440px, 604 KB, shot 414 m from the spot
   - Description: Long Beach Boardwalk @ Riverside Boulevard entrance, 2024-07-07, New York
   - Match: score 12 via coastal-in-title, name:long, kw:beach+boardwalk, geo:414m, w>=1000, landscape
 - **`us-ny-long-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Long Beach Boardwalk @ Riverside Boulevard entrance, 2024-07-07, New York 01” by Deans Charbal, Wikimedia Commons, CC BY-SA 4.0
@@ -660,7 +660,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Deans Charbal — //commons.wikimedia.org/wiki/User:Deansfa
   - Dated: 2024-07-07 13:40:38
-  - 1600×1200px, 545 KB, shot 415 m from the spot
+  - 1920×1440px, 545 KB, shot 415 m from the spot
   - Description: Long Beach Boardwalk @ Riverside Boulevard entrance, 2024-07-07, New York
   - Match: score 12 via coastal-in-title, name:long, kw:beach+boardwalk, geo:415m, w>=1000, landscape
 
@@ -673,7 +673,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Hayden Soloviev
   - Dated: 2023-05-30 15:29:11
-  - 1600×1200px, 1260 KB, shot 2163 m from the spot
+  - 1920×1440px, 1260 KB, shot 2163 m from the spot
   - Description: Walking Dunes at Hither Hills State Park
   - Match: score 5.5 via coastal-in-title, kw:dune, geo:2163m, w>=1000, landscape
 
@@ -686,7 +686,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Photograph by Mike Peel ( www.mikepeel.net ) — //commons.wikimedia.org/wiki/User:Mike_Peel
   - Dated: 2018-08-02 11:10:49
-  - 1600×1067px, 748 KB, shot 2196 m from the spot
+  - 1920×1280px, 748 KB, shot 2196 m from the spot
   - Description: Shinnecock Bay, Long Island, USA
   - Match: score 5.5 via coastal-in-title, kw:bay, geo:2196m, w>=1000, landscape
 
@@ -699,7 +699,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Jim.henderson — //commons.wikimedia.org/wiki/User:Jim.henderson
   - Dated: Taken on 26 November 2012, 14:27:29
-  - 1600×1333px, 656 KB, shot 295 m from the spot
+  - 1920×1600px, 656 KB, shot 295 m from the spot
   - Description: Looking northeast at smashed house on a sunny early afternoon.
   - Match: score 11 via coastal-in-title, name:rockaway, kw:sand, geo:295m, w>=1000
 - **`us-ny-rockaway-beach-2.jpg`** ⚠︎ *context, not the coast itself* — Scene at Seaside, Rockaway Beach, N. Y — Public domain (Wikimedia Commons), no attribution required
@@ -707,7 +707,7 @@
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: S. Hirschberg — //commons.wikimedia.org/wiki/File:Scene_at_Seaside,_Rockaway_Beach,_N._Y.jpg#P170
   - Dated: 1919
-  - 1600×1013px, 442 KB
+  - 1619×1025px, 442 KB
   - Description: Circa 1910s postcard (postmarked 1919) of the Atlas Baths in Rockaway Beach, Queens, New York City
   - Match: score 11 via coastal-in-title, name:rockaway, kw:beach+sea+mar, w>=1000, landscape
 
@@ -720,7 +720,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Roman Iakoubtchik from New York, USA — https://www.flickr.com/people/79128958@N02
   - Dated: 2012-11-22 13:14
-  - 1600×1195px, 840 KB, shot 733 m from the spot
+  - 1920×1434px, 840 KB, shot 733 m from the spot
   - Description: Rockaway communities clean up after being ripped apart by Hurricane Sandy. Rockaway Beach, N.Y. 2012
   - Match: score 13 via coastal-in-title, name:rockaway, kw:beach+sand+boardwalk, geo:733m, w>=1000, landscape
 - **`us-ny-rockaway-beach-717124-2.jpg`** ⚠︎ *context, not the coast itself* — “Rockaway Boardwalk Buckled (8268883760)” by Roman Iakoubtchik from New York, USA, Wikimedia Commons, CC BY-SA 2.0
@@ -728,7 +728,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Roman Iakoubtchik from New York, USA — https://www.flickr.com/people/79128958@N02
   - Dated: 2012-11-22 13:45
-  - 1600×1195px, 759 KB, shot 630 m from the spot
+  - 1920×1434px, 759 KB, shot 630 m from the spot
   - Description: Rockaway communities clean up after being ripped apart by Hurricane Sandy. Rockaway Beach, N.Y. 2012
   - Match: score 13 via coastal-in-title, name:rockaway, kw:beach+sand+boardwalk, geo:630m, w>=1000, landscape
 - **`us-ny-rockaway-beach-717124-3.jpg`** ⚠︎ *context, not the coast itself* — “Rockaway Beach 73rd Street (8267815715)” by Roman Iakoubtchik from New York, USA, Wikimedia Commons, CC BY-SA 2.0
@@ -736,7 +736,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Roman Iakoubtchik from New York, USA — https://www.flickr.com/people/79128958@N02
   - Dated: 2012-11-22 13:45
-  - 1600×1195px, 784 KB, shot 613 m from the spot
+  - 1920×1434px, 784 KB, shot 613 m from the spot
   - Description: Rockaway communities clean up after being ripped apart by Hurricane Sandy. Rockaway Beach, N.Y. 2012
   - Match: score 13 via coastal-in-title, name:rockaway, kw:beach+sand+boardwalk, geo:613m, w>=1000, landscape
 
@@ -749,7 +749,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: R01k — https://web.archive.org/web/20161020081402/http://www.panoramio.com/user/5085932?with_photo_id=61359756
   - Dated: Taken on 17 July 2010
-  - 1600×1200px, 741 KB, shot 491437 m from the spot
+  - 1920×1440px, 741 KB, shot 491437 m from the spot
   - Description: Rocky beach in Sandbar Park, Webster, New York
   - Match: score 10 via coastal-in-title, name:sandbar, kw:beach+sand, geo:491437m, w>=1000, landscape
 - **`us-ny-sandbar-beach-2.jpg`** — “Ninevah Sandbar 20200830 125056” by CaptJayRuffins, Wikimedia Commons, CC BY-SA 4.0
@@ -757,7 +757,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: CaptJayRuffins — //commons.wikimedia.org/wiki/User:CaptJayRuffins
   - Dated: Taken on 30 August 2020, 12:50:56
-  - 1600×1200px, 348 KB, shot 29461 m from the spot
+  - 1920×1440px, 348 KB, shot 29461 m from the spot
   - Description: Ninevah beach Sandbar 20200830 125056
   - Match: score 10 via coastal-in-title, name:sandbar, kw:beach+sand, geo:29461m, w>=1000, landscape
 
@@ -770,21 +770,21 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Alessandra Brunhildmedia — //commons.wikimedia.org/w/index.php?title=User:Alessandra_Brunhildmedia&amp;action=edit&amp;redlink=1
   - Dated: 2009-11-26 14:34:18
-  - 1600×1067px, 390 KB
+  - 1920×1280px, 390 KB
   - Description: Sunset at Dune Beach, Southampton NY in Black&White
   - Match: score 11 via coastal-in-title, name:southampton, kw:beach+dune+sunset, w>=1000, landscape
 - **`us-ny-southampton-beach-2.jpg`** — Afternoon, Southampton Beach — Public domain (Wikimedia Commons), no attribution required
   - Source page: https://commons.wikimedia.org/wiki/File:Afternoon,_Southampton_Beach.JPG
   - Licence: Public domain (https://en.wikipedia.org/wiki/Public_domain) · attribution not required
   - Author: Alfred Thompson Bricher — https://en.wikipedia.org/wiki/en:Alfred_Thompson_Bricher
-  - 1600×867px, 69 KB
+  - 891×483px, 69 KB
   - Match: score 11 via coastal-in-title, name:southampton, kw:beach+sea+seascape, w>=1000, landscape
 - **`us-ny-southampton-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Southampton Beach^ - geograph.org.uk - 1715685” by Anne Burgess, Wikimedia Commons, CC BY-SA 2.0
   - Source page: https://commons.wikimedia.org/wiki/File:Southampton_Beach%5E_-_geograph.org.uk_-_1715685.jpg
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Anne Burgess — https://www.geograph.org.uk/profile/139
   - Dated: 2010-02-17
-  - 1600×840px, 157 KB, shot 5392280 m from the spot
+  - 640×336px, 157 KB, shot 5392280 m from the spot
   - Description: Southampton Beach? This tiny triangle of coarse sand is almost certainly the only beach west of the River Itchen! It is next to a disused pier at the east end of Mayflower Park.
   - Match: score 11 via coastal-in-title, name:southampton, kw:beach+sand+pier, geo:5392280m, w>=1000, landscape
 
@@ -797,7 +797,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: formulanone
   - Dated: 2014-04-25 13:49:11
-  - 1600×2400px, 1139 KB
+  - 1920×2880px, 1139 KB
   - Description: Aerial photograph of Sun and Surf Beach Club - Atlantic Beach
   - Match: score 21.5 via coastal-in-title, name:sun+and+surf+club, kw:beach+surf, w>=1000
 
@@ -810,7 +810,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Sebastien Rigault — https://www.flickr.com/photos/sebjen/
   - Dated: 2016-03-10
-  - 1600×1200px, 729 KB, shot 2992 m from the spot
+  - 1920×1440px, 729 KB, shot 2992 m from the spot
   - Description: This is a sunny spectacular view of Gilgo Beach at West Babylon , Long Beach on Long Island , New York state, USA. This photo of Gilgo Beach on Long Island was taken in 2016 by Sebastien Rigault of Québec , Canada.
   - Match: score 7 via coastal-in-title, kw:beach+mar, geo:2992m, w>=1000, landscape
 
@@ -823,7 +823,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: CaptJayRuffins — //commons.wikimedia.org/wiki/User:CaptJayRuffins
   - Dated: 2019-09-14 06:53:09
-  - 1600×1198px, 765 KB, shot 2609 m from the spot
+  - 1920×1438px, 765 KB, shot 2609 m from the spot
   - Description: The beach line at Georgica beach in East Hampton on palindrome 91419
   - Match: score 9.5 via coastal-in-title, name:wainscott, kw:beach, geo:2609m, w>=1000, landscape
 - **`us-ny-wainscott-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Wainscott 20190914” by CaptJayRuffins, Wikimedia Commons, CC BY-SA 4.0
@@ -831,7 +831,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: CaptJayRuffins — //commons.wikimedia.org/wiki/User:CaptJayRuffins
   - Dated: 2019-09-14 06:53:09
-  - 1600×1200px, 54 KB, shot 2609 m from the spot
+  - 800×600px, 54 KB, shot 2609 m from the spot
   - Description: The beach line at Georgica beach in East Hampton on palindrome 91419
   - Match: score 7.5 via name:wainscott, kw:beach, geo:2609m, w>=1000, landscape
 

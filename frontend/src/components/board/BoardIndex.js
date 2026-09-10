@@ -12,6 +12,8 @@ import {
 	UserBoardsCleared,
 	UserBoardCreatedCleared,
 } from "./../../actions/user_board";
+import { loadBoardRatings } from "./../../actions/board_rating";
+import { isReadOnly } from "./../../lib/utils/demo";
 import elasticConfig from './../../config/elastic';
 import { esHeaders } from './../../lib/utils/elastic';
 import Modal from "./../layout/Modal";
@@ -45,6 +47,7 @@ const mapStateToProps = (state) => {
 	return {
 		userSession: state.session,
 		boards: state.user_boards.data,
+		boardRatings: state.board_ratings.byBoard,
 	};
 };
 
@@ -55,6 +58,7 @@ const mapDispachToProps = (dispatch) => {
 		updateBoard: (userSession, params) => dispatch(updateUserBoard(userSession, params)),
 		clearBoards: () => dispatch(UserBoardsCleared()),
 		clearCreatedBoard: () => dispatch(UserBoardCreatedCleared()),
+		loadRatings: (userSession, ids) => dispatch(loadBoardRatings(userSession, ids)),
 	};
 };
 
@@ -92,6 +96,10 @@ class BoardIndex extends Component {
 
 	componentDidMount() {
 		refresh().catch(() => {})
+	}
+
+	componentDidUpdate() {
+		this.loadMissingRatings();
 	}
 
 	componentWillUnmount() {
@@ -203,6 +211,31 @@ class BoardIndex extends Component {
 		return boards
 			.slice()
 			.sort((a, b) => ((Number(a.rating) || 0) - (Number(b.rating) || 0)) * direction);
+	};
+
+	/*
+	 * Community scores for whatever page just hydrated.
+	 *
+	 * Hung off the hydrated rows rather than the elasticsearch hits, because
+	 * the index holds user_board ids and these are keyed by the catalog model -
+	 * boards.id, reached through user_boards.board_id. Only ids not already in
+	 * the store are asked for, so paging back to a page costs nothing.
+	 */
+	requestedRatings = new Set();
+
+	loadMissingRatings = () => {
+		const boards = this.props.boards || [];
+		const known = this.props.boardRatings || {};
+		// Asked-for, not just known: a failed request never fills the store, and
+		// componentDidUpdate would then re-fire it on every render forever.
+		const wanted = [...new Set(
+			boards
+				.map((board) => board.board_id)
+				.filter((id) => id && !known[id] && !this.requestedRatings.has(id))
+		)];
+		if (!wanted.length) return;
+		wanted.forEach((id) => this.requestedRatings.add(id));
+		this.props.loadRatings(this.props.userSession, wanted);
 	};
 
 	/**
@@ -395,7 +428,8 @@ class BoardIndex extends Component {
 														viewBoard={this.boardCreated}
 														editBoard={this.editBoard}
 														isOwner={board.user_id === this.props.userSession.user.id}
-														onRate={this.rateBoard}
+														onRate={isReadOnly(this.props.userSession) ? null : this.rateBoard}
+														communityRating={(this.props.boardRatings || {})[board.board_id]}
 													/>
 												))}
 										</div>

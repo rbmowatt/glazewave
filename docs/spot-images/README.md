@@ -1,6 +1,6 @@
 # Glazewave spot imagery — attribution and provenance
 
-Generated 2026-09-07T23:19:02.273Z by `backend/app/scripts/harvest_spot_images.js`.
+Generated 2026-09-07T23:59:23.714Z by `backend/app/scripts/harvest_spot_images.js`.
 
 **3162 images across 1322 of 1611 spots.** Files live under `backend/data/spot-images/<region>/`, named `<region>-<spot-slug>-<rank>.<ext>`, ranked 1 = best match. The machine-readable version of everything here is `backend/data/spot_images.json`; `backend/data/spot_images.csv` is the same thing flattened one row per image.
 

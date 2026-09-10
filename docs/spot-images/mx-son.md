@@ -11,7 +11,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Cacheux — //commons.wikimedia.org/w/index.php?title=User:Cacheux&amp;action=edit&amp;redlink=1
   - Dated: 2008-03-21 14:32:13
-  - 1600×1074px, 237 KB
+  - 800×537px, 237 KB
   - Description: hermosa playa sonorense
   - Match: score 5 via kw:beach+playa+mar, w>=1000, landscape
 
@@ -24,7 +24,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: WendyAvilesR — //commons.wikimedia.org/w/index.php?title=User:WendyAvilesR&amp;action=edit&amp;redlink=1
   - Dated: 2025-04-09 18:16:12
-  - 1600×2133px, 1277 KB, shot 2542 m from the spot
+  - 1920×2560px, 1277 KB, shot 2542 m from the spot
   - Description: Playa en San Carlos, Sonora.
   - Match: score 9 via coastal-in-title, name:manga, kw:playa, geo:2542m, w>=1000
 - **`mx-son-la-manga-dos-2.jpg`** — “Playa La Manga 02” by WendyAvilesR, Wikimedia Commons, CC BY-SA 4.0
@@ -32,7 +32,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: WendyAvilesR — //commons.wikimedia.org/w/index.php?title=User:WendyAvilesR&amp;action=edit&amp;redlink=1
   - Dated: 2025-04-09 18:15:30
-  - 1600×2133px, 1152 KB, shot 2549 m from the spot
+  - 1920×2560px, 1152 KB, shot 2549 m from the spot
   - Description: Playa en San Carlos, Sonora.
   - Match: score 9 via coastal-in-title, name:manga, kw:playa, geo:2549m, w>=1000
 - **`mx-son-la-manga-dos-3.jpg`** — “Atardecer en San Carlos - 39994833415” by Sheila Herrera, Wikimedia Commons, CC BY-SA 2.0
@@ -40,7 +40,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Sheila Herrera
   - Dated: Taken on 22 July 2017, 19:24
-  - 1600×1200px, 551 KB, shot 3337 m from the spot
+  - 1920×1440px, 551 KB, shot 3337 m from the spot
   - Description: Atardecer en San Carlos
   - Match: score 5 via kw:sea+seascape+sunset, geo:3337m, w>=1000, landscape
 
@@ -53,7 +53,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Judith Garcia from MX — https://www.flickr.com/people/49911079@N00
   - Dated: 2012-03-04 13:46
-  - 1600×1067px, 535 KB, shot 3325 m from the spot
+  - 1920×1280px, 535 KB, shot 3325 m from the spot
   - Description: Bahía de Kino, Sonora.
   - Match: score 6 via coastal-in-title, kw:playa+mar, geo:3325m, w>=1000, landscape
 
@@ -66,7 +66,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Judith Garcia from MX — https://www.flickr.com/people/49911079@N00
   - Dated: 2012-03-04 13:46
-  - 1600×1067px, 535 KB, shot 2911 m from the spot
+  - 1920×1280px, 535 KB, shot 2911 m from the spot
   - Description: Bahía de Kino, Sonora.
   - Match: score 7 via coastal-in-title, kw:playa+mar, geo:2911m, w>=1000, landscape
 
@@ -79,7 +79,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: WendyAvilesR — //commons.wikimedia.org/w/index.php?title=User:WendyAvilesR&amp;action=edit&amp;redlink=1
   - Dated: 2025-05-05 09:15:22
-  - 1600×1200px, 742 KB, shot 257 m from the spot
+  - 1920×1440px, 742 KB, shot 257 m from the spot
   - Description: Playa ubicada en San Carlos, Guaymas. Mayo 2025
   - Match: score 11.5 via coastal-in-title, name:piedras, kw:playa, geo:257m, w>=1000, landscape
 - **`mx-son-playa-de-piedras-2.jpg`** — “Playa Piedras Pintas 06” by WendyAvilesR, Wikimedia Commons, CC BY-SA 4.0
@@ -87,7 +87,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: WendyAvilesR — //commons.wikimedia.org/w/index.php?title=User:WendyAvilesR&amp;action=edit&amp;redlink=1
   - Dated: 2025-05-05 09:45:08
-  - 1600×1200px, 858 KB, shot 286 m from the spot
+  - 1920×1440px, 858 KB, shot 286 m from the spot
   - Description: Playa ubicada en San Carlos, Guaymas. Mayo 2025
   - Match: score 11.5 via coastal-in-title, name:piedras, kw:playa, geo:286m, w>=1000, landscape
 - **`mx-son-playa-de-piedras-3.jpg`** — “Playa Piedras Pintas 07” by WendyAvilesR, Wikimedia Commons, CC BY-SA 4.0
@@ -95,7 +95,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: WendyAvilesR — //commons.wikimedia.org/w/index.php?title=User:WendyAvilesR&amp;action=edit&amp;redlink=1
   - Dated: 2025-05-05 09:50:08
-  - 1600×1200px, 605 KB, shot 277 m from the spot
+  - 1920×1440px, 605 KB, shot 277 m from the spot
   - Description: Playa ubicada en San Carlos, Guaymas. Mayo 2025
   - Match: score 11.5 via coastal-in-title, name:piedras, kw:playa, geo:277m, w>=1000, landscape
 
@@ -108,7 +108,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: WendyAvilesR — //commons.wikimedia.org/w/index.php?title=User:WendyAvilesR&amp;action=edit&amp;redlink=1
   - Dated: 2025-02-27 06:32:05
-  - 1600×1200px, 403 KB, shot 437 m from the spot
+  - 1920×1440px, 403 KB, shot 437 m from the spot
   - Description: Bahía de San Carlos, en el muinicipio de Guyamas en el estado de Sonora. Marzo 2025.
   - Match: score 8 via coastal-in-title, kw:playa+mar, geo:437m, w>=1000, landscape
 - **`mx-son-playa-incluyente-2.jpg`** — “Amanecer en playa San Francisco, San Carlos. 06” by WendyAvilesR, Wikimedia Commons, CC BY-SA 4.0
@@ -116,7 +116,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: WendyAvilesR — //commons.wikimedia.org/w/index.php?title=User:WendyAvilesR&amp;action=edit&amp;redlink=1
   - Dated: 2025-02-27 07:17:12
-  - 1600×1200px, 730 KB, shot 412 m from the spot
+  - 1920×1440px, 730 KB, shot 412 m from the spot
   - Description: Bahía de San Carlos, en el muinicipio de Guyamas en el estado de Sonora. Marzo 2025.
   - Match: score 8 via coastal-in-title, kw:playa+mar, geo:412m, w>=1000, landscape
 
@@ -129,7 +129,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Judith Garcia from MX — https://www.flickr.com/people/49911079@N00
   - Dated: 2012-03-04 13:46
-  - 1600×1067px, 535 KB, shot 1994 m from the spot
+  - 1920×1280px, 535 KB, shot 1994 m from the spot
   - Description: Bahía de Kino, Sonora.
   - Match: score 7 via coastal-in-title, kw:playa+mar, geo:1994m, w>=1000, landscape
 
@@ -142,7 +142,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Judith Garcia from MX — https://www.flickr.com/people/49911079@N00
   - Dated: 2012-03-04 13:46
-  - 1600×1067px, 535 KB, shot 1623 m from the spot
+  - 1920×1280px, 535 KB, shot 1623 m from the spot
   - Description: Bahía de Kino, Sonora.
   - Match: score 11 via coastal-in-title, name:mar, kw:playa+mar, geo:1623m, w>=1000, landscape
 
@@ -155,7 +155,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Sheila Herrera
   - Dated: Taken on 22 July 2017, 19:24
-  - 1600×1200px, 551 KB, shot 3889 m from the spot
+  - 1920×1440px, 551 KB, shot 3889 m from the spot
   - Description: Atardecer en San Carlos
   - Match: score 5 via kw:sea+seascape+sunset, geo:3889m, w>=1000, landscape
 
@@ -168,7 +168,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Nicholas Hartmann — //commons.wikimedia.org/wiki/User:Nhartmannphotos
   - Dated: 2017-01-26 07:29:02
-  - 1600×1200px, 562 KB, shot 1402 m from the spot
+  - 1920×1440px, 562 KB, shot 1402 m from the spot
   - Description: View of the beach from Las Palomas condominiums in Puerto Peñasco (Rocky Point), Sonora, Mexico
   - Match: score 5 via kw:beach+point, geo:1402m, w>=1000, landscape
 - **`mx-son-sandy-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Puerto Peñasco Rocky Point 2” by Nicholas Hartmann, Wikimedia Commons, CC BY-SA 4.0
@@ -176,7 +176,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Nicholas Hartmann — //commons.wikimedia.org/wiki/User:Nhartmannphotos
   - Dated: 2017-01-26 10:16:11
-  - 1600×1200px, 724 KB, shot 1373 m from the spot
+  - 1920×1440px, 724 KB, shot 1373 m from the spot
   - Description: View of the beach from Las Palomas condominiums in Puerto Peñasco (Rocky Point), Sonora, Mexico
   - Match: score 5 via kw:beach+point, geo:1373m, w>=1000, landscape
 

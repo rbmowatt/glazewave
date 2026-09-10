@@ -11,7 +11,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: William Redmond — https://500px.com/redmow
   - Dated: 8 August 2010, 10:14:57 (UTC)
-  - 1600×1066px, 240 KB, shot 85 m from the spot
+  - 1920×1280px, 240 KB, shot 85 m from the spot
   - Description: 500px provided description: Apache Pier at Myrtle Beach just before sunrise; 30 sec exposure; taken back in 2010. Great place to explore! [#Pre-dawn ,#Myrtle Beach Apache Pier]
   - Match: score 14 via coastal-in-title, name:apache, kw:beach+pier+sunrise, geo:85m, w>=1000, landscape
 - **`us-sc-apache-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Myrtle Beach Apache Pier Fishing (189125385)” by William Redmond, Wikimedia Commons, CC BY 3.0
@@ -19,7 +19,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: William Redmond — https://500px.com/redmow
   - Dated: 8 August 2010, 10:43:41 (UTC)
-  - 1600×1066px, 394 KB, shot 85 m from the spot
+  - 1920×1280px, 394 KB, shot 85 m from the spot
   - Description: 500px provided description: Apache Pier at Myrtle Beach at sunrise; 3/10 sec exposure to slightly blur the waves and fisherman; taken back in 2010. Great place to explore! [#Dawn ,#Myrtle Beach Apache Pier ,#Fishing from pier]
   - Match: score 14 via coastal-in-title, name:apache, kw:beach+wave+waves+pier, geo:85m, w>=1000, landscape
 - **`us-sc-apache-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Apache Pier Underside (189275373)” by William Redmond, Wikimedia Commons, CC BY 3.0
@@ -27,7 +27,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: William Redmond — https://500px.com/redmow
   - Dated: 8 August 2010, 10:25:06 (UTC)
-  - 1600×1066px, 308 KB, shot 85 m from the spot
+  - 1920×1280px, 308 KB, shot 85 m from the spot
   - Description: 500px provided description: Pattern of wood work supporting the Apache Pier, shot from below. Graduated filters were used to bring out the wood grain and color in this long exposure shot. [#Apache Pier ,#Myrtle Beach]
   - Match: score 13 via coastal-in-title, name:apache, kw:beach+pier, geo:85m, w>=1000, landscape
 
@@ -40,7 +40,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: User:Katangais — //commons.wikimedia.org/wiki/User:Katangais
   - Dated: 2014-10-02
-  - 1600×1200px, 497 KB, shot 629 m from the spot
+  - 1920×1440px, 497 KB, shot 629 m from the spot
   - Description: Description: Along a refreshingly deserted stretch of coastline at Myrtle Beach in October, 2014.
   - Match: score 9 via coastal-in-title, kw:beach+coast+coastline, geo:629m, w>=1000, landscape
 - **`us-sc-arcadia-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Sea Of Rvs (189275249)” by William Redmond, Wikimedia Commons, CC BY 3.0
@@ -48,7 +48,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: William Redmond — https://500px.com/redmow
   - Dated: 5 August 2010, 22:13:55 (UTC)
-  - 1600×1066px, 265 KB, shot 782 m from the spot
+  - 1920×1280px, 265 KB, shot 782 m from the spot
   - Description: 500px provided description: An in-the-moment pic of the American Flag flying high above a sea of RVs facing the Atlantic. I think avid RV'ers will appreciate this one. Many thanks to Myrtle Beach Travel Park for an awesome stay. [#Seaside ,#American Flag ,#RV Life ,#Myrtle Beath]
   - Match: score 8 via coastal-in-title, kw:beach+sea, geo:782m, w>=1000, landscape
 - **`us-sc-arcadia-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Myrtle Beach Apache Pier (189125365)” by William Redmond, Wikimedia Commons, CC BY 3.0
@@ -56,7 +56,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: William Redmond — https://500px.com/redmow
   - Dated: 8 August 2010, 10:14:57 (UTC)
-  - 1600×1066px, 240 KB, shot 1445 m from the spot
+  - 1920×1280px, 240 KB, shot 1445 m from the spot
   - Description: 500px provided description: Apache Pier at Myrtle Beach just before sunrise; 30 sec exposure; taken back in 2010. Great place to explore! [#Pre-dawn ,#Myrtle Beach Apache Pier]
   - Match: score 8 via coastal-in-title, kw:beach+pier+sunrise, geo:1445m, w>=1000, landscape
 
@@ -77,7 +77,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Cantbeatpie — //commons.wikimedia.org/w/index.php?title=User:Cantbeatpie&amp;action=edit&amp;redlink=1
   - Dated: 2013-09-15
-  - 1600×1200px, 43 KB
+  - 960×720px, 43 KB
   - Description: This photo is taken from the beach side of Deveaux Bank looking south. The bank has about two miles of sandy beach on the north and east sides and this is about halfway down the east side. Landings are permitted only below the high water line by state authorities which is where this photo was taken.
   - Match: score 11 via coastal-in-title, name:atlantic, kw:beach+ocean+sand, w>=1000, landscape
 - **`us-sc-atlantic-beach-3.jpg`** — “Atlantic Ocean shoreline in Myrtle Beach, South Carolina” by Loadmaster (David R. Tribble) This image was made by Loadmaster (David R. Tribble) . Email the author: David…, Wikimedia Commons, CC BY-SA 3.0
@@ -85,7 +85,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Loadmaster (David R. Tribble) This image was made by Loadmaster (David R. Tribble) . Email the author: David… — //commons.wikimedia.org/wiki/User:Loadmaster
   - Dated: 2014-06-30 11:28:42
-  - 1600×1067px, 677 KB, shot 24239 m from the spot
+  - 1920×1280px, 677 KB, shot 24239 m from the spot
   - Description: South Myrtle Beach , South Carolina.
   - Match: score 11 via coastal-in-title, name:atlantic, kw:beach+ocean+shore+shoreline, geo:24239m, w>=1000, landscape
 
@@ -98,7 +98,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Darkdan
   - Dated: 2006-12-27
-  - 1600×341px, 556 KB
+  - 1408×300px, 556 KB
   - Description: Wikivoyage banner for Bradley Beach, NJ.
   - Match: score 10 via coastal-in-title, name:bradley, kw:beach+boardwalk, w>=1000, landscape
 
@@ -111,7 +111,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: User:Katangais — //commons.wikimedia.org/wiki/User:Katangais
   - Dated: 2014-10-02
-  - 1600×1200px, 497 KB, shot 3548 m from the spot
+  - 1920×1440px, 497 KB, shot 3548 m from the spot
   - Description: Description: Along a refreshingly deserted stretch of coastline at Myrtle Beach in October, 2014.
   - Match: score 7 via coastal-in-title, kw:beach+coast+coastline, geo:3548m, w>=1000, landscape
 - **`us-sc-briarcliffe-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Sea Of Rvs (189275249)” by William Redmond, Wikimedia Commons, CC BY 3.0
@@ -119,7 +119,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: William Redmond — https://500px.com/redmow
   - Dated: 5 August 2010, 22:13:55 (UTC)
-  - 1600×1066px, 265 KB, shot 2978 m from the spot
+  - 1920×1280px, 265 KB, shot 2978 m from the spot
   - Description: 500px provided description: An in-the-moment pic of the American Flag flying high above a sea of RVs facing the Atlantic. I think avid RV'ers will appreciate this one. Many thanks to Myrtle Beach Travel Park for an awesome stay. [#Seaside ,#American Flag ,#RV Life ,#Myrtle Beath]
   - Match: score 7 via coastal-in-title, kw:beach+sea, geo:2978m, w>=1000, landscape
 
@@ -132,7 +132,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Bearian — //commons.wikimedia.org/w/index.php?title=User:Bearian&amp;action=edit&amp;redlink=1
   - Dated: Taken on 26 May 2013, 11:24:52
-  - 1600×1200px, 629 KB
+  - 1920×1440px, 629 KB
   - Description: Cherry Grove beach, off of Ocean walk, which is part of Fire Island National Seashore.
   - Match: score 15 via coastal-in-title, name:cherry+grove, kw:beach+ocean+sea+shore, w>=1000, landscape
 - **`us-sc-cherry-grove-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Cherry Grove Pier” by Melikamp, Wikimedia Commons, CC BY-SA 3.0
@@ -140,7 +140,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Melikamp — //commons.wikimedia.org/wiki/User:Melikamp
   - Dated: 2012-04-29
-  - 1600×1200px, 634 KB, shot 881 m from the spot
+  - 1920×1440px, 634 KB, shot 881 m from the spot
   - Description: Cherry Grove Pier at Cherry Grove Beach, a neighborhood of the city of North Myrtle Beach in Horry County, South Carolina, United States.
   - Match: score 16 via coastal-in-title, name:cherry+grove, kw:beach+pier, geo:881m, w>=1000, landscape
 - **`us-sc-cherry-grove-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “North Myrtle Beach Banner” by Melikamp, Wikimedia Commons, CC BY-SA 3.0
@@ -148,7 +148,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Melikamp — //commons.wikimedia.org/wiki/User:Melikamp
   - Dated: 2012-04-29
-  - 1600×229px, 129 KB, shot 881 m from the spot
+  - 1920×274px, 129 KB, shot 881 m from the spot
   - Description: Cherry Grove Pier at Cherry Grove Beach, a neighborhood of the city of North Myrtle Beach in Horry County, South Carolina, United States.
   - Match: score 16 via coastal-in-title, name:cherry+grove, kw:beach+pier, geo:881m, w>=1000, landscape
 
@@ -161,7 +161,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: User:Katangais — //commons.wikimedia.org/wiki/User:Katangais
   - Dated: 2014-10-02
-  - 1600×1200px, 497 KB, shot 1458 m from the spot
+  - 1920×1440px, 497 KB, shot 1458 m from the spot
   - Description: Description: Along a refreshingly deserted stretch of coastline at Myrtle Beach in October, 2014.
   - Match: score 8 via coastal-in-title, kw:beach+coast+coastline, geo:1458m, w>=1000, landscape
 - **`us-sc-cottage-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Myrtle Beach Apache Pier (189125365)” by William Redmond, Wikimedia Commons, CC BY 3.0
@@ -169,7 +169,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: William Redmond — https://500px.com/redmow
   - Dated: 8 August 2010, 10:14:57 (UTC)
-  - 1600×1066px, 240 KB, shot 644 m from the spot
+  - 1920×1280px, 240 KB, shot 644 m from the spot
   - Description: 500px provided description: Apache Pier at Myrtle Beach just before sunrise; 30 sec exposure; taken back in 2010. Great place to explore! [#Pre-dawn ,#Myrtle Beach Apache Pier]
   - Match: score 9 via coastal-in-title, kw:beach+pier+sunrise, geo:644m, w>=1000, landscape
 - **`us-sc-cottage-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Myrtle Beach Apache Pier Fishing (189125385)” by William Redmond, Wikimedia Commons, CC BY 3.0
@@ -177,7 +177,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: William Redmond — https://500px.com/redmow
   - Dated: 8 August 2010, 10:43:41 (UTC)
-  - 1600×1066px, 394 KB, shot 644 m from the spot
+  - 1920×1280px, 394 KB, shot 644 m from the spot
   - Description: 500px provided description: Apache Pier at Myrtle Beach at sunrise; 3/10 sec exposure to slightly blur the waves and fisherman; taken back in 2010. Great place to explore! [#Dawn ,#Myrtle Beach Apache Pier ,#Fishing from pier]
   - Match: score 9 via coastal-in-title, kw:beach+wave+waves+pier, geo:644m, w>=1000, landscape
 
@@ -190,7 +190,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Joe Mabel — //commons.wikimedia.org/wiki/User:Jmabel
   - Dated: Taken on 26 April 2019
-  - 1600×1063px, 561 KB
+  - 1920×1275px, 561 KB
   - Description: Crescent Beach (left) and Cannon Beach, Oregon, U.S. Haystack Rock and other offshore rock formations seen from Ecola Point, Ecola State Park.
   - Match: score 11 via coastal-in-title, name:crescent, kw:beach+sea+shore+point, w>=1000, landscape
 - **`us-sc-crescent-beach-2.jpg`** — “Crescent Beach, Nova Scotia” by Madereugeneandrew, Wikimedia Commons, CC BY-SA 4.0
@@ -198,7 +198,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Madereugeneandrew — //commons.wikimedia.org/w/index.php?title=User:Madereugeneandrew&amp;action=edit&amp;redlink=1
   - Dated: 2011-06-11 08:14:06
-  - 1600×363px, 110 KB, shot 1689058 m from the spot
+  - 1920×435px, 110 KB, shot 1689058 m from the spot
   - Description: Crescent Beach is a two kilometer ribbon of sand especially popular with walkers.
   - Match: score 10 via coastal-in-title, name:crescent, kw:beach+sand, geo:1689058m, w>=1000, landscape
 - **`us-sc-crescent-beach-3.jpg`** — “2016 Crystal Crescent Beach 1” by Ben MacLeod, Wikimedia Commons, CC BY-SA 4.0
@@ -206,7 +206,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Ben MacLeod — //commons.wikimedia.org/wiki/User:Ben_MacLeod
   - Dated: 2016-06-18 03:55:00
-  - 1600×1200px, 712 KB
+  - 1920×1440px, 712 KB
   - Description: Crystal Crescent Beach near Halifax, Nova Scotia.
   - Match: score 10 via coastal-in-title, name:crescent, kw:beach+point, w>=1000, landscape
 
@@ -219,7 +219,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: David Dugan — https://web.archive.org/web/20161103184350/http://www.panoramio.com/user/2187091?with_photo_id=132955545
   - Dated: 2016
-  - 1600×1068px, 716 KB, shot 1543 m from the spot
+  - 1920×1282px, 716 KB, shot 1543 m from the spot
   - Description: 16-20-059: beach
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:1543m, w>=1000, landscape
 - **`us-sc-cummings-point-2.jpg`** — “16-20-024, beach - panoramio” by David Dugan, Wikimedia Commons, CC BY-SA 3.0
@@ -227,7 +227,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: David Dugan — https://web.archive.org/web/20161103071222/http://www.panoramio.com/user/2187091?with_photo_id=132955216
   - Dated: Taken on 23 July 2016
-  - 1600×1068px, 563 KB, shot 1539 m from the spot
+  - 1920×1282px, 563 KB, shot 1539 m from the spot
   - Description: 16-20-024: beach
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:1539m, w>=1000, landscape
 - **`us-sc-cummings-point-3.jpg`** ⚠︎ *context, not the coast itself* — “Charleston Lighthouse (7600493092)” by Rhys A, Wikimedia Commons, CC BY 2.0
@@ -235,7 +235,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Rhys A — https://www.flickr.com/people/51867225@N08
   - Dated: 2012-04-22 00:18
-  - 1600×1067px, 312 KB, shot 574 m from the spot
+  - 1000×667px, 312 KB, shot 574 m from the spot
   - Description: Charleston Lighthouse
   - Match: score 6.5 via coastal-in-title, kw:lighthouse, geo:574m, w>=1000, landscape
 
@@ -248,7 +248,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: ron miguel from North Carolina, USA — https://www.flickr.com/people/21295125@N05
   - Dated: 2007-07
-  - 1600×1067px, 328 KB, shot 3426 m from the spot
+  - 1920×1280px, 328 KB, shot 3426 m from the spot
   - Description: Women in bikinis seen from back. Taken at the Boardwalk in Myrtle Beach, South Carolina summer of July 2007.
   - Match: score 6 via coastal-in-title, kw:beach+boardwalk, geo:3426m, w>=1000, landscape
 
@@ -261,7 +261,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: William Redmond — https://500px.com/redmow
   - Dated: 8 August 2010, 10:14:57 (UTC)
-  - 1600×1066px, 240 KB, shot 795 m from the spot
+  - 1920×1280px, 240 KB, shot 795 m from the spot
   - Description: 500px provided description: Apache Pier at Myrtle Beach just before sunrise; 30 sec exposure; taken back in 2010. Great place to explore! [#Pre-dawn ,#Myrtle Beach Apache Pier]
   - Match: score 9 via coastal-in-title, kw:beach+pier+sunrise, geo:795m, w>=1000, landscape
 - **`us-sc-dolphin-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Myrtle Beach Apache Pier Fishing (189125385)” by William Redmond, Wikimedia Commons, CC BY 3.0
@@ -269,7 +269,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: William Redmond — https://500px.com/redmow
   - Dated: 8 August 2010, 10:43:41 (UTC)
-  - 1600×1066px, 394 KB, shot 795 m from the spot
+  - 1920×1280px, 394 KB, shot 795 m from the spot
   - Description: 500px provided description: Apache Pier at Myrtle Beach at sunrise; 3/10 sec exposure to slightly blur the waves and fisherman; taken back in 2010. Great place to explore! [#Dawn ,#Myrtle Beach Apache Pier ,#Fishing from pier]
   - Match: score 9 via coastal-in-title, kw:beach+wave+waves+pier, geo:795m, w>=1000, landscape
 
@@ -282,7 +282,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Sara Dean from Charleston, SC, USA — https://www.flickr.com/people/50586639@N00
   - Dated: 2012-09-30 19:19
-  - 1600×1122px, 646 KB, shot 4708 m from the spot
+  - 1920×1346px, 646 KB, shot 4708 m from the spot
   - Description: Sunrise at Edisto Beach State Park
   - Match: score 6 via coastal-in-title, kw:beach+sunrise, geo:4708m, w>=1000, landscape
 - **`us-sc-edingsville-beach-2.jpg`** — “Loner (258894675)” by Devesh Tripathi, Wikimedia Commons, CC BY 3.0
@@ -290,7 +290,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Devesh Tripathi — https://500px.com/DeveshTripathi
   - Dated: before 21 May 2018, 18:15:36 (UTC)
-  - 1600×941px, 178 KB, shot 3344 m from the spot
+  - 1920×1129px, 178 KB, shot 3344 m from the spot
   - Description: 500px provided description: Loner [#morning ,#nature ,#beach ,#blue ,#coastline ,#tree ,#beautiful ,#orange ,#view ,#horizon ,#alone ,#black ,#wave ,#landscapes ,#peace ,#cloud ,#seaside ,#seashore ,#wooden ,#scenics ,#serene ,#atlantic ,#serenity ,#golden hour ,#global warming]
   - Match: score 5 via kw:beach+wave+sea+coast, geo:3344m, w>=1000, landscape
 
@@ -303,7 +303,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Ammodramus — //commons.wikimedia.org/wiki/User:Ammodramus
   - Dated: 2013-01-12 10:34:46
-  - 1600×1200px, 1133 KB, shot 758 m from the spot
+  - 1920×1440px, 1133 KB, shot 758 m from the spot
   - Description: Detail of the Spanish Mount shell midden at Edisto Beach State Park, South Carolina. Photograph was taken from the boardwalk.
   - Match: score 12 via coastal-in-title, name:edisto, kw:beach+boardwalk, geo:758m, w>=1000, landscape
 
@@ -316,7 +316,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: RJ Matthews — https://web.archive.org/web/20161025034920/http://www.panoramio.com/user/7329473?with_photo_id=83810522
   - Dated: Taken on 11 April 2009
-  - 1600×1200px, 372 KB, shot 84309 m from the spot
+  - 1920×1440px, 372 KB, shot 84309 m from the spot
   - Description: Folly Pier
   - Match: score 10 via coastal-in-title, name:folly, kw:beach+pier, geo:84309m, w>=1000, landscape
 - **`us-sc-folly-field-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Folly Pier - panoramio (1)” by RJ Matthews, Wikimedia Commons, CC BY-SA 3.0
@@ -324,7 +324,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: RJ Matthews — https://web.archive.org/web/20161024212618/http://www.panoramio.com/user/7329473?with_photo_id=84385118
   - Dated: Taken on 3 April 2010
-  - 1600×1200px, 478 KB, shot 84835 m from the spot
+  - 1920×1440px, 478 KB, shot 84835 m from the spot
   - Description: Folly Pier
   - Match: score 10 via coastal-in-title, name:folly, kw:beach+pier, geo:84835m, w>=1000, landscape
 
@@ -337,7 +337,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Melikamp — //commons.wikimedia.org/wiki/User:Melikamp
   - Dated: 2012-04-29
-  - 1600×1200px, 634 KB, shot 3390 m from the spot
+  - 1920×1440px, 634 KB, shot 3390 m from the spot
   - Description: Cherry Grove Pier at Cherry Grove Beach, a neighborhood of the city of North Myrtle Beach in Horry County, South Carolina, United States.
   - Match: score 6 via coastal-in-title, kw:beach+pier, geo:3390m, w>=1000, landscape
 - **`us-sc-futch-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “North Myrtle Beach Banner” by Melikamp, Wikimedia Commons, CC BY-SA 3.0
@@ -345,7 +345,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Melikamp — //commons.wikimedia.org/wiki/User:Melikamp
   - Dated: 2012-04-29
-  - 1600×229px, 129 KB, shot 3390 m from the spot
+  - 1920×274px, 129 KB, shot 3390 m from the spot
   - Description: Cherry Grove Pier at Cherry Grove Beach, a neighborhood of the city of North Myrtle Beach in Horry County, South Carolina, United States.
   - Match: score 6 via coastal-in-title, kw:beach+pier, geo:3390m, w>=1000, landscape
 
@@ -358,7 +358,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Johnsonar2 — //commons.wikimedia.org/w/index.php?title=User:Johnsonar2&amp;action=edit&amp;redlink=1
   - Dated: 2005-05-11
-  - 1600×1530px, 34 KB
+  - 273×261px, 34 KB
   - Description: The Pier at Garden City Beach, SC
   - Match: score 13.5 via coastal-in-title, name:garden+city, kw:beach+pier, w>=1000
 - **`us-sc-garden-city-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Myrtle Beach Night @ Murrells Inlet” by Cprintz20, Wikimedia Commons, CC BY-SA 4.0
@@ -366,7 +366,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Cprintz20 — //commons.wikimedia.org/w/index.php?title=User:Cprintz20&amp;action=edit&amp;redlink=1
   - Dated: Taken on 5 July 2016, 20:30:23
-  - 1600×1200px, 538 KB, shot 1521 m from the spot
+  - 1920×1440px, 538 KB, shot 1521 m from the spot
   - Description: This photo was taken at Murrells Inlet in Myrtle Beach, SC by an iPhone
   - Match: score 7 via coastal-in-title, kw:beach+inlet, geo:1521m, w>=1000, landscape
 - **`us-sc-garden-city-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Myrtle Beach Clouds @ Murrells Inlet” by Cprintz20, Wikimedia Commons, CC BY-SA 4.0
@@ -374,7 +374,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Cprintz20 — //commons.wikimedia.org/w/index.php?title=User:Cprintz20&amp;action=edit&amp;redlink=1
   - Dated: Taken on 5 July 2016
-  - 1600×688px, 433 KB, shot 1522 m from the spot
+  - 1920×825px, 433 KB, shot 1522 m from the spot
   - Description: This photo was taken at Murrells Inlet in Myrtle Beach, SC by an iPhone
   - Match: score 7 via coastal-in-title, kw:beach+inlet, geo:1522m, w>=1000, landscape
 
@@ -387,7 +387,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: DogsRNice — //commons.wikimedia.org/wiki/User:DogsRNice
   - Dated: 2021-11-27 13:30:53
-  - 1600×1067px, 945 KB, shot 875 m from the spot
+  - 1920×1280px, 945 KB, shot 875 m from the spot
   - Description: Driftwood
   - Match: score 10.5 via coastal-in-title, name:huntington, kw:beach, geo:875m, w>=1000, landscape
 - **`us-sc-huntington-beach-2.jpg`** — “Driftwood at the Huntington Beach State Park beach 2” by DogsRNice, Wikimedia Commons, CC BY-SA 4.0
@@ -395,7 +395,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: DogsRNice — //commons.wikimedia.org/wiki/User:DogsRNice
   - Dated: 2021-11-27 13:31:06
-  - 1600×1067px, 959 KB, shot 875 m from the spot
+  - 1920×1280px, 959 KB, shot 875 m from the spot
   - Description: Driftwood
   - Match: score 10.5 via coastal-in-title, name:huntington, kw:beach, geo:875m, w>=1000, landscape
 - **`us-sc-huntington-beach-3.jpg`** — “HBSP jetty” by Gareth Rasberry, Wikimedia Commons, CC BY-SA 3.0
@@ -403,7 +403,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Gareth Rasberry — //commons.wikimedia.org/w/index.php?title=User:Gareth_Rasberry&amp;action=edit&amp;redlink=1
   - Dated: 2013-07-14 14:04:34
-  - 1600×240px, 120 KB
+  - 1920×287px, 120 KB
   - Description: Huntington Beach State Park, South Carolina, USA
   - Match: score 10 via coastal-in-title, name:huntington, kw:beach+jetty, w>=1000, landscape
 
@@ -416,7 +416,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: JefferyGoldman — //commons.wikimedia.org/wiki/User:JefferyGoldman
   - Dated: 2016-08-11 09:06:39
-  - 1600×1067px, 571 KB, shot 1126 m from the spot
+  - 1920×1280px, 571 KB, shot 1126 m from the spot
   - Description: Chairs on Myrtle Beach
   - Match: score 6.5 via coastal-in-title, kw:beach, geo:1126m, w>=1000, landscape
 - **`us-sc-ingram-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Cherry Grove Pier” by Melikamp, Wikimedia Commons, CC BY-SA 3.0
@@ -424,7 +424,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Melikamp — //commons.wikimedia.org/wiki/User:Melikamp
   - Dated: 2012-04-29
-  - 1600×1200px, 634 KB, shot 4254 m from the spot
+  - 1920×1440px, 634 KB, shot 4254 m from the spot
   - Description: Cherry Grove Pier at Cherry Grove Beach, a neighborhood of the city of North Myrtle Beach in Horry County, South Carolina, United States.
   - Match: score 6 via coastal-in-title, kw:beach+pier, geo:4254m, w>=1000, landscape
 - **`us-sc-ingram-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “North Myrtle Beach Banner” by Melikamp, Wikimedia Commons, CC BY-SA 3.0
@@ -432,7 +432,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Melikamp — //commons.wikimedia.org/wiki/User:Melikamp
   - Dated: 2012-04-29
-  - 1600×229px, 129 KB, shot 4254 m from the spot
+  - 1920×274px, 129 KB, shot 4254 m from the spot
   - Description: Cherry Grove Pier at Cherry Grove Beach, a neighborhood of the city of North Myrtle Beach in Horry County, South Carolina, United States.
   - Match: score 6 via coastal-in-title, kw:beach+pier, geo:4254m, w>=1000, landscape
 
@@ -445,7 +445,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Scott Long — https://web.archive.org/web/20161021160704/http://www.panoramio.com/user/2435340?with_photo_id=57203864
   - Dated: Taken on 5 July 2011
-  - 1600×1195px, 899 KB, shot 2531 m from the spot
+  - 1920×1434px, 899 KB, shot 2531 m from the spot
   - Description: Beach, Near Eugenia Ave, Kaiwah Island, SC
   - Match: score 9.5 via coastal-in-title, name:kiawah, kw:beach, geo:2531m, w>=1000, landscape
 - **`us-sc-kiawah-beachwalker-park-2.jpg`** — “Beach, Near Eugenia Ave - panoramio (cropped)” by Scott Long, Wikimedia Commons, CC BY 3.0
@@ -453,7 +453,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Scott Long — https://web.archive.org/web/20161021160704/http://www.panoramio.com/user/2435340?with_photo_id=57203864
   - Dated: Taken on 5 July 2011
-  - 1600×228px, 165 KB, shot 2531 m from the spot
+  - 1920×274px, 165 KB, shot 2531 m from the spot
   - Description: Beach, Near Eugenia Ave, Kaiwah Island, SC
   - Match: score 9.5 via coastal-in-title, name:kiawah, kw:beach, geo:2531m, w>=1000, landscape
 - **`us-sc-kiawah-beachwalker-park-3.jpg`** — “Kiawah Island Beach Chairs” by Allison Carter, Wikimedia Commons, CC BY 2.0
@@ -461,7 +461,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Allison Carter
   - Dated: 2014-07-09 08:34:17
-  - 1600×1195px, 812 KB, shot 1689 m from the spot
+  - 1920×1434px, 812 KB, shot 1689 m from the spot
   - Description: Kiawah Island, SC beach umbrellas and chairs
   - Match: score 9.5 via coastal-in-title, name:kiawah, kw:beach, geo:1689m, w>=1000, landscape
 
@@ -474,7 +474,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: User:Katangais — //commons.wikimedia.org/wiki/User:Katangais
   - Dated: 2014-10-02
-  - 1600×1200px, 497 KB, shot 381 m from the spot
+  - 1920×1440px, 497 KB, shot 381 m from the spot
   - Description: Description: Along a refreshingly deserted stretch of coastline at Myrtle Beach in October, 2014.
   - Match: score 10 via coastal-in-title, kw:beach+coast+coastline, geo:381m, w>=1000, landscape
 - **`us-sc-kingston-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Myrtle Beach Apache Pier (189125365)” by William Redmond, Wikimedia Commons, CC BY 3.0
@@ -482,7 +482,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: William Redmond — https://500px.com/redmow
   - Dated: 8 August 2010, 10:14:57 (UTC)
-  - 1600×1066px, 240 KB, shot 438 m from the spot
+  - 1920×1280px, 240 KB, shot 438 m from the spot
   - Description: 500px provided description: Apache Pier at Myrtle Beach just before sunrise; 30 sec exposure; taken back in 2010. Great place to explore! [#Pre-dawn ,#Myrtle Beach Apache Pier]
   - Match: score 9 via coastal-in-title, kw:beach+pier+sunrise, geo:438m, w>=1000, landscape
 - **`us-sc-kingston-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Myrtle Beach Apache Pier Fishing (189125385)” by William Redmond, Wikimedia Commons, CC BY 3.0
@@ -490,7 +490,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: William Redmond — https://500px.com/redmow
   - Dated: 8 August 2010, 10:43:41 (UTC)
-  - 1600×1066px, 394 KB, shot 438 m from the spot
+  - 1920×1280px, 394 KB, shot 438 m from the spot
   - Description: 500px provided description: Apache Pier at Myrtle Beach at sunrise; 3/10 sec exposure to slightly blur the waves and fisherman; taken back in 2010. Great place to explore! [#Dawn ,#Myrtle Beach Apache Pier ,#Fishing from pier]
   - Match: score 9 via coastal-in-title, kw:beach+wave+waves+pier, geo:438m, w>=1000, landscape
 
@@ -503,7 +503,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: NoahsArkNGB — //commons.wikimedia.org/w/index.php?title=User:NoahsArkNGB&amp;action=edit&amp;redlink=1
   - Dated: 2019-03-24
-  - 1600×1600px, 587 KB, shot 453 m from the spot
+  - 1920×1920px, 587 KB, shot 453 m from the spot
   - Description: Myrtle Beach SC coast Mar 24 2019
   - Match: score 8.5 via coastal-in-title, kw:beach+coast+mar, geo:453m, w>=1000
 - **`us-sc-lakewood-beach-2.jpg`** — Incoming Tide — CC0 (Wikimedia Commons), no attribution required
@@ -511,7 +511,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Islandsislands — //commons.wikimedia.org/wiki/User:Islandsislands
   - Dated: 2023-05-06 19:32:57
-  - 1600×1200px, 389 KB, shot 2940 m from the spot
+  - 1920×1440px, 389 KB, shot 2940 m from the spot
   - Description: In the evening, waves break on the shore of Myrtle Beach, South Carolina.
   - Match: score 8 via coastal-in-title, kw:beach+wave+waves+shore, geo:2940m, w>=1000, landscape
 - **`us-sc-lakewood-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Jim-Pier” by Jim from Clemson, Wikimedia Commons, CC BY 2.0
@@ -519,7 +519,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Jim from Clemson — https://www.flickr.com/photos/50845985@N00
   - Dated: 2002-07-08 18:15:53
-  - 1600×890px, 327 KB, shot 3558 m from the spot
+  - 1794×998px, 327 KB, shot 3558 m from the spot
   - Description: The surfside pier at Surfside Beach, Horry County, South Carolina.
   - Match: score 7 via coastal-in-title, kw:beach+surf+coast+pier, geo:3558m, w>=1000, landscape
 
@@ -532,7 +532,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Bill Buck — https://500px.com/BBuck36
   - Dated: 2 February 2014, 15:29:25 (UTC)
-  - 1600×909px, 300 KB, shot 4029999 m from the spot
+  - 1920×1091px, 300 KB, shot 4029999 m from the spot
   - Description: 500px provided description: Litchfield Beach [#Seashore ,#Gulls ,#Litchfield Beach] Note: The camera coordinates from 500px are apparently incorrect.
   - Match: score 11 via coastal-in-title, name:litchfield, kw:beach+sea+shore+seashore, geo:4029999m, w>=1000, landscape
 - **`us-sc-litchfield-beach-2.jpg`** — “Litchfield Beach” by Laura Blankenship, Wikimedia Commons, CC BY-SA 2.0
@@ -540,7 +540,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Laura Blankenship
   - Dated: 2016-06-20 20:15:53
-  - 1600×1200px, 373 KB
+  - 1400×1050px, 373 KB
   - Description: Litchfield Beach, South Carolina
   - Match: score 8.5 via coastal-in-title, name:litchfield, kw:beach, w>=1000, landscape
 
@@ -553,7 +553,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Bill Buck — https://500px.com/BBuck36
   - Dated: 2 February 2014, 15:29:25 (UTC)
-  - 1600×909px, 300 KB, shot 4029960 m from the spot
+  - 1920×1091px, 300 KB, shot 4029960 m from the spot
   - Description: 500px provided description: Litchfield Beach [#Seashore ,#Gulls ,#Litchfield Beach] Note: The camera coordinates from 500px are apparently incorrect.
   - Match: score 11 via coastal-in-title, name:litchfield, kw:beach+sea+shore+seashore, geo:4029960m, w>=1000, landscape
 - **`us-sc-litchfield-beach-213755-2.jpg`** — “Litchfield Beach” by Laura Blankenship, Wikimedia Commons, CC BY-SA 2.0
@@ -561,7 +561,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Laura Blankenship
   - Dated: 2016-06-20 20:15:53
-  - 1600×1200px, 373 KB
+  - 1400×1050px, 373 KB
   - Description: Litchfield Beach, South Carolina
   - Match: score 8.5 via coastal-in-title, name:litchfield, kw:beach, w>=1000, landscape
 
@@ -574,7 +574,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: NoahsArkNGB — //commons.wikimedia.org/w/index.php?title=User:NoahsArkNGB&amp;action=edit&amp;redlink=1
   - Dated: 2019-03-24
-  - 1600×1600px, 587 KB, shot 1191 m from the spot
+  - 1920×1920px, 587 KB, shot 1191 m from the spot
   - Description: Myrtle Beach SC coast Mar 24 2019
   - Match: score 8.5 via coastal-in-title, kw:beach+coast+mar, geo:1191m, w>=1000
 - **`us-sc-long-bay-beach-2.jpg`** — “Atlantic Ocean shoreline in Myrtle Beach, South Carolina” by Loadmaster (David R. Tribble) This image was made by Loadmaster (David R. Tribble) . Email the author: David…, Wikimedia Commons, CC BY-SA 3.0
@@ -582,7 +582,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Loadmaster (David R. Tribble) This image was made by Loadmaster (David R. Tribble) . Email the author: David… — //commons.wikimedia.org/wiki/User:Loadmaster
   - Dated: 2014-06-30 11:28:42
-  - 1600×1067px, 677 KB, shot 2843 m from the spot
+  - 1920×1280px, 677 KB, shot 2843 m from the spot
   - Description: South Myrtle Beach , South Carolina.
   - Match: score 8 via coastal-in-title, kw:beach+ocean+shore+shoreline, geo:2843m, w>=1000, landscape
 - **`us-sc-long-bay-beach-3.jpg`** — “Looking SW towards the Myrtle Beach State Park pier - panoramio” by James Willamor, Wikimedia Commons, CC BY-SA 3.0
@@ -590,7 +590,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: James Willamor — https://web.archive.org/web/20161011102811/http://www.panoramio.com/user/1082041?with_photo_id=5795999
   - Dated: Taken on 12 January 2005
-  - 1600×1200px, 63 KB, shot 2120 m from the spot
+  - 800×600px, 63 KB, shot 2120 m from the spot
   - Description: Looking SW towards the Myrtle Beach State Park pier
   - Match: score 7 via coastal-in-title, kw:beach+pier, geo:2120m, w>=1000, landscape
 
@@ -603,7 +603,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: User:Katangais — //commons.wikimedia.org/wiki/User:Katangais
   - Dated: 2014-10-02
-  - 1600×1200px, 497 KB, shot 1218 m from the spot
+  - 1920×1440px, 497 KB, shot 1218 m from the spot
   - Description: Description: Along a refreshingly deserted stretch of coastline at Myrtle Beach in October, 2014.
   - Match: score 8 via coastal-in-title, kw:beach+coast+coastline, geo:1218m, w>=1000, landscape
 - **`us-sc-maison-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Myrtle Beach Apache Pier (189125365)” by William Redmond, Wikimedia Commons, CC BY 3.0
@@ -611,7 +611,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: William Redmond — https://500px.com/redmow
   - Dated: 8 August 2010, 10:14:57 (UTC)
-  - 1600×1066px, 240 KB, shot 404 m from the spot
+  - 1920×1280px, 240 KB, shot 404 m from the spot
   - Description: 500px provided description: Apache Pier at Myrtle Beach just before sunrise; 30 sec exposure; taken back in 2010. Great place to explore! [#Pre-dawn ,#Myrtle Beach Apache Pier]
   - Match: score 9 via coastal-in-title, kw:beach+pier+sunrise, geo:404m, w>=1000, landscape
 - **`us-sc-maison-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Myrtle Beach Apache Pier Fishing (189125385)” by William Redmond, Wikimedia Commons, CC BY 3.0
@@ -619,7 +619,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: William Redmond — https://500px.com/redmow
   - Dated: 8 August 2010, 10:43:41 (UTC)
-  - 1600×1066px, 394 KB, shot 404 m from the spot
+  - 1920×1280px, 394 KB, shot 404 m from the spot
   - Description: 500px provided description: Apache Pier at Myrtle Beach at sunrise; 3/10 sec exposure to slightly blur the waves and fisherman; taken back in 2010. Great place to explore! [#Dawn ,#Myrtle Beach Apache Pier ,#Fishing from pier]
   - Match: score 9 via coastal-in-title, kw:beach+wave+waves+pier, geo:404m, w>=1000, landscape
 
@@ -632,7 +632,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Tyler5608S — //commons.wikimedia.org/w/index.php?title=User:Tyler5608S&amp;action=edit&amp;redlink=1
   - Dated: 26 June 2018 (according to Exif data)
-  - 1600×533px, 304 KB, shot 337 m from the spot
+  - 1920×640px, 304 KB, shot 337 m from the spot
   - Description: This is a photo from Myrtle Beach over the Ocean.
   - Match: score 13 via coastal-in-title, name:myrtle, kw:beach+ocean, geo:337m, w>=1000, landscape
 - **`us-sc-myrtle-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Walking on the beach, Myrtle Beach, South Carolina July 2007” by ron miguel from North Carolina, USA, Wikimedia Commons, CC BY 2.0
@@ -640,7 +640,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: ron miguel from North Carolina, USA — https://www.flickr.com/people/21295125@N05
   - Dated: 2007-07
-  - 1600×1067px, 328 KB, shot 392 m from the spot
+  - 1920×1280px, 328 KB, shot 392 m from the spot
   - Description: Women in bikinis seen from back. Taken at the Boardwalk in Myrtle Beach, South Carolina summer of July 2007.
   - Match: score 13 via coastal-in-title, name:myrtle, kw:beach+boardwalk, geo:392m, w>=1000, landscape
 - **`us-sc-myrtle-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Pier 14” by LittleT889, Wikimedia Commons, CC BY-SA 4.0
@@ -648,7 +648,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: LittleT889 — //commons.wikimedia.org/w/index.php?title=User:LittleT889&amp;action=edit&amp;redlink=1
   - Dated: 2020-11-07 13:36:55
-  - 1600×1200px, 633 KB, shot 981 m from the spot
+  - 1920×1440px, 633 KB, shot 981 m from the spot
   - Description: Pier 14
   - Match: score 12 via coastal-in-title, name:myrtle, kw:beach+pier, geo:981m, w>=1000, landscape
 
@@ -661,7 +661,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: JefferyGoldman — //commons.wikimedia.org/wiki/User:JefferyGoldman
   - Dated: 2016-08-11 09:06:39
-  - 1600×1067px, 571 KB, shot 1388 m from the spot
+  - 1920×1280px, 571 KB, shot 1388 m from the spot
   - Description: Chairs on Myrtle Beach
   - Match: score 9.5 via coastal-in-title, name:myrtle, kw:beach, geo:1388m, w>=1000, landscape
 - **`us-sc-north-myrtle-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Cherry Grove Pier” by Melikamp, Wikimedia Commons, CC BY-SA 3.0
@@ -669,7 +669,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Melikamp — //commons.wikimedia.org/wiki/User:Melikamp
   - Dated: 2012-04-29
-  - 1600×1200px, 634 KB, shot 2752 m from the spot
+  - 1920×1440px, 634 KB, shot 2752 m from the spot
   - Description: Cherry Grove Pier at Cherry Grove Beach, a neighborhood of the city of North Myrtle Beach in Horry County, South Carolina, United States.
   - Match: score 11 via coastal-in-title, name:myrtle, kw:beach+pier, geo:2752m, w>=1000, landscape
 - **`us-sc-north-myrtle-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “North Myrtle Beach Banner” by Melikamp, Wikimedia Commons, CC BY-SA 3.0
@@ -677,7 +677,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Melikamp — //commons.wikimedia.org/wiki/User:Melikamp
   - Dated: 2012-04-29
-  - 1600×229px, 129 KB, shot 2752 m from the spot
+  - 1920×274px, 129 KB, shot 2752 m from the spot
   - Description: Cherry Grove Pier at Cherry Grove Beach, a neighborhood of the city of North Myrtle Beach in Horry County, South Carolina, United States.
   - Match: score 11 via coastal-in-title, name:myrtle, kw:beach+pier, geo:2752m, w>=1000, landscape
 
@@ -690,7 +690,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: User:Katangais — //commons.wikimedia.org/wiki/User:Katangais
   - Dated: 2014-10-02
-  - 1600×1200px, 497 KB, shot 4131 m from the spot
+  - 1920×1440px, 497 KB, shot 4131 m from the spot
   - Description: Description: Along a refreshingly deserted stretch of coastline at Myrtle Beach in October, 2014.
   - Match: score 7 via coastal-in-title, kw:beach+coast+coastline, geo:4131m, w>=1000, landscape
 - **`us-sc-ocean-creek-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Myrtle Beach Apache Pier (189125365)” by William Redmond, Wikimedia Commons, CC BY 3.0
@@ -698,7 +698,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: William Redmond — https://500px.com/redmow
   - Dated: 8 August 2010, 10:14:57 (UTC)
-  - 1600×1066px, 240 KB, shot 4944 m from the spot
+  - 1920×1280px, 240 KB, shot 4944 m from the spot
   - Description: 500px provided description: Apache Pier at Myrtle Beach just before sunrise; 30 sec exposure; taken back in 2010. Great place to explore! [#Pre-dawn ,#Myrtle Beach Apache Pier]
   - Match: score 7 via coastal-in-title, kw:beach+pier+sunrise, geo:4944m, w>=1000, landscape
 
@@ -711,7 +711,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: JefferyGoldman — //commons.wikimedia.org/wiki/User:JefferyGoldman
   - Dated: 2016-08-11 09:06:39
-  - 1600×1067px, 571 KB, shot 1506 m from the spot
+  - 1920×1280px, 571 KB, shot 1506 m from the spot
   - Description: Chairs on Myrtle Beach
   - Match: score 5.5 via coastal-in-title, kw:beach, geo:1506m, w>=1000, landscape
 - **`us-sc-ocean-drive-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Cherry Grove Pier” by Melikamp, Wikimedia Commons, CC BY-SA 3.0
@@ -719,7 +719,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Melikamp — //commons.wikimedia.org/wiki/User:Melikamp
   - Dated: 2012-04-29
-  - 1600×1200px, 634 KB, shot 2229 m from the spot
+  - 1920×1440px, 634 KB, shot 2229 m from the spot
   - Description: Cherry Grove Pier at Cherry Grove Beach, a neighborhood of the city of North Myrtle Beach in Horry County, South Carolina, United States.
   - Match: score 7 via coastal-in-title, kw:beach+pier, geo:2229m, w>=1000, landscape
 - **`us-sc-ocean-drive-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “North Myrtle Beach Banner” by Melikamp, Wikimedia Commons, CC BY-SA 3.0
@@ -727,7 +727,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Melikamp — //commons.wikimedia.org/wiki/User:Melikamp
   - Dated: 2012-04-29
-  - 1600×229px, 129 KB, shot 2229 m from the spot
+  - 1920×274px, 129 KB, shot 2229 m from the spot
   - Description: Cherry Grove Pier at Cherry Grove Beach, a neighborhood of the city of North Myrtle Beach in Horry County, South Carolina, United States.
   - Match: score 7 via coastal-in-title, kw:beach+pier, geo:2229m, w>=1000, landscape
 
@@ -740,7 +740,7 @@
   - Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/) · attribution not required
   - Author: Islandsislands — //commons.wikimedia.org/wiki/User:Islandsislands
   - Dated: 2023-05-06 19:32:57
-  - 1600×1200px, 389 KB, shot 1802 m from the spot
+  - 1920×1440px, 389 KB, shot 1802 m from the spot
   - Description: In the evening, waves break on the shore of Myrtle Beach, South Carolina.
   - Match: score 8 via coastal-in-title, kw:beach+wave+waves+shore, geo:1802m, w>=1000, landscape
 - **`us-sc-ocean-lakes-beach-2.jpg`** — “Myrtle Beach SC coast Mar 24 2019” by NoahsArkNGB, Wikimedia Commons, CC BY-SA 4.0
@@ -748,7 +748,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: NoahsArkNGB — //commons.wikimedia.org/w/index.php?title=User:NoahsArkNGB&amp;action=edit&amp;redlink=1
   - Dated: 2019-03-24
-  - 1600×1600px, 587 KB, shot 1590 m from the spot
+  - 1920×1920px, 587 KB, shot 1590 m from the spot
   - Description: Myrtle Beach SC coast Mar 24 2019
   - Match: score 7.5 via coastal-in-title, kw:beach+coast+mar, geo:1590m, w>=1000
 - **`us-sc-ocean-lakes-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Jim-Pier” by Jim from Clemson, Wikimedia Commons, CC BY 2.0
@@ -756,7 +756,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Jim from Clemson — https://www.flickr.com/photos/50845985@N00
   - Dated: 2002-07-08 18:15:53
-  - 1600×890px, 327 KB, shot 2420 m from the spot
+  - 1794×998px, 327 KB, shot 2420 m from the spot
   - Description: The surfside pier at Surfside Beach, Horry County, South Carolina.
   - Match: score 8 via coastal-in-title, kw:beach+surf+coast+pier, geo:2420m, w>=1000, landscape
 
@@ -769,7 +769,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Phoebe — //commons.wikimedia.org/wiki/User:Phoebe
   - Dated: 2019-07-28 16:45:29
-  - 1600×229px, 133 KB
+  - 1920×274px, 133 KB
   - Description: Beach at Pawleys Island, South Carolina, July 2019, with seagrass in foreground
   - Match: score 12 via name:pawleys+island, kw:beach+sea, w>=1000, landscape
 - **`us-sc-pawleys-island-beach-2.jpg`** — “Pawleys Island SC clouds 02” by Phoebe, Wikimedia Commons, CC BY-SA 4.0
@@ -777,7 +777,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Phoebe — //commons.wikimedia.org/wiki/User:Phoebe
   - Dated: 2017-07-28 07:49:21
-  - 1600×2133px, 339 KB
+  - 1920×2560px, 339 KB
   - Description: sky and beach at Pawleys Island, South Carolina, in 2017
   - Match: score 10 via name:pawleys+island, kw:beach, w>=1000
 - **`us-sc-pawleys-island-beach-3.jpg`** — “Pawleys Island SC clouds 01” by Phoebe, Wikimedia Commons, CC BY-SA 4.0
@@ -785,7 +785,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Phoebe — //commons.wikimedia.org/wiki/User:Phoebe
   - Dated: 2017-07-28 07:49:18
-  - 1600×2133px, 342 KB
+  - 1920×2560px, 342 KB
   - Description: sky and beach at Pawleys Island, South Carolina, in 2017
   - Match: score 10 via name:pawleys+island, kw:beach, w>=1000
 
@@ -798,7 +798,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Loadmaster (David R. Tribble) This image was made by Loadmaster (David R. Tribble) . Email the author: David… — //commons.wikimedia.org/wiki/User:Loadmaster
   - Dated: 2014-06-30 11:28:42
-  - 1600×1067px, 677 KB, shot 720 m from the spot
+  - 1920×1280px, 677 KB, shot 720 m from the spot
   - Description: South Myrtle Beach , South Carolina.
   - Match: score 9 via coastal-in-title, kw:beach+ocean+shore+shoreline, geo:720m, w>=1000, landscape
 - **`us-sc-pebble-beach-2.jpg`** — “Looking SW towards the Myrtle Beach State Park pier - panoramio” by James Willamor, Wikimedia Commons, CC BY-SA 3.0
@@ -806,7 +806,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: James Willamor — https://web.archive.org/web/20161011102811/http://www.panoramio.com/user/1082041?with_photo_id=5795999
   - Dated: Taken on 12 January 2005
-  - 1600×1200px, 63 KB, shot 14 m from the spot
+  - 800×600px, 63 KB, shot 14 m from the spot
   - Description: Looking SW towards the Myrtle Beach State Park pier
   - Match: score 9 via coastal-in-title, kw:beach+pier, geo:14m, w>=1000, landscape
 - **`us-sc-pebble-beach-3.jpg`** — “Myrtle Beach SC coast Mar 24 2019” by NoahsArkNGB, Wikimedia Commons, CC BY-SA 4.0
@@ -814,7 +814,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: NoahsArkNGB — //commons.wikimedia.org/w/index.php?title=User:NoahsArkNGB&amp;action=edit&amp;redlink=1
   - Dated: 2019-03-24
-  - 1600×1600px, 587 KB, shot 3313 m from the spot
+  - 1920×1920px, 587 KB, shot 3313 m from the spot
   - Description: Myrtle Beach SC coast Mar 24 2019
   - Match: score 6.5 via coastal-in-title, kw:beach+coast+mar, geo:3313m, w>=1000
 
@@ -827,7 +827,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: NoahsArkNGB — //commons.wikimedia.org/w/index.php?title=User:NoahsArkNGB&amp;action=edit&amp;redlink=1
   - Dated: 2019-03-24
-  - 1600×1600px, 587 KB, shot 466 m from the spot
+  - 1920×1920px, 587 KB, shot 466 m from the spot
   - Description: Myrtle Beach SC coast Mar 24 2019
   - Match: score 8.5 via coastal-in-title, kw:beach+coast+mar, geo:466m, w>=1000
 - **`us-sc-pirateland-beach-2.jpg`** — “Atlantic Ocean shoreline in Myrtle Beach, South Carolina” by Loadmaster (David R. Tribble) This image was made by Loadmaster (David R. Tribble) . Email the author: David…, Wikimedia Commons, CC BY-SA 3.0
@@ -835,7 +835,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Loadmaster (David R. Tribble) This image was made by Loadmaster (David R. Tribble) . Email the author: David… — //commons.wikimedia.org/wiki/User:Loadmaster
   - Dated: 2014-06-30 11:28:42
-  - 1600×1067px, 677 KB, shot 3568 m from the spot
+  - 1920×1280px, 677 KB, shot 3568 m from the spot
   - Description: South Myrtle Beach , South Carolina.
   - Match: score 7 via coastal-in-title, kw:beach+ocean+shore+shoreline, geo:3568m, w>=1000, landscape
 - **`us-sc-pirateland-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Jim-Pier” by Jim from Clemson, Wikimedia Commons, CC BY 2.0
@@ -843,7 +843,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Jim from Clemson — https://www.flickr.com/photos/50845985@N00
   - Dated: 2002-07-08 18:15:53
-  - 1600×890px, 327 KB, shot 4476 m from the spot
+  - 1794×998px, 327 KB, shot 4476 m from the spot
   - Description: The surfside pier at Surfside Beach, Horry County, South Carolina.
   - Match: score 7 via coastal-in-title, kw:beach+surf+coast+pier, geo:4476m, w>=1000, landscape
 
@@ -856,7 +856,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Tamlynavery — //commons.wikimedia.org/w/index.php?title=User:Tamlynavery&amp;action=edit&amp;redlink=1
   - Dated: 2017-01-01
-  - 1600×1200px, 400 KB
+  - 1920×1440px, 400 KB
   - Description: Sandy Point beach as a summer storm rolls in
   - Match: score 11 via coastal-in-title, name:sandy, kw:beach+sand+point, w>=1000, landscape
 - **`us-sc-sandy-point-beach-2.jpg`** — “Sandy Point Beach and Bay Bridge MD1” by Acroterion, Wikimedia Commons, CC BY-SA 4.0
@@ -864,7 +864,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Acroterion — //commons.wikimedia.org/wiki/User:Acroterion
   - Dated: 2021-04-28
-  - 1600×540px, 360 KB
+  - 1920×648px, 360 KB
   - Description: Sandy Point State Park and the Chesapeake Bay Bridge beyond, Maryland, USA
   - Match: score 11 via coastal-in-title, name:sandy, kw:beach+sand+mar+bay, w>=1000, landscape
 
@@ -877,7 +877,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: See1,Do1,Teach1 — https://www.flickr.com/people/23786473@N02
   - Dated: 2017-07-02 05:17
-  - 1600×965px, 338 KB, shot 264 m from the spot
+  - 1920×1158px, 338 KB, shot 264 m from the spot
   - Description: South Carolina
   - Match: score 13 via coastal-in-title, name:seabrook, kw:sea+sunrise, geo:264m, w>=1000, landscape
 - **`us-sc-seabrook-beach-2.jpg`** — “Sensuous (35880630171)” by See1,Do1,Teach1, Wikimedia Commons, CC BY 2.0
@@ -885,7 +885,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: See1,Do1,Teach1 — https://www.flickr.com/people/23786473@N02
   - Dated: 2017-07-06 05:21
-  - 1600×921px, 425 KB, shot 297 m from the spot
+  - 1920×1106px, 425 KB, shot 297 m from the spot
   - Description: Seabrook Island, SC. Wife posed for me one early morning.
   - Match: score 9.5 via name:seabrook, kw:sea, geo:297m, w>=1000, landscape
 
@@ -898,7 +898,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Carlquist, Sherwin John, 1930-2021
   - Dated: 1962-10-29~
-  - 1600×1075px, 165 KB
+  - 1500×1008px, 165 KB
   - Description: Landscape photograph of sand dunes and the coastline along Singleton Beach in Western Australia. Grasses grow throughout the dunes, and the waves of the Indian Ocean appear in the midground. A landmass is faintly evident in the background. 1 photograph : positive, col. ; 35 mm.
   - Match: score 11 via coastal-in-title, name:singleton, kw:beach+wave+waves+ocean, w>=1000, landscape
 - **`us-sc-singleton-beach-2.jpg`** — “Singleton, view from the foreshore, November 2019 02” by Calistemon, Wikimedia Commons, CC BY-SA 4.0
@@ -906,7 +906,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Calistemon — //commons.wikimedia.org/wiki/User:Calistemon
   - Dated: 2019-11-23 11:34:30
-  - 1600×1200px, 702 KB, shot 18470611 m from the spot
+  - 1920×1440px, 702 KB, shot 18470611 m from the spot
   - Description: Singleton, Western Australia, view from the foreshore. Looking north from the lookout at the foreshore, at the end of Singleton Beach Road.
   - Match: score 10 via coastal-in-title, name:singleton, kw:beach+shore, geo:18470611m, w>=1000, landscape
 - **`us-sc-singleton-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Singleton, view from the foreshore, November 2019 01” by Calistemon, Wikimedia Commons, CC BY-SA 4.0
@@ -914,7 +914,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: Calistemon — //commons.wikimedia.org/wiki/User:Calistemon
   - Dated: 2019-11-23 11:34:48
-  - 1600×1200px, 710 KB, shot 18470611 m from the spot
+  - 1920×1440px, 710 KB, shot 18470611 m from the spot
   - Description: Singleton, Western Australia, view from the foreshore. Looking east from the lookout at the foreshore, at the end of Singleton Beach Road.
   - Match: score 10 via coastal-in-title, name:singleton, kw:beach+shore, geo:18470611m, w>=1000, landscape
 
@@ -927,7 +927,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: User:Katangais — //commons.wikimedia.org/wiki/User:Katangais
   - Dated: 2014-10-02
-  - 1600×1200px, 497 KB, shot 2299 m from the spot
+  - 1920×1440px, 497 KB, shot 2299 m from the spot
   - Description: Description: Along a refreshingly deserted stretch of coastline at Myrtle Beach in October, 2014.
   - Match: score 8 via coastal-in-title, kw:beach+coast+coastline, geo:2299m, w>=1000, landscape
 - **`us-sc-singleton-swash-2.jpg`** ⚠︎ *context, not the coast itself* — “Myrtle Beach (26700330235)” by Darrin, Wikimedia Commons, CC BY-SA 2.0
@@ -935,7 +935,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Darrin — https://www.flickr.com/people/71465786@N00
   - Dated: 2016-04-22 16:41
-  - 1600×1200px, 547 KB, shot 1620 m from the spot
+  - 1920×1440px, 547 KB, shot 1620 m from the spot
   - Description: Taken by Darrin
   - Match: score 8 via coastal-in-title, kw:beach+ocean+dune+mar, geo:1620m, w>=1000, landscape
 
@@ -948,7 +948,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Loadmaster (David R. Tribble) This image was made by Loadmaster (David R. Tribble) . Email the author: David… — //commons.wikimedia.org/wiki/User:Loadmaster
   - Dated: 2014-06-30 11:28:42
-  - 1600×1067px, 677 KB, shot 245456 m from the spot
+  - 1920×1280px, 677 KB, shot 245456 m from the spot
   - Description: South Myrtle Beach , South Carolina.
   - Match: score 7 via coastal-in-title, kw:beach+ocean+shore+shoreline, geo:245456m, w>=1000, landscape
 
@@ -961,7 +961,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Loadmaster (David R. Tribble) This image was made by Loadmaster (David R. Tribble) . Email the author: David… — //commons.wikimedia.org/wiki/User:Loadmaster
   - Dated: 2014-06-30 11:28:42
-  - 1600×1067px, 677 KB, shot 464 m from the spot
+  - 1920×1280px, 677 KB, shot 464 m from the spot
   - Description: South Myrtle Beach , South Carolina.
   - Match: score 9 via coastal-in-title, kw:beach+ocean+shore+shoreline, geo:464m, w>=1000, landscape
 - **`us-sc-springmaid-beach-2.jpg`** — “Looking SW towards the Myrtle Beach State Park pier - panoramio” by James Willamor, Wikimedia Commons, CC BY-SA 3.0
@@ -969,7 +969,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: James Willamor — https://web.archive.org/web/20161011102811/http://www.panoramio.com/user/1082041?with_photo_id=5795999
   - Dated: Taken on 12 January 2005
-  - 1600×1200px, 63 KB, shot 261 m from the spot
+  - 800×600px, 63 KB, shot 261 m from the spot
   - Description: Looking SW towards the Myrtle Beach State Park pier
   - Match: score 9 via coastal-in-title, kw:beach+pier, geo:261m, w>=1000, landscape
 - **`us-sc-springmaid-beach-3.jpg`** — “Myrtle Beach SC coast Mar 24 2019” by NoahsArkNGB, Wikimedia Commons, CC BY-SA 4.0
@@ -977,7 +977,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: NoahsArkNGB — //commons.wikimedia.org/w/index.php?title=User:NoahsArkNGB&amp;action=edit&amp;redlink=1
   - Dated: 2019-03-24
-  - 1600×1600px, 587 KB, shot 3570 m from the spot
+  - 1920×1920px, 587 KB, shot 3570 m from the spot
   - Description: Myrtle Beach SC coast Mar 24 2019
   - Match: score 6.5 via coastal-in-title, kw:beach+coast+mar, geo:3570m, w>=1000
 
@@ -990,7 +990,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: Loadmaster (David R. Tribble) This image was made by Loadmaster (David R. Tribble) . Email the author: David… — //commons.wikimedia.org/wiki/User:Loadmaster
   - Dated: 2014-06-30 11:28:42
-  - 1600×1067px, 677 KB, shot 1665 m from the spot
+  - 1920×1280px, 677 KB, shot 1665 m from the spot
   - Description: South Myrtle Beach , South Carolina.
   - Match: score 8 via coastal-in-title, kw:beach+ocean+shore+shoreline, geo:1665m, w>=1000, landscape
 - **`us-sc-state-park-beach-2.jpg`** — “Looking SW towards the Myrtle Beach State Park pier - panoramio” by James Willamor, Wikimedia Commons, CC BY-SA 3.0
@@ -998,7 +998,7 @@
   - Licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · attribution required · **share-alike**
   - Author: James Willamor — https://web.archive.org/web/20161011102811/http://www.panoramio.com/user/1082041?with_photo_id=5795999
   - Dated: Taken on 12 January 2005
-  - 1600×1200px, 63 KB, shot 942 m from the spot
+  - 800×600px, 63 KB, shot 942 m from the spot
   - Description: Looking SW towards the Myrtle Beach State Park pier
   - Match: score 8 via coastal-in-title, kw:beach+pier, geo:942m, w>=1000, landscape
 - **`us-sc-state-park-beach-3.jpg`** — “Myrtle Beach SC coast Mar 24 2019” by NoahsArkNGB, Wikimedia Commons, CC BY-SA 4.0
@@ -1006,7 +1006,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: NoahsArkNGB — //commons.wikimedia.org/w/index.php?title=User:NoahsArkNGB&amp;action=edit&amp;redlink=1
   - Dated: 2019-03-24
-  - 1600×1600px, 587 KB, shot 2368 m from the spot
+  - 1920×1920px, 587 KB, shot 2368 m from the spot
   - Description: Myrtle Beach SC coast Mar 24 2019
   - Match: score 7.5 via coastal-in-title, kw:beach+coast+mar, geo:2368m, w>=1000
 
@@ -1027,7 +1027,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: Lance L Lowry — https://web.archive.org/web/20161028110639/http://www.panoramio.com/user/4997158?with_photo_id=103902866
   - Dated: Taken on 15 February 2014
-  - 1600×902px, 344 KB, shot 1631786 m from the spot
+  - 1920×1082px, 344 KB, shot 1631786 m from the spot
   - Description: Sunrise at Surfside Beach
   - Match: score 11 via coastal-in-title, name:surfside, kw:beach+surf+sunrise, geo:1631786m, w>=1000, landscape
 - **`us-sc-surfside-beach-3.jpg`** ⚠︎ *context, not the coast itself* — “Jim-Pier” by Jim from Clemson, Wikimedia Commons, CC BY 2.0
@@ -1035,7 +1035,7 @@
   - Licence: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/) · attribution required
   - Author: Jim from Clemson — https://www.flickr.com/photos/50845985@N00
   - Dated: 2002-07-08 18:15:53
-  - 1600×890px, 327 KB, shot 65 m from the spot
+  - 1794×998px, 327 KB, shot 65 m from the spot
   - Description: The surfside pier at Surfside Beach, Horry County, South Carolina.
   - Match: score 14 via coastal-in-title, name:surfside, kw:beach+surf+coast+pier, geo:65m, w>=1000, landscape
 
@@ -1048,7 +1048,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: William Redmond — https://500px.com/redmow
   - Dated: 8 August 2010, 10:14:57 (UTC)
-  - 1600×1066px, 240 KB, shot 1163 m from the spot
+  - 1920×1280px, 240 KB, shot 1163 m from the spot
   - Description: 500px provided description: Apache Pier at Myrtle Beach just before sunrise; 30 sec exposure; taken back in 2010. Great place to explore! [#Pre-dawn ,#Myrtle Beach Apache Pier]
   - Match: score 9 via coastal-in-title, kw:beach+pier+sunrise, geo:1163m, w>=1000, landscape
 - **`us-sc-turtle-beach-2.jpg`** ⚠︎ *context, not the coast itself* — “Myrtle Beach Apache Pier Fishing (189125385)” by William Redmond, Wikimedia Commons, CC BY 3.0
@@ -1056,7 +1056,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: William Redmond — https://500px.com/redmow
   - Dated: 8 August 2010, 10:43:41 (UTC)
-  - 1600×1066px, 394 KB, shot 1163 m from the spot
+  - 1920×1280px, 394 KB, shot 1163 m from the spot
   - Description: 500px provided description: Apache Pier at Myrtle Beach at sunrise; 3/10 sec exposure to slightly blur the waves and fisherman; taken back in 2010. Great place to explore! [#Dawn ,#Myrtle Beach Apache Pier ,#Fishing from pier]
   - Match: score 9 via coastal-in-title, kw:beach+wave+waves+pier, geo:1163m, w>=1000, landscape
 
@@ -1069,7 +1069,7 @@
   - Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) · attribution required
   - Author: Jim Vajda
   - Dated: Taken on 16 July 2025, 07:35:00
-  - 1600×1067px, 874 KB, shot 3507 m from the spot
+  - 1920×1280px, 874 KB, shot 3507 m from the spot
   - Description: Shallotte Township, North Carolina
   - Match: score 7 via coastal-in-title, kw:beach+sea+seascape+sunset, geo:3507m, w>=1000, landscape
 
@@ -1082,7 +1082,7 @@
   - Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) · attribution required
   - Author: William Redmond — https://500px.com/redmow
   - Dated: 5 August 2010, 22:13:55 (UTC)
-  - 1600×1066px, 265 KB, shot 4706 m from the spot
+  - 1920×1280px, 265 KB, shot 4706 m from the spot
   - Description: 500px provided description: An in-the-moment pic of the American Flag flying high above a sea of RVs facing the Atlantic. I think avid RV'ers will appreciate this one. Many thanks to Myrtle Beach Travel Park for an awesome stay. [#Seaside ,#American Flag ,#RV Life ,#Myrtle Beath]
   - Match: score 6 via coastal-in-title, kw:beach+sea, geo:4706m, w>=1000, landscape
 
@@ -1095,7 +1095,7 @@
   - Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · attribution required · **share-alike**
   - Author: 28bytes — //commons.wikimedia.org/wiki/User:28bytes
   - Dated: 2018-11-22 14:00:49
-  - 1600×1200px, 669 KB, shot 328 m from the spot
+  - 1920×1440px, 669 KB, shot 328 m from the spot
   - Description: View of the Atlantic Ocean from Myrtle Beach, South Carolina. Taken Thanksgiving day, 2018.
   - Match: score 9 via coastal-in-title, kw:beach+ocean, geo:328m, w>=1000, landscape
 - **`us-sc-withers-swash-2.jpg`** ⚠︎ *context, not the coast itself* — “Swamp Fox at Family Kingdom, Myrtle Beach, SC” by Martin Lewison, Wikimedia Commons, CC BY-SA 2.0
@@ -1103,7 +1103,7 @@
   - Licence: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · attribution required · **share-alike**
   - Author: Martin Lewison
   - Dated: 2013-06-07 19:26:06
-  - 1600×1200px, 693 KB, shot 356 m from the spot
+  - 1920×1440px, 693 KB, shot 356 m from the spot
   - Description: Swamp Fox at Family Kingdom, Myrtle Beach, SC
   - Match: score 9 via coastal-in-title, kw:beach+coast, geo:356m, w>=1000, landscape
 

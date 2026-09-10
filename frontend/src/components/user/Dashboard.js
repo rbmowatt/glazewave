@@ -74,6 +74,19 @@ class UserDashboard extends React.Component {
 		this.state = {
 			showBoardModal: false,
 			showSessionModal: false,
+			/*
+			 * Modal only toggles a CSS class, so everything inside it stays
+			 * mounted for the life of the dashboard and keeps its state. These
+			 * are remount keys: bumping one after a create throws the finished
+			 * form away, which is the only thing that clears the location,
+			 * title, board, conditions and picked photos in one go.
+			 *
+			 * Bumped on create and not on open, so closing a half-filled form
+			 * by accident still does not lose it - the same reason neither of
+			 * these modals passes handleClose.
+			 */
+			sessionFormKey: 0,
+			boardFormKey: 0,
 			// Read once here rather than in each widget, so the report and the
 			// spot list cannot disagree about where they are answering for.
 			pin: readViewLocation(),
@@ -94,14 +107,20 @@ class UserDashboard extends React.Component {
 	};
 
 	/*
-	createUserBoard already pushes the new board into user_boards.data, so
-	NewestBoards repaints on its own and the dashboard has nothing to refetch.
-	The created flag does have to be cleared: BoardPicker fires onChange off it
+	USER_BOARD_CREATED concats onto a list loaded created_at_DESC, so the new
+	board lands last and slice(0, 3) never reaches it. POST /api/user_board
+	also answers with the bare row - no Board, no UserBoardImage - so the card
+	would render without its model name or photo. Refetching fixes both.
+	The created flag still has to be cleared: BoardPicker fires onChange off it
 	and would reassign a session board the next time one mounts.
 	*/
 	boardCreated = () => {
 		this.props.clearCreatedBoard();
-		this.setState({ showBoardModal: false });
+		this.setState({
+			showBoardModal: false,
+			boardFormKey: this.state.boardFormKey + 1,
+		});
+		this.refreshBoards();
 	};
 
 	showSessionModal = () => {
@@ -115,24 +134,39 @@ class UserDashboard extends React.Component {
 
 	/*
 	Create clears user_sessions.created itself before it calls back, so unlike
-	the board modal there is nothing left to clean up here. The new session is
-	already in user_sessions.data, so LatestSessions repaints on its own.
+	the board modal there is nothing left to clean up here. The list still has
+	to be refetched: USER_SESSION_CREATED concats onto a list loaded
+	created_at_DESC, so the new session sorts last and slice(0, 3) never shows
+	it, and POST /api/session answers with the bare row - no Location,
+	UserBoard or SessionImages for the card's meta line and thumbnail.
 	*/
 	sessionCreated = () => {
-		this.setState({ showSessionModal: false });
+		this.setState({
+			showSessionModal: false,
+			sessionFormKey: this.state.sessionFormKey + 1,
+		});
+		this.refreshSessions();
+	};
+
+	refreshBoards = () => {
+		if (!this.props.session.isLoggedIn) return;
+		this.props.loadBoards(
+			new UserBoardRequests(this.props.session),
+			this.props.session
+		);
+	};
+
+	refreshSessions = () => {
+		if (!this.props.session.isLoggedIn) return;
+		this.props.loadSessions(
+			new UserSessionRequests(this.props.session),
+			this.props.session
+		);
 	};
 
 	componentDidMount() {
-		if (this.props.session.isLoggedIn) {
-			this.props.loadBoards(
-				new UserBoardRequests(this.props.session),
-				this.props.session
-			);
-			this.props.loadSessions(
-				new UserSessionRequests(this.props.session),
-				this.props.session
-			);
-		}
+		this.refreshBoards();
+		this.refreshSessions();
 	}
 
 	render() {
@@ -156,10 +190,14 @@ class UserDashboard extends React.Component {
 					</section>
 
 					<aside className="gw-col">
-						<Report pin={this.state.pin} />
+						{/* Both read the pin themselves and subscribe to it, so they
+						    behave the same here as on the board and session indexes.
+						    Only the picker needs it as a prop, to label its own
+						    buttons. */}
+						<Report />
 						<LocationPicker pin={this.state.pin} onChange={this.setPin} />
 						<hr className="gw-rule" />
-						<NearestSpots pin={this.state.pin} />
+						<NearestSpots />
 					</aside>
 
 					<div className="gw-dashboard-lists">
@@ -180,6 +218,7 @@ class UserDashboard extends React.Component {
 					handleClose={this.hideBoardModal}
 				>
 					<CreateUserBoard
+						key={this.state.boardFormKey}
 						onSuccess={this.hideBoardModal}
 						onSubmissionComplete={this.boardCreated}
 						close={this.hideBoardModal}
@@ -189,6 +228,7 @@ class UserDashboard extends React.Component {
 				    enough that a stray backdrop click should not throw it away. */}
 				<Modal show={this.state.showSessionModal}>
 					<CreateSession
+						key={this.state.sessionFormKey}
 						onSuccess={this.hideSessionModal}
 						onSubmissionComplete={this.sessionCreated}
 						close={this.hideSessionModal}
