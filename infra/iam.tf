@@ -45,3 +45,36 @@ resource "aws_iam_instance_profile" "app" {
   name = "glazewave-app"
   role = aws_iam_role.app.name
 }
+
+# Deliberately no s3:DeleteObject. Retention is the bucket lifecycle's job, so
+# nothing on the instance needs delete - and the instance is the thing most
+# likely to be compromised. Ransomware that gets this role can write junk into
+# new keys; it cannot erase the history.
+#
+# GetObject is here so a restore can run from the box itself with no other
+# credentials, which is the state a bad day starts in.
+resource "aws_iam_role_policy" "backups" {
+  name = "glazewave-backups"
+  role = aws_iam_role.app.id
+
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Effect   = "Allow"
+        Action   = ["s3:PutObject", "s3:GetObject"]
+        Resource = "${aws_s3_bucket.backups.arn}/*"
+      },
+      {
+        Effect   = "Allow"
+        Action   = ["s3:ListBucket"]
+        Resource = aws_s3_bucket.backups.arn
+      },
+      {
+        Effect   = "Allow"
+        Action   = ["sns:Publish"]
+        Resource = aws_sns_topic.alerts.arn
+      }
+    ]
+  })
+}

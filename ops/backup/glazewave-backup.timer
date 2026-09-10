@@ -1,0 +1,15 @@
+[Unit]
+Description=Nightly surfbook backup
+
+[Timer]
+# 02:30 America/Mazatlan. Stated in UTC because the box has no local timezone
+# set and OnCalendar would otherwise silently mean something else after a
+# timedatectl change.
+OnCalendar=*-*-* 09:30:00 UTC
+RandomizedDelaySec=900
+# Runs on the next boot if the box was down when the timer was due. Without
+# this a stopped instance silently skips its backups.
+Persistent=true
+
+[Install]
+WantedBy=timers.target

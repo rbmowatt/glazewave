@@ -1,0 +1,8 @@
+[Unit]
+Description=Publish the failure of %i to SNS
+
+[Service]
+Type=oneshot
+User=root
+EnvironmentFile=/etc/glazewave/backup.env
+ExecStart=/usr/local/bin/glazewave-alert.sh %i

@@ -37,3 +37,13 @@ output "cognito_base_uri" {
   description = "REACT_APP_AWS_COGNITO_USER_POOL_BASE_URI for frontend/.env"
   value       = "https://${aws_cognito_user_pool_domain.main.domain}.auth.${var.region}.amazoncognito.com"
 }
+
+output "backups_bucket" {
+  description = "GLAZEWAVE_BACKUP_BUCKET for /etc/glazewave/backup.env"
+  value       = aws_s3_bucket.backups.bucket
+}
+
+output "alerts_topic_arn" {
+  description = "GLAZEWAVE_ALERT_TOPIC for /etc/glazewave/backup.env"
+  value       = aws_sns_topic.alerts.arn
+}

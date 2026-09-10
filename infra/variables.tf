@@ -48,3 +48,20 @@ variable "cognito_domain_prefix" {
   type        = string
   default     = "glazewave-auth"
 }
+
+variable "alert_email" {
+  description = "Address SNS mails when a backup or restore check fails. Leave null and the topic exists with no subscriber, which delivers nowhere."
+  type        = string
+  default     = null
+}
+
+variable "backup_daily_retention_days" {
+  description = "How long a nightly dump lives. Long enough to notice corruption that a fresh backup would already have overwritten."
+  type        = number
+  default     = 30
+}
+
+variable "backup_monthly_retention_days" {
+  type    = number
+  default = 365
+}
