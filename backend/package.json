@@ -17,6 +17,7 @@
     "spots:images-meta": "node app/scripts/harvest_spot_images.js --stage=meta",
     "spots:images-fetch": "node app/scripts/harvest_spot_images.js --stage=download",
     "spots:images-docs": "node app/scripts/harvest_spot_images.js --stage=docs",
+    "spots:images-load": "node app/scripts/load_spot_images.js",
     "sync-surfline": "node app/scripts/import_surfline.js",
     "test-queue": "node app/services/queue/BetterQueue.js",
     "test-elastic": "node app/scripts/elastic/test.js",
