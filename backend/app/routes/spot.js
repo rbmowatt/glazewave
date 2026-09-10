@@ -7,6 +7,7 @@ const AppSettings = require('./../services/AppSettings');
 const requireFeature = require('./../middleware/RequireFeature');
 const s3Config = require('./../config/s3');
 const SpotDescriptionService = require('./../services/SpotDescriptionService');
+const SpotNoteService = require('./../services/SpotNoteService');
 const EntityType = 'Spot';
 
 const router = new Router();
@@ -15,6 +16,19 @@ const DEFAULT_RADIUS_M = 50000;
 const MAX_RADIUS_M = 200000;
 const DEFAULT_LIMIT = 5;
 const MAX_LIMIT = 50;
+// A refused note maps to a status here rather than in each handler, so the
+// POST and the PUT cannot drift apart on what a too-long body answers.
+const NOTE_ERRORS = {
+  NOTE_EMPTY: 400,
+  NOTE_TOO_LONG: 400,
+  PARENT_MISMATCH: 400,
+  PARENT_IS_REPLY: 400,
+  NOTE_RATE_LIMIT: 429,
+  SPOT_NOT_FOUND: 404,
+  PARENT_NOT_FOUND: 404,
+  NOTE_NOT_FOUND: 404,
+};
+
 const DEFAULT_PHOTO_LIMIT = 24;
 const MAX_PHOTO_LIMIT = 60;
 const DEFAULT_SEARCH_LIMIT = 8;
@@ -245,6 +259,74 @@ router.get('/:id(*)/photos', requireFeature('spot_community_photos'), function (
 });
 
 /*
+ * The note thread, and a note added to it.
+ *
+ * Both behind the same flag, read included: a thread nobody can post to is not
+ * a switched-off feature, it is a broken one.
+ *
+ * The read is open to a signed-out visitor for the same reason /nearest is -
+ * somebody following a shared link should see what riders said about the
+ * place. The write is not: PUT and POST are write methods, so guardedWrites at
+ * the mount has already required a valid token and refused the demo account.
+ */
+router.get('/:id(*)/notes', requireFeature('spot_notes'), function (req, res) {
+  const id = String(req.params.id || '').trim();
+  if (!id) {
+    res.status(404).send({ message: EntityType + " not found." });
+    return;
+  }
+
+  SpotNoteService.make().thread(id)
+    .then(notes => {
+      res.send({ notes: notes });
+    })
+    .catch(err => {
+      console.error('GET /api/spot/:id/notes failed:', err);
+      res.status(500).send({ message: "Some error occurred while retrieving notes." });
+    });
+});
+
+router.post('/:id(*)/notes', requireFeature('spot_notes'), function (req, res) {
+  const id = String(req.params.id || '').trim();
+  if (!id) {
+    res.status(404).send({ message: EntityType + " not found." });
+    return;
+  }
+
+  if (!req.viewer) {
+    res.status(401).send({ message: 'Sign in first.' });
+    return;
+  }
+
+  SpotNoteService.make()
+    .create({
+      spotId: id,
+      // Off the token, never the body. POST /api/spot took created_by from the
+      // request until recently and that is exactly the bug not to repeat.
+      userId: req.viewer.id,
+      body: req.body.body,
+      parentId: req.body.parent_id || null,
+    })
+    .then(note => {
+      res.status(201).send({ note: {
+        id: note.id,
+        body: note.body,
+        parent_id: note.parent_id,
+        created_at: note.createdAt,
+      } });
+    })
+    .catch(err => {
+      const status = NOTE_ERRORS[err.code];
+      if (status) {
+        res.status(status).send({ message: err.message });
+        return;
+      }
+      console.error('POST /api/spot/:id/notes failed:', err);
+      res.status(500).send({ message: "Some error occurred while saving the note." });
+    });
+});
+
+/*
  * A rider rewrites the spot's description.
  *
  * No inline verifier: PUT is a write method, so the guardedWrites pair at the
@@ -278,7 +360,7 @@ router.put('/:id(*)/description', requireFeature('spot_description_edits'), func
         description: {
           body: revision.body,
           source: revision.source,
-          updated_at: revision.created_at,
+          updated_at: revision.createdAt,
         },
       });
     })

@@ -19,7 +19,9 @@ const userRouter = require('./routes/user');
 const userBoardRouter = require('./routes/user_boards');
 const conditionsRouter = require('./routes/conditions');
 const spotRouter = require('./routes/spot');
+const spotNoteRouter = require('./routes/spot_notes');
 const esRouter = require('./routes/es');
+const adminRouter = require('./routes/admin');
 const cognitoAuthMiddleware = cognitoAuth.getVerifyMiddleware();
 const queryParser = require('./middleware/QueryParser');
 const viewer = require('./middleware/Viewer');
@@ -107,6 +109,10 @@ app.use('/api/manufacturer', catalogWrites, manufacturerRouter);
 app.use('/api/session', guardedWrites, sessionRouter);
 app.use('/api/shaper', catalogWrites, shaperRouter);
 app.use('/api/spot', guardedWrites, spotRouter);
+// Its own mount, not a suffix under /api/spot/:id(*): editing a note needs
+// only the note id, and stacking a second wildcard suffix there makes the
+// route table depend on backtracking to read correctly.
+app.use('/api/spot-note', guardedWrites, spotNoteRouter);
 app.use('/api/sc', conditionsRouter);
 /*
  * /api/image is NOT mounted. routes/images.js calls BaseService.make() with no
@@ -127,6 +133,17 @@ app.use('/api/sc', conditionsRouter);
  */
 app.use('/api/user_board', guardedWrites, userBoardRouter);
 app.use('/api/es', cognitoAuthMiddleware, esRouter);
+
+/*
+ * The gate is on the mount, not inside the router: every route under here is
+ * an admin action and none of them has an anonymous form.
+ *
+ * requireAdmin reads req.viewer.isAdmin, which Viewer resolves for every
+ * request - so cognitoAuthMiddleware is here for its 401, not for the group
+ * check. Without it a missing token would answer 403 "admins only", which
+ * sends the console to its not-an-admin screen instead of to the login.
+ */
+app.use('/api/admin', cognitoAuthMiddleware, requireAdmin, adminRouter);
 
 
 

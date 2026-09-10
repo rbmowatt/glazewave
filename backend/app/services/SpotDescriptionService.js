@@ -89,7 +89,7 @@ class SpotDescriptionService {
     return db.SpotDescription.findAll({
       where: { spot_id: spotId },
       include: [{ model: db.User, attributes: ['id', 'username', 'first_name'] }],
-      order: [['created_at', 'DESC'], ['id', 'DESC']],
+      order: [['createdAt', 'DESC'], ['id', 'DESC']],
       limit: limit,
     });
   }
