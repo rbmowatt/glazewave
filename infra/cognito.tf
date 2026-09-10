@@ -63,13 +63,22 @@ resource "aws_cognito_user_pool_client" "web" {
   ]
 }
 
-# Membership arrives as a cognito:groups claim on both the id and the access
-# token, which is what middleware/Viewer.js reads. Nothing in the app writes
-# this group - add yourself with:
+# The resource is aws_cognito_user_group, NOT aws_cognito_user_pool_group -
+# that second name is the CloudFormation/API spelling and the provider has
+# never had it. Under hashicorp/aws 6.63.0 it fails at plan time with "does not
+# support resource type", which reads like a version problem rather than a typo.
 #
-#   aws cognito-idp admin-add-user-to-group --user-pool-id <id> \
-#     --username <email> --group-name admins --profile glazewave
-resource "aws_cognito_user_pool_group" "admins" {
+# Membership arrives as a cognito:groups claim on both the id and the access
+# token, which is what middleware/Viewer.js reads. Membership is deliberately
+# NOT managed here: the pool sets username_attributes = ["email"], so the
+# username is a generated UUID, and this repo is public.
+#
+#   POOL=$(terraform output -raw cognito_user_pool_id)
+#   aws cognito-idp list-users --user-pool-id "$POOL" \
+#     --filter 'email = "<addr>"' --query 'Users[].Username' --output text --profile glazewave
+#   aws cognito-idp admin-add-user-to-group --user-pool-id "$POOL" \
+#     --username <uuid> --group-name admins --profile glazewave
+resource "aws_cognito_user_group" "admins" {
   name         = "admins"
   user_pool_id = aws_cognito_user_pool.main.id
   description  = "Write access to catalog data and the Cognito admin routes"
