@@ -5,6 +5,7 @@ import { safeLocate, defaultOptions } from './../../../lib/utils/geolocator';
 import getSpots from './../../../lib/utils/spots';
 import cache from './../../../lib/utils/cache';
 import { asKm } from './../../../lib/utils/distance';
+import { SpotThumb, SpotCredit } from './../../spot/SpotImage';
 import { readViewLocation, onViewLocationChange } from './../../../lib/utils/viewLocation';
 
 const CACHE_KEY = 'nrspt2';
@@ -92,7 +93,11 @@ class NearestSpots extends React.Component {
           <div className="gw-spot-list">
             {spots.map(spot => (
               <div className="gw-spot" key={spot.id}>
-                <a href={spot.url} target="_blank" rel="noopener noreferrer">{spot.name}</a>
+                <SpotThumb image={spot.image} size={40} />
+                <span className="gw-spot-body">
+                  <a href={spot.url} target="_blank" rel="noopener noreferrer">{spot.name}</a>
+                  <SpotCredit image={spot.image} />
+                </span>
                 {asKm(spot.distance_m) &&
                   <span className="gw-spot-distance">{asKm(spot.distance_m)}</span>
                 }

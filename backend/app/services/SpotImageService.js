@@ -109,6 +109,11 @@ class SpotImageService extends BaseService {
             ? Math.round((row.height * w) / row.width)
             : null;
         image.subject = row.subject;
+        // The composed credit line runs to 279 characters, which is right
+        // under a photograph and unusable under a 28px picker chip. The author
+        // alone is what a thumbnail strip can carry, so it ships beside the
+        // full line rather than instead of it.
+        image.author = row.author || null;
         return image;
     }
 }

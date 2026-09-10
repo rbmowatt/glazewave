@@ -1,0 +1,47 @@
+.gw-spot-thumb {
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid var(--gw-edge);
+  background: var(--gw-raised);
+  object-fit: cover;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* The 289 spots with no photograph. A tinted tile rather than nothing, so a
+   mixed list keeps one column of text rather than two. */
+.gw-spot-thumb-empty {
+  background: linear-gradient(155deg, var(--gw-raised), var(--gw-accent-wash));
+  border-style: dashed;
+}
+
+.gw-spot-credit {
+  display: block;
+  font-size: 0.55rem;
+  line-height: 1.25;
+  color: var(--gw-faint);
+  margin-top: 0.1rem;
+  /* These run to 279 characters. Clamped to the row, full text on hover. */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.gw-spot-credit a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.gw-spot-credit a:hover {
+  color: var(--gw-muted);
+  text-decoration: underline;
+}
+
+.gw-spot-credit-line {
+  display: block;
+  font-size: 0.6rem;
+  color: var(--gw-faint);
+  margin-top: 0.2rem;
+}

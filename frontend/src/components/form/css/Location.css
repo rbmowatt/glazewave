@@ -90,3 +90,36 @@
   font-size: 0.65rem;
   color: var(--gw-dim);
 }
+
+/* The suggestion row became a thumbnail plus two stacked lines, so the item is
+   a flex row. min-width:0 on the body is what lets the credit line ellipsize
+   instead of forcing the list wider than the input it hangs from. */
+.location-suggestions .list-group-item.location-suggestion {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.location-suggestion-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.location-suggestion-name {
+  display: block;
+}
+
+/* Was a pill. A square thumbnail inside a 999px radius reads as a mistake, so
+   the chip is a rounded rectangle now, and align-items moves off baseline
+   because the image has no text baseline to sit on. */
+.location-nearby-chip {
+  align-items: center;
+  border-radius: 10px;
+  padding: 0.2rem 0.6rem 0.2rem 0.25rem;
+}
+
+.location-nearby-chip-text {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
