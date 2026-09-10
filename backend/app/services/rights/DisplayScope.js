@@ -84,9 +84,13 @@ function reconcileSql(table) {
   if (!RECONCILABLE.includes(table)) {
     throw new Error(`reconcile: ${table} is not a rights-bearing table`);
   }
+  // `stored` is quoted because STORED is reserved in MySQL 8 for generated
+  // columns, and unquoted it is a syntax error rather than a bad column name.
+  // Nothing executed this SQL until the spot image loader became reconcile's
+  // first caller.
   return `
   SELECT i.id,
-         i.display_scope AS stored,
+         i.display_scope AS \`stored\`,
          CASE
            WHEN l.id IS NULL OR l.allows_public_display = 0 THEN 'blocked'
            WHEN l.needs_grant = 1
@@ -101,7 +105,7 @@ function reconcileSql(table) {
     FROM ${table} i
     LEFT JOIN image_licenses l ON l.id = i.license_id
     LEFT JOIN image_permissions p ON p.id = i.permission_id
-   HAVING stored <> expected
+   HAVING \`stored\` <> expected
 `;
 }
 
