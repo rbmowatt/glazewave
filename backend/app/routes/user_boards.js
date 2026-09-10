@@ -5,6 +5,7 @@ const ImageService  = require('./../services/ImageService');
 const { scopedParser } = require('./../services/rights/Visibility');
 const requireOwner = require('./../middleware/RequireOwner');
 const requireParentOwner = require('./../middleware/OwnedUpload');
+const { discardUploads } = requireParentOwner;
 const EntityType = 'UserBoard';
 
 const router = new Router();
@@ -93,8 +94,16 @@ router.post('/', upload({destinationPath : 'user_boards'}).single('photo'), func
   // user_id came off the body. A board created against another rider's id
   // carries a rating into their shelf, and that rating feeds the composite
   // board_ratings score everybody sees.
+  /*
+   * discardUploads, not a bare 401: multer has already streamed the photo into
+   * S3 by the time this runs. authWrites means the token is valid, so the only
+   * way here is the window between a Cognito signup and the firstOrNew that
+   * mints the users row - which is a new rider's very first upload. The bucket
+   * is versioned, so an orphan left now costs bytes forever.
+   */
   if (!req.viewer) {
-    return res.status(401).send({ message: 'Sign in first.' });
+    return discardUploads(req)
+      .then(() => res.status(401).send({ message: 'Sign in first.' }));
   }
   BaseService.make().create(Object.assign({}, req.body, { user_id: req.viewer.id }))
     .then(data => {

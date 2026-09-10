@@ -3,6 +3,7 @@ const BaseService = require('./../services/UserService');
 const UserBoardService = require('./../services/UserBoardService');
 const EntityType = 'User';
 let upload = require('./../services/images/upload');
+const { discardUploads } = require('./../middleware/OwnedUpload');
 
 
 const router = new Router();
@@ -22,7 +23,10 @@ const self = (req, res, id) => {
     res.status(401).send({ message: 'Sign in first.' });
     return false;
   }
-  if (String(req.viewer.id) !== String(id)) {
+  // An admin passes for the console's user screen. Nothing else widens this:
+  // isAdmin is false for a demo-signed token whatever it claims, and false for
+  // a verified token with no users row yet.
+  if (String(req.viewer.id) !== String(id) && !req.viewer.isAdmin) {
     res.status(403).send({ message: 'That is not your account.' });
     return false;
   }
@@ -114,8 +118,10 @@ router.get('/:id', function (req, res) {
 // Nothing calls this - every board write goes to /api/user_board - but it is
 // mounted, and it took user_id from the body.
 router.post('/board', upload({destinationPath : 'board'}).single('photo'), function (req, res) {
+  // multer has already put the photo in S3 by now, and the bucket is versioned.
   if (!req.viewer) {
-    return res.status(401).send({ message: "Sign in first." });
+    return discardUploads(req)
+      .then(() => res.status(401).send({ message: "Sign in first." }));
   }
   UserBoardService.make().create(Object.assign({}, req.body, {user_id: req.viewer.id}))
     .then(data => {
@@ -138,7 +144,8 @@ router.post('/images', upload({destinationPath : 'user', width : 400, height : 4
   // req.body.user_id came off a multipart form, so it was the uploader's to
   // choose and any signed-in rider could overwrite anyone's avatar.
   if (!req.viewer) {
-    return res.status(401).send({ message: "Sign in first." });
+    return discardUploads(req)
+      .then(() => res.status(401).send({ message: "Sign in first." }));
   }
   BaseService.make().update(req.viewer.id,  {profile_img : req.file.key })
     .then(data => {

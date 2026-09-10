@@ -198,10 +198,17 @@ router.get('/search', function (req, res) {
  */
 router.post('/', cognitoAuth.getVerifyMiddleware(), function (req, res) {
   // created_by came off the request body, so the rider who added a spot was
-  // whoever the client said it was. req.viewer is null in the window between
-  // a Cognito signup and the firstOrNew that mints the users row, which is an
-  // unattributed spot rather than a rejected one.
-  BaseService.make().create({ ...req.body, created_by: req.viewer ? req.viewer.id : null })
+  // whoever the client said it was.
+  //
+  // 401 rather than a null created_by: req.viewer is only absent in the window
+  // between a Cognito signup and the firstOrNew that mints the users row, and a
+  // spot written there is permanently unattributable with nothing to claim it
+  // by. Sessions and boards already refuse in that state; this matches them.
+  if (!req.viewer) {
+    return res.status(401).send({ message: 'Sign in first.' });
+  }
+
+  BaseService.make().create({ ...req.body, created_by: req.viewer.id })
     .then(spot => {
       res.status(201).send(spot);
     })

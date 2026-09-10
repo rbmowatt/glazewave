@@ -11,7 +11,6 @@ const boardRouter = require('./routes/board');
 const cityRouter = require('./routes/city');
 const cognitoRouter = require('./routes/cognito');
 const demoRouter = require('./routes/demo');
-const imageRouter = require('./routes/images');
 const locationRouter = require('./routes/location');
 const manufacturerRouter = require('./routes/manufacturer');
 const sessionRouter = require('./routes/session');
@@ -109,7 +108,17 @@ app.use('/api/session', guardedWrites, sessionRouter);
 app.use('/api/shaper', catalogWrites, shaperRouter);
 app.use('/api/spot', guardedWrites, spotRouter);
 app.use('/api/sc', conditionsRouter);
-app.use('/api/image', guardedWrites, imageRouter);
+/*
+ * /api/image is NOT mounted. routes/images.js calls BaseService.make() with no
+ * model name, so ImageService runs super(db[undefined]) and every handler
+ * throws on this.BaseModel - verified against production, where GET
+ * /api/image/1 answers 500 "Error retrieving Location with id=1".
+ *
+ * It cannot simply be guarded either: it resolves to location_images, which
+ * has no user_id column, so there is no ownership to check. Session and board
+ * photos are served by their own routers. Decide what this router is for
+ * before mounting it again.
+ */
 /*
  * Reads here are open for the same reason the session ones are: a board is
  * shareable when its owner marks it public, and the router scopes every read to

@@ -5,6 +5,7 @@ const ImageService  = require('./../services/ImageService');
 const { scopedParser } = require('./../services/rights/Visibility');
 const requireOwner = require('./../middleware/RequireOwner');
 const requireParentOwner = require('./../middleware/OwnedUpload');
+const { discardUploads } = requireParentOwner;
 const EntityType = 'Session';
 
 const router = new Router();
@@ -101,8 +102,16 @@ router.post('/', upload({destinationPath : 'user_sessions'}).array('photo'), fun
 
   // user_id came off the body, so a rider could log a session onto somebody
   // else's account - and the rows behind /api/user/:id/average with it.
+  /*
+   * discardUploads, not a bare 401: multer has already streamed the photo into
+   * S3 by the time this runs. authWrites means the token is valid, so the only
+   * way here is the window between a Cognito signup and the firstOrNew that
+   * mints the users row - which is a new rider's very first upload. The bucket
+   * is versioned, so an orphan left now costs bytes forever.
+   */
   if (!req.viewer) {
-    return res.status(401).send({ message: 'Sign in first.' });
+    return discardUploads(req)
+      .then(() => res.status(401).send({ message: 'Sign in first.' }));
   }
 
   // req.body.conditions is ignored. The client still sends it because the form
