@@ -40,12 +40,13 @@ const VERIFIED_BY = flag('verified-by', 'visual review 2026-09');
 const SOURCE_KEY = 'wikimedia';
 const CHUNK = 200;
 
-// distance_m is MEDIUMINT UNSIGNED. The commons-text tier does not filter on
-// distance, so the current set already reaches 16,708,549 m - an image of an
-// Asturian beach standing in for a Baja one - against a ceiling of 16,777,215.
-// A wider-radius re-harvest will cross it, and MySQL out of strict mode clamps
-// silently rather than erroring.
-const DISTANCE_MAX = 16777215;
+// distance_m is INT UNSIGNED. The commons-text tier does not filter on distance
+// at all, so the manifest reaches 18,470,611 m across all ranks - an image of
+// the wrong hemisphere standing in for a beach. The old MEDIUMINT ceiling of
+// 16,777,215 cut two of those silently, because MySQL out of strict mode clamps
+// rather than erroring; rank 1 alone peaks at 16,708,549 and fit, which is why
+// the first load never showed it. This clamp is now a guard, not a limit.
+const DISTANCE_MAX = 4294967295;
 
 // The manifest carries the licence as Commons prints it. Normalizing to the
 // image_licenses.code shape covers every string in the set today, including
