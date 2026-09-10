@@ -13,7 +13,21 @@ export const SpotThumb = ({ image, size = 40 }) => {
   const style = { width: size, height: size, flexBasis: size };
 
   if (!image || !image.url) {
-    return <span className="gw-spot-thumb gw-spot-thumb-empty" style={style} aria-hidden="true" />;
+    /*
+     * Two spots reach here and the tile cannot tell them apart: one the harvest
+     * found nothing usable for, and one from the parked Surfline import that
+     * the OSM harvest never covered at all. Both are permanent as far as a
+     * reader is concerned, so this reads as an empty state rather than a
+     * pending one - no dashes, no spinner, nothing that suggests waiting.
+     */
+    return (
+      <span className="gw-spot-thumb gw-spot-thumb-empty" style={style} aria-hidden="true">
+        <svg className="gw-spot-thumb-mark" viewBox="0 0 24 24" focusable="false">
+          <path d="M2 13c2.4 0 2.4-2.2 4.8-2.2S9.2 13 11.6 13s2.4-2.2 4.8-2.2S18.8 13 22 13" />
+          <path d="M2 18c2.4 0 2.4-2.2 4.8-2.2S9.2 18 11.6 18s2.4-2.2 4.8-2.2S18.8 18 22 18" />
+        </svg>
+      </span>
+    );
   }
 
   return (

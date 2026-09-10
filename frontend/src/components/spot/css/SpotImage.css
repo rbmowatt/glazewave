@@ -9,11 +9,31 @@
   vertical-align: middle;
 }
 
-/* The 289 spots with no photograph. A tinted tile rather than nothing, so a
-   mixed list keeps one column of text rather than two. */
+/*
+ * Spots with no photograph. A tinted tile rather than nothing, so a mixed list
+ * keeps one column of text rather than two.
+ *
+ * The first version used --gw-raised to --gw-accent-wash, which are #0f151a and
+ * #0f1a1c: at 40px that is a black square, and the dashed border finished the
+ * job of making it look like a failed load. Literal values because the palette
+ * has no pair far enough apart to read as a gradient at this size.
+ */
 .gw-spot-thumb-empty {
-  background: linear-gradient(155deg, var(--gw-raised), var(--gw-accent-wash));
-  border-style: dashed;
+  background: linear-gradient(160deg, #16222b 0%, #0c1317 100%);
+  border-color: var(--gw-edge-strong);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.gw-spot-thumb-mark {
+  width: 62%;
+  height: 62%;
+  fill: none;
+  stroke: var(--gw-edge-hover);
+  stroke-width: 1.7;
+  stroke-linecap: round;
 }
 
 .gw-spot-credit {
