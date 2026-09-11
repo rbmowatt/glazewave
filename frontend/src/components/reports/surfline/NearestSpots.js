@@ -1,6 +1,7 @@
 import './css/NearestSpots.css'
 import React from 'react';
 import { connect } from "react-redux";
+import { Link } from 'react-router-dom';
 import { safeLocate, defaultOptions } from './../../../lib/utils/geolocator';
 import getSpots from './../../../lib/utils/spots';
 import cache from './../../../lib/utils/cache';
@@ -95,7 +96,11 @@ class NearestSpots extends React.Component {
               <div className="gw-spot" key={spot.id}>
                 <SpotThumb image={spot.image} size={40} />
                 <span className="gw-spot-body">
-                  <a href={spot.url} target="_blank" rel="noopener noreferrer">{spot.name}</a>
+                  {/* Raw id in the path, never encodeURIComponent: an OSM id is
+                      osm:node/357717358, the route is /spot/:id+ to match the
+                      slash, and a %2F stops matching it. The outbound source
+                      link lives on the spot page as the Map chip. */}
+                  <Link to={`/spot/${spot.id}`}>{spot.name}</Link>
                   <SpotCredit image={spot.image} />
                 </span>
                 {asKm(spot.distance_m) &&
