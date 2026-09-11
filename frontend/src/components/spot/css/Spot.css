@@ -4,7 +4,13 @@
  * reskin rather than follow it.
  */
 
-.gw-spot .gw-title-field {
+/*
+ * gw-spot-page, never gw-spot: instrument.css owns .gw-spot as the
+ * nearest-spots list ROW - display:flex, space-between, align-items:center,
+ * a bottom border and a hover fill. On this page's container that laid the
+ * title, the gallery and the note thread out side by side as flex items.
+ */
+.gw-spot-page .gw-title-field {
   font-size: 1.6rem;
   margin-bottom: 0.35rem;
 }

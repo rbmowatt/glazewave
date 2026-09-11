@@ -191,7 +191,7 @@ class SpotView extends Component {
 			return (
 				<MainContainer>
 					<FormCard returnToIndex={this.returnToIndex}>
-						<div className="container gw-spot">
+						<div className="container gw-spot-page">
 							{this.props.notFound && (
 								<p className="gw-empty">
 									That spot is not in the atlas. Sessions logged before a place
@@ -211,7 +211,7 @@ class SpotView extends Component {
 		return (
 			<MainContainer>
 				<FormCard returnToIndex={this.returnToIndex}>
-					<div className="container gw-spot">
+					<div className="container gw-spot-page">
 						<div className="row details">
 							<div className="col-12 session-title">
 								<h1 className="gw-title-field">{spot.name}</h1>
