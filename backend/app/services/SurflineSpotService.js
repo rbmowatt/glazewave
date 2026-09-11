@@ -7,6 +7,7 @@ const { QueryTypes } = require('sequelize');
 const crypto = require('crypto');
 const { sameSpotName } = require('./../lib/spot_name');
 const roadDistance = require('./RoadDistance');
+const LocalityService = require('./LocalityService');
 
 // How close a new spot has to be to an existing one, with a similar name,
 // before it is treated as the same break rather than a new one. Deliberately
@@ -205,6 +206,15 @@ class SurflineSpotService  extends BaseService {
             throw error;
         }
 
+        /*
+         * After the duplicate check, so a re-add costs no third-party call,
+         * and awaited rather than fired off afterwards: the 201 carries the
+         * row, and a spot whose locality appears a second later reads as the
+         * label being broken. Resolves to nulls on timeout or failure - it
+         * cannot fail a submission.
+         */
+        const locality = await LocalityService.resolve(lat, lon);
+
         return BaseModel.create({
             // The string primary key carries provenance without a join, so a
             // later OSM refresh can leave contributed rows alone.
@@ -216,6 +226,12 @@ class SurflineSpotService  extends BaseService {
             lat: String(lat),
             lon: String(lon),
             created_by: params.created_by || null,
+            // Contributed spots had neither of these before. crumbs is what
+            // every seeded row uses for its region label, so without it a
+            // rider's own spot was the only kind with no locality at all.
+            crumbs: locality.crumbs,
+            city: locality.city,
+            locality_source: locality.locality_source,
             is_public: true,
             break_type: params.break_type || null,
             wave_direction: params.wave_direction || null,
