@@ -21,6 +21,7 @@ import SessionView from './components/session/View';
 import BoardIndex from './components/board/BoardIndex';
 import TopRated from './components/board/TopRated';
 import BoardView from './components/board/View';
+import SpotView from './components/spot/View';
 
 import { withRouter } from "react-router";
 import cognitoUtils from './lib/utils/cognito'
@@ -95,6 +96,14 @@ class App extends React.Component{
           {/* Above /board/:id, or the router matches "top-rated" as a board id. */}
           <Route  path={'/board/top-rated'} exact component={TopRated } />
           <Route  path={'/board/:id'} exact component={BoardView }/>
+
+          {/* :id+ , not :id. Spot ids are not all one path segment - measured
+              against path-to-regexp 1.7.0, which react-router-dom 5.1.2 uses:
+              /spot/:id matches wd:Q7644300 and does NOT match
+              /spot/osm:node/357717358. A plain :id would work for the nine
+              Google-resolved spots and 404 for the 1,611 OSM ones, which reads
+              as a data problem rather than a routing one. */}
+          <Route  path={'/spot/:id+'} exact component={SpotView }/>
 
           <Route component={Page404} />
         </Switch>

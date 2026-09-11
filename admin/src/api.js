@@ -46,3 +46,7 @@ export const setFlag = (key, enabled) =>
     method: 'PUT',
     body: JSON.stringify({ enabled }),
   });
+
+export const getUsers = () => request('/api/admin/users');
+export const setUserActive = (id, active) =>
+  request(`/api/admin/users/${id}/${active ? 'enable' : 'disable'}`, { method: 'POST' });

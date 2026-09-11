@@ -78,3 +78,36 @@ resource "aws_iam_role_policy" "backups" {
     ]
   })
 }
+
+/*
+ * Scoped to the one pool, never Resource = "*".
+ *
+ * AdminDeleteUser is deliberately absent. Deleting a Cognito account orphans
+ * the users row, its sessions, its user_boards and the composite board_ratings
+ * those feed - and routes/cognito.js still exposes DELETE /:uname. That route
+ * is behind requireAdmin now, but leaving delete out of the policy means a
+ * mistake there costs an AccessDenied rather than a rider's history.
+ *
+ * Disable is the reversible answer and is what the admin console calls.
+ */
+resource "aws_iam_role_policy" "cognito_admin" {
+  name = "glazewave-cognito-admin"
+  role = aws_iam_role.app.id
+
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Effect = "Allow"
+        Action = [
+          "cognito-idp:AdminDisableUser",
+          "cognito-idp:AdminEnableUser",
+          "cognito-idp:AdminGetUser",
+          "cognito-idp:AdminListGroupsForUser",
+          "cognito-idp:ListUsers",
+        ]
+        Resource = aws_cognito_user_pool.main.arn
+      }
+    ]
+  })
+}

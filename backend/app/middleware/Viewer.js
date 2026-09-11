@@ -31,18 +31,40 @@ const UserService = require('./../services/UserService');
 // cognito:groups claim on both the id and the access token.
 const ADMIN_GROUP = process.env.ADMIN_GROUP || 'admins';
 
-// Cognito hands us a username; every row is scoped by the MySQL users.id.
-// Without this the lookup costs a DB round-trip on every read.
-const userIdCache = new NodeCache({ stdTTL: 300 });
+/*
+ * Cognito hands us a username; every row is scoped by the MySQL users.id.
+ * Without this the lookup costs a DB round-trip on every read.
+ *
+ * is_active rides on the same entry rather than a second query, which is what
+ * makes a disable cost nothing on the request path - and is also why disabling
+ * somebody has to call forget(). Without that the account stays usable for the
+ * rest of the TTL, and "disabled" that takes five minutes is not a moderation
+ * tool.
+ *
+ * Correct only because one instance runs one node process. Two boxes and each
+ * holds its own copy, so a disable applied on one is invisible to the other
+ * until its TTL lapses. Move this to Redis before scaling out.
+ */
+const userCache = new NodeCache({ stdTTL: 300 });
 
-async function resolveUserId(username) {
+async function resolveUser(username) {
   if (!username) return null;
-  const cached = userIdCache.get(username);
+  const cached = userCache.get(username);
   if (cached !== undefined) return cached;
   const rows = await UserService.make().where({ wheres: { username }, limit: 1 });
   if (!rows || !rows.length) return null;
-  userIdCache.set(username, rows[0].id);
-  return rows[0].id;
+  const row = { id: rows[0].id, is_active: rows[0].is_active !== false && rows[0].is_active !== 0 };
+  userCache.set(username, row);
+  return row;
+}
+
+// Called by the admin disable and enable handlers. Same process, so deleting
+// the key here is what makes the change take effect on the next request.
+const forget = (username) => userCache.del(username);
+
+async function resolveUserId(username) {
+  const row = await resolveUser(username);
+  return row ? row.id : null;
 }
 
 // An access token carries `username`, an id token `cognito:username`. Both are
@@ -71,6 +93,9 @@ const viewerMiddleware = (req, res, next) => {
    * fails jwt.decode and lands in the AuthError branch below.
    */
   req.tokenUsername = null;
+  // Set on every path, like req.viewer, so a consumer reading it never has to
+  // tell "not disabled" from "this middleware did not run".
+  req.disabled = false;
 
   if (!header) {
     req.viewer = null;
@@ -83,13 +108,25 @@ const viewerMiddleware = (req, res, next) => {
     .then(async (claims) => {
       const username = usernameFrom(claims);
       req.tokenUsername = username;
-      return { username: username, id: await resolveUserId(username), isAdmin: isAdminFrom(claims) };
+      const row = await resolveUser(username);
+      return { username: username, row: row, isAdmin: isAdminFrom(claims) };
     })
-    .then(({ id, username, isAdmin }) => {
-      // A verified token with no users row is not a viewer. It happens between
-      // the Cognito signup and the firstOrNew that creates the row. An admin
-      // in that state is not an admin either, which is the safe direction.
-      req.viewer = id === null ? null : { id: id, username: username, isAdmin: isAdmin };
+    .then(({ row, username, isAdmin }) => {
+      /*
+       * A verified token with no users row is not a viewer. It happens between
+       * the Cognito signup and the firstOrNew that creates the row. An admin
+       * in that state is not an admin either, which is the safe direction.
+       *
+       * A disabled account resolves to no viewer rather than to a refusal.
+       * Every write path already requires a viewer, so this blocks all of them
+       * with no new gate, and the reads it leaves are the public ones any
+       * signed-out visitor gets. Refusing outright would also mean Viewer -
+       * which exists precisely so it never refuses a request - growing a
+       * branch that does.
+       */
+      const disabled = Boolean(row) && !row.is_active;
+      req.disabled = disabled;
+      req.viewer = (!row || disabled) ? null : { id: row.id, username: username, isAdmin: isAdmin };
       if (req.parser) req.parser.viewer = req.viewer;
       next();
     })
@@ -108,3 +145,4 @@ const viewerMiddleware = (req, res, next) => {
 
 module.exports = viewerMiddleware;
 module.exports.resolveUserId = resolveUserId;
+module.exports.forget = forget;
