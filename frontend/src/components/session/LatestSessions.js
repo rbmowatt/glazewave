@@ -4,12 +4,17 @@ import { Link } from 'react-router-dom';
 
 export const LatestSessions = props => {
     const sessions = props.sessions || [];
+    // The list request caps at 20 rows, so its length is a page size and not a
+    // total. The count comes off the server aggregation instead.
+    const total = (props.total === undefined || props.total === null)
+        ? sessions.length
+        : props.total;
     return (
         <div>
             <div className="gw-list-head">
                 <div className="gw-eyebrow">Recent sessions</div>
                 {sessions.length > 0 &&
-                    <Link className="gw-link" to={'/session'}>ALL {sessions.length} &rarr;</Link>
+                    <Link className="gw-link" to={'/session'}>ALL {total} &rarr;</Link>
                 }
             </div>
             {sessions.length === 0 ? (

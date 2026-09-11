@@ -4,12 +4,17 @@ import { Link } from 'react-router-dom';
 
 export const NewestBoards = (props) => {
 	const boards = props.boards || [];
+	// The list request caps at 20 rows, so its length is a page size and not a
+	// total. The count comes off the server aggregation instead.
+	const total = (props.total === undefined || props.total === null)
+		? boards.length
+		: props.total;
 	return (
 		<div>
 			<div className="gw-list-head">
 				<div className="gw-eyebrow">Quiver</div>
 				{boards.length > 0 &&
-					<Link className="gw-link" to={'/board'}>ALL {boards.length} &rarr;</Link>
+					<Link className="gw-link" to={'/board'}>ALL {total} &rarr;</Link>
 				}
 			</div>
 			{boards.length === 0 ? (

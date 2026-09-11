@@ -82,11 +82,7 @@ class ProfileCard extends React.Component {
             ? s3Conf.root + user.profile_img
             : '/img/session_default_lg.png';
 
-        // Every aggregation comes back through toFixed(1), so total_sessions
-        // arrives as "148.0" and has to be rounded before it is shown.
-        const totalSessions = aggregations.total_sessions
-            ? Math.round(aggregations.total_sessions)
-            : 0;
+        const totalSessions = aggregations.total_sessions || 0;
         const rating = Number(aggregations.session_rating) || 0;
 
         return (
