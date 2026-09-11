@@ -50,4 +50,32 @@ export const checkCoastal = (lat, lon) =>
     .get(`${base()}/api/spot/coastal`, { params: { lat, lon } })
     .then((res) => res.data);
 
+/*
+ * The locality line under a spot name. Measured across all 1,611 seeded rows:
+ * county and state_id are populated on NONE of them, and crumbs is populated on
+ * every one in a single shape - "United States, New Jersey". The legacy
+ * Surfline import wrote breadCrumbs.toString(), same coarse-to-fine order with
+ * more segments, so the last segment is the finest locality either shape
+ * carries.
+ *
+ * Null for the nine contributed spots: nothing on the create path writes
+ * crumbs, so callers must not render a label unconditionally.
+ */
+export const regionLabel = (crumbs) => {
+  const parts = String(crumbs || '').split(',').map((s) => s.trim()).filter(Boolean);
+  return parts.length ? parts[parts.length - 1] : null;
+};
+
+/*
+ * What actually gets rendered under a spot name. city is NULL until the
+ * reverse-geocode backfill has run, and stays NULL for offshore and unnamed
+ * stretches where no locality exists - so this degrades to the region rather
+ * than to a placeholder, and the two cases are indistinguishable on purpose.
+ */
+export const localityLabel = (spot) => {
+  if (!spot) return null;
+  const region = regionLabel(spot.crumbs);
+  return [spot.city, region].filter(Boolean).join(', ') || null;
+};
+
 export default getSpots;

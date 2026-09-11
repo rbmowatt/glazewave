@@ -1,13 +1,19 @@
 import './css/NearestSpots.css'
 import React from 'react';
 import { connect } from "react-redux";
+import { Link } from 'react-router-dom';
 import { safeLocate, defaultOptions } from './../../../lib/utils/geolocator';
-import getSpots from './../../../lib/utils/spots';
+import getSpots, { localityLabel } from './../../../lib/utils/spots';
 import cache from './../../../lib/utils/cache';
 import { asKm } from './../../../lib/utils/distance';
+import { SpotThumb, SpotCredit } from './../../spot/SpotImage';
 import { readViewLocation, onViewLocationChange } from './../../../lib/utils/viewLocation';
 
-const CACHE_KEY = 'nrspt2';
+// Bumped with the payload, twice now: a list cached before the server sent
+// crumbs carries no locality at all, and one cached between this deploy and
+// the backfill carries the region but no city. Either sits for the full ten
+// hours looking like the label simply does not work.
+const CACHE_KEY = 'nrspt4';
 
 // setWithExpiry adds this to Date.now() in milliseconds, so the 36000 that was
 // here was a 36-second cache, not the ten hours it reads as. Every dashboard
@@ -90,14 +96,26 @@ class NearestSpots extends React.Component {
           <div className="gw-trend-empty">NO SPOTS WITHIN RANGE</div>
         ) : (
           <div className="gw-spot-list">
-            {spots.map(spot => (
+            {spots.map(spot => {
+              const region = localityLabel(spot);
+              return (
               <div className="gw-spot" key={spot.id}>
-                <a href={spot.url} target="_blank" rel="noopener noreferrer">{spot.name}</a>
+                <SpotThumb image={spot.image} size={40} />
+                <span className="gw-spot-body">
+                  {/* Raw id in the path, never encodeURIComponent: an OSM id is
+                      osm:node/357717358, the route is /spot/:id+ to match the
+                      slash, and a %2F stops matching it. The outbound source
+                      link lives on the spot page as the Map chip. */}
+                  <Link to={`/spot/${spot.id}`}>{spot.name}</Link>
+                  {region && <span className="gw-spot-region">{region}</span>}
+                  <SpotCredit image={spot.image} />
+                </span>
                 {asKm(spot.distance_m) &&
                   <span className="gw-spot-distance">{asKm(spot.distance_m)}</span>
                 }
               </div>
-            ))}
+              );
+            })}
           </div>
         )}
         {/* The spot table is seeded from Overpass, so ODbL requires this credit. */}

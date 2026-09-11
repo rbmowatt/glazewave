@@ -449,7 +449,9 @@ div.details div.privacy input[type="radio"] {
 .gw-spot {
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
+	/* center, not baseline: the thumbnail has no text baseline to sit on and
+	   baseline alignment drops it below the row. */
+	align-items: center;
 	gap: 12px;
 	padding: 8px 0;
 	border-bottom: 1px solid #12191e;
@@ -458,6 +460,9 @@ div.details div.privacy input[type="radio"] {
 .gw-spot:hover { background: var(--gw-raised-hover); }
 .gw-spot a { font-size: 13px; color: var(--gw-text); }
 .gw-spot a:hover { color: var(--gw-accent); }
+/* min-width:0 is what lets the credit line ellipsize rather than widening the
+   row past the card it sits in. */
+.gw-spot-body { flex: 1 1 auto; min-width: 0; }
 .gw-spot-distance {
 	font-family: var(--gw-mono);
 	font-size: 11px;
@@ -1712,4 +1717,30 @@ input.gw-title-field:focus {
 .gw-row-lg .gw-row-actions {
 	align-self: flex-start;
 	margin-top: 2px;
+}
+
+/* ---------- spot locality ---------- */
+
+/*
+ * The spot table has no city: county and state_id are populated on none of the
+ * 1,611 seeded rows, so this is the region off crumbs and nothing finer. Block,
+ * because .gw-spot-body is an inline span and the name has to keep its own line.
+ */
+.gw-spot-region,
+.gw-report-region {
+	display: block;
+	font-family: var(--gw-mono);
+	font-size: 10px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--gw-dim);
+	margin-top: 2px;
+}
+.gw-spot-region-line {
+	font-family: var(--gw-mono);
+	font-size: 11px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--gw-muted);
+	margin-bottom: 0.55rem;
 }

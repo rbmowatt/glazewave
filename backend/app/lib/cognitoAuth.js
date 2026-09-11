@@ -179,8 +179,18 @@ function _verifyProm (pems, auth) {
         return
       }
 
-      // Done - all JWT token claims can now be trusted
-      return resolve(decodedAndVerified)
+      /*
+       * Done - all JWT token claims can now be trusted, and so is the kid:
+       * jwt.verify ran against pems[that kid] and the signature matched, so a
+       * forged header selects a key that cannot verify.
+       *
+       * It has to travel with the claims because the demo signing key is
+       * merged into the same pems map. A demo-signed token can carry any
+       * payload it likes, cognito:groups included, and the kid is the only
+       * thing that separates it from a Cognito one. "kid" is not a Cognito
+       * claim name, so nothing it could contain collides with this.
+       */
+      return resolve(Object.assign({}, decodedAndVerified, { kid: decodedNotVerified.header.kid }))
     })
   })
 }

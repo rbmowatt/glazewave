@@ -127,7 +127,15 @@ const formatSessionObject = (id, result) =>
     },
     jwt : result.accessToken.jwtToken,
     groups : result.idToken.payload['cognito:groups'],
-    isAdmin : result.idToken.payload['cognito:groups'] instanceof Array && result.idToken.payload['cognito:groups'].indexOf('Admin') !== -1,
+    /*
+     * The group is 'admins' - the name aws_cognito_user_group.admins creates
+     * and the one middleware/Viewer.js reads through ADMIN_GROUP. This read
+     * 'Admin' and so was false for every account that has ever existed.
+     *
+     * Stamped at token issue, maxAge 3600: being added to the group does
+     * nothing for the token already in the browser. Sign out and back in.
+     */
+    isAdmin : Array.isArray(result.idToken.payload['cognito:groups']) && result.idToken.payload['cognito:groups'].indexOf('admins') !== -1,
     expiration : result.accessToken.payload.exp,
     isLoggedIn : true
   }

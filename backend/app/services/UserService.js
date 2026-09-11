@@ -96,9 +96,10 @@ class UserService  extends BaseService {
                 // .value off it yields undefined and this loop would report
                 // the whole trend as 0.0 with nothing in the logs.
                 if (key === 'rating_trend') continue;
-                // A count of places is not a measurement, and toFixed(1)
-                // turned five spots into the string "5.0" on the card.
-                if (key === 'distinct_spots') {
+                // Counts, not measurements. toFixed(1) turned five spots
+                // into the string "5.0" on the card and made total_sessions
+                // arrive as "148.0", which every caller then had to round.
+                if (key === 'distinct_spots' || key === 'total_sessions') {
                     parsedValues[key] = value.value || 0;
                     continue;
                 }
@@ -118,7 +119,19 @@ class UserService  extends BaseService {
                         ? null
                         : Number(bucket.avg_rating.value.toFixed(2)),
                 }));
-            resolve(parsedValues)
+            /*
+             * The quiver total is counted in MySQL rather than aggregated off
+             * the user_boards index, because board writes go through
+             * BetterQueue: a board created a moment ago is in the table but
+             * not necessarily in Elasticsearch yet, and the dashboard refetches
+             * this straight after a create.
+             */
+            db.UserBoard.count({where: {user_id: parser.id}})
+                .then(total_boards => {
+                    parsedValues.total_boards = total_boards;
+                    resolve(parsedValues);
+                })
+                .catch(err => reject(err.message));
         })
         .catch(err => {
             reject(err.message);

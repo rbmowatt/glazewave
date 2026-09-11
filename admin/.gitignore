@@ -1,0 +1,9 @@
+node_modules
+
+# Non-secret - the client id and hosted-UI domain are inlined into the bundle
+# either way - but VITE_* is read at build time, so a local override here must
+# not become the value everyone else builds with. Copy .env.tmp instead.
+.env
+
+# Vite writes this while loading vite.config.js and normally removes it itself.
+vite.config.js.timestamp-*

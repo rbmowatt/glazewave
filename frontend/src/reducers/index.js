@@ -11,6 +11,7 @@ import session_images from './session_images';
 import user_board_images from './user_board_images';
 import shapers from './shapers';
 import conditions from './conditions';
+import spot from './spot';
 
 export default combineReducers({
   api,
@@ -24,5 +25,6 @@ export default combineReducers({
   user_sessions,
   session,
   conditions,
+  spot,
   user
 })

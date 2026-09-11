@@ -7,6 +7,7 @@ const { QueryTypes } = require('sequelize');
 const crypto = require('crypto');
 const { sameSpotName } = require('./../lib/spot_name');
 const roadDistance = require('./RoadDistance');
+const LocalityService = require('./LocalityService');
 
 // How close a new spot has to be to an existing one, with a similar name,
 // before it is treated as the same break rather than a new one. Deliberately
@@ -36,7 +37,7 @@ class SurflineSpotService  extends BaseService {
     nearestByCrow({ lat, lon, radius, limit })
     {
         const query = `
-            SELECT id, name, url,
+            SELECT id, name, url, crumbs, city,
                    CAST(lat AS DECIMAL(10,7)) AS lat,
                    CAST(lon AS DECIMAL(10,7)) AS lon,
                    ST_Distance_Sphere(
@@ -102,7 +103,7 @@ class SurflineSpotService  extends BaseService {
             : 'NULL';
 
         const query = `
-            SELECT id, name, url,
+            SELECT id, name, url, crumbs, city,
                    CAST(lat AS DECIMAL(10,7)) AS lat,
                    CAST(lon AS DECIMAL(10,7)) AS lon,
                    ${distance} AS distance_m
@@ -129,6 +130,48 @@ class SurflineSpotService  extends BaseService {
         return sequelize.query(query, {
             type: QueryTypes.SELECT,
             replacements: replacements,
+        });
+    }
+
+    /*
+     * Photographs riders have logged at this spot, newest first.
+     *
+     * sessions.location_id holds a surfline_spots primary key for any session
+     * logged against a seeded spot: the picker writes the spot id into that
+     * column and LocationService.resolve mints the matching locations row with
+     * the same id via createFromSpot. So this is a plain string match and needs
+     * no join table and no migration.
+     *
+     * VISIBILITY IS THE SESSION'S FLAG, NOT THE PHOTO'S. Every upload route
+     * writes session_images.is_public = 0 and nothing anywhere sets it to 1 -
+     * the privacy toggle on the session page updates the SESSION. Adding
+     * `AND si.is_public = 1` here returns zero rows for every spot on the
+     * planet, and reads as "nobody has posted photos here" rather than as a
+     * bug. ImageService.whereVisible makes the same choice for the same reason.
+     *
+     * The rider comes back with the photo so a tile can credit and link them;
+     * the columns are the same four QueryParser allows on a with[]=User, so
+     * this exposes nothing that a public session does not already carry.
+     */
+    async photos({ spotId, limit = 24 })
+    {
+        const query = `
+            SELECT si.id, si.name,
+                   s.id AS session_id, s.title AS session_title,
+                   s.session_date,
+                   u.id AS user_id, u.first_name, u.profile_img
+            FROM session_images si
+            JOIN sessions s ON s.id = si.session_id
+            LEFT JOIN users u ON u.id = s.user_id
+            WHERE s.location_id = :spotId
+              AND s.is_public = 1
+              AND si.name IS NOT NULL AND si.name <> ''
+            ORDER BY s.session_date DESC, si.id DESC
+            LIMIT :limit`;
+
+        return sequelize.query(query, {
+            type: QueryTypes.SELECT,
+            replacements: { spotId: String(spotId), limit: limit },
         });
     }
 
@@ -163,6 +206,15 @@ class SurflineSpotService  extends BaseService {
             throw error;
         }
 
+        /*
+         * After the duplicate check, so a re-add costs no third-party call,
+         * and awaited rather than fired off afterwards: the 201 carries the
+         * row, and a spot whose locality appears a second later reads as the
+         * label being broken. Resolves to nulls on timeout or failure - it
+         * cannot fail a submission.
+         */
+        const locality = await LocalityService.resolve(lat, lon);
+
         return BaseModel.create({
             // The string primary key carries provenance without a join, so a
             // later OSM refresh can leave contributed rows alone.
@@ -174,6 +226,12 @@ class SurflineSpotService  extends BaseService {
             lat: String(lat),
             lon: String(lon),
             created_by: params.created_by || null,
+            // Contributed spots had neither of these before. crumbs is what
+            // every seeded row uses for its region label, so without it a
+            // rider's own spot was the only kind with no locality at all.
+            crumbs: locality.crumbs,
+            city: locality.city,
+            locality_source: locality.locality_source,
             is_public: true,
             break_type: params.break_type || null,
             wave_direction: params.wave_direction || null,

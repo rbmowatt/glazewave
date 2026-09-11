@@ -175,9 +175,11 @@ class UserDashboard extends React.Component {
 			<MainContainer>
 				<div className="gw-dashboard">
 					<aside className="gw-col">
+						{/* Both totals come off the averages payload, not off the
+						    loaded lists: those requests cap at 20 rows. */}
 						<ProfileCard
-							boardCount={boards.length}
-							spotCount={averages.distinct_spots || 0}
+							boardCount={averages.total_boards}
+							spotCount={averages.distinct_spots}
 							onAddBoard={this.showBoardModal}
 							onLogSession={this.showSessionModal}
 						/>
@@ -203,11 +205,13 @@ class UserDashboard extends React.Component {
 					<div className="gw-dashboard-lists">
 						<LatestSessions
 							sessions={user_sessions}
+							total={averages.total_sessions}
 							limit={DASHBOARD_LIST_LIMIT}
 							onLogSession={this.showSessionModal}
 						/>
 						<NewestBoards
 							boards={boards}
+							total={averages.total_boards}
 							limit={DASHBOARD_LIST_LIMIT}
 							onAddBoard={this.showBoardModal}
 						/>

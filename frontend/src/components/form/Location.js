@@ -3,8 +3,9 @@ import React, {Component} from "react"
 import { createField, fieldPresets } from 'react-advanced-form'
 import { getSessionData} from './../reports/conditions/helpers/session';
 import { loadPlaces } from './../../lib/utils/googleMaps';
-import getSpots, { searchSpots } from './../../lib/utils/spots';
+import getSpots, { searchSpots, localityLabel } from './../../lib/utils/spots';
 import { asKm } from './../../lib/utils/distance';
+import { SpotThumb, SpotCredit, PhotoCreditLine } from './../spot/SpotImage';
 import { readViewLocation, onViewLocationChange } from './../../lib/utils/viewLocation';
 
 // The spot search is a local query and free, so this is latency tuning rather
@@ -251,8 +252,8 @@ class Location extends Component {
      * session form saves. Both select paths end here, so a spot chip and a
      * Google suggestion emit the same shape.
      */
-    emitLocation = (id, lat, lon, name) => {
-        if (this.props.onLocation) this.props.onLocation({id, lat, lon, name});
+    emitLocation = (id, lat, lon, name, region = null) => {
+        if (this.props.onLocation) this.props.onLocation({id, lat, lon, name, region});
     }
 
     handleSelectResult = (result) => {
@@ -321,7 +322,7 @@ class Location extends Component {
         });
         this.props.onChange('location_id', spot.id);
         this.props.onChange('location_name', spot.name);
-        this.emitLocation(spot.id, lat, lng, spot.name);
+        this.emitLocation(spot.id, lat, lng, spot.name, localityLabel(spot));
         this.setState({lat, lng}, this.fetchConditions);
     }
 
@@ -418,17 +419,27 @@ class Location extends Component {
                   {results.map(result => (
                     <li
                       key={result.key}
-                      className="list-group-item list-group-item-action"
+                      className="list-group-item list-group-item-action location-suggestion"
                       /* Not onClick: the input's onBlur fires first and its
                          deferred handler closes the list. */
                       onMouseDown={() => this.handleSelectResult(result)}
                     >
-                      {result.label}
-                      {result.kind === 'spot' && asKm(result.distance_m) && (
-                        <span className="location-suggestion-distance">
-                          {asKm(result.distance_m)}
-                        </span>
+                      {result.kind === 'spot' && (
+                        <SpotThumb image={result.spot && result.spot.image} size={40} />
                       )}
+                      <span className="location-suggestion-body">
+                        <span className="location-suggestion-name">
+                          {result.label}
+                          {result.kind === 'spot' && asKm(result.distance_m) && (
+                            <span className="location-suggestion-distance">
+                              {asKm(result.distance_m)}
+                            </span>
+                          )}
+                        </span>
+                        {result.kind === 'spot' && (
+                          <SpotCredit image={result.spot && result.spot.image} />
+                        )}
+                      </span>
                     </li>
                   ))}
                   {results[0].kind === 'spot' && (
@@ -457,12 +468,15 @@ class Location extends Component {
                       className="location-nearby-chip"
                       onClick={() => this.handleSelectSpot(spot)}
                     >
-                      {spot.name}
-                      {asKm(spot.distance_m) && (
-                        <span className="location-nearby-distance">
-                          {asKm(spot.distance_m)}
-                        </span>
-                      )}
+                      <SpotThumb image={spot.image} size={28} />
+                      <span className="location-nearby-chip-text">
+                        {spot.name}
+                        {asKm(spot.distance_m) && (
+                          <span className="location-nearby-distance">
+                            {asKm(spot.distance_m)}
+                          </span>
+                        )}
+                      </span>
                     </button>
                   ))}
                 </div>
@@ -470,6 +484,9 @@ class Location extends Component {
                     ODbL requires the credit wherever they are shown. */}
                 <div className="location-nearby-credit">
                   © OpenStreetMap contributors
+                  {/* A 28px chip cannot carry a 279-character credit line, so
+                      the photographers are named once for the row. */}
+                  <PhotoCreditLine spots={chips} />
                 </div>
               </div>
             )}

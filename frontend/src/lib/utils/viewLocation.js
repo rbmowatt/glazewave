@@ -34,6 +34,9 @@ export const readViewLocation = () => {
             lat: Number(parsed.lat),
             lon: Number(parsed.lon),
             name: parsed.name || '',
+            // Absent on a pin written before this existed, and on one set
+            // from browser geolocation, which has no place behind it.
+            region: parsed.region || null,
             // Decided once when the pin was set, so opening the session form
             // costs no request. A pin stored before this existed reads false
             // and simply offers no chip until it is picked again.
@@ -69,6 +72,7 @@ export const writeViewLocation = (location) => {
             lat: Number(location.lat),
             lon: Number(location.lon),
             name: location.name || '',
+            region: location.region || null,
             coastal: location.coastal === true
         }));
     } catch (err) {
@@ -83,6 +87,7 @@ export const writeViewLocation = (location) => {
         lat: Number(location.lat),
         lon: Number(location.lon),
         name: location.name || '',
+        region: location.region || null,
         coastal: location.coastal === true
     });
 };

@@ -47,18 +47,47 @@ resource "aws_cognito_user_pool_client" "web" {
   allowed_oauth_scopes                 = ["email", "openid", "profile"]
   supported_identity_providers         = ["COGNITO"]
 
+  # The admin console shares this client. redirect_uri is matched by exact
+  # string, so the console builds its own from window.location.origin, so both
+  # spellings here - and the logout entries need the trailing slash, because
+  # logout_uri is matched the same way.
   callback_urls = [
     "https://${var.domain_name}/login",
     "http://localhost:3000/login",
+    "https://${var.domain_name}/admin/callback",
+    "http://localhost:5173/admin/callback",
   ]
 
   logout_urls = [
     "https://${var.domain_name}/logout",
     "http://localhost:3000/logout",
+    "https://${var.domain_name}/admin/",
+    "http://localhost:5173/admin/",
   ]
 
   explicit_auth_flows = [
     "ALLOW_USER_SRP_AUTH",
     "ALLOW_REFRESH_TOKEN_AUTH",
   ]
+}
+
+# The resource is aws_cognito_user_group, NOT aws_cognito_user_pool_group -
+# that second name is the CloudFormation/API spelling and the provider has
+# never had it. Under hashicorp/aws 6.63.0 it fails at plan time with "does not
+# support resource type", which reads like a version problem rather than a typo.
+#
+# Membership arrives as a cognito:groups claim on both the id and the access
+# token, which is what middleware/Viewer.js reads. Membership is deliberately
+# NOT managed here: the pool sets username_attributes = ["email"], so the
+# username is a generated UUID, and this repo is public.
+#
+#   POOL=$(terraform output -raw cognito_user_pool_id)
+#   aws cognito-idp list-users --user-pool-id "$POOL" \
+#     --filter 'email = "<addr>"' --query 'Users[].Username' --output text --profile glazewave
+#   aws cognito-idp admin-add-user-to-group --user-pool-id "$POOL" \
+#     --username <uuid> --group-name admins --profile glazewave
+resource "aws_cognito_user_group" "admins" {
+  name         = "admins"
+  user_pool_id = aws_cognito_user_pool.main.id
+  description  = "Write access to catalog data and the Cognito admin routes"
 }

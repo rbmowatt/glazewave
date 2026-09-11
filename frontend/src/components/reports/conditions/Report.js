@@ -36,6 +36,7 @@ class Report extends React.Component {
     this.state = {
       data: {},
       location: '',
+      region: null,
       /*
        * Owned here rather than handed down. This widget renders on the board
        * and session indexes too, and those pages have no reason to know the
@@ -68,12 +69,12 @@ class Report extends React.Component {
       // The store holds whatever the last position resolved to, so it cannot
       // answer for a pin. Fetching unconditionally also means re-picking the
       // same spot refreshes the hour rather than repainting a stale one.
-      this.setState({ location: pin.name });
+      this.setState({ location: pin.name, region: pin.region || null });
       this.fetch(pin.lat, pin.lon);
       return;
     }
 
-    this.setState({ location: '' });
+    this.setState({ location: '', region: null });
     if (this.props.conditions.data.wave_period) {
       this.setState({ data: this.props.conditions.data });
       return;
@@ -100,7 +101,7 @@ class Report extends React.Component {
   }
 
   render() {
-    const { data, location } = this.state;
+    const { data, location, region } = this.state;
     const rows = ROWS.filter(row => data[row.key] !== null && data[row.key] !== undefined);
     // Set by the backend when it had no wave data here and borrowed the
     // nearest spot, and measured the same way the list below this one measures.
@@ -109,6 +110,7 @@ class Report extends React.Component {
       <div>
         <div className="gw-eyebrow">Local report</div>
         <div className="gw-report-title">{location || 'Your position'}</div>
+        {region && <div className="gw-report-region">{region}</div>}
         {rows.length === 0 ? (
           <div className="gw-trend-empty">NO OBSERVATIONS FOR THIS POSITION</div>
         ) : (

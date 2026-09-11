@@ -1,0 +1,256 @@
+/*
+ * The spot page. Tokens only - App.css @imports bootstrap and instrument.css
+ * overrides it by source order, so a literal color here would win over the
+ * reskin rather than follow it.
+ */
+
+/*
+ * gw-spot-page, never gw-spot: instrument.css owns .gw-spot as the
+ * nearest-spots list ROW - display:flex, space-between, align-items:center,
+ * a bottom border and a hover fill. On this page's container that laid the
+ * title, the gallery and the note thread out side by side as flex items.
+ */
+.gw-spot-page .gw-title-field {
+  font-size: 1.6rem;
+  margin-bottom: 0.35rem;
+}
+
+.gw-spot-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.gw-chip {
+  font-size: 0.7rem;
+  text-transform: lowercase;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--gw-edge-strong);
+  background: var(--gw-raised);
+  color: var(--gw-muted);
+}
+
+.gw-chip-link {
+  text-decoration: none;
+  color: var(--gw-accent);
+}
+
+.gw-chip-link:hover {
+  color: var(--gw-accent-hover);
+  text-decoration: none;
+}
+
+/*
+ * The hero for the 298 spots with no photograph. Same gradient and stroke as
+ * the 40px picker tile in SpotImage.css, at hero size, so the two read as one
+ * empty state rather than as two different failures.
+ */
+.gw-spot-hero-empty {
+  aspect-ratio: 4 / 3;
+  border-radius: 8px;
+  border: 1px solid var(--gw-edge-strong);
+  background: linear-gradient(160deg, #16222b 0%, #0c1317 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gw-spot-hero-mark {
+  width: 38%;
+  height: 38%;
+  fill: none;
+  stroke: var(--gw-edge-hover);
+  stroke-width: 1.4;
+  stroke-linecap: round;
+}
+
+/* The full credit line runs to 279 characters. Under a hero there is room for
+   it, so this undoes the one-line clamp SpotImage.css applies to list rows. */
+.gw-spot-credit-hero {
+  white-space: normal;
+  font-size: 0.6rem;
+  margin-top: 0.4rem;
+}
+
+.gw-section-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gw-dim);
+  margin: 1.25rem 0 0.5rem;
+}
+
+.gw-desc-text {
+  color: var(--gw-text);
+  white-space: pre-wrap;
+  margin-bottom: 0.4rem;
+}
+
+.gw-empty {
+  color: var(--gw-faint);
+  font-style: italic;
+  margin-bottom: 0.4rem;
+}
+
+.gw-note-input {
+  width: 100%;
+  min-height: 4.5rem;
+  background: var(--gw-raised);
+  border: 1px solid var(--gw-edge-strong);
+  border-radius: 6px;
+  color: var(--gw-text);
+  font-family: var(--gw-sans);
+  font-size: 0.85rem;
+  padding: 0.5rem 0.65rem;
+  margin-bottom: 0.4rem;
+  resize: vertical;
+}
+
+.gw-note-input:focus {
+  outline: none;
+  border-color: var(--gw-accent);
+}
+
+.gw-btn {
+  background: var(--gw-accent);
+  border: none;
+  border-radius: 6px;
+  color: var(--gw-ground);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.35rem 0.9rem;
+}
+
+.gw-btn:disabled {
+  background: var(--gw-edge-strong);
+  color: var(--gw-faint);
+}
+
+.gw-link-btn {
+  background: none;
+  border: none;
+  color: var(--gw-accent);
+  font-size: 0.75rem;
+  padding: 0 0.5rem 0 0;
+}
+
+.gw-link-btn:hover {
+  color: var(--gw-accent-hover);
+}
+
+/* Wraps rather than scrolls: the strip is capped at 24 and a horizontal
+   scroller hides how few there are on a page that is mostly empty anyway. */
+.gw-photo-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.gw-photo img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--gw-edge);
+}
+
+.gw-note {
+  border-top: 1px solid var(--gw-line);
+  padding: 0.6rem 0;
+}
+
+/* Indented, not nested. The API refuses a reply to a reply, so one step is the
+   whole depth this can ever render. */
+.gw-note-reply {
+  margin-left: 1.5rem;
+  border-top: none;
+}
+
+.gw-note-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gw-note-when {
+  font-size: 0.68rem;
+  color: var(--gw-faint);
+}
+
+.gw-note-delete {
+  color: var(--gw-faint);
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+
+.gw-note-delete:hover {
+  color: var(--gw-accent);
+}
+
+.gw-note-text {
+  color: var(--gw-text);
+  font-size: 0.88rem;
+  white-space: pre-wrap;
+  margin: 0.25rem 0 0.25rem 0;
+}
+
+.gw-note-signed-out {
+  color: var(--gw-faint);
+  font-size: 0.8rem;
+}
+
+.gw-note-form {
+  margin-bottom: 0.75rem;
+}
+
+/* ---------- map modal ---------- */
+
+/* .gw-chip already draws the border and the fill. This only undoes the button
+   defaults that would otherwise make it taller than its anchor siblings. */
+button.gw-chip {
+  font: inherit;
+  font-size: 0.7rem;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+.modal.gw-map-modal .modal-main {
+  width: auto;
+  background: var(--gw-panel);
+  border: 1px solid var(--gw-edge-strong);
+  padding: 10px;
+  overflow: visible;
+}
+
+/*
+ * .gw-lightbox-close is absolutely positioned with negative offsets, so the
+ * element it anchors to is whichever ancestor is positioned. That is this one,
+ * deliberately - .gw-map-head is left unpositioned so the button hangs off the
+ * panel corner the way it does in the image lightbox.
+ */
+.gw-map-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: min(720px, calc(100vw - 88px));
+}
+
+.gw-map-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.gw-map-frame {
+  display: block;
+  width: 100%;
+  height: min(480px, calc(100vh - 220px));
+  border: 1px solid var(--gw-edge-strong);
+  background: var(--gw-raised);
+}
+
+.gw-map-out { font-size: 0.7rem; }
