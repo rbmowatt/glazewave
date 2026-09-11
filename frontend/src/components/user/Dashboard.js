@@ -178,8 +178,8 @@ class UserDashboard extends React.Component {
 						{/* Both totals come off the averages payload, not off the
 						    loaded lists: those requests cap at 20 rows. */}
 						<ProfileCard
-							boardCount={averages.total_boards || 0}
-							spotCount={averages.distinct_spots || 0}
+							boardCount={averages.total_boards}
+							spotCount={averages.distinct_spots}
 							onAddBoard={this.showBoardModal}
 							onLogSession={this.showSessionModal}
 						/>

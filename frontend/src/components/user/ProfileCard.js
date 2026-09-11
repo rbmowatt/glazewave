@@ -82,7 +82,12 @@ class ProfileCard extends React.Component {
             ? s3Conf.root + user.profile_img
             : '/img/session_default_lg.png';
 
-        const totalSessions = aggregations.total_sessions || 0;
+        /*
+         * A count that has not arrived is not zero. The averages payload is a
+         * separate request from the lists beside it, so it can still be in
+         * flight - or have failed - while the rest of the card renders.
+         */
+        const stat = (n) => (typeof n === 'number' ? n : '--');
         const rating = Number(aggregations.session_rating) || 0;
 
         return (
@@ -128,15 +133,15 @@ class ProfileCard extends React.Component {
                     <div className="gw-eyebrow">Lifetime</div>
                     <div className="gw-stat-row">
                         <div className="gw-stat-label">Sessions logged</div>
-                        <div className="gw-stat-value">{totalSessions}</div>
+                        <div className="gw-stat-value">{stat(aggregations.total_sessions)}</div>
                     </div>
                     <div className="gw-stat-row">
                         <div className="gw-stat-label">Boards in quiver</div>
-                        <div className="gw-stat-value">{this.props.boardCount}</div>
+                        <div className="gw-stat-value">{stat(this.props.boardCount)}</div>
                     </div>
                     <div className="gw-stat-row">
                         <div className="gw-stat-label">Spots surfed</div>
-                        <div className="gw-stat-value">{this.props.spotCount}</div>
+                        <div className="gw-stat-value">{stat(this.props.spotCount)}</div>
                     </div>
                 </div>
 
