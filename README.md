@@ -115,6 +115,8 @@ JWT-based authentication with full JWK verification:
 - **Conditions** — Open-Meteo forecast, marine and archive endpoints, resolved to the session's own date and coordinates so a backdated session gets the conditions from when it actually happened, and labelled when the reading had to be borrowed from a nearby spot
 - **Image Uploads** — S3-backed with automatic resize via multer-sharp-s3
 - **Search** — Elasticsearch-powered faceted search across sessions and boards
+- **Spot pages** — every seeded spot has a page at `/spot/:id` with its photo gallery, fact chips and a map, plus a community thread and rider-written description behind feature flags
+- **Admin console** — a separate Vite app at `/admin`, behind the `admins` Cognito group: the user list joined against the Cognito pool, and a switchboard for the feature flags
 - **Auth** — AWS Cognito with admin-created users and group-based access
 
 ---
@@ -152,6 +154,28 @@ user:<uuid>
 `POST /api/spot` writes `user:<uuid>` with `source = 'user'` and returns 409 with the matching row when a spot already exists. The seeder only updates rows whose source it owns, so contributed spots survive a reseed. Rows predating the column were backfilled to `legacy`.
 
 This is what makes the licensing tractable: attribution is scoped to the rows that actually need it, and it can be retired when none remain.
+
+### Locality
+
+A spot name on its own is ambiguous — there are two `East 83rd Street`s and two `Cerritos Beach`es in the atlas — so every spot renders with the finest locality it has.
+
+The seed carries only `crumbs`, `"United States, New Jersey"`. Measured across all 1,611 seeded rows, `county` and `state_id` are populated on **none** of them, despite both being columns on the table; `build_spot_seed.js` sets `state_id` to null and takes `county` from `addr:county`, which the OSM beach seed essentially never has. So the region comes off the last segment of `crumbs`, and the city had to be reverse geocoded.
+
+```bash
+cd backend
+node app/scripts/reverse_geocode_spots.js --zoom=14      # Mac, ~30 min, writes data/spot_localities.json
+node app/scripts/reverse_geocode_spots.js --report       # hit rate by region, what the misses carry
+node app/scripts/load_spot_localities.js --dry-run       # box, needs sequelize
+node app/scripts/backfill_contributed_localities.js      # box, spots the batch never saw
+```
+
+Nominatim at **zoom 14**, measured against 10 and 16 over the same sample. Zoom 10 answers with the municipality rather than the settlement — `Municipio de Ensenada` is 52,000 km², which would name a break for a city 200km up the coast. Zoom 16 answers with the nearest *road*, whose bounding box the spot does not sit inside, so containment collapses from 22/25 to 8/24 even though the town name is still right.
+
+That is the acceptance rule: **containment, not distance.** The distance Nominatim reports is to the returned feature's centroid, so Malibu at 34km long reads as far away while the label is correct. `city_key: "municipality"` is rejected outright — three rows in the whole harvest, two of them the worst labels in it.
+
+**1,026 of 1,620 spots carry a city.** The rest fall back to the region, which is the correct outcome rather than a failure: 360 are unincorporated coast with no settlement to find, and 18 are points in open water outside every administrative boundary.
+
+Spots a rider adds go through `LocalityService` on create, which fills `city` **and** `crumbs` — contributed spots never had either, so a rider's own spot was the only kind in the atlas with no locality label at all.
 
 ### Capturing spots from places people pick
 
@@ -447,11 +471,11 @@ glazewave/
 │   │   ├── models/          # Sequelize models with ES sync hooks
 │   │   ├── services/        # Business logic (BaseService + extensions)
 │   │   ├── routes/          # Express route handlers (thin controllers)
-│   │   ├── middleware/      # QueryParser, auth
+│   │   ├── middleware/      # QueryParser, Viewer, RequireAdmin/Owner/Feature, OwnedUpload
 │   │   ├── lib/             # Cognito JWT verification, demo token
 │   │   ├── config/          # Environment-driven configs
 │   │   ├── migrations/      # Sequelize migrations
-│   │   └── scripts/         # ES sync/backfill, spot seed, coastline build/fetch, board and demo imports
+│   │   └── scripts/         # ES sync/backfill, spot seed, coastline build/fetch, reverse geocode, board and demo imports
 │   ├── data/                # Generated spot seed (surfline_spots.json), coastline manifest;
 │   │                        #   coastline.bin is fetched here at deploy, not committed
 │   ├── bin/                 # Server entry point
@@ -477,12 +501,13 @@ glazewave/
 
 ## Known Issues & TODOs
 
-- [ ] No database backups — highest-value outstanding task
-- [ ] Backend will not install on darwin-arm64; needs `multer-sharp-s3` replaced (which also pins `aws-sdk` v2)
+### Infrastructure and housekeeping
+
+- [ ] Backend will not install on darwin-arm64; needs `multer-sharp-s3` replaced (which also pins `aws-sdk` v2). Anything needing backend dependencies — migrations, seeders, `sequelize-cli` — runs on the box until this is fixed, which is why the locality work is split into a dependency-free harvest and a box-side loader
 - [ ] Clean up how session data is stored and retrieved
 - [ ] Improve responsive CSS/layout
 - [ ] Add structured logging (replace console statements)
-- [ ] Implement backend ACL (currently Cognito auth only, no role-based access)
+- [ ] No audit log for admin actions. Every action in the console is destructive and there is one admin, so it is easy to skip — and it is the thing that is impossible to reconstruct later
 - [ ] `surfline_spots.geo` GEOMETRY holds inverted coordinates from the parked Surfline import; nothing reads it, and fixing the import plus a backfill comes before anything does
 - [ ] Open-Meteo marine returns nulls for La Paz — the model has no coverage at that point, so `swell_period` and `wave_period` come back null with heights at 0.0
 - [ ] A promoted spot keeps the Google place id as its primary key, so it does not follow the documented `<source>:<native id>` convention the way `POST /api/spot` does with `user:<uuid>`. Keeping the Google id is what lets the chip resolve to the location row that already exists; giving it a `user:` id would mean one physical place with two identities and a duplicate location row on selection. Decide which before contributed and captured spots have to be reconciled
@@ -490,6 +515,25 @@ glazewave/
 - [ ] `LocationService.promote()` runs on every session save at a place, including ones already promoted. It returns after one indexed primary-key hit, but it is a hit
 - [ ] Sessions logged between the `FALLBACK_RADIUS_M` widening and the `borrowed_m` migration carry borrowed conditions with a null `borrowed_m`, so they show numbers with no label. Backfilling would have to be straight-line, which is the mismatch `borrowed_m` exists to avoid
 - [ ] GSHHG geometry is now redistributed rather than build-time only, so the LGPL credit belongs in `Attribution.js` alongside OSM and Open-Meteo
+
+### Locality
+
+- [ ] **594 of 1,620 spots have no city** and show only their region. Most of that is real — 360 rows resolve to `county+state` with no settlement, which is unincorporated coast, and 18 are points in open water. Oregon is the weakest region at 27/67, and its coast is largely state park land
+- [ ] **Two spots are labelled wrong.** Playa Las Cuevas and Playa Chacalilla both resolve to Compostela, roughly 35km inland, on a `town` key that passes containment. Two rows in 1,026 was not worth another rule
+- [ ] A spot added while Nominatim is unreachable is written with a NULL locality and **nothing retries it**. `LocalityService` swallows the failure on purpose — a third party being slow must not fail somebody's submission — so recovery means re-running `backfill_contributed_localities.js`, which is safe but manual
+- [ ] The nearest-spots list caches in `localStorage` for ten hours, so a locality change takes that long to surface. Any change to the payload shape needs `CACHE_KEY` in `NearestSpots.js` bumped in the same commit, or it looks like the change did nothing
+- [ ] Duplicate names are the atlas's own and now visible: `Cerritos Beach` is two rows 1.4km apart, `Playa el Faro` is two spots 780km apart. The locality line is what disambiguates them, which is why it exists — but nothing merges or flags them
+
+### Access control and the admin console
+
+The authorization pass landed — `requireAdmin`, ownership guards on session and board writes, `OwnedUpload` on the image posts, and catalog writes locked to admins. What is left is deliberate or unbuilt:
+
+- [ ] `POST /api/spot` stays open to any signed-in rider. The contribution flow depends on it, and the seed cannot cover the world on its own
+- [ ] `is_active = 0` carries two meanings — a seeded `demo_peer_*` rider and a disabled account — and only the absence of a Cognito record separates them. The user list will render seed rows as disabled accounts
+- [ ] The console has **Users and Flags only**. Spots, spot images, sessions and the catalog screens are not built
+- [ ] 1,840 rank-2/3 image alternates are in the committed manifest but not loaded, so a "promote this photo" screen would have nothing to promote until `load_spot_images.js --rank=all` runs
+- [ ] `DisplayScope.reconcile` has never completed a clean pass on the box; the `STORED` backtick fix is on `public` and undeployed. Get that green before building UI on the rights column
+- [ ] All three feature flags default off, so the spot thread, rider-written descriptions and session photos on a spot page are **built and dark** until they are flipped in the console. A missing row reads as off by design
 
 ---
 
