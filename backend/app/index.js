@@ -9,7 +9,6 @@ const cognitoConfig = require('./config/cognito');
 const cognitoAuth = require('./lib/cognitoAuth');
 const boardRouter = require('./routes/board');
 const cityRouter = require('./routes/city');
-const cognitoRouter = require('./routes/cognito');
 const demoRouter = require('./routes/demo');
 const locationRouter = require('./routes/location');
 const manufacturerRouter = require('./routes/manufacturer');
@@ -88,21 +87,6 @@ app.use(cors({'origin': [cognitoConfig.signoutUri, appConfig.clientUrl ]}));
 app.use('/api/user', guardedWrites, userRouter);
 app.use('/api/board', boardRouter);
 app.use('/api/city', catalogWrites, cityRouter);
-/*
- * Every route in here is an admin action on the user pool - listUsers,
- * adminCreateUser, adminUpdateUserAttributes, adminDeleteUser - and the whole
- * router sat behind "is this a valid token". GET / returned every registered
- * user with email and phone, and it is a read, so demoReadOnly never saw it.
- *
- * The calls fail at AWS today only because infra/iam.tf grants the instance
- * role SSM and S3 and no cognito-idp at all. THAT is the thing keeping this
- * safe, not the route table - so the IAM statement for AdminDisableUser must
- * not land before this gate does.
- *
- * demoReadOnly is gone from here because requireAdmin subsumes it: a demo
- * token is refused on its kid before its groups are even read.
- */
-app.use('/api/cognito', cognitoAuthMiddleware, requireAdmin, cognitoRouter);
 app.use('/api/demo', demoRouter);
 app.use('/api/location', catalogWrites, locationRouter);
 app.use('/api/manufacturer', catalogWrites, manufacturerRouter);
