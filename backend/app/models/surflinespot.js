@@ -11,6 +11,13 @@ module.exports = (sequelize, DataTypes) => {
     cams: DataTypes.STRING,
     state_id: DataTypes.INTEGER,
     county: DataTypes.STRING,
+    // Reverse-geocoded by load_spot_localities.js, or resolved by the
+    // picker on a contributed spot. NULL where no locality exists to find,
+    // which offshore and unnamed sand legitimately do not.
+    city: DataTypes.STRING,
+    // nominatim | google. NULL means never attempted, which is not the
+    // same as attempted and empty.
+    locality_source: DataTypes.STRING,
     lat: DataTypes.STRING,
     lon: DataTypes.STRING,
     // Populated with the pair reversed by the parked Surfline import and read

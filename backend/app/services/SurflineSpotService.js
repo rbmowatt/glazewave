@@ -36,7 +36,7 @@ class SurflineSpotService  extends BaseService {
     nearestByCrow({ lat, lon, radius, limit })
     {
         const query = `
-            SELECT id, name, url, crumbs,
+            SELECT id, name, url, crumbs, city,
                    CAST(lat AS DECIMAL(10,7)) AS lat,
                    CAST(lon AS DECIMAL(10,7)) AS lon,
                    ST_Distance_Sphere(
@@ -102,7 +102,7 @@ class SurflineSpotService  extends BaseService {
             : 'NULL';
 
         const query = `
-            SELECT id, name, url, crumbs,
+            SELECT id, name, url, crumbs, city,
                    CAST(lat AS DECIMAL(10,7)) AS lat,
                    CAST(lon AS DECIMAL(10,7)) AS lon,
                    ${distance} AS distance_m

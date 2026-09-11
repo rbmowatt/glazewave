@@ -8,7 +8,7 @@ import { FormCard } from "./../layout/FormCard";
 import { SpotCredit } from "./SpotImage";
 import NoteThread from "./NoteThread";
 import { isReadOnly } from "./../../lib/utils/demo";
-import { regionLabel } from "./../../lib/utils/spots";
+import { localityLabel } from "./../../lib/utils/spots";
 import {
 	loadSpot,
 	loadSpotPhotos,
@@ -245,8 +245,8 @@ class SpotView extends Component {
 						<div className="row details">
 							<div className="col-12 session-title">
 								<h1 className="gw-title-field">{spot.name}</h1>
-								{regionLabel(spot.crumbs) && (
-									<div className="gw-spot-region-line">{regionLabel(spot.crumbs)}</div>
+								{localityLabel(spot) && (
+									<div className="gw-spot-region-line">{localityLabel(spot)}</div>
 								)}
 								<div className="gw-spot-facts">
 									{spot.bottom && (

@@ -66,4 +66,16 @@ export const regionLabel = (crumbs) => {
   return parts.length ? parts[parts.length - 1] : null;
 };
 
+/*
+ * What actually gets rendered under a spot name. city is NULL until the
+ * reverse-geocode backfill has run, and stays NULL for offshore and unnamed
+ * stretches where no locality exists - so this degrades to the region rather
+ * than to a placeholder, and the two cases are indistinguishable on purpose.
+ */
+export const localityLabel = (spot) => {
+  if (!spot) return null;
+  const region = regionLabel(spot.crumbs);
+  return [spot.city, region].filter(Boolean).join(', ') || null;
+};
+
 export default getSpots;

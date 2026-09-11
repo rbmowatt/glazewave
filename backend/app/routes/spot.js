@@ -48,7 +48,7 @@ const DETAIL_IMAGE_WIDTH = 800;
 // Everything the atlas fields are for, minus geo: that column holds the pair
 // reversed by the parked Surfline import and is read by nothing.
 const DETAIL_COLUMNS = [
-  'id', 'name', 'url', 'crumbs', 'lat', 'lon', 'county', 'source', 'is_public',
+  'id', 'name', 'url', 'crumbs', 'city', 'lat', 'lon', 'county', 'source', 'is_public',
   'break_type', 'wave_direction', 'bottom', 'difficulty', 'hazards', 'notes',
 ];
 
