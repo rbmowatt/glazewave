@@ -11,7 +11,7 @@ const onSignOut = (e) => {
   }
 
 const Navbar = props =>{
-    const { isLoggedIn } = props.session;
+    const { isLoggedIn, isAdmin } = props.session;
     return (
         <nav className="navbar navbar-expand-md">
           <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -31,6 +31,13 @@ const Navbar = props =>{
                 }
                 {isLoggedIn &&
                   <NavLink className="nav-link" activeClassName="active" to={'/board'}>Boards</NavLink>
+                }
+                {/* An anchor, not a NavLink: /admin is the separate Vite bundle
+                    nginx serves, so react-router would match it against these
+                    routes and render the 404 page without ever leaving the SPA.
+                    The link is convenience only - requireAdmin is the gate. */}
+                {isLoggedIn && isAdmin &&
+                  <a className="nav-link" href="/admin">Admin</a>
                 }
               </div>
               <div className="navbar-nav ml-auto gw-nav-user">
