@@ -3,7 +3,7 @@ import React, {Component} from "react"
 import { createField, fieldPresets } from 'react-advanced-form'
 import { getSessionData} from './../reports/conditions/helpers/session';
 import { loadPlaces } from './../../lib/utils/googleMaps';
-import getSpots, { searchSpots } from './../../lib/utils/spots';
+import getSpots, { searchSpots, regionLabel } from './../../lib/utils/spots';
 import { asKm } from './../../lib/utils/distance';
 import { SpotThumb, SpotCredit, PhotoCreditLine } from './../spot/SpotImage';
 import { readViewLocation, onViewLocationChange } from './../../lib/utils/viewLocation';
@@ -252,8 +252,8 @@ class Location extends Component {
      * session form saves. Both select paths end here, so a spot chip and a
      * Google suggestion emit the same shape.
      */
-    emitLocation = (id, lat, lon, name) => {
-        if (this.props.onLocation) this.props.onLocation({id, lat, lon, name});
+    emitLocation = (id, lat, lon, name, region = null) => {
+        if (this.props.onLocation) this.props.onLocation({id, lat, lon, name, region});
     }
 
     handleSelectResult = (result) => {
@@ -322,7 +322,7 @@ class Location extends Component {
         });
         this.props.onChange('location_id', spot.id);
         this.props.onChange('location_name', spot.name);
-        this.emitLocation(spot.id, lat, lng, spot.name);
+        this.emitLocation(spot.id, lat, lng, spot.name, regionLabel(spot.crumbs));
         this.setState({lat, lng}, this.fetchConditions);
     }
 

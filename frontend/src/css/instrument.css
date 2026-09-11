@@ -1718,3 +1718,29 @@ input.gw-title-field:focus {
 	align-self: flex-start;
 	margin-top: 2px;
 }
+
+/* ---------- spot locality ---------- */
+
+/*
+ * The spot table has no city: county and state_id are populated on none of the
+ * 1,611 seeded rows, so this is the region off crumbs and nothing finer. Block,
+ * because .gw-spot-body is an inline span and the name has to keep its own line.
+ */
+.gw-spot-region,
+.gw-report-region {
+	display: block;
+	font-family: var(--gw-mono);
+	font-size: 10px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--gw-dim);
+	margin-top: 2px;
+}
+.gw-spot-region-line {
+	font-family: var(--gw-mono);
+	font-size: 11px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--gw-muted);
+	margin-bottom: 0.55rem;
+}
