@@ -204,3 +204,53 @@
 .gw-note-form {
   margin-bottom: 0.75rem;
 }
+
+/* ---------- map modal ---------- */
+
+/* .gw-chip already draws the border and the fill. This only undoes the button
+   defaults that would otherwise make it taller than its anchor siblings. */
+button.gw-chip {
+  font: inherit;
+  font-size: 0.7rem;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+.modal.gw-map-modal .modal-main {
+  width: auto;
+  background: var(--gw-panel);
+  border: 1px solid var(--gw-edge-strong);
+  padding: 10px;
+  overflow: visible;
+}
+
+/*
+ * .gw-lightbox-close is absolutely positioned with negative offsets, so the
+ * element it anchors to is whichever ancestor is positioned. That is this one,
+ * deliberately - .gw-map-head is left unpositioned so the button hangs off the
+ * panel corner the way it does in the image lightbox.
+ */
+.gw-map-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: min(720px, calc(100vw - 88px));
+}
+
+.gw-map-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.gw-map-frame {
+  display: block;
+  width: 100%;
+  height: min(480px, calc(100vh - 220px));
+  border: 1px solid var(--gw-edge-strong);
+  background: var(--gw-raised);
+}
+
+.gw-map-out { font-size: 0.7rem; }

@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import ImageGallery from "react-image-gallery";
 import MainContainer from "./../layout/MainContainer";
+import Modal from "./../layout/Modal";
 import { FormCard } from "./../layout/FormCard";
 import { SpotCredit } from "./SpotImage";
 import NoteThread from "./NoteThread";
@@ -45,7 +46,7 @@ const mapDispatchToProps = (dispatch) => {
 const HERO_WIDTH = 1600;
 
 class SpotView extends Component {
-	state = { editingDescription: false, draft: "" };
+	state = { editingDescription: false, draft: "", showMap: false };
 
 	/*
 	 * The id is `:id+`, not `:id`. Spot ids are not all one path segment -
@@ -53,6 +54,34 @@ class SpotView extends Component {
 	 * react-router hands the whole tail back with the slashes intact.
 	 */
 	spotId = () => this.props.match.params.id;
+
+	showMap = () => this.setState({ showMap: true });
+	hideMap = () => this.setState({ showMap: false });
+
+	/*
+	 * lat and lon are VARCHAR on surfline_spots, so they arrive as strings and a
+	 * bad row yields NaN rather than throwing - which would put the string
+	 * "NaN" in the bbox and render a map of nowhere. The geo GEOMETRY column is
+	 * not an alternative: the parked Surfline import wrote it [lat, lon].
+	 */
+	coords = () => {
+		const spot = this.props.spot;
+		if (!spot) return null;
+		const lat = Number(spot.lat);
+		const lon = Number(spot.lon);
+		return Number.isFinite(lat) && Number.isFinite(lon) ? { lat, lon } : null;
+	};
+
+	// The OSM embed takes a bounding box, not a centre and a zoom. Roughly two
+	// kilometres across at these latitudes, which holds the break and the
+	// paddle-out without losing the coastline.
+	embedUrl = ({ lat, lon }) => {
+		const pad = 0.01;
+		const bbox = [lon - pad, lat - pad, lon + pad, lat + pad].join(",");
+		return "https://www.openstreetmap.org/export/embed.html"
+			+ "?bbox=" + encodeURIComponent(bbox)
+			+ "&layer=mapnik&marker=" + encodeURIComponent(lat + "," + lon);
+	};
 
 	componentDidMount() {
 		this.load(this.spotId());
@@ -221,7 +250,18 @@ class SpotView extends Component {
 									)}
 									{spot.break_type && <span className="gw-chip">{spot.break_type}</span>}
 									{spot.difficulty && <span className="gw-chip">{spot.difficulty}</span>}
-									{spot.url && (
+									{/* The modal needs coordinates, not spot.url, so a row
+									    without usable ones falls back to the outbound link
+									    rather than opening an empty map. */}
+									{this.coords() ? (
+										<button
+											type="button"
+											className="gw-chip gw-chip-link"
+											onClick={this.showMap}
+										>
+											Map
+										</button>
+									) : spot.url && (
 										<a
 											className="gw-chip gw-chip-link"
 											href={spot.url}
@@ -317,6 +357,42 @@ class SpotView extends Component {
 						)}
 					</div>
 				</FormCard>
+				<Modal show={this.state.showMap} handleClose={this.hideMap} className="gw-map-modal">
+					<div className="gw-map-body">
+						<div className="gw-map-head">
+							<span className="gw-eyebrow">{spot.name}</span>
+							<button
+								type="button"
+								className="gw-lightbox-close"
+								onClick={this.hideMap}
+								aria-label="Close"
+							>
+								&times;
+							</button>
+						</div>
+						{this.state.showMap && this.coords() && (
+							/* Mounted only while open: the iframe fetches tiles the moment
+							   it exists, so rendering it behind display:none would pull
+							   them on every spot page whether or not anyone opens a map. */
+							<iframe
+								className="gw-map-frame"
+								title={"Map of " + spot.name}
+								src={this.embedUrl(this.coords())}
+								loading="lazy"
+							/>
+						)}
+						{spot.url && (
+							<a
+								className="gw-link gw-map-out"
+								href={spot.url}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Open the full map in a new tab &rarr;
+							</a>
+						)}
+					</div>
+				</Modal>
 			</MainContainer>
 		);
 	}
