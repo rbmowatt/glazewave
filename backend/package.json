@@ -43,7 +43,7 @@
     "express": "^4.22.2",
     "jsonwebtoken": "^9.0.3",
     "jwk-to-pem": "^2.0.7",
-    "morgan": "^1.12.0",
+    "morgan": "^1.12.1",
     "multer": "^2.3.0",
     "multer-sharp-s3": "^0.2.1",
     "mysql2": "^2.3.3",
